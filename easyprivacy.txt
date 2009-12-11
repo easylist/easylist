@@ -10,16 +10,6 @@
 ! Forum: http://forums.lanik.us/
 ! E-Mail: ares2mail -at- gmail.com
 !
-!---------------------------------General rules to block tracking----------------------------------!
-%include easyprivacy_general.txt%
-!-----------------------------------Third-party tracking servers-----------------------------------!
-%include easyprivacy_trackingservers.txt%
-!---------------------------------------Third-party tracking---------------------------------------!
-%include easyprivacy_thirdparty.txt%
-!------------------------------Site specific rules to block tracking-------------------------------!
-%include easyprivacy_specific.txt%
-!---------------------------------Exception rules to fix problems----------------------------------!
-%include easyprivacy_whitelist.txt%
 !---------------------------------------------Unsorted---------------------------------------------!
 &browserversion=$image
 &mode=track$subdocument
@@ -257,7 +247,6 @@
 .infra-ad.
 ||inquiries.redhat.com^
 .instadia.
-.intelli-direct.com/
 .intensedebate.com/remotevisit.php?
 .intensedebate.com/widgets/blogstats/
 ||intervigil.com^$third-party
@@ -1374,3 +1363,13 @@ webstats4u.
 @@|http://track.dhl.$~document
 @@|http://tracker.flightview.com/*?$~document
 @@||tracking2.vindicosuite.com^$object_subrequest,domain=filefront.com
+!---------------------------------General rules to block tracking----------------------------------!
+%include easyprivacy_general.txt%
+!-----------------------------------Third-party tracking servers-----------------------------------!
+%include easyprivacy_trackingservers.txt%
+!---------------------------------------Third-party tracking---------------------------------------!
+%include easyprivacy_thirdparty.txt%
+!------------------------------Site specific rules to block tracking-------------------------------!
+%include easyprivacy_specific.txt%
+!---------------------------------Exception rules to fix problems----------------------------------!
+%include easyprivacy_whitelist.txt%
