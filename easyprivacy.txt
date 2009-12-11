@@ -10,6 +10,17 @@
 ! Forum: http://forums.lanik.us/
 ! E-Mail: ares2mail -at- gmail.com
 !
+!---------------------------------General rules to block tracking----------------------------------!
+%include easyprivacy_general.txt%
+!-----------------------------------Third-party tracking servers-----------------------------------!
+%include easyprivacy_trackingservers.txt%
+!---------------------------------------Third-party tracking---------------------------------------!
+%include easyprivacy_thirdparty.txt%
+!------------------------------Site specific rules to block tracking-------------------------------!
+%include easyprivacy_specific.txt%
+!---------------------------------Exception rules to fix problems----------------------------------!
+%include easyprivacy_whitelist.txt%
+!---------------------------------------------Unsorted---------------------------------------------!
 &browserversion=$image
 &mode=track$subdocument
 &refurl=*&platform=
@@ -20,8 +31,6 @@
 .123count.com/
 .1und1.de/js/sui/rjsl/
 .24log.ru/
-||2cnt.net^$third-party
-||2o7.net/$third-party
 .360tag.com/
 .3dstats.
 .51yes.com/
@@ -43,9 +52,7 @@
 ||aolcdn.com/js/mg*.js
 ||asianblast.com/statx/
 .asp?bstat=
-||asterpix.com/tagcloudview/$third-party
 .atomicmpc.com.au/webresource.axd?
-.au/b/ss/
 ||axf8.net^$third-party
 ||baynote.net^$third-party
 .bbc.co.uk/*/o.gif
@@ -73,7 +80,6 @@
 ||business.com/apitracking.aspx?
 ||businessweek.com/gateway.swf?
 ||c.hit.ua^$third-party
-.ca/b/ss/
 ||cashcount.com^$third-party
 ||cd.musicmass.com^$third-party
 .celebros-analytics.
@@ -174,7 +180,6 @@
 .etrafficcounter.
 .eu-survey.com/
 .europagerank.com/w.js
-||event.newyorker.com^
 .everesttech.net/
 .evisitanalyst.
 ||evisitcs2.com^$third-party
@@ -1012,7 +1017,7 @@
 /px.owneriq.net/*?
 /px/?bc=
 /pxl.png?
-/quantcast.
+/quantcast.js
 /quantserve.
 /r.i.ua/s?
 /rd.meebo.com/mcr.gif?
@@ -1370,7 +1375,6 @@ webstats4u.
 @@||global.frooition.com/freedom/ebay_global/php/freedom_template_counter.php?$stylesheet
 @@||koldcast.tv^*/tracker.php?$object_subrequest
 @@||log.go.com/log?*&goto=http://adsatt.abc.starwave.com/ad/sponsors/$object_subrequest
-@@|http://metrics.howstuffworks.com/b/ss/*&ot=$image
 @@||narrowstep.tv/scripts/c.ashx?*/logger.js$script
 @@||pixel.quantserve.com/seg/r;$object_subrequest,domain=filefront.com
 @@|http://player.movenetworks.com/pub/*ing.js$script
