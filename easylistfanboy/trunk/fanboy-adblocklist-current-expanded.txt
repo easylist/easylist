@@ -1262,7 +1262,7 @@ _webbanner_
 *.insightexpress.*
 *.incentaclick.*
 *.inviziads.com/*
-*.innity.com/*
+||innity.com^$third-party
 *.jame-world.com/_pic/adv/*
 *.lakequincy.*
 *.layerwelt.com/*
@@ -1703,7 +1703,7 @@ http://advert.*
 */adverts/*
 *.shareasale.*
 *advertising.*$image
-*.com/ads/*$image,background,subdocument
+.com/ads/*$image,background,subdocument
 */adbanner*.$image
 */advertis*$image,script,subdocument
 */image/adv*$image
@@ -1712,13 +1712,13 @@ http://advert.*
 *.radioio.com*/sponsors/*
 *.qksz.net/*
 */adsense.*$script,image
-|http://adsfac.*
-*/images/banner_*$object
+|http://adsfac.
+/images/banner_$object
 */ad.zanox.*
 */ShowAds.*
 *.e-planning.net/*
 *.adjuggler.*
-*/ajrotator/*
+/ajrotator/*
 http://osdir.com/ml/*$subdocument
 |http://ad*.doubleclick.net/adj/*
 |http://ad*.doubleclick.net/adi/*
