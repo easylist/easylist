@@ -226,10 +226,9 @@ disney.go.com###banner
 distrowatch.com##a[href^="http://www.acunetix.com/cross-site-scripting/scanner.htm"] > *
 distrowatch.com##body > br + div
 distrowatch.com##table.News1 td[style] td[class] > a[href] > img[title*=" "]
-distrowatch.com##table[class] table[class] td[class] > a[href] > img
 distrowatch.com##td[class] td[class] > a[href] > img
 distrowatch.com##td[class] td[style*=" ; width: "] > a[href] > img
-distrowatch.com##td[style] > table[style] td[class] > a[href] > img
+distrowatch.com##td[width] > table[width] > tbody > tr + tr > td[class] > a[href] > img
 dogpile.com##.paidSearchResult
 domaintools.com##a[href^="http://www.domaintools.com/redirect/target/"] > img
 dosgamesarchive.com###banner
