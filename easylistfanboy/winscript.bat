@@ -1,4 +1,5 @@
 @echo off
+hg pull
 hg update
 ; Firefox
 perl addChecksum.pl fanboy-adblocklist-adult.txt
@@ -21,4 +22,3 @@ perl addChecksum-opera.pl iron/adblock-beta.ini
 hg add .
 hg commit -m "%1"
 hg push -f
-hg update
