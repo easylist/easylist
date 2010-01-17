@@ -6,6 +6,8 @@ perl addChecksum.pl fanboy-adblocklist-adult.txt
 perl addChecksum.pl fanboy-adblocklist-current-expanded.txt
 perl addChecksum.pl fanboy-adblocklist-stats.txt  
 perl addChecksum.pl fanboy-adblocklist-dimensions-v2.txt
+:: RUS
+perl addChecksum.pl fanboy-morpeh-rus.txt
 :: Firefox Regional lists
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
