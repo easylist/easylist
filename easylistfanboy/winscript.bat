@@ -1,6 +1,6 @@
 @echo off
 hg update
-hg pull --rebase
+hg pull --rebase remote
 hg pull
 :: Firefox
 perl addChecksum.pl fanboy-adblocklist-adult.txt
