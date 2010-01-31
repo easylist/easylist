@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: JxNnn0zvQYM/mmPiYW7/NQ
+! Checksum: ZICLzgKJsZOiOoFee5q6QA
 ! Fanboy's Korean-addon Adblock list 
 ! Version: 023B Updated: 25 Jan 2010
 ! This list expires after 5 days
@@ -106,6 +106,11 @@ _kr/banner/*
 /ylog.php?
 /yna/basic/ad/*
 8080/js.kti/*
+_scroll_ad_
+_RightRealClick
+!
+!---------- Korean Specific Whitelists ----------
+!
 @@||adm.fwmrm.net^
 @@||aladdin.co.kr/FlashBanner/Banner/swf/
 @@/banner.js$domain=todaykorea.co.kr
@@ -131,8 +136,10 @@ _kr/banner/*
 @@||ar.donga.com^*/adstream_sx.ads/etv.donga.com/
 @@||cailbo.com^*/2008120925241807.gif
 @@||ycinews.co.kr^*/2008123115136_32699.swf
-_scroll_ad_
-_RightRealClick
+!
+!----------Korean Element Hiding Rules
+!
+##.meritz_adline
 ###servicemanagerdx
 ###jmBannerLayer
 ##.TD_htmlbox
