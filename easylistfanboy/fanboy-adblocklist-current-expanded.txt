@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: I+0zjVoJVySXFog29TdatA
+! Checksum: MqXnVqb4K3SDq8mjqRbANQ
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 31 Jan 2010
 ! This list expires after 3 days
@@ -2346,6 +2346,7 @@ _web_adhoc?
 ###advert-leaderboard
 ###advert-wrapper
 ###advertBoxRight
+###adverts
 ###advertisement160x600
 ###advertisement728x90
 ###advertiserLinks
@@ -2813,6 +2814,7 @@ _web_adhoc?
 ###top_adspace
 ###top_adv-v2
 ###top_ad_area
+###top_google_ads
 ###top_sponsor_ads
 ###towerad
 ###tut_ads
@@ -2954,7 +2956,6 @@ _web_adhoc?
 ##.adops.textlinks
 ##.adpad300
 ##.adRight
-##.adright
 ##.adrule
 ##.Ads
 ##.ads-google
@@ -3221,6 +3222,7 @@ _web_adhoc?
 ##.googley_ads
 ##.google_ad
 ##.google_add_container
+##.googlead
 ##.gradientAd
 ##.group.ads
 ##.gutter-ad-left
@@ -3448,18 +3450,6 @@ _web_adhoc?
 ##A.ad_policy
 ##FIELDSET.ads
 ##IMG.ad-image
-~amusingplanet.com##.ads:not(body)
-~anzwers.com.au##.adtext
-~associatedcontent.com##.header_ad_center
-~bbs.newhua.com##.ad_text
-~beginyouridea.com,~jobs.wa.gov.au##.advert
-~cafepress.com.au###bannerContainer
-~cmt.com###header_ad
-~courierpostonline.com##.ad_160x600
-~getprice.com.au##.sponsoredLinks
-~investopedia.com###footer_ads
-~mercurynews.com###adposition3
-~metblogs.com,~oreilly.com###adspace
 !
 !---------------------- Site specific Hiding Rules ----------------------
 !
@@ -4160,6 +4150,7 @@ laweekly.com##.PencilAd
 lemonde.fr###talentsBlock
 lemondrop.com###banner
 lemondrop.com##.quigoRR
+lifehack.org###offers
 lifehacker.com###marquee-frame
 lifehacker.com###skyscraper
 lifehacker.com##.highlite
@@ -5107,15 +5098,31 @@ zdnet.com.au##.aisle-ad
 zetaboards.com##TD[style="text-align: center;"]
 zetaboards.com##TD[width="300px"]
 zetaboards.com##[style="margin-top: 10px; margin-bottom: 10px; height: 90px;"]
-~apple.com###ads
+!
+!----------Hiding Rules With Exceptions
+!
+~2gb-hosting.com,~apple.com,~dailykos.com,~facebook.com,~radio.de,~tomwans.com,~www.google.com,~zuploads.com###ads
+~amusingplanet.com##.ads:not(body)
+~anzwers.com.au##.adtext
+~associatedcontent.com##.header_ad_center
+~bbs.newhua.com##.ad_text
+~beginyouridea.com,~jobs.wa.gov.au##.advert
 ~bumpshack.com###topad
+~cafepress.com.au###bannerContainer
+~cmt.com###header_ad
+~courierpostonline.com##.ad_160x600
 ~gamespot.com##.sponsored
+~getprice.com.au##.sponsoredLinks
+~investopedia.com###footer_ads
+~mercurynews.com###adposition3
+~metblogs.com,~oreilly.com###adspace
 ~mycareer.com.au##.adContainer
 ~myspace.com,~convertunits.com###leaderboard
 ~news.yahoo.com##.ad_header
 ~news.yahoo.com,~drive.com.au,~novamov.com,~finanztreff.de##.ad
 ~outspark.com##.adModule
 ~photobucket.com##.headerAd
+~tomwans.com##.adright
 !
 !---------------------- Dimensions ----------------------
 !
@@ -6046,7 +6053,7 @@ affiliateBannerShow.aspx?
 ||tizernet.com/engine.php?
 ||tnaflix.com/view_page_top_
 ||tools.todowebcams
-||tossoffads.com^$third-party
+||tossoffads.com^^$third-party
 ||tours.imlive.com^$third-party
 ||topbucks.com^$third-party
 ||totem.porkolt.com^$third-party
