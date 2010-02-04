@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: /drfKt5kyceSb25WiyUyVQ
+! Checksum: pyyPoAsfW4qle/9M8CL/5w
 ! Fanboy's Korean-addon Adblock list 
 ! Version: 023B Updated: 25 Jan 2010
 ! This list expires after 5 days
@@ -23,7 +23,6 @@
 .kr/images/ad/
 .kr/img/ad/
 .kr/img/skin1/ad.
-http://adm.
 .kr/js.kti/
 .kr/RealMedia/
 .kr/weblog/
@@ -57,7 +56,6 @@ http://adm.
 /common_ad.jsp?
 /common_ad3_
 /common_ad5_
-||cctoday.co.kr^*/250_insurance*.html
 /Components/Ad/*
 /Components/Expose/*
 /event.ems/*
@@ -118,6 +116,7 @@ _realclick.
 _realclick_
 _RightRealClick
 _scroll_ad_
+http://adm.
 ||114.205.77.110^*/banner/
 ||119.205.209.206/banner/
 ||121.254.145.210^$third-party
@@ -204,7 +203,6 @@ _scroll_ad_
 ||andongtv.com/flash/*$object
 ||andongtv.com^*/banner
 ||andongtv.com^*_banner
-||cctoday.co.kr^*/banner/
 ||asiae.co.kr/upload/banner/
 ||askpop.com^$third-party
 ||atfile.com/*main_banner
@@ -229,6 +227,8 @@ _scroll_ad_
 ||busan.com/AD/
 ||cailbo.com^*/banner/
 ||cctoday.co.kr/ad/
+||cctoday.co.kr^*/250_insurance*.html
+||cctoday.co.kr^*/banner/
 ||cctoday.co.kr^*/banner/
 ||cdnetworks.co.kr^$third-party
 ||cf.freechal.com/_ad/*.flv
@@ -634,6 +634,9 @@ _scroll_ad_
 !
 !----------Korean Element Hiding Rules
 !
+###frameAD300X250
+###frameSponser
+###frameTextAd2
 ###jmBannerLayer
 ###servicemanagerdx
 ##.drexlhgbwzmsvpjksdlx
@@ -673,7 +676,6 @@ chosun.com##.yigajfyuggkyrxisxite
 chosun.com##iframe[width="250"][height="95"]
 clubbox.co.kr##.box_layer_familyT
 clubbox.co.kr##.wing_banner
-healthcare.joins.com###notice_event
 cnbnews.com##.foot
 consumernews.co.kr##table[cellpadding="14"][bgcolor="#cbd1d4"]
 consumernews.co.kr##table[width="100%"][height="250"]
@@ -758,13 +760,11 @@ donga.com##TABLE[width="250"][cellspacing="1"]
 dreamwiz.com###dwSmallAdvertising
 dt.co.kr###premiumlink
 dt.co.kr##.last_bohum
-vaccine.myfolder.net##[style="background-color: white; padding: 5px;"]
 dt.co.kr##.premiumlink
 dt.co.kr##table[border="0"][width="278"]
 ebs.co.kr##.advertise
 ebs.co.kr##.banner_middle
 ebs.co.kr##.bottom_etc_banner
-news.msn.co.kr##TABLE[width="300"][height="250"][align="center"]
 edaily.co.kr###happypot
 edaily.co.kr###insu
 edaily.co.kr###main_banner
@@ -829,12 +829,9 @@ hankyung.com##td[style="padding: 0pt 6px;"]
 health.chosun.com##iframe[width="230"][height="90"]
 healthcare.joins.com###clinicGuide
 healthcare.joins.com###innerclinic
+healthcare.joins.com###notice_event
 heraldbiz.com##TABLE[align="right"][width="250"]
 heraldbiz.com##TABLE[width="276"][height="200"]
-msn.co.kr###frameLeftShop
-###frameTextAd2
-###frameSponser
-###frameAD300X250
 ibtimes.co.kr##.ad_cbottom
 ibtimes.co.kr##.AD_shopping
 ibtimes.co.kr##.AD_textinfo
@@ -983,6 +980,7 @@ mk.co.kr##TABLE[border="0"][width="155"]
 morningnews.co.kr###main_49
 msn.co.kr###frameAD300X250_TOP
 msn.co.kr###frameAD300X60_1
+msn.co.kr###frameLeftShop
 msn.com##.tickler
 msn.com##IMG[width="174"][height="20"]
 mt.co.kr###ad_mtinfo
@@ -1030,6 +1028,7 @@ news.hankyung.com##P[style="margin: 0pt 20px 0pt 19px;"]
 news.joins.com###eventSide
 news.joins.com###eventSide_new
 news.kukinews.com##[style="width: 260px; padding: 15px 0pt 10px;"]
+news.msn.co.kr##TABLE[width="300"][height="250"][align="center"]
 news.naver.com##[style="margin: 0pt; padding: 0pt; position: relative; width: 222px; height: 250px; z-index: 10;"]
 news.naver.com##[style="position: relative; width: 222px; height: 250px; margin: 0pt; padding: 0pt; z-index: 10;"]
 news.naver.com##table[border="0"][width="114"]
@@ -1151,6 +1150,7 @@ tvreport.co.kr##.ad_one_line
 tvreport.co.kr##TABLE[bgcolor="#cccccc"][width="668"]
 ugn.kr##[width="204"][height="300"]
 unionpress.co.kr##td[valign="top"][height="265"]
+vaccine.myfolder.net##[style="background-color: white; padding: 5px;"]
 vanchosun.com###draggable1
 weatheri.co.kr###ad_Comm_250250
 web.reviewstar.net##.link_dajaba
