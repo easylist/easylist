@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: roD2v39DCj4Q71x0pC+cng
+! Checksum: D7Eh5tBKUnCmEMFgacqUog
 ! Fanboy Adult/Dating Blocking
 ! Version: 023B Updated: 26 Jan 2010
 ! This list expires after 5 days
@@ -48,6 +48,7 @@
 /floaty_rotator
 /friendfinder_
 /galleries/banners/*
+/gam_ad_
 /geobox.html
 /getmdhlink.
 /gui2/mubanner
@@ -106,6 +107,7 @@ LargeFlashAd.js
 ||ads.4tube.com^$third-party
 ||ads.amateurmatch.com^$third-party
 ||ads.brazzers.com^$third-party
+||ads.julesjordanvideo.com^
 ||ads.kaktuz.net^$third-party
 ||ads.pleasuregirl.net^$third-party
 ||ads.pornhub.com^$third-party
@@ -117,6 +119,7 @@ LargeFlashAd.js
 ||ads.xhamster.com^
 ||adult-profit-files.com^
 ||adult3dcomics.com^$third-party
+||adultadvertising.net^$third-party
 ||adultadworld.com^$third-party
 ||adultcity.tv/popad
 ||adultfriendfinder.com^$third-party
@@ -149,6 +152,7 @@ LargeFlashAd.js
 ||banners.sexsearch.com^$third-party
 ||banners.webcams.com^$third-party
 ||bans.bride.$third-party
+||bbp.brazzers.com^$third-party
 ||blog.br/action/tools/coMesWin
 ||brandreachsys.com^
 ||bullz-eye.com/pictureofday/
@@ -209,11 +213,11 @@ LargeFlashAd.js
 ||erotizer.info^$third-party
 ||euro4ads.de^$third-party
 ||exchangecash.de^$third-party
+||exclusivepussy.com^$third-party,subdocument 
 ||exgirlfriendmarket.com/img2/ad/
 ||exit.macandbumble.com^$third-party
 ||fapgames.com/videoads/
-||feeds.videosz.com/iframe/
-||feeds.videosz.com/xml/wall.php?
+||feeds.videosz.com^$third-party,subdocument
 ||femjoy.com/bnrs/$third-party
 ||fifialfa.com/images/sexmix$third-party
 ||filecabi.net/crons/friends-
@@ -222,6 +226,7 @@ LargeFlashAd.js
 ||fileporn.org/aff/
 ||fileporn.org/banner
 ||filezexpress.info^$third-party
+||flashmediaportal.com^*/adCampaigns/$third-party
 ||fleshlight.com^$third-party
 ||fleshlightgirls.com^$third-party
 ||fling.com^$third-party
@@ -236,13 +241,13 @@ LargeFlashAd.js
 ||gallery.g-cash.biz/potd/
 ||geo.camazon.com^$third-party
 ||geoinventory.com^$third-party
+||getiton.com^$third-party
 ||ggwcash.com^$third-party
 ||girlsgonewild.com/maintour.
 ||girlsofdesire.org/banner/
 ||gl-cash.com^
 ||glam.com^*/affiliate/
 ||glamour.cz/banners/$third-party
-||glean.pop6.com^$third-party
 ||hardsextube.com/ads-
 ||hardsextube.com/preroll/
 ||hipals.com/cgi-bin/
@@ -338,6 +343,7 @@ LargeFlashAd.js
 ||otcash.com/images/
 ||outils.f5biz.com^$third-party
 ||outster.com^$third-party
+||paid-to-promote.net^$third-party
 ||partner.loveplanet.ru^$third-party
 ||partnercash.de^$third-party
 ||partners.heart2heartnetwork.$third-party
@@ -351,9 +357,11 @@ LargeFlashAd.js
 ||pixxtra.com/js/popup.js
 ||placepictures.com/Frame.aspx?
 ||poonproscash.com^
+||pop6.com^$third-party
 ||porn-hitz.com^$third-party
 ||porn-site-builder.com^$third-party
 ||pornbb.org/adsnov.
+||pornbb.org/posts_ad
 ||pornkings.com^$third-party
 ||pornlove.org^*/js/awe$script
 ||pornoprinzen.com/banners_
@@ -442,8 +450,9 @@ LargeFlashAd.js
 ||titsintops.com/intersitial/
 ||tizernet.com/engine.php?
 ||tnaflix.com/view_page_top_
-||tools.todowebcams*
+||tools.todowebcams
 ||topbucks.com^$third-party
+||tossoffads.com^$third-party
 ||totem.porkolt.com^$third-party
 ||totemcash.com^$third-party
 ||tours.imlive.com^$third-party
@@ -484,6 +493,7 @@ LargeFlashAd.js
 ||wildamaginations.com/mdm/
 ||wildmatch.com^$third-party
 ||worlddatinghere.com^$third-party
+||wsex.com/mediaserver/
 ||wtfpeople.com/banners_
 ||x-adservice.com^$third-party
 ||xcabin.net/b/
@@ -498,6 +508,7 @@ LargeFlashAd.js
 ||xxxcounter.com^$third-party
 ||xxxporntalk.com/images/
 ||xxxstash.com/ads/
+||xxxwebtraffic.com^$third-party
 ||yamanoha.com^$third-party
 ||yourdatelink.com/IPFrame.aspx?
 ||yx0banners.com/
@@ -506,13 +517,21 @@ LargeFlashAd.js
 ||zozocash.biz/go/$third-party
 ||zxxds.net^
 !
-!---------- Element Hiding Rules ----------
+!---------------------- Adult Whitelists ----------------------
+!
+@@.hshare.net/adimages/
+@@/ffadult/passion/ad_passion*$image,background
+@@|http://4fuckr.com/js/adframe.js
+@@|http://ads.svx.adbrite.com/adserver/*$domain=g.e-hentai.org,image
+@@|http://www.xxxporntalk.com/images/xxxpt-chrome.jpg
+@@||gdataonline.com/exp/$script
+!
+!---------------------- Adult Hiding Rules ----------------------
 !
 ###AFF_popup
 ###FFN_imBox_Container
 ###floatyContent
 ###im_popupDiv
-##.adbckgrnd
 ##[alt^="Fuckbook"]
 ##[href^="http://www.myfreepaysite.com/sfw.php?aid"]
 ##[href^="http://www.myfreepaysite.com/sfw_int.php?aid"]
@@ -522,9 +541,6 @@ LargeFlashAd.js
 ##[src^="http://groovybus.com/gbbanner"]
 ##[src^="http://www.groovybus.com/gbbanner"]
 ##A[href^="http://cinema.friendscout24.de?"]
-!
-!----------Site Specific Element Hiding Rules ----------
-!
 4chan.org###ad
 4chan.org##[src^="http://static.4chan.org/title/"]
 4fuckr.com###layer
@@ -575,6 +591,8 @@ imagevenue.com###overlayBg
 imagevenue.com##iframe[width="728"][height="90"]
 io9.com###skyscraper
 itsatechworld.com##.topd
+julesjordanvideo.com##.horiz_banner
+julesjordanvideo.com##.vertical_banner
 laweekly.com###perswrap
 liveleak.com###j_ad
 liveleak.com##.j_b
@@ -590,6 +608,9 @@ news.com.au###match-widget
 ns4w.org##.livejasmine
 ocweekly.com###perswrap
 phoenixnewtimes.com###perswrap
+picfoco.com##.inner_right
+picfoco.com##a[title="Sponsor link"]
+picfoco.com##table[border="0"][width="728"]
 pimplicious.com###divFlashTeaser
 popporn.com##.top-banner
 pornbb.org##.a1
@@ -601,6 +622,7 @@ protectlinks.com###mouselayer
 ratemyexgf.com###top-leaderboard
 riverfronttimes.com###perswrap
 seattleweekly.com###perswrap
+sensualwriter.com##DIV[style="width: 100%; background-color: rgb(255, 255, 225); height: 24px; border-bottom: 1px solid rgb(128, 128, 128);"]
 sfweekly.com###perswrap
 smokingifs.com###horizbanner
 smokingifs.com##.headerad
@@ -629,6 +651,7 @@ torrentreactor.to###banner_box
 uploading.com##.c_2
 wankersplace.com##.adv-300
 westword.com###perswrap
+wide6.com###partners
 worldgatas.com###topbar
 wunbuck.com##.ad_row
 wunbuck.com##.banner_cell
@@ -642,12 +665,3 @@ youporn.com###ft-ad-1
 youporn.com###main-ad
 youporn.com###moreVideosTabview3
 youporn.com###producer
-!
-! ---------- Whitelists ----------
-!
-@@.hshare.net/adimages/
-@@/ffadult/passion/ad_passion*$image,background
-@@|http://4fuckr.com/js/adframe.js
-@@|http://ads.svx.adbrite.com/adserver/*$domain=g.e-hentai.org,image
-@@|http://www.xxxporntalk.com/images/xxxpt-chrome.jpg
-@@||gdataonline.com/exp/$script
