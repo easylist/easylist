@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: Iuf4Gu7yJXFg32O6ZcJJmQ
+! Checksum: cNmYfzLikR3zVp0of8CgUQ
 ! Fanboy's Korean-addon Adblock list 
 ! Version: 023B Updated: 09 Feb 2010
 ! This list expires after 5 days
@@ -16,7 +16,7 @@
 .ems/site
 .joins.com^*/ad/*
 .kr/ad.js
-.kr/ads/*$script,subdocument
+.kr/ads/*$script,subdocument,image
 .kr/adview/
 .kr/banner/
 .kr/BannerView.htm?
@@ -24,6 +24,7 @@
 .kr/img/ad/
 .kr/img/skin1/ad.
 .kr/js.kti/
+.kr/js/ad/
 .kr/RealMedia/
 .kr/site/AD/
 .nate.com^*_banner_
@@ -37,6 +38,7 @@
 /ad/gmarket_
 /ad/hk_news_sponsor_view.htm
 /AD/PhotoAD.
+/ad_controller.jsp?
 /ad_img/*
 /ad_impress_
 /ad_linkprice.
@@ -64,6 +66,7 @@
 /common/ad/*
 /common/ad250
 /common/banner.html?
+/common/linkspot/*
 /common_ad.jsp?
 /common_ad3_
 /common_ad5_
@@ -240,6 +243,7 @@ http://adm.
 ||aladdin.co.kr/ad_
 ||aladdin.co.kr/part/$third-party
 ||albamonkorea.com^$third-party
+||allblog.net/banner/
 ||allblog.net/allblet
 ||alldic.nate.com/dic_
 ||am7.munhwa.com^
@@ -247,6 +251,7 @@ http://adm.
 ||andongtv.com/flash/*$object
 ||andongtv.com^*/banner
 ||andongtv.com^*_banner
+||answerzone.co.kr^*/banner
 ||asiae.co.kr/upload/banner/
 ||askpop.com^$third-party
 ||atfile.com/*main_banner
@@ -386,6 +391,7 @@ http://adm.
 ||francezone.com/banner/
 ||freechal.com/banner/
 ||freechal.com/File/Banner/
+||funddoctor.co.kr^*/banner
 ||gabia.net^$third-party
 ||gather.hankyung.com^
 ||gather.ihani.co.kr^
@@ -606,6 +612,7 @@ http://adm.
 ||ntomap.com^$third-party,script
 ||ohmynews.com/NWS_Web/Ad_
 ||ondisk.co.kr^*/linkprice/
+||openblog.com^*/banner/
 ||paoin.com^*/overture/$third-party
 ||parkoz.com/thumb_slide.swf
 ||parkoz.com^*/sponsor/
@@ -618,6 +625,7 @@ http://adm.
 ||people.joins.com^*/banner
 ||play.tagstory.com/floating/adv
 ||play.tagstory.com/infoboard/
+||plaync.co.kr^*_promotion.
 ||polinews.co.kr/banner_
 ||polnews.co.kr/br/*
 ||pops.ationnet.com^$third-party
@@ -807,6 +815,9 @@ http://adm.
 ##.promotionSpot
 ##.TD_htmlbox
 119.205.209.206##[style="width: 100%; margin: 0pt 0pt 10px;"]
+answerzone.co.kr##[style="border: 2px solid rgb(119, 119, 119);"]
+answerzone.co.kr##[style="cursor: pointer; display: block; width: 200px; height: 200px;"]
+answerzone.co.kr##[style="cursor: pointer; display: block; width: 200px; height: 60px;"]
 asiae.co.kr###CmAdView
 asiae.co.kr###rightad
 asiae.co.kr##.naver_ad
@@ -938,6 +949,10 @@ donga.com##[style="font-family: Dotum; font-size: 14px; letter-spacing: 0px; pad
 donga.com##table[width="200"][height="200"]
 donga.com##TABLE[width="250"][cellspacing="1"]
 dreamwiz.com###dwSmallAdvertising
+dt.co.kr##.ad_group
+dt.co.kr##.bohum
+dt.co.kr##.adtl
+dt.co.kr##.adtr
 dt.co.kr###premiumlink
 dt.co.kr##.last_bohum
 dt.co.kr##.premiumlink
@@ -1405,6 +1420,8 @@ web.reviewstar.net##td[width="30%"][style="padding-right: 60px;"]
 winz.co.kr##table[width="210"][height="110"]
 wownet.co.kr##table[align="center"][width="210"]
 wownet.co.kr##td[align="center"][style="padding: 10px 0pt;"]
+yahoo.co.kr##.wrap_banner
+yahoo.co.kr##.wrap_sponsor
 y-star.co.kr##.ad236154_cover
 y-star.co.kr##.b23680_cover
 yonhapnews.co.kr##iframe[width="234"][height="150"]
@@ -1434,8 +1451,10 @@ zdnet.co.kr##TABLE[width="300"]
 .com/logger/
 .kr/js/logging
 .kr/weblog/
+.kr/wlo.js
 .weblogger.js|
 /click_stat.html?
+/common/logger/*
 /fn_ndrclick.js|
 /hanbiro.js|
 /img_cnt/*
@@ -1443,7 +1462,10 @@ zdnet.co.kr##TABLE[width="300"]
 /lcslog.js?
 /log/setHist.html
 /log_access2.php?
+/log_viewcount.jsp?
+/logcheck.cgi?
 /logging.js|
+/nethru_weblog/*
 /overture.html?
 /overture.js|
 /popup_item_inc.asp?
@@ -1456,8 +1478,11 @@ zdnet.co.kr##TABLE[width="300"]
 /weblog_trace.js|
 /WiseLogCookie.js|
 /wt-script.js|
+_clickzone.tsp?
+_clickzone.js?
 _js.php?REFERER_URL=
 _logger.js|
+_webtrack.js
 http.or.kr/HTTP_$third-party
 ||116.125.124.11^$third-party
 ||118.107.167.83^$third-party
@@ -1481,6 +1506,7 @@ http.or.kr/HTTP_$third-party
 ||mk.co.kr/mklog.js
 ||mk.co.kr^*.php?no=
 ||mousedot.com^$third-party
+||nanuminet.com/gm_log/
 ||newsen.com/gm_log/
 ||pv.humoruniv.com^
 ||speedbank.co.kr^*/logger.js
