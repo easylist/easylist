@@ -46,6 +46,19 @@ if ($checksum eq $oldchecksum)
 	exit 0;
 }
 
+# Update the date.
+my @months = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
+$year += 1900; # Year is years since 1900.
+my $todaysdate = "$mday $months[$mon] $year";
+$data =~ s/(^.*#.*Updated:\s*)(.*)\s*$/$1$todaysdate/gmi;
+
+# Recalculate the checksum as we've altered the date.
+$checksumData = $data;
+$checksumData =~ s/\r//g;
+$checksumData =~ s/\n+/\n/g;
+$checksum = md5_base64($checksumData);
+
 # Insert checksum into the file
 $data =~ s/(\r?\n)/$1# Checksum: $checksum$1/;
 
