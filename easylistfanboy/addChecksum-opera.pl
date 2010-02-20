@@ -23,6 +23,10 @@ die "Usage: $^X $0 subscription.txt\n" unless @ARGV;
 my $file = $ARGV[0];
 my $data = readFile($file);
 
+# Get existing checksum.
+$data =~ /^.*#\s*checksum[\s\-:]+([\w\+\/=]+).*\n/gmi;
+my $oldchecksum = $1;
+
 # Remove already existing checksum
 $data =~ s/^.*#\s*checksum[\s\-:]+([\w\+\/=]+).*\n//gmi;
 
@@ -35,6 +39,12 @@ $checksumData =~ s/\n+/\n/g;
 
 # Calculate new checksum
 my $checksum = md5_base64($checksumData);
+
+# If the old checksum matches the new one bail.
+if ($checksum eq $oldchecksum)
+{
+	die "Checksums match...";
+}
 
 # Insert checksum into the file
 $data =~ s/(\r?\n)/$1# Checksum: $checksum$1/;
