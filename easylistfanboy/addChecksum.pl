@@ -43,7 +43,7 @@ my $checksum = md5_base64($checksumData);
 # If the old checksum matches the new one bail.
 if ($checksum eq $oldchecksum)
 {
-	die "Checksums match...";
+	exit 0;
 }
 
 # Insert checksum into the file
