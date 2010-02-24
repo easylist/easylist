@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: jM6X1ejV75oodzJMHnMIyA
-! Fanboy's Adblock list 
-! Version: 023B Updated: 10 Jan 2010
+! Checksum: L035LKMHH44ZcZuWfPFXBw
+! Fanboy's Spanish Adblock list 
+! Version: 023B Updated: 25 Feb 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -158,12 +158,17 @@ publicidade.swf
 ||zahir2.aeiou.pt^
 ||zahirx.aeiou.pt^
 ||zap.com.br/parceiros/
-! Whitelist
+!
+! ---------- Spanish Whitelist Rules ----------
+!
+@@/banner/banner_$domain=bci.cl
 @@||adserver.getwebs.org/delivery/ajs.php?$domain=onlyheavymetal.mi-web.es,script
 @@||diariosigloxxi.com/banners/logo_
 @@||extraconfidencial.com/js/*$object
 @@||pagead2.*/show_ads.js|$domain=onlyheavymetal.mi-web.es,script
-! Elements
+!
+! ---------- Generic Spanish Element Hiding Rules ----------
+!
 ###ad_publicidad
 ###barraPublicidade
 ###liBannerDireita
@@ -172,7 +177,9 @@ publicidade.swf
 ###queTooltip
 ###topopublicidade
 ##.publicidade
-##DIV[class$="publicidad_middle"]
+!
+! ---------- Spanish Site Specific Hiding Rules ----------
+!
 123.cl###banner_160_600
 123.cl##.banner300x160
 123.cl##.banner300x250
