@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: l0DPLMdx2m4vxB+DWmL9aA
+! Checksum: ZnMxml0cXfKNUB2DXAiw9A
 ! Fanboy's Korean-addon Adblock list 
 ! Version: 023B Updated: 5 Mar 2010
 ! This list expires after 5 days
@@ -23,8 +23,8 @@
 .com/adv/
 .com/js.kti/
 .ems/site
-.joins.com^*/ad/*
 .joins.com/tvad/$~third-party
+.joins.com^*/ad/*
 .kr/ad.js
 .kr/ads/*$script,subdocument,image
 .kr/adview/
@@ -189,6 +189,7 @@
 /tracker_ad.jsp?
 /tracker_ad.tsp?
 /travel_ban.swf?
+/weblogtag_sdc.js|
 /wisenut_shopping.
 /WisenutAD/*
 /wp_ads_
@@ -227,9 +228,9 @@ http://adm.
 ||210.116.119.230^$third-party
 ||210.127.209.138^$third-party
 ||210.127.209.240^$third-party
-||211.45.37.49^$third-party
 ||211.106.66.62^$third-party
 ||211.110.211.29^$third-party
+||211.45.37.49^$third-party
 ||211.76.154.35^$third-party
 ||222.122.158.25/1/$third-party
 ||247realmedia.co.kr^$third-party
@@ -454,8 +455,8 @@ http://adm.
 ||diodeo.com/partner/$subdocument
 ||diodeo.com^*/adv/
 ||diodeo.com^*_ad.
-||dipts.com/ad/
 ||dipts.com/_js/ad
+||dipts.com/ad/
 ||dmcmedia.co.kr^$third-party
 ||donga.com/img/bn_
 ||donga.com/news/*_banner
@@ -603,8 +604,8 @@ http://adm.
 ||jgolfi.joins.com^*/banner/
 ||jisungin.com^$third-party
 ||jjangdisk.com^$third-party
-||jknews.co.kr/ad/
 ||jknews.co.kr/^*script/ad.js
+||jknews.co.kr/ad/
 ||joins.com/*_tm11_on.gif
 ||joins.com/?type$script
 ||joins.com/_data/images/cleanoffice/*113711203.jpg
@@ -826,8 +827,8 @@ http://adm.
 ||simfile.chol.com/event/
 ||siminilbo.co.kr/ads/
 ||siren24.com^$third-party,subdocument,image
-||sisajb.com^*/BANNER_
 ||sisain.co.kr^*/viewbanner.
+||sisajb.com^*/BANNER_
 ||sisamail.com/banner/
 ||sisanews.kr^*/banner/
 ||sisatoon.kr^*/images/389/
@@ -1122,8 +1123,8 @@ dipts.com##A.a36
 dipts.com##div[style="position: absolute; z-index: 2; margin: 0px; padding: 0px;"]
 dipts.com##table[border="0"][width="250"][height="200"]
 dipts.com##table[cellpadding="10"][width="250 height=220"]
-dipts.com##TABLE[width="560"][height="80"]
 dipts.com##TABLE[cellpadding="9"][width="250 height=220"]
+dipts.com##TABLE[width="560"][height="80"]
 dns.paran.com##.mBox.mPL
 dns.paran.com##.mBox.mShort
 dns.paran.com##.mBox.mSpon
@@ -1485,8 +1486,8 @@ newswave.kr##[style="padding-bottom: 30px;"]
 newsway.kr##SPAN[style="font-size: 12pt; color: black;"]
 ntn.seoul.co.kr##[style="float: right; width: 250px; height: 250px; padding: 0px 0px 0px 10px;"]
 ntn.seoul.co.kr##[width="70"][height="140"]
-ohmynews.com##.yigajfyuggkyrxisxite
 ohmynews.com###aspnetForm
+ohmynews.com##.yigajfyuggkyrxisxite
 ohmynews.com##TABLE[style="border: 1px solid rgb(207, 207, 207);"]
 outlink.co.kr##.bgcolor_ad
 paran.com###bannerCont
@@ -1661,6 +1662,7 @@ zdnet.co.kr##TABLE[width="300"]
 !
 !---------------------- Korean Trackers ----------------------
 !
+&OV_REFFER
 .co.kr/admin/ylog/ylog_
 .co.kr/analysis.js|
 .co.kr/log_
@@ -1796,7 +1798,6 @@ zdnet.co.kr##TABLE[width="300"]
 :8080/?uid=$image,script
 =getOverture&keyword=
 ?OV_REFFER
-&OV_REFFER
 ?siteCode=
 _acecounter.
 _clickzone.js?
