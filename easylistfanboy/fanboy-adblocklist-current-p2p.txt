@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: M5otA2/uA3qlwrmCbp6Zxw
+! Checksum: 1U+WWpLTEvVzqoV1tRPSug
 ! Fanboy P2P-Cleanup Blocking Alpha
-! Updated: 21 Mar 2010
+! Updated: 22 Mar 2010
 ! This list expires after 7 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -33,6 +33,7 @@
 |http://www.ebookshare.net/pages/*$subdocument
 |http://www.p2pnet.net/images/*$image
 ||cdcovers.cc/images/external/toolbar$image
+||banners.videosz.com^$third-party
 ||demonoid.com/cached/ab_$subdocument
 ||demonoid.com/cached/bnr_
 ||extratorrent.com/images/other/
@@ -157,22 +158,19 @@ torrentz.com##IFRAME[width="300"][height="250"]
 torrentz.com##IFRAME[width="728"][height="90"]
 torrentzap.com##.ndl2
 twistedtorrents.com##TABLE.main[border="1"]
+torrentbit.nl##[rel="external nofollow"]
 vertor.com##.downweb
 warez.com##.linkListRow
 xspyz.com###__001.sub_details
 xspyz.com###adv_config
 xspyz.com##.adHeadline
-xspyz.com##.mainparagraph 
+xspyz.com##.mainparagraph
+torrentdownloads.net##[method="get"] + .heading
+torrentdownloads.net##.heading + .torrentlist
 zoozle.net##.infobalken22
 !
 !---------- Not Optimised ----------
 !
-thepiratebay.org##A[href="http://vio.thepiratebay.org/"]
-thepiratebay.org##DIV[align="center"][style^="color: rgb(123, 82, 57);"]
-torrentbit.nl##A[href^="http://go.scrubbu.com/"]
-torrentdownloads.net##*[action="http://www.torrentdownloads.net/search/"] + * + *.heading + DIV.torrentlist
-torrentdownloads.net##*[action="http://www.torrentdownloads.net/search/"] + BR + DIV.heading
-torrentdownloads.net##.search + DIV.heading
 torrentdownloadz.com##IMG[src^="http://banners.videosz.com/customers/"]
 torrentgamez.com##DIV[id^="adv_"]
 torrenthub.org##*#content-frame > *.content-block-title + DIV
