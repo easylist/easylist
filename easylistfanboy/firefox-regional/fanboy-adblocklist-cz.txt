@@ -1,11 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: 5Q16rpsOeOxiOXzZzomMhg
+! Checksum: +gcDCAyNl4eA8bMnBK9HqA
 ! Fanboy's Czech-addon Adblock list 
-! Version: 023B Updated: 10 Jan 2010
+! Version: 023B Updated: 23 Mar 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
 !
+###ad_img_banner
 ###adcontextlinks
 ###advert-ahead
 ###advert-stickysky
@@ -23,6 +24,7 @@
 ##.advert-label
 ##.etarget
 ##.jobs-ad-box
+##.popisreklama
 ##.reklama.box
 ##.reklama_ahead
 ##.reklama_square
@@ -30,6 +32,7 @@
 ##.reklamaBottom
 .cz/banners/
 .cz/bannery_
+.cz/files/reklama/
 .cz/images/banners/
 .cz/img/banner
 .cz/reklama/
@@ -46,6 +49,7 @@
 /img/reklama/*
 /img/reklama_
 /ImgLib/bannery/*
+/getbanner.aspx?
 /reklama-
 /reklamy.
 /scripts/clickjs
@@ -53,18 +57,34 @@
 /site-advert.js
 /x-cz/rek/*
 _clickthru.swf?
+autoesa.cz###bannerPopup
+autorevue.cz###bnrstl
 autorevue.cz###bnrtop
 autorevue.cz##.banner
+businessworld.cz###skyscraper
+businessworld.cz##.banner
+businessworld.cz##.square_banner
 cdr.cz##.not4bbtext
 centrum.cz###top-banner
 centrum.cz##.container-adfox.container
-ceskenoviny.cz##.rrg2.reklama
+ceskenoviny.cz##.reklama
+ceskenoviny.cz##.hypertexty
+computerworld.cz###skyscraper
+computerworld.cz##.banner
+computerworld.cz##.jobscz
+computerworld.cz##.square_banner
 digiarena.zive.cz##[style="padding: 0pt 45px 10px; text-align: center;"]
 diit.cz##.advert-center_468x60
 diit.cz##.jobsBox
+diit.cz##.leftbox-main
+extrawindows.cnews.cz###block-block-1
+extrawindows.cnews.cz###block-block-2
+extrawindows.cnews.cz###block-block-5
+financninoviny.cz##.hypertexty
 google.cz###mbEnd
 google.cz###tads
 idnes.cz###advert
+idnes.cz###r-billboard
 idnes.cz##.ahead
 idnes.cz##.col-r
 idnes.cz##.widesquare
@@ -75,12 +95,14 @@ mediafax.cz##.bannercauta
 mediafax.cz##.casetaright
 mesec.cz###jobs
 naseadresa.cz###bannersPanel
+naseadresa.cz##.advertAlignBoxSpec
 naseadresa.cz##.homeAdvertisement
 nova.cz###bb_wallpaper
 nova.cz###bbbanner_big_1
 nova.cz###bbbanner_big_2
 nova.cz###bbbanner_big_3
 nova.cz###header_adv_wrap
+nova.cz###pr_banner_container
 nova.cz###square_banner
 nova.cz###square_banner_2
 nova.cz##.ad_hyper_wrap
@@ -88,7 +110,11 @@ nova.cz##.ad_ttl
 nova.cz##.ad_wrap
 nova.cz##.pr_box
 novinky.cz###adSkyPosition
-tyden.cz##.reklama.showreklama
+pcworld.cz###skyscraper
+pcworld.cz##.banner
+pcworld.cz##.jobscz
+securityworld.cz##.banner
+tyden.cz##.reklama
 volny.cz##[style="padding: 4px; font-size: 11px; background-color: rgb(246, 248, 234);"]
 zive.cz###adrtextframe
 zive.cz###hacksqr
@@ -99,6 +125,7 @@ zive.cz##.box.box-gray.banner-box
 ||ad.adfox.cz^$third-party
 ||ad.seznam.cz^$third-party
 ||advantage.as^$third-party
+||autoesa.cz/files/bannery/
 ||banners.onebit.cz^$third-party
 ||data.idnes.cz/soutez/
 ||dot.idot.cz^$third-party
@@ -109,10 +136,14 @@ zive.cz##.box.box-gray.banner-box
 ||intext.lookit.cz^$third-party
 ||n.hyperinzerce.cz^
 ||naseadresa.cz^*/flash/baner
+||naseadresa.cz/cz/$subdocument
+||observer.cz^$third-party
+||out.sklik.cz^$third-party
 ||out-ng.sklik.cz^$third-party
 ||p1.naj.sk^
 ||parabola.cz/img_inzerent/flash_
 ||script.zebricek.cz^$third-party
 ||seznam.cz/ad/
+||stat.sport.cz^
 ||stat.novinky.cz^$third-party
 ||waudit.cz^$third-party
