@@ -13,12 +13,13 @@ perl addChecksum.pl fanboy-adblocklist-cz.txt
 :: RUS
 perl addChecksum.pl fanboy-morpeh-rus.txt
 :: Firefox Regional lists
-perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus.txt
-perl addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
-perl addChecksum.pl firefox-regional\fanboy-adblocklist-krn.txt
-perl addChecksum.pl firefox-regional\fanboy-adblocklist-jpn.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-esp.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-jpn.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-krn.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-swe.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-tky.txt
 :: Opera
 :: test
