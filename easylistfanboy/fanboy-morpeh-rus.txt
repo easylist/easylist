@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: FVMVQbyivt7Wp9sPqs0Pzg
+! Checksum: 3kF5hyD1UteIwFpiMj7Ijw
 ! NOTE: This file is a combination of multiple subscriptions
 ! Updated: 9 Apr 2010
 !
@@ -2218,6 +2218,8 @@ zr.ru##DIV.br
 /adcompany
 /adContent.
 /adcount.
+/adcreative/*
+/adcycle.
 /adengage
 /AdEngine/*
 /adentry.
@@ -2325,6 +2327,7 @@ zr.ru##DIV.br
 /ADSAdClient31.dll?
 /adscontent2.
 /adscript.php?
+/adScroll.
 /adsEnd.js
 /adsense-*.js
 /adsense.$script,image
@@ -2354,6 +2357,7 @@ zr.ru##DIV.br
 /adsmodules/*
 /adsnew/*
 /adsonar.js?
+/adsOpenx/*
 /adspace
 /adsrc.html?
 /adsremote.
@@ -2375,6 +2379,7 @@ zr.ru##DIV.br
 /ADTECH;
 /adtech_ad
 /adtext4
+/adtext_vert
 /adtomo/www/*
 /adtrack
 /adunit.
@@ -2643,6 +2648,7 @@ zr.ru##DIV.br
 /intermrkts.
 /InternetAd/*
 /invideoad.
+/iplgadshow
 /ireel/ad
 /j/ads.js
 /jquery.catfish.js
@@ -2691,6 +2697,7 @@ zr.ru##DIV.br
 /newinserts/*
 /npscroller/*
 /oas/ad/*
+/OAS_Handler.
 /oas_home_
 /OASAdConnector
 /OASAdFrame.
@@ -2848,6 +2855,7 @@ zr.ru##DIV.br
 /swf/banner.swf?
 /swf/bcacudeomodule
 /sys/ban.asp?
+/system/ads/*
 /TabAds/*
 /targetedOffer.jsp?
 /technomedia.
@@ -3321,6 +3329,7 @@ visitor-track.
 ||adsrevenue.net^$third-party
 ||adstogo.com^$third-party
 ||adtaily.com^$third-party
+||adtech.de^$third-party
 ||adtech.panthercustomer.com^$third-party,image
 ||adtechus.com^$third-party
 ||adtegrity.net^$third-party
@@ -3354,6 +3363,7 @@ visitor-track.
 ||affiliserve.com^$third-party
 ||affinity.com^$third-party
 ||affplanet.com^$third-party
+||afterdownload.com^$third-party
 ||afy11.net^$third-party
 ||aglocobanners.com^$third-party
 ||akipress.com/_ban/
@@ -3423,6 +3433,7 @@ visitor-track.
 ||baventures.com^$third-party
 ||bbelements.com^$third-party
 ||bc.coupons.com^$third-party
+||bdr.to/ad/$third-party
 ||belointeractive.com^$third-party
 ||bestofferdirect.com^$third-party
 ||bet365affiliates.com^$third-party
@@ -3549,8 +3560,10 @@ visitor-track.
 ||dynamitedata.com^$third-party
 ||dyncdn.celebuzz.com/assets/
 ||e-planning.net^$third-party
+||eads.to/$third-party
 ||ebannertraffic.com^$third-party
 ||ebayrtm.com/rtm?RtmCmd&*=
+||ebuzzing.com^$third-party
 ||ecommerce-journal.com/specdata.php?
 ||edge-dl.andomedia.com^$third-party
 ||engine.awaps.net^$third-party
@@ -3615,6 +3628,7 @@ visitor-track.
 ||googleadservices.com^$third-party
 ||googlesyndication.com^*/domainpark.cgi?$third-party
 ||gopjn.com/b/$third-party
+||gov-auctions.org/images/banner/banner$third-party
 ||grabmyads.com^$third-party
 ||grapeshot.co.uk^$third-party
 ||hfimage.head-fi.org/sponsors/
@@ -3803,7 +3817,6 @@ visitor-track.
 ||ospreymedialp.com^$third-party
 ||overture.com^$third-party
 ||oxado.com^$third-party
-||p-advg.com^$third-party
 ||p-comme-performance.com^$third-party
 ||p-digital-server.com^$third-party
 ||p2pnet.net/images/
@@ -3835,6 +3848,7 @@ visitor-track.
 ||pntrs.com/b/$third-party
 ||pointroll.com^$third-party
 ||polyad.net^$third-party
+||pomsinoz.com/images/sponsors/
 ||popcap.com/spots/horizontal_
 ||pops.freeze.com^$third-party
 ||popurls.com/ad/
@@ -4197,7 +4211,6 @@ grapevine.is###Side
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
 @@||sp.ltassrv.com.s3.amazonaws.com/crossdomain.xml$domain=animecrazy.net
 @@||superfastfile.com/adimages/$subdocument
-@@||superfastfile.com/adsense.js
 @@||v.fwmrm.net/ad/p/1?$object_subrequest,domain=mlb.com
 @@||video.*user.madbanner.ru^
 @@||video.economist.com/AdFinder.jsp?
@@ -4215,9 +4228,11 @@ grapevine.is###Side
 !---------------------- Anti Adblock ----------------------
 !
 @@||googleads.g.doubleclick.net/pagead/test_domain.js$domain=seeingwithsound.com
+@@||livevss.net/adsense.js|
 @@||pagead2.googlesyndication.com/pagead/expansion_embed.js$domain=seeingwithsound.com,third-party
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=seeingwithsound.com
 @@||seeingwithsound.com/openads/show_ads.js
+@@||superfastfile.com/adsense.js
 @@||theteacherscorner.net/adiframe/jext.js?$script
 ||seeingwithsound.com/noad.gif
 !
@@ -4271,6 +4286,9 @@ grapevine.is###Side
 ###ad-wrap-right
 ###ad-wrapper-728x90
 ###ad-yahoo-simple
+###ad125BR
+###ad125TL
+###ad125TR
 ###ad125x125
 ###Ad160x600
 ###ad160x600right
@@ -4396,6 +4414,7 @@ grapevine.is###Side
 ###adblock
 ###adBlock125
 ###adblockbottom
+###adBlocks
 ###adblocktop
 ###adbnr
 ###adbottom
@@ -4496,6 +4515,8 @@ grapevine.is###Side
 ###ads_sidebar_bgnd
 ###ads_sidebar_roadblock
 ###ads_title
+###ads_top
+###ads_top2
 ###adsBar
 ###AdsContent
 ###adsDiv0
@@ -4525,8 +4546,10 @@ grapevine.is###Side
 ###adSpace2
 ###adspace300x250
 ###adSpace_footer
+###adspace_header
 ###adSpace_right
 ###adSpace_top
+###adspace_top
 ###adspaceBox
 ###adspaceBox300
 ###adSpacer
@@ -4561,6 +4584,7 @@ grapevine.is###Side
 ###adtag
 ###adTag-genre
 ###AdTargetControl1_iframe
+###AdTop
 ###adTop
 ###adtop
 ###adTOPBANNER
@@ -4696,6 +4720,7 @@ grapevine.is###Side
 ###bottomMPU
 ###box1ad
 ###box2ad
+###box_advertisement
 ###box_articlead
 ###boxad
 ###boxad1
@@ -4762,6 +4787,7 @@ grapevine.is###Side
 ###footerAdDiv
 ###footerAds
 ###footerAdverts
+###footerleaderboard
 ###front_mpu
 ###frontlowerad
 ###g-adblock2
@@ -4939,6 +4965,7 @@ grapevine.is###Side
 ###PageLeaderAd
 ###PanelAd
 ###partner-ad
+###phxcms_top_leaderboard
 ###post_adspace
 ###premSpons
 ###product-adsense
@@ -4948,6 +4975,7 @@ grapevine.is###Side
 ###qaSideAd
 ###quigo
 ###quinAdLeaderboard
+###r_ad3_ad
 ###r_adver
 ###rail_ad1
 ###rail_ad2
@@ -5081,6 +5109,7 @@ grapevine.is###Side
 ###top_ads
 ###top_adspace
 ###top_adv-v2
+###top_advert
 ###top_google_ads
 ###top_sponsor_ads
 ###topAD
@@ -5150,6 +5179,8 @@ grapevine.is###Side
 ###yrail_ads
 ##.a160x600
 ##.a728x90
+##.abAdArea
+##.abAdPositionBoxB
 ##.ad-160x600-gallery
 ##.ad-160x600-home
 ##.ad-300-block
@@ -5175,6 +5206,7 @@ grapevine.is###Side
 ##.ad-footer
 ##.ad-google
 ##.ad-hdr
+##.ad-head
 ##.ad-heading
 ##.ad-holder
 ##.ad-home-right
@@ -5262,6 +5294,7 @@ grapevine.is###Side
 ##.ad_block_300x250
 ##.ad_block_338
 ##.ad_bottom_leaderboard
+##.ad_bottomline
 ##.Ad_box
 ##.ad_box
 ##.ad_box2
@@ -5322,11 +5355,13 @@ grapevine.is###Side
 ##.adBlockBottom
 ##.adBlockNext
 ##.adBlockSpacer
+##.AdBody:not(body)
 ##.adborder
 ##.adbottom
 ##.AdBox
 ##.adBox
 ##.adbox
+##.adbox-box
 ##.AdBox7
 ##.adBoxSingle
 ##.adCell
@@ -5363,11 +5398,11 @@ grapevine.is###Side
 ##.adops.textlinks
 ##.adpad300
 ##.adpad300spacer
+##.adposition
 ##.adRectangleUnit
 ##.adRight
 ##.adrow-post
 ##.adrule
-##.Ads
 ##.ads-160-head
 ##.ads-google
 ##.ads-item
@@ -5406,9 +5441,11 @@ grapevine.is###Side
 ##.adSense
 ##.adsense
 ##.adsense-heading
+##.adsense-post
 ##.adsense-title
 ##.adsense-wide-background
 ##.adsenseBlock
+##.adslothead
 ##.adSlug
 ##.adSpace
 ##.adspace
@@ -5483,12 +5520,14 @@ grapevine.is###Side
 ##.AdvertMidPage
 ##.advertRight
 ##.advhere
+##.Advman_Widget
 ##.advt300
 ##.advt720
 ##.advtable
 ##.adWithTab
 ##.adWrap
 ##.adwrap
+##.adWrapper
 ##.adwrapper
 ##.affiliate-sidebar
 ##.affiliateAdvertText
@@ -5530,6 +5569,7 @@ grapevine.is###Side
 ##.bb-adv-160x600
 ##.bb-adv-300x250
 ##.belt_ad
+##.bgAdBlue
 ##.bgnavad
 ##.big-ads
 ##.bigAd
@@ -5545,6 +5585,7 @@ grapevine.is###Side
 ##.blog-ads-container
 ##.blog_ad
 ##.blog_ad_continue
+##.blogArtAd
 ##.blogBigAd
 ##.body_sponsoredresults_middle
 ##.bodyads
@@ -5557,6 +5598,7 @@ grapevine.is###Side
 ##.bottomAds
 ##.bottomleader
 ##.box-ad-a
+##.box-advert-sponsored
 ##.box.ad
 ##.box.ads
 ##.Box2.Ad
@@ -5574,6 +5616,7 @@ grapevine.is###Side
 ##.cbstv_ad_label
 ##.center_ad
 ##.cg_ad_slug
+##.cms-Advert
 ##.CommentGoogleAd
 ##.confirm_ad_left
 ##.confirm_ad_right
@@ -5696,6 +5739,7 @@ grapevine.is###Side
 ##.left_col_ad
 ##.leftad
 ##.leftAds
+##.leftnavad
 ##.LeftTowerAd
 ##.lgRecAd
 ##.live-search-list-ad-container
@@ -5756,6 +5800,7 @@ grapevine.is###Side
 ##.prebodyads
 ##.promo-ad
 ##.promo_border
+##.promoboxAd
 ##.quigo
 ##.quigoads
 ##.quigoMod
@@ -5820,6 +5865,7 @@ grapevine.is###Side
 ##.sidebarBanner
 ##.sidebarboxad
 ##.sideBoxAd
+##.sideBySideAds
 ##.singleAd
 ##.singlead
 ##.singleAdBox
@@ -5845,6 +5891,7 @@ grapevine.is###Side
 ##.spon-links
 ##.spons-link
 ##.sponserLink
+##.sponserlink
 ##.sponsor-ad
 ##.sponsor-links
 ##.sponsor_block
@@ -5885,6 +5932,7 @@ grapevine.is###Side
 ##.tablebordersponsor
 ##.tbl_ad
 ##.text-ads
+##.text_ad
 ##.TextAd
 ##.textad
 ##.textAd3
@@ -5983,6 +6031,7 @@ allergies.emedtv.com##[style="float: right; margin-right: 0px; height: 560px; wi
 allexperts.com###sl
 allexperts.com##TD[height="98"]
 allmusic.com###header_bottom
+allthelyrics.com##[style="padding: 0px 0px 15px;"]
 allthingsd.com###cookie_box
 allwomencentral.com##.featured
 almico.com##[style="margin: 0pt; padding: 0pt; width: 728px; height: 90px;"]
@@ -6064,6 +6113,7 @@ automobilemag.com###ctl00_ctl00_ctl00_tdBannerAd
 autos.aol.com##.squareAdd
 autos.aol.com##.squareAddtwo
 autospeed.com##[style="width: 310px; border: 1px solid rgb(102, 102, 102); background: none repeat scroll 0% 0% rgb(249, 249, 249); margin-right: 6px;"]
+autospeed.com.au##[valign="BOTTOM"][align="RIGHT"]
 autotrader.co.nz###content-banner
 autotrader.co.nz##.cBanner
 autotrader.co.nz##.iFinanceMT
@@ -6078,6 +6128,7 @@ azstarnet.com###topjobs
 azstarnet.com##.bannerinstory
 azstarnet.com##[height="90"][valign="top"][colspan="2"]
 babynamegenie.com##.promo.to-edges
+bankrate.com##.topbanner
 bannedinhollywood.com###topleaderboard
 barrons.com##.boldGreyNine
 bastropenterprise.com##.headerTop
@@ -6104,6 +6155,8 @@ bit-tech.net###skinclick
 bit-tech.net##[style="width: 925px; height: 115px; margin: 0pt auto; text-align: center; background: none repeat scroll 0% 0% rgb(0, 0, 0);"]
 bitmob.com###advert
 bizzywomen.com##.ads
+blackbookmag.com###bb-overlay
+blackbookmag.com###bb-splash
 blogtv.com##.posAbs.BOGL
 blogtv.com##.posRel.BGW.BOGL.TxtC.FB.L0
 blogtv.com##.posRel.txtL.userForeColor.userBoxBG.BOGL
@@ -6128,6 +6181,7 @@ buffalonews.com##.leaderboard_top
 buffalonews.com##[style="padding-bottom: 5px; padding-top: 4px; margin-left: auto; margin-right: auto; height: 90px;"]
 businessinsider.com##.sponsored-post
 businessweek.com###bwMall
+bustedcoverage.com##.rcr-box
 buzznet.com###hitpage-sidebar
 buzznet.com###topSection
 buzznet.com##.box.promo
@@ -6244,6 +6298,8 @@ couriermail.com.au##.group.text-g-cm-news-group-promo-news-pages-right-panel-pc3
 courierpostonline.com,visaliatimesdelta.com,mydesert.com,statesmanjournal.com,thetimesherald.com,burlingtonfreepress.com,poughkeepsiejournal.com,lansingstatejournal.com,press-citizen.com,coshoctontribune.com,coloradoan.com,news-press.com,app.com,fdlreporter.com##.poster-container
 courierpostonline.com,visaliatimesdelta.com,mydesert.com,statesmanjournal.com,thetimesherald.com,burlingtonfreepress.com,poughkeepsiejournal.com,lansingstatejournal.com,press-citizen.com,coshoctontribune.com,coloradoan.com,news-press.com,app.com,fdlreporter.com##.sidebar-related
 cpu-world.com##TD[bgcolor="#f0f0f0"][height="100"]
+cracked.com##.site_sliver
+cracked.com##[style="margin: 0pt 0pt 10px; padding: 10px 0pt 0pt; height: 135px;"]
 cracker.com.au##[style="height: 260px; width: 310px; clear: both; position: relative;"]
 cracker.com.au##[style="height: 590px; width: 170px; clear: both; position: relative;"]
 cracker.com.au##[style="height: 90px; width: 675px; clear: both; position: relative;"]
@@ -6462,6 +6518,7 @@ finance.yahoo.com##.mod-group
 financialexpress.com##.topbanner
 findlocalweather.com##[align="center"][width="140"]
 firstchoice.co.uk##.aprHomeBannerPanel
+fitnessmagazine.com###bannertable
 fitsugar.com###post_ad
 flisted.com##.right-top
 fontstock.net##.left-bottom-banners
@@ -6470,6 +6527,7 @@ foodnetwork.com##.mrec
 foodnetwork.com##.sponslink
 foodprocessorsdirect.com##.zoneWidth100
 fool.com###flash
+fool.com##.sponsoredBy
 fora.tv###common_right_lower_adspace
 fora.tv###common_right_lower_player_adspace
 fora.tv###common_right_right_adspace
@@ -6654,6 +6712,7 @@ independent.co.uk##.box
 indianapublicmedia.org##.med-rect
 indianexpress.com###shopping_deals
 indiatimes.com##.InSkinHide
+indiatimes.com##.midadd
 indiatimes.com##[style="float: left; padding-left: 5px;"]
 info.co.uk###w
 info.co.uk##[style="background: none repeat scroll 0% 0% rgb(234, 241, 252); border-bottom: 5px solid white; border-top: 1px solid rgb(234, 241, 252); padding: 5px;"]
@@ -6671,6 +6730,7 @@ inquirer.net##.fontgraysmall
 inquirer.net##.padtopbot5
 instapaper.com###ad
 instapaper.com###deckpromo
+instructables.com##[style="border-width: 1px; border-style: solid; border-color: rgb(179, 179, 179); width: 650px; text-align: center; margin-left: 2px;"]
 intelligencer.ca###banZone
 intelligencer.ca##.bnr
 internetautoguide.com###ctl00_ctl00_ctl00_tableAdsTop
@@ -6901,6 +6961,7 @@ morningstar.com##.LeaderWrap
 motherboard.tv###banner-right
 mothering.com###header
 mothering.com###sponsor
+motherproof.com###leader
 moviefone.com##.add-text
 moviesplanet.com##.box4.mgtie5min
 moviesplanet.com##.gb
@@ -7139,6 +7200,9 @@ planetxbox360.com###rightCol1
 planetxbox360.com###rightCol3gameHome
 planetxbox360.com##[style="margin: 0px 0pt; padding: 2px; width: 300px; height: 250px;"]
 planetxbox360.com##td[align="center"][height="100"]
+play.tm###lbc
+play.tm###mpu
+play.tm###sky
 player.canalplus.fr###box
 playstationlifestyle.net###rightSkyscraper
 plosbiology.org###topBanner
@@ -7503,6 +7567,7 @@ tmz.com###leaderboard_above
 tmz.com##.quigo-main
 todaystmj4.com###leaderboard1
 tokeofthetown.com###Middle
+tokeofthetown.com###Top
 tomopop.com##[style="width: 330px; overflow: hidden;"]
 tomsgames.com,tomsgames.it###pub_header
 tomsguide.com##.sideOffers
@@ -7778,6 +7843,7 @@ youtube.com###search-pva
 youtube.com###watch-buy-urls
 youtube.com###watch-channel-brand-div
 youtube.com##.ad-div
+youtube.com##.list-view[style="margin: 7px 0pt;"]
 youtube.com##.searchView.list-view
 ytmnd.com###fp_middle
 zam.com###bannerMain
@@ -7838,6 +7904,7 @@ zug.com###header_rotate
 ~outspark.com##.adModule
 ~photobucket.com##.headerAd
 ~playstationlifestyle.net###topAdSpace
+~thecoolhunter.com.au,~thecoolhunter.net##.Ads
 ~tomwans.com##.adright
 ~tphousing.com,~tvgorge.com###ad1
 ~trailvoy.com##.top_ads
@@ -8667,7 +8734,6 @@ LargeFlashAd.js
 ||livejasmin.tv^$third-party
 ||liveleak.com/page_parts/
 ||loveadverts.com^$third-party
-||luxup.ru/show/
 ||lxtrack.com^$third-party
 ||m2.xhamster.com
 ||mallcom.com^$third-party
@@ -9065,10 +9131,7 @@ motherless.com##[href="http://www.seekbang.com/cs/direct/motherless.php"]
 !
 !---------- Rules that would ideally be in a supplemental subscription ----------
 !
-.advg.jp/$third-party
 .dk/eas?
-.fr/RealMedia/
-.hu/banners/
 .lycos.nl/ad/
 .myad.no/
 .pl/reklama/
@@ -9076,18 +9139,6 @@ motherless.com##[href="http://www.seekbang.com/cs/direct/motherless.php"]
 .vn/banner/
 /werbung/*
 /werbung_
-chip.de###adzoneBANNER
-gelbeseiten.de###commercial_ads
-heise.de##.naviad
-heise.de##.online-markt
-heise.de##.teaser_adliste
-mactechnews.de##.ControlsSynCommercial
-maerkischeallgemeine.de###head
-nick.de###fullbanner
-nick.de###skyscraper_right
-nrg.co.il###topBanner
-nrg.co.il##.boxSpacer
-topnews.de##.textwidget
 ||ad-z.de/$third-party
 ||ad.emsn.de^$third-party
 ||ad.gazeta.pl^$third-party
@@ -9125,7 +9176,6 @@ topnews.de##.textwidget
 ||adscale.de^$third-party
 ||adshop.ru^$third-party
 ||adskape.ru^$third-party
-||adtech.de^$third-party
 ||adtext.pl^$third-party
 ||adverticus.de^$third-party
 ||advolution.de^$third-party
@@ -9187,13 +9237,10 @@ topnews.de##.textwidget
 ||oper.ru/data/rennabs/
 ||partner.magna.ru^$third-party
 ||payplay.fm^*/mastercs.js
-||pics.firstload.de^$third-party
-||pics.rbc.ru^
 ||post.rmbn.ru^$third-party
 ||quickads.no^$third-party
 ||reklamer.com.ua^$third-party
 ||rockt.de/ad/init.
-||sher.index.hu/
 ||smartcontext.pl^$third-party
 ||static.terrhq.ru^$third-party
 ||superclix.de^$third-party
@@ -9202,12 +9249,3 @@ topnews.de##.textwidget
 ||traffic4ever.de^$third-party
 ||usemax.de^$third-party
 ||vas.ppro.de^$third-party
-||vietad.vn^$third-party
-||vorratsdatenspeicherung.de/images/Akvs
-||webads.nl^$third-party
-||xban.walla.co.il^$third-party
-||xtractor.no^$third-party
-||yadro.ru/ad/
-||yahoo.co.jp/js/sq.js
-||yourlayer.de^$third-party
-||zdnet.de/ads/
