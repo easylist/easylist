@@ -19,6 +19,7 @@ perl addChecksum.pl firefox-regional\fanboy-adblocklist-esp.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-jpn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-krn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus-v2.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-swe.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-tky.txt
 :: Opera
