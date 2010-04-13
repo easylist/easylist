@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: NjmPcM0fUn7qixRIn/4MsA
+! Checksum: A13ui/+4LfsNtYJWfYDwiQ
 ! Updated: 13 Apr 2010
 !
 *.bannerbank.ru/bb.cgi?*
@@ -41,7 +41,6 @@
 @@|http://spi.domainsponsor.com/images/*
 @@|http://static.europe.own3d.tv/player/flowplayer.swf
 @@|http://static.liverail.com/libas3/*
-@@||google-analytics.com^$domain=presonus.com,script
 advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
 ag.ru##DIV#rotating_banners:first-child
@@ -162,8 +161,8 @@ gismeteo.com,gismeteo.ru##DIV[class^="container rian_block"]
 goldenbank.kiev.ua##BODY > TABLE TABLE:first-child + * + TABLE DIV:first-child + * + TABLE.Verdana10 TD:first-child + * + * + TD:last-child
 goldenbank.kiev.ua##TABLE.mag_tab
 goldtraf.su^
-google.com,google.ru##DIV#tads
-google.com,google.ru##TABLE#mbEnd
+google.com,google.ru###tads
+google.com,google.ru###mbEnd
 habrahabr.ru##DIV.banner
 hardwareportal.ru,hwp.ru##DIV[class*="tbann"]
 hardwareportal.ru,hwp.ru##DIV[class^="promo"]
@@ -227,8 +226,6 @@ lostfilm.tv##A[href="http://romyl.ru"]
 macovod.net##DIV#top-band-2
 macradar.ru##DIV.reclame
 macradar.ru/*_ad.
-mail.google.com##DIV.nH.mq
-mail.google.com##div[class~="oM"]
 mail.rambler.ru##DIV#banner-right
 mail.ru##DIV#agentToolbarId.agentToolBar[style]
 mail.ru##DIV#eurosport
@@ -316,8 +313,8 @@ radikal.ru##BODY > NOINDEX > A + TABLE > TBODY > TR:first-child > TD:first-child
 radikal.ru##DIV.inner-box
 rambler.ru##DIV.r--b728
 rambler.ru##DIV.rb--TopTeaser
-rbc.ru##DIV.fullContainer > DIV[class^="pseudo"] > DIV.header:not(.layout):first-child
-rbc.ru##DIV.topBanner
+rbc.ru##.topBanner
+rbc.ru##.banner
 rg-be.ru
 rl-team.net##DIV.border_all.tiban
 rl-team.net##DIV[style="overflow: hidden; background-color: rgb(252, 247, 221); width: 100%; display: block; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 13px; color: rgb(51, 102, 204); padding-bottom: 5px;"]
@@ -563,15 +560,14 @@ zr.ru##DIV.br
 ||adnet.ru/
 ||adob-photoshop.com/porno*.jpg
 ||adriver.ru^$third-party
-||ads.adfox.ru^
+||ads.adfox.ru^$third-party
 ||ads.maxlab.ru^$third-party
-||adserving.cpxinteractive.com/*
-||adult-click.ru^
-||adulttraffic.ru^
-||adv.aport.ru^
+||adult-click.ru^$third-party
+||adulttraffic.ru^$third-party
+||adv.aport.ru^$third-party
 ||adv.hardwarez.ru/cgi-bin/*
-||adv.magna.ru^
-||adv.nadavi.net/*
+||adv.magna.ru^$third-party
+||adv.nadavi.net^$third-party
 ||adv.vz.ru^
 ||advat.ru/onegadget/*
 ||advert.exaccess.ru^
@@ -620,7 +616,6 @@ zr.ru##DIV.br
 ||antistarforce.com/*ban*r.gif
 ||antistarforce.com/js/bnspoiler.js
 ||ap.softkey.ru/banner/*
-||ar.atwola.com^
 ||arena.ru/files/banners/*
 ||armadaboard.com/ad/*
 ||arriva.ru/new/*.swf
@@ -662,8 +657,8 @@ zr.ru##DIV.br
 ||banners.stimulhosting.com^
 ||banners.su/banner.php?id=*
 ||banners.takru.com/*
-||bans.bride.ru/*
-||bans.dating.ru/*
+||bans.bride.ru^$third-party
+||bans.dating.ru^$third-party
 ||bans.ru/*img
 ||baratro.ru/*.jpg
 ||barcamp.az/2009/banner/*
@@ -672,12 +667,12 @@ zr.ru##DIV.br
 ||bbn.img.com.ua/*
 ||bc1.adward.ru/?*
 ||bd.bdirect.ru/banners/*
-||begun.spylog.com/*
+||begun.ru^$third-party
+||spylog.com^$third-party
 ||beonline.ru/status_ban.html
 ||best-host.ru/images/reklama/*
 ||best-hoster.ru/banners/*
 ||bestkino.ru/partners/*
-||bestreferat.ru/images/b/*
 ||bestreferat.ru/images/b/*
 ||bezpaleva.kwot.biz/pu.php?*
 ||bezpeka.com/images/banners/*
@@ -689,9 +684,9 @@ zr.ru##DIV.br
 ||bigbord.net/img_banners/*
 ||bigcashtrap.com/images/2/promo/*
 ||bigmax.ru/main/images/bm/*
-||bin-layer.de/*
-||bin-layer.ru/*
-||bizbanner.com.ua/_banners/*
+||bin-layer.de^$third-party
+||bin-layer.ru^$third-party
+||bizbanner.com.ua^$third-party
 ||bizlink.ru/cgi-bin/*
 ||biztraff.eu/in.cgi?*
 ||blackmanos.kwot.biz/*
@@ -726,7 +721,8 @@ zr.ru##DIV.br
 ||bw.pronto.ru/*
 ||bw.pronto.ru/img/*/*.swf
 ||bx.neolabs.kz/cgi100/*
-||c.bigmir.net/*
+||c.bigmir.net^$third-party
+||c.domik.net^$third-party
 ||c.ile.ru/*
 ||c.waplog.net/ru/*
 ||cabletv.dp.ua/bann/*
@@ -739,9 +735,6 @@ zr.ru##DIV.br
 ||catzone.ws/templates/*.swf
 ||caxa.com.ua
 ||caxa.ru
-||cdn.gigya.com/wildfire/do_not_delete.htm
-||cdn.gigya.com/wildfire/i/*
-||cdn.gigya.com/WildFire/swf/*
 ||cdpartner.ru/adv/*
 ||cdsuper.ru
 ||centerhelp.info/*ban*r.jpg
@@ -761,7 +754,6 @@ zr.ru##DIV.br
 ||clombus.okoshechka.net/*
 ||cmslist.ru/files/*.swf
 ||cnt.one.ru/cgi-bin/*
-||code.popup2m.com/*
 ||codenet.ru/images/clame/*
 ||comp-ex.ru/banners/*
 ||comp-ex.ru/coresys/*
@@ -823,7 +815,6 @@ zr.ru##DIV.br
 ||develop.com.ua/files/2/*.swf
 ||devilart.name/*
 ||devki.cc/!promo/*
-||devochki-dlya-tebya-na-dosuge.com/*
 ||digisat.ru/*.gif
 ||dimartvideo.ru/player.swf?*
 ||dimox.name/wp-content/themes/dimox.name/i/b/*
@@ -968,9 +959,7 @@ zr.ru##DIV.br
 ||goldphone.ru/baners/*
 ||goldref.ru/ban/*
 ||goldref.ru/img/*
-||google-analytics.com/__utm.gif?*
-||google-analytics.com/urchin.js
-||googleads.g.doubleclick.net/pagead/*
+||goodadvert.ru^$third-party
 ||goon.ru
 ||gothic.com.ua/images/banners/*
 ||grabberz.com/*.swf
@@ -1106,7 +1095,7 @@ zr.ru##DIV.br
 ||jps.ms
 ||jps.ru
 ||jps.ru
-||js.ru.redtram.com/*
+||js.ru.redtram.com^$third-party
 ||judin.ru
 ||juveros-shop.ru/banners/*
 ||k2kapital.com/upload/*
@@ -1335,7 +1324,7 @@ zr.ru##DIV.br
 ||mypagerank.net/services/seostats/*
 ||myphpbb.com.ru/rota/468x60*.gif
 ||mypskov.ru/images/banners/*
-||mystat-in.net
+||mystat-in.net^$third-party
 ||mystery.bigmir.net/game/banners/*
 ||mytests.ru/img/ddot.gif
 ||mytraf.info^
@@ -1549,7 +1538,7 @@ zr.ru##DIV.br
 ||quotes.zloy.org/streez/*
 ||qwe.ru/i/*
 ||r.e1.ru^
-||r.i.ua/s?*
+||r.i.ua/s?$third-party
 ||r.mail.ru/b*.swf
 ||r.radikal.ru/*
 ||r1.mail.ru/*.swf
@@ -1582,7 +1571,7 @@ zr.ru##DIV.br
 ||realmusic.ru/media/banners/*
 ||redteen.da.ru^
 ||redteen2.da.ru^
-||redtram.com^
+||redtram.com^$third-party
 ||redz.ru/i/*
 ||reggun.ru/images/*.swf
 ||revolution.allbest.ru/*.swf
@@ -1969,14 +1958,13 @@ zr.ru##DIV.br
 ||zuni.tyndex.ru/images/krt/*
 ||zvukoff.ru/24open/*.jpg
 ! Not included in main
+||devochki-dlya-tebya-na-dosuge.com^
 ||1under.ru^
 ||abnad.net^
 ||ad.fasty.net^$third-party
 ||adskape.ru^$third-party
 ||advmaker.ru^
 ||adwork.net.ua^
-||begun.ru^$third-party
-||goodadvert.ru^
 ||medialand.relax.ru
 ||partner.loveplanet.ru^
 ||partner.magna.ru^
@@ -1986,3 +1974,4 @@ zr.ru##DIV.br
 ||sj1.ru/cgi-bin/iframe/
 ||xban.ru/ban.php?img=
 ||yartsevo.info/forum/img/banners/*
+||code.popup2m.com^$third-party
