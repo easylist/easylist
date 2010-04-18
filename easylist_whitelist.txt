@@ -133,10 +133,10 @@
 @@||objects.tremormedia.com/embed/swf/admanager*.swf$object_subrequest
 @@||objects.tremormedia.com/embed/xml/*.xml?r=$object_subrequest,domain=mydamnchannel.com
 @@||omnikool.discovery.com/realmedia/ads/adstream_mjx.ads/dsc.discovery.com/$script
-@@||pagead2.googlesyndication.com/pagead/ads?client=$subdocument,domain=seeingwithsound.com
-@@||pagead2.googlesyndication.com/pagead/expansion_embed.js$script,domain=myspace.com|seeingwithsound.com
+@@||pagead2.googlesyndication.com/pagead/ads?client=$subdocument,domain=artificialvision.com|seeingwithsound.com
+@@||pagead2.googlesyndication.com/pagead/expansion_embed.js$script,domain=artificialvision.com|myspace.com|seeingwithsound.com
 @@||pagead2.googlesyndication.com/pagead/scache/show_invideo_ads.js$script,domain=sciencedaily.com
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=myspace.com|seeingwithsound.com
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=artificialvision.com|myspace.com|seeingwithsound.com
 @@||pagead2.googlesyndication.com/pagead/static?format=in_video_ads&$subdocument,domain=sciencedaily.com
 @@||quit.org.au/images/images/ad/$image
 @@||redir.adap.tv/redir/client/adplayer.swf?$object_subrequest,domain=cracked.com|videosift.com
@@ -190,6 +190,7 @@
 @@||zedo.com/*.xml$object_subrequest,domain=rajshri.com
 @@||zedo.com//$object_subrequest,domain=rajshri.com
 !Anti-Adblock
+@@||artificialvision.com^$elemhide,image,script
 @@||artificialvision.com^$image,script,domain=seeingwithsound.com
 @@||arto.com/includes/js/adtech.de/script.axd/adframe.js?$script
 @@||avforums.com/forums/adframe.js$script
@@ -204,12 +205,13 @@
 @@||novamov.com/ads.js?*&ad_url=/adbanner$script
 @@||onlinevideoconverter.com/scripts/advertisement.js$script
 @@||seeingwithsound.com^$elemhide,image,script
+@@||seeingwithsound.com^$image,script,domain=artificialvision.com
 @@||superfastfile.com/adsense.js$script
 @@||superfastfile.com/advertisement.js$script
 @@||theteacherscorner.net/adiframe/jext.js?$script
 @@||tpmrpg.net/adframe.js$script
 @@||video2mp3.net/img/adfarm.js$script
-@@||visualprosthesis.com^$image,script,domain=seeingwithsound.com
+@@||visualprosthesis.com^$image,script,domain=artificialvision.com|seeingwithsound.com
 @@||zshare.net/ads.js?*&ad_url=/adbanner$script
 !Non-English
 @@||adser.localport.it/banman.asp?zoneid=71$subdocument
