@@ -16,6 +16,7 @@ perl addChecksum.pl fanboy-morpeh-rus.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-esp.txt
+perl addChecksum.pl firefox-regional\fanboy-adblocklist-ita.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-jpn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-krn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus.txt
