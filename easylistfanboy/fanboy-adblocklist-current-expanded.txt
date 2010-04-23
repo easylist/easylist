@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: mBzR22VlXMX7Ev+CHkKxBw
+! Checksum: n4ZLxlBPe6MspQ8yn5VzIA
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 24 Apr 2010
 ! This list expires after 3 days
@@ -338,6 +338,7 @@
 /ADSAdClient31.dll?
 /adscontent2.
 /adscript.php?
+/AdvScript.
 /adScroll.
 /adsEnd.js
 /adsense-*.js
@@ -547,7 +548,7 @@
 /displayad.biz?
 /dixioforyoursite/*
 /DNSads.html?
-/doubleclick.php
+/doubleclick.
 /doubleclickcontainer.aspx?
 /doubleclickloader.
 /download/ad/*
@@ -1822,7 +1823,6 @@ visitor-track.
 ||mediatraffic.com^$third-party
 ||mediauk.247realmedia.com^$third-party
 ||medrx.sensis.com.au^$third-party
-||megavideo.com/mcad.php?
 ||megavideo.com/xml/videoad.php?
 ||mercuras.com^$third-party
 ||mezimedia.com^$third-party
@@ -1839,6 +1839,7 @@ visitor-track.
 ||moe.jlist.com/media/$third-party
 ||money4ads.com^$third-party
 ||moregamers.com^$third-party
+||mporatrons.com^*/sponsored/
 ||msads.net^$third-party
 ||msn.com/?w=
 ||mumbaimirror.com/ads/
@@ -1940,7 +1941,6 @@ visitor-track.
 ||pub.motion-twin.com^
 ||pulse360.com^$third-party
 ||pulsemgr.com^$third-party
-||px.steelhousemedia.com^$third-party
 ||qksrv.net^$third-party
 ||qksz.net^$third-party
 ||quickpwn.com^$~third-party,subdocument
@@ -2114,7 +2114,6 @@ visitor-track.
 ||wgreatdream.com^$third-party
 ||widgetbucks.com^$third-party
 ||widgets.shopping.com^$third-party
-||windowsitpro.com^*/doubleclick/doubleclick.
 ||windowsitpro.com^*/Roadblock.
 ||withblog.net^*/bn_$third-party
 ||wordpress.com^*/cpm$third-party
@@ -2197,6 +2196,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||a.gsmarena.com^$domain=cgi.ebay.com
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/*$domain=cbs.com
+@@||ad.doubleclick.net/ad/*playerVersion$object_subrequest
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
 @@||ad.doubleclick.net/ad/$domain=imdb.com|tv.com,object_subrequest
 @@||ad.doubleclick.net/adj/$domain=ponged.com,script
@@ -4147,6 +4147,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.topAds
 ##.topAdvertisement
 ##.topAdWrap
+##.divAdvTopRight
 ##.topBannerAd
 ##.topic_inad
 ##.topleader
@@ -5489,6 +5490,7 @@ refinery29.com##.r29_box_ad
 regretfulmorning.com##.big-banner
 retrevo.com###pcw_showcase
 reuters.com###banner
+reverso.net###hAdv
 rivals.com##TD[width="728"]
 roadcyclinguk.com###ad
 roadcyclinguk.com###contentbanner
@@ -5923,6 +5925,8 @@ whirlpool.net.au##.bodyuser.advertising_block
 who.is###namecom_ad_hosting_main
 wifinetnews.com##table[width="310"][height="260"]
 wikia.com###monaco_footer
+windowsitpro.com##.sponsoredAnnouncementWrap
+windowsitpro.com###dnn_FooterBoxThree
 windowsxlive.net##[style="padding-left: 80px; color: white; position: relative; top: -36px;"]
 windowsxlive.net##[style="width: 160px; height: 600px; margin-left: 12px; margin-top: 16px;"]
 windowsxlive.net##[style="width: 336px; height: 380px; float: right; margin-top: 6px;"]
@@ -6630,7 +6634,6 @@ sz=47x47;
 @@.shopping.com/images1/*-250x250-
 @@.weather.weatherbug.*/stickers/*
 @@/468x60_$domain=spreadfirefox.com,image
-@@/468x60_$domain=spreadfirefox.com,image
 @@/weather.weatherbug.*/web-widgets/*
 @@://celebslam.celebuzz.com/assets_c/
 @@http://www.zshare.net/ads.
@@ -6707,6 +6710,7 @@ sz=47x47;
 /livejasmin.js
 /livejasmin/*&id=
 /livejasmin_$script
+/mcad.php?
 /mnads1.php?
 /mr_tb_ad.
 /mr_videoad.
@@ -7279,6 +7283,8 @@ dtiblog.com##[style="background-color: rgb(255, 255, 255); border-bottom: 1px so
 e-hentai.org##[style="white-space: nowrap;"]
 e-hentai.org##TD.itd[colspan="4"]
 eporner.com###adv
+erotic-port.hu##[style="width: 600px; text-align: left; margin-left: auto; margin-right: auto; height: 228px;"]
+erotic-port.hu###floatdiv
 exgfpics.com##table[width="565"]
 exgfpics.com##table[width="750"][height="248"]
 exgirlfriendmarket.com##[width="728"][height="150"]
