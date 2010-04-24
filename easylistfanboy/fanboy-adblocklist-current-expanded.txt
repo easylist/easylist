@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: n4ZLxlBPe6MspQ8yn5VzIA
+! Checksum: 7MI41+u79Wx8AbnrDQOa8A
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 24 Apr 2010
 ! This list expires after 3 days
@@ -338,7 +338,6 @@
 /ADSAdClient31.dll?
 /adscontent2.
 /adscript.php?
-/AdvScript.
 /adScroll.
 /adsEnd.js
 /adsense-*.js
@@ -411,6 +410,7 @@
 /advfiles/*
 /adview.
 /advision
+/AdvScript.
 /advscripts/*
 /AdWorks/*.js
 /adx/gamestar.
@@ -2196,9 +2196,9 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||a.gsmarena.com^$domain=cgi.ebay.com
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/*$domain=cbs.com
-@@||ad.doubleclick.net/ad/*playerVersion$object_subrequest
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
 @@||ad.doubleclick.net/ad/$domain=imdb.com|tv.com,object_subrequest
+@@||ad.doubleclick.net/ad/*playerVersion$object_subrequest
 @@||ad.doubleclick.net/adj/$domain=ponged.com,script
 @@||ad.doubleclick.net/adj/*video/*
 @@||ad.doubleclick.net/adj/de.viva.tv/$domain=viva.tv
@@ -2228,7 +2228,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||advertising.scoop.co.nz/wp-content/
 @@||assets.bizjournals.com/flash/
 @@||au.adserver.yahoo.com^*HEAD$domain=au.finance.yahoo.com,script
-@@||autotrader.co.nz/Data/Adverts/$image
 @@||banners.wunderground.
 @@||cinshare.com/js/*=http$script
 @@||cpalead.com^$domain=tuboupload.com|webwwe.com|tvgorge.com|superfastfile.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
@@ -3798,6 +3797,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.dcAdvertHeader
 ##.deckads
 ##.div_banner468
+##.divAdvTopRight
 ##.divGoogleAdsTop
 ##.DoubleClickRefreshable
 ##.downloadAds
@@ -4147,7 +4147,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.topAds
 ##.topAdvertisement
 ##.topAdWrap
-##.divAdvTopRight
 ##.topBannerAd
 ##.topic_inad
 ##.topleader
@@ -4307,8 +4306,7 @@ autospeed.com##[style="width: 310px; border: 1px solid rgb(102, 102, 102); backg
 autospeed.com.au##[valign="BOTTOM"][align="RIGHT"]
 autotrader.co.nz###content-banner
 autotrader.co.nz##.cBanner
-autotrader.co.nz##.iFinanceMT
-autotrader.co.nz##.rtBanner
+autotrader.co.nz##.sBanner
 autotrader.co.nz##.vBanner
 autoweb.com.au##[style="width: 310px; border: 1px solid rgb(102, 102, 102); background: none repeat scroll 0% 0% rgb(249, 249, 249); margin-right: 6px;"]
 avforums.com##[style="width: 120px; height: 600px; border-width: thin; border-style: solid; font-size: 9px; text-align: center; background-color: rgb(255, 255, 255); overflow: auto;"]
@@ -4534,6 +4532,9 @@ darkreading.com###headerPromo
 darkreading.com##.dualRight
 datpiff.com##.skyscraper
 dealerscope.com###subheader
+dealsonwheels.co.nz##.cBanner
+dealsonwheels.co.nz##.sBanner
+dealsonwheels.co.nz##.vBanner
 demonoid.com##.pad9px_right
 demonoid.com##[style="color: rgb(119, 119, 119); background: none repeat scroll 0% 0% rgb(205, 208, 178); padding-left: 10px; padding-right: 10px; border: 1px solid rgb(119, 119, 119);"]
 denofgeek.com##.skyright
@@ -4706,6 +4707,9 @@ facebook.com##.UIStandardFrame_SidebarAds
 facebook.com##.UIWashFrame_SidebarAds
 fanpop.com##[style="width: 160px; height: 600px; background-color: rgb(0, 0, 0); color: rgb(153, 153, 153);"]
 fanpop.com##[style="width: 300px; height: 250px; background-color: rgb(0, 0, 0); color: rgb(153, 153, 153);"]
+farmtrader.co.nz##.cBanner
+farmtrader.co.nz##.sBanner
+farmtrader.co.nz##.vBanner
 fastcompany.com###block-block-23
 fastcompany.com###mod_imu
 fastseduction.com###partners
@@ -5164,6 +5168,9 @@ mothering.com###header
 mothering.com###sponsor
 motherjones.com###node-body-break
 motherproof.com###leader
+motorcycletrader.co.nz##.cBanner
+motorcycletrader.co.nz##.sBanner
+motorcycletrader.co.nz##.vBanner
 moviefone.com##.add-text
 moviesplanet.com##.box4.mgtie5min
 moviesplanet.com##.gb
@@ -5801,6 +5808,9 @@ totallycrap.com###ad
 totallycrap.com###oursponsors
 totallycrap.com###specials
 tothepc.com##.sidebsa
+tradeaboat.co.nz##.cBanner
+tradeaboat.co.nz##.sBanner
+tradeaboat.co.nz##.vBanner
 treatmentabroad.net###right-inner
 treehugger.com##.floater-indiv
 tribe.net##.caption
@@ -5925,8 +5935,8 @@ whirlpool.net.au##.bodyuser.advertising_block
 who.is###namecom_ad_hosting_main
 wifinetnews.com##table[width="310"][height="260"]
 wikia.com###monaco_footer
-windowsitpro.com##.sponsoredAnnouncementWrap
 windowsitpro.com###dnn_FooterBoxThree
+windowsitpro.com##.sponsoredAnnouncementWrap
 windowsxlive.net##[style="padding-left: 80px; color: white; position: relative; top: -36px;"]
 windowsxlive.net##[style="width: 160px; height: 600px; margin-left: 12px; margin-top: 16px;"]
 windowsxlive.net##[style="width: 336px; height: 380px; float: right; margin-top: 6px;"]
@@ -7283,8 +7293,8 @@ dtiblog.com##[style="background-color: rgb(255, 255, 255); border-bottom: 1px so
 e-hentai.org##[style="white-space: nowrap;"]
 e-hentai.org##TD.itd[colspan="4"]
 eporner.com###adv
-erotic-port.hu##[style="width: 600px; text-align: left; margin-left: auto; margin-right: auto; height: 228px;"]
 erotic-port.hu###floatdiv
+erotic-port.hu##[style="width: 600px; text-align: left; margin-left: auto; margin-right: auto; height: 228px;"]
 exgfpics.com##table[width="565"]
 exgfpics.com##table[width="750"][height="248"]
 exgirlfriendmarket.com##[width="728"][height="150"]
