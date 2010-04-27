@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: V8hY1QJivZPrpDNQNPKD+w
+! Checksum: dJvTMFQTLTfe8OLosOEYeg
 ! Fanboy's Italian-addon Adblock list 
-! Version: 024A Updated: 27 Apr 2010
+! Version: 024A Updated: 28 Apr 2010
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -49,7 +49,6 @@
 ||edmaster.it/ads/
 ||feed.4wnet.com^$third-party
 ||ilmanifesto.it^*/sponsors/
-||ilmeteo.it/box/previsioni.php?
 ||ilsole24ore.com^*/box_shopping
 ||ilsussidiario.net/img/banner/
 ||ilvelino.it/archivio/banner/
@@ -100,6 +99,7 @@
 !
 panorama.it##.leaderboard
 ||juiceadv.com^$third-party
+||ilmeteo.it^*/banners/adv
 ||sky.it/contenuti/bannerADV/
 !
 !---------- Italian Element Hiding Rules ----------
@@ -113,8 +113,12 @@ panorama.it##.leaderboard
 ###adsense_300x250
 ###advtop
 ###advtopright
+###pubblicita
 ##.adnaff
 ##.barraSipra
+##.div_adv728
+##.div_adv620
+##.div_adv300
 ##.promo_sp
 ##.sponsor-box
 agi.it###google_ads_frame_vert
@@ -167,7 +171,6 @@ ilmessaggero.it##table[width="300"][style="padding-top: 5px; padding-bottom: 5px
 ilmessaggero.it##table[width="300"][style="padding-top: 5px; padding-bottom: 5px; border: 1px solid rgb(204, 204, 204);"]
 ilsole24ore.com##.vetrina
 ilsole24ore.com##[style="width: 300px; margin-top: 6px;"]
-ilvelino.it###tabellaBannerMeteo
 it.reuters.com##.pagesponsor
 italynews.it###adcontainer250x250
 itespresso.it###megabanner
