@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: cC0WppyXb9BSil2eWfVraQ
+! Checksum: /YySFp++eKJOJjNXq5Tk7g
 ! Fanboy Tracking/Stats V3 Blocking
 ! Version: 023B Updated: 30 Apr 2010
 ! This list expires after 3 days
@@ -185,6 +185,7 @@
 /adlogger
 /adpixel.gif?
 /adstats.
+/adviewtrack.pl?
 /adx/bin/*
 /affiliate.1800flowers.
 /affiliatetracking/*
@@ -433,12 +434,12 @@
 /js/tophits_
 /js/track.js
 /js/tracking_
+/js/ywa.js
 /js_hotlink.php?
 /jscounter.
 /jstats/js/*
 /JsTracker.aspx?
 /jtracking/*
-/js/ywa.js
 /kejobscounter
 /Kelkooid?
 /kelkooSponsoredLinks.gif?
@@ -801,6 +802,7 @@
 ;sz=1x2;
 ;sz=3x3;
 ;sz=5x5;
+?&anticache=*filename.gif
 ?*default%20plug-in
 ?*default%20plugin
 ?[AQB]&ndh=
@@ -1176,8 +1178,7 @@ webstatisztika
 ||iperceptions.com^$third-party
 ||ipro.com^$third-party
 ||istrack.com^$third-party
-||ixquick.com/do/$image
-||ixquick.com^*&anticache=
+||ixquick.com/do/$image,background
 ||izearanks.com^$third-party
 ||jobs.hrkspjbs.com^
 ||jstracker.com^$third-party
@@ -1559,9 +1560,9 @@ webstatisztika
 @@||metrics.howstuffworks.com^$image
 @@||pixel.quantserve.com/api/segments.$domain=comedy.com|tv.com|southparkstudios.com,third-party
 @@||pixel.quantserve.com/seg/r;a=$object_subrequest,domain=filefront.com|cbs.com|laobserved.com|breitbart.tv|imdb.com|tv.com 		
+@@||quantserve.com/quant.js$domain=g4tv.com
 @@||revsci.net^*/pcx.js?csid$script,domain=video.foxnews.com 		
 @@||server-au.imrworldwide.com/*-mediaplayer&$domain=au.launch.yahoo.com
-@@||quantserve.com/quant.js$domain=g4tv.com
 !
 !---------- Verified Whitelists
 !
