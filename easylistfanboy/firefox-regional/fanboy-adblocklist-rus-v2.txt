@@ -1,13 +1,14 @@
 [Adblock Plus 1.1]
-! Checksum: Ny66fK+2/yBJLWRND+5Hjg
+! Checksum: zBrPTBcL/AlWlB76v9Q76A
 ! Fanboy's Russian-V2-addon Adblock list 
-! Version: 024A Updated: 30 Apr 2010
+! Version: 024A Updated: 2 May 2010
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
 !
 .admitad.com^
 .ngs.ru/*.swf?pid
+.ru/adx.js
 .ru/RCL/BAN/
 /1tizer_
 /adt.fcgi?
@@ -22,6 +23,7 @@
 ||77.120.122.117^*/banners/
 ||212.150.34.115^$third-party
 ||2x2.su/reclama/
+||2baksa.net^*/reklama/
 ||77.91.228.66^$third-party
 ||78.140.145.178^$third-party
 ||80.93.49.192^$third-party
@@ -79,6 +81,8 @@
 ||advesti.ru/poligrafia
 ||advmaker.ru^$third-party
 ||affiliate.printdirect.ru^$third-party
+||agronews.ru^*.swf|
+||agrotv.ru/informer.swf?
 ||aif.yadro.ru^$third-party
 ||akabo.ru^$third-party
 ||anime-zone.ru/inc/partners
@@ -106,9 +110,11 @@
 ||c.bigmir.net^
 ||carclub.ru^*/banners/
 ||cash4ru.com^$third-party
+||cn.ru/data/promoblocks/
 ||cnews.ru^*/banners/
 ||cnews.ru^*/partners/
 ||code.popup2m.com^$third-party
+||copypast.ru/foto7/$object
 ||dc.ixbt.com^$subdocument
 ||denwer.ru/ru/rec/$~third-party,image
 ||dirkino-traff.ru^$third-party
@@ -118,7 +124,9 @@
 ||echo.msk.ru/att/webpage-
 ||engine.video-link.ru^$third-party
 ||exaccess.ru^$third-party
+||exler.ru/banners/
 ||ferra.ru/include/priceru_advert_
+||fishki.net^*.ad.png 
 ||free-torrents.org^*/banners/
 ||freshmac.ru^*/banner_
 ||freshmac.ru^*_banner.
@@ -144,6 +152,7 @@
 ||ifolder.ru/images/brs/
 ||img.advesti.ru^*.gif|
 ||img.sape.ru/bn/$third-party
+||inshop.ru^$third-party
 ||instantcash.ru^$third-party
 ||ixbt.com/banner/
 ||izvestia.ru/banners/
@@ -161,6 +170,8 @@
 ||lifehacker.ru/promo/
 ||lifenews.ru/banner/
 ||link.link.ru^$third-party
+||litres.ru/static/baners/
+||lol.bash.org.ru^
 ||lostfilm.tv/img/$object
 ||luxup.ru^$third-party
 ||macovod.net/ads/
@@ -184,6 +195,7 @@
 ||partnerearning.com^$third-party
 ||partners.livegames.ru^$third-party
 ||partners.autoweek.ru^$third-party
+||partners.nikitaonline.ru^$third-party
 ||pbid.iforex.com^$third-party
 ||pics.rbc.ru/img/*.gif?$third-party
 ||pics.rbc.ru^*960
@@ -195,6 +207,7 @@
 ||quintura.ru^$third-party
 ||qzx.ru/gf/banner_
 ||r.i.ua/s?$third-party
+||rabota.ru/banner/
 ||rbc.ru/banners/
 ||readme.ru/informer/
 ||regnum.ru/i/bn/
@@ -242,6 +255,7 @@
 ||vpsite.ru/600x200
 ||widgets.fotocash.ru^$object,third-party
 ||xmemory.ru^$third-party,script
+||xruni.ru^*/banners/
 ||yottos.com.ua^$third-party,subdocument
 ||yabs.yandex.ru^
 ||yadro.ru/ad/
@@ -251,6 +265,7 @@
 !
 !---------- Russian Trackers ------------
 !
+.ru/cnt/?
 .ru/counter?
 .ru/counters?
 .ru/stat/?
@@ -269,6 +284,7 @@
 ||c.uarating.com^
 ||clicks.runews.radeant.com^$third-party
 ||cnstats.ru^$third-party
+||counter.promopark.ru^$third-party
 ||counter.rambler.ru^$third-party
 ||counter.spylog.com^$third-party
 ||counter.top.am^$third-party
@@ -302,6 +318,7 @@
 ||rutvit.ru/?identifier
 ||seemore.ru^$third-party
 ||spylog.ru/counter$third-party
+||stat.aft.ru^
 ||stat.izvestia.ru^
 ||stat.kffg.ru^$third-party
 ||stat1.ukr.net^
@@ -344,6 +361,9 @@
 ###b240x400
 ###b728x90
 actualcomment.ru###topbanner
+ag.ru##.a_blk
+ag.ru###upadbg2
+ag.ru##.dotsbg2[height="80"]
 ag.ru###ad120x60_override
 ag.ru###rotating_banners
 anode.ru##.cban
@@ -354,8 +374,14 @@ bash.org.ru##[style="text-align: center; font-size: 10pt;"]
 binmovie.org##[style="border: 3px outset green; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 cifrovik.ru##.noprice
 citysmile.ru##[style="border: 3px outset green; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
+cosmo.ru##.banner_LEFT1
+cosmo.ru##.ban300x500
+cosmo.ru##.marketing
+cosmo.ru##div[style="height: 465px;"]
 cn.ru##.madv
 cn.ru##.rx8
+cn.ru###block-promo
+cn.ru##.rx7neta
 cnews.ru###banner300x250
 cnews.ru###banner300x250_publication
 cnews.ru###banner600x90
@@ -387,15 +413,24 @@ dni.ru###tb_135_outer
 dni.ru###tb_137_outer
 dni.ru##.partners-links
 domik.net###hright
+dreamprogs.net###topbanner2
 exler.ru###BannerGBottomMediaT
 exler.ru###BannerGCenterMediaT
 exler.ru###BannerGTopMediaT
 exler.ru###BannerH2Left
 exler.ru###BannerHLeft
+exler.ru###BannerGTop
+exler.ru###BannerGIMGMediaT
+exler.ru###BannerGIMG
+exler.ru###BannerGBottom
+exler.ru###BannerGCenter
 exnews.org##[style="border: 3px outset green; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 fanacmilan.com###adTextausgPjIE
+feels.ru##[width="550"][bgcolor="#FF0000"]
+file-online.ru##[style="border: 2px dashed green; padding: 15px 3px; font-size: 16px; background-color: rgb(253, 250, 195);"]
 forums.overclockers.ru##.banner
 forums.overclockers.ru##[style="border: 1px dotted rgb(119, 119, 119);"]
+freesoft.ru##[width="472"][align="center"]
 gazeta.ua###baner_top
 gazeta.ua##[style="width: 240px; height: 350px; overflow: hidden;"]
 gazeta.ua##[style="overflow: hidden; width: 240px; height: 350px;"]
