@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: R7BXUlembmNAkIEaH5WiEw
+! Checksum: YWXNuHmYBdN+Nh8F2VF4og
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 3 May 2010
 ! This list expires after 3 days
@@ -178,7 +178,9 @@
 /ad?sponsor
 /ad_banner
 /ad_base.
+/ad_bottom
 /ad_caption.
+/ad_common
 /ad_count.php?
 /ad_feed.js?
 /ad_footer
@@ -216,8 +218,6 @@
 /adbanner*.$image
 /adbanner/*
 /adbar.aspx
-/ad_bottom
-/ad_common
 /AdBlock.ashx?
 /adbrite-
 /adbrite/square.
@@ -1271,6 +1271,7 @@ visitor-track.
 ||adgent007.com^$third-party
 ||adgitize.com^$third-party
 ||adgoto.com^$third-party
+||adguru.guruji.com^
 ||adhostingsolutions.com^$third-party
 ||adicate.com^$third-party
 ||adimise.com^$third-party
@@ -1572,8 +1573,8 @@ visitor-track.
 ||cumulusads.com^$third-party
 ||cybermonitor.com^$third-party
 ||d.unanimis.co.uk^$third-party
-||dailymotion.com^*/auditude
 ||dailymotion.com/masscast/
+||dailymotion.com^*/auditude
 ||dbbsrv.com^$third-party
 ||dcad.watersoul.com^$third-party
 ||deals.buxr.net^$third-party
@@ -1940,9 +1941,9 @@ visitor-track.
 ||pub.motion-twin.com^
 ||pulse360.com^$third-party
 ||pulsemgr.com^$third-party
+||qdmil.com^$third-party
 ||qksrv.net^$third-party
 ||qksz.net^$third-party
-||qdmil.com^$third-party
 ||quickpwn.com^$~third-party,subdocument
 ||rad.microsoft.com^
 ||rajshri.com/functions.aspx?$subdocument
@@ -1987,8 +1988,8 @@ visitor-track.
 ||shops.tgdaily.com/?search
 ||shopzilla.com/pp/
 ||showyoursite.com^$third-party
-||sify.com^*_rmadv.html
 ||siftad.siftology.com^$third-party
+||sify.com^*_rmadv.html
 ||slickdeals.meritline.com^
 ||smartad.mercadolivre.com.br^
 ||smartadserver.com/diff/
@@ -2288,8 +2289,8 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||seeingwithsound.com/openads/show_ads.js
 @@||seeingwithsound.com^$script
 @@||superfastfile.com/adsense.js
-@@||video2mp3.net/img/adsense.js
 @@||theteacherscorner.net/adiframe/jext.js?$script
+@@||video2mp3.net/img/adsense.js
 ||seeingwithsound.com/noad.gif
 !
 !---------- Generic Hiding Rules ----------
@@ -2632,8 +2633,8 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ###adSky
 ###adSkyPosition
 ###adskyscraper
-###ADsmallWrapper
 ###adslot
+###ADsmallWrapper
 ###adsNarrow
 ###adsonar
 ###adspace-300x250
@@ -4182,7 +4183,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.top_ad2
 ##.top_ad_728
 ##.top_ad_list
-##.topAdvBox
 ##.top_container_ad
 ##.top_sponsor
 ##.TopAd
@@ -4192,6 +4192,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.topAdLeft
 ##.topAdRight
 ##.topAds
+##.topAdvBox
 ##.topAdvertisement
 ##.topAdWrap
 ##.topBannerAd
@@ -4366,6 +4367,7 @@ azstarnet.com###topjobs
 azstarnet.com##.bannerinstory
 azstarnet.com##[height="90"][valign="top"][colspan="2"]
 babynamegenie.com##.promo.to-edges
+background-color: rgb(255, 248, 221); margin: 0px 4px; padding: 4px; border: 1px solid rgb(250, 239, 209);
 bankrate.com##.topbanner
 bannedinhollywood.com###topleaderboard
 barrons.com##.boldGreyNine
@@ -4808,7 +4810,6 @@ forumw.org##[style="font-size: 10pt; font-weight: bold;"]
 fosswire.com###ad
 fosswire.com##.medrec
 fox6now.com###links-we-like
-background-color: rgb(255, 248, 221); margin: 0px 4px; padding: 4px; border: 1px solid rgb(250, 239, 209);
 foxbusiness.com###cb_medrect1_frame
 foxlingo.com##.box1[style="margin-left: 3px; width: 187px; min-height: 187px;"]
 foxnews.com###console300x100
@@ -4936,8 +4937,8 @@ heyuguys.co.uk###text-11
 heyuguys.co.uk###text-5
 heyuguys.co.uk##.hptabber
 hidemyass.com###outercontainer
-home.austarnet.com.au##[width="121"][align="left"]
 hollywoodinterrupted.com###leaderboardspace
+home.austarnet.com.au##[width="121"][align="left"]
 hotfrog.com.au##.mod.simple.simple-featured
 hotfrog.com.au,hotfrog.com###sidebar_sponsoredresult_body
 hotfrog.com.au,hotfrog.com##.body_sponsoredresults_bottom
@@ -5643,11 +5644,11 @@ sify.com###astro468
 sify.com###freeforecast
 sify.com##.border1[style="background-color: rgb(248, 248, 248); width: 308px; height: 280px; float: left;"]
 sify.com##[style="width: 249px; float: right; text-align: left;"]
+sify.com##[style="width: 250px; height: 250px;"]
 sify.com##[style="width: 300px; height: 250px;"]
 sify.com##[style="width: 984px; float: left; margin-top: 8px; margin-bottom: 5px;"]
-sify.com##TD.border1[valign="top"][height="280"]
-sify.com##[style="width: 250px; height: 250px;"]
 sify.com##table[height="282"]
+sify.com##TD.border1[valign="top"][height="280"]
 silicon.com###sitemap
 siliconchip.com.au##[style="width: 310px; border: 1px solid rgb(51, 102, 153); background: none repeat scroll 0% 0% rgb(227, 235, 243); margin-right: 6px;"]
 silverlight.net##.banner_header
@@ -5964,11 +5965,11 @@ vgcats.com##[background="images/widebanner.gif"]
 vgcats.com##[height="91"]
 vgchartz.com##[style="width: 160px; height: 600px; background-color: rgb(0, 0, 0);"]
 vgchartz.com##[style="width: 728px; height: 90px; margin-bottom: 5px; background-color: rgb(0, 0, 0); z-index: 100;"]
+video2mp3.net###ad
 videoweed.com##[style="width: 160px; height: 600px; border: 1px solid rgb(204, 204, 204); float: left;"]
 videoweed.com##[style="width: 160px; height: 600px; border: 1px solid rgb(204, 204, 204); float: right;"]
 videoweed.com##[style="width: 460px; height: 60px; border: 1px solid rgb(204, 204, 204); margin: 0px auto 10px;"]
 vidmax.com###banner
-video2mp3.net###ad
 viewlyrics.com##[width="170"]
 virtualmedicalcentre.com###frmsmo-r
 virtualmedicalcentre.com##.banner-block
