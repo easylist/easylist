@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: /70E4/vc2s4ophPUk5ruLQ
+! Checksum: 945CVFahyEr6VRF+KMBwOw
 ! Fanboy's Russian-V2-addon Adblock list 
-! Version: 024A Updated: 7 May 2010
+! Version: 024A Updated: 8 May 2010
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -10,6 +10,7 @@
 .ngs.ru/*.swf?pid
 .ru/125x125.
 .ru/adx.js
+.ru/cgi-bin/banners/
 .ru/RCL/BAN/
 /1tizer_
 /adt.fcgi?
@@ -21,6 +22,7 @@
 ://m2k.ru^
 ||003.com.ua/cgi/adv/
 ||0324.0x96.34.0163^$third-party
+||100projects.ru^$third-party,subdocument
 ||77.120.122.117^*/banners/
 ||212.150.34.115^$third-party
 ||2x2.su/reclama/
@@ -208,10 +210,13 @@
 ||medialand.ru^$third-party
 ||megaline.kz/files/$object
 ||mercatos.ru/banner/
+||motodrive.com.ua^*/banners/
 ||mp3hall.net^*_animat
 ||mp3hall.net^*_baner.
 ||mp3hall.net^*_Banner.
 ||nnn.novoteka.ru^$third-party
+||novoteka.ru/banners/
+||novoteka.ru^*_banner.
 ||nowa.cc/*_reklama.
 ||onegadget.ru^*/smart_masses
 ||onlineresume.ru/banner
@@ -246,7 +251,9 @@
 ||regnum.ru/i/bn/
 ||regard.ru/photo/baner
 ||reklama.mb.vesti.ru^
+||rian.ru/cgi-bin/iframe/
 ||richbanner.ru^$third-party
+||rg.ru/i/*240x100.
 ||rmbn.ru/cgi-bin/main.fcgi?
 ||rmbn.ru/js/smartblock/
 ||rorer.ru^$third-party
@@ -314,6 +321,7 @@
 /cnt-gif1x1.php?
 /ixbtstat/*
 /mmcount3.dll?
+/tag_counter/?
 /tracker.dll?
 ||a-counter.kiev.ua^$third-party
 ||a.kavanga.ru^$third-party
@@ -326,6 +334,7 @@
 ||c.tbex.ru^$third-party
 ||c.hit.ua^$third-party
 ||c.uarating.com^
+||clck.yandex.ru^
 ||clicks.runews.radeant.com^$third-party
 ||cnstats.ru^$third-party
 ||counter.promopark.ru^$third-party
@@ -404,6 +413,7 @@
 @@||advesti.ru/shapka.gif$domain=advesti.ru
 @@||b.dclick.ru^$domain=vesti.ru,object_subrequest
 @@||echo.msk.ru/att/*-thumb_
+@@||novoteka.ru/show.cgi?adp$script,domain=novoteka.ru
 @@||digital.ru^*/images/banner/main-banner.swf?
 @@||yarportal.ru/style_images/$image
 !
@@ -535,6 +545,9 @@ kp.ru###banner_27_content
 kp.ru###top-banners
 kp.ru##.all_brand
 kp.ru##.banner-middle
+kp.by###top-banners
+kp.by##.banner-middle
+kp.by###banner-after-menu
 ksweb.ru##.banner
 lifehacker.ru##.rblock1
 lifehacker.ru##.rblock4
@@ -546,6 +559,7 @@ mail.ru##.top760
 mail.ru##.ban
 mail.ru##.blockPartners2Iframe
 meta.ua##.header-ads
+motodrive.com.ua##.table_banners
 msk.ru##.knopki
 mskd.ru##[style="border: 1px dashed blue; background-color: rgb(230, 238, 255);"]
 nakanune.ru##.rotator
@@ -560,6 +574,9 @@ nowa.cc###header_right_cell
 nowa.cc###topbar
 nowa.cc###mc_100x_90
 nowa.cc##.mc_cars_row
+novoteka.ru##table[height="90"]
+novoteka.ru###DIV_RIGHT_VERT_5
+novoteka.ru##.outBlockVertAddLinks__
 oplati.ru##td[style="float: right;"]
 oplati.ru##td[width="90"][style="margin-right: 0pt;"]
 overclockers.ru##table[style="height: 60px;"]
