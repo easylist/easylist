@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Ct6UPuwYri3Tn+yaQAsBLQ
+! Checksum: jbX2qEHb08z/po5irOFRAw
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 9 May 2010
 ! This list expires after 3 days
@@ -2156,7 +2156,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ! 
 !---------- Whitelists ----------
 !
-@@.akamai.*/videos/*
 @@.bigwigmedia.com/ingamead$domain=ponged.com
 @@.cinshare.com/js/isalive.js?
 @@.com/ads.js?$domain=novamov.com
@@ -2171,8 +2170,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@/advertisem$script,domain=mircscripts.org|newsarama.com|tvnz.co.nz|superfundo.org|onlinevideoconverter.com|skimtube.com|superfastfile.com
 @@/banner/banner-$domain=iobit.com
 @@/banner/banner_$domain=dexpot.de
-@@/banner_ad$domain=lavasoft.com
-@@/banners/*$domain=au.msi.com,~third-party,image,background
 @@/banners/ad$domain=valueram.com
 @@/gametrailerstv_player
 @@/html.ng/*$domain=webmd.com
@@ -2251,7 +2248,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||medrx.sensis.com.au/images/sensis/my247/Util.js$domain=local.my247.com.au
 @@||nbl.com.au*/advertising/
 @@||netspiderads2.indiatimes.com/$object_subrequest
-@@||nick.com/js/ads/ad.js
 @@||oascentral.thechronicleherald.ca
 @@||omnikool.discovery.com^
 @@||omninoggin.com^*/wp-syntax.css
@@ -2279,16 +2275,18 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !
 !---------- Confirmed Whitelists ----------
 !
+@@||au.msi.com/banners/$~third-party,image,background
 @@||de.ign.com/js.ng/size=headermain$domain=teamxbox.com
 @@||facepunch.com/ads/
 @@||multi-load.com/peel.js
+@@||nickjr.mtvnimages.com/*width=115&height=87$image,background
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com,object_subrequest
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com,script,object_subrequest,image
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
-@@||nickjr.mtvnimages.com/*width=115&height=87$image,background
 !
 !---------- Anti Adblock ----------
 !
+@@/img/banner_ad$domain=lavasoft.com,~third-party,image,background
 @@/textad.$script,domain=g-proxy.com
 @@||ffiles.com/images/flashtemplates_336x280.gif
 @@||ffiles.com/images/mmfiles_$image
