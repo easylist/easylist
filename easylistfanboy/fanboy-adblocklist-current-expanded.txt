@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: /MmchHmCmXxQREHca31xww
+! Checksum: V49voZsXlBuebZ/RRpXR2Q
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 9 May 2010
 ! This list expires after 3 days
@@ -1340,8 +1340,8 @@ tafmaster.
 ||ads.nationalgeographic.com^
 ||ads.netdrive.ws^
 ||ads.netlog.com^
-||ads.nzcity.co.nz^
 ||ads.ninemsn.com.au^
+||ads.nzcity.co.nz^
 ||ads.readwriteweb.com^
 ||ads.rediff.com^$third-party
 ||ads.resellerratings.com^$third-party
@@ -2159,7 +2159,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ! 
 !---------- Whitelists ----------
 !
-@@.bigwigmedia.com/ingamead$domain=ponged.com
 @@.cinshare.com/js/isalive.js?
 @@.com/ads.js?$domain=novamov.com
 @@.doubleclick.net/adj/video.
@@ -2199,7 +2198,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
 @@||ad.doubleclick.net/ad/$domain=imdb.com|tv.com,object_subrequest
 @@||ad.doubleclick.net/ad/*playerVersion$object_subrequest
-@@||ad.doubleclick.net/adj/$domain=ponged.com,script
 @@||ad.doubleclick.net/adj/*video/*
 @@||ad.doubleclick.net/adj/de.viva.tv/$domain=viva.tv
 @@||ad.doubleclick.net/adj/gametrailers.mtvi/
@@ -2279,15 +2277,20 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !
 @@/img/banner_ad$domain=lavasoft.com,~third-party,image,background
 @@||au.msi.com/banners/$~third-party,image,background
+@@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
 @@||de.ign.com/js.ng/size=headermain$domain=teamxbox.com
 @@||facepunch.com/ads/
 @@||lavasoft.com/img/ad_$image,background
 @@||multi-load.com/peel.js
 @@||nickjr.mtvnimages.com/*width=115&height=87$image,background
+@@||nzd.co.nz^*/ads/webads$script,domain=nzdating.com
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com,object_subrequest
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com,script,object_subrequest,image
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
-@@||nzd.co.nz^*/ads/webads$script,domain=nzdating.com
+!
+!---------- Comfirmed DoubleClick Whitelists
+!
+@@||ad.doubleclick.net/adj/$domain=ponged.com,script
 !
 !---------- Anti Adblock ----------
 !
