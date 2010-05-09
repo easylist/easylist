@@ -43,6 +43,8 @@ perl addChecksum-opera.pl iron/adblock-jpn.ini
 perl addChecksum-opera.pl iron/adblock-krn.ini
 perl addChecksum-opera.pl iron/adblock-stats.ini
 perl addChecksum-opera.pl iron/adblock-trk.ini
+:: Opera - Firefox test list
+perl addChecksum.pl Opera-Firefox.txt
 :: Now sync
 hg add .
 hg commit -m "%*"
