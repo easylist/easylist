@@ -27,22 +27,8 @@ perl addChecksum.pl firefox-regional\fanboy-adblocklist-tky.txt
 :: test
 perl addChecksum.pl opera\fanboy-adblocklist-elements-v3.css
 perl addChecksum-opera.pl opera\urlfilter.ini
-perl addChecksum-opera.pl opera\urlfilter-chn.ini
-perl addChecksum-opera.pl opera\urlfilter-cz.ini
-perl addChecksum-opera.pl opera\urlfilter-esp.ini
-perl addChecksum-opera.pl opera\urlfilter-jpn.ini
-perl addChecksum-opera.pl opera\urlfilter-krn.ini
-perl addChecksum-opera.pl opera\urlfilter-stats.ini
-perl addChecksum-opera.pl opera\urlfilter-tky.ini
 :: Iron
 perl addChecksum-opera.pl iron/adblock-beta.ini
-perl addChecksum-opera.pl iron/adblock-chn.ini
-perl addChecksum-opera.pl iron/adblock-cz.ini
-perl addChecksum-opera.pl iron/adblock-esp.ini
-perl addChecksum-opera.pl iron/adblock-jpn.ini
-perl addChecksum-opera.pl iron/adblock-krn.ini
-perl addChecksum-opera.pl iron/adblock-stats.ini
-perl addChecksum-opera.pl iron/adblock-trk.ini
 :: Opera - Firefox test list
 perl addChecksum.pl Opera-Firefox.txt
 :: Now sync
