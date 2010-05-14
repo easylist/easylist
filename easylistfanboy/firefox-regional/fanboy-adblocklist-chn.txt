@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: g7ZthESyig4yk5/G9Ts5zQ
+! Checksum: vd56OXCcmYmWoPiwAkqunw
 ! Fanboy's Chinese-addon Adblock list 
 ! Updated: 14 May 2010
 ! This list expires after 5 days
@@ -254,23 +254,24 @@ http://hiad.
 !
 !---------- Chinese Trackers ----------
 !
-||istat.tudou.com/*&noCache=
+_stat.php?$image
 ||51yes.com^$third-party
+||istat.tudou.com/*&noCache=
 ||iwstat.tudou.com^
 ||iwstat.tudou.com^
+||js.zol.com.cn/p$script
 ||logs.aiya.com.cn^
 ||stat.ku6.com/dostatv.do?
 ||stat.tudou.com^
-_stat.php?$image
 ||stat.wauee.com^
 ||stat.zol.com.cn^
 ||stats.tudou.com^
-||js.zol.com.cn/p$script
 ||xizi.com/count/
 ||zoosnet.net^
 !
 !---------- Chinese Hiding Rules ----------
 !
+##.news_ad_box
 163.com##.ggarea.clearfix
 366soft.net###ShowAD
 591.com.tw###slidetexts
@@ -296,12 +297,14 @@ hkheadline.com##TABLE[width="1002"][height="102"]
 ifeng.com###final_head_ad
 ifeng.com##.ad_pic
 ifeng.com##.ad_text  
+ifeng.com##.areaAd
 instrument.com.cn##.zt
 kkkmh.com##.mm-book 
 ku6.com##.flwin
 nen.com.cn##.fla
 nen.com.cn##TABLE[height="312"][width="310"]
 news.qq.com###nav  
+news.qq.com###News_Rectangle
 nextmedia.com###promoBox
 pcbeta.com###ad_text
 phpwind.net###pwSlidePlayer  
@@ -330,11 +333,9 @@ taobao.com###winpop
 tw.news.yahoo.com###adst
 tw.news.yahoo.com###ynwsadk
 xizi.com###closead
-news.qq.com###News_Rectangle
 xizi.com##.mt5.recommend
 yahoo.com###ysm-hs-sc
 yesky.com##.adtext
-##.news_ad_box
 zgjrw.com##.main01leftT1
 zgjrw.com##.main02RBottomAD
 zol.com.cn###ad_text
@@ -344,8 +345,6 @@ zol.com.cn##.adSpace
 !
 bohelady.com##IFRAME[id^="baidu_clb_slot_iframe_"]
 hexun.com##DIV[id^="banner"]
-ifeng.com##DIV[class^="adlist"]
-ifeng.com##IFRAME[src^="http://news.ifeng.com/statics/all_content_ad_"]
 ku6.com##*[href^="http://stat1.888.ku6.com/g.do?"] > *
 pcbeta.com##DIV[class^="pcbeta-gg"]
 sina.com.cn##DIV[class^="ad250"]
