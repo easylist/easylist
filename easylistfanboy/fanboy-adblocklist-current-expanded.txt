@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: R6YnXOsk+3WWLeebQz9WcQ
+! Checksum: BtwZTWyINhWAJkGWWlzMDQ
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 15 May 2010
 ! This list expires after 4 days
@@ -2163,13 +2163,9 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ||grapevine.is/media/flash/*.swf
 ||public.porn.fr^$third-party
 ! 
-!---------- Whitelists ----------
 !
-@@/adframe.js$domain=EQ2Flames.com|forum.ppcgeeks.com|houseloanmarket.com|macobserver.com|hackers.co.id|video2mp3.net
-@@/advertisem$script,domain=mircscripts.org|newsarama.com|tvnz.co.nz|superfundo.org|onlinevideoconverter.com|skimtube.com|superfastfile.com
-@@/mtvi_ads_$domain=southparkstudios.com
-@@/tii_ads.js$domain=ew.com|people.com|time.com
-@@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
+!---------- DoubleClick Whitelists ----------
+!
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/*$domain=cbs.com
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
@@ -2184,6 +2180,20 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ad.doubleclick.net/pfadx/$domain=pandora.com
 @@||ad.doubleclick.net/pfadx/DARTSHELL
 @@||ad.doubleclick.net^*pos=top;mtfInline$domain=deadline.com
+!
+!---------- Verfied DoubleClick Whitelists
+!
+@@||ad.doubleclick.net/adj/$domain=ponged.com,script
+@@||ad.doubleclick.net/adj/*video/*
+@@||ad.doubleclick.net/adj/gametrailers.mtvi/
+!
+!---------- Whitelists ----------
+!
+@@/adframe.js$domain=EQ2Flames.com|forum.ppcgeeks.com|houseloanmarket.com|macobserver.com|hackers.co.id|video2mp3.net
+@@/advertisem$script,domain=mircscripts.org|newsarama.com|tvnz.co.nz|superfundo.org|onlinevideoconverter.com|skimtube.com|superfastfile.com
+@@/mtvi_ads_$domain=southparkstudios.com
+@@/tii_ads.js$domain=ew.com|people.com|time.com
+@@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
 @@||ads.belointeractive.*/video/*@Overlay
 @@||ads.cnn.com/html.ng/*cnn_video*$domain=cnn.com
 @@||ads.cnn.com/js.ng/*_subsection=download$script
@@ -2194,17 +2204,12 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||adsatt.abc.starwave.com^$object_subrequest
 @@||adserver.adtech.de^$domain=yavido.de|games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||adserver.getwebs.org/delivery/ajs.php?$domain=phpbb24.com|onlyheavymetal.mi-web.es,script
-@@||advertising.scoop.co.nz/wp-content/
-@@||assets.bizjournals.com/flash/
 @@||cpalead.com^$domain=tuboupload.com|webwwe.com|tvgorge.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
 @@||cpalock.com^$domain=rapidit.info,script
-@@||cubeecraft.com/openx/$~third-party
 @@||eyewonder.com^$object,script,domain=last.fm
 @@||idg.com.au/pcw/images/header_logo_skin
-@@||kinagrannis.com/images/banner/
 @@||kontraband.com^*show_video_wrap
 @@||m1.2mdn.net^$domain=tvnz.co.nz|3news.co.nz|tv3.co.nz|vladtv.com|nationalgeographic.com,object_subrequest
-@@||netspiderads2.indiatimes.com/$object_subrequest
 @@||oascentral.thechronicleherald.ca
 @@||omnikool.discovery.com^
 @@||omninoggin.com^*/wp-syntax.css
@@ -2219,8 +2224,10 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !---------- Confirmed Whitelists ----------
 !
 @@.gstatic.com/images?$domain=images.google.com
+@@||advertising.scoop.co.nz/wp-content/
 @@/banner/banner-$domain=iobit.com
 @@/banner/banner_$domain=dexpot.de
+@@||cubeecraft.com/openx/$~third-party
 @@/banners/ads/*$domain=valueram.com
 @@/html.ng/*$domain=webmd.com
 @@/img/banner_ad$domain=lavasoft.com,~third-party,image,background
@@ -2264,12 +2271,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||v.fwmrm.net/ad/p/1?|$domain=video.adultswim.com|mlb.mlb.com|cartoonnetwork.com,third-party,object_subrequest
 @@||video.economist.com/AdFinder.jsp?
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
-!
-!---------- Verfied DoubleClick Whitelists
-!
-@@||ad.doubleclick.net/adj/$domain=ponged.com,script
-@@||ad.doubleclick.net/adj/*video/*
-@@||ad.doubleclick.net/adj/gametrailers.mtvi/
 !
 !---------- Anti Adblock ----------
 !
@@ -6748,7 +6749,6 @@ sz=47x47;
 @@-300x250.jpg$domain=nypost.com
 @@.archdaily.com/wp-content/
 @@.cafepress.com/image/
-@@.cubeecraft.com/images/home/
 @@.empireonline.com/images/image_index/300$image,background
 @@.neoedge.com/catalogs/imgs/
 @@.rp-dev.com/wp-content/*300x300
