@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 0Zt+ikaypz+KUWqfmf9naw
+! Checksum: 57z+wbMCp/bTp6WnA7FsQQ
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 18 May 2010
 ! This list expires after 4 days
@@ -638,8 +638,9 @@
 /google728.html
 /google_ad
 /Google_RADlinks_
-/googlead*.js
-/googleAd.asp
+/googlead-
+/googleads-
+/googleAd.
 /googlead_
 /googleAds.
 /gopro_interstitial.
@@ -668,7 +669,6 @@
 /image_ad
 /imageads/*
 /images.ads.
-/images.smh.com.au/*promo*$image
 /images/Ad-
 /images/ad_
 /images/adbar.gif
@@ -2203,8 +2203,8 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !
 !---------- Whitelists ----------
 !
-@@/adframe.js$domain=EQ2Flames.com|forum.ppcgeeks.com|houseloanmarket.com|macobserver.com|hackers.co.id|video2mp3.net
-@@/advertisem$script,domain=mircscripts.org|newsarama.com|tvnz.co.nz|superfundo.org|onlinevideoconverter.com|skimtube.com|superfastfile.com
+@@/adframe.js$domain=EQ2Flames.com|houseloanmarket.com|macobserver.com|hackers.co.id|video2mp3.net
+@@/advertisem$script,domain=mircscripts.org|newsarama.com|tvnz.co.nz|onlinevideoconverter.com|skimtube.com|superfastfile.com
 @@/mtvi_ads_$domain=southparkstudios.com
 @@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
 @@||ads.cnn.com/html.ng/*cnn_video*$domain=cnn.com
@@ -3677,6 +3677,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 ##.adsborder
 ##.adsBox
 ##.AdsBoxSection
+##.adsDiv
 ##.adsbyyahoo
 ##.adscreen
 ##.adsection_a2
@@ -5215,6 +5216,8 @@ marketwatch.com###tradingcenter
 mashable.com##.box.bizspark-box
 mashable.com##.header-banner
 mashable.com##.pga
+maxim.com###box_takeover_content
+maxim.com###box_takeover_mask
 maximumpc.com###block-block-60
 maximumpc.com###block-block-61
 maximumpc.com###block-block-89
@@ -5707,6 +5710,7 @@ skins.be###walltopad
 skins.be##.shortBioShadowB
 skyrock.com##.adslogan
 slashdot.org###fad1
+slashfood.com###banner
 slate.com###bizbox_flyout
 slate.com###bizbox_links_bottom
 slate.com###bizbox_links_right_rail
