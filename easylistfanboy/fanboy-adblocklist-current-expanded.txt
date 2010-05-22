@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: rTsXWIoAc7kdJ3Oyg4w9Pg
+! Checksum: ouApFX2WvjbeVdWoyO76Qg
 ! Fanboy's Adblock list
-! Version: 023B Updated: 22 May 2010
+! Version: 023B Updated: 23 May 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -158,7 +158,6 @@
 /ad_html/*
 /ad_iframe.
 /ad_iframe_
-/ad_image.
 /ad_index_
 /ad_js.php?
 /ad_keywords.
@@ -314,6 +313,7 @@
 /ads?id=
 /ads?spaceid
 /ads_iframe.
+/ad_image.
 /ads_php/*
 /ads_view.
 /ADSAdClient31.
@@ -565,7 +565,6 @@
 /footertextad
 /foresee-
 /forums/ad/*
-/forums/images/banners/*
 /frame_ads_
 /gam.html?
 /gca_iframe.html?
@@ -1379,7 +1378,7 @@ server/CCID
 ||boyplz.com/media/$script,subdocument
 ||bpath.com^$third-party
 ||branchr.com^$third-party
-||bravenet.com/cserv.php?
+||bravenet.com^$third-party
 ||bravenetmedianetwork.com^$third-party
 ||bridgetrack.com^$third-party
 ||brothersoft.com/softsale/
@@ -1834,7 +1833,6 @@ server/CCID
 ||rad.microsoft.com^
 ||rajshri.com/functions.aspx?$subdocument
 ||realmatch.com/Widgets/
-||redvase.bravenet.com^$third-party
 ||reelcentric.com^$third-party
 ||refinedads.com^$third-party
 ||reklamport.com^$third-party
@@ -2067,7 +2065,10 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !
 !---------- Whitelists ----------
 !
+@@/mtvi_ads_$domain=southparkstudios.com
+@@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||cpalead.com^$domain=tuboupload.com|webwwe.com|tvgorge.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
+@@||cpalock.com^$domain=rapidit.info,script
 !
 !---------- Confirmed Whitelists ----------
 !
@@ -2095,7 +2096,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ad3.liverail.com/crossdomain.xml$domain=kstp.com
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
-@@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||adsonar.com^$script,domain=tmz.com
 @@||adtech.panthercustomer.com/apps/$domain=games.cartoonnetworkhq.com
 @@||advertise.about.com/images/*_$image
@@ -4165,7 +4165,6 @@ youporn.com###producer
 ###leaderboard-ad
 ###leaderboard-sticky
 ###leaderboard_ad
-###LeaderBoardAd
 ###leaderboardAd
 ###leaderboardad
 ###leaderboardAdArea
@@ -5324,8 +5323,8 @@ youporn.com###producer
 ##.spLinks
 ##.spn_links_box
 ##.spon-links
-##.sponlinkbox
 ##.spons-link
+##.sponlinkbox
 ##.sponsBox
 ##.sponserLink
 ##.sponserlink
@@ -5580,9 +5579,6 @@ barrons.com##.boldGreyNine
 bastropenterprise.com##.headerTop
 bastropenterprise.com##.iabMedRectContainer
 batman-on-film.com###ca
-bbc.co.uk###bbccom_leaderboard_container
-bbc.co.uk##.colB
-bbccanada.com###gradientbox
 beginlinux.com##.bannergroup
 behance.net###FMGABadge
 beliefnet.com###headerTopExtra
