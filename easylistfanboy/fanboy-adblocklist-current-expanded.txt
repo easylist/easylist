@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +WBXSug971ElisvNLAv1pg
+! Checksum: A1xkdxvuwgwq3QRbixn9ag
 ! Fanboy's Adblock list
 ! Version: 023B Updated: 23 May 2010
 ! This list expires after 4 days
@@ -159,6 +159,7 @@
 /ad_html/*
 /ad_iframe.
 /ad_iframe_
+/ad_image.
 /ad_index_
 /ad_js.php?
 /ad_keywords.
@@ -316,7 +317,6 @@
 /ads?id=
 /ads?spaceid
 /ads_iframe.
-/ad_image.
 /ads_php/*
 /ads_view.
 /ADSAdClient31.
@@ -571,6 +571,7 @@
 /frame_ads_
 /gam.html?
 /gca_iframe.html?
+/geo-ads_
 /get-ad.php?
 /get_ads.js?
 /get_banner.asp?
@@ -992,6 +993,17 @@ bannerid=
 dhtmlpop
 display_ad
 house_ad
+images/ads/*
+innerads
+left-ads
+link-exchange
+paypopup
+pop_under
+popdowncash.
+popinads
+popunder$script
+server/AAMALL
+server/CCID
 |http://ad0.
 |http://ad1
 |http://ad2.
@@ -1043,25 +1055,14 @@ house_ad
 |http://topads.
 |http://werbung.
 |https://adserv
-images/ads/*
-innerads
-left-ads
-link-exchange
-paypopup
-pop_under
-popdowncash.
-popinads
-popunder$script
-server/AAMALL
-server/CCID
 ||125exchange.com^$third-party
 ||196.41.0.207/
 ||208.43.84.120^$third-party
 ||209.172.55.5$script
 ||216.151.186.5/
+||247realmedia.com^$third-party
 ||2dpt.com^$third-party
 ||2mdn.net^$third-party
-||247realmedia.com^$third-party
 ||3redlightfix.com^$third-party
 ||4chan.org/support/
 ||600z.com/$third-party
@@ -2050,7 +2051,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !---------- Whitelists ----------
 !
 @@||cpalead.com^$domain=tuboupload.com|webwwe.com|tvgorge.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
-
 !
 !---------- Confirmed Whitelists ----------
 !
@@ -2078,9 +2078,9 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ad3.liverail.com/crossdomain.xml$domain=kstp.com
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
+@@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||adsonar.com^$script,domain=tmz.com
 @@||adtech.panthercustomer.com/apps/$domain=games.cartoonnetworkhq.com
-@@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||advertise.about.com/images/*_$image
 @@||advertising.scoop.co.nz/wp-content/
 @@||affiliates.jlist.com/ads/$domain=jbox.com,image,background
@@ -4150,8 +4150,8 @@ youporn.com###producer
 ###leaderboard-ad
 ###leaderboard-sticky
 ###leaderboard_ad
-###leaderboardAd
 ###LeaderBoardAd
+###leaderboardAd
 ###leaderboardad
 ###leaderboardAdArea
 ###leaderboardAdTop
@@ -5313,8 +5313,8 @@ youporn.com###producer
 ##.spLinks
 ##.spn_links_box
 ##.spon-links
-##.spons-link
 ##.sponlinkbox
+##.spons-link
 ##.sponsBox
 ##.sponserLink
 ##.sponserlink
@@ -5340,8 +5340,8 @@ youporn.com###producer
 ##.SponsoredAdTitle
 ##.SponsoredLinks
 ##.sponsoredlinks
-##.sponsoredLinksHeader
 ##.SponsoredLinksGrayBox
+##.sponsoredLinksHeader
 ##.sponsoredProduct
 ##.SponsorIsland
 ##.sponsorLabel
@@ -5380,8 +5380,6 @@ youporn.com###producer
 ##.thisIsAnAd
 ##.title-ad
 ##.toolbar-ad
-##.TopAdL
-##.TopAdR
 ##.top-ad
 ##.top-banner-468
 ##.top-menu-ads
@@ -5396,7 +5394,9 @@ youporn.com###producer
 ##.topAd
 ##.topad
 ##.topadbox
+##.TopAdL
 ##.topAdLeft
+##.TopAdR
 ##.topAdRight
 ##.topAds
 ##.topAdvBox
