@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: 5rxEmOfuoS5uzR63odh8kQ
+! Checksum: MqjxMhzhy9U3oVbociteFw
 ! Fanboy's Adblock list
-! Updated: 3 Jun 2010
+! Updated: 4 Jun 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -322,6 +322,7 @@
 /ads_php/*
 /ads_view.
 /ADSAdClient31.
+/ads/adbot
 /adscontent2.
 /adscript.
 /adScroll.
@@ -395,6 +396,7 @@
 /advert_iframe
 /advertis$image,script,subdocument
 /advertisementheader.
+/AdvertisingModule.
 /advertising/ads/*
 /advertpro/*
 /adverts/*
@@ -635,6 +637,7 @@
 /images/Ad-
 /images/ad/*
 /images/ad1.
+/images/ad125
 /images/ad2.
 /images/ad4.
 /images/ad5.
@@ -711,6 +714,7 @@
 /network_ad.
 /NeudesicAd.
 /oas/ad/*
+/OAS/banners/*
 /OAS_Handler.
 /oas_home_
 /OASAdConnector
@@ -1759,6 +1763,7 @@ server/CCID
 ||ncsreporting.com^$third-party
 ||neodatagroup.com^$third-party
 ||neowin.net/images/adbot_promos/
+||neowin.net/images/atlas/
 ||net3media.com^$third-party
 ||netpondads.com^$third-party
 ||netseer.com/dsatserving/
@@ -1998,6 +2003,7 @@ server/CCID
 ||velmedia.net^$third-party
 ||veospot.com^$third-party,subdocument
 ||vibrantmedia.com^$third-party
+||videos.theonion.com/ads/
 ||video.unrulymedia.com^$third-party,subdocument,script
 ||vipquesting.com^$third-party
 ||viraladnetwork.net^$third-party
@@ -2090,9 +2096,11 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@.gstatic.com/images?$domain=images.google.com
 @@/adframe.js$domain=macobserver.com|hackers.co.id|video2mp3.net
 @@/advertisem$script,domain=mircscripts.org|tvnz.co.nz|skimtube.com|superfastfile.com
+@@/AS3AdPlayer.$domain=avclub.com
 @@/banner/banner-$domain=iobit.com
 @@/banner/banner_$domain=dexpot.de
 @@/banners/ads/*$domain=valueram.com
+@@/flvvideoplayer.$domain=pbs.org
 @@/html.ng/*$domain=webmd.com
 @@/img/banner_ad$domain=lavasoft.com,~third-party,image,background
 @@/img/banners/*$domain=vodafone.co.nz
@@ -2121,10 +2129,12 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||advertise.about.com/images/*_$image
 @@||advertising.scoop.co.nz/wp-content/
 @@||affiliates.jlist.com/ads/$domain=jbox.com,image,background
+@@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au
 @@||au.adserver.yahoo.com^*HEAD$domain=au.finance.yahoo.com,script
 @@||au.msi.com/banners/$~third-party,image,background
 @@||b.scorecardresearch.com/b?$domain=last.fm
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
+@@||brightcove.com^*bannerid$third-party
 @@||cubeecraft.com/openx/$~third-party
 @@||dart.clearchannel.com/html.ng/$object_subrequest,domain=radio1045.com
 @@||de.ign.com/js.ng/size=headermain$domain=teamxbox.com
@@ -2874,6 +2884,7 @@ LargeFlashAd.js
 ||bbp.brazzers.com^$third-party
 ||bigtube.com/iframes/
 ||blog.br/action/tools/coMesWin
+||bigpond.com/home/skin_
 ||br.rk.com^$third-party,subdocument
 ||brandreachsys.com^
 ||bullz-eye.com/pictureofday/
@@ -3883,6 +3894,7 @@ youporn.com###producer
 ###adver2
 ###adver3
 ###adver4
+###advert1
 ###advert-1
 ###advert-ahead
 ###advert-banner
@@ -4658,6 +4670,8 @@ youporn.com###producer
 ##.ad3
 ##.ad300
 ##.ad300250
+##.ad300x250a
+##.ad300x250b
 ##.ad300_250
 ##.ad300Block
 ##.Ad300x250
@@ -5139,6 +5153,7 @@ youporn.com###producer
 ##.g-adblock3
 ##.g_ggl_ad
 ##.gads
+##.go-ads-widget-ads-wrap
 ##.google-ad
 ##.google-ad-container
 ##.google-ads
@@ -5685,6 +5700,8 @@ bellasugar.com###post_ad
 bellinghamherald.com###mastBanner
 bestbuy.com###dart-con
 betanews.com##.whitepapers
+bigpond.com##h5.subheading
+bigpond.com###header_banner
 bigsoccer.com##.xmlContainer
 bing.com###sidebar
 bit-tech.net###broadband-finder-co-uk-120
@@ -6629,6 +6646,7 @@ neowin.net###sidebar-author + DIV.sidebar-block
 neowin.net###social-links + DIV.sidebar-block
 neowin.net##.message.unspecific
 neowin.net##.promo + * + DIV.sidebar-block
+neowin.net##[src="http://neowin.net/ads/adbot"]
 neowin.net##[style="background: url(\"/images/atlas/aww2.png\") no-repeat scroll center center transparent ! important; height: 250px; width: 300px;"]
 netchunks.com###sponsorsM
 netdoctor.co.uk##.mpu-fp
@@ -6748,6 +6766,7 @@ orange.co.uk###home_partnerlinks
 orange.co.uk###home_shoppinglinks
 orange.co.uk###home_spensoredlinks
 orble.com###glinks
+ourfamilygenes.ca##[style="width: 100%; display: block; margin-bottom: 10px; height: 90px;"]
 osnews.com##.ad
 p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
@@ -6852,6 +6871,8 @@ popurls.com###fmb
 portable64.com###rightcol
 portable64.com##[style="width: 323px; height: 273px; margin: 0px auto;"]
 portforward.com###fullpageadvert
+post-trib.com###wwbncontainer
+post-trib.com###zip2save_link_widget
 poughkeepsiejournal.com###banner
 prevention.com##.modules
 pricegrabber.com##.topBanner
