@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 9C8Sx/1bTEC89X4YKOzfKQ
+! Checksum: clQsnTqOepFfPSSvyyD1Gg
 ! Fanboy's Adblock list
 ! Updated: 5 Jun 2010
 ! This list expires after 4 days
@@ -450,6 +450,7 @@
 /banner/ad
 /banner/banner-
 /banner/banner_
+/banner?size=
 /banner_.cfm?
 /banner_ad
 /banner_management/*
@@ -1376,9 +1377,9 @@ server/CCID
 ||bidvertiser.com^$third-party
 ||biemedia.com^$third-party
 ||bigpond.com/specials/$third-party,subdocument
+||bin-layer.de^$third-party
 ||binlayer.com^$third-party
 ||binlayer.de^$third-party
-||bin-layer.de^$third-party
 ||bittads.com^$third-party
 ||bizad.nikkeibp.co.jp^
 ||bizographics.com^$third-party
@@ -1547,9 +1548,9 @@ server/CCID
 ||forex-affiliate.com^$third-party
 ||forumimg.ipmart.com/SWF/
 ||fptad.com^$third-party
+||free-times.com/Image/Pool/
 ||freepaidsurveyz.com^$third-party
 ||friendlyduck.com^$third-party
-||free-times.com/Image/Pool/
 ||frontsight.com/images/banners/$third-party
 ||ft.com/regb/iab?
 ||ftjcfx.com^$third-party
@@ -2694,19 +2695,19 @@ sz=47x47;
 !
 !---------- Dimension Whitelists ----------
 !
-@@=300x250&$domain=batman-on-film.com
+@@-120x90.$domain=jvideo.warphd.com,image
 @@-120x90.$domain=thestreet.com,image
 @@-160x160.jpg$domain=parentsconnect.com
 @@-300x250.jpg$domain=nypost.com|motherjones.com
 @@/300x250$domain=empireonline.com,image
-@@_728x90.$domain=weather.weatherbug.com
-@@=728x90&$domain=pkra.com,subdocument
 @@/728x90/*$domain=weather.weatherbug.com
-@@-120x90.$domain=jvideo.warphd.com,image
-@@||zshare.net/ads.js$script
+@@=300x250&$domain=batman-on-film.com
+@@=728x90&$domain=pkra.com,subdocument
+@@_728x90.$domain=weather.weatherbug.com
 @@|http://www.imdb.com/images/*doubleclick/*
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image,background
 @@||sfx-images.mozilla.org/*x$domain=spreadfirefox.com,image,background
+@@||zshare.net/ads.js$script
 !
 !---------- Adult Blocking Rules ----------
 !
@@ -3929,6 +3930,7 @@ youporn.com###producer
 ###adverts
 ###advertSection
 ###advertsingle
+###advertTower
 ###advframe
 ###advRectangle
 ###advWrapper
@@ -4076,10 +4078,10 @@ youporn.com###producer
 ###ctl00_cphMain_hlAd2
 ###ctl00_cphMain_hlAd3
 ###ctl00_fc_ctl04_AdControl
-###ctl00_tc_ctl04_AdControl
 ###ctl00_fc_ctl06_AdControl
-###ctl00_tc_ctl19_AdControl
+###ctl00_tc_ctl04_AdControl
 ###ctl00_tc_ctl14_AdControl
+###ctl00_tc_ctl19_AdControl
 ###ctrlsponsored
 ###cube_ads
 ###cube_ads_inner
@@ -4440,13 +4442,13 @@ youporn.com###producer
 ###sponBox
 ###sponLinkDiv_1
 ###spons_links
-###sponsorAdDiv
 ###SponseredLinks
 ###sponseredlinks
 ###sponsor-links
 ###sponsor_ads
 ###sponsor_div
 ###sponsor_header
+###sponsorAdDiv
 ###sponsored-links
 ###sponsored-note
 ###sponsored_ads
@@ -4469,7 +4471,6 @@ youporn.com###producer
 ###square-ads
 ###square_ad
 ###squareAdSpace
-###advertTower
 ###squared_ad
 ###sticky-ad
 ###story-ad-a
@@ -4653,6 +4654,9 @@ youporn.com###producer
 ##.ad-sky
 ##.ad-skyscr
 ##.ad-slot
+##.ad-slot-234-60
+##.ad-slot-300-250
+##.ad-slot-728-90
 ##.ad-space
 ##.ad-spot
 ##.ad-stack
@@ -5394,9 +5398,6 @@ youporn.com###producer
 ##.search-sponsor
 ##.searchAd
 ##.searchads
-##.ad-slot-234-60
-##.ad-slot-300-250
-##.ad-slot-728-90
 ##.searchSponsorItem
 ##.section-ad
 ##.section-ad2
@@ -5749,9 +5750,9 @@ bostonreview.net##.graphic_ad
 boyplz.com##[width="250"]
 brainz.org##.top-banner
 brandrepublic.com###banner
+break.com###cdpSliver
 break.com##.adlabel
 break.com##.brk_ldrbrd_wrap
-break.com###cdpSliver
 break.com##[width="300"][height="250"]
 breitbart.com##.sidebar
 bridgebase.com###bbo_ad1
@@ -5823,8 +5824,8 @@ cioupdate.com###partners
 cioupdate.com###solsect
 citytv.com###CityTv-HeaderBannerBorder
 citytv.com##.Video-Ad
-clipmarks.com###Panel
 climateprogress.org###advertisement
+clipmarks.com###Panel
 cnbc.com###compAdvertisement
 cnbc.com###dapIfM1
 cnbc.com###Homepage300x250
@@ -5920,8 +5921,8 @@ cricinfo.com##.slot210Hldr
 crikey.com.au###top
 crikey.com.au##.crikey_widget_small_island
 crispygamer.com###marketingbox
-cultofmac.com##[name="dn-frame-1"]
 cultofmac.com###skyBlock
+cultofmac.com##[name="dn-frame-1"]
 dailyfinance.com###dfAppPromo
 dailyfinance.com##[style="padding: 6px; float: right; width: 242px; height: 272px;"]
 dailyhaha.com###sponheader
@@ -6554,9 +6555,9 @@ mediafire.com###page_screen
 mediafire.com##.download_banner_container
 mediaite.com###magnify_widget_rect_handle
 medicinenet.com###SearchUnit
-megaupload.com###tabs
 megafileupload.com##.banner300
 megafileupload.com##.big_banner
+megaupload.com###tabs
 memory-alpha.org###spotlight_footer
 menshealth.com###leaderBoard
 menshealth.com###skyscraper
@@ -6689,7 +6690,6 @@ networkworld.com###promoslot
 networkworld.com##.incontent_ata
 nevadaappeal.com###header
 newgrounds.com##.adhead
-news14.com##.bannerTop
 news.com.au###alert-strap
 news.com.au###special-promotion
 news.com.au##.network.sponsors
@@ -6697,6 +6697,7 @@ news.com.au##.nokia-short
 news.com.au##.text-g-tech-rh-panel-compareprices
 news.com.au##[alt="IGN Select Awards"]
 news.com.au##[alt="jamster"]
+news14.com##.bannerTop
 news24.com###sponsor_box
 newser.com##.box.posR
 newsmax.com##.sponsors_fieldset
