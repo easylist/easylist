@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: L2wISO+zba1lh/WxhLxNQw
+! Checksum: xYuMG7qJ6C81Qm7zr9dG2g
 ! Fanboy's Adblock list
 ! Updated: 5 Jun 2010
 ! This list expires after 4 days
@@ -35,7 +35,6 @@
 .com/ad.html
 .com/ad.js
 .com/ad/
-||onlygoodmovies.com/netflix.gif
 .com/adfile/
 .com/adimg/
 .com/adjs/
@@ -286,6 +285,7 @@
 /ads/a.aspx?
 /ads/ad.
 /ads/ad_
+/ads/adbot
 /ads/adg.
 /ads/adnet
 /ads/adstream_
@@ -323,7 +323,6 @@
 /ads_php/*
 /ads_view.
 /ADSAdClient31.
-/ads/adbot
 /adscontent2.
 /adscript.
 /adScroll.
@@ -375,8 +374,8 @@
 /ads~adsize~
 /adtag.gif
 /adtag.htm?
-/adtagtc.
 /adtago.
+/adtagtc.
 /ADTECH;
 /adtech_ad
 /adtext4
@@ -397,8 +396,8 @@
 /advert_iframe
 /advertis$image,script,subdocument
 /advertisementheader.
-/AdvertisingModule.
 /advertising/ads/*
+/AdvertisingModule.
 /advertpro/*
 /adverts/*
 /advfiles/*
@@ -1789,6 +1788,7 @@ server/CCID
 ||onads.com^$third-party
 ||onenetworkdirect.net^$third-party
 ||onlineopinion.com.au/images/*_promo.
+||onlygoodmovies.com/netflix.gif
 ||onlymelbourne.com.au/image/banner
 ||openx.com^$third-party
 ||openx.org^$third-party
@@ -2004,8 +2004,8 @@ server/CCID
 ||velmedia.net^$third-party
 ||veospot.com^$third-party,subdocument
 ||vibrantmedia.com^$third-party
-||videos.theonion.com/ads/
 ||video.unrulymedia.com^$third-party,subdocument,script
+||videos.theonion.com/ads/
 ||vipquesting.com^$third-party
 ||viraladnetwork.net^$third-party
 ||virtual-hideout.net/ads/
@@ -2119,6 +2119,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||2mdn.net/instream/ads_sdk_config.xml$domain=youtube.com
 @@||ad.103092804.com/st?ad_type$domain=wizard.mediacoderhq.com
 @@||ad3.liverail.com^$domain=kstp.com|breitbart.tv
+@@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au
 @@||adimages.go.com^
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
@@ -2130,7 +2131,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||advertise.about.com/images/*_$image
 @@||advertising.scoop.co.nz/wp-content/
 @@||affiliates.jlist.com/ads/$domain=jbox.com,image,background
-@@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au
 @@||au.adserver.yahoo.com^*HEAD$domain=au.finance.yahoo.com,script
 @@||au.msi.com/banners/$~third-party,image,background
 @@||b.scorecardresearch.com/b?$domain=last.fm
@@ -2883,9 +2883,9 @@ LargeFlashAd.js
 ||banners.webcams.com^$third-party
 ||bans.bride.$third-party
 ||bbp.brazzers.com^$third-party
+||bigpond.com/home/skin_
 ||bigtube.com/iframes/
 ||blog.br/action/tools/coMesWin
-||bigpond.com/home/skin_
 ||br.rk.com^$third-party,subdocument
 ||brandreachsys.com^
 ||bullz-eye.com/pictureofday/
@@ -3895,7 +3895,6 @@ youporn.com###producer
 ###adver2
 ###adver3
 ###adver4
-###advert1
 ###advert-1
 ###advert-ahead
 ###advert-banner
@@ -3908,6 +3907,7 @@ youporn.com###producer
 ###advert-stickysky
 ###advert-text
 ###advert-wrapper
+###advert1
 ###advert234_container
 ###advert_250x250
 ###advert_header
@@ -4671,12 +4671,12 @@ youporn.com###producer
 ##.ad3
 ##.ad300
 ##.ad300250
-##.ad300x250a
-##.ad300x250b
 ##.ad300_250
 ##.ad300Block
 ##.Ad300x250
 ##.ad300x250
+##.ad300x250a
+##.ad300x250b
 ##.ad300x250box
 ##.ad300x250Top
 ##.ad300x40
@@ -4915,9 +4915,9 @@ youporn.com###producer
 ##.adSpace
 ##.adspace
 ##.adspace-300x600
-##.adspace_rotate
-##.adspace_buysell
 ##.adspace728x90
+##.adspace_buysell
+##.adspace_rotate
 ##.adspacer
 ##.adsplat
 ##.adspost
@@ -5702,8 +5702,8 @@ bellasugar.com###post_ad
 bellinghamherald.com###mastBanner
 bestbuy.com###dart-con
 betanews.com##.whitepapers
-bigpond.com##h5.subheading
 bigpond.com###header_banner
+bigpond.com##h5.subheading
 bigsoccer.com##.xmlContainer
 bing.com###sidebar
 bit-tech.net###broadband-finder-co-uk-120
@@ -5969,6 +5969,7 @@ download.cnet.com##.dh_vend_top
 downloadsquad.com,joystiq.com,luxist.com,massively.com,switched.com,wow.com###topleader-wrap
 downv.com##.topbanner
 dragcave.net###prefooter
+drive.com.au##.adSpot-textBoxGraphicRight
 drive.com.au##.cA-adStack
 drive.com.au##.cA-adStrap
 drive.com.au##.cA-buttonLink
@@ -6010,6 +6011,8 @@ eeeuser.com###header
 egotastic.com###reskin1
 egotastic.com##.noborder
 ehow.com##.takeoverBanner
+electricenergyonline.com###top_pub
+electricenergyonline.com###tower_pub
 electronista.com###footerleft
 electronista.com###footerright
 elitistjerks.com##.dca
@@ -6026,8 +6029,6 @@ empireonline.com##[width="950"][height="130"][align="center"]
 empireonline.com.au###msnmd_div
 empireonline.com.au##[valign="middle"][height="270"]
 empireonline.com.au##[width="950"][colspan="5"]
-electricenergyonline.com###top_pub
-electricenergyonline.com###tower_pub
 engadget.com###outerslice
 engadget.com##.skyscraper
 environmentalgraffiti.com###block-block-2
@@ -6314,8 +6315,8 @@ imageshack.us###ad
 imba.hu##.banner
 imdb.com###tn15adrhs
 imgur.com###advertisement
-imgur.com##.advertisement
 imgur.com###awesome-images
+imgur.com##.advertisement
 impulsegamer.com###table7
 impulsegamer.com##[width="350"][height="200"]
 inc.com##.ad_partners
@@ -6770,8 +6771,8 @@ orange.co.uk###home_partnerlinks
 orange.co.uk###home_shoppinglinks
 orange.co.uk###home_spensoredlinks
 orble.com###glinks
-ourfamilygenes.ca##[style="width: 100%; display: block; margin-bottom: 10px; height: 90px;"]
 osnews.com##.ad
+ourfamilygenes.ca##[style="width: 100%; display: block; margin-bottom: 10px; height: 90px;"]
 p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
 pagead2.googlesyndication.com##TABLE[style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255);"]
