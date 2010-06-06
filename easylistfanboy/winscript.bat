@@ -9,9 +9,6 @@ perl addChecksum.pl fanboy-adblocklist-stats.txt
 perl addChecksum.pl fanboy-adblocklist-dimensions-v2.txt
 perl addChecksum.pl fanboy-adblocklist-current-p2p.txt
 perl addChecksum.pl adblock-gannett.txt
-perl addChecksum.pl fanboy-adblocklist-cz.txt
-:: RUS
-perl addChecksum.pl fanboy-morpeh-rus.txt
 :: Firefox Regional lists
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
@@ -24,7 +21,6 @@ perl addChecksum.pl firefox-regional\fanboy-adblocklist-rus-v2.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-swe.txt
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-tky.txt
 :: Opera
-:: test
 perl addChecksum.pl opera\fanboy-adblocklist-elements-v3.css
 perl addChecksum-opera.pl opera\urlfilter.ini
 :: Iron
