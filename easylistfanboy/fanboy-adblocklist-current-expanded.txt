@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: GlqmzPwjeZ9RrRiVk+636w
+! Checksum: AEGzlzKdLbn1zqlbIpRR7g
 ! Fanboy's Adblock list
 ! Updated: 6 Jun 2010
 ! This list expires after 4 days
@@ -21,7 +21,6 @@
 .adbanner
 .adcontent
 .ads.darla.
-||ads.pof.com^
 .adserver.
 .adtooltip&
 .af-market.
@@ -1229,6 +1228,7 @@ server/CCID
 ||ads.nzcity.co.nz^
 ||ads.over-blog.com^
 ||ads.pheedo.com^
+||ads.pof.com^
 ||ads.readwriteweb.com^
 ||ads.rediff.com^$third-party
 ||ads.resellerratings.com^$third-party
@@ -2095,10 +2095,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 !
 !---------- Whitelists ----------
 !
-@@||cpalead.com^$domain=themoneykid.com|tuboupload.com|webwwe.com|tvgorge.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
-!
-!---------- Confirmed Whitelists ----------
-!
 @@.com/ad/$domain=afterdark-nfs.com|facepunch.com
 @@.gstatic.com/images?$domain=images.google.com
 @@/adframe.js$domain=macobserver.com|hackers.co.id|video2mp3.net
@@ -2106,6 +2102,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@/AS3AdPlayer.$domain=avclub.com
 @@/banner/banner-$domain=iobit.com
 @@/banner/banner_$domain=dexpot.de
+@@/BannerAd$domain=careerone.com.au
 @@/banners/ads/*$domain=valueram.com
 @@/flvvideoplayer.$domain=pbs.org
 @@/html.ng/*$domain=webmd.com
@@ -2127,6 +2124,8 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ad3.liverail.com^$domain=kstp.com|breitbart.tv
 @@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au
 @@||adimages.go.com^
+@@||ads.monster.com^*=375x154&$domain=careerone.com.au
+@@||ads.monster.com^*=765x260&$domain=careerone.com.au
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
 @@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
@@ -2142,6 +2141,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||b.scorecardresearch.com/b?$domain=last.fm
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
 @@||brightcove.com^*bannerid$third-party
+@@||cpalead.com^$domain=themoneykid.com|tuboupload.com|webwwe.com|tvgorge.com|sqweebs.com|freemoovees.com|free-space.net|lookthis.org|paidpaste.com|rsengine.net|youserials.com|runescapehack.net|mastahacks.com|runescapecheat.net|watchhqmovies.com|wtso.net|latest-episode.net|videodownloadx.com|tvokay.com|rapidit.info|rslinkgens.info,script,subdocument
 @@||cubeecraft.com/openx/$~third-party
 @@||dart.clearchannel.com/html.ng/$object_subrequest,domain=radio1045.com
 @@||de.ign.com/js.ng/size=headermain$domain=teamxbox.com
@@ -2158,6 +2158,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ltassrv.com^$domain=animecrazy.net,third-party,script,object_subrequest
 @@||m1.2mdn.net^$domain=3news.co.nz|tv3.co.nz|nationalgeographic.com,object_subrequest
 @@||mads.cbs.com/mac-ad?*$domain=cbs.com,object_subrequest
+@@||media.monster.com/ads/*375x154.$~third-party
 @@||multi-load.com/peel.js
 @@||nickjr.mtvnimages.com/*width=115&height=87$image,background
 @@||nzd.co.nz^*/ads/webads$script,domain=nzdating.com
@@ -5273,6 +5274,8 @@ youporn.com###producer
 ##.left-ads
 ##.left_col_ad
 ##.leftad
+##.leftAdColumn
+##.leftAdColumn
 ##.leftAds
 ##.leftnavad
 ##.LeftTowerAd
