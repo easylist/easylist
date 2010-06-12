@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: mHREhE/YdppZ19kH6asbMw
+! Checksum: rQ4RN4Qjqe6F+F5orS6Fzg
 ! Fanboy's Adblock list
 ! Updated: 12 Jun 2010
 ! This list expires after 5 days
@@ -108,6 +108,7 @@
 /ad-layer
 /ad-leaderboard
 /ad-middle
+/ad-openx.
 /ad-server/*
 /ad-skyscraper
 /ad-square
@@ -118,7 +119,6 @@
 /ad.code?
 /ad.gif?
 /ad.html?
-/ad-openx.
 /ad.php3?
 /ad.php?
 /ad.sense/*
@@ -569,9 +569,9 @@
 /external/ads/*
 /external_ads.
 /fan-ads.$script
-/files/adman/*
 /fc_ads/*
 /feeds/jobroll/?
+/files/adman/*
 /flash/advertis
 /flash_advertising/*
 /floatadv.
@@ -1203,7 +1203,6 @@ server/CCID
 ||admpads.com^$third-party
 ||adn.ebay.com^$third-party
 ||adnxs.com^$third-party
-||nwanime.com/nwout/vcm/$subdocument
 ||adotic.com^$third-party
 ||adotomy.com^$third-party
 ||adotube.com^$third-party
@@ -1799,12 +1798,13 @@ server/CCID
 ||nexac.com^$third-party
 ||nijobfinder.co.uk/affiliates/
 ||northmay.com^$third-party
-||npvos.com^$third-party
 ||npplpoker.com.au/images/banners/
 ||npplpoker.com.au/images^*/corporate_ban
+||npvos.com^$third-party
 ||nrs-group.com^$third-party
 ||nuggad.net^$third-party
 ||nvero.net^$third-party
+||nwanime.com/nwout/vcm/$subdocument
 ||nzads.net.nz^$third-party
 ||nzphoenix.com^$third-party
 ||oascentral.chron.com^
@@ -2217,10 +2217,10 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ffiles.com/images/page-flip_336x280.jpg
 @@||funkyfun.altervista.org/adsense.js$domain=livevss.net,third-party
 @@||gamereplays.org/community/uploads/ads/$script
+@@||nwanime.com/adimages/|$subdocument
 @@||pagead2.googlesyndication.com/pagead/ads?client=$domain=ffiles.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=seeingwithsound.com|ffiles.com|articlewagon.com|codeasily.com
 @@||video2mp3.net/img/adsense.js
-@@||nwanime.com/adimages/|$subdocument
 !
 !---------------------- Dimensions ----------------------
 !
@@ -2734,8 +2734,8 @@ sz=47x47;
 @@|http://www.imdb.com/images/*doubleclick/*
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image,background
 @@||sfx-images.mozilla.org/*x$domain=spreadfirefox.com,image,background
-@@||zshare.net/adsense.js$script
 @@||zshare.net/ads.js$script
+@@||zshare.net/adsense.js$script
 !
 !---------- Adult Blocking Rules ----------
 !
@@ -4218,9 +4218,9 @@ youporn.com###producer
 ###googleAdView
 ###googlebanner
 ###googleblock300
-###googlesponsor
-###googleShoppingAdsTop
 ###googleShoppingAdsRight         
+###googleShoppingAdsTop
+###googlesponsor
 ###grid_ad
 ###hd_ad
 ###hdrAdBanner
@@ -4740,9 +4740,9 @@ youporn.com###producer
 ##.ad300Block
 ##.Ad300x250
 ##.ad300x250
+##.ad300x250_box
 ##.ad300x250a
 ##.ad300x250b
-##.ad300x250_box
 ##.ad300x250box
 ##.ad300x250Top
 ##.ad300x40
@@ -4757,8 +4757,8 @@ youporn.com###producer
 ##.ad728
 ##.ad728_90
 ##.ad728x90
-##.ad728x90box
 ##.ad728x90_container
+##.ad728x90box
 ##.ad728x90WithLabel
 ##.ad768x90
 ##.ad8
@@ -4789,8 +4789,8 @@ youporn.com###producer
 ##.ad_adblade
 ##.AD_area
 ##.ad_banner
-##.ad_banner_border
 ##.ad_banner2
+##.ad_banner_border
 ##.ad_bg
 ##.ad_biz
 ##.ad_block
@@ -5080,9 +5080,9 @@ youporn.com###producer
 ##.adwrapper
 ##.adwrapper948
 ##.affiliate-sidebar
-##.affiliateAdvertText
-##.affiliate_header_ads_container
 ##.affiliate_header_ads
+##.affiliate_header_ads_container
+##.affiliateAdvertText
 ##.afs_ads
 ##.aisle-ad
 ##.alt_ad
@@ -5472,16 +5472,16 @@ youporn.com###producer
 ##.sfsp_adadvert
 ##.showAd_No
 ##.showcaseAd
-##.side-ad-blocks
-##.side-ad-120-top
-##.side-ad-120-middle
 ##.side-ad-120-bottom
-##.side-ad-160-top
-##.side-ad-160-middle
+##.side-ad-120-middle
+##.side-ad-120-top
 ##.side-ad-160-bottom
-##.side-ad-300-top
-##.side-ad-300-middle
+##.side-ad-160-middle
+##.side-ad-160-top
 ##.side-ad-300-bottom
+##.side-ad-300-middle
+##.side-ad-300-top
+##.side-ad-blocks
 ##.side-ads                   
 ##.sidead
 ##.SideAds
@@ -5654,8 +5654,8 @@ youporn.com###producer
 !
 !---------------------- Site specific hiding rules ----------------------
 !
-##a[href^="http://www.ringtonematcher.com/"]
 ##[id^="MarketGid"]
+##a[href^="http://www.ringtonematcher.com/"]
 123people.co.uk###l_banner
 123people.co.uk##.cb_navigation_ad
 3news.co.nz##.newsdate2
@@ -6487,9 +6487,9 @@ itp.net##.hpbanner
 itp.net##.lboard
 itp.net##.top_bit
 itproportal.com##.article_mpu_box
+itreviews.co.uk###bmmBox
 itworld.com###more_resources
 itworld.com###partner_strip
-itreviews.co.uk###bmmBox
 ixbtlabs.com##.aseadn
 ixbtlabs.com##[style="width: 336px; height: 280px; margin-bottom: 16px; margin-top: 0px; overflow: hidden;"]
 ixquick.com##.reltext
@@ -6830,6 +6830,8 @@ nme.com###mpu
 notcot.com##.floatbox
 notcot.com##.floater
 notebookreview.com##[width="400"][height="280"]
+nwanime.com##[style="margin: auto; display: block; width: 300px; height: 250px; overflow: hidden;"]
+nwanime.com##[style="margin: auto; display: block; width: 728px; height: 90px; overflow: hidden;"]
 ny1.com##.bannerTop
 nyaatorrents.org##[style="text-align: left; padding: 2px; margin-top: 5px; margin-left: 15px;"]
 nyaatorrents.org##[style="width: 728px; float: left; text-align: left; padding: 2px; margin-top: -4px; margin-left: 15px;"]
@@ -7223,9 +7225,9 @@ storagereview.com##[valign="middle"][align="right"]
 stretcher.com##[width="500"][bordercolor="#38923D"]
 stuff.co.nz###dpop
 stuff.co.nz###footer-sitemap
+stuff.co.nz###special_offer_box
 stuff.co.nz##.hbox_top_sponsor
 stuff.co.nz##embed[width="260"][height="100"]
-stuff.co.nz###special_offer_box
 sunshinecoastdaily.com.au###localOffers
 sunshinecoastdaily.com.au###section_advertorial_feature
 suntimes.com###leader
@@ -7434,8 +7436,6 @@ tvnz.co.nz##.advertising
 tvnz.co.nz##.advertisment
 tvsquad.com###legal
 tvsquad.com###tvsquad_topBanner
-nwanime.com##[style="margin: auto; display: block; width: 300px; height: 250px; overflow: hidden;"]
-nwanime.com##[style="margin: auto; display: block; width: 728px; height: 90px; overflow: hidden;"]
 tvsquad.com##.banner
 tweetmeme.com##.partners
 twistedsifter.com###banner
