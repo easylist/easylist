@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: C779qjmKirDuK+4CjjLwzQ
+! Checksum: FH9li+9qYCnSEa/hQIyzNQ
 ! Fanboy's Adblock list
-! Updated: 12 Jun 2010
+! Updated: 13 Jun 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -415,7 +415,7 @@
 /aff-exchange/*
 /affbanners/*
 /affiliate_banners/*
-/affiliates/*$third-party
+/affiliates/ban
 /affilitebanners/*
 /afr.php?
 /ajax/ads/*
@@ -656,6 +656,7 @@
 /images/adbar.gif
 /images/ads-
 /images/adv/*
+/images/affiliates/*
 /images/banner_$object
 /images/bnrad/*
 /images/gads_
@@ -1796,6 +1797,7 @@ server/CCID
 ||news.com.au^*/promotions/
 ||newzfind.com/ads/
 ||nexac.com^$third-party
+||nijobfinder.co.uk/affiliates/
 ||northmay.com^$third-party
 ||npplpoker.com.au/images/banners/
 ||npplpoker.com.au/images^*/corporate_ban
@@ -2719,7 +2721,7 @@ sz=47x47;
 !
 !---------- Dimension Whitelists ----------
 !
-@@-120x90.$domain=jvideo.warphd.com|thestreet.com,image
+@@-120x90.$image,domain=jvideo.warphd.com|thestreet.com
 @@-160x160.jpg$domain=parentsconnect.com
 @@-300x250.jpg$domain=nypost.com|motherjones.com
 @@/300x250$domain=empireonline.com,image
@@ -3344,6 +3346,7 @@ LargeFlashAd.js
 !---------- Adult Whitelists ----------
 !
 @@/ffadult/passion/ad_passion*$image,background
+@@||4fuckr.com/js/adframe.js
 @@||eskimotube.com/advertisements.php?
 @@||mallcom.com^$domain=mallcomvod.com|thevod.net,third-party,image,background,subdocument
 @@||nudeparadisehotel.com^*/AC_RunActiveContent.js
