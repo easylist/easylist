@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: euJjHyDO1m3tWdeMMo6QQQ
+! Checksum: A7j30EhYYBywyqQHOITHdA
 ! Fanboy's Adblock list
 ! Updated: 27 Jun 2010
 ! This list expires after 5 days
@@ -1010,6 +1010,7 @@ _ad_label.
 _ad_middle_
 _ad_one.html?
 _ad_page_
+_ad_placeholder
 _ad_renderer_
 _adcall.php/
 _adcom.php?
@@ -1017,7 +1018,6 @@ _adengage_
 _adlog.asp?
 _adRight.
 _ads.php?
-_ad_placeholder
 _Ads/InHouse
 _ads1.asp
 _ads_index_
@@ -1026,8 +1026,8 @@ _adshow.asp?
 _advert_vert
 _advertisement_
 _assets/ads/
-_box_ad_
 _blogads.
+_box_ad_
 _cedexis.
 _custom_ad.
 _custom_ad_
@@ -1040,8 +1040,8 @@ _generic_ad.
 _google_ad.
 _google_video_ads
 _hp_promo_
-_leaderboard?
 _iframe_ad_
+_leaderboard?
 _minibanner
 _org_ad.
 _reporting_ads.
@@ -2242,9 +2242,6 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ads.monster.com^*=765x260&$domain=careerone.com.au
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
-@@||msads.net/crossdomain.xml$object_subrequest,domain=msnbc.msn.com
-@@||msads.net^*.flv|$object_subrequest,domain=msnbc.msn.com
-@@||msads.net^*.swf|$object_subrequest,domain=msnbc.msn.com
 @@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||adserver.yahoo.com^*=FOOT&$third-party,subdocument
 @@||adserver.yahoo.com^*=HEAD&$third-party,subdocument
@@ -2278,6 +2275,9 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||mads.cbs.com/mac-ad?*$domain=cbs.com,object_subrequest
 @@||media.monster.com/ads/*375x154.$~third-party
 @@||medrx.sensis.com.au/images/sensis/afl/util.js$script,domain=afl.com.au
+@@||msads.net/crossdomain.xml$object_subrequest,domain=msnbc.msn.com
+@@||msads.net^*.flv|$object_subrequest,domain=msnbc.msn.com
+@@||msads.net^*.swf|$object_subrequest,domain=msnbc.msn.com
 @@||multi-load.com/peel.js
 @@||nickjr.mtvnimages.com/*width=115&height=87$image,background
 @@||nzd.co.nz^*/ads/webads$script,domain=nzdating.com
@@ -5905,10 +5905,10 @@ youporn.com###producer
 ##.yahoo_ads
 ##.yan-sponsored
 ##.yrail_ads
-##A.ad_policy
 ##[id^="MarketGid"]
-##a[href^="http://www.ringtonematcher.com/"]
+##A.ad_policy
 ##a[href^="http://www.google.com/aclk?"]
+##a[href^="http://www.ringtonematcher.com/"]
 ##A[href^="https://adwords.google.co"]
 ##FIELDSET.ads
 ##IMG.ad-image
