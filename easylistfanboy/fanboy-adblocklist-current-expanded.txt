@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 2YoxOFxn3cuFj9GJZwWq2w
+! Checksum: euJjHyDO1m3tWdeMMo6QQQ
 ! Fanboy's Adblock list
 ! Updated: 27 Jun 2010
 ! This list expires after 5 days
@@ -1017,6 +1017,7 @@ _adengage_
 _adlog.asp?
 _adRight.
 _ads.php?
+_ad_placeholder
 _Ads/InHouse
 _ads1.asp
 _ads_index_
@@ -1025,6 +1026,7 @@ _adshow.asp?
 _advert_vert
 _advertisement_
 _assets/ads/
+_box_ad_
 _blogads.
 _cedexis.
 _custom_ad.
@@ -1039,6 +1041,7 @@ _google_ad.
 _google_video_ads
 _hp_promo_
 _leaderboard?
+_iframe_ad_
 _minibanner
 _org_ad.
 _reporting_ads.
@@ -2239,7 +2242,9 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||ads.monster.com^*=765x260&$domain=careerone.com.au
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
-@@||ads2.msads.net^*.swf$domain=msnbc.msn.com,object_subrequest
+@@||msads.net/crossdomain.xml$object_subrequest,domain=msnbc.msn.com
+@@||msads.net^*.flv|$object_subrequest,domain=msnbc.msn.com
+@@||msads.net^*.swf|$object_subrequest,domain=msnbc.msn.com
 @@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz
 @@||adserver.yahoo.com^*=FOOT&$third-party,subdocument
 @@||adserver.yahoo.com^*=HEAD&$third-party,subdocument
@@ -2264,7 +2269,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image,background
 @@||inspire.net.nz/adverts/$image
 @@||last.fm/ads.php?
-@@||last.fm/adserver/video/
+@@||last.fm/adserver/video/           
 @@||lavasoft.com/img/ad_$image,background
 @@||live365.com/mini/blank300x250.html$subdocument
 @@||live365.com/scripts/liveads.js$script
@@ -4110,6 +4115,7 @@ youporn.com###producer
 ###advertisement_notice
 ###advertiserLinks
 ###advertisingModule160x600
+###advertisingModule728x90
 ###advertorial
 ###adverts
 ###advertSection
