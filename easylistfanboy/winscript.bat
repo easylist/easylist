@@ -9,6 +9,7 @@ perl addChecksum.pl fanboy-adblocklist-stats.txt
 perl addChecksum.pl fanboy-adblocklist-dimensions-v2.txt
 perl addChecksum.pl fanboy-adblocklist-current-p2p.txt
 perl addChecksum.pl fanboy-adblocklist-stats-intl.txt
+perl addChecksum.pl fanboy-adblocklist-addon.txt
 perl addChecksum.pl adblock-gannett.txt
 :: Firefox Regional lists
 perl addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
