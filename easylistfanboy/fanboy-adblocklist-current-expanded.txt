@@ -1,14 +1,13 @@
 [Adblock Plus 1.1]
-! Checksum: ofaQCHTP9kyF8lYlDEKCwA
+! Checksum: G9Ubm91ZJE3jJ9dnHG8JyQ
 ! Fanboy's Adblock list
-! Updated: 30 Jun 2010
+! Updated: 1 Jul 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
 ! Redirect: https://fanboy-adblock-list.googlecode.com/hg/fanboy-adblocklist-current-expanded.txt
 ! Email: mp3geek@gmail.com Project homepage: http://fanboy.co.nz/adblock
 !
-/ad2.htm
 &ad_number=
 &Advert_Id=
 -ad-util-
@@ -92,6 +91,7 @@
 .swf?iurl=http
 .swf?link1=http
 .text-link-ads.
+.textads.
 .uk/adx.js
 .ws/banners/
 /.adserv/*
@@ -110,7 +110,6 @@
 /ad-feedback.
 /ad-html
 /ad-iframe-
-.textads.
 /ad-indicator
 /ad-inject/*
 /ad-layer
@@ -151,6 +150,7 @@
 /ad/textlinks/*
 /ad1.htm
 /ad1.jpg
+/ad2.htm
 /ad728x15
 /ad?sponsor
 /ad_350x
@@ -303,6 +303,7 @@
 /ads.png
 /ads.w3c.
 /ads/a.aspx?
+/ads/acctid
 /ads/ad.
 /ads/ad_
 /ads/adbot
@@ -892,7 +893,6 @@
 /silver/ads/*
 /site_ads.
 /SiteAds/*
-/skin-background.$image
 /skyframeopenads
 /slate_ad2.
 /slideshowintad?
@@ -1245,6 +1245,7 @@ server/CCID
 ||adlink.net^$third-party
 ||adlink.shopsafe.co.nz^
 ||adlog.com.com^$third-party
+||adm.fwmrm.net/p/$domain=discovery.com
 ||admanage.com^$third-party
 ||admarketplace.net^$third-party
 ||admd.yam.com^$third-party
@@ -1404,6 +1405,7 @@ server/CCID
 ||assoc-amazon.com^$third-party
 ||astrolabio.net^$third-party
 ||athena-ads.wikia.com^
+||atdmt.com^$third-party
 ||atwola.com^$third-party
 ||au.doubleclick.net/ad$third-party
 ||au2m8.com^$third-party
@@ -1668,11 +1670,13 @@ server/CCID
 ||geoshopping.nzherald.co.nz^
 ||gestionpub.com^$third-party
 ||getprice.com.au^$third-party
+||ghacks.net/skin-
 ||glam.com^$third-party
 ||globaladv.net^$third-party
 ||globalinteractive.com^$third-party
 ||glowdot.com^$third-party
 ||gon.cdn.on.net/zaphod/$object
+||goodgearguide.com.au/files/skins/
 ||google.com/uds/?file=ads
 ||googleadservices.com^$third-party
 ||googlesyndication.com^*/domainpark.cgi?$third-party
@@ -1935,6 +1939,7 @@ server/CCID
 ||pntra.com/b/$third-party
 ||pntrac.com/b/$third-party
 ||pntrs.com/b/$third-party
+||pointroll.com^$third-party
 ||polyad.net^$third-party
 ||popcap.com/spots/horizontal_
 ||poponclick.com^$third-party
@@ -2301,6 +2306,7 @@ itweb.co.za##div[style$="width: 300px; height: 266px;"]
 @@||sfx-images.mozilla.org/affiliates/Buttons/$domain=spreadfirefox.com,image,background
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
 @@||thetvdb.com/banners/
+@@||timeinc.net^*/advertising/$image,domain=people.com
 @@||tubemogul.com/adtags/$domain=comedy.com
 @@||v.fwmrm.net/ad/p/1?|$domain=video.adultswim.com|mlb.mlb.com,third-party,object_subrequest
 @@||vancouversun.com/js/adsync/
@@ -2953,6 +2959,7 @@ affiliateBannerShow.aspx?
 LargeFlashAd.js
 ||123advertising.nl^$third-party
 ||1tizer.com^$third-party,script
+||206.217.206.137^$third-party
 ||4gifs.com/Ads/
 ||4link.it^$third-party
 ||4tube.com/iframe/
@@ -2989,6 +2996,7 @@ LargeFlashAd.js
 ||ads.skinected.com^$third-party
 ||ads.stileproject.com^$third-party
 ||ads.streamlivesex.com^$third-party
+||ads.tube1.com^$third-party
 ||ads.xhamster.com^
 ||adult-adv.com^$third-party
 ||adult-profit-files.com^$script,subdocument
@@ -4364,6 +4372,7 @@ youporn.com###producer
 ###g-adblock2
 ###g_ad
 ###g_adsense
+###gallery-ad
 ###gallery-ad-m0
 ###gallery-advert
 ###gallery_ads
@@ -4825,6 +4834,7 @@ youporn.com###producer
 ###view-photo-ad
 ###viewAd1
 ###viewportAds
+###VM-header-adspace
 ###VM-header-adwrap
 ###VM-MPU-adspace
 ###vxFlashPlayerStaticIMUFrame
@@ -4966,6 +4976,7 @@ youporn.com###producer
 ##.ad300x600
 ##.ad310
 ##.ad336x280
+##.ad336x362
 ##.ad343x290
 ##.ad468_60
 ##.ad468x60
@@ -6649,6 +6660,7 @@ getprice.com.au##.tblAdAwareTopdivShort
 getprice.com.au##.TopBanners
 getprice.com.au##[style="clear: both; padding-left: 0pt; padding-bottom: 0pt; width: 580px;"]
 getprice.com.au##[style="height: 255px;"]
+ghacks.net##.gutterlink
 gigwise.com###skyscraper
 giveawayoftheday.com##.before_hot_tags
 giveawayoftheday.com##TABLE[width="100%"]
@@ -6669,6 +6681,8 @@ good.is###leaderBoard
 good.is##[style="border: 1px dotted rgb(61, 59, 53); margin: 20px 0px 2px 115px; padding: 3px 3px 18px; font-family: arial; font-size: 10px; display: inline; text-align: center; float: left; position: static; width: 728px; height: 90px;"]
 goodgearguide.com.au###careerone-promo
 goodgearguide.com.au###marketplace-padding
+goodgearguide.com.au###skinbutton
+goodgearguide.com.au##.contentpage-boombox
 goodhopefm.co.za##.mrec
 google.co.nz,google.ca,google.co.uk,google.com,google.com.au,google.de###mbEnd
 google.co.nz,google.ca,google.co.uk,google.com,google.com.au,google.de###rhsa
@@ -6927,6 +6941,7 @@ lightreading.com##[style="width: 728px; height: 90px; overflow: hidden; backgrou
 limelife.com##.rt_el_advert
 linux-mag.com###curtain
 linux-mag.com##.sponsor-widget
+linux.justinhartman.com###gumax-article-picture
 linuxcrunch.com###dock
 linuxinsider.com##.bbframe
 linuxinsider.com##.content-block-slinks
@@ -6967,6 +6982,7 @@ macnn.com###footerright
 macobserver.com##.specials
 macrumors.com###countdown
 macstories.net###ad
+macsurfer.com##.text_top_box
 macworld.co.uk###topBannerSpot
 macworld.com###subscribeForm
 madatoms.com##.add-column2
@@ -7302,8 +7318,10 @@ pcworld.com###bizPromo
 pcworld.com###blox3Deals
 pcworld.com###downloadNow
 pcworld.com###editPromo
+pcworld.com###footerRight
 pcworld.com###LogMeInAd
 pcworld.com###resourceCenter
+pcworld.com###resourceLinks
 pcworld.com###shopping
 pcworld.com###smbMarketplace
 pcworld.com###smbWhitepaperWrap
@@ -7320,6 +7338,7 @@ pennlive.com##.box_grayoutline
 penny-arcade.com##.funding-horizontal
 penny-arcade.com##.funding-vertical
 penny-arcade.com##.promos-horizontal
+people.com###globalrecirc
 people.com###treatYourself
 peoplepets.com###advertisement
 petri.co.il###adkit_content-block
@@ -7703,6 +7722,7 @@ thefashionspot.com###roadblock
 thefreedictionary.com###toggle_td_30
 thefreedictionary.com##.OvBorder
 thefreedictionary.com##.sidebar[valign="top"]
+theglobeandmail.com##.advetorial
 theglobeandmail.com##.conductor-links
 thehill.com###topbanner
 thehill.com##.banner
@@ -8090,7 +8110,6 @@ zdnet.com.au##.wo-widget-wrap
 zeenews.com##.tp-add-bg
 zshare.net##[style="float: left; width: 250px; line-height: 2em; text-align: center;"]
 zug.com###header_rotate
-ghacks.net##.gutterlink
 zuula.com###secondary
 !
 !---------- Hiding Rules With Exceptions ----------
