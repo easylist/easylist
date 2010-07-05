@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: WLKlHzJfsTjivubzGLmo4Q
+! Checksum: tS1hkK0vMAqtAUzh5Jilig
 ! Fanboy's Adblock list
 ! Updated: 5 Jul 2010
 ! This list expires after 5 days
@@ -269,6 +269,7 @@
 /adng.html?
 /adotube_adapter.
 /adpage.htm
+/adpanelcontent.
 /adpeeps
 /ADPictures/*
 /adpoint.
@@ -855,6 +856,7 @@
 /rightbanner/*
 /rotatingtextad
 /rotationad.
+/rss/ads/*
 /ScanScoutPlugin.
 /scripts/ad-
 /scripts/Ad.
@@ -2107,7 +2109,8 @@ server/CCID
 ||tribalfusion.com^$third-party
 ||tripadvisor.com/adp/
 ||truthaboutabs.com^$third-party
-||ts.richmedia.yahoo.com/
+||ts.richmedia.yahoo.com^
+||tsviewer.com^*/popup.js
 ||ttzmedia.com^$third-party
 ||tumri.net^$third-party
 ||twtad.com^$third-party
@@ -2116,11 +2119,12 @@ server/CCID
 ||u-ads.adap.tv^$third-party
 ||ucoz.net/popup/
 ||udmserve.net^$third-party
-||ugo.com/takeover/
+||ugo.com/takeover/                                                 
 ||unicast.com^$third-party
 ||unicast.ign.com/assets/
 ||unicast.msn.com^
 ||upads.info^$third-party
+||uploadmirrors.com/banner
 ||usenetpassport.com^$third-party
 ||utarget.co.uk^$third-party
 ||v.fwmrm.net/ad/$script
@@ -3981,6 +3985,8 @@ youporn.com###producer
 ###admpu
 ###adnews
 ###adNshareWrap
+###AdPanelBigBox
+###AdPanelLogo
 ###adposition-C
 ###adPosition0
 ###adposition1
@@ -4071,6 +4077,7 @@ youporn.com###producer
 ###adsNarrow
 ###adsonar
 ###adspace-300x250
+###adspace-one
 ###adSpace1
 ###adSpace2
 ###adspace300x250
@@ -4267,6 +4274,7 @@ youporn.com###producer
 ###body_ad
 ###botad
 ###bottom-banner-spc
+###bottom-boxad
 ###bottom-sky
 ###bottom_ad
 ###bottom_ad_area
@@ -4544,6 +4552,7 @@ youporn.com###producer
 ###long-ad-space
 ###lowerthirdad
 ###lrec
+###lrec_ad
 ###m_top_adblock
 ###main-ad160x600
 ###main-ad160x600-img
@@ -4696,6 +4705,7 @@ youporn.com###producer
 ###side-ad
 ###side-ads
 ###side-ads-box
+###side-boxad
 ###side_ad_wrapper
 ###side_ads
 ###sideAd
@@ -5486,6 +5496,7 @@ youporn.com###producer
 ##.bx_ad
 ##.bx_ad_right
 ##.canoeAdvertorial
+##.care2_adspace
 ##.cb-ad-container
 ##.cbstv_ad_label
 ##.cbzadvert
@@ -5506,6 +5517,7 @@ youporn.com###producer
 ##.ContentAd
 ##.contentad
 ##.contentleftad
+##.cornerBoxInnerWhiteAd
 ##.cp_ad
 ##.cube_ads
 ##.cubeAd
@@ -5796,6 +5808,7 @@ youporn.com###producer
 ##.section_ad_left
 ##.sfsp_adadvert
 ##.showAd_No
+##.ShowAdDisplay
 ##.showcaseAd
 ##.side-ad-120-bottom
 ##.side-ad-120-middle
@@ -5892,6 +5905,7 @@ youporn.com###producer
 ##.SponsorIsland
 ##.sponsorLabel
 ##.sponsorLinks
+##.sponsorship_ad
 ##.sponsorshipContainer
 ##.spotlightAd
 ##.squaread
@@ -6640,6 +6654,7 @@ foodnetwork.com##.sponslink
 foodprocessorsdirect.com##.zoneWidth100
 fool.com###flash
 fool.com##.sponsoredBy
+footytube.com###ft_mpu
 fora.tv###common_right_lower_adspace
 fora.tv###common_right_lower_player_adspace
 fora.tv###common_right_right_adspace
@@ -6964,6 +6979,7 @@ knowyourmobile.com###phones4u_masthead
 knowyourmobile.com###phones4u_masthead_500
 knowyourmobile.com##.skyright
 knoxnews.com##.bigbox
+knucklesunited.com###site-title
 komonews.com###leader-sponsor
 komonews.com##.callout
 kongregate.com###sponsored_game_row_listing
@@ -7613,6 +7629,10 @@ sify.com##TD.border1[valign="top"][height="280"]
 silicon.com###sitemap
 siliconchip.com.au##[style="width: 310px; border: 1px solid rgb(51, 102, 153); background: none repeat scroll 0% 0% rgb(227, 235, 243); margin-right: 6px;"]
 silverlight.net##.banner_header
+similarsites.com###SponsoredTag
+similarsites.com##.GoogleAdInfo
+similarsites.com##.SidebarBanner
+similarsites.com##[style="background-color: rgb(252, 253, 254);"]
 simplyhired.com##.featured
 siteadvisor.com##.midPageSmallOuterDiv
 siteadvisor.com##[style="border: 1px solid rgb(238, 238, 238); padding: 3px; float: right; color: rgb(221, 221, 221);"]
@@ -7910,6 +7930,9 @@ tutsplus.com##.leader_board
 tv.com###mpu
 tv3.co.nz###greyout
 tv3.co.nz###pa
+tvgolo.com##.inner2
+tvgolo.com##.title-box4
+tvgolo.com##.title-box5
 tvguide.co.uk##[width="160"][height="620"]
 tvguide.co.uk##[width="984"][height="258"]
 tvnz.co.nz###sponsor
@@ -8137,6 +8160,7 @@ yatsoba.com##.sponsors
 yauba.com###sidebar > .block_result:first-child
 yauba.com##.resultscontent:first-child
 yeeeah.com###orangebox
+yfrog.com##.promo-area
 yorkshireeveningpost.co.uk###banner01
 yorkshireeveningpost.co.uk###contentbox02google
 yorkshireeveningpost.co.uk###contentbox08

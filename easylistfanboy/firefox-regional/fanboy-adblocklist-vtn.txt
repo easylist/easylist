@@ -1,12 +1,15 @@
 [Adblock Plus 1.1]
-! Checksum: 2ZmPqNBT/Z395DPCnH4tKA
+! Checksum: mI7a2s5ZGqReXAn2y2ohbg
 ! Fanboy's Vietnamese-addon Adblock list 
-! Updated: 4 Jul 2010
+! Updated: 5 Jul 2010
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
 !
 .vn/ads/
+.vn/ads.
+.vn/ads_
+.vn/Advs/
 _AdsZone_
 _quangcao.
 /_BannerSlot.aspx?
@@ -16,6 +19,8 @@ _quangcao.
 /AdLib.js
 /AdWord/*
 /adv-title.
+/advright-
+/advtop-
 /ads-chuyenmuc/*
 /ads-homepage/*
 /ads-tinbai/*
@@ -39,6 +44,7 @@ _quangcao.
 ||buy-sell.vn/flash/
 ||docbao.vn/NewsMedia/Ad/
 ||et.phununet.com^
+||eva.vn/js/eva.js
 ||bongda.com.vn/data/File/
 ||game8.vn/spirit/ads/banner_
 ||groupon.vn^$third-party
@@ -46,13 +52,16 @@ _quangcao.
 ||ledmobile.net/ads/
 ||netad.vn^$third-party
 ||phununet.com/Ads/
+||socbay.com/ads/
 ||softvnn.com/images/
+||thegioioto.com.vn/Autos/Images/Home/                          
 ||tinthethao.com.vn/click/ck/
 ||tin247.com^*/advertisements/
 ||tienganh.com.vn/anh/
 ||vietad.vn^$third-party
 ||vatgia.com/images/phuhungfull
 ||vatgia.com/images/tlbb_
+||vnphoto.net/data/gallery/fullsize/
 ||webketoan.vn^*/banners/
 ||uphinh.vn^$third-party
 ||xaluan.com/images/banners/
@@ -69,12 +78,14 @@ _quangcao.
 ||reporting.nld.com.vn^
 ||stat.24h.com.vn^
 ||stat.vietnamnet.vn^
+||statistics.sgtt.com.vn^
 !
 !---------- Whitelists ----------
 !
 @@||baodatviet.vn^*/logodv-1
 @@||softvnn.com/images/banner.swf
 @@||otosaigon.com^*/showbanners.js
+@@||thegioioto.com.vn^*/Images/Adv/
 !
 !---------- Vietnamese Element Hiding Rules ----------
 !
@@ -88,6 +99,10 @@ bongdaso.com##.med_rec_banner1
 bongdaso.com##.med_rec_banner2
 dantri.com.vn##.top-ads
 ddth.com##table[cellspacing="10"][width="92%"]
+eva.vn###ads_center_banner
+eva.vn##.banner_header
+eva.vn##.banner_header_sub
+eva.vn###ads_special_center
 forum.bacsi.com##[style="border: 1px solid rgb(235, 249, 252); padding: 5px; margin-top: 0px; margin-bottom: 0px; text-align: center;"]
 hanoimoi.com.vn##.right_content_box_bottom_adv
 hanoimoi.com.vn###right_content_box
@@ -100,6 +115,11 @@ google.com,google.com.vn###tads
 otosaigon.com###topadv1_divTop
 otosaigon.com##.ADV
 otosaigon.com##.content_adv
+sgtt.com.vn##.BoxAdv
+sggp.org.vn##.DonVi
+sggp.org.vn##.Quang_Cao_Giua
+sggp.org.vn##.QC_Ngang
+thegioioto.com.vn###AutoNumber1
 thanhnien.com.vn###WebPartWPQ21
 thanhnien.com.vn##.qc-Title
 thanhnien.com.vn##.qc-data
@@ -111,6 +131,7 @@ tin247.com##.content.free_advertisement
 tin247.com###banner_share
 tinthethao.com.vn###MetaNET_ADV_NUMBER_2
 vietnamplus.vn##.newsAdText
+vinabull.com###imgHead
 vtc.vn##.adv
 vtc.vn###divAdRight
 vtc.vn##.advAllWidth
@@ -120,6 +141,7 @@ vtc.vn###home-banner-top-right1a
 vtc.vn###home-banner-top-right1b
 vtc.vn###link-home-banner-top-right1a
 vtc.vn###link-home-banner-top-right1b
+webketoan.vn##.headerright
 webketoan.vn##.left_banner
 webketoan.vn##.right_banner
 webketoan.vn##.banner_right
