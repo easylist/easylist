@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 
 #############################################################################
-# This is a reference script to add checksums to downloadable               #
-# subscriptions. The checksum will be validated by Adblock Plus on download #
-# and checksum mismatches (broken downloads) will be rejected.              #
+# This is a slightly modified version of the reference script to add        #
+# checksums to downloadable subscriptions. The checksum will be validated   #
+# by Adblock Plus on download and checksum mismatches(broken downloads)     #
+# will be rejected.															#
 #                                                                           #
 # To add a checksum to a subscription file, run the script like this:       #
 #                                                                           #
