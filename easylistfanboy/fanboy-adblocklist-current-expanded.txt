@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ByWJ/b1xeyGqPe363W7xgg
+! Checksum: 3TFB2FCRqC7YX3RIGaTJCA
 ! Fanboy's Adblock list
 ! Updated: 14 Jul 2010
 ! This list expires after 5 days
@@ -246,6 +246,7 @@
 /adfshow
 /adfunction
 /AdHandler
+/adheader.
 /adhug_jc.
 /adiframe.
 /adiframe/*
@@ -864,6 +865,8 @@
 /reklame.asp?
 /reklame/*$image
 /relatedads
+/remove_ads.
+/remove_ads2.
 /RequestAdvertisement.
 /richOAS.
 /right_ad.
@@ -1267,6 +1270,7 @@ server/CCID
 ||adlik.akavita.com^$third-party
 ||adlink.net^$third-party
 ||adlink.shopsafe.co.nz^
+||adlisher.com^$third-party
 ||adlog.com.com^$third-party
 ||adm.fwmrm.net/p/$domain=discovery.com
 ||admanage.com^$third-party
@@ -1682,7 +1686,6 @@ server/CCID
 ||funklicks.com^$third-party
 ||funtonia.com/promo/
 ||fusionads.net^$third-party
-||futurenet.com^$third-party
 ||fwmrm.net/ad/l/1?metr
 ||g-cash.biz/banner/
 ||g.doubleclick.net^$third-party
@@ -1700,7 +1703,6 @@ server/CCID
 ||gestionpub.com^$third-party
 ||getprice.com.au^$third-party
 ||ghacks.net/skin-
-||giantrealm.com^$third-party
 ||glam.com^$third-party
 ||globaladv.net^$third-party
 ||globalinteractive.com^$third-party
@@ -2035,6 +2037,7 @@ server/CCID
 ||s.trigami.com^$third-party
 ||s2d6.com^$third-party
 ||sa.entireweb.com^$third-party
+||safemanuals.com/shopping/
 ||safetrackonline.biz^$third-party
 ||sankakucomplex.com/img/www/
 ||scanscout.com^$third-party
@@ -4006,6 +4009,8 @@ youporn.com###producer
 ###add_space_google
 ###add_space_sidebar
 ###addDiv
+###AdDetails_GoogleLinksBottom
+###AdDetails_SeeMoreLink
 ###AdDiv
 ###adDiv
 ###addiv-bottom
@@ -4757,6 +4762,7 @@ youporn.com###producer
 ###right_ad_wrapper
 ###right_adv1-v2
 ###right_column_ad
+###right_column_ads
 ###right_column_top_ad_unit
 ###RightAd
 ###rightAd
@@ -4813,6 +4819,7 @@ youporn.com###producer
 ###sideline-ad
 ###single-mpu
 ###singlead
+###singleAdsContainer
 ###site-leaderboard-ads
 ###site_top_ad
 ###sky-ad
@@ -4906,6 +4913,7 @@ youporn.com###producer
 ###top_adv-v2
 ###top_advert
 ###top_google_ads
+###top_right_ad
 ###top_sponsor_ads
 ###top_wide_ad
 ###topAD
@@ -5131,6 +5139,7 @@ youporn.com###producer
 ##.ad768x90
 ##.ad8
 ##.ad980x50box
+##.ad_0
 ##.ad_1
 ##.Ad_120x600
 ##.Ad_120x600_holder
@@ -5372,6 +5381,7 @@ youporn.com###producer
 ##.adsc
 ##.adscontainer
 ##.adscreen
+##.AdScriptBox
 ##.adsDiv
 ##.adsection_a2
 ##.adsection_c2
@@ -5385,6 +5395,7 @@ youporn.com###producer
 ##.adsense-wide-background
 ##.adsense_menu
 ##.adsenseBlock
+##.adsenseGreenBox
 ##.adServer
 ##.adsforums
 ##.adSize_MedRec
@@ -5401,8 +5412,8 @@ youporn.com###producer
 ##.adspace_rotate
 ##.adspacer
 ##.adsplat
+##.adSpo
 ##.adspost
-##.adSpot
 ##.adspot
 ##.adSpot-textBox
 ##.adSpot-textBoxGraphicRight
@@ -5501,6 +5512,7 @@ youporn.com###producer
 ##.affiliateAdvertText
 ##.afs_ads
 ##.aisle-ad
+##.aisoad
 ##.alt_ad
 ##.artAdInner
 ##.article_mpu_box
@@ -5581,6 +5593,7 @@ youporn.com###producer
 ##.bottom_bar_ads
 ##.bottom_sponsor
 ##.bottomAd
+##.BottomAdContainer
 ##.bottomAds
 ##.bottomleader
 ##.box-ad-a
@@ -5911,6 +5924,7 @@ youporn.com###producer
 ##.rightcolad
 ##.rightcoltowerad
 ##.rightColumnRectAd
+##.RightGoogleAFC
 ##.rightrail_ads
 ##.RightRailTop300x250Ad
 ##.RightTowerAd
@@ -5924,6 +5938,7 @@ youporn.com###producer
 ##.rt_advert_name
 ##.sb_ad_holder
 ##.sb_adsW
+##.sb_adsWv2
 ##.scanAd
 ##.scoopads
 ##.search-ad
@@ -6086,6 +6101,7 @@ youporn.com###producer
 ##.TopAd
 ##.topAd                                                          
 ##.topadbox
+##.TopAdContainer
 ##.TopAdL
 ##.topAdLeft
 ##.TopAdR
@@ -6346,6 +6362,7 @@ bostonreview.net##.graphic_ad
 boyplz.com##[width="250"]
 brainz.org##.top-banner
 brandrepublic.com###banner
+brandsoftheworld.com###leaderboardTop
 break.com###adSkinBackdrop
 break.com###cdpSliver
 break.com##.adlabel
@@ -7763,6 +7780,7 @@ search.vmn.net##[style="border-left: 1px solid rgb(204, 204, 204);"]
 search.winamp.com##.SLL
 search.winamp.com##.SWOL
 search.yahoo.com###r-e
+search.yahoo.com###r-n
 search.yahoo.com###sec-col
 searchdisasterrecovery.techtarget.com##[cellpadding="0"][width="776"]
 searchenginejournal.com###home-125-left2
