@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: SDunS2se/QXyXbq87gAPZg
+! Checksum: rsnhpFdDcoQ93p+siebhhQ
 ! Fanboy's Japanese-addon Adblock list 
-! Updated: 17 Jul 2010
+! Updated: 19 Jul 2010
 ! This list expires after 10 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -21,6 +21,7 @@ _ds_adtag_
 .jp/js.ng/
 /ad_bomb/*
 /ad_timer.js
+/ad_parts.
 /AdLantis
 /ads/techcrunchjapan_
 /advalue_
@@ -154,6 +155,7 @@ http://ad.jp.
 ||rcm-jp.amazon.co.jp/e/cm?$third-party
 ||rd.rakuten.co.jp^
 ||recommender.jp^$third-party
+||response.jp/ad/
 ||ric.hi-ho.ne.jp/webmaster-p/shanbara/
 ||rssad.jp^$third-party
 ||s-45.com/analyze-
@@ -195,13 +197,16 @@ http://ad.jp.
 .jp/Zen?
 .jp/c.gif?
 /analysis/AccessLog?
+/analysis1.
+/analysis2.
+/adtilecookie.
 /beacon.php3?
 /beacon.php?
 /img/bcn.gif?
 /jpn_gtracking.js
 /json/count?
 /page_beacon.gif?
-/response.jp/pv.php?
+||response.jp/pv.php?
 ||em1.shinobi.jp^
 ||hitgraph.jp^$third-party
 ||itgear.jp^$third-party
@@ -221,9 +226,14 @@ http://logping.
 !
 ###ad_txt
 ###ad_large
+###ad_interestmatch
+##.adsense_mainbox01
+##.adsense_box01
+###ad_interestmatch400
 ##.ad_regular1
 ##.ad_regular2
 ##.ad_regular3
+##.ad_large
 47news.jp###header
 4gamer.net##.ad_top
 4gamer.net##.affiliate
@@ -285,6 +295,8 @@ j-cast.com###RCBannerToolBar
 j-cast.com###RCOverture2
 japanese.engadget.com##.shopping2
 japantoday.com##.article_ad
+japan.cnet.com###top_recommend
+japan.cnet.com###ai_info
 jiji.com###shopping_2nd
 jiji.com###sumai_banner
 joins.com##.rightBanner
@@ -360,6 +372,7 @@ sponichi.co.jp###relation-block
 tokyo-np.co.jp##.banner01
 tokyo-np.co.jp###Banner-area
 tokyo-np.co.jp##.PR
+tv-asahi.co.jp###headCenter
 wadaino.jp###ad
 yahoo.co.jp###adLrec
 yahoo.co.jp###adRp
