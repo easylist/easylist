@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: oQuUVoSIGuA621RK7ckzZg
+! Checksum: nGWWeDN0z5hve0J2LAjh5A
 ! Fanboy's Adblock list
-! Updated: 22 Jul 2010
+! Updated: 21 Jul 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -1893,9 +1893,9 @@ server/CCID
 ||mediatraffic.com^$third-party
 ||medrx.sensis.com.au^$third-party
 ||megaupload.com/mc.php?
-||megavideo.com/xml/videoad.php?
-||megavideo.com/unruley
 ||megavideo.com/goviral
+||megavideo.com/unruley
+||megavideo.com/xml/videoad.php?
 ||mercuras.com^$third-party
 ||metrolyrics.com/js/min/tonefuse.js
 ||mezimedia.com^$third-party
@@ -2254,6 +2254,9 @@ receeve.it##.carousel
 !
 !---------- DoubleClick Whitelists ----------
 !
+@@||ad.au.doubleclick.net/adj/ndm.tcm/
+@@||ad.au.doubleclick.net/crossdomain.xml$domain=video.news.com.au
+@@||ad.au.doubleclick.net/pfadx/ndm.tcm/
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
 @@||ad.doubleclick.net/ad/$domain=imdb.com|tv.com,object_subrequest
@@ -2274,9 +2277,6 @@ receeve.it##.carousel
 @@||doubleclick.net/adj/theglobeandmail.com$domain=theglobeandmail.com
 @@||doubleclick.net/crossdomain.xml$domain=theglobeandmail.com
 @@||doubleclick.net/pfadx/theglobeandmail.com/$domain=theglobeandmail.com
-@@||ad.au.doubleclick.net/pfadx/ndm.tcm/
-@@||ad.au.doubleclick.net/crossdomain.xml$domain=video.news.com.au
-@@||ad.au.doubleclick.net/adj/ndm.tcm/
 !
 !---------- Verfied DoubleClick Whitelists
 !
@@ -2352,9 +2352,9 @@ receeve.it##.carousel
 @@||facepunch.com/ads/
 @@||google.com*/search?q$~third-party
 @@||google.com.*/complete/search?$~third-party,script
-@@||googlesyndication.com/pagead/static?format
-@@||googlesyndication.com/pagead/scache/show_
 @@||googlesyndication.com/pagead/scache/googlevideoadslibrarylocalconnection
+@@||googlesyndication.com/pagead/scache/show_
+@@||googlesyndication.com/pagead/static?format
 @@||gstatic.com/images?*=$image,~third-party
 @@||images.play.com/banners/content/$domain=play.com,image
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image,background
@@ -2993,8 +2993,8 @@ sz=47x47;
 /eroads.cgi?
 /eroadvertorial
 /erobanner.
-/exitpop.js
 /exit_popup
+/exitpop.js
 /facebooksex
 /ffadult/featured/external/*
 /flash/maildating_
@@ -3240,9 +3240,9 @@ LargeFlashAd.js
 ||femjoy.com/bnrs/$third-party
 ||fftube.com/banners/
 ||fifialfa.com/images/sexmix$third-party
+||filecabi.net/728$subdocument
 ||filecabi.net/crons/friends-
 ||filecabi.net/livevideo$subdocument
-||filecabi.net/728$subdocument
 ||fileporn.org/225x225_
 ||fileporn.org/aff/
 ||fileporn.org/banner
@@ -3517,6 +3517,7 @@ LargeFlashAd.js
 ||sunnysmedia.com^$third-party,image
 ||sweetmedia.org^$third-party
 ||target.vivid.com^
+||tck.bangbros.com^
 ||teasernet.ru^$third-party
 ||teaservizio.com^$third-party
 ||teendestruction.com^$third-party
@@ -3527,7 +3528,6 @@ LargeFlashAd.js
 ||timesonline.co.uk/date/profiles/
 ||titsintops.com/intersitial/
 ||tizernet.com/engine.php?
-||tck.bangbros.com^
 ||tnaflix.com/view_page_top_
 ||toget.ru^$third-party
 ||toot.stileproject.com^
@@ -3903,11 +3903,11 @@ youporn.com###producer
 ###ad_160x600
 ###ad_250
 ###ad_300_250
-###ad_300x90
 ###ad_300_250_inline
-###ad_300x250_content_column
 ###ad_300b
 ###ad_300x250
+###ad_300x250_content_column
+###ad_300x90
 ###ad_300x90
 ###ad_468_60
 ###ad_728
@@ -7415,6 +7415,7 @@ meettheboss.tv###divSpaceContainerRight
 meettheboss.tv###divSpaceContainerRight
 megafileupload.com##.big_banner
 megaupload.com###tabs
+megavideo.com##[style="position: relative; width: 355px; height: 299px; margin-top: 2px;"]
 memory-alpha.org###spotlight_footer
 menshealth.com###leaderBoard
 menshealth.com###skyscraper
@@ -7898,9 +7899,9 @@ search.cnbc.com###ms_aur
 search.com##.dtext
 search.com##a[href^="http://shareware.search.com/click?"]
 search.howstuffworks.com##.gooresults
-search.icq.com##.res_sp
 search.icq.com##.more_sp
 search.icq.com##.more_sp_end
+search.icq.com##.res_sp
 search.mywebsearch.com##.desc
 search.virginmedia.com##.s-links
 search.vmn.net##[bgcolor="#ecf5fa"]
@@ -8599,6 +8600,7 @@ zuula.com###secondary
 ~investopedia.com###footer_ads
 ~itavisen.no##.ad468
 ~jobs.wa.gov.au,~pricewatch.com###adContainer
+~ksl.com,~stadtlist.de,~superbikeplanet.com##.adTitle
 ~metblogs.com,~oreilly.com###adspace
 ~morningstar.se###top_ad
 ~mozdev.org##.adblock
@@ -8618,7 +8620,6 @@ zuula.com###secondary
 ~superbikeplanet.com##.adDiv
 ~superbikeplanet.com##.addiv
 ~superbikeplanet.com##.adlink
-~ksl.com,~stadtlist.de,~superbikeplanet.com##.adTitle
 ~superhry.cz##.adHoldert
 ~thecoolhunter.com.au,~thecoolhunter.net##.Ads
 ~thedailygreen.com###AD_banner
