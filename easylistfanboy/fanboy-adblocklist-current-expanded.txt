@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VMOu8rGwH5Gcsd24V0ndCw
+! Checksum: 9lN1a0E0Y56TU5PcnbjmdQ
 ! Fanboy's Adblock list
 ! Updated: 24 Jul 2010
 ! This list expires after 5 days
@@ -7,6 +7,7 @@
 ! Please report any unblocked ads or problems by email or in our forums
 ! Email: mp3geek@gmail.com Project homepage: http://fanboy.co.nz/adblock
 !
+! ---------- Generic Blocking Rules ----------
 &ad_number=
 &Advert_Id=
 -ad-util-
@@ -377,7 +378,6 @@
 /adserver/*
 /Adserver?
 /adserver_
-/adsrv/js/*
 /adserversolutions/*
 /adsframe.
 /adshow-
@@ -399,6 +399,7 @@
 /adsremote.
 /adsreporting/*
 /adsRotator
+/adsrv/js/*
 /adss.asp
 /AdsSrv.
 /AdsTemplate/*
@@ -1173,6 +1174,9 @@ server/CCID
 ||208.43.84.120^$third-party
 ||209.172.55.5$script
 ||216.151.186.5^
+!
+! ---------- Site specific blocking rules ----------
+!
 ||247realmedia.com^$third-party
 ||2dpt.com^$third-party
 ||2flashgames.com/img/nfs.gif
@@ -2227,8 +2231,8 @@ server/CCID
 ||xcdn.xgraph.net^$third-party
 ||xchangebanners.com^$third-party
 ||xdev.info^$third-party
-||xmlconfig.ltassrv.com^$third-party
 ||xml.exactseek.com/cgi-bin/js-feed.cgi?$third-party
+||xmlconfig.ltassrv.com^$third-party
 ||yahoo.com/livewords/
 ||yahoo.com/ysmload.html?
 ||yceml.net^$third-party
@@ -3294,8 +3298,8 @@ LargeFlashAd.js
 ||galleries.videosz.com^$third-party,object
 ||gallery.g-cash.biz/potd/
 ||geo.camazon.com^$third-party
-||geobanner.getiton.com^$third-party
 ||geobanner.adultfriendfinder.com^$third-party
+||geobanner.getiton.com^$third-party
 ||geoinventory.com^$third-party
 ||getiton.com^$third-party
 ||ggwcash.com^$third-party
@@ -3650,8 +3654,8 @@ LargeFlashAd.js
 @@||eskimotube.com/advertisements.php?
 @@||mallcom.com^$domain=mallcomvod.com|thevod.net,third-party,image,background,subdocument
 @@||nudeparadisehotel.com^*/AC_RunActiveContent.js
-@@||xxxporntalk.com/images/xxxpt-chrome.jpg
 @@||sankakustatic.com^$third-party,script
+@@||xxxporntalk.com/images/xxxpt-chrome.jpg
 !---------- Adult Hiding Rules ----------
 !
 ###AFF_popup
@@ -5495,7 +5499,6 @@ youporn.com###producer
 ##.ads_337x280
 ##.ads_728x90
 ##.ads_big
-##.yahooAds
 ##.ads_big-half
 ##.ads_catDiv
 ##.ads_div
@@ -5537,8 +5540,8 @@ youporn.com###producer
 ##.adsense_menu
 ##.adsenseBlock
 ##.adsenseGreenBox
-##.adSeven
 ##.adServer
+##.adSeven
 ##.adsforums
 ##.adSize_MedRec
 ##.AdsLinks2
@@ -6321,6 +6324,7 @@ youporn.com###producer
 ##.yahoo-banner-ad-container
 ##.yahoo-sponsored
 ##.yahoo_ads
+##.yahooAds
 ##.yahooContentMatch
 ##.yan-sponsored
 ##.yrail_ads
@@ -6448,9 +6452,9 @@ arstechnica.com###da-draobredael
 arstechnica.com###daehtsam-da
 arstechnica.com###jobs-ars
 arstechnica.com###silo-header
+artima.com###topbanner
 arto.com###BannerInfobox
 arto.com##.shadowBoxBody
-artima.com###topbanner
 ask.com###fpeel
 ask.com###rbox
 ask.com##.spl_shd_plus
@@ -7284,13 +7288,13 @@ itreviews.co.uk##.reviewMidAdvertAlign
 itworld.com###more_resources
 itworld.com###partner_strip
 itworld.com##.module
+iwatchstuff.com##.skyscraper
 ixbtlabs.com##.aseadn
 ixbtlabs.com##[style="width: 336px; height: 280px; margin-bottom: 16px; margin-top: 0px; overflow: hidden;"]
 ixquick.com##.reltext
 ixquick.com##table[bgcolor="#F7F9FF"][width="100%"]
 ixquick.com##td[bgcolor="#E1ECFF"]
 ixquick.com##td[bgcolor="#F7F9FF"]
-iwatchstuff.com##.skyscraper
 jakeludington.com###ablock
 jalopnik.com###skyscraper
 jamendo.com##.col_extra
