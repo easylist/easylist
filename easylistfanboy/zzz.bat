@@ -38,6 +38,6 @@ echo.
 echo.
 @echo Waiting to ensure changes have had enough time to show on google code site...
 echo.
-timeout /T 8
+timeout /T 10
 
 Start "C:\Program Files (x86)\Minefield\firefox.exe" "http://code.google.com/p/fanboy-adblock-list/updates/list"
