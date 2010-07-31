@@ -34,5 +34,6 @@ perl addChecksum.pl Opera-Firefox.txt
 hg add .
 hg commit -m "%*"
 hg push
-timeout /T 5
+timeout /T 8
+@echo Waiting to ensure changes have had enough time to show on google code site...
 Start "C:\Program Files (x86)\Minefield\firefox.exe" "http://code.google.com/p/fanboy-adblock-list/updates/list"
