@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: x/gbsr2CzdGt9TsCVVNF2Q
+! Checksum: vKaf5OO+WtPmmgN+QK6Evg
 ! Fanboy's Adblock list
 ! Updated: 1 Aug 2010
 ! This list expires after 5 days
@@ -1199,11 +1199,6 @@ server/CCID
 |http://topads.
 |http://werbung.
 |https://adserv
-||ampxchange.com^$third-party
-||idesitv.com^*/loadbanners.
-||webdunia.com^*/ros_tb.js
-||webdunia.com^*/tl/wd_$script
-||zonein.tv/add$subdocument
 !
 ! ---------- IP Rules ----------
 !
@@ -1464,6 +1459,7 @@ server/CCID
 ||amazon.com/widgets/
 ||amazonaws.com/widget/
 ||amgdgt.com^$third-party
+||ampxchange.com^$third-party
 ||animecrazy.net/ads/
 ||anonymouse.org/ad
 ||anrdoezrs.net^$third-party
@@ -1794,6 +1790,7 @@ server/CCID
 ||ibatom.com^$third-party
 ||ibsrv.net/sponsors/
 ||ibtimes.com/banner/
+||idesitv.com^*/loadbanners.
 ||idg.com.au/files/skins/
 ||idg.com.au/idg/fpromo/
 ||idontlikeyouinthatway.com/mg$subdocument
@@ -2254,6 +2251,8 @@ server/CCID
 ||w3exit.com^$third-party
 ||web-adservice.com^
 ||webads.co.nz^$third-party
+||webdunia.com^*/ros_tb.js
+||webdunia.com^*/tl/wd_$script
 ||webtraffic.ttinet.com^$third-party
 ||weselectmodels.com/ZillionaireDate_Banner/
 ||wgreatdream.com^$third-party
@@ -2292,6 +2291,7 @@ server/CCID
 ||zeptoad.com^$third-party
 ||ziffdavisenterprise.com/promos/$third-party
 ||zmh.zope.net^$third-party
+||zonein.tv/add$subdocument
 ||zoomdirect.com.au^$third-party
 ||zygorguides.com^$third-party
 !
@@ -2962,9 +2962,9 @@ _700_100_
 _700_150_
 _700_200_
 _720x90.
+_728-90_
 _72890.jpg
 _728_90.
-_728-90_
 _728by90_
 _728x-90.
 _728x150.
@@ -4825,8 +4825,8 @@ youporn.com###producer
 ###leaderAdContainer
 ###leaderboard-ad
 ###leaderboard-sticky
-###leaderboard_ad
 ###leaderboard_728x90
+###leaderboard_ad
 ###LeaderBoardAd
 ###leaderboardAd
 ###leaderboardad
@@ -5038,11 +5038,11 @@ youporn.com###producer
 ###singleAdsContainer
 ###site-leaderboard-ads
 ###site_top_ad
+###skcolAdSky
 ###sky-ad
 ###sky-left
 ###sky-right
 ###skyAd
-###skcolAdSky
 ###skyline_ad
 ###skyScraper
 ###skyscraper-ad
@@ -5886,8 +5886,8 @@ youporn.com###producer
 ##.canoeAdvertorial
 ##.care2_adspace
 ##.category-ad
-##.cb_navigation_ad
 ##.cb-ad-container
+##.cb_navigation_ad
 ##.cbstv_ad_label
 ##.cbzadvert
 ##.cbzadvert_block
@@ -6463,7 +6463,6 @@ youporn.com###producer
 !
 10minutemail.com###shoutouts
 123people.co.uk###l_banner
-
 2flashgames.com##[style="width: 160px; text-align: center; background-color: rgb(255, 255, 255); padding: 5px 0px;"]
 3news.co.nz##.newsdate2
 4chan.org##.bf
@@ -6477,7 +6476,6 @@ abclocal.go.com###storyBodyLink
 abcnews.go.com###feature_adlinks
 abcnews.go.com##.index-quigo
 abcnews.go.com##.story-embed-left.box
-
 about.com###adB
 about.com###adF
 about.com###adL
@@ -6487,7 +6485,6 @@ about.com##.gB
 absoluteradio.co.uk###banner
 accessplace.com###sitematches
 accuweather.com###content_box_300body_sponsoredoffers
-
 achieve360points.com###a1
 achieve360points.com###a3
 achieve360points.com###foot
@@ -6513,8 +6510,8 @@ allergies.emedtv.com##[style="float: right; margin-right: 0px; height: 560px; wi
 allexperts.com###sl
 allexperts.com##TD[height="98"]
 allfacebook.com##.big_sponsor
-allfacebook.com##.sponsors
 allfacebook.com##.featured_jobs
+allfacebook.com##.sponsors
 allmovieportal.com##table[width="100%"][height="90"]
 allmusic.com###header_bottom
 allthelyrics.com##[style="padding: 0px 0px 15px;"]
@@ -6535,8 +6532,8 @@ anandtech.com##.pricing
 androidandme.com##.featureside
 androidcommunity.com##.topbanner728
 androidcommunity.com##div[style="padding: 6px 0px 0px;"]
-androlib.com##.gadsqr
 androidtapp.com###Super
+androlib.com##.gadsqr
 angelfire.com###tb_container
 animenfo.com##.nav2
 animetake.com##.top-banner
@@ -7777,6 +7774,7 @@ newsbusters.org###block-block-33
 newsbusters.org###interad
 newsbusters.org###screenoverlay
 newsbusters.org###topbox
+newscientist.com##.mpMPU
 newser.com##.box.posR
 newsmax.com##.sponsors_fieldset
 newsnet5.com##.marketplace
@@ -7785,7 +7783,6 @@ newsoftheworld.co.uk##.column4-html-and-iframe-container
 newsok.com###leftRailContent
 newsok.com##.toolbar_sponsor
 newsok.com##.yahoo_cm
-newscientist.com##.mpMPU
 newsonjapan.com###squarebanner300x250
 newsweek.com###pulse360
 newsweek.com###slug_bigbox
@@ -8065,8 +8062,8 @@ rejournal.com##img[width="200"][height="100"]
 reminderfox.mozdev.org###promotion3
 retrevo.com###pcw_showcase
 reuters.com###banner
-reverso.net###hAdv
 reversegif.com###ad
+reverso.net###hAdv
 rivals.com##TD[width="728"]
 roadcyclinguk.com###ad
 roadcyclinguk.com###contentbanner
@@ -8626,8 +8623,8 @@ wired.co.uk##.banner-top
 wired.co.uk##.banner1
 wired.co.uk##.promotions
 wired.com###featured
-wired.com##.advertisement
 wired.com###magazine_rightRail_A
+wired.com##.advertisement
 wordreference.com###defer-adright
 wordreference.com##.bannertop
 worksheetsengine.com##.sb_adsN
