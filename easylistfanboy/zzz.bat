@@ -28,8 +28,6 @@ perl addChecksum.pl opera\fanboy-adblocklist-elements-v3.css
 perl addChecksum-opera.pl opera\urlfilter.ini
 :: Iron
 perl addChecksum-opera.pl iron/adblock-beta.ini
-:: Opera - Firefox test list
-perl addChecksum.pl Opera-Firefox.txt
 :: Now sync
 hg add .
 hg commit -m "%*"
