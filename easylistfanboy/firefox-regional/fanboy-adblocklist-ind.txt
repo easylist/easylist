@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: X7fU8Gb/RH4EuXGmHL2aiw
+! Checksum: 6hx/PFU7WwhvyzlxlXyRoA
 ! Fanboy's Indian-addon Adblock list 
 ! Updated: 5 Aug 2010
 ! This list expires after 4 days
@@ -45,7 +45,6 @@
 ||tamilveli.com^*/ad/
 ||thinakkural.com/web_advers/
 ||tremormedia.com^*/ads.js
-||vdopia.com^$third-party
 ||virakesari.lk/flash/$domain=expressnews.lk,third-party,object
 ||webdunia.com^*/ros_tb.js
 ||webdunia.com^*Rollover$object
@@ -61,7 +60,8 @@
 !
 !---------- Whitelists ----------
 !
-@@||vdopia.com$domain=bollywoodhungama.com,third-party,script,object_subrequest
+@@||vdopia.com^*/resolver.php?$domain=bollywoodhungama.com,third-party
+@@||vdopia.com^*/vastxml/$domain=bollywoodhungama.com,third-party
 !
 !---------- Indian Generic Element Hiding Rules ----------
 !
