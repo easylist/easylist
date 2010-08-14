@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: YrrR6stptD0ps13KNi2qEQ
+! Checksum: mgl5ROKMWRE/90NXbkYEiw
 ! Fanboy's Polish-addon Adblock list 
-! Updated: 13 Aug 2010
+! Updated: 14 Aug 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -16,23 +16,22 @@
 /admatik.
 /adtaily_
 /ajax_gallery_ads
-/ban_div
 /ban.css
+/ban_div
 /img/banery/*
 /inpl.intad.
 /miniads?
-/reklama_
 /Reklama.
 /reklama/www/*
+/reklama_
 /reklamy.
 /reklamy/*
 ||ad.afilo.pl^$third-party
 ||ad.gazeta.pl^
 ||ad.glossymedia.pl^$third-party
-||adp.glossymedia.pl^$third-party
-||adview.pl^$third-party
 ||adkontekst.pl^$third-party
 ||adocean.pl^$third-party
+||adp.glossymedia.pl^$third-party
 ||ads.adone.pl^$third-party
 ||ads.battlenet.pl^
 ||ads.o2.pl^$third-party
@@ -40,6 +39,7 @@
 ||adserwer.intercon.pl^$third-party
 ||adtaily.pl^$third-party
 ||adtext.pl^$third-party
+||adview.pl^$third-party
 ||banery.ifd.pl^
 ||blogvertising.pl^$third-party
 ||boksy.onet.pl^
@@ -47,11 +47,11 @@
 ||clickad.pl^$third-party
 ||csr.onet.pl^
 ||filmweb.pl/ad/
-||fotka.pl/ad
-||fotka.pl/xds/
-||forum.optymalizacja.com^*.swf|
 ||forum.optymalizacja.com/a*.gif|
 ||forum.optymalizacja.com/images/mimow
+||forum.optymalizacja.com^*.swf|
+||fotka.pl/ad
+||fotka.pl/xds/
 ||gratka.pl/widget/
 ||helion.pl^$third-party,image
 ||jaslo4u.pl/pliki_swf/
@@ -61,17 +61,17 @@
 ||lotto.pl/images/kumulacje/
 ||lotto.pl/images/toplayers/
 ||makro.pl^*/FrontPagePopup
-||makro.pl^/FrontPageToplayer
 ||makro.pl^*/katalog-
+||makro.pl^/FrontPageToplayer
 ||metaffiliation.com^$third-party
 ||netsales.pl/rotator/
 ||optymalizacja.com/468-
 ||pajacyk.pl/img/baner
-||prv.pl/static/pl/css/new_prv/
 ||proline.pl/public/
+||prv.pl/static/pl/css/new_prv/
 ||reklama.onet.pl^
-||smartcontext.pl^$third-party
 ||s-nk.pl/img/nktalk/nktalk_
+||smartcontext.pl^$third-party
 ||static.otodom.pl^
 ||tryton.com.pl/flash/
 ||widget.zlotemysli.pl^
@@ -80,29 +80,29 @@
 !---------- Polish Trackers ------------
 !
 .pl/zakupy/out.cgi?
-/gemius_
 /gemius.js
+/gemius_
 /gemiustraffic
 /hmapxy.
-_gemius.
 /redot.gif?
+_gemius.
 ||darmowe-statystyki.com^$third-party
 ||dot.wp.pl^
-||rek.www.wp.pl^
-||kropka.onet.pl^
 ||hit.gemius.pl^$third-party
-||onetwl.pl^$third-party
+||kropka.onet.pl^
 ||mklik.gazeta.pl^
 ||mypagerank.pl^$third-party
+||onetwl.pl^$third-party
 ||phototamer.com/counter/
-||stat24.com^$third-party
+||rek.www.wp.pl^
 ||stat.4u.pl^$third-party
 ||stat.dziennik.pl^
-||stat.pl/$third-party
-||statystyki.mediaregionalne.pl^$third-party
-||stats.yme.com^$third-party
 ||stat.gazetaprawna.pl^$third-party
+||stat.pl/$third-party
+||stat24.com^$third-party
 ||stats.multiscreen.tv^$third-party
+||stats.yme.com^$third-party
+||statystyki.mediaregionalne.pl^$third-party
 !
 !---------- Polish Element Hiding Rules ----------
 !
@@ -112,20 +112,20 @@ _gemius.
 ###under_placead5_1
 ###upperRightAds
 ###zasobnikAds
-##.ad_pasekart
-##.advCenter
-##.advCenterColumn
 ##.ad_adInfo
+##.ad_pasekart
 ##.adBillboard
 ##.adBoks
 ##.adSrodek
+##.advCenter
+##.advCenterColumn
 ##.art_ad
 ##.art_ad_body
-##.prv-domena-advert
-##.box_reklama
 ##.box_filmu_reklama
+##.box_reklama
 ##.gallery_ads_box
 ##.mod_ad
+##.prv-domena-advert
 ##.reklama
 ##.reklama_wysz
 benchmark.pl##.shipping_container
@@ -134,35 +134,35 @@ di.com.pl##div[style="margin-bottom: 5px; clear: both;"]
 fakt.pl###literia_widget
 forum.gery.pl##.g_jlinki_sponsorowane
 fotka.pl###SG_BILL_SUPER_TOP
-gazeta.pl##.banLabel
 gazeta.pl###banP1
 gazeta.pl###banP4
-gazeta.pl##.banN43
 gazeta.pl###banP50
+gazeta.pl##.banLabel
+gazeta.pl##.banN43
 gery.pl###banner
 gery.pl###polskastacja
 google.com,google.pl###tads
 heise-online.pl###bannerzone
-idg.pl##.skyText
 idg.pl###b120
-idg.pl###sky2
 idg.pl###sky
+idg.pl###sky2
+idg.pl##.skyText
 imbd.pl###banner
 imbd.pl##[style="width: 300px; height: 250px; background: none repeat scroll 0% 0% white;"]
-interia.pl##.headerGraphic
-interia.pl###ecommerce
 insomnia.pl###showimage
+insomnia.pl##[style="position: relative; z-index: 0; width: 1000px; height: 80px; text-align: center; margin-top: 5px; margin-bottom: 5px;"]
 insomnia.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px; padding: 0pt;"]
 insomnia.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px;"]
-insomnia.pl##[style="position: relative; z-index: 0; width: 1000px; height: 80px; text-align: center; margin-top: 5px; margin-bottom: 5px;"]
+interia.pl###ecommerce
+interia.pl##.headerGraphic
 jaslo4u.pl###p0pup
-komputronik.pl###pasazTopKontener
 komputronik.pl###banner_home
 komputronik.pl###banner_single
+komputronik.pl###pasazTopKontener
 kretyn.com###adv750
-money.pl##.inContext_disabled
-makro.pl###opiniac_blk
 makro.pl###flashKartka
+makro.pl###opiniac_blk
+money.pl##.inContext_disabled
 nk.pl##.nk_popup_body
 nk.pl##.nk_popup_overlay
 onet.pl##.onetBoxPrepend
@@ -170,18 +170,18 @@ onet.pl##.onetNapisReklama
 pcworld.pl###liderBoard2010
 pcworld.pl##.ramka1c
 pcworld.pl##.sky
-proline.pl###layer_top
 proline.pl###bannerside
+proline.pl###layer_top
 prv.pl##.boxOsobie
 psmania.pl##.sidebar-block-bot
-spryciarze.pl###gratka-widget
-sadistic.pl##table.bodyline[height="200"]
 sadistic.pl##[style^="border-right: 0px solid; border-width: 0px; border-style: solid; border-color: -moz-use-text-color; left: 520px; position: absolute; width: 300px; z-index: 3000;"]
+sadistic.pl##table.bodyline[height="200"]
 sfd.pl###showimage
-sfd.pl##td[width="160"]
-sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px;"]
-sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px; padding: 0pt;"]
 sfd.pl##[style="position: relative; z-index: 0; width: 1000px; height: 80px; text-align: center; margin-top: 5px; margin-bottom: 5px;"]
+sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px; padding: 0pt;"]
+sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px;"]
+sfd.pl##td[width="160"]
+spryciarze.pl###gratka-widget
 tworzymyhistorie.pl##.reklpodskecz
 tworzymyhistorie.pl##.srodeklinema
 webhosting.pl###baner1
