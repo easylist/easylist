@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: LqU6fnj3+dKPSlouaCW91Q
+! Checksum: 4zo03abENwk6hUG2G81lDA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 15 Aug 2010
 ! This list expires after 5 days
@@ -14,6 +14,8 @@
 ||reddit.com/domain/$third-party
 ||sharethis.com^$third-party
 ||cdn.stumble-upon.com^$third-party
+||reddit.com/static/button/$third-party
+||stumbleupon.com/badge/$third-party
 ||tumblr.com/dashboard/
 ||widgets.digg.com^$third-party,script,image,stylesheet
 !
@@ -25,6 +27,7 @@
 ###fb-rec-box
 ###fb_container
 ###ck_facebook
+###badge_facbeook
 ##.fb_content_loader
 ##.fb_iframe_widget
 ##.fb_share_size_Small
@@ -48,6 +51,7 @@
 ###twitter_module
 ###twitterContainer
 ###twitterfeed
+###badge_twitter
 ###ck_twitter
 ##.twitterBadge
 ##.twitter-share-button
@@ -75,7 +79,9 @@
 !
 ~digg.com##.digg-button
 ~digg.com###digg_module
+##.DiggThisButton
 ###.fdbk_tab_right
+###badge_reddit
 ###blog-share-widget
 ###cometchat
 ###fdbk_tab
@@ -93,6 +99,7 @@
 ##.gf_social
 ##.sharepost
 ##.shr-bookmarks
+##.share-badges
 ##.social_bookmark
 ##.stico_default
 abcnews.go.com###rsslisting
@@ -108,6 +115,7 @@ bleacherreport.com##.newsletter-lightbox
 boston.com###relatedContent
 caring.com###awesomer-bar
 cbsnews.com###cbsSMPB
+collegehumor.com##.newsletter_signup
 cnet.com###cnetToolbarWrap
 cnet.com##.frontDoorPromo
 cnn.com###fb-recommend
