@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yDKlM30+AByBRF+xrQE9Mw
+! Checksum: 1TEpdgcTIn+P3ayoQ6TVQA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 15 Aug 2010
 ! This list expires after 5 days
@@ -13,8 +13,9 @@
 ||digg.com/tools/widgetjs$third-party
 ||reddit.com/domain/$third-party
 ||sharethis.com^$third-party
+||cdn.stumble-upon.com^$third-party
 ||tumblr.com/dashboard/
-||widgets.digg.com^$third-party,script
+||widgets.digg.com^$third-party,script,image
 !
 !---------- Facebook Widgets ----------
 !
@@ -72,6 +73,7 @@
 !
 !---------- Hiding Rules ----------
 !
+~digg.com##.digg-button
 ###.fdbk_tab_right
 ###blog-share-widget
 ###cometchat
@@ -87,6 +89,7 @@
 ##.adsenseDole
 ##.badges_v2
 ##.beauty-bookmarks
+##.gf_social
 ##.sharepost
 ##.shr-bookmarks
 ##.social_bookmark
@@ -130,6 +133,7 @@ howstuffworks.com###smToolBarSpacer
 imgur.com###awesome-bar
 kiplinger.com###targeted-promo
 life.com###mylifeToolbarWrapper
+makeuseof.com##.sub
 mashable.com##.jobs
 mashable.com##.post_share
 maxim.com##.g_subs_Container
