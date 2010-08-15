@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 816rVW4gKfCw9X8apNQBmA
+! Checksum: Bf7zAZrdPT8ppMmtzgQfEw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 16 Aug 2010
 ! This list expires after 5 days
@@ -8,6 +8,7 @@
 ! Email: mp3geek@gmail.com Project homepage: http://fanboy.co.nz/adblock
 !
 /getnetworkwidget
+/givememydigg.
 /plugins/sociable/*
 /widget/digg/*
 ||addthis.com^$third-party
@@ -16,6 +17,7 @@
 ||complex.com/toolbar/
 ||digg.com/tools/widgetjs$third-party
 ||digg.com/tools/diggthis$third-party
+||digg.com/tools/services$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||reddit.com/domain/$third-party
 ||sharethis.com^$third-party
@@ -36,6 +38,7 @@
 ###ck_facebook
 ###badge_facbeook
 ###index-fb-likebox
+##.facebook-sharer
 ##.fb_content_loader
 ##.fb_iframe_widget
 ##.fb_share_size_Small
@@ -75,6 +78,7 @@
 ##.twitter-share-button
 ##.twitter.icon
 ##.post_share_twitter
+##.tweetmeme-sharer
 ##[alt="Follow us to Twitter.com"]
 ##[title="Follow us on Twitter"]
 ||platform*.twitter.com^$third-party
@@ -103,6 +107,8 @@
 ~digg.com###digg_module
 ~digg.com###digg-widget
 ~digg.com###module_digg
+~digg.com###digg_upcoming_content
+~reddit.com##a[href="http://www.reddit.com/submit"]
 ##.DiggThisButton
 ###.fdbk_tab_right
 ###ctl00_mainContent_lblSharingLink
@@ -143,15 +149,18 @@
 ##.shr-bookmarks
 ##.shareThisShare
 ##.share-badges
+##.story_tools_social_buttons_top
 ##.social-links-title
 ##.social_bookmark
 ##.stico_default
+##.stumblebutton
 abcnews.go.com###rsslisting
 abcnews.go.com###socialdock
 abcnews.go.com###socialtoolkit
 aceshowbiz.com##.theticker
 academicearth.org###bottom_toolbar
 academicearth.org###kampylink
+alternet.org##.redditit
 anandtech.com##.follow
 animatedexplanations.com##.sharinglink
 animatedexplanations.com###linkShare
