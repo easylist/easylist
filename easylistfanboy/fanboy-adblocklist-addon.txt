@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: p9z7HF2nI5u37mqwfxTGOQ
+! Checksum: pO9iUw1iTBs0jPMzcnvp4w
 ! Fanboy's Annoyance list Addon 
 ! Updated: 17 Aug 2010
 ! This list expires after 5 days
@@ -13,80 +13,80 @@
 /widget/digg/*
 ||addthis.com^$third-party
 ||buttons.googlesyndication.com^$third-party
+||cdn.stumble-upon.com^$third-party
 ||cim.meebo.com^$third-party
 ||complex.com/toolbar/
-||digg.com/tools/widgetjs$third-party
 ||digg.com/tools/diggthis$third-party
 ||digg.com/tools/services$third-party
-||feeds.delicious.com^$third-party
+||digg.com/tools/widgetjs$third-party
 ||feeds*.feedburner.com^$third-party,image
+||feeds.delicious.com^$third-party
 ||reddit.com/domain/$third-party
-||sharethis.com^$third-party
-||cdn.stumble-upon.com^$third-party
 ||reddit.com/static/button/$third-party
+||sharethis.com^$third-party
 ||stumbleupon.com/badge/$third-party
 ||tumblr.com/dashboard/
 ||widgets.digg.com^$third-party,script,image,stylesheet
 !
 !---------- Facebook Widgets ----------
 !
-~facebook.com###fb_header
+###badge_facbeook
+###ck_facebook
 ###facebook-fanbox
 ###facebook-module
 ###fb-fan-box
 ###fb-rec-box
 ###fb_container
-###ck_facebook
-###badge_facbeook
 ###index-fb-likebox
 ##.facebook-sharer
+##.fb.icon
 ##.fb_content_loader
 ##.fb_iframe_widget
+##.fb_share_button
 ##.fb_share_size_Small
 ##.FBConnectButton_Small
-##.fb_share_button
 ##.fbshare
-##.fb.icon
 ##.post_share_facebook
-##a[title="Follow me on  Facebook"]
-##a[href="http://www.facebook.com/sharer.php"]
-##[title="Get Posts On Facebook Wall"]
 ##[alt="Follow us to FacBook.com"]
 ##[title="Follow us on Facebook"]
-/plugins/wp-facebookconnect/*
+##[title="Get Posts On Facebook Wall"]
+##a[href="http://www.facebook.com/sharer.php"]
+##a[title="Follow me on  Facebook"]
 /js/FB.Share$third-party
+/plugins/wp-facebookconnect/*
 ||badge.facebook.com^$third-party
+||blogsmithmedia.com^*facebook$image
 ||connect.facebook.net^$third-party,script
 ||facebook.com/connect/connect.php?$third-party
 ||facebook.com/plugins/activity.php?$third-party
 ||facebook.com/plugins/fan.php?$third-party
 ||facebook.com/plugins/like.php?$third-party
-||facebook.com/widgets/like.php?$third-party
 ||facebook.com/plugins/likebox.php?$third-party
 ||facebook.com/plugins/recommendations.php?$third-party
 ||facebook.com/widgets/activity.php?$third-party
 ||facebook.com/widgets/fan.php?$third-party
+||facebook.com/widgets/like.php?$third-party
 ||facebook.com/widgets/recommendations.php?$third-party
-||blogsmithmedia.com^*facebook$image
+~facebook.com###fb_header
 !
 !---------- Twitter Widgets ----------
 !
+###badge_twitter
+###ck_twitter
+###twitter-badge
 ###twitter-sidebar
 ###twitter_linkage
 ###twitter_module
 ###twitterContainer
-###twitter-badge
 ###twitterfeed
-###badge_twitter
-###ck_twitter
-##.twitterBadge
-##.twitter-share-button
-##.twitter.icon
 ##.post_share_twitter
 ##.tweetmeme-sharer
+##.twitter-share-button
+##.twitter.icon
+##.twitterBadge
+##[alt="Follow us to Twitter.com"]
 ##[title="Follow me on Twitter"]
 ##[title="Follow On Twitter"]
-##[alt="Follow us to Twitter.com"]
 ##[title="Follow us on Twitter"]
 ||platform*.twitter.com^$third-party
 ||topsy.com^$third-party
@@ -99,10 +99,10 @@
 !
 !---------- Google Widgets -----------
 !
-||google.com^*/friendconnect.js
-##.google-buzz-button
 ##.buzz-counter-long
+##.google-buzz-button
 ##a[title="Share on Google Buzz"]
+||google.com^*/friendconnect.js
 !
 !---------- Whitelists -----------
 !
@@ -110,97 +110,92 @@
 !
 !---------- Hiding Rules ----------
 !
-~digg.com##.digg-button
-~digg.com###digg_module
-~digg.com###digg-widget
-~digg.com###module_digg
-~digg.com###digg_upcoming_content
-~reddit.com##a[href="http://www.reddit.com/submit"]
-###digg-widget-container
-##.DiggThisButton
 ###.fdbk_tab_right
-###ctl00_mainContent_lblSharingLink
-###ctl00_DescriptionBlock_lblTwitter
-###ctl00_DescriptionBlock_lblFacebook
 ###badge_reddit
 ###blog-share-widget
+###ck_digg
+###ck_sharethis
 ###cometchat
+###ctl00_DescriptionBlock_lblFacebook
+###ctl00_DescriptionBlock_lblTwitter
+###ctl00_mainContent_lblSharingLink
+###digg-widget-container
 ###fdbk_tab
-###social_bookmarks
 ###networkedblogs_nwidget_container
 ###share-tools
 ###share-tools-title
 ###sharebar
+###ShareSidebar
+###social_bookmarks
 ###SocialIcons
 ###socialLinks
-###ShareSidebar
 ###socialSidebar
-###ck_digg
-###ck_sharethis
+##.addthis-button
+##.addthis_button
+##.addthisContainer
+##.adsenseDole
+##.badges_v2
+##.beauty-bookmarks
+##.DiggThisButton
+##.gf_social
+##.idc-share
+##.long_post_share_digg
+##.long_post_share_twiiter
+##.post_share_buzz
+##.post_share_dig
+##.post_share_icons
+##.post_share_stumble
+##.share-badges
+##.share_icons
+##.sharepost
+##.shareThisShare
+##.shr-bookmarks
+##.social-bar
+##.social-links-title
+##.social_bookmark
+##.stico_default
+##.story_tools_social_buttons_top
+##.stumblebutton
 ##a[title="Get Feed RSS"]
 ##a[title="Save On Delicious"]
 ##a[title="Subscribe on FriendFeed"]
 ##img[alt="Follow us to StumbleUpon.com"]
 ##img[alt="Follow us to Youtube.com"]
-##.addthis_button
-##.post_share_icons
-##.addthis-button
-##.addthisContainer
-##.adsenseDole
-##.badges_v2
-##.beauty-bookmarks
-##.gf_social
-##.idc-share
-##.long_post_share_digg
-##.long_post_share_twiiter
-##.post_share_dig
-##.post_share_buzz
-##.post_share_stumble
-##.sharepost
-##.shr-bookmarks
-##.shareThisShare
-##.share-badges
-##.share_icons
-##.social-bar
-##.story_tools_social_buttons_top
-##.social-links-title
-##.social_bookmark
-##.stico_default
-##.stumblebutton
 abcnews.go.com###rsslisting
 abcnews.go.com###socialdock
 abcnews.go.com###socialtoolkit
-aceshowbiz.com##.theticker
 academicearth.org###bottom_toolbar
 academicearth.org###kampylink
+aceshowbiz.com##.theticker
 alternet.org##.redditit
 anandtech.com##.follow
-animatedexplanations.com##.sharinglink
 animatedexplanations.com###linkShare
+animatedexplanations.com##.sharinglink
 arstechnica.com###links-bar
 ask.com###promoTray
 associatedcontent.com##.mini_ct_inner
 belfasttelegraph.co.uk###bm_div
+bhaskar.com##.bgTB
 bing.com###sw_pb
+bleacherreport.com###like-article
 bleacherreport.com##.newsletter-lightbox
 bleacherreport.com##.twitter
-bleacherreport.com###like-article
 boston.com###relatedContent
 caring.com###awesomer-bar
 cbsnews.com###cbsSMPB
-collegehumor.com##.newsletter_signup
 cnet.com###cnetToolbarWrap
-cnet.com##.share
-cnet.com##.aboutHed
-cnet.com##.about
 cnet.com###shareTags
+cnet.com##.about
+cnet.com##.aboutHed
 cnet.com##.frontDoorPromo
+cnet.com##.share
 cnn.com###fb-recommend
 cnn.com###fbcStoryContainer
 cnn.com###MagStoryOFIE
 cnn.com###pmFacebook
 cnn.com###sh_search_box
 cnn.com##.share-counters
+collegehumor.com##.newsletter_signup
 cracked.com###fb-friends-recent-activity
 cracked.com###fb_sliver
 cracked.com###persistent-share
@@ -208,17 +203,17 @@ cracked.com###togo_module
 cracked.com##.share_buttons_col_1
 digitalspy.co.uk###topunit
 digitizor.com###upprev_box
+dumblittleman.com###advertise-now
 dumblittleman.com###promotion
 dumblittleman.com###subscribe
-dumblittleman.com###advertise-now
 ehow.com###eHowFeedbackTab
 factcheck.org##.connections
 feedmyapp.com###facebook
 feedmyapp.com###twitter
+forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
 freesfx.co.uk###popout
-forum.xda-developers.com###topcontainbox
 gizmodo.com##.welcome_form
 guardian.co.uk##.share-links
 guidingtech.com###text-3
@@ -228,15 +223,14 @@ heavy.com###colorbox
 howstuffworks.com###smToolBar
 howstuffworks.com###smToolBarSpacer
 imgur.com###awesome-bar
-theinquirer.net##.contentNavi_onemore
 kiplinger.com###targeted-promo
 life.com###mylifeToolbarWrapper
 makeuseof.com##.sub
 mashable.com##.jobs
 mashable.com##.post_share
+maxim.com###headersearchsocial
 maxim.com##.g_subs_Container
 maxim.com##.subscribeform
-maxim.com###headersearchsocial
 maximumpc.com###subscribe
 mediamatters.org###modalBox
 mediamatters.org##.jqmOverlay
@@ -251,15 +245,15 @@ newser.com###BF_BUZZBOX
 newser.com###ToolsHider
 newser.com###welcomescreen
 newsweek.com##.stay-connected
-nola.com##.rss_lrg
-nola.com##.helper
-nola.com##.share
 nola.com###m_fb
+nola.com##.helper
 nola.com##.mobile_lrg
+nola.com##.rss_lrg
+nola.com##.share
 nola.com##[href="http://www.nola.com/connect"]
 nytimes.com###upNext
-nzherald.co.nz##.share
 nzherald.co.nz##.msn
+nzherald.co.nz##.share
 nzherald.co.nz##.twitter
 okcupid.com###share_popout
 pcworld.com###subscribeMWForm
@@ -282,19 +276,26 @@ thechive.com###postSubscribe
 thechive.com###sdac_around_the_web_footer_chive_widget-3
 thechive.com###sdac_feedburner_chive_widget-2
 thechive.com###sdac_footer_facebook_widget-3
-thehdroom.com###Column-3ad300
 thefrisky.com##.likeboxwrap
-theonion.com##.connect
+thehdroom.com###Column-3ad300
+theinquirer.net##.contentNavi_onemore
 thenoobdad.com###twitter-entry
+theonion.com##.connect
 tonic.com###bottom_bar
-torontosun.com##.share
 torontosun.com###buttonRow
+torontosun.com##.share
 tripod.com###tb_container
 tv.com###blackout
 tv.com##.connect_prompt_box
-tvsquad.com##.addthis
 tvsquad.com###tout-followUs
+tvsquad.com##.addthis
 upi.com###b_tbr_c
 uproxx.com###block-728
 vgchartz.com###social_icons
 zap2it.com###twitter
+~digg.com###digg-widget
+~digg.com###digg_module
+~digg.com###digg_upcoming_content
+~digg.com###module_digg
+~digg.com##.digg-button
+~reddit.com##a[href="http://www.reddit.com/submit"]
