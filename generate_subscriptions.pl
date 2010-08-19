@@ -26,7 +26,7 @@ if (-f "$subsdir/.lock")
 
 writeFile("$subsdir/.lock", $$);
 
-system("hg", "up", "-R", $sourcedir);
+system("hg", "pull", "--update", $sourcedir);
 
 my %exists = ();
 
@@ -83,7 +83,7 @@ foreach my $file (readdir(SOURCE))
   writeFile("$subsdir/$file", $data);
 
   unlink("$subsdir/$file.gz");
-  system("7za a -tgzip -mx=9 -mpass=15 $subsdir/$file.gz $subsdir/$file") && warn "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
+  system("7za", "a", "-tgzip", "-mx=9", "-mpass=15", "$subsdir/$file.gz", "$subsdir/$file") && warn "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
 
 }
 closedir(SOURCE);
@@ -91,9 +91,10 @@ closedir(SOURCE);
 opendir(local *TARGET, $subsdir) || die "Could not open directory $subsdir.";
 foreach my $file (readdir(TARGET))
 {
-  next unless $file =~ /\.txt$/ && !exists($exists{$file});
+  next if -d "$subsdir/$file" || $file =~ /\.gz$/ || exists($exists{$file});
 
-  system("rm $subsdir/$file $subsdir/$file.gz");
+  unlink("$subsdir/$file");
+  unlink("$subsdir/$file.gz");
 }
 closedir(TARGET);
 
