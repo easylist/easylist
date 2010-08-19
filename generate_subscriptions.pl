@@ -54,7 +54,7 @@ foreach my $file (readdir(SOURCE))
     $data = resolveIncludes($data);
     unless ($data)
     {
-      warn "Failed to resolve includes in $file";
+      warn "Failed to resolve includes in $file.";
       $exists{$file} = -f "$subsdir/$file";
       next;
     }
@@ -83,7 +83,7 @@ foreach my $file (readdir(SOURCE))
   writeFile("$subsdir/$file", $data);
 
   unlink("$subsdir/$file.gz");
-  system("7za a -tgzip -mx=9 -mpass=15 $subsdir/$file.gz $subsdir/$file") && print "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
+  system("7za a -tgzip -mx=9 -mpass=15 $subsdir/$file.gz $subsdir/$file") && warn "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
 
 }
 closedir(SOURCE);
