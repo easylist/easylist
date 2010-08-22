@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: aGcWu1IaCDEubsfe3fjtxQ
+! Checksum: wjCtfwLFYXERaCHfT6nLcQ
 ! Fanboy's Adblock list
 ! Updated: 22 Aug 2010
 ! This list expires after 5 days
@@ -1249,7 +1249,8 @@ server/CCID
 ||clickbank.net^$third-party
 ||cpalead.com^$third-party
 ||d.m3.net^$third-party
-||dt00.net^$third-party,domain=~marketgid.com
+||dt00.net^$third-party,domain=~marketgid.com|mgid.com|thechive.com
+||dt07.net^$third-party,domain=~marketgid.com|mgid.com|thechive.com
 ||everestpoker.com^$third-party
 ||farmholidays.is^$third-party,subdocument
 ||footnote.com^$third-party
@@ -1844,7 +1845,6 @@ server/CCID
 ||doubleclick.net/imp;
 ||doubleclick.net/jump/
 ||dpbolvw.net^
-||dt07.net^
 ||dtmpub.com^
 ||dynamitedata.com^
 ||dyncdn.celebuzz.com/assets/
@@ -6536,7 +6536,6 @@ youporn.com###producer
 ##.yan-sponsored
 ##.yrail_ads
 ##[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"]
-##[id^="MarketGid"]
 ##A.ad_policy
 ##A[href^="http://bonusfapturbo.nmvsite.com/"]
 ##A[href^="http://greensmoke.com/"]
@@ -9019,6 +9018,7 @@ zuula.com###secondary
 ~superbikeplanet.com##.adlink
 ~superhry.cz##.adHoldert
 ~thecoolhunter.com.au,~thecoolhunter.net##.Ads
+~thechive.com,marketgid.com,mgid.com##[id^="MarketGid"]
 ~thedailygreen.com###AD_banner
 ~thenewamerican.com,~corrieredicomo.it##.module-ad
 ~tomwans.com##.adright
