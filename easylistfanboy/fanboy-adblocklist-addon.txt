@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: xbHsFz487wV2k7qerLj1vw
+! Checksum: wf24ij7DhqqYMe//g1thNg
 ! Fanboy's Annoyance list Addon 
-! Updated: 21 Aug 2010
+! Updated: 22 Aug 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -10,11 +10,12 @@
 /bloglines.gif
 /getnetworkwidget
 /givememydigg.
-/plugins/sociable/*
-/widget/digg/*
 /myyahoo.gif
 /newsgator.gif
+/plugins/sociable/*
 /sendtofriend.gif
+/upprev_js.
+/widget/digg/*
 ||addthis.com^$third-party
 ||buttons.googlesyndication.com^$third-party
 ||cdn.stumble-upon.com^$third-party
@@ -44,10 +45,10 @@
 ###fb-fan-box
 ###fb-rec-box
 ###fb_container
-###index-fb-likebox
-##.facebook-sharer
 ###fblike
 ###fbLikebox
+###index-fb-likebox
+##.facebook-sharer
 ##.fb.icon
 ##.fb_content_loader
 ##.fb_iframe_widget
@@ -91,12 +92,12 @@
 ###twitter_module
 ###twitterContainer
 ###twitterfeed
+##.long_post_share_twiiter
 ##.post_share_twitter
 ##.tweetmeme-sharer
 ##.twitter-share-button
 ##.twitter.icon
 ##.twitterBadge
-##.long_post_share_twiiter
 ##[alt="Follow us to Twitter.com"]
 ##[alt="Share on Twitter"]
 ##[title="Follow me on Twitter"]
@@ -115,12 +116,12 @@
 !
 !---------- Google/Buzz Widgets -----------
 !
-/addtogoogle.
+###fc-friendbar-outer
 ##.buzz-counter-long
 ##.google-buzz-button
-###fc-friendbar-outer
 ##.post_share_buzz
 ##a[title="Share on Google Buzz"]
+/addtogoogle.
 ||google.com^*/friendconnect.js
 !
 !---------- Digg Widgets -----------
@@ -128,15 +129,15 @@
 ###ck_digg
 ###digg-widget-container
 ##.DiggThisButton
-##.post_share_dig
 ##.long_post_share_digg
+##.post_share_dig
 ##[alt="Share on Digg"]
 !
 !---------- Stumble Widgets -----------
 !
-##img[alt="Follow us to StumbleUpon.com"]
-##[alt="Share on StumbleUpon"]
 ##.stumblebutton
+##[alt="Share on StumbleUpon"]
+##img[alt="Follow us to StumbleUpon.com"]
 !
 !---------- Whitelists -----------
 !
@@ -156,11 +157,11 @@
 ###share-tools-title
 ###sharebar
 ###ShareSidebar
+###social-toolbar
 ###social_bookmarks
 ###SocialIcons
 ###socialLinks
 ###socialSidebar
-###social-toolbar
 ##.addthis-button
 ##.addthis_button
 ##.addthisContainer
@@ -180,15 +181,15 @@
 ##.social-links-title
 ##.social_bookmark
 ##.stico_default
-##.yahooBuzzBadge
 ##.story_tools_social_buttons_top
+##.yahooBuzzBadge
+##[alt="Share on Delicious"]
+##[alt="Share on MySpace"]
+##[alt="Share on Reddit"]
 ##a[title="Get Feed RSS"]
 ##a[title="Save On Delicious"]
 ##a[title="Subscribe on FriendFeed"]
 ##img[alt="Follow us to Youtube.com"]
-##[alt="Share on Reddit"]
-##[alt="Share on Delicious"]
-##[alt="Share on MySpace"]
 abcnews.go.com###rsslisting
 abcnews.go.com###socialdock
 abcnews.go.com###socialtoolkit
