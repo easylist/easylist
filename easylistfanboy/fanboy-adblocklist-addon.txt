@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: XHVg69nmRsFsOPJWNpcVOQ
+! Checksum: R08UNmAFrB08dk/6LJWReQ
 ! Fanboy's Annoyance list Addon 
-! Updated: 24 Aug 2010
+! Updated: 23 Aug 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -19,8 +19,8 @@
 ||addthis.com^$third-party
 ||api.flattr.com^$third-party
 ||buttons.googlesyndication.com^$third-party
-||cdn.stumble-upon.com^$third-party
 ||c.liveintent.com^$third-party,subdocument
+||cdn.stumble-upon.com^$third-party
 ||cim.meebo.com^$third-party
 ||complex.com/toolbar/
 ||digg.com^$third-party
@@ -110,8 +110,8 @@
 ##[title="Follow On Twitter"]
 ##[title="Follow us on Twitter"]
 ##[title="Post this story to Twitter"]
-/twitterbutton-
 /Twitter_button
+/twitterbutton-
 ||platform*.twitter.com^$third-party
 ||topsy.com^$third-party
 ||twackle.com^$third-party
@@ -137,10 +137,10 @@
 ###ck_digg
 ###digg-widget-container
 ###share-digg
+##.dd_ajax_float
 ##.DiggThisButton
 ##.long_post_share_digg
 ##.post_share_dig
-##.dd_ajax_float
 ##[alt="Share on Digg"]
 !
 !---------- Stumble Widgets -----------
@@ -155,7 +155,6 @@
 !
 !---------- Hiding Rules ----------
 !
-##.fdbk_tab_right
 ###badge_reddit
 ###blog-share-widget
 ###ck_sharethis
@@ -164,9 +163,9 @@
 ###fdbk_tab
 ###networkedblogs_nwidget_container
 ###sexy-bookmarks
-###share_div_float
 ###share-tools
 ###share-tools-title
+###share_div_float
 ###sharebar
 ###ShareSidebar
 ###social-toolbar
@@ -180,6 +179,7 @@
 ##.adsenseDole
 ##.badges_v2
 ##.beauty-bookmarks
+##.fdbk_tab_right
 ##.flattr-button
 ##.gf_social
 ##.idc-share
@@ -201,6 +201,9 @@
 ##[alt="Share on Reddit"]
 ##a[title="Get Feed RSS"]
 ##a[title="Save On Delicious"]
+##A[title="Subscribe by Email"]
+##A[title="Subscribe by RSS"]
+##A[title="Subscribe by Twitter"]
 ##a[title="Subscribe on FriendFeed"]
 ##img[alt="Follow us to Youtube.com"]
 abcnews.go.com###rsslisting
@@ -252,6 +255,7 @@ epicurious.com###luxury_link_promo
 factcheck.org##.connections
 feedmyapp.com###facebook
 feedmyapp.com###twitter
+filehippo.com##.box-two-feature
 forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
@@ -269,11 +273,11 @@ howstuffworks.com###smToolBarSpacer
 imgur.com###awesome-bar
 kiplinger.com###targeted-promo
 life.com###mylifeToolbarWrapper
-makeuseof.com##.sub
+macnews.de###marktplatz
 makeuseof.com##.new_form
+makeuseof.com##.sub
 mashable.com##.jobs
 mashable.com##.post_share
-macnews.de###marktplatz
 maxim.com###headersearchsocial
 maxim.com##.g_subs_Container
 maxim.com##.subscribeform
@@ -303,11 +307,11 @@ nzherald.co.nz##.msn
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
 okcupid.com###share_popout
-pcworld.com###subscribeMWForm
 pcmag.com##.about-ads
-pcmag.com##.shareModule
 pcmag.com##.digg-widget
+pcmag.com##.shareModule
 pcmag.com##.subscribe-panel
+pcworld.com###subscribeMWForm
 people.com###flyingrecirc
 people.com##.cmad
 pressandjournal.co.uk###preamble
