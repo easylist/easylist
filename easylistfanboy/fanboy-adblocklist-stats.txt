@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +xv92C93nZNR5TZzIIr26Q
+! Checksum: b2wrvh2IhL/2J668HD17Zw
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 26 Aug 2010
 ! This list expires after 5 days
@@ -498,6 +498,7 @@
 /magnify_stats.
 /mapstats.
 /maxymiser.
+/mktg_metrics/*
 /media_viewed_tracking.php?
 /megacounter/*
 /metatraffic
@@ -510,7 +511,6 @@
 /mint/?js
 /mint/?record
 /mistats/*
-/mktg_metrics/*
 /mm_track/*
 /mmetrix.mobi/*
 /mouseover-tracker.js
@@ -907,7 +907,6 @@ tracker_pixel.
 trans_1x1.gif
 WebAnalytics.js
 webstatisztika
-||ssl-stats.wordpress.com^
 !
 ! ---------- 3rd party blocking rules ----------
 !
@@ -941,17 +940,20 @@ webstatisztika
 ||buzzfeed.com^*/small.gif?
 ||cbsnews.com/i/trk/
 ||center.tv/counter
-||chkpt.zdnet.com^
 ||clients1.google.*/generate_204
 ||cnn.com/images/tracking/
+||chkpt.zdnet.com^
 ||codeplex.com^*/broker.js|
 ||creditcards.com/sb.php?
 ||data.ninemsn.com.au/*GetAdCalls
+||ebayrtm.com/rtm?RtmIt&ite
 ||dell.com/logging?
 ||dw-eu.com.com^
+||dw.com.com/js/dw.js|$script
 ||dw.com.com/redir/redx/$image
 ||dw.com.com/redir?ontid$image
 ||dw.com.com/redir?siteid*http*$image
+||ectnews.com/shared/missing.gif?
 ||experts-exchange.com/pageLoaded.jsp?
 ||fc2.com/analyze.js
 ||feeds.timesonline.co.uk^*/mf.gif
@@ -1185,23 +1187,18 @@ webstatisztika
 ||doubleclick.net/dot.gif?
 ||dti-ranker.com^
 ||dw-world.de/run.js
-||dw.com.com/js/dw.js|$third-party,script
-||dwin2.com^$third-party
-||e-referrer.com^$third-party
+||dwin2.com^
+||e-referrer.com^
 ||ebay.northernhost.com^
-||ebayrtm.com/rtm?RtmIt&ite
-||eclickfeed.com/search.$third-party
-||ectnews.com/shared/missing.gif?
-||ecustomeropinions.com^$third-party
-||effectivemeasure.net^$third-party
-||elitics.com^$third-party
-||eloqua.com^$third-party
-||enticelabs.com^$third-party
-||eperfectdata.com^$third-party
-||eproof.com^$third-party
-||ercva.com^$third-party
-||ereportz.com^$third-party
-||eservicesanalytics.com.au^$third-party
+||ecustomeropinions.com^
+||effectivemeasure.net^
+||elitics.com^
+||eloqua.com^
+||enticelabs.com^
+||eperfectdata.com^
+||eproof.com^
+||ereportz.com^
+||eservicesanalytics.com.au^
 ||esm1.net^$third-party
 ||estara.com^$third-party
 ||estat.com^$third-party
@@ -1490,6 +1487,7 @@ webstatisztika
 ||service.newstogram.com^$third-party
 ||shinystat.com^$third-party
 ||shopping.com/pixel/
+||reporting.singlefeed.com^
 ||siteimprove.com^$third-party
 ||sitemeter.com/meter.asp
 ||sitereport.org^$third-party
@@ -1508,6 +1506,7 @@ webstatisztika
 ||sprintrade.com^$third-party
 ||spwstats.com^$third-party
 ||spywords.com^$third-party
+||ssl-stats.wordpress.com^
 ||stat.onestat.com^$third-party
 ||statcounter.com^$third-party
 ||stathound.com^$third-party
