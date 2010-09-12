@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: 0exZYncQgh6wLgMTWcuBIg
+! Checksum: tzw1Ul/aqjm/59U6haeiWw
 ! Fanboy's Turkish-addon Adblock list 
-! Updated: 7 Sep 2010
+! Updated: 12 Sep 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -58,6 +58,7 @@ _reklam_125_
 ||aksam.com.tr^$third-party
 ||antoloji.com/images/banners/
 ||appleturk.net^*.swf
+||b.cdn.md^
 ||bitturk.net/pasta_tarifleri.gif
 ||bitturk.net/ts_cron.php?
 ||bitturk.net^*/save_stats.php?
@@ -89,6 +90,7 @@ _reklam_125_
 ||medya73.com/images/banner/
 ||memlekethaber.com/banner/
 ||milliyet.com.tr/d/f/1/
+||nethaber.com/TextBanner.
 ||ntvmsnbc.com/adv/
 ||ogile.com/banner
 ||odatv.com/staticimages/
@@ -127,10 +129,20 @@ _reklam_125_
 ||yahoyt.com/main_banner
 ||yenicaggazetesi.com.tr/banner/
 ||yenimedya.com.tr^$third-party
+||yudalisaccikartici.com^$third-party
 !
 !---------- Turkish Trackers ----------
 !
 ||panel.gazetevatan.com^
+!
+! ---------- Firefox 3.x Specific Hiding Rules ----------
+!
+beyazgazete.com##[style="float: left; margin-top: 15px; width: 322px; height: 309px; background: url(\"/yimages/reklam_300x250.png\") repeat scroll 0% 0% transparent;"]
+beyazgazete.com##[style="float: left; width: 300px; height: 250px; margin-top: 10px;"]
+beyazgazete.com##[style="float: left; width: 300px; height: 250px; margin-top: 5px;"]
+beyazgazete.com##[style="float: right; width: 480px; height: 76px;"]
+beyazgazete.com##[style="float: right; width: 728px; height: 100px;"]
+samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; height: 90px; border-style: solid; border-width: 1px; border-color: Black; top: 9px; bottom: 2px; width: 728px; clear: left;"]
 !
 !---------- Turkish Hiding Rules ----------
 !
@@ -163,15 +175,14 @@ _reklam_125_
 ##.sag_reklam
 ##.sagreklam
 aksam.com.tr###has-banner300x250
-beyazgazete.com##[style="float: left; margin-top: 15px; width: 322px; height: 309px; background: url(\"/yimages/reklam_300x250.png\") repeat scroll 0% 0% transparent;"]
-beyazgazete.com##[style="float: left; width: 300px; height: 250px; margin-top: 10px;"]
-beyazgazete.com##[style="float: left; width: 300px; height: 250px; margin-top: 5px;"]
-beyazgazete.com##[style="float: right; width: 480px; height: 76px;"]
-beyazgazete.com##[style="float: right; width: 728px; height: 100px;"]
+beyazgazete.com##[style="float:right;width:728px;height:90px;border:5px solid #cccccc"]
+beyazgazete.com##[style="float:right;height:380px;width:120px;"]
+beyazgazete.com##[style="float:left;width:250px;margin-top:5px;height:250px;border:1px solid #000000"]
+beyazgazete.com##[style="float:left;margin-top:15px;width:322px;height:309px;background:url(/yimages/reklam_300x250.png)"]
 bugun.com.tr##.griDiv
 cnnturk.com##.bnr
 computerworld.com.tr##.kenar_banner160
-dikeygecis.org##[style="margin: 2px; float: right; width: 337px; height: 281px;"]
+dikeygecis.org##.cms_widget_content
 dunya.com###FullBanner
 dunya.com###leaderTop
 dunya.com###rectangleBanner
@@ -203,14 +214,13 @@ hurriyet.com.tr###staticbuttons
 hurriyet.com.tr##.arama_kutu_bg
 kanald.com.tr##.adn
 kanald.com.tr##.adv
-kentgazetesi.com##[style="width: 138px; height: 56px;"]
 lg.web.tr##TABLE[width="100%"][height="60"]
 medya73.com##.banner
 medyafaresi.com##.banner
 medyafaresi.com##.banneralan
 milliyet.com.tr##.adnet
 milliyet.com.tr##.banner
-nethaber.com##TABLE[width="778"][style="height: 99px;"]
+nethaber.com##.ad-bg
 ntvmsnbc.com##.eshopStory
 odatv.com##.banner468v2
 pckoloji.com##.kreklam2
@@ -222,14 +232,13 @@ pckoloji.com##.tube
 posta.com.tr##.bannerContent
 referansgazetesi.com###Referans_bolum_728x90
 sabah.com.tr##.vimjo
-sabah.com.tr##[style="padding-top: 10px; height: 110px;"]
-sabah.com.tr##[style="width: 298px; position: relative; height: 250px;"]
+sabah.com.tr##[width="430"][height="50"]
 samanyoluhaber.com##.reklam
-samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; height: 90px; border-style: solid; border-width: 1px; border-color: Black; top: 9px; bottom: 2px; width: 728px; clear: left;"]
+samanyoluhaber.com##[style="position:absolute; text-align: center; left:55px; height:90px;  border-style:solid; border-width:1px; border-color:Black; top:9px; bottom:2px; width:728px; clear:left; "]
 sanliurfa.com##.banner
 shiftdelete.net###bannerbuyuk
 shiftdelete.net##.bannerkucuk
-sporx.com##TD[height="105"][bgcolor="#000000"]
+sporx.com##[style="width:815px; height:90px; margin-left:45px; margin-top:6px;"]
 stargazete.com##.rkl
 stargazete.com##.rkl-gnl
 takvim.com.tr##TABLE[width="898px"][height="215px"]
