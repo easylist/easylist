@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: /7t5+srjV3xyNqt/eDWqHA
+! Checksum: vVfegx61HAnas1/O+69oVg
 ! Fanboy's Vietnamese-addon Adblock list 
-! Updated: 19 Aug 2010
+! Updated: 12 Sep 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: mp3geek@gmail.com  http://fanboy.co.nz/adblock
@@ -34,6 +34,7 @@ _AdsZone_
 _quangcao.
 ||24h.com.vn/upload/*.com.vn.
 ||24h.com.vn/upload/*.swf|$object
+||24h.com.vn/upload/background/
 ||5giay.vn/igo/*.swf|
 ||5giay.vn/igo/changebanner/
 ||ad.pixelmedia.vn^$third-party
@@ -97,6 +98,11 @@ _quangcao.
 @@||softvnn.com/images/banner.swf
 @@||thegioioto.com.vn^*/Images/Adv/
 !
+! ---------- Firefox 3.x Specific Hiding Rules ----------
+!
+forum.bacsi.com##[style="border: 1px solid rgb(235, 249, 252); padding: 5px; margin-top: 0px; margin-bottom: 0px; text-align: center;"]
+tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201, 201); background-color: rgb(245, 245, 245); margin-bottom: 6px; text-align: center;"]
+!
 !---------- Vietnamese Element Hiding Rules ----------
 !
 24h.com.vn###adv-1000px
@@ -120,7 +126,7 @@ eva.vn###ads_center_banner
 eva.vn###ads_special_center
 eva.vn##.banner_header
 eva.vn##.banner_header_sub
-forum.bacsi.com##[style="border: 1px solid rgb(235, 249, 252); padding: 5px; margin-top: 0px; margin-bottom: 0px; text-align: center;"]
+forum.bacsi.com##DIV[style="border:#ebf9fc 1px solid; padding:5px; margin-top:0px; margin-bottom:0px; text-align:center"]
 game8.vn##[height="125px"][width="975px"]
 google.com,google.com.vn###mbEnd
 google.com,google.com.vn###tads
@@ -149,7 +155,7 @@ tin247.com##.Rotator
 tinhte.vn##.bannerBox
 tinthethao.com.vn###MetaNET_ADV_NUMBER_2
 tuoitre.vn##.blockQcBtom
-tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201, 201); background-color: rgb(245, 245, 245); margin-bottom: 6px; text-align: center;"]
+tuoitre.vn##DIV[style="width:298px;height:123px;border:solid 1px #c9c9c9;background-color:#f5f5f5;margin-bottom:6px;text-align:center;"]
 tuoitre.vn##[width="350"][height="204"]
 vietnamplus.vn##.newsAdText
 vinabull.com###imgHead
@@ -162,7 +168,7 @@ vtc.vn###link-home-banner-top-right1a
 vtc.vn###link-home-banner-top-right1b
 vtc.vn##.adv
 vtc.vn##.advAllWidth
-vtc.vn##div[style="text-align: center; padding: 2px 0px 7px;"]
+vtc.vn##div[style="float: right; padding-top:10px;"]
 webketoan.vn##.banner_right
 webketoan.vn##.flash
 webketoan.vn##.headerright
