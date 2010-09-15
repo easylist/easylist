@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 5rmPy67rF+mBkTvoVQGGPA
+! Checksum: 2CnDS1fYXzOmGwch5dOypQ
 ! Fanboy's Adblock list
 ! Updated: 15 Sep 2010
 ! This list expires after 5 days
@@ -132,9 +132,9 @@
 /ad-boxes-
 /ad-feedback.
 /ad-html
+/ad-identifier.
 /ad-iframe-
 /ad-indicator
-/ad-identifier.
 /ad-inject/*
 /ad-layer
 /ad-leaderboard
@@ -1715,10 +1715,10 @@ server/CCID
 ||adsensecamp.com^
 ||adserverplus.com^
 ||adservinginternational.com^
-||adsfactor.net^
 ||adsfac.eu^
 ||adsfac.net^
 ||adsfac.us^
+||adsfactor.net^
 ||adsfast.com^
 ||adshare.freedocast.com^
 ||adshuffle.com^
@@ -2030,8 +2030,8 @@ server/CCID
 ||keewurd.com^
 ||kliksaya.com^
 ||kontera.com^
-||kraken.giantrealm.com^
 ||kqzyfj.com^
+||kraken.giantrealm.com^
 ||l.yimg.com/a/i/mntl/sho/
 ||l.yimg.com/ao/i/ad/
 ||l.yimg.com/mq/a/
@@ -2329,6 +2329,7 @@ server/CCID
 !
 !---------- DoubleClick Whitelists ----------
 !
+@@||ad-emea.doubleclick.net^$subdocument,domain=wisedock.de|wisedock.com|wisedock.co.uk|wisedock.at|wisedock.eu
 @@||ad.au.doubleclick.net/adj/ndm.tcm/
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/*/nbcu.nbc/rewind*$object_subrequest
@@ -2348,7 +2349,6 @@ server/CCID
 @@||ad.doubleclick.net/pfadx/brk.brk/*_preroll
 @@||ad.doubleclick.net/pfadx/DARTSHELL
 @@||ad.doubleclick.net^*/videoplayer$domain=wflx.com,third-party,subdocument
-@@||ad-emea.doubleclick.net^$subdocument,domain=wisedock.de|wisedock.com|wisedock.co.uk|wisedock.at|wisedock.eu
 @@||doubleclick.net/adi/video.theglobeandmail.com/
 @@||doubleclick.net/adj/theglobeandmail.com
 @@||doubleclick.net/crossdomain.xml$domain=theglobeandmail.com
@@ -2501,6 +2501,7 @@ server/CCID
 @@||timeinc.net^*/advertising/$image,domain=people.com
 @@||travelpod.com^*popunder$script
 @@||tubemogul.com/adtags/$domain=comedy.com
+@@||upload.wikimedia.org/wikipedia/
 @@||v.fwmrm.net/ad/p/1?|$domain=video.adultswim.com|mlb.mlb.com,third-party,object_subrequest
 @@||valueram.com/ad_
 @@||vap.yahoo.net/nicobarMan/ads/$domain=caller.com
@@ -4842,11 +4843,11 @@ youporn.com###producer
 ###g_adsense
 ###gad2
 ###gad3
+###galleries-tower-ad
 ###gallery-ad
 ###gallery-ad-m0
 ###gallery-advert
 ###gallery_ads
-###galleries-tower-ad
 ###galleryad1
 ###game_header_ad
 ###genad
@@ -5334,13 +5335,13 @@ youporn.com###producer
 ###top-search-ad-wrapper
 ###top-sky
 ###top_ad_area
+###top_ad_banner
 ###top_adblock_fix
 ###TOP_ADROW
 ###top_ads
 ###top_adspace
 ###top_adv-v2
 ###top_advert
-###top_ad_banner
 ###top_google_ads
 ###top_right_ad
 ###top_sponsor_ads
@@ -5591,7 +5592,6 @@ youporn.com###producer
 ##.ad468_60
 ##.ad468x60
 ##.ad6
-##.adArea674x60
 ##.ad7
 ##.ad728
 ##.ad728_90
@@ -5720,6 +5720,7 @@ youporn.com###producer
 ##.ad_wrapper_top
 ##.adAgate
 ##.adarea
+##.adArea674x60
 ##.adAreaLC
 ##.adArticleBody
 ##.adBanner
@@ -5914,6 +5915,7 @@ youporn.com###producer
 ##.adSquare
 ##.adsrecnode
 ##.adssquare
+##.adsTop
 ##.adstop
 ##.adsTowerWrap
 ##.adstrip
@@ -5927,7 +5929,6 @@ youporn.com###producer
 ##.adTileWrap
 ##.AdTop
 ##.adtop
-##.adsTop
 ##.adTopLeft
 ##.adTopRight
 ##.adtops
@@ -5951,6 +5952,7 @@ youporn.com###producer
 ##.adv_side2
 ##.adv_top
 ##.advBottomHome
+##.adver_cont_below
 ##.advert-100
 ##.advert-160x600
 ##.advert-300
@@ -5967,7 +5969,6 @@ youporn.com###producer
 ##.advert_banner
 ##.advert_block
 ##.advert_box
-##.adver_cont_below
 ##.advert_google_content
 ##.advert_google_title
 ##.advert_leaderboard
@@ -6593,11 +6594,11 @@ youporn.com###producer
 ##.sideBySideAds
 ##.singleAd
 ##.singlead
-##.singlepostad
 ##.singleAdBox
 ##.singleads
 ##.singleAdsContainer
 ##.singlepageleftad
+##.singlepostad
 ##.singlepostadsense
 ##.sky-ad
 ##.sky_ad
@@ -6799,7 +6800,6 @@ youporn.com###producer
 ##[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"]
 ##[id="336x280Ad"]
 ##A.ad_policy
-##a[href^="http://www.pheedo.com/"]
 ##A[href^="http://bonusfapturbo.nmvsite.com/"]
 ##A[href^="http://fusionads.net"]
 ##A[href^="http://greensmoke.com/"]
@@ -6807,6 +6807,7 @@ youporn.com###producer
 ##A[href^="http://www.greensmoke.com/"]
 ##A[href^="http://www.ireel.com/signup?ref"]
 ##a[href^="http://www.liutilities.com/"]
+##a[href^="http://www.pheedo.com/"]
 ##a[href^="http://www.ringtonematcher.com/"]
 ##A[href^="http://www.sfippa.com/"]
 ##A[href^="http://www.text-link-ads.com/"]
@@ -8595,10 +8596,10 @@ securityweek.com###banner
 seeingwithsound.com##IFRAME[height="600"][width="160"]
 seek.com.au##.PremiumJobAd
 seek.com.au##.SeekerPromosLeft
+seekfind.org##table[width="150"]
 seenow.com##.banner_header
 seenow.com##.banner_right
 seenow.com##.catalog_ads
-seekfind.org##table[width="150"]
 sensis.com.au###northPfp
 sensis.com.au##.pfpRightParent
 seriouseats.com###featuredRight2Columns
