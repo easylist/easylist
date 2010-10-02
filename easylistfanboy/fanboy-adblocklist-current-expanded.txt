@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: O3loJfBzFa9u0uGPHtOVcQ
+! Checksum: VBxui22CQ71BsrPyYoxqNA
 ! Fanboy's Adblock list
 ! Updated: 2 Oct 2010
 ! This list expires after 4 days
@@ -11,6 +11,8 @@
 !
 &ad_number=
 &Advert_Id=
+&banner_id=
+&bannerid=
 &clickTag=http
 -ad-util-
 -ad3.jpg
@@ -210,7 +212,7 @@
 /ad_count.
 /ad_engine?
 /ad_feed.js?
-/ad_footer
+/ad_footer_
 /ad_frame.
 /ad_holder/*
 /ad_html/*
@@ -220,10 +222,11 @@
 /ad_index_
 /ad_js.php?
 /ad_keywords.
-/ad_label
+/ad_label2_
+/ad_label_
 /ad_leader.
 /ad_leader_
-/ad_leaderboard
+/ad_leaderboard.
 /ad_left_
 /ad_legend_
 /ad_links/*
@@ -249,7 +252,7 @@
 /ad_top_
 /ad_txt.js|
 /ad_wide_sky
-/ad_wrapper
+/ad_wrapper.
 /adaptvAdPlayer.js
 /AdaptvAdserverVastVideo.
 /adbanner.
@@ -301,10 +304,11 @@
 /adframe_
 /adFrequencyCapping.
 /adfshow?
-/adfunction
+/adfunction.
 /AdHandler/*
 /AdHandlers2.
-/adHeader
+/adheader.
+/adHeaderTxt.
 /adhug_jc.
 /adiframe.
 /adiframe/*
@@ -564,15 +568,17 @@
 /au2m8_preloader/*
 /AuditudeAdUnit.
 /ban.php?
+/banman.asp?
 /banman/*
+/banmanpro/*
 /banner-ad-
 /banner-ad_
 /banner.asp?
 /banner.ca?
+/banner.cgi?
 /banner.content.
 /banner.gif?
 /banner.htm?
-/banner.cgi?
 /banner.js
 /banner.php
 /banner.ws?
@@ -587,6 +593,8 @@
 /banner_management/*
 /banner_view.php?
 /bannerad.
+/bannerad.
+/BannerAd_
 /bannerad_
 /bannerads-
 /bannerads/*
@@ -630,6 +638,7 @@
 /body_background_ad/*
 /bottom_adv_
 /BottomAd.
+/bserver/AAMALL/*
 /buttonad/*
 /buzz/ads/*
 /cached/bnr_
@@ -796,10 +805,13 @@
 /googleafs.js
 /gopro_interstitial.
 /house-ad/*
+/house-ad/*
+/house_ad-
 /housead/*
 /housead_
 /houseads.
 /houseads?
+/hserver/AAMALL/*
 /hserver/p
 /hserver/r
 /hserver/s
@@ -857,11 +869,14 @@
 /include/adsdaq
 /includes/ads/*
 /includes/adtags/*
+/inhouse_ads/*
 /inline_ad.
 /InlineTextAds?
+/innerads.
 /insertAds.
 /intellitext.
 /InternetAd/*
+/iserver/CCID=
 /j/ads.js
 /JavaScript/AdHandlers
 /javascript/ads.
@@ -979,7 +994,10 @@
 /plugins/page-cornr
 /plugins/wp125/*
 /plugins/wp_actionpop/*
+/pop_under.
 /popAds.
+/popunder-
+/popunder.$script
 /portal_assets/*
 /ppd_ads.
 /predictad. 
@@ -1202,6 +1220,8 @@
 ?ad_width=
 ?AdType=
 ?adZone=
+?banner_id=
+?bannerid=
 _ad.php?
 _ad_Actron.
 _ad_change.
@@ -1268,26 +1288,7 @@ _textlinkspot.
 _topad.php
 _web_adhoc?
 _webbanner_
-affiliate/banner
-/banman.asp?
-/banmanpro/*
-?banner_id=
-&banner_id=
-/bannerad.
-/BannerAd_
-?bannerid=
-&bannerid=
-/house_ad-
-/house-ad/*
-/inhouse_ads/*
 images/ads/*
-/innerads.
-/pop_under.
-/popunder-
-/popunder.$script
-/hserver/AAMALL/*
-/bserver/AAMALL/*
-/iserver/CCID=
 |http://ad0.
 |http://ad1
 |http://ad2.
@@ -2479,6 +2480,7 @@ images/ads/*
 @@/banner/banner_$domain=dexpot.de
 @@/BannerAd.$domain=careerone.com.au
 @@/banners/ads/*$domain=valueram.com
+@@/coremetrics/*$domain=qvc.com
 @@/flvvideoplayer.$domain=pbs.org
 @@/html.ng/*$domain=webmd.com|uol.com.br
 @@/images/ad-$domain=apple.com
@@ -2497,7 +2499,6 @@ images/ads/*
 @@://192.168.2
 @@_AFL_bettingPage_$domain=afl.com.au
 @@_sx.ads/demand.five.tv/$domain=demand.five.tv,object_subrequest
-@@/coremetrics/*$domain=qvc.com
 @@||208.100.24.244^$domain=sankakucomplex.com,script
 @@||247realmedia.com/RealMedia/ads/$image,domain=farecompare.com
 @@||2mdn.net/crossdomain.xml$domain=youtube.com
@@ -2682,12 +2683,14 @@ images/ads/*
 -360x110.
 -468x060-
 -468x060_
+-468x060_
 -468x60-
 -468x60.
 -468x80-
 -480x120.
 -480x60.
 -486x60.
+-486x60.js|
 -500x100.
 -507x45_
 -600x90-
@@ -2777,8 +2780,8 @@ images/ads/*
 /468by60logo.
 /468x060.
 /468x060_
-/468x280_
 /468x280.
+/468x280_
 /468x60-
 /468x60.
 /468x60/*
@@ -2796,8 +2799,8 @@ images/ads/*
 /468x80g.
 /470x030_
 /475x150-
-/480x030_
 /480x030.
+/480x030_
 /496_98_
 /600_120_
 /600_90_
@@ -2823,15 +2826,15 @@ images/ads/*
 /728x90/*
 /728x90?
 /728x90_
-/728x90blue.
-/728x90B/*
 /728x90B.
+/728x90B/*
+/728x90blue.
 /728x90D.
 /728x90Footer.
 /728x90n6.
 /750-100.
-/760x120v3.
 /760x120_
+/760x120v3.
 /760x90_
 /768x90.
 /80x468_
@@ -2852,6 +2855,7 @@ images/ads/*
 /banners/460
 /banners/468
 /banners/728
+/head486x60.
 /images/336x280
 /img/468_60
 /img/728_90
@@ -2859,8 +2863,8 @@ images/ads/*
 120x500.gif|
 120x600.gif?
 120x600.gif|
-120x600.htm|
 120x600.html|
+120x600.htm|
 120x600.jpg|
 120x600.png|
 120x600.swf?
@@ -2872,8 +2876,8 @@ images/ads/*
 133x394.gif|
 160x300.gif|
 160x600.gif|
-160x600.htm|
 160x600.html|
+160x600.htm|
 160x600.jpg|
 160x600.php?
 160x600.php|
@@ -2891,8 +2895,8 @@ images/ads/*
 250X250.swf|
 3/ad300x145.
 300x250.gif|
-300x250.htm|
 300x250.html|
+300x250.htm|
 300x250.jpeg|$domain=~pics.tata.ru
 300x250.jpg|$domain=~mydamnchannel.com|~fanhouse.com
 300x250.php|
@@ -2903,7 +2907,6 @@ images/ads/*
 300x60.gif|
 302x52.swf|
 316x250.swf|
-_320x250_
 336x280.gif|
 336x280.jpg|
 450x55.jpg|
@@ -2913,10 +2916,6 @@ _320x250_
 468-60.swf|
 46860.gif|
 468_60.gif|
-468x60_1.gif|
-_468x060.
--468x060_
-_468x100_
 468x60.gif|
 468x60.html|
 468x60.htm|
@@ -2926,18 +2925,13 @@ _468x100_
 468x60.php|
 468x60.swf?
 468x60.swf|
-_468x60_1.
-_468x60_2.
-_468x60ad.
+468x60_1.gif|
 468x80.gif|
 470x60.gif|
 470x60.jpg|
-470x60.swf|
 470x60.swf?
+470x60.swf|
 480x80.jpg|
-_486x60.js|
--486x60.js|
-/head486x60.
 522x62.jpg|
 700200.jpg|
 700_200.gif|
@@ -2946,8 +2940,8 @@ _486x60.js|
 700x200.gif|
 728x290.gif|
 728x90.gif|
-728x90.htm|
 728x90.html|
+728x90.htm|
 728x90.jpg|
 728x90.php?
 728x90.php|
@@ -3042,10 +3036,10 @@ _160x300.
 _160x300_
 _160x350.
 _160x400.
-_160x600_
-_160x600.
 _160x600-
+_160x600.
 _160x600/
+_160x600_
 _180-500.swf|
 _180x150.png|
 _180x150_*?
@@ -3064,8 +3058,8 @@ _300_200.gif|
 _300_250
 _300_60_
 _300x160_
-_300x200.htm|
 _300x200.html|
+_300x200.htm|
 _300x250-
 _300x250_
 _300x250a_
@@ -3077,6 +3071,7 @@ _300x60_
 _300x75_
 _300x80.
 _308x100.
+_320x250_
 _323x120_
 _336x120.
 _336x280.
@@ -3102,14 +3097,19 @@ _465x110_
 _468_60.
 _468_60_
 _468_80.
-_468x060_
 _468x060-
 _468x060.
+_468x060.
+_468x060_
 _468x100.
+_468x100_
 _468x120.
 _468x60-
 _468x60.
 _468x60_
+_468x60_1.
+_468x60_2.
+_468x60ad.
 _468x60b.
 _468x6o_
 _468x80.
@@ -3118,6 +3118,7 @@ _468x90.
 _480_60.
 _480_80_
 _480x60.
+_486x60.js|
 _486x60_
 _487x457_
 _490-90_
@@ -3447,10 +3448,10 @@ s/awe.js
 ||adult-adv.com^
 ||adult3dcomics.com^
 ||adultaccessnow.com^
-||adultpopunders.com^
 ||adultadvertising.net^
 ||adultadworld.com^
 ||adultcity.tv/popad
+||adultpopunders.com^
 ||adulttiz.com^
 ||adulttubetraffic.com^
 ||adventory.com^
