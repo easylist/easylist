@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: CtuQ4VoY0vQkECJAgnZ9yg
+! Checksum: F3R/I+Oj2Dx/O9D/MUxNkA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 8 Oct 2010
 ! This list expires after 6 days
@@ -200,7 +200,7 @@
 @@||tweetmeme.com/i/scripts/button.js$domain=smashingapps.com
 @@||widgets.fbshare.me/files/$domain=smashingapps.com
 !
-!---------- Hiding Rules ----------
+!---------- Generic Hiding Rules ----------
 !
 ###badge_reddit
 ###blog-share-widget
@@ -298,6 +298,7 @@
 ##.social_bookmark
 ##.social_bookmarks_title
 ##.social_boxes
+##.social_item
 ##.social_networks
 ##.social_share
 ##.socialBadges
@@ -328,6 +329,9 @@
 ##A[title="Subscribe by Twitter"]
 ##a[title="Subscribe on FriendFeed"]
 ##div.sociable
+!
+!---------- Site Specific Hiding Rules ----------
+!
 7tutorials.com###block-block-1
 9gag.com##.share
 abcnews.go.com###rsslisting
@@ -546,7 +550,6 @@ washingtontimes.com##.nag
 washingtontimes.com##.registration-flag
 webmd.com##.share_rdr
 wireupdate.com###icons
-wkrg.com##.social_item
 wsj.com###aFbLikeBottom
 wsj.com##.share
 xkcdb.com###nagbox
