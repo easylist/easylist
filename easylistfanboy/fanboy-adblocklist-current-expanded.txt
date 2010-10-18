@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: OtN4+ioEp/4b1mq2KUTNQg
+! Checksum: oUPiVN4xv9YBO3tunUfK+g
 ! Fanboy's Adblock list
 ! Updated: 18 Oct 2010
 ! This list expires after 4 days
@@ -535,6 +535,7 @@
 /advertisehere.
 /advertisement-
 /advertisement.$image,script,subdocument
+/advertisement_
 /advertisementheader.
 /advertisements-
 /advertisements.
@@ -544,7 +545,6 @@
 /advertising/*$image,script,subdocument
 /advertising/ads/*
 /advertisingmodule.
-/advertisement_
 /advertisment1-
 /advertpro/*
 /adverts/*
@@ -2549,7 +2549,6 @@ images/ads/*
 @@/publicidad.$domain=tn.com.ar
 @@/RealMedia/ads/adstream_jx.ads/*$domain=playervideo.globo.com,object_subrequest
 @@/RealMedia/ads/adstream_sx.ads$domain=video.economist.com|surfline.com|seesaw.com
-@@||ewallpapers.eu/ads/logo.jpg
 @@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
 @@/yume_ad_library.swf$domain=icanhascheezburger.com
 @@://192.168.0.
@@ -2608,6 +2607,7 @@ images/ads/*
 @@||dstw.adgear.com/impressions/int/$domain=nj1015.com,object_subrequest
 @@||dstw.adgear.com/impressions/int/as
 @@||ebayrtm.com/rtm?RtmCmd&a$domain=www.ebay.co.uk|www.ebay.it|www.ebay.com.au|www.ebay.com|www.ebay.ca|www.ebay.in|www.ebay.ie|www.ebay.nl|www.ebay.de|www.ebay.com.hk
+@@||ewallpapers.eu/ads/logo.jpg
 @@||eyewonder.com^*/video/$domain=last.fm
 @@||ezone.com/banners/swfs/*$domain=ezone.com,object
 @@||facepunch.com/ads/
@@ -3068,8 +3068,8 @@ images/ads/*
 _1000x90_
 _100x480_
 _115x220.
-_120_600.
 _120600.
+_120_600.
 _120_600_
 _120x240.
 _120x240_
@@ -4209,11 +4209,11 @@ youporn.com###producer
 ###ad-ads
 ###ad-banner
 ###ad-banner-top
-###ad-bigbox
 ###ad-banner-wrap
 ###ad-bar
 ###ad-bg
 ###ad-big
+###ad-bigbox
 ###ad-billboard-bottom
 ###ad-block-bottom
 ###ad-bottom
@@ -4590,8 +4590,8 @@ youporn.com###producer
 ###ads-indextext
 ###ads-leaderboard1
 ###ads-right
-###ads-slot
 ###ads-right-twobottom
+###ads-slot
 ###ads-sponsored-boxes
 ###ads-text
 ###ads-top
@@ -4824,7 +4824,6 @@ youporn.com###producer
 ###adwin_re
 ###adwords-4-container
 ###adwrapper
-###awds-nt1-ad
 ###adzbanner
 ###adzerk
 ###adzerk1
@@ -4859,6 +4858,7 @@ youporn.com###producer
 ###aside_ad
 ###asinglead
 ###autos_banner_ad
+###awds-nt1-ad
 ###awesome-ad
 ###b5-skyscraper-ad-3
 ###b5_ad_footer
@@ -5266,10 +5266,10 @@ youporn.com###producer
 ###inlinead
 ###inlineads
 ###inlineAdtop
-###interstitial_ad
 ###inner-top-ads
 ###insider_ad_wrapper
 ###interruptor
+###interstitial_ad
 ###ip-ad-leaderboard
 ###ip-ad-skyscraper
 ###island_ad_top
@@ -5798,6 +5798,7 @@ youporn.com###producer
 ##.ad-background
 ##.ad-banner
 ##.ad-bigbox
+##.ad-bigboxSub
 ##.ad-bline
 ##.ad-block
 ##.ad-boombox
@@ -5904,11 +5905,11 @@ youporn.com###producer
 ##.ad3
 ##.ad300
 ##.ad300250
-##.ad300x150
 ##.ad300_250
 ##.ad300Block
 ##.Ad300x
 ##.ad300x100
+##.ad300x150
 ##.Ad300x250
 ##.ad300x250
 ##.ad300x250-home
@@ -6096,7 +6097,6 @@ youporn.com###producer
 ##.adBottomBoard
 ##.adBottomboxright
 ##.ADbox
-##.ad-bigboxSub
 ##.AdBox
 ##.adBox
 ##.adbox-box
@@ -6284,8 +6284,8 @@ youporn.com###producer
 ##.adspace_buysell
 ##.adspace_rotate
 ##.adsplat
-##.adSpot
 ##.adspost
+##.adSpot
 ##.adspot
 ##.adSpot-textBox
 ##.adSpot-textBoxGraphicRight
@@ -6516,15 +6516,15 @@ youporn.com###producer
 ##.body_sponsoredresults_top
 ##.body_width_ad
 ##.bodyads
-##.bot_ads
 ##.bookseller-header-advt
+##.bot_ads
 ##.bot_banner
+##.bottom-ad2
 ##.bottom_ad_block
 ##.bottom_bar_ads
 ##.bottom_sponsor
 ##.bottomAd
 ##.bottomad
-##.bottom-ad2
 ##.BottomAdContainer
 ##.bottomAds
 ##.bottomleader
@@ -6721,8 +6721,8 @@ youporn.com###producer
 ##.gutter-ad-left
 ##.gutter-ad-right
 ##.h-ad-728x90-bottom
-##.h_Ads
 ##.h_ad
+##.h_Ads
 ##.half_ad_box
 ##.halfPageAd
 ##.hd_advert
@@ -7701,10 +7701,10 @@ cioupdate.com###gemhover
 cioupdate.com###houseRibbonContainer
 cioupdate.com###partners
 cioupdate.com###solsect
+citypaper.com###medRectangle
+citypaper.com###topLeaderboard
 citytv.com###CityTv-HeaderBannerBorder
 citytv.com##.Video-Ad
-citypaper.com###topLeaderboard
-citypaper.com###medRectangle
 cjonline.com###banner-top
 cleveland.com##.box_grayoutline
 climateprogress.org###advertisement
@@ -7989,6 +7989,7 @@ everybodysucksbutus.com###top
 everyjoe.com###php-code-1
 everythingusb.com##[style="height: 95px; width: 1000px;"]
 evo.co.uk###evotopTen_advert
+ewallpapers.eu##[id^="MarketGid"]
 eweek.com###blackscreen
 eweek.com###calc_div
 eweek.com###carousel_container
@@ -8031,7 +8032,6 @@ experts-exchange.com##.sectionFour
 exposay.com###box
 express.co.uk##TD[colspan="2"]
 extremetech.com##.sponsors_container
-ewallpapers.eu##[id^="MarketGid"]
 facebook.com###home_sponsor_nile
 facebook.com##.adv
 facebook.com##.ego_unit.ego_spo
@@ -8437,9 +8437,6 @@ justin.tv###go_pro_link
 katu.com###leader-sponsor
 katu.com##.callout
 keepvid.com##.sponsors
-kval.com###leader-sponsor
-kval.com##.fisher468
-kval.com##.callout
 khq.com###WNCol4
 kids-in-mind.com##[align="center"][height="270"]
 kids-in-mind.com##td[style="padding-left: 5; padding-right: 5"]
@@ -8473,6 +8470,9 @@ ksbw.com###omega
 kstp.com###siteHeaderLeaderboard
 ktar.com###askadv
 ktar.com###gfp
+kval.com###leader-sponsor
+kval.com##.callout
+kval.com##.fisher468
 laptopmag.com##.logoAds
 laptopmag.com##[style="text-align:center; border-bottom: 1px solid #666666; border-top: 1px solid #666666;"]
 lastminute.com###ratefinder_in_path
@@ -8581,6 +8581,7 @@ majorgeeks.com##TABLE[cellpadding="3"][align="center"]
 makeuseof.com##[style="margin-bottom: 15px;margin-top: 15px;padding:5px; border:1px solid #c6d7e1;background-color:#d8eaf2;"]
 makeuseof.com##a[href="http://www.makeuseof.com/advertise/"]
 mangafox.com##a[href^="http://fs.game321.com/"]
+mani-admin-plugin.com##.advs
 manoramaonline.com##td[width="1000"]
 manoramaonline.com##td[width="140"]
 manoramaonline.com##td[width="160"][height="600"]
@@ -8681,8 +8682,8 @@ motorcycletrader.co.nz##.sBanner
 motorcycletrader.co.nz##.vBanner
 moviefone.com##.add-text
 movies.yahoo.com###banner
-movies.yahoo.com##.right-module
 movies.yahoo.com##.md.links
+movies.yahoo.com##.right-module
 moviesplanet.com##.gb
 moviesplanet.com##.mgtie5min
 mozillazine.org###goobot
@@ -8733,8 +8734,8 @@ mysuncoast.com##[id^="wrapper_wnsz_"]
 myway.com##.desc
 myway.com##[width="210"][height="199"]
 nabble.com##.signature
-naplesnews.com##.bigbox_wrapper
 naplesnews.com###content_match_wrapper
+naplesnews.com##.bigbox_wrapper
 nashuatelegraph.com###fadeinbox
 nashuatelegraph.com###meerkat-wrap
 nationalgeographic.com###headerboard
@@ -9077,7 +9078,6 @@ radio.com###i300x250Container
 radio.com###i728x90Container
 radiotime.com##.outside_ad
 ranker.com##[style="width:100%;height:130px;position:relative;overflow:hidden;"]
-roanoke.com###pre-header
 rapidit.info###layer1
 rapidit.info###layer2
 rawstory.com##[style="margin: 10px auto 20px auto; padding: 0;  clear: both; text-align: center;"]
@@ -9124,6 +9124,7 @@ roadcyclinguk.com###contentbanner
 roadcyclinguk.com##[style="height: 600px;"]
 roadtester.com.au##[height="90"][width="728"]
 roadtester.com.au##table[cellpadding="9"][border="0"]
+roanoke.com###pre-header
 robotswithfeelings.com##[style="height: 250px; width: 300px; background-color: #000000;"]
 robotswithfeelings.com##[style="height: 90px; text-align: center;"]
 robotswithfeelings.com##[style="height: 90px; width: 728px; margin-left: auto; margin-right: auto; background-color: #000000;"]
