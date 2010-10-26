@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: c15+gmvS+ll0Ln17y268+A
+! Checksum: ssqLKWYCviPdNLRZrh1udw
 ! Fanboy's Annoyance list Addon 
-! Updated: 26 Oct 2010
+! Updated: 27 Oct 2010
 ! This list expires after 6 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -12,16 +12,16 @@
 /getnetworkwidget?
 /givememydigg.
 /icon-subscribe-
-/icons/rss.
 /icons/facebook.
+/icons/rss.
 /icons/twitter.
 /myyahoo.gif
 /newsgator.gif
 /plugins/sociable/*$~stylesheet
+/rss-icon.
+/rssicon.
 /sendtofriend.gif
 /socialicons/*
-/rssicon.
-/rss-icon.
 /upprev_js.
 /widget/digg/*
 ||123cursors.com^$third-party
@@ -95,6 +95,7 @@
 ##.facebookRecentActivity
 ##.facebookWidgetry
 ##.fb.icon
+##.fb_badge
 ##.fb_content_loader
 ##.fb_iframe_widget
 ##.fb_like_cont
@@ -102,7 +103,6 @@
 ##.fb_share_size_Small
 ##.fb_t_icon
 ##.FBConnectButton_Small
-##.fb_badge
 ##.fbshare
 ##.follow-us-facebook
 ##.icon-facebook
@@ -111,7 +111,6 @@
 ##.sidebar-facebook
 ##.st_facebook_custom
 ##.ymsb-facebook-module
-##[title="Be Our Fan on Facebook!"]
 ##[alt="Become a Fan on Facebook"]
 ##[alt="Connect with us on Facebook"]
 ##[alt="Facebook - Click Here To Become A Fan!"]
@@ -124,6 +123,7 @@
 ##[alt="Join us on Facebook"]
 ##[alt="Share on Facebook"]
 ##[name="fb_share"]
+##[title="Be Our Fan on Facebook!"]
 ##[title="Become a Facebook Fan"]
 ##[title="Become a Fan on Facebook"]
 ##[title="Follow Us On Facebook"]
@@ -139,11 +139,11 @@
 ##a[title="Post this story to Facebook"]
 /button-facebook.
 /facebkiconnet/*
+/facebook-icon.
 /facebook_button
+/FacebookFanWidgetFrame.
 /facebookicon.
 /fb-icon.
-/facebook-icon.
-/FacebookFanWidgetFrame.
 /icon-facebook.
 /js/FB.Share|$third-party
 /plugins/wp-facebookconnect/*
@@ -210,18 +210,18 @@
 ##[title="Follow On Twitter"]
 ##[title="Follow on Twitter"]
 ##[title="Follow us on twitter!"]
-##[title="Follow Us on Twitter"]
 ##[title="Follow Us On Twitter"]
+##[title="Follow Us on Twitter"]
 ##[title="Follow us on Twitter"]
 ##[title="Join us on Twitter"]
 ##[title="Post this story to Twitter"]
 /button-twitter.
 /icon-twitter.
+/tw-icon.
+/twitter-icon.
 /twitter_badge.
 /Twitter_button
-/twitter-icon.
 /twitterbutton-
-/tw-icon.
 /twittericon.
 ||platform*.twitter.com^$third-party
 ||topsy.com^$third-party
@@ -360,9 +360,9 @@
 ##.aol-share
 ##.articlesharebox
 ##.badges_v2
+##.beauty-bookmarks
 ##.bottom-share
 ##.btm_sharethis_wrapper
-##.beauty-bookmarks
 ##.button-share
 ##.cnn-social-icons
 ##.digg-widget
@@ -387,9 +387,9 @@
 ##.share-links
 ##.share-widgets
 ##.share_bar
-##.share_wrapper
 ##.share_button_container
 ##.share_icons
+##.share_wrapper
 ##.sharebutton
 ##.shareButtons
 ##.sharebuttons
@@ -407,6 +407,7 @@
 ##.social-box
 ##.social-links
 ##.social-links-title
+##.social-module
 ##.social-sticky
 ##.social_bookmark
 ##.social_bookmarks_title
@@ -438,6 +439,7 @@
 ##[title="Share this story"]
 ##[title="Submit this post on newsvine.com."]
 ##[title="Submit this post on reddit.com."]
+##[title="Watch Our Videos on YouTube"]
 ##A[title="Daily Email Newsletter"]
 ##a[title="Get Feed RSS"]
 ##A[title="Join us on LinkedIn"]
@@ -446,7 +448,6 @@
 ##A[title="Subscribe by RSS"]
 ##A[title="Subscribe by Twitter"]
 ##a[title="Subscribe on FriendFeed"]
-##[title="Watch Our Videos on YouTube"]
 ##div.sociable
 !
 !---------- Site Specific Hiding Rules ----------
@@ -461,10 +462,10 @@ academicearth.org###kampylink
 aceshowbiz.com##.theticker
 addictinggames.com###socialIcons
 addictinggames.com###socialiconsContainer
-addictivetips.com##.twitter
-addictivetips.com##.xoxo
 addictivetips.com###email-updates
 addictivetips.com##.rss
+addictivetips.com##.twitter
+addictivetips.com##.xoxo
 afterdawn.com###feedbackTab
 afterdawn.com##.add_buttons
 afterdawn.com##[title="Follow AfterDawn at Facebook"]
@@ -477,8 +478,8 @@ alternativeto.net##.fb
 alternativeto.net##.feed
 alternativeto.net##.twitter
 alternativeto.net##[href="http://twitter.com/alternativeto"]
-alternet.org##.redditit
 alternet.org###splashy_div
+alternet.org##.redditit
 anandtech.com##.follow
 animatedexplanations.com###linkShare
 animatedexplanations.com##.sharinglink
@@ -502,12 +503,12 @@ belfasttelegraph.co.uk###bm_div
 bhaskar.com##.bgTB
 bing.com###sw_pb
 bink.nu##.shareblock
-bleacherreport.com###fans-of-br-module
 bleacherreport.com###article-newsletter-engage-content
 bleacherreport.com###article-newsletter-side-module
+bleacherreport.com###fans-of-br-module
+bleacherreport.com###like-article
 bleacherreport.com###newsletter-promotion-step-1
 bleacherreport.com###newsletters
-bleacherreport.com###like-article
 bleacherreport.com##.newsletter-lightbox
 bleacherreport.com##.twitter
 blogspot.com###Followers1
@@ -543,8 +544,8 @@ complex.com##.follow
 complex.com##DIV[id^="digg-widget-"]
 computerworld.com###tweetContainer
 computingunleashed.com##[target="popupwindow"]
-cosmosmagazine.com##[title="Follow COSMOSmagazine on Twitter"]
 connectify.me##.social
+cosmosmagazine.com##[title="Follow COSMOSmagazine on Twitter"]
 cracked.com###fb-friends-recent-activity
 cracked.com###fb_sliver
 cracked.com###persistent-share
@@ -558,11 +559,11 @@ dailygalaxy.com###yahoo
 dailygalaxy.com##[style="float:left;margin:0;padding:0;width:280px;height:90px;margin-top:20px;text-align:center;margin-left:55px;"]
 dailygalaxy.com##[style="float:left;text-align:center;padding-top: 20px;font-size:11px;text-transform: uppercase;letter-spacing: .2em;padding-left:95px;"]
 davemcelfatrick.com##.social
+desktopnexus.com##.sharelink
 digg.com###feedback-bar
 digitaljournal.com###djstickyfoot
 digitalspy.co.uk###topunit
 digitizor.com###upprev_box
-desktopnexus.com##.sharelink
 do-while.com##.latestshowsocial
 dotsauce.com###sharelinks
 dumblittleman.com###advertise-now
@@ -640,14 +641,14 @@ makeuseof.com##.sub
 marketwatch.com###dockingbar
 mashable.com##.jobs
 mashable.com##.post_share
-mayoclinic.com###rss
 maxim.com###headersearchsocial
 maxim.com##.g_subs_Containe
-maxim.com##.subscribeform
-maxim.com##.ShareLinksContainer
 maxim.com##.g_subs_Container
+maxim.com##.ShareLinksContainer
+maxim.com##.subscribeform
 maximumpc.com###subscribe
 maximumpc.com##maximumpc-connect
+mayoclinic.com###rss
 mayoclinic.com###social
 mediafire.com###dl_share_icons
 mediafire.com##DIV[style="margin-top:15px;"]
@@ -661,8 +662,8 @@ metacafe.com##.AdProduct
 micgadget.com###scdiv
 miniclip.com##.letterbox
 mint.com##.article-share
-moviefone.com##.social
 moviefone.com###fb-tabs
+moviefone.com##.social
 mozilla.com###connect
 mozilla.com###connect-facebook
 mozilla.com###connect-twitter
@@ -679,8 +680,8 @@ mylot.com###facebox_overlay
 naranjaja.com##.buttonfixed
 nationalgeographic.com###follow_ng
 neowin.net###ajax-spinner
-neowin.net##.social
 neowin.net###like-this
+neowin.net##.social
 nerve.com###block-nerve_mailinglist-nerve_mailinglist_bottom_block
 nerve.com###follow-nerve
 nerve.com###footer-form
@@ -695,14 +696,14 @@ newsfeed.time.com###follow
 newsfeed.time.com###newsfeed_tweetbox_widget-3
 newsfeed.time.com###sdac_subscribe_widget-3
 newsweek.com##.stay-connected
-newyorker.com##[alt="Follow The New Yorker on Facebook, Twitter, Tumblr, iTunes"]
-newyorker.com##[title="Subscribe to The New Yorker"]
 newyorker.com###newsletter_form
 newyorker.com##.subs
+newyorker.com##[alt="Follow The New Yorker on Facebook, Twitter, Tumblr, iTunes"]
+newyorker.com##[title="Subscribe to The New Yorker"]
 nextdaypets.com##[src="/assets/images/socialNetworkFollowUs.gif"]
+nih.gov###bookmark_horz_nav
 nintendogal.com###rss
 nintendogal.com###twitter
-nih.gov###bookmark_horz_nav
 nola.com###m_fb
 nola.com##.helper
 nola.com##.mobile_lrg
@@ -712,11 +713,11 @@ nola.com##[href="http://www.nola.com/connect"]
 novirusthanks.org##.rss
 novirusthanks.org##.share
 novirusthanks.org##.twitter
-nytimes.com###upNext
-nytimes.com##.box.module.feeds
 nymag.com##.content.newsletter
 nymag.com##.module.follow-vulture
 nymag.com##.newsletter.module
+nytimes.com###upNext
+nytimes.com##.box.module.feeds
 nzherald.co.nz##.msn
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
@@ -731,29 +732,30 @@ pcmag.com##.shareModule
 pcmag.com##.subscribe-panel
 pcworld.com###connect
 pcworld.com###joinPCW
+pcworld.com###newsletters
 pcworld.com###slideshowSocial
+pcworld.com###smbRightSubscribe
 pcworld.com###subscribeMWForm
 pcworld.com##.delicious
 pcworld.com##.fb-login
 pcworld.com##.syndication.join
 pcworld.com##.syndication.rss
-pcworld.com###newsletters
-pcworld.com###smbRightSubscribe
 people.com###flyingrecirc
 people.com##.cmad
 physorg.com##.sharemenu
 piriform.com##.newsletter
 pressandjournal.co.uk###preamble
+propublica.org##.simple-follow-module
 psdeluxe.com###hide
 radbox.me##.social
 ranker.com###mainlist_social_stuff
 rasamalaysia.com##.cute_profiles_sprite
 rawstory.com##[style="height: 28px; background-color: #ffffff; padding:10px; margin-bottom: 10px;"]
+readwriteweb.com###Subscribe
+readwriteweb.com###subsribe_right
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
-readwriteweb.com###Subscribe
-readwriteweb.com###subsribe_right
 realitypod.com###ss_sidebar
 realitypod.com##.fan_box
 reuters.com###trackTabs
@@ -822,15 +824,15 @@ theonion.com##.connect
 thesmokingjacket.com###navicons
 thesmokingjacket.com###tsj_email_signup
 thethrottle.com###sdac_feedburner_widget-3
-thewindowsclub.com###Subscribe
 thewindowsclub.com###social
+thewindowsclub.com###Subscribe
+time.com###stayConnected
+time.com##.articleTools2
 tineye.com###footer-newsletter
 tineye.com##.facebook
 tineye.com##.posterous
 tineye.com##.twitter
 tinyhacker.com###subscribediv
-time.com###stayConnected
-time.com##.articleTools2
 tmz.com##.shareit
 tonic.com###bottom_bar
 topcultured.com###followUs
@@ -850,14 +852,14 @@ upi.com###b_tbr
 upi.com###b_tbr_c
 uproxx.com###block-728
 urlesque.com###CE_follow_us
-usmagazine.com###sweeps_add336x125
-usmagazine.com##.us_exclusive_box
 usatoday.com###social2
 usatoday.com##.subscribe
 userscripts.org##[alt="Delicious_32x32"]
 userscripts.org##[alt="Digg_32x32"]
 userscripts.org##[alt="Facebook_32"]
 userscripts.org##[alt="Twitter_32"]
+usmagazine.com###sweeps_add336x125
+usmagazine.com##.us_exclusive_box
 vgchartz.com###social_icons
 visualeconomics.com###as-share-window
 visualeconomics.com##.ve2_sharebox
@@ -866,10 +868,10 @@ washingtonpost.com###bc-badges
 washingtonpost.com###saveshare-bottom
 washingtontimes.com##.nag
 washingtontimes.com##.registration-flag
-webmd.com##.share_rdr
 webmd.com###stay-infrmd
 webmd.com##.fb
 webmd.com##.newsletterThurii_rdr
+webmd.com##.share_rdr
 webmd.com##.tw
 windows7news.com##.subscribe
 windows7news.com##.widget.subscribebox
