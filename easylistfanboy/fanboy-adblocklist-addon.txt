@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: MGh3WdZluAu6dxgpV35a4A
+! Checksum: DbQED6F23URPx6uV7UqTaQ
 ! Fanboy's Annoyance list Addon 
 ! Updated: 28 Oct 2010
 ! This list expires after 6 days
@@ -9,31 +9,32 @@
 !
 /bloglines.gif
 /button-linkedIn.
+/email_follow.
+/footer_myspace.
+/footer_youtube.
 /getnetworkwidget?
 /givememydigg.
+/icon-buzz.
+/icon-delicious.
 /icon-subscribe-
 /icons/facebook.
 /icons/rss.
 /icons/twitter.
-/icon-buzz.
-/icon-delicious.
 /myyahoo.gif
 /newsgator.gif
 /plugins/sociable/*$~stylesheet
 /rss-icon.
+/rss_follow.
 /rssicon.
 /sendtofriend.gif
 /socialicons/*
+/st_add-this_
+/st_buzz_
 /upprev_js.
 /widget/digg/*
-/footer_myspace.
-/footer_youtube.
-/st_buzz_
-/st_add-this_
 /youtube_follow.
-/rss_follow.
-/email_follow.
 ||123cursors.com^$third-party
+||2leep.com^$third-party
 ||addthis.com^$third-party
 ||api.flattr.com^$third-party
 ||api.search.live.net^$third-party,domain=~bing.com
@@ -104,6 +105,7 @@
 ###stFB
 ##.connect_widget
 ##.facebook-sharer
+##.facebook_fanbox
 ##.facebookRecentActivity
 ##.facebookWidgetry
 ##.fb.icon
@@ -121,7 +123,6 @@
 ##.post_share_facebook
 ##.postfblike
 ##.sidebar-facebook
-##.facebook_fanbox
 ##.st_facebook_custom
 ##.ymsb-facebook-module
 ##[alt="Become a Fan on Facebook"]
@@ -154,15 +155,15 @@
 /facebkiconnet/*
 /facebook-icon.
 /facebook_button
+/facebook_follow.
 /FacebookFanWidgetFrame.
 /facebookicon.
 /fb-icon.
-/icon-facebook.
 /footer_facebook.
-/facebook_follow.
-/st_facebook_
+/icon-facebook.
 /js/FB.Share|$third-party
 /plugins/wp-facebookconnect/*
+/st_facebook_
 ||badge.facebook.com^$third-party
 ||blogsmithmedia.com^*facebook$image
 ||facebook.com/favicon.ico$third-party
@@ -214,8 +215,8 @@
 ##.twitterWidgetry
 ##[alt="Follow updates via Twitter"]
 ##[alt="Follow us at Twitter"]
-##[alt="Follow us on Twitter"]
 ##[alt="Follow us on Twitter!"]
+##[alt="Follow us on Twitter"]
 ##[alt="Follow us to Twitter.com"]
 ##[alt="follow with twitter"]
 ##[alt="Share on Twitter"]
@@ -231,28 +232,28 @@
 ##[title="Join us on Twitter"]
 ##[title="Post this story to Twitter"]
 /button-twitter.
+/footer_twitter.
 /icon-twitter.
+/st_twitter_
 /tw-icon.
 /twitter-icon.
+/twitter_32.
 /twitter_badge.
 /Twitter_button
+/twitter_follow.
 /twitterbutton-
 /twittericon.
-/twitter_follow.
-/st_twitter_
-/twitter_32.
-/footer_twitter.
 ||platform*.twitter.com^$third-party
+||search.twitter.com^$third-party
 ||topsy.com^$third-party
 ||twackle.com^$third-party
 ||tweetmeme.com^$third-party
 ||tweetup.com^$third-party
+||twitstat.us^$third-party
 ||twitter-badges.s3.amazonaws.com^
 ||twitter.com/favicon.ico$third-party
 ||twittercounter.com^$third-party
 ||widgets.twimg.com^$third-party
-||twitstat.us^$third-party
-||search.twitter.com^$third-party
 ~twitter.com##.twtr-widget
 !
 !---------- Google/Buzz Widgets -----------
@@ -281,12 +282,12 @@
 ##.long_post_share_digg
 ##.post_share_dig
 ##.st_digg_custom
-##[alt="Share on Digg"]
 ##[alt="Digg this"]
+##[alt="Share on Digg"]
 ##[title="Digg it!"]
 ##[title="Follow Us On Digg"]
-/st_digg_
 /icon-digg.
+/st_digg_
 !
 !---------- Stumble Widgets -----------
 !
@@ -294,11 +295,11 @@
 ##.share.stumble
 ##.stumble-it
 ##.stumblebutton
-##[alt="Stumble It"]
 ##[alt="Follow us to StumbleUpon.com"]
 ##[alt="Share on StumbleUpon"]
-##[title="Thumb this up at StumbleUpon"]
+##[alt="Stumble It"]
 ##[title="Post to Stumble-upon"]
+##[title="Thumb this up at StumbleUpon"]
 /icon-stumbleUpon.
 ||cdn.stumble-upon.com/images/$third-party
 !
@@ -330,9 +331,9 @@
 ###linkedin-share-counter-link
 ###live-intent-module
 ###lud_social_box
+###MBL_COMM
 ###moduleArticleTools
 ###moduleArticleToolsContainer
-###MBL_COMM
 ###networkedblogs_nwidget_container
 ###sexy-bookmarks
 ###share-module
@@ -345,20 +346,24 @@
 ###sharebar
 ###sharebuttons
 ###ShareSidebar
+###social-icons
 ###social-link
+###social-links
 ###social-media-bar-h
-###social-share
 ###social-media_ad-container
+###social-share
 ###social-share-video
 ###social-toolbar
 ###social-toolbox
 ###social-widget
 ###social_bookmarking_module
 ###social_bookmarks
+###social_bookmarks_list
 ###social_buttons
 ###social_icons
 ###socialbar
 ###socialbar-container
+###socialBookMarks
 ###socialBookMarks
 ###socialBookmarks
 ###socialButtons
@@ -373,12 +378,8 @@
 ###socialshare_btns
 ###socialSidebar
 ###socialsidebar
-###social_bookmarks_list
-###socialBookMarks
-###social-icons
-###social-links
-###subscribe-widget-top
 ###subscribe-widget-bottom
+###subscribe-widget-top
 ###tb_share
 ###tweetmemeAndFacebook
 ###wibiyaToolbar
@@ -386,13 +387,13 @@
 ##.aboutShareLinks
 ##.addthis-button
 ##.addthis_button
-##.addthis_container_alt2
-##.addthis_toolbox
-##.addthis_toolbox_alt2
-##.addthis_button_twitter
 ##.addthis_button_buzz
 ##.addthis_button_digg
 ##.addthis_button_facebook
+##.addthis_button_twitter
+##.addthis_container_alt2
+##.addthis_toolbox
+##.addthis_toolbox_alt2
 ##.addthisContainer
 ##.addthisToolbarBtm
 ##.addthisToolbarTop
@@ -440,39 +441,39 @@
 ##.shareListBox
 ##.sharepost
 ##.sharer_buttons
+##.sharethis-container
 ##.ShareThisPage
 ##.shareThisShare
 ##.sharing-counters
 ##.shr-bookmarks
 ##.simplesocial
 ##.social-bar
+##.social-bar-new
 ##.social-box
+##.social-icons
 ##.social-links
 ##.social-links-title
 ##.social-module
 ##.social-sticky
+##.social_bar
 ##.social_bookmark
+##.social_bookmarks
 ##.social_bookmarks_title
 ##.social_boxes
+##.social_icons
 ##.social_item
+##.social_media
+##.social_networking
 ##.social_networks
 ##.socialBadge
 ##.socialBadges
 ##.socialList
 ##.socialmedia-buttons
+##.socialNetworks
 ##.socialsidebar
+##.socialTools
 ##.sociotags
 ##.stico_default
-##.sharethis-container
-##.social_bar
-##.social_bookmarks
-##.social_icons
-##.social_media
-##.social_networking
-##.social-bar-new
-##.social-icons
-##.socialNetworks
-##.socialTools
 ##.story_tools_social_buttons_top
 ##.widget_email_social_functions
 ##.widget_mybloglog
@@ -480,39 +481,39 @@
 ##.ymsb-retweet-module
 ##[alt="add to delicious"]
 ##[alt="Add to Live Alerts"]
+##[alt="Add to Mixx!"]
+##[alt="Add to Technorati Favorites"]
+##[alt="Bookmark and Share"]
+##[alt="Follow us at Youtube"]
+##[alt="Follow us to Youtube.com"]
 ##[alt="RSS 2.0"]
+##[alt="Share on Delicious"]
+##[alt="Share on MySpace"]
+##[alt="Share on Reddit"]
 ##[alt="share on Reddit"]
 ##[alt="Share this"]
 ##[alt="SocialTwist Tell-a-Friend"]
 ##[alt="Subscribe to RSS Feed"]
 ##[alt="Subscribe via RSS Feed"]
 ##[alt="Valid XHTML 1.0 Transitional Document"]
+##[alt="Watch Us on You Tube"]
+##[alt="Watch us on YouTube"]
 ##[title="Follow us on YouTube"]
 ##[title="Post to del.icio.us"]
 ##[title="Reddit!"]
 ##[title="Share this article!"]
+##[title="Share this story"]
+##[title="Share to Facebook"]
+##[title="Submit this post on newsvine.com."]
+##[title="Submit this post on reddit.com."]
 ##[title="Subscribe in a reader"]
 ##[title="Subscribe to our blog"]
 ##[title="Subscribe to RSS Feed"]
 ##[title="Subscribe via Email"]
-##A[name="sharethis"]
-##[alt="Add to Mixx!"]
-##[alt="Add to Technorati Favorites"]
-##[alt="Bookmark and Share"]
-##[alt="Follow us at Youtube"]
-##[alt="Follow us to Youtube.com"]
-##[alt="Share on Delicious"]
-##[alt="Share on MySpace"]
-##[alt="Share on Reddit"]
-##[alt="Watch Us on You Tube"]
-##[alt="Watch us on YouTube"]
-##[title="Share this story"]
-##[title="Submit this post on newsvine.com."]
-##[title="Submit this post on reddit.com."]
-##[title="Watch Our Videos on YouTube"]
-##[title="Share to Facebook"]
-##[title="Yahoo! Buzz"]
 ##[title="Tweet This"]
+##[title="Watch Our Videos on YouTube"]
+##[title="Yahoo! Buzz"]
+##A[name="sharethis"]
 ##A[title="Daily Email Newsletter"]
 ##a[title="Get Feed RSS"]
 ##A[title="Join us on LinkedIn"]
@@ -687,13 +688,13 @@ heavy.com###cboxOverlay
 heavy.com###colorbox
 hollywire.com###post-social
 hollywire.com###social
-huffingtonpost.com##.bing_pixie
-huffingtonpost.com###bing_module
 honda.com##.lnkFacebook
 honda.com##.twitter-link
 howstuffworks.com###smToolBar
 howstuffworks.com###smToolBarSpacer
+huffingtonpost.com###bing_module
 huffingtonpost.com##.apps-feeds
+huffingtonpost.com##.bing_pixie
 huffingtonpost.com##.chicklets_box_outter_v05
 huffingtonpost.com##.share_boxes_box_block_b_wraper
 imdb.com##.social
@@ -721,11 +722,11 @@ marketwatch.com###dockingbar
 mashable.com##.jobs
 mashable.com##.post_share
 maxim.com###headersearchsocial
+maxim.com##.footercol5
 maxim.com##.g_subs_Containe
 maxim.com##.g_subs_Container
 maxim.com##.ShareLinksContainer
 maxim.com##.subscribeform
-maxim.com##.footercol5
 maximumpc.com###subscribe
 maximumpc.com##maximumpc-connect
 mayoclinic.com###rss
@@ -734,13 +735,13 @@ mediafire.com###dl_share_icons
 mediafire.com##DIV[style="margin-top:15px;"]
 mediamatters.org###modalBox
 mediamatters.org##.jqmOverlay
+mercurynews.com###followus
+mercurynews.com###mn_TopListings_Redesign
 metacafe.com###BmkDigg
 metacafe.com###BmkFB
 metacafe.com###BmkStumble
 metacafe.com###BmkTweeter
 metacafe.com##.AdProduct
-mercurynews.com###mn_TopListings_Redesign
-mercurynews.com###followus
 micgadget.com###scdiv
 miniclip.com##.letterbox
 mint.com##.article-share
@@ -795,11 +796,11 @@ nola.com##[href="http://www.nola.com/connect"]
 novirusthanks.org##.rss
 novirusthanks.org##.share
 novirusthanks.org##.twitter
-nymag.com##.newsletter
 nymag.com##.follow-vulture
+nymag.com##.newsletter
+nytimes.com###facebook_item
 nytimes.com###upNext
 nytimes.com##.feeds
-nytimes.com###facebook_item
 nzherald.co.nz##.msn
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
@@ -895,17 +896,17 @@ thedailyshow.com##.digg
 thedailyshow.com##.facebook
 thedailyshow.com##.twitter
 thefreewarejunkie.com###Subscribe1
-thefrisky.com##.likeboxwrap
 thefrisky.com###follow
 thefrisky.com###relatedPostsContainer
+thefrisky.com##.likeboxwrap
 thehdroom.com###Column-3ad300
 theinquirer.net##.contentNavi_onemore
 thenoobdad.com###twitter-entry
-theregister.co.uk###whitepapers
 theoatmeal.com###follow
 theoatmeal.com###follow_big
 theoatmeal.com##[alt="Sharesies with your budsies"]
 theonion.com##.connect
+theregister.co.uk###whitepapers
 thesmokingjacket.com###navicons
 thesmokingjacket.com###tsj_email_signup
 thethrottle.com###sdac_feedburner_widget-3
