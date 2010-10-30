@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: s6w69OcXLal/Bh5EuVthew
+! Checksum: pfDIEUSKoH/3sQQpHsj7WQ
 ! Fanboy's Annoyance list Addon 
 ! Updated: 30 Oct 2010
 ! This list expires after 6 days
@@ -74,6 +74,7 @@
 ||stumbleupon.com/badge/$third-party
 ||stumbleupon.com/hostedbadge$third-party
 ||tumblr.com/dashboard/
+||votes.buzz.yahoo.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
 ||widgets.backtype.com^$third-party
 !
@@ -113,9 +114,11 @@
 ##.connect_widget
 ##.facebook-sharer
 ##.facebook_fanbox
+##.facebookRecommend
 ##.facebookRecentActivity
 ##.facebookWidgetry
 ##.fb.icon
+##.fbook_like
 ##.actions_facebook
 ##.fb_badge
 ##.fb_content_loader
@@ -200,6 +203,7 @@
 ###follow-twitter
 ###header_subscribe_twitter_notext
 ###icon_twitter_small
+###retweet_bty
 ###tweetContainer
 ###twitter-badge
 ###twitter-facebook-widgets
@@ -217,6 +221,7 @@
 ###twitterFollowBadge
 ##.block-idg_twitter
 ##.follow-us-twitter
+##.followTwitter
 ##.icon-twitter
 ##.long_post_share_twiiter
 ##.post_share_twitter
@@ -334,6 +339,9 @@
 !
 !---------- Generic Hiding Rules ----------
 !
+###articleNewsletterModule
+###bookmarks_wrap
+###email-subscribe
 ###badge_reddit
 ###blog-share-widget
 ###buzz-bottom
@@ -345,6 +353,7 @@
 ###cxShareLinks
 ###dd_ajax_float
 ###fdbk_tab
+###footer-social-media-buttons
 ###CE_follow_us
 ###followIcons
 ###incsharebox
@@ -356,6 +365,8 @@
 ###moduleArticleTools
 ###moduleArticleToolsContainer
 ###networkedblogs_nwidget_container
+###newsletter_subscription_box
+###newsletterModuleForm
 ###sexy-bookmarks
 ###share-module
 ###share-tools
@@ -367,6 +378,8 @@
 ###sharebar
 ###share_this
 ###sharebuttons
+###shareBadges
+###shareButton1
 ###ShareSidebar
 ###social-icons
 ###social-link
@@ -422,6 +435,7 @@
 ##.addthisToolbarBtm
 ##.addthisToolbarTop
 ##.addtoany_list
+##.addtoany
 ##.adsenseDole
 ##.adSize_LLMedia
 ##.aol-share
@@ -438,6 +452,7 @@
 ##.cnnShareRow
 ##.digg-widget
 ##.dsq-global-toolbar-container
+##.email-to-a-friend
 ##.Entry_Sharer_Buttons
 ##.fdbk_tab_right
 ##.flattr-button
@@ -445,8 +460,11 @@
 ##.follow-us
 ##.follow-us-widget
 ##.gf_social
+##.horizontal-share-buttons
 ##.idc-share
 ##.mod-socialmedia
+##.newsletter_signup
+##.newsletter-signup
 ##.aToolType-social
 ##.newSharerButtons
 ##.post-social
@@ -476,6 +494,7 @@
 ##.shareListBox
 ##.sharepost
 ##.sharer_buttons
+##.shareit
 ##.sharethis-container
 ##.ShareThisPage
 ##.shareThisShare
