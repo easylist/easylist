@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 0MOYz8LLH4pvwG4gmGIteA
+! Checksum: 5sN/0lDkmyd8+kCyv18+NA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 2 Nov 2010
 ! This list expires after 6 days
@@ -9,26 +9,27 @@
 !
 /addtomyyahoo4.
 /bloglines.gif
+/btn_share_
 /button-linkedIn.
 /button_share.
-/btn_share_
 /email_follow.
 /footer_myspace.
 /footer_youtube.
 /getnetworkwidget?
+/ico_delicious.
 /ico_share_
 /icon-buzz.
 /icon-delicious.
 /icon-subscribe-
 /icon/share/*
+/icons/myspace_
 /icons/rss.
 /icons/social/*
+/icons/social_
 /images/sociable/*
-/ico_delicious.
 /linkedin-icon.
-/myyahoo.gif
 /myspace_16.
-/icons/myspace_
+/myyahoo.gif
 /newsgator.gif
 /plugins/sociable/*$~stylesheet
 /retweet-button.
@@ -40,14 +41,13 @@
 /social-rss.
 /social-yt.
 /socialicons/*
-/icons/social_
 /socialmedia/*$image,script
 /st_add-this_
 /st_buzz_
 /upprev_js.
+/yahoobuzz.
 /youtube-icon.
 /youtube_follow.
-/yahoobuzz.
 _my_yahoo.$image
 ||123cursors.com^$third-party
 ||2leep.com^$third-party
@@ -73,23 +73,23 @@ _my_yahoo.$image
 ||jisbar.com^
 ||l.yimg.com^*/img/badge
 ||letsgetsocialnow.com^
+||lijit.com^$third-party
 ||linkedin.com/favicon.ico$third-party
 ||linksalpha.com^$third-party
 ||liveintent.com^$third-party
-||lijit.com^$third-party
 ||mm.bing.net^*/thumbnail.$third-party
 ||nytimes.com^*/upnext.
 ||rapid8.com/images/*.cur
 ||reddit.com^$third-party
 ||sharethis.com^$third-party
 ||slashdot.org^$third-party
+||sociallist.org^$third-party
 ||socialmediabuttons.com^$third-party
 ||socialtwist.com^$third-party
 ||static.addtoany.com^$third-party
 ||stumble-upon.com^$third-party
 ||stumbleupon.com/badge/$third-party
 ||stumbleupon.com/hostedbadge$third-party
-||sociallist.org^$third-party
 ||tumblr.com/dashboard/
 ||votes.buzz.yahoo.com^$third-party
 ||widgets.backtype.com^$third-party
@@ -176,25 +176,26 @@ _my_yahoo.$image
 ##[title="Follow us on Facebook"]
 ##[title="Get Posts On Facebook Wall"]
 ##[title="Post to Facebook"]
-##[title="Share with Facebook"]
 ##[title="Share on Facebook"]
 ##[title="Share on Facebook."]
 ##[title="Share via Facebook"]
+##[title="Share with Facebook"]
 ##a[href="http://www.facebook.com/sharer.php"]
 ##a[title="Follow me on  Facebook"]
 ##A[title="Join us on Facebook"]
 ##a[title="Post this story to Facebook"]
+-facebook-btn.
 /button-facebook.
 /facebkiconnet/*
 /facebook-icon.
-/facebook_icon.
+/facebook_16.
 /facebook_32.
 /facebook_button
 /facebook_follow.
+/facebook_icon.
 /FacebookFanWidgetFrame.
 /facebookicon.
 /fb-icon.
-/facebook_16.
 /footer_facebook.
 /icon-facebook.
 /icons/facebook.
@@ -203,7 +204,6 @@ _my_yahoo.$image
 /plugins/wp-facebookconnect/*
 /social-fb.
 /st_facebook_
--facebook-btn.
 ||badge.facebook.com^$third-party
 ||blogsmithmedia.com^*facebook$image
 ||facebook.com/favicon.ico$third-party
@@ -280,30 +280,32 @@ _my_yahoo.$image
 ##[title="Follow Us On Twitter"]
 ##[title="Follow Us on Twitter"]
 ##[title="Follow us on Twitter"]
-##[title="Subscribe by Twitter"]
 ##[title="Join us on Twitter"]
 ##[title="Post this story to Twitter"]
 ##[title="Share with Twitter"]
-_share_twitter.
+##[title="Subscribe by Twitter"]
 -twitter-btn.
 /button-twitter.
+/follow-on-twitter.
 /footer_twitter.
 /icon-twitter.
 /icon_twitter.
+/icons/twitter.
+/icons/twitter_
 /social-twit.
 /st_twitter_
-/twitter_icon.
 /tw-icon.
 /twitter-icon.
+/twitter_16.
 /twitter_32.
-/icons/twitter.
 /twitter_badge.
 /Twitter_button
 /twitter_follow.
+/twitter_icon.
 /twitterbutton-
-/twitter_16.
-/icons/twitter_
 /twittericon.
+_share_twitter.
+||diggstatic.com^*/follow_buttons/
 ||platform*.twitter.com^$third-party
 ||search.twitter.com^$third-party
 ||topsy.com^$third-party
@@ -351,8 +353,8 @@ _share_twitter.
 ##[title="Digg it!"]
 ##[title="Follow Us On Digg"]
 ##[title="Share with Digg"]
-/icon-digg.
 /givememydigg.
+/icon-digg.
 /st_digg_
 /widget/digg/*
 !
@@ -367,12 +369,12 @@ _share_twitter.
 ##[alt="Share on StumbleUpon"]
 ##[alt="Stumble It"]
 ##[title="Post to Stumble-upon"]
-##[title="Thumb this up at StumbleUpon"]
 ##[title="Share with Stumble Upon"]
-_share_stumbleupon.
-/icon-stumbleUpon.
+##[title="Thumb this up at StumbleUpon"]
 /ico_stumble.
+/icon-stumbleUpon.
 /stumbleThis.$image
+_share_stumbleupon.
 ||cdn.stumble-upon.com/images/$third-party
 !
 !---------- Whitelists -----------
@@ -403,11 +405,11 @@ _share_stumbleupon.
 ###email-subscribe
 ###fdbk_tab
 ###flwUsMod
-###followIcons
 ###follow_box
+###followIcons
 ###FollowUs
-###followUsRight
 ###followUs
+###followUsRight
 ###footer-social-media-buttons
 ###incsharebox
 ###like_wrap
@@ -425,17 +427,17 @@ _share_stumbleupon.
 ###share-module
 ###share-tools
 ###share-tools-title
-###shareLinkToolBar
 ###share_button
 ###share_buttons
 ###share_div_float
 ###share_links
-###shareLinks
 ###share_this
 ###shareBadges
 ###sharebar
 ###shareButton1
 ###sharebuttons
+###shareLinks
+###shareLinkToolBar
 ###ShareSidebar
 ###social-icons
 ###social-link
@@ -448,13 +450,13 @@ _share_stumbleupon.
 ###social-toolbar
 ###social-toolbox
 ###social-widget
-###socialAreaStoryBlog
 ###social_bookmarking_module
 ###social_bookmarks
 ###social_bookmarks_list
 ###social_buttons
 ###social_icons
 ###social_share_bar
+###socialAreaStoryBlog
 ###socialbar
 ###socialbar-container
 ###socialBookMarks
@@ -559,8 +561,8 @@ _share_stumbleupon.
 ##.sharepost
 ##.sharer_buttons
 ##.sharethis-container
-##.ShareThisPage
 ##.ShareThisMainPanel
+##.ShareThisPage
 ##.shareThisShare
 ##.shareTool
 ##.sharing-counters
@@ -580,6 +582,7 @@ _share_stumbleupon.
 ##.social_bookmarks
 ##.social_bookmarks_title
 ##.social_boxes
+##.social_button
 ##.social_icons
 ##.social_item
 ##.social_media
@@ -591,7 +594,6 @@ _share_stumbleupon.
 ##.socialmedia-buttons
 ##.socialmediabox
 ##.socialMediaModule
-##.social_button
 ##.socialNetworks
 ##.socialsidebar
 ##.socialTools
@@ -600,11 +602,11 @@ _share_stumbleupon.
 ##.st_sharethis_custom
 ##.stico_default
 ##.story_tools_social_buttons_top
+##.utilities-fblike-twitter
 ##.widget_email_social_functions
 ##.widget_mybloglog
-##.utilities-fblike-twitter
-##.yahooBuzzBadge
 ##.yahoobuzz
+##.yahooBuzzBadge
 ##.ymsb-retweet-module
 ##.yn-share-social
 ##[alt="add to delicious"]
@@ -632,6 +634,7 @@ _share_stumbleupon.
 ##[title="Share this article!"]
 ##[title="Share this story"]
 ##[title="Share to Facebook"]
+##[title="Share with Fark"]
 ##[title="Submit this post on newsvine.com."]
 ##[title="Submit this post on reddit.com."]
 ##[title="Subscribe in a reader"]
@@ -649,7 +652,6 @@ _share_stumbleupon.
 ##A[title="Subscribe by Email"]
 ##A[title="Subscribe by RSS"]
 ##a[title="Subscribe on FriendFeed"]
-##[title="Share with Fark"]
 ##div.sociable
 !
 !---------- Site Specific Hiding Rules ----------
@@ -727,8 +729,8 @@ bleacherreport.com##.newsletter-lightbox
 bleacherreport.com##.twitter
 blogspot.com###Followers1
 boredpanda.com###do-you-like-box
-boston.com###relatedContent
 boston.com###blogtools
+boston.com###relatedContent
 brobible.com###buzzHeadline
 brobible.com###uservoice-feedback
 brobible.com##.newsSignup
@@ -736,12 +738,12 @@ brosome.com###enews
 brosome.com###follow-us
 businessinsider.com##.right-subscribe-top
 businesswire.com##.icons
-buzzfeed.com##[style="width:304px;background:#fee url(http://s-ak.buzzfed.com/static/images/public/promos/envelope.png) 230px 10px no-repeat;padding:11px 15px;border:1px solid #f4e4e4"]
 buzzfeed.com##[style="border:0;overflow:hidden;height:275px;width:346px;margin:0 0 0 -10px"]
-caring.com###awesomer-bar
+buzzfeed.com##[style="width:304px;background:#fee url(http://s-ak.buzzfed.com/static/images/public/promos/envelope.png) 230px 10px no-repeat;padding:11px 15px;border:1px solid #f4e4e4"]
+care2.com###care2_action_alerts
 care2.com###tellAFriendBottom_dropdown
 care2.com###tellAFriendBottom_share
-care2.com###care2_action_alerts
+caring.com###awesomer-bar
 cbsnews.com###cbsSMPB
 cbsnews.com##.share
 celebuzz.com###nav-bar
@@ -789,10 +791,10 @@ dailygalaxy.com###yahoo
 dailygalaxy.com##[style="float:left;margin:0;padding:0;width:280px;height:90px;margin-top:20px;text-align:center;margin-left:55px;"]
 dailygalaxy.com##[style="float:left;text-align:center;padding-top: 20px;font-size:11px;text-transform: uppercase;letter-spacing: .2em;padding-left:95px;"]
 davemcelfatrick.com##.social
-details.com##.utilities
 democracynow.org##[alt="Facebook"]
 democracynow.org##[alt="Twitter"]
 desktopnexus.com##.sharelink
+details.com##.utilities
 digg.com###feedback-bar
 digitaljournal.com###djstickyfoot
 digitalspy.co.uk###topunit
@@ -811,12 +813,12 @@ feedmyapp.com###facebook
 feedmyapp.com###twitter
 fightthesmears.com##.facebook
 fightthesmears.com##.myspace
+filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/facebook_16.png) left no-repeat; clear: both; line-height: 30px;"]
+filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/myspace_16.png) left no-repeat; clear: both; line-height: 30px;"]
+filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/twitter_16.png) left no-repeat; clear: both; line-height: 30px;"]
 filehippo.com###feeds
 filehippo.com##.box-two-feature
 filehippo.com##[href="http://feeds.feedburner.com/filehippo"]
-filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/facebook_16.png) left no-repeat; clear: both; line-height: 30px;"]
-filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/twitter_16.png) left no-repeat; clear: both; line-height: 30px;"]
-filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/myspace_16.png) left no-repeat; clear: both; line-height: 30px;"]
 flamefusion.net##[alt="Facebook icon"]
 fluffyapp.com###twitter
 focus.com###home-subscribe-icons
@@ -848,14 +850,14 @@ gizmodo.com##.welcome_form
 globalgrind.com##[ggregion="NewsLetterRC"]
 globalpost.com###block-block-17
 good.is##.shares
+gq.com##.utilities-bottom
+gq.com##.utility-share
+greencarreports.com##.social
 groceryiq.com##.lp_share
 groceryiq.com##.pod_share
 guardian.co.uk##.share-links
 guidingtech.com###text-3
 guidingtech.com###upprev_box
-gq.com##.utility-share
-gq.com##.utilities-bottom
-greencarreports.com##.social
 guyism.com##.newsletter
 hdwallpapers.in##.newsletter
 hdwallpapers.in##.newsletter1
@@ -880,8 +882,8 @@ huffingtonpost.com##.icon-rss
 huffingtonpost.com##.share_boxes_box_block_b_wraper
 imdb.com##.social
 imdb.com##[href="http://twitter.com/imdb"]
-imgzzz.com##.auth
 imgur.com###awesome-bar
+imgzzz.com##.auth
 impulsedriven.com##.social
 informationmadness.com###Mod75
 infoworld.com###block-infoworld-newsletter_subscribe
@@ -907,11 +909,11 @@ kotaku.com##.welcome_form
 labnol.org##.spread
 labnol.org##.subscribe
 latimes.com##.articlerail
+latimes.com##[style="background-color: transparent; margin-top: 20px;border:2px solid #dddddd;margin-bottom:18px;padding:12px;position:relative;width:auto;"]
+latimes.com##[style="height: 104px; border: 1px solid #000000; width: 335px; font-size: 11px;  margin-bottom: 20px;"]
+latimes.com##DIV[style="margin-bottom: 20px; padding: 10px; border: 1px solid #BFC7C7;line-height:1.5em;"]
 laweekly.com##.besocial
 laweekly.com##.chisel_u.r_box.readersrail
-latimes.com##[style="height: 104px; border: 1px solid #000000; width: 335px; font-size: 11px;  margin-bottom: 20px;"]
-latimes.com##[style="background-color: transparent; margin-top: 20px;border:2px solid #dddddd;margin-bottom:18px;padding:12px;position:relative;width:auto;"]
-latimes.com##DIV[style="margin-bottom: 20px; padding: 10px; border: 1px solid #BFC7C7;line-height:1.5em;"]
 lemondrop.com##.topTools
 life.com###mylifeToolbarWrapper
 life.com##.footerFanlinks
@@ -998,8 +1000,8 @@ nextdaypets.com##[src="/assets/images/socialNetworkFollowUs.gif"]
 nih.gov###bookmark_horz_nav
 nintendogal.com###rss
 nintendogal.com###twitter
-nj.com##.sharing_wide
 nj.com##.share
+nj.com##.sharing_wide
 nola.com###m_fb
 nola.com##.helper
 nola.com##.mobile_lrg
@@ -1013,14 +1015,14 @@ npr.org##.facebook
 npr.org##.newsletter
 npr.org##.storytoolswrap
 npr.org##.storytoolswrap.stbottom
+nydailynews.com##.art_share_right
+nydailynews.com##.art_shr_top
+nydailynews.com##.twtr-ftr
 nymag.com##.follow-vulture
 nymag.com##.newsletter
 nytimes.com###facebook_item
 nytimes.com###upNext
 nytimes.com##.feeds
-nydailynews.com##.art_shr_top
-nydailynews.com##.art_share_right
-nydailynews.com##.twtr-ftr
 nzherald.co.nz##.msn
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
@@ -1029,14 +1031,14 @@ okcupid.com###share_popout
 onlineeducation.net###social
 openculture.com###social
 oyetimes.com###uBarDiv
-parents.com###stayConnected
 parents.com###adtrafficright
 parents.com###slideshowPromo
+parents.com###stayConnected
 pcmag.com##.about-ads
+pcmag.com##.control-side
 pcmag.com##.share
 pcmag.com##.shareModule
 pcmag.com##.subscribe-panel
-pcmag.com##.control-side
 pcworld.com###connect
 pcworld.com###joinPCW
 pcworld.com###newsletters
@@ -1182,6 +1184,7 @@ tmz.com##.shareit
 tonic.com###bottom_bar
 torontosun.com###buttonRow
 torontosun.com##.share
+torrentfreak.com##[style="border: none; width: 300px; height: 260px; overflow:hidden;"]
 treehugger.com##.handle
 treehugger.com##[style="border: 1px dotted #d1d1d1; width: 468px; text-align: center;"]
 tripod.com###tb_container
