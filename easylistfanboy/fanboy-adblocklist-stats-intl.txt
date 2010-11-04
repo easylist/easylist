@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: BdBu+EvTp4cVQkbUtWN0rw
+! Checksum: jDt0fDd6m4m9ILHRfhnySQ
 ! Fanboy's International-stats-addon Adblock list 
-! Updated: 17 Oct 2010
+! Updated: 4 Nov 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Contact: fanboyadblock @ fanboy . co . nz  http://fanboy.co.nz/adblock
@@ -36,6 +36,7 @@
 .cn/urchin.js
 /click_rate.php?
 /get_mood_count.
+/iplookup.
 /logcount.php?
 /LogFriend/*
 /mystat/*
@@ -48,10 +49,11 @@ _stat.php?$image
 ||cnzz.com/stat.gif?
 ||istat.tudou.com/*&noCache=
 ||iwstat.tudou.com^
-||iwstat.tudou.com^
+||ifeng.com/count_
 ||js.zol.com.cn/p$script
 ||logs.aiya.com.cn^
 ||phpstat.scol.com.cn^
+||pv.sohu.com^
 ||pixel-hk.pixelinteractivemedia.com^$third-party
 ||sortweb.chinatimes.com^
 ||stat.it168.com^
@@ -61,8 +63,10 @@ _stat.php?$image
 ||stat.zol.com.cn^
 ||stats.tudou.com^
 ||total.xinmin.cn^$third-party
+||tongji.zgzqb.com^$third-party
 ||verystat.com^$third-party
 ||xizi.com/count/
+||total.xinmin.cn^
 ||zoosnet.net^
 !
 !---------- Dutch Trackers ------------
@@ -139,8 +143,11 @@ _stat.php?$image
 ||micodigo.com^$third-party
 ||newstogram.com^$third-party
 ||stats.adn.es^
+||stats.folha.com.br^
 ||stats.milenio.com^
+||terra.com.mx/js/metrics_
 ||uv.terra.com.br^
+||webstats.sapo.pt^
 !
 !---------- Czech Trackers ------------
 !
@@ -157,14 +164,14 @@ _stat.php?$image
 ||mylivepage.com/cerounts/$third-party
 ||navrcholu.cz^$third-party
 ||netagent.cz/agent.php?$third-party
-||p1.naj.sk^$third-party
+||p.basrv.com^third-party
 ||pagerank.cz^$third-party
 ||seomon.com^$third-party
 ||shoops.cz^*pix.gif$third-party
 ||stat.4u.pl^
 ||stats.turismo.cz^$third-party
-||top-sk.mconet.biz^$third-party
 ||toplist.cz^$third-party
+||toplist.sk^$third-party
 ||waudit.cz^$third-party
 !
 !---------- Swedish Trackers ------------
@@ -469,20 +476,25 @@ u/wlo.js|
 /analysis2.
 /beacon.php3?
 /beacon.php?
+/hist_count.
 /img/bcn.gif?
 /jpn_gtracking.js
 /json/count?
 /page_beacon.gif?
-http://log0$script
+/pvcountup.
 http://logping.
 ||em1.shinobi.jp^
+||eco-tag.jp^$third-party
 ||hitgraph.jp^$third-party
 ||itgear.jp^$third-party
 ||magma-analytics.com^$third-party
 ||nc-log.excite.co.jp^
 ||response.jp/pv.php?
 ||tracer.jp^$third-party
+||tumabeni.com^$third-party
 ||trck.dlpo.jp^$third-party
+||japanmetrix.jp^$third-party
+||hitweb.chosun.com^
 !
 !---------- Russian Trackers ------------
 !
@@ -505,6 +517,7 @@ http://logping.
 /prepareCode?
 /pseudocounter.
 /readcounter.
+/rgrucounter.
 /tag_counter/?
 /tns-counter.
 /tracker.dll?
@@ -513,6 +526,7 @@ http://logping.
 ||a-counter.kiev.ua^$third-party
 ||a.kavanga.ru^$third-party
 ||a.ucoz.net^$third-party
+||ac.ajur.info^$third-party
 ||bannuncio.com^$third-party
 ||bigler.ru/bsystem/
 ||bs.yandex.ru^
@@ -547,6 +561,7 @@ http://logping.
 ||inetlog.ru^$third-party
 ||informer.cyberstyle.ru^$third-party
 ||informer.gismeteo.ru^$third-party
+||kavanga.ru^$third-party
 ||kiev.ua/partner.php?
 ||knalru.ru^$third-party
 ||lifenews.ru/count/
@@ -572,17 +587,18 @@ http://logping.
 ||post.rmbn.ru^$third-party
 ||price.ua^$third-party,subdocument
 ||proext.com^$third-party
+||protrafv2.com^$third-party
 ||pxreg.onlineservicesas.com^$third-party
 ||radar.imgsmail.ru^
 ||rbc.ru/img/js/ch2.js
 ||rbc.ua/decider/
 ||redtram.com^$third-party
 ||ret.ru/banners/
-||rg.ru/rgrucounter
 ||rose.ixbt.com^$image,object
 ||rs.mail.ru^*.gif?rnd=$domain=mail.ru
 ||rutube.ru/trackinfo/
 ||rutvit.ru/?identifier
+||saint-petersburg.ru/i.php
 ||scounter.rambler.ru^$third-party
 ||seemore.ru^$third-party
 ||spylog.ru/counter$third-party
@@ -596,6 +612,7 @@ http://logping.
 ||stat.topnews.ru^
 ||stat1.ukr.net^
 ||stat2.mc2.ru^$third-party
+||stat24.com^$third-party
 ||stat24.meta.ua^$third-party
 ||static.terrhq.ru^$third-party,subdocument
 ||statistics.ro^$third-party
@@ -620,6 +637,7 @@ http://logping.
 ||udaff.com/image/7/
 ||usde.biz/uploads/*__
 ||utro.ru/utro_images/*empty.gif?
+||vakant.ru/attachment/
 ||vesti.ru/counter/
 ||videoclik.ru^$third-party
 ||viewstat.alvadu.ru^$third-party
@@ -633,10 +651,37 @@ http://logping.
 ||yandex.ru/click/
 ||yandex.ru/count/
 ||yandex.ru/metrika/
+||zelenograd.ru/b/
 !
 !---------- Norway Trackers ------------
 !
 ||tracking1.euroads.no^
+!
+!---------- Polish Trackers ------------
+.pl/zakupy/out.cgi?
+/gemius.js
+/gemius_
+/gemiustraffic.
+/hmapxy.
+/redot.gif?
+_gemius.
+||darmowe-statystyki.com^$third-party
+||dot.wp.pl^
+||hit.gemius.pl^$third-party
+||kropka.onet.pl^
+||mklik.gazeta.pl^
+||mypagerank.pl^$third-party
+||onetwl.pl^$third-party
+||phototamer.com/counter/
+||rek.www.wp.pl^
+||stat.4u.pl^$third-party
+||stat.dziennik.pl^
+||stat.gazetaprawna.pl^$third-party
+||stat.pl/$third-party
+||stat24.com^$third-party
+||stats.multiscreen.tv^$third-party
+||stats.yme.com^$third-party
+||statystyki.mediaregionalne.pl^$third-party
 !
 !---------- Italian Trackers ------------
 !
@@ -644,7 +689,9 @@ http://logping.
 .it/statistiche/
 /advprofile-js.js
 /cdcounter.cgi?
+/stat.aspx?$image
 /webabacus-
+/webtrekk.
 ||0stat.net^$third-party
 ||85.115.8.249/tracking.php?
 ||ansa.it/nseevo/counter?
@@ -657,6 +704,7 @@ http://logping.
 ||geoisp.virgilio.it^
 ||glomera.com/stats
 ||gsf.rcs.it^
+||juiceadvanalytics.com^
 ||livestats.la7.tv^
 ||log.quattroruote.it^
 ||metrics.ilsole24ore.com^
