@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: bTOVybEHWx7eTHXZ3vUlXw
+! Checksum: uYJNxMUKToBvpMGjWYnNIw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 7 Nov 2010
 ! This list expires after 6 days
@@ -13,6 +13,7 @@
 /btn_share_
 /button-linkedIn.
 /button_share.
+/delicious.gif|$domain=~delicious.com
 /delicious-icon.
 /email_follow.
 /footer_myspace.
@@ -31,6 +32,8 @@
 /images/sociable/*$~stylesheet
 /images/social/*$~stylesheet
 /linkedin-icon.
+/linkedin.gif|$domain=~linkedin.com
+/myspace.gif|$domain=~myspace.com
 /myspace_16.
 /myyahoo.gif
 /newsgator.gif
@@ -91,7 +94,7 @@ _my_yahoo.$image
 ||socialmediabuttons.com^$third-party
 ||socialtwist.com^$third-party
 ||static.addtoany.com^$third-party
-||stumble-upon.com^$third-party
+||stumble-upon.com^$third-party,domain=~stumbleupon.com
 ||stumbleupon.com/badge/$third-party
 ||stumbleupon.com/hostedbadge$third-party
 ||tumblr.com/dashboard/
@@ -128,6 +131,7 @@ _my_yahoo.$image
 ###fblike
 ###fbLikebox
 ###fcbk
+###follow_facebook
 ###follow-facebook
 ###header_subscribe_facebook_notext
 ###icon_facebook_small
@@ -196,6 +200,7 @@ _my_yahoo.$image
 /button-facebook.
 /facebkiconnet/*
 /facebook-icon.
+/facebook.gif|$domain=~facebook.com
 /facebook.png|$domain=~facebook.com
 /facebook_16.
 /facebook_32.
@@ -242,6 +247,7 @@ _my_yahoo.$image
 ###header_subscribe_twitter_notext
 ###icon_twitter_small
 ###retweet_bty
+###follow_twitter
 ###tw_ico
 ###tweetContainer
 ###twitter-badge
@@ -396,6 +402,7 @@ _share_twitter.
 /ico_stumble.
 /icon-stumbleUpon.
 /stumbleThis.$image
+/stumbleupon.gif|$domain=~stumbleupon.com
 /stumbleupon-$image
 _share_stumbleupon.
 ||cdn.stumble-upon.com/images/$third-party
@@ -634,6 +641,7 @@ _share_stumbleupon.
 ##.social_box
 ##.social_boxes
 ##.social_button
+##.share_buttons
 ##.social_icons
 ##.social_item
 ##.social_media
