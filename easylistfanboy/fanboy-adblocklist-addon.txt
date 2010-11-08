@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 5Gq0d59qMITCzM5+Q2DMAg
+! Checksum: U5EYTq2F0ISwKLbhjzjwog
 ! Fanboy's Annoyance list Addon 
 ! Updated: 9 Nov 2010
 ! This list expires after 6 days
@@ -16,20 +16,16 @@
 /delicious-icon.
 /delicious.gif|$domain=~delicious.com
 /email_follow.
+/follow_us_
+/followus_linkedin.
+/followus_youtube.
 /footer_myspace.
 /footer_youtube.
 /getnetworkwidget?
 /ico-social-
-/plugins/sexybookmarks/*$~stylesheet
-/plugins/sociable-30/*$~stylesheet
-/follow_us_
-/share-icons/*
-/twitbadge.
-/diggButton.
 /ico_delicious.
-/ico_youtube.
 /ico_share_
-/icon-buzz.
+/ico_youtube.
 /icon-delicious.
 /icon-subscribe-
 /icon/share/*
@@ -46,19 +42,20 @@
 /myspace_16.
 /myyahoo.gif
 /newsgator.gif
+/plugins/sexybookmarks/*$~stylesheet
 /plugins/sociable-$~stylesheet
+/plugins/sociable-30/*$~stylesheet
 /plugins/sociable/*$~stylesheet
 /retweet-button.
 /rss-icon.
 /rss_follow.
-/followus_linkedin.
-/followus_youtube.
 /rssicon.
-/socialbadges.
 /sendtofriend.gif
+/share-icons/*
 /social-networking/*
 /social-rss.
 /social-yt.
+/socialbadges.
 /socialicons/*
 /socialmedia/*$image,script
 /st_add-this_
@@ -165,7 +162,6 @@ _my_yahoo.$image
 ##.fb_badge
 ##.fb_content_loader
 ##.fb_iframe_widget
-##.footer-facebook
 ##.fb_like_cont
 ##.fb_share_button
 ##.fb_share_size_Small
@@ -175,6 +171,7 @@ _my_yahoo.$image
 ##.fbshare
 ##.follow-facebook
 ##.follow-us-facebook
+##.footer-facebook
 ##.icon-facebook
 ##.post_share_facebook
 ##.postfblike
@@ -214,6 +211,7 @@ _my_yahoo.$image
 /button-facebook.
 /button_facebook.
 /facebkiconnet/*
+/facebook-button.
 /facebook-icon.
 /facebook.gif|$domain=~facebook.com
 /facebook.png|$domain=~facebook.com|~lastpass.com
@@ -222,13 +220,12 @@ _my_yahoo.$image
 /facebook_16.
 /facebook_32.
 /facebook_button
-/followus_facebook.
 /facebook_follow.
-/facebook-button.
 /facebook_icon.
 /FacebookFanWidgetFrame.
 /facebookicon.
 /fb-icon.
+/followus_facebook.
 /footer_facebook.
 /ico_facebook.
 /icon-facebook.
@@ -288,6 +285,7 @@ _my_yahoo.$image
 ##.follow-us-twitter
 ##.follow_twitter
 ##.followTwitter
+##.footer-twitter
 ##.icon-twitter
 ##.long_post_share_twiiter
 ##.post_share_twitter
@@ -296,7 +294,6 @@ _my_yahoo.$image
 ##.tweet_meme
 ##.tweetmeme
 ##.tweetmeme-sharer
-##.footer-twitter
 ##.twitter-btn
 ##.twitter-share-button
 ##.twitter.icon
@@ -326,17 +323,18 @@ _my_yahoo.$image
 -twitter-btn.
 /button-twitter.
 /follow-on-twitter.
+/followus_twitter.
 /footer_twitter.
+/ico_twitter.
 /icon-twitter.
 /icon_twitter.
 /icons/twitter.
-/followus_twitter.
 /icons/twitter_
-/twitter-button.
 /social-twit.
 /st_twitter_
-/ico_twitter.
 /tw-icon.
+/twitbadge.
+/twitter-button.
 /twitter-icon.
 /twitter.png|$domain=~twitter.com|~lastpass.com
 /twitter1.png|$domain=~twitter.com
@@ -346,6 +344,7 @@ _my_yahoo.$image
 /Twitter_button
 /twitter_follow.
 /twitter_icon.
+/twitterbadge/*
 /twitterbutton-
 /twittericon.
 _share_twitter.
@@ -378,6 +377,7 @@ _share_twitter.
 ##[title="Share with Google Buzz"]
 /addtogoogle.
 /buzz-icon2.
+/icon-buzz.
 /icon-googlebuzz.
 ||google.com/buzz/$third-party
 ||google.com^*/friendconnect.js
@@ -401,6 +401,7 @@ _share_twitter.
 ##[title="Follow Us On Digg"]
 ##[title="Share with Digg"]
 /digg-icon.
+/diggButton.
 /givememydigg.
 /icon-digg.
 /st_digg_
@@ -440,14 +441,14 @@ _share_stumbleupon.
 !
 !---------- Whitelists -----------
 !
+@@/facebook-button.$domain=imdb.com
 @@||api.tweetmeme.com^*$domain=smashingapps.com
 @@||google.com/friendconnect/$script,domain=blogspot.com
 @@||redditarchive.com^
 @@||sharethis.com^$domain=thedailyshow.com
 @@||tweetmeme.com/i/scripts/button.js$domain=smashingapps.com
-@@||widgets.fbshare.me/files/$domain=smashingapps.com
 @@||twitter.com/favicon.ico$domain=cnet.com
-@@/facebook-button.$domain=imdb.com
+@@||widgets.fbshare.me/files/$domain=smashingapps.com
 !
 !---------- Generic Hiding Rules ----------
 !
@@ -490,8 +491,8 @@ _share_stumbleupon.
 ###newsletter_subscription_box
 ###newsletterModuleForm
 ###sexy-bookmarks
-###share-module
 ###share-buttons
+###share-module
 ###share-tools
 ###share-tools-title
 ###share_button
@@ -508,9 +509,9 @@ _share_stumbleupon.
 ###shareicon
 ###shareLinks
 ###shareLinkToolBar
-###sidebar_social_icons
 ###ShareSidebar
 ###sharetop_share
+###sidebar_social_icons
 ###social-icons
 ###social-link
 ###social-links
@@ -684,9 +685,9 @@ _share_stumbleupon.
 ##.social_media
 ##.social_networking
 ##.social_networks
-##.socialIcons
 ##.socialBadge
 ##.socialBadges
+##.socialIcons
 ##.socialList
 ##.socialmedia
 ##.socialmedia-buttons
@@ -953,7 +954,6 @@ gamepro.com##.share
 gamingbolt.com##.postSocial
 gawker.com##.welcome_form
 geeksaresexy.net###rss
-peoplestylewatch.com###getPeopleEverywhere
 givesmehope.com##.publicite
 gizmodo.com##.welcome_form
 globalgrind.com##[ggregion="NewsLetterRC"]
@@ -1160,7 +1160,6 @@ omgubuntu.co.uk##.entry-share
 onlineeducation.net###social
 openculture.com###social
 oyetimes.com###uBarDiv
-people.com###getPeopleEverywhere
 parents.com###adtrafficright
 parents.com###slideshowPromo
 parents.com###stayConnected
@@ -1179,7 +1178,9 @@ pcworld.com##.delicious
 pcworld.com##.fb-login
 pcworld.com##.syndication
 people.com###flyingrecirc
+people.com###getPeopleEverywhere
 people.com##.cmad
+peoplestylewatch.com###getPeopleEverywhere
 physorg.com##.sharemenu
 piriform.com##.newsletter
 pixsor.com##.bookmarks
@@ -1346,6 +1347,7 @@ vaildaily.com##.aggregatorlinksbottom
 vaildaily.com##.aggregatorlinkstop
 vinayaprabha.com##[alt="feed-image"]
 viruscomix.com##[src="rssboutonne.jpg"]
+visionmobile.com##.joinconvers
 visualeconomics.com###as-share-window
 visualeconomics.com##.ve2_sharebox
 voanews.com##.socialNetwork
