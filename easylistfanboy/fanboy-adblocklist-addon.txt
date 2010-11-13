@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: c14ARfSQMpG7cb6T/fLBnA
+! Checksum: Or7o/3InI9JWuRcHj3CaQw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 13 Nov 2010
 ! This list expires after 6 days
@@ -24,10 +24,10 @@
 /footer_youtube.
 /getnetworkwidget?
 /ico-rss.
+/ico-share-
 /ico-social-
 /ico_delicious.
 /ico_share_
-/ico-share-
 /ico_youtube.
 /icon-delicious.
 /icon-subscribe-
@@ -57,8 +57,8 @@
 /rss_follow.
 /rssicon.
 /sendtofriend.gif
-/share-icons/*
 /share-icons.
+/share-icons/*
 /share_sprite.
 /social-networking/*
 /social-rss.
@@ -222,6 +222,7 @@ _share_icon.
 ##A[title="Join us on Facebook"]
 ##a[title="Post this story to Facebook"]
 -facebook-btn.
+/btn-share-fb.
 /button-facebook.
 /button_facebook.
 /facebkiconnet/*
@@ -233,10 +234,10 @@ _share_icon.
 /facebook2.png|$domain=~facebook.com
 /facebook_16.
 /facebook_32.
-/facebook_side_
 /facebook_button
 /facebook_follow.
 /facebook_icon.
+/facebook_side_
 /FacebookFanWidgetFrame.
 /facebookicon.
 /fb-icon.
@@ -245,7 +246,6 @@ _share_icon.
 /ico-facebook.
 /ico_facebook.
 /icon-facebook.
-/btn-share-fb.
 /icon_fb_
 /icons/facebook.
 /icons/facebook_
@@ -290,11 +290,12 @@ _share_icon.
 ###twitter-share
 ###twitter-sidebar
 ###twitter-video-share-counter
+###twitter_banner
 ###twitter_btn
 ###twitter_button
-###twitter_widget
 ###twitter_linkage
 ###twitter_module
+###twitter_widget
 ###twitterContainer
 ###twitterfeed
 ###twitterFollowBadge
@@ -316,11 +317,10 @@ _share_icon.
 ##.twitter-btn
 ##.twitter-share-button
 ##.twitter.icon
-###twitter_banner
+##.twitter_box
 ##.twitterBadge
 ##.twitterFollow
 ##.TwitterFollowUs
-##.twitter_box
 ##.twitterWidgetry
 ##.widget_tweetblender
 ##[alt="Follow updates via Twitter"]
@@ -346,6 +346,7 @@ _share_icon.
 ##[title="Share with Twitter"]
 ##[title="Subscribe by Twitter"]
 -twitter-btn.
+/btn-tweet.
 /button-twitter.
 /follow-on-twitter.
 /followus_twitter.
@@ -367,18 +368,17 @@ _share_icon.
 /twitter1.png|$domain=~twitter.com
 /twitter_16.
 /twitter_32.
+/twitter_add.
 /twitter_badge.
+/twitter_bubble_
 /Twitter_button
-/btn-tweet.
 /twitter_follow.
 /twitter_icon.
-/twitter_add.
-/twitter_bubble_
 /twitter_icon_
-/ytwitter_widget_
 /twitterbadge/*
 /twitterbutton-
 /twittericon.
+/ytwitter_widget_
 _share_twitter.
 ||diggstatic.com^*/follow_buttons/
 ||platform*.twitter.com^$third-party
@@ -432,10 +432,10 @@ _share_twitter.
 ##[title="Digg it!"]
 ##[title="Follow Us On Digg"]
 ##[title="Share with Digg"]
+/btn-digg.
 /digg-icon.
 /diggButton.
 /givememydigg.
-/btn-digg.
 /icon-digg.
 /st_digg_
 /widget/digg/*
@@ -476,14 +476,14 @@ _stumble_btn.
 !
 !---------- Google Instant Preview (testing) -----------
 !
-google.com###vspb
-google.com##.vspib
 google.co.nz###vspb
 google.co.nz##.vspib
-google.com.au###vspb
-google.com.au##.vspib
 google.co.uk###vspb
 google.co.uk##.vspib
+google.com###vspb
+google.com##.vspib
+google.com.au###vspb
+google.com.au##.vspib
 !
 !---------- Whitelists -----------
 !
@@ -500,8 +500,8 @@ google.co.uk##.vspib
 !
 !---------- Generic Hiding Rules ----------
 !
-###article_tools_share
 ###article_actions_socialmedia
+###article_tools_share
 ###articleNewsletterModule
 ###badge_reddit
 ###bing_header_container
@@ -555,13 +555,13 @@ google.co.uk##.vspib
 ###shareBadges
 ###sharebar
 ###sharebot
+###shareBottom
 ###shareButton1
 ###sharebuttons
 ###shareicon
 ###shareLinks
 ###shareLinkToolBar
 ###shareSide
-###shareBottom
 ###ShareSidebar
 ###ShareTools
 ###sharetop_share
@@ -640,8 +640,8 @@ google.co.uk##.vspib
 ##.adsenseDole
 ##.adSize_LLMedia
 ##.aol-share
-##.articlesharebox
 ##.article_sharing
+##.articlesharebox
 ##.aToolType-social
 ##.badges_v2
 ##.beauty-bookmarks
@@ -687,8 +687,8 @@ google.co.uk##.vspib
 ##.post-social
 ##.post_share_icons
 ##.post_share_stumble
-##.rss.icon
 ##.right-share-module
+##.rss.icon
 ##.rss_count
 ##.sexy-bookmarks
 ##.share-badges
@@ -710,8 +710,8 @@ google.co.uk##.vspib
 ##.share_icons
 ##.shareBar
 ##.sharebar
-##.sharebutton
 ##.shareBottom
+##.sharebutton
 ##.shareButtons
 ##.sharebuttons
 ##.shareButtonsHolder
@@ -721,8 +721,8 @@ google.co.uk##.vspib
 ##.shareListBox
 ##.sharepost
 ##.sharer_buttons
-##.sharethis-container
 ##.shareThis
+##.sharethis-container
 ##.ShareThisButton1
 ##.ShareThisButton2
 ##.ShareThisMainPanel
@@ -947,9 +947,9 @@ care2.com###tellAFriendBottom_share
 caring.com###awesomer-bar
 cbsnews.com###cbsSMPB
 cbsnews.com##.share
+celebuzz.com###actions
 celebuzz.com###bing
 celebuzz.com###nav-bar
-celebuzz.com###actions
 charitywater.org##.like2
 cinemablend.com##[alt="Follow Cinema Blend's movie news on Twitter"]
 clickindia.com##.fb
@@ -996,8 +996,8 @@ csmonitor.com##.podBrdr
 csmonitor.com##.podStorySidebars
 csmonitor.com##.storyToolbar
 ctv.ca##.shareBottom
-dailyfinance.com##.follow
 dailyfinance.com###articleToolsBot
+dailyfinance.com##.follow
 dailyfinance.com##.followHead
 dailygalaxy.com###message_digg
 dailygalaxy.com###yahoo
@@ -1116,6 +1116,8 @@ huffingtonpost.com##.get_huffpo
 huffingtonpost.com##.icon-rss
 huffingtonpost.com##.share_boxes_box_block_b_wraper
 huffingtonpost.com##.sidebar_header_text_floating
+idg.com.au###article_actions
+idg.com.au###article_main_top
 imagecrook.com##.bookmarks
 imageshack.us##.new-info[style="float:right;height:76px;width:332px;background-color:#FFFFFF;border: 1px #cccccc solid; _overflow:hidden;"]
 imdb.com##.social
@@ -1138,8 +1140,6 @@ intomobile.com##.subscribe_to_im
 intomobile.com##div[style="border-left: 5px solid #3f9fe3; height: 55px; padding-top: 10px; margin-bottom: 20px"]
 iol.co.za###social_networks
 iol.co.za##.article_tool
-idg.com.au###article_main_top
-idg.com.au###article_actions
 itech7.com##[alt="Syndicate content"]
 itthing.com###greet_block
 itthing.com##.getsocial
@@ -1479,10 +1479,10 @@ theoatmeal.com###follow
 theoatmeal.com###follow_big
 theoatmeal.com##.swatch2_links
 theoatmeal.com##[alt="Sharesies with your budsies"]
-theonion.com##.connect
-theonion.com###tabcontent_facebook
-theonion.com##.share_tools
 theonion.com###connectbox
+theonion.com###tabcontent_facebook
+theonion.com##.connect
+theonion.com##.share_tools
 thepiratebay.org###open-software
 theregister.co.uk###whitepapers
 thesmokinggun.com##.sub-links
