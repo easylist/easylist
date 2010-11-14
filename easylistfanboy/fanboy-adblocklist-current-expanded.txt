@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: OxCeM1Qb5cv1sY9Yzu0ntA
+! Checksum: duGsR5LjRx1i0fM92YmxBA
 ! Fanboy's Adblock list
 ! Updated: 15 Nov 2010
 ! This list expires after 4 days
@@ -14,6 +14,8 @@
 &banner_id=
 &bannerid=
 &clickTag=http
+-ad-limits.
+-ad-manager/
 -ad-util-
 -ad3.jpg
 -ad_injector/
@@ -22,7 +24,6 @@
 -adsonar.
 -advertisment-bottom.
 -advertisment-top.
--ad-manager/
 -affiliates/img_
 -banner-ad
 -banner.swf?
@@ -34,7 +35,6 @@
 .ad.footer.
 .ad1.nspace
 .adbanner.
--ad-limits.
 .ads.darla.
 .adserver.
 .adtooltip&
@@ -299,7 +299,10 @@
 /adcreative/*
 /adcycle.
 /addisplay/*
+/adengage0.
 /adengage1.
+/adengage2.
+/adengage3.
 /adengage_
 /AdEngine/*
 /adentry.
@@ -416,6 +419,7 @@
 /ads/banner/*
 /ads/banners/*
 /ads/box/*
+/ads/center-
 /ads/click_
 /ads/dhtml/*
 /ads/freewheel/*
@@ -428,20 +432,19 @@
 /ads/img/*
 /ads/interstitial/*
 /ads/js/*
-/ads/center-
-/ads/leaderboard/*
 /ads/leaderboard-
+/ads/leaderboard/*
 /ads/leaderboard_
-/ads/rail-
 /ads/oas/*
 /ads/page.php?
 /ads/plugs/*
 /ads/preloader/*
+/ads/rail-
 /ads/right/*
 /ads/show.php?
 /ads/sidedoor/*
-/ads/tile-
 /ads/sponsor
+/ads/tile-
 /ads/www/*
 /Ads09a/*
 /ads160x600-
@@ -520,9 +523,6 @@
 /adsystem.
 /adsystem/*
 /ads~adsize~
-/adengage0.
-/adengage2.
-/adengage3.
 /adtag.gif
 /adtag.htm?
 /adtago.
@@ -624,6 +624,7 @@
 /banner-ad-
 /banner-ad/*
 /banner-ad_
+/banner-ads/*
 /banner.asp?
 /banner.ca?
 /banner.cgi?
@@ -640,7 +641,6 @@
 /banner_ad_
 /banner_ads.
 /banner_ads_
-/banner-ads/*
 /banner_advert/*
 /banner_management/*
 /banner_view.php?
@@ -713,6 +713,7 @@
 /chitika-ad?
 /ck.php?nids
 /click/ads_
+/cn-fe-ads/*
 /cnads.js
 /cnwk.1d/Ads/*
 /com/ads/*
@@ -730,7 +731,6 @@
 /corner_ads/*
 /cornerbig.swf
 /cornersmall.swf
-/cn-fe-ads/*
 /COSPLAY--AD-
 /cpc_ads?
 /cpm160.
@@ -933,8 +933,8 @@
 /include/ad_
 /include/ads/*
 /include/adsdaq
-/includes/ads/*
 /included_ads/*
+/includes/ads/*
 /includes/adtags/*
 /inhouse_ads/*
 /inline_ad.
@@ -1297,10 +1297,10 @@
 /yaboe_banner_
 /yahoo-ads/*
 /yahooFeedProxy.
+/yld/js/*
 /youradhere.
 /ysc_csc_news
 /ysc_csc_ymail
-/yld/js/*
 /ysmwrapper.js
 /yt/swf/ad-
 /zdnet/i/ads/*
@@ -1897,10 +1897,10 @@ images/ads/*
 ||ads.adshopping.com^
 ||ads.aol.co.uk^
 ||ads.blogherads.com^
-||ads.fb-plus.com^
 ||ads.com.com^
 ||ads.digitalpoint.com^
 ||ads.eagletribune.com^
+||ads.fb-plus.com^
 ||ads.gravytrainproductions.com^
 ||ads.greenerworldmedia.com^
 ||ads.hearstmags.com^
@@ -2654,7 +2654,6 @@ images/ads/*
 @@://192.168.2
 @@_AFL_bettingPage_$domain=afl.com.au
 @@_sx.ads/demand.five.tv/$domain=demand.five.tv,object_subrequest
-@@||bikeexchange.com.au/adverts/
 @@||208.100.24.244^$domain=sankakucomplex.com,script
 @@||247realmedia.com/RealMedia/ads/$image,domain=farecompare.com
 @@||2mdn.net/crossdomain.xml$domain=youtube.com|tmz.com
@@ -2693,6 +2692,7 @@ images/ads/*
 @@||astw.adgear.com/adgear.js/$domain=tetesaclaques.tv
 @@||b.scorecardresearch.com/b?$domain=last.fm
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
+@@||bikeexchange.com.au/adverts/
 @@||brightcove.com^*bannerid$third-party
 @@||brothersoft.com/gads/$script
 @@||campusfood.com/img/ad/
@@ -3439,8 +3439,8 @@ _970x30_
 /images/vghd
 /imlive.gif
 /impopup/*
-/infopop.
 /include/AD/*
+/infopop.
 /js/youmuffpu.js
 /JTCASHBANNERS/*
 /kaksvpopup.js
@@ -3479,8 +3479,8 @@ _970x30_
 /virtual_girl_
 /virtualgirl/*
 /yourfuckbook/*
-_pop_under.
 _geobanner.
+_pop_under.
 affiliateBannerShow.aspx?
 s/awe.js
 !
@@ -3592,8 +3592,8 @@ s/awe.js
 ||80.77.113.200^
 ||87.230.102.24^
 ||89.248.172.46^
-||acmexxx.com^
 ||acces.direction-x.com^
+||acmexxx.com^
 ||ad-u.com^
 ||ad.slutload.com^
 ||ad.traffmonster.info^
@@ -4114,13 +4114,13 @@ eporner.com##[style="width: 1200px; height: 270px; border: 1px solid rgb(102, 10
 !---------- Adult Hiding Rules ----------
 !
 ###AFF_popup
+###contener_pginfopop1
 ###FFN_imBox_Container
 ###floatyContent
 ###IM_AD
 ###im_box
 ###im_popupDiv
 ###im_popupFixed
-###contener_pginfopop1
 ##[alt^="Fuckbook"]
 ##[href^=" http://www.drowle.com/"]
 ##[href^="http://www.drowle.com/"]
@@ -5695,9 +5695,9 @@ youporn.com###producer
 ###side_ad
 ###side_ad_wrapper
 ###side_ads
+###side_longads
 ###side_sky_ad
 ###side_sponsors
-###side_longads
 ###sideAd
 ###SideAdMpu
 ###sideads
@@ -6023,6 +6023,7 @@ youporn.com###producer
 ##.ad-inner
 ##.ad-interruptor
 ##.ad-island
+##.ad-label
 ##.ad-leaderboard
 ##.ad-links
 ##.ad-lrec
@@ -6336,7 +6337,6 @@ youporn.com###producer
 ##.adkit-advert
 ##.adkit-lb-footer
 ##.adLabel
-##.ad-label
 ##.adlabel
 ##.adlabel-horz
 ##.adLeader
@@ -6355,10 +6355,8 @@ youporn.com###producer
 ##.adModule300
 ##.adModule_square2
 ##.admoduleB
-##.admpu
 ##.adMpu
-##.adSkyscraperHolder
-##.adSkyscraper
+##.admpu
 ##.adNoOutline
 ##.adNotice
 ##.adnotice
@@ -6483,6 +6481,8 @@ youporn.com###producer
 ##.adSeven
 ##.adsforums
 ##.adSize_MedRec
+##.adSkyscraper
+##.adSkyscraperHolder
 ##.adsleaderboard
 ##.adsleaderboardbox
 ##.adSlice
@@ -7068,8 +7068,8 @@ youporn.com###producer
 ##.main-tabs-ad-block
 ##.main_ad
 ##.main_intro_ad
-##.matador_sidebar_ad_600
 ##.marginadsthin
+##.matador_sidebar_ad_600
 ##.md-adv
 ##.MD_adZone
 ##.mdl-ad
@@ -7841,9 +7841,9 @@ bhg.com###topcover
 bhg.com##.searchSponsors
 bigpond.com###header_banner
 bigpond.com##h5.subheading                     
-bing.com###sidebar
-bikeexchange.com.au##div[style="margin:60px 0 20px 0;"]
 bikeexchange.com.au##div[style="margin:2em 0; text-align:center;"]
+bikeexchange.com.au##div[style="margin:60px 0 20px 0;"]
+bing.com###sidebar
 bit-tech.net###broadband-finder-co-uk-120
 bit-tech.net###mobile-phones-co-uk-120
 bit-tech.net###skinclick
@@ -8487,10 +8487,10 @@ gizmodo.com###marquee
 gizmodo.com###skyscraper
 gizmodo.com###skySpacer
 gizmodo.com##.highlite
-globaltv.com###RBigBoxContainer
-globaltv.com###SRBigBoxContainer
-globaltv.com###SPBigBox
 globaltv.com###LBigBox
+globaltv.com###RBigBoxContainer
+globaltv.com###SPBigBox
+globaltv.com###SRBigBoxContainer
 gmanews.tv##[style="height:100px; padding-top: 10px;  "]
 gmanews.tv##[style="position:absolute; top:2px; margin-left:15px; width:730px; padding:3px; background-color:#FFFFFF; border:2px solid #CCCCCC;"]
 gmanews.tv##[style="position:absolute; top:2px; margin-left:765px; width:206px; padding:3px; background-color:#FFFFFF; border:2px solid #CCCCCC;"]
@@ -9501,8 +9501,6 @@ sankakucomplex.com##.sidebartopb
 sankakucomplex.com##.sidebartopc
 sbs.com.au##.advertisement_caption
 sc-article.co.tv###header
-scsnissan.com###TB_window
-scsnissan.com###TB_overlay
 sciam.com##.advertise
 scienceblogs.com###topPromoContainer
 scienceblogs.com##.seedBanner
@@ -9521,6 +9519,8 @@ scoop.co.nz##.right-box
 scotsman.com##.featuredadvertising
 scotsman.com##.mpuholderportalpage
 scribol.com###block-block-2
+scsnissan.com###TB_overlay
+scsnissan.com###TB_window
 search.aol.com##.SLL
 search.aol.in##.SLL
 search.cnbc.com###ms_aur
@@ -9729,9 +9729,9 @@ techi.com###top-banner
 techi.com##.side-sky-banner-160
 techi.com##.sidebar-rectangle-banner
 techi.com##.sidebar-square-banner
-techie-buzz.com##.topnotice
-techie-buzz.com##.boxfloat
 techie-buzz.com###side_more_300
+techie-buzz.com##.boxfloat
+techie-buzz.com##.topnotice
 techiemania.com###top-729-banner
 technewsdaily.com##.main_content_right
 technewsworld.com##.bbframe
@@ -9876,8 +9876,8 @@ tmz.com###quigo-homepage-side
 tmz.com##.quigo-main
 todaysbigthing.com##.billboard
 todaysbigthing.com##.leaderboard_container
-todaytechnews.com##.advText
 todaystmj4.com###leaderboard1
+todaytechnews.com##.advText
 tokeofthetown.com###Middle
 tokeofthetown.com###Top
 tomopop.com##[style="width: 330px; overflow: hidden;"]
@@ -10109,6 +10109,7 @@ wkrg.com###oas_asponsor
 wkrg.com##.oas_add
 wmur.com###omega
 wn.com###banner
+womensradio.com###ad
 wordreference.com###defer-adright
 wordreference.com##.bannertop
 worksheetsengine.com##.sb_adsN
@@ -10124,7 +10125,6 @@ worstpreviews.com##[style="margin-top:15px;width:160;height:600;background-color
 worstpreviews.com##[style="margin-top:15px;width:300;height:250;background-color:#FFFFFF;"]
 worstpreviews.com##[style="width:160;height:600;background-color:#FFFFFF;"]
 worstpreviews.com##[style="width:728;height:90;background-color:#FFFFFF;"]
-womensradio.com###ad
 wow-europe.com##.side_banner_305x133
 wpbt2.org##.home_banners
 wphostingdiscount.com###rt-ad468
