@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kitHZR4FKIvxVZxgYnFfQw
+! Checksum: 437S5QthnBt538JCR9ghUQ
 ! Fanboy's Annoyance list Addon 
 ! Updated: 18 Nov 2010
 ! This list expires after 6 days
@@ -35,25 +35,19 @@
 /icon/share/*
 /icon_linkedin_
 /icon_sprite.
-/social-myspace-
-/social-rss-
 /icons/myspace_
 /icons/rss.
-/share_delicious.
-/share_facebook.
-/share_twitter.
-/share_myspace.
-/share_bebo.
-/share_icons.
-/share_digg.
+/icons/share.
 /icons/social/*
-/myspace-32x32.
 /icons/social_
 /images/sociable/*$~stylesheet
 /images/social/*$~stylesheet
+/link-delicious.
+/linkedin-32x32.
 /linkedin-icon.
 /linkedin.gif|$domain=~linkedin.com
 /linkedin2.png|$domain=~linkedin.com
+/myspace-32x32.
 /myspace.gif|$domain=~myspace.com
 /myspace_16.
 /myspace_add.
@@ -64,19 +58,24 @@
 /plugins/sociable-30/*$~stylesheet
 /plugins/sociable/*$~stylesheet
 /retweet-button.
-/rss-icon.
 /RSS-Button.
+/rss-icon.
 /rss_follow.
 /rssicon.
-/link-delicious.
 /sendtofriend.gif
 /share-icons.
 /share-icons/*
-/icons/share.
-/youtube-32x32.
-/linkedin-32x32.
+/share_bebo.
+/share_delicious.
+/share_digg.
+/share_facebook.
+/share_icons.
+/share_myspace.
 /share_sprite.
+/share_twitter.
+/social-myspace-
 /social-networking/*
+/social-rss-
 /social-rss.
 /social-yt.
 /socialbadges.
@@ -87,6 +86,7 @@
 /technorati.png|$domain=~technorati.com
 /upprev_js.
 /yahoobuzz.
+/youtube-32x32.
 /youtube-icon.
 /youtube_follow.
 _delicious_btn.
@@ -112,6 +112,7 @@ _share_icon.
 ||fark.com/js/$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||feeds.delicious.com^$third-party
+||huffingtonpost.com/include/mod_times.php?
 ||images.hitwise.co.uk^$third-party
 ||images.slashdot.org^$third-party
 ||img.fark.net/pub/$third-party
@@ -124,7 +125,6 @@ _share_icon.
 ||linksalpha.com^$third-party
 ||liveintent.com^$third-party
 ||mm.bing.net^*/thumbnail.$third-party
-||huffingtonpost.com/include/mod_times.php?
 ||nytimes.com^*/upnext.
 ||parse.ly^$third-party
 ||rapid8.com/images/*.cur
@@ -132,9 +132,9 @@ _share_icon.
 ||sharethis.com^$third-party
 ||slashdot.org^$third-party
 ||sociallist.org^$third-party
+||socialmarker.com^$third-party
 ||socialmediabuttons.com^$third-party
 ||socialtwist.com^$third-party
-||socialmarker.com^$third-party
 ||static.addtoany.com^$third-party
 ||static.delicious.com^$third-party
 ||stumble-upon.com^$third-party,domain=~stumbleupon.com
@@ -247,6 +247,7 @@ _share_icon.
 /button-facebook.
 /button_facebook.
 /facebkiconnet/*
+/facebook-32x32.
 /facebook-button.
 /facebook-icon.
 /facebook.gif|$domain=~facebook.com
@@ -255,30 +256,29 @@ _share_icon.
 /facebook2.png|$domain=~facebook.com
 /facebook_16.
 /facebook_32.
-/facebook-32x32.
 /facebook_button
 /facebook_follow.
 /facebook_icon.
 /facebook_side_
 /FacebookFanWidgetFrame.
 /facebookicon.
-/fb-icon.
 /FB-Button.
+/fb-icon.
 /followus_facebook.
-/link-facebook.
 /footer_facebook.
 /ico-facebook.
 /ico_facebook.
 /icon-facebook.
-/social-facebook-
 /icon_fb_
 /icons/facebook.
 /icons/facebook_
 /js/FB.Share|$third-party
+/link-facebook.
 /plugins/wp-facebookconnect/*
+/social-facebook-
 /social-fb.
-_btn_facebook.
 /st_facebook_
+_btn_facebook.
 ||badge.facebook.com^$third-party
 ||blogsmithmedia.com^*facebook$image
 ||facebook.com/favicon.ico$third-party
@@ -344,10 +344,10 @@ _btn_facebook.
 ##.twitter-share-button
 ##.twitter.icon
 ##.twitter_box
-##.twitterShare
 ##.twitterBadge
 ##.twitterFollow
 ##.TwitterFollowUs
+##.twitterShare
 ##.twitterWidgetry
 ##.widget_tweetblender
 ##[alt="Follow updates via Twitter"]
@@ -360,7 +360,6 @@ _btn_facebook.
 ##[alt="Zu Twitter senden"]
 ##[name="Click to follow us on twitter"]
 ##[title="Click to share this post on Twitter"]
-##[title="Post to Twitter"]
 ##[title="Follow me on Twitter"]
 ##[title="Follow On Twitter"]
 ##[title="Follow on Twitter"]
@@ -371,10 +370,10 @@ _btn_facebook.
 ##[title="Follow us on Twitter"]
 ##[title="Join us on Twitter"]
 ##[title="Post this story to Twitter"]
+##[title="Post to Twitter"]
 ##[title="Share with Twitter"]
 ##[title="Subscribe by Twitter"]
 -twitter-btn.
-_btn_twitter.
 /btn-tweet.
 /button-twitter.
 /follow-on-twitter.
@@ -384,7 +383,6 @@ _btn_twitter.
 /ico_twitter.
 /icon-twitter.
 /icon_twitter.
-/twitter-32x32.
 /icon_twitter_
 /icons/twitter.
 /icons/twitter_
@@ -393,6 +391,7 @@ _btn_twitter.
 /st_twitter_
 /tw-icon.
 /twitbadge.
+/twitter-32x32.
 /twitter-button.
 /twitter-icon.
 /twitter.png|$domain=~twitter.com|~lastpass.com
@@ -410,6 +409,7 @@ _btn_twitter.
 /twitterbutton-
 /twittericon.
 /ytwitter_widget_
+_btn_twitter.
 _share_twitter.
 ||diggstatic.com^*/follow_buttons/
 ||platform*.twitter.com^$third-party
@@ -451,26 +451,26 @@ _share_twitter.
 ###digg-widget-container
 ###share-digg
 ###stDigg
+##.buzz-link
 ##.dd_ajax_float
 ##.diggBox
 ##.DiggThisButton
 ##.diggWidgetry
-##.buzz-link
 ##.long_post_share_digg
 ##.post_share_dig
+##.share-digg
 ##.st_digg_custom
 ##[alt="Digg this"]
 ##[alt="Share on Digg"]
 ##[title="Digg it!"]
 ##[title="Follow Us On Digg"]
 ##[title="Share with Digg"]
-##.share-digg
 /btn-digg.
 /digg-icon.
 /diggButton.
 /givememydigg.
-/link-digg.
 /icon-digg.
+/link-digg.
 /st_digg_
 /widget/digg/*
 ~digg.com###digg-widget
@@ -616,6 +616,7 @@ google.com.au##.vspib
 ###social_bookmarking_module
 ###social_bookmarks
 ###social_bookmarks_list
+###social_box
 ###social_buttons
 ###social_icons
 ###social_share_bar
@@ -629,11 +630,11 @@ google.com.au##.vspib
 ###socialButtons
 ###socialcount
 ###socialdock
-###socialize
 ###socialfloat
 ###socialFooter
 ###SocialIcons
 ###socialicons
+###socialize
 ###socialize-this
 ###socialLinks
 ###socialMediaCallout
@@ -654,8 +655,6 @@ google.com.au##.vspib
 ###vertical-social-bar
 ###wibiyaToolbar
 ###yahooBuzzBadge-form
-##.pds-share
-###social_box
 ##.aboutShareLinks
 ##.actions_sharethis
 ##.addthis-button
@@ -687,14 +686,14 @@ google.com.au##.vspib
 ##.bookmark_services
 ##.bottom-share
 ##.btm_sharethis_wrapper
-##.diggShare
-##.delicious-blogbadge
 ##.button-share
 ##.cnn-social-icons
 ##.cnnShareRow
 ##.comment_share_link
 ##.dd_post_share
+##.delicious-blogbadge
 ##.digg-widget
+##.diggShare
 ##.dsq-global-toolbar-container
 ##.email-to-a-friend
 ##.Entry_Sharer_Buttons
@@ -720,6 +719,7 @@ google.com.au##.vspib
 ##.newsletter-signup
 ##.newsletter_signup
 ##.NewsletterSignup
+##.pds-share
 ##.post-icons
 ##.post-share-buttons
 ##.post-share-panel
@@ -737,16 +737,17 @@ google.com.au##.vspib
 ##.share-btn-lnks
 ##.share-button
 ##.share-buttons
+##.share-delicious
 ##.share-links
+##.share-opera
+##.share-reddit
 ##.share-this-page
 ##.share-tools
-##.share-opera
-##.share-delicious
-##.share-reddit
 ##.share-widgets
 ##.share_bar
 ##.share_button_container
 ##.share_buttons
+##.share_buttons_style
 ##.share_con
 ##.share_container
 ##.share_icons
@@ -764,7 +765,6 @@ google.com.au##.vspib
 ##.sharepost
 ##.sharer_buttons
 ##.shareThis
-##.share_buttons_style
 ##.sharethis-container
 ##.ShareThisButton1
 ##.ShareThisButton2
@@ -780,8 +780,8 @@ google.com.au##.vspib
 ##.single-share
 ##.social-bar
 ##.social-bar-new
-##.social-box
 ##.social-block
+##.social-box
 ##.social-icons
 ##.social-links
 ##.social-links-title
@@ -938,8 +938,8 @@ answers.yahoo.com##.syndication-links
 aolhealth.com###follow
 aolnews.com##.followUs
 aolradioblog.com##.followus
-appstorm.net###subscribe
 appbrain.com###send-email
+appstorm.net###subscribe
 arstechnica.com###fb
 arstechnica.com###links-bar
 artsyspot.com##.social
@@ -1027,8 +1027,8 @@ computerworld.com###newsletter_promo
 computerworld.com###secondary_nav
 computingunleashed.com##[target="popupwindow"]
 connectify.me##.social
-contactmusic.com##.topNav
 consequenceofsound.net##.social
+contactmusic.com##.topNav
 cosmosmagazine.com##[title="Follow COSMOSmagazine on Twitter"]
 cracked.com###fb-friends-recent-activity
 cracked.com###fb_sliver
@@ -1078,6 +1078,7 @@ epicurious.com###luxury_link_promo
 examiner.com###parsely_widget_ct
 explosm.net##[style="border: 6px solid #ff9900; padding: 6px; background-color: #ffffff;"]
 factcheck.org##.connections
+famouslyfit.com##.share
 fastcompany.com##.curr_issue_wrap
 feedmyapp.com###facebook
 feedmyapp.com###twitter
@@ -1105,7 +1106,6 @@ forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
 freemake.com##.bookmark
-famouslyfit.com##.share
 freemake.com##.community
 freesfx.co.uk###popout
 fundoomails.com##.social
@@ -1237,6 +1237,8 @@ mashable.com##.jobs
 mashable.com##.mashable-head-shortad
 mashable.com##.post_share
 mashable.com##.subscribe-options
+matadornetwork.com###matador_network_nav
+matadornetwork.com##.subscription_options
 maxim.com###headersearchsocial
 maxim.com##.footercol5
 maxim.com##.g_subs_Containe
@@ -1245,8 +1247,6 @@ maxim.com##.ShareLinksContainer
 maxim.com##.subscribeform
 maximumpc.com###subscribe
 maximumpc.com##maximumpc-connect
-matadornetwork.com###matador_network_nav
-matadornetwork.com##.subscription_options
 mayoclinic.com###link_share
 mayoclinic.com###newsletter
 mayoclinic.com###rss
@@ -1485,8 +1485,8 @@ take.fm##.facebook
 take.fm##.twitter
 techcrunch.com##.boxy
 techi.com###top-icons
-techie-buzz.com###upprev_box
 techie-buzz.com###fb_reco
+techie-buzz.com###upprev_box
 techie-buzz.com##.subs
 techworld.com###loginSubscribeBoxout
 techworld.com###newsletterSidebar
@@ -1630,8 +1630,8 @@ webmd.com##.newsletterThurii_rdr
 webmd.com##.share_rdr
 webmd.com##.tw
 which.co.uk##.share-article
-wikipedia.org###siteNotice
 wikipedia.org###centralNotice
+wikipedia.org###siteNotice
 wildapricot.com##.BookmarksHolder
 windows7news.com##.subscribe
 windows7news.com##.subscribebox
