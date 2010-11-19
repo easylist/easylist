@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 8VIJNZb7s4kWsyeVCwimHA
+! Checksum: zSn/svZHhhtXKJ8U7zFbsA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 19 Nov 2010
 ! This list expires after 6 days
@@ -17,8 +17,8 @@
 /delicious.gif|$domain=~delicious.com
 /delicious.png|$domain=~delicious.com
 /email_follow.
-/feed_icon_
 /feed-16x16.
+/feed_icon_
 /follow_us_
 /followus_linkedin.
 /followus_youtube.
@@ -50,9 +50,9 @@
 /linkedin2.png|$domain=~linkedin.com
 /myspace-32x32.
 /myspace.gif|$domain=~myspace.com
+/myspace.png|$domain=~myspace.com
 /myspace_16.
 /myspace_add.
-/myspace.png|$domain=~myspace.com
 /myyahoo.gif
 /newsgator.gif
 /plugins/sexybookmarks/*$~stylesheet
@@ -179,10 +179,10 @@ _share_icon.
 ###fbLikebox
 ###fcbk
 ###follow-facebook
-###follow_facebook
 ###follow-us-on-facebook
-###header_subscribe_facebook_notext
+###follow_facebook
 ###header-social-fb
+###header_subscribe_facebook_notext
 ###icon_facebook_small
 ###index-fb-likebox
 ###sdac_footer_facebook_widget-3
@@ -234,6 +234,7 @@ _share_icon.
 ##[title="Become a Facebook Fan"]
 ##[title="Become a Fan on Facebook"]
 ##[title="CONNECT WITH US ON FACEBOOK"]
+##[title="Find us on Facebook"]
 ##[title="Follow Us On Facebook"]
 ##[title="Follow us on Facebook"]
 ##[title="Get Posts On Facebook Wall"]
@@ -242,17 +243,16 @@ _share_icon.
 ##[title="Share on Facebook."]
 ##[title="Share via Facebook"]
 ##[title="Share with Facebook"]
-##[title="Find us on Facebook"]
 ##a[href="http://www.facebook.com/sharer.php"]
 ##a[title="Follow me on  Facebook"]
 ##A[title="Join us on Facebook"]
 ##a[title="Post this story to Facebook"]
-~twitter.com##[alt="retweet"]
 -facebook-btn.
 /btn-share-fb.
 /button-facebook.
 /button_facebook.
 /facebkiconnet/*
+/facebook-16x16.
 /facebook-32x32.
 /facebook-button.
 /facebook-icon.
@@ -261,7 +261,6 @@ _share_icon.
 /facebook1.png|$domain=~facebook.com
 /facebook2.png|$domain=~facebook.com
 /facebook_16.
-/facebook-16x16.
 /facebook_32.
 /facebook_button
 /facebook_follow.
@@ -302,6 +301,7 @@ _btn_facebook.
 ||widgets.fbshare.me^$third-party
 ~facebook.com###fb_header
 ~facebook.com###fbContainer
+~twitter.com##[alt="retweet"]
 !
 !---------- Twitter Widgets ----------
 !
@@ -312,7 +312,9 @@ _btn_facebook.
 ###ctl00_DescriptionBlock_lblTwitter
 ###fb_twitter_bar
 ###follow-twitter
+###follow-us-on-twitter
 ###follow_twitter
+###header-social-twitter
 ###header_subscribe_twitter_notext
 ###icon_twitter_small
 ###retweet_bty
@@ -332,8 +334,6 @@ _btn_facebook.
 ###twitterContainer
 ###twitterfeed
 ###twitterFollowBadge
-###follow-us-on-twitter
-###header-social-twitter
 ##.actions_twitter
 ##.block-idg_twitter
 ##.follow-twitter
@@ -470,10 +470,10 @@ _share_twitter.
 ##.share-digg
 ##.st_digg_custom
 ##[alt="Digg this"]
-##[title="Post to Digg"]
 ##[alt="Share on Digg"]
 ##[title="Digg it!"]
 ##[title="Follow Us On Digg"]
+##[title="Post to Digg"]
 ##[title="Share with Digg"]
 /btn-digg.
 /digg-icon.
@@ -585,6 +585,7 @@ google.com.au##.vspib
 ###newsletter_promo
 ###newsletter_subscription_box
 ###newsletterModuleForm
+###PopularMediaShareModule
 ###right-share-module
 ###sexy-bookmarks
 ###share-buttons
@@ -649,6 +650,8 @@ google.com.au##.vspib
 ###socialLinks
 ###socialMediaCallout
 ###socialMediaNav
+###SocialNetworks
+###SocialNetworks2
 ###socialshare_btns
 ###socialSidebar
 ###socialsidebar
@@ -672,9 +675,11 @@ google.com.au##.vspib
 ##.addthis_button
 ##.addthis_button_buzz
 ##.addthis_button_digg
+##.addthis_button_expanded
 ##.addthis_button_facebook
 ##.addthis_button_twitter
 ##.addthis_container_alt2
+##.addthis_separator
 ##.addthis_toolbox
 ##.addthis_toolbox_alt2
 ##.addthis_toolbox_horz
@@ -736,6 +741,7 @@ google.com.au##.vspib
 ##.post-social
 ##.post_share_icons
 ##.post_share_stumble
+##.publishToStatus
 ##.right-share-module
 ##.rss.icon
 ##.rss_count
@@ -750,6 +756,7 @@ google.com.au##.vspib
 ##.share-delicious
 ##.share-links
 ##.share-opera
+##.share-page
 ##.share-reddit
 ##.share-this-page
 ##.share-tools
@@ -808,19 +815,21 @@ google.com.au##.vspib
 ##.social_box
 ##.social_boxes
 ##.social_button
+##.social_buttons_new
 ##.social_icons
 ##.social_item
 ##.social_like
 ##.social_media
-##.socialLinks
 ##.social_networking
 ##.social_networks
+##.social_rss
 ##.socialBadge
 ##.socialBadges
 ##.SocialBookmark
 ##.socialContainer
 ##.socialIcons
 ##.socialicons
+##.socialLinks
 ##.socialList
 ##.socialmedia
 ##.socialmedia-buttons
@@ -853,12 +862,16 @@ google.com.au##.vspib
 ##[alt="Clip to Evernote"]
 ##[alt="Connect with us on LinkedIn"]
 ##[alt="Follow us at Youtube"]
+##[alt="Follow us on LinkedIn"]
 ##[alt="Follow us to Youtube.com"]
+##[alt="Join Our Mailing List"]
+##[alt="Reddit"]
 ##[alt="RSS 2.0"]
 ##[alt="Share on Delicious"]
 ##[alt="Share on MySpace"]
 ##[alt="Share on Reddit"]
 ##[alt="share on Reddit"]
+##[alt="Share This"]
 ##[alt="Share this"]
 ##[alt="Share/Bookmark"]
 ##[alt="SocialTwist Tell-a-Friend"]
@@ -867,7 +880,9 @@ google.com.au##.vspib
 ##[alt="Valid XHTML 1.0 Transitional Document"]
 ##[alt="Watch Us on You Tube"]
 ##[alt="Watch us on YouTube"]
+##[original-title="Toggle to share your comment"]
 ##[target="socialbookmark"]
+##[title="Bookmark using any bookmark manager!"]
 ##[title="Follow us on YouTube"]
 ##[title="Post to del.icio.us"]
 ##[title="Reddit!"]
@@ -879,6 +894,7 @@ google.com.au##.vspib
 ##[title="Submit this post on reddit.com."]
 ##[title="Subscribe in a reader"]
 ##[title="Subscribe to our blog"]
+##[title="Subscribe to our RSS feed"]
 ##[title="Subscribe to RSS Feed"]
 ##[title="SUBSCRIBE TO RSS FEEDS"]
 ##[title="Subscribe via Email"]
@@ -896,22 +912,6 @@ google.com.au##.vspib
 ##a[title="Subscribe on FriendFeed"]
 ##div.sociable
 ##IMG[alt="submit to reddit"]
-###PopularMediaShareModule
-###SocialNetworks
-###SocialNetworks2
-##.addthis_button_expanded
-##.addthis_separator
-##.publishToStatus
-##.share-page
-##.social_buttons_new
-##.social_rss
-##[alt="Follow us on LinkedIn"]
-##[alt="Join Our Mailing List"]
-##[alt="Reddit"]
-##[alt="Share This"]
-##[original-title="Toggle to share your comment"]
-##[title="Bookmark using any bookmark manager!"]
-##[title="Subscribe to our RSS feed"]
 !
 !---------- Site Specific Hiding Rules ----------
 !
