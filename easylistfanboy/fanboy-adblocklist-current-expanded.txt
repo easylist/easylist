@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: umWGtEX4DZRti+GDpLl+ig
+! Checksum: CBi7HiqB5Is6DQ7KXpF93A
 ! Fanboy's Adblock list
 ! Updated: 26 Nov 2010
 ! This list expires after 4 days
@@ -337,12 +337,12 @@
 /adify_sky.
 /AdifyAd.
 /AdifyIDs.
+/adifyOverlay.
 /adim.html?ad
 /adimage.
 /adimages.
 /adimages/*
 /Adinator/*
-/adifyOverlay.
 /adinclude.
 /AdInjector_
 /adinterax.
@@ -741,8 +741,8 @@
 /content/adtag
 /context_ad/*
 /contextad.
-/convertJSONtoAd.
 /contextads.
+/convertJSONtoAd.
 /core77_ad.
 /corner_ads/*
 /cornerbig.swf
@@ -1102,10 +1102,10 @@
 /plugins/wp_actionpop/*
 /pop_under.
 /popAds.
-/postad.
 /popunder-
 /popunder.$script
 /portal_assets/*
+/postad.
 /ppd_ads.
 /predictad. 
 /premium_ad.
@@ -1304,8 +1304,8 @@
 /tvgdartads.
 /ucstat.
 /ugoAds.
-/unibluead.
 /ukc-ad.
+/unibluead.
 /uploads/ads/*
 /valueclickbanner.
 /vert_ad.
@@ -1879,8 +1879,6 @@ images/ads/*
 ||ad.nz.doubleclick.net/pfadx/
 ||ad.pandora.tv^
 ||ad.premiumonlinemedia.com^
-||ads.ncm.com^
-||ads.ncmsocial.com^
 ||ad.sensismediasmart.com.au^
 ||ad.sharethis.com^
 ||ad.sponsoreo.com^
@@ -1977,6 +1975,8 @@ images/ads/*
 ||ads.kelbymediagroup.com^
 ||ads.mefeedia.com^
 ||ads.mmania.com^
+||ads.ncm.com^
+||ads.ncmsocial.com^
 ||ads.netcommunities.com^
 ||ads.nzcity.co.nz^
 ||ads.ookla.com^
@@ -2716,6 +2716,7 @@ images/ads/*
 @@/images/ad-$domain=apple.com
 @@/Images/Ad_$domain=heathrowexpress.com
 @@/images/banners/*$domain=abc-of-snowboarding.com
+@@/img/ad/*$domain=starwars.com
 @@/img/banner_ad$domain=lavasoft.com,~third-party,image
 @@/img/banners/*$domain=vodafone.co.nz|furaffinity.net
 @@/plugins/wp-minify/min/?f$domain=eceplayground.com
@@ -2741,7 +2742,6 @@ images/ads/*
 @@||2mdn.net/instream/dartshell$domain=youtube.com|globaltv.com
 @@||ad.103092804.com/st?ad_type$domain=wizard.mediacoderhq.com
 @@||ad.zanox.com/ppc/$subdocument,domain=wisedock.de|wisedock.com|wisedock.co.uk|wisedock.at|wisedock.eu
-@@||dolimg.com^*/dxd_ad_code.swf$domain=go.com
 @@||ad3.liverail.com^$domain=kstp.com|breitbart.tv|seesaw.com
 @@||adbureau.net/ffxd/eb-logo-$domain=essentialbaby.com.au
 @@||adbureau.net^*/images/Adselector/$domain=watoday.com.au|brisbanetimes.com.au|smh.com.au|theage.com.au
@@ -2785,6 +2785,7 @@ images/ads/*
 @@||data.panachetech.com^$domain=foxnews.com
 @@||de.ign.com/js.ng/size=headermain$domain=teamxbox.com
 @@||direct.fairfax.com.au/hserver/$script
+@@||dolimg.com^*/dxd_ad_code.swf$domain=go.com
 @@||dstw.adgear.com/crossdomain.xml
 @@||dstw.adgear.com/crossdomain.xml$domain=nj1015.com
 @@||dstw.adgear.com/impressions/int/$domain=nj1015.com,object_subrequest
@@ -2888,12 +2889,12 @@ images/ads/*
 @@||gtainside.com/openx/ad$script
 @@||ninjaraider.com/js/adsense.js
 @@||nwanime.com/ad$script
-@@||physorg.com/js/adsense_$script
 @@||pagead2.googlesyndication.com/pagead/ads?client=$domain=ffiles.com
 @@||pagead2.googlesyndication.com/pagead/expansion_embed.js$domain=megaallday.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=seeingwithsound.com|ffiles.com|articlewagon.com|codeasily.com|ngohq.com|warp2search.net|carsfromitaly.info|megaallday.com
 @@||partner.googleadservices.com/gampad/google_ads.js$domain=avclub.com
 @@||partner.googleadservices.com/gampad/google_service.js$domain=avclub.com
+@@||physorg.com/js/adsense_$script
 @@||sportsm8.com/adsense.js
 @@||video2mp3.net/img/adsense.js
 !
@@ -3438,12 +3439,12 @@ _970x30_
 !
 @@-160x160.jpg|$domain=parentsconnect.com
 @@-300x250.jpg|$domain=nypost.com|motherjones.com
-@@||cinemanow.com/images/banners/300x250/
 @@/125x125/*$domain=bigsoccer.com
 @@/728x90/*$domain=weather.weatherbug.com
 @@=728x90&$domain=pkra.com,subdocument
 @@_140x140.$domain=guardian.co.uk
 @@_728x90.$domain=weather.weatherbug.com|smokescreen.us
+@@||cinemanow.com/images/banners/300x250/
 @@||imdb.com/images/*doubleclick/
 @@||zshare.net/ads.js$script
 @@||zshare.net/adsense.js$script
@@ -4947,6 +4948,8 @@ youporn.com###producer
 ###adsensetopplay
 ###adsenseWrap
 ###adshowbtm
+###AdShowcase
+###AdShowcase_F
 ###AdShowcase_F1
 ###adSidebarSq
 ###adsider
@@ -5722,8 +5725,6 @@ youporn.com###producer
 ###navi_banner_ad_780
 ###nba300Ad
 ###nbcShowcaseAds
-###AdShowcase_F
-###AdShowcase
 ###network_header_ad_1
 ###new_topad
 ###news_left_ad
@@ -6549,13 +6550,13 @@ youporn.com###producer
 ##.adHeadlineSummary
 ##.AdHere
 ##.adhere
-##.adinfo
 ##.adhi
 ##.adHolder
 ##.adHome300x250
 ##.adHorisontalNoBorder
 ##.adhoriz
 ##.adiframe
+##.adinfo
 ##.adkit-advert
 ##.adkit-lb-footer
 ##.adLabel
@@ -6839,7 +6840,6 @@ youporn.com###producer
 ##.advertisement-sidebar
 ##.advertisement-space
 ##.advertisement-text
-##.advertisementText
 ##.advertisement-top
 ##.advertisement300x250
 ##.advertisement468
@@ -6853,6 +6853,7 @@ youporn.com###producer
 ##.advertisementGif
 ##.advertisementLabel
 ##.advertisementPanel
+##.advertisementText
 ##.advertisespace_div
 ##.advertiseText
 ##.AdvertiseWithUs
@@ -8127,14 +8128,14 @@ babelfish.yahoo.com##.ovt
 babynamegenie.com##.links
 babynamegenie.com##.promo
 baltimoresun.com###article-promo
+bangkokpost.com##.boomboxSize1
+bangkokpost.com##.buzzBoombox
 bankrate.com##.topbanner
 bannedinhollywood.com###topleaderboard
 barrons.com##.boldGreyNine
 bastropenterprise.com##.headerTop
 bastropenterprise.com##.iabMedRectContainer
 batman-on-film.com###ca
-bangkokpost.com##.boomboxSize1
-bangkokpost.com##.buzzBoombox
 bbccanada.com###gradientbox
 beginlinux.com##.bannergroup
 behance.net###FMGABadge
@@ -8187,12 +8188,12 @@ boyplz.com##[width="250"]
 brainz.org##.top-banner
 brandrepublic.com###banner
 brandsoftheworld.com###leaderboardTop
-brenz.net###rndBanner
 break.com###cdpSliver
 break.com##.breaking_news_wrap
 break.com##.brk_ldrbrd_wrap
 break.com##[width="300"][height="250"]
 breitbart.com##.sidebar
+brenz.net###rndBanner
 bridgebase.com###bbo_ad1
 brothersoft.com##.search_sponor
 browsers.about.com##IFRAME#ip0[width="336"][height="210"]
@@ -8220,13 +8221,13 @@ caller.com###content_match_wrapper
 caller.com##.bigbox_wrapper
 camfuze.com###FooterBanner
 camfuze.com##.RightBannerSpot
+canberratimes.com.au##.flashfloater
+canberratimes.com.au##.gbl_advertisementgrey
+canberratimes.com.au##.gbl_disclaimer
 candystand.com##.cs_square_banner
 candystand.com##.cs_tall_banner
 canoe.ca##.getdeals
 cantyouseeimbusy.com###rightBottom
-canberratimes.com.au##.gbl_disclaimer
-canberratimes.com.au##.flashfloater
-canberratimes.com.au##.gbl_advertisementgrey
 caranddriver.com##.shopping-tools.shop-on
 care2.com###care2_footer_ads
 care2.com##.care2_horiz_adspace
@@ -9983,7 +9984,6 @@ smh.com.au##.nop
 snapfiles.com###bannerbar
 snapfiles.com###borderbar
 snapfiles.com###prodmsg
-sonypictures.com###advertisement
 snopes.com##[width="300"][height="250"]
 snow.co.nz###content-footer-wrap
 snow.co.nz###header-banner
@@ -9997,6 +9997,7 @@ softpedia.com##.pagehead_op2
 softpedia.com##[width="600"][height="90"]
 someecards.com###footer_leaderboard_holder
 songlyrics.com##.content-bottom-banner
+sonypictures.com###advertisement
 sourceforge.net###fad
 southbendtribune.com##[style="text-align: left; width: 321px; height: 270px;"]
 southwestiowanews.com###top_container
@@ -10040,10 +10041,10 @@ stylecaster.com##.banner-bottom
 sun-sentinel.com###article-promo
 sunshinecoastdaily.com.au###localOffers
 sunshinecoastdaily.com.au###section_advertorial_feature
-surfthechannel.com##.sp-leader
-surfthechannel.com##.sp-leader-bottom
 suntimes.com###leader
 suntimes.com##table[width="754"]
+surfthechannel.com##.sp-leader
+surfthechannel.com##.sp-leader-bottom
 swedishwire.com###topbannerspace
 swns.com##.story_mpu
 sxc.hu##.bann
@@ -10713,9 +10714,9 @@ zuula.com###secondary
 ~stickam.com###companionAd
 ~streetinsider.com###ad_space
 ~superbikeplanet.com##.AdBody:not(body)
-~superbikeplanet.com,~slashcontrol.com##.adDiv
 ~superbikeplanet.com##.addiv
 ~superbikeplanet.com##.adlink
+~superbikeplanet.com,~slashcontrol.com##.adDiv
 ~superhry.cz##.adHoldert
 ~thecoolhunter.com.au,~thecoolhunter.net##.Ads
 ~thedailygreen.com###AD_banner
