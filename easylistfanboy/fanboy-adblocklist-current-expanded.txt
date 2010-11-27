@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Epg9z/a+S1u47H638z17yw
+! Checksum: VQkwgGuTB41gKeLiAaG7lQ
 ! Fanboy's Adblock list
 ! Updated: 28 Nov 2010
 ! This list expires after 4 days
@@ -469,9 +469,13 @@
 /ads?id=
 /ads?spaceid
 /ads_bg.
+/ads_bottom_
+/ads_display.
 /ads_google.
 /ads_iframe.
 /ads_php/*
+/ads_text_
+/ads_top_
 /ads_view.
 /ADSAdClient31.
 /AdSandbox.
@@ -513,10 +517,6 @@
 /adsOpenx/*
 /adspace.
 /adspace/*
-/ads_display.
-/ads_bottom_
-/ads_top_
-/ads_text_
 /adspace2.
 /adsrc.html?
 /adsremote.
@@ -1044,6 +1044,7 @@
 /oas_ad_
 /OAS_Handler.
 /oas_home_
+/oas_mjx.
 /OASAdConnector.
 /OASAdFrame.
 /OasAdFunctionLive.
@@ -1064,7 +1065,6 @@
 /overture/*$subdocument,script
 /overture_
 /ovt_show.asp?
-/oas_mjx.
 /ox/www/*
 /p2/ads/*
 /page-ads.
@@ -1941,7 +1941,6 @@ images/ads/*
 ||adlink.net^
 ||adlisher.com^
 ||adlog.com.com^
-||ads.allotraffic.com^
 ||admarketplace.net^
 ||admaxserver.com^
 ||admaya.in^
@@ -1968,6 +1967,7 @@ images/ads/*
 ||ads.adap.tv^
 ||ads.adonion.com^
 ||ads.adshopping.com^
+||ads.allotraffic.com^
 ||ads.aol.co.uk^
 ||ads.blogherads.com^
 ||ads.com.com^
@@ -2216,8 +2216,6 @@ images/ads/*
 ||d.unanimis.co.uk^
 ||dashboardad.net^
 ||dbbsrv.com^
-||doubleclick.net/activity
-||doubleclick.net/dot.gif?
 ||dcad.watersoul.com^
 ||de.doubleclick.net/ad/
 ||deals.buxr.net^
@@ -2229,6 +2227,8 @@ images/ads/*
 ||direct.quasir.info^
 ||double.net^
 ||doubleclick.net/*;cue=pre;
+||doubleclick.net/activity
+||doubleclick.net/dot.gif?
 ||doubleclick.net/imp;
 ||doubleclick.net/jump/
 ||doubleverify.com^
@@ -2675,6 +2675,7 @@ images/ads/*
 @@||ad.doubleclick.net/pfadx/DARTSHELL
 @@||ad.doubleclick.net^*/videoplayer;
 @@||ad.doubleclick.ntet/ad/$domain=imdb.com|tv.com,object_subrequest
+@@||doubleclick.net/activityi;src=$object_subrequest,domain=cicispizza.com
 @@||doubleclick.net/ad/*playerVersion$object_subrequest
 @@||doubleclick.net/adi/video.
 @@||doubleclick.net/adj/*.video/
@@ -2700,7 +2701,6 @@ images/ads/*
 @@||doubleclick.net/pfadx/ctv.muchmusicembed.com
 @@||doubleclick.net/pfadx/mtv.co.nz/
 @@||doubleclick.net/pfadx/theglobeandmail.com/
-@@||doubleclick.net/activityi;src=$object_subrequest,domain=cicispizza.com
 !
 !---------- Whitelists ----------
 !
@@ -5286,9 +5286,9 @@ youporn.com###producer
 ###boxAdContainer
 ###boxads
 ###bps-header-ad-container
-###button-ads-horizontal
 ###btmad
 ###burn_header_ad
+###button-ads-horizontal
 ###ButtonAd
 ###c4_ad
 ###c4ad-Middle1
@@ -6979,9 +6979,9 @@ youporn.com###producer
 ##.billboard_ad
 ##.bizCardAd
 ##.bizDetailAds
-##.block-eg_adproxy
 ##.block-ad
 ##.block-adsense
+##.block-eg_adproxy
 ##.block-google_admanager
 ##.block-openadstream
 ##.block-openx
@@ -7677,7 +7677,6 @@ youporn.com###producer
 ##.sponsored_box
 ##.sponsored_links
 ##.sponsored_results
-##.sponsoredresults
 ##.SponsoredAdTitle
 ##.SponsoredLinks
 ##.sponsoredlinks
@@ -7685,6 +7684,7 @@ youporn.com###producer
 ##.SponsoredLinksGrayBox
 ##.sponsoredLinksHeader
 ##.sponsoredProduct
+##.sponsoredresults
 ##.sponsoredtextlink_container
 ##.sponsorheader
 ##.SponsorIsland
@@ -8059,11 +8059,11 @@ androidpolice.com###execphp-9
 androidtapp.com###Super
 androlib.com##.gadsqr
 angelfire.com###tb_container
+animenewsnetwork.com###page-header-banner
 animenfo.com##.nav2
 animetake.com##.top-banner
 aniweather.com##.divBottomNotice
 aniweather.com##.divCenterNotice
-animenewsnetwork.com###page-header-banner
 anonymouse.org###mouselayer
 ansblog.com##[width="300"][height="250"]
 answers.com###radLinks
@@ -9182,6 +9182,7 @@ linux-mag.com###curtain
 linux-mag.com##.sponsor-widget
 linux.justinhartman.com###gumax-article-picture
 linuxcrunch.com###dock
+linuxforums.org###showimage
 linuxinsider.com##.bbframe
 linuxinsider.com##.content-block-slinks
 linuxinsider.com##.right-bb
@@ -9191,7 +9192,6 @@ linuxtoday.com##TABLE[cellpadding="1"][style="margin-right: 10px;"]
 linuxuser.co.uk###mpu
 lionsdenu.com###sidebar-bottom-left
 lionsdenu.com###sidebar-bottom-right
-linuxforums.org###showimage
 listen.grooveshark.com###sidebarMsg
 listverse.com##.s-a
 listverse.com##.split
@@ -10191,9 +10191,9 @@ thenewschronicle.com##[style="width:728px;height:90px;margin:5px auto;margin-bot
 thenextweb.com###pubtop
 thenextweb.com##.promotion_frame
 thenokiablog.com##.sidebardirect
-theonion.com##.sponsorship
-theonion.com###zoosk
 theonion.com###from_our_sponsors
+theonion.com###zoosk
+theonion.com##.sponsorship
 thepcguild.com##.leader
 thepressnews.co.uk###want-to-advertise
 theregister.co.uk###jobs-promo
@@ -10753,7 +10753,7 @@ zuula.com###secondary
 ~wikiski.com,~wikia.com##.content-ads
 ~wlfi.com,~wivb.com##.topAd
 ~wretch.cc###ad_square
-~x17online.com##.rightad
 ~www.yahoo.com##.type_ads
+~x17online.com##.rightad
 ~zapak.com###sponsorAdDiv
 ~zlinked.com##.advertiser
