@@ -3,12 +3,13 @@
 #Adapted for the EasyList repository by Michael
 
 use strict;
+use File::Basename;
 use Digest::MD5 qw(md5_base64);
 use Compress::Zlib;
 use POSIX qw(strftime);
 require Encode;
 
-my $rootdir = ".";
+my $rootdir = dirname($0);
 my $sourcedir = "$rootdir";
 my $subsdir = "$rootdir/subscriptions";
 my %verbatim = map {$_ => 1} qw(COPYING);
