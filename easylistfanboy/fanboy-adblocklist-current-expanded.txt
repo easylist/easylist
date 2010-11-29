@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Ie9mB6sE43gHQg5zP2UYlA
+! Checksum: R7k7GdUaVBrsxeVmvk094A
 ! Fanboy's Adblock list
 ! Updated: 30 Nov 2010
 ! This list expires after 4 days
@@ -81,6 +81,7 @@
 .com/doubleclick/
 .com/gads/
 .com/hserver/
+/i/ads/*
 .com/interstitial.
 .com/iplgadshow
 .com/js.ng/
@@ -190,6 +191,7 @@
 /ad/common/*
 /ad/common_
 /ad/frame1.
+/ad/sponsored-
 /ad/google_
 /ad/html/*
 /ad/iframe/*
@@ -198,7 +200,6 @@
 /ad/realclick.
 /ad/realclick/*
 /ad/serve.php
-/ad/sponsored-
 /ad/sponsors/*
 /ad/swf/*
 /ad/textlinks/*
@@ -912,7 +913,6 @@
 /html.ng/*
 /html/ad/*
 /html/ads_
-/i/ads/*
 /i_ads.php
 /ifb/google_afc.
 /iframe.ad/*
@@ -5178,6 +5178,8 @@ youporn.com###producer
 ###b5_ad_top
 ###banner-ad-container
 ###banner-ads
+###bannerad-top
+###bannerad-bottom
 ###banner01
 ###banner300-top-right
 ###banner468
@@ -5193,8 +5195,6 @@ youporn.com###producer
 ###BannerAd
 ###bannerAd
 ###bannerad
-###bannerad-bottom
-###bannerad-top
 ###bannerad2
 ###bannerAd_ctr
 ###bannerAd_rdr
@@ -7489,6 +7489,7 @@ youporn.com###producer
 ##.RBboxAd
 ##.recentAds
 ##.rect_ad_module
+##.roundedCornersAd
 ##.rectangle_ad
 ##.RectangleAd
 ##.rectangleAd
@@ -7538,8 +7539,9 @@ youporn.com###producer
 ##.rnav_ad
 ##.rngtAd
 ##.round_box_advert
+##.blxAdopsPlacement
+##.AdopsPlacement
 ##.roundedboxesgoogle
-##.roundedCornersAd
 ##.rr_ads
 ##.rside_adbox
 ##.rt_ad_300x250
@@ -7920,6 +7922,7 @@ fanpop.com##[style="width: 160px; height: 600px; background-color: rgb(0, 0, 0);
 fanpop.com##[style="width: 300px; height: 250px; background-color: rgb(0, 0, 0); color: rgb(153, 153, 153);"]
 forum.joomla.org##[style="margin: 0pt auto; width: 728px; height: 100px;"]
 foxlingo.com##.box1[style="margin-left: 3px; width: 187px; min-height: 187px;"]
+popbitch.com##[style="width: 300px; height: 250px; background-color: rgb(238, 238, 238);"]
 gamerevolution.com##td[height="100"][style="padding-left: 5px; padding-top: 5px; padding-right: 5px;"]
 gmanews.tv##[style="height: 100px; padding-top: 10px;"]
 gmanews.tv##[style="height: 70px; width: 562px; margin-bottom: 10px; margin-top: 10px;"]
@@ -7952,7 +7955,6 @@ neowin.net##[style="background: url(\"/images/atlas/aww2.png\") no-repeat scroll
 opendiary.com##[style="width: 300px; height: 250px; border: 1px solid black; margin: 0px; padding: 0px;"]
 opendiary.com##[style="width: 728px; height: 90px; margin: 0px auto; padding: 0px;"]
 oprah.com##[style="color: rgb(204, 204, 204); line-height: 13px;"]
-popbitch.com##[style="width: 300px; height: 250px; background-color: rgb(238, 238, 238);"]
 robotswithfeelings.com##[style="height: 250px; width: 300px; background-color: rgb(0, 0, 0);"]
 robotswithfeelings.com##[style="height: 90px; width: 728px; margin-left: auto; margin-right: auto; background-color: rgb(0, 0, 0);"]
 securecomputing.net.au##[style="width: 97%; border: 1px solid rgb(204, 204, 204); margin: 10px 0px; padding: 0px 0px 0px 5px; background-color: White;"]
@@ -9594,8 +9596,8 @@ nzherald.co.nz##.col-440.margin15
 nzherald.co.nz##.footer-logo
 nzherald.co.nz##.marketPlace
 nzherald.co.nz##.mastHead
-nzherald.co.nz##.nzh-bigbanner
 nzherald.co.nz##.shoppingContainer
+nzherald.co.nz##.nzh-bigbanner
 oanda.com###oanda_ads
 oasisactive.com##[style="padding:0px;height:250px;text-align:center;margin-top:20px;"]
 ocia.net###banner
@@ -9653,8 +9655,8 @@ pcmag.com##.content-links
 pcmag.com##.htmlModule
 pcmag.com##.partners
 pcmag.com##.special-offers
-pcmag.com##.sponsor-head
 pcmag.com##.spotlight
+pcmag.com##.sponsor-head
 pcmech.com###banner300
 pcmech.com###homepromo
 pcpro.co.uk###skyScrapper
@@ -9966,6 +9968,7 @@ sify.com##[style="width: 300px; height: 250px;"]
 sify.com##[style="width: 984px; float: left; margin-top: 8px; margin-bottom: 5px;"]
 sify.com##table[height="282"]
 sify.com##TD.border1[valign="top"][height="280"]
+syfy.com###companion_300x250
 silicon.com###sitemap
 siliconchip.com.au##[style="width: 310px; border: 1px solid rgb(51, 102, 153); background: none repeat scroll 0% 0% rgb(227, 235, 243); margin-right: 6px;"]
 siliconvalley.com##.blogBox
@@ -10082,7 +10085,6 @@ surfthechannel.com##.sp-leader-bottom
 swedishwire.com###topbannerspace
 swns.com##.story_mpu
 sxc.hu##.bann
-syfy.com###companion_300x250
 syfy.com###companion_300x250
 sys-con.com###elementDiv
 sys-con.com###header-title
@@ -10723,7 +10725,6 @@ zuula.com###secondary
 ~itavisen.no##.ad468
 ~jobs.wa.gov.au,~pricewatch.com###adContainer
 ~ksl.com,~stadtlist.de,~superbikeplanet.com##.adTitle
-~macrumors.com###banner_topad
 ~mail.google.com##.Ad
 ~mediabistro.com###adLeader
 ~megaallday.com###google_ads_frame1_anchor
@@ -10774,4 +10775,5 @@ zuula.com###secondary
 ~www.yahoo.com##.type_ads
 ~x17online.com##.rightad
 ~zapak.com###sponsorAdDiv
+~macrumors.com###banner_topad
 ~zlinked.com##.advertiser
