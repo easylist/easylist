@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yylCce6hA3Rxomq7WEBfxg
+! Checksum: w8h3nsyG0rF5965JDe97qw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 30 Nov 2010
 ! This list expires after 6 days
@@ -10,8 +10,8 @@
 /addtomyyahoo4.
 /bing-ad-unit/*
 /bloglines.gif
-/btn_share_
 /btn-share.
+/btn_share_
 /button-linkedIn.
 /button_share.
 /delicious-icon.
@@ -20,8 +20,8 @@
 /email_follow.
 /feed-16x16.
 /feed_icon_
-/follow_us_
 /follow-icons.
+/follow_us_
 /followus_linkedin.
 /followus_youtube.
 /footer_myspace.
@@ -90,6 +90,7 @@
 /st_buzz_
 /technorati.png|$domain=~technorati.com
 /upprev_js.
+/w/index.php?title=*:bannercontroller
 /yahoobuzz.
 /youtube-32x32.
 /youtube-icon.
@@ -150,7 +151,6 @@ _share_icon.
 ||votes.buzz.yahoo.com^$third-party
 ||widgets.backtype.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
-/w/index.php?title=*:bannercontroller
 !
 !---------- Facebook Widgets ----------
 !
@@ -392,7 +392,6 @@ _btn_facebook.
 /footer_twitter.
 /ico-twitter.
 /ico_twitter.
-/tweetcount.
 /icon-twitter.
 /icon_twitter.
 /icon_twitter_
@@ -402,6 +401,7 @@ _btn_facebook.
 /social-twitter-
 /st_twitter_
 /tw-icon.
+/tweetcount.
 /twitbadge.
 /twitter-32x32.
 /twitter-button.
@@ -537,6 +537,7 @@ google.com.au##.vspib
 !
 @@/facebook-button.$domain=imdb.com
 @@||api.tweetmeme.com^*$domain=smashingapps.com
+@@||bing.net/videos/thumbnail.aspx?$domain=bing.com
 @@||facebook.com/plugins/likebox.php?$domain=thedailyshow.com|colbertnation.com
 @@||google.com/friendconnect/$script,domain=blogspot.com
 @@||redditarchive.com^
@@ -630,6 +631,7 @@ google.com.au##.vspib
 ###social-share-video
 ###social-toolbar
 ###social-toolbox
+###social-votes
 ###social-widget
 ###social_bookmarking_module
 ###social_bookmarks
@@ -637,7 +639,6 @@ google.com.au##.vspib
 ###social_box
 ###social_buttons
 ###social_icons
-###social-votes
 ###social_share_bar
 ###socialAreaStoryBlog
 ###socialbar
@@ -764,6 +765,7 @@ google.com.au##.vspib
 ##.share-buttons
 ##.share-delicious
 ##.share-links
+##.share-links-footer
 ##.share-opera
 ##.share-page
 ##.share-reddit
@@ -786,11 +788,10 @@ google.com.au##.vspib
 ##.shareButtonsHolder
 ##.shareIconBottom
 ##.shareit
-##.sharepostwide
 ##.sharelink
-##.share-links-footer
 ##.shareListBox
 ##.sharepost
+##.sharepostwide
 ##.sharer_buttons
 ##.shareThis
 ##.sharethis-container
@@ -928,9 +929,9 @@ google.com.au##.vspib
 ##div.sociable
 ##IMG[alt="submit to reddit"]
 ~reddit.com###share-reddit
-~reddit.com##a[href="http://www.reddit.com/submit"]
 ~reddit.com##[href^="http://reddit.com/submit"]
 ~reddit.com##[title="submit to redit"]
+~reddit.com##a[href="http://www.reddit.com/submit"]
 !
 !---------- Site Specific Hiding Rules ----------
 !
@@ -1582,11 +1583,11 @@ switched.com###footer-feeds
 take.fm##.facebook
 take.fm##.twitter
 techcrunch.com##.boxy
+techeye.net##.subscribe
 techi.com###top-icons
 techie-buzz.com###fb_reco
 techie-buzz.com###upprev_box
 techie-buzz.com##.subs
-techeye.net##.subscribe
 techworld.com###loginSubscribeBoxout
 techworld.com###newsletterSidebar
 teenchatdecoder.com##.subscribe
