@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: A9hTxalulJJoppHPue8IVw
+! Checksum: igT/42831oGlOMOC5DJvNw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 3 Dec 2010
 ! This list expires after 6 days
@@ -83,8 +83,8 @@
 /social-rss-
 /social-rss.
 /social-yt.
-/socialbar-
 /socialbadges.
+/socialbar-
 /socialicons/*
 /socialmedia/*$image,script
 /st_add-this_
@@ -223,7 +223,6 @@ _share_icon.
 ##.sidebar-facebook
 ##.st_facebook_custom
 ##.ymsb-facebook-module
-##[alt="Subscribe via Facebook"]
 ##[alt="Become a Fan on Facebook"]
 ##[alt="Connect with us on Facebook"]
 ##[alt="Facebook - Click Here To Become A Fan!"]
@@ -236,6 +235,7 @@ _share_icon.
 ##[alt="Join our Facebook group"]
 ##[alt="Join us on Facebook"]
 ##[alt="Share on Facebook"]
+##[alt="Subscribe via Facebook"]
 ##[name="fb_share"]
 ##[title="Be Our Fan on Facebook!"]
 ##[title="Become a Facebook Fan"]
@@ -341,8 +341,6 @@ _btn_facebook.
 ###twitterContainer
 ###twitterfeed
 ###twitterFollowBadge
-##[alt="Subscribe via Twitter"]
-##[alt="Tweet Page"]
 ##.actions_twitter
 ##.block-idg_twitter
 ##.follow-twitter
@@ -375,6 +373,8 @@ _btn_facebook.
 ##[alt="Follow us to Twitter.com"]
 ##[alt="follow with twitter"]
 ##[alt="Share on Twitter"]
+##[alt="Subscribe via Twitter"]
+##[alt="Tweet Page"]
 ##[alt="Zu Twitter senden"]
 ##[name="Click to follow us on twitter"]
 ##[title="Click to share this post on Twitter"]
@@ -449,7 +449,6 @@ _share_twitter.
 !
 ###fc-friendbar-outer
 ###share-buzz
-##[alt="Add to Google"]
 ##.buzz-counter-long
 ##.follow-buzz
 ##.follow-igoogle
@@ -457,6 +456,7 @@ _share_twitter.
 ##.google-buzz-button
 ##.post_share_buzz
 ##.share-buzz
+##[alt="Add to Google"]
 ##[title="Share on Google Buzz"]
 ##[title="Share with Google Buzz"]
 /addtogoogle.
@@ -558,22 +558,13 @@ google.com.au##.vspib
 !
 !---------- Generic Hiding Rules ----------
 !
-###blog_subscription-3
-###social_menuShare1
-##.email_subscribe_container
-##.post_share_stuff
-##.shareLike
-##[alt="Email this post"]
-##[alt="Site Feed"]
-##[alt="Subscribe via E-mail Newsletter"]
-##[alt="Subscribe via RSS"]
-##[title="Share with others"]
 ###article_actions_socialmedia
 ###article_tools_share
 ###articleNewsletterModule
 ###badge_reddit
 ###bing_header_container
 ###blog-share-widget
+###blog_subscription-3
 ###bookmarks_wrap
 ###buzz-bottom
 ###buzz-top
@@ -638,6 +629,7 @@ google.com.au##.vspib
 ###ShareTools
 ###sharetop_share
 ###sidebar_social_icons
+###singlesubscribe
 ###social-bar
 ###social-icons
 ###social-link
@@ -658,6 +650,7 @@ google.com.au##.vspib
 ###social_box
 ###social_buttons
 ###social_icons
+###social_menuShare1
 ###social_share_bar
 ###socialAreaStoryBlog
 ###socialbar
@@ -739,6 +732,7 @@ google.com.au##.vspib
 ##.diggShare
 ##.dsq-global-toolbar-container
 ##.email-to-a-friend
+##.email_subscribe_container
 ##.Entry_Sharer_Buttons
 ##.fdbk_tab_right
 ##.flattr-button
@@ -769,6 +763,7 @@ google.com.au##.vspib
 ##.post-share-panel
 ##.post-social
 ##.post_share_icons
+##.post_share_stuff
 ##.post_share_stumble
 ##.publishToStatus
 ##.right-share-module
@@ -807,6 +802,7 @@ google.com.au##.vspib
 ##.shareButtonsHolder
 ##.shareIconBottom
 ##.shareit
+##.shareLike
 ##.sharelink
 ##.shareListBox
 ##.sharepost
@@ -894,6 +890,7 @@ google.com.au##.vspib
 ##[alt="Bookmark and Share"]
 ##[alt="Clip to Evernote"]
 ##[alt="Connect with us on LinkedIn"]
+##[alt="Email this post"]
 ##[alt="Follow us at Youtube"]
 ##[alt="Follow us on LinkedIn"]
 ##[alt="Follow us to Youtube.com"]
@@ -908,10 +905,13 @@ google.com.au##.vspib
 ##[alt="Share This"]
 ##[alt="Share this"]
 ##[alt="Share/Bookmark"]
+##[alt="Site Feed"]
 ##[alt="SocialTwist Tell-a-Friend"]
 ##[alt="Subscribe by email"]
 ##[alt="Subscribe to RSS Feed"]
+##[alt="Subscribe via E-mail Newsletter"]
 ##[alt="Subscribe via RSS Feed"]
+##[alt="Subscribe via RSS"]
 ##[alt="Valid XHTML 1.0 Transitional Document"]
 ##[alt="Watch Us on You Tube"]
 ##[alt="Watch us on YouTube"]
@@ -925,6 +925,7 @@ google.com.au##.vspib
 ##[title="Share this story"]
 ##[title="Share to Facebook"]
 ##[title="Share with Fark"]
+##[title="Share with others"]
 ##[title="Submit this post on newsvine.com."]
 ##[title="Submit this post on reddit.com."]
 ##[title="Subscribe in a reader"]
@@ -1095,6 +1096,7 @@ comedycentral.com##.comedy_share
 comedycentral.com##.comedy_share_title
 comedycentral.com##.meta_holder
 commandandconquer.com##[title="Facebook"]
+comodo.com##.inner-social
 comodo.com##[href="http://www.facebook.com/ComodoHome"]
 complex.com##.follow
 complex.com##DIV[id^="digg-widget-"]
@@ -1133,8 +1135,10 @@ dailygalaxy.com###message_digg
 dailygalaxy.com###yahoo
 dailygalaxy.com##[style="float:left;margin:0;padding:0;width:280px;height:90px;margin-top:20px;text-align:center;margin-left:55px;"]
 dailygalaxy.com##[style="float:left;text-align:center;padding-top: 20px;font-size:11px;text-transform: uppercase;letter-spacing: .2em;padding-left:95px;"]
+dailymotion.com###share
 datingish.com##[alt="share"]
 davemcelfatrick.com##.social
+dearblankpleaseblank.com###sharing
 democracynow.org##[alt="Facebook"]
 democracynow.org##[alt="Podcast/RSS"]
 democracynow.org##[alt="Twitter"]
@@ -1192,6 +1196,7 @@ forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
 foxnews.com##.share
+freedocumentaries.org##.socialBox
 freemake.com###subscribe
 freemake.com##.bookmark
 freemake.com##.community
@@ -1446,6 +1451,10 @@ nirmaltv.com##.rss
 nirmaltv.com##.twitter
 nj.com##.share
 nj.com##.sharing_wide
+nokia.co.in###follownokia-tk
+nokia.co.in##[alt="Facebook logo"]
+nokia.co.in##[alt="Twitter logo"]
+nokia.co.in##[alt="YouTube logo"]
 nola.com###m_fb
 nola.com##.helper
 nola.com##.mobile_lrg
@@ -1600,6 +1609,9 @@ sugarsync.com###hpsocial
 sulekha.com##[src="/images/facebook.gif"]
 surfgarden.de##.rss
 switched.com###footer-feeds
+switched.com##.rss
+switched.com##[title="Facebook"]
+switched.com##[title="Twitter"]
 take.fm##.facebook
 take.fm##.twitter
 techcrunch.com##.boxy
@@ -1614,6 +1626,8 @@ techworld.com###newsletterSidebar
 teenchatdecoder.com##.subscribe
 tekw.org##.subscribe_content
 tether.com##.social
+theadvocates.org##.closingSocial
+theadvocates.org##.newsletterLink
 theatlantic.com###followNav
 theatlantic.com###newsletters
 theatlantic.com###newsstands
@@ -1722,6 +1736,10 @@ upi.com###b_tbr
 upi.com###b_tbr_c
 upi.com###ffb_button_larger
 uproxx.com###block-728
+urbandictionary.com##.facebook_image
+urbandictionary.com##.rss_image
+urbandictionary.com##.twitter_image
+urbandictionary.com##.zazzle_links
 usatoday.com###section-nav
 usatoday.com###social2
 usatoday.com##.subscribe
@@ -1782,23 +1800,6 @@ yoink.com##.twitter
 youtube.com###watch-share
 zap2it.com###twitter
 zdnetasia.com###follow
-comodo.com##.inner-social
-dailymotion.com###share
-dearblankpleaseblank.com###sharing
-freedocumentaries.org##.socialBox
-nokia.co.in###follownokia-tk
-nokia.co.in##[alt="Facebook logo"]
-nokia.co.in##[alt="Twitter logo"]
-nokia.co.in##[alt="YouTube logo"]
-switched.com##.rss
-switched.com##[title="Facebook"]
-switched.com##[title="Twitter"]
-theadvocates.org##.closingSocial
-theadvocates.org##.newsletterLink
-urbandictionary.com##.facebook_image
-urbandictionary.com##.rss_image
-urbandictionary.com##.twitter_image
-urbandictionary.com##.zazzle_links
 ~addthis.com##[href="http://www.addthis.com/bookmark.php"]
 ~facebook.com##.connect_widget
 ~infoworld.com##.share_wrapper
