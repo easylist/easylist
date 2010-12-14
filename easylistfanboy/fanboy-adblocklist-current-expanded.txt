@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ZvLTFF7Dn28/YTqqYoRE+g
+! Checksum: D/r5w2XdNnMHPCzoJUssmw
 ! Fanboy's Adblock list
 ! Updated: 14 Dec 2010
 ! This list expires after 4 days
@@ -17,9 +17,9 @@
 -ad-limits.
 -ad-manager/
 -ad-util-
+-ad.jpg?
 -ad2.gif
 -ad3.jpg
--ad.jpg?
 -ad_injector/
 -adhelper.
 -ads-bottom.
@@ -211,6 +211,7 @@
 /ad1.jpg
 /ad2.htm
 /ad300.htm
+/ad300x145.
 /ad728x15.
 /ad?currentview=
 /ad?sponsor=
@@ -340,7 +341,6 @@
 /AdHandlers2.
 /adheader.
 /adHeaderTxt.
-/ad300x145.
 /adhug_jc.
 /adiframe.
 /adiframe/*
@@ -1810,14 +1810,14 @@ images/ads/*
 ||mumbaimirror.com/ads/
 ||mumbaimirror.com^*/adwords/
 ||myretrotv.com^*_horBnr.jpg
-||nme.com/js/takeoverlay.js
-||nme.com/themes/takeovers/
 ||nationalpubpoker.com.au/images/banners/
 ||nationalpubpoker.com.au/images/frontpage/corporate_ban
 ||nbcuni.com^*_Banner_120x60.gif,first-party
 ||neowin.net/images/adbot_promos/
 ||neowin.net/images/atlas/aww
 ||news.com.au^*/promotions/
+||nme.com/js/takeoverlay.js
+||nme.com/themes/takeovers/
 ||noram.srv.ysm.yahoo.com^
 ||npplpoker.com.au/images/banners/
 ||npplpoker.com.au/images^*/corporate_ban
@@ -1908,10 +1908,10 @@ images/ads/*
 ||yahoo.com/ysmload.
 ||yfrog.com/images/contests/
 ||yfrog.com/ym.php?
+||ytimg.com^*_background.jpg?
+||ytimg.com^*_banner.
 ||ytmnd.com/ugh
 ||yudu.com^*_intro_ads
-||ytimg.com^*_banner.
-||ytimg.com^*_background.jpg?
 ||zap2it.com/dfp/production/$script
 ||zeenews.com/ad.htm
 ||ziffdavisenterprise.com/promos/
@@ -2510,9 +2510,9 @@ images/ads/*
 ||neweramediaworks.com^
 ||newzfind.com/ads/
 ||nexac.com^
+||ngads.com^
 ||nijobfinder.co.uk/affiliates/
 ||northmay.com^
-||ngads.com^
 ||npvos.com^
 ||nuggad.net^
 ||nvero.net^
@@ -5155,6 +5155,7 @@ youporn.com###producer
 ###ads_mads_r1
 ###ads_mads_r2
 ###ads_right
+###ads_section_textlinks
 ###ads_sidebar_bgnd
 ###ads_sidebar_roadblock
 ###ads_space
@@ -6103,6 +6104,7 @@ youporn.com###producer
 ###right_column_ads
 ###right_column_internal_ad_container
 ###right_column_top_ad_unit
+###right_top_gad
 ###RightAd
 ###rightAd
 ###rightad
@@ -6363,8 +6365,6 @@ youporn.com###producer
 ###topleaderboardad
 ###topMPU
 ###topNavLeaderboardAdHolder
-##.specials_ads
-###ads_section_textlinks
 ###toppannonse
 ###topright-ad
 ###toprightad
@@ -6576,6 +6576,7 @@ youporn.com###producer
 ##.ad-unit-300-wrapper
 ##.ad-unit-anchor
 ##.ad-unit-top
+##.ad-vertical
 ##.ad-wrap
 ##.ad-wrapper
 ##.ad-zone-s-q-l
@@ -6642,8 +6643,8 @@ youporn.com###producer
 ##.ad728x90WithLabel
 ##.ad768x90
 ##.ad8
-##.ad980x50box
 ##.ad954x60
+##.ad980x50box
 ##.ad_0
 ##.ad_1
 ##.Ad_120x600
@@ -6993,6 +6994,7 @@ youporn.com###producer
 ##.ads_topright
 ##.ads_wide
 ##.adsBelowHeadingNormal
+##.adsbg300
 ##.adsborder
 ##.adsbottom
 ##.adsBox
@@ -7028,7 +7030,6 @@ youporn.com###producer
 ##.adsenseBlock
 ##.adsenseGreenBox
 ##.AdSenseLeft
-##.ad-vertical
 ##.adsenseSky
 ##.adsenvelope
 ##.adSepDiv
@@ -7221,7 +7222,6 @@ youporn.com###producer
 ##.aisle-ad
 ##.aisoad
 ##.alt_ad
-##.adsbg300
 ##.annonce_textads
 ##.annonstext
 ##.apiAdMarkerAbove
@@ -7515,6 +7515,7 @@ youporn.com###producer
 ##.google_ad
 ##.google_ad336
 ##.google_ad_right
+##.google_ad_wide
 ##.google_add_container
 ##.google_ads_bom_title
 ##.google_ads_content
@@ -7529,7 +7530,6 @@ youporn.com###producer
 ##.GoogleAdInfo
 ##.googleAds
 ##.googleads
-##.google_ad_wide
 ##.googleads_300x250
 ##.googleAds_article_page_above_comments
 ##.googleads_title
@@ -7565,13 +7565,12 @@ youporn.com###producer
 ##.header-ad
 ##.header-advert
 ##.header_ad
-##.header_advertisement
-##.right_advertisement
-##.header_advertisement_text
 ##.header_ad_2
 ##.header_ad_div
 ##.header_adsense_banner
 ##.header_advert
+##.header_advertisement
+##.header_advertisement_text
 ##.header_advertisment
 ##.headerad
 ##.headerAds
@@ -7855,6 +7854,7 @@ youporn.com###producer
 ##.right_ad
 ##.right_ad_text
 ##.right_ads
+##.right_advertisement
 ##.right_box_ad
 ##.right_col_ad
 ##.right_content_ad
@@ -7916,7 +7916,6 @@ youporn.com###producer
 ##.showAd_Yes
 ##.ShowAdDisplay
 ##.showcaseAd
-##.side-ad-300
 ##.side-ad
 ##.side-ad-120-bottom
 ##.side-ad-120-middle
@@ -7924,6 +7923,7 @@ youporn.com###producer
 ##.side-ad-160-bottom
 ##.side-ad-160-middle
 ##.side-ad-160-top
+##.side-ad-300
 ##.side-ad-300-bottom
 ##.side-ad-300-middle
 ##.side-ad-300-top
@@ -7992,6 +7992,7 @@ youporn.com###producer
 ##.smart_ads_bom_title
 ##.southad
 ##.specialAd175x90
+##.specials_ads
 ##.speedyads
 ##.spl_ad
 ##.spl_ad2
@@ -8001,7 +8002,6 @@ youporn.com###producer
 ##.spon-links
 ##.spon_link
 ##.sponlinkbox
-##.sponsormsg
 ##.spons-link
 ##.sponsBox
 ##.sponserLink
@@ -8046,6 +8046,7 @@ youporn.com###producer
 ##.SponsorIsland
 ##.sponsorLabel
 ##.sponsorLinks
+##.sponsormsg
 ##.sponsorsbig
 ##.sponsorship_ad
 ##.sponsorshipContainer
@@ -8155,8 +8156,8 @@ youporn.com###producer
 ##.type_ads_default
 ##.tz_ad_widget
 ##.ukAds
-##.uniAds
 ##.undertimyads
+##.uniAds
 ##.unSponsored
 ##.vAd_160x600
 ##.ve2_post_adsense
@@ -8315,8 +8316,8 @@ popbitch.com##[style="width: 300px; height: 250px; background-color: rgb(238, 23
 robotswithfeelings.com##[style="height: 250px; width: 300px; background-color: rgb(0, 0, 0);"]
 robotswithfeelings.com##[style="height: 90px; width: 728px; margin-left: auto; margin-right: auto; background-color: rgb(0, 0, 0);"]
 securecomputing.net.au##[style="width: 97%; border: 1px solid rgb(204, 204, 204); margin: 10px 0px; padding: 0px 0px 0px 5px; background-color: White;"] 	
-sourceforge.net##div[style="border-bottom: 2px solid rgb(33, 73, 94); background: -moz-linear-gradient(100% 100% 90deg, rgb(41, 93, 120), rgb(67, 136, 171) 100%) repeat scroll 0% 0% rgb(67, 136, 171); height: 100px; padding: 5px 0pt; text-align: center;"]
 slashgear.com##[style="width: 300px; height: 100px; padding: 10px; background-color: rgb(242, 242, 242); border: 1px solid rgb(221, 221, 221);"]
+sourceforge.net##div[style="border-bottom: 2px solid rgb(33, 73, 94); background: -moz-linear-gradient(100% 100% 90deg, rgb(41, 93, 120), rgb(67, 136, 171) 100%) repeat scroll 0% 0% rgb(67, 136, 171); height: 100px; padding: 5px 0pt; text-align: center;"]
 tech2.in.com##[style="width: 300px; border: 1px solid rgb(182, 221, 236); margin: 10px 0px;"]
 technewsworld.com##[style="clear: left; padding: 5px; border-top: 1px solid rgb(203, 203, 203); border-bottom: 1px solid rgb(203, 203, 203);"]
 thegauntlet.ca##div[style="width: 170px; height: 620px; background: url(\"/advertisers/your-ad-here-160x600.gif\") repeat scroll 0% 0% rgb(204, 204, 204); vertical-align: top; text-align: center;"]
@@ -9394,8 +9395,8 @@ independentmail.com###content_match_wrapper
 independentmail.com##.bigbox_wrapper
 indianapublicmedia.org##.med-rect
 indianexpress.com###shopping_deals
-indiatimes.com##.InSkinHide
 indiatimes.com###dv_relonaMain
+indiatimes.com##.InSkinHide
 indiatimes.com##.midadd
 indiatimes.com##[style="float: left; padding-left: 5px;"]
 indiatimes.com##[style="height:100px;"]
@@ -9965,9 +9966,9 @@ njuice.com##.sponsb
 nme.com###editorial_sky
 nme.com###mpu
 nme.com###skyscraper
-nme.com###takeover_right
-nme.com###takeover_left
 nme.com###takeover_head
+nme.com###takeover_left
+nme.com###takeover_right
 nola.com##.box_grayoutline
 northjersey.com##.detail_boxwrap
 northjersey.com##.detail_pane_text
@@ -10449,8 +10450,8 @@ softarchive.net##[style="border: 2px dashed rgb(0, 0, 0); padding: 15px 3px; fon
 softonic.com###ad_related_links_div_program
 softonic.com###free_download_special_ad
 softonic.com###free_download_sponsor
-softpedia.com##.pagehead_op2
 softonic.com##.banner_box
+softpedia.com##.pagehead_op2
 softpedia.com##[width="600"][height="90"]
 someecards.com###footer_leaderboard_holder
 songlyrics.com##.content-bottom-banner
