@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Gck8Sx9IP2Mf0Sf8CyLL2A
+! Checksum: mdECdOciOFzMtGhBIXsfcQ
 ! Fanboy's Adblock list
 ! Updated: 23 Dec 2010
 ! This list expires after 4 days
@@ -342,9 +342,9 @@
 /adhandler.
 /AdHandler/*
 /AdHandlers2.
-/adhomepage2.
 /adheader.
 /adHeaderTxt.
+/adhomepage2.
 /adhug_jc.
 /adiframe.
 /adiframe/*
@@ -383,9 +383,9 @@
 /AdManProxy.
 /admarket/*
 /admaster.
-/admeld.
 /admedia.
 /admedia/*
+/admeld.
 /admentor/*
 /admin/ad_
 /adnetmedia.
@@ -584,7 +584,6 @@
 /adtology.
 /adtomo/www/*
 /adtrack/*
-/adWiz.mpl
 /adtracker.
 /adtracking/*
 /adttext.
@@ -635,6 +634,7 @@
 /AdvScript.
 /advscripts/*
 /adwidgets/*
+/adWiz.mpl
 /AdWorks/*
 /adx.js
 /adx2.js
@@ -1973,7 +1973,6 @@ images/ads/*
 ||ad.*doubleclick.net/adx/
 ||ad.au.doubleclick.net/ad
 ||ad.be.doubleclick.net/ad/
-||ad.uk.doubleclick.net/ad/
 ||ad.bnmla.com^
 ||ad.ca.doubleclick.net^
 ||ad.doubleclick.net/ad/
@@ -1995,11 +1994,13 @@ images/ads/*
 ||ad.sensismediasmart.com.au^
 ||ad.sharethis.com^
 ||ad.sponsoreo.com^
+||ad.uk.doubleclick.net/ad/
 ||ad.valuecalling.com^
 ||ad.wsod.com^
 ||ad.zanox.com^
 ||ad20.net/
 ||adaos-ads.net^
+||adap.tv/redir/plugins/banner/
 ||adbard.net^
 ||adbasket.net^
 ||adblade.com^
@@ -2161,13 +2162,13 @@ images/ads/*
 ||advertserve.com^
 ||advertstatic.com^
 ||advertstream.com^
+||advg.jp^
 ||adviva.net^
 ||advpoints.com^
 ||adwires.com^
 ||adzerk.net^
 ||adzmob.com^
 ||afcyhf.com^
-||adap.tv/redir/plugins/banner/
 ||aff.biz/images/banners/
 ||affil.mupromo.com^
 ||affiliateer.com^
@@ -2883,6 +2884,7 @@ images/ads/*
 @@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au|classicrockfm.com.au
 @@||ads.adap.tv/control?$object_subrequest
 @@||ads.adap.tv/crossdomain.xml$object_subrequest
+@@||ads.bridgetrack.com/ads_v2/script/btwrite.js$domain=ads.bridgetrack.com
 @@||ads.cartoonnetwork.com^$subdocument
 @@||ads.clicksor.com/showad.php?*&adtype=7&$script,domain=rapid8.com
 @@||ads.monster.com^*=375x154&$domain=careerone.com.au
@@ -2901,12 +2903,12 @@ images/ads/*
 @@||advertise.about.com/images/*_$image
 @@||advertising.scoop.co.nz/wp-content/
 @@||affiliates.jlist.com/ads/$domain=jbox.com,image
-@@||sec-ads.bridgetrack.com/ads_img/
-@@||ads.bridgetrack.com/ads_v2/script/btwrite.js$domain=ads.bridgetrack.com
 @@||apple.com^*/includes/ads
 @@||applevideo.edgesuite.net/admedia/*.flv
 @@||apwg.org/images/sponsors/
 @@||astw.adgear.com/adgear.js/$domain=tetesaclaques.tv
+@@||atdmt.com/ds/YUSPTSPRTSPR/
+@@||atdmt.com^$domain=sprint.com,image,subdocument
 @@||b.scorecardresearch.com/b?$domain=last.fm
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
 @@||bikeexchange.com.au/adverts/
@@ -2987,6 +2989,7 @@ images/ads/*
 @@||sankakucomplex.com^$script
 @@||sankakustatic.com^$script
 @@||scorecardresearch.com/beacon.js$domain=mainstreet.com|thinkatheist.com|deviantart.com|linkinpark.com|ning.com|thedailybeast.com
+@@||sec-ads.bridgetrack.com/ads_img/
 @@||serw.clicksor.com/newserving/getkey.php?$script,domain=rapid8.com
 @@||sfx-images.mozilla.org/*x$domain=spreadfirefox.com,image
 @@||sfx-images.mozilla.org/affiliates/Buttons/$domain=spreadfirefox.com,image
@@ -3014,8 +3017,6 @@ images/ads/*
 @@||wefindads.co.uk/images/ad-image-$image
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
 @@||zedo.com/$domain=rajshritalent.com|rajshri.com,object_subrequest
-@@||atdmt.com^$domain=sprint.com,image,subdocument
-@@||atdmt.com/ds/YUSPTSPRTSPR/
 !
 !---------- Anti Adblock Rules ----------
 !
@@ -5493,9 +5494,9 @@ youporn.com###producer
 ###banneradspace
 ###bannerAdTop
 ###bannerGoogle
-###bbccom_leaderboard_container
 ###bannerhead
 ###baseboard-ad
+###bbccom_leaderboard_container
 ###belowad
 ###belowheaderad
 ###bg-footer-ads
@@ -6296,13 +6297,13 @@ youporn.com###producer
 ###sponlinks
 ###spons_links
 ###sponsAds
-###sponsor_bar
 ###SponseredLinks
 ###sponseredlinks
 ###sponsLinks
 ###sponsor-links
 ###sponsor_300x250
 ###sponsor_ads
+###sponsor_bar
 ###sponsor_div
 ###sponsor_header
 ###sponsor_partner_single
@@ -6793,7 +6794,6 @@ youporn.com###producer
 ##.ad_container
 ##.ad_content_wide
 ##.Ad_D
-##.advertiseBlack
 ##.ad_descriptor
 ##.ad_disclaimer
 ##.ad_flash
@@ -7244,6 +7244,7 @@ youporn.com###producer
 ##.advertise_link
 ##.advertise_link_sidebar
 ##.advertise_txt
+##.advertiseBlack
 ##.advertisement-2
 ##.advertisement-728x90
 ##.advertisement-banner
@@ -8277,13 +8278,13 @@ youporn.com###producer
 ##.wide_grey_ad_box
 ##.wideAdTable
 ##.widget-ad
-##.widget_ads
 ##.widget-ad300x250
 ##.widget-adsense
 ##.widget-advertisement
 ##.widget-entry-ads-160
 ##.widget_ad
 ##.widget_ad_rotator
+##.widget_ads
 ##.widget_island_ad
 ##.widget_sdac_bottom_ad_widget
 ##.widget_sdac_skyscraper_ad_widget
@@ -8416,7 +8417,6 @@ opendiary.com##[style="width: 728px; height: 90px; margin: 0px auto; padding: 0p
 oprah.com##[style="color: rgb(204, 204, 204); line-height: 13px;"]
 popbitch.com##[style="width: 300px; height: 250px; background-color: rgb(238, 238, 238);"]
 robotswithfeelings.com##[style="height: 250px; width: 300px; background-color: rgb(0, 0, 0);"]
-zacks.com##DIV[style="width: 336px; text-align: center; font-weight: bold; font-size: 11pt; border: 1px solid rgb(204, 204, 204);"]
 robotswithfeelings.com##[style="height: 90px; width: 728px; margin-left: auto; margin-right: auto; background-color: rgb(0, 0, 0);"]
 securecomputing.net.au##[style="width: 97%; border: 1px solid rgb(204, 204, 204); margin: 10px 0px; padding: 0px 0px 0px 5px; background-color: White;"] 	
 slashgear.com##[style="width: 300px; height: 100px; padding: 10px; background-color: rgb(242, 242, 242); border: 1px solid rgb(221, 221, 221);"]
@@ -8443,6 +8443,7 @@ worstpreviews.com##[style="width: 300px; height: 250px; background-color: rgb(25
 worstpreviews.com##[style="width: 728px; height: 90px; background-color: rgb(255, 255, 255);"]
 worstpreviews.com##td[style="font-family: Arial; font-size: 12px; color: rgb(51, 51, 51); padding: 10px 0px;"]
 yourtomtom.com##[style="height: 600px; padding: 6px 0pt; border: 1px solid rgb(180, 195, 154); background: none repeat scroll 0% 0% rgb(249, 252, 241); margin-top: 18px;"]
+zacks.com##DIV[style="width: 336px; text-align: center; font-weight: bold; font-size: 11pt; border: 1px solid rgb(204, 204, 204);"]
 !
 !---------------------- Site specific hiding rules ----------------------
 !
@@ -10182,7 +10183,6 @@ p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
 pagead2.googlesyndication.com##TABLE[style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255);"]
 pagesinventory.com##.tpromo
-people.co.uk##.promotop
 paidcontent.org###sponsors
 palemoon.org##[width="160"][style="padding: 0px; vertical-align: top;"]
 palmbeachpost.com###cxnAdrail
@@ -10253,6 +10253,7 @@ pennlive.com##.box_grayoutline
 penny-arcade.com##.funding-horizontal
 penny-arcade.com##.funding-vertical
 penny-arcade.com##.promos-horizontal
+people.co.uk##.promotop
 people.com###globalrecirc
 people.com###treatYourself
 peoplepets.com###advertisement
@@ -11018,6 +11019,8 @@ weatherbug.co.uk###wXcds2
 weatherbug.co.uk###wXcds4
 web.id###content-top
 webdesignerdepot.com##.xoxo
+webhostingtalk.com###sponsored
+webhostingtalk.com###sponsored-clear
 webmd.com##.attrib_right_fmt
 webmd.com##.attribution
 webmd.com##.funded_area
@@ -11042,10 +11045,8 @@ whatismyipaddress.com##TD[width="160"]
 whatsmyip.org##TR[height="95"]
 wheels.ca##[style="color: #999; font-size: 9px; clear: both; border-top: solid 1px #eee; padding-top: 15px;"]
 whenitdrops.com###sponsors
-whirlpool.net.au##.abvertibing_block
-webhostingtalk.com###sponsored
-webhostingtalk.com###sponsored-clear
 whereis.com###location_advertisement
+whirlpool.net.au##.abvertibing_block
 who.is###namecom_ad_hosting_main
 wifinetnews.com##table[width="310"][height="260"]
 wikia.com###monaco_footer
@@ -11234,8 +11235,8 @@ ytmnd.com###please_dont_block_me
 ytmnd.com###top_ayd
 ytmnd.com##TD[colspan="5"]
 yurock.net###ca
-zam.com###bannerMain
 zacks.com##div[style="width:336px; text-align:center; font-weight:bold; font-size:11pt; border:1px solid #cccccc;"]
+zam.com###bannerMain
 zap2it.com###aff_rightbar
 zap2it.com##.zc-grid-ad
 zapak.com###ZAPADS_Middle
@@ -11268,6 +11269,7 @@ zuula.com###secondary
 ~2gb-hosting.com,~tracfone.com,~addoway.com,~apple.com,~dailykos.com,~facebook.com,~harpers.org,~radio.de,~tomwans.com,~tonprenom.com,~www.google.com,~zuploads.com,~wheelsmag.com.au,~zuploads.com,~superbikeplanet.com###ads
 ~4wheeloffroad.com,~fourwheeler.com,~jpmagazine.com##.adleft
 ~adblockplus.org###adblock
+~ads.bridgetrack.com,~citibank.com###FLASH_AD
 ~allieiswired.com###banner-ad
 ~allthingsd.com###skybox-ad
 ~alluc.org##.adsbottombox
@@ -11320,7 +11322,6 @@ zuula.com###secondary
 ~megaallday.com###google_ads_frame1_anchor
 ~mercurynews.com###adPosition0
 ~metblogs.com,~oreilly.com###adspace
-~ads.bridgetrack.com,~citibank.com###FLASH_AD
 ~morningstar.se###top_ad
 ~mozdev.org##.adblock
 ~mycareer.com.au,~nytimes.com##.adContainer
