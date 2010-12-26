@@ -1,10 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: XUt0aSRUtArt3mWZAnTx6g
+! Checksum: 2JjZvZnstSH4Gfad6mllSw
 ! Fanboy's Czech-addon Adblock list 
-! Updated: 20 Dec 2010
+! Updated: 26 Dec 2010
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
+!
+! ---------- Generic Blocking Rules ----------
 !
 .com/bannery/
 .cz/ads/$~object_subrequest
@@ -13,8 +15,8 @@
 .cz/bannery/
 .cz/bannery_
 .cz/files/reklama/
-.cz/img/banner$domain=~abecedaher.cz
 .cz/img/banery/
+.cz/img/banner$domain=~abecedaher.cz
 .cz/o/poutani^
 .cz/reklama/
 .cz/rs/get-iframe.php?
@@ -43,37 +45,14 @@
 /site-advert.js
 /x-cz/rek/*
 _clickthru.swf?
+!
+! ---------- 1st party blocking rules ----------
+!
 ||1.im.cz/ad/$image
 ||abecedaher.cz/index_banner_
-||ad.adfox.cz^$third-party,domain=~titulky.com
-||ad.autobazar.cz^$third-party
-||ad.eva.cz^$third-party
-||ad.seznam.cz^
-||ad.surtep.cz^$third-party
-||ad1.kde.cz^
-||admarket.cz^$third-party
-||admatik.pl^$third-party
-||adocean.pl^$third-party
-||adtaily.pl^
-||advantage.as^$third-party
-||adverts.cz^
-||aukro.cz/ap/ap_show.php?$third-party
 ||autoesa.cz/files/bannery/
-||b.lookit.cz^$third-party,subdocument
-||banan.cz^$third-party
-||banner.ifortuna.cz^$third-party
-||banners.onebit.cz^$third-party
-||bbmedia.cz^$third-party
-||betclick.com^$third-party
-||bidmax.cz^$third-party
 ||blisty.cz/ad/
-||blogvertising.pl^
-||darky.heureka.cz^$third-party
 ||data.idnes.cz/soutez/
-||dev.youcan.cz^$third-party
-||dot.idot.cz^$third-party
-||ecigareta.eu^$third-party
-||elektro-1.cz/InterChange^$third-party
 ||espoluprace.cz/affiliate/
 ||geewa.ws/js/ad.
 ||hry.cz/t/h/ad/
@@ -81,48 +60,80 @@ _clickthru.swf?
 ||i32.tinypic.com/sm84tl.gif
 ||idnes.cz/js/ad/
 ||idnes.cz/r.asp?
-||img.war-king.cz/$object,third-party
 ||img.war-king.cz/banner_
 ||img.war-king.cz/ziskejto.gif
-||intext.billboard.cz^$third-party
-||intext.lookit.cz^$third-party
-||intext.wdt.cz^$third-party
 ||kde.cz/ban/
 ||kurzy.cz/e/adv?
 ||lphard.cz/images/banners/
-||megadarky.cz^$third-party
-||n.hyperinzerce.cz^
 ||naseadresa.cz/cz/$subdocument
 ||naseadresa.cz^*/flash/baner
+||parabola.cz/img_inzerent/flash_
+||prvnizpravy.cz/repository/banner
+||rocketdock.com/images/screenshots/thumbnails/8-3.png
+||sagit.cz/inzarchiv/bannery/
+||super.cz/static/flash/
+||superhry.cz/design/09/banner120.gif
+||superhry.cz/fox_$subdocument
+||superhry.cz/media/
+||titulky.com/vodafone-500.gif
+||uloz.to/bannery/
+||uloz.to/img/bannery/
+||uschovna.cz/dt-dancer-234x60.swf
+||war-net.cz/300x200.gif
+||war-net.cz/aukcent.gif
+||war-net.cz/vyhraj.swf
+||warcenter.cz/banner/
+||warforum.cz/flyweb/
+||warforum.cz/inau/
+||warforum.cz/trika/
+!
+! ---------- General blocking rules ----------
+!
+||ad.seznam.cz^
+||ad1.kde.cz^
+||adtaily.pl^
+||adverts.cz^
+||blogvertising.pl^
+||n.hyperinzerce.cz^
+||stat.sport.cz^
+||takeit.idnes.cz^$subdocument
+!
+! ---------- 3rd party blocking rules ----------
+!
+||ad.adfox.cz^$third-party,domain=~titulky.com
+||ad.autobazar.cz^$third-party
+||ad.eva.cz^$third-party
+||ad.surtep.cz^$third-party
+||admarket.cz^$third-party
+||admatik.pl^$third-party
+||adocean.pl^$third-party
+||advantage.as^$third-party
+||aukro.cz/ap/ap_show.php?$third-party
+||b.lookit.cz^$third-party,subdocument
+||banan.cz^$third-party
+||banner.ifortuna.cz^$third-party
+||banners.onebit.cz^$third-party
+||bbmedia.cz^$third-party
+||betclick.com^$third-party
+||bidmax.cz^$third-party
+||darky.heureka.cz^$third-party
+||dev.youcan.cz^$third-party
+||dot.idot.cz^$third-party
+||ecigareta.eu^$third-party
+||elektro-1.cz/InterChange^$third-party
+||img.war-king.cz/$object,third-party
+||intext.billboard.cz^$third-party
+||intext.lookit.cz^$third-party
+||intext.wdt.cz^$third-party
+||megadarky.cz^$third-party
 ||net4ge.cz^$third-party
 ||net4ge.net^$third-party
 ||observer.cz^$third-party
 ||out-ng.sklik.cz^$third-party
 ||out.sklik.cz^$third-party
-||parabola.cz/img_inzerent/flash_
 ||porno-tv.spustit.cz^$third-party
-||prvnizpravy.cz/repository/banner
-||rocketdock.com/images/screenshots/thumbnails/8-3.png
-||sagit.cz/inzarchiv/bannery/
 ||script.zebricek.cz^$third-party
 ||stat.novinky.cz^$third-party
-||stat.sport.cz^
-||super.cz/static/flash/
-||superhry.cz/design/09/banner120.gif
-||superhry.cz/fox_$subdocument
-||superhry.cz/media/
-||takeit.idnes.cz^$subdocument
-||titulky.com/vodafone-500.gif
-||uloz.to/bannery/
-||uloz.to/img/bannery/
-||uschovna.cz/dt-dancer-234x60.swf
-||warcenter.cz/banner/
-||warforum.cz/flyweb/
-||warforum.cz/inau/
-||warforum.cz/trika/
-||war-net.cz/300x200.gif
-||war-net.cz/aukcent.gif
-||war-net.cz/vyhraj.swf
 !
 !---------- Czech Whitelist ------------
 !
@@ -166,7 +177,7 @@ tv.sms.cz##[style="background-color: rgb(204, 204, 204); margin-top: 0.5em; padd
 tv.sms.cz##[style="border: 1px solid rgb(183, 183, 183); width: 320px;"]
 volny.cz##[style="padding: 4px; font-size: 11px; background-color: rgb(246, 248, 234);"]
 !
-!---------- Czech Hiding Rules ----------
+!---------- Czech Generic Element Hiding Rules ----------
 !
 ###bnrhacksky
 ###bnrhacksqr
@@ -190,8 +201,8 @@ volny.cz##[style="padding: 4px; font-size: 11px; background-color: rgb(246, 248,
 ##.jobscz
 ##.popisreklama
 ##.reklama
-##.reklama-lista
 ##.reklama-3
+##.reklama-lista
 ##.reklama.box
 ##.reklama_ahead
 ##.reklama_box_standard
@@ -201,6 +212,9 @@ volny.cz##[style="padding: 4px; font-size: 11px; background-color: rgb(246, 248,
 ##.reklamni-up-1
 ##.reklamni-up-2
 ##.spored-links
+!
+!---------- Czech Site Specific Element Hiding Rules ----------
+!
 abecedazahrady.dama.cz###advert-sky
 abecedazahrady.dama.cz##.banneraltext
 adfox.cz###vse
@@ -236,8 +250,8 @@ extrawindows.cnews.cz###block-block-2
 extrawindows.cnews.cz###block-block-5
 financninoviny.cz##.hypertexty
 gamepark.cz###bmenu
-gamepark.cz##.banner
 gamepark.cz###supersize
+gamepark.cz##.banner
 gamepark.cz##.headerpicture
 google.cz,google.com###mbEnd
 google.cz,google.com###tads
