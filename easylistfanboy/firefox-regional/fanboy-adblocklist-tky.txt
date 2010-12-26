@@ -1,10 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: iRUyWIptozq9tTrk4CeOMQ
+! Checksum: FCnl5ESwOoDfXEDVU3/Ufw
 ! Fanboy's Turkish-addon Adblock list 
-! Updated: 20 Dec 2010
+! Updated: 26 Dec 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
+!
+! ---------- Generic Blocking Rules ----------
 !
 -gooadsense.
 .com/bannerlar/
@@ -30,61 +32,33 @@
 /leftreklam2.
 /MainPage/NDBanners/*
 /megacash.
+/r1eklam.
 /reklam.swf
 /reklam1.swf
 /reklam_
+/reklamalanlariCSHTR.
 /reklamlar.
 /reklamver.
 /renklam/*
-/reklamalanlariCSHTR.
-/r1eklam.
 /rightreklam1.
 /servad.
 /todayszaman/banners/*
 _reklam_125_
-||217.195.197.45^
-||ad.donanimhaber.com^
-||ad.e-kolay.net^
-||ad.mygamesol.com^$third-party
-||ad.ntvmsnbc.com^
-||ad.realist.gen.tr^$third-party
-||ad.webservis.gen.tr^
-||ad.zaman.com.tr^
-||admost.com^$third-party
-||adnet.com.tr^$third-party
-||adport.com.tr^$third-party
-||adpozitif.com^
-||ad.hizlireklam.com^
-||ads.videonap.com^
-||adshare3.freedocast.com^
-||ads.gercekgundem.com^
-||ads.ihaberadserver.com^$third-party
-||ads.oyungemisi.com^$third-party
-||adserver.adklik.com.tr^$third-party
-||adsp.ciner.com.tr^$third-party
-||adtech.com.tr^$third-party
-||kpsscafe.com^*.swf
-||kpsscafe.com/images/ihtiyac.jpg
-||adworld.com.tr^
-||aff.tamvakti.com^$third-party
-||aff2.gittigidiyor.com^
-||aff3.gittigidiyor.com^
+!
+! ---------- 1st party blocking rules ----------
+!
 ||akademikles.org/omur/
-||aksam.com.tr^$third-party
 ||antoloji.com/images/banners/
 ||appleturk.net^*.swf
-||b.cdn.md^
 ||bitturk.net/pasta_tarifleri.gif
 ||bitturk.net/ts_cron.php?
 ||bitturk.net^*/save_stats.php?
 ||bizimkocaeli.com/reklam_
-||bumerangshowsites.hurriyet.com.tr^
 ||chip.com.tr/bmedia/
 ||divxm.com/images/elma728
 ||divxm.com/images/rapid
 ||dizihd.com/mika.
 ||donanimhaber.com/ads/
-||e-kolay.net^
 ||emlakkulisi.com/ad/
 ||emlakkulisi.com/Banner
 ||ensonhaber.com/resimler/
@@ -97,18 +71,17 @@ _reklam_125_
 ||hepsiburada.com*/Banners/
 ||hurriyet.com.tr/ReadCountOfNews.aspx?
 ||hurriyet.de/_banners/
-||zevkli.org/okey.gif
 ||inndir.com/ads/
 ||kanald.com.tr/KD_Flash/900
 ||kanalvip.com.tr/kadikon
 ||kobi-efor.com.tr/banner/
+||kpsscafe.com/images/ihtiyac.jpg
+||kpsscafe.com^*.swf
 ||maraton.com.tr/banner
 ||maraton.com.tr/img/iddaabanner
 ||medya73.com/images/banner/
-||medyaklik.com^
 ||memlekethaber.com/banner/
 ||milliyet.com.tr/d/f/1/
-||modatrendim.com^$third-party
 ||nethaber.com/TextBanner.
 ||ntvmsnbc.com/adv/
 ||odatv.com/staticimages/
@@ -119,23 +92,14 @@ _reklam_125_
 ||realist.gen.tr/777
 ||realist.gen.tr/banner.
 ||realist.gen.tr/logo.php?
-||reklamdor.com^$third-party
-||reklamint.com^$third-party
-||reklamport.com^
-||reklamstore.com^$third-party
 ||resim.sinemalarizle.com/kucukresim/$script,subdocument
-||rs.chip.com.tr^
 ||sabah.com.tr/banner/
 ||sabah.com.tr/geo
-||saglik.meltemhastanesi.com^$third-party
 ||sanliurfa.com/frame/
-||sayyac.net^
-||softreklam.com^$third-party
 ||sporx.com/i/sx_
 ||superpoligon.com/tracker
 ||takvim.com.tr/banner/
 ||techno-labs.com/banner/
-||top10.yazete.com^
 ||trt.net.tr/flash/
 ||tumgazeteler.com/?cat
 ||turizmhaberleri.com/img/banner/
@@ -150,22 +114,69 @@ _reklam_125_
 ||webhaber.com/advers/
 ||yahoyt.com/main_banner
 ||yenicaggazetesi.com.tr/banner/
+||zehirli.net/splash.
+||zevkli.org/okey.gif
+!
+! ---------- General blocking rules ----------
+!
+||217.195.197.45^
+||ad.donanimhaber.com^
+||ad.e-kolay.net^
+||ad.hizlireklam.com^
+||ad.ntvmsnbc.com^
+||ad.webservis.gen.tr^
+||ad.zaman.com.tr^
+||adpozitif.com^
+||ads.gercekgundem.com^
+||ads.videonap.com^
+||adshare3.freedocast.com^
+||adworld.com.tr^
+||aff2.gittigidiyor.com^
+||aff3.gittigidiyor.com^
+||b.cdn.md^
+||bumerangshowsites.hurriyet.com.tr^
+||e-kolay.net^
+||medyaklik.com^
+||reklamport.com^
+||rs.chip.com.tr^
+||sayyac.net^
+||top10.yazete.com^
+!
+! ---------- 3rd party blocking rules ----------
+!
+||ad.mygamesol.com^$third-party
+||ad.realist.gen.tr^$third-party
+||admost.com^$third-party
+||adnet.com.tr^$third-party
+||adport.com.tr^$third-party
+||ads.ihaberadserver.com^$third-party
+||ads.oyungemisi.com^$third-party
+||adserver.adklik.com.tr^$third-party
+||adsp.ciner.com.tr^$third-party
+||adtech.com.tr^$third-party
+||aff.tamvakti.com^$third-party
+||aksam.com.tr^$third-party
+||modatrendim.com^$third-party
+||reklamdor.com^$third-party
+||reklamint.com^$third-party
+||reklamstore.com^$third-party
+||saglik.meltemhastanesi.com^$third-party
+||softreklam.com^$third-party
 ||yenimedya.com.tr^$third-party
 ||yudalisaccikartici.com^$third-party
-||zehirli.net/splash.
 !
 !---------- Whitelist  ----------
 !
 @@||ad.e-kolay.net/crossdomain.xml$domain=medyafaresi.com
 @@||ad.e-kolay.net/xmlad.a2?target$domain=medyafaresi.com
-@@||zapkolik.com/zaplayer.swf?
 @@||zapkolik.com/reklam.xml
+@@||zapkolik.com/zaplayer.swf?
 !
 !---------- Turkish Trackers ----------
 !
 ||panel.gazetevatan.com^
-||realist.gen.tr^$third-party
 ||reali.st^$third-party
+||realist.gen.tr^$third-party
 !
 ! ---------- Firefox 3.x Specific Hiding Rules ----------
 !
@@ -176,7 +187,7 @@ beyazgazete.com##[style="float: right; width: 480px; height: 76px;"]
 beyazgazete.com##[style="float: right; width: 728px; height: 100px;"]
 samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; height: 90px; border-style: solid; border-width: 1px; border-color: Black; top: 9px; bottom: 2px; width: 728px; clear: left;"]
 !
-!---------- Turkish Hiding Rules ----------
+!---------- Turkish Generic Element Hiding Rules ----------
 !
 ###ad-160x600
 ###ads300x250
@@ -208,6 +219,9 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ##.reklamDiv
 ##.sag_reklam
 ##.sagreklam
+!
+!---------- Turkish Site Specific Element Hiding Rules ----------
+!
 aksam.com.tr###has-banner300x250
 beyazgazete.com##[style="float:left;margin-top:15px;width:322px;height:309px;background:url(/yimages/reklam_300x250.png)"]
 beyazgazete.com##[style="float:left;width:250px;margin-top:5px;height:250px;border:1px solid #000000"]

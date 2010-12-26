@@ -1,10 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: XgC49h1cBwVUj/z6txMg0A
+! Checksum: tJg+du4Jw2HWzi0bcFjfqw
 ! Fanboy's Vietnamese-addon Adblock list 
-! Updated: 20 Dec 2010
+! Updated: 26 Dec 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
+!
+! ---------- Generic Blocking Rules ----------
 !
 .vn/ads.
 .vn/ads/
@@ -33,35 +35,26 @@
 /QuangCaoImage/*
 _AdsZone_
 _quangcao.
+!
+! ---------- 1st party blocking rules ----------
+!
 ||24h.com.vn/upload/*.com.vn.
 ||24h.com.vn/upload/*.swf|$object
 ||24h.com.vn/upload/background/
 ||5giay.vn/igo/*.swf|
 ||5giay.vn/igo/changebanner/
-||ad.pixelmedia.vn^$third-party
-||ad.zing.vn^
-||admicro.vn^$third-party
-||admicro1.vcmedia.vn^$third-party
-||admicro2.vcmedia.vn^$third-party
-||adnet.vn^$third-party
-||ads.yeuthethao.com^$third-party
 ||anh.24h.com.vn/upload/qcao/
 ||bacsi.com/images/banners
 ||bacsi.com^*/testbg
 ||bongda.com.vn/data/File/
 ||buy-sell.vn/flash/
 ||docbao.vn/NewsMedia/Ad/
-||et.phununet.com^
 ||eva.vn/js/eva.js
-||fptad.com^$third-party
-||game8.vn/spirit/ads/banner_
 ||game8.vn/images/spr/bg_
-||groupon.vn^$third-party
+||game8.vn/spirit/ads/banner_
 ||hanoimoi.com.vn/Uploads/NCC/
 ||imishop.tk/banner-
 ||ledmobile.net/ads/
-||netad.vn^$third-party
-||phagia.com.vn^$third-party
 ||phununet.com/Ads/
 ||rolo.vn/films/ad_
 ||sgtt.com.vn/html/
@@ -72,15 +65,33 @@ _quangcao.
 ||tienganh.com.vn/anh/
 ||tin247.com^*/advertisements/
 ||tinthethao.com.vn/click/ck/
-||uphinh.vn^$third-party
 ||vatgia.com/images/phuhungfull
 ||vatgia.com/images/tlbb_
-||vietad.vn^$third-party
-||voh.com.vn/Data/QC/
 ||vnphoto.net/data/gallery/fullsize/
+||voh.com.vn/Data/QC/
 ||webketoan.vn^*/banners/
 ||xaluan.com/images/banners/
 ||yeah1.com/images/banners/
+!
+! ---------- General blocking rules ----------
+!
+||ad.zing.vn^
+||et.phununet.com^
+!
+! ---------- 3rd party blocking rules ----------
+!
+||ad.pixelmedia.vn^$third-party
+||admicro.vn^$third-party
+||admicro1.vcmedia.vn^$third-party
+||admicro2.vcmedia.vn^$third-party
+||adnet.vn^$third-party
+||ads.yeuthethao.com^$third-party
+||fptad.com^$third-party
+||groupon.vn^$third-party
+||netad.vn^$third-party
+||phagia.com.vn^$third-party
+||uphinh.vn^$third-party
+||vietad.vn^$third-party
 !
 !---------- Vietnamese Trackers ------------
 !
@@ -88,9 +99,9 @@ _quangcao.
 /24h-analytics.
 /rpc/counter.aspx?
 /tmpUpdateViewcount.
+||210.245.86.205^$third-party
 ||210.245.86.213^$third-party
 ||210.245.86.214^$third-party
-||210.245.86.205^$third-party
 ||222.255.31.205^$third-party
 ||logdantri.vcmedia.vn^$third-party
 ||reporting.nld.com.vn^
@@ -123,8 +134,8 @@ tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201,
 24h.com.vn##.floatDiv
 24h.com.vn##.left_banner_box
 24h.com.vn##.rows-banner-center
-5giay.vn##[style="width:550px; overflow:hidden; margin-left: 5px"]
 5giay.vn##[style="width:400px; overflow:hidden; margin-left: 5px"]
+5giay.vn##[style="width:550px; overflow:hidden; margin-left: 5px"]
 bacsi.com###qc
 bacsi.com##.bannergroup
 bacsi.com##.bannergroupfix_banner_br
@@ -148,9 +159,9 @@ laodong.com.vn##.ad_BoxBorder
 otosaigon.com###topadv1_divTop
 otosaigon.com##.ADV
 otosaigon.com##.content_adv
+phununet.com###AdSpot_Tintuc_Right300x2501_div1
 phununet.com##.advcenter
 phununet.com##.youshop1111
-phununet.com###AdSpot_Tintuc_Right300x2501_div1
 phununet.com##[style="width:730px; height:850px; overflow:hidden"]
 sggp.org.vn##.DonVi
 sggp.org.vn##.QC_Ngang

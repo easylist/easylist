@@ -1,10 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: WUBl4jFkCiAbEt9R29ouKg
+! Checksum: JCdkJ9LemVkwRwZUXdt5hg
 ! Fanboy's Swedish-addon Adblock list 
-! Updated: 20 Dec 2010
+! Updated: 26 Dec 2010
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
+!
+! ---------- Generic Blocking Rules ----------
 !
 .dt.se/banner/
 .dt.se/img/space.gif?
@@ -19,27 +21,36 @@
 /annons_ver.
 /annonslinje_
 /torget_ads.
-|http://1.nt.se^$third-party
-||adaptlogic.com^$third-party
-||adoperator.com^$third-party
-||adtlgc.com^
-||adtomafusion.com^$third-party
-||atemda.com^$third-party
-||bilsalongen.kkuriren.se^
+!
+! ---------- 1st party blocking rules ----------
+!
 ||bubblare.se/getMovieSplinks?
-||careerbuilder.se^$third-party
-||casinotoplists.com^$third-party
 ||cdn.videoplaza.tv/creatives/
 ||corren.se/img/$object
-||eas.blocket.se^
-||emediate.eu^$third-party
-||emediate.se^$third-party
-||external.discshop.nu^$subdocument
 ||gamereactor.se/ad/
 ||hd.se/static/banners/
 ||oskar.tradera.com/$object
 ||ungdomar.se^*/darren_
 ||ungdomar.se^*/karolinska
+!
+! ---------- General blocking rules ----------
+!
+||adtlgc.com^
+||bilsalongen.kkuriren.se^
+||eas.blocket.se^
+||external.discshop.nu^$subdocument
+!
+! ---------- 3rd party blocking rules ----------
+!
+|http://1.nt.se^$third-party
+||adaptlogic.com^$third-party
+||adoperator.com^$third-party
+||adtomafusion.com^$third-party
+||atemda.com^$third-party
+||careerbuilder.se^$third-party
+||casinotoplists.com^$third-party
+||emediate.eu^$third-party
+||emediate.se^$third-party
 !
 !---------- Swedish Trackers ------------
 !
@@ -67,7 +78,7 @@
 @@||emediate.se/eas_tag$domain=tv6play.se|tv3play.se
 @@||hallandsposten.abcdn.net^*/RealMedia/
 !
-!---------- Swedish Element Hiding Rules
+!---------- Swedish Generic Element Hiding Rules ----------
 !
 ###ad-column
 ###adspace-panorama
@@ -85,14 +96,17 @@
 ##.eniro_ad
 ##.nyhet_wrapper_annons
 ##.RGAdBoxMainDiv
+!
+!---------- Swedish Site Specific Element Hiding Rules ----------
+!
 allehanda.se##.mf_banner
 allehanda.se##img[width="468"][height="22"]
 arbetarbladet.se##.pageBlock.column100
-blocket.se###bannercont
-blocket.se##.banner_top
 blocket.se###banner_list_top
-blocket.se###motesplatsen_top
 blocket.se###banner_view_top
+blocket.se###bannercont
+blocket.se###motesplatsen_top
+blocket.se##.banner_top
 bohuslaningen.se##.cg-teaserWrapper
 corren.se###lokusSearchDiv
 corren.se###topjobs
