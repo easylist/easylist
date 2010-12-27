@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 1D9+KF/3ZL/IZ+dfdEILow
+! Checksum: +Se+nP/eGKNLqYQTYen1Lw
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 27 Dec 2010
 ! This list expires after 5 days
@@ -7,6 +7,7 @@
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
 !
 -AdTracking.
+-elqImg.
 -seo-tracker.
 -tracking.js?
 -webtrends-
@@ -31,7 +32,6 @@
 .com/cm?ci
 .com/cm?tid
 .com/counter?
-/dltrack/*
 .com/e.gif?
 .com/HG?
 .com/hitlog?
@@ -42,7 +42,6 @@
 .com/log?srvc
 .com/mm.gif?
 .com/p.gif?
-/spacer.gif?hscbrnd
 .com/stats.ashx?
 .com/stats.aspx?
 .com/t.gif?
@@ -171,6 +170,7 @@
 /adlogger_
 /adpixel.
 /adstats.
+/adtrack.
 /adviewtrack.
 /adx/bin/*
 /affiliate.1800flowers.
@@ -351,22 +351,21 @@
 /dcs_tag.js
 /dcs_tag_
 /DecideDNATrackingCode-
+/dltrack.
+/dltrack/*
 /dmtracking2.
-/dtmtag.js
 /dolWebAnalytics.
 /dot.asp?
-/drads?referrer=
 /dotomi_tracking/*
-/adtrack.
-/dltrack.
+/drads?referrer=
 /drivingrevenue/*$third-party
+/dtmtag.js
 /dwanalytics.
 /eae-logger/*
 /ecblank.gif?
 /ecom/status.jsp?
-/elqNow/*
 /elqImg.
--elqImg.
+/elqNow/*
 /eluminate.
 /eluminate?
 /eluminate_
@@ -650,7 +649,6 @@
 /piwik.php?
 /pix.fcg?
 /pix.gif?
-/pxtrk.gif
 /pixel.cgi?
 /pixel.jsp?
 /pixel.php?
@@ -680,6 +678,7 @@
 /pv.gif?url
 /pview?event
 /px_trans.gif
+/pxtrk.gif
 /pzn/proxysignature
 /quant.js|
 /quant.swf?
@@ -745,6 +744,7 @@
 /sophus3/*
 /sophusThree-
 /sp_logging.php?
+/spacer.gif?hscbrnd
 /sst/track.js|
 /stat.gif?
 /stat.htm?
@@ -1090,13 +1090,13 @@ size=1x1;
 ||data.ninemsn.com.au/*GetAdCalls
 ||dell.com/logging?
 ||dell.com/metrics/
-||dwin1.com^
 ||dw-eu.com.com^
 ||dw.com.com/js/dw.js|$script
 ||dw.com.com/levt/video/e.gif?
 ||dw.com.com/redir/redx/$image
 ||dw.com.com/redir?ontid$image
 ||dw.com.com/redir?siteid*http*$image
+||dwin1.com^
 ||ec2-prod-tracker.babelgum.com^
 ||ectnews.com/shared/missing.gif?
 ||edw.edmunds.com^
@@ -1189,10 +1189,10 @@ size=1x1;
 ||runnersworld.com/static/UniversalPixel.html
 ||sciencedaily.com/cache.php?
 ||seeclickfix.com^*/text_widgets_analytics.html
+||servicetick.com^
 ||shopping.com/pixel/
 ||sitemeter.com/meter.asp
 ||sovereignbank.com/utils/track.asp
-||servicetick.com^
 ||ssl-stats.wordpress.com^
 ||st.mirror.co.uk^
 ||st.virginmedia.com^
@@ -1211,8 +1211,8 @@ size=1x1;
 ||thinkgeek.com/js/rts.js
 ||total.shanghaidaily.com^
 ||track.cbs.com^
-||track.netzero.net^
 ||track.collegehumor.com^
+||track.netzero.net^
 ||track.ning.com^
 ||tracker.anandtech.com^
 ||tracker.wordstream.com^
@@ -1277,20 +1277,20 @@ size=1x1;
 ||a8ww.net^
 ||aaa.aj5.info^
 ||abcstats.com^
-||adku.co^
 ||accessintel.com^
 ||acecounter.com^
 ||active-tracking.de^
 ||activemeter.com^
 ||adadvisor.net^
+||adchemy.com^
 ||addfreestats.com^
 ||addlvr.com^
-||adchemy.com^
 ||addthis.com/red/$script
 ||addthis.com^$subdocument
 ||addthiscdn.com/*.gif?uid=
 ||addthiscdn.com/live/
 ||addtoany.com/menu/transparent.gif
+||adku.co^
 ||adreadytractions.com^
 ||adsensedetective.com^
 ||affiliate.iamplify.com^
@@ -1365,9 +1365,9 @@ size=1x1;
 ||cbclicks.com^
 ||cedexis.com^
 ||cedexis.net^
-||chango.com^
 ||celebros-analytics.com^
 ||cetrk.com^
+||chango.com^
 ||channelintelligence.com^
 ||chartbeat.com^
 ||chase.com/js/Reporting.js
@@ -1456,6 +1456,7 @@ size=1x1;
 ||e-referrer.com^
 ||easy-hit-counters.com^
 ||easyhitcounters.com^
+||easyresearch.se^
 ||ebay.northernhost.com^
 ||ecustomeropinions.com^
 ||effectivemeasure.net^
@@ -1468,13 +1469,13 @@ size=1x1;
 ||ereportz.com^
 ||eservicesanalytics.com.au^
 ||esm1.net^
-||evisitanalyst.com^
 ||estara.com^
 ||estat.com^
 ||ethnio.com^
 ||etracker.com^
 ||eu-survey.com^
 ||everesttech.net^
+||evisitanalyst.com^
 ||evisitcs2.com^
 ||evolvemediametrics.com^
 ||evri.com/analytics/
@@ -1531,9 +1532,9 @@ size=1x1;
 ||halstats.com^
 ||havamedia.net^
 ||hellosherpa.com^
+||hiconversion.com^
 ||higherengine.com^
 ||highmetrics.com^
-||hiconversion.com^
 ||histats.com^
 ||hit-parade.com^
 ||hitbox.com^
@@ -1543,11 +1544,11 @@ size=1x1;
 ||hitslog.com^
 ||hitsprocessor.com^
 ||hittail.com^
+||hlserve.com^
 ||homestore.com/srv/
 ||host-tracker.com^
 ||humanclick.com^
 ||hurra.com^
-||hlserve.com^
 ||hwpub.com^
 ||hyfntrak.com^
 ||ibpxl.com^
@@ -1693,6 +1694,7 @@ size=1x1;
 ||partners.badongo.com^
 ||partners.thefilter.com^
 ||partypoker.com^*/tracking-
+||peerius.com^
 ||perfectmarket.com/pm/track?
 ||performgroup.com^
 ||pg.buzzfeed.com^
@@ -1703,7 +1705,6 @@ size=1x1;
 ||popsample.com^
 ||postrelease.com^
 ||ppctracking.net^
-||peerius.com^
 ||precisioncounter.com^
 ||predicta.net^
 ||predictivedna.com^
@@ -1764,9 +1765,9 @@ size=1x1;
 ||sedotracker.com^
 ||sendtraffic.com^
 ||service.velaro.com^
+||sessioncam.com^
 ||sftrack.searchforce.net^
 ||shinystat.com^
-||sessioncam.com^
 ||sitebrand.com^
 ||siteimprove.com^
 ||sitestat.com^
@@ -1907,7 +1908,6 @@ size=1x1;
 ||webtraffiq.com^
 ||webtrekk.net^
 ||webtrends.com^
-||easyresearch.se^
 ||webtrendslive.com^
 ||webvoo.com^
 ||whitepixel.com^
