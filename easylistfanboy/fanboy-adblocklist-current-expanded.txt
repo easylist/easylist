@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: DpDwgu1QuT4rEElrBRUuQw
+! Checksum: w/AOtWe+kjIeYBQ8pjEu/g
 ! Fanboy's Adblock list
 ! Updated: 28 Dec 2010
 ! This list expires after 4 days
@@ -298,13 +298,13 @@
 /AdCell/*
 /adcenter.$script
 /adcframe.
+/adchain.
 /adchannel_
 /adclick.
 /adclick/*
 /adclix.
 /adclixad.
 /adClutter.
-/adchain.
 /adcode.
 /adcodes/*
 /AdCollector.
@@ -1299,6 +1299,7 @@
 /special_ads/*
 /spo_show.asp?
 /sponLink.htm?
+/spons_links_
 /sponseredlinksros.
 /sponsor-ad
 /sponsor_ads.
@@ -1308,6 +1309,7 @@
 /sponsored-links-
 /sponsored_ad
 /sponsored_by.
+/sponsored_links.
 /sponsored_links1.
 /sponsored_links_
 /sponsored_listings.
@@ -1317,8 +1319,6 @@
 /SponsoredLinksIFrame.
 /sponsors-ads/*
 /sponsors_box.
-/spons_links_
-/sponsored_links.
 /spotx_adapter.
 /SpotXchangePlugin.
 /SpotxchangeVpaid.
@@ -1427,6 +1427,8 @@
 /yahoo_overture.
 /yahooads.
 /yahooads/*
+/yahooAdsAPI.
+/yahooAdsObject.
 /yahooFeedProxy.
 /yld/js/*
 /youradhere.
@@ -1434,8 +1436,6 @@
 /ysc_csc_ymail
 /ysmwrapper.js
 /yt/swf/ad-
-/yahooAdsObject.
-/yahooAdsAPI.
 /~cdn/Ads/*
 =adtech_
 =akiba_ads_
@@ -1750,7 +1750,6 @@ images/ads/*
 ||demonoid.me/cached/$script,subdocument
 ||dictionary.com^*/dictionary/serp_to/
 ||digzip.com^*baner.swf
-||s.mfcdn.net/media/game$image
 ||dotsauce.com/wp-content/uploads/2009/
 ||driversdownloaddriver.com/images/$image
 ||dsc.discovery.com^*/video-asset-companion-
@@ -1903,6 +1902,7 @@ images/ads/*
 ||rss2search.com^$subdocument
 ||s.imwx.com^*/wx-a21-plugthis.js
 ||s.megaclick.com^$script
+||s.mfcdn.net/media/game$image
 ||scoop.co.nz/xl?c$subdocument
 ||seatguru.com/deals?
 ||sella.co.nz/file/
@@ -2019,7 +2019,6 @@ images/ads/*
 ||ad.wsod.com^
 ||ad.zanox.com^
 ||ad20.net/
-||adf.ly/
 ||adaos-ads.net^
 ||adap.tv/redir/plugins/banner/
 ||adbard.net^
@@ -2038,6 +2037,7 @@ images/ads/*
 ||adecn.com^
 ||ademails.com^
 ||adengage.com^
+||adf.ly/
 ||adf01.net^
 ||adform.net^
 ||adfrontiers.com^
@@ -3010,6 +3010,7 @@ images/ads/*
 @@||omgili.com/ads.search?
 @@||omnikool.discovery.com^$domain=dsc.discovery.com
 @@||omninoggin.com^*/wp-syntax.css
+@@||pantherssl.com/banners/
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com,object_subrequest
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com,script,object_subrequest,image
 @@||playstation.com^*.swf?link1
@@ -3036,7 +3037,6 @@ images/ads/*
 @@||thetvdb.com/banners/
 @@||timeinc.net^*/advertising/$image,domain=people.com
 @@||travelpod.com^*popunder$script
-@@||pantherssl.com/banners/
 @@||tubemogul.com/adtags/$domain=comedy.com
 @@||upload.wikimedia.org/wikipedia/
 @@||v.fwmrm.net/ad/p/1?|$domain=video.adultswim.com|mlb.mlb.com,third-party,object_subrequest
@@ -5141,6 +5141,8 @@ youporn.com###producer
 ###adLeaderboard
 ###adleaderboard
 ###adleaderboardb
+###AdLeaderboardBottom
+###AdLeaderboardTop
 ###adLeaderTop
 ###adleft
 ###adlink
@@ -5296,6 +5298,7 @@ youporn.com###producer
 ###adSkinBackdrop
 ###adSky
 ###adSkyPosition
+###AdSkyscraper
 ###adskyscraper
 ###adSlot
 ###adslot
@@ -6436,9 +6439,6 @@ youporn.com###producer
 ###top_adspace
 ###top_adv-v2
 ###top_advert
-###AdLeaderboardTop
-###AdSkyscraper
-###AdLeaderboardBottom
 ###top_google_ads
 ###top_right_ad
 ###top_sponsor_ads
@@ -6494,11 +6494,11 @@ youporn.com###producer
 ###topsponad
 ###topsponsored
 ###toptextad
-###towerad
-###towerAdContainer
 ###tour300Ad
 ###tour728Ad
 ###tourSponsoredLinksContainer
+###towerad
+###towerAdContainer
 ###ts-ad_module
 ###tut_ads
 ###txt_link_ads
@@ -6685,6 +6685,7 @@ youporn.com###producer
 ##.ad-sp
 ##.ad-space
 ##.ad-spot
+##.ad-square2-container
 ##.ad-squares
 ##.ad-stack
 ##.ad-statement
@@ -7291,6 +7292,7 @@ youporn.com###producer
 ##.advertise_link_sidebar
 ##.advertise_txt
 ##.advertiseBlack
+##.advertisedBy
 ##.advertisement-2
 ##.advertisement-728x90
 ##.advertisement-banner
@@ -7336,8 +7338,6 @@ youporn.com###producer
 ##.advt-block
 ##.advt300
 ##.advt720
-##.advertisedBy
-##.ad-square2-container
 ##.adWidget
 ##.adWithTab
 ##.adwordListings
@@ -8328,10 +8328,12 @@ youporn.com###producer
 ##.wide_grey_ad_box
 ##.wideAdTable
 ##.widget-ad
+##.widget-ad-zone
 ##.widget-ad300x250
 ##.widget-adsense
 ##.widget-advertisement
 ##.widget-entry-ads-160
+##.widget-text-ad
 ##.widget_ad
 ##.widget_ad_rotator
 ##.widget_ads
@@ -8339,8 +8341,6 @@ youporn.com###producer
 ##.widget_sdac_bottom_ad_widget
 ##.widget_sdac_skyscraper_ad_widget
 ##.widget_sponsored_content
-##.widget-ad-zone
-##.widget-text-ad
 ##.width-ad-slug
 ##.wikia-ad
 ##.wikia_ad_placeholder
@@ -9870,8 +9870,8 @@ majorgeeks.com##FONT[size="1"][face="Arial"]
 majorgeeks.com##TABLE[cellpadding="3"][align="center"]
 makeuseof.com##[style="margin-bottom: 15px;margin-top: 15px;padding:5px; border:1px solid #c6d7e1;background-color:#d8eaf2;"]
 makeuseof.com##a[href="http://www.makeuseof.com/advertise/"]
-mangafox.com##[style="width:930px;padding-bottom:10px;padding-right:10px;padding-left:10px;"]
 mangafox.com##[style="width:186px;height:90px;border:#dadada solid 1px;padding:2px;background:#fff;"]
+mangafox.com##[style="width:930px;padding-bottom:10px;padding-right:10px;padding-left:10px;"]
 mangafox.com##a[href^="http://fs.game321.com/"]
 mani-admin-plugin.com##.advs
 manoramaonline.com##td[width="1000"]
@@ -10674,6 +10674,9 @@ spythissite.com##[style="float: left; border-right: 1px dotted rgb(0, 0, 0); mar
 squadedit.com##.peanut
 squidoo.com###header_banner
 stackoverflow.com##TR[class="notify"]
+stardoll.com###leaderboardContainer
+stardoll.com###sdads_bt_2
+stardoll.com##.sdadinfoTrans
 start64.com##[height="92"][colspan="2"]
 startpage.com###inlinetable
 startribune.com###bottomLeaderboard
