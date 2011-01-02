@@ -2,6 +2,10 @@
 hg update
 hg pull --rebase remote
 hg pull
+:: Kill any lines less than 3chars automatically
+perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-current-expanded.txt
+perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-stats.txt
+perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-addon.txt
 :: Firefox
 perl addChecksum.pl fanboy-adblocklist-adult.txt
 perl addChecksum.pl fanboy-adblocklist-current-expanded.txt
@@ -30,10 +34,7 @@ perl addChecksum.pl opera\fanboy-adblocklist-elements-v3.css
 perl addChecksum-opera.pl opera\urlfilter.ini
 :: Iron
 perl addChecksum-opera.pl iron/adblock-beta.ini
-:: Kill any lines less than 3chars automatically
-perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-current-expanded.txt
-perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-stats.txt
-perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-addon.txt
+:: Remove Bak files before commiting.
 del /f *.bak
 :: Now sync
 hg add .
