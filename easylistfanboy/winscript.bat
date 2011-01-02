@@ -2,7 +2,6 @@
 hg update
 hg pull --rebase remote
 hg pull
-del /f *.bak
 :: Firefox
 perl addChecksum.pl fanboy-adblocklist-adult.txt
 perl addChecksum.pl fanboy-adblocklist-current-expanded.txt
@@ -35,6 +34,7 @@ perl addChecksum-opera.pl iron/adblock-beta.ini
 perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-current-expanded.txt
 perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-stats.txt
 perl -i.bak -n -e "{print if /.{4}/}" fanboy-adblocklist-addon.txt
+del /f *.bak
 :: Now sync
 hg add .
 hg commit -m "%*"
