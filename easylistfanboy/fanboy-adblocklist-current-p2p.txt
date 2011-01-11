@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: Z4fJX+2tdv+BYqten1UCYg
+! Checksum: x1j9JBPhFS6i2cdfWiEOBg
 ! Fanboy P2P-Cleanup Blocking
-! Updated: 9 Jan 2011
+! Updated: 11 Jan 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -22,6 +22,7 @@
 ||banners.videosz.com^$third-party
 ||bitreactor.to/sponsor/
 ||bittorrent.am/banners/
+||bt.am/banners/
 ||cam4flat.com/banner/
 ||cdcovers.cc/images/external/toolbar$image
 ||codytzi.com^$third-party
@@ -46,7 +47,6 @@
 ||hl.megashares.com^$image
 ||ilcorsaronero.info/home.gif
 ||images.mp3raid.com/imesh.gif
-||thejesperbay.com^
 ||isohunt.com/img/banner_toolbar_
 ||link.link.ru^$third-party
 ||luxup.ru^$third-party
@@ -80,6 +80,7 @@
 ||superfundo.org/_files/psb300.
 ||superfundo.org/_files/qq.png
 ||superfundo.org/ad.js|
+||thejesperbay.com^
 ||thepiratebay.org/img/agb.gif
 ||todovenganzas.com/popupnew/
 ||toplist.raidrush.ws^$third-party
@@ -104,8 +105,8 @@
 !---------- p2p Element Firefox 3.x Hiding Rules ----------
 !
 demonoid.me##span[style="color: rgb(119, 119, 119); background: none repeat scroll 0% 0% rgb(205, 208, 178); padding-left: 10px; padding-right: 10px; border: 1px solid rgb(119, 119, 119);"]
-win7dl.com##[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 dl4all.com##div[style="padding: 10px 0pt;"]
+win7dl.com##[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 !
 !---------- p2p Element Hiding Rules ----------
 !
@@ -132,9 +133,11 @@ bitenova.org###search_un
 bitenova.org##.un
 bitenova.org##.un_banner
 bitreactor.to##.adbar
+bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
 bittorrent.am##[href^="http://www.myvpn.pro"]
 bittorrent.am##NOINDEX
 bittorrent.am##TD[height="120"][align="center"]
+bittorrent.am##TD[height="20"][colspan="3"]
 btjunkie.org##[cellpadding="4"] + TABLE.tab_results
 btjunkie.org##TH[align="left"][style="background-color: #C7C7C7;"]
 btjunkie.org##TH[align="left"][style="background-color: rgb(199, 199, 199);"]
@@ -157,10 +160,10 @@ demonoid.com##a[href="http://btguard.com/?a=demon"]
 demonoid.com##TD.pad9px_right
 demonoid.com##TD.tone_3_bl[colspan="10"]
 demonoid.me##span[style="color: #777777; background: #cdd0b2; padding-left: 10px; padding-right: 10px; font: bold 102%; border: 1px solid #777777;"]
+dl4all.com##DIV[style="padding:10px 0"]
 downtr.net##[style="display: block; margin-left: 2px; color: #75808A; font-size: 16px; white-space: nowrap;"]
 downtr.net##[style="width: 800px; margin: 0 auto;"]
 downtr.net##[style="width: 800px; margin: 0pt auto;"]
-dl4all.com##DIV[style="padding:10px 0"]
 egydown.com##[style="display: block; background-color: #ffffff; border-bottom: solid 1px #F5DFD6; padding: 8px 0;"]
 evildrome.com##TABLE[border="1"][width="100%"]
 extratorrent.com##.ads2
@@ -248,8 +251,10 @@ rapidsharedata.com###Sponsored
 releasehour.com##TABLE[border="0"][align="center"][width="70%"]
 rlslog.net##[style="width:468px; height:60px; float: right; padding:6px;"]
 rs-free-download.com##TABLE[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
-rslinks.org###block-block-40
 rslinks.org###block-block-22
+rslinks.org###block-block-40
+scnsrc.net##.adv-p
+scnsrc.net##img[width="120"][height="600"]
 scrapetorrent.com###rmiad
 seedpeer.com###unxbg
 serialbay.com##IMG[width="160"][height="600"]
@@ -261,8 +266,6 @@ steamytorrents.com##TABLE[style="margin-bottom: 20px;"]
 sumotorrent.com##[style="margin-top: 18px;"] + TABLE
 sumotorrent.com##TD[onmouseout="this.style.backgroundColor='#ebfbd0';"]:first-child:last-child
 superfundo.org###pa
-scnsrc.net##.adv-p
-scnsrc.net##img[width="120"][height="600"]
 thepiratebay.org##.ads
 therapidbay.com##[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 thewarezscene.org##.forumbg
@@ -281,7 +284,6 @@ torrentdownloads.net##.direct
 torrentdownloads.net##.warez
 torrentdownloads.net##[method="get"] + .heading
 torrentdownloadz.com##BR + TABLE[width="230"]
-torrentreactor.net###announcement
 torrentfreak.com##.alt_ad
 torrenthound.com###direct.button
 torrenthound.com##.searchtable:first-child
@@ -296,6 +298,7 @@ torrentportal.com###sidead
 torrentportal.com##FONT + TABLE[width="100%"][bordercolor="#d6d9db"]
 torrentportal.com##TABLE[align="center"][width="800"]
 torrentpump.com##[style="border: 1px solid rgb(204, 204, 204); background-color: rgb(223, 223, 223);"]
+torrentreactor.net###announcement
 torrentreactor.net###announcement
 torrentreactor.net###beware_r
 torrentreactor.net###chcat + LI
