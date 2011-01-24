@@ -125,7 +125,7 @@ sub resolveInclude
 {
   my ($file, $level) = @_;
 
-  if ($file !~ /[^\w\.\-\+]/ && -f "$sourcedir/$file")
+  if ($file !~ /[^\w\.\-\+\/]/ && -f "$sourcedir/$file")
   {
     my $data = readFile("$sourcedir/$file");
     $data =~ s/\r//g;
