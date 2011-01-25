@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: 6UaPbQOKbOh46c4GKHo6aw
+! Checksum: BCBWBAtC6IbqD3c/zpDMqQ
 ! Fanboy's Spanish/Portuguese Adblock list 
-! Updated: 22 Jan 2011
+! Updated: 25 Jan 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -35,15 +35,15 @@
 //adclient-
 //adware.
 /_publicidad/*
+/ad_lomadee.
 /ad_tpl.php?
 /adfactor_
-/adshotbrasil1.
-/ad_lomadee.
 /adjuntos/imagenes/*.swf?link
 /adrequisitor-
-/adsligados.
 /ads/contextual
 /ads/creatives/*
+/adshotbrasil1.
+/adsligados.
 /Bannerctgineses.
 /bannerWoo.
 /bannerwoopos4.
@@ -91,15 +91,16 @@ http://adw.
 ||aurora-israel.co.il/images/banners/
 ||autobild.es^*/bannertext.png
 ||b92.net/images/banners/
+||bajateloz.com/images/banner_
 ||barra.xl.pt/barra.
 ||belasmensagens.com.br/posthaus
 ||bilibio.com.br/fotoBanner/
-||bajateloz.com/images/banner_
 ||blog.br/action/tools/coMesWin
 ||cadenaser.com/img/promos/
 ||capitalnews.com.br/system/fotosPub/$object
 ||cartamaior.com/petrobras/
 ||cb.cl/NewCBCL/*Banner
+||celldorado.com/ads/
 ||chacas.com.ar/comercial/
 ||clicrbs.com.br/buscape/
 ||criticadigital.com/files/banners
@@ -114,8 +115,8 @@ http://adw.
 ||diariodopara.com.br/img/$object
 ||diariodopara.com.br/noticiafull_
 ||diarioti.com/sisimg/banners/
-||downgratis.com/tvnopc2.js
 ||domisfera.com/img/patrocinadores/
+||downgratis.com/tvnopc2.js
 ||ebuddy.com/web_banners/
 ||economico.pt^*/banners/
 ||eladelantado.com/imagenes/banner
@@ -123,9 +124,9 @@ http://adw.
 ||elimparcial.es/images/uploads/
 ||elimpulsohost.com/BannerImpulso/
 ||elmundo.es/banners
-||elsoldearica.com/Banner/
 ||elotrolado.net/styles/estiloeol/imageset/banner_
 ||elreloj.com/nkads/
+||elsoldearica.com/Banner/
 ||expressomt.com.br/adminPortal/modBan/
 ||facua.org/es/$object
 ||finalsports.com.br^*/boo_box.
@@ -149,7 +150,6 @@ http://adw.
 ||lojademulher.com.br/images/
 ||lusa.pt/banners/$object
 ||madridpress.com/anuncios/
-||ver-pelis.net/fox.htm
 ||magisnet.com/anuncios/
 ||manerasdevivir.com/pics/publi/
 ||mariosegura.com/images/banners/
@@ -163,9 +163,9 @@ http://adw.
 ||ojo.com.pe/flash/
 ||olhardireto.com.br/imgsite/banners/
 ||perfilunico.com/ads/
+||planetadeagostini.es/uploads/promociones/
 ||politraductor.com/images/12
 ||pontoperdido.com/js/webmessenger.js
-||planetadeagostini.es/uploads/promociones/
 ||portalms.com.br/banner/
 ||rankia.com/promo
 ||record.xl.pt/pub/
@@ -173,7 +173,6 @@ http://adw.
 ||sapo.pt/banner.swf
 ||sapo.pt/images_banner/
 ||sapo.pt/t2.asp$subdocument
-||celldorado.com/ads/
 ||sl.pt/wa.gif?
 ||smartclip.net^$third-party
 ||sol.pt/flash/banner_
@@ -185,6 +184,7 @@ http://adw.
 ||ummilhao.com.br/1mil
 ||uol.com.br/flash/banner_
 ||vagos.es/banners/$script
+||ver-pelis.net/fox.htm
 ||vooz.com.br/imagem/banners/
 ||xl.pt/images/pub_banner_
 ||yucatan.com.mx/cuponazo
@@ -195,16 +195,16 @@ http://adw.
 ||ad.correioweb.com.br^
 ||ad.terra.com.mx^
 ||ad.terra.com^
+||ads.celldorado.com^
 ||ads.gazetaesportiva.net^
+||ads.lomadee.com^
 ||ads.mercadoclics.com^
 ||ads.olx.com^
 ||ads.periodistadigital.com^
 ||ads.sapo.pt^
 ||ads.terra.es^
-||ads.lomadee.com^
 ||ads.tvtuga.com^
 ||ads.xl.pt^
-||ads.celldorado.com^
 ||cliccabanner.com^
 ||compras.periodistadigital.com^
 ||estaticos.soitu.es^
@@ -268,8 +268,8 @@ http://adw.
 ||probabilidades.net^$third-party
 ||spamtheweb.com/ul/$third-party
 ||swi-adserver.com^$third-party
-||tiozao.net^$third-party
 ||templates.buscape.com^$third-party
+||tiozao.net^$third-party
 !
 ! ---------- Spanish/Portuguese Whitelist Rules ----------
 !
@@ -279,9 +279,9 @@ http://adw.
 @@||ads.globo.com/RealMedia/ads/adstream_mjx.ads/g1/home/
 @@||ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home/
 @@||ads.telecinco.es^*/PM_test_video/crossdomain.xml
+@@||autoscout24.es^*/adbanner.css
 @@||diariosigloxxi.com/banners/logo_
 @@||extraconfidencial.com/js/*$object
-@@||autoscout24.es^*/adbanner.css
 !
 ! ---------- Generic Spanish/Portuguese Element Hiding Rules ----------
 !
@@ -299,6 +299,12 @@ http://adw.
 ###advertising_header
 ###anunciosGoogle
 ###barraPublicidade
+###floatLayer
+###floatLayer1
+###floatLayer2
+###floatLayer3
+###floatLayer4
+###floatLayer5
 ###liBannerDireita
 ###liPublicidadeAdsense
 ###publicidad-contextual
@@ -313,12 +319,6 @@ http://adw.
 ###publicidadheadernota
 ###PublicidadSuperior
 ###publicidadTop
-###floatLayer
-###floatLayer1
-###floatLayer2
-###floatLayer3
-###floatLayer4
-###floatLayer5
 ###publiEspecial
 ###queTooltip
 ###topopublicidade
@@ -358,6 +358,7 @@ sapo.pt##[style="width: 527px; height: 150px; float: right;"]
 ! ---------- Spanish/Portuguese Specific Hiding Rules ----------
 !
 ##[href^="http://ads.glispa.com/"]
+01net.com##DIV[style="border:solid 1px black;text-align:center; margin:10px 0 10px 0;"]
 123.cl###banner_160_600
 123.cl##.banner300x160
 123.cl##.banner300x250
@@ -413,12 +414,12 @@ autocity.com##.zonaGoogle
 autosport.aeiou.pt##[style="width:300px;height:250px;overflow:hidden;position:relative;"]
 autosport.aeiou.pt##[style="width:300px;height:250px;overflow:visible;z-index:0;"]
 axn.es##.block-spti_operativ
+baixefilmesgratis.org###cboxOverlay
+baixefilmesgratis.org###colorbox
 band.com.br###dv_arroba
 band.com.br###ofertas
 band.com.br###ofertas
 band.com.br###skyscraper
-baixefilmesgratis.org###colorbox
-baixefilmesgratis.org###cboxOverlay
 brasilportais.com.br###bp-superbanner-cont
 brasilportais.com.br##.ads-lateral
 brasilportais.com.br##.banner-vitrine
@@ -448,7 +449,6 @@ clix.pt##.pub-textads
 clix.pt##.pubHeader
 clix.pt##.pubTextual
 clubic.com###annonce_pub2
-01net.com##DIV[style="border:solid 1px black;text-align:center; margin:10px 0 10px 0;"]
 cocinayhogar.com##.table_port_7
 cope.es###publiHeader
 correiomanha.pt##.bannerPub
@@ -526,13 +526,13 @@ estadao.com.br##.dvBannerX08
 estadao.com.br##.pub157x27
 estadao.com.br##.superBanner
 exameinformatica.pt##.mrec
-expansion.com##.publicidad
 expansion.com###pub200x400
 expansion.com###pub234x60b
+expansion.com##.publicidad
 expressomt.com.br##[style="clear: both; position:relative;	top: 0px; 	width: 990px; border: 1px solid #c1c1c1; padding-left: 5px; padding-bottom: 5px; padding-top: 5px; height:100px"]
 facilisimo.com##TABLE[width="336"]
-finalsports.com.br##[style="height: 105px; width: 1000px; background-color: #04290A; padding-top: 10px;"]
 filmeshd.tv###frutuante
+finalsports.com.br##[style="height: 105px; width: 1000px; background-color: #04290A; padding-top: 10px;"]
 folha.com.br###skyBanner
 folha.uol.com.br###todaOferta
 futnet.com.br###banner_dhtml
@@ -679,11 +679,11 @@ lavozlibre.com##.publi
 libertaddigital.com##.anuncios
 los40.com##.banner_top
 magisnet.com###MSC
-manualidadyhogar.com##.table_port_7
-mail.yahoo.com###SKY
-mail.yahoo.com##body[onload="stopAdTimer()"]
 mail.yahoo.com###scAdContainer_i51_52
+mail.yahoo.com###SKY
 mail.yahoo.com##.scAdvertisement
+mail.yahoo.com##body[onload="stopAdTimer()"]
+manualidadyhogar.com##.table_port_7
 maputo.co.mz###top-banner
 marca.com###publi_abajo
 marca.com###publi_sup
@@ -711,19 +711,19 @@ olhardireto.com.br###fullBanner
 olhardireto.com.br##.bannersButton
 omelete.com.br##TABLE[width="768"]
 ondacero.es###publicity
+ono.com###ono_banner_bar
+ono.com##.grid_5.modulo_correo_2
 opovo.com.br###tpPublicidade
-orkut.com.br##.GIAX5IEDAN.GIAX5IEDE1B
 orange.es##.fdo_banner
 orange.es##[style="width: 300px; height: 264px;"]
 oreporter.com###pubTopo
-ono.com##.grid_5.modulo_correo_2
-ono.com###ono_banner_bar
-pheu.net###div_video_ads
+orkut.com.br##.GIAX5IEDAN.GIAX5IEDE1B
 paper.li##.m-ib
 parana-online.com.br###floater_fold_banner
 parana-online.com.br##.banner
-plantasyhogar.com##.table_port_7
+pheu.net###div_video_ads
 planetadeagostini.es##.promocion
+plantasyhogar.com##.table_port_7
 plus.es###banner_top
 portalangop.co.ao##table[style="padding-left:8px;padding-top:8px;padding-bottom:0px;"]
 procurandovagas.org##.box_gr
@@ -746,6 +746,10 @@ revistamonet.com.br###advertisingA
 rr.pt###mrec
 rtp.pt##.GooglePub300_250
 rtp.pt##.PubGoogle300
+saludalia.com###topbar
+saludalia.com##.etiquetaPublicidadNueva
+saludalia.com##.marcoBannerGde
+saludalia.com##td[style="height:110px;width:760px;padding-left:25px;padding-top:5px;"]
 sapo.ao###pub300x250
 sapo.cv###pub300x250
 sapo.mz###pub300x250
@@ -759,10 +763,6 @@ sapo.pt##[style="padding:20px 0px; text-align:center; height:90px"]
 sapo.pt##[style="WIDTH:300px; margin-bottom:10px; TEXT-ALIGN:right"]
 sapo.pt##[style="width:527px; height:150px; float:right"]
 sapo.pt##TABLE[cellpadding="5"][width="641"]
-saludalia.com##.etiquetaPublicidadNueva
-saludalia.com##.marcoBannerGde
-saludalia.com##td[style="height:110px;width:760px;padding-left:25px;padding-top:5px;"]
-saludalia.com###topbar
 setenveo.es##.block-spti_operative
 soitu.es###publicidadsuperior
 soitu.es##.publicidad40
@@ -804,9 +804,9 @@ trivela.com##[style="width: 748px; margin-bottom: 8px;"]
 tudorondonia.com###banner1
 tvazteca.com##.boxBanner
 tvazteca.com##.main950
-tvthudinha.net###nossiga
-tvthudinha.net###adsensecima
 tvgol.biz###anuncio1
+tvthudinha.net###adsensecima
+tvthudinha.net###nossiga
 ultimahora.com##TABLE[summary="banner"]
 ultimosegundo.ig.com.br###pub-island
 ultimosegundo.ig.com.br###pub-Right
@@ -849,8 +849,8 @@ vanguardia.com###pubprime
 vanguardia.com###seccionpauta1
 vanguardia.com###seccionpauta2
 vanguardia.com##.moduletable_pubtexto
-ver-pelis.net##div[style="padding:5px;background-color:#DDD;width:728px;height:90px;"]
 ver-pelis.net###Mod78
+ver-pelis.net##div[style="padding:5px;background-color:#DDD;width:728px;height:90px;"]
 visao.pt###bannerMrec
 vkmag.com###clickbg
 xl.pt###magazine_modules_receivenewsletter
@@ -874,6 +874,7 @@ uol.com.br###ad-120x600-other
 /bbtstats/*
 /ml.track.me?p=
 /visita.php
+||actualtrade.eu^$third-party
 ||adnetwork.com.br^$third-party
 ||azdsl.es/banners_links.
 ||cadenaser.com/est.pl?
@@ -888,7 +889,6 @@ uol.com.br###ad-120x600-other
 ||de17a.com^$third-party
 ||detectca.easysol.net^$third-party
 ||elcorreo.com/acceso.php?
-||actualtrade.eu^$third-party
 ||estadisticas.lanacion.com.ar^
 ||freemeteo.com^*/log.asp$third-party
 ||hit.copesa.cl^$third-party
@@ -898,12 +898,12 @@ uol.com.br###ad-120x600-other
 ||marca.com^*/pixel.gif?n=
 ||micodigo.com^$third-party
 ||newstogram.com^$third-party
+||orange.es/js/logs.js
 ||publicidees.com^$third-party
 ||sl.pt/wa.gif?
 ||stats.adn.es^
 ||stats.folha.com.br^
 ||stats.milenio.com^
-||orange.es/js/logs.js
 ||terra.com.mx/js/metrics_
 ||tracking.fsjmp.com^$third-party
 ||uv.terra.com.br^
