@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: qK4hjmbabmX32WFS9XWDjA
+! Checksum: Ja1mhimRTziR4opHQGC+0w
 ! Fanboy's Adblock list
 ! Updated: 27 Jan 2011
 ! This list expires after 4 days
@@ -442,9 +442,6 @@
 /adruptive.
 /ads-1.js
 /ads-2.js
-/ads_160_
-/ads_300_
-/ads_728_
 /Ads-banner
 /ads-new.
 /ads.asp?
@@ -466,8 +463,8 @@
 /ads/adbot
 /ads/adg.
 /ads/adnet.
-/ads/ads.
 /ads/ads-
+/ads/ads.
 /ads/adstream_
 /ads/adx.
 /ads/banner/*
@@ -520,6 +517,9 @@
 /ads?apid
 /ads?id=
 /ads?spaceid
+/ads_160_
+/ads_300_
+/ads_728_
 /ads_bg.
 /ads_bottom_
 /ads_display.
@@ -1535,9 +1535,9 @@ _Ads/InHouse
 _ads1.asp
 _ads_iframe.
 _ads_index_
+_adsdaq.
 _adsense.
 _adserve/
-_adsdaq.
 _adshow.asp?
 _adsys.js
 _advert_vert
@@ -1804,6 +1804,8 @@ images/ads/*
 ||buzznet.com/topscript.js.php?
 ||c.timeanddate.com^$subdocument
 ||campusfood.com/content/$subdocument
+||cars.com/go/includes/targeting/
+||cars.com/js/cars/catRetargeting.
 ||cbs.com/thunder/ad.doubleclick.net/adx/$domain=cbsnews.com
 ||cdn.videoplaza.com/creatives/
 ||chatroulettehof.com/exitsplash.php
@@ -2169,6 +2171,7 @@ images/ads/*
 ||adn.ebay.com^
 ||adnet-media.net^
 ||adnxs.com^
+||adocean.pl^
 ||adoptim.com^
 ||adotic.com^
 ||adotomy.com^
@@ -2283,7 +2286,6 @@ images/ads/*
 ||adzonk.com^
 ||afcyhf.com^
 ||afdads.com^
-||adocean.pl^
 ||aff.biz/images/banners/
 ||affil.mupromo.com^
 ||affiliateer.com^
@@ -2999,12 +3001,8 @@ images/ads/*
 @@://192.168.0.
 @@://192.168.1.
 @@://192.168.2
-@@||explosm.net/db/files/Comics*/advertising.jpg
 @@_AFL_bettingPage_$domain=afl.com.au
 @@_sx.ads/demand.five.tv/$domain=demand.five.tv,object_subrequest
-@@||wirefly.com/_images/ads/
-@@||style.com/flashxml/*.doubleclick$object
-@@||style.com/images/*.doubleclick$object
 @@||208.100.24.244^$domain=sankakucomplex.com,script
 @@||247realmedia.com/RealMedia/ads/$image,domain=farecompare.com
 @@||247realmedia.com^*/default/empty.gif$domain=broadcastingcable.com
@@ -3074,6 +3072,7 @@ images/ads/*
 @@||dstw.adgear.com/impressions/int/as
 @@||ebayrtm.com/rtm?RtmCmd&a$domain=signin.ebay.com|www.ebay.co.uk|www.ebay.it|www.ebay.com.au|www.ebay.com|www.ebay.ca|www.ebay.in|www.ebay.ie|www.ebay.nl|www.ebay.de|www.ebay.com.hk
 @@||ewallpapers.eu/ads/logo.jpg
+@@||explosm.net/db/files/Comics*/advertising.jpg
 @@||eyewonder.com^*/video/$domain=last.fm
 @@||ezone.com/banners/swfs/*$domain=ezone.com,object
 @@||facepunch.com/ads/
@@ -3147,6 +3146,8 @@ images/ads/*
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
 @@||spotxchange.com/flash/AdPlayer.swf$domain=foxnews.ws|boxlive.tv
 @@||stickyads.adswizz.com/www/delivery/swfIndex.php?$object_subrequest
+@@||style.com/flashxml/*.doubleclick$object
+@@||style.com/images/*.doubleclick$object
 @@||syndication1.viraladnetwork.net^$domain=djmick.co.uk
 @@||telepixtv.com/all/js/ads/tpix.js
 @@||theatlantic.com/widget/$xmlhttprequest
@@ -3165,6 +3166,7 @@ images/ads/*
 @@||weather.com^*/oasadframe.html?position=pagespon$subdocument
 @@||weather.com^*/oasadframe.html?position=pointspon$subdocument
 @@||wefindads.co.uk/images/ad-image-$image
+@@||wirefly.com/_images/ads/
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
 @@||zedo.com/$domain=rajshritalent.com|rajshri.com,object_subrequest
 !     
@@ -4819,7 +4821,6 @@ youporn.com###producer
 ###ad-content
 ###ad-contentad
 ###ad-ear
-###ad_120x600
 ###ad-flex-first
 ###ad-footer
 ###ad-footprint-160x600
@@ -4981,6 +4982,7 @@ youporn.com###producer
 ###ad76890topContainer
 ###ad8
 ###ad_1
+###ad_120x600
 ###ad_130x250_inhouse
 ###ad_160_600
 ###ad_160_600_2
@@ -6237,8 +6239,8 @@ youporn.com###producer
 ###logoAd
 ###long-ad-space
 ###LoungeAdsDiv
-###lowerthirdad
 ###lowerAdvertisement
+###lowerthirdad
 ###lpAdPanel
 ###lrec
 ###lrec_ad
@@ -8252,11 +8254,11 @@ youporn.com###producer
 ##.rightAd_bottom_fmt
 ##.rightAd_top_fmt
 ##.rightads
+##.rightcol-adbox
 ##.rightcol_boxad
 ##.rightcolad
 ##.rightcoltowerad
 ##.rightColumnRectAd
-##.rightcol-adbox
 ##.RightGoogleAFC
 ##.rightrail_ads
 ##.RightRailTop300x250Ad
@@ -8584,9 +8586,9 @@ youporn.com###producer
 ##.widget_sponsored_content
 ##.width-ad-slug
 ##.wikia-ad
-##.withAds
 ##.wikia_ad_placeholder
 ##.wingadblock
+##.withAds
 ##.wnIframeAd
 ##.wnMultiAd
 ##.wp125ad
@@ -9888,7 +9890,6 @@ instructables.com##.aspace
 intelligencer.ca###banZone
 intelligencer.ca##.bnr
 internet.com###mbEnd
-intouchweekly.com###banner-cross
 internet.com##.ch
 internetevolution.com##[style="border: 2px solid #e6e6e6; margin-top: 30px;"]
 internetnews.com###jtjbox
@@ -9897,6 +9898,7 @@ interscope.com###g300x250
 inthemix.com.au##.banner
 inthenews.co.uk###top-banner-placeholder
 intomobile.com##.banner-tbd
+intouchweekly.com###banner-cross
 intradayfun.com##[width="600"][height="250"]
 inventorspot.com###header2-section
 investopedia.com###leader
