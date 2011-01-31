@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: F7iogDdjIBQSpM+lDG+76A
+! Checksum: a1bgI7+GMBM6gK5YIVBCLQ
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 31 Jan 2011
 ! This list expires after 5 days
@@ -37,7 +37,6 @@
 .com/counter?
 .com/e.gif?
 .com/HG?
-.com/ss/*sessionId=
 .com/hitlog?
 .com/i.gif?
 .com/log.gif?
@@ -46,6 +45,7 @@
 .com/log?srvc
 .com/mm.gif?
 .com/p.gif?
+.com/ss/*sessionId=
 .com/stats.ashx?
 .com/stats.aspx?
 .com/t.gif?
@@ -383,9 +383,9 @@
 /dotomi_tracking/*
 /drads?referrer=
 /drivingrevenue/*$third-party
+/dtm_cm.js
 /dtmtag.js
 /dwanalytics.
-/dtm_cm.js
 /eae-logger/*
 /ecblank.gif?
 /ecom/status.jsp?
@@ -616,9 +616,9 @@
 /Maxymiser/*
 /media_viewed_tracking.
 /megacounter/*
+/metrics-ga.
 /metrics.xml
 /metrics/ga.html?
-/metrics-ga.
 /metrics/image.gif?
 /metrics/metrics
 /metrics/survey/*
@@ -738,8 +738,8 @@
 /pr.php?ref
 /pro-ping.php?
 /process.php?ut=*&rf=
-/profile_tracker.
 /prodtracker?
+/profile_tracker.
 /promos/pixels?
 /pubimppixel/*
 /pv.gif?url
@@ -764,7 +764,6 @@
 /RequestTrackerServlet?
 /resourcestat.
 /resxclsa.
-/RMAnalytics.
 /resxclsa.js
 /resxclsa_
 /revenue-science.
@@ -772,6 +771,7 @@
 /revsci.
 /RioTracking2.
 /rkrt_tracker-
+/RMAnalytics.
 /rpc/log?
 /rubics_trk
 /rubicsimp/c.gif?
@@ -894,6 +894,7 @@
 /track/count*js
 /track/dot.gif?
 /track/imp?
+/track/impression?
 /track/jsinfo
 /track/pix.asp?
 /track/site/*
@@ -953,7 +954,6 @@
 /traffic_link_client.php?
 /traffic_record.php?
 /TrafficCookie.js
-/track/impression?
 /traffictracker.js
 /trafic.js
 /traktr.js?
@@ -1017,10 +1017,10 @@
 /webstats/stat
 /webtracking/*
 /webtrekk.js
-/webtrends1.
 /webtrends-
 /webtrends.$script
 /webtrends/*$script
+/webtrends1.
 /webtrends2.
 /webtrends_$script
 /WebTrendsJS/*
@@ -1113,6 +1113,7 @@ size=1x1;
 ||alvenda.com^$third-party
 ||anametrix.net^
 ||attributiontrackingga.googlecode.com^$third-party
+||crmmetrixwris.com^$third-party
 ||etc.grab.com^$third-party,image
 ||facebook.com^*/tracking.js$third-party
 ||fluctuo.com^$third-party
@@ -1135,7 +1136,6 @@ size=1x1;
 ||unicaondemand.com/frontend/dynamicAssets
 ||visualwebsiteoptimizer.com^*/js_visitor_settings.
 ||vmp.boldchat.com^$third-party
-||crmmetrixwris.com^$third-party
 ||vms.boldchat.com/aid/$third-party
 ||webiqonline.com^$third-party
 ||webmd.com/bi_common/$third-party
@@ -1535,11 +1535,12 @@ size=1x1;
 ||clixpy.com^
 ||cloudfront-labs.amazonaws.com^
 ||clustrmaps.com^
+||cmcore.com^
 ||cnetcontentsolutions.com^
 ||cnxweb.com^
 ||co2stats.com^
-||collect.igodigital.com^
 ||cognitivematch.com^
+||collect.igodigital.com^
 ||collection.acromas.com^
 ||compteur.com^
 ||comscore.com^
@@ -1577,7 +1578,6 @@ size=1x1;
 ||data.marketgid.com^
 ||dc.tremormedia.com^
 ||decdna.net^
-||cmcore.com^
 ||decideinteractive.com^
 ||delivery.net^
 ||demandbase.com^
@@ -1944,11 +1944,11 @@ size=1x1;
 ||sapha.com^
 ||sayutracking.co.uk^
 ||sayyac.com^
-||sellpoint.net^
 ||scanalert.com/meter/
 ||scanscout.com^*.png?trackcd
 ||sec-web.com/stats/
 ||sedotracker.com^
+||sellpoint.net^
 ||sendtraffic.com^
 ||service.velaro.com^
 ||sessioncam.com^
