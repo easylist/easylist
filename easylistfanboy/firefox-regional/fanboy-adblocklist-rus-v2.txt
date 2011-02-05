@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wS3ePAX9d/lbzrZe1lbNrg
+! Checksum: 4BtrPwdQ66EBSwfmQQl8ig
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 5 Feb 2011
 ! This list expires after 5 days
@@ -76,8 +76,6 @@ http://r.e1.ru/
 ||agronews.ru^*.swf|
 ||agrotv.ru/informer.swf?
 ||aif.ru/iframes/
-||awaps.yandex.ua^
-||kiks.yandex.ru^
 ||akipress.org/ban/
 ||akipress.org/bimages
 ||aktobeinfo.kz/media/swf/
@@ -87,6 +85,7 @@ http://r.e1.ru/
 ||animereactor.ru/images/125/
 ||animereactor.ru/images/partnr/
 ||auto.ru/rl/msk.
+||awaps.yandex.ua^
 ||begun.ru^$third-party
 ||bestgamer.ru/partners/
 ||bt.od.ua/images/b/
@@ -119,14 +118,16 @@ http://r.e1.ru/
 ||ferra.ru/include/priceru_advert_
 ||files.seti.ee/tbj/pics/
 ||film.ru/videoclik.js
+||findtexts.ru/img/gameleads.gif
+||findtexts.ru^*/300x250_
 ||fishki.net^*.ad.png 
+||fotostrana.ru/partners/
 ||free-torrents.org^*/banners/
 ||freshmac.ru^*/banner_
 ||freshmac.ru^*_banner.
 ||fxcast.com/promo/
 ||gde.ru/img/
 ||general-top.ru/banners/
-||findtexts.ru/img/gameleads.gif
 ||gismeteo.ru/rian.html
 ||goallurl.ru/upload/banner/
 ||grani.ru/files/51119.
@@ -157,6 +158,7 @@ http://r.e1.ru/
 ||kbp.com.ua/images/banners/
 ||kiev.ua/images/banners/
 ||kiev.ua^*-468.jpg
+||kiks.yandex.ru^
 ||kinobaza.net/lobby.gif
 ||kinobaza.net/sluts.php
 ||klikvip.com/banners/
@@ -263,8 +265,6 @@ http://r.e1.ru/
 ||torrentino.ru/images/siders/
 ||trinixy.ru/r/
 ||trud.ru/ad/
-||findtexts.ru^*/300x250_
-||fotostrana.ru/partners/
 ||tx2.ru/informers/
 ||uandi.ru/images/b-
 ||udaff.com/image/$object
@@ -300,12 +300,14 @@ http://r.e1.ru/
 ||ad.rambler.ru^
 ||ad.text-ent.tbn.ru^
 ||ad4.tutu.ru^
+||adgo-online.de^
 ||admitad.com^
 ||admoon.net^
 ||ads.domik.net^
 ||ads.focus-news.net^
 ||ads.globescale.com^
 ||adv.aport.ru^
+||am10.ru/code/
 ||an.yandex.ru^
 ||ap.delfi.ua^
 ||art-gu.ru^*_180x300.
@@ -316,8 +318,6 @@ http://r.e1.ru/
 ||banner.unian.net^
 ||banners.marker.ru^
 ||banners.nextmail.ru^
-||adgo-online.de^
-||am10.ru/code/
 ||bs.mybb.ru^
 ||bz.nextmail.ru^
 ||c.bigmir.net^
@@ -517,7 +517,6 @@ http://ad.ir.ru^$third-party
 ||medialand.relax.ru^$third-party
 ||medialand.ru^$third-party
 ||multonly.ru^$third-party
-||stripvidz.com^$third-party
 ||narod.ru/disk/$~third-party,subdocument
 ||nnn.novoteka.ru^$third-party
 ||nsoft-s.com^$third-party
@@ -577,6 +576,7 @@ http://ad.ir.ru^$third-party
 ||smscasino.net^$third-party
 ||socratos.net/data/$third-party
 ||spylog.com^$third-party
+||stripvidz.com^$third-party
 ||supertura.com^$third-party
 ||teasernet.com^$third-party
 ||teaservizio.com^$third-party
@@ -852,9 +852,9 @@ http://ad.ir.ru^$third-party
 2baksa.net##div[style="clear: right; float: right;"]
 2baksa.net##table[style="border: 3px outset green; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 3dnews.ru###topBanners
+50ml.com.ua##.popup
 5ka.su###girlsBar
 5ka.su##.topBanner
-50ml.com.ua##.popup
 actualcomment.ru###topbanner
 advert.kp.ru##.baner
 advert.kp.ru##[height="400"]
@@ -862,9 +862,6 @@ ag.ru###rotating_banners
 ag.ru###upadbg2
 ag.ru##.a_blk
 ag.ru##.dotsbg2[height="80"]
-auto.ru##.advt_auto
-auto.ru##.advert-words
-auto.ru##.side-banner
 alfabank.ru##.main-banner
 amdclub.ru###topline
 ameno.ru###BannerBlock300500
@@ -879,6 +876,9 @@ animeonline.su##.block_down2
 anode.ru##.cban
 art-gu.ru##.mbn
 auto.lenta.ru##.test-auto
+auto.ru##.advert-words
+auto.ru##.advt_auto
+auto.ru##.side-banner
 autonews.ru##.banner_1
 autonews.ru##.banner_2
 autonews.ru##.banner_3
@@ -979,14 +979,14 @@ f1news.ru###rightBanner240
 fanacmilan.com###adTextausgPjIE
 fastpic.ru###left
 feels.ru##[width="550"][bgcolor="#FF0000"]
-findtexts.ru##table[width="248"][height="248"]
-findtexts.ru##div[style="background-image:url(/img/fotocash_center.gif); width:518px; height:318px; margin:0 auto"]
 file-online.ru##[style="border: 2px dashed green; padding: 15px 3px; font-size: 16px; background-color: rgb(253, 250, 195);"]
 filepost.ru##[style="width: 250px; height: 60px; border: 1px solid orange; line-height: 15px; float: left; margin: 3px; text-align: center;"]
 filepost.ru##[style="width: 250px; height: 60px; border: 1px solid orange; line-height: 20px; float: left; margin: 3px; text-align: center;"]
 finam.ru##.mt15.bggray.sm
 finam.ru##[style="position: absolute; width: 235px; height: 200px; margin-top: 1em;"]
 finance.ua##.adbutton-block
+findtexts.ru##div[style="background-image:url(/img/fotocash_center.gif); width:518px; height:318px; margin:0 auto"]
+findtexts.ru##table[width="248"][height="248"]
 fishki.net##[href="http://fishki.net/stop_advert.php"]
 focus.ua##.Baner300
 football.ua##DIV[style="height:90px;"]
@@ -1320,6 +1320,8 @@ vpsite.ru##.search
 vremya.ru##[height="130"]
 vremya.ru##[width="186"][height="96"]
 vremya.ru##[width="276"][height="420"]
+vstaet.net##.ui-dialog
+vstaet.net##.ui-widget-overlay
 vtomske.ru##.rad_sv_frame
 vtomske.ru##[style="width: 240px; height: 140px; position: relative; overflow: visible; padding: 0pt; margin: 0pt;"]
 vtomske.ru##[style="width: 310px; height: 70px; position: relative; overflow: visible; padding: 0pt; margin: 0pt;"]
@@ -1327,8 +1329,6 @@ vtomske.ru##[style="width: 468px; height: 60px; position: relative; overflow: vi
 vtomske.ru##[style="width: 600px; height: 70px; position: relative; overflow: visible; padding: 0pt; margin: 0pt;"]
 vz.ru###journalAnnosTop
 vz.ru##.shadow
-vstaet.net##.ui-widget-overlay
-vstaet.net##.ui-dialog
 webfile.ru###rich_wiw_banner
 webpark.ru###zinio
 win.mail.ru###slot-container_2
