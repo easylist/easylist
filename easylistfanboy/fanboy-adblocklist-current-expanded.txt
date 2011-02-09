@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ib1DrQ30bu8ut83q3X6Gvw
+! Checksum: AlVldJhRsKuHp7oyXumMgQ
 ! Fanboy's Adblock list
 ! Updated: 10 Feb 2011
 ! This list expires after 4 days
@@ -15,10 +15,10 @@
 &bannerid=
 &clickTag=http
 -ad-banner.
--ad-limits.
--ad-right.
 -ad-left.
+-ad-limits.
 -ad-manager/
+-ad-right.
 -ad-util-
 -ad.jpg?
 -ad2.gif
@@ -370,7 +370,6 @@
 /adfshow?
 /adfunction.
 /adFunctions.
-/sidebar-ad-
 /adgallery1.
 /adgallery2.
 /adhandler.
@@ -494,9 +493,11 @@
 /ads/default_
 /ads/dhtml/*
 /ads/flash/*
+/ads/footer-
 /ads/footer_
 /ads/freewheel/*
 /ads/generator/*
+/ads/header-
 /ads/house_
 /ads/html/*
 /ads/iframe
@@ -523,10 +524,8 @@
 /ads/ringtone_
 /ads/show.
 /ads/side-
-/ads/sidedoor/*
 /ads/sidebar-
-/ads/header-
-/ads/footer-
+/ads/sidedoor/*
 /ads/skins/*
 /ads/sponsor
 /ads/tile-
@@ -1369,6 +1368,7 @@
 /side-ad.
 /sideadiframe.
 /SideAds/*
+/sidebar-ad-
 /sidebar_ads/*
 /sidebarAdvertisement.
 /sidecol_ad.
@@ -1828,7 +1828,6 @@ images/ads/*
 ||akipress.org/ban/
 ||allmovieportal.com/dynbanner.
 ||alternet.org/givememygfp.
-||brecorder.com/images/banners/
 ||analoganalytics.com^
 ||aolcdn.com/os/music/*-skin.
 ||api.toptenreviews.com^*/request.php
@@ -1841,10 +1840,12 @@ images/ads/*
 ||b92.net/images/banners/
 ||badongo.com^*_banner_
 ||banner.itweb.co.za^
+||benchmarkreviews.com^*/banners/
 ||binsearch.info/iframe.php
 ||bit-tech.net/images/backgrounds/skin/
 ||blinkx.com/adhocnetwork/
 ||break.com^*/marketguide-
+||brecorder.com/images/banners/
 ||brothersoft.com^*/softsale/
 ||buzznet.com/topscript.js.php?
 ||campusfood.com/content/$subdocument
@@ -1907,7 +1908,6 @@ images/ads/*
 ||i-tech.com.au^*/Banner/
 ||idesitv.com^*/loadbanners.
 ||idg.com.au/files/skins/
-||benchmarkreviews.com^*/banners/
 ||iframe.travel.yahoo.com^
 ||illimitux.net/js/abp.js
 ||iloveim.com/cAdv
@@ -3947,6 +3947,7 @@ affiliateBannerShow.aspx?
 ||fileporn.org/225x225_
 ||fileporn.org/aff/
 ||fileporn.org/banner
+||fileshare.ro^*/dhtmlwindow.js
 ||freebunker.com^*/js/ex.js
 ||freebunker.com^*/js/layer.js
 ||freebunker.com^*/js/pop.js
@@ -3972,7 +3973,6 @@ affiliateBannerShow.aspx?
 ||ns4w.org/gsm.js
 ||ns4w.org/images/promo/
 ||ns4w.org/images/vod_
-||fileshare.ro^*/dhtmlwindow.js
 ||phun.org/specials/
 ||picturedip.com/modalfiles/modal.js
 ||picturedip.com/windowfiles/dhtmlwindow.css
@@ -4022,7 +4022,6 @@ affiliateBannerShow.aspx?
 ||dvdkinoteatr.com^$third-party
 ||easyflirt.com^$third-party
 ||erotikdating.com^$third-party
-||matrimoniale3x.ro^$third-party
 ||evilangel.com/static/$third-party
 ||exclusivepussy.com^$third-party
 ||facebookofsex.com^$third-party
@@ -4032,6 +4031,7 @@ affiliateBannerShow.aspx?
 ||friendfinder.com^$third-party,domain=~pop6.com|~facebookofsex.com
 ||gfrevenge.com^$third-party
 ||hornymatches.com^$third-party
+||matrimoniale3x.ro^$third-party
 ||media.pussycash.com^$third-party
 ||pornturbo.com/tmarket.php?
 ||promo.twistyscash.com^$third-party
@@ -4058,6 +4058,10 @@ affiliateBannerShow.aspx?
 ||fuckermedia.com^$third-party
 ||go2euroshop.com^$third-party
 ||goo.gl/$third-party
+||joyourself.com^$third-party
+||liveprivates.com^$third-party
+||lsawards.com^$third-party
+||mycams.com^$third-party
 ||private4.com^$third-party
 ||promos.fling.com^$third-party
 ||video-people.com^$third-party
@@ -4070,10 +4074,6 @@ affiliateBannerShow.aspx?
 ||xxxvipporno.com^$third-party
 ||xxxwebtraffic.com^$third-party
 ||yfum.com^$third-party
-||joyourself.com^$third-party
-||liveprivates.com^$third-party
-||lsawards.com^$third-party
-||mycams.com^$third-party
 !     
 ! ---------- General Adult blocking rules ----------
 !     
@@ -6139,6 +6139,7 @@ youporn.com###producer
 ###header-adsense
 ###header-advert
 ###header-advertisement
+###header-adverts
 ###header-banner-spc
 ###header-google
 ###header_ad_728_90
@@ -6170,7 +6171,6 @@ youporn.com###producer
 ###HeaderTextAd
 ###headerTopAdWide
 ###headingAd
-###header-adverts
 ###headline_ad
 ###headlinesAdBlock
 ###hi5-ad-1
@@ -6373,9 +6373,9 @@ youporn.com###producer
 ###moogleAd
 ###most_popular_ad
 ###motionAd
-###mpu300250
 ###mpu-advert
 ###mpu-content
+###mpu300250
 ###mpu_banner
 ###mpu_text_ad
 ###mpuad
@@ -7343,13 +7343,13 @@ youporn.com###producer
 ##.adposition
 ##.adpost
 ##.adRectangleUnit
+##.adrectwrapper
 ##.adRegionSelector
 ##.adReportsLink
 ##.adRight
 ##.adroot
 ##.adrotate_widget
 ##.adrow-post
-##.single-ads
 ##.adrule
 ##.ads-125
 ##.ads-160-head
@@ -8244,7 +8244,6 @@ youporn.com###producer
 ##.MPUTitleWrapperClass
 ##.MREC_ads
 ##.mrec_advert
-##.adrectwrapper
 ##.mvAd
 ##.mvAdHdr
 ##.my-ad250x300
@@ -8452,6 +8451,7 @@ youporn.com###producer
 ##.sideBlockAd
 ##.sideBoxAd
 ##.sideBySideAds
+##.single-ads
 ##.singleAd
 ##.singlead
 ##.singleAdBox
@@ -10441,8 +10441,6 @@ moviesplanet.com##.mgtie5min
 mozillazine.org###goobot
 mozillazine.org###gootop
 msn.co.nz###cat_hl_87409
-mysanantonio.com###advertisement
-mysanantonio.com##.row1
 msn.com###AdContentModule_F
 msn.com###adheadhubs
 msn.com###advertisement
@@ -10483,6 +10481,8 @@ mykawartha.com###td-GblHdrAds
 mykawartha.com##.td-SideWrapperBigBox
 myps3.com.au##.Boxer[style="height: 250px;"]
 myretrotv.com##[width="875"][height="110"]
+mysanantonio.com###advertisement
+mysanantonio.com##.row1
 mysanantonio.com##.yahoo-bg
 myshopping.com.au##.atip
 myspace.com###HeroUnitMedRec
@@ -10710,10 +10710,10 @@ oxygen.com###companion_300x250
 ozcarguide.com##[style="background-color: rgb(235, 242, 247); width: 555px;"]
 p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
+pa-magazine.com###header-banner
+pa-magazine.com###sidebar-banner
 pagead2.googlesyndication.com##TABLE[style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255);"]
 pagesinventory.com##.tpromo
-pa-magazine.com###sidebar-banner
-pa-magazine.com###header-banner
 paidcontent.org###sponsors
 palemoon.org##[width="160"][style="padding: 0px; vertical-align: top;"]
 palmbeachpost.com###cxnAdrail
