@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: i0ZGbH4+QKps1ZQFqGazJw
+! Checksum: 30Y4mQTdYNzuiGnfV7E6yQ
 ! Fanboy P2P-Cleanup Blocking
 ! Updated: 10 Feb 2011
 ! This list expires after 4 days
@@ -37,9 +37,7 @@
 ||filesharingtalk.com/fst/8242/
 ||flipchat.com^$third-party
 ||free-torrents.org^*/banners/
-||fulldls.com/images/fd/tp.jpg
 ||gappon.com/images/hot2.
-||hl.megashares.com^$image
 ||ilcorsaronero.info/home.gif
 ||images.mp3raid.com/imesh.gif
 ||isohunt.com/img/banner_toolbar_
@@ -47,7 +45,6 @@
 ||luxup.ru^$third-party
 ||megashares.com/cache_program_banner.
 ||megashares.com/projectwonderful_medrect.
-||monova.org/ad_
 ||newpct.com/soporte/
 ||newtorrents.info/img/usenext
 ||nyaatorrents.org/images/1$image
@@ -70,10 +67,6 @@
 ||static.torrentreactor.net/imgnew/b_unnew.gif
 ||static.torrentzap.com/tp.jpg
 ||sticker.yadro.ru/ad/
-||superfundo.org/_files/imgkoo300.gif
-||superfundo.org/_files/psb300.
-||superfundo.org/_files/qq.png
-||superfundo.org/ad.js|
 ||thejesperbay.com^
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
@@ -83,10 +76,9 @@
 ||toplist.raidrush.ws^$third-party
 ||torrent.to/pub/Ad/
 ||torrent.to/res/js/ttoads.js
-||torrentdown.com^*/220_121_
-||torrentdown.com^*/80_150
 ||torrentreactor.net/imgnew/direct.jpg
 ||torrentreactor.net/imgnew/http.jpg
+||torrentreactor.net/imgnew/torrentprivacy_
 ||torrentroom.com/earning/
 ||tower-colocation.de^$third-party
 ||tower-colocation.info^$third-party
@@ -110,6 +102,7 @@ win7dl.com##[style="border: 3px outset red; font-size: 16px; background-color: r
 !
 !---------- p2p Element Hiding Rules ----------
 !
+###ads_medrect
 ###search-adv + * > .subheader
 ##.ads_tr
 ##.adv
@@ -198,6 +191,7 @@ freshwap.net##.sponsors
 freshwap.net##[style="width: 750px; margin: 0pt auto;"]
 fulldls.com###banner_sq
 fulldls.com###banner_v1
+fulldls.com###meth_smldiv
 fulldls.com###small_cont > .torrent_table
 fulldls.com###table_filter + .torrent_table
 fulldls.com##.tb_ind
