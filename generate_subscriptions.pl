@@ -85,9 +85,29 @@ foreach my $file (readdir(SOURCE))
 
   unlink("$subsdir/$file.gz");
   system("7za", "a", "-tgzip", "-mx=9", "-mpass=15", "$subsdir/$file.gz", "$subsdir/$file") && warn "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
-
 }
 closedir(SOURCE);
+
+opendir(local *TARGET, $subsdir) || die "Could not open directory $subsdir.";
+foreach my $file (readdir(TARGET))
+{
+  next if $file =~ /^\./ || $file !~ /\.txt$/;
+
+  my $data = readFile("$subsdir/$file");
+  $file =~ s/\.txt$/.tpl/;
+  $exists{$file} = 1;
+
+  my $converted = convertToTPL($data);
+  if (-f "$subsdir/$file")
+  {
+    my $cmp = readFile("$subsdir/$file");
+    next if $cmp eq $converted;
+  }
+  writeFile("$subsdir/$file", $converted);
+
+  unlink("$subsdir/$file.gz");
+  system("7za", "a", "-tgzip", "-mx=9", "-mpass=15", "$subsdir/$file.gz", "$subsdir/$file") && warn "Failed to compress file $subsdir/$file. Please ensure that p7zip is installed on the system.";
+}
 
 opendir(local *TARGET, $subsdir) || die "Could not open directory $subsdir.";
 foreach my $file (readdir(TARGET))
@@ -159,6 +179,100 @@ sub resolveInclude
     return $data;
   }
   return undef;
+}
+
+sub convertToTPL
+{
+  my $data = shift;
+
+  my @result;
+
+  #Add necessary definitions
+  push @result, "msFilterList";
+  push @result, ": Expires=5";
+
+  foreach my $line (split(/\n/, $data))
+  {
+    my $original = $line;
+    #Translate comments, not including Adblock Plus specific values
+    if ($line =~m/\[.*?\]/i)
+    {
+    }
+    elsif ($line =~ m/^!/)
+    {
+      if ($line =~m/Expires/i)
+      {
+        #Eventually use this for the : Expires= value
+      }
+      elsif ($line !~ m/\!\s*checksum/i)
+      {
+        $line =~ tr/\!/#/;
+        push @result, $line;
+      }
+    }
+    else
+    {
+      #Remove lone third party options
+      $line =~ s/\$third-party$//;
+
+      #Translate domain blocks
+      if ($line =~ /^(|@@)\|\|.*?\^/)
+      {
+        $line =~ s/\^/ /;
+      }
+      elsif ($line =~ /^(|@@)\|\|.*?\//)
+      {
+        $line =~ s/\// \//;
+      }
+      #Remove unnecessary asterisks
+      $line =~ s/\*$//;
+      $line =~ s/ \*/ /;
+      #Remove unnecessary slashes and spaces
+      $line =~ s/ \/$//;
+      $line =~ s/ $//;
+		
+      #Remove beginning and end anchors
+      unless ($line =~ m/^\|\|/)
+      {
+        $line =~ s/^\|//;
+      }
+      $line =~ s/\|$//;
+		
+      #Translate the script option to "*.js"
+      $line =~ s/\$script$/\*\.js/;
+		
+      #Translate whitelists, making them wider if necessary
+      if ($line =~ m/^@@\|\|/)
+      {
+        $line =~ s/@@\|\|/\+d /;
+        #Remove all options
+        $line =~ s/\$.*?$//;
+      }
+      #Comment out all other whitelists, as a domain must be specified in Internet Explorer
+      elsif ($line =~ m/^@@/)
+      {
+        $line = "# " . $original;
+      }
+      #Comment out all other filters with options, as Internet Explorer cannot block by item type
+      elsif ($line =~ m/\$/)
+      {
+        $line = "# " . $original;
+      }
+      #Translate all other domain filters
+      elsif ($line =~ m/^\|\|/)
+      {
+        $line =~ s/^\|\|/\-d /;
+      }
+      #Translate all remaining filters as general
+      else
+      {
+        $line = "- " . $line;
+      }
+      push @result, $line;
+    }
+  }
+
+  return join("\n", @result) . "\n";
 }
 
 sub readFile
