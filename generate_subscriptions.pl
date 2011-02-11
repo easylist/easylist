@@ -253,8 +253,8 @@ sub convertToTPL
       {
         $line = "# " . $original;
       }
-      #Comment out all other filters with options, as Internet Explorer cannot block by item type
-      elsif ($line =~ m/\$/)
+      #Comment out all filters with options or element hiding rules, as this functionality is not available in Internet Explorer
+      elsif ($line =~ m/(\$|##)/)
       {
         $line = "# " . $original;
       }
