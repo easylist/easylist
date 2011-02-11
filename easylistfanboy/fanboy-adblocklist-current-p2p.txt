@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: JE+qbJk67wbiXrlMq9bqMQ
+! Checksum: jjz6JJbYjdorfdOW5mjBBw
 ! Fanboy P2P-Cleanup Blocking
 ! Updated: 11 Feb 2011
 ! This list expires after 4 days
@@ -22,6 +22,7 @@
 ||bitreactor.to/sponsor/
 ||bittorrent.am/banners/
 ||bt.am/banners/
+||ozqul.com^*/webbanners.png
 ||cdcovers.cc/images/external/toolbar$image
 ||cryptload.biz/lala.php
 ||datefunclub.com^$third-party
@@ -41,6 +42,7 @@
 ||ilcorsaronero.info/home.gif
 ||images.mp3raid.com/imesh.gif
 ||isohunt.com/img/banner_toolbar_
+||isohunt.com/a/b/
 ||link.link.ru^$third-party
 ||luxup.ru^$third-party
 ||megashares.com/cache_program_banner.
@@ -68,6 +70,7 @@
 ||static.torrentzap.com/tp.jpg
 ||sticker.yadro.ru/ad/
 ||thejesperbay.com^
+||dl4all.com^*/hotfile.gif
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
 ||thepiratebay.org/img/agb.gif
@@ -84,6 +87,8 @@
 ||tower-colocation.info^$third-party
 ||zoozle.org/css/urchin.js
 ||zoozle.org/if.php?q=
+||admulti.com^$third-party
+||webmedia.co.il^$third-party
 !
 !
 !---------- p2p Whitelists ----------
@@ -99,6 +104,10 @@ filespart.com##DIV[style="border-width: 0px; font-size: 130%; margin: 10px 0pt 0
 filestube.com##[style="display: block; float: left; margin: 5px 0pt 0pt 29px;"]
 rlslog.net##[style="width: 468px; height: 60px; float: right; padding: 6px;"]
 win7dl.com##[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
+torrentz.eu##[style="width: 1000px; margin: 0 auto;"]
+torrentz.eu##[style="width: 1000px; margin: 0pt auto;"]
+torrentz.com##[style="width: 300px; height: 270px; margin: 0 auto; float: right; text-align: right;"]
+torrentz.com##[style="width: 300px; height: 270px; margin: 0pt auto; float: right; text-align: right;"]
 !
 !---------- p2p Element Hiding Rules ----------
 !
@@ -107,16 +116,23 @@ win7dl.com##[style="border: 3px outset red; font-size: 16px; background-color: r
 ##.adv
 ##.usenext
 ##[onclick*="http://www.FriendlyDuck.com"]
+##a[href^="http://NowDownloadAll.com"]
+##a[href^="http://www.downloadnow.net/"]
+##a[href^="http://www.FriendlyDuck.com/"]
+##a[href^="http://www.myvpn.pro/"]
+##a[href^="http://www.downloadweb.org/"]
+##a[href^="http://www.mydownloader.net/"]
 4megaupload.com##table[bgcolor="#D8D8D0"]
 4shared.com##.teaser
-4shared.com##CENTER[dir="ltr"]
+4shared.com##.signupbanner
+4shared.com##.christmasBanner
 accuratefiles.com##.box-result
-ahashare.com##TABLE[width="745"][height="95"]
-alivetorrents.com##:first-child + .mode
-alivetorrents.com##IFRAME[width="160"][height="600"]
-be-share.com##TABLE[border="0"][width="98%"]
-bitcoca.com###adv_config
-bitcoca.com##[target="_blank"][style="font-size: 90%;"][rel="nofollow"]
+ahashare.com##a[title="Download the Usenet client"]
+be-share.com##table[width="720"]
+bitcoca.com###active3
+bitcoca.com###active2
+bitcoca.com###active1
+alivetorrents.com##.mode
 bitenova.nl###header_un
 bitenova.nl###search_un
 bitenova.nl##.un
@@ -128,15 +144,8 @@ bitenova.org##.un
 bitenova.org##.un_banner
 bitreactor.to##.adbar
 bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
-bittorrent.am##[href^="http://www.myvpn.pro"]
-bittorrent.am##INPUT[value="Anonymous Download"]
-bittorrent.am##INPUT[value="Download x10 faster"]
 bittorrent.am##NOINDEX
 bittorrent.am##TD[height="120"][align="center"]
-btjunkie.org##[cellpadding="4"] + TABLE.tab_results
-btjunkie.org##TH[align="left"][style="background-color: #C7C7C7;"]
-btjunkie.org##TH[align="left"][style="background-color: rgb(199, 199, 199);"]
-btjunkie.org##TH[width="170"][height="100%"]
 btmon.com###oafa_target_4
 btmon.com###oafa_target_6
 btmon.com##A[href^="https://www.furk.net"]
@@ -149,43 +158,21 @@ cdcovers.cc##TD[width="10"]
 crackdump.com##[width="468"]
 crackdump.com##[width="74"]
 darelease.com##[style="width: 100%; margin: 0pt auto;"]
-demonoid.com###bnr3
-demonoid.com##[style="color: rgb(119, 119, 119); background: none repeat scroll 0% 0% rgb(205, 208, 178); padding-left: 10px; padding-right: 10px; border: 1px solid rgb(119, 119, 119);"]
-demonoid.com##a[href="http://btguard.com/?a=demon"]
-demonoid.com##TD.pad9px_right
-demonoid.com##TD.tone_3_bl[colspan="10"]
 demonoid.me##span[style="color: #777777; background: #cdd0b2; padding-left: 10px; padding-right: 10px; font: bold 102%; border: 1px solid #777777;"]
-dl4all.com##DIV[style="padding:10px 0"]
-downtr.net##[style="display: block; margin-left: 2px; color: #75808A; font-size: 16px; white-space: nowrap;"]
-downtr.net##[style="width: 800px; margin: 0 auto;"]
-downtr.net##[style="width: 800px; margin: 0pt auto;"]
 egydown.com##[style="display: block; background-color: #ffffff; border-bottom: solid 1px #F5DFD6; padding: 8px 0;"]
 evildrome.com##TABLE[border="1"][width="100%"]
-extratorrent.com##.ads2
-extratorrent.com##.borderdark[style="padding: 5px;"]
-extratorrent.com##[style="border: 1px solid rgb(204, 204, 255);"]
-fenopy.com###search_table[style="position: absolute; top: 0px; left: 0px;"]
-fenopy.com##.direct
-fenopy.com##.http
-fenopy.com##DT.t[style="width: 800px;"]
+fenopy.com##.spn
 file.sh###speed_ads
-filespart.com##DIV[style="border-width:0px;font-size:130%;margin: 10px 0 0;padding:6px 0 0;background-color:#fff;"]
-filestube.com###dfr_outer
-filestube.com##.err404
-filestube.com##.file_details_title
-filestube.com##.file_details_title:first-child
-filestube.com##.nova:first-child
+filespart.com###vdwd30
 filestube.com##.other_adv
 filestube.com##.other_adv2
 filestube.com##.remads
 filestube.com##.resultadv
-filestube.com##[href^="http://www.10xdownloads.com"]
 filestube.com##[style="display:block;float:left;margin:5px 0 0 29px;"]
 flmsdown.net##.direct
 free-torrents.org###MarketGid900
-freshdl.com##[style="width: 750px; margin: 0pt auto;"]
-freshwap.net##.sponsors
-freshwap.net##[style="width: 750px; margin: 0pt auto;"]
+freshwap.net##.fast
+freshwap.net##.regular
 fulldls.com###banner_sq
 fulldls.com###banner_v1
 fulldls.com###meth_smldiv
@@ -197,18 +184,15 @@ flixflux.co.uk##.fan
 flixflux.co.uk##.banner2
 flixflux.co.uk##.bgBlue
 gamestorrents.com##.publicidad_horizontal
-gfxtra.com##.detay[style="margin-bottom: 0pt;"]
-google.com##TABLE[cellpadding="0"][width="100%"][style="border: 1px solid rgb(204, 204, 204);"]
+hotfileserve.ws##a[href^="http://www.filesonic.com/premium-ref/"]
+hotfileserve.ws##.glb-opec
 indowebster.com###tr_iklanbaris2
 ineedfile.com##.dwn_link_adv
-irfree.com###sidebarleft
-irfree.com##TABLE[border="1px"][style="width: 100%;"]
-isohunt.com##[title="Direct downloads via Usenet"]
-kenborden.com##[style*="(\"http://i49.tinypic.com/"]
-kenborden.com##A[style="background-image:url(http://i49.tinypic.com/xcmarn.png); background-repeat:no-repeat; font:Arial, Helvetica, sans-serif; font-size:14px; color:#000099; padding-left:25px"]
-kickasstorrents.com###promoPartner2
+isohunt.com##span[style="font-size:9px;color:#B4B4B4"]
+kenborden.com##div[style="display:block; padding:10px; border: 1px  dashed #339900; background-image:url(http://img822.imageshack.us/img822/9737/65843194.png); background-repeat:no-repeat; background-color:#FFFFFF;"]
+kickasstorrents.com###promoLeechmonster
 kickasstorrents.com##.directDownloadButton
-kickasstorrents.com##.downloadMovieButton
+kickasstorrents.com##.advertising
 kohit.net##.banner_468
 kohit.net##.content_banner_right
 kohit.net##.top_banner
@@ -232,27 +216,24 @@ newtorrents.info###promo
 newtorrents.info###topbanner
 newtorrents.info###yourad
 newtorrents.info##[style="padding-left: 20px;"][colspan="2"]
-novamov.com##.top_banner.blockborder
-nowfreedownloads.com##TABLE[width="680"]
+novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
+novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
-nyaatorrents.org##.bottomad
-nyaatorrents.org##[style="float:left;width:760px;height:97px;text-align:left;padding:7px 0px 0px 5px;"]
-nyaatorrents.org##[style="text-align: left; padding: 2px; margin-top: 5px; margin-left: 15px;"]
-nyaatorrents.org##[style="width: 728px; float: left; text-align: left; padding: 2px; margin-top: -4px; margin-left: 15px;"]
 onlytorrents.com###prv
+nyaa.eu##div[style="float:left;width:760px;height:97px;text-align:left;padding:7px 0px 0px 5px;"]
+nyaa.eu##div[style="width:120px;float:right;margin-top:65px;margin-left:6px;"]
+nyaa.eu##div[style="width:800px;float:left;text-align:left;padding:2px 0px 0px 5px;margin-top:-4px;"]
 p2pnet.net###sidebar2
 phazeddl.com###searchResult:first-child
-phazeddl.com##[href^="http://www.mydownloader.net/"]
 picspik.com###topbar
-qtorrents.com##.box.pad[style="margin-bottom: 20px;"]
 rapid4me.com###speeds_ads_fstitem
-rapidlibrary.com###table17[width="98%"][border="0"]
+rapidlibrary.com##.mini.mediaget
 rapidmore.com###fastdw
-rapidog.com##TD[align="left"][colspan="3"]
+rapidog.com##td[style="font-size:11"]
+rapidog.com##h3[style="color:#00CC00"]
 rapidsharedata.com###Sponsored
 releasehour.com##TABLE[border="0"][align="center"][width="70%"]
 rlslog.net##div[style="width:468px; height:60px; float: right; padding:6px;"]
-rs-free-download.com##TABLE[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
 rslinks.org###block-block-22
 rslinks.org###block-block-40
 scnsrc.net##.adv-p
@@ -269,7 +250,7 @@ sumotorrent.com##.directStreaming
 sumotorrent.com##.freeDirect
 superfundo.org###pa
 thepiratebay.org##.ads
-therapidbay.com##[style="border: 3px outset red; font-size: 16px; background-color: rgb(253, 252, 240); margin-bottom: 10px;"]
+therapidbay.com##div[style="border: 2px solid red; margin: 10px; padding: 10px; text-align: left; height: 80px; background-color: rgb(255, 228, 0);"]
 thewarezscene.org##.forumbg
 tooorgle.com###most_popular
 torrent-finder.com##.cont_lb
@@ -313,16 +294,8 @@ torrents.to##.da-top
 torrents.to##.da-top
 torrenttree.com###sites_right
 torrenttree.com##.adver
-torrentz.com##.info
-torrentz.com##[href^="http://www.binverse.com/BNV/usenet-access.cfm?"]
-torrentz.com##[href^="http://www.nowfreedownloads.com/?q="]
-torrentz.com##[style="width: 1000px; margin: 0 auto;"]
-torrentz.com##[style="width: 1000px; margin: 0pt auto;"]
-torrentz.com##[style="width: 300px; height: 270px; margin: 0 auto; float: right; text-align: right;"]
-torrentz.com##[style="width: 300px; height: 270px; margin: 0pt auto; float: right; text-align: right;"]
-torrentz.com##A[href^="http://Rapid-Downloads.com/index.asp?"]
-torrentz.com##IFRAME[width="300"][height="250"]
-torrentz.com##IFRAME[width="728"][height="90"]
+torrentz.eu##div[style="width: 1000px; margin: 0 auto;"]
+torrentz.eu##div[style="width: 300px; height: 270px; margin: 0 auto; float: right; text-align: right;"]
 torrentzap.com##.b160
 torrentzap.com##.b300
 torrentzap.com##.b768
@@ -333,7 +306,6 @@ twistysdownload.com##[style="width: 750px; margin: 0pt auto;"]
 uploaded.to##[style="background-repeat: no-repeat; width: 728px; height: 90px; margin-left: 0px;"]
 uploaded.to##[style="margin-left: 15px;"]
 uploaded.to##[style="padding-right: 5px; color: rgb(204, 204, 204);"]
-usniff.com###bottom
 usniff.com###bottom
 usniff.com##.top-usniff-torrents
 vertor.com##.downweb
@@ -348,9 +320,6 @@ zeropaid.com##[style="background: none repeat scroll 0% 0% rgb(238, 238, 238); p
 zoozle.net##.infobalken22
 zoozle.net,zoozle.org###search_right
 zoozle.net,zoozle.org###search_topline
-||admulti.com^$third-party
-||marketgid.com^$third-party,subdocument
-||webmedia.co.il^$third-party
 !
 ! ---------- Non-English p2p Trackers ----------
 !
