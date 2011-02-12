@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: CE3kkNndc/KYb1a4arlN/w
+! Checksum: QyoTVNM3Q4GkvwbdMdKhVw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 12 Feb 2011
 ! This list expires after 5 days
@@ -9,8 +9,6 @@
 !     
 /16x16-delicious.
 /16x16-digg.
-/delicious_64.
-/digg_64.
 /16x16-mixx.
 /16x16-newsvine.
 /18x18-reddit.
@@ -25,6 +23,8 @@
 /delicious-icon.
 /delicious.gif|$domain=~delicious.com
 /delicious.png|$domain=~delicious.com
+/delicious_64.
+/digg_64.
 /disableRightClick.
 /disablerightclick.
 /email_follow.
@@ -124,12 +124,12 @@
 /social_clip_icons.
 /socialbadges.
 /socialbar-
+/SocialBookmark/*
 /socialIcons-
 /socialIcons.
 /socialicons/*
 /socialmedia/*$image,script
 /socila-media-
-/SocialBookmark/*
 /sociofluid/*$~stylesheet,~script
 /st_add-this_
 /st_buzz_
@@ -266,6 +266,7 @@ _social_icons.
 ##.facebook_widget
 ##.facebookRecentActivity
 ##.facebookRecommend
+##.facebookSite
 ##.facebookWidgetry
 ##.fb.icon
 ##.fb_badge
@@ -280,7 +281,6 @@ _social_icons.
 ##.fbRecommend
 ##.fbShare
 ##.fbshare
-##.facebookSite
 ##.follow-facebook
 ##.follow-us-facebook
 ##.footer-facebook
@@ -478,7 +478,6 @@ _btn_facebook.
 /icon-twitter.
 /icon_twit.
 /icon_twitter.
-/twitter_64.
 /icon_twitter_
 /icons/twitter.
 /icons/twitter_
@@ -496,6 +495,7 @@ _btn_facebook.
 /twitter1.png|$domain=~twitter.com
 /twitter_16.
 /twitter_32.
+/twitter_64.
 /twitter_add.
 /twitter_badge.
 /twitter_bubble_
@@ -728,6 +728,7 @@ google.com.au##.vspib
 ###social-toolbox
 ###social-votes
 ###social-widget
+###SOCIAL_BOOKMARK_ICONS_338
 ###social_bookmarking_module
 ###social_bookmarks
 ###social_bookmarks_list
@@ -893,7 +894,6 @@ google.com.au##.vspib
 ##.shareBottom
 ##.sharebox
 ##.sharebutton
-###SOCIAL_BOOKMARK_ICONS_338
 ##.shareButtons
 ##.sharebuttons
 ##.shareButtonsHolder
@@ -936,7 +936,6 @@ google.com.au##.vspib
 ##.social-sticky
 ##.social-stuff
 ##.social-tools
-##.SocialMediaLinks
 ##.social_bar
 ##.social_bookmark
 ##.social_bookmarks
@@ -963,6 +962,7 @@ google.com.au##.vspib
 ##.socialmedia
 ##.socialmedia-buttons
 ##.socialmediabox
+##.SocialMediaLinks
 ##.socialMediaModule
 ##.socialNetworks
 ##.socialsidebar
@@ -1144,6 +1144,7 @@ bhaskar.com##.bgTB
 billshrink.com##div[style="line-height:150%; border: thin dotted black; margin: 10px 0px; padding: 15px; background-color: rgb(255, 250, 217); font-size: 1.2em;"]
 bing.com###sw_pb
 bink.nu##.shareblock
+bizjournals.com##.persistentFooter
 bleacherreport.com###article-newsletter-engage-content
 bleacherreport.com###article-newsletter-side-module
 bleacherreport.com###fans-of-br-module
@@ -1295,6 +1296,7 @@ ehow.com###eHowFeedbackTab
 epicurious.com###luxury_link_promo
 eric-richardson.com###follow
 examiner.com###block-ex_article-article_facebook_block
+examiner.com###block-ex_article-homepage_facebook_block
 examiner.com###parsely_widget_ct
 explosm.net##[style="border: 6px solid #ff9900; padding: 6px; background-color: #ffffff;"]
 factcheck.org##.connections
@@ -1309,7 +1311,6 @@ filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/i
 filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/myspace_16.png) left no-repeat; clear: both; line-height: 30px;"]
 filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/twitter_16.png) left no-repeat; clear: both; line-height: 30px;"]
 filehippo.com###feeds
-examiner.com###block-ex_article-homepage_facebook_block
 filehippo.com##.box-two-feature
 filehippo.com##[href="http://feeds.feedburner.com/filehippo"]
 firefoxfacts.com##.rss
@@ -1540,6 +1541,7 @@ mint.com##.article-share
 mnn.com###block-portals-mothernature-delivered
 mnn.com##.join-earth-shares-widget
 motherjones.com###pre-page
+motortrend.com###ITEM_GENERIC_BLURB_370
 moviefone.com###fb-tabs
 moviefone.com##.social
 mozilla.com###connect
@@ -1634,7 +1636,6 @@ nytimes.com###facebook_item
 nytimes.com###upNext
 nytimes.com##.feeds
 nzherald.co.nz##.msn
-bizjournals.com##.persistentFooter
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
 obviousmag.org##.postShare
@@ -1788,7 +1789,6 @@ switched.com##.rss
 switched.com##[title="Facebook"]
 switched.com##[title="Twitter"]
 take.fm##.facebook
-motortrend.com###ITEM_GENERIC_BLURB_370
 take.fm##.twitter
 techcrunch.com##.boxy
 techeye.net##.subscribe
@@ -1984,9 +1984,9 @@ yoink.com##.facebook
 yoink.com##.twitter
 youtube.com###watch-share
 zap2it.com###twitter
+zdnet.co.uk###follow
 zdnetasia.com###follow
 zeropaid.com##.thumbnail-container
-zdnet.co.uk###follow
 ~addthis.com##[href="http://www.addthis.com/bookmark.php"]
 ~facebook.com##.connect_widget
 ~infoworld.com##.share_wrapper
