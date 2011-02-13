@@ -236,13 +236,13 @@ sub convertToTPL
       {
         $line =~ s/^\|//;
       }
-      $line =~ s/\|$//;
+      $line =~ s/\|($|\$)//;
 		
       #Translate the script option to "*.js"
       $line =~ s/\$script$/\*\.js/;
 		
       #Translate whitelists, making them wider if necessary
-      if ($line =~ m/^@@\|\|/)
+      if ($line =~ m/^@@\|\|.*?(^|\/)/)
       {
         $line =~ s/@@\|\|/\+d /;
         #Remove all options
@@ -258,10 +258,15 @@ sub convertToTPL
       {
         $line = "# " . $original;
       }
-      #Translate all other domain filters
-      elsif ($line =~ m/^\|\|/)
+      #Translate all domain filters
+      elsif ($line =~ m/^\|\|.*?(^|\/)/)
       {
         $line =~ s/^\|\|/\-d /;
+      }
+      #Translate all other double anchored filters
+      elsif ($line =~ m/^\|\|/)
+      {
+        $line =~ s/^\|\|/\- http:\/\//;
       }
       #Translate all remaining filters as general
       else
