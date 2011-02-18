@@ -26,5 +26,8 @@ perl addChecksum.pl firefox-regional\fanboy-adblocklist-pol.txt
 :: Opera
 perl addChecksum.pl opera\fanboy-adblocklist-elements-v3.css
 perl addChecksum-opera.pl opera\urlfilter.ini
+:: Internet Explorer
+perl addChecksum.pl ie\fanboy-adblock-addon.txt
+perl addChecksum.pl ie\fanboy-tracking-addon.txt
 hg commit -m "%*"
 hg push
