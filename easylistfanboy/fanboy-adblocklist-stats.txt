@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: u0Cpjn8F5T0dfmuuIsRk4A
+! Checksum: Mlt5Ol5dDHrfIgReWHryFw
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 21 Feb 2011
 ! This list expires after 5 days
@@ -189,24 +189,24 @@
 /analiz.php3?
 /analytic_data_
 /analyticReportingAS3.
-/AnalyticsOnDemand/*
 /analytics.js
+/analytics.php.
 /analytics.php?
 /analytics.swf?
 /analytics/cms/*
 /analytics/js/*
-/analytics.php.
 /analytics:jquery
 /analytics_tracker
+/AnalyticsOnDemand/*
 /analyticstrack.
 /analyzer/*
 /analyzer2.
 /answertip.jsp?
 /anycent_tracker_
 /apitracking.
-/aslog.php?
 /appendOmnitureTracking.
 /article_hit.php?
+/aslog.php?
 /astracker.
 /astracker/*
 /atlas_track.
@@ -235,7 +235,8 @@
 /beacon?
 /beaconimg.php?
 /BehaviourCaptureHandler.
-/brightedge.js
+/bicomscore.
+/bicomscore_
 /bidiq.
 /bin/reff.php
 /blank.gif?
@@ -243,10 +244,9 @@
 /blogtotal_stats_
 /bluekai.
 /bluetracker/*
-/botd.gif?
 /boost_stats.
-/bicomscore.
-/bicomscore_
+/botd.gif?
+/brightedge.js
 /bsc_trak.
 /bstats.
 /buffer.pgif?r=
@@ -293,7 +293,6 @@
 /clear/c.gif?
 /click-tracker
 /click_tracking
-/comscore/beacon.js
 /clickability-
 /clickability/*
 /clickAnalyse.
@@ -331,6 +330,7 @@
 /common/transparent-pixel.gif
 /competeTracking_test.html?
 /comscore.
+/comscore/beacon.js
 /comscore_beacon.
 /comscorebeacon.
 /condenet-metric.
@@ -472,6 +472,7 @@
 /GetSidPixelTag?sid=
 /gifbanner?
 /gifstats.
+/glbltrackjs.
 /globalPageTracking.
 /gn_analytics.
 /gn_tracking.
@@ -482,7 +483,6 @@
 /google_analytics_
 /google_page_track
 /googleAnalytics.
-/glbltrackjs.
 /googleanalytics/*
 /googleAnalytics1.
 /googleAnalytics2.
@@ -623,20 +623,20 @@
 /logging.js
 /logging_requests.gif?
 /logging_save.
-/logwriter.php
 /logHandler.
 /LogImpression.
 /logLoad/?
 /logpv.aspx?
 /logStatistic?
+/logwriter.php
 /lycostrack.js
 /m1x1.jpg
 /m360lib.js
 /mapstats.
 /maxymiser.
-/mediateGA.js
 /Maxymiser/*
 /media_viewed_tracking.
+/mediateGA.js
 /megacounter/*
 /metrics-ga.
 /metrics.xml
@@ -742,12 +742,12 @@
 /pixel.jsp?
 /pixel.php?
 /pixel.swf?
-/pixels.jsp?
 /pixel_track.
 /pixel_trans.gif
 /pixelcounter.
 /PixelImg.asp
 /pixellog.
+/pixels.jsp?
 /pixelstats/*
 /pixeltrack.php?
 /pixeltracker.
@@ -793,7 +793,6 @@
 /resourcestat.
 /resxclsa.
 /resxclsa_
-/tynt.js
 /revenue-science.
 /revenuescience.
 /revsci.
@@ -891,12 +890,12 @@
 /StatsMngrWebInterface.
 /statspixel.
 /statsupdater.aspx?
+/stcollection.
 /stt/track.js|
 /stt/track/*
 /surphace_track.
 /surveyoverlay/*
 /syndication/metrics/*
-/stcollection.
 /tacoda.
 /tacoda_
 /tag.gif?log
@@ -952,6 +951,7 @@
 /tracker_article
 /tracker_gif.
 /tracker_pixel.
+/TrackerAS3.
 /trackerstatistik.
 /tracking.gif?
 /tracking.jsp
@@ -997,9 +997,9 @@
 /transparent1x1.
 /trax.gif?
 /triggertag.js
-/TrackerAS3.
 /ttt.gif?
 /turn-proxy.html?
+/tynt.js
 /uchkr.swf
 /uds/stats?
 /ultra_track/*
@@ -1025,15 +1025,15 @@
 /visitor.cgi?aff
 /visitor.gif?ts=
 /visitor/index.php?
-/visualsciences.
 /visitWebPage?_
 /visualdna.js
+/visualsciences.
 /vs/tag.gif?
 /vs/track.js?
 /vs_track.
 /vtrack.php?
-/vTracker_
 /vtracker.
+/vTracker_
 /vzTracker/*
 /wanalytics/*
 /wcount.php?
@@ -1054,9 +1054,9 @@
 /WebStat.asmx
 /WebStat2.asmx/*
 /webstatistics.php?
+/webstats.php
 /webstats/stat
 /webtracking/*
-/webstats.php
 /webtrekk.js
 /webtrends-
 /webtrends.$script
@@ -1173,8 +1173,8 @@ size=1x1;
 ||intensedebate.com/remotevisit.php?$third-party
 ||iplocationtools.com^$third-party
 ||izearanks.com^$third-party
-||pixel.quantserve.com^*&type=gif$third-party
 ||mega-stats.com^$third-party
+||pixel.quantserve.com^*&type=gif$third-party
 ||platform.communicatorcorp.com^$third-party
 ||projop.dnsalias.com^$third-party
 ||quantserve.com^$third-party,script,image
@@ -1231,8 +1231,6 @@ size=1x1;
 ||betway.com/snowflake/?
 ||bi.medscape.com^
 ||bing.com/fd/ls/l?
-||icq.com^*/tagittag.gif
-||icq.com/search/js/stats.js
 ||bing.com/partner/primedns
 ||blankfire.com^*_.gif
 ||break.com^*/track-cdp.html
@@ -1242,8 +1240,6 @@ size=1x1;
 ||buzzfed.com^/ABTest.js?
 ||buzzfeed.com^*/small.gif?
 ||cartier.co.uk^*/eyeblaster.
-||cooksunited.co.uk^*/pixel/
-||cooksunited.co.uk/counter
 ||cbox.ws/box/relay.swf?
 ||cbsnews.com/i/trk/
 ||celebritycruises.com/js/pixel_matrix.
@@ -1255,9 +1251,10 @@ size=1x1;
 ||cnn.com/images/tracking/
 ||codeplex.com^*/broker.js|
 ||commentarymagazine.com/metatraffic2/
+||cooksunited.co.uk/counter
+||cooksunited.co.uk^*/pixel/
 ||creditcards.com/sb.php?
 ||cxri.net/cgi-bin/
-||ttxm.co.uk^*/log.js
 ||data.ninemsn.com.au/*GetAdCalls
 ||dell.com/logging?
 ||dell.com/metrics/
@@ -1301,9 +1298,12 @@ size=1x1;
 ||hb.lycos.com/hb.js
 ||hellobar.com/ping?
 ||hellomagazine.com/idcookie/pixel.png?
+||holiday-rentals.co.uk^*/tracking.html
 ||hottopic.com^*/techprops.
 ||hubpages.com/c/
 ||i365.com^*/pv.aspx?
+||icq.com/search/js/stats.js
+||icq.com^*/tagittag.gif
 ||id.google.*/verify/
 ||imdb.com/rd/?q
 ||imdb.com/twilight/?
@@ -1372,14 +1372,15 @@ size=1x1;
 ||rover.ebay.com^
 ||rss.feedsportal.com/c/$image
 ||runnersworld.com/static/UniversalPixel.html
+||sa.bbc.co.uk^
 ||sciencedaily.com/cache.php?
 ||seeclickfix.com^*/text_widgets_analytics.html
 ||servicetick.com^
 ||shopping.com/pixel/
+||shutterfly.com^*/pageloadtime.gif?
 ||siriusxm.com^*/sxm_ga.min.js
 ||sitemeter.com/meter.asp
 ||sovereignbank.com/utils/track.asp
-||sa.bbc.co.uk^
 ||ssl-stats.wordpress.com^
 ||st.mirror.co.uk^
 ||st.virginmedia.com^
@@ -1393,9 +1394,9 @@ size=1x1;
 ||stats.justin.tv^
 ||stats.paypal.com^
 ||stats.video.search.yahoo.com^
-||shutterfly.com^*/pageloadtime.gif?
 ||store.yahoo.net^*/ywa.js
 ||surveys.cnet.com^
+||t3.com/js/trackers.js
 ||teennick.com/js/ga/
 ||themis.yahoo.com/a?
 ||thinkgeek.com/js/rts.js
@@ -1406,14 +1407,14 @@ size=1x1;
 ||track.netzero.net^
 ||track.ning.com^
 ||tracker.anandtech.com^
+||tracker.cpapath.com^
 ||tracker.pinnaclesports.com^
 ||tracker.wordstream.com^
-||tracker.cpapath.com^
 ||trax.tvguide.com^
 ||trovus.co.uk/tracker/
+||ttxm.co.uk^*/log.js
 ||twitter.com/abacus?
 ||twitter.com/scribe?log
-||t3.com/js/trackers.js
 ||up.boston.com^
 ||up.nytimes.com^
 ||upi.com/story/stat/
@@ -1422,9 +1423,11 @@ size=1x1;
 ||ut.ratepoint.com^
 ||v.fwmrm.net/ad/*defaultImpression
 ||v.fwmrm.net/ad/*slotImpression
+||vbs.tv/tracker.html
 ||video-stats.video.google.com^
 ||videoplaza.com/proxy/tracker?
 ||visitors.sourcingmap.com^
+||vmware.com/files/include/ga/
 ||vresp.com/s.gif?
 ||wallpaperstock.net/partners.js
 ||warp.prnewswire.co.uk^
@@ -1434,25 +1437,22 @@ size=1x1;
 ||worksheetsengine.com/fd/ls/l?
 ||worldnow.com/global/tools/video/Namespace_VideoReporting_
 ||wovencube.com/track/
+||ws.elance.com^
 ||wusstrack.wunderground.com^
 ||xg4ken.com^
-||vbs.tv/tracker.html
 ||yahoo.com/serv?s
 ||yahoo.com/track/
 ||yahoo.com^*/pageview/
-||holiday-rentals.co.uk^*/tracking.html
 ||yellowpages.com/images/li.gif?
 ||yelp.com/spice?
 ||yimg.com/mi/ywa.js$domain=~yahoo.com|~nydailynews.com
 ||yimg.com^*/swfproxy-$object
-||ws.elance.com^
 ||youtube-nocookie.com/gen_204?
 ||youtube.com/ptracking?
 ||youtube.com/s?
 ||zap2it.com^*/editorial-partner/
 ||zappos.com/onload.cgi?
 ||zvents.com/zat?
-||vmware.com/files/include/ga/
 !     
 ! ---------- General blocking rules ----------
 !     
@@ -1488,7 +1488,6 @@ size=1x1;
 ||active-tracking.de^
 ||activemeter.com^
 ||adaction.se^
-||jscount.com^
 ||adadvisor.net^
 ||adchemy-content.com^
 ||adchemy.com^
@@ -1583,7 +1582,6 @@ size=1x1;
 ||cedexis.com^
 ||cedexis.net^
 ||celebros-analytics.com^
-||clickxchange.com^
 ||cetrk.com^
 ||chango.com^
 ||channelintelligence.com^
@@ -1611,6 +1609,7 @@ size=1x1;
 ||clickstream.loomia.com^
 ||clicktale.net^
 ||clicktracks.com^
+||clickxchange.com^
 ||client.tahono.com^
 ||clixcount.com^
 ||clixpy.com^
@@ -1836,6 +1835,7 @@ size=1x1;
 ||ixs1.net/s/
 ||izea.com^
 ||jobs.hrkspjbs.com^
+||jscount.com^
 ||jstracker.com^
 ||keywordmax.com^
 ||kissmetrics.com^
@@ -1910,7 +1910,6 @@ size=1x1;
 ||nedstatpro.net^
 ||nestedmedia.com^
 ||netagent.cz^
-||pm14.com^
 ||netavenir.com^
 ||netflame.cc^
 ||netmining.com^
@@ -1968,6 +1967,7 @@ size=1x1;
 ||placemypixel.com^
 ||player.ooyala.com/verify?
 ||plecki.com^
+||pm14.com^
 ||pmetrics.performancing.com^
 ||pointomatic.com^
 ||popsample.com^
@@ -2138,7 +2138,6 @@ size=1x1;
 ||tracking202.com^
 ||trackmyweb.net^
 ||trackset.com^
-||trk.pswec.com^
 ||tracksy.com^
 ||trackword.net^
 ||trackyourstats.com^
@@ -2152,6 +2151,7 @@ size=1x1;
 ||trendcounter.com^
 ||trialpay.com^
 ||triggit.com^
+||trk.pswec.com^
 ||trk.sodoit.com^
 ||trk.vindicosuite.com^
 ||trumba.com^
@@ -2168,6 +2168,7 @@ size=1x1;
 ||vcommission.com^
 ||verticalacuity.com^
 ||viglink.com^
+||virtueworldwide.com/ga-test/
 ||visiblemeasures.com/log?
 ||visibli.com^
 ||visistat.com^
@@ -2176,7 +2177,6 @@ size=1x1;
 ||visitor-track.com^
 ||visitorinspector.com^
 ||visitorprofiler.com^
-||virtueworldwide.com/ga-test/
 ||visitortracklog.com^
 ||visitstreamer.com^
 ||visualdna-stats.com^
@@ -2203,12 +2203,12 @@ size=1x1;
 ||webtracker.apicasystem.com^
 ||webtraffic.ttinet.com^
 ||webtraffiq.com^
-||webtrekk.net^
 ||webtraxs.com^
+||webtrekk.net^
 ||webtrends.com^
-||weesh.co.uk^
 ||webtrendslive.com^
 ||webvoo.com^
+||weesh.co.uk^
 ||whitepixel.com^
 ||widget.quantcast.com^
 ||widgetserver.com^*/image.gif?
@@ -2297,8 +2297,8 @@ size=1x1;
 @@||logging.apache.org^
 @@||mail-www.baynote.net^$domain=mail.com
 @@||metrics.howstuffworks.com^$image
-@@||metrics.torproject.org^
 @@||metrics.nissanusa.com/b/ss/nissanusacom/$image
+@@||metrics.torproject.org^
 @@||muzu.tv/flash/*tracking
 @@||ncbi.nlm.nih.gov/stat?
 @@||outbrain.com/utils/ping.html?random$domain=fark.com|limelife.com
