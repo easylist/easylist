@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: D+SR4tqoAEA/JrTNx1rYYQ
+! Checksum: cI6SMiwwuYAy7eq32aq4IA
 ! Fanboy's Adblock list
-! Updated: 1 Mar 2011
+! Updated: 2 Mar 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -519,10 +519,9 @@
 /ads/click_
 /ads/default_
 /ads/dhtml/*
-/adServing/*
+/ads/FLASH_
 /ads/footer-
 /ads/footer_
-/ads/FLASH_
 /ads/freewheel/*
 /ads/generator/*
 /ads/header-
@@ -588,6 +587,7 @@
 /ads_view.
 /ADSAdClient31.
 /AdSandbox.
+/adsapi_
 /adsBannerJS.
 /adscontent2.
 /adscript.
@@ -611,6 +611,7 @@
 /adserversolutions/*
 /AdserverVastVideoVizu.
 /adservices/*
+/adServing/*
 /adsession.
 /adsetup_
 /adsframe.
@@ -622,7 +623,6 @@
 /adsjs.aspx?
 /adslug-
 /adslug_
-/adsapi_
 /adsmanagement/*
 /AdsManager/*
 /adsmodules/*
@@ -1083,6 +1083,7 @@
 /googleAdUnit?
 /googleafs.js
 /gopro_interstitial.
+/h_advert.
 /headerad.
 /headerMktgPromoAds.
 /homepage/ads/*
@@ -1093,7 +1094,6 @@
 /housead_
 /houseads.
 /houseads?
-/h_advert.
 /hserver/AAMALL/*
 /hserver/p
 /hserver/r
@@ -2993,12 +2993,12 @@ images/ads/*
 ||yceml.net^
 ||yes-messenger.com^
 ||yesnexus.com^
+||yieldads.com^
 ||yieldbuild.com^
 ||yieldmanager.com^
 ||yieldmanager.net^
 ||yieldoptimizer.com^
 ||yieldx.com^
-||yieldads.com^
 ||yimg.com/ao/adv/
 ||yldmgrimg.net^
 ||yumenetworks.com^
@@ -4042,8 +4042,6 @@ affiliateBannerShow.aspx?
 ||fileporn.org/225x225_
 ||fileporn.org/aff/
 ||fileporn.org/banner
-||literotica.com/images/banners/
-||literotica.com/images/lit_banners/
 ||fileshare.ro^*/dhtmlwindow.js
 ||freebunker.com^*/js/ex.js
 ||freebunker.com^*/js/layer.js
@@ -4067,6 +4065,8 @@ affiliateBannerShow.aspx?
 ||imagevenue.com^$~third-party,subdocument
 ||informationmadness.com/cms/images/banners/
 ||julesjordanvideo.com/flash/$object
+||literotica.com/images/banners/
+||literotica.com/images/lit_banners/
 ||ns4w.org/gsm.js
 ||ns4w.org/images/promo/
 ||ns4w.org/images/vod_
@@ -4707,7 +4707,6 @@ _friendlyduck.
 ||extratorrent.com/images/other/
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
-||ncrypt.in/images/useful/
 ||free-torrents.org^*/banners/
 ||gappon.com/images/hot2.
 ||ilcorsaronero.info/home.gif
@@ -4717,6 +4716,7 @@ _friendlyduck.
 ||link.link.ru^$third-party
 ||luxup.ru^$third-party
 ||megashares.com/cache_program_banner.html
+||ncrypt.in/images/useful/
 ||newpct.com/soporte/
 ||nyaa.eu/images/1$image
 ||nyaa.eu/images/2$image
@@ -4725,6 +4725,7 @@ _friendlyduck.
 ||p2pnet.net/images/$image
 ||pagead2.yellow-isp.de^
 ||pay-click.ru^$third-party
+||piratebay.net^$third-party,subdocument
 ||pornevo.com/events_
 ||post.rmbn.ru^$third-party
 ||ru.redtram.com/news/$third-party
@@ -4738,7 +4739,6 @@ _friendlyduck.
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.net^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
-||piratebay.net^$third-party,subdocument
 ||thepiratebay.org/img/agb.gif
 ||thepiratebay.org/img/bar.gif
 ||toplist.raidrush.ws^$third-party
@@ -4968,11 +4968,11 @@ zoozle.net,zoozle.org###search_topline
 !---------- Adult Hiding FF 3.x Rules ----------
 !     
 eporner.com##[style="width: 1200px; height: 270px; border: 1px solid rgb(102, 102, 102);"]
-pichunter.com##div[style="width: 800px; height: 250px; overflow: hidden;"]
 literotica.com##a[style="display: block; text-align: center; font-family: Arial,Helvetica,sans-serif; font-size: 110%;"]
 literotica.com##a[style="display: block; text-align: center; font-family: Verdana,Arial,Helvetica; font-size: 80%;"]
 literotica.com##div[style="text-align: center; font-family: arial,helvetica; font-size: 80%;"]
 literotica.com##tr[style="background: none repeat scroll 0% 0% rgb(255, 255, 255); text-align: center; font-size: 80%; font-family: Arial,Helvetica,sans-serif;"]
+pichunter.com##div[style="width: 800px; height: 250px; overflow: hidden;"]
 !     
 !---------- Adult Hiding Rules ----------
 !     
@@ -5042,7 +5042,6 @@ e-hentai.org##TD.itd[colspan="4"]
 egotastic.com##DIV[style="background-color:white;border:1px solid black;padding:5px;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;width:320px;"]
 eporner.com###adv
 eporner.com###eptable
-literotica.com###b-top
 eporner.com###maindiv-topadv
 eporner.com##[style="width:1200px; height:270px; border:1px solid #666666;"]
 erotic-port.hu###floatdiv
@@ -5098,11 +5097,12 @@ julesjordanvideo.com##.vertical_banner
 kaktuz.com###postroller
 laweekly.com###perswrap
 linkbucks.com###banner
+literotica.com###b-top
+literotica.com##a[style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 110%;"]
+literotica.com##a[style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 110%;"]
 literotica.com##table[style="margin: 0 auto;"]
 literotica.com##td[style="text-align: center; border: 2px solid #00f;font-family: Arial, Verdana; width: 33%;"]
-literotica.com##a[style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 110%;"]
 literotica.com##tr[style="background: #fff; text-align: center; font-size: 80%; font-family: Arial, Helvetica, sans-serif;"]
-literotica.com##a[style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 110%;"]
 liveleak.com###j_ad
 liveleak.com##.j_b
 liveleak.com##.j_t
@@ -6428,6 +6428,7 @@ youporn.com###producer
 ###footer-banner-ad
 ###footer-sponsored
 ###footer_ad
+###footer_ad_01
 ###footer_ad_modules
 ###footer_AdArea
 ###footer_add
@@ -6613,7 +6614,6 @@ youporn.com###producer
 ###hometop_234x60ad
 ###homeTopRightAd
 ###hor_ad
-###footer_ad_01
 ###horadslot
 ###horizads728
 ###horizontal-adspace
@@ -7356,6 +7356,7 @@ youporn.com###producer
 ##.ad-graphic-large
 ##.ad-hdr
 ##.ad-head
+##.Ad-Header
 ##.ad-heading
 ##.ad-holder
 ##.ad-home-right
@@ -7404,7 +7405,6 @@ youporn.com###producer
 ##.ad-slot-234-60
 ##.ad-slot-300-250
 ##.ad-slot-728-90
-##.advert728x90
 ##.ad-sp
 ##.ad-space
 ##.ad-spot
@@ -7602,6 +7602,7 @@ youporn.com###producer
 ##.ad_partner
 ##.ad_partners
 ##.ad_placeholder
+##.ad_placement
 ##.ad_plus
 ##.ad_position
 ##.ad_post
@@ -7839,6 +7840,7 @@ youporn.com###producer
 ##.ads_disc_skyscraper
 ##.ads_div
 ##.ads_folat_left                                          
+##.ads_footer
 ##.Ads_forum
 ##.ads_h
 ##.ads_header
@@ -7885,6 +7887,7 @@ youporn.com###producer
 ##.adsense-afterpost
 ##.adsense-float
 ##.adsense-heading
+##.adsense-overlay
 ##.adsense-post
 ##.adsense-reviews-float
 ##.adsense-title
@@ -7910,6 +7913,7 @@ youporn.com###producer
 ##.adsHeader
 ##.adsHeaderFlog
 ##.adSize_MedRec
+##.adSky600
 ##.adSkyscraper
 ##.adSkyscraperHolder
 ##.adsleaderboard
@@ -8014,8 +8018,10 @@ youporn.com###producer
 ##.advert-text
 ##.advert-txt
 ##.advert-wide
+##.advert300x250
 ##.advert4
 ##.advert5
+##.advert728x90
 ##.advert8
 ##.advert_336
 ##.advert_468x60
@@ -8089,7 +8095,6 @@ youporn.com###producer
 ##.Advman_Widget
 ##.advt-block
 ##.advt300
-##.adsense-overlay
 ##.advt720
 ##.adWidget
 ##.adWithTab
@@ -8276,6 +8281,7 @@ youporn.com###producer
 ##.bx_ad_right
 ##.cA-adStack
 ##.cA-adStrap
+##.calloutAd
 ##.canoeAdvertorial
 ##.care2_adspace
 ##.cat_context_ad
@@ -8506,6 +8512,7 @@ youporn.com###producer
 ##.highlights-ad
 ##.hl-post-center-ad
 ##.hm_advertisment
+##.hn-ads
 ##.home-sticky-ad
 ##.home_ad
 ##.home_ad_bottom
@@ -8552,7 +8559,6 @@ youporn.com###producer
 ##.inner-ad
 ##.inner-advt-banner-3
 ##.innerAds
-##.advert300x250
 ##.inPageAd
 ##.inpostad
 ##.insert_ad
@@ -8597,7 +8603,6 @@ youporn.com###producer
 ##.leaderboard2
 ##.leaderboard_ad
 ##.leaderboardAd
-##.ads_footer
 ##.leaderboardad
 ##.leaderboardadtop
 ##.leaderboardbottom_wrapper
@@ -9045,11 +9050,7 @@ youporn.com###producer
 ##.story_ad_div
 ##.story_right_adv
 ##.storyad300
-##.adSky600
 ##.stpro_ads
-##.Ad-Header
-##.hn-ads
-##.calloutAd
 ##.strip-ad
 ##.subheadAdPanel
 ##.subtitle-ad-container
@@ -9204,7 +9205,6 @@ youporn.com###producer
 ##.y-ads-wide
 ##.y7-advertisement
 ##.y7s-lrec
-##.ad_placement
 ##.yahoo-banner-ad-container
 ##.yahoo-sponsored
 ##.yahoo_ads
@@ -10237,7 +10237,6 @@ foxnews.com###marketplace
 foxnews.com##.console_el
 foxnews.com##.sect
 foxstart.com##.shadow
-ftv.com##.commercialBox
 freakoutnation.com##.border-rounded
 freakoutnation.com##div[style="font-size: 9px; margin-bottom: -14px;"]
 free-wallpaper-download.com##[width="160"][height="220"]
@@ -10259,6 +10258,7 @@ frostytech.com###bg_banner_728x90
 frostytech.com###bg_googlebanner_160x600LH
 frostytech.com###bg_YieldManager-160x600
 ft.com##.advertising
+ftv.com##.commercialBox
 fudzilla.com###showcase
 funadvice.com##.block:last-child
 funnyordie.com###header_takeover
@@ -10360,7 +10360,6 @@ goodgearguide.com.au##.contentpage-boombox
 goodhopefm.co.za##.mrec
 goodhousekeeping.com###hpV2_728x90
 google.co.nz##table[style="border: 1px solid #0000ff"]
-google.com###rtpl[style="margin-top: 11px; padding: 5px 5px 5px 2px;"]
 google.co.nz,google.es,google.ca,google.co.uk,google.com,google.com.au,google.de,google.com.eg###mbEnd
 google.co.nz,google.es,google.ca,google.co.uk,google.com,google.com.au,google.de,google.com.eg###rhsa
 google.co.nz,google.es,google.ca,google.co.uk,google.com,google.com.au,google.de,google.com.eg###rhssection
@@ -10371,6 +10370,7 @@ google.co.uk##.ts[style="margin: 0pt 0pt 12px; height: 92px;"]
 google.com###ad
 google.com###np_content_ads_module
 google.com###ps-top-ads-sponsored
+google.com###rtpl[style="margin-top: 11px; padding: 5px 5px 5px 2px;"]
 google.com###tadsb
 google.com###tadsc
 google.com##.g3rtn-ad-site
