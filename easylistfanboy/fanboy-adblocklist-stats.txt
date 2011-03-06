@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: k6PRDYG620G+3Vf+A9ZZFA
+! Checksum: p3lF1obQNWY7AlwvPpBueQ
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 7 Mar 2011
 ! This list expires after 5 days
@@ -199,7 +199,6 @@
 /analytics_tracker
 /AnalyticsOnDemand/*
 /analyticstrack.
-/gcui_vidtracker/*
 /analyzer/*
 /analyzer2.
 /answertip.jsp?
@@ -258,7 +257,6 @@
 /bundles/cm.js|
 /buzz_stats.
 /c.gif?daid
-/trackingcookies.
 /c2_count.js
 /c?siteID=$image,script
 /c_track.php?
@@ -444,9 +442,9 @@
 /foresee-
 /forsee-
 /FoxComScore.
+/fpcount.exe
 /frtrack.
 /fsrscripts/*
-/fpcount.exe
 /FTTrack2.js
 /g_track.php?
 /ga-tracker.
@@ -464,6 +462,7 @@
 /gatrack.js
 /GATracking.
 /gaTrackWww.
+/gcui_vidtracker/*
 /gemius.js
 /generate_204?ip=
 /generictracking.
@@ -487,6 +486,7 @@
 /google_analytics/*
 /google_analytics_
 /google_page_track
+/google_tracker.
 /googleAnalytics.
 /googleanalytics/*
 /googleAnalytics1.
@@ -496,7 +496,6 @@
 /googleanalyticsmanagement.swf
 /GoogleAnalyticsModule.
 /GoogleAnalyticsPlugIn.
-/google_tracker.
 /googleanalyze1.
 /googleanalyze2.
 /googleTracker.
@@ -615,7 +614,6 @@
 /log.php?id
 /log2.php?
 /log?id=
-/logAdv.
 /log_agent.
 /log_e.php?
 /log_syndication.
@@ -623,6 +621,7 @@
 /log_view.
 /log_zon_img.
 /logactions.gif?
+/logAdv.
 /logaholictracker.
 /logclick.
 /logextrastats.
@@ -649,7 +648,6 @@
 /mediateGA.js
 /megacounter/*
 /metrics-ga.
-/prnx_track.
 /metrics.xml
 /metrics/ga.html?
 /metrics/image.gif?
@@ -777,6 +775,7 @@
 /powercount.
 /pphlogger.
 /pr.php?ref
+/prnx_track.
 /pro-ping.php?
 /process.php?ut=*&rf=
 /prodtracker?
@@ -986,6 +985,7 @@
 /tracking_iframe.
 /tracking_pix.
 /tracking_pixel
+/trackingcookies.
 /TrackingData.
 /TrackingHandler.
 /trackingPixel.
@@ -1233,7 +1233,6 @@ size=1x1;
 ||adguru.guruji.com^
 ||adidas.com^*/analytics/
 ||affiliate.mercola.com^
-||photographyblog.com/?ACT
 ||affiliates.mozy.com^
 ||alibaba.com/js/beacon_
 ||allexperts.com/px/
@@ -1246,7 +1245,6 @@ size=1x1;
 ||arstechnica.com/dragons/breath.gif
 ||associatedcontent.com/action_cookie
 ||astrology.com/visits/
-||reviewcentre.com^*/asfc.js
 ||atracktive.collegehumor.com^
 ||avazudsp.net^
 ||barrons.com^*/blank.htm
@@ -1264,10 +1262,8 @@ size=1x1;
 ||business.com/images2/directory.gif?
 ||businessinsider.com^*/track.js
 ||buzzfed.com^/ABTest.js?
-||reuters.com^*/rcom-wt-mlt.js
 ||buzzfeed.com^*/small.gif?
 ||cartier.co.uk^*/eyeblaster.
-||goadv.com/roi/js/track.js
 ||cbox.ws/box/relay.swf?
 ||cbsnews.com/i/trk/
 ||celebritycruises.com/js/pixel_matrix.
@@ -1303,6 +1299,7 @@ size=1x1;
 ||epinions.com/js/stdLauncher.
 ||epinions.com/js/triggerParams.
 ||es.puritan.com^
+||exp.www.msn.com^
 ||experts-exchange.com/pageLoaded.jsp?
 ||facebook.com/ap.php?i=$image
 ||facebook.com/impression.php?
@@ -1321,6 +1318,7 @@ size=1x1;
 ||geo.perezhilton.com^
 ||geo.yahoo.com^
 ||geoiplookup.wikimedia.org^
+||goadv.com/roi/js/track.js
 ||godaddy.com/image.aspx?
 ||good.is/?js
 ||google.*/gwt/x/ts?
@@ -1386,6 +1384,7 @@ size=1x1;
 ||pclick.yahoo.com^
 ||pepsi.com/js/pepsi_tracking.js
 ||petri.co.il/akit/?
+||photographyblog.com/?ACT
 ||piccy.info/c?
 ||pixel.reddit.com^
 ||play.com/analytics/
@@ -1402,6 +1401,8 @@ size=1x1;
 ||rent.com/track/visit/
 ||report.shell.com^
 ||reporter-times.com/js/tk.js?
+||reuters.com^*/rcom-wt-mlt.js
+||reviewcentre.com^*/asfc.js
 ||rkdms.com/sid.gif?
 ||rottentomatoes.com/tracking/
 ||rover.ebay.com.au^*&cguid=
@@ -1448,11 +1449,10 @@ size=1x1;
 ||tracker.cpapath.com^
 ||tracker.pinnaclesports.com^
 ||tracker.wordstream.com^
+||trademe.co.nz^*/GoogleAnalytics
+||trademe.co.nz^*/ThirdParty/$script
 ||trax.tvguide.com^
 ||trovus.co.uk/tracker/
-||trademe.co.nz^*/ThirdParty/$script
-||trademe.co.nz^*/GoogleAnalytics
-||exp.www.msn.com^
 ||ttxm.co.uk^*/log.js
 ||twitter.com/abacus?
 ||twitter.com/scribe?log
@@ -1540,9 +1540,7 @@ size=1x1;
 ||addthiscdn.com/*.gif?uid=
 ||addthiscdn.com/live/
 ||addtoany.com/menu/transparent.gif
-||projecthaile.com^
 ||adelixir.com^
-||prnx.net^
 ||adku.co/
 ||adreadytractions.com^
 ||ads.bridgetrack.com^$image
@@ -1559,6 +1557,7 @@ size=1x1;
 ||akatracking.esearchvision.com^
 ||alenty.com/trk/
 ||alloydigital.com^
+||alltracked.com^
 ||altastat.com^
 ||alzexa.com^
 ||amazonaws.com/j.kissinsights.com/
@@ -1691,7 +1690,6 @@ size=1x1;
 ||crowdscience.com^
 ||crwdcntrl.net^
 ||csdata1.com^
-||du8783wkf05yr.cloudfront.net^
 ||csi-tracking.com^
 ||ct.thegear-box.com^
 ||ctasnet.com^
@@ -1723,8 +1721,8 @@ size=1x1;
 ||dl-rms.com^
 ||dmtracker.com^
 ||domdex.com^
-||guanoo.net^
 ||dti-ranker.com^
+||du8783wkf05yr.cloudfront.net^
 ||dw-world.de/run.js
 ||dwin2.com^
 ||e-referrer.com^
@@ -1782,7 +1780,6 @@ size=1x1;
 ||free-website-statistics.com^
 ||freelogs.com^
 ||freeonlineusers.com^
-||alltracked.com^
 ||freestats.com^
 ||funstage.com^
 ||fwix.com/ref.js
@@ -1810,6 +1807,7 @@ size=1x1;
 ||gscounters.gigya.com^
 ||gstats.cn^
 ||gtopstats.com^
+||guanoo.net^
 ||gumgum.com^
 ||gvisit.com^
 ||gwallet.com/r1/pixel/
@@ -1927,8 +1925,8 @@ size=1x1;
 ||martianstats.com^
 ||masterstats.com^
 ||mathtag.com^
-||maxymiser.com^
 ||maxmind.com^*/geoip.js
+||maxymiser.com^
 ||mcs.delvenetworks.com^
 ||mcssl.com^*/track.ashx?
 ||media6degrees.com^
@@ -1970,9 +1968,9 @@ size=1x1;
 ||nuconomy.com^
 ||o.addthis.com^
 ||o.aolcdn.com/js/mg1.js
+||observer.ip-label.net^
 ||observerapp.com^
 ||offermatica.com^
-||observer.ip-label.net^
 ||offermatica.intuit.com^
 ||offerpoint.net^
 ||offers.keynote.com^
@@ -2030,10 +2028,12 @@ size=1x1;
 ||precisioncounter.com^
 ||predicta.net^
 ||predictivedna.com^
+||prnx.net^
 ||pro-market.net^
 ||proclivitysystems.com^
 ||profilertracking3.com^
 ||profilesnitch.com^
+||projecthaile.com^
 ||proximic.com^
 ||prtracker.com^
 ||publishflow.com^
@@ -2130,6 +2130,7 @@ size=1x1;
 ||stats.complex.com^
 ||stats.highwire.com^
 ||stats.indexstats.com^
+||stats.jtvnw.net^
 ||stats.lightningcast.net^
 ||stats.load.com^
 ||stats.manticoretechnology.com^
@@ -2143,7 +2144,6 @@ size=1x1;
 ||stats.townnews.com^
 ||stats.wordpress.com^
 ||statsdev.treesd.com^
-||stats.jtvnw.net^
 ||statsinsight.com^
 ||statsit.com^
 ||statsmachine.com^
@@ -2354,11 +2354,11 @@ size=1x1;
 @@||js.revsci.net/gateway/gw.js?csid=$domain=video.foxbusiness.com
 @@||logging.apache.org^
 @@||mail-www.baynote.net^$domain=mail.com
+@@||maxmind.com^*/geoip.js$domain=stoli.com
 @@||metrics.howstuffworks.com^$image
 @@||metrics.nissanusa.com/b/ss/nissanusacom/$image
 @@||metrics.torproject.org^
 @@||muzu.tv/flash/*tracking
-@@||maxmind.com^*/geoip.js$domain=stoli.com
 @@||ncbi.nlm.nih.gov/stat?
 @@||outbrain.com/utils/ping.html?random$domain=fark.com|limelife.com
 @@||pix04.revsci.net/E05510/a4/0/0/pcx.js?$domain=video.foxbusiness.com
