@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: b2QpelHgjIdqnWuhu9hqJg
+! Checksum: iuRTGvH07s97mzSY/yEskw
 ! Fanboy's Adblock list
 ! Updated: 7 Mar 2011
 ! This list expires after 5 days
@@ -1974,8 +1974,6 @@ images/ads/*
 ||digzip.com^*baner.swf
 ||duckload.com/js/abp.php?
 ||ebayrtm.com/rtm?RtmCmd&a
-||opednews.com^*/iframe.php?
-||newsweek.com^*interstitial.js
 ||ebuddy.com/web_banners/
 ||ecommerce-journal.com/specdata.php?
 ||edgecastcdn.net^*/netinputsurvey.
@@ -2064,6 +2062,7 @@ images/ads/*
 ||neowin.net/images/adbot_promos/
 ||neowin.net/images/atlas/aww
 ||news.com.au^*/promotions/
+||newsweek.com^*interstitial.js
 ||nme.com/js/takeoverlay.js
 ||nme.com/themes/takeovers/
 ||noram.srv.ysm.yahoo.com^
@@ -2076,6 +2075,7 @@ images/ads/*
 ||onlinekeystore.com/skin1/images/side-
 ||onlinerealgames.com/google$subdocument
 ||onlygoodmovies.com/netflix.gif
+||opednews.com^*/iframe.php?
 ||osdir.com/ml/$subdocument
 ||overclockers.co.uk/home_banners/
 ||pinkbike.org^*/skins/
@@ -2954,13 +2954,13 @@ images/ads/*
 ||traff-advertazer.com^
 ||traffic-supremacy.com^
 ||traffic.buzzparadise.com^
+||trafficbroker.com^
 ||trafficmp.com^
 ||trafficrevenue.net^
 ||trafficsynergy.com^
 ||traffictrader.net^
 ||traveladvertising.com^
 ||triadmedianetwork.com^
-||trafficbroker.com^
 ||tribalfusion.com^
 ||trigami.com^
 ||ts.richmedia.yahoo.com^
@@ -3085,55 +3085,24 @@ images/ads/*
 !     
 !---------- Whitelists ----------
 !     
-@@.com/ad/$domain=afterdark-nfs.com|facepunch.com|afl.com.au
-@@.com/banners/$domain=msi.com,~third-party,image
-@@.gstatic.com/images?$domain=images.google.com
-@@.org/ads/$domain=garrysmod.org
-@@||wellsfargo.com/img/ads/
-@@/ad1.jpg$domain=plugcomputer.org
-@@/AdController.$domain=rapid8.com,script
 @@/adframe.js$domain=macobserver.com|hackers.co.id|video2mp3.net|4fuckr.com
-@@/admedia/*$domain=nextmedia.com|sonypictures.com
-@@/AdPlayer.$domain=xxlmag.com
-@@/adPositionSizeIn-$domain=kcra.com
-@@/AdShow.$domain=6waves.com
-@@/ADTYPE=embedded/CHANNELID=$domain=smh.com.au,third-party,script
-@@/advert.js$domain=overclock3d.net
 @@/advertisement.$domain=tvnz.co.nz|ratebeer.com|multiup.org|teknogods.com|ballreviews.com|onlinemoviesfreee.com|mobilefish.com
-@@/advertisement/cnnmoney_sponsors.gif
 @@/advertisements.$domain=mircscripts.org|skimtube.com
 @@/advertisingmodule.$domain=slate.com|guardian.co.uk|welt.de|fxnetworks.com|people.com
-@@/banner.js$domain=omgubuntu.co.uk
-@@/BannerAd.$domain=careerone.com.au
 @@/banners.js$domain=bafta.org|24ur.com|brocraft.net
-@@/banners/ads/*$domain=valueram.com
-@@/bundles/cm.js$domain=officedepot.com
-@@/DARTSHELLCONFIGXML;$domain=therock.net.nz
-@@||sovereignbank.com/flashads/
-@@/flvvideoplayer.$domain=pbs.org
 @@/html.ng/*$domain=webmd.com|uol.com.br
 @@/images/ad-$domain=apple.com
-@@/Images/Ad_$domain=heathrowexpress.com
-@@/images/banners/*$domain=abc-of-snowboarding.com
-@@/img/ad/*$domain=starwars.com
-@@||sovereignbank.com/img/ads/
-@@/img/banner_ad$domain=lavasoft.com,~third-party,image
-@@/img/banners/*$domain=vodafone.co.nz|furaffinity.net
-@@/plugins/wp-minify/min/?f$domain=eceplayground.com
-@@/publicidad.$domain=tn.com.ar
 @@/RealMedia/ads/adstream_jx.ads/*$domain=playervideo.globo.com,object_subrequest
 @@/RealMedia/ads/adstream_sx.ads$domain=video.economist.com|surfline.com|seesaw.com
-@@/scripts/ads.$domain=topgear.com,script
 @@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
 @@/yume_ad_library.swf$domain=icanhascheezburger.com
 @@://192.168.0.
 @@://192.168.1.
 @@://192.168.2
 @@_AFL_bettingPage_$domain=afl.com.au
-@@_sx.ads/demand.five.tv/$domain=demand.five.tv,object_subrequest
 @@||208.100.24.244^$domain=sankakucomplex.com,script
-@@||247realmedia.com/RealMedia/ads/$image,domain=farecompare.com
 @@||247realmedia.com^*/default/empty.gif$domain=broadcastingcable.com
+@@||247realmedia.com^*/FareComp/
 @@||247realmedia.com^*/TFSMFlashWrapper$domain=broadcastingcable.com
 @@||247realmedia.com^*?lay_homepage&$domain=broadcastingcable.com
 @@||24ur.com/adserver/adall.
@@ -3142,6 +3111,7 @@ images/ads/*
 @@||2mdn.net/instream/adsapi_$domain=warnerbros.com|youtube.com|tmz.com|globaltv.com|bbc.co.uk
 @@||2mdn.net/viewad/*-grey.gif$domain=cbs.com
 @@||6waves.com/ads/720x300/
+@@||6waves.com/js/AdShow.js
 @@||ad.103092804.com/st?ad_type$domain=wizard.mediacoderhq.com
 @@||ad.afy11.net/crossdomain.xml$object_subrequest
 @@||ad.zanox.com/ppc/$subdocument,domain=wisedock.de|wisedock.com|wisedock.co.uk|wisedock.at|wisedock.eu
@@ -3168,6 +3138,7 @@ images/ads/*
 @@||advertise.about.com/images/*_$image
 @@||advertising.scoop.co.nz^
 @@||affiliates.jlist.com/ads/$domain=jbox.com,image
+@@||afterdark-nfs.com/ad/
 @@||apple.com^*/includes/ads
 @@||applevideo.edgesuite.net/admedia/*.flv
 @@||apwg.org/images/sponsors/
@@ -3201,8 +3172,10 @@ images/ads/*
 @@||eyewonder.com^*/video/$domain=last.fm
 @@||ezone.com/banners/swfs/*$domain=ezone.com,object
 @@||facepunch.com/ads/
+@@||farecompare.com^*/FareComp/
 @@||files.coloribus.com^$~third-party,image
 @@||freeviewnz.tv^*/uploads/ads/
+@@||garrysmod.org/ads/
 @@||google.*/complete/search?$~third-party,script
 @@||google.com/adsense/$domain=google.com
 @@||googlesyndication.com/pagead/scache/googlevideoadslibrarylocalconnection
@@ -3217,7 +3190,9 @@ images/ads/*
 @@||inskinad.com/ISAPAdServer2/Gateway.aspx$domain=nme.com
 @@||inspire.net.nz/adverts/$image
 @@||itv.com/*.Adserver.js
+@@||jobsearch.careerone.com.au^*/BannerAd.asmx/
 @@||js.thestreet-static.com^*/adplacer.js
+@@||kcra.com^*/adPositionSizeIn-min.js
 @@||last.fm/ads.php?
 @@||last.fm/adserver/video/          
 @@||live365.com/mini/blank300x250.html$subdocument
@@ -3233,20 +3208,26 @@ images/ads/*
 @@||medrx.sensis.com.au^*/util.js$script,domain=afl.com.au
 @@||metacafe.com/banner.php?
 @@||miniclip.com/scripts/js.php?
+@@||msi.com/banners/
 @@||mutualofomaha.com/images/ads/
 @@||myrecipes.com/static/advertising/
 @@||nbc.com/collarity/
+@@||nextmedia.com/admedia/$object_subrequest
 @@||nzd.co.nz^*/ads/webads$script,domain=nzdating.com
-@@||oascentral.farecompare.com/RealMedia/ads/$image,domain=farecompare.com
 @@||oascentral.thechronicleherald.ca/RealMedia/ads/adstream_mjx.ads$script
 @@||omgili.com/ads.search?
+@@||omgubuntu.co.uk^*/banner.js
 @@||omnikool.discovery.com^$domain=dsc.discovery.com
 @@||omninoggin.com^*/wp-syntax.css
+@@||overclock3d.net/js/advert.js
 @@||pantherssl.com/banners/
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com,object_subrequest
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com,script,object_subrequest,image
+@@||pbs.org^*/sponsors/flvvideoplayer.swf
 @@||playintraffik.com/Advertising/
 @@||playstation.com^*.swf?link1
+@@||plugcomputer.org^*/ad1.jpg
+@@||rapid8.com/ads/AdController.js
 @@||rcm.amazon.com/e/cm$domain=filmcrave.com|asianmommy.com
 @@||rewaz.org/ads/adframe2.js
 @@||richrelevance.com^$domain=officedepot.com
@@ -3260,7 +3241,11 @@ images/ads/*
 @@||sify.com/*postcomments.php
 @@||skimlinks.com^$domain=telegraph.co.uk
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
+@@||sonypictures.com^*/admedia/
+@@||sovereignbank.com/flashads/
+@@||sovereignbank.com/img/ads/
 @@||spotxchange.com/flash/AdPlayer.swf$domain=foxnews.ws|boxlive.tv
+@@||starwars.com/img/ad/
 @@||stickyads.adswizz.com/www/delivery/swfIndex.php?$object_subrequest
 @@||style.com/flashxml/*.doubleclick$object
 @@||style.com/images/*.doubleclick$object
@@ -3271,17 +3256,20 @@ images/ads/*
 @@||thekraftgroup.com/crossdomain.xml$object_subrequest
 @@||thetvdb.com/banners/
 @@||timeinc.net^*/advertising/$image,domain=people.com
+@@||topgear.com^*/ads.min.js
 @@||travelpod.com^*popunder$script
 @@||tubemogul.com/adtags/$domain=comedy.com
 @@||upload.wikimedia.org/wikipedia/
 @@||v.fwmrm.net/ad/p/1?|$domain=video.adultswim.com|mlb.mlb.com,third-party,object_subrequest
 @@||valueram.com/ad_
+@@||valueram.com/banners/ads/
 @@||vap.yahoo.net/nicobarMan/ads/$domain=caller.com
 @@||video.economist.com/AdFinder.jsp?
 @@||weather.ca^*/wbtn_150x90.css
 @@||weather.com^*/oasadframe.html?position=pagespon$subdocument
 @@||weather.com^*/oasadframe.html?position=pointspon$subdocument
 @@||wefindads.co.uk/images/ad-image-$image
+@@||wellsfargo.com/img/ads/
 @@||wirefly.com/_images/ads/
 @@||wrapper.teamxbox.com/a?size=headermainad$domain=teamxbox.com
 @@||zedo.com/$domain=rajshritalent.com|rajshri.com,object_subrequest
@@ -3387,6 +3375,7 @@ images/ads/*
 .480x60.
 .728x90.
 .728x90_
+/120-600-
 /120-600.
 /1200x70_
 /120600.
@@ -12319,6 +12308,7 @@ xfm.co.uk###commercial
 xtshare.com###overlayVid
 xtshare.com##.hideLink
 xxlmag.com###medium-rec
+xxlmag.com###medrec
 y100.com##.threecolumn_rightcolumn
 yahoo.com###darla-ad__LREC
 yahoo.com###darla-ad__LREC2
