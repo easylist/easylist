@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VqbYytPxXcru1iT0snO44g
+! Checksum: BqWZDmZbhbnwOk8f+Q+QWQ
 ! Fanboy's Adblock list
 ! Updated: 7 Mar 2011
 ! This list expires after 5 days
@@ -651,6 +651,12 @@
 /adstop.
 /adstorage.
 /adStream.
+/ads/menu_
+/ads/rect_
+/ads/sky_
+/ads/vip_
+/ads/blank.
+/components/ads/*
 /adStreamJSController.
 /adstubs/*
 /adSummos.js
@@ -3164,9 +3170,9 @@ images/ads/*
 @@||dstw.adgear.com/impressions/int/as
 @@||ebayrtm.com/rtm?RtmCmd&a$domain=signin.ebay.com|www.ebay.co.uk|www.ebay.it|www.ebay.com.au|www.ebay.com|www.ebay.ca|www.ebay.in|www.ebay.ie|www.ebay.nl|www.ebay.de|www.ebay.com.hk
 @@||ewallpapers.eu/ads/logo.jpg
-@@||explosm.net/db/files/Comics*/advertising.jpg
+@@||explosm.net^*/advertising.jpg
 @@||eyewonder.com^*/video/$domain=last.fm
-@@||ezone.com/banners/swfs/*$domain=ezone.com,object
+@@||ezone.com/banners/swfs/$domain=ezone.com,object
 @@||facepunch.com/ads/
 @@||farecompare.com^*/FareComp/
 @@||files.coloribus.com^$~third-party,image
@@ -3179,8 +3185,7 @@ images/ads/*
 @@||googlesyndication.com/pagead/static?format
 @@||huffpost.com/images/ads/partners.png
 @@||iframe.ivillage.com/iframe_render?
-@@||images.nickjr.com/ads/*?width=115&height=87$image
-@@||images.play.com/banners/content/$domain=play.com,image
+@@||images.nickjr.com/ads/promo/
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image
 @@||inskinad.com/crossdomain.xml$domain=nme.com 
 @@||inskinad.com/ISAPAdServer2/Gateway.aspx$domain=nme.com
@@ -3191,8 +3196,6 @@ images/ads/*
 @@||kcra.com^*/adPositionSizeIn-min.js
 @@||last.fm/ads.php?
 @@||last.fm/adserver/video/          
-@@||live365.com/mini/blank300x250.html$subdocument
-@@||live365.com/scripts/liveads.js$script
 @@||m1.2mdn.net/*dartshell
 @@||m1.2mdn.net^$domain=3news.co.nz|tv3.co.nz|nationalgeographic.com|nypost.com|c4tv.co.nz,object_subrequest
 @@||m1.2mdn.net^*/DartShell9_$domain=therock.net.nz
@@ -6014,6 +6017,9 @@ youporn.com###producer
 ###adv_google_300
 ###adv_google_728
 ###adv_top
+###adv160x600
+###adv130x195
+###adv300x250
 ###adv_top_banner_wrapper
 ###adver
 ###adver1
