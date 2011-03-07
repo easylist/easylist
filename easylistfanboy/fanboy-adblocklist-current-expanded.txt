@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: oJk/21VU6l6DJziF/M0g5A
+! Checksum: pYsygTHtuC1V6iHPif51hw
 ! Fanboy's Adblock list
 ! Updated: 7 Mar 2011
 ! This list expires after 5 days
@@ -377,6 +377,7 @@
 /adexternal.
 /adf.cgi?
 /adfactory.
+/adfarm.
 /adfeed.
 /adfetch.
 /adfetch?
@@ -386,7 +387,6 @@
 /adforums/*
 /adfr.html?
 /adframe.
-/adfarm.
 /adframe/*
 /adframe?
 /adframe_
@@ -519,6 +519,7 @@
 /ads/adx.
 /ads/banner/*
 /ads/banners/*
+/ads/blank.
 /ads/box/*
 /ads/center-
 /ads/click_
@@ -543,6 +544,7 @@
 /ads/leaderboard/*
 /ads/leaderboard_
 /ads/load.
+/ads/menu_
 /ads/oas-
 /ads/oas/*
 /ads/oas_
@@ -553,6 +555,7 @@
 /ads/preloader/*
 /ads/preroll/*
 /ads/rail-
+/ads/rect_
 /ads/right/*
 /ads/ringtone_
 /ads/show.
@@ -561,10 +564,12 @@
 /ads/sidebar-
 /ads/sidedoor/*
 /ads/skins/*
+/ads/sky_
 /ads/sponsor
 /ads/storysponsors/*
 /ads/tile-
 /ads/top-
+/ads/vip_
 /ads/www/*
 /Ads09a/*
 /ads160x600-
@@ -651,12 +656,6 @@
 /adstop.
 /adstorage.
 /adStream.
-/ads/menu_
-/ads/rect_
-/ads/sky_
-/ads/vip_
-/ads/blank.
-/components/ads/*
 /adStreamJSController.
 /adstubs/*
 /adSummos.js
@@ -912,6 +911,7 @@
 /common/dart_wrapper_
 /common_ad.
 /compban.html?
+/components/ads/*
 /content-ads.
 /context_ad/*
 /contextad.
@@ -3101,14 +3101,14 @@ images/ads/*
 @@://192.168.0.
 @@://192.168.1.
 @@://192.168.2.
-@@||img.mediaplex.com^*_AFL_bettingPage_$domain=afl.com.au
 @@||208.100.24.244^$domain=sankakucomplex.com,script
 @@||247realmedia.com^*/default/empty.gif$domain=broadcastingcable.com
 @@||247realmedia.com^*/FareComp/
 @@||247realmedia.com^*/TFSMFlashWrapper$domain=broadcastingcable.com
 @@||247realmedia.com^*?lay_homepage&$domain=broadcastingcable.com
 @@||24ur.com/adserver/adall.
-@@||2mdn.net/crossdomain.xml$domain=youtube.com|tmz.com|therock.net.nz|cbs.com|3news.co.nz
+@@||2mdn.net/*dartshell*.swf
+@@||2mdn.net/crossdomain.xml$object_subrequest
 @@||2mdn.net/instream/ads_sdk_config.xml$domain=warnerbros.com|youtube.com|tmz.com|globaltv.com|bbc.co.uk
 @@||2mdn.net/instream/adsapi_$domain=warnerbros.com|youtube.com|tmz.com|globaltv.com|bbc.co.uk
 @@||6waves.com/ads/720x300/
@@ -3186,6 +3186,7 @@ images/ads/*
 @@||iframe.ivillage.com/iframe_render?
 @@||images.nickjr.com/ads/promo/
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image
+@@||img.mediaplex.com^*_AFL_bettingPage_$domain=afl.com.au
 @@||inskinad.com/crossdomain.xml$domain=nme.com 
 @@||inskinad.com/ISAPAdServer2/Gateway.aspx$domain=nme.com
 @@||inspire.net.nz/adverts/$image
@@ -3195,7 +3196,6 @@ images/ads/*
 @@||kcra.com^*/adPositionSizeIn-min.js
 @@||last.fm/ads.php?
 @@||last.fm/adserver/video/          
-@@||2mdn.net/*dartshell*.swf
 @@||mads.cbs.com/mac-ad?*$domain=cbs.com,object_subrequest
 @@||maps.google.com/staticmap?*=300x250
 @@||media.heavy.com/ad_assets/*.flv
@@ -6007,6 +6007,9 @@ youporn.com###producer
 ###adv-box
 ###adv-container
 ###adv-masthead
+###adv130x195
+###adv160x600
+###adv300x250
 ###Adv8
 ###Adv9
 ###adv_bg
@@ -6014,9 +6017,6 @@ youporn.com###producer
 ###adv_google_300
 ###adv_google_728
 ###adv_top
-###adv160x600
-###adv130x195
-###adv300x250
 ###adv_top_banner_wrapper
 ###adver
 ###adver1
@@ -9597,8 +9597,8 @@ barrons.com##.boldGreyNine
 bastropenterprise.com##.headerTop
 bastropenterprise.com##.iabMedRectContainer
 batman-on-film.com###ca
-bbccanada.com###gradientbox
 bbc.co.uk##.bbccom_companion
+bbccanada.com###gradientbox
 bediddle.com###tads
 beginlinux.com##.bannergroup
 behance.net###FMGABadge
