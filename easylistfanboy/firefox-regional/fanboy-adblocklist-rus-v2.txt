@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: THqrD1qKwwzWKcENPRbacw
+! Checksum: Mh1J970NeEDbu7R3AwU7qw
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 12 Mar 2011
 ! This list expires after 5 days
@@ -234,6 +234,9 @@ http://r.e1.ru/
 ||realty05.ru/pic/adv/
 ||regard.ru/photo/baner
 ||regnum.ru/i/bn/
+||rin.ru/bodyadv.js
+||rin.ru/js/adv_top.js
+||rin.ru^*/banners/
 ||rg.ru/i/bnr/
 ||rg.ru/i/masmi_240x100.
 ||rmbn.ru/banners/
@@ -834,7 +837,8 @@ http://ad.ir.ru^$third-party
 !---------------------- Site specific Firefox 3.x rules -----------------
 !   
 isra.com##table[style="width: 300px; background-color: rgb(242, 242, 242); border: 1px solid rgb(96, 130, 215); margin-bottom: 6px;"]
-pic2profit.com##DIV[style="padding: 0pt; text-align: left; margin-top: -15px;"]
+pic2profit.com##div[style="padding: 0pt; text-align: left; margin-top: -15px;"]
+rin.ru##div[style="position: relative; width: 100%; height: 90px; text-align: center;"]
 !
 !---------- Russian Generic Element Hiding Rules ----------
 !
@@ -1248,6 +1252,7 @@ rbc.ru##[style="width: 234px; height: 200px; background-color: rgb(255, 255, 255
 rbc.ru##[style="width: 234px; height: 400px; background-color: rgb(255, 255, 255); text-align: center;"]
 rbc.ru##[xmlns\:realty="http://realty.rbc.ru/"]
 rbc.ru##table[width="100%"][bgcolor="#F7FAEF"]
+rin.ru##div[style="position:relative;width:100%;height:90px;background-color:undefined;text-align:center"]
 rbc.ua##.tac
 rbcdaily.ru##.banner
 rbcdaily.ru##.bannerRight
