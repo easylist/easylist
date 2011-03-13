@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: lJGe5+xSPHGZxZXObtCuAQ
+! Checksum: 9oFE6XkDIHOCjtf1k8F7IQ
 ! Fanboy's Adblock list
 ! Updated: 13 Mar 2011
 ! This list expires after 5 days
@@ -23,9 +23,9 @@
 -ad-right.
 -ad-util-
 -ad.jpg?
+-Ad1.png
 -ad2.gif
 -ad3.jpg
--Ad1.png
 -ad_injector/
 -adhelper.
 -ads-bottom.
@@ -177,6 +177,7 @@
 /?adv_partner
 /?view=ad
 /_scripts/_oas/*
+/_svc/ad/*
 /a.aspx?Zone
 /abm.asp?
 /abmw.asp?
@@ -194,6 +195,7 @@
 /ad-frame.
 /ad-identifier.
 /ad-iframe-
+/ad-image.
 /ad-indicator-
 /ad-inject/*
 /ad-layering-
@@ -759,7 +761,6 @@
 /adyea.js
 /adzone_
 /adzones/*
-/ad-image.
 /aff-exchange/*
 /aff_ad?
 /affbanner/*
@@ -885,8 +886,8 @@
 /bserver/*
 /buttonad/*
 /buyer/dyad/*
-/buzz/ads/*
 /buysellads-
+/buzz/ads/*
 /c_top_ad.
 /call/pubj/*
 /cdn.doubleclick.
@@ -1472,7 +1473,6 @@
 /sikad.js
 /silver/ads/*
 /site_ads.
-/_svc/ad/*
 /SiteAds/*
 /sitewide/ads/*
 /skin3/ads/*
@@ -1961,7 +1961,6 @@ images/ads/*
 ||asianewsnet.net/banner/
 ||askandyaboutclothes.com/ADVS/
 ||b92.net/images/banners/
-||dailyherald.com^*/contextual.js
 ||badongo.com^*_banner_
 ||baixartv.com/img/bonsdescontos.
 ||banner.itweb.co.za^
@@ -1989,6 +1988,7 @@ images/ads/*
 ||cpuid.com^*/CPUIDbanner72x90_
 ||ctv.ca/ctvresources/js/CtvAd.js
 ||dads.new.digg.com^
+||dailyherald.com^*/contextual.js
 ||dailymotion.com/masscast/
 ||dailystar.com.lb/bannerin1.htm
 ||dailystar.com.lb/bottombanner.htm
@@ -3220,6 +3220,7 @@ images/ads/*
 @@||images.nickjr.com/ads/promo/
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image
 @@||img.mediaplex.com^*_AFL_bettingPage_$domain=afl.com.au
+@@||indieclicktv.com/www/delivery/ajs.php?$domain=videosift.com,object_subrequest
 @@||inskinad.com/crossdomain.xml$domain=nme.com 
 @@||inskinad.com/ISAPAdServer2/Gateway.aspx$domain=nme.com
 @@||inspire.net.nz/adverts/$image
@@ -3248,7 +3249,6 @@ images/ads/*
 @@||omgubuntu.co.uk^*/banner.js
 @@||overclock3d.net/js/advert.js
 @@||pantherssl.com/banners/
-@@||smmirror.com^*/getAds.php
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com
 @@||pbs.org^*/sponsors/flvvideoplayer.swf
@@ -3261,7 +3261,6 @@ images/ads/*
 @@||richrelevance.com^$domain=officedepot.com
 @@||sankakucomplex.com^$script
 @@||sankakustatic.com^$script
-@@||indieclicktv.com/www/delivery/ajs.php?$domain=videosift.com,object_subrequest
 @@||scorecardresearch.com/beacon.js$domain=mainstreet.com|thinkatheist.com|deviantart.com|linkinpark.com|ning.com|thedailybeast.com
 @@||sec-ads.bridgetrack.com/ads_img/
 @@||serve.vdopia.com/adserver/$object_subrequest
@@ -3269,6 +3268,7 @@ images/ads/*
 @@||sfx-images.mozilla.org/affiliates/Buttons/$domain=spreadfirefox.com,image
 @@||sify.com/news/postcomments.php?*468x60.html
 @@||skimlinks.com^$domain=telegraph.co.uk
+@@||smmirror.com^*/getAds.php
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
 @@||sonypictures.com^*/admedia/
 @@||sovereignbank.com/flashads/
@@ -4854,8 +4854,6 @@ cramit.in##.curved_box_no_shadow[style="width:977px;"]
 darelease.com##[style="width: 100%; margin: 0pt auto;"]
 demonoid.me##.bnnr_top
 demonoid.me##.pad9px_right
-oneclickmoviez.com###topbar
-oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 demonoid.me##span[style="color: #777777; background: #cdd0b2; padding-left: 10px; padding-right: 10px; font: bold 102%; border: 1px solid #777777;"]
 egydown.com##[style="display: block; background-color: #ffffff; border-bottom: solid 1px #F5DFD6; padding: 8px 0;"]
 fenopy.com##.spn
@@ -4921,6 +4919,8 @@ novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
 nyaa.eu##a[href^="http://www.nyaa.eu/f?"]
+oneclickmoviez.com###topbar
+oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
 p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
@@ -5287,6 +5287,7 @@ youporn.com###producer
 ###ad-bottom-300x250
 ###ad-bottom-wrapper
 ###ad-box
+###ad-box-second
 ###ad-boxes
 ###ad-bs
 ###ad-btm
@@ -5767,6 +5768,7 @@ youporn.com###producer
 ###AdFrame2
 ###AdFrame4
 ###adframetop
+###adfreead
 ###adGallery
 ###adGroup1
 ###adhead
@@ -5853,6 +5855,7 @@ youporn.com###producer
 ###adrighthome
 ###adrightrail
 ###Ads
+###ads-200x200-a
 ###ads-468
 ###ads-area
 ###ads-block
@@ -5877,6 +5880,7 @@ youporn.com###producer
 ###ads300Bottom
 ###ads300Top
 ###ads300x250
+###ads336Box
 ###ads336x280
 ###Ads470by50
 ###ads7
@@ -5904,6 +5908,7 @@ youporn.com###producer
 ###ads_mads_r1
 ###ads_mads_r2
 ###ads_medrect
+###ads_postdownload
 ###ads_right
 ###ads_section_textlinks
 ###ads_sidebar_bgnd
@@ -6108,6 +6113,7 @@ youporn.com###producer
 ###advertisements
 ###advertiserLinks
 ###advertising-banner
+###advertising2
 ###advertising_wrapper
 ###advertisingModule160x600
 ###advertisingModule728x90
@@ -6341,6 +6347,7 @@ youporn.com###producer
 ###CommonHeaderAd
 ###companion-ad
 ###companion_Ad
+###companionAd
 ###companionad
 ###companionAdDiv
 ###container-ad-topright
@@ -6364,6 +6371,9 @@ youporn.com###producer
 ###ctl00_atop_bt
 ###ctl00_BottomAd
 ###ctl00_ContentPlaceHolder1_TextAd_Pulse360AdPanel
+###ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd
+###ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd
+###ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd
 ###ctl00_cphMain_hlAd1
 ###ctl00_cphMain_hlAd2
 ###ctl00_cphMain_hlAd3
@@ -6584,7 +6594,6 @@ youporn.com###producer
 ###head-ad
 ###head-banner468
 ###head_ad
-###hp_ad300x250
 ###headAd
 ###header-ad
 ###header-ad-block
@@ -6661,6 +6670,7 @@ youporn.com###producer
 ###horizontalads
 ###HouseAd
 ###houseAd
+###hp_ad300x250
 ###hpV2_300x250Ad
 ###hpV2_googAds
 ###hpV2_newsletterAd2
@@ -6763,6 +6773,7 @@ youporn.com###producer
 ###leftcolumnad
 ###leftframeAD
 ###lg-banner-ad
+###linkads
 ###listing-ad
 ###LittleAdvert
 ###live-ad
@@ -6895,9 +6906,6 @@ youporn.com###producer
 ###player_ad
 ###player_ads
 ###player_middle_ad
-###ctl00_ContentRightColumn_RightColumn_Ad2_BanManAd
-###ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd
-###ctl00_ContentRightColumn_RightColumn_PremiumAd1_ucBanMan_BanManAd
 ###pof_ads_Wrapper
 ###pop_ad
 ###populate_ad_left
@@ -6932,6 +6940,7 @@ youporn.com###producer
 ###refreshable_ad5
 ###region-node-advert
 ###region-top-ad
+###related_ads_box
 ###remove_ads_button1
 ###remove_ads_button2
 ###rh-ad
@@ -7165,7 +7174,6 @@ youporn.com###producer
 ###textsponsor
 ###thefooterad
 ###tippytop-ad
-###linkads
 ###TipTopAdSpace
 ###title-wide-sponsored-by
 ###TitleAD
@@ -7260,6 +7268,7 @@ youporn.com###producer
 ###ts-ad_module
 ###tut_ads
 ###txt_link_ads
+###txtads
 ###ugly-ad
 ###undergameAd
 ###upper_adbox
@@ -7364,7 +7373,6 @@ youporn.com###producer
 ##.ad-728x90
 ##.ad-728x90-1
 ##.ad-768
-##.ad_tower
 ##.ad-background
 ##.ad-banner
 ##.ad-belowarticle
@@ -7399,6 +7407,7 @@ youporn.com###producer
 ##.ad-feedback
 ##.ad-flex
 ##.ad-footer
+##.ad-footer-empty
 ##.ad-footer-leaderboard
 ##.ad-fullbanner
 ##.ad-google
@@ -7541,7 +7550,6 @@ youporn.com###producer
 ##.ad728x90WithLabel
 ##.ad768x90
 ##.ad8
-##.advert-300x100-side
 ##.ad954x60
 ##.ad980x50box
 ##.ad_0
@@ -7558,7 +7566,6 @@ youporn.com###producer
 ##.ad_1day9
 ##.ad_2
 ##.ad_240
-##.advert-300-side
 ##.ad_3
 ##.ad_300
 ##.ad_300_120
@@ -7663,14 +7670,12 @@ youporn.com###producer
 ##.ad_power
 ##.ad_rectangle
 ##.Ad_Right
-###ads-200x200-a
 ##.ad_right
 ##.ad_rightside
 ##.ad_row_bottom_item
 ##.ad_side
 ##.ad_skyscraper
 ##.ad_skyscrapper
-##.bodyads2
 ##.ad_slug
 ##.ad_slug_font
 ##.ad_slug_table
@@ -7690,6 +7695,7 @@ youporn.com###producer
 ##.ad_top_banner
 ##.ad_top_leaderboard
 ##.ad_topright
+##.ad_tower
 ##.ad_trailer_header
 ##.ad_unit
 ##.ad_unit_rail
@@ -7734,6 +7740,8 @@ youporn.com###producer
 ##.adBottomboxright
 ##.ADbox
 ##.AdBox
+##.adBox
+##.adbox
 ##.adbox-box
 ##.adBox-mr
 ##.adbox1
@@ -7742,7 +7750,9 @@ youporn.com###producer
 ##.adBoxBody
 ##.adboxlong
 ##.adBoxSingle
+##.adBoxSingle
 ##.adboxVert
+##.adbrite2
 ##.adbrite2
 ##.adbrite_post
 ##.adbug
@@ -7750,24 +7760,32 @@ youporn.com###producer
 ##.adCall
 ##.adCell
 ##.adcenter
+##.adcenter
 ##.adClose
 ##.adCMRight
 ##.adColBgBottom
 ##.adColumn
 ##.adcolumn
+##.adcolumn
 ##.adcolumn_wrapper
 ##.AdContainer
 ##.adcontainer
+##.adcontainer
 ##.adContainer1
+##.AdContainer160x600
 ##.AdContainer160x600
 ##.AdContainerBottom
 ##.AdContainerBox308
 ##.adContent
+##.adContent
 ##.adContour
+##.adcopy
 ##.adcopy
 ##.adCreative
 ##.add-wrapper
 ##.addContainer
+##.addHolder
+##.adDiv
 ##.addtitle
 ##.adfbox
 ##.adFender3
@@ -7812,6 +7830,7 @@ youporn.com###producer
 ##.admiddle
 ##.admodule
 ##.adModule300
+##.AdModule_Content
 ##.AdModule_ContentLarge
 ##.AdModule_Hdr
 ##.adModule_square2
@@ -7913,6 +7932,8 @@ youporn.com###producer
 ##.ads_obrazek
 ##.ads_rectangle
 ##.ads_right
+##.ads_sc_bl_i
+##.ads_sc_tb
 ##.ads_sc_tl_i
 ##.ads_show_if
 ##.ads_side
@@ -8074,6 +8095,8 @@ youporn.com###producer
 ##.advert-100
 ##.advert-160x600
 ##.advert-300
+##.advert-300-side
+##.advert-300x100-side
 ##.advert-728
 ##.advert-728x90
 ##.advert-article-bottom
@@ -8294,6 +8317,7 @@ youporn.com###producer
 ##.body_sponsoredresults_top
 ##.body_width_ad
 ##.bodyads
+##.bodyads2
 ##.bodybannerad
 ##.bodyrectanglead
 ##.bookseller-header-advt
@@ -8385,6 +8409,7 @@ youporn.com###producer
 ##.content_adsense
 ##.content_bottom_adsense
 ##.ContentAd
+##.contentAd
 ##.contentad
 ##.contentAds
 ##.contentAdsCommon
@@ -8491,7 +8516,6 @@ youporn.com###producer
 ##.generic_300x250_ad
 ##.gl_ad
 ##.glamsquaread
-##.ads_sc_tb
 ##.global_banner_ad
 ##.gm-ad-lrec
 ##.go-ads-widget-ads-wrap
@@ -8569,6 +8593,7 @@ youporn.com###producer
 ##.header_ad_2
 ##.header_ad_div
 ##.header_adsense_banner
+##.header_advert
 ##.header_advertisement
 ##.header_advertisement_text
 ##.header_advertisment
@@ -8621,6 +8646,7 @@ youporn.com###producer
 ##.inline-ad
 ##.inline_ad
 ##.inlinead
+##.inlinead-tagtop
 ##.inlineAd_content
 ##.inlineAdNotice
 ##.inlineSideAd
@@ -8662,6 +8688,7 @@ youporn.com###producer
 ##.lastAdvertorial
 ##.layer_text_ad
 ##.lazyload_ad
+##.LazyLoadAd
 ##.leader_ad
 ##.leader_aol
 ##.leaderAd
@@ -8929,6 +8956,7 @@ youporn.com###producer
 ##.s2k_ad
 ##.s_ad_300x250
 ##.sa_AdAnnouncement
+##.savvyad_unit
 ##.sb_ad
 ##.sb_ad_holder
 ##.sb_adsN
@@ -8998,8 +9026,8 @@ youporn.com###producer
 ##.sidebarad
 ##.sidebaradbox
 ##.sidebarAdNotice
-##.sidebarads
 ##.sidebarAds
+##.sidebarads
 ##.sidebarBanner
 ##.sidebarboxad
 ##.sideBlockAd
@@ -9016,6 +9044,7 @@ youporn.com###producer
 ##.singlepostadsense
 ##.SitesGoogleAdsModule
 ##.sky-ad
+##.sky_ad
 ##.skyAd
 ##.SkyAdContainer
 ##.skyAdd
@@ -9048,16 +9077,20 @@ youporn.com###producer
 ##.spl_ad_plus
 ##.spLinks
 ##.spn_links_box
+##.spnsrCntnr
 ##.spon-links
 ##.spon_link
 ##.sponlinkbox
 ##.spons-link
+##.spons-wrap
 ##.sponsBox
+##.sponser-link
 ##.sponserLink
 ##.sponserlink
 ##.sponslink
 ##.sponsor-ad
 ##.sponsor-box
+##.sponsor-btns
 ##.sponsor-links
 ##.sponsor_block
 ##.sponsor_div
@@ -9067,6 +9100,7 @@ youporn.com###producer
 ##.sponsoradlabel
 ##.sponsorads
 ##.sponsoradtitle
+##.sponsorArea
 ##.sponsorArea
 ##.sponsored-ad-ob
 ##.sponsored-ads
@@ -9082,6 +9116,8 @@ youporn.com###producer
 ##.sponsored_ad
 ##.sponsored_ads
 ##.sponsored_box
+##.sponsored_box
+##.sponsored_box_search
 ##.sponsored_link
 ##.sponsored_links
 ##.sponsored_results
@@ -10480,6 +10516,10 @@ gpxplus.net##em[style="z-index:100;position:absolute;top:33px;right:5px;font-wei
 gpxplus.net##iframe[style="height:95px;width:738px;border:0;padding:0;margin:0;overflow:hidden;"]
 gq.com##.slideshow-dartinterstitial
 grapevine.is###Side
+graphic.is##.a-250-250
+graphic.is##.a-300-250-hgl
+graphic.is##.top-one-long
+graphic.is##.top-one-small
 greenbiz.com,greenerdesign.com###navigation-ad
 greenbiz.com,greenerdesign.com##.right-boom-small
 grindtv.com###LREC
@@ -11957,10 +11997,6 @@ thedugoutdoctors.com###l_sidebar
 thedugoutdoctors.com###r_sidebar
 theeagle.com##.SectionRightRail300x600Box
 theeagle.com##.TheEagleGoogleAdSense300x250
-graphic.is##.a-300-250-hgl
-graphic.is##.a-250-250
-graphic.is##.top-one-long
-graphic.is##.top-one-small
 thefashionspot.com###roadblock
 thefind.co.uk###tf_page_ad_content_bottom
 thefind.co.uk##.tf_page_ad_search
@@ -12325,7 +12361,6 @@ wired.com###featured
 wired.com###magazine_rightRail_A
 wkrg.com###krg_oas_rail
 wkrg.com###oas_asponsor
-wtop.com###above-header-980
 wkrg.com##.oas_add
 wmur.com###omega
 wn.com###banner
@@ -12367,6 +12402,7 @@ wsj.com###whatsnews_footer_ad
 wsj.com###whatsnews_top_ad
 wsj.com##.specialAdvertising
 wtkr.com###article-promo
+wtop.com###above-header-980
 wtsp.com###expandedBanner
 wunderground.com###linkAds
 wwl.com###BannerXGroup
