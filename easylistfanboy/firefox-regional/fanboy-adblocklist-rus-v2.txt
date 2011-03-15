@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: MJ6Ljm4jfF66O4lxBowSHw
+! Checksum: V7H5lIq1TTbbNHt4qGQlJA
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 15 Mar 2011
 ! This list expires after 5 days
@@ -105,7 +105,6 @@ http://r.e1.ru/
 ||copypast.ru/foto7/$object
 ||copypast.ru/retri/
 ||delfi.ua/b/
-||kleo.ru/special/
 ||desk.tomsk.ru/tmpl/$image
 ||echo.msk.ru/att/element-*.gif|
 ||echo.msk.ru/att/element-*.jpg|
@@ -166,6 +165,7 @@ http://r.e1.ru/
 ||kiks.yandex.ru^
 ||kinobaza.net/lobby.gif
 ||kinobaza.net/sluts.php
+||kleo.ru/special/
 ||klikvip.com/banners/
 ||kotomatrix.ru/nefart
 ||kp.ru/upfile/swf/
@@ -181,6 +181,7 @@ http://r.e1.ru/
 ||lostfilm.tv/img/$object
 ||lrnews.ru/photo/baner/
 ||macovod.net/ads/
+||macradar.ru^*/macradar_sidebar.gif
 ||mail.ru/prtnr/
 ||mainlink.ru/i/banner/
 ||marker.ru/banners/
@@ -303,7 +304,6 @@ http://r.e1.ru/
 ||xruni.ru^*/banners/
 ||xtreme.ws/templates/$object
 ||yadro.ru/ad/
-||macradar.ru^*/macradar_sidebar.gif
 ||yandex.ru/transparent
 ||yell.ru/bimages/
 ||yoki.ru/cache/static_fragment/
@@ -395,7 +395,6 @@ http://ad.ir.ru^$third-party
 ||88.208.22.84^$third-party
 ||89.108.72.16^$third-party
 ||89.208.145.187^$third-party
-||adonweb.ru^$third-party
 ||a.ava.com.ua^$third-party
 ||a.fobos.tv^$third-party
 ||ad.admixer.net^$third-party
@@ -415,6 +414,7 @@ http://ad.ir.ru^$third-party
 ||admulti.com^$third-party
 ||admulti.ru^$third-party
 ||adocean.pl^$third-party
+||adonweb.ru^$third-party
 ||adpath.ru^$third-party
 ||adpower.com.ua^$third-party
 ||adpro.com.ua^$third-party
@@ -667,8 +667,8 @@ http://ad.ir.ru^$third-party
 /rgrucounter.
 /tag_counter/?
 /tns-counter.
-/tzr.fcgi?
 /tracker.dll?
+/tzr.fcgi?
 /yadtrack.
 ||1link.ru^$third-party
 ||87.242.91.7^$third-party
@@ -854,15 +854,15 @@ http://ad.ir.ru^$third-party
 !     
 !---------------------- Site specific Firefox 3.x rules -----------------
 !   
-isra.com##table[style="width: 300px; background-color: rgb(242, 242, 242); border: 1px solid rgb(96, 130, 215); margin-bottom: 6px;"]
-pic2profit.com##div[style="padding: 0pt; text-align: left; margin-top: -15px;"]
-rin.ru##div[style="position: relative; width: 100%; height: 90px; text-align: center;"]
-polit.ru##div[style="background-color: rgb(237, 237, 237); padding: 16px 20px 20px 24px; overflow: hidden; margin-bottom: 20px;"]
-uralweb.ru##[style="width: 240px; height: 400px; background: none repeat scroll 0% 0% rgb(255, 255, 255);"]
 computerra.ru##[style="background-color: rgb(229, 229, 229); margin-top: 20px; margin-bottom: 20px; padding: 10px; font-size: 11px; color: black; font-family: Tahoma;"]
 computerra.ru##[style="border: 1px solid rgb(170, 170, 170); background-color: rgb(255, 255, 255); margin-top: 20px; margin-bottom: 20px; padding: 5px; font-size: 13px; color: black; font-family: Tahoma;"]
 google.ru##[style="border: 1px solid rgb(51, 102, 153);"]
+isra.com##table[style="width: 300px; background-color: rgb(242, 242, 242); border: 1px solid rgb(96, 130, 215); margin-bottom: 6px;"]
 mskd-ru.net##[style="border: 1px dashed blue; background-color: rgb(230, 238, 255);"]
+pic2profit.com##div[style="padding: 0pt; text-align: left; margin-top: -15px;"]
+polit.ru##div[style="background-color: rgb(237, 237, 237); padding: 16px 20px 20px 24px; overflow: hidden; margin-bottom: 20px;"]
+rin.ru##div[style="position: relative; width: 100%; height: 90px; text-align: center;"]
+uralweb.ru##[style="width: 240px; height: 400px; background: none repeat scroll 0% 0% rgb(255, 255, 255);"]
 !
 !---------- Russian Generic Element Hiding Rules ----------
 !
@@ -904,11 +904,11 @@ mskd-ru.net##[style="border: 1px dashed blue; background-color: rgb(230, 238, 25
 ##.textAdv
 ##.topArticleAds
 ##.y5_ads
-##div[id^="Teaser_Block_"]
 ##A[href^="http://clickcashmoney.com/"]
 ##A[href^="http://isms.pp.ru/jar.php?id"]
 ##A[href^="http://sugar-traff.com/voob_traff/"]
 ##A[href^="http://thetraffic.ru/in.cgi?"]
+##div[id^="Teaser_Block_"]
 !
 !---------- Russian Site Specific Element Hiding Rules ----------
 !
@@ -987,8 +987,8 @@ cnews.ru##.right_banner
 cnews.ru##.td_wrapp
 cnews.ru##.virt_bottom_banner
 cnews.ru##[id^="flash_"]
-computerra.ru##div[style="border: solid 1px #AAAAAA; background-color: #FFFFFF; margin-top: 20px; margin-bottom: 20px; padding: 5px; font-size: 13px; color: black; font-family: Tahoma;"]
 computerra.ru##div[style="background-color: #f5f5f5; margin-top: 20px; margin-bottom: 20px; padding: 10px; font-size: 11px; color: black; font-family: Tahoma;"]
+computerra.ru##div[style="border: solid 1px #AAAAAA; background-color: #FFFFFF; margin-top: 20px; margin-bottom: 20px; padding: 5px; font-size: 13px; color: black; font-family: Tahoma;"]
 consultant.ru###top_banner
 cosmo.ru###spThing
 cosmo.ru##.afc_block2
@@ -1236,6 +1236,8 @@ playground.ru##.BanBlock
 podrobnosti.ua##.b-middle-banner
 podrobnosti.ua##.b-premium-banner
 podrobnosti.ua##.b-top-banners
+polit.ru##.adv-block
+polit.ru##div[style="background-color:#ededed; padding:20px; overflow:hidden; margin-bottom:20px; padding-left:24px; padding-top:16px;"]
 quote.ru##.banner
 quote.ru##[style^="width: 100%; height: 60px;"]
 quote.ru##[style^="width: 100%; height: 90px;"]
@@ -1350,15 +1352,13 @@ uploaded.to##[style="background-repeat: no-repeat; width: 728px; height: 90px; m
 uploaded.to##[style="margin-left: 15px;"]
 uploaded.to##[style="padding-right: 5px; color: rgb(204, 204, 204);"]
 uralweb.ru##div[style="width:240px;height:400px;background:#ffffff"]
-polit.ru##.adv-block
-polit.ru##div[style="background-color:#ededed; padding:20px; overflow:hidden; margin-bottom:20px; padding-left:24px; padding-top:16px;"]
 usde.biz###er_PopWin
 utro.ru###flash_120479_ytro_fp_right
 utro.ru###flashrst_121213_ytpo_middle_big
+utro.ru##.banner-middle
 utro.ru##.banner-right
 utro.ru##.banner_bottom_art
 utro.ru##.manga
-utro.ru##.banner-middle
 vakant.ru###banner69
 vakant.ru##.flash_watch
 vedomosti.ru###banner_rast
