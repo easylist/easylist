@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: eoeS2WTOZVC5S2dKEzWx8A
+! Checksum: cpp4/YIcBvDVHmlz1tB2Nw
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 20 Mar 2011
 ! This list expires after 5 days
@@ -22,13 +22,13 @@
 .ru/RCL/BAN/
 .ru/reklama/
 .ru/swf/banner_
-.ua/adbn/
 .su/Reklama/
 .swf?alink
 .swf?link1=
 .swf?link=
 .swf?path=
 .swf?pid=
+.ua/adbn/
 /1tizer_
 /ad2-packet/*
 /adriver.
@@ -102,7 +102,6 @@ http://r.e1.ru/
 ||cnews.ru^*/partners/
 ||compromat.ru/main/reklama/
 ||consultant.ru^*?flash=
-||pictraff.ru/rightdown/
 ||cooler-online.ru/img/servakeu.
 ||copypast.ru/foto7/$object
 ||copypast.ru/retri/
@@ -229,6 +228,7 @@ http://r.e1.ru/
 ||pics.rbc.ru^*234-200.
 ||pics.rbc.ru^*960
 ||pics.rbs.ru^*_600
+||pictraff.ru/rightdown/
 ||piratbit.net/banner/
 ||pokazuha.ru/banner/
 ||pravda.ru/cache/static_fragment/$subdocument
@@ -324,6 +324,7 @@ http://r.e1.ru/
 ||adgo-online.de^
 ||admitad.com^
 ||admoon.net^
+||adonweb.ru^
 ||ads.domik.net^
 ||ads.focus-news.net^
 ||ads.globescale.com^
@@ -337,13 +338,11 @@ http://r.e1.ru/
 ||awaps.yandex.ru^
 ||b.vtomske.ru^
 ||ban.aport.ru^
-||dosug.cz/servlet/
 ||banner.lbs.km.ru^
 ||banner.unian.net^
 ||banners.marker.ru^
 ||banners.nextmail.ru^
 ||bs.mybb.ru^
-||adonweb.ru^
 ||bz.nextmail.ru^
 ||c.bigmir.net^
 ||click.israelinfo.ru^
@@ -352,6 +351,7 @@ http://r.e1.ru/
 ||dclick.ru^
 ||doroga63.ru^$object
 ||doroga63.ru^*left-adv
+||dosug.cz/servlet/
 ||flipflapflo.biz^
 ||hit-sales.ru^
 ||kartinka.com.ua^
@@ -410,8 +410,6 @@ http://ad.ir.ru^$third-party
 ||ad2.rambler.ru^$third-party
 ||adcast.ru^$third-party
 ||adfox.ru^$third-party
-||intimshop.ru^$third-party
-||dosugcz.info^$third-party
 ||adhands.ru^$third-party
 ||adimg.smi2.ru^$third-party
 ||adland.ru^$third-party
@@ -499,6 +497,7 @@ http://ad.ir.ru^$third-party
 ||denwer.ru/ru/rec/$~third-party,image
 ||dirkino-traff.ru^$third-party
 ||dosugcz.biz^$third-party
+||dosugcz.info^$third-party
 ||dreamlog.ru^$third-party
 ||dreamsounds.net^$third-party
 ||dvdkinoteatr.com^$third-party
@@ -524,7 +523,6 @@ http://ad.ir.ru^$third-party
 ||goodoo.ru^$third-party,subdocument
 ||grand-masters.ru^$third-party
 ||heroeswm.ru^$third-party,object
-||wt-rotator.com^$third-party
 ||holder.com.ua^$third-party
 ||hypersearch.novoteka.ru^$third-party
 ||icqadvert.com^$third-party
@@ -533,6 +531,7 @@ http://ad.ir.ru^$third-party
 ||inforotor.net^$third-party
 ||inshop.ru^$third-party
 ||instantcash.ru^$third-party
+||intimshop.ru^$third-party
 ||js.anonym.to^$third-party
 ||js.ru.redtram.com^$third-party
 ||js.smi2.ru^$third-party
@@ -641,6 +640,7 @@ http://ad.ir.ru^$third-party
 ||wedinin.com^$third-party
 ||widgets.fotocash.ru^$object,third-party
 ||worldofrest.com.ua^$third-party
+||wt-rotator.com^$third-party
 ||xmemory.ru^$third-party,script
 ||xwell.ru^$third-party
 ||yarportal.ru^*.gif|$~third-party,image
@@ -869,8 +869,8 @@ mskd-ru.net##[style="border: 1px dashed blue; background-color: rgb(230, 238, 25
 pic2profit.com##div[style="padding: 0pt; text-align: left; margin-top: -15px;"]
 polit.ru##div[style="background-color: rgb(237, 237, 237); padding: 16px 20px 20px 24px; overflow: hidden; margin-bottom: 20px;"]
 rin.ru##div[style="position: relative; width: 100%; height: 90px; text-align: center;"]
-xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0);"]
 uralweb.ru##[style="width: 240px; height: 400px; background: none repeat scroll 0% 0% rgb(255, 255, 255);"]
+xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0);"]
 !
 !---------- Russian Generic Element Hiding Rules ----------
 !
@@ -960,8 +960,8 @@ bash.org.ru##.y5_ads2
 bash.org.ru##[style="text-align: center; font-size: 10pt;"]
 bbc.co.uk###partners
 bigmir.net##.b-banner_sm
-bigmir.net##.top_banner
 bigmir.net##.premium_banner
+bigmir.net##.top_banner
 binural.org##[style="border:3px outset green;font-size:16px;background-color:#fdfcf0;margin-bottom:10px"]
 blogs.mail.ru##table[style="margin-bottom: -4px;"]
 boxnews.com.ua###bn-banner
@@ -1171,7 +1171,6 @@ mail.ru##.blockPartners2Iframe
 mail.ru##.left_banner
 mail.ru##.rb_banner
 mail.ru##.top760
-readmanga.ru##.baner
 margosha-tv.ru##.msnot
 marketgid.com###goods-hits-informer
 medportal.ru##.AdSectionHeader
@@ -1229,12 +1228,10 @@ opennet.ru###adv3
 opennet.ru###ibm_adv
 opennet.ru##td[width="40"]
 opennet.ru##td[width="470"]
+opensharing.org###download
 oplati.ru##td[style="float: right;"]
 oplati.ru##td[width="90"][style="margin-right: 0pt;"]
 oszone.ru##.banner
-opensharing.org###download
-xxx-tracker.com##table[style="border-spacing:0px;background-color:#000000;"]
-xxx-tracker.com##TABLE[style="border-spacing:0px;background-color:#000000;"]
 overclockers.ru##table[cellpadding="2"][width="160"]
 overclockers.ru##table[cellpadding="3"][border="0"]
 overclockers.ru##table[height="245"]
@@ -1284,6 +1281,7 @@ rbc.ua##.tac
 rbcdaily.ru##.banner
 rbcdaily.ru##.bannerRight
 rbcdaily.ru##.under_header_adv
+readmanga.ru##.baner
 redtram.com##[width="240"]
 regnum.ru##.banner
 regnum.ru##.prbanner
@@ -1410,6 +1408,8 @@ win.mail.ru##.rb_body
 x-console.com###header-banner468
 x-console.com##[style="width: 960px; height: 70px; padding: 0pt; margin: 0pt;"]
 xxx-tracker.com###download
+xxx-tracker.com##TABLE[style="border-spacing:0px;background-color:#000000;"]
+xxx-tracker.com##table[style="border-spacing:0px;background-color:#000000;"]
 yandex.ru###banner
 yandex.ru##.b-advertizing-and-wizards
 yandex.ru##.b-banner
@@ -1417,12 +1417,12 @@ yandex.ru##.somebanner
 zaxid.net###fakeCommercialBox
 zaxid.net###internalbanner1
 zaxid.net###internalbanner2
+zaycev.net##[id^="PC_Teaser_Block_"]
 zelenograd.ru##table[bgcolor="#3366ff"]
 zelenograd.ru##table[bgcolor="#ffffcc"]
 zelenograd.ru##table[cellpadding="20"][width="100%"]
 zelenograd.ru##table[cellpadding="5"][width="240"]
 zelenograd.ru##td[bgcolor="#CCBEB5"]
-zaycev.net##[id^="PC_Teaser_Block_"]
 zhmak.info###fp_adv2
 zhmak.info##[style="border: 2px dashed green; padding: 15px 3px; font-size: 16px; background-color: rgb(253, 250, 195);"]
 zhmak.info##[style="border: 2px dashed green;padding:15px 3px;font-size:16px;background-color:#fdfac3;"]
