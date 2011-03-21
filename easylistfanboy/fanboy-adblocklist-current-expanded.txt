@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: K5bTEal4Q9egetZoMZiawQ
+! Checksum: vFPiS3d0y8r//mr9UjTliQ
 ! Fanboy's Adblock list
 ! Updated: 21 Mar 2011
 ! This list expires after 5 days
@@ -283,6 +283,7 @@
 /ad_feed.js?
 /ad_footer_
 /ad_frame.
+/ad_header.
 /ad_header_
 /ad_holder/*
 /ad_horisontal.
@@ -297,7 +298,6 @@
 /ad_label2_
 /ad_label_
 /ad_leader.
-/ad_header.
 /ad_leader_
 /ad_leaderboard.
 /ad_left_
@@ -789,13 +789,13 @@
 /ajs.php?
 /ak/ads/*
 /altClickToSearch.js
+/ALWebAd_
 /am/ads.
 /amazon/iframeproxy-
 /amazon/widget/*
 /anchorad.
 /annonse/*
 /annonser/*
-/ALWebAd_
 /anti-adblock/*$~stylesheet
 /api/ads/*
 /ArtiMediaTargetAds.
@@ -1278,6 +1278,7 @@
 /modules/doubleclick/*
 /modules_ads.
 /msnads/*
+/MSNAds1.
 /mstextad?
 /mtvi_ads_
 /navad/delivery.php?
@@ -1285,7 +1286,6 @@
 /netspiderads2.
 /netspiderads3.
 /network_ad.
-/MSNAds1.
 /NeudesicAd.
 /new_oas.js
 /nps-growler/*
@@ -1965,7 +1965,6 @@ images/ads/*
 ||ads.pheedo.com^
 ||ads.rediff.com^
 ||ads.rttnews.com^
-||cdn.turner.com^*/groupon/
 ||ads.static.blip.tv^
 ||ads.trademe.co.nz^
 ||ads.tweetmeme.com^
@@ -2010,6 +2009,7 @@ images/ads/*
 ||cars.com/go/includes/targeting/
 ||cars.com/js/cars/catRetargeting.js
 ||cbs.com/thunder/ad.doubleclick.net/adx/$domain=cbsnews.com
+||cdn.turner.com^*/groupon/
 ||cinemablend.com/templates/tpl/reskin/$image
 ||ciol.com/zedotags/files/
 ||clipjunkie.com/cj*.html$subdocument
@@ -2542,7 +2542,6 @@ images/ads/*
 ||bizographics.com^
 ||bkrtx.com^
 ||blamads.com^
-||nmwrdr.net^
 ||blinkx.com/f2/overlays/
 ||blogads.com^
 ||blogbannerexchange.com^
@@ -2865,6 +2864,7 @@ images/ads/*
 ||nexac.com^
 ||nexage.com^
 ||nijobfinder.co.uk/affiliates/
+||nmwrdr.net^
 ||northmay.com^
 ||npvos.com^
 ||nuggad.net^
@@ -4207,7 +4207,6 @@ affiliateBannerShow.aspx?
 ||datefunclub.com^$third-party
 ||datingamateurs.com^$third-party
 ||datingidol.com^$third-party
-||thumbnail-galleries.net^$third-party
 ||deecash.com^$third-party
 ||digitaldesire.com^$third-party
 ||display.superbay.net^$third-party
@@ -4232,6 +4231,7 @@ affiliateBannerShow.aspx?
 ||promo.twistyscash.com^$third-party
 ||realitykings.com^$third-party,subdocument
 ||sweetstudents.com^$third-party
+||thumbnail-galleries.net^$third-party
 ||upsellit.com/custom/$third-party
 ||vrstage.com^$third-party
 ||wendi.com/ipt/$third-party
@@ -4806,7 +4806,7 @@ _friendlyduck.
 ||emule-top50.com/extras/$subdocument
 ||extratorrent.com/images/download_16x.
 ||extratorrent.com/images/other/
-||files.nyaa.eu/hurf/
+||files.nyaa.eu^*.lol
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
 ||free-torrents.org^*/banners/
@@ -5228,7 +5228,6 @@ nangaspace.com###header
 nearlygood.com###abf
 news.com.au###match-widget
 newsfilter.org##table[width="800px"]
-uselessjunk.com##.shadow_NFL
 nonktube.com##.span-100
 nonktube.com##.span-320
 ns4w.org##.livejasmine
@@ -5307,6 +5306,7 @@ twilightsex.com##.bl_b_l
 twilightsex.com##.squarespot
 twitter.com##.promoted-trend
 uploading.com##.c_2
+uselessjunk.com##.shadow_NFL
 wankersplace.com##.adv-300
 westword.com###perswrap
 wide6.com###partner
@@ -10076,11 +10076,11 @@ cnn.com###rbAdWrapperTop
 cnn.com##.cnn_728adbin                                                    
 cnn.com##.cnn_adcntr728x90
 cnn.com##.cnn_adcntr728x90t
-cnn.com##.cnn_grpnadclk
 cnn.com##.cnn_adspc300x100
 cnn.com##.cnn_adspc336cntr
 cnn.com##.cnn_adtitle
 cnn.com##.cnn_fabcatad
+cnn.com##.cnn_grpnadclk
 cnn.com##.cnn_sectprtnrbox_cb
 cnn.com##.cnnSearchSponsorBox
 cnn.com##.cnnStoryElementBox
@@ -10180,6 +10180,7 @@ darkhorizons.com###content-island
 darkreading.com###greyPromoArea
 darkreading.com###headerPromo
 darkreading.com##.dualRight
+datacenterknowledge.com##.header-banner
 datpiff.com##.skyscraper
 dawn.com##[style="height:290px;background-color:#EEEEE4;"]
 daytondailynews.com###cxSubHeader
@@ -10948,7 +10949,6 @@ jigzone.com###ad
 joe.ie###topbanner
 joeuser.com##.monsterad
 jokeroo.com##.adVplaceholder
-datacenterknowledge.com##.header-banner
 joystickdivision.com###Page_Header
 joystiq.com###medrect
 joystiq.com###medrectrb
@@ -11348,6 +11348,7 @@ nasdaq.com##div[style="align: center; vertical-align: middle;width:336px;height:
 nashuatelegraph.com###fadeinbox
 nashuatelegraph.com###meerkat-wrap
 nationalgeographic.com###headerboard
+nationalgeographic.com###kids_tophat_row1
 nationalpost.com###npEarlug
 nationalpost.com###npLeaderboard
 nationalpost.com##.npAdGoogle
@@ -11478,7 +11479,6 @@ novamov.com##.top_banner
 novaup.com##div[style="height: 250px; margin-top: 50px;"]
 novaup.com##div[style="width: 300px; height: 250px; margin-top: 20px;"]
 novelgames.com##.gameAd
-nationalgeographic.com###kids_tophat_row1
 nst.com.my##.cadv
 nst.com.my##.standard
 nwanime.com###iwarn
@@ -12664,7 +12664,6 @@ ytmnd.com##TD[colspan="5"]
 yurock.net###ca
 zacks.com##.zacks_header_ad_ignore
 zam.com###bannerMain
-zynga.com##.footerPromo
 zap2it.com###aff_rightbar
 zap2it.com##.zc-grid-ad
 zap2it.com##.zc-grid-position-ad
@@ -12695,6 +12694,7 @@ zone.msn.com##.SuperBannerTVMain
 zone.msn.com##.VerticalBannerTV_tag
 zug.com###header_rotate
 zuula.com###secondary
+zynga.com##.footerPromo
 !     
 !---------- Hiding Rules With Exceptions ----------
 !     
