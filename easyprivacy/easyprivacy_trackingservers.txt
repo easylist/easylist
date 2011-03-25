@@ -447,7 +447,7 @@
 ||pureairhits.com^$third-party
 ||q-counter.com^$third-party
 ||quantserve.com^$~object_subrequest,third-party
-||quantserve.com^*^a=$object_subrequest
+||quantserve.com^*^a=$object_subrequest,third-party
 ||quillion.com^$third-party
 ||quintelligence.com^$third-party
 ||radarstats.com^$third-party
@@ -594,7 +594,9 @@
 ||vertical-leap.net^$third-party
 ||vertster.com^$third-party
 ||virtualnet.co.uk^$third-party
-||visiblemeasures.com^$third-party
+||visiblemeasures.com/log?$object_subrequest,third-party
+||visiblemeasures.com/swf/as3/as3sohandler.swf$object_subrequest,third-party
+||visiblemeasures.com^$~object_subrequest,third-party
 ||visistat.com^$third-party
 ||visitor-track.com^$third-party
 ||visitorglobe.com^$third-party
