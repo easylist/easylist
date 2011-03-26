@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: BHQFCer05EfXz1f5/Qylnw
+! Checksum: se462Ruzkq68DIfQ6mSJUg
 ! Fanboy's Adblock list
 ! Updated: 26 Mar 2011
 ! This list expires after 5 days
@@ -45,7 +45,6 @@
 -leaderboard-ad
 -newsletter-ad-
 -panel-ad.
-_radio_ad_
 -panel_ad_
 -strip-ads-
 .ad.footer.
@@ -284,6 +283,7 @@ _radio_ad_
 /ad_feed.js?
 /ad_footer_
 /ad_frame.
+/ad_generator.
 /ad_header.
 /ad_header_
 /ad_holder/*
@@ -810,7 +810,6 @@ _radio_ad_
 /assets/ads/*
 /assets/doubleclick/*
 /astrack.
-/ad_generator.
 /athena/tag/?
 /au2m8_preloader/*
 /AuditudeAdUnit.
@@ -1771,6 +1770,7 @@ _leaderboard?
 _org_ad.
 _platform_ads_
 _popovers_
+_radio_ad_
 _railads.
 _reporting_ads.
 _right_ad.
@@ -3215,7 +3215,6 @@ images/ads/*
 @@||ads.globo.com^*/globovideo/player/
 @@||ads.yimg.com/*videoadmodule*.swf$object_subrequest
 @@||ads.yimg.com/a/$domain=autos.yahoo.com
-@@||banners.andomedia.com^*/www/delivery/$script
 @@||ads.yimg.com/la/adv/y/yahooxtra$image,domain=movies.yahoo.com
 @@||ads1.msn.com^$script,domain=msn.foxsports.com|wowarmory.com|entertainment.msn.co.nz
 @@||adserver.adtech.de^$domain=games.cartoonnetworkhq.com|cartoonnetwork.co.nz|cartoonnetworkasia.com
@@ -3236,6 +3235,7 @@ images/ads/*
 @@||au.adserver.yahoo.com/a?*HEAD&p$domain=au.finance.yahoo.com
 @@||auditude.com/crossdomain.xml$domain=fandango.com,object_subrequest
 @@||b.scorecardresearch.com/b?$domain=last.fm
+@@||banners.andomedia.com^*/www/delivery/$script
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
 @@||bikeexchange.com.au/adverts/
 @@||bn.uol.com.br/html.ng/$object_subrequest
@@ -3291,7 +3291,6 @@ images/ads/*
 @@||media.monster.com/ads/*375x154.$~third-party
 @@||mediabistro.com^*/DisplayAdLeader.asp?$subdocument
 @@||medrx.sensis.com.au^*/util.js$script,domain=afl.com.au
-@@||planetaxel.com^*.php?ad=$stylesheet
 @@||metacafe.com/banner.php?
 @@||miniclip.com/scripts/js.php?
 @@||msi.com/banners/
@@ -3308,6 +3307,7 @@ images/ads/*
 @@||partners.thefilter.com/crossdomain.xml$domain=dailymotion.com
 @@||partners.thefilter.com/dailymotionservice/$domain=dailymotion.com
 @@||pbs.org^*/sponsors/flvvideoplayer.swf
+@@||planetaxel.com^*.php?ad=$stylesheet
 @@||playintraffik.com/Advertising/
 @@||plugcomputer.org^*/ad1.jpg
 @@||rapid8.com/ads/AdController.js
@@ -4818,7 +4818,6 @@ _friendlyduck.
 ||emule-top50.com/extras/$subdocument
 ||extratorrent.com/images/download_16x.
 ||extratorrent.com/images/other/
-||files.nyaa.eu^*.lol
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
 ||free-torrents.org^*/banners/
@@ -4832,6 +4831,7 @@ _friendlyduck.
 ||megashares.com/cache_program_banner.html
 ||ncrypt.in/images/useful/
 ||newpct.com/soporte/
+||nyaa.eu^$image
 ||online-media24.de^$third-party
 ||ozqul.com^*/webbanners.png
 ||p2pnet.net/images/$image
@@ -4869,6 +4869,8 @@ _friendlyduck.
 !---------- p2p Whitelists ----------
 !
 @@||bizerta-soft.com/clientscript/advertisement.js$script
+@@||files.nyaa.eu/common/
+@@||files.nyaa.eu/www/
 @@||superfundo.org/advertisement.js
 !
 !---------- p2p Element Firefox 3.x Hiding Rules ----------
@@ -5011,6 +5013,7 @@ novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
 nyaa.eu##[src^="http://files.nyaa.eu/"][style="outline: medium none;"]
+nyaa.eu##div[style="width:970px;"]
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
@@ -8526,7 +8529,6 @@ youporn.com###producer
 ##.buzzAd
 ##.bx_ad
 ##.bx_ad_right
-##.homepage-advertisement
 ##.cA-adStack
 ##.cA-adStrap
 ##.calloutAd
@@ -8781,6 +8783,7 @@ youporn.com###producer
 ##.homeAd2
 ##.homeAdSection
 ##.HomeContentAd
+##.homepage-advertisement
 ##.homepage-footer-ads
 ##.homepage-sponsoredlinks-container
 ##.homepage_middle_right_ad
@@ -10517,6 +10520,7 @@ fitnessmagazine.com###bannertable
 fitnessmagazine.com###dailyprize
 fitnessmagazine.com##.promoContainer
 fitsugar.com###post_ad
+flicks.co.nz##.advertisements
 flicks.co.nz##.takeover-link
 flightstats.com##[style="width: 728px; height: 90px; background-color: #cecece;"]
 flisted.com##.right-top
@@ -11239,7 +11243,6 @@ menshealth.com###leaderBoard
 menshealth.com###skyscraper
 menumania.co.nz##.add-result
 mercola.com###shadowbox_container
-flicks.co.nz##.advertisements
 mercurynews.com##.expertBox
 merriam-webster.com###editors-picks-promo
 merriam-webster.com###google_creative_1
