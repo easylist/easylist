@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VDaNUffLq2RpVWNnWb02jQ
+! Checksum: GDXAR+tEkjzQ2clmyNv9yA
 ! Fanboy's Adblock list
 ! Updated: 27 Mar 2011
 ! This list expires after 5 days
@@ -1253,6 +1253,7 @@
 /kmp_iframe_
 /layer-ads.
 /layer-advert-
+/Leaderboard_Ad/*
 /layer.php?bid=
 /layer/layer.js
 /leaderad.
@@ -2017,6 +2018,7 @@ images/ads/*
 ||buzznet.com/topscript.js.php?
 ||campusfood.com/content/$subdocument
 ||cars.com/go/includes/targeting/
+||media.cnbc.com^*/cnbcsponsoredby.gif
 ||cars.com/js/cars/catRetargeting.js
 ||cbs.com/thunder/ad.doubleclick.net/adx/$domain=cbsnews.com
 ||cdn.turner.com^*/groupon/
@@ -5971,6 +5973,7 @@ youporn.com###producer
 ###adposition-SHADE
 ###adposition1
 ###adposition10
+###ad-fullwidth
 ###adPosition14
 ###adposition2
 ###adposition4
@@ -9673,6 +9676,9 @@ thesimsresource.com##[style="width: 100%; background: none repeat scroll 0% 0% r
 tigerdirect.ca##div[style="width: 977px; clear: both; margin-top: 2px; height: 90px;"]
 timesnewsline.com##[style="border: 1px solid rgb(227, 227, 227); background: none repeat scroll 0% 0% rgb(255, 248, 221); padding: 5px; width: 95%;"]
 tomopop.com##[style="width: 330px; overflow: hidden;"]
+caymannewsservice.com##div[style="width: 175px; height: 200px;"]
+caymannewsservice.com##div[style="width: 450px; height: 100px;"]
+caymannewsservice.com##div[style="width: 550px; height: 100px;"]
 top4download.com##[style="float: left; width: 620px; height: 250px; clear: both;"]
 top4download.com##[style="width: 450px; height: 205px; clear: both;"]
 tripit.com##[style="width: 160px; margin: -10px 37px -20px 0pt; min-height: 80px;"]
@@ -10041,11 +10047,11 @@ cartoonnetwork.com.au###topBanner
 cartoonnetworkasia.com###rightBanner
 cartoonnetworkasia.com###topBanner
 cataloguecity.co.uk##.bordered
-catholicnewsagency.com##[style="background-color: #F7F7F7; width:256px; height:250px;"]
+catholicnewsagency.com##div[style="background-color: #F7F7F7; width:256px; height:250px;"]
 caymannewsservice.com###content-top
-caymannewsservice.com##[style="width: 175px; height: 200px;"]
-caymannewsservice.com##[style="width: 450px; height: 100px;"]
-caymannewsservice.com##[style="width: 550px; height: 100px;"]
+caymannewsservice.com##div[style="width:175px; height:200px; margin:0px auto;"]
+caymannewsservice.com##div[style="width:450px; height:100px; margin:0px auto;"]
+caymannewsservice.com##div[style="width:550px; height:100px; margin:0px auto;"]
 cbc.ca###ad
 cbc.ca##.promogrp
 cboe.com###simplemodal-overlay
@@ -10066,12 +10072,12 @@ centredaily.com###top_jobs_search
 centredaily.com##.tla
 centurylink.net##.vp_right
 centurylink.net##div[style="text-align: center; font-size: 11px;"]
-cepro.com##[style="min-height:100px; background-color:#ebeef7; border:1px solid #dde;"]
+cepro.com##div[style="min-height:100px; background-color:#ebeef7; border:1px solid #dde;"]
 chacha.com##.disclosure
 channelinsider.com##.html_module
 channelregister.co.uk###trailer
 charitynavigator.org##div[style="margin-bottom:10px; font-size: 10px;"]
-checkip.org##[style="width: 250px; margin-left: 25px;margin-top:10px;"]
+checkip.org##div[style="width: 250px; margin-left: 25px;margin-top:10px;"]
 checkoutmyink.com###centerbanner
 checkoutmyink.com###topbanner
 chicagonow.com###ad
@@ -10090,11 +10096,11 @@ chron.com###advertisement
 cincinnati.com##.poster-container
 cio.com###imu_box
 cio.com.au###slideshow_boombox
+cinemablend.com##div[style="width:290px;height:600px;"]
 cioupdate.com###gemhover
 cioupdate.com###houseRibbonContainer
 cioupdate.com###partners
 cioupdate.com###solsect
-circuitcity.com##[style="clear:both; width:941px; height:90px; text-align:center; margin-top:5px; margin-bottom:10px;"]
 citypaper.com###medRectangle
 citypaper.com###topLeaderboard
 citytv.com###CityTv-HeaderBannerBorder
@@ -10109,8 +10115,7 @@ cnbc.com###dapIfM1
 cnbc.com###Homepage300x250
 cnbc.com###vidRightRailWrapper
 cnbc.com##.cnbc_banner_ad_area
-cnbc.com##[style="width:185px;height:40px;margin-left: 25px; "]
-cnbc.com##[width="150"][height="18"]
+cnbc.com##div[style="width:960;height:90;margin:0 0 5px 0;"]
 cnet.com###omnibrow
 cnet.com###pubUpgradeUnit
 cnet.com###reviewsPanel
@@ -10146,14 +10151,12 @@ coderanch.com##.shngl
 colonhealth.net###gooBox0
 comedy.com###hat
 comicbookresources.com##.skyscraper
-comicbookresources.com##[style="font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;"]
 comicgenesis.com###ks_da
 comicsalliance.com###banner
 comingsoon.net###upperPub
 commentarymagazine.com##.mb5px
 commentarymagazine.com##.nav_bar
 complaintsboard.com##.googtop
-complex.com##[style="float:left; position:relative; margin:5px auto 5px auto; width:960px; height:90px; border:0px solid #000; text-align:center;"]
 computerandvideogames.com###skyslot
 computersera.com##.banner
 computersera.com##.banner2
