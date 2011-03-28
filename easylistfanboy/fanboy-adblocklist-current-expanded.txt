@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: k/7+/pscFSnYMpw7PFejOA
+! Checksum: x/lfad6j/oDM5JwAXuAMkQ
 ! Fanboy's Adblock list
 ! Updated: 28 Mar 2011
 ! This list expires after 5 days
@@ -17,10 +17,10 @@
 &bannerid=
 &clickTag=http
 -ad-banner.
+-ad-column-
 -ad-left.
 -ad-limits.
 -ad-manager/
--ad-column-
 -ad-right.
 -ad-util-
 -ad.jpg?
@@ -242,6 +242,7 @@
 /ad/html/*
 /ad/iframe/*
 /ad/img/*
+/ad/login-
 /ad/preview/*
 /ad/quigo/*
 /ad/realclick.
@@ -802,7 +803,6 @@
 /anchorad.
 /annonse/*
 /annonser/*
-/ad/login-
 /anti-adblock/*$~stylesheet
 /api/ads/*
 /ArtiMediaTargetAds.
@@ -1003,8 +1003,8 @@
 /DNSads.html?
 /door/ads/*
 /doubleclick.$script
-/doubleclick/iframe.
 /doubleclick/expand.
+/doubleclick/iframe.
 /doubleclick_ads.
 /doubleclickad.
 /doubleclickads?
@@ -1539,12 +1539,12 @@
 /spac_adx.
 /spacedesc=
 /spc.php?zone
+/spcjs.php
 /spcjs.php?
 /spcjs_min.
 /special_ads/*
 /spo_show.asp?
 /sponLink.htm?
-/spcjs.php
 /spons_links_
 /sponseredlinksros.
 /sponsor-ad
@@ -1993,7 +1993,6 @@ images/ads/*
 ||ads.rediff.com^
 ||ads.rttnews.com^
 ||ads.static.blip.tv^
-||publicradio.org/boxes/delivery/
 ||ads.trademe.co.nz^
 ||ads.tweetmeme.com^
 ||ads.uploading.com^
@@ -2039,7 +2038,6 @@ images/ads/*
 ||cbs.com/thunder/ad.doubleclick.net/adx/$domain=cbsnews.com
 ||cdn.turner.com^*/groupon/
 ||cinemablend.com/templates/tpl/reskin/$image
-||sbnation.com/campaigns_images/
 ||ciol.com/zedotags/files/
 ||clipjunkie.com/cj*.html$subdocument
 ||cnetwidget.creativemark.co.uk^
@@ -2184,6 +2182,7 @@ images/ads/*
 ||promo.fileforum.com^
 ||ps3news.com/*.swf|
 ||ps3news.com^*/yget/images/
+||publicradio.org/boxes/delivery/
 ||qualityhealth.com^*/banner.jsp?pos=
 ||quickpwn.com^$subdocument
 ||rad.microsoft.com^
@@ -2192,6 +2191,7 @@ images/ads/*
 ||rootsweb.com/js/o*.js
 ||rss2search.com^$subdocument
 ||s.imwx.com^*/wx-a21-plugthis.js
+||sbnation.com/campaigns_images/
 ||sciencedaily.com^*/google-home.js
 ||scoop.co.nz/xl?c$subdocument
 ||seatguru.com/deals?
@@ -3344,12 +3344,12 @@ images/ads/*
 @@||scorecardresearch.com/beacon.js$domain=mainstreet.com|thinkatheist.com|deviantart.com|linkinpark.com|ning.com|thedailybeast.com|huffingtonpost.com
 @@||sec-ads.bridgetrack.com/ads_img/
 @@||serve.vdopia.com/adserver/$object_subrequest
+@@||server.cpmstar.com/adviewas3.swf?$domain=pelikone.fi
 @@||sfx-images.mozilla.org/*x$domain=spreadfirefox.com,image
 @@||sfx-images.mozilla.org/affiliates/Buttons/$domain=spreadfirefox.com,image
 @@||sify.com/news/postcomments.php?*468x60.html
 @@||skimlinks.com^$domain=telegraph.co.uk
 @@||smmirror.com^*/getAds.php
-@@||server.cpmstar.com/adviewas3.swf?$domain=pelikone.fi
 @@||sonicstate.com/video/hd/hdconfig-geo.cfm?$object_subrequest
 @@||sonypictures.com^*/admedia/
 @@||sovereignbank.com/flashads/
@@ -4209,8 +4209,8 @@ affiliateBannerShow.aspx?
 ||shooshtime.com/images/chosenplugs/
 ||shooshtimeinc.com/under.php
 ||shufuni.com/js/PopUnderKingHomePage.js
-||slutload-media.com^*/hd-ads/
 ||sify.com^*/Movies_spons_
+||slutload-media.com^*/hd-ads/
 ||stileproject.com/js/sp3_ep.js
 ||twofuckers.com/brazzers
 ||uncoached.com/smallpics/ashley
@@ -4329,7 +4329,6 @@ affiliateBannerShow.aspx?
 ||acmexxx.com^
 ||ad-u.com^
 ||ad.slutload.com^
-||ads.xxxbunker.com^
 ||ad.traffmonster.info^
 ||ad.ytsa.net^
 ||adcell.de^
@@ -4361,6 +4360,7 @@ affiliateBannerShow.aspx?
 ||ads.tube1.com^
 ||ads.xhamster.com^
 ||ads.xprofiles.com^
+||ads.xxxbunker.com^
 ||adtools.gossipkings.com^
 ||adtools2.amakings.com^
 ||adtotal.pl^
@@ -5314,6 +5314,7 @@ sfweekly.com###perswrap
 sharenxs.com###tiplayer
 shufuni.com##.HomepageRightBanner
 skimtube.com##TD[align="center"][width="330"]
+slutload.com##DIV[style="background:black;padding:5px 0;width:600px"]
 smokingifs.com###horizbanner
 spankwire.com###sidebar
 spankwire.com###vidAdTop
@@ -5324,7 +5325,6 @@ stileproject.com###va4
 stileproject.com###va5
 stileproject.com###va6
 stileproject.com###va7
-slutload.com##DIV[style="background:black;padding:5px 0;width:600px"]
 subimg.net##[style="float: left; padding-left: 43px; padding-top: 21px;"]
 sunporno.com##.squarespot
 sunporno.com##.top-player-link
@@ -5370,10 +5370,10 @@ xvideos.com##[height="1040"][width="185"]
 xvideos.com##[height="244"][width="930"]
 xxx-blog.org###inhalt
 xxx-blog.org###warning
-xxxporntalk.com##.sidenav
 xxxbunker.com###bannerListTop
 xxxbunker.com###ssLeft
 xxxbunker.com###ssRight
+xxxporntalk.com##.sidenav
 youporn.com###ft-ad-1
 youporn.com###main-ad
 youporn.com###moreVideosTabview3
@@ -5857,7 +5857,6 @@ youporn.com###producer
 ###adBlock125
 ###adblock2
 ###adblock4
-###int-ad
 ###adblockbottom
 ###AdBlockBottomSponsor
 ###adblockerwarnung
@@ -6506,6 +6505,7 @@ youporn.com###producer
 ###circ_ad
 ###city_House_Ad_300x137
 ###clickforad
+###closeable-ad
 ###closeAdsDiv
 ###cnnCMAd
 ###cnnSponsoredPods
@@ -6765,12 +6765,12 @@ youporn.com###producer
 ###GoogleSponsored
 ###gpt-ad-halfpage
 ###gpt-ad-rectangle1
+###gpt-ad-rectangle2
 ###gpt-ad-skyscraper
 ###gpt_unit_videoAdSlot1_0
 ###grid_ad
 ###H_Ad_728x90
 ###hd_ad
-###gpt-ad-rectangle2
 ###hdr-banner-ad
 ###hdrAdBanner
 ###head-banner468
@@ -6887,6 +6887,7 @@ youporn.com###producer
 ###instoryad
 ###instoryadtext
 ###instoryadwrap
+###int-ad
 ###internalAdvert
 ###interruptor
 ###interstitial_ad
@@ -7212,6 +7213,7 @@ youporn.com###producer
 ###showAd
 ###showcaseAd
 ###side-ad
+###side-ad-container
 ###side-ads
 ###side-ads-box
 ###side-boxad
@@ -7320,6 +7322,7 @@ youporn.com###producer
 ###sponsorResults
 ###sponsorship-box
 ###sponsorshipBadge
+###sponsorSpot
 ###sponsorTab
 ###sponsorText
 ###sponsorTextLink
@@ -7919,7 +7922,6 @@ youporn.com###producer
 ##.adbannerright
 ##.adbannertop
 ##.ADBAR
-###sponsorSpot
 ##.adbar
 ##.adbbox
 ##.adbckgrnd
@@ -8010,8 +8012,6 @@ youporn.com###producer
 ##.AdLeftbarBorderStyle
 ##.adLine
 ##.adline
-###side-ad-container
-###closeable-ad
 ##.adLocal
 ##.admain
 ##.adman
@@ -9322,8 +9322,8 @@ youporn.com###producer
 ##.sponsor_links
 ##.sponsor_units
 ##.sponsorad
-##.sponsorAds
 ##.sponsoradlabel
+##.sponsorAds
 ##.sponsorads
 ##.sponsoradtitle
 ##.sponsorArea
@@ -10227,8 +10227,8 @@ cpu-world.com##div[style="height: 90px; padding: 3px; background-color: #FFFFFF;
 crackberry.com##.skyscraper
 cracked.com##.site_sliver
 cracked.com##.VideoAd
-cracker.com.au###ctl00_ucAffiliateAdvertDisplay_pnlAffiliateAdvert
 cracker.com.au###ctl00_phCrackerMain_ucAffiliateAdvertDisplayMiddle_pnlAffiliateAdvert
+cracker.com.au###ctl00_ucAffiliateAdvertDisplay_pnlAffiliateAdvert
 cracker.com.au##div[style="height:260px;width:310px;clear:both;position:relative;"]
 cracker.com.au##div[style="height:90px;width:675px;clear:both;position:relative;"]
 crazymotion.net###fadeinbox
@@ -10262,9 +10262,9 @@ dailymail.co.uk##.puff-advertorials
 dailymotion.com##.masscast_box
 dailymotion.com##.masscast_middle_box
 dailystar.co.uk###hugebanner
-dailystar.co.uk##div[style="height: 70px; width:645px; overflow:hidden;"]
 dailystar.co.uk##div[style="height: 30px; width: 475px;"]
 dailystar.co.uk##div[style="height: 45px;"]
+dailystar.co.uk##div[style="height: 70px; width:645px; overflow:hidden;"]
 dailystar.co.uk##div[style="width: 165px; text-align:center;border:1px solid #b8b8b8;"]
 dailystar.co.uk##div[style="width: 300px; height: 250px; background: url(http://cdn.images.dailystar-uk.co.uk/img/adverts/mpufail.gif);"]
 daniweb.com###TB_overlay
@@ -10336,7 +10336,6 @@ dotsauce.com###leadsponsor
 dotsauce.com##.onetwentyfive
 downarchive.com###searh
 downforeveryoneorjustme.com##a[href^="http://bweeb.com/"]
-isup.me##a[href^="http://bweeb.com/"]
 download.cnet.com###prefoot
 download.cnet.com##.bidWarContainer
 download.cnet.com##.CNETDownloadDeals
@@ -10642,7 +10641,6 @@ gadgetguy.com.au###normalbanner
 galvnews.com##[width="900"][height="115"]
 gamebanshee.com##.banner
 gamedev.net###TriplePlay
-gametrailers.com##.adv_block
 gamegrep.com###subheader
 gameknot.com##.fnote[style="text-align: center;"]
 gameplanet.co.nz##.bAdv
@@ -10664,6 +10662,7 @@ gamesgames.com##.banner.x250
 gamesindustry.biz###leader
 gamesman.co.nz##table[width="470"][height="62"]
 gamespot.com###showcase_banner
+gametrailers.com##.adv_block
 gametrailers.com##.rightthin_content
 gametrailers.com##.top_banner_space
 gametrailers.com##[height="15"][width="300"]
@@ -10854,8 +10853,8 @@ humanevents.com###skyscraperbox
 humorpix.com###GoogleSidebarRight
 hybridcars.com##.videoAd-wrapper
 i-comers.com###headerfix
-i4u.com##.Promo
 i4u.com###MiscLinks
+i4u.com##.Promo
 icanhasinternets.com###advertiseonican
 iccworldcricket.net###leaderboardspace
 iccworldcricket.net##.wp-image-781
@@ -10877,18 +10876,18 @@ illimitux.net###screens
 illimitux.net##.pub
 iloubnan.info###bann
 imagebam.com##div[onclick="void(0); top.location='http://www.imagebam.com/premium';"]
+imagebam.com##div[style$="padding-top:14px; padding-bottom:14px;"]
 imagebam.com##div[style="display: inherit; opacity: 0.79;"]
 imagebam.com##div[style="top: 136px; left: 524.5px; display: inherit;"]
 imagebam.com##div[style="width:630px; margin:auto; margin-top:10px; margin-bottom:10px;"]
-imagebam.com##div[style$="padding-top:14px; padding-bottom:14px;"]
 imagebam.com##td[style="color:black; text-align:left; font-size:15px;"]
 imageshack.us###ad
 imba.hu##.banner
 imdb.com###amazon-affiliates
+imdb.com###site_stripe_final
 imdb.com###tn15adrhs
 imdb.com###top_rhs_1
 imdb.com###top_rhs_wrapper
-imdb.com###site_stripe_final
 imgftw.net##.DisplayBoxBottom
 impulsegamer.com##table[height="200"][width="350"]
 inbox.com###r2
@@ -10979,6 +10978,7 @@ irishtimes.com###banner-area
 irishtimes.com##.cf
 israelnationalnews.com##.znn
 israelnationalnews.com##div[style="padding-left:20px;padding-top:5px;"]
+isup.me##a[href^="http://bweeb.com/"]
 itnewsonline.com##td[width="120"]
 itp.net##.hpbanner
 itp.net##.lboard
@@ -11256,7 +11256,6 @@ maximumpc.com###block-block-61
 maximumpc.com###block-block-89
 maximumpc.com###block-block-96
 maximumpc.com###top-banner
-pogo.com###avertising
 maximumpcguides.com##div[style="width:336px;height:280px;margin:0 auto"]
 maximumpcguides.com##div[style="width:728px;height:90px;position:absolute;top:-95px;left:103px;"]
 mayoclinic.com###subbox
@@ -11748,6 +11747,7 @@ playlist.com###gutter-skyscraper
 playstationlifestyle.net###rightSkyscraper
 playswitch.com##.psmainshellad
 plosbiology.org###topBanner
+pogo.com###avertising
 polishlinux.org##.oio-badge
 polishlinux.org##.oio-zone-position
 politico.com##.in-story-banner
@@ -12452,9 +12452,9 @@ usatoday.com###marketplace2
 usmagazine.com###sub_form_popup
 usnews.com###leaderboard-b
 usnews.com###loomia_display
+ustream.tv###LoginBannerWrapper
 ustream.tv##.banner
 ustream.tv##.largeRectBanner
-ustream.tv###LoginBannerWrapper
 uvnc.com##div[style="width: 300px; height: 250px; background-color: #FFFFFF"]
 v3.co.uk###skyAdNewsletter
 v3.co.uk###superSky
@@ -12536,6 +12536,7 @@ webreference.com###contentbottomnoinset
 webreference.com##.WRy1
 webresourcesdepot.com##.Banners
 weebls-stuff.com###medium-rectangle
+weeklyworldnews.com##.top-banner
 wefindads.co.uk##.posts-holder[style="margin-top:10px;"]
 wego.com##.banner
 wenn.com###right-panel-galleries
@@ -12608,7 +12609,6 @@ wral.com###superbanner
 wrongdiagnosis.com###cradlbox1
 wrongdiagnosis.com###cradlbox2
 wrongdiagnosis.com###cradrsky2
-weeklyworldnews.com##.top-banner
 wrongdiagnosis.com##.result_adv
 wsj.com###promo_container
 wsj.com###whatsnews_footer_ad
