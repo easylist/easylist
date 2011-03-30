@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: uBgPfwLPc1E7JshoPaXzNw
+! Checksum: h7sFVxpCp0BkutCDVz35Fw
 ! Fanboy's Adblock list
 ! Updated: 30 Mar 2011
 ! This list expires after 5 days
@@ -1576,8 +1576,8 @@
 /SpotxchangeVpaid.
 /square-ads/*
 /squareAd.
-/st?ad_type=
 /st?ad_size=
+/st?ad_type=
 /static/ad_
 /static/ads/*
 /sticky_ad.
@@ -3202,16 +3202,15 @@ images/ads/*
 !     
 !---------- Whitelists ----------
 !     
+@@/adbanner/*$domain=megafon.ru,image,object<br>
 @@/adframe.js$domain=macobserver.com|hackers.co.id|video2mp3.net|4fuckr.com
 @@/advertisement.$domain=tvnz.co.nz|ratebeer.com|multiup.org|teknogods.com|ballreviews.com|onlinemoviesfreee.com|mobilefish.com
 @@/advertisements.$domain=mircscripts.org|skimtube.com
 @@/advertisingmodule.$domain=slate.com|guardian.co.uk|welt.de|fxnetworks.com|people.com|aetv.com
 @@/banners.js$domain=bafta.org|24ur.com|brocraft.net|beeline.ru|megafon.ru
-@@/swf/banner.swf?$domain=megafon.ru
-@@/adbanner/*$domain=megafon.ru,image,object<br>
-_subrequest
 @@/images/ad-$domain=apple.com
 @@/RealMedia/ads/adstream_sx.ads$domain=video.economist.com|surfline.com|seesaw.com
+@@/swf/banner.swf?$domain=megafon.ru
 @@/www/delivery/*$domain=video.belga.be|submarino.com.br|japantimes.co.jp|pumpkinpatch.co.nz|pumpkinpatch.com.au|pumpkinpatch.co.uk|pumpkinpatchusa.com
 @@://192.168.0.
 @@://192.168.1.
@@ -3348,7 +3347,6 @@ _subrequest
 @@||rewaz.org/ads/adframe2.js
 @@||richrelevance.com^$domain=officedepot.com
 @@||sankakucomplex.com^$script
-@@||spotxchange.com^$object_subrequest,domain=onescreen.net
 @@||sankakustatic.com^$script
 @@||scorecardresearch.com/beacon.js$domain=mainstreet.com|thinkatheist.com|deviantart.com|linkinpark.com|ning.com|thedailybeast.com|huffingtonpost.com
 @@||sec-ads.bridgetrack.com/ads_img/
@@ -3364,6 +3362,7 @@ _subrequest
 @@||sovereignbank.com/flashads/
 @@||sovereignbank.com/img/ads/
 @@||spotxchange.com/flash/AdPlayer.swf$domain=foxnews.ws|boxlive.tv
+@@||spotxchange.com^$object_subrequest,domain=onescreen.net
 @@||starwars.com/img/ad/
 @@||style.com/flashxml/*.doubleclick$object
 @@||style.com/images/*.doubleclick$object
@@ -3390,6 +3389,7 @@ _subrequest
 @@||wirefly.com/_images/ads/
 @@||wrapper.teamxbox.com/a?size=headermainad
 @@||zedo.com/$domain=rajshritalent.com|rajshri.com,object_subrequest
+_subrequest
 !     
 !---------- Anti Adblock Rules ----------
 !     
@@ -4036,7 +4036,6 @@ _970x30_
 /banners/ffadult/*
 /custom_ads/*
 /dateads.php
-/mrskinleftside.
 /dif/?cid
 /droelf.kit/a/*
 /eporner-banner-
@@ -4092,6 +4091,7 @@ _970x30_
 /metsbanner.
 /mnads1.php?
 /mr_videoad.
+/mrskinleftside.
 /msnpopup.php
 /myfreepaysitebanner.
 /newaff/float
@@ -4187,7 +4187,6 @@ affiliateBannerShow.aspx?
 ||imagearn.com/vibrate.js
 ||imagefap.com/img/feboshare.gif
 ||imagepix.org/Images/imagesex2.
-||starcelebs.com/logos/$image
 ||imageporter.com/modalfiles/modal.js
 ||imageporter.com/windowfiles/dhtmlwindow.css
 ||imagerise.com/ir.js
@@ -4222,6 +4221,7 @@ affiliateBannerShow.aspx?
 ||shufuni.com/js/PopUnderKingHomePage.js
 ||sify.com^*/Movies_spons_
 ||slutload-media.com^*/hd-ads/
+||starcelebs.com/logos/$image
 ||stileproject.com/js/sp3_ep.js
 ||twofuckers.com/brazzers
 ||uncoached.com/smallpics/ashley
@@ -4826,10 +4826,10 @@ affiliateBannerShow.aspx?
 @@||eskimotube.com/advertisements.php?
 @@||mallcom.com^$domain=mallcomvod.com|thevod.net,third-party,image,subdocument
 @@||nudeparadisehotel.com^*/AC_RunActiveContent.js
+@@||starcelebs.com/logos/logo10.jpg
 @@||tnaflix.com/ad/$object_subrequest
 @@||tracking.hornymatches.com/track?type=unsubscribe&enid=$third-party,subdocument
 @@||xxxporntalk.com/images/xxxpt-chrome.jpg
-@@||starcelebs.com/logos/logo10.jpg
 !     
 !---------- P2P Rules ----------
 ! 
@@ -4961,7 +4961,6 @@ bitenova.org###search_un
 bitenova.org##.un
 bitenova.org##.un_banner
 bitsnoop.com##.dl_alt2
-kino.to##img[src^="http://c.statcounter.com/"] + SPAN
 bitsnoop.com##.dl_secure
 bitsnoop.com##SPAN[style="color:#AAA;font-size:9px;"]
 bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
@@ -5026,6 +5025,7 @@ kickasstorrents.com##.directDownloadButton
 kickasstorrents.com##.downloadMovieButton
 kickasstorrents.com##.promoPartner
 kino.to##div[style="display: inline; width: 970px; top: 130px; height: 450px;"]
+kino.to##img[src^="http://c.statcounter.com/"] + SPAN
 kohit.net##.banner_468
 kohit.net##.content_banner_right
 kohit.net##.top_banner
@@ -6169,6 +6169,7 @@ youporn.com###producer
 ###adspaceBox
 ###adspaceBox300
 ###adSpacer
+###adspaceRow
 ###adspecial_offer_box
 ###adSponsor
 ###AdSponsor_SF
@@ -6943,6 +6944,7 @@ youporn.com###producer
 ###leaderad
 ###leaderad_section
 ###leaderAdContainer
+###leaderadvert
 ###leaderboard-ad
 ###leaderboard-bottom-ad
 ###leaderboard-sticky
@@ -7389,6 +7391,7 @@ youporn.com###producer
 ###TitleAD
 ###tmcomp_ad
 ###tmglBannerAd
+###tmp2_promo_ad
 ###tnt_ad_column
 ###tobsideAd
 ###today_ad_bottom
@@ -7526,7 +7529,6 @@ youporn.com###producer
 ###wrapper_sponsoredlinks
 ###wrapperAdsTopLeft
 ###wrapperAdsTopRight
-###leaderadvert
 ###wrapperRightAds
 ###xColAds
 ###y-ad-units
@@ -8234,6 +8236,7 @@ youporn.com###producer
 ##.adspace728x90
 ##.adspace_buysell
 ##.adspace_rotate
+##.adspacer
 ##.adSplash
 ##.adsplat
 ##.adSponsor
@@ -8730,8 +8733,6 @@ youporn.com###producer
 ##.gAds1
 ##.gAdvertising
 ##.gallery_ad
-###adspaceRow
-##.sideAd
 ##.gam_ad_slot
 ##.game-ads
 ##.game_right_ad
@@ -9253,6 +9254,7 @@ youporn.com###producer
 ##.side_ad_1
 ##.side_ad_2
 ##.side_ad_3
+##.sideAd
 ##.sidead
 ##.SideAds
 ##.sideads
@@ -9391,7 +9393,6 @@ youporn.com###producer
 ##.SquareAd
 ##.squareAd
 ##.squaread
-###tmp2_promo_ad
 ##.squareAdd
 ##.squareAddtwo
 ##.squared_ad
@@ -9400,7 +9401,6 @@ youporn.com###producer
 ##.stock-ticker-ad-tag
 ##.stock_ad
 ##.story-ad
-##.adspacer
 ##.story_AD
 ##.story_ad_div
 ##.story_right_adv
@@ -9624,9 +9624,9 @@ avforums.com##[style="width: 120px; height: 600px; border-width: thin; border-st
 avforums.com##[style="width: 300px; height: 250px; border-width: thin; border-style: solid; font-size: 9px; text-align: center; background-color: rgb(255, 255, 255); overflow: auto;"]
 avforums.com##[style="width: 728px; height: 90px; border-width: thin; border-style: solid; font-size: 9px; text-align: center; background-color: rgb(255, 255, 255); overflow: auto;"]
 backstage.com##div[style="background: none repeat scroll 0% 0% rgb(102, 102, 102); height: 250px; color: rgb(255, 255, 255);"]
-bit-tech.net##[style="width: 925px; height: 115px; margin: 0pt auto; text-align: center; background: none repeat scroll 0% 0% rgb(0, 0, 0);"]
 billboard.biz##.bodyContent[style="padding-bottom: 30px; text-align: center;"]
 billboard.biz##TABLE[height="90px"][bgcolor="#cccccc"]
+bit-tech.net##[style="width: 925px; height: 115px; margin: 0pt auto; text-align: center; background: none repeat scroll 0% 0% rgb(0, 0, 0);"]
 careerbuilder.com###htcRight[style="padding-left: 18px; width: 160px;"]
 catholicnewsagency.com##[style="background-color: rgb(247, 247, 247); width: 256px; height: 250px;"]
 caymannewsservice.com##div[style="width: 175px; height: 200px;"]
@@ -10003,6 +10003,8 @@ bigpond.com##h5.subheading
 bigtennetwork.com##.skyscraper
 bikeexchange.com.au##div[style="margin:2em 0; text-align:center;"]
 bikeexchange.com.au##div[style="margin:60px 0 20px 0;"]
+billboard.biz##.bodyContent[style="padding-bottom:30px; text-align: center"]
+billboard.biz##TABLE[height="90px"][bgcolor="#CCCCCC"]
 bing.com###sidebar
 bing.com##.partnerLinks
 bit-tech.net###broadband-finder-co-uk-120
@@ -10047,8 +10049,6 @@ break.com###cdpSliver
 break.com##.breaking_news_wrap
 break.com##.brk_ldrbrd_wrap
 break.com##[width="300"][height="250"]
-billboard.biz##.bodyContent[style="padding-bottom:30px; text-align: center"]
-billboard.biz##TABLE[height="90px"][bgcolor="#CCCCCC"]
 breitbart.com##.sidebar
 brenz.net###rndBanner
 bridgebase.com###bbo_ad1

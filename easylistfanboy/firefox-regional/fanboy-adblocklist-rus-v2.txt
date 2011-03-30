@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Y99Dg5BZG+2/g3/4PyfDyQ
+! Checksum: cQzTfqQRk/8dxwhdjmHBxA
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 30 Mar 2011
 ! This list expires after 5 days
@@ -8,6 +8,7 @@
 !
 ! ---------- Generic Blocking Rules ----------
 !
+*/iframe/?adfox_*
 -reklama.
 .info/baner/
 .ngs.ru/*.swf?pid
@@ -32,6 +33,7 @@
 /1tizer_
 /ad2-packet/*
 /adcheck.
+/adfox.
 /adriver.
 /adriver_
 /adrivercore2.
@@ -39,7 +41,6 @@
 /adt.fcgi?
 /adv.fcgi?
 /adwolf.
-/adfox.
 /ban-man/*
 /banner_zone/*
 /banners.html?
@@ -61,7 +62,6 @@
 /reklama_
 /richmedia.
 /rotobanner.
-*/iframe/?adfox_*
 /show.ad?
 /show_adv.
 /swf/banners/*
@@ -140,8 +140,6 @@ http://r.e1.ru/
 ||gismeteo.ru/rian.html
 ||goallurl.ru/upload/banner/
 ||grani.ru/files/51119.
-||yottos.com/getmyad/
-||svpressa.ru/ad/
 ||grani.ru/files/51341.
 ||grani.ru/files/51356.
 ||grodno.net/Images/banners/
@@ -279,6 +277,7 @@ http://r.e1.ru/
 ||sr-week.ru^*/domain468x60
 ||static.fastpic.ru^*.swf
 ||static.pornolab.net/004/
+||svpressa.ru/ad/
 ||tehnodog.ru/flash/
 ||tfile.ru/kf/
 ||theplace.ru^*_banner
@@ -317,6 +316,7 @@ http://r.e1.ru/
 ||yandex.ru/transparent
 ||yell.ru/bimages/
 ||yoki.ru/cache/static_fragment/
+||yottos.com/getmyad/
 ||zaks.ru/f/ad/
 ||zalil.ru/banners/
 ||zamok911.com/banner/
@@ -357,9 +357,9 @@ http://r.e1.ru/
 ||bz.nextmail.ru^
 ||c.bigmir.net^
 ||click.israelinfo.ru^
+||cshi.ru^
 ||csht.ru^
 ||cszz.ru^
-||cshi.ru^
 ||dc.ixbt.com^$subdocument
 ||dclick.ru^
 ||doroga63.ru^$object
@@ -679,6 +679,7 @@ http://ad.ir.ru^$third-party
 /fstat.swf
 /hotlog/count?
 /impression.cgi?
+/impression.php?
 /ixbtstat/*
 /mmcount3.dll?
 /ncounter.pl?
@@ -689,7 +690,6 @@ http://ad.ir.ru^$third-party
 /tag_counter/?
 /tns-counter.
 /tracker.dll?
-/impression.php?
 /tzr.fcgi?
 /yadtrack.
 ||1link.ru^$third-party
@@ -706,7 +706,6 @@ http://ad.ir.ru^$third-party
 ||bigler.ru/bsystem/
 ||bs.yandex.ru^
 ||c.domik.net^
-||softbn.ru/p/t.cgi?
 ||c.hit.ua^$third-party
 ||c.tbex.ru^$third-party
 ||c.uarating.com^
@@ -738,6 +737,8 @@ http://ad.ir.ru^$third-party
 ||inetlog.ru^$third-party
 ||informer.cyberstyle.ru^$third-party
 ||informer.gismeteo.ru^$third-party
+||interquest.com^$third-party
+||interquest.fi^$third-party
 ||kavanga.ru^$third-party
 ||kiev.ua/partner.php?
 ||knalru.ru^$third-party
@@ -746,14 +747,13 @@ http://ad.ir.ru^$third-party
 ||lstats.qip.ru^
 ||lux-bn.com.ua^$third-party
 ||macovod.net/ads/
+||mail.ru/0c.gif?$domain=mail.ru
 ||mail.ru/cookie-token.do?
 ||mail.ru/count/
 ||mail.ru/share_count?
 ||marker.ru/count/
 ||mc.yandex.ru^
 ||mcount.ru^$third-party
-||rambler.ru/ban.ban?
-||rambler.ru/vimg/
 ||mediacontext.com.ua^$third-party
 ||migsport.com/imgnew/adv.gif
 ||mixmarket.biz^$third-party
@@ -773,9 +773,10 @@ http://ad.ir.ru^$third-party
 ||protrafv2.com^$third-party
 ||pxreg.onlineservicesas.com^$third-party
 ||r.i.ua^
-||interquest.com^$third-party
-||interquest.fi^$third-party
+||r2.mail.ru^*.gif?rnd=$domain=mail.ru
 ||radar.imgsmail.ru^
+||rambler.ru/ban.ban?
+||rambler.ru/vimg/
 ||rbc.ru/img/js/ch2.js
 ||rbc.ua/decider/
 ||rcounter.rambler.ru^$third-party
@@ -783,13 +784,12 @@ http://ad.ir.ru^$third-party
 ||ret.ru/banners/
 ||rose.ixbt.com^$image,object
 ||rs.mail.ru^*.gif?rnd=$domain=mail.ru
-||mail.ru/0c.gif?$domain=mail.ru
-||r2.mail.ru^*.gif?rnd=$domain=mail.ru
 ||rutube.ru/trackinfo/
 ||rutvit.ru/?identifier
 ||saint-petersburg.ru/i.php
 ||scounter.rambler.ru^$third-party
 ||seemore.ru^$third-party
+||softbn.ru/p/t.cgi?
 ||spylog.ru/counter$third-party
 ||startua.com^$third-party
 ||stat-counter.tass-online.ru^
@@ -952,13 +952,12 @@ xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0
 actualcomment.ru###topbanner
 advert.kp.ru##.baner
 advert.kp.ru##[height="400"]
+afisha.ru###right-banner-2
 ag.ru###rotating_banners
 ag.ru###upadbg2
 ag.ru##.a_blk
-afisha.ru###right-banner-2
 ag.ru##.dotsbg2[height="80"]
 alfabank.ru##.main-banner
-avito.ru##.ad_1000x90
 amdclub.ru###topline
 ameno.ru###BannerBlock300500
 ameno.ru###RefContentBox
@@ -981,6 +980,7 @@ autonews.ru##.banner_2
 autonews.ru##.banner_3
 autonews.ru##[id^="flashrst_"]
 autorambler.ru##.banner-board 
+avito.ru##.ad_1000x90
 bash.org.ru##.y5_ads
 bash.org.ru##.y5_ads2
 bash.org.ru##[style="text-align: center; font-size: 10pt;"]
@@ -1022,14 +1022,14 @@ cnews.ru##.right_banner
 cnews.ru##.td_wrapp
 cnews.ru##.virt_bottom_banner
 cnews.ru##[id^="flash_"]
-cosmo.ru##.Banner660
-cosmo.ru##.adv-112x30
 computerra.ru##div[style="background-color: #f5f5f5; margin-top: 20px; margin-bottom: 20px; padding: 10px; font-size: 11px; color: black; font-family: Tahoma;"]
 computerra.ru##div[style="border: solid 1px #AAAAAA; background-color: #FFFFFF; margin-top: 20px; margin-bottom: 20px; padding: 5px; font-size: 13px; color: black; font-family: Tahoma;"]
 consultant.ru###top_banner
 cosmo.ru###spThing
+cosmo.ru##.adv-112x30
 cosmo.ru##.afc_block2
 cosmo.ru##.ban300x500
+cosmo.ru##.Banner660
 cosmo.ru##.banner_LEFT1
 cosmo.ru##.block-300
 cosmo.ru##.marketing
@@ -1041,6 +1041,7 @@ delfi.ua##[style="height: 120px; width: 995px; margin: 0pt auto;"]
 delo.ua##.banner
 delo.ua##.rbanner
 digital.ru##A[href^="/banner/count/?"]
+discovery.rambler.ru##.b-banner
 dj.ru##.bann_1
 dni.ru###header-banner
 dni.ru###tb_133_outer
@@ -1050,7 +1051,6 @@ dni.ru###tb_491_outer
 dni.ru###tieserBlock1
 dni.ru###tieserBlock3
 dni.ru##.partners-links
-discovery.rambler.ru##.b-banner
 domik.net###hright
 doroga63.ru##[height="64"][width="7"]
 dreamprogs.net###topbanner2
@@ -1223,13 +1223,12 @@ mskd-ru.net##table[style="border:1px dashed blue;"]
 nakanune.ru##.rotator
 narod.ru##.b-banner
 newsru.com###b125x217
-orsn.rambler.ru##.headbanner
 ngs.ru###nbs-block
 ngs.ru##.adv
 ngs.ru##.block_adv
 ngs.ru##.nb
-ngs.ru##.zwfnlbz
 ngs.ru##.vgisex
+ngs.ru##.zwfnlbz
 ngs.ru##[style="display: block; height: 60px;text-align: center; background: #E67813;"]
 ngs.ru##[style="width: 100%; height: 200px; position: relative; overflow: visible;"]
 ngs.ru##[style="width: 100%; height: 270px; position: relative; overflow: visible;"]
@@ -1264,6 +1263,7 @@ opennet.ru##td[width="40"]
 opennet.ru##td[width="470"]
 oplati.ru##td[style="float: right;"]
 oplati.ru##td[width="90"][style="margin-right: 0pt;"]
+orsn.rambler.ru##.headbanner
 oszone.ru##.banner
 overclockers.ru##table[cellpadding="2"][width="160"]
 overclockers.ru##table[cellpadding="3"][border="0"]
@@ -1286,9 +1286,9 @@ quote.ru##[style^="width: 100%; height: 60px;"]
 quote.ru##[style^="width: 100%; height: 90px;"]
 qwe.ru##table[width="500"]
 rabota.ru###tdTopBanner
+rabota.ru##.div_260
 rabota.ru##.lider_vaca
 rabota.ru##.link_menu.pt_0
-rabota.ru##.div_260
 radikal.ru###left_ban
 radikal.ru###right_ban
 radikal.ru###right_ban2
@@ -1296,13 +1296,13 @@ radikal.ru###top_ban
 radikal.ru##td[style="width: 245px; height: 94px;"]
 rambler.ru###banner-right
 rambler.ru###banner-top
+rambler.ru##.inbann
 rambler.ru##.pgBanner
 rambler.ru##.pgBanT
 rambler.ru##.pgTeaser
 rambler.ru##.r--footer-news
 rambler.ru##.r--hat-search-promo
 rambler.ru##.rb--TopTeaser
-rambler.ru##.inbann
 rbc.ru##.banner
 rbc.ru##.creditInf
 rbc.ru##.iGlobeInf
