@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: EfOLj8oBjHZ90ccTXL2ziA
+! Checksum: p3LvsZdhwWmUDMkbeWhG/A
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 2 Apr 2011
 ! This list expires after 7 days
@@ -232,8 +232,6 @@
 /b/ss/*&ndh=
 /b2bsdc.js
 /banners-stat.
-/bm-bam-trk.
-/bm-analytics/*
 /basesdc.js
 /baynote-$script
 /baynote.js
@@ -260,6 +258,8 @@
 /blueKaiAnalytics.
 /bluekaicookieinfo.
 /bluetracker/*
+/bm-analytics/*
+/bm-bam-trk.
 /bn_analytics.
 /boost_stats.
 /botd.gif?
@@ -408,19 +408,19 @@
 /cwTRACK.js
 /dart_wrapper.html?
 /dcs.gif?
+/dcs_head.js
 /dcs_tag.js
 /dcs_tag1.js
 /dcs_tag2.js
-/dcs_head.js
 /dcs_tag_
 /DecideDNATrackingCode-
+/demdex.js
 /DemdexBehavioralTracking.
 /dla_tracker.
 /dltrack.
 /dltrack/*
 /dm.gif?
 /dmtracking2.
-/demdex.js
 /dolWebAnalytics.
 /dot.asp?
 /dotomi_tracking/*
@@ -470,7 +470,6 @@
 /fastcounter.
 /fbanalytics/*
 /fcgi-bin/*
-/SpeedTrapInsert.
 /flash-stats.php?
 /flashtag.txt?Log=
 /flv_tracking.
@@ -490,6 +489,7 @@
 /ga_dualcode_tracking.
 /ga_footer.js
 /ga_gwo.js
+/gaAddons-
 /gaAddons.
 /gadsfuncs.js
 /GAFOAWrapper.swf?
@@ -704,7 +704,6 @@
 /mi/insite/*
 /middle?call=http
 /mindshare-tracking.
-/gaAddons-
 /mint/?js
 /mint/?record
 /mktg_metrics/*
@@ -723,6 +722,7 @@
 /mystats.asp?
 /nedstat.
 /nedstat/*
+/neilsen.js
 /neocounter.
 /neocounter/*
 /netcounter?
@@ -736,7 +736,6 @@
 /newSophus/*
 /newstatsinc.
 /nielsen.js
-/neilsen.js
 /nielsen.track
 /Nielsen.v53.
 /nielsen_v53.
@@ -912,9 +911,9 @@
 /sikquantcast_
 /SilverPop.
 /silverpop/*
+/site-tracker-
 /site-tracker.js
 /site-tracker_
-/site-tracker-
 /site_stats.
 /site_stats/*
 /siteafs.txt?
@@ -935,6 +934,7 @@
 /sophusThree-
 /sp_logging.php?
 /spacer.gif?hscbrnd
+/SpeedTrapInsert.
 /stat.gif?
 /stat.htm?
 /stat.php?
@@ -1284,8 +1284,8 @@ size=1x1;
 ||keywordstrategy.org^$third-party
 ||mdctrail.com/b.ashx$third-party
 ||mega-stats.com^$third-party
-||mywebstats.com.au^$third-party
 ||mixpanel.com^$third-party
+||mywebstats.com.au^$third-party
 ||pixel.quantserve.com^*&type=gif$third-party
 ||platform.communicatorcorp.com^$third-party
 ||projop.dnsalias.com^$third-party
@@ -1361,7 +1361,6 @@ size=1x1;
 ||business.com^*.gif?ord=
 ||businessinsider.com^*/track.js
 ||buzzfed.com^/ABTest.js?
-||email-tickets.com/dt?e=PageView
 ||buzzfeed.com^*/small.gif?
 ||capitalone.com/tracker/
 ||cartier.co.uk^*/eyeblaster.
@@ -1398,6 +1397,7 @@ size=1x1;
 ||ec2-prod-tracker.babelgum.com^
 ||ectnews.com/shared/missing.gif?
 ||edw.edmunds.com^
+||email-tickets.com/dt?e=PageView
 ||entry-stats.huffingtonpost.com^
 ||entry-stats.huffpost.com^
 ||epinions.com/js/stdLauncher.
@@ -1810,7 +1810,6 @@ size=1x1;
 ||cognitivematch.com^
 ||collect.igodigital.com^
 ||collection.acromas.com^
-||crmmetrix.fr^
 ||compteur.com^
 ||comscore.com^
 ||confirm-referer.glrsales.com^
@@ -1833,6 +1832,7 @@ size=1x1;
 ||criteo.com^
 ||criteo.net^
 ||crm-metrix.com^
+||crmmetrix.fr^
 ||crowdscience.com^
 ||crwdcntrl.net^
 ||csdata1.com^
@@ -1909,7 +1909,6 @@ size=1x1;
 ||everesttech.net^
 ||evisitanalyst.com^
 ||evisitcs2.com^
-||rankinteractive.com^
 ||evolvemediametrics.com^
 ||evri.com/analytics/
 ||evt.collarity.com^$image
@@ -2049,7 +2048,6 @@ size=1x1;
 ||keywordmax.com^
 ||kissmetrics.com^
 ||klert.com^
-||unicaondemand.com^
 ||komtrack.com^
 ||krxd.net^
 ||launch.roirocket.com^
@@ -2114,7 +2112,6 @@ size=1x1;
 ||mpwe.net^
 ||msn.co.in/c.gif?
 ||mvilivestats.com^
-||tentaculos.net^
 ||mvtracker.com^
 ||mxptint.net^
 ||myreferer.com^
@@ -2132,6 +2129,7 @@ size=1x1;
 ||netshelter.net^
 ||newscurve.com^
 ||newstogram.com^
+||newtrackmedia.com^
 ||nextstat.com^
 ||ns.rvmkitt.com^
 ||nuconomy.com^
@@ -2225,6 +2223,7 @@ size=1x1;
 ||radarstats.com^
 ||radarurl.com^
 ||rank-power.com^
+||rankinteractive.com^
 ||rapt.com^
 ||rbcdn.com^
 ||realtimewebstats.net^
@@ -2285,7 +2284,6 @@ size=1x1;
 ||smileyhost.net^
 ||smrtlnks.com^
 ||snoobi.com^
-||newtrackmedia.com^
 ||snowsignal.com^
 ||socialspark.com^
 ||sometrics.com^
@@ -2343,6 +2341,7 @@ size=1x1;
 ||tailsweep.com^
 ||tdstats.com^
 ||tellapart.com^
+||tentaculos.net^
 ||thecounter.com^
 ||thefreehitcounter.com^
 ||thesearchagency.net^
@@ -2403,6 +2402,7 @@ size=1x1;
 ||twittercounter.com^
 ||tynt.com^
 ||uimserv.net^
+||unicaondemand.com^
 ||urlbrief.com^
 ||userlog.synapseip.tv^
 ||useronlinecounter.com^
