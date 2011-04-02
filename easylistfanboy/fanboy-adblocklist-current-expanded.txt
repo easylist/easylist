@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Dpt2tKgCio2p5LkAHJK4Yw
+! Checksum: JOXk2uym4lkDfBGNPLuZFA
 ! Fanboy's Adblock list
 ! Updated: 2 Apr 2011
 ! This list expires after 5 days
@@ -1068,13 +1068,14 @@
 /fwadmanager.
 /gads.js
 /gafv_adapter.
-/gam.html?
 /gam_ads.
+/gam.html?
 /gameadsync.
 /gca_iframe.html?
 /gen_ads_
 /geo-ads_
 /geo/ads.
+/global-ads_
 /get-ad.
 /get_ads.
 /get_banner.asp?
@@ -1108,7 +1109,6 @@
 /glam160.
 /glam300.
 /glam728.
-/global-ads_
 /global/ads/*
 /GlobalAd.
 /google-ad-
@@ -1737,7 +1737,6 @@ _AD_RUN.
 _ad_small.
 _ad_template_
 _adaptvad.
-_adBanner.
 _adcall.php/
 _adcom.php?
 _adengage_
@@ -1761,6 +1760,7 @@ _adstat.
 _adsys.js
 _advert_vert
 _advertise.
+_adBanner.
 _Advertise180.
 _advertisement.
 _advertisement_
@@ -4873,7 +4873,6 @@ _friendlyduck.
 ||emule-top50.com/extras/$subdocument
 ||extratorrent.com/images/download_16x.
 ||extratorrent.com/images/other/
-||files.nyaa.eu^*.w
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
 ||free-torrents.org^*/banners/
@@ -4887,34 +4886,7 @@ _friendlyduck.
 ||megashares.com/cache_program_banner.html
 ||ncrypt.in/images/useful/
 ||newpct.com/soporte/
-||nyaa.eu/102.
-||nyaa.eu/103.
-||nyaa.eu/104.
-||nyaa.eu/105.
-||nyaa.eu/106.
-||nyaa.eu/107.
-||nyaa.eu/108.
-||nyaa.eu/109.
-||nyaa.eu/110.
-||nyaa.eu/111.
-||nyaa.eu/201.
-||nyaa.eu/202.
-||nyaa.eu/203.
-||nyaa.eu/204.
-||nyaa.eu/302.
-||nyaa.eu/303.
-||nyaa.eu/304.
-||nyaa.eu/305.
-||nyaa.eu/306.
-||nyaa.eu/307.
-||nyaa.eu/308.
-||nyaa.eu/309.
-||nyaa.eu/310.
-||nyaa.eu/311.
-||nyaa.eu/401.
-||nyaa.eu/402.
-||nyaa.eu/403.
-||nyaa.eu/404.
+||files.nyaa.eu^$image
 ||online-media24.de^$third-party
 ||ozqul.com^*/webbanners.png
 ||p2pnet.net/images/$image
@@ -4935,9 +4907,9 @@ _friendlyduck.
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.net^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
+||thetvbay.com^$third-party,subdocument
 ||thepiratebay.org/img/agb.gif
 ||thepiratebay.org/img/bar.gif
-||thetvbay.com^$third-party,subdocument
 ||toplist.raidrush.ws^$third-party
 ||torrentreactor.net/imgnew/direct.jpg
 ||torrentreactor.net/imgnew/http.jpg
@@ -4954,6 +4926,7 @@ _friendlyduck.
 !
 @@||bizerta-soft.com/clientscript/advertisement.js$script
 @@||superfundo.org/advertisement.js
+@@||nyaa.eu^*.png
 !
 !---------- p2p Element Firefox 3.x Hiding Rules ----------
 !
@@ -5055,6 +5028,13 @@ fulldls.com###usenetb
 fulldls.com##.tb_ind
 fulldls.com##.tp
 gamestorrents.com##.publicidad_horizontal
+nyaa.eu##a[href^="http://www.nyaa.eu/d?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/a?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/b?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/c?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/e?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/h?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/i?"]
 general-search.net##.banners
 general-search.net##DIV[style="position: absolute; bottom: 0; right: 0; padding: 5px 10px 5px 5px;background:#A6BE01;border:none;width:200px;font-size:12px"]
 hotfileserve.ws##.glb-opec
@@ -5096,13 +5076,6 @@ newtorrents.info##[style="padding-left: 20px;"][colspan="2"]
 novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
-nyaa.eu##a[href^="http://www.nyaa.eu/a?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/b?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/c?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/d?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/e?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/h?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/i?"]
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
@@ -6852,8 +6825,6 @@ youporn.com###producer
 ###header-adverts
 ###header-banner-spc
 ###header-google
-###header_ad_167
-###header_ad_728
 ###header_ad_728_90
 ###header_ad_leaderboard
 ###header_adbox
@@ -7470,6 +7441,10 @@ youporn.com###producer
 ###top_adspace
 ###top_adv-v2
 ###top_advert
+###header_ad_728
+###header_ad_167
+##.sidebar_ad_300
+##.sidebar_ad_580
 ###top_google_ads
 ###top_right_ad
 ###top_sponsor_ads
@@ -9316,8 +9291,6 @@ youporn.com###producer
 ##.sidebar-ad
 ##.sidebar-ad-rect
 ##.sidebar_ad
-##.sidebar_ad_300
-##.sidebar_ad_580
 ##.sidebar_ad_holder
 ##.sidebar_ads_336
 ##.sidebar_adsense
