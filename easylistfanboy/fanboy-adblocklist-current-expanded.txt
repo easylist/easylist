@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: iuUaBgBhLU5XX25NE6bjlg
+! Checksum: kYoSC/XjsYYTqFNSk9eggg
 ! Fanboy's Adblock list
 ! Updated: 3 Apr 2011
 ! This list expires after 5 days
@@ -344,11 +344,11 @@
 /adActions.
 /adaptvAdPlayer.js
 /AdaptvAdserverVastVideo.
+/adback.
 /adbanner.
 /adbanner/*
 /adbanners/*
 /adbar.asp
-/adback.
 /AdBlock.ash
 /adblock.js
 /adboost.
@@ -618,6 +618,7 @@
 /ads_view.
 /ADSAdClient31.
 /AdSandbox.
+/adsbanner.
 /adsBannerJS.
 /adscontent2.
 /adscript.
@@ -684,7 +685,6 @@
 /adSummos.js
 /adsvariables.
 /adSwap-
-/adsbanner.
 /adSwap.
 /adSwap/*
 /adsWideJS.
@@ -1070,14 +1070,13 @@
 /fwadmanager.
 /gads.js
 /gafv_adapter.
-/gam_ads.
 /gam.html?
+/gam_ads.
 /gameadsync.
 /gca_iframe.html?
 /gen_ads_
 /geo-ads_
 /geo/ads.
-/global-ads_
 /get-ad.
 /get_ads.
 /get_banner.asp?
@@ -1111,6 +1110,7 @@
 /glam160.
 /glam300.
 /glam728.
+/global-ads_
 /global/ads/*
 /GlobalAd.
 /google-ad-
@@ -1739,6 +1739,7 @@ _AD_RUN.
 _ad_small.
 _ad_template_
 _adaptvad.
+_adBanner.
 _adcall.php/
 _adcom.php?
 _adengage_
@@ -1762,7 +1763,6 @@ _adstat.
 _adsys.js
 _advert_vert
 _advertise.
-_adBanner.
 _Advertise180.
 _advertisement.
 _advertisement_
@@ -4875,6 +4875,7 @@ _friendlyduck.
 ||emule-top50.com/extras/$subdocument
 ||extratorrent.com/images/download_16x.
 ||extratorrent.com/images/other/
+||files.nyaa.eu^$image
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
 ||free-torrents.org^*/banners/
@@ -4888,7 +4889,6 @@ _friendlyduck.
 ||megashares.com/cache_program_banner.html
 ||ncrypt.in/images/useful/
 ||newpct.com/soporte/
-||files.nyaa.eu^$image
 ||online-media24.de^$third-party
 ||ozqul.com^*/webbanners.png
 ||p2pnet.net/images/$image
@@ -4909,9 +4909,9 @@ _friendlyduck.
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.net^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
-||thetvbay.com^$third-party,subdocument
 ||thepiratebay.org/img/agb.gif
 ||thepiratebay.org/img/bar.gif
+||thetvbay.com^$third-party,subdocument
 ||toplist.raidrush.ws^$third-party
 ||torrentreactor.net/imgnew/direct.jpg
 ||torrentreactor.net/imgnew/http.jpg
@@ -4934,14 +4934,15 @@ _friendlyduck.
 @@||files.nyaa.eu/13.
 @@||files.nyaa.eu/14.
 @@||files.nyaa.eu/15.
-@@||files.nyaa.eu/15.
+@@||files.nyaa.eu/16.
 @@||files.nyaa.eu/18.
 @@||files.nyaa.eu/32.
+@@||files.nyaa.eu/34.
 @@||files.nyaa.eu/37.
 @@||files.nyaa.eu/38.
 @@||files.nyaa.eu/39.
-@@||files.nyaa.eu/www-dl.
 @@||files.nyaa.eu/favicon.
+@@||files.nyaa.eu/www-dl.
 @@||files.nyaa.eu/www-download.
 @@||files.nyaa.eu/www-txt.
 !
@@ -5045,13 +5046,6 @@ fulldls.com###usenetb
 fulldls.com##.tb_ind
 fulldls.com##.tp
 gamestorrents.com##.publicidad_horizontal
-nyaa.eu##a[href^="http://www.nyaa.eu/d?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/a?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/b?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/c?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/e?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/h?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/i?"]
 general-search.net##.banners
 general-search.net##DIV[style="position: absolute; bottom: 0; right: 0; padding: 5px 10px 5px 5px;background:#A6BE01;border:none;width:200px;font-size:12px"]
 hotfileserve.ws##.glb-opec
@@ -5093,6 +5087,13 @@ newtorrents.info##[style="padding-left: 20px;"][colspan="2"]
 novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
+nyaa.eu##a[href^="http://www.nyaa.eu/a?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/b?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/c?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/d?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/e?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/h?"]
+nyaa.eu##a[href^="http://www.nyaa.eu/i?"]
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
@@ -6842,6 +6843,8 @@ youporn.com###producer
 ###header-adverts
 ###header-banner-spc
 ###header-google
+###header_ad_167
+###header_ad_728
 ###header_ad_728_90
 ###header_ad_leaderboard
 ###header_adbox
@@ -7458,10 +7461,6 @@ youporn.com###producer
 ###top_adspace
 ###top_adv-v2
 ###top_advert
-###header_ad_728
-###header_ad_167
-##.sidebar_ad_300
-##.sidebar_ad_580
 ###top_google_ads
 ###top_right_ad
 ###top_sponsor_ads
@@ -9308,6 +9307,8 @@ youporn.com###producer
 ##.sidebar-ad
 ##.sidebar-ad-rect
 ##.sidebar_ad
+##.sidebar_ad_300
+##.sidebar_ad_580
 ##.sidebar_ad_holder
 ##.sidebar_ads_336
 ##.sidebar_adsense
@@ -9672,12 +9673,10 @@ avforums.com##[style="width: 728px; height: 90px; border-width: thin; border-sty
 backstage.com##div[style="background: none repeat scroll 0% 0% rgb(102, 102, 102); height: 250px; color: rgb(255, 255, 255);"]
 billboard.biz##.bodyContent[style="padding-bottom: 30px; text-align: center;"]
 billboard.biz##TABLE[height="90px"][bgcolor="#cccccc"]
-ynetnews.com##div[style="padding-top: 10px; padding-bottom: 10px; padding-right: 10px;"]
 bit-tech.net##[style="width: 925px; height: 115px; margin: 0pt auto; text-align: center; background: none repeat scroll 0% 0% rgb(0, 0, 0);"]
 careerbuilder.com###htcRight[style="padding-left: 18px; width: 160px;"]
 catholicnewsagency.com##[style="background-color: rgb(247, 247, 247); width: 256px; height: 250px;"]
 caymannewsservice.com##div[style="width: 175px; height: 200px;"]
-techzilo.com##span[style="font-weight: 400; color: rgb(136, 136, 136); font-size: 10px;"]
 caymannewsservice.com##div[style="width: 450px; height: 100px;"]
 caymannewsservice.com##div[style="width: 550px; height: 100px;"]
 cellular-news.com##[style="width:728px;"]
@@ -9778,6 +9777,7 @@ staticice.com.au##[style="border-style: solid; border-color: rgb(135, 185, 245);
 teamforge.net##DIV[style="display: block; margin: 0.5em 1.5em; padding: 1em; border: 3px solid rgb(240, 255, 255); background-color: rgb(240, 240, 240); font-size: xx-small; text-align: left;"]
 tech2.in.com##[style="width: 300px; border: 1px solid rgb(182, 221, 236); margin: 10px 0px;"]
 technewsworld.com##[style="clear: left; padding: 5px; border-top: 1px solid rgb(203, 203, 203); border-bottom: 1px solid rgb(203, 203, 203);"]
+techzilo.com##span[style="font-weight: 400; color: rgb(136, 136, 136); font-size: 10px;"]
 televisionwithoutpity.com##a[style="display: block; height: 100px; margin-bottom: 10px;"]
 thegauntlet.ca##div[style="width: 170px; height: 620px; background: url(\"/advertisers/your-ad-here-160x600.gif\") repeat scroll 0% 0% rgb(204, 204, 204); vertical-align: top; text-align: center;"]
 thegauntlet.ca##div[style="width: 190px; height: 110px; background: url(\"/advertisers/your-ad-here-180x90.gif\") repeat scroll 0% 0% rgb(204, 204, 204); vertical-align: top; text-align: center;"]
@@ -9813,6 +9813,7 @@ worstpreviews.com##[style="width: 160px; height: 600px; background-color: rgb(25
 worstpreviews.com##[style="width: 300px; height: 250px; background-color: rgb(255, 255, 255);"]
 worstpreviews.com##[style="width: 728px; height: 90px; background-color: rgb(255, 255, 255);"]
 worstpreviews.com##td[style="font-family: Arial; font-size: 12px; color: rgb(51, 51, 51); padding: 10px 0px;"]
+ynetnews.com##div[style="padding-top: 10px; padding-bottom: 10px; padding-right: 10px;"]
 yourtomtom.com##[style="height: 600px; padding: 6px 0pt; border: 1px solid rgb(180, 195, 154); background: none repeat scroll 0% 0% rgb(249, 252, 241); margin-top: 18px;"]
 zacks.com##div[style="width: 336px; text-align: center; font-weight: bold; font-size: 11pt; border: 1px solid rgb(204, 204, 204);"]
 ~mail.google.com,google.com##.ts[style="margin: 0pt 0pt 12px; height: 92px;"]
@@ -11135,7 +11136,6 @@ killerstartups.com###banner1
 king-mag.com###mediumrec
 king-mag.com###skyscraper
 kioskea.net###bloc_middle
-techzilo.com##span[style="font-weight: 400; color: #888; font-size: 10px"]
 kioskea.net###topContent
 kioskea.net##.bloc_09
 kiplinger.com###site-sponsor
@@ -11830,7 +11830,6 @@ playkidsgames.com##table[width="320"][height="219"]
 playlist.com###gutter-skyscraper
 playstationlifestyle.net###rightSkyscraper
 playswitch.com##.psmainshellad
-ynetnews.com##div[style="padding-top:10px;padding-bottom:10px;padding-right:10px"]
 plosbiology.org###topBanner
 pogo.com###avertising
 polishlinux.org##.oio-badge
@@ -12266,6 +12265,7 @@ techspot.com##.bannernav
 techworld.com###footerWhitePapers
 techworld.com###marketingSlots
 techworld.com##.whitePaperContainer
+techzilo.com##span[style="font-weight: 400; color: #888; font-size: 10px"]
 teesoft.info###footer-800
 teesoft.info###top-bottom
 teesoft.info###uniblue
@@ -12799,6 +12799,7 @@ yeeeah.com###orangebox
 yellowpages.com###yahoo_ss_border
 yelp.com##.add-result
 yfrog.com##.promo-area
+ynetnews.com##div[style="padding-top:10px;padding-bottom:10px;padding-right:10px"]
 ynn.com##.bannerContent
 yorkshireeveningpost.co.uk###contentbox02google
 yorkshireeveningpost.co.uk###contentbox08
