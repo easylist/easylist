@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Acll8rnlu3luI5l5jtutbg
+! Checksum: 8wHQGngKMka8GbxqIsDz4w
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 4 Apr 2011
 ! This list expires after 7 days
@@ -173,9 +173,9 @@
 /ad_1_trans.
 /AdCount/*
 /adcounter.
+/addLinker.js
 /adimppixel/*
 /adlogger_
-/addLinker.js
 /adpixel.
 /ads_tracker.
 /adstats.
@@ -493,8 +493,8 @@
 /ga_dualcode_tracking.
 /ga_footer.
 /ga_gwo.
-/ga_loader.
 /ga_header.
+/ga_loader.
 /gaAddons-
 /gaAddons.
 /gadsfuncs.
@@ -863,7 +863,6 @@
 /readomniturecookie.
 /record_visitor.js
 /RecordClickv2.
-/roiengine.
 /recstatsv2.
 /redx/c.gif?
 /refcount.
@@ -881,6 +880,7 @@
 /RioTracking2.
 /rkrt_tracker-
 /RMAnalytics.
+/roiengine.
 /roitracker2.
 /rpc/log?
 /rubics_trk
@@ -986,9 +986,9 @@
 /stcollection.
 /stt/track.js|
 /stt/track/*
+/superstats.
 /surphace_track.
 /surveyoverlay/*
-/superstats.
 /syndication/metrics/*
 /tacoda.
 /tacoda_
@@ -1189,9 +1189,9 @@
 /wp-useronline/useronline.
 /wp.gif?wpi
 /wp_stat.php?
-/wz_logging.
 /wrapper/quantcast.swf
 /WritePartnerCookie?$third-party
+/wz_logging.
 /xboxcom_pv?c=$image
 /xgemius.js
 /xiti.js
@@ -1352,7 +1352,6 @@ size=1x1;
 ||bc.yahoo.com/b?P=
 ||beacon.search.yahoo.com^
 ||betanews.com/track?
-||ebuddy.com/pixels.js
 ||betway.com/snowflake/?
 ||bi.medscape.com^
 ||bing.com/fd/ls/l?
@@ -1398,6 +1397,7 @@ size=1x1;
 ||dw.com.com/redir?siteid*http*$image
 ||dw.com.com/redir?tag*b.gif$image
 ||dwin1.com^
+||ebuddy.com/pixels.js
 ||ec2-prod-tracker.babelgum.com^
 ||ectnews.com/shared/missing.gif?
 ||edw.edmunds.com^
@@ -1407,7 +1407,6 @@ size=1x1;
 ||epinions.com/js/stdLauncher.
 ||epinions.com/js/triggerParams.
 ||es.puritan.com^
-||novell.com^*/metrics.js
 ||exp.www.msn.com^
 ||experts-exchange.com/pageLoaded.jsp?
 ||facebook.com/ap.php?i=$image
@@ -1500,6 +1499,7 @@ size=1x1;
 ||news.com.au/tracking/
 ||nick.com/js/ga/$script
 ||nir.theregister.co.uk^
+||novell.com^*/metrics.js
 ||officelivecontent.com^*/Survey/
 ||okcupid.com/poststat?
 ||ostkcdn.com/js/p13n.js
@@ -1538,7 +1538,6 @@ size=1x1;
 ||rss.feedsportal.com/c/$image
 ||runnersworld.com/static/UniversalPixel.html
 ||sa.bbc.co.uk^
-||targetspot.com/track/
 ||sciencedaily.com/cache.php?
 ||scribol.com/traffix/widget_tracker/
 ||seeclickfix.com^*/text_widgets_analytics.html
@@ -1568,6 +1567,7 @@ size=1x1;
 ||store.yahoo.net^*/ywa.js
 ||surveys.cnet.com^
 ||t3.com/js/trackers.js
+||targetspot.com/track/
 ||teennick.com/js/ga/
 ||thefind.com/page/sizelog?
 ||thesmokinggun.com^*/jsmd.js
@@ -1617,6 +1617,8 @@ size=1x1;
 ||wovencube.com/track/
 ||ws.elance.com^
 ||wusstrack.wunderground.com^
+||wzus1.reference.com^
+||wzus1.thesaurus.com^
 ||xg4ken.com^
 ||yahoo.com/serv?s
 ||yahoo.com/track/
@@ -1629,8 +1631,6 @@ size=1x1;
 ||yourfilehost.com/counter.htm
 ||youtube-nocookie.com/gen_204?
 ||youtube.com/ptracking?
-||wzus1.thesaurus.com^
-||wzus1.reference.com^
 ||youtube.com/s?
 ||youtube.com/stream_204?
 ||zap2it.com^*/editorial-partner/
@@ -1691,6 +1691,7 @@ size=1x1;
 ||adsensedetective.com^
 ||advanced-web-analytics.com^
 ||aff.svjump.com^
+||affiliate-robot.com^
 ||affiliate.iamplify.com^
 ||affiliate.productreview.com.au^
 ||affiliates-pro.com^
@@ -1811,8 +1812,6 @@ size=1x1;
 ||client.tahono.com^
 ||clixcount.com^
 ||clixpy.com^
-||hitsniffer.com^
-||affiliate-robot.com^
 ||cloudfront-labs.amazonaws.com^
 ||clustrmaps.com^
 ||cmcore.com^
@@ -2003,6 +2002,7 @@ size=1x1;
 ||hitmatic.com^
 ||hits2u.com^
 ||hitslog.com^
+||hitsniffer.com^
 ||hitsprocessor.com^
 ||hittail.com^
 ||hlserve.com^
@@ -2137,6 +2137,7 @@ size=1x1;
 ||nedstatbasic.net^
 ||nedstatpro.net^
 ||nestedmedia.com^
+||net-filter.com^
 ||netagent.cz^
 ||netavenir.com^
 ||netflame.cc^
@@ -2178,7 +2179,6 @@ size=1x1;
 ||optimost.com^
 ||oranges88.com^
 ||ospserver.net^
-||net-filter.com^
 ||otoshiana.com^
 ||otracking.com^
 ||overstat.com^
@@ -2302,6 +2302,7 @@ size=1x1;
 ||sitetracker.com^
 ||smfsvc.com^
 ||smileyhost.net^
+||smowtion.com^
 ||smrtlnks.com^
 ||snoobi.com^
 ||snowsignal.com^
@@ -2391,7 +2392,6 @@ size=1x1;
 ||tracker.mattel.com^
 ||tracker.mtrax.net^
 ||tracker.timesgroup.com^
-||smowtion.com^
 ||tracker.vreveal.com^
 ||tracker2.apollo-mail.net^
 ||trackerv2.picapp.com^
