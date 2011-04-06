@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: gBr/0E4/ulLbMPNkXoC4Kg
+! Checksum: 8Gw3+SR/aXo/GoJe7BLiuw
 ! Fanboy's Adblock list
 ! Updated: 6 Apr 2011
 ! This list expires after 5 days
@@ -487,6 +487,7 @@
 /adp-pro/*
 /adp.html
 /adpage.htm
+/adpanel/*
 /adpanelcontent.
 /adpeeps.
 /adpeeps/*
@@ -764,6 +765,7 @@
 /advertisingLinks_
 /advertisingManual.js
 /advertisingmodule.
+/Advertisment.$~stylesheet,~object_subrequest
 /advertisment1-
 /advertisment_
 /advertorials/*
@@ -1563,6 +1565,7 @@
 /sponseredlinksros.
 /sponsor-ad
 /Sponsor-Links.
+/sponsor/click.
 /sponsor_ads.
 /sponsor_images/*
 /sponsoradds/*
@@ -2780,6 +2783,7 @@ images/ads/*
 ||gopjn.com^
 ||grabmyads.com^
 ||grapeshot.co.uk^
+||gumgum.com^
 ||greattastenopain.com/aff/
 ||headup.com^
 ||hopfeed.com^
@@ -2949,7 +2953,6 @@ images/ads/*
 ||oxado.com^
 ||p-comme-performance.com^
 ||p-digital-server.com^
-||gumgum.com^
 ||pagead2.*/pagead/*.js|
 ||pagead2.googlesyndication.com^$image
 ||pan.dogster.com^
@@ -3257,6 +3260,7 @@ images/ads/*
 @@||abbyy.com/adx/$image
 @@||ad.103092804.com/st?ad_type$domain=wizard.mediacoderhq.com
 @@||ad.afy11.net/crossdomain.xml$object_subrequest
+@@||ad.wsod.com^$domain=scottrade.com
 @@||ad.zanox.com/ppc/$subdocument,domain=wisedock.de|wisedock.com|wisedock.co.uk|wisedock.at|wisedock.eu
 @@||ad3.liverail.com^$object_subrequest
 @@||ad4.liverail.com^$object_subrequest
@@ -3264,6 +3268,7 @@ images/ads/*
 @@||adfarm.mediaplex.com^$domain=afl.com.au
 @@||adhostingsolutions.com/crossdomain.xml$domain=novafm.com.au|classicrockfm.com.au
 @@||adm.fwmrm.net^*/VideoAdRenderer.swf$domain=ign.com
+@@||admedia.wsod.com^$domain=scottrade.com
 @@||ads.adap.tv/control?$object_subrequest
 @@||ads.adap.tv/crossdomain.xml$object_subrequest
 @@||ads.bridgetrack.com/ads_v2/script/btwrite.js$domain=ads.bridgetrack.com
@@ -3402,6 +3407,7 @@ images/ads/*
 @@||thekraftgroup.com/ad.cfc?*=prerollvideo$object_subrequest
 @@||thekraftgroup.com/crossdomain.xml$object_subrequest
 @@||thetvdb.com/banners/
+@@||tkcarsites.com/soba/BannersService
 @@||topgear.com^*/ads.min.js
 @@||tremormedia.com^*/bcacudeomodule.swf$domain=aetv.com
 @@||tubemogul.com/adtags/$domain=comedy.com
@@ -4246,6 +4252,8 @@ affiliateBannerShow.aspx?
 ||s.xvideos.com^$subdocument
 ||sex-techniques-and-positions.com/123ima/
 ||sex-techniques-and-positions.com/banners
+||sharenxs.com/a_moviesnxs.php
+||sharenxs.com^*/livenude.gif
 ||shooshtime.com/adfiles/
 ||shooshtime.com/ads/
 ||shooshtime.com/images/chosenplugs/
@@ -4892,14 +4900,6 @@ _friendlyduck.
 ||emule-top50.com/extras/$subdocument
 ||extratorrent.com/images/download_16x.
 ||extratorrent.com/images/other/
-||files.nyaa.eu*113.
-||files.nyaa.eu*119.
-||files.nyaa.eu*124.
-||files.nyaa.eu*132.
-||files.nyaa.eu*237.
-||files.nyaa.eu*238.
-||files.nyaa.eu*239.
-||files.nyaa.eu/0$image
 ||filesharingtalk.com/fst/8242/
 ||filesonic.com/images/banners/
 ||free-torrents.org^*/banners/
@@ -4953,12 +4953,6 @@ _friendlyduck.
 !
 @@||bizerta-soft.com/clientscript/advertisement.js$script
 @@||superfundo.org/advertisement.js
-!-- nyaa still sucks
-@@||files.nyaa.eu*bar.
-@@||files.nyaa.eu*download.
-@@||files.nyaa.eu*icon.
-@@||files.nyaa.eu*txt.
-@@||files.nyaa.eu/derp.
 !
 !---------- p2p Element Firefox 3.x Hiding Rules ----------
 !
@@ -5064,6 +5058,8 @@ general-search.net##.banners
 general-search.net##DIV[style="position: absolute; bottom: 0; right: 0; padding: 5px 10px 5px 5px;background:#A6BE01;border:none;width:200px;font-size:12px"]
 hotfileserve.ws##.glb-opec
 hotfileserve.ws##a[href^="http://www.filesonic.com/premium-ref/"]
+imagewaste.com###overlayBg
+imagewaste.com##table[style="text-align: left; width: 153px; height: 240px;"]
 indowebster.com###tr_iklanbaris2
 ineedfile.com##.dwn_link_adv
 isohunt.com##span[style="font-size:9px;color:#B4B4B4"]
@@ -5101,13 +5097,9 @@ newtorrents.info##[style="padding-left: 20px;"][colspan="2"]
 novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
-nyaa.eu##a[href^="http://www.nyaa.eu/a?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/b?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/c?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/d?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/e?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/h?"]
-nyaa.eu##a[href^="http://www.nyaa.eu/i?"]
+nyaa.eu##div[style*="0px 0px"]
+nyaa.eu##div[style*="margin-top"]
+nyaa.eu##div[style*="text-align:"]
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
@@ -5132,6 +5124,7 @@ seedpeer.com###unxbg
 serialbay.com##IMG[width="160"][height="600"]
 serialbay.com##TABLE[width="728"][cellspacing="0"][cellpadding="0"]
 seventorrents.com##[href^="http://seventorrents.com/Tools/ClickCounter.ashx?"]
+sharenxs.com###uniquename2
 sinlesslinks.com##.adv
 sumotorrent.com##.checkGreenBox
 sumotorrent.com##.directStreaming
@@ -5879,7 +5872,6 @@ youporn.com###producer
 ###ad_slot_leaderboard
 ###ad_slot_livesky
 ###ad_small
-###adposition-TVSP
 ###ad_space_728
 ###ad_strip
 ###ad_term_bottom_place
@@ -6071,6 +6063,7 @@ youporn.com###producer
 ###adposition-inner-REM3
 ###adposition-REM2
 ###adposition-SHADE
+###adposition-TVSP
 ###adposition1
 ###adposition10
 ###adPosition14
@@ -7146,6 +7139,7 @@ youporn.com###producer
 ###northbanner-advert
 ###nrAds
 ###ns_ad3
+###oas_Right2
 ###OAS_Top
 ###onespot-ads
 ###onpageads
@@ -7853,6 +7847,7 @@ youporn.com###producer
 ##.ad_300
 ##.ad_300_120
 ##.ad_300_250
+##.ad_300_250_wrapper
 ##.ad_300Home
 ##.ad_300s
 ##.ad_300Side
@@ -9958,6 +9953,7 @@ androidtapp.com###Super
 androlib.com##.gadsqr
 angelfire.com###tb_container
 animenewsnetwork.com###page-header-banner
+animenewsnetwork.com.au###page-header-banner
 animenfo.com##.nav2
 animetake.com##.top-banner
 aniweather.com##.divBottomNotice
@@ -10419,6 +10415,9 @@ deviantart.com##.subbyCloseX
 deviantart.com##div[style="background-color:#AAB1AA;width:300px;height:250px"]
 dgvid.com###overlayVid
 dictionary.com###tpad
+dietsinreview.com##.r_content_300x250
+dietspotlight.com##div[style="width: 120px; height: 600px; margin: 0px 0px 10px 15px;"]
+dietspotlight.com##div[style="width:728px; height: 90px; margin: 10px auto 10px auto;"]
 digg.com###announce
 digg.com##.sponsored-by
 digitaltrends.com###banner
@@ -10792,6 +10791,7 @@ gearlive.com###google
 gearlive.com##.double
 gearlive.com##.wellvert
 geek.com##.picksBox
+allkpop.com##.midunit
 geek.com##.top
 geeksugar.com###rect2
 geeky-gadgets.com###text-105335641
@@ -11676,11 +11676,6 @@ novaup.com##div[style="height: 250px; margin-top: 50px;"]
 novaup.com##div[style="width: 300px; height: 250px; margin-top: 20px;"]
 novelgames.com##.gameAd
 nst.com.my##.cadv
-theyeshivaworld.com###inArticle
-theyeshivaworld.com##.rndm10
-theyeshivaworld.com##.rndm2
-theyeshivaworld.com##.rndm9
-theyeshivaworld.com##.rndm6
 nst.com.my##.standard
 nwanime.com###iwarn
 nwanime.com###warning
@@ -12421,6 +12416,11 @@ thetechjournal.com###header_bottom
 thevarguy.com###middlebannerwrapper
 thevarguy.com###topbanner
 thevarguy.com##.sectionbreak2
+theyeshivaworld.com###inArticle
+theyeshivaworld.com##.rndm10
+theyeshivaworld.com##.rndm2
+theyeshivaworld.com##.rndm6
+theyeshivaworld.com##.rndm9
 thinkdigit.com##.banners
 thinkdigit.com##.banners_all
 thinkdigit.com##.thumbnails
