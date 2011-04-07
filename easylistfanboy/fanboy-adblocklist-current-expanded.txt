@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: qFIrEqAKkrzQR5bNHVP9pg
+! Checksum: zLV6MJgDYFitJ+oLatX/UQ
 ! Fanboy's Adblock list
 ! Updated: 7 Apr 2011
 ! This list expires after 5 days
@@ -3202,6 +3202,7 @@ images/ads/*
 @@||ad.ca.doubleclick.net/crossdomain.xml$domain=edmontonjournal.com,third-party
 @@||ad.ca.doubleclick.net^$domain=vancouversun.com,script,object_subrequest
 @@||ad.doubleclick.net/adj/$domain=ponged.com,script
+@@||ad.doubleclick.net/adx/$domain=sacramento.cbslocal.com
 @@||ad.doubleclick.net/imp;$domain=pandora.com
 @@||ad.doubleclick.net/pfadx/$domain=instyle.com|bbc.co.uk|de.fifa.com|nytimes.com|people.com|ctv.muchmusic.com|ctv.muchmusicembed.com|mtv.co.nz
 @@||ad.doubleclick.net/pfadx/brk.brk/*_preroll
@@ -3221,7 +3222,6 @@ images/ads/*
 @@||doubleclick.net/adj/heavy*/videos
 @@||doubleclick.net/adj/nfl.home/landing/prestitial
 @@||doubleclick.net/adx/*.video/
-@@||ad.doubleclick.net/adx/$domain=sacramento.cbslocal.com
 @@||doubleclick.net/adx/ibs.sand.interactive/
 @@||doubleclick.net/adx/nbcu.
 @@||doubleclick.net/adx/tconf.ted/subtitles
@@ -5099,20 +5099,20 @@ newtorrents.info##[style="padding-left: 20px;"][colspan="2"]
 novaup.com##[style="widht:300px; height:250px; margin-top:50px;"]
 novaup.com##[style="width:300px; height:250px; margin-top:20px;"]
 nowtorrents.com###results_show_2
-nyaa.eu##div[style*="width:8"]
-nyaa.eu##div[style*="margin-left:6px"]
-nyaa.eu##div[style*="width:7"]
-nyaa.eu##img[alt="?"][src^="http://files.nyaa.eu/"]:first-child:last-child
-nyaa.eu##div[style*="width: 120px;float:right;"]
-nyaa.eu##div[style*="width: 760px;float:left;"]
-nyaa.eu##div:first-child:last-child > div > div + div[style^="float"]
 nyaa.eu##[style="float:left;"] img[src^="http://files.nyaa.eu/"]:first-child:last-child
-nyaa.eu##div:first-child:last-child > div > div:first-child + div[style^="margin"] > A
-nyaa.eu##div:first-child:last-child > [style] > div + div
-nyaa.eu##div[style$="float:left;"] > A:first-child > img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
-nyaa.eu##img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
 nyaa.eu##A:first-child:last-child > IMG[alt="??"]:first-child:last-child
 nyaa.eu##A[href^="http://www.nyaa.eu"]:first-child > IMG[alt="???????"][src^="http://files.nyaa.eu/"]:first-child:last-child
+nyaa.eu##div:first-child:last-child > [style] > div + div
+nyaa.eu##div:first-child:last-child > div > div + div[style^="float"]
+nyaa.eu##div:first-child:last-child > div > div:first-child + div[style^="margin"] > A
+nyaa.eu##div[style$="float:left;"] > A:first-child > img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
+nyaa.eu##div[style*="margin-left:6px"]
+nyaa.eu##div[style*="width: 120px;float:right;"]
+nyaa.eu##div[style*="width: 760px;float:left;"]
+nyaa.eu##div[style*="width:7"]
+nyaa.eu##div[style*="width:8"]
+nyaa.eu##img[alt="?"][src^="http://files.nyaa.eu/"]:first-child:last-child
+nyaa.eu##img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
@@ -8358,7 +8358,6 @@ youporn.com###producer
 ##.adtops
 ##.adTout
 ##.adtravel
-##.dart-ad
 ##.adTxt
 ##.adtxt
 ##.adtxtlinks
@@ -8737,6 +8736,7 @@ youporn.com###producer
 ##.custom_ads
 ##.cxAdvertisement
 ##.darla_ad
+##.dart-ad
 ##.dart_ad
 ##.dartAd491
 ##.dartadbanner
@@ -11174,10 +11174,6 @@ katu.com##.callout
 kbb.com###adBFA
 keprtv.com###leader-sponsor
 keprtv.com##.callout
-latina.com###block-block-33
-latina.com###block-block-39
-latina.com###block-block-40
-latina.com###block-block-37
 khq.com###WNCol4
 kicksonfire.com###topbanner
 kicksonfire.com##.skyscraper
@@ -11237,6 +11233,10 @@ laterooms.com###quick
 latimes.com###article-promo
 latimes.com##div[style="color:#888888;\00000afont-family:Arial,Helvetica,sans-serif;\00000afont-size:10px;\00000afont-size-adjust:none;\00000afont-stretch:normal;\00000afont-style:normal;\00000afont-variant:normal;\00000afont-weight:normal;\00000aletter-spacing:1px;\00000aline-height:10px;\00000apadding-bottom:3px;\00000atext-transform:lowercase;"]
 latimes.com##div[style="margin-bottom: 20px; padding-bottom: 15px; padding-top: 15px; background-color:#CCCCCC;"] 
+latina.com###block-block-33
+latina.com###block-block-37
+latina.com###block-block-39
+latina.com###block-block-40
 law.com###lawJobs
 law.com###skyscraper
 law.com###sponsors
@@ -11771,6 +11771,8 @@ pandora.com###medium_rectangle_container
 parentcentral.ca###verticalsBigBox
 parents.com###bannerwrapper
 parentsconnect.com###right-sky
+passiveaggressivenotes.com##div[style="width: 728px; height: 90px; margin: 0 auto 5px; border: 1px solid #666;"]
+passiveaggressivenotes.com##div[style="width: 728px; height: 90px; margin: 10px auto; clear: both;"]
 pastebin.com##.banner_728
 pastebin.com##.layout_clear
 pastebin.com##div[style="padding: 0 0 10px 0;width:160px;height:600px;clear:left;"]
@@ -12432,8 +12434,6 @@ thestreet.com###cauContainer
 thestreet.com###textLinksContainer
 thestudentroom.co.uk##.postbit_adbit_register
 thesundaytimes.co.uk##.sponsored-editorial
-passiveaggressivenotes.com##div[style="width: 728px; height: 90px; margin: 0 auto 5px; border: 1px solid #666;"]
-passiveaggressivenotes.com##div[style="width: 728px; height: 90px; margin: 10px auto; clear: both;"]
 thesuperficial.com###pronto-container
 theteachercorner.net##.rightside
 thetechjournal.com###header_bottom
@@ -12977,6 +12977,7 @@ zynga.com##.footerPromo
 ~egotastic.com###ad468
 ~everybodysucksbutus.com##.leaderboard-ad
 ~facebook.com###sidebar_ads
+~fifthinternational.org##.adbar
 ~finn.no,~gcrg.org,~kalaydo.de,~m424.com,~secondamano.it,~sepa.org.uk###advert
 ~flabber.nl###adheader
 ~flickr.com###promo-ad
@@ -13048,8 +13049,6 @@ zynga.com##.footerPromo
 ~syfygames.com###ad_content
 ~syfygames.com###ad_unit
 ~techreport.com##.ad_160
-~worldsnooker.com##.homead
-~fifthinternational.org##.adbar
 ~theberrics.com##.rightad
 ~thecoolhunter.com.au,~thecoolhunter.net##.Ads
 ~thedailygreen.com###AD_banner
@@ -13064,6 +13063,7 @@ zynga.com##.footerPromo
 ~wesh.com,~4029tv.com,~wmur.com###adBelt
 ~wikiski.com,~wikia.com##.content-ads
 ~wlfi.com,~wivb.com,~kasa.com,~wavy.com,~wane.com##.topAd
+~worldsnooker.com##.homead
 ~wretch.cc###ad_square
 ~www.yahoo.com,~ca.yahoo.com##.type_ads
 ~zapak.com###sponsorAdDiv
