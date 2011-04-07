@@ -30,5 +30,6 @@ perl addChecksum-opera.pl opera\urlfilter.ini
 :: Internet Explorer
 perl addChecksum.pl ie\fanboy-adblock-addon.txt
 perl addChecksum.pl ie\fanboy-tracking-addon.txt
+perl addChecksum.pl ie\fanboy-russian-addon.txt
 hg commit -m "%*"
 hg push
