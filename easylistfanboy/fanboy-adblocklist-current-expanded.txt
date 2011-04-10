@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: U/J8QGOPiv/u7Gh+eUwtQQ
+! Checksum: bgRqgvpIZRFIIPh9lBbmrw
 ! Fanboy's Adblock list
 ! Updated: 10 Apr 2011
 ! This list expires after 5 days
@@ -334,6 +334,7 @@
 /ad_slideout.
 /ad_square.
 /ad_square_
+/ad_sys/*
 /ad_tab.
 /ad_tag_
 /ad_tags_
@@ -492,7 +493,6 @@
 /adpanelcontent.
 /adpeeps.
 /adpeeps/*
-/adSummos2.
 /adpicture.
 /ADPictures/*
 /adpoint.
@@ -690,6 +690,7 @@
 /adStreamJSController.
 /adstubs/*
 /adSummos.js
+/adSummos2.
 /adsvariables.
 /adSwap-
 /adSwap.
@@ -715,7 +716,6 @@
 /adtech-
 /adtech.
 /ADTECH;
-/ad_sys/*
 /adtech_ad
 /Adtechscript.
 /adTest/*
@@ -957,12 +957,12 @@
 /common_ad.
 /compban.html?
 /components/ads/*
+/configspace/ads/*$subdocument
 /content-ads.
 /context_ad/*
 /contextad.
 /contextads.
 /controller/ads/*
-/configspace/ads/*$subdocument
 /convertJSONtoAd.
 /core-ads-
 /core77_ad.
@@ -2149,7 +2149,6 @@ images/ads/*
 ||jta.org/js/ads.js
 ||kirupa.com/supporter/
 ||kitco.com/images/banners/
-||phonescoop.com^*/a_tab.gif
 ||krebsonsecurity.com^$object
 ||l.yimg.com/a/i/*_wallpaper$image
 ||latimes.com^*/leaderboard.html
@@ -2202,6 +2201,7 @@ images/ads/*
 ||ozone3d.net/ad/
 ||partners-z.com^
 ||pe.com^*/biice2scripts.js
+||phonescoop.com^*/a_tab.gif
 ||pinkbike.org^*/skins/
 ||pinknews.co.uk/newweb/
 ||playlist.yahoo.com/makeplaylist.dll?$domain=au.tv.yahoo.com
@@ -2391,7 +2391,6 @@ images/ads/*
 ||admedia.com^
 ||admeld.com^
 ||admeta.com^
-||adsytipl.indiatimes.com^
 ||admission.net^
 ||admob.com^
 ||admonkey.dapper.net^
@@ -2439,7 +2438,6 @@ images/ads/*
 ||ads.kelbymediagroup.com^
 ||ads.mefeedia.com^
 ||ads.mmania.com^
-||digipathmedia.com^
 ||ads.mp.mydas.mobi^
 ||ads.msn-int.com^
 ||ads.ncm.com^
@@ -2489,6 +2487,7 @@ images/ads/*
 ||adsrevenue.net^
 ||adsummos.net^
 ||adswizz.com^
+||adsytipl.indiatimes.com^
 ||adtag.asiaone.com^
 ||adtaily.com^
 ||adtech.de^
@@ -2548,7 +2547,6 @@ images/ads/*
 ||alimama.com^
 ||allyes.com^
 ||alphagodaddy.com^
-||opt-intelligence.com^
 ||alternads.info^
 ||amazon.com/widgets/
 ||amgdgt.com^
@@ -2709,6 +2707,7 @@ images/ads/*
 ||deplayer.net^
 ||dexplatform.com^
 ||dgmaustralia.com^
+||digipathmedia.com^
 ||dinclinx.com^
 ||direct.quasir.info^
 ||doogleonduty.com^
@@ -2955,6 +2954,7 @@ images/ads/*
 ||openx.com^
 ||openx.org^
 ||opinionbar.com^
+||opt-intelligence.com^
 ||opteama.com^
 ||ospreymedialp.com^
 ||overlay.ringtonematcher.com^
@@ -5114,11 +5114,11 @@ nyaa.eu##div:first-child:last-child > [style] > div + div
 nyaa.eu##div:first-child:last-child > div > div + div[style^="float"]
 nyaa.eu##div:first-child:last-child > div > div:first-child + div[style^="margin"] > A
 nyaa.eu##div[style$="float:left;"] > A:first-child > img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
-nyaa.eu##div[style*="margin-left:6px"]
-nyaa.eu##div[style*="width: 120px;float:right;"]
-nyaa.eu##div[style*="width: 760px;float:left;"]
+nyaa.eu##div[style*="120px"]
+nyaa.eu##div[style*="760px"]
 nyaa.eu##div[style*="width:7"]
 nyaa.eu##div[style*="width:8"]
+nyaa.eu##div[style="padding:0px 0px 0px 0px;float:left;"]
 nyaa.eu##img[alt="?"][src^="http://files.nyaa.eu/"]:first-child:last-child
 nyaa.eu##img[alt="??"][src^="http://files.nyaa.eu/"]:first-child:last-child
 oneclickmoviez.com###topbar
@@ -8924,7 +8924,6 @@ youporn.com###producer
 ##.header_advertisement
 ##.header_advertisement_text
 ##.header_advertisment
-##.RR_ad
 ##.header_right_ad
 ##.headerAdCode
 ##.headerAds
@@ -9289,6 +9288,7 @@ youporn.com###producer
 ##.round_box_advert
 ##.roundedboxesgoogle
 ##.roundedCornersAd
+##.RR_ad
 ##.rr_ads
 ##.rside_adbox
 ##.rt_ad_300x250
@@ -10090,6 +10090,7 @@ bankrate.com##.topbanner
 bannedinhollywood.com###topleaderboard
 barbie.com##td[width="168"][height="640"]
 barbie.com##td[width="767"][height="96"]
+bargaineering.com##font[face="Verdana"][color="#808080"]
 barrons.com##.boldGreyNine
 bastropenterprise.com##.headerTop
 bastropenterprise.com##.iabMedRectContainer
@@ -10661,7 +10662,6 @@ facebook.com##.fbEmu
 facebook.com##.muffin.group
 facebook.com##.UIStandardFrame_SidebarAds
 facebook.com##.UIWashFrame_SidebarAds
-phonescoop.com###towerlinks
 family.ca##.banner
 familydoctor.org##[style="font-size:10px;color:#666666;text-decoration:none;font-family:Arial;font-weight:normal;"]
 familydoctor.org##[style="width: 320px; float: right; margin: auto 2px 10px 15px; text-align: center;  \00000a\000009\000009\000009border: 2px solid #a7bf8c; padding: 3px 7px 12px 7px"]
@@ -10956,7 +10956,6 @@ hellmode.com###header
 help.com###bwp
 helpwithsmoking.com##.hws[width="208"]
 heraldsun.com.au##.module-promo-image-01
-indiatimes.com##div[style="height:100px;"]
 hexus.net##.hxsComm
 heyuguys.co.uk###text-11
 heyuguys.co.uk##.hptabber
@@ -11061,6 +11060,7 @@ indianexpress.com###shopping_deals
 indiatimes.com###dv_relonaMain
 indiatimes.com##.InSkinHide
 indiatimes.com##.midadd
+indiatimes.com##div[style="height:100px;"]
 indiewire.com###promo_book
 info.co.uk###w
 info.co.uk##.spon
@@ -11154,7 +11154,6 @@ ixquick.com##.reltext
 ixquick.com##table[bgcolor="#F7F9FF"][width="100%"]
 ixquick.com##td[bgcolor="#E1ECFF"]
 ixquick.com##td[bgcolor="#F7F9FF"]
-komonews.com###sponsor
 izismile.com##.ban_top
 jakeludington.com###ablock
 jalopnik.com###skyscraper
@@ -11221,6 +11220,7 @@ knoxnews.com##.bigbox
 knucklesunited.com###site-title
 koat.com###omega
 komonews.com###leader-sponsor
+komonews.com###sponsor
 komonews.com##.callout
 kongregate.com###gamespotlight
 kongregate.com###sponsored_game_row_listing
@@ -11880,6 +11880,7 @@ phonedog.com##.box-rail-skyright
 phonedog.com##.widget_bar_bottom
 phonescoop.com###botlink
 phonescoop.com###sponboxb
+phonescoop.com###towerlinks
 phoronix.com###phxcms_toplogo_top
 phoronix.com###welcome_screen
 photobucket.com##.promobox
@@ -12201,6 +12202,8 @@ smallbusinessnotes.com##.rad-links
 smarter.com##.favmidwrapper
 smarter.com##.favwrapperblue
 smarter.com##.searchskyscraper
+smarterfox.com###secondary-banner
+smarterfox.com###top-left-banner
 smartmoney.com##.no-top-margin
 smartmoney.com##.out-of-module
 smashingapps.com##.advertise
@@ -12616,8 +12619,6 @@ urbandictionary.com###dfp_define_rectangle
 urbandictionary.com###dfp_homepage_medium_rectangle
 urbandictionary.com###dfp_skyscraper
 urbandictionary.com###rollup
-smarterfox.com###top-left-banner
-smarterfox.com###secondary-banner
 urbantitan.com###sidebar-banner300
 url.org###resspons1
 url.org###resspons2
@@ -12662,7 +12663,6 @@ video.aol.com###videoHatAd
 video2mp3.net###ad
 videos.com###adst
 videoweed.com##div[style="width:460px; height:60px; border:1px solid #CCC; margin-top:0px; margin:0px auto 10px auto;"]
-bargaineering.com##font[face="Verdana"][color="#808080"]
 vidmax.com###banner
 vidreel.com###overlayVid
 viewdocsonline.com###banner
