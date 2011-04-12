@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 8OtfqcfXk1ZJJ3/1QHFvGA
+! Checksum: fCVSounpd+IG4OSFl4KZ0Q
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 13 Apr 2011
 ! This list expires after 5 days
@@ -104,7 +104,6 @@ http://r.e1.ru/
 ||citilink.ru^*_banner.
 ||cn.ru/data/promoblocks/
 ||cnews.ru^*/banners/
-||video.begun.ru/vpaid_lib.swf
 ||cnews.ru^*/partners/
 ||compromat.ru/main/reklama/
 ||consultant.ru^*?flash=
@@ -302,6 +301,7 @@ http://r.e1.ru/
 ||urod.ru/uploads*102944.gif
 ||urod.ru/uploads*devka2.jpg
 ||vesti.kz/static/vb/
+||video.begun.ru/vpaid_lib.swf
 ||vmdaily.ru/img/baner/
 ||vmdaily.ru/partners/marketgid.
 ||voffka.com/archives/
@@ -399,7 +399,6 @@ http://ad.ir.ru^$third-party
 ||100projects.ru^$third-party,subdocument
 ||194.135.105.23^$third-party
 ||195.239.111.200^$third-party,image
-||agitazio.com^$third-party
 ||212.150.34.115^$third-party
 ||212.150.34.116^$third-party
 ||217.16.18.206^$third-party
@@ -467,6 +466,7 @@ http://ad.ir.ru^$third-party
 ||adwolf.ru^$third-party
 ||affarity.com^$third-party
 ||affiliate.printdirect.ru^$third-party
+||agitazio.com^$third-party
 ||agitmedia.com^$third-party
 ||aif.yadro.ru^$third-party
 ||akabo.ru^$third-party
@@ -536,7 +536,6 @@ http://ad.ir.ru^$third-party
 ||from-ua.com^$third-party,subdocument
 ||gamingpartners.org^$third-party
 ||globalstars.ru^$third-party
-||im3-tub.com^$third-party
 ||globusgps.ru^$third-party
 ||go.tizero.ru^$third-party
 ||gokliks.ru^$third-party
@@ -548,6 +547,7 @@ http://ad.ir.ru^$third-party
 ||holder.com.ua^$third-party
 ||hypersearch.novoteka.ru^$third-party
 ||icqadvert.com^$third-party
+||im3-tub.com^$third-party
 ||img.sape.ru/bn/$third-party
 ||informers.ukr.net^$third-party
 ||inforotor.net^$third-party
@@ -960,8 +960,8 @@ xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0
 ##A[href^="http://isms.pp.ru/jar.php?id"]
 ##A[href^="http://sugar-traff.com/voob_traff/"]
 ##A[href^="http://thetraffic.ru/in.cgi?"]
-##div[id^="Teaser_Block_"]
 ##div[id^="PC_Teaser_Block_"]
+##div[id^="Teaser_Block_"]
 !
 !---------- Russian Site Specific Element Hiding Rules ----------
 !
@@ -1311,6 +1311,7 @@ podrobnosti.ua##.b-premium-banner
 podrobnosti.ua##.b-top-banners
 polit.ru##.adv-block
 polit.ru##div[style="background-color:#ededed; padding:20px; overflow:hidden; margin-bottom:20px; padding-left:24px; padding-top:16px;"]
+qiq.ws##div[id^="MarketGid"]
 quote.ru##.banner
 quote.ru##[style^="width: 100%; height: 60px;"]
 quote.ru##[style^="width: 100%; height: 90px;"]
@@ -1373,7 +1374,9 @@ rutracker.org###bn-bot-wrap
 samlab.ws###banner-top
 samlab.ws##[style="text-align: center; line-height: 100%; width: 99%; border: 1px solid rgb(0, 0, 0); margin: 0pt auto;"]
 samlab.ws##[style="width: 480px; height: 160px;"]
+samlab.ws##div[id^="MarketGid"]
 samlab.ws##div[style="position:absolute;margin:-103px 0px 0px 90px;width:66%;z-index:100;font-size:12px;font-family:Tahoma"]
+samlab.ws##div[style="z-index:3;display:block;position:relative;width:595px;height:128px;background: rgb(102, 204, 102);"]
 securitylab.ru###br-right
 seti.ee##[style="border: 1px solid rgb(140, 165, 206); margin: 5px; padding: 5px;"]
 shkolazhizni.ru##.banner_text
@@ -1484,8 +1487,6 @@ x-console.com###header-banner468
 x-console.com##[style="width: 960px; height: 70px; padding: 0pt; margin: 0pt;"]
 xxx-tracker.com##.mediaget
 xxx-tracker.com##table[style="border-spacing:0px;background-color:#000000;"]
-samlab.ws##div[style="z-index:3;display:block;position:relative;width:595px;height:128px;background: rgb(102, 204, 102);"]
-samlab.ws##div[id^="MarketGid"]
 yandex.ru###banner
 yandex.ru##.b-advertizing-and-wizards
 yandex.ru##.b-banner
@@ -1493,7 +1494,6 @@ yandex.ru##.somebanner
 zaxid.net###fakeCommercialBox
 zaxid.net###internalbanner1
 zaxid.net###internalbanner2
-qiq.ws##div[id^="MarketGid"]
 zaycev.net##[id^="MarketGid"]
 zelenograd.ru##table[bgcolor="#3366ff"]
 zelenograd.ru##table[bgcolor="#ffffcc"]

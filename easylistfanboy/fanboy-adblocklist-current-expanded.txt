@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kop3nuNSHqh3XuVYEyRv3w
+! Checksum: RR08tGW2E3DJ6wp0Y9DWzw
 ! Fanboy's Adblock list
 ! Updated: 13 Apr 2011
 ! This list expires after 5 days
@@ -800,7 +800,6 @@
 /affbanners/*
 /affiliate_banners/*
 /AffiliateAds/*
-/momsads.
 /affiliateadvertisement.
 /affiliateBanners/*
 /affiliates/ban
@@ -1197,6 +1196,7 @@
 /iframe_chitika_
 /iframead/*
 /iframead_
+/ifrm_ads/*
 /image/ads/*
 /image/ads_
 /image/adv$image
@@ -1237,7 +1237,6 @@
 /include/ad_
 /include/ads/*
 /include/adsdaq
-/ifrm_ads/*
 /included_ads/*
 /includes/ads/*
 /includes/ads_
@@ -1315,6 +1314,7 @@
 /ModalAd.
 /modules/doubleclick/*
 /modules_ads.
+/momsads.
 /msnads/*
 /MSNAds1.
 /mstextad?
@@ -2015,6 +2015,7 @@ images/ads/*
 ||ads.hexus.net^
 ||ads.i-am-bored.com^
 ||ads.ign.com/advertisers/
+||ads.lucidmedia.com^
 ||ads.nationalgeographic.com^
 ||ads.netdrive.ws^
 ||ads.netlog.com^
@@ -2026,7 +2027,6 @@ images/ads/*
 ||ads.trademe.co.nz^
 ||ads.tweetmeme.com^
 ||ads.uploading.com^
-||ads.lucidmedia.com^
 ||ads.xomba.com^
 ||ads.zillow.com^
 ||adsatt.abcnews.starwave.com^
@@ -2441,6 +2441,7 @@ images/ads/*
 ||ads.jetpackdigital.com^
 ||ads.juicemobile.ca^
 ||ads.kelbymediagroup.com^
+||ads.matchbin.com^
 ||ads.mefeedia.com^
 ||ads.mmania.com^
 ||ads.mp.mydas.mobi^
@@ -2449,7 +2450,6 @@ images/ads/*
 ||ads.ncmsocial.com^
 ||ads.netcommunities.com^
 ||ads.nzcity.co.nz^
-||ads.matchbin.com^
 ||ads.ookla.com^
 ||ads.over-blog.com^
 ||ads.pof.com^
@@ -4955,11 +4955,11 @@ _friendlyduck.
 ||seventorrents.com/includes/common.js
 ||sharegods.com^$third-party
 ||sticker.yadro.ru/ad/
+||suprbay.info^$third-party,subdocument
 ||thejesperbay.com^
 ||themusicbay.com^$third-party,subdocument
 ||themusicbay.net^$third-party,subdocument
 ||themusicbay.org^$third-party,subdocument
-||suprbay.info^$third-party,subdocument
 ||thepiratebay.org/img/agb.gif
 ||thepiratebay.org/img/bar.gif
 ||thetvbay.com^$third-party,subdocument
@@ -5320,6 +5320,7 @@ hardsextube.com##*[width="900"][height="250"]
 hollywoodrag.com###navcontainer
 hollywoodrag.com##[style="font-weight: bold; font-family: Arial; font-size: 13px;"]
 hollywoodtuna.com###jc_ca_container
+hollywoodtuna.com##a[href^="http://refer.ccbill.com/"]
 hollywoodtuna.com##TD[width="6"]
 hotlinkimage.com##.inner_right
 houstonpress.com###perswrap
@@ -5347,7 +5348,6 @@ julesjordanvideo.com##.vertical_banner
 kaktuz.com###postroller
 laweekly.com###perswrap
 linkbucks.com###banner
-hollywoodtuna.com##a[href^="http://refer.ccbill.com/"]
 literotica.com###b-top
 literotica.com##a[style="display: block; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 110%;"]
 literotica.com##table[style="margin: 0 auto;"]
@@ -5925,6 +5925,7 @@ youporn.com###producer
 ###ad_vertical
 ###ad_video_large
 ###ad_wide
+###ad_wide_box
 ###ad_widget
 ###ad_widget_1
 ###ad_Wrap
@@ -6639,6 +6640,7 @@ youporn.com###producer
 ###companionAdDiv
 ###container-ad-topright
 ###containerSqAd
+###content-ad
 ###content-header-ad
 ###content_ad_block
 ###content_ad_top
@@ -7182,6 +7184,7 @@ youporn.com###producer
 ###northad
 ###northbanner-advert
 ###nrAds
+###nrcAd_Top
 ###ns_ad3
 ###oas_Right2
 ###OAS_Top
@@ -7842,7 +7845,6 @@ youporn.com###producer
 ##.Ad300x
 ##.ad300x100
 ##.ad300x150
-##.change_AdContainer
 ##.Ad300x250
 ##.ad300x250
 ##.ad300x250-home
@@ -7987,7 +7989,6 @@ youporn.com###producer
 ##.ad_mrec
 ##.ad_mrect
 ##.ad_notice
-##.item-ad-leaderboard
 ##.ad_pagebody
 ##.ad_partner
 ##.ad_partners
@@ -8272,7 +8273,6 @@ youporn.com###producer
 ##.ads_topleft
 ##.ads_topright
 ##.ads_tr
-##.internalAdSection
 ##.ads_wide
 ##.adsBelowHeadingNormal
 ##.adsbg300
@@ -8336,7 +8336,6 @@ youporn.com###producer
 ##.AdSlot
 ##.adSlot
 ##.adslot
-###content-ad
 ##.adslothead
 ##.adSlug
 ##.adsmedrect
@@ -8551,16 +8550,12 @@ youporn.com###producer
 ##.apiAdMarkerAbove
 ##.apiAds
 ##.apiButtonAd
-###nrcAd_Top
-##.nrcAd
 ##.aroundAdUnit
 ##.artAdInner
 ##.article-ads
 ##.article-content-adwrap
 ##.article_ad
 ##.article_bottom_ad
-##.header-ad-banner
-##.right-rail-ad
 ##.article_mpu_box
 ##.article_page_ads_bottom
 ##.articleAd
@@ -8735,6 +8730,7 @@ youporn.com###producer
 ##.center_ads
 ##.centerads
 ##.cg_ad_slug
+##.change_AdContainer
 ##.classifiedAdSplit
 ##.cmAd
 ##.cms-Advert
@@ -8946,6 +8942,7 @@ youporn.com###producer
 ##.hd_advert
 ##.head_ad
 ##.header-ad
+##.header-ad-banner
 ##.header-advert
 ##.header_ad
 ##.header_ad_2
@@ -9023,6 +9020,7 @@ youporn.com###producer
 ##.insideStoryAd
 ##.interest-based-ad
 ##.internalAdsContainer
+##.internalAdSection
 ##.interstitial-ad600
 ##.interstitial_ad_wrapper
 ##.isad_box
@@ -9032,6 +9030,7 @@ youporn.com###producer
 ##.islandad
 ##.islandAdvert
 ##.item-ad
+##.item-ad-leaderboard
 ##.item-container-ad
 ##.job_ad
 ##.jobs-ad-box
@@ -9196,6 +9195,7 @@ youporn.com###producer
 ##.normalAds
 ##.northad
 ##.note-advertisement
+##.nrcAd
 ##.nsAdRow
 ##.nscr300Ad
 ##.nscrMidAdBlock
@@ -9281,6 +9281,7 @@ youporn.com###producer
 ##.right-ads2
 ##.right-col-ad
 ##.right-navAdBox
+##.right-rail-ad
 ##.right-top-ad
 ##.Right300x250AD
 ##.right_ad
@@ -9372,7 +9373,6 @@ youporn.com###producer
 ##.side-ad-300-bottom
 ##.side-ad-300-middle
 ##.side-ad-300-top
-###ad_wide_box
 ##.side-ad-big
 ##.side-ad-blocks
 ##.side-ads
@@ -10151,11 +10151,11 @@ bikeexchange.com.au##div[style="margin:2em 0; text-align:center;"]
 bikeexchange.com.au##div[style="margin:60px 0 20px 0;"]
 billboard.biz##.bodyContent[style="padding-bottom:30px; text-align: center"]
 billboard.biz##TABLE[height="90px"][bgcolor="#CCCCCC"]
+billoreilly.com##td[width="160"]
 bing.com###sidebar
 bing.com##.partnerLinks
 bit-tech.net###broadband-finder-co-uk-120
 bit-tech.net###mobile-phones-co-uk-120
-billoreilly.com##td[width="160"]
 bit-tech.net###skinclick
 bit-tech.net##div[style="float: right; width: 728px; height: 90px; overflow: hidden; position: relative; top: 10px;"]
 bit-tech.net##div[style="width: 728px; height: 90px;"]
@@ -11011,6 +11011,7 @@ hollywire.com###hly_inner_page_google_ad
 hollywoodinterrupted.com###leaderboardspace
 hollywoodreporter.com##.block-dart
 holyfragger.com###ctl00_m_skinTracker_m_adLBL
+homefinder.com##.cubeContainer
 homehound.com.au###full-leaderboard
 homes-4all.com##.banner
 homes-4all.com##.banner2
@@ -11026,6 +11027,7 @@ howstuffworks.com##.adv
 howtoforge.com##a[href="/subscription"]
 howtogeek.com##div[style="width:300px;min-height:20px;"]
 howtogeek.com##div[style="width:300px;min-height:20px;padding-bottom:20px;"]
+hpe.com##.home_leaderboard
 hplusmagazine.com###bottom
 hubworld.com##.rectangle-small
 huffingtonpost.com###entry_327426
@@ -11033,7 +11035,6 @@ huffingtonpost.com###service_bottom_bar
 huffingtonpost.com###vertical_promo
 huffingtonpost.com##.contin_below
 humanevents.com###skyscraperbox
-hpe.com##.home_leaderboard
 humorpix.com###GoogleSidebarRight
 hybridcars.com##.videoAd-wrapper
 i-comers.com###headerfix
@@ -11358,7 +11359,6 @@ longislandpress.com##div[style="float:left; clear:left; margin:10px 20px 5px 0px
 lostintechnology.com##.widget_text
 lostintechnology.com##[style="height: 90px;"]
 lowellsun.com##.FIXTHIS
-mdjonline.com###promos
 lowyat.net###catfish
 lowyat.net##td[background="http://www.lowyat.net/v2/templates/247portal-b-geek/images/header/hp/lb-bg.jpg"]
 lowyat.net##td[background="http://www.lowyat.net/v2/templates/247portal-b-geek/images/skin-default/shadowl.gif"]
@@ -11453,6 +11453,7 @@ maximumpcguides.com##div[style="width:728px;height:90px;position:absolute;top:-9
 mayoclinic.com###subbox
 mcall.com###article-promo
 mcvuk.com##.newsinsert
+mdjonline.com###promos
 mdlinx.com##.Sponsor-Tag
 mediabistro.com##.ad-with-us
 mediabistro.com##.right-column-boxes-content-partners
@@ -11502,7 +11503,6 @@ microsoft.com##.cdAdTitle
 military.com##.dart_tag
 milkandcookies.com###ad
 miller-mccune.com###magSubscribe
-moneyville.ca##.td_featured_sponsors
 mindspark.com##.desc
 miniclip.com##.block_300x250
 minti.com##div[style="position: relative; float: left; margin-top: 10px; margin-right: 10px; height: 250px; width: 300px;"]
@@ -11516,6 +11516,7 @@ mnn.com##.sponsor-title-image
 moddb.com##.normalmediabox
 modthesims.info###collapseobj_adsection
 money.co.uk###topBar
+moneyville.ca##.td_featured_sponsors
 monster.com###caAdLarger
 monstersandcritics.com##div[style="height:690px"]
 monstersandcritics.com##div[style="height:840px"]
@@ -11949,7 +11950,6 @@ pogo.com###avertising
 polishlinux.org##.oio-badge
 polishlinux.org##.oio-zone-position
 politico.com##.in-story-banner
-homefinder.com##.cubeContainer
 politico.com##.sb-box.sidebar-text-ad.group
 politics.co.uk###top-banner
 politifact.com##.ldrbd
@@ -12404,7 +12404,6 @@ teoma.com###Slink
 teoma.com###topPaidList
 tesco.com###dartLeftSkipper
 tesco.com###dartRightSkipper
-washingtoncitypaper.com###header_leaderboard
 tesco.com##.dart
 testseek.com###openx-widget
 testseek.com##.banner_250x250
@@ -12734,6 +12733,7 @@ wallpaper4god.com##.ads-categories-bsa
 walmart.com###OAS_Left1
 walmart.com##.IABHeader
 waronyou.com###sponsors
+washingtoncitypaper.com###header_leaderboard
 washingtonexaminer.com###header_top
 washingtonpost.com###adTiff
 washingtonpost.com###banner_wrapper_bottom
@@ -13066,7 +13066,6 @@ zynga.com##.footerPromo
 ~ksl.com##.adBox
 ~ksl.com,~stadtlist.de,~superbikeplanet.com##.adTitle
 ~macrumors.com###banner_topad
-~mail.google.com,~rentalhomesplus.com##.Ad
 ~mail.google.com,google.co.in,google.com##.ts[style="margin:0 0 12px;height:92px"]
 ~mail.google.com,google.com##[style="border: 1px solid rgb(0, 90, 136);"]
 ~mail.google.com,google.com##[style="border: 1px solid rgb(145, 117, 77);"]
@@ -13074,6 +13073,7 @@ zynga.com##.footerPromo
 ~mail.google.com,google.com##[style="border: 1px solid rgb(51, 102, 153);"]   
 ~mail.google.com,google.com##[style="border: 1px solid rgb(51, 102, 204);"]
 ~mail.google.com,google.com##div.ch[style]
+~mail.google.com,~rentalhomesplus.com##.Ad
 ~mediabistro.com###adLeader
 ~megaallday.com###google_ads_frame1_anchor
 ~mercurynews.com###adPosition0
