@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: tNQkPKIEvLOofTDafdrGLQ
+! Checksum: NHFwsiK+gPacGlrYCZWp+g
 ! Fanboy's Vietnamese-addon Adblock list 
 ! Updated: 13 Apr 2011
 ! This list expires after 5 days
@@ -22,20 +22,20 @@
 /ads-homepage/*
 /ads-tinbai/*
 /AdsFloat.
+/adshay/*
 /adv-title.
 /AdView.
-/bnquangcao.
 /advright-
 /advtop-
 /AdWord/*
-/adshay/*
-/emxinhads.
 /blogtruyen728.
+/bnquangcao.
+/emxinhads.
 /FloatAd_
 /jsqcao/*
 /qc-title.
-/qcblogtruyen.
 /qcao.js
+/qcblogtruyen.
 /quangcao.
 /quangcao/*
 /QuangCaoImage/*
@@ -56,11 +56,13 @@ _quangcao.
 ||bacsi.com^*/testbg
 ||bongda.com.vn/data/File/
 ||buy-sell.vn/flash/
+||congdongvip.com/ads/
 ||dianguc.tv/blogtruyen325.
 ||docbao.vn/NewsMedia/Ad/
 ||eva.vn/js/eva.js
 ||game8.vn/images/spr/bg_
 ||game8.vn/spirit/ads/banner_
+||giaitriso1.net/bloghot.js
 ||hanoimoi.com.vn/Uploads/NCC/
 ||imishop.tk/banner-
 ||ledmobile.net/ads/
@@ -74,29 +76,27 @@ _quangcao.
 ||thegioioto.com.vn/Autos/Images/Home/                          
 ||tienganh.com.vn/anh/
 ||tin247.com^*/advertisements/
-||giaitriso1.net/bloghot.js
 ||tinthethao.com.vn/click/ck/
+||trachanh.com^*/popup.js
 ||trangtinvietnam.com/images/logos/
 ||vatgia.com/images/phuhungfull
 ||vatgia.com/images/tlbb_
-||xinhkieu.com/pop-
-||xinhkieu.com^*/sda.js
 ||vnphoto.net/data/gallery/fullsize/
 ||voh.com.vn/Data/QC/
 ||webketoan.vn^*/banners/
-||congdongvip.com/ads/
 ||xaluan.com/images/banners/
+||xinhkieu.com/pop-
+||xinhkieu.com^*/sda.js
 ||yeah1.com/images/banners/
-||trachanh.com^*/popup.js
 !
 ! ---------- General blocking rules ----------
 !
+||9hotgirls.info^*/ads_300x180.gif
 ||ad.zing.vn^
 ||et.phununet.com^
 ||hupanh.com^*/cdvbanner4rum.
 ||megapic.vn/images/80713009690933246438.gif
 ||upanh.com^*/zinken.gif
-||9hotgirls.info^*/ads_300x180.gif
 ||vuvu88.info^*_banner.gif
 !
 ! ---------- 3rd party blocking rules ----------
@@ -109,13 +109,13 @@ _quangcao.
 ||ads.yeuthethao.com^$third-party
 ||fptad.com^$third-party
 ||groupon.vn^$third-party
-||netad.vn^$third-party
 ||lucdiamu.com^$third-party,object
+||netad.vn^$third-party
 ||phagia.com.vn^$third-party
 ||shopnguoilon.vn^$third-party,subdocument
+||upanh.com^$third-party,domain=vnsao.net
 ||uphinh.vn^$third-party
 ||vietad.vn^$third-party
-||upanh.com^$third-party,domain=vnsao.net
 !
 !---------- Vietnamese Trackers ------------
 !
@@ -151,8 +151,8 @@ tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201,
 !
 !---------- Vietnamese Element Hiding Rules ----------
 !
-##.quangcao_rightup
 ##.ggnoads
+##.quangcao_rightup
 ##a[href^="http://ads.seovnn.com/"]
 ##a[href^="http://zingming.info/ads/"]
 24h.com.vn###adv-1000px
@@ -183,12 +183,14 @@ google.com,google.com.vn###tads
 hanoimoi.com.vn###right_content_box
 hanoimoi.com.vn##.right_content_box_bottom_adv
 laodong.com.vn##.ad_BoxBorder
+ohay.net###text-4
+ohay.net###text-6
+ohay.net###text-7
+ohay.net##div[style="height: 152px;"]
+ohay.net##div[style="height:117px;width:900px;text-align:center;margin-bottom:3px;"]
 otosaigon.com###topadv1_divTop
 otosaigon.com##.ADV
 otosaigon.com##.content_adv
-ohay.net###text-7
-ohay.net###text-4
-ohay.net###text-6
 phununet.com###AdSpot_Tintuc_Right300x2501_div1
 phununet.com##.advcenter
 phununet.com##.youshop1111
@@ -209,33 +211,31 @@ tin247.com##.post_product_link
 tin247.com##.Rotator
 tinhte.vn##.bannerBox
 tinthethao.com.vn###MetaNET_ADV_NUMBER_2
+trachanh.com##.ads960
 tuoitre.vn##.blockQcBtom
 tuoitre.vn##[style="width:298px;height:123px;border:solid 1px #c9c9c9;background-color:#f5f5f5;margin-bottom:6px;text-align:center;"]
 tuoitre.vn##[width="350"][height="204"]
+upanh.com##.adv_img
 vietnamplus.vn##.newsAdText
 vinabull.com###imgHead
 vn.yahoo.com###shd-promo
 voh.com.vn###ctl00_UcAdRight1_GrdAdv
 vtc.vn###divAdRight
-ohay.net##div[style="height:117px;width:900px;text-align:center;margin-bottom:3px;"]
-ohay.net##div[style="height: 152px;"]
 vtc.vn###home-banner-top-right1a
 vtc.vn###home-banner-top-right1b
 vtc.vn###home-banner_topGames_Right
 vtc.vn###link-home-banner-top-right1a
 vtc.vn###link-home-banner-top-right1b
-upanh.com##.adv_img
 vtc.vn##.adv
 vtc.vn##.advAllWidth
 vtc.vn##div[style="float: right; padding-top:10px;"]
-trachanh.com##.ads960
-xinhkieu.com##div[style="height: 152px;"]
 webketoan.vn##.banner_right
 webketoan.vn##.flash
 webketoan.vn##.headerright
 webketoan.vn##.left_banner
 webketoan.vn##.right_banner
+woim.net##.region2
+xinhkieu.com##div[style="height: 152px;"]
 xinhkieu.com##div[style="overflow:hidden; width:100%; height:150px;"]
 xinhkieu.com##div[style="width:550px; height:150px;"]
-woim.net##.region2
 zing.vn##.rightAdv

@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ITJHO2JfyyXyKybX+kfXvg
+! Checksum: UNHB8eQhksBoT1UPMQZg3g
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 13 Apr 2011
 ! This list expires after 7 days
@@ -284,6 +284,7 @@
 /cedexisus.
 /certona.
 /Certona/*
+/certona_$script
 /cfformprotect/*
 /cgi-bin/cnt/*
 /cgi-bin/count.pl?
@@ -402,7 +403,6 @@
 /criteo.
 /Criteo/*
 /criteo_
-/certona_$script
 /crmTracking.
 /cs_api/log
 /csct.js
@@ -471,12 +471,12 @@
 /expcount/*
 /external-tracking.
 /ezytrack.
-/finalizestats.
 /FacebookTracking.
 /fast-google-analytics/*
 /fastcounter.
 /fbanalytics/*
 /fcgi-bin/*
+/finalizestats.
 /flash-stats.php?
 /flashtag.txt?Log=
 /flv_tracking.
@@ -554,8 +554,8 @@
 /googleanalyze1.
 /googleanalyze2.
 /googleTracker.
-/gtrack.
 /gs-analytics-
+/gtrack.
 /gweb/analytics/*
 /headupStats.
 /Hit.ashx?
@@ -587,8 +587,8 @@
 /i?siteID=$image
 /ics/2/pview.gif?
 /iframe_googleAnalytics
-/image.ng/*
 /IGA.linktagger.
+/image.ng/*
 /image/count.gif?
 /images/mxl.gif?
 /images/pic.gif?
@@ -718,6 +718,7 @@
 /metrics/image.gif?
 /metrics/metrics
 /metrics/survey/*
+/metricsHHOstore.
 /metrimatics/*
 /mi/insite/*
 /middle?call=http
@@ -728,7 +729,6 @@
 /mlopen_track.
 /mm-metrics.
 /mm_track/*
-/metricsHHOstore.
 /mmetrix.mobi/*
 /mngi/tracking/*
 /moduleTracker.
@@ -743,7 +743,6 @@
 /nedstat.
 /nedstat/*
 /neilsen.js
-/traffix-track.
 /neocounter.
 /neocounter/*
 /netcounter?
@@ -1108,6 +1107,7 @@
 /traffic_record.php?
 /TrafficCookie.js
 /traffictracker.js
+/traffix-track.
 /trafic.js
 /traktr.js?
 /trans_pixel.asp
@@ -1306,7 +1306,6 @@ size=1x1;
 ||sitetistik.com^$third-party
 ||statcounter.com^$third-party
 ||stippleit.com^$third-party
-||w3counter.com^$third-party
 ||su.pr/hosted_js$third-party
 ||tracemyip.org^$third-party
 ||triggertag.gorillanation.com^$third-party
@@ -1317,6 +1316,7 @@ size=1x1;
 ||visualwebsiteoptimizer.com^*/js_visitor_settings.
 ||vmp.boldchat.com^$third-party
 ||vms.boldchat.com/aid/$third-party
+||w3counter.com^$third-party
 ||webiqonline.com^$third-party
 ||webmd.com/bi_common/$third-party
 ||whoisonline.net/?action=tracker$third-party
@@ -1344,8 +1344,6 @@ size=1x1;
 ||amazon.com/clog/
 ||amp.virginmedia.com^
 ||analytic.imlive.com^
-||llbean.com/js/metrics_
-||llbean.com/js/metrics.js
 ||aol.ca/track/
 ||aol.com/ping?
 ||aolanswers.com^*/PlaceHolder.jpg?
@@ -1370,7 +1368,6 @@ size=1x1;
 ||bridgetrack.com/site/
 ||bridgetrack.com/track/
 ||brothersoft.com/textlink_click.
-||cartoonnetwork.com^*/brandcma.js
 ||business.com/images2/directory.gif?
 ||business.com^*.gif?ord=
 ||businessinsider.com^*/track.js
@@ -1378,6 +1375,7 @@ size=1x1;
 ||buzzfeed.com^*/small.gif?
 ||capitalone.com/tracker/
 ||cartier.co.uk^*/eyeblaster.
+||cartoonnetwork.com^*/brandcma.js
 ||cbox.ws/box/relay.swf?
 ||cbsnews.com/i/trk/
 ||celebritycruises.com/js/pixel_matrix.
@@ -1414,7 +1412,6 @@ size=1x1;
 ||edw.edmunds.com^
 ||email-tickets.com/dt?e=PageView
 ||entry-stats.huffingtonpost.com^
-||hp.com^*/metrics.js
 ||entry-stats.huffpost.com^
 ||epinions.com/js/stdLauncher.
 ||epinions.com/js/triggerParams.
@@ -1456,6 +1453,7 @@ size=1x1;
 ||holiday-rentals.co.uk^*/tracking.html
 ||homeaway.com^*/tracking.html
 ||hottopic.com^*/techprops.
+||hp.com^*/metrics.js
 ||hubpages.com/c/
 ||i.walmartimages.com/i/icon/
 ||i365.com^*/pv.aspx?
@@ -1476,6 +1474,8 @@ size=1x1;
 ||linkedin.com/analytics/
 ||linkwithin.com/pixel.png
 ||livescience.com/common/track.
+||llbean.com/js/metrics.js
+||llbean.com/js/metrics_
 ||log1.music.yahoo.com^
 ||loglady.publicbroadcasting.net^
 ||lovefilm.com^*/lf-perf-beacon.png
@@ -1624,6 +1624,7 @@ size=1x1;
 ||vmware.com/files/include/ga/
 ||vresp.com/s.gif?
 ||vroomvroomvroom.com^*/pap.swf?
+||wachovia.com^*/stats.js
 ||wallpaperstock.net/partners.js
 ||warp.prnewswire.co.uk^
 ||washingtonpost.com/wp-srv/javascript/placeSiteMetrix.
@@ -1636,7 +1637,6 @@ size=1x1;
 ||ws.elance.com^
 ||wusstrack.wunderground.com^
 ||wzus1.reference.com^
-||wachovia.com^*/stats.js
 ||wzus1.thesaurus.com^
 ||xg4ken.com^
 ||yahoo.com/serv?s
@@ -1834,7 +1834,6 @@ size=1x1;
 ||client.tahono.com^
 ||clixcount.com^
 ||clixpy.com^
-||zope.net^*/ghs_wa.js
 ||cloudfront-labs.amazonaws.com^
 ||clustrmaps.com^
 ||cmcore.com^
@@ -2523,6 +2522,7 @@ size=1x1;
 ||zoomflow.com^
 ||zoomino.com^
 ||zoosnet.net^
+||zope.net^*/ghs_wa.js
 ||zroitracker.com^
 !     
 !---------- Non English Adult Trackers ----------
