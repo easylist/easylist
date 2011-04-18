@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: qKe5QYBR74Jc3kiH5dZGxQ
+! Checksum: 58XVhq2yh9Edl8b/Rg1/JQ
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 18 Apr 2011
 ! This list expires after 7 days
@@ -15,7 +15,6 @@
 -google-analytics.
 -seo-tracker.
 -tracking.js?
-_directtrack.js
 .au/t.ashx?
 .com.au/c.gif
 .com.au/HG?hc=
@@ -170,13 +169,13 @@ _directtrack.js
 /acounter.php?
 /act_pagetrack.
 /activity-track/?
-/addLinkerEvents.js
 /activity.gif?
 /ad_1_trans.
 /AdCount/*
 /adcounter.
 /addLinker.js
 /addLinkerEvents-ga.
+/addLinkerEvents.js
 /adimppixel/*
 /adlogger_
 /adpixel.
@@ -538,6 +537,7 @@ _directtrack.js
 /goAnalytics.
 /google-analytics-
 /google-analytics.
+/Google/ga.js
 /google_analytics.
 /google_analytics/*
 /google_analytics_
@@ -555,7 +555,6 @@ _directtrack.js
 /GoogleAnalyticsModule.
 /GoogleAnalyticsPlugIn.
 /GoogleAnalyticsPlus/*
-/Google/ga.js
 /googleanalyze1.
 /googleanalyze2.
 /googleTracker.
@@ -616,8 +615,8 @@ _directtrack.js
 /impression_tracker.
 /Impressions/aolukdp.imp?
 /impressions?
-/includes/tracker/*
 /include/js/ga-
+/includes/tracker/*
 /index.track?
 /indextools.js
 /inetlog.ru/*
@@ -638,7 +637,7 @@ _directtrack.js
 /ivw2.cgi?
 /ivw_analytics_
 /IVWAnalytics.
-/jscripts/analytics/*
+/javascripts/ga.js
 /jquery.google-analytics.
 /jquery.trackstar.
 /js/analytics/*
@@ -649,7 +648,6 @@ _directtrack.js
 /js/indextools/*
 /js/livestats_
 /js/nielsen/*
-/javascripts/ga.js
 /js/sophus/*
 /js/tophits_
 /js/tracking.
@@ -661,6 +659,7 @@ _directtrack.js
 /js_logger.
 /js_tracker.
 /jscounter.
+/jscripts/analytics/*
 /jstats/js/*
 /JsTracker.aspx?
 /jtracking/*
@@ -696,11 +695,10 @@ _directtrack.js
 /log_view.
 /log_zon_img.
 /logactions.gif?
+/logadhit.
 /logAdv.
 /logaholictracker.
 /logclick.
-/logadhit.
-/logwebhit.
 /logextrastats.
 /logger.ashx?
 /logger.php?$third-party,image
@@ -714,6 +712,7 @@ _directtrack.js
 /logLoad/?
 /logpv.aspx?
 /logStatistic?
+/logwebhit.
 /logwriter.php
 /lycostrack.js
 /m1x1.jpg
@@ -906,6 +905,7 @@ _directtrack.js
 /resxclsa_
 /revenue-science.
 /revenuescience.
+/RevenueScienceAPI.
 /revsci.
 /RioTracking2.$domain=~microsoft.com
 /rkrt_tracker-
@@ -925,7 +925,6 @@ _directtrack.js
 /script/analytics/*
 /sdc1.js
 /sdc2.js
-/RevenueScienceAPI.
 /sdc_tag.js
 /sdctag.js?
 /sdctag1.js
@@ -940,6 +939,7 @@ _directtrack.js
 /seomonitor/*
 /seostats/*
 /seoTracker.
+/seotracker/*
 /SEOTracking.
 /server.php?request=track
 /services/analytics/*
@@ -958,6 +958,7 @@ _directtrack.js
 /site-tracker_
 /site_stats.
 /site_stats/*
+/site_tracking.
 /siteafs.txt?
 /siteanalytics_
 /sitecrm.js
@@ -966,7 +967,6 @@ _directtrack.js
 /sitestat.
 /sitestatforms.
 /sitestats.gif?
-/site_tracking.
 /skstats-cgi/terraus?
 /skstats_terraus.
 /slimstat/*
@@ -1027,7 +1027,6 @@ _directtrack.js
 /tacoda.
 /tacoda_
 /taxtag.js
-/seotracker/*
 /tc_targeting.html
 /TCMAnalytics_
 /textlink.php?text
@@ -1259,6 +1258,7 @@ _astatspro/
 _check.php?referer
 _clicktrack.asp?
 _ComScore.
+_directtrack.js
 _empty.ad?
 _ga_code.
 _google_analytics.
@@ -1306,6 +1306,7 @@ size=1x1;
 ||crmmetrixwris.com^$third-party
 ||etc.grab.com^$third-party,image
 ||eventtracker.videostrip.com^$third-party
+||eveonline.com/redir.asp$third-party
 ||facebook.com^*/tracking.js$third-party
 ||find-ip-address.org^$third-party
 ||fluctuo.com^$third-party
@@ -1320,6 +1321,7 @@ size=1x1;
 ||iplocationtools.com^$third-party
 ||izearanks.com^$third-party
 ||keywordstrategy.org^$third-party
+||mcafeesecure.com/meter/$third-party
 ||mdctrail.com/b.ashx$third-party
 ||mega-stats.com^$third-party
 ||mixpanel.com^$third-party
@@ -1328,9 +1330,7 @@ size=1x1;
 ||platform.communicatorcorp.com^$third-party
 ||projop.dnsalias.com^$third-party
 ||quantserve.com^$third-party,script,image
-||mcafeesecure.com/meter/$third-party
 ||revolvermaps.com^$third-party
-||eveonline.com/redir.asp$third-party
 ||shareholder.com/track/
 ||shareit.com/affiliate.html$third-party
 ||shoplocal.com/it.ashx?
@@ -1366,19 +1366,16 @@ size=1x1;
 ||activity.frequency.com^
 ||addresses.com/track_event.
 ||adf.ly/omnigy*.swf
-||art.com/asp/robot/
-||atrack.art.com^
 ||adguru.guruji.com^
 ||adidas.com^*/analytics/
 ||advfn.com/space.gif?
 ||affiliate.mercola.com^
-||akamai.net^*.netflame.cc/
 ||affiliates.mozy.com^
+||akamai.net^*.netflame.cc/
 ||alibaba.com/js/beacon_
 ||allexperts.com/px/
 ||allmodern.com^*/sessioned_reqs.asp?
 ||amazon.com/clog/
-||immassets.s3.amazonaws.com^
 ||amp.virginmedia.com^
 ||analytic.imlive.com^
 ||anntaylor.com/js/page_code.js
@@ -1390,8 +1387,10 @@ size=1x1;
 ||arstechnica.com/dragons/breath.gif
 ||arstechnica.com^*.gif?id=
 ||art.co.uk/asp/robot/not_robot-asp/
+||art.com/asp/robot/
 ||associatedcontent.com/action_cookie
 ||astrology.com/visits/
+||atrack.art.com^
 ||atracktive.collegehumor.com^
 ||autopartswarehouse.com^*/boomerang.js
 ||avazudsp.net^
@@ -1402,11 +1401,10 @@ size=1x1;
 ||betanews.com/track?
 ||betway.com/snowflake/?
 ||bi.medscape.com^
+||bidz.com/contentarea/BidzHomePixel
 ||bing.com/fd/ls/l?
 ||bing.com/partner/primedns
-||osalt.com/js/track.js
 ||blankfire.com^*_.gif
-||glgroup.com^*/GLGUI.Analytics.
 ||break.com^*/track-cdp.html
 ||bridgetrack.com/site/
 ||bridgetrack.com/track/
@@ -1416,8 +1414,6 @@ size=1x1;
 ||businessinsider.com^*/track.js
 ||buzzfed.com^/ABTest.js?
 ||buzzfeed.com^*/small.gif?
-||bidz.com/contentarea/BidzHomePixel
-||cisco.com/swa/j/zag2_vs_log1.asc?
 ||capitalone.com/tracker/
 ||cartier.co.uk^*/eyeblaster.
 ||cartoonnetwork.com^*/brandcma.js
@@ -1425,12 +1421,11 @@ size=1x1;
 ||cbsnews.com/i/trk/
 ||celebritycruises.com/js/pixel_matrix.
 ||center.tv/counter
-||ticketmaster.com^*/csanywhere.js
-||ticketmaster.co.uk^*/csanywhere.js
 ||channel4.com/media/scripts/oasconfig/
 ||cheapflights.co.uk^*.gif?pt=
 ||chefscatalog.com/js/ci/
 ||chkpt.zdnet.com^
+||cisco.com/swa/j/zag2_vs_log1.asc?
 ||clients1.google.*/generate_204
 ||cloudfront.net/vis_opt.js
 ||cnn.com/images/tracking/
@@ -1489,6 +1484,7 @@ size=1x1;
 ||geo.perezhilton.com^
 ||geo.yahoo.com^
 ||geoiplookup.wikimedia.org^
+||glgroup.com^*/GLGUI.Analytics.
 ||goadv.com/roi/js/track.js
 ||godaddy.com/image.aspx?
 ||golfsmith.com/ci/
@@ -1517,6 +1513,7 @@ size=1x1;
 ||imdb.com/rd/?q
 ||imdb.com/twilight/?
 ||imdb.com/video/*metrics?
+||immassets.s3.amazonaws.com^
 ||info.break.com^*/track-cdp-user.html
 ||inquiries.redhat.com^
 ||intuit.com^*/survey_iframe_
@@ -1574,6 +1571,7 @@ size=1x1;
 ||novell.com^*/metrics.js
 ||officelivecontent.com^*/Survey/
 ||okcupid.com/poststat?
+||osalt.com/js/track.js
 ||ostkcdn.com/js/p13n.js
 ||overstock.com/uniquecount
 ||pajamasmedia.com/stats/
@@ -1647,6 +1645,8 @@ size=1x1;
 ||thefind.com/page/sizelog?
 ||thesmokinggun.com^*/jsmd.js
 ||thinkgeek.com/js/rts.js
+||ticketmaster.co.uk^*/csanywhere.js
+||ticketmaster.com^*/csanywhere.js
 ||topix.com/t6track/
 ||total.shanghaidaily.com^
 ||tqn.com/px/?
@@ -1788,8 +1788,8 @@ size=1x1;
 ||alzexa.com^
 ||amadesa.com^
 ||amazonaws.com/j.kissinsights.com/
-||amazonaws.com/new.cetrk.com/
 ||amazonaws.com/ki.js/
+||amazonaws.com/new.cetrk.com/
 ||amung.us^
 ||analytics-v2.anvato.com^
 ||analytics.edgesuite.net^
@@ -1849,8 +1849,8 @@ size=1x1;
 ||btstatic.com^
 ||burstbeacon.com^
 ||bytemgdd.com^
-||c.ypcdn.com^
 ||c.compete.com^
+||c.ypcdn.com^
 ||c.ypcdn.com^*/webyp?rid$image
 ||c3metrics.com^
 ||c3metrics.medifast1.com^
@@ -1867,7 +1867,6 @@ size=1x1;
 ||chango.com^
 ||channelintelligence.com^
 ||chartbeat.com^
-||emediatrack.com^
 ||chase.com/js/Reporting.js
 ||cheezburger-analytics.com^
 ||choicestream.com^
@@ -1902,11 +1901,11 @@ size=1x1;
 ||cmmeglobal.com/evt?
 ||cnetcontentsolutions.com^
 ||cnxweb.com^
-||collserve.com^
 ||co2stats.com^
 ||cognitivematch.com^
 ||collect.igodigital.com^
 ||collection.acromas.com^
+||collserve.com^
 ||compteur.com^
 ||comscore.com^
 ||confirm-referer.glrsales.com^
@@ -1926,7 +1925,6 @@ size=1x1;
 ||countomat.com^
 ||cpcmanager.com^
 ||cqcounter.com^
-||fathomseo.com^
 ||crazyegg.com^
 ||criteo.com^
 ||criteo.net^
@@ -1951,6 +1949,7 @@ size=1x1;
 ||d3s7ggfq1s6jlj.cloudfront.net^
 ||d9lq0o81skkdj.cloudfront.net^
 ||dacounter.com^
+||dashboard.io^
 ||data.alexa.com^
 ||data.beyond.com^*/t.aspx?
 ||data.marketgid.com^
@@ -1995,9 +1994,9 @@ size=1x1;
 ||elabs3.com/images/mlopen_track.
 ||elitics.com^
 ||eloqua.com^
+||emediatrack.com^
 ||enecto.com^
 ||ensighten.com/error/*GATracker
-||upsellit.com^*/visitor?
 ||enticelabs.com^
 ||eperfectdata.com^
 ||eproof.com^
@@ -2028,6 +2027,7 @@ size=1x1;
 ||factortg.com^
 ||farmer.wego.com^
 ||fastwebcounter.com^
+||fathomseo.com^
 ||feed.informer.com/fdstats
 ||feedjit.com^
 ||fetchback.com^
@@ -2158,9 +2158,7 @@ size=1x1;
 ||kissmetrics.com^
 ||klert.com^
 ||komtrack.com^
-||reports.tstlabs.co.uk^
 ||krxd.net^
-||dashboard.io^
 ||launch.roirocket.com^
 ||laurel.macrovision.com^
 ||lct.salesforce.com^
@@ -2274,6 +2272,7 @@ size=1x1;
 ||openhit.com^
 ||openstat.net^
 ||opentracker.net^
+||openvenue.com^
 ||optify.net^
 ||optimizely.appspot.com^
 ||optimizely.com^
@@ -2358,7 +2357,9 @@ size=1x1;
 ||referer.org^
 ||reinvigorate.net^
 ||reporting.singlefeed.com^
+||reports.tstlabs.co.uk^
 ||res-x.com^
+||research-tool.com^
 ||resultlinks.com^
 ||revenuepilot.com^
 ||revenuescience.com^
@@ -2369,7 +2370,6 @@ size=1x1;
 ||rfihub.com^
 ||rhinoseo.com^
 ||richard-group.com^
-||research-tool.com^
 ||richrelevance.com^
 ||ritecounter.com^
 ||rlcdn.com^
@@ -2400,7 +2400,6 @@ size=1x1;
 ||service.velaro.com^
 ||sessioncam.com^
 ||sftrack.searchforce.net^
-||openvenue.com^
 ||shinystat.com^
 ||signup.advance.net^*affiliate
 ||simpli.fi^
@@ -2491,7 +2490,6 @@ size=1x1;
 ||track.mybloglog.com^
 ||track.qoof.com^
 ||track.searchignite.com^
-||traffic.prod.cobaltgroup.com^
 ||track.yieldsoftware.com^
 ||trackalyzer.com^
 ||trackconsole.com^
@@ -2516,6 +2514,7 @@ size=1x1;
 ||trackword.net^
 ||trackyourstats.com^
 ||tradetracker.net^
+||traffic.prod.cobaltgroup.com^
 ||trafficby.net^
 ||trafficengine.net^
 ||trafficfacts.com^
@@ -2539,6 +2538,7 @@ size=1x1;
 ||tynt.com^
 ||uimserv.net^
 ||unicaondemand.com^
+||upsellit.com^*/visitor?
 ||urlbrief.com^
 ||userlog.synapseip.tv^
 ||useronlinecounter.com^
@@ -2672,6 +2672,7 @@ size=1x1;
 @@/TrackingHandler.$domain=expotv.com
 @@/xtcore.js$domain=willhaben.apa.net
 @@||about-australia.com/*/clickheat.js
+@@||activedatatech.net^*/jquery.google-analytics.js$domain=homepath.com
 @@||afisha.ru/proxy/VideoNetworkProxy.ashx?$xmlhttprequest
 @@||aflac.com/js/wt_capi.js
 @@||analytics.atomiconline.com/services/jquery.js
@@ -2685,7 +2686,6 @@ size=1x1;
 @@||easy.box^$image,~image,donottrack
 @@||firstdirect.com^*/logging-code.js
 @@||google.com/js/gweb/analytics/$domain=google.com
-@@||activedatatech.net^*/jquery.google-analytics.js$domain=homepath.com
 @@||google.com/support/googleanalytics/
 @@||js.revsci.net/gateway/gw.js$domain=video.foxnews.com
 @@||js.revsci.net/gateway/gw.js?csid=$domain=video.foxbusiness.com
