@@ -209,6 +209,7 @@ sub convertToTPL
     #Translate comments, not including Adblock Plus specific values
     if ($line =~m/\[.*?\]/i)
     {
+    	$line = "";
     }
     elsif ($line =~ m/^!/)
     {
@@ -224,72 +225,99 @@ sub convertToTPL
     }
     else
     {
-      #Remove lone third party options
-      $line =~ s/\$third-party$//;
-
-      #Translate domain blocks
-      if ($line =~ /^(|@@)\|\|.*?\^/)
-      {
-        $line =~ s/\^/ /;
-      }
-      elsif ($line =~ /^(|@@)\|\|.*?\//)
-      {
-        $line =~ s/\// \//;
-      }
-      #Remove unnecessary asterisks
-      $line =~ s/\*$//;
-      $line =~ s/ \*/ /;
-      #Remove unnecessary slashes and spaces
-      $line =~ s/ \/$//;
-      $line =~ s/ $//;
-		
+      #Remove irrelevant options
+      $line =~ s/(?<=(\$|,))third-party//;
+      $line =~ s/(?<=(\$|,))~object_subrequest//;
+      $line =~ s/(?<=\$)\,//g;
+      $line =~ s/\$$//;
+	
       #Remove beginning and end anchors
       unless ($line =~ m/^\|\|/)
       {
         $line =~ s/^\|//;
       }
-      $line =~ s/\|($|\$)//;
+      $line =~ s/\|$//;
 		
       #Translate the script option to "*.js"
       $line =~ s/\$script$/\*\.js/;
 		
-      #Translate whitelists, making them wider if necessary
-      if ($line =~ m/^@@\|\|.*?(^|\/)/)
+      #Translate whitelists, removing all options
+      if ($line =~ m/^@@\|\|.*?(\^|\/)/)
       {
         $line =~ s/@@\|\|/\+d /;
-        #Remove all options
         $line =~ s/\$.*?$//;
+        $line = &translateDomains($line);
       }
-      #Comment out all other whitelists, as a domain must be specified in Internet Explorer
+      #Comment out all other whitelists, as a domain must be specified for whitelists in Internet Explorer
       elsif ($line =~ m/^@@/)
       {
         $line = "# " . $original;
       }
-      #Comment out all filters with options or element hiding rules, as this functionality is not available in Internet Explorer
-      elsif ($line =~ m/(\$|##)/)
+      #Comment out all filters with options, as this functionality is not available in Internet Explorer
+      elsif ($line =~ m/\$/)
       {
         $line = "# " . $original;
       }
-      #Translate all domain filters
-      elsif ($line =~ m/^\|\|.*?(^|\/)/)
+      #Do not include any element hiding rules, as this functionality is not available in Internet Explorer
+      elsif ($line =~ m/(\$|##)/)
       {
-        $line =~ s/^\|\|/\-d /;
+        $line = "";
       }
-      #Translate all other double anchored filters
+      #Translate all domain filters
       elsif ($line =~ m/^\|\|/)
       {
-        $line =~ s/^\|\|/\- http:\/\//;
+		    if ($line =~ m/^\|\|.*?\*.*?\^/ || $line !~ m/^\|\|.*?(\^|\/)/)
+		    {
+		      $line =~ s/^\|\|/- http\:\/\//;
+		    }
+        else
+        {
+		      $line =~ s/^\|\|/\-d /;
+        }
+        $line = &translateDomains($line);
+      }
+      #Comment out all other filters with "^", as this functionality is not available in Internet Explorer
+      elsif ($line =~ m/\^/)
+      {
+        $line = "# " . $original;
       }
       #Translate all remaining filters as general
       else
       {
         $line = "- " . $line;
       }
-      push @result, $line;
+      #Add all non-blank lines to the new subscription
+      unless ($line eq "")
+      {
+      	push @result, $line;
+      }
     }
   }
-
   return join("\n", @result) . "\n";
+}
+
+sub translateDomains
+{
+	my $domain = shift;
+	
+	#Translate domain blocks
+ 	if ($domain =~ /\^/)
+  {
+		$domain =~ s/\^/ /;
+	}
+	elsif ($domain =~ /\//)
+	{
+		$domain =~ s/\// \//;
+	}
+	#Remove unnecessary asterisks
+	$domain =~ s/\*$//;
+	$domain =~ s/ \*/ /;
+	$domain =~ s/\* / /;
+	#Remove unnecessary slashes and spaces
+	$domain =~ s/ \/$//;
+	$domain =~ s/ $//;
+	
+	return $domain;
 }
 
 sub readFile
