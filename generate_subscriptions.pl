@@ -266,13 +266,13 @@ sub convertToTPL
       #Translate all domain filters
       elsif ($line =~ m/^\|\|/)
       {
-		    if ($line =~ m/^\|\|.*?\*.*?\^/ || $line !~ m/^\|\|.*?(\^|\/)/)
+        if ($line =~ m/^\|\|.*?\*.*?\^/ || $line !~ m/^\|\|.*?(\^|\/)/)
 		    {
-		      $line =~ s/^\|\|/- http\:\/\//;
-		    }
+          $line =~ s/^\|\|/- http\:\/\//;
+        }
         else
         {
-		      $line =~ s/^\|\|/\-d /;
+          $line =~ s/^\|\|/\-d /;
         }
         $line = &translateDomains($line);
       }
