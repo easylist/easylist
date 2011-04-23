@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Lt70ehpkjq/Dj65pkiKreg
+! Checksum: f9yrs++CpJ6iFfr4oEjSLA
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 24 Apr 2011
 ! This list expires after 7 days
@@ -31,7 +31,6 @@
 .com/a.gif?
 .com/analytics?
 .com/b.gif?
-.gif?dks=
 .com/blank.aspx?
 .com/c.gif?
 .com/click?ts
@@ -66,6 +65,7 @@
 .conversionruler.
 .counter.gd/
 .do_tracking&
+.gif?dks=
 .gif?Log=$~xmlhttprequest
 .GoogleAnalytics/
 .gov/stat?
@@ -106,7 +106,6 @@
 .vsTracking.
 .webstats.
 /!crd_prm!.
-/adstat.
 //analytics.
 //beacon.
 //count.
@@ -163,6 +162,7 @@
 /adlogger_
 /adpixel.
 /ads_tracker.
+/adstat.
 /adstats.
 /adtrack.
 /adviewtrack.
@@ -213,9 +213,9 @@
 /audsci.js
 /avant_sfpc_
 /awstats_misc_tracker
+/aztrack.
 /b/ss/*&aqe=
 /b/ss/*&events=
-/aztrack.
 /b/ss/*&ndh=
 /b2bsdc.js
 /banners-stat.
@@ -310,8 +310,8 @@
 /click_stat/*
 /click_tracking
 /clickability-
-/clickability/*
 /clickability.
+/clickability/*
 /clickAnalyse.
 /clickcount.cfm?
 /clickcount_
@@ -488,7 +488,6 @@
 /ga.php?utm
 /ga1.js
 /ga2.js
-/xtanalyzer_roi.
 /ga_dualcode_tracking.
 /ga_footer.
 /ga_gwo.
@@ -610,7 +609,6 @@
 /Impressions/aolukdp.imp?
 /impressions?
 /include/js/ga-
-/viglink_
 /includes/tracker/*
 /index.track?
 /indextools.js
@@ -1167,6 +1165,7 @@
 /viewcounterproxy.
 /viewstats.aspx?
 /viewtracking.aspx?
+/viglink_
 /visit.gif?
 /visit/record.gif?
 /VisitCounter.
@@ -1220,7 +1219,6 @@
 /wlexpert_tracker.
 /wlog.php?
 /woopra.js
-/writrak.
 /wp-click-track/*
 /wp-powerstat/*
 /wp-useronline/useronline.
@@ -1228,6 +1226,7 @@
 /wp_stat.php?
 /wrapper/quantcast.swf
 /WritePartnerCookie?$third-party
+/writrak.
 /wtd.gif?
 /wv326redirect_
 /wz_logging.
@@ -1237,6 +1236,7 @@
 /xiti/xtcore_
 /xn_track.
 /xstat.aspx?
+/xtanalyzer_roi.
 /xtclicks.js
 /xtcore.js
 /xtrack.php?
@@ -1385,12 +1385,10 @@ size=1x1;
 ||akamai.net^*.netflame.cc/
 ||alibaba.com/js/beacon_
 ||allexperts.com/px/
-||clk.about.com^
 ||allmodern.com^*/sessioned_reqs.asp?
 ||amazon.com/clog/
 ||amp.virginmedia.com^
 ||analytic.imlive.com^
-||stattrack.0catch.com^
 ||anntaylor.com/js/page_code.js
 ||anntaylorloft.com/js/page_code.js
 ||aol.ca/track/
@@ -1406,7 +1404,6 @@ size=1x1;
 ||associatedcontent.com/action_cookie
 ||astrology.com/visits/
 ||atrack.art.com^
-||petplanet.co.uk^*/js/ga.js
 ||atracktive.collegehumor.com^
 ||avazudsp.net^
 ||barrons.com^*/blank.htm
@@ -1442,6 +1439,7 @@ size=1x1;
 ||chkpt.zdnet.com^
 ||cisco.com/swa/j/zag2_vs_log1.asc?
 ||clients1.google.*/generate_204
+||clk.about.com^
 ||cloudfront.net/vis_opt.js
 ||cnn.com/images/tracking/
 ||codeplex.com^*/broker.js|
@@ -1493,7 +1491,6 @@ size=1x1;
 ||gamepro.com^*/analytics.js
 ||gamepro.com^*/tracking.js
 ||gamesgames.com/WebAnalysis/
-||hotels.nl^*/ga.js
 ||gamezone.com/?ACT
 ||gamezone.com/site/linktracker
 ||gardenweb.com^*/iv_footer.js
@@ -1501,8 +1498,6 @@ size=1x1;
 ||geo.perezhilton.com^
 ||geo.yahoo.com^
 ||geoiplookup.wikimedia.org^
-||hostelworld.com^*/thing.php
-||hostelseurope.com^*/thing.php
 ||glam.com/gad/glamadapt_jsrv.act?
 ||glgroup.com^*/GLGUI.Analytics.
 ||globes.co.il/ga.asp
@@ -1523,9 +1518,11 @@ size=1x1;
 ||heroku.com/track.js
 ||holiday-rentals.co.uk^*/tracking.html
 ||homeaway.com^*/tracking.html
+||hostelseurope.com^*/thing.php
+||hostelworld.com^*/thing.php
+||hotels.nl^*/ga.js
 ||hottopic.com^*/techprops.
 ||hp.com^*/metrics.js
-||metacrawler.com/__kl.gif
 ||hrblock.com/includes/pixel/pix_
 ||hubpages.com/c/
 ||i.walmartimages.com/i/icon/
@@ -1566,6 +1563,7 @@ size=1x1;
 ||mediaplex.com^*&mpuid=
 ||mediaplex.com^*/universal.html?
 ||mediaplex.com^*_traffic.js
+||metacrawler.com/__kl.gif
 ||meter-svc.nytimes.com^
 ||microsoft.com/library/svy/
 ||microsoft.com/LTS/default.aspx?
@@ -1605,6 +1603,7 @@ size=1x1;
 ||pclick.yahoo.com^
 ||peacocks.co.uk^*/analytics.js
 ||pepsi.com/js/pepsi_tracking.js
+||petplanet.co.uk^*/js/ga.js
 ||petri.co.il/akit/?
 ||photobucket.com/svc/tracklite.php
 ||photographyblog.com/?ACT
@@ -1664,6 +1663,7 @@ size=1x1;
 ||stats.justin.tv^
 ||stats.paypal.com^
 ||stats.video.search.yahoo.com^
+||stattrack.0catch.com^
 ||store.yahoo.net^*/ywa.js
 ||surveys.cnet.com^
 ||t3.com/js/trackers.js
@@ -1704,10 +1704,12 @@ size=1x1;
 ||upromise.com^*/csgather.js
 ||urlcheck.hulu.com^*/track.ashx?
 ||userfly.com^
+||usps.com/survey/
 ||ut.ratepoint.com^
 ||v.fwmrm.net/ad/*defaultImpression
 ||v.fwmrm.net/ad/*slotImpression
 ||vbs.tv/tracker.html
+||venere.com/common/js/track.js
 ||victoriassecret.com/m/a.gif?
 ||video-stats.video.google.com^
 ||videoplaza.com/proxy/tracker?
@@ -1731,8 +1733,6 @@ size=1x1;
 ||wzus1.thesaurus.com^
 ||xg4ken.com^
 ||yahoo.com/serv?s
-||usps.com/survey/
-||venere.com/common/js/track.js
 ||yahoo.com/track/
 ||yahoo.com^*/pageview/
 ||yellowpages.com/images/li.gif?
@@ -1833,7 +1833,6 @@ size=1x1;
 ||analytics.edgesuite.net^
 ||analytics.yahoo.com^
 ||anycent.com/analytics/
-||triad.technorati.com^
 ||aol.com/master/?
 ||aolcdn.com/js/mg2.js
 ||apexstats.com^
@@ -1987,7 +1986,6 @@ size=1x1;
 ||d1nu2rn22elx8m.cloudfront.net^
 ||d1qpxk1wfeh8v1.cloudfront.net^
 ||d2n8p8eh14pae1.cloudfront.net^
-||footprintlive.com^
 ||d34ko97cxuv4p7.cloudfront.net^
 ||d396ihyrqc81w.cloudfront.net^
 ||d3l3lkinz3f56t.cloudfront.net^
@@ -2027,7 +2025,6 @@ size=1x1;
 ||du8783wkf05yr.cloudfront.net^
 ||dw-world.de/run.js
 ||dwin2.com^
-||omeda.com^
 ||e-referrer.com^
 ||easy-hit-counters.com^
 ||easyhitcounters.com^
@@ -2084,6 +2081,7 @@ size=1x1;
 ||flash-stat.com^
 ||flashstats.libsyn.com^
 ||fliqz.com/metrics/
+||footprintlive.com^
 ||foreseeresults.com^
 ||forrestersurveys.com^
 ||foundry42.com^
@@ -2106,6 +2104,7 @@ size=1x1;
 ||geo.ltassrv.com^
 ||geo.q5media.net^
 ||geobytes.com^
+||geoip.mlive.com^
 ||geovisite.com^
 ||getclicky.com^
 ||gigcount.com^
@@ -2180,7 +2179,6 @@ size=1x1;
 ||instadia.net^
 ||installiq.com/Pixels/
 ||instore.biz^
-||geoip.mlive.com^
 ||intelevance.com^
 ||intelimet.com^
 ||intelli-direct.com^
@@ -2308,6 +2306,7 @@ size=1x1;
 ||offerstrategy.com^
 ||ojrq.net^
 ||om.1and1.co.uk^
+||omeda.com^
 ||omtrdc.net^
 ||onefeed.co.uk^
 ||online-media-stats.com^
@@ -2582,6 +2581,7 @@ size=1x1;
 ||treehousei.com^
 ||trendcounter.com^
 ||trf.intuitwebsites.com^
+||triad.technorati.com^
 ||trialpay.com^
 ||triggit.com^
 ||trk.pswec.com^

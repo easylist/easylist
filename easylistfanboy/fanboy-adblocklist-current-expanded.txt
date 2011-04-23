@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: jRG0FDlekyXNwj4XrOpQhg
+! Checksum: JZlGel8P/+zx2oCIcuZ7pw
 ! Fanboy's Adblock list
 ! Updated: 24 Apr 2011
 ! This list expires after 5 days
@@ -89,7 +89,6 @@
 .com/adinf/
 .com/adjs/
 .com/adpage/
-.com/js/ads.
 .com/Ads-
 .com/ads.
 .com/ads/$image,subdocument,object
@@ -115,6 +114,7 @@
 .com/interstitial.
 .com/iplgadshow
 .com/js.ng/
+.com/js/ads.
 .com/js/adsense
 .com/miads/
 .com/openx/
@@ -381,6 +381,7 @@
 /adchannel_
 /adchoice/*
 /adchoices_
+/adcircle.
 /adclick.
 /adclick/*
 /adclix.
@@ -431,6 +432,7 @@
 /adFrameTop.
 /adFrequencyCapping.
 /adfshow?
+/adFuncs.
 /adfunction.
 /adFunctions.
 /adgallery1.
@@ -536,7 +538,6 @@
 /ads-new.
 /ads.asp?
 /ads.aspx?
-/adcircle.
 /ads.cfm?
 /ads.dll/*
 /ads.gif?
@@ -558,7 +559,6 @@
 /ads/adstream_
 /ads/adx.
 /ads/banner/*
-/adFuncs.
 /ads/banners/*
 /ads/blank.
 /ads/box/*
@@ -2204,7 +2204,6 @@ images/ads/*
 ||lifetips.com/Sponsors/
 ||livesearch.ninemsn.com.au^$subdocument
 ||llnwd.net^*/assets/overlay/
-||usnews.com/scripts/jquery/Ad.js
 ||local.com/dart/
 ||logotv.com/content/skins/
 ||lowellsun.com/litebanner/
@@ -2314,6 +2313,7 @@ images/ads/*
 ||unicast.ign.com/assets/
 ||unicast.msn.com^
 ||usatoday.net^*/lb-agate.png
+||usnews.com/scripts/jquery/Ad.js
 ||ussearch.com/preview/banner/
 ||uvnc.com/img/housecall.
 ||video.nbcuni.com/ads/
@@ -2400,7 +2400,6 @@ images/ads/*
 ||adbureau.net^
 ||adbutler.com^
 ||adcde.com^
-||martiniadnetwork.com^
 ||adcentre.magnetisemedia.com^
 ||adcentriconline.com^
 ||adclick.lv^
@@ -2952,6 +2951,7 @@ images/ads/*
 ||mainadv.com^
 ||market-ace.com^
 ||marketbanker.com^
+||martiniadnetwork.com^
 ||mastertraffic.cn^
 ||maxserving.com^
 ||mb01.com/
@@ -3430,7 +3430,6 @@ images/ads/*
 @@||gotoassist.com/images/ad/
 @@||huffpost.com/images/ads/partners.png
 @@||iframe.ivillage.com/iframe_render?
-@@||offerpalads.com^*/opmbanner.js$domain=farmville.com
 @@||images.nickjr.com/ads/promo/
 @@||images.spreadfirefox.com/*x$domain=spreadfirefox.com,image
 @@||img.mediaplex.com^*_AFL_bettingPage_$domain=afl.com.au
@@ -3461,6 +3460,7 @@ images/ads/*
 @@||nbc.com/collarity/
 @@||nextmedia.com/admedia/$object_subrequest
 @@||oascentral.thechronicleherald.ca/RealMedia/ads/adstream_mjx.ads$script
+@@||offerpalads.com^*/opmbanner.js$domain=farmville.com
 @@||omgili.com/ads.search?
 @@||omgubuntu.co.uk^*/banner.js
 @@||overclock3d.net/js/advert.js
@@ -5197,11 +5197,11 @@ imagewaste.com##table[style="text-align: left; width: 153px; height: 240px;"]
 indowebster.com###tr_iklanbaris2
 ineedfile.com##.dwn_link_adv
 isohunt.com##span[style="font-size:9px;color:#B4B4B4"]
-kenborden.com##div[style="display:block; padding:10px; border: 1px  dashed #339900; background-image:url(http://img822.imageshack.us/img822/9737/65843194.png); background-repeat:no-repeat; background-color:#FFFFFF;"]
 kat.ph###promoLeechmonster
 kat.ph##.advertising
 kat.ph##.directDownloadButton
 kat.ph##.torrentEasyButton
+kenborden.com##div[style="display:block; padding:10px; border: 1px  dashed #339900; background-image:url(http://img822.imageshack.us/img822/9737/65843194.png); background-repeat:no-repeat; background-color:#FFFFFF;"]
 kino.to##div[style="display: inline; width: 970px; top: 130px; height: 450px;"]
 kino.to##img[src^="http://c.statcounter.com/"] + SPAN
 kohit.net##.banner_468
@@ -5210,6 +5210,7 @@ kohit.net##.top_banner
 latestdown.com##[style="width: 100%; margin: 0pt auto;"]
 linxdown.com##.searchblock
 linxdown.com##.srchbox
+lix.in##input[value="Download"]
 mediafire.com###catfish_div
 mininova.org###banner-toolbar
 mininova.org###getstarted
@@ -5237,7 +5238,6 @@ nyaa.eu##div[style="padding:0px;float:right;width:12%;"]
 oneclickmoviez.com###topbar
 oneclickmoviez.com##img[src^="http://hl.megashares.com/"]
 onlytorrents.com###prv
-lix.in##input[value="Download"]
 p2pnet.net###sidebar2
 p2pnet.net##[target="_blank"]
 peliculasyonkis.com###cpxslidein
@@ -6091,6 +6091,7 @@ youporn.com###producer
 ###adbrite_inline_div
 ###AdC
 ###adcenter
+###adChoices
 ###adCirc300X200
 ###adclear
 ###Adcode
@@ -6288,7 +6289,6 @@ youporn.com###producer
 ###ads_mads_r1
 ###ads_mads_r2
 ###ads_medrect
-###adChoices
 ###ads_postdownload
 ###ads_right
 ###ads_section_textlinks
@@ -6495,6 +6495,7 @@ youporn.com###producer
 ###advertBoxRight
 ###advertContainer
 ###advertise_top
+###advertiseHere
 ###advertiseheretop
 ###advertiseLink
 ###advertisement160x600
@@ -7241,6 +7242,7 @@ youporn.com###producer
 ###mi_story_assets_ad
 ###microsoft_ad
 ###mid-table-ad
+###mid_ad_title
 ###mid_mpu
 ###midbarad
 ###middle-story-ad-container
@@ -7955,7 +7957,6 @@ youporn.com###producer
 ##.ad125
 ##.ad160
 ##.ad160x600
-###advertiseHere
 ##.ad160x600box
 ##.ad160x600GrayBorder
 ##.Ad160x600left
@@ -8650,7 +8651,6 @@ youporn.com###producer
 ##.advertiseText
 ##.AdvertiseWithUs
 ##.advertising-local-links
-###mid_ad_title
 ##.advertising_block
 ##.advertisingTable
 ##.Advertisment
@@ -10113,6 +10113,7 @@ about.com###adL
 about.com###bb34
 about.com##.gB
 absoluteradio.co.uk###banner
+accesshollywood.com##.sponsorships
 accessplace.com###sitematches
 accuweather.com###content_box_300body_sponsoredoffers
 accuweather.com###googleContainer
@@ -10175,6 +10176,7 @@ amazon.com##[title="Ad"]
 amazon.com##div[id$="_adcontent"]
 americanidol.com###medrec
 ampercent.com##.titlebelow
+amygrindhouse.com##.widget_text
 anandtech.com##.pricing
 ancestry.com.au##.left-2
 androidandme.com##.featureside
@@ -10298,11 +10300,10 @@ bastropenterprise.com##.headerTop
 bastropenterprise.com##.iabMedRectContainer
 batman-on-film.com###ca
 bbc.co.uk###bbccom_mpu
+bbc.co.uk###bbccom_sponsor_section
 bbc.co.uk###bbccom_storyprintsponsorship
 bbc.co.uk##.bbccom_companion
-bbc.co.uk###bbccom_sponsor_section
 bbccanada.com###gradientbox
-bhg.com###hpoffers
 bediddle.com###tads
 beginlinux.com##.bannergroup
 behance.net###FMGABadge
@@ -10316,6 +10317,7 @@ bestbuy.com###dart-con
 betanews.com##.whitepapers
 bhg.com###banner300x250
 bhg.com###bannerwrapper
+bhg.com###hpoffers
 bhg.com###topcover
 bhg.com##.searchSponsors
 bigpond.com###header_banner
@@ -10671,6 +10673,7 @@ digitaltrends.com###banner
 dilbert.com##.HPG_Ad_B
 dilbert.com##.MVN_AdBlockerCopy
 dilbert.com##.STR_AdBlock
+dir.yahoo.com###ydireast
 discovermagazine.com###cachee
 discovermagazine.com###sub-portlet
 discovermagazine.com##HR[size="1"]
@@ -10873,10 +10876,9 @@ facebook.com###home_sponsor_nile
 facebook.com##.adv
 facebook.com##.ego_spo
 facebook.com##.fbEmu
+facebook.com##.fbEmuEgoUnit.ego_unit
 facebook.com##.muffin.group
 facebook.com##.UIWashFrame_SidebarAds
-facebook.com##.fbEmuEgoUnit.ego_unit
-farmville.com##div[style="height:80px;"]
 family.ca##.banner
 familydoctor.org##[style="font-size:10px;color:#666666;text-decoration:none;font-family:Arial;font-weight:normal;"]
 familydoctor.org##[style="width: 320px; float: right; margin: auto 2px 10px 15px; text-align: center;  \00000a\000009\000009\000009border: 2px solid #a7bf8c; padding: 3px 7px 12px 7px"]
@@ -10886,6 +10888,7 @@ fark.com###rightSideRightMenubar
 farmtrader.co.nz##.cBanner
 farmtrader.co.nz##.sBanner
 farmtrader.co.nz##.vBanner
+farmville.com##div[style="height:80px;"]
 fastcompany.com###block-block-23
 fastcompany.com###mod_imu
 fastseduction.com###partners
@@ -11004,6 +11007,7 @@ gadgetguy.com.au###normalbanner
 galvnews.com##[width="900"][height="115"]
 gamebanshee.com##.banner
 gamedev.net###TriplePlay
+gamefront.com##div[style="width: 300px; height: 250px;"]
 gamegrep.com###subheader
 gameknot.com##.fnote[style="text-align: center;"]
 gameplanet.co.nz##.bAdv
@@ -11259,6 +11263,7 @@ imdb.com###site_stripe_final
 imdb.com###tn15adrhs
 imdb.com###top_rhs_1
 imdb.com###top_rhs_wrapper
+imgburn.com##font[face="Arial"][size="1"]
 imgftw.net##.DisplayBoxBottom
 impulsegamer.com##table[height="200"][width="350"]
 inbox.com###r2
@@ -11372,7 +11377,6 @@ itworld.com###more_resources
 itworld.com###partner_strip
 itworld.com##.module
 iwatchstuff.com##.skyscraper
-accesshollywood.com##.sponsorships
 iwin.com###advertisement
 ixbtlabs.com##.aseadn
 ixquick.com##.reltext
@@ -11685,7 +11689,6 @@ merriam-webster.com##.creative-300_TOP-container
 metacafe.com###MedRect
 metacafe.com###MedRect2
 metalhammer.co.uk###mpu
-amygrindhouse.com##.widget_text
 metro.co.uk###Banner
 metro.co.uk###page-hd
 metro.co.uk##.bellyband
@@ -11698,7 +11701,6 @@ metronews.ca###pullquote_adu
 metronews.ca##div[style=" width:300px; height:250px; float:right;"]
 mg.co.za##.articlecontinues
 mg.co.za##table[style="padding-right:5px;"]
-gamefront.com##div[style="width: 300px; height: 250px;"]
 mg.co.za##td[style="padding-top:5px; width: 200px"]
 microsoft.com##.cdAdTitle
 military.com##.dart_tag
@@ -11709,7 +11711,6 @@ miniclip.com##.block_300x250
 minti.com##div[style="position: relative; float: left; margin-top: 10px; margin-right: 10px; height: 250px; width: 300px;"]
 minti.com##div[style="width: 728px; height: 90px; background-color: transparent;"]
 mmorpg.com###colFive
-imgburn.com##font[face="Arial"][size="1"]
 mmosite.com##.banner
 mnn.com###adv
 mnn.com##.blue-bottom
@@ -12058,7 +12059,6 @@ pcmag.com###special_offers_trio
 pcmag.com##.content-links
 pcmag.com##.htmlModule
 pcmag.com##.lbwidget
-dir.yahoo.com###ydireast
 pcmag.com##.partners
 pcmag.com##.special-offers
 pcmag.com##.sponsor-head
@@ -13028,7 +13028,6 @@ winrumors.com###buttons-125
 winrumors.com##div[style="width:300px;height:250px;background:#c0c8ce;"]
 winsupersite.com###dnn_LeftPane
 winsupersite.com###splinkholder
-zynga.com###cafe_snapi_zbar
 wired.co.uk##.banner-top
 wired.co.uk##.banner1
 wired.co.uk##.promotions
@@ -13236,6 +13235,7 @@ zone.msn.com##.SuperBannerTVMain
 zone.msn.com##.VerticalBannerTV_tag
 zug.com###header_rotate
 zuula.com###secondary
+zynga.com###cafe_snapi_zbar
 zynga.com##.footerPromo
 !     
 !---------- Hiding Rules With Exceptions ----------
@@ -13298,7 +13298,6 @@ zynga.com##.footerPromo
 ~insidefights.com##.container_row_ad
 ~interscope.com##.ad-unit
 ~investopedia.com###footer_ads
-~modernmedicine.com###bannerad
 ~itavisen.no##.ad468
 ~jobs.wa.gov.au,~pricewatch.com###adContainer
 ~kidzworld.com##.header_advert
@@ -13317,6 +13316,7 @@ zynga.com##.footerPromo
 ~mediabistro.com###adLeader
 ~megaallday.com###google_ads_frame1_anchor
 ~mercurynews.com###adPosition0
+~modernmedicine.com###bannerad
 ~morningstar.se###top_ad
 ~motorcyclistonline.com,~4wheeloffroad.com,~fourwheeler.com,~jpmagazine.com##.adleft
 ~mozdev.org##.adblock
