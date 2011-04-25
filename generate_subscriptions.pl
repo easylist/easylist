@@ -226,7 +226,7 @@ sub convertToTPL
     else
     {
       #Remove irrelevant options
-      $line =~ s/(?<=(\$|,))third-party//;
+      $line =~ s/(?<=(\$|,))(|~)third-party//;
       $line =~ s/(?<=(\$|,))~object_subrequest//;
       $line =~ s/(?<=\$)\,//g;
       $line =~ s/\$$//;
@@ -244,9 +244,17 @@ sub convertToTPL
       #Translate whitelists, removing all options
       if ($line =~ m/^@@\|\|.*?(\^|\/)/)
       {
-        $line =~ s/@@\|\|/\+d /;
-        $line =~ s/\$.*?$//;
-        $line = &translateDomains($line);
+        #Do not include whitelists only for a specified number of domains
+        if ($line =~ m/((\$|,)domain=(?!~)/;)
+        {
+          $line = "# " . $original;
+        }
+        else
+        {
+          $line =~ s/@@\|\|/\+d /;
+          $line =~ s/\$.*?$//;
+          $line = &translateDomains($line);
+        }
       }
       #Comment out all other whitelists, as a domain must be specified for whitelists in Internet Explorer
       elsif ($line =~ m/^@@/)
