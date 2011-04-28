@@ -25,7 +25,7 @@ def combineSubscriptions(sourceDir, targetDir):
   global acceptedExtensions, ignore, verbatim
 
   if not os.path.exists(targetDir):
-    os.mkdir(targetDir, 0644)
+    os.makedirs(targetDir, 0755)
 
   known = {}
   for file in os.listdir(sourceDir):
@@ -92,7 +92,7 @@ def processSubscriptionFile(sourceDir, targetDir, file):
     header = lines[0]
     del lines[0]
   if not re.search(r'\[Adblock(?:\s*Plus\s*([\d\.]+)?)?\]', header, re.I):
-    raise Exception('%s is not a valid Adblock Plus subscription file.' % filePath)
+    raise Exception('This is not a valid Adblock Plus subscription file.')
 
   lines = resolveIncludes(filePath, lines)
   lines = filter(lambda l: l != '' and not re.search(r'!\s*checksum[\s\-:]+([\w\+\/=]+)', l, re.I), lines)
@@ -165,7 +165,7 @@ def writeTPL(filePath, lines):
           interval = int(interval / 24)
         result.append(': Expires=%i' % interval)
       else:
-        result.append(re.sub(r'!', '#', line))
+        result.append(re.sub(r'!', '#', re.sub(r'--!$', '--#', line))) 
     elif line.find('#') >= 0:
       # Element hiding rules are not supported in MSIE, drop them
       pass
@@ -197,7 +197,7 @@ def writeTPL(filePath, lines):
           elif option.startswith('domain=~') and isException:
             # Ignore domain negation of whitelists
             pass
-          elif option != 'object-subrequest' or 'donottrack' and not option.startswith('domain=') and isException:
+          elif option != 'object-subrequest' and option != 'donottrack' and not option.startswith('domain=') and isException:
             # Ignore most options for exceptions to attempt to avoid false positives
             pass
           else:
