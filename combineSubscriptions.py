@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # coding: utf-8
 
 # The contents of this file are subject to the Mozilla Public License
@@ -5,7 +6,7 @@
 # compliance with the License. You may obtain a copy of the License at
 # http://www.mozilla.org/MPL/
 
-import sys, os, re, subprocess, urllib, time, traceback, codecs, hashlib, base64
+import sys, os, re, subprocess, urllib2, time, traceback, codecs, hashlib, base64
 
 acceptedExtensions = {
   '.txt': True,
@@ -70,7 +71,7 @@ def conditionalWrite(filePath, data):
     handle.write(data)
     handle.close()
     try:
-      subprocess.Popen(['7za', 'a', '-tgzip', '-mx=9', '-mpass=15', filePath + '.gz', filePath]).communicate()
+      subprocess.Popen(['7za', 'a', '-tgzip', '-mx=9', '-bd', '-mpass=15', filePath + '.gz', filePath], stdout=subprocess.PIPE).communicate()
     except:
       print >>sys.stderr, 'Failed to compress file %s. Please ensure that p7zip is installed on the system.' % filePath
 
@@ -116,14 +117,14 @@ def resolveIncludes(filePath, lines, level=0):
       if re.match(r'^https?://', file):
         result.append('! *** Fetched from: %s ***' % file)
 
-        request = urllib.urlopen(file)
+        request = urllib2.urlopen(file, None, 30)
         charset = 'utf-8'
         contentType = request.headers.get('content-type', '')
         if contentType.find('charset=') >= 0:
           charset = contentType.split('charset=', 1)[1]
         newLines = unicode(request.read(), charset).split('\n')
         newLines = map(lambda l: re.sub(r'[\r\n]', '', l), newLines)
-        newLines = filter(lambda l: not re.search(r'^\s*!.*?\bExpires\s*(?::|after)\s*(\d+)\s*(h)?', l), newLines)
+        newLines = filter(lambda l: not re.search(r'^\s*!.*?\bExpires\s*(?::|after)\s*(\d+)\s*(h)?', l, re.M | re.I), newLines)
       else:
         result.append('! *** %s ***' % file)
 
@@ -182,8 +183,9 @@ def writeTPL(filePath, lines):
       if match:
         # This rule has options, check whether any of them are important
         line = match.group(1)
-        for option in match.group(2).lower().split(','):
-          if option == '' or option == 'third-party' or option == '~third-party' or option == '~object_subrequest':
+        for option in match.group(2).replace('_', '-').lower().split(','):
+          if (option == '' or option == 'third-party' or option == '~third-party' or
+              option == 'match-case' or option == '~match-case' or option == '~object-subrequest'):
             # We can ignore these options
             pass
           elif option == 'script':
@@ -191,7 +193,7 @@ def writeTPL(filePath, lines):
           elif option.startswith('domain=~') and isException:
             # Ignore it if exceptions aren't supposed to apply on particular domains
             pass
-          elif option != 'object_subrequest' and not option.startswith('domain=') and isException:
+          elif option != 'object-subrequest' and not option.startswith('domain=') and isException:
             # Ignore most options for exception, better to have too generic exceptions
             pass
           else:
