@@ -15,6 +15,7 @@ ignore = {
   'Apache.txt': True,
   'CC-BY-SA.txt': True,
   'GPL.txt': True,
+  'MPL.txt': True,
 }
 verbatim = {
   'COPYING': True,
@@ -24,7 +25,7 @@ def combineSubscriptions(sourceDir, targetDir):
   global acceptedExtensions, ignore, verbatim
 
   if not os.path.exists(targetDir):
-    os.makedirs(targetDir, 0644)
+    os.mkdir(targetDir, 0644)
 
   known = {}
   for file in os.listdir(sourceDir):
@@ -91,7 +92,7 @@ def processSubscriptionFile(sourceDir, targetDir, file):
     header = lines[0]
     del lines[0]
   if not re.search(r'\[Adblock(?:\s*Plus\s*([\d\.]+)?)?\]', header, re.I):
-    raise Exception('Not a valid Adblock Plus subscription file')
+    raise Exception('%s is not a valid Adblock Plus subscription file.' % filePath)
 
   lines = resolveIncludes(filePath, lines)
   lines = filter(lambda l: l != '' and not re.search(r'!\s*checksum[\s\-:]+([\w\+\/=]+)', l, re.I), lines)
@@ -106,7 +107,7 @@ def processSubscriptionFile(sourceDir, targetDir, file):
 
 def resolveIncludes(filePath, lines, level=0):
   if level > 5:
-    raise Exception('Too many nested includes, probably a circular reference somewhere.')
+    raise Exception('There are too many nested includes, which is probably the result of a circular reference somewhere.')
 
   result = []
   for line in lines:
@@ -117,7 +118,7 @@ def resolveIncludes(filePath, lines, level=0):
       if re.match(r'^https?://', file):
         result.append('! *** Fetched from: %s ***' % file)
 
-        request = urllib2.urlopen(file, None, 30)
+        request = urllib2.urlopen(file, None, 2)
         charset = 'utf-8'
         contentType = request.headers.get('content-type', '')
         if contentType.find('charset=') >= 0:
@@ -164,7 +165,7 @@ def writeTPL(filePath, lines):
           interval = int(interval / 24)
         result.append(': Expires=%i' % interval)
       else:
-        result.append(re.sub(r'^!', '#', line))
+        result.append(re.sub(r'!', '#', line))
     elif line.find('#') >= 0:
       # Element hiding rules are not supported in MSIE, drop them
       pass
@@ -184,17 +185,20 @@ def writeTPL(filePath, lines):
         # This rule has options, check whether any of them are important
         line = match.group(1)
         for option in match.group(2).replace('_', '-').lower().split(','):
-          if (option == '' or option == 'third-party' or option == '~third-party' or
-              option == 'match-case' or option == '~match-case' or option == '~object-subrequest'):
-            # We can ignore these options
+          if (option == '' or option == 'third-party' or option == '~third-party' or option == 'match-case' or option == '~match-case'):
+            # Ignore third party, blank and match-case options
             pass
           elif option == 'script':
+			# Mark filters specifying a script
             requiresScript = True
-          elif option.startswith('domain=~') and isException:
-            # Ignore it if exceptions aren't supposed to apply on particular domains
+          elif option == '~object-subrequest' and not isException or option == 'object-subrequest' and isException:
+            # Some object subrequest options are irrelevant and may be ignored
             pass
-          elif option != 'object-subrequest' and not option.startswith('domain=') and isException:
-            # Ignore most options for exception, better to have too generic exceptions
+          elif option.startswith('domain=~') and isException:
+            # Ignore domain negation of whitelists
+            pass
+          elif option != 'object-subrequest' or 'donottrack' and not option.startswith('domain=') and isException:
+            # Ignore most options for exceptions to attempt to avoid false positives
             pass
           else:
             hasUnsupportedOptions = True
@@ -225,7 +229,7 @@ def writeTPL(filePath, lines):
           line = re.sub(r'\s+/$', '', line)
           result.append(line)
         elif isException:
-          # Exception rules without domain are unsupported
+          # Exception rules without domains are unsupported
           result.append('# ' + origLine)
         else:
           result.append('- ' + line)
