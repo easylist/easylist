@@ -191,13 +191,13 @@ def writeTPL(filePath, lines):
           elif option == 'script':
 			# Mark filters specifying a script
             requiresScript = True
-          elif option == '~object-subrequest' and not isException or option == 'object-subrequest' and isException:
+          elif option == '~object_subrequest' and not isException or option == 'object_subrequest' and isException:
             # Some object subrequest options are irrelevant and may be ignored
             pass
           elif option.startswith('domain=~') and isException:
             # Ignore domain negation of whitelists
             pass
-          elif option != 'object-subrequest' and option != 'donottrack' and not option.startswith('domain=') and isException:
+          elif option != 'object_subrequest' and option != 'donottrack' and not option.startswith('domain=') and isException:
             # Ignore most options for exceptions to attempt to avoid false positives
             pass
           else:
