@@ -188,7 +188,7 @@ def writeTPL(filePath, lines):
         options = match.group(2).replace('_', '-').lower().split(',')
 
         # A number of options are not supported in MSIE but can be safely ignored, remove them
-        options = filter(lambda o: not o in ('', 'third-party', '~third-party', 'match-case', '~match-case', '~object-subrequest', '~donottrack'), options)
+        options = filter(lambda o: not o in ('', 'third-party', '~third-party', 'match-case', '~match-case', '~object-subrequest', '~other', '~donottrack'), options)
 
         # Also ignore domain negation of whitelists
         if isException:
@@ -197,22 +197,35 @@ def writeTPL(filePath, lines):
         if 'donottrack' in options:
           # Rules with donottrack option should always be removed
           hasUnsupportedOptions = True
-        elif 'object-subrequest' in options and len(options) == 1:
-          # The rule applies only to object subrequests, it is not supported in MSIE
+          
+        unsupportedOptions = 0
+        
+        if 'object-subrequest' in options:
+          # The rule applies to object subrequests, which may not be filtered by TPLs
+          unsupportedOptions += 1
+        if 'elemhide' in options:
+          # The rule prevents the hiding of elements, which is not possible with TPLs
+          unsupportedOptions += 1
+          
+        if unsupportedOptions >= len(options):
+          # The rule only applies to unsupported options
           hasUnsupportedOptions = True
-        elif 'script' in options and len(options) == 1:
-          # The rule applies only to scripts, we can deal with that - somewhat
-          requiresScript = True
-        elif len(options) > 0:
-          # The rule has further options that we don't support. For exception
-          # rules we still ignore that if the rule isn't restricted to a single
-          # domain, this should hopefully prevent some false positives.
-          if isException:
-            hasUnsupportedOptions = any([o.startswith('domain=') for o in options])
+        else:
+          # The rule has other significant options that need to be evaluated
+          if 'script' in options and (len(options) - unsupportedOptions) == 1:
+            # Mark rules that only apply to scripts for approximate conversion
+            requiresScript = True
           else:
-            hasUnsupportedOptions = True
+            # The rule has further options that aren't available in TPLs.
+            # Unless an exception rule is specific to a domain, all remaining
+            # options are ignored to avoid potential false positives.
+            if isException:
+              hasUnsupportedOptions = any([o.startswith('domain=') for o in options])
+            else:
+              hasUnsupportedOptions = True
 
       if hasUnsupportedOptions:
+        # Do not include filters with unsupported options
         result.append('# ' + origLine)
       else:
         line = line.replace('^', '/') # Assume that separator placeholders mean slashes
@@ -229,6 +242,8 @@ def writeTPL(filePath, lines):
           line = re.sub(r'^\|', '', line)
         # Remove anchors at the rule end
         line = re.sub(r'\|$', '', line)
+        # Remove unnecessary asterisks at the ends of lines
+        line = re.sub(r'\*$', '', line)
         # Emulate $script by appending *.js to the rule
         if requiresScript:
           line += '*.js'
