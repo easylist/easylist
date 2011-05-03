@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: kHSEvORnWcaU/lRaqhtyag
+! Checksum: CABypCSWajYnsLU4Glxucw
 ! Fanboy's Annoyance list Addon 
-! Updated: 4 May 2011
+! Updated: 3 May 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -31,7 +31,6 @@
 /facebook-icon-
 /facebook-icon_
 /facebook_24.
-/icon_facebook_
 /facebook_64px_
 /feed-16x16.
 /feed_icon_
@@ -66,6 +65,7 @@
 /icon-twitter-
 /icon/share/*
 /icon_delicious.
+/icon_facebook_
 /icon_linkedin_
 /icon_reddit.
 /icon_sprite.
@@ -167,6 +167,8 @@ _social_icons.
 ||api.search.live.net^$third-party,domain=~bing.com
 ||assets.tumblr.com^$subdocument
 ||bing.com/bootstrap.js?$third-party
+||bloggergreetbox.googlecode.com^$third-party
+||bumpin.com^$third-party
 ||buttons.googlesyndication.com^$third-party
 ||buzz-stats.com^$third-party
 ||c.liveintent.com^$third-party,subdocument
@@ -177,8 +179,6 @@ _social_icons.
 ||digg.com^$third-party
 ||digsby.com^$third-party
 ||fark.com/js/$third-party
-||bumpin.com^$third-party
-||bloggergreetbox.googlecode.com^$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||feeds.delicious.com^$third-party
 ||health.harvard.edu^*/fireclick.js
@@ -188,7 +188,6 @@ _social_icons.
 ||images.slashdot.org^$third-party
 ||img.fark.net/pub/$third-party
 ||imgzzz.com/styles/buttons_
-||raaga.com/social/
 ||invite.linescale.com^
 ||jisbar.com^
 ||jollytime-socialmedia.com^$third-party
@@ -205,6 +204,7 @@ _social_icons.
 ||nytimes.com^*/upnext.
 ||parse.ly^$third-party
 ||platform.linkedin.com^$third-party
+||raaga.com/social/
 ||rapid8.com/images/*.cur
 ||reddit.com/static/$third-party
 ||sharethis.com^$third-party
@@ -525,9 +525,9 @@ _btn_facebook.
 /twitter.png|$domain=~twitter.com|~lastpass.com
 /twitter1.png|$domain=~twitter.com
 /twitter_16.
-/twitter_64x
 /twitter_32.
 /twitter_64.
+/twitter_64x
 /twitter_add.
 /twitter_badge.
 /twitter_bubble_
@@ -812,7 +812,6 @@ _stumble_btn.
 ##.addthis_button
 ##.addthis_button_buzz
 ##.addthis_button_digg
-##.cb_ads
 ##.addthis_button_expanded
 ##.addthis_button_facebook
 ##.addthis_button_twitter
@@ -844,6 +843,7 @@ _stumble_btn.
 ##.btn_furl
 ##.btn_technorati
 ##.button-share
+##.cb_ads
 ##.cnn-social-icons
 ##.cnnShareRow
 ##.comment_share_link
@@ -1373,6 +1373,7 @@ foreignpolicy.com###share-more
 forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
+foxnews.com###twitter-api
 foxnews.com##.share
 freedocumentaries.org##.socialBox
 freemake.com###subscribe
@@ -1502,6 +1503,8 @@ itthing.com##.getsocial
 ivillage.com###follow-iv
 jalopnik.com##.welcome_form
 jamendo.com##.socialright
+javaworld.com###jw-sidecar
+javaworld.com###newsletter
 jezebel.com##.welcome_form
 jkwebtalks.com###feednote
 jkwebtalks.com##.toprss
@@ -1607,7 +1610,6 @@ mozilla.com###connect
 mozilla.com###connect-facebook
 mozilla.com###connect-twitter
 mozilla.org##.share
-prospect.org###mc_embed_signup
 mpora.com###footer-nag
 msn.com###hltToolbar
 msn.com###newslettersignup
@@ -1681,6 +1683,7 @@ nola.com##.mobile_lrg
 nola.com##.rss_lrg
 nola.com##.share
 nola.com##[href="http://www.nola.com/connect"]
+northjersey.com###slidebox
 novirusthanks.org##.rss
 novirusthanks.org##.share
 novirusthanks.org##.twitter
@@ -1726,7 +1729,6 @@ pcworld.com###slideshowSocial
 pcworld.com###smbRightSubscribe
 pcworld.com###subscribeMWForm
 pcworld.com##.delicious
-softonic.com###toolbar_promotion
 pcworld.com##.fb-login
 pcworld.com##.syndication
 pcworld.in##.digg
@@ -1764,8 +1766,10 @@ presidiacreative.com##.socials
 pressandjournal.co.uk###preamble
 produktywnie.pl###olussierfsp_likebox-3
 propublica.org##.simple-follow-module
+prospect.org###mc_embed_signup
 psdeluxe.com###hide
 pspad.com##[title="rss"]
+raaga.com##DIV[style="padding-left:10px;padding-bottom:3px;"]
 radbox.me##.social
 ranker.com###followRanker
 ranker.com###mainlist_social_stuff
@@ -1777,14 +1781,11 @@ rdmag.com###dialog
 rdmag.com###highlighted_text_ad\ 
 rdmag.com###mask
 rdmag.com###socialmedia
-raaga.com##DIV[style="padding-left:10px;padding-bottom:3px;"]
 readwriteweb.com###Subscribe
 readwriteweb.com###subsribe_right
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
-javaworld.com###newsletter
-javaworld.com###jw-sidecar
 realclearpolitics.com###pending_subscriptions
 realitypod.com###ss_sidebar
 realitypod.com##.fan_box
@@ -1827,6 +1828,7 @@ smashingmagazine.com##.soc-icons-bar
 smashingmagazine.com##.twitter
 smithsonianmag.com###relatedTabBody_large_only
 snaptu.com##[title="Facebook"]
+softonic.com###toolbar_promotion
 songza.com##.share_list
 sophos.com##.share-rail
 sophos.com##.sharing-links
@@ -1963,7 +1965,6 @@ tineye.com##.posterous
 tineye.com##.twitter
 tinyhacker.com###subscribediv
 tntmagazine.com##.largeBookmarks
-foxnews.com###twitter-api
 todayshow.com##.chrome_footer
 tomshw.it##.box_newsletter
 tonic.com###bottom_bar
@@ -1983,6 +1984,8 @@ tv.com##.connect_prompt_box
 tvsquad.com###tout-followUs
 tvsquad.com##.addthis
 typomaps.net##.social
+ubergizmo.com###facebook_social_300
+ubergizmo.com##DIV[style="width:640px; height:152px;"]
 ugo.com###fb_login
 ugo.com###fb_userbox
 ugo.com###liveintent_app_iframe
@@ -2018,7 +2021,6 @@ usnews.com##.tools
 usnews.com##.tools.
 vaildaily.com##.aggregatorlinksbottom
 vaildaily.com##.aggregatorlinkstop
-northjersey.com###slidebox
 villagevoice.com##.readersrail
 vinayaprabha.com##[alt="feed-image"]
 vippix.com##.bookmarks
@@ -2061,8 +2063,6 @@ windowsvalley.com##.social
 wireupdate.com###icons
 womenwithmustaches.com###twitter
 wordweb.info##[alt="RSS Feeds"]
-ubergizmo.com###facebook_social_300
-ubergizmo.com##DIV[style="width:640px; height:152px;"]
 wsj.com###aFbLikeBottom
 wsj.com##.fbRecWidget
 wsj.com##.share

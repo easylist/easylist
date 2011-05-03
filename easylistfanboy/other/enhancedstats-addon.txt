@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: +O92Lm06frRMv71S15skPA
+! Checksum: PtC3qloGOqy+A5avBj5cSA
 ! Fanboy Enhanced Tracking Blocking (Omniture,Webtrends,Coremetrics,Google-Analytics,ChannelIntelligence tracking)
-! Updated: 1 May 2011
+! Updated: 3 May 2011
 ! This list expires after 7 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -10,10 +10,7 @@
 -coremetrics-
 -omniture.js
 -webtrends-$domain=~rentals.com
-_omnitureVarsComm.
-_omnireport.
 -webtrends_
-_hbx_proxy.
 .omniture_
 .s_code.js
 .s_code_
@@ -22,14 +19,11 @@ _hbx_proxy.
 /catalyst.js
 /cbc_sitecatalyst.js
 /cllc.tracking.js
-/cmtaggingservices.
-/coremetrics-
 /cmdatagutils.
 /cmdatatagutils.$domain=~qvc.com|~rewardsnetwork.com
 /cmEluminate.
-/eluminate.$domain=~qvc.com|~rewardsnetwork.com|~victoriassecret.com
-/eluminate?
-/eluminate_
+/cmtaggingservices.
+/coremetrics-
 /coremetrics.$domain=~westelm.com|~potterybarn.com|~potterybarnkids.com
 /coremetrics/*$domain=~staples.com|~barnesandnoble.com|~victoriassecret.com|~internet-taxprep.com|~interflora.co.uk
 /CoreMetricsSupportLib/*
@@ -41,6 +35,9 @@ _hbx_proxy.
 /dcs_tag2.js
 /dcs_tag_
 /dcstag_
+/eluminate.$domain=~qvc.com|~rewardsnetwork.com|~victoriassecret.com
+/eluminate?
+/eluminate_
 /foxomniture.swf
 /gannettomniture.swf
 /global_tracking.js
@@ -115,13 +112,13 @@ _hbx_proxy.
 /s_code_$domain=~pepperidgefarm.com|~autodesk.com|~restaurant.com
 /s_codefullsol.js
 /s_codeFULLTTO.
+/s_config_
 /s_h_code.
 /s_i_code.
 /s_local_customization.
 /s_nd_code.js
 /s_one_code.
 /s_tan_code.
-/s_config_
 /s_wpn_code.js
 /s_wrapper.js
 /sc_code_
@@ -179,9 +176,12 @@ _hbx_proxy.
 /wx-metrics.js
 _CoreMetrics/
 _hbx_ad_refresh
+_hbx_proxy.
 _hightraffic_code.js
+_omnireport.
 _omniture.
 _omniture_*.js
+_omnitureVarsComm.
 _s_code.$domain=~apartments.com|~rentalhomesplus.com
 _s_code_
 _scode.js
@@ -199,12 +199,11 @@ _wtbaseV2.
 !     
 ! ---------- 1st party blocking rules ----------
 !     
+||bjs.com^*_landing.js||burberry.com^*/webtrendsMC.js
 ||lendingclub.com^*/home_mbox_
-||burberry.com^*/webtrendsMC.js
 ||libertymutual.com^*/lmcomleg_a.$script
 ||newsoftheworld.co.uk^*/s_codeFULLNOTW.js
 ||onlineshoes.com^*/s_ols_code.
 ||rei.com/javascript/analytics.js
 ||schwab.com^*filename=hbx.js
 ||usnews.com^*/Analytics.js
-||bjs.com^*_landing.js

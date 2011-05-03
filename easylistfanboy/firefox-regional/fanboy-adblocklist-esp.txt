@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: ZRSRPAnSLIv4eO60BpGIoQ
+! Checksum: oizM2/FO6JlyX3lQV8S4Yg
 ! Fanboy's Spanish/Portuguese Adblock list 
-! Updated: 2 May 2011
+! Updated: 3 May 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -114,6 +114,8 @@ http://adw.
 ||cb.cl/NewCBCL/*Banner
 ||celldorado.com/ads/
 ||chacas.com.ar/comercial/
+||clb1.com/abp/
+||clb1.com/banners/
 ||clicrbs.com.br/buscape/
 ||criticadigital.com/files/banners
 ||cruzeirodosul.inf.br/ads/
@@ -155,9 +157,6 @@ http://adw.
 ||imagens.climatempo.com.br/site/imagens/bg_
 ||imageshack.us^*/160x320.
 ||impulsonegocios.com/resources/original/banners/
-||linksole.com/link.js
-||clb1.com/abp/
-||clb1.com/banners/
 ||jmonline.com.br/novo/banner_
 ||jmonline.com.br/uploads/banners/
 ||jornalagora.com.br/uploads/banners/
@@ -167,8 +166,8 @@ http://adw.
 ||laregion.es/imagenes/banners/
 ||lavanguardia.es/flash/
 ||laverdad.com/images/banner/
+||linksole.com/link.js
 ||lojademulher.com.br/images/
-||miapuesta.com^*/newsletter/eblast/
 ||lusa.pt/banners/$object
 ||madridpress.com/anuncios/
 ||magisnet.com/anuncios/
@@ -176,6 +175,7 @@ http://adw.
 ||mariosegura.com/images/banners/
 ||mariosegura.com/multimedia/especiales/
 ||maxima.xl.pt/pubs/credial/
+||miapuesta.com^*/newsletter/eblast/
 ||miau.pt/platform/banners
 ||ncs.es/banner/
 ||net-empregos.com/images/Banners/
@@ -256,7 +256,6 @@ http://adw.
 !
 ! ---------- 3rd party blocking rules ----------
 !
-||partypoker.com^$other
 ||187.6.64.32/especialdenatal/home/produto_$third-party
 ||200.72.40.46^$third-party
 ||ad.batanga.com^$third-party
@@ -273,7 +272,6 @@ http://adw.
 ||affilired.com^$third-party
 ||afilio.com.br^$third-party
 ||antevenio.com^$third-party
-||urlcash.net^$third-party
 ||astrolabio.net^$third-party
 ||blogspot.com^*/MEGATVNOPC-$third-party
 ||box.zap.com.br^$third-party
@@ -302,6 +300,7 @@ http://adw.
 ||netfilia.com^$third-party
 ||nspmotion.com^$third-party
 ||offers.motime.com.br^$third-party
+||partypoker.com^$other
 ||planetup.com^$third-party
 ||pmssrv.mercadolibre.com.mx^$third-party
 ||pmssrv.mercadolivre.com.br^$third-party
@@ -311,6 +310,7 @@ http://adw.
 ||templates.buscape.com^$third-party
 ||tiozao.net^$third-party
 ||tumejorjuego.com/tmjlayer2.jpg
+||urlcash.net^$third-party
 !
 ! ---------- Spanish/Portuguese Whitelist Rules ----------
 !
@@ -429,6 +429,7 @@ uol.com.br###ad-120x600-other
 ##.esp_publicidad
 ##.googleAdFoot
 ##.hpPublicidadTop
+##.lv24hpublicidad
 ##.publicidad-bg
 ##.publicidad-ct
 ##.publicidad_especial
@@ -440,7 +441,6 @@ uol.com.br###ad-120x600-other
 ##.publicidadright
 ##.publicidadSuperior
 ##.publicidadtxt
-##.lv24hpublicidad
 ##.video_ads_overdiv
 !
 ! ---------- Firefox 3.x Specific Hiding Rules ----------
@@ -553,6 +553,7 @@ cincodias.com##.publi
 cinetube.es##.adsb
 cinetube.es##.adst
 cinetube.es##.large
+clb1.com###bannerbox
 clickpb.com.br###bannersDireita
 clickpb.com.br##.banner
 clicrbs.com.br###box-clicshop
@@ -649,6 +650,8 @@ filmeshd.tv###frutuante
 finalsports.com.br##[style="height: 105px; width: 1000px; background-color: #04290A; padding-top: 10px;"]
 folha.com.br###skyBanner
 folha.uol.com.br###todaOferta
+futbolme.com###pop_upHI
+futbolme.com##img[width="468"]
 futnet.com.br###banner_dhtml
 futnet.com.br##.area_anuncios_topo
 futnet.com.br##.area_banner_125x125
@@ -855,22 +858,14 @@ peru.com##.marcopublicidad320250
 peru.com##div[style="width:728px; height:90px; background-color:#000000; float:left"]
 pheu.net###div_video_ads
 piratatuga.ws###topbar2
+piratatugas.net###topbar2
+piratatugas.net##a[href^="http://www.metodoroleta.com/"]
 planetadeagostini.es##.promocion
 plantasyhogar.com##.table_port_7
 plus.es###banner_top
 portalangop.co.ao##table[style="padding-left:8px;padding-top:8px;padding-bottom:0px;"]
 procurandovagas.org##.box_gr
 programasfull.com###theLayer
-clb1.com###bannerbox
-tuga-filmes.com###topbar2
-tuga-filmes.com##a[href^="http://www.pokerstars.com/"]
-tuga-filmes.com##a[href^="http://www.metodoroleta.com/"]
-tuga-filmes.com##a[href="http://www.brigtek.com"]
-tuga-filmes.com##img[style="width: 125px; height: 125px;"]
-piratatugas.net###topbar2
-piratatugas.net##a[href^="http://www.metodoroleta.com/"]
-futbolme.com###pop_upHI
-futbolme.com##img[width="468"]
 publico.es###robapaginasCont
 publico.es##.Noticias_300x250
 publico.pt##.pub
@@ -964,6 +959,11 @@ trivela.com##[style="width: 748px; margin-bottom: 8px;"]
 tudorondonia.com###banner1
 tuenti.com##.footerRibbon
 tuenti.com##.sponsoredEvents
+tuga-filmes.com###topbar2
+tuga-filmes.com##a[href="http://www.brigtek.com"]
+tuga-filmes.com##a[href^="http://www.metodoroleta.com/"]
+tuga-filmes.com##a[href^="http://www.pokerstars.com/"]
+tuga-filmes.com##img[style="width: 125px; height: 125px;"]
 tumejortv.com###Layer1
 tvazteca.com##.boxBanner
 tvazteca.com##.main950
