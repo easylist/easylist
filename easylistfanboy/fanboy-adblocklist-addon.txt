@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 2DKS+VCuPxzUX/J51vuEAg
+! Checksum: kdcFuT5tH5pTpXYB/3DMeg
 ! Fanboy's Annoyance list Addon 
 ! Updated: 6 May 2011
 ! This list expires after 4 days
@@ -135,8 +135,8 @@
 /socialIcons-
 /socialIcons.
 /socialicons/*
-/SocialSprite.
 /socialmedia/*$image,script
+/SocialSprite.
 /socila-media-
 /sociofluid/*$~stylesheet,~script
 /spriteIco.png
@@ -174,6 +174,7 @@ _social_icons.
 ||buzz-stats.com^$third-party
 ||c.liveintent.com^$third-party,subdocument
 ||care2.com/petitions/$third-party,domain=~thepetitionsite.com
+||cnet.com/rest/v1.0/tweets/
 ||complex.com/toolbar/
 ||d.yimg.com/ds/badge2.js
 ||dailykostv.com/digg.
@@ -190,7 +191,6 @@ _social_icons.
 ||img.fark.net/pub/$third-party
 ||imgzzz.com/styles/buttons_
 ||invite.linescale.com^
-||cnet.com/rest/v1.0/tweets/
 ||jisbar.com^
 ||jollytime-socialmedia.com^$third-party
 ||l.yimg.com^*/img/badge
@@ -233,8 +233,8 @@ _social_icons.
 ||votes.buzz.yahoo.com^$third-party
 ||widgets.backtype.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
-||zaparena.com^$third-party
 ||youtube.com/v/*autoplay$domain=boards.4chan.org,third-party
+||zaparena.com^$third-party
 !     
 !---------- Facebook Widgets ----------
 !     
@@ -686,8 +686,6 @@ _stumble_btn.
 ###dd_ajax_float
 ###fdbk_tab
 ###flwUsMod
-###social_bookmark
-###share_link
 ###flyoutWidget
 ###follow-us-block
 ###follow_box
@@ -726,6 +724,7 @@ _stumble_btn.
 ###share_buttons
 ###share_div_float
 ###share_icons
+###share_link
 ###share_links
 ###share_this
 ###shareBadges
@@ -761,6 +760,7 @@ _stumble_btn.
 ###social-toolbox
 ###social-votes
 ###social-widget
+###social_bookmark
 ###SOCIAL_BOOKMARK_ICONS_338
 ###social_bookmarking_module
 ###social_bookmarks
@@ -916,6 +916,7 @@ _stumble_btn.
 ##.share-page
 ##.share-reddit
 ##.share-this-page
+##.share-toolbar-container
 ##.share-tools
 ##.share-widgets
 ##.share_bar
@@ -938,7 +939,6 @@ _stumble_btn.
 ##.shareit
 ##.shareLike
 ##.sharelink
-##.share-toolbar-container
 ##.shareListBox
 ##.sharepost
 ##.sharepostwide
@@ -1225,9 +1225,12 @@ care2.com###tellAFriendBottom_dropdown
 care2.com###tellAFriendBottom_share
 caring.com###awesomer-bar
 cars-sky.info##.feed-links
+cbsnews.com###cbsfacebookConnect
 cbsnews.com###cbsSMPB
 cbsnews.com##.about
+cbsnews.com##.connectModule
 cbsnews.com##.share
+cbsnews.com##.tabbedPromoUnit
 celebuzz.com###actions
 celebuzz.com###bing
 celebuzz.com###nav-bar
@@ -1324,6 +1327,7 @@ discovermagazine.com###Table_01[width="300"]
 discovermagazine.com##.articleToolsPhoto
 discovermagazine.com##p[style="clear:both;padding-top:5px"]
 discovery.com###new-soc-med-buttons
+discovery.com###pre-share-tools-container
 discovery.com###utility
 discovery.com##.slide-out-div
 do-while.com##.latestshowsocial
@@ -1333,6 +1337,8 @@ downloadsquad.com##.feed
 dumblittleman.com###advertise-now
 dumblittleman.com###promotion
 dumblittleman.com###subscribe
+eater.com###follow-us
+eater.com###sharing-palette
 economist.com###oo_feedback_float
 ecosalon.com##.bottom_links
 ecosalon.com##.handle
@@ -1567,7 +1573,6 @@ matadornetwork.com##.subscription_options
 maxim.com###headersearchsocial
 maxim.com##.footercol5
 maxim.com##.g_subs_Container
-discovery.com###pre-share-tools-container
 maxim.com##.ShareLinksContainer
 maxim.com##.subscribeform
 maximumpc.com###subscribe
@@ -1586,8 +1591,6 @@ mediafire.com###dl_share_icons
 mediafire.com###mf_like_box
 mediafire.com###mf_like_heading
 mediafire.com##DIV[style="margin-top:15px;"]
-eater.com###sharing-palette
-eater.com###follow-us
 mediamatters.org###modalBox
 mediamatters.org##.jqmOverlay
 memebase.com###sendtofriend
@@ -1597,8 +1600,6 @@ menshealth.com##.article-share
 menshealth.com##.subscribe_link
 mercurynews.com###followus
 mercurynews.com###mn_TopListings_Redesign
-cbsnews.com##.connectModule
-cbsnews.com##.tabbedPromoUnit
 metacafe.com###BmkDigg
 metacafe.com###BmkFB
 metacafe.com###BmkStumble
@@ -1826,7 +1827,6 @@ shareable.net###service-links-twitter-1
 shareable.net###service-links-twitter-2
 shoutcast.com##.followus
 silicon.com##.magic-box
-cbsnews.com###cbsfacebookConnect
 similarweb.com##.share
 similarweb.com##.share
 slashdot.org##.synd
@@ -1892,6 +1892,7 @@ teenchatdecoder.com##.subscribe
 tekgoblin.com###upprev_box
 tekw.org##.subscribe_content
 tether.com##.social
+tgdaily.com###block-social
 theadvocates.org##.closingSocial
 theadvocates.org##.newsletterLink
 theatlantic.com###followNav
@@ -2046,7 +2047,6 @@ wackymania.com##.subscribe
 wakoopa.com###subscribe
 walyou.com###counter
 washingtonpost.com###bc-badges
-tgdaily.com###block-social
 washingtonpost.com###content_column_table
 washingtonpost.com###saveshare-bottom
 washingtonpost.com##.rate-share
