@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: smHXFRf/xCEUhqoYmUfmOg
+! Checksum: X3ikmwszV/zygZ/xvfbBig
 ! Fanboy's Turkish-addon Adblock list 
 ! Updated: 7 May 2011
 ! This list expires after 5 days
@@ -28,11 +28,11 @@
 /Banners/Sponsored
 /ebulten/ebulten_
 /gazetereklam/*
+/inc_kare_banner_
 /incereklam.
 /istatistik.
 /leftreklam1.
 /leftreklam2.
-/inc_kare_banner_
 /MainPage/NDBanners/*
 /megacash.
 /MNetOrfad.
@@ -41,8 +41,8 @@
 /reklam1.swf
 /reklam_
 /reklamalanlariCSHTR.
-/reklamlar.
 /reklamci/*
+/reklamlar.
 /Reklamlar/*
 /reklamm.js
 /reklamver.
@@ -87,7 +87,6 @@ _reklam_125_
 ||hurriyet.com.tr/ReadCountOfNews.aspx?
 ||hurriyet.de/_banners/
 ||inndir.com/ads/
-||sinesalon.com/splash.
 ||internethaber.com/banner/
 ||kanald.com.tr/KD_Flash/900
 ||kanalvip.com.tr/kadikon
@@ -114,6 +113,7 @@ _reklam_125_
 ||sabah.com.tr/banner/
 ||sabah.com.tr/geo
 ||sanliurfa.com/frame/
+||sinesalon.com/splash.
 ||sporx.com/i/sx_
 ||superpoligon.com/tracker
 ||takvim.com.tr/banner/
@@ -210,8 +210,8 @@ _reklam_125_
 !---------- Whitelist  ----------
 !
 @@||ad.e-kolay.net/crossdomain.xml$domain=medyafaresi.com|shiftdelete.net
-@@||ad.e-kolay.net/xmlad.a2?target$domain=medyafaresi.com
 @@||ad.e-kolay.net/vast.a2?target$domain=shiftdelete.net
+@@||ad.e-kolay.net/xmlad.a2?target$domain=medyafaresi.com
 @@||zapkolik.com/reklam.xml
 @@||zapkolik.com/zaplayer.swf?
 !
@@ -236,11 +236,12 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###ads300x250
 ###adsZone_1
 ###googleAdwordsModule
+###kayan_reklamsag
+###kayan_reklamsol
 ###leftreklam1div
 ###leftreklam2div
 ###rectangleBannerJack
 ###reklam2
-###kayan_reklamsag
 ###reklam300x250
 ###reklam300x600
 ###reklamdetay
@@ -248,7 +249,6 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###reklamlar
 ###rightreklam2div
 ###sagreklam
-###kayan_reklamsol
 ###sagReklamAlani
 ###sliderAdHolder
 ###tatiladvertorial
@@ -282,6 +282,10 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 365gunspor.com##table[width="620"][bgcolor="white"]
 aksam.com.tr###has-banner300x250
 aksam.com.tr##.banner_300
+arabam.com###pageskin_right
+arabam.com##.tk-banner
+arabam.com##.topBanner
+batangemi.com###fancybox-overlay
 beyazgazete.com##[style="float:left;margin-top:15px;width:322px;height:309px;background:url(/yimages/reklam_300x250.png)"]
 beyazgazete.com##[style="float:left;width:250px;margin-top:5px;height:250px;border:1px solid #000000"]
 beyazgazete.com##[style="float:right;height:380px;width:120px;"]
@@ -315,6 +319,8 @@ dunyagazetesi.com.tr###rectangleBanner
 dunyagazetesi.com.tr###rectHome
 dunyagazetesi.com.tr###rectHome2
 ekoayrinti.com##.banner1
+ekolay.net##.ContentMagazinMainRight_Banner
+ekolay.net##.HD_ContentRightBanner
 ekolay.net##.textlink_cont
 ekolhoca.com##td[height="106"]
 etutodasi.biz##span[style="margin: 10px; float: left; width: 301px; height: 251px;"]
@@ -329,6 +335,7 @@ gecce.com##.yataybanner
 gecce.com##.yataybanner2
 google.com.tr###tads
 grafi2000.com###Layer4
+haber.ekolay.net##div[style="height: 200px; overflow: hidden; width: 300px; margin-bottom: 5px"]
 haber.turk.net###top_banner
 haber50.com##.banner_logo_top
 haber50.com##.right_banner
@@ -342,17 +349,10 @@ hurriyet.com.tr###banner
 hurriyet.com.tr###haber_detay
 hurriyet.com.tr###staticbuttons
 hurriyet.com.tr##.arama_kutu_bg
-kanald.com.tr##.adn
-ekolay.net##.HD_ContentRightBanner
-ekolay.net##.ContentMagazinMainRight_Banner
-haber.ekolay.net##div[style="height: 200px; overflow: hidden; width: 300px; margin-bottom: 5px"]
-kanald.com.tr##.adv
-batangemi.com###fancybox-overlay
-arabam.com###pageskin_right
-arabam.com##.tk-banner
-arabam.com##.topBanner
-kpsscafe.com###ihtiyac
 indirmedenfilmizleseyret.com###kayan_reklam
+kanald.com.tr##.adn
+kanald.com.tr##.adv
+kpsscafe.com###ihtiyac
 kraloyun.com###app_advertising_leaderboard_ph
 kraloyun.com###app_advertising_rectangle
 kraloyun.com###app_advertising_skyscraper_right
@@ -363,7 +363,6 @@ kraloyun.com##.instructionAdvHeadline
 lg.web.tr##TABLE[width="100%"][height="60"]
 medya73.com##.banner
 medyafaresi.com##.banner
-sinesalon.com###tamindir_topbar
 medyafaresi.com##.banneralan
 milliyet.com.tr##.adnet
 milliyet.com.tr##.banner
@@ -371,7 +370,6 @@ mynet.com##.banner300x250
 mynet.com##.myBanner250
 nethaber.com##.ad-bg
 ntvmsnbc.com##.eshopStory
-pornoizlenir.net###PopWin
 odatv.com###pageskin
 odatv.com##.banner468v2
 pckoloji.com##.icerik-tablo-forum-icerik-sag-reklam
@@ -382,6 +380,7 @@ pckoloji.com##.sm3
 pckoloji.com##.topbanner
 pckoloji.com##.tube
 pckoloji.com##.ust-banner_468x60
+pornoizlenir.net###PopWin
 posta.com.tr##.bannerContent
 referansgazetesi.com###Referans_bolum_728x90
 sabah.com.tr##.vimjo
@@ -393,6 +392,7 @@ sanliurfa.com##[style="height: 183px; width: 265px; float: left;"]
 scroll.com.tr##.reklam
 shiftdelete.net###bannerbuyuk
 shiftdelete.net##.bannerkucuk
+sinesalon.com###tamindir_topbar
 sporx.com##[style="width:815px; height:90px; margin-left:45px; margin-top:6px;"]
 stargazete.com##.rkl
 stargazete.com##.rkl-gnl
