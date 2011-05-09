@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: tDxTORMMxewocmIS4U2z9Q
+! Checksum: Z5qT0B719Ee9sFa06SP7SQ
 ! Fanboy's Polish-addon Adblock list 
-! Updated: 8 May 2011
+! Updated: 9 May 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -32,6 +32,8 @@
 ! ---------- 1st party blocking rules ----------
 !
 ||filmweb.pl/ad/
+||firmamtm.pl/flash/baner.swf
+||firmamtm.pl^*/baner.jpg
 ||forum.optymalizacja.com/a*.gif|
 ||forum.optymalizacja.com/images/mimow
 ||forum.optymalizacja.com^*.swf|
@@ -41,8 +43,6 @@
 ||gry-online.pl/grafiki/teaser/
 ||jaslo4u.pl/pliki_swf/
 ||jaslo4u.pl/x/plakaty
-||firmamtm.pl/flash/baner.swf
-||firmamtm.pl^*/baner.jpg
 ||komputronik.pl^*/banner
 ||literia.pl/widget/
 ||lotto.pl/images/kumulacje/
@@ -168,7 +168,6 @@ sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text
 !
 !---------- Polish Site Specific Element Hiding Rules ----------
 !
-~housemd.info.pl###ads
 benchmark.pl##.shipping_container
 blox.pl###dropin
 chatolandia.pl##div[style="margin-left:auto; margin-right:auto; font-size:14px;font-weight:bold; color: #ffffff; background-color: #000000; width: 300px"]
@@ -195,8 +194,6 @@ idg.pl###sky
 idg.pl###sky2
 idg.pl##.skyText
 imbd.pl###banner
-pudelek.pl##.right-top-rectangle
-pudelek.pl###cu_popup
 insomnia.pl###showimage
 insomnia.pl##.a7[style="width:160px;"]
 insomnia.pl##[style="margin:0;padding:0;width: 950px; height: 100px;background: white; border: solid 2px red"]
@@ -226,6 +223,8 @@ proline.pl###bannerside
 proline.pl###layer_top
 prv.pl##.boxOsobie
 psmania.pl##.sidebar-block-bot
+pudelek.pl###cu_popup
+pudelek.pl##.right-top-rectangle
 sadistic.pl##[style^="border-right: 0px solid; border-width: 0px; border-style: solid; border-color: -moz-use-text-color; left: 520px; position: absolute; width: 300px; z-index: 3000;"]
 sadistic.pl##DIV[style="color: white; cursor:hand; font-weight: bold; background-color: black"]
 sadistic.pl##table.bodyline[height="200"]
@@ -244,3 +243,4 @@ webhosting.pl###baner1
 wrzuc.to###fancybox-overlay
 wrzuc.to###fancybox-wrap
 wrzuc.to###novem_billboard
+~housemd.info.pl###ads
