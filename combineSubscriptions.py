@@ -194,35 +194,25 @@ def writeTPL(filePath, lines):
         if isException:
           options = filter(lambda o: not o.startswith('domain=~'), options)
 
-        if 'donottrack' in options:
-          # Rules with donottrack option should always be removed
+        unsupportedOptions = filter(lambda o: o in ('object-subrequest', 'other', 'elemhide'), options)
+        if unsupportedOptions and len(unsupportedOptions) == len(options):
+          # The rule only applies to types that are not supported in MSIE
           hasUnsupportedOptions = True
-          
-        unsupportedOptions = 0
-        
-        if 'object-subrequest' in options:
-          # The rule applies to object subrequests, which may not be filtered by TPLs
-          unsupportedOptions += 1
-        if 'elemhide' in options:
-          # The rule prevents the hiding of elements, which is not possible with TPLs
-          unsupportedOptions += 1
-          
-        if unsupportedOptions >= len(options):
-          # The rule only applies to unsupported options
+        elif 'donottrack' in options:
+          # Do-Not-Track rules have to be removed even if $donottrack is combined with other options
           hasUnsupportedOptions = True
-        else:
-          # The rule has other significant options that need to be evaluated
-          if 'script' in options and (len(options) - unsupportedOptions) == 1:
-            # Mark rules that only apply to scripts for approximate conversion
-            requiresScript = True
+        elif 'script' in options and len(options) == len(unsupportedOptions) + 1:
+          # Mark rules that only apply to scripts for approximate conversion
+          requiresScript = True
+        elif len(options) > 0:
+          # The rule has further options that aren't available in TPLs. For
+          # exception rules that aren't specific to a domain we ignore all
+          # remaining options to avoid potential false positives. Other rules
+          # simply aren't included in the TPL file.
+          if isException:
+            hasUnsupportedOptions = any([o.startswith('domain=') for o in options])
           else:
-            # The rule has further options that aren't available in TPLs.
-            # Unless an exception rule is specific to a domain, all remaining
-            # options are ignored to avoid potential false positives.
-            if isException:
-              hasUnsupportedOptions = any([o.startswith('domain=') for o in options])
-            else:
-              hasUnsupportedOptions = True
+            hasUnsupportedOptions = True
 
       if hasUnsupportedOptions:
         # Do not include filters with unsupported options
