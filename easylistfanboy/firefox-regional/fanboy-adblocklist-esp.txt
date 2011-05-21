@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: Md+TnaagsmQUzi8Ko1Wx4g
+! Checksum: nGQoWOD4RFGUG5B1+qstHQ
 ! Fanboy's Spanish/Portuguese Adblock list 
-! Updated: 16 May 2011
+! Updated: 22 May 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -169,7 +169,6 @@ http://adw.
 ||linksole.com/link.js
 ||lojademulher.com.br/images/
 ||lusa.pt/banners/$object
-||pub.lacuerda.net^
 ||madridpress.com/anuncios/
 ||magisnet.com/anuncios/
 ||manerasdevivir.com/pics/publi/
@@ -191,6 +190,7 @@ http://adw.
 ||politraductor.com/images/12
 ||pontoperdido.com/js/webmessenger.js
 ||portalms.com.br/banner/
+||pub.lacuerda.net^
 ||punch-fansub.com.br^*-banner.swf
 ||rankia.com/promo
 ||record.xl.pt/pub/
@@ -225,6 +225,7 @@ http://adw.
 ||ad.correioweb.com.br^
 ||ad.terra.com.mx^
 ||ad.terra.com^
+||adfueling.com^
 ||ads.celldorado.com^
 ||ads.gamavirtual.com^
 ||ads.gazetaesportiva.net^
@@ -233,7 +234,6 @@ http://adw.
 ||ads.olx.com^
 ||ads.periodistadigital.com^
 ||ads.regiedepub.com^
-||adfueling.com^
 ||ads.sapo.pt^
 ||ads.terra.es^
 ||ads.tvtuga.com^
@@ -360,6 +360,7 @@ http://adw.
 ||hit.copesa.cl^$third-party
 ||hits.e.cl^
 ||impreso.elfinanciero.com.mx^
+||internetcine.com^*/stats?
 ||intrastats.com^$third-party
 ||marca.com^*/pixel.gif?n=
 ||micodigo.com^$third-party
@@ -372,7 +373,6 @@ http://adw.
 ||stats.folha.com.br^
 ||stats.milenio.com^
 ||terra.com.mx/js/metrics_
-||internetcine.com^*/stats?
 ||ticotimes.net/viewcount/
 ||track.es.sitebro.net^
 ||tracking.fsjmp.com^$third-party
@@ -381,13 +381,13 @@ http://adw.
 !
 !---------- Easylist-specific ----------
 !
+@@||ads.e-planning.net^$domain=ole.com.ar,object-subrequest
 elnuevodiario.com.ni##.ads728_90
 ondacero.es##.adContainer1
 uol.com.br###ad-120x600-other
 ||abc.es/imag/480x030
 ||adclient-uol.lp.uol.com.br^
 ||juegosypelis.ws/banners/
-@@||ads.e-planning.net^$domain=ole.com.ar,object-subrequest
 !
 ! ---------- Generic Spanish/Portuguese Element Hiding Rules ----------
 !
@@ -424,6 +424,7 @@ uol.com.br###ad-120x600-other
 ###publicidades_top
 ###publicidadhead
 ###publicidadheadernota
+###publicidadsky
 ###PublicidadSuperior
 ###publicidadTop
 ###publiEspecial
@@ -439,9 +440,8 @@ uol.com.br###ad-120x600-other
 ##.lv24hpublicidad
 ##.publicidad-bg
 ##.publicidad-ct
-###publicidadsky
-##.publicidad_especial
 ##.publicidad_big
+##.publicidad_especial
 ##.publicidad_top
 ##.publicidade
 ##.publicidade_superbanner
@@ -616,6 +616,8 @@ elcorreo.com###gebruiker_shadow
 elcorreo.com###mensenwat
 elcorreogallego.es##.cntBannVertArriba
 eleconomista.es###banner1
+elespectador.com##.box_pauta_top
+elespectador.com##.publicidad
 elespectador.com##.relpauta
 elespectador.com##.suscripciones
 elimparcial.es###cabecera_banners
@@ -644,8 +646,6 @@ emprendedores.es###superHeader
 entremujeres.com##.emj-it-adv
 entremujeres.com##.emj-it-advright
 es.msn.com###ie8
-elespectador.com##.publicidad
-elespectador.com##.box_pauta_top
 es.msn.com###marketingbanne
 esradio.fm###adw_1
 esradio.fm##.anuncios
@@ -681,7 +681,6 @@ futnet.com.br##.banner_super
 futnet.com.br##.divbloco
 gaceta.es##.notFondo
 gamerstek.com##.content-width.content-container.pub-table
-internetcine.com##img[width="350"][height="225"]
 gazetaesportiva.net###ge-gadget-shop
 gazetaesportiva.net##.ge-gadget.cornerHeaderLG[style="width:210px;"]
 gazetaesportiva.net##[style="float:left; padding-right:0px; width:130px; display:inline;"]
@@ -753,6 +752,7 @@ intereconomia.com##.adv-top
 internautas.org##.cuad01
 internautas.org##.headpub
 internautas.org##.pub60
+internetcine.com##img[width="350"][height="225"]
 interviu.es###publireportaje
 interviu.es##.robapaginas
 iol.pt###halfbanner

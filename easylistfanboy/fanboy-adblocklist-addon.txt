@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: SH4JrNrKHpz4QLMdwTsFAQ
+! Checksum: UT7OWUthy/8tcOiRhPpCjw
 ! Fanboy's Annoyance list Addon 
-! Updated: 21 May 2011
+! Updated: 22 May 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -46,6 +46,7 @@
 /ico-share-
 /ico-social-
 /ico_delicious.
+/ico_facebook_
 /ico_share_
 /ico_youtube.
 /icon-delicious-
@@ -66,7 +67,6 @@
 /icon/share/*
 /icon_delicious.
 /icon_facebook_
-/ico_facebook_
 /icon_linkedin_
 /icon_reddit.
 /icon_sprite.
@@ -152,13 +152,13 @@
 /twitter-icon-
 /twitter-icon_
 /twitter_24.
+/upnext.js
 /upprev_js.
 /vimeo_32.
 /w/index.php?title=*:bannercontroller
 /yahoobuzz.
 /youtube-32x32.
 /youtube-icon.
-/upnext.js
 /youtube_follow.
 /youtube_icon.
 _delicious_btn.
@@ -189,6 +189,7 @@ _social_icons.
 ||fark.com/js/$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||feeds.delicious.com^$third-party
+||giveawayoftheday.com/wp-content/plugins/GAOTD_fbapp_pleaseinstall/
 ||health.harvard.edu^*/fireclick.js
 ||hellobar.com^$third-party
 ||huffingtonpost.com/include/mod_times.php?
@@ -197,9 +198,9 @@ _social_icons.
 ||images.slashdot.org^$third-party
 ||img.fark.net/pub/$third-party
 ||imgzzz.com/styles/buttons_
-||giveawayoftheday.com/wp-content/plugins/GAOTD_fbapp_pleaseinstall/
 ||invite.linescale.com^
 ||jisbar.com^
+||jobthread.com^$third-party
 ||jollytime-socialmedia.com^$third-party
 ||l.yimg.com^*/img/badge
 ||letsgetsocialnow.com^
@@ -228,7 +229,6 @@ _social_icons.
 ||space.com/images/site/social/
 ||space.com/social.html
 ||static.addtoany.com^$third-party
-||jobthread.com^$third-party
 ||static.delicious.com^$third-party
 ||stumble-upon.com^$third-party,domain=~stumbleupon.com
 ||stumbleupon.com/badge/$third-party
@@ -1198,6 +1198,7 @@ belfasttelegraph.co.uk###bm_div
 bhaskar.com##.bgTB
 billshrink.com##div[style="line-height:150%; border: thin dotted black; margin: 10px 0px; padding: 15px; background-color: rgb(255, 250, 217); font-size: 1.2em;"]
 bing.com###sw_pb
+bing.com##.sn_container
 bink.nu##.shareblock
 bizjournals.com##.persistentFooter
 bleacherreport.com###article-newsletter-engage-content
@@ -1410,7 +1411,6 @@ freesfx.co.uk###popout
 fundoomails.com##.social
 funflashgames.com##.sharing_nw
 funnyordie.com###funbar_wrapper
-mobileattack.com###follow
 funnyordie.com##.share_group
 fyiliving.com###newsletter
 fyiliving.com###text-9
@@ -1598,8 +1598,6 @@ maxim.com##.subscribeform
 maximumpc.com###subscribe
 maximumpc.com##maximumpc-connect
 mayoclinic.com###link_share
-tenthamendmentcenter.com###cboxOverlay
-tenthamendmentcenter.com###colorbox
 mayoclinic.com###newsletter
 mayoclinic.com###rss
 mayoclinic.com###social
@@ -1636,6 +1634,7 @@ mint.com##.article-share
 minti.com###slideupBanner
 mnn.com###block-portals-mothernature-delivered
 mnn.com##.join-earth-shares-widget
+mobileattack.com###follow
 motherjones.com###pre-page
 motortrend.com###ITEM_GENERIC_BLURB_370
 moviefone.com###fb-tabs
@@ -1751,8 +1750,6 @@ parents.com###adtrafficright
 parents.com###slideshowPromo
 parents.com###stayConnected
 pcauthority.com.au##.facebook-twitter
-securityweek.com###simplemodal-overlay
-securityweek.com###simplemodal-container
 pcmag.com##.about-ads
 pcmag.com##.control-side
 pcmag.com##.share
@@ -1822,9 +1819,6 @@ rdmag.com###mask
 rdmag.com###socialmedia
 readwriteweb.com###Subscribe
 readwriteweb.com###subsribe_right
-thecarconnection.com###right-window
-thecarconnection.com###likebox-frame
-thecarconnection.com###fb-recommend-frame
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
@@ -1847,10 +1841,11 @@ scientificamerican.com###followList
 scientificamerican.com##.signupForm
 scientificamerican.com##.subscriptionForm
 scribd.com##.fb_like_container
+securityweek.com###simplemodal-container
+securityweek.com###simplemodal-overlay
 seekingalpha.com###floating_bar
 sfweekly.com##.besocial
 shareable.net###service-links-digg-1
-bing.com##.sn_container
 shareable.net###service-links-digg-2
 shareable.net###service-links-facebook-1
 shareable.net###service-links-facebook-2
@@ -1924,6 +1919,8 @@ techworld.com###newsletterSidebar
 teenchatdecoder.com##.subscribe
 tekgoblin.com###upprev_box
 tekw.org##.subscribe_content
+tenthamendmentcenter.com###cboxOverlay
+tenthamendmentcenter.com###colorbox
 tether.com##.social
 tgdaily.com###block-social
 theadvocates.org##.closingSocial
@@ -1941,6 +1938,9 @@ thebrowser.com###connect
 thebrowser.com###mailchimp
 thebrowser.com###rss_form
 thebrowser.com##.simpleshare
+thecarconnection.com###fb-recommend-frame
+thecarconnection.com###likebox-frame
+thecarconnection.com###right-window
 thechive.com###makeViral
 thechive.com###postSubscribe
 thechive.com###sdac_around_the_web_footer_chive_widget-3

@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: ISGnDVA9rmq98He7SNg8zQ
+! Checksum: Pfe45Khh0ICwr6ctVkkK1A
 ! Fanboy's Japanese-addon Adblock list 
-! Updated: 15 May 2011
+! Updated: 22 May 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -135,14 +135,13 @@ _ds_adtag_
 ||ad.net-tool.jp^
 ||ad.nicovideo.jp^
 ||ad.response.jp^
-||adnetworks.co.jp^
 ||ad.searchina.ne.jp^
 ||ad.watch.impress.co.jp^
 ||ad.wiredvision.jp^
 ||adbana.adultcity.tv^
+||adnetworks.co.jp^
 ||ads.metropolis.co.jp^
 ||ads.mixi.jp^
-||dynamic.rakuten.co.jp^
 ||adstatic.ameba.jp^
 ||an.mainichi.jp^
 ||ax.xrea.com^
@@ -150,6 +149,7 @@ _ds_adtag_
 ||bana01.sakura.ne.jp^
 ||bizad.nikkeibp.co.jp^
 ||cf.ad-v.jp/
+||dynamic.rakuten.co.jp^
 ||getchu.com/mbanner/
 ||ias.rakuten.co.jp^
 ||im.rakuten.ov.yahoo.co.jp^
@@ -284,17 +284,18 @@ _ds_adtag_
 !
 !---------- Japanese Generic Element Hiding Rules ----------
 !
+###AD1line
+###AD2line
 ###ad_interestmatch
 ###ad_interestmatch400
 ###ad_large
 ###ad_txt
+###ADInterest
 ###ads_horizontal
 ###adsSPRBlock
 ###BottomAd
 ###d4_ad_google02
 ###TopAd
-###AD1line
-###AD2line
 ##.ad-text-blockA01
 ##.ad-text-blockB01
 ##.ad-textG01
@@ -303,7 +304,6 @@ _ds_adtag_
 ##.ad_regular2
 ##.ad_regular3
 ##.ad_thumbnail_header
-###ADInterest
 ##.adrect
 ##.adsense_box01
 ##.adsense_mainbox01
@@ -344,12 +344,11 @@ giants.jp###etc_banner
 giants.jp###event_banner
 goga.co.jp###ad-right
 goo.ne.jp##.oshiete-ad
-google.co.jp##[id^="tpa"].tas
-google.co.jp##table[style="border: 1px solid #369"]
-nikkeibp.co.jp##.header-banner
 google.co.jp###mbEnd
 google.co.jp###tads
 google.co.jp###tadsb
+google.co.jp##[id^="tpa"].tas
+google.co.jp##table[style="border: 1px solid #369"]
 hatena.ne.jp###entrylist_ad
 hatena.ne.jp###top-ad-rect
 hobby-channel.net###header_r
@@ -399,9 +398,9 @@ jp.luxist.com##.shopping
 jp.msn.com###ajax_banner
 jp.msn.com###pt
 jp.msn.com##.adIMm
+jp.msn.com##.banner
 jp.msn.com##.bigadtxt1
 jp.msn.com##.parent.chromeCustom4G
-jp.msn.com##.banner
 jp.techcrunch.com##.boxy
 jp.techcrunch.com##.overture_vertical
 jsgoal.jp###banner
@@ -454,8 +453,9 @@ nikkeibp.co.jp###jsAdTopics
 nikkeibp.co.jp###jsMagazineContents
 nikkeibp.co.jp###midrotation-magazine
 nikkeibp.co.jp##.ad_rectangle
-nikkeibp.co.jp##.rectangle
 nikkeibp.co.jp##.aside-banner
+nikkeibp.co.jp##.header-banner
+nikkeibp.co.jp##.rectangle
 nikkeibp.co.jp##.sub-banner
 page2.jp##[style="text-align:left; background-color:#FFFBFF; width:450px; height:50px; font-size:12px; color:#9aa9ac; margin:3px 0 auto 20px; float: right; padding-top:2px;"]
 response.jp##.adArticleRecommend
