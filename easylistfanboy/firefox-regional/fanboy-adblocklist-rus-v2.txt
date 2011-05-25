@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 95xhlSAaT1KmQrqgZ8mFIQ
+! Checksum: /04SqvlczLwrOq9aqZ+BrA
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 26 May 2011
 ! This list expires after 5 days
@@ -58,17 +58,17 @@
 /image.fcgi?
 /images/reklama
 /img/rekl/*
-/informer.js?
 /informer.asp
+/informer.js?
 /main.fcgi?
+/nnmcinfo_banner.
+/nnmcinfo_banner_
 /rambler.gif
 /reclama5.
 /redtram.
 /reklaam/*
 /reklama240_
 /reklama_
-/nnmcinfo_banner.
-/nnmcinfo_banner_
 /richmedia.
 /rotobanner.
 /show.ad?
@@ -107,11 +107,11 @@ http://r.e1.ru/
 ||animereactor.ru/images/partnr/
 ||auto.ru/rl/msk.
 ||awaps.yandex.ua^
-||bestreferat.ru/ads/*
 ||banki.ru/upload/advertising/
 ||bape3.org/vpostele_
 ||begun.ru^$third-party
 ||bestgamer.ru/partners/
+||bestreferat.ru/ads/*
 ||bt.od.ua/images/b/
 ||carclub.ru^*/banners/
 ||chesspro.ru/_banners/
@@ -132,7 +132,6 @@ http://r.e1.ru/
 ||echo.msk.ru/att/element-*.jpg|
 ||echo.msk.ru/att/webpage-
 ||epidemz.net/i/akduj
-||steambuy.com/banner.gif
 ||epidemz.net/i/gcdxg
 ||epidemz.net/i/qgjgk
 ||ex.ua/b/$~stylesheet
@@ -321,6 +320,7 @@ http://r.e1.ru/
 ||sr-week.ru^*/domain468x60
 ||static.fastpic.ru^*.swf
 ||static.pornolab.net/004/
+||steambuy.com/banner.gif
 ||svpressa.ru/ad/
 ||tehnodog.ru/flash/
 ||tfile.ru/kf/
@@ -427,6 +427,7 @@ http://r.e1.ru/
 ||dosug.cz/servlet/
 ||file-bit.net/images/banners/
 ||flipflapflo.biz^
+||gagenez.com^
 ||gameleads.ru^
 ||hit-sales.ru^
 ||im1-tub.com^
@@ -437,6 +438,7 @@ http://r.e1.ru/
 ||informer2.bigbord.net^
 ||kartinka.com.ua^
 ||krutilka.price.ru^
+||lacest.com^
 ||linkexchange.ru^
 ||lol.bash.org.ru^
 ||medianet.rin.ru^
@@ -447,16 +449,14 @@ http://r.e1.ru/
 ||neova.auto.ru^
 ||promo.mrm.ru^
 ||r1fclick.com^
-||lacest.com^
-||gagenez.com^
 ||reklama.mb.vesti.ru^
 ||soyt.videoefir.ru^
 ||studyguide.ru^$object
 ||sura.ru^*/banner_
-||tizerka.in^
 ||takru.com^
 ||tbn.ru^
 ||tizerda.net^
+||tizerka.in^
 ||tizermine.net^
 ||tnet.link-expert.ru^
 ||traffimage.ru^
@@ -647,6 +647,7 @@ http://ad.ir.ru^$third-party
 ||kinomir.kz^$third-party,subdocument
 ||kinopokaz.org^$third-party
 ||kleo.ru/i/5/$subdocument
+||klikaem.ru^$third-party
 ||klops.javagid.ru/img/$third-party
 ||knstats.com^$third-party
 ||komok.com^$third-party,script
@@ -680,7 +681,6 @@ http://ad.ir.ru^$third-party
 ||partner.azartplay.com^$third-party
 ||partner.dmir.ru^$third-party
 ||partner.gameboss.ru^$third-party
-||klikaem.ru^$third-party
 ||partner.grand-casino.com^$third-party
 ||partner.novostimira.com.ua^$third-party
 ||partner.sotmarket.ru^$third-party
@@ -840,6 +840,7 @@ http://ad.ir.ru^$third-party
 ||ddq.com.ua^
 ||diary.ru/counter/
 ||directrix.ru^*/counter/$third-party
+||fastgoogle.ru/microcounter/
 ||glavred.info/counter/
 ||glavred.info/stat/
 ||goto.kz/img.php*&refer=
@@ -867,7 +868,6 @@ http://ad.ir.ru^$third-party
 ||lifenews.ru/count/
 ||lstats.qip.ru^
 ||lux-bn.com.ua^$third-party
-||fastgoogle.ru/microcounter/
 ||mail.ru/0c.gif?$domain=mail.ru
 ||mail.ru/cookie-token.do?
 ||mail.ru/count/
@@ -881,6 +881,7 @@ http://ad.ir.ru^$third-party
 ||mixmarket.biz^$third-party
 ||moto.com.ua/partners/
 ||moto.com.ua/scooter_baner.
+||mycounter.com.ua^
 ||mycounter.ua^$third-party
 ||odnaknopka.ru^$third-party
 ||opensharing.org/s/avtokorea
@@ -963,7 +964,6 @@ http://ad.ir.ru^$third-party
 ||tr.sexbook.net.ru^
 ||track.seorate.ru^
 ||traforet.ru^$third-party
-||mycounter.com.ua^
 ||ucoz.com/stat/
 ||ucoz.ru/stat/
 ||udaff.com/image/10/
@@ -1152,6 +1152,10 @@ avito.ru##.ad_1000x90
 avtobazar.ua##a[href^="http://ad.adriver.ru/cgi-bin/"]
 bash.org.ru##[style="text-align: center; font-size: 10pt;"]
 bbc.co.uk###partners
+bestreferat.ru###adsplace1
+bestreferat.ru###adsplace2
+bestreferat.ru###adsplace4
+bestreferat.ru##[name="adsplace"]
 bigmir.net##.b-banner_sm
 bigmir.net##.premium_banner
 bigmir.net##.top_banner
@@ -1159,10 +1163,6 @@ binural.org##[style="border:3px outset green;font-size:16px;background-color:#fd
 blogs.mail.ru##table[style="margin-bottom: -4px;"]
 bored-space.com##div[id^="MarketGid"]
 boxnews.com.ua###bn-banner
-bestreferat.ru###adsplace1
-bestreferat.ru###adsplace4
-bestreferat.ru###adsplace2
-bestreferat.ru##[name="adsplace"]
 championat.ru##.banner-990x90-gray
 championat.ru##.txt-banner-r
 cifrovik.ru##.noprice
