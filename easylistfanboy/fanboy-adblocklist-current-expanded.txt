@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: TFb7J/mXwW6CJ+XMtSe4CA
+! Checksum: VoiN94FuIco5lEehPxvWiQ
 ! Fanboy's Adblock list
 ! Updated: 28 May 2011
 ! This list expires after 5 days
@@ -684,7 +684,6 @@
 /adsense2.
 /adsense?
 /adsense_
-/adshtml2/*
 /adsensev2.
 /adserv_launch
 /adserve.
@@ -707,6 +706,7 @@
 /adshow.
 /adshow/*
 /adshow?
+/adshtml2/*
 /adsi-j.
 /adsimages/*
 /AdsInclude.
@@ -1453,6 +1453,7 @@
 /pages/ads
 /paidads/*
 /panelAd.
+/partner_ads/*
 /partnerAds/*
 /payperpost.
 /peel.js|
@@ -1683,7 +1684,6 @@
 /swf/ad3-
 /swf/banner.swf?
 /swf/bcacudeomodule
-/partner_ads/*
 /swfbin/ad-
 /swfbin/ad3-
 /synad2.
@@ -3445,8 +3445,6 @@ images/ads/*
 @@/adframe.js$domain=macobserver.com|hackers.co.id|video2mp3.net|4fuckr.com
 @@/advertisement.$domain=tvnz.co.nz|ratebeer.com|multiup.org|teknogods.com|ballreviews.com|onlinemoviesfreee.com|mobilefish.com
 @@/advertisements.$domain=mircscripts.org|skimtube.com
-@@||bloomberg.com/rapi/ads/js_config.js
-@@||brightcove.com^*/AdvertisingModule.swf$domain=channel5.com|slate.com|guardian.co.uk|welt.de|fxnetworks.com|people.com|aetv.com|fox.com
 @@/banners.js$domain=bafta.org|24ur.com|brocraft.net|beeline.ru|megafon.ru
 @@/images/ad-$domain=apple.com
 @@/RealMedia/ads/adstream_sx.ads$domain=video.economist.com|surfline.com|seesaw.com
@@ -3530,7 +3528,9 @@ images/ads/*
 @@||biglots.com/images/ads/
 @@||bigwigmedia.com/ingamead$domain=ponged.com,object_subrequest
 @@||bikeexchange.com.au/adverts/
+@@||bloomberg.com/rapi/ads/js_config.js
 @@||bn.uol.com.br/html.ng/$object_subrequest
+@@||brightcove.com^*/AdvertisingModule.swf$domain=channel5.com|slate.com|guardian.co.uk|welt.de|fxnetworks.com|people.com|aetv.com|fox.com
 @@||brightcove.com^*bannerid$third-party
 @@||brothersoft.com/gads/$script
 @@||buyforlessok.com/Advertising/
@@ -3785,6 +3785,7 @@ images/ads/*
 -728x90_
 -728x90a_
 -729x91-
+-800x150.
 -980x60-
 -988x60.
 .120x600.
@@ -4086,7 +4087,6 @@ images/ads/*
 =300x250;
 =300x250_
 =300X300;
--800x150.
 =300x315;
 =300x61;
 =300x70,
@@ -5367,7 +5367,6 @@ bitsnoop.com##.dl_alt2
 bitsnoop.com##.dl_secure
 bitsnoop.com##span[style="color:#AAA;font-size:9px;"]
 bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
-btjunkie.org##tr[onclick^="window.location.href='/download_direct.php?"]
 bittorrent.am##input[value="Anonymous Download"]
 bittorrent.am##input[value="Download x10 faster"]
 bittorrent.am##NOINDEX
@@ -5375,6 +5374,7 @@ bittorrent.am##td[height="120"][align="center"]
 bt-chat.com##div[style="color: #FF001E; font-weight: bold; text-align: center; background-color: #fcfcfc; width:1000px; align:middle;"]
 bt-chat.com##td[rowspan="3"]
 btjunkie.org##th[style="background-color: #C7C7C7;"]
+btjunkie.org##tr[onclick^="window.location.href='/download_direct.php?"]
 btmon.com###oafa_target_4
 btmon.com###oafa_target_6
 btmon.com##a[href^="https://www.furk.net"]
@@ -9603,7 +9603,6 @@ youporngay.com,youporn.com###producer
 ##.leaderboard_banner_ad
 ##.leaderboardAd
 ##.leaderboardad
-##.vt_h1_ad
 ##.leaderboardadtop
 ##.leaderboardbottom_wrapper
 ##.left-ad
@@ -9772,6 +9771,7 @@ youporngay.com,youporn.com###producer
 ##.PencilAd
 ##.performancingads_region
 ##.pg-ad-block
+##.pgAdSection_Home_MasterSponsers
 ##.photo-ad
 ##.plainAd
 ##.player_ad
@@ -10022,7 +10022,6 @@ youporngay.com,youporn.com###producer
 ##.spon_link
 ##.sponlinkbox
 ##.spons-link
-##.pgAdSection_Home_MasterSponsers
 ##.spons-wrap
 ##.spons_link_header
 ##.sponsBox
@@ -10232,6 +10231,7 @@ youporngay.com,youporn.com###producer
 ##.videoBoxAd
 ##.view_rig_ad
 ##.vs-advert-300x250
+##.vt_h1_ad
 ##.wantads
 ##.weatherad
 ##.webad-cnt
@@ -10543,6 +10543,7 @@ achieve360points.com###foot
 addictinggames.com###game-info-ad
 addictinggames.com###potw
 addictivetips.com###top-area
+adf.ly##IFRAME#rf
 adultswim.com###ad
 adweek.com###footeraddcontent
 africam.com###lr_comp_default_300x250
@@ -10644,6 +10645,7 @@ aol.com##.spon_by
 aol.com,aol.co.uk###rA
 aolnews.com###Banner
 aolnews.com##.rght300x250
+aoltv.com##.banner
 apartmentguide.com##.centered_wide_ad
 apartmentguide.com##.double_adsense
 apartments.com##.bottom-ad-large
@@ -10723,7 +10725,6 @@ avaxsearch.com##.adver
 avforums.com##.bannerBoxBottom
 aviationweek.com###cboxOverlay
 aviationweek.com###colorbox
-adf.ly##IFRAME#rf
 b105.com##.fourSquare_outer
 b105.com##.RotatingPromo_300x80
 babble.com###ad728x90asme
@@ -10731,7 +10732,6 @@ babelfish.yahoo.com##.ovt
 babynamegenie.com##.links
 babynamegenie.com##.promo
 backstage.com###sponsorsmod
-embarrassingissues.co.uk##.gad
 backstage.com##.greyFont
 backstage.com##.whitemodbg
 backstage.com##div[style="background:#666666; height:250px; color:#fff;"]
@@ -11273,6 +11273,7 @@ ellen.warnerbros.com###bannerSlot
 elleuk.com###header_banner
 elouai.com##td[height="250"]
 elyrics.net###gad
+embarrassingissues.co.uk##.gad
 emedtv.com###leader
 emedtv.com###sky
 emedtv.com##div[style="height:170px"]
@@ -11284,6 +11285,8 @@ empireonline.com.au##[valign="middle"][height="270"]
 empireonline.com.au##[width="950"][colspan="5"]
 engadget.com###outerslice
 engadget.com##.skyscraper
+englishrussia.com##.banner_box
+englishrussia.com##.two_leep_box
 environmentalgraffiti.com###block-block-2
 environmentalgraffiti.com###block-block-5
 environmentalgraffiti.com###header-region
@@ -11568,6 +11571,7 @@ geek.com##.top
 geekinterview.com##h2[style="padding:5px;"]
 geeksugar.com###rect2
 geeky-gadgets.com###text-105335641
+geekzenith.com##span[style="border: 4px solid #CCC; width: 300px; height: 250px; display: block;"]
 geekzone.co.nz##div[style="float:left;margin-right:8px;margin-bottom:6px;height:600px;width:160px;"]
 geekzone.co.nz##div[style="float:right;margin:15px;height:280px;width:336px;"]
 geekzone.co.nz##div[style="height:600px;width:160px;"]
@@ -12189,11 +12193,7 @@ mail.yahoo.com###nwPane
 mail.yahoo.com###slot_LREC
 mail.yahoo.com###swPane
 mail.yahoo.com##.avLogo
-englishrussia.com##.banner_box
-englishrussia.com##.two_leep_box
 mailinator.com##div[style="width:700;height:120;text-align:left;"]
-ropeofsilicon.com##div[style="float:right; width:728px; margin:5px 5px 4px 0; height:90px; z-index:-1;"]
-ropeofsilicon.com##div[style="float:left; width:230px; margin:5px 0 4px 5px; height:90px;"]
 majorgeeks.com###novb
 majorgeeks.com##.author:first-child
 majorgeeks.com##[width="478"][height="70"]
@@ -12258,7 +12258,6 @@ mediaite.com###magnify_widget_rect_content
 mediaite.com###magnify_widget_rect_handle
 mediaite.com###supertop
 medicaldaily.com###topbanner
-geekzenith.com##span[style="border: 4px solid #CCC; width: 300px; height: 250px; display: block;"]
 medicinenet.com###SearchUnit
 meettheboss.tv###centerSpacingWrapper
 meettheboss.tv###DivCenterSpaceContainer
@@ -12680,7 +12679,6 @@ pastemagazine.com##.skyscraper
 pbs.org###banner
 pbs.org###corp-sponsor-sec
 pbs.org###pbsdoubleclick
-aoltv.com##.banner
 pbs.org##.newshour-support-wrap
 pcadvisor.co.uk###broadbandchoices_frm
 pcadvisor.co.uk###mastHeadTopLeft
@@ -12945,6 +12943,8 @@ robotswithfeelings.com##div[style="height: 90px; width: 728px; margin-left: auto
 rockpapershotgun.com##.marketing
 rockthebells.net##.rtb-bot-banner-row
 rom-world.com##td[width="35%"][style="border: solid #AAAAAA 1px;"]
+ropeofsilicon.com##div[style="float:left; width:230px; margin:5px 0 4px 5px; height:90px;"]
+ropeofsilicon.com##div[style="float:right; width:728px; margin:5px 5px 4px 0; height:90px; z-index:-1;"]
 rr.com##.leaderboardTop
 rte.ie###homeMPU
 rte.ie###rte-header-leaderboard
