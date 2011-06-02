@@ -132,6 +132,7 @@ def resolveIncludes(sourceName, sourceDirs, filePath, lines, timeout, level=0):
         newLines = unicode(request.read(), charset).split('\n')
         newLines = map(lambda l: re.sub(r'[\r\n]', '', l), newLines)
         newLines = filter(lambda l: not re.search(r'^\s*!.*?\bExpires\s*(?::|after)\s*(\d+)\s*(h)?', l, re.M | re.I), newLines)
+        newLines = filter(lambda l: not re.search(r'^\s*!\s*(Redirect|Homepage)\s*:', l, re.M | re.I), newLines)
       else:
         result.append('! *** %s ***' % file)
 
