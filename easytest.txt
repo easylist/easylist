@@ -10,8 +10,6 @@
 ! Test 1: Combining rules containing the string "ads" to more general ones
 !
 /ads/*
-@@||domaintools.com/composite/code.js?*_ads_
-@@||domaintools.com/composite/style.css?*_ads&
 @@||llnw.net^*/ads/*.mp4$domain=talent.itv.com
 @@||llnwd.net^*/ads/*.mp4$domain=talent.itv.com
 _ads/
@@ -19,6 +17,7 @@ _ads.
 /ads.
 /ads_$~object-subrequest
 _ads_
+@@||domaintools.com/composite/code.js?*_ads_
 /ads-
 -ads/
 -ads.
@@ -29,6 +28,7 @@ _ads?
 -ads_
 _ads-
 _ads&
+@@||domaintools.com/composite/style.css?*_ads&
 =ads&
 !
 ! Test 2: Converting ://ad[0-9]. to /ad[0-9].
@@ -43,3 +43,7 @@ _ads&
 /ad7.
 /ad8.
 /ad9.
+!
+! Test 3: Adding rules containing the string "adv"
+!
+://adv.
