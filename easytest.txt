@@ -1,13 +1,14 @@
 [Adblock Plus 1.1]
 ! Testing unsafe rules for EasyList that will break certain websites
 ! Last modified: %timestamp%
-! Expires: 1 hours (update frequency)
+! Expires: 5 days (update frequency)
 ! Homepage: http://forums.lanik.us/viewtopic.php?t=8505
 !
 ! The only legitimate reason to use this list is to provide
 ! feedback in the forum topic above - now go do that! :P
 !
-! More general rules containing the string "ads"
+! Test 1: Combining rules containing the string "ads" to more general ones
+!
 /ads/*
 _ads/
 _ads.
@@ -25,3 +26,16 @@ _ads?
 _ads-
 _ads&
 =ads&
+!
+! Test 2: Converting ://ad[0-9]. to /ad[0-9].
+!
+/ad0.
+/ad1.
+/ad2.
+/ad3.
+/ad4.
+/ad5.
+/ad6.
+/ad7.
+/ad8.
+/ad9.
