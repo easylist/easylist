@@ -10,6 +10,8 @@
 ! Test 1: Combining rules containing the string "ads" to more general ones
 !
 /ads/*
+@@||domaintools.com/composite/code.js?*_ads_
+@@||domaintools.com/composite/style.css?*_ads&
 @@||llnw.net^*/ads/*.mp4$domain=talent.itv.com
 @@||llnwd.net^*/ads/*.mp4$domain=talent.itv.com
 _ads/
