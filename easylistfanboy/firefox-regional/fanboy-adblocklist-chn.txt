@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: xfBchT+Z9mmK8VyLwRN2jg
+! Checksum: ZZeLBjoiqbxcODsOH+jizQ
 ! Fanboy's Chinese-addon Adblock list 
 ! Updated: 5 Jun 2011
 ! This list expires after 5 days
@@ -40,9 +40,9 @@
 /ad_show?id
 /adj.php?
 /adphoto.
-/ADPlay.
 /adpic.aspx?
 /adping.
+/ADPlay.
 /adpolestar/*
 /adservice/*
 /adsfile.
@@ -115,6 +115,7 @@ http://i1.hk/ad/
 ||55.la/anonymous/banner/
 ||56.com/images/tuiguang/200
 ||56img.com/images/tuiguang/
+||86zw.com/zz/$script
 ||888.ku6.com/fetch.do?
 ||99iche.com*.swf|
 ||a.cntv.cn/main/s?user=$script,subdocument
@@ -198,8 +199,6 @@ http://i1.hk/ad/
 ||newhua.com^*97060.swf
 ||newhua.com^*97070.gif
 ||newhua.com^*97070.swf
-||xidalu.com/gg/*.js
-||xidalu.com/configs/article/page*.js
 ||nextmedia.com/TvCommercial/
 ||nfdaily.cn//banner/
 ||nfdaily.cn/banner/
@@ -247,6 +246,8 @@ http://i1.hk/ad/
 ||wretch.yahoo.net/iframe.php?
 ||xgdown.com/gg/
 ||xiami.com/images/common/promotion/
+||xidalu.com/configs/article/page*.js
+||xidalu.com/gg/*.js
 ||xinhuanet.com/*banner/
 ||xinhuanet.com/ad/
 ||xinhuanet.com/edu/10flash
@@ -255,7 +256,6 @@ http://i1.hk/ad/
 ||yahoo.com.tw/res/ads/
 ||yigao.com/servlet/
 ||yodao.com/imp/
-||86zw.com/zz/$script
 ||youdao.com/imp/
 ||youxiri.com^*/advpic/
 ||zaobao.com.sg/ssi/bizp/
@@ -265,10 +265,11 @@ http://i1.hk/ad/
 !
 ! ---------- General blocking rules ----------
 !
+||1133.cc^
 ||115.238.103.86^
+||116.9.156.88^
 ||203.80.0.202^
 ||203.80.0.226^
-||116.9.156.88^
 ||211.147.20.14^
 ||219.239.88.50^
 ||5j5l.com^
@@ -286,7 +287,6 @@ http://i1.hk/ad/
 ||allyes.jrj.com^
 ||aps1.jrjimg.cn^
 ||aps2.jrjimg.cn^
-||egooad.com^
 ||aps3.jrjimg.cn^
 ||aps4.jrjimg.cn^
 ||asoft.cn^
@@ -304,6 +304,7 @@ http://i1.hk/ad/
 ||datamaster.com.cn^
 ||dotnet.chinaitlab.com^
 ||dvs.china.com^
+||egooad.com^
 ||eiv.baidu.com^
 ||emarketing.com.cn^
 ||fun.ynet.com^
@@ -314,7 +315,6 @@ http://i1.hk/ad/
 ||icast.cn^
 ||images.ktxp.com^
 ||inte.sogou.com^
-||1133.cc^
 ||itopnetworks.com^
 ||ktzhk.com^
 ||miaozhen.com^
@@ -332,7 +332,6 @@ http://i1.hk/ad/
 ||trace.qq.com^
 ||ulink.cc^
 ||unionsky.cn^
-||yiqiwin.com^
 ||utrack.hexun.com^
 ||webmasterhome.cn/aimg/a1-
 ||webmasterhome.cn/aimg/a2-
@@ -340,11 +339,14 @@ http://i1.hk/ad/
 ||wrating.com^
 ||xtrack.tomonline-inc.com^
 ||xuanyx.com^
+||yiqiwin.com^
 ||youdaylove.cn^
 !
 ! ---------- 3rd party blocking rules ----------
 !
+||17kuxun.com^$third-party
 ||37cs.com/html/$third-party
+||37see.com/p/$third-party
 ||788111.com^$third-party
 ||91adv.com^$third-party
 ||91wan.com^$third-party
@@ -358,9 +360,7 @@ http://i1.hk/ad/
 ||cpm9v.cn^$third-party
 ||dir.ejoina.com^$third-party
 ||emedia.cn^$third-party
-||17kuxun.com^$third-party
 ||gamediad.com^$third-party
-||37see.com/p/$third-party
 ||l.yimg.com^*/promo/$third-party
 ||lz.tbcdn.cn^$third-party,script
 ||mediav.com^$third-party
@@ -481,6 +481,8 @@ _stat.php?$image
 alixixi.com##[style="width: 300px; height: 250px; float: right;"]
 baidu.com##TABLE[width="30%"][align="right"]
 bayuq.com###ShowMeitu
+caihongwenxue.com##.adll
+caihongwenxue.com##.adrr
 china.com###clm01
 chinanews.com.cn##.gghzh
 chinanews.com.cn##.rightgg
@@ -512,11 +514,7 @@ lnd.com.cn##[style="width: 950px; height: 80px;"]
 mobile01.com##.fast-ad
 mobile01.com##.widget.article
 nen.com.cn##.fla
-caihongwenxue.com##.adll
-caihongwenxue.com##.adrr
 nen.com.cn##TABLE[height="312"][width="310"]
-pingpinganan.gov.cn###divAnAn
-pingpinganan.gov.cn###divPingPing
 newhua.com###lovexin12
 newhua.com##.a500
 newhua.com##[style="left: 22px; position: absolute; top: 1094px;"]
@@ -526,6 +524,8 @@ news.qq.com###News_Rectangle
 nextmedia.com###promoBox
 nextmedia.com##.dv_playlist_right_adv_1
 phpwind.net###pwSlidePlayer
+pingpinganan.gov.cn###divAnAn
+pingpinganan.gov.cn###divPingPing
 qq.com###nav
 qq.com###News_F_UpRight
 sina.com.cn###PublicRelation9
