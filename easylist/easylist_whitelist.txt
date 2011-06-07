@@ -3,6 +3,7 @@
 @@||a.ads2.msads.net^*.swf$domain=msnbc.msn.com
 @@||a.giantrealm.com/assets/vau/grplayer*.swf
 @@||ad*.liverail.com/?$object-subrequest
+@@||ad*.liverail.com/crossdomain.xml$object-subrequest
 @@||ad*.liverail.com/|$object-subrequest
 @@||ad.103092804.com/st?ad_type=$subdocument,domain=wizard.mediacoderhq.com
 @@||ad.71i.de/crossdomain.xml$object-subrequest,domain=sevenload.com
@@ -112,7 +113,8 @@
 @@||candystand.com/assets/images/ads/$image
 @@||carzone.ie/es-ie/*advert$image,script,stylesheet
 @@||cbs.com/sitecommon/includes/cacheable/combine.php?*/adfunctions.
-@@||cdn.cpmstar.com/cached/$domain=xfire.com
+@@||cdn.cpmstar.com/cached/js/$script,domain=xfire.com
+@@||cdn.cpmstar.com/cached/swf/preplay.swf$object,domain=xfire.com
 @@||cdn.springboard.gorillanation.com/storage/lightbox_code/static/companion_ads.js$domain=comingsoon.net|gamerevolution.com
 @@||cdn.travidia.com/fsi-page/$image
 @@||cdn.travidia.com/rop-ad/$image
@@ -218,7 +220,6 @@
 @@||live365.com/mini/blank300x250.html
 @@||live365.com/scripts/liveads.js
 @@||live365.com/web/components/ads/rma.html$subdocument
-@@||liverail.com/crossdomain.xml$object-subrequest
 @@||loaded.it/images/advertise/divx/playeroverlay_$image
 @@||loaded.it/images/advertise/flash/playeroverlay_$object-subrequest
 @@||lovefilm.com/ajax/widgets/advertising/$xmlhttprequest
@@ -318,10 +319,10 @@
 @@||search.excite.co.uk/minify.php?files*/css/feed/adsearch.css
 @@||serve.vdopia.com/adserver/ad*.php$object-subrequest,script,xmlhttprequest
 @@||serve.vdopia.com/crossdomain.xml$object-subrequest,domain=ndtv.com
-@@||server.cpmstar.com/adviewas*.swf?$object-subrequest,domain=~xfire.com
-@@||server.cpmstar.com/globaljs.aspx?$subdocument,domain=xfire.com
+@@||server.cpmstar.com/adviewas3.swf?contentspotid=$object-subrequest
 @@||server.cpmstar.com/view.aspx?poolid=$domain=newgrounds.com
-@@||server.cpmstar.com/view.aspx?poolid=$script,domain=xfire.com
+@@||server.cpmstar.com/view.aspx?poolid=*&json=1&$script,domain=xfire.com
+@@||server.cpmstar.com/view.aspx?poolid=*&script=1&$script,domain=xfire.com
 @@||sfx-images.mozilla.org^$image,domain=spreadfirefox.com
 @@||shackvideo.com/playlist_xml.x?
 @@||sharehoster.com/design/advertise/premium_$~third-party
@@ -382,6 +383,7 @@
 @@||vk.com/ads_rotate.php
 @@||vortex.accuweather.com/adc2004/pub/ads/js/ads-2006_vod.js
 @@||vortex.accuweather.com^*_120x60_bg.jpg
+@@||vox-static.liverail.com/crossdomain.xml$object-subrequest
 @@||vox-static.liverail.com/swf/*/admanager.swf$object-subrequest
 @@||vox-static.liverail.com/swf/*/liverailplugin*.swf$object-subrequest
 @@||vshare.tv/installeriframe.php?zoneid=$subdocument
