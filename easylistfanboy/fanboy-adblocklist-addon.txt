@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: aCF1VQG8ZROFk90g6sOJzQ
+! Checksum: Vx0hFBszY+E68hom8uAxHw
 ! Fanboy's Annoyance list Addon 
-! Updated: 12 Jun 2011
+! Updated: 13 Jun 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -176,7 +176,9 @@ _social_icons.
 ||api.flattr.com^$third-party
 ||api.search.live.net^$third-party,domain=~bing.com
 ||assets.tumblr.com^$subdocument
+||badgeville.com^$third-party
 ||bing.com/bootstrap.js?$third-party
+||blogengage.com^$third-party
 ||bloggergreetbox.googlecode.com^$third-party
 ||bumpin.com^$third-party
 ||buttons.googlesyndication.com^$third-party
@@ -187,7 +189,6 @@ _social_icons.
 ||complex.com/toolbar/
 ||d.yimg.com/ds/badge2.js
 ||dailykostv.com/digg.
-||tuaw.com^*/related-slider.js
 ||digg.com^$third-party
 ||digsby.com^$third-party
 ||fark.com/js/$third-party
@@ -234,8 +235,6 @@ _social_icons.
 ||socialtwist.com^$third-party
 ||space.com/images/site/social/
 ||space.com/social.html
-||badgeville.com^$third-party
-||blogengage.com^$third-party
 ||static.addtoany.com^$third-party
 ||static.delicious.com^$third-party
 ||stumble-upon.com^$third-party,domain=~stumbleupon.com
@@ -245,11 +244,12 @@ _social_icons.
 ||technorati.com^$third-party
 ||theslingshot.com^$third-party
 ||toolbar.cdn.gigya.com^
+||tuaw.com^*/related-slider.js
 ||tumblr.com/dashboard/
 ||votes.buzz.yahoo.com^$third-party
 ||widgets.backtype.com^$third-party
-||widgets.dzone.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
+||widgets.dzone.com^$third-party
 ||youtube.com/v/*autoplay$domain=boards.4chan.org,third-party
 ||zaparena.com^$third-party
 !     
@@ -1355,6 +1355,7 @@ discovery.com###new-soc-med-buttons
 discovery.com###pre-share-tools-container
 discovery.com###utility
 discovery.com##.slide-out-div
+disinfo.com##.simplereach-slide
 do-while.com##.latestshowsocial
 docs.com##.facebook_plugin_container
 dotsauce.com###sharelinks
@@ -1370,7 +1371,6 @@ ecosalon.com##.bottom_links
 ecosalon.com##.handle
 ecosalon.com##.rsstop
 egotvonline.com###bookmark
-rolandgarros.com###articleShare
 egotvonline.com###digg-widget-1278150568588
 ehealthforum.com###share_box
 ehow.com###eHowFeedbackTab
@@ -1388,7 +1388,6 @@ famouslyfit.com##.share
 fastcompany.com##.curr_issue_wrap
 feedmyapp.com###facebook
 feedmyapp.com###twitter
-fwix.com###share
 femalefirst.co.uk##.ShareThis
 fightthesmears.com##.facebook
 fightthesmears.com##.myspace
@@ -1426,6 +1425,7 @@ fundoomails.com##.social
 funflashgames.com##.sharing_nw
 funnyordie.com###funbar_wrapper
 funnyordie.com##.share_group
+fwix.com###share
 fyiliving.com###newsletter
 fyiliving.com###text-9
 fyiliving.com##.news-signup
@@ -1745,7 +1745,6 @@ nymag.com##.follow-vulture
 nymag.com##.newsletter
 nytimes.com###facebook_item
 nytimes.com###upNext
-techdrivein.com###float_corner
 nytimes.com##.feeds
 nzherald.co.nz##.msn
 nzherald.co.nz##.share
@@ -1787,7 +1786,6 @@ pcworld.com##.fb-login
 pcworld.com##.syndication
 pcworld.in##.digg
 pcworld.in##.email
-tuaw.com###slidebox
 pcworld.in##.facebook
 pcworld.in##.twitter
 pcworld.in##[alt="RSS"]
@@ -1842,7 +1840,6 @@ readwriteweb.com###subsribe_right
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
-disinfo.com##.simplereach-slide
 realitypod.com###ss_sidebar
 realitypod.com##.fan_box
 realonlinedegrees.com###as-share-window
@@ -1853,6 +1850,7 @@ refinery29.com##.tip-follow
 reuters.com###trackTabs
 revision3.com###alertsCallout
 robotswithfeelings.com###subscribes
+rolandgarros.com###articleShare
 rollingstone.com##.shareContainer
 ropeofsilicon.com###social-box
 rtwincustomize.net##[alt="feed-image"]
@@ -1928,6 +1926,7 @@ switched.com##[title="Twitter"]
 take.fm##.facebook
 take.fm##.twitter
 techcrunch.com##.boxy
+techdrivein.com###float_corner
 techeye.net##.subscribe
 techi.com###top-icons
 techie-buzz.com###fb_reco
@@ -2048,6 +2047,7 @@ treehugger.com##[style="border: 1px dotted #d1d1d1; width: 468px; text-align: ce
 tripod.com###tb_container
 truth-out.org##[alt="Follow Truthout on Twitter"]
 truth-out.org##[alt="Get Truthout in your Email, Free!"]
+tuaw.com###slidebox
 tv.com##.connect_prompt_box
 tvsquad.com###tout-followUs
 tvsquad.com##.addthis

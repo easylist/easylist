@@ -1,14 +1,13 @@
 [Adblock Plus 1.1]
-! Checksum: 8PIUPt956tPsITAds6BVTg
+! Checksum: mFbbiH/z5gm2UIp35a+xnQ
 ! Fanboy's Russian-V2-addon Adblock list 
-! Updated: 12 Jun 2011
+! Updated: 13 Jun 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
 !
 ! ---------- Generic Blocking Rules ----------
 !
-/?adfox_
 -reklama.
 .info/baner/
 .ngs.ru/*.swf?pid
@@ -36,6 +35,7 @@
 .ua/adbn/
 .ws/adv/
 /1tizer_
+/?adfox_
 /ad2-packet/*
 /adcheck.
 /adfile.ashx?
@@ -88,14 +88,12 @@ _reklama.
 ! ---------- 1st party blocking rules ----------
 !
 http://r.e1.ru/
-||ixbt.com/include/filmdepo/
 ||003.com.ua/cgi/adv/
 ||1zoom.ru/cssjs/pop.js
 ||2baksa.net^*/reklama/
 ||2x2.su/reclama/
 ||77.120.122.117^*/banners/
 ||actualcomment.ru^*/banner/
-||sape.ru/images/banners/sape_001.swf
 ||ad.sweb.ru^
 ||advesti.ru/banners/
 ||advesti.ru/poligrafia
@@ -189,6 +187,7 @@ http://r.e1.ru/
 ||israelinfo.ru/toolbar/
 ||ixbt.com/banner/
 ||ixbt.com/include/ctx$script
+||ixbt.com/include/filmdepo/
 ||izvestia.ru/banners/
 ||job-online.com.ua/ban.js
 ||k2kapital.com/bitrix/images/
@@ -316,6 +315,7 @@ http://r.e1.ru/
 ||samlab.ws/img/archivarius
 ||samlab.ws/img/peredovaya
 ||samlab.ws^*/combatz.jpg
+||sape.ru/images/banners/sape_001.swf
 ||seti.ee/images/baner.
 ||sexbook.net.ru/images/addv.js
 ||sibnovosti.ru/banners/
@@ -387,6 +387,7 @@ http://r.e1.ru/
 ||87.242.88.
 ||ad.admamba.com^
 ||ad.aorta-net.com^
+||ad.bannerhost.ru^
 ||ad.leongaming.com^
 ||ad.mail.ru^
 ||ad.rambler.ru^
@@ -394,7 +395,6 @@ http://r.e1.ru/
 ||ad4.tutu.ru^
 ||adboon.ru^
 ||adgo-online.de^
-||ad.bannerhost.ru^
 ||adhub.ru^
 ||admitad.com^
 ||admoon.net^
@@ -417,10 +417,9 @@ http://r.e1.ru/
 ||awaps.yandex.ru^
 ||b.vtomske.ru^
 ||ban.aport.ru^
-||popular.ru^
-||banners.best-woman.ru^
 ||banner.lbs.km.ru^
 ||banner.unian.net^
+||banners.best-woman.ru^
 ||banners.marker.ru^
 ||banners.nextmail.ru^
 ||base.kiwi.kz^
@@ -443,12 +442,12 @@ http://r.e1.ru/
 ||gameleads.ru^
 ||hit-sales.ru^
 ||im1-tub.com^
-||izitizi.ru^
 ||im2-tub.com^
 ||im6-tub.com^
 ||inctivee.com^
 ||informer.bigbord.net^
 ||informer2.bigbord.net^
+||izitizi.ru^
 ||kartinka.com.ua^
 ||krutilka.price.ru^
 ||lacest.com^
@@ -460,6 +459,7 @@ http://r.e1.ru/
 ||moijs.com^
 ||mycomet.mail.ru^
 ||neova.auto.ru^
+||popular.ru^
 ||promo.mrm.ru^
 ||r1fclick.com^
 ||reklama.mb.vesti.ru^
@@ -485,10 +485,9 @@ http://r.e1.ru/
 ! ---------- 3rd party blocking rules ----------
 !
 http://ad.ir.ru^$third-party
-||17teen.ru^$third-party
-||prostoprint.com^$third-party
 ||0324.0x96.34.0163^$third-party
 ||100projects.ru^$third-party,subdocument
+||17teen.ru^$third-party
 ||194.135.105.23^$third-party
 ||195.239.111.200^$third-party,image
 ||212.150.34.115^$third-party
@@ -508,7 +507,6 @@ http://ad.ir.ru^$third-party
 ||87.242.91.22^$third-party
 ||87.242.91.23^$third-party
 ||87.242.91.24^$third-party
-||sunhome.ru^$third-party
 ||87.242.91.25^$third-party
 ||87.242.91.5^$third-party
 ||88.208.22.84^$third-party
@@ -519,7 +517,6 @@ http://ad.ir.ru^$third-party
 ||ad.admixer.net^$third-party
 ||ad.bmo.tbn.ru^$third-party
 ||ad.fasty.net^$third-party
-||sontere.com^$third-party
 ||ad.sweb.ru^$third-party
 ||ad.tetramedia.ru^$third-party
 ||ad.trafmonster.biz^$third-party
@@ -548,8 +545,6 @@ http://ad.ir.ru^$third-party
 ||adtaily.pl^$third-party
 ||adult-click.ru^$third-party
 ||adulttraffic.ru^$third-party
-||daccroi.com^$third-party
-||lacemme.com^$third-party
 ||adv.adbook.am^$third-party
 ||adv.hardwarez.ru^$third-party
 ||adv.magna.ru^$third-party
@@ -614,6 +609,7 @@ http://ad.ir.ru^$third-party
 ||ckpnetwork.com^$third-party
 ||code.popup2m.com^$third-party
 ||cotoolbar.com^$third-party
+||daccroi.com^$third-party
 ||date.israelinfo.ru^$subdocument
 ||delivery.textin.com.ua^$third-party
 ||denwer.ru/ru/rec/$~third-party,image
@@ -622,7 +618,6 @@ http://ad.ir.ru^$third-party
 ||dosugcz.info^$third-party
 ||dreamlog.ru^$third-party
 ||dreamsounds.net^$third-party
-||kinopromobase.ru^$third-party
 ||dvdkinoteatr.com^$third-party
 ||echo.teasernet.com^$third-party
 ||effad.ru^$third-party
@@ -670,6 +665,7 @@ http://ad.ir.ru^$third-party
 ||js.smi2.ru^$third-party
 ||kinomir.kz^$third-party,subdocument
 ||kinopokaz.org^$third-party
+||kinopromobase.ru^$third-party
 ||kleo.ru/i/5/$subdocument
 ||klikaem.ru^$third-party
 ||klops.javagid.ru/img/$third-party
@@ -677,6 +673,7 @@ http://ad.ir.ru^$third-party
 ||komok.com^$third-party,script
 ||krutilka.price.ru^$third-party
 ||kupitraff.ru^$third-party
+||lacemme.com^$third-party
 ||ladyshopping.ru^$third-party
 ||lazonik.com^$third-party
 ||lbn.podrobnosti.ua^$subdocument
@@ -729,6 +726,7 @@ http://ad.ir.ru^$third-party
 ||profstat.net^$third-party
 ||promo.1000zakazov.ru^$third-party
 ||promo.md^$third-party
+||prostoprint.com^$third-party
 ||protizer.net^$third-party
 ||pullcorn.com^$third-party
 ||quintura.ru^$third-party
@@ -765,8 +763,10 @@ http://ad.ir.ru^$third-party
 ||smi2.ru/data/$third-party
 ||smscasino.net^$third-party
 ||socratos.net/data/$third-party
+||sontere.com^$third-party
 ||spylog.com^$third-party
 ||stripvidz.com^$third-party
+||sunhome.ru^$third-party
 ||supertura.com^$third-party
 ||tdstraff.ru^$third-party
 ||teasernet.com^$third-party
@@ -1037,6 +1037,7 @@ http://ad.ir.ru^$third-party
 @@||afisha.ru/proxy/VideoNetworkProxy.ashx?$xmlhttprequest
 @@||amfam.com/site-assets/swf/banners/
 @@||b.dclick.ru^$domain=vesti.ru,object_subrequest
+@@||cbs.com/thunder/*.swf?pid=
 @@||citydom.ru/themes/citydom/*.swf?link
 @@||digital.ru^*/images/banner/main-banner.swf?
 @@||echo.msk.ru/att/*-thumb_
@@ -1053,7 +1054,6 @@ http://ad.ir.ru^$third-party
 @@||video.*.user.madbanner.ru^
 @@||yarportal.ru/style_images/$image
 @@||zoomin.tv/videoplayer/*.swf?pid=
-@@||cbs.com/thunder/*.swf?pid=
 !     
 !---------------------- Site specific Firefox 3.x rules -----------------
 !   
@@ -1081,6 +1081,7 @@ xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0
 ###AdFoxDiv
 ###adriver_middle
 ###adriver_top
+###adSite
 ###advertisingLink
 ###b240x400
 ###b728x90
@@ -1103,7 +1104,6 @@ xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0
 ##.b-adv-main-top-text
 ##.b-adv-sidebar
 ##.bc_adv_container
-###adSite
 ##.bottomArticleAds
 ##.googleadsense
 ##.insert-advert-ver01
@@ -1242,11 +1242,11 @@ delfi.ua##.ABouter
 delfi.ua##[style="height: 120px; width: 995px; margin: 0pt auto;"]
 delo.ua##.banner
 delo.ua##.rbanner
+design-warez.ru##TD.stext[background="/templates/pic/images/11.gif"]
+design-warez.ru##TD.stext[background="/templates/pic/images/long5.jpg"]
 digital.ru##A[href^="/banner/count/?"]
 discovery.rambler.ru##.b-banner
 dj.ru##.bann_1
-design-warez.ru##TD.stext[background="/templates/pic/images/11.gif"]
-design-warez.ru##TD.stext[background="/templates/pic/images/long5.jpg"]
 dni.ru###header-banner
 dni.ru###tb_133_outer
 dni.ru###tb_135_outer
@@ -1255,6 +1255,9 @@ dni.ru###tb_491_outer
 dni.ru###tieserBlock1
 dni.ru###tieserBlock3
 dni.ru##.partners-links
+dojki.com##a[href="http://www.dojki.com/access.htm"]
+dojki.com##table[style="border:solid 1px #BA0000;"]
+dojki.com##td[width="415"]
 domik.net###hright
 doroga63.ru##[height="64"][width="7"]
 dreamprogs.net###topbanner2
@@ -1661,9 +1664,6 @@ trud.ru##.anons
 tsn.ua##.banner
 tsn.ua##.partner_news
 tsn.ua##div[style="display:block; width:300px; height:250px; overflow:visible;"]
-dojki.com##td[width="415"]
-dojki.com##table[style="border:solid 1px #BA0000;"]
-dojki.com##a[href="http://www.dojki.com/access.htm"]
 tursvodka.ru##.h_yadircontext
 u-mama.ru###urwb1638
 u-mama.ru###urwb1722
