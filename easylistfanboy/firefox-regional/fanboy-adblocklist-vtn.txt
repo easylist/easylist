@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: Ycb2Ohpif1JYw4PEMBmfDg
+! Checksum: YMaY3t6Z/VWpk06YB0LpRA
 ! Fanboy's Vietnamese-addon Adblock list 
-! Updated: 18 Jun 2011
+! Updated: 19 Jun 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -15,6 +15,7 @@
 .vn/css/ads.
 .vn/js/ads.
 /_BannerSlot.aspx?
+/ad136/*
 /adFlash.
 /AdLib.js
 /adman/js/*
@@ -23,9 +24,8 @@
 /ads-tinbai/*
 /ads/khachhang/*
 /AdsFloat.
-/ad136/*
-/adsxinhdoc_
 /adshay/*
+/adsxinhdoc_
 /adv-title.
 /AdView.
 /advright-
@@ -36,12 +36,12 @@
 /emxinhads.
 /FloatAd_
 /jsqcao/*
+/ndquangcao/*
 /phim-online/ads/*
 /qc-title.
 /qcao.js
 /qcao/*
 /qcblogtruyen.
-/ndquangcao/*
 /quangcao.
 /quangcao/*
 /QuangCaoImage/*
@@ -52,6 +52,7 @@ _quangcao.
 !
 ! ---------- 1st party blocking rules ----------
 !
+||123phim.net/tg.gif
 ||24h.com.vn*/upload/*.com.vn.
 ||24h.com.vn*/upload/*_120_
 ||24h.com.vn*/upload/*_210240.
@@ -75,14 +76,10 @@ _quangcao.
 ||chuyenhot.com/js/popup.js
 ||congdongvip.com/ads/
 ||data.v1vn.com^$script
+||data3.vechai.info^
 ||dianguc.tv/blogtruyen325.
-||vnnclub.com/hkphone.swf
 ||docbao.vn/NewsMedia/Ad/
 ||eva.vn/js/eva.js
-||thanhthekids.info/only.js
-||data3.vechai.info^
-||sut.vn/banner/
-||vechai.info^*pop.js
 ||forum.hocit.com/qc/
 ||game8.vn/images/spr/bg_
 ||game8.vn/spirit/ads/banner_
@@ -94,32 +91,35 @@ _quangcao.
 ||infosdomain.com^*/pop-
 ||kqxs.vn/uploads/*x$image
 ||ledmobile.net/ads/
+||me.ola.vn/qc/
 ||phununet.com/Ads/
 ||rolo.vn/films/ad_
 ||sgtt.com.vn/html/
-||tuoitre.vn/tto/$subdocument
-||me.ola.vn/qc/
 ||sgtt.vn/html/
 ||socbay.com/ads/
 ||softvnn.com/images/
 ||static.vbid.vn^$subdocument
-||thanhthekids.info/pop*.js
-||tuoigi.com/qc-
-||123phim.net/tg.gif
-||tuoigi.com/lienhe.gif
+||sut.vn/banner/
+||swfcabin.com^$domain=blogtruyen.com
 ||tapchithoitrang.info/pop.js
+||thanhthekids.info/only.js
+||thanhthekids.info/pop*.js
 ||thegioioto.com.vn/Autos/Images/Home/                          
 ||tienganh.com.vn/anh/
 ||tin247.com^*/advertisements/
 ||tinthethao.com.vn/click/ck/
 ||trachanh.com^*/popup.js
 ||trangtinvietnam.com/images/logos/
+||tuoigi.com/lienhe.gif
+||tuoigi.com/qc-
+||tuoitre.vn/tto/$subdocument
 ||vatgia.com/images/phuhungfull
 ||vatgia.com/images/tlbb_
+||vechai.info^*pop.js
+||vnnclub.com/hkphone.swf
 ||vnphoto.net/data/gallery/fullsize/
 ||voh.com.vn/Data/QC/
 ||webketoan.vn^*/banners/
-||swfcabin.com^$domain=blogtruyen.com
 ||xaluan.com/images/banners/
 ||xinhkieu.com/pop-
 ||xinhkieu.com^*/sda.js
@@ -131,17 +131,17 @@ _quangcao.
 ||ad.zing.vn^
 ||adrealclick.com^
 ||ads.bkns.vn^
-||qc.trieudo.com^
-||et.phununet.com^
 ||ads.phimhp.com^
+||blogtruyen.com/js/repa.js
+||et.phununet.com^
 ||filesonic.vn^*/banners/
 ||hupanh.com^*/cdvbanner4rum.
 ||loidich.com^*/blogtruyen
-||vnsharing.net^*/pop*.js
-||blogtruyen.com/js/repa.js
-||qc.huyenthoaimu.com^
 ||megapic.vn/images/80713009690933246438.gif
+||qc.huyenthoaimu.com^
+||qc.trieudo.com^
 ||upanh.com^*/zinken.gif
+||vnsharing.net^*/pop*.js
 ||vuvu88.info^*_banner.gif
 !
 ! ---------- 3rd party blocking rules ----------
@@ -186,13 +186,13 @@ _quangcao.
 !
 !---------- Whitelists ----------
 !
+@@||24hstatic.com/js/ads.js?
 @@||baodatviet.vn^*/logodv-1
 @@||nhac.vui.vn/js/ads.js$domain=nhac.vui.vn
 @@||otosaigon.com^*/showbanners.js
 @@||softvnn.com/images/banner.swf
 @@||thegioioto.com.vn^*/Images/Adv/
 @@||w.game8.vn^*/banner/banner_
-@@||24hstatic.com/js/ads.js?
 !
 ! ---------- Firefox 3.x Specific Hiding Rules ----------
 !
@@ -214,10 +214,10 @@ tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201,
 24h.com.vn###ADS_2_15s_0_0
 24h.com.vn###ADS_33_15s_2_0
 24h.com.vn###ADS_33_15s_3_0
-24h.com.vn###ADS_56_15s_1_0
-24h.com.vn###ADS_75_15s_1_1
-24h.com.vn###ADS_56_15s_4_0
 24h.com.vn###ADS_44_15s_0_0
+24h.com.vn###ADS_56_15s_1_0
+24h.com.vn###ADS_56_15s_4_0
+24h.com.vn###ADS_75_15s_1_1
 24h.com.vn###adv-1000px
 24h.com.vn###container-banner-right
 24h.com.vn###top-banner-468-265
@@ -230,9 +230,8 @@ tuoitre.vn##[style="width: 298px; height: 123px; border: 1px solid rgb(201, 201,
 bacsi.com###qc
 bacsi.com##.bannergroup
 bacsi.com##.bannergroupfix_banner_br
-hocmai.vn##table[height="150"][width="595"]
-hocmai.vn##table[height="80"][width="595"]
 baodatviet.vn##.topbanner
+blogtruyen.com###bar_float
 bongdaso.com##.med_rec_banner1
 bongdaso.com##.med_rec_banner2
 bongdaso.com##.sky_banner1
@@ -249,6 +248,8 @@ google.com,google.com.vn###mbEnd
 google.com,google.com.vn###tads
 hanoimoi.com.vn###right_content_box
 hanoimoi.com.vn##.right_content_box_bottom_adv
+hocmai.vn##table[height="150"][width="595"]
+hocmai.vn##table[height="80"][width="595"]
 kqxs.vn###adv
 kqxs.vn###boxquangcao
 kqxs.vn###div_3
@@ -264,27 +265,25 @@ ohay.net###text-6
 ohay.net###text-7
 ohay.net##div[style="height: 152px;"]
 ohay.net##div[style="height:117px;width:900px;text-align:center;margin-bottom:3px;"]
+ola.vn###paneIntro
 otosaigon.com###topadv1_divTop
 otosaigon.com##.ADV
 otosaigon.com##.content_adv
 phim1.info##div[style="height: 132px;"]
 phununet.com###AdSpot_Tintuc_Right300x2501_div1
-blogtruyen.com###bar_float
 phununet.com##.advcenter
 phununet.com##.youshop1111
 phununet.com##[style="width:730px; height:850px; overflow:hidden"]
 sggp.org.vn##.DonVi
 sggp.org.vn##.QC_Ngang
 sggp.org.vn##.Quang_Cao_Giua
-ola.vn###paneIntro
 sgtt.com.vn##.BoxAdv
 thanhnien.com.vn###WebPartWPQ21
-vechai.info###bar_float
 thanhnien.com.vn##.qc-data                                                               
 thanhnien.com.vn##.qc-Title
+thanhthekids.info##div[style="width: 728px; height: 80px; padding-top:15px; padding-left:10%"]
 thegioioto.com.vn###AutoNumber1
 timnhanh.com##.banner_240x100
-thanhthekids.info##div[style="width: 728px; height: 80px; padding-top:15px; padding-left:10%"]
 tin247.com###banner_share
 tin247.com##.content.free_advertisemen
 tin247.com##.fashion
@@ -295,12 +294,13 @@ tinthethao.com.vn###MetaNET_ADV_NUMBER_2
 trachanh.com##.ads960
 tuoitre.vn##.blockQcBtom
 tuoitre.vn##[style="width:298px;height:123px;border:solid 1px #c9c9c9;background-color:#f5f5f5;margin-bottom:6px;text-align:center;"]
-vn-zoom.com##div[style="padding: 20px 0 20px 0; font-size: 20px; background-color:#ddd; border: dashed 5px red; margin-bottom: 15px; width: 820px; margin-left: auto; margin-right: auto; color:#00d; text-align:center;"]
 tuoitre.vn##[width="350"][height="204"]
 upanh.com##.adv_img
 v1vn.com###popupAlert
+vechai.info###bar_float
 vietnamplus.vn##.newsAdText
 vinabull.com###imgHead
+vn-zoom.com##div[style="padding: 20px 0 20px 0; font-size: 20px; background-color:#ddd; border: dashed 5px red; margin-bottom: 15px; width: 820px; margin-left: auto; margin-right: auto; color:#00d; text-align:center;"]
 vn.yahoo.com###shd-promo
 vn88.com##td[width="490"][align="left"]
 vn88.com##td[width="500"][align="right"]

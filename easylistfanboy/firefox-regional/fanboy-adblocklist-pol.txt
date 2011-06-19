@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: hyGe1q2BkVBUuP+ETQqUGQ
+! Checksum: UWDaqjiGSnYwe0/bc4kA9Q
 ! Fanboy's Polish-addon Adblock list 
 ! Updated: 19 Jun 2011
 ! This list expires after 5 days
@@ -50,11 +50,11 @@
 ||makro.pl^*/FrontPagePopup
 ||makro.pl^*/katalog-
 ||makro.pl^/FrontPageToplayer
-||netsales.pl/rotator/
-||optymalizacja.com/468-
 ||napisy24.pl/files/
 ||napisy24.pl/images/baner_
 ||napisy24.pl/images/irj.jpg
+||netsales.pl/rotator/
+||optymalizacja.com/468-
 ||pajacyk.pl/img/baner
 ||poczta.onet.pl/uslugi/_d/logowanie/
 ||proline.pl/public/
@@ -70,12 +70,12 @@
 !
 ! ---------- General blocking rules ----------
 !
+||ad.filmweb.pl^
 ||ad.gazeta.pl^
 ||ads.battlenet.pl^
 ||banery.ifd.pl^
 ||boksy.onet.pl^
 ||ppp.moda.pl^
-||ad.filmweb.pl^
 ||reklama.onet.pl^$~stylesheet
 ||static.otodom.pl^
 ||widget.zlotemysli.pl^
@@ -115,11 +115,11 @@
 /piwik.js
 /redot.gif?
 _gemius.
+||analytics.gazeta.pl^
 ||darmowe-statystyki.com^$third-party
 ||dot.wp.pl^
 ||kropka.onet.pl^
 ||mklik.gazeta.pl^
-||analytics.gazeta.pl^
 ||mypagerank.pl^$third-party
 ||onetwl.pl^$third-party
 ||phototamer.com/counter/
@@ -158,6 +158,7 @@ sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text
 !
 ###adnet
 ###miniAdsAd
+###reklama1
 ###reklama_kontekstowa
 ###under_placead3_1
 ###under_placead5_1
@@ -175,7 +176,6 @@ sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text
 ##.art_ad_body
 ##.box_filmu_reklama
 ##.box_reklama
-###reklama1
 ##.gallery_ads_box
 ##.miniads
 ##.mod_ad
@@ -194,11 +194,16 @@ di.com.pl##.zaknag
 di.com.pl##div[style="margin-bottom:5px;clear:both;"]
 drhtv.com.pl###bannertop
 fakt.pl###literia_widget
+filmweb.pl###flashcontent2
+filmweb.pl###flashcontent5
+filmweb.pl###hpwallpaper
+filmweb.pl##.rcBox1Parent
 forum.gery.pl##.g_jlinki_sponsorowane
 fotka.pl###SG_BILL_SUPER_TOP
 gazeta.pl###banP1
 gazeta.pl###banP4
 gazeta.pl###banP50
+gazeta.pl###mod_offer_small
 gazeta.pl##.banLabel
 gazeta.pl##.banN43
 gery.pl###banner
@@ -214,14 +219,12 @@ idg.pl###sky2
 idg.pl##.skyText
 imbd.pl###banner
 insomnia.pl###showimage
-napisy24.pl###billboard_700_250
 insomnia.pl##.a7[style="width:160px;"]
 insomnia.pl##[style="margin:0;padding:0;width: 950px; height: 100px;background: white; border: solid 2px red"]
 insomnia.pl##[style="position:relative; z-index: 0;width: 1000px; height: 80px; text-align: center; margin-top:5px; margin-bottom: 5px;"]
 insomnia.pl##[style="position:relative; z-index: 0;width: 900px; height: 80px; text-align: center; margin-top:5px; padding:0; margin-bottom: 5px; margin-left: 50px; margin-right: 50px"]
 insomnia.pl##div[style="margin-left:-3px;width:160px"]
 interia.pl###ecommerce
-lotto.pl###toplayer
 interia.pl###see_also_fixed
 interia.pl##.headerGraphic
 interia.pl##.miniads_region
@@ -231,20 +234,16 @@ komputronik.pl###banner_single
 komputronik.pl###pasazTopKontener
 kretyn.com###adv750
 lechpoznan.net###floating_banner_bottom
+lotto.pl###toplayer
 makro.pl###flashKartka
-filmweb.pl###hpwallpaper
-filmweb.pl##.rcBox1Parent
-filmweb.pl###flashcontent2
-filmweb.pl###flashcontent5
 makro.pl###opiniac_blk
 money.pl##.inContext_disabled
+napisy24.pl###billboard_700_250
 nk.pl##.nk_popup_body
 nk.pl##.nk_popup_overlay
 onet.pl##.onetBoxPrepend
 onet.pl##.onetNapisReklama
-widzewlodz.pl###top-banner
 pcworld.pl###liderBoard2010
-gazeta.pl###mod_offer_small
 pcworld.pl##.ramka1c
 pcworld.pl##.sky
 proline.pl###bannerside
@@ -269,6 +268,7 @@ tworzymyhistorie.pl##.reklpodskecz
 tworzymyhistorie.pl##.srodeklinema
 uniface.pl###cu_popup
 webhosting.pl###baner1
+widzewlodz.pl###top-banner
 wrzuc.to###fancybox-overlay
 wrzuc.to###fancybox-wrap
 wrzuc.to###novem_billboard

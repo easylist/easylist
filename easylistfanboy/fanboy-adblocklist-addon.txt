@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: gPXNOYhqZvSMeRYUeZYYvA
+! Checksum: 6i7R9O8Jf27J00gUublP/w
 ! Fanboy's Annoyance list Addon 
-! Updated: 18 Jun 2011
+! Updated: 19 Jun 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -175,6 +175,7 @@ _social_icons.
 ||addthis.com^$third-party
 ||api.flattr.com^$third-party
 ||api.search.live.net^$third-party,domain=~bing.com
+||apture.com^$third-party,script
 ||assets.tumblr.com^$subdocument,third-party
 ||badgeville.com^$third-party
 ||bing.com/bootstrap.js?$third-party
@@ -212,7 +213,6 @@ _social_icons.
 ||l.yimg.com^*/img/badge
 ||letsgetsocialnow.com^
 ||lijit.com^$third-party
-||apture.com^$third-party,script
 ||linkedin.com/favicon.ico$third-party
 ||linksalpha.com^$third-party
 ||liveintent.com^$third-party
@@ -478,7 +478,6 @@ _btn_facebook.
 ##.long_post_share_twiiter
 ##.post_share_twitter
 ##.share-twitter
-##.widget_twitter
 ##.socialwrap
 ##.st_twitter_custom
 ##.tweet_meme
@@ -494,6 +493,7 @@ _btn_facebook.
 ##.twitterShare
 ##.twitterWidgetry
 ##.widget_tweetblender
+##.widget_twitter
 ##[alt="Follow updates via Twitter"]
 ##[alt="Follow us at Twitter"]
 ##[alt="Follow us on Twitter!"]
@@ -837,7 +837,6 @@ _stumble_btn.
 ##.addthis-button
 ##.addthis-footer
 ##.addthis_button
-##.socila-icons
 ##.addthis_button_buzz
 ##.addthis_button_digg
 ##.addthis_button_expanded
@@ -1031,6 +1030,7 @@ _stumble_btn.
 ##.socialTools
 ##.socialtools
 ##.socialtoolstext
+##.socila-icons
 ##.sociotags
 ##.st_email_custom
 ##.st_sharethis_custom
@@ -1113,9 +1113,9 @@ _stumble_btn.
 ##a[title="Subscribe on FriendFeed"]
 ##div.sociable
 ##IMG[alt="submit to reddit"]
+~join.me##.sharebutton
 ~last.fm###sharebar
 ~last.fm###sharebuttons
-~join.me##.sharebutton
 ~reddit.com###share-reddit
 ~reddit.com##[href^="http://reddit.com/submit"]
 ~reddit.com##[title="submit to redit"]
@@ -1214,6 +1214,7 @@ billshrink.com##div[style="line-height:150%; border: thin dotted black; margin: 
 bing.com###sw_pb
 bing.com##.sn_container
 bink.nu##.shareblock
+bitcoins.lc###twitter
 bizjournals.com##.persistentFooter
 bleacherreport.com###article-newsletter-engage-content
 bleacherreport.com###article-newsletter-side-module
@@ -1303,6 +1304,7 @@ connectify.me##.social
 consequenceofsound.net##.social
 consumerist.com###social
 contactmusic.com##.topNav
+copykat.com##.connect
 cosmosmagazine.com##[title="Follow COSMOSmagazine on Twitter"]
 cracked.com###fb-friends-recent-activity
 cracked.com###fb_sliver
@@ -1371,6 +1373,7 @@ eater.com###sharing-palette
 eatingwell.com###simplemodal-container
 eatingwell.com###simplemodal-overlay
 ebay.com##.tb-rs
+ecofriend.com###slidebox
 economist.com###oo_feedback_float
 ecosalon.com##.bottom_links
 ecosalon.com##.handle
@@ -1455,9 +1458,7 @@ globalpost.com###block-block-17
 globalpost.com###block-block-7
 good.is##.get-good
 good.is##.shares
-copykat.com##.connect
 google.com##.share
-bitcoins.lc###twitter
 gq.com##.utilities-bottom
 gq.com##.utility-share
 graphic.is##.sharelinks
@@ -1842,12 +1843,12 @@ rdmag.com###dialog
 rdmag.com###highlighted_text_ad\20
 rdmag.com###mask
 rdmag.com###socialmedia
-realbeauty.com###rr_social_tout
 readwriteweb.com###Subscribe
 readwriteweb.com###subsribe_right
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
+realbeauty.com###rr_social_tout
 realitypod.com###ss_sidebar
 realitypod.com##.fan_box
 realonlinedegrees.com###as-share-window
@@ -1931,7 +1932,6 @@ switched.com###footer-feeds
 switched.com##.rss
 switched.com##[title="Facebook"]
 switched.com##[title="Twitter"]
-ecofriend.com###slidebox
 take.fm##.facebook
 take.fm##.twitter
 techcrunch.com##.boxy
