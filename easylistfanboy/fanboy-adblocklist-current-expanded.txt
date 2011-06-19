@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Yu220Qhuq+I9IVfoDtxZDA
+! Checksum: 7qQW8/nPNI5s8h56vA6wgQ
 ! Fanboy's Adblock list
 ! Updated: 19 Jun 2011
 ! This list expires after 5 days
@@ -190,6 +190,7 @@
 .uk/adx.
 .ws/banners/
 .za/ads/
+/!advert_
 /.adserv/*
 /2011/ads/*
 /24-7ads.
@@ -209,7 +210,6 @@
 /Ad%20Images/*
 /ad-300x254.
 /ad-600-
-/ad.gif
 /ad-banner-
 /ad-bckg.
 /ad-bottom.
@@ -239,6 +239,7 @@
 /ad.aspx?
 /ad.code?
 /ad.epl?
+/ad.gif
 /ad.gif?
 /ad.html?
 /ad.mason?
@@ -386,6 +387,9 @@
 /adbrite/*
 /adbrite2.
 /adbrite_
+/adbriteinc.
+/adbriteincleft2.
+/adbriteincright.
 /adbutler/*
 /adcache.
 /adCallOverride.
@@ -589,9 +593,6 @@
 /ads/ad_
 /ads/adbot
 /ads/adg.
-/adbriteinc.
-/adbriteincleft2.
-/adbriteincright.
 /ads/adnet.
 /ads/ads-$~stylesheet
 /ads/adx.
@@ -822,7 +823,6 @@
 /advertisement_
 /advertisementheader.
 /advertisements-
-/advertising_$image,script,subdocument
 /advertisements.
 /advertisements/*
 /advertiser.
@@ -831,6 +831,7 @@
 /advertising.
 /advertising/*$image,script,subdocument
 /advertising/ads/*
+/advertising_$image,script,subdocument
 /advertisingLinks_
 /advertisingManual.js
 /advertisingmodule.
@@ -839,7 +840,6 @@
 /advertisment_
 /advertorials/*
 /advertpro/*
-/!advert_
 /adverts.$~stylesheet,~object-subrequest
 /adverts.js
 /adverts/*
@@ -2522,6 +2522,7 @@ images/ads/*
 ||testseek.com/price_pricegrabber_
 ||theispguide.com/premiumisp.html
 ||theispguide.com/topbanner.asp?
+||themis.yahoo.com^
 ||theonion.com/ads/video-ad/
 ||thinkingwithportals.com^*-skyscraper.swf
 ||thirdage.com^*/output_banner.php?
@@ -2671,7 +2672,6 @@ images/ads/*
 ||adjug.com^
 ||adjuggler.com^
 ||adjuggler.net^
-||urlads.net^
 ||adk2.com^
 ||adknowledge.com^
 ||adlandpro.com^
@@ -2817,6 +2817,7 @@ images/ads/*
 ||adviva.net^
 ||advpoints.com^
 ||adwires.com^
+||adxpansion.com^
 ||adxpose.com^
 ||adzerk.net^
 ||adzmob.com^
@@ -3283,8 +3284,6 @@ images/ads/*
 ||overture.com^
 ||oxado.com^
 ||p-comme-performance.com^
-||trustedadserver.com^
-||adxpansion.com^
 ||p-digital-server.com^
 ||pagead2.googlesyndication.com^$~object-subrequest
 ||pan.dogster.com^
@@ -3447,6 +3446,7 @@ images/ads/*
 ||triadmedianetwork.com^
 ||tribalfusion.com^
 ||trigami.com^
+||trustedadserver.com^
 ||ts.richmedia.yahoo.com^
 ||ttzmedia.com^
 ||tumri.net^
@@ -3458,6 +3458,7 @@ images/ads/*
 ||uiadserver.com^
 ||unicast.com^
 ||upads.info^
+||urlads.net^
 ||usenetjunction.com^
 ||usenetpassport.com^
 ||utarget.co.uk^
@@ -4046,7 +4047,6 @@ images/ads/*
 /468x60(2).
 /468x60-
 /468x60.
-/728x180-
 /468x60/*
 /468x60_
 /468x60a.
@@ -4056,6 +4056,7 @@ images/ads/*
 /468x60painless5.
 /468x60white2.
 /468x72.
+/468x72_
 /468x80-
 /468x80/*
 /468x80_
@@ -4090,6 +4091,7 @@ images/ads/*
 /728_90_
 /728by90_
 /728x15.
+/728x180-
 /728x90(2).
 /728x90-
 /728x90.
@@ -4221,7 +4223,6 @@ images/ads/*
 728x90.png|
 728x90.swf?
 728x90.swf|
-/468x72_
 728x90_2.jpg|
 750x80.swf|
 750x90.gif|
@@ -4505,8 +4506,8 @@ _980x100.
 .cz/affil/
 .kerg.net/
 .net/affiliate/
-.net/vghd_
 .net/pop.js
+.net/vghd_
 .org/banner/$subdocument
 .org/exit.js
 .org/pops.js
@@ -4549,9 +4550,9 @@ _980x100.
 /eroadvertorial2.
 /eroadvertorial3.
 /erobanner.
-/exports/tour/*$third-party
 /exit_popup
-/exitpop.js
+/exitpop*.js
+/exports/tour/*$third-party
 /facebookaff/*
 /facebookaff2/*
 /facebooksex.
@@ -4584,6 +4585,7 @@ _980x100.
 /imlive.gif
 /impopup/*
 /include/AD/*
+/includes/pop.js
 /infopop.
 /js/youmuffpu.js
 /JTCASHBANNERS/*
@@ -4593,15 +4595,17 @@ _980x100.
 /livejasmin.
 /livejasmin/*&id=
 /livejasmin_
+/livejasmine03.
+/livejasmine05.
 /markpop.js
 /mcad.php?
 /metsbanner.
 /mnads1.php?
 /mr_videoad.
 /mrskinleftside.
-/mydirtyhobby.
 /msn.js
 /msnpopup.php
+/mydirtyhobby.
 /myfreepaysitebanner.
 /newaff/float
 /newimplugs.
@@ -4687,6 +4691,7 @@ _popupunder.
 ||dirtyrottenwhore.com^*/random300x250a.
 ||dojki.com/js/clicker.js
 ||drochelwagen.com/images/banner
+||eporner.com/btmads.
 ||eporner.com/stats/
 ||exgirlfriendmarket.com/img2/ad/
 ||filecabi.net/728$subdocument
@@ -4708,7 +4713,6 @@ _popupunder.
 ||hardsextube.com/zone.php
 ||hcomicbook.com/js/hcb-$script
 ||hgimg.com/js/beacon.
-||nude.hu/banners/
 ||hornywhores.net/hw$script
 ||hustler.com/backout-script/
 ||imagearn.com/img/picBanner.swf
@@ -4735,17 +4739,18 @@ _popupunder.
 ||live-porn.tv/popundercode.js
 ||liveandchat.tv/bana-/
 ||megaporn.com/video/ad_
+||morebabes.to/morebabes.js
 ||motherless.com/images/banners/
 ||mp3musicengine.com/bearshare_logo.
 ||mp3musicengine.com/images/freewatchtv1.
 ||ns4w.org/gsm.js
 ||ns4w.org/images/promo/
 ||ns4w.org/images/vod_
+||nude.hu/banners/
 ||perfectgirls.net/b/
 ||phun.org/phun/gfx/banner/
 ||phun.org/specials/
 ||picleet.com/inter_picleet.js
-||trovaporno.com/image/incontri$image
 ||picturedip.com/modalfiles/modal.js
 ||picturedip.com/windowfiles/dhtmlwindow.css
 ||pixhost.org/js/jquery_show2.js
@@ -4756,13 +4761,13 @@ _popupunder.
 ||pornbb.org/posts_ad
 ||pornwikileaks.com/adultdvd.com.jpg
 ||rawtube.com/expop.js
-||scoreland.com/banner/
-||scorevideos.com/banner/
-||scorehd.com/banner/
 ||redtube.com/iframe/
 ||redtube.com/show.php
 ||redtubefiles.com^*/skins/
 ||s.xvideos.com^$subdocument
+||scorehd.com/banner/
+||scoreland.com/banner/
+||scorevideos.com/banner/
 ||sex-techniques-and-positions.com/123ima/
 ||sex-techniques-and-positions.com/banners
 ||sexy-toons.org/interface/partenariat/
@@ -4775,18 +4780,24 @@ _popupunder.
 ||shooshtime.com/adfiles/
 ||shooshtime.com/ads/
 ||shooshtime.com/images/chosenplugs/
-||troppoforte.net/bannersopra/
-||troppoforte.net/banner300px/
 ||shooshtimeinc.com/under.php
 ||shufuni.com/js/PopUnderKingHomePage.js
 ||sify.com^*/Movies_spons_
 ||slutload-media.com^*/hd-ads/
 ||starcelebs.com/logos/$image
 ||stars-masculines-nues.com/js/pop.js
+||static.flabber.net^*background
+||static.kinghost.com^
 ||stileproject.com^*/sp3_ep.js
+||thehun.net^*/banners/
+||titsintops.com/intersitial/
+||titsintops.com/rotate/
 ||tnaflix.com/banner/
 ||tnaflix.com/flixPlayerImages/
 ||tnaflix.com^*_promo.jpg
+||troppoforte.net/banner300px/
+||troppoforte.net/bannersopra/
+||trovaporno.com/image/incontri$image
 ||twofuckers.com/brazzers
 ||uncoached.com/smallpics/ashley
 ||usercash.com/*.js
@@ -4802,8 +4813,8 @@ _popupunder.
 ||xvideo2.net/head.html
 ||xvideo2.net/img/anuncio/
 ||xvideo2.net/js/*.js
-||xxxporntalk.com/images/
 ||xxxlinks.es/xvideos.js
+||xxxporntalk.com/images/
 ||yuvutu.com^*/banners/
 !     
 ! ---------- 3rd party adult blocking rules ----------
@@ -4835,12 +4846,12 @@ _popupunder.
 ||datefunclub.com^$third-party
 ||datingamateurs.com^$third-party
 ||datingidol.com^$third-party
+||ddfcash.com^$third-party
 ||deecash.com^$third-party
 ||digitaldesire.com^$third-party
+||directchat.tv^$third-party
 ||display.superbay.net^$third-party
-||twilightsex.com^$third-party,subdocument
 ||divascam.com^$third-party
-||tubedspots.com^$third-party
 ||drevil.to^$third-party
 ||dvdbox.com/promo/$third-party
 ||dvdkinoteatr.com^$third-party
@@ -4853,9 +4864,7 @@ _popupunder.
 ||feeds.videosz.com^$third-party,subdocument
 ||femjoy.com/bnrs/$third-party
 ||fleshlight.com^$third-party
-||poppcheck.de^$third-party
 ||fleshlightgirls.com^$third-party
-||hosted.x-art.com/potd$third-party
 ||flirt4e.com^$third-party
 ||friendfinder.com^$third-party,domain=~pop6.com|~facebookofsex.com
 ||galleries.videosz.com^$third-party,object
@@ -4864,6 +4873,8 @@ _popupunder.
 ||gfrevenge.com^$third-party
 ||hipals.com^$third-party
 ||hornymatches.com^$third-party
+||hosted.met-art.com/gotd$third-party
+||hosted.x-art.com/potd$third-party
 ||hotsocials.com^$third-party
 ||ideal-sexe.com^$third-party
 ||ifriends.net^$third-party
@@ -4871,7 +4882,6 @@ _popupunder.
 ||ilovecheating.com^$third-party
 ||image.nsk-sys.com^$third-party
 ||inheart.ru^$third-party
-||trafogon.net^$third-party
 ||itslive.com^$third-party
 ||js.picsomania.info^$third-party
 ||juicycash.net^$third-party,subdocument
@@ -4895,31 +4905,44 @@ _popupunder.
 ||mykodial.com^$third-party
 ||naked.com^$third-party
 ||nastydollars.com^$third-party,subdocument,script
-||ddfcash.com^$third-party
-||hosted.met-art.com/gotd$third-party
 ||nubiles.net^$third-party,subdocument
 ||nude.hu/banners/$third-party
 ||nude.hu/html/$third-party
 ||ozelmedikal.com^$third-party
 ||plug.plugerr.com^$third-party
 ||plugrush.com^$third-party,domain=~amateursexy.net
+||poppcheck.de^$third-party
 ||pornravage.com/notification/$third-party
 ||pornturbo.com/tmarket.php?
 ||premiumhdv.com^$third-party
 ||privatamateure.com^$third-party
-||transexy.it^$third-party
+||profistats.net^$third-party
 ||promo.twistyscash.com^$third-party
 ||promos.fling.com^$third-party
 ||promotion-campaigns.com^$third-party
 ||realitykings.com^$third-party,subdocument
 ||redlightcenter.com^$third-party
 ||sextronix.com^$third-party
-||trader.erosdlz.com^$third-party
 ||socialsexnetwork.net^$third-party
-||tours.imlive.com^$third-party
+||streamate.com^$third-party
+||streamateaccess.com^$third-party
 ||streamray.com^$third-party,domain=~cams.com|~communitycams.net
+||sunnysmedia.com^$third-party
 ||sweetstudents.com^$third-party
+||teendestruction.com^$third-party
 ||thumbnail-galleries.net^$third-party
+||thumbs.sunporno.com^$third-party
+||tizernet.com^$third-party
+||toget.ru^$third-party
+||topbucks.com^$third-party
+||totem.porkolt.com^$third-party
+||totemcash.com^$third-party
+||tours.imlive.com^$third-party
+||trader.erosdlz.com^$third-party
+||trafogon.net^$third-party
+||transexy.it^$third-party
+||tubedspots.com^$third-party
+||twilightsex.com^$third-party,subdocument
 ||upsellit.com/custom/$third-party
 ||vrstage.com^$third-party
 ||wendi.com/ipt/$third-party
@@ -4931,7 +4954,7 @@ _popupunder.
 ||youserials.com/i/banner_
 ||ziphentai.com^$third-party
 !
-! ---------- 1st party adult blocking rules ----------
+! ---------- General adult blocking rules ----------
 !
 ||123advertising.nl^
 ||1tizer.com^
@@ -4953,14 +4976,15 @@ _popupunder.
 ||ad-u.com^
 ||ad.slutload.com^
 ||ad.traffmonster.info^
+||adb.fling.com^
 ||adcell.de^
-||addy.wildcammy.com^
 ||adedy.com^
 ||adhitzads.com^
 ||adparad.net^
 ||adprotraffic.com^
 ||ads.3xoogle.com^
 ||ads.4tube.com^
+||ads.amaland.com^
 ||ads.amateurmatch.com^
 ||ads.brazzers.com^$~object-subrequest
 ||ads.buzzcity.net^
@@ -4976,13 +5000,13 @@ _popupunder.
 ||ads.redtube.com^
 ||ads.regieadulte.com^
 ||ads.rudester.com^
-||flagads.net^
 ||ads.sexier.com^
 ||ads.sexinyourcity.com^
 ||ads.skinected.com^
 ||ads.stileproject.com^
 ||ads.streamlivesex.com^
 ||ads.tube1.com^
+||ads.watchmygf.net^
 ||ads.webcamclub.com^
 ||ads.xhamster.com^
 ||ads.xprofiles.com^
@@ -5007,7 +5031,6 @@ _popupunder.
 ||advmaker.ru^
 ||advmania.com^
 ||advprotraffic.com^
-||itrxx.com^
 ||adworldmedia.com^
 ||adzs.com^
 ||aebn.net/feed/
@@ -5116,6 +5139,7 @@ _popupunder.
 ||fftube.com/banners/
 ||filthads.com^
 ||firstload.de^$third-party
+||flagads.net^
 ||flipflapflo.info^
 ||flipflapflo.net^
 ||flirtingsms.com^
@@ -5148,6 +5172,7 @@ _popupunder.
 ||imageshack.us^*/bannng.jpg
 ||intellichatadult.com^
 ||internebula.net^
+||itrxx.com^
 ||ivitrine.buscape.com^
 ||jaymancash.com^
 ||joyourself.com^
@@ -5302,37 +5327,15 @@ _popupunder.
 ||squeeder.com^$third-party
 ||stat-data.net^$third-party
 ||stat.novojoy.com^
-||static.eporner.com/pjsall-$script
-||static.flabber.net^*background
-||static.kinghost.com^
-||static.wildcammy.com^$third-party
 ||sterrencash.nl^
-||stolenpornpasswords.com^
-||streamate.com^$third-party
-||streamateaccess.com^$third-party
-||stripsaver.com^$third-party
-||sunnysmedia.com^$third-party,image
-||sweetmedia.org^$third-party
+||stripsaver.com^
+||sweetmedia.org^
 ||target.vivid.com^
-||tck.bangbros.com^
-||teasernet.ru^$third-party
-||teaservizio.com^$third-party
-||teendestruction.com^$third-party
-||thehun.net/overflow/banners/
-||themis.yahoo.com^
-||thumbcow.com/livebanner/
-||thumbs.sunporno.com^$third-party,image
-||timesonline.co.uk/date/profiles/
-||titsintops.com/intersitial/
-||tizernet.com/engine.php?
-||tnaflix.com/view_page_top_
-||toget.ru^$third-party
-||topbucks.com^$third-party
-||tossoffads.com^$third-party
-||totem.porkolt.com^$third-party
-||totemcash.com^$third-party
-||trade.porndirt.com/cgi-bin/
+||teasernet.ru^
+||teaservizio.com^
+||tossoffads.com^
 ||traffic-in.com^
+||traffichaus.com^
 ||trafficholder.com^
 ||trafficjunky.net^
 ||traficmax.fr^
@@ -5400,6 +5403,7 @@ _popupunder.
 ||stats-analytics.info^
 ||stileproject.com/vhtk/
 ||targetingnow.com^
+||tck.bangbros.com^
 ||thespecialsearch.com^
 ||tnaflix.com/js/ga.js
 ||track.gridlockparadise.com^
@@ -5863,8 +5867,6 @@ exgirlfriendmarket.com##[width="728"][height="150"]
 fantasti.cc###TB_overlay
 fantasti.cc###TB_window
 fantasti.cc##.ccad
-xvideoslatino.com###publicidadlateral1
-xvideoslatino.com###publicidadlateral2
 fantasti.cc##.goodie01
 fantasti.cc##div[style="text-align:center; font-size:10px;"]
 fapgames.com###the720x90-spot
@@ -5886,14 +5888,12 @@ hardsextube.com##*[width="900"][height="250"]
 hollywoodrag.com###navcontainer
 hollywoodrag.com##[style="font-weight: bold; font-family: Arial; font-size: 13px;"]
 hollywoodtuna.com###jc_ca_container
-thehun.net##.bannervertical
 hollywoodtuna.com##a[href^="http://refer.ccbill.com/"]
 hollywoodtuna.com##td[width="6"]
 hotlinkimage.com##.inner_right
 houstonpress.com###perswrap
 humoron.com##table[width="527"]
 imagearn.com##.wide_banner
-thehun.net##.bannerhorizontal
 imagebam.com##[href="http://www.over18space.com/"]
 imagebam.com##div[id][style$="display: inherit;"]
 imagebam.com##div[id][style="display: inherit;"]
@@ -6015,6 +6015,8 @@ taxidrivermovie.com##.left_right_border
 teenist.com###video-bottom-right
 telegraph.co.uk###comDatingSmall
 telegraph.co.uk##.comDatingWidget
+thehun.net##.bannerhorizontal
+thehun.net##.bannervertical
 theonion.com###personals
 thestranger.com###communityScroller
 thestranger.com###PersonalsScroller
@@ -6070,6 +6072,8 @@ xvideos.com##[height="1040"][width="185"]
 xvideos.com##table[height="244"][width="930"]
 xvideos.com##table[height="480"]
 xvideos.com##td[width="180"]
+xvideoslatino.com###publicidadlateral1
+xvideoslatino.com###publicidadlateral2
 xxx-blog.org###inhalt
 xxx-blog.org###warning
 xxxbunker.com###bannerListBottom
@@ -8531,6 +8535,7 @@ youporngay.com,youporn.com###producer
 ##.ad-tile
 ##.ad-title
 ##.ad-top       
+##.ad-top-300x250
 ##.ad-unit-300-wrapper
 ##.ad-unit-anchor
 ##.ad-unit-mpu
