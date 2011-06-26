@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: kacMEryCV6f/YD1S/PDWCg
+! Checksum: oo6XghPI1n3U/hf9C7RS6A
 ! Fanboy's Russian-V2-addon Adblock list 
-! Updated: 25 Jun 2011
+! Updated: 26 Jun 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -1190,56 +1190,68 @@ rin.ru##div[style="position: relative; width: 100%; height: 90px; text-align: ce
 uralweb.ru##[style="width: 240px; height: 400px; background: none repeat scroll 0% 0% rgb(255, 255, 255);"]
 xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0);"]
 !
-!---------- Russian Generic Element Hiding Rules ----------
+!---------- Russian Generic (Standalone) Element Hiding Rules ----------
 !
 ###ad-lb
 ###ad-left
+###ad-rbkua
 ###ad-rian
 ###ad120x60_override
 ###ad_help_link_new
 ###ad_ph_1
 ###AdFoxDiv
-###adriver_middle
-###adriver_top
 ###adSite
+###adsplace1
+###adsplace2
+###adsplace4
 ###advertisingLink
-###b240x400
-###b728x90
-###b_adv
-###banner-zone-righ
-###banner-zone-top
 ###ggogle_AD
 ###premier-ad-space
 ###reklama_left_body
 ###reklama_left_up
 ###reklama_right_up
 ###sponsorBanners32
-###topAdv
 ##.ad_box_new
 ##.ad_help_link
-##.adv_partners
+##.adblocks-topright
+##.AdSectionHeader
+##.advert-words
+##.advert_txt
 ##.advertising
+##.bottomArticleAds
+##.googleadsense
+##.header-ads
+##.insert-advert-ver01
+##.pricead-border
+##.reklama
+##.sponsorsBanners
+##.td_reklama_bottom
+##.td_reklama_top
+##.tibu_ad
+##.topArticleAds
+##.y5_ads
+##.y5_ads2
+!
+!---------- Russian Specific Element Hiding Rules ----------
+!
+###adriver_middle
+###adriver_top
+###b240x400
+###b728x90
+###b_adv
+###banner-zone-righ
+###banner-zone-top
+###topAdv
+##.adv_partners
 ##.afc_block
 ##.b-adv-home-tgb
 ##.b-adv-main-top-text
 ##.b-adv-sidebar
 ##.bc_adv_container
-##.bottomArticleAds
-##.googleadsense
-##.insert-advert-ver01
 ##.post-tizer
-##.pricead-border
-##.reklama
-##.sponsorsBanners
 ##.surbis_banner
-##.td_reklama_bottom
-##.td_reklama_top
 ##.textAdv
-##.tibu_ad
 ##.tibu_block
-##.topArticleAds
-##.y5_ads
-##.y5_ads2
 ##A[href^="http://clickcashmoney.com/"]
 ##A[href^="http://isms.pp.ru/jar.php?id"]
 ##A[href^="http://sugar-traff.com/voob_traff/"]
@@ -1288,7 +1300,6 @@ auto.dmir.ru###ZDsd3323242fsd23f34344
 auto.dmir.ru##.block8
 auto.dmir.ru##.vetrine.srch_lst_vitrine
 auto.lenta.ru##.test-auto
-auto.ru##.advert-words
 auto.ru##.advt_auto
 auto.ru##.side-banner
 auto.yandex.ru##.ins-block
@@ -1301,9 +1312,6 @@ avito.ru##.ad_1000x90
 avtobazar.ua##a[href^="http://ad.adriver.ru/cgi-bin/"]
 bash.org.ru##[style="text-align: center; font-size: 10pt;"]
 bbc.co.uk###partners
-bestreferat.ru###adsplace1
-bestreferat.ru###adsplace2
-bestreferat.ru###adsplace4
 bestreferat.ru##[name="adsplace"]
 bigmir.net##.b-banner_sm
 bigmir.net##.premium_banner
@@ -1405,7 +1413,6 @@ exler.ru###BannerHLeft
 expert.ru###ad-teaser
 expert.ru##.head-banner
 expert.ru##.rt-banner
-extra-m.ru##.adblocks-topright
 f1news.ru###left_pan_title
 f1news.ru###right_pan_logo
 f1news.ru###rightBanner240
@@ -1442,7 +1449,6 @@ gazeta.ua##[style="overflow: hidden; width: 240px; height: 350px;"]
 gazeta.ua##[style="width: 240px; height: 350px; overflow: hidden;"]
 gigamir.net###onona
 gigamir.net##.banner-box
-gismeteo.ua###ad-rbkua
 gismeteo.ua,gismeteo.ru,gismeteo.com###horiz
 gismeteo.ua,gismeteo.ru,gismeteo.com###left
 gismeteo.ua,gismeteo.ru,gismeteo.com###right_banner
@@ -1521,7 +1527,6 @@ kinopoisk.ru###loadb
 kinoslide.ru##table[style="background-color:#F6FAE9;"]
 km.ru###tbn
 km.ru##div[style="width:1000px; height:90px;"]
-korrespondent.net##.advert_txt
 korrespondent.net##.topbaner
 kp.by###banner-after-menu
 kp.by###top-banners
@@ -1558,9 +1563,7 @@ mail.ru##.top760
 margosha-tv.ru##.msnot
 marketgid.com###goods-hits-informer
 maulnet.ru##.top_banner
-medportal.ru##.AdSectionHeader
 medportal.ru##.obmenki
-meta.ua##.header-ads
 meta.ua##.rs.context
 meta.ua##div[style="padding-left:10px;"]
 meta.ua##div[style="width:240px;height:350px"]
@@ -1905,10 +1908,10 @@ zvukoff.ru##.p_20
 !---------- Hiding Rules With Exceptions ----------
 !
 ~autorambler.ru##.ad-content
+~badger.ru###ad1
 ~gismeteo.ru###ad-top
 ~slando.com.ua##.ad
 ~xmages.net###header-ad
-~badger.ru###ad1
 !
 !---------- Easylist-specific ----------
 !
