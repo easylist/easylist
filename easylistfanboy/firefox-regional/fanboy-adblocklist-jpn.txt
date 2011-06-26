@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: SxMVnQnh49XN77oGb6noNg
+! Checksum: cQz+czzC9alX2RHbPsRK8g
 ! Fanboy's Japanese-addon Adblock list 
-! Updated: 20 Jun 2011
+! Updated: 26 Jun 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -285,13 +285,21 @@ _ds_adtag_
 @@||ov.yahoo.co.jp^$domain=jp.msn.com,script
 @@||yimg.jp/bdv/yahoo/javascript/gyao/clover.js$domain=gyao.yahoo.co.jp
 !
-!---------- Japanese Generic Element Hiding Rules ----------
+!---------- Japanese Generic (Standalone) Element Hiding Rules ----------
 !
+###ad-giftext
+###ad-recommend
+###ad-right
 ###AD1line
 ###AD2line
+###ad_02
+###ad_03
+###ad_04
 ###ad_interestmatch
 ###ad_interestmatch400
+###ad_keywrods
 ###ad_large
+###ad_text
 ###ad_txt
 ###ADInterest
 ###ads_horizontal
@@ -299,25 +307,52 @@ _ds_adtag_
 ###adsSPRBlock
 ###BottomAd
 ###d4_ad_google02
+###photo_ad_google
+###pr_ad
 ###TopAd
 ##.ad-text-blockA01
 ##.ad-text-blockB01
 ##.ad-textG01
+##.ad_keywords_bot
+##.ad_keywords_bot_r
 ##.ad_large
+##.ad_rectangle
 ##.ad_regular1
 ##.ad_regular2
 ##.ad_regular3
+##.ad_special_badge
+##.ad_textlink_box
 ##.ad_thumbnail_header
+##.ad_top
+##.adArticleRecommend
+##.adArticleSidetile
+##.adArticleSidetile
+##.adArticleTopText
+##.adBrandpanel
+##.adCentertile
+##.adEmployment
+##.adgoogle
+##.adHeaderAdbanner
+##.adlist
+##.adRecommend
+##.adRecommendRight
 ##.adrect
+##.ads-by-google-0
+##.ads_468
+##.ads_entrymore
+##.adsense-image-detail
+##.adsense-topics-detail
 ##.adsense_box01
 ##.adsense_mainbox01
+##.adsenseBox
+##.adSidetileplus
 ##.adsize728
+##.adtitle
 ##a[href^="http://ad2.trafficgate.net/"]
 !
 !---------- Japanese Site Specific Element Hiding Rules ----------
 !
 47news.jp###header
-4gamer.net##.ad_top
 4gamer.net##.affiliate
 4gamer.net##.hot_game_now
 4gamer.net##.sidetop_extra_H320
@@ -347,7 +382,6 @@ fc2web.com###fc2analyzerold
 finance.yahoo.co.jp##.pos-tn.ymuiContainer
 giants.jp###etc_banner
 giants.jp###event_banner
-goga.co.jp###ad-right
 goo.ne.jp##.oshiete-ad
 google.co.jp###mbEnd
 google.co.jp###tads
@@ -362,18 +396,12 @@ impressrd.jp###block-block-61
 impressrd.jp###block-block-63
 impressrd.jp###block-block-65
 impressrd.jp###sponsors
-impressrd.jp##.ad_special_badge
-impressrd.jp##.ad_textlink_box
 impressrd.jp##.microsites_links
 infoseek.co.jp###srchls
 infoseek.co.jp##.prtxt
 infoseek.co.jp##.sponsordisplay
 infoseek.co.jp##.ssnavi
 infoseek.co.jp##[width="300"][height="260"]
-inside-games.jp##.adArticleSidetile
-inside-games.jp##.adArticleTopText
-inside-games.jp##.adHeaderAdbanner
-inside-games.jp##.adRecommendRight
 j-cast.com###LCOverture1
 j-cast.com###MCAdEntryBottomArea2
 j-cast.com###MCAdEntryCenterrectangle
@@ -387,7 +415,6 @@ japan.cnet.com###top_recommend
 japanese.engadget.com##.shopping2
 japantoday.com##.article_ad
 jiji.com###dir_2nd
-jiji.com###photo_ad_google
 jiji.com###self-ad
 jiji.com###shopping_2nd
 jiji.com###sumai_banner
@@ -396,7 +423,6 @@ joins.com###HEADLOGO
 joins.com###overture
 joins.com###overture_2
 joins.com###PR
-joins.com###pr_ad
 joins.com##.articleSpbox
 joins.com##.rightBanner
 jp.luxist.com##.shopping
@@ -409,24 +435,13 @@ jp.msn.com##.parent.chromeCustom4G
 jp.techcrunch.com##.boxy
 jp.techcrunch.com##.overture_vertical
 jsgoal.jp###banner
-kotaku.jp###ad_02
-kotaku.jp###ad_03
-kotaku.jp###ad_04
-kotaku.jp###ad_text
-kotaku.jp##.ads_entrymore
 labaq.com##div[style="width: 300px; height: 250px; position: absolute; top: 0px; left: 690px; background-color: #FFFFFF;"]
 lifehacker.jp###info
 lifehacker.jp##.ad_entry_title_under
 lifehacker.jp##.EntryMoreBanner
 livedoor.com###ad
-livedoor.com###ad-giftext
-livedoor.com###ad-recommend
 livedoor.com###become
 livedoor.com###headerBanner
-livedoor.com##.ads-by-google-0
-livedoor.com##.adsense-image-detail
-livedoor.com##.adsense-topics-detail
-livedoor.com##.adsenseBox
 livedoor.com##.large-showcase
 livedoor.com##.LDservice-link
 livedoor.com##.prtextBox
@@ -446,7 +461,6 @@ newsonjapan.com###squarebanner_text300x250
 nicovideo.jp###banner-side
 nicovideo.jp###banner-top
 nicovideo.jp###web_pc_premium
-nicovideo.jp##.ads_468
 nikkei.co.jp###prInfo
 nikkei.com##.cmn-sub_pr
 nikkei.com##.cmnc-even
@@ -456,7 +470,6 @@ nikkeibp.co.jp###article-textad-above
 nikkeibp.co.jp###jsAdTopics
 nikkeibp.co.jp###jsMagazineContents
 nikkeibp.co.jp###midrotation-magazine
-nikkeibp.co.jp##.ad_rectangle
 nikkeibp.co.jp##.aside-banner
 nikkeibp.co.jp##.header-banner
 nikkeibp.co.jp##.rectangle
@@ -466,17 +479,6 @@ rakuten.co.jp###Monster
 rakuten.co.jp###sponcerMain
 rakuten.co.jp###srNaviSponcer
 rakuten.co.jp##table[width="163"]
-response.jp##.adArticleRecommend
-response.jp##.adArticleSidetile
-response.jp##.adBrandpanel
-response.jp##.adCentertile
-response.jp##.adEmployment
-response.jp##.adRecommend
-response.jp##.adSidetileplus
-sanspo.com##.adgoogle
-sekaimon.com###ad_keywrods
-sekaimon.com##.ad_keywords_bot
-sekaimon.com##.ad_keywords_bot_r
 shinobi.jp##.posi1
 shinobi.jp##.posi11
 shinobi.jp##.posi3
@@ -484,8 +486,6 @@ sponichi.co.jp###relation-block
 sponichi.co.jp###yaad4
 sponichi.co.jp##.heading-pr-relation
 tokyo-np.co.jp###Banner-area
-tokyo-np.co.jp##.adlist
-tokyo-np.co.jp##.adtitle
 tokyo-np.co.jp##.banner-area
 tokyo-np.co.jp##.banner01
 tokyo-np.co.jp##.PR
