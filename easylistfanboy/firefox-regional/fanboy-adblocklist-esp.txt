@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zDafd7CsDZMWxFpMfdTnIg
+! Checksum: 1Sn9ZmWHT5uFz5IkXN3r8A
 ! Fanboy's Spanish/Portuguese Adblock list 
 ! Updated: 3 Jul 2011
 ! This list expires after 5 days
@@ -163,6 +163,7 @@ http://adw.
 ||jornalagora.com.br/uploads/banners/
 ||jornaldigital.com/pub/
 ||juegosypelis.ws/1_6.gif
+||l.yimg.com^*_backgrounnd.$domain=ar.yahoo.com
 ||lajornadanet.com^*/ads/
 ||laregion.es/imagenes/banners/
 ||lavanguardia.es/flash/
@@ -175,7 +176,6 @@ http://adw.
 ||manerasdevivir.com/pics/publi/
 ||mariosegura.com/images/banners/
 ||mariosegura.com/multimedia/especiales/
-||l.yimg.com^*_backgrounnd.$domain=ar.yahoo.com
 ||maxima.xl.pt/pubs/credial/
 ||miapuesta.com^*/newsletter/eblast/
 ||miau.pt/platform/banners
@@ -241,11 +241,10 @@ http://adw.
 ||ads.regiedepub.com^
 ||ads.sapo.pt^
 ||ads.terra.es^
-||spublicidad.net^
-||adsroute.com^
 ||ads.tvtuga.com^
 ||ads.xl.pt^
 ||adsmwt.com^
+||adsroute.com^
 ||banners.todoconsolas.com^
 ||cliccabanner.com^
 ||compras.periodistadigital.com^
@@ -259,6 +258,7 @@ http://adw.
 ||seguro.via-rs.net^
 ||softclick.com.br^
 ||solution911.com^
+||spublicidad.net^
 ||todovenganzas.com/popupnew/
 ||vitrine.lugarcerto.com.br^
 ||vitrines.globo.com^
@@ -332,11 +332,11 @@ http://adw.
 @@||ads.e-planning.net^*/PreRoll?
 @@||ads.globo.com/RealMedia/ads/adstream_jx.ads/g1/*videos
 @@||ads.globo.com/RealMedia/ads/adstream_mjx.ads/g1/home/
-@@||adswizz.com/www/delivery/swfIndex.php?$domain=esradio.fm
 @@||ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home/
 @@||ads.smowtion.com/ad.js
 @@||ads.telecinco.es^*/PM_test_video/crossdomain.xml
 @@||adswizz.com/www/components/$domain=esradio.fm
+@@||adswizz.com/www/delivery/swfIndex.php?$domain=esradio.fm
 @@||antena3.com/adserver/flv2/$domain=larazon.es
 @@||autoscout24.es^*/adbanner.css
 @@||avisooportunoexpress.mx/ajax_core.php*&adtype?$domain=avisooportunoexpress.mx
@@ -383,11 +383,11 @@ http://adw.
 ||rubias19.com/trackeo/
 ||sl.pt/wa.gif?
 ||stats.adn.es^
-||track.brafiliados.com.br^
 ||stats.folha.com.br^
 ||stats.milenio.com^
 ||terra.com.mx/js/metrics_
 ||ticotimes.net/viewcount/
+||track.brafiliados.com.br^
 ||track.es.sitebro.net^
 ||tracking.fsjmp.com^$third-party
 ||uv.terra.com.br^
@@ -401,6 +401,25 @@ http://adw.
 ##.googleAdFoot
 ##.video_ads_overdiv
 !   
+! ---------- Standalone Element Hiding Rules ----------
+!   
+###ad-230x100-1
+###ad4
+###adhome
+###ads_top
+###adsense2
+###adsense2pos
+###adsensepo
+###advertising_header
+##.adsbox
+##.AdsPot
+##.ctn-advertising
+##.google-ads-obj
+##.google-ads-rodape
+##.main-ads
+##.publicidade-dotted
+##.standard-ad
+!   
 ! ---------- Generic Spanish/Portuguese Element Hiding Rules ----------
 !   
 ###adsensePreCuerpo
@@ -412,7 +431,6 @@ http://adw.
 ###adv_position_4
 ###adv_top_1
 ###adv_top_right
-###advertising_header
 ###anunciosGoogle
 ###avazu_ads_slide
 ###barraPublicidade
@@ -482,6 +500,7 @@ sapo.pt##[style="width: 527px; height: 150px; float: right;"]
 !
 ! ---------- Spanish/Portuguese Specific Hiding Rules ----------
 !
+##.ad-superbanner
 ##[href^="http://ads.glispa.com/"]
 01net.com##DIV[style="border:solid 1px black;text-align:center; margin:10px 0 10px 0;"]
 123.cl###banner_160_600
@@ -556,7 +575,6 @@ brasilportais.com.br##.banner-vitrine
 cadenaser.com###banners_header
 cadenaser.com##.marketplace2
 cadenaser.com##.publi
-canal13.cl###ad4
 canal13.cl###banner_top
 canal13.cl##.banner_top
 capitalnews.com.br##[style="width: 738px; height: 90px; margin-top: 5px;"]
@@ -568,7 +586,6 @@ cdf.cl###homepagetop3
 cdf.cl###homepagetop5
 cdf.cl###homepagetop_side
 cdf.cl###r_sidebar
-cdf.cl##.adsbox
 cincodias.com##.publi
 cinetube.es##.adsb
 cinetube.es##.adst
@@ -591,9 +608,7 @@ cruzeirodosul.inf.br###adsverticalmenu
 cruzeirodosul.inf.br###bnrfull
 cruzeirodosul.inf.br###propaganda
 dealante.com###poster2
-dementia.pt##.AdsPot
 dementia.pt##.artfundpub
-dementia.pt##.standard-ad
 destak.pt##.pub
 destakjornal.com.br###publicidade
 destinia.com##.banner_doubleclick
@@ -725,9 +740,6 @@ ibtimes.com.br###fullbanner
 ibtimes.com.br###ing
 ibtimes.com.br###rectangle_banner
 idgnow.uol.com.br###viewlet-blog
-ig.com.br###adsense2
-ig.com.br###adsense2pos
-ig.com.br###adsensepo
 ig.com.br###advertising
 ig.com.br###enqueteLayer
 ig.com.br###publateral
@@ -782,7 +794,6 @@ iol.pt##.pub
 iol.pt##.pub_full
 iol.pt##.pub_half
 ionline.pt##.banner-obj
-ionline.pt##.google-ads-obj
 ipcdigital.com###banner_dir_cima
 ipcdigital.com###temp_banner_left
 ipcdigital.com###temp_banner_right
@@ -799,7 +810,6 @@ jornaldigital.com##.glidecontent
 juegosypelis.ws##td[height="630"]
 justin.tv###iphone_banner
 kidownload.com###sidebar_top
-kiosko.net###adhome
 kiosko.net##.promo
 lacartadelabolsa.com##.banners_cab
 lacartadelabolsa.com##.cont_banner300
@@ -811,7 +821,6 @@ lacerca.com##.contenedor_publicidad_lateral
 laflecha.net##.slogan.bottom
 laguiatv.com###adv-top
 lajornadanet.com##.publicidad
-lanacion.cl###ads_top
 lanacion.cl##.advs1
 lanacion.cl##.advs2
 lanacion.cl##.advs3
@@ -914,8 +923,6 @@ publico.pt##.pubTextual
 publico.pt##a[href^="http://bs.serving-sys.com/"]
 publimetro.com.mx##[style="width: 995px; height: 90px;"]
 punch-fansub.com.br##.pub1
-uol.com.br###shop-canhoto
-uol.com.br##.mod-uol-host
 que.es##.robapaginas
 r7.com##.banner
 r7.com##TD[align="center"][height="110"]
@@ -975,7 +982,6 @@ terra.com.br###megabanner
 terra.com.br###skyscraper
 terra.com.br###tgm-bottom
 terra.com.br###tgm-right
-terra.com.br##.ad-superbanner
 terra.com.br##.banner_propaganda_dir
 terra.com.br##.ctn-advertising
 terra.com.br##.ctn-tgm-advertising
@@ -986,7 +992,6 @@ terra.com.ni###tgm-bar2_1280
 terra.com.ni###tgm-pagesponsor
 terra.com.ni###tgm-right
 terra.com.ni##.advertising
-terra.com.ni##.ctn-advertising
 terra.es###banner300
 terra.es##.bann
 ticotimes.net##.ads_by_tico
@@ -1016,11 +1021,11 @@ ultimahora.com##TABLE[summary="banner"]
 ultimosegundo.ig.com.br###pub-island
 ultimosegundo.ig.com.br###pub-Right
 ultimosegundo.ig.com.br###pubRight
+ultradownloads.uol.com.br##table[height="600"]
+ultradownloads.uol.com.br##tr[height="90"]
 unam.mx##.dixio-banner
-unam.mx##.main-ads
 unam.mx##.medium-rectangle
 univision.com##[width="320"][align="left"]
-uol.com.br###ad-230x100-1
 uol.com.br###banner-120x240
 uol.com.br###banner-120x240-area
 uol.com.br###banner-125x125
@@ -1039,6 +1044,7 @@ uol.com.br###mod-shopping
 uol.com.br###nbusiness
 uol.com.br###pub_noticia
 uol.com.br###publicidade_topo
+uol.com.br###shop-canhoto
 uol.com.br###shop2
 uol.com.br###shopnow-coldir
 uol.com.br###to
@@ -1047,12 +1053,9 @@ uol.com.br##.banner
 uol.com.br##.banner_top
 uol.com.br##.banner_topo
 uol.com.br##.google
-uol.com.br##.google-ads-rodape
 uol.com.br##.lista
 uol.com.br##.mod-servicos-box
-uol.com.br##.publicidade-dotted
-ultradownloads.uol.com.br##tr[height="90"]
-ultradownloads.uol.com.br##table[height="600"]
+uol.com.br##.mod-uol-host
 uol.com.br##ul.produtos
 vagos.es###interVeil
 vagos.es##.dhtmlwindow
