@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: A6zFRyVy01D47hbtppjl2A
+! Checksum: ZmvXviLiMQ9CyO1OOfSC6Q
 ! Fanboy's Czech-addon Adblock list 
-! Updated: 2 Jul 2011
+! Updated: 4 Jul 2011
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -24,12 +24,9 @@
 .lt/banner/
 .swf?clickthru$domain=~postovnisporitelna.cz|~restaurace.cz
 /a_adv.dat?
-/ad/takeover/*
-/adrun.dll?
 /advantage.$domain=~dama.cz
 /Advert.Gemius.
 /banner-system/banners/*
-/context_ad/*
 /emonitor.
 /getbanner.aspx?
 /images/reklama/*
@@ -42,8 +39,6 @@
 /reklama_
 /reklamy.
 /scripts/clickjs
-/showad.fcgi?
-/site-advert.js
 /x-cz/rek/*
 _clickthru.swf?
 !
@@ -245,10 +240,7 @@ war-board.net##.mainmenu[style="color: red; font-weight: bold;"]
 ###reklamy
 ###super_ad_note
 ###super_banner_default
-##.advert-label
 ##.etarget
-##.jobs-ad-box
-##.jobs-ad-marker
 ##.jobscz
 ##.popisreklama
 ##.reklama
@@ -268,7 +260,6 @@ war-board.net##.mainmenu[style="color: red; font-weight: bold;"]
 !
 !---------- Czech Site Specific Element Hiding Rules ----------
 !
-abecedazahrady.dama.cz###advert-sky
 abecedazahrady.dama.cz##.banneraltext
 adfox.cz###vse
 aktualne.centrum.cz##.box-dvojity
@@ -301,11 +292,9 @@ computerworld.cz###skyscraper
 computerworld.cz##.ad-obal
 computerworld.cz##.banner
 computerworld.cz##.square_banner
-csfd.cz###search-ad
 csfd.cz##.ad-samsung
 csfd.cz##.ct-general.th-5
 ct24.cz##.commercialBox
-diit.cz##.advert-center_468x60
 diit.cz##.footer_links
 diit.cz##.leftbox-main
 diit.cz##.links
@@ -372,11 +361,9 @@ lidovky.cz###self-promo
 lidovky.cz##.ahead
 lidovky.cz##.col-d
 lidovky.cz##.widesquare
-lupa.cz###customAd
 lupa.cz###speed-promo
 mediafax.cz##.bannercauta
 mediafax.cz##.casetaright
-mediar.cz##.advertSign
 mesec.cz###jobs
 moda.cz##.square
 moda.cz##DIV[style="clear:both; padding-top:30px; width:540px;"]
@@ -398,9 +385,6 @@ nova.cz###pr_banner_container
 nova.cz###sport_banner_flash
 nova.cz###square_banner
 nova.cz###square_banner_2
-nova.cz##.ad_hyper_wrap
-nova.cz##.ad_ttl
-nova.cz##.ad_wrap
 nova.cz##.big_baner
 nova.cz##.pr_box
 osel.cz##.right
@@ -485,8 +469,22 @@ zvraceny.cz##.reklama-vodorovne
 ###adcontextlinks
 ###adSkyPosition
 ###advert-ahead
+###advert-sky
 ###advert-stickysky
 ###advert-text
+###customAd
 ###google-adwords
+###search-ad
+##.ad_hyper_wrap
+##.ad_ttl
+##.ad_wrap
+##.advert-center_468x60
+##.advertSign
+##.jobs-ad-box
+##.jobs-ad-marker
+/ad/takeover/*
+/adrun.
 /banner.php
 /cgi-bin/banner/*
+/context_ad/*
+/site-advert.

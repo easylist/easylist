@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: f89nP5OnkZ3368pdWH8Txw
+! Checksum: H9uZgV+XdIqx8UU8d4su0g
 ! Fanboy's Adblock list
 ! Updated: 4 Jul 2011
 ! This list expires after 5 days
@@ -67,7 +67,6 @@
 .adtech_
 .adtooltip&
 .adverts.
-.box.ad.
 .af-market.
 .ashx?adunit
 .asp?coad
@@ -75,6 +74,7 @@
 .bbn.by/
 .biz/ads/
 .bns1.net/
+.box.ad.
 .br/ads/
 .ca/ads/
 .cl/ads3/
@@ -246,6 +246,7 @@
 /ad.epl?
 /ad.gif
 /ad.html?
+/ad.js?id
 /ad.mason?
 /ad.php3?
 /ad.php?
@@ -281,6 +282,7 @@
 /ad/sponsored-
 /ad/sponsors/*
 /ad/swf/*
+/ad/takeover/*
 /ad/textlinks/*
 /ad1.htm
 /ad1.jpg
@@ -551,6 +553,7 @@
 /admaster.
 /admatcher.$~object-subrequest
 /AdMatcherClient.
+/admatik.
 /admax.
 /admedia.
 /admedia/*
@@ -607,6 +610,7 @@
 /AdRotator.
 /AdRotator/*
 /adrotator2.
+/adrun.
 /adruptive.
 /ads-1.js
 /ads-2.js
@@ -825,6 +829,7 @@
 /adtago.
 /AdTags.
 /adtagtc.
+/adtaily_
 /adtaobao.
 /adtech-
 /adtech.
@@ -906,11 +911,6 @@
 /adWiz.mpl
 /adwolf.
 /AdWords.js
-/ad.js?id
-/admatik.
-/adtaily_
-/miniads?
-_gallery_ads.
 /AdWorks/*
 /adx.js
 /adx2.js
@@ -1461,6 +1461,7 @@ _gallery_ads.
 /middle_adv_
 /min/ads/*
 /mini_ads.
+/miniads?
 /mint/ads/*
 /miva_ads
 /mktad/mktad.
@@ -1712,6 +1713,7 @@ _gallery_ads.
 /sifyhomelgrey_gads_
 /sikad.js
 /silver/ads/*
+/site-advert.
 /site_ads.
 /SiteAds/*
 /sitewide/ads/*
@@ -1992,6 +1994,7 @@ _english/adv/
 _externalAd.
 _files/ad.
 _FloatingAd_
+_gallery_ads.
 _generic_ad.
 _google_ad.
 _google_video_ads
@@ -6862,6 +6865,7 @@ youporngay.com,youporn.com###producer
 ###adMPU
 ###admpu
 ###AdMPUHome
+###adnet
 ###adnews
 ###adNshareWrap
 ###adP
@@ -7144,6 +7148,7 @@ youporngay.com,youporn.com###producer
 ###advert-island
 ###advert-leaderboard
 ###advert-links-bottom
+###advert-sky
 ###advert-stickysky
 ###advert-text
 ###advert-wrapper
@@ -7310,16 +7315,7 @@ youporngay.com,youporn.com###producer
 ###belowad
 ###belowheaderad
 ###bg-footer-ads
-##.gallery_ads_box
-##.miniads
-##.mod_ad
-###upperRightAds
-###adnet
-###miniAdsAd
-##.ad_adInfo
-##.adBillboard
 ###bg-footer-ads2
-##.adhref_box_ads
 ###bg_YieldManager-728x90
 ###big-box-ad
 ###big_ad
@@ -7514,6 +7510,7 @@ youporngay.com,youporn.com###producer
 ###cubead
 ###cubead-2
 ###cubead2
+###customAd
 ###d4_ad_google02
 ###d_AdLink
 ###dap300x250
@@ -7992,6 +7989,7 @@ youporngay.com,youporn.com###producer
 ###midrect_ad
 ###midRightAds
 ###midstrip_ad
+###miniAdsAd
 ###mochila-column-right-ad-300x250
 ###mochila-column-right-ad-300x250-1
 ###Module-From_Advertisers
@@ -8207,6 +8205,7 @@ youporngay.com,youporn.com###producer
 ###sdac_skyscraper_ad_widget-3
 ###sdac_top_ad_widget-3
 ###SE20-ad-container
+###search-ad
 ###search-sponsor
 ###search-sponsored-links
 ###search_ads
@@ -8518,6 +8517,7 @@ youporngay.com,youporn.com###producer
 ###upper_advertising
 ###upperad
 ###upperMpu
+###upperRightAds
 ###upperRightAds
 ###vdiAd
 ###vert-ads
@@ -8873,6 +8873,7 @@ youporngay.com,youporn.com###producer
 ##.Ad_728x90_holder
 ##.ad_728x90_top
 ##.ad_adblade
+##.ad_adInfo
 ##.AD_area
 ##.ad_area
 ##.ad_article_top_left
@@ -8923,6 +8924,7 @@ youporngay.com,youporn.com###producer
 ##.ad_help_link
 ##.ad_holder
 ##.ad_hpm
+##.ad_hyper_wrap
 ##.ad_identifier
 ##.ad_index02
 ##.ad_info_block
@@ -9005,12 +9007,14 @@ youporngay.com,youporn.com###producer
 ##.ad_topright
 ##.ad_tower
 ##.ad_trailer_header
+##.ad_ttl
 ##.ad_unit
 ##.ad_unit_rail
 ##.ad_w_us_a300
 ##.ad_warning
 ##.ad_wide
 ##.ad_word
+##.ad_wrap
 ##.ad_wrap
 ##.ad_wrapper
 ##.ad_wrapper_fixed
@@ -9039,6 +9043,7 @@ youporngay.com,youporn.com###producer
 ##.adBgBottom
 ##.adBgMId
 ##.adBgTop
+##.adBillboard
 ##.adBlock
 ##.adBlock160x600Spot1
 ##.adblock300x250Spot1
@@ -9128,6 +9133,7 @@ youporngay.com,youporn.com###producer
 ##.adHome300x250
 ##.adHorisontalNoBorder
 ##.adhoriz
+##.adhref_box_ads
 ##.adiframe
 ##.adImg
 ##.adIMm
@@ -9489,6 +9495,7 @@ youporngay.com,youporn.com###producer
 ##.advert-760
 ##.advert-article-bottom
 ##.advert-banner-holder
+##.advert-center_468x60
 ##.advert-group
 ##.advert-lower-right
 ##.advert-text
@@ -9582,6 +9589,7 @@ youporngay.com,youporn.com###producer
 ##.advertorial
 ##.advertRight
 ##.adverts
+##.advertSign
 ##.advfrm
 ##.advhere
 ##.Advman_Widget
@@ -9962,6 +9970,7 @@ youporngay.com,youporn.com###producer
 ##.gAds1
 ##.gAdvertising
 ##.gallery_ad
+##.gallery_ads_box
 ##.gam_ad_slot
 ##.game-ads
 ##.game_right_ad
@@ -10159,6 +10168,8 @@ youporngay.com,youporn.com###producer
 ##.item-container-ad
 ##.job_ad
 ##.jobs-ad-box
+##.jobs-ad-box
+##.jobs-ad-marker
 ##.kd_ads_block
 ##.kw_advert
 ##.l-bottom-ads
@@ -10272,6 +10283,7 @@ youporngay.com,youporn.com###producer
 ##.mini-ad
 ##.miniAd
 ##.miniad
+##.miniads
 ##.mlaAd
 ##.mmcAd_Iframe
 ##.mod-adblock
@@ -10279,6 +10291,7 @@ youporngay.com,youporn.com###producer
 ##.mod-adopenx
 ##.mod-horizontal-ad
 ##.mod-vertical-ad
+##.mod_ad
 ##.module-ad-small
 ##.module_ad
 ##.module_ad_disclaimer
