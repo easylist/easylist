@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: LvyVzb9kyBgouW/Ub79fqQ
+! Checksum: orK6nz0jABjhG4/6kUcVdA
 ! Fanboy's Polish-addon Adblock list 
-! Updated: 2 Jul 2011
+! Updated: 4 Jul 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -9,20 +9,14 @@
 ! ---------- Generic Blocking Rules ----------
 !
 .ad.comp.
-.box.ad.
 .pl/baner_
 .pl/banery/
 .pl/bannery/
 .pl/reklama/
 .swf?click
-/ad.js?id
-/admatik.
-/adtaily_
-/ajax_gallery_ads
 /ban.css
 /ban_div
 /img/banery/*
-/miniads?
 /reklama/www/*
 /reklama_
 /reklamy.
@@ -157,31 +151,39 @@ sfd.pl##[style="position: relative; z-index: 0; width: 1000px; height: 80px; tex
 sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px; padding: 0pt;"]
 sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text-align: center; margin: 5px 50px;"]
 !
-!---------- Polish Generic Element Hiding Rules ----------
+!---------- Standalone Rules ----------
 !
+/ad.js?id
+/admatik.
+/adtaily_
+/miniads?
+_gallery_ads.
+.box.ad.
+##.gallery_ads_box
+##.miniads
+##.mod_ad
+##.art_ad
+##.art_ad_body
 ###adnet
 ###miniAdsAd
+##.ad_adInfo
+##.adBillboard
+##.adhref_box_ads
+!
+!---------- Polish Generic Element Hiding Rules ----------
+!
 ###reklama1
 ###reklama_kontekstowa
 ###under_placead3_1
 ###under_placead5_1
-###upperRightAds
 ###zasobnikAds
-##.ad_adInfo
 ##.ad_pasekart
-##.adBillboard
 ##.adBoks
-##.adhref_box_ads
 ##.adSrodek
 ##.advCenter
 ##.advCenterColumn
-##.art_ad
-##.art_ad_body
 ##.box_filmu_reklama
 ##.box_reklama
-##.gallery_ads_box
-##.miniads
-##.mod_ad
 ##.prv-domena-advert
 ##.reklama_wysz
 !
