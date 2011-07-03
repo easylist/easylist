@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: xSO/1p4ENrJ/PReGsXeYAw
+! Checksum: luRzkto1neZTp15FMAqf5g
 ! Fanboy's Italian-addon Adblock list 
 ! Updated: 3 Jul 2011
 ! This list expires after 5 days
@@ -75,7 +75,6 @@ _pubblicita.
 ||cronacaqui.it/uploads/adv/
 ||digital-forum.it/bannerDTT/
 ||digital-sat.it/img/banner/
-||network.alfemminile.com^
 ||ebayobjects.com/1ai/ebay.it.homepage.cchp/$subdocument
 ||ecoseven.net/img/banner/
 ||edidomus.it^*/banner_
@@ -146,6 +145,7 @@ _pubblicita.
 ||monde-diplomatique.it/inspub/
 ||movement.it^*/images/banners/
 ||napolisport.net/banner/
+||network.alfemminile.com^
 ||nicoladefazio.it/banner/
 ||noicattolici.it/x_banner/
 ||noicattolici.it/x_visite/
@@ -175,13 +175,13 @@ _pubblicita.
 ||rampower.it/widgets/adv/
 ||repubblica.it/ad/
 ||repubblica.it/costameno/
-||siap-polizia.org/images/banners/
 ||repubblica.it^*/jquery.plugin_contentsense_
 ||rtl.it/images/sponsor/
 ||sanmarinortv.sm/custom/bnr/
 ||sanmarinortv.sm/img/bnr/
 ||sciop.it/slideshowSP/slideshowSP.php
 ||secondamano.it/Images/cms/footer_cobrand/
+||siap-polizia.org/images/banners/
 ||soldionline.it/images/300x100_
 ||spartoo.it/object.html
 ||stopandgo.tv^*/banner/
@@ -383,10 +383,6 @@ tio.ch##[style="border: 1px solid rgb(1, 84, 136);"]
 !   
 !---------- Italian Generic (Standalone) Element Hiding Rules ----------
 !   
-/ad-ina.
-/adsenze.
-/adsetup.
-.it/Ads/Banner/
 ###adpromo
 ###adsense_300x250
 ###adsense_box_video
@@ -395,6 +391,10 @@ tio.ch##[style="border: 1px solid rgb(1, 84, 136);"]
 ##.googleSideAd
 ##.marketing-ad
 ##.specials_ads
+.it/Ads/Banner/
+/ad-ina.
+/adsenze.
+/adsetup.
 !
 !---------- Italian Generic Element Hiding Rules ----------
 !
@@ -465,6 +465,7 @@ agichina24.it##.strip
 agichina24.it##.topbanner1
 agimondo.it###overhp
 agoravox.it##.publarge
+alfemminile.com##iframe[id^="SaS_InsertionID"]
 allaguida.it###top-banner
 angolotesti.it###leo-adv
 angolotesti.it###sponsoredby
@@ -536,7 +537,6 @@ corriere.it##.collaborazione
 corriere.it##.collection
 corriere.it##.dove
 corriere.it##.royal_mkt
-siap-polizia.org###popup_interstitial
 cronacaqui.it##.manchette
 delcinema.it##.banner200x200
 delcinema.it##.banner300x300
@@ -756,7 +756,6 @@ quicomo.it##.b121x120
 quicomo.it##.b350x120
 quicomo.it##.b468x60
 quotidiano.net##.adv_mondiali
-virgilio.it###IE9
 quotidiano.net##.vetrina
 r101.it###bannerTop
 radioitalia.it###advbox
@@ -764,7 +763,6 @@ radioitalia.it###bannerLeader
 radioitalia.it###box
 radioitalia.it###boxRR
 radioitalia.it###radioitaliatour
-alfemminile.com##iframe[id^="SaS_InsertionID"]
 radioitalia.it###sky
 radiovaticana.org###Layer1
 radiovaticana.org##[style="background-image:url(../img_common/sf_pub_234.gif); width:320px; height:64px;"]
@@ -798,6 +796,7 @@ secoloditalia.it###banner
 secoloditalia.it##.link_ext
 secondamano.it##.moreblock
 sherlockmagazine.it###delosstore-box
+siap-polizia.org###popup_interstitial
 spartoo.it##.cust_bottom_link
 studenti.it##.boxConsiglia
 style.it##.info-box
@@ -861,6 +860,7 @@ viamichelin.it##.pubTitle
 video.corriere.it###tv-adv
 virgilio.it###cont-leaderboard
 virgilio.it###cont-manchette
+virgilio.it###IE9
 virgilio.it###telecom_offerta
 virgilio.it##.mezzo
 virgilio.it##.newboxIs > .main
