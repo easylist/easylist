@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: qK8GkSNH3HVSHhioNAR7JA
+! Checksum: BoFgnRtsSuaOOXcXQaPKPA
 ! Fanboy's Spanish/Portuguese Adblock list 
 ! Updated: 3 Jul 2011
 ! This list expires after 5 days
@@ -11,14 +11,12 @@
 -publicidad-*
 -publicidad/*
 -publicidade.
-.br/ads/
 .br/adx.js
 .br/afiliados/
 .br/banner.aspx?
 .br/banners/
 .br/imagensdb/banners/
 .br/swf/banners/
-.cl/ads3/
 .clickafiliados.
 .com/adssrv/
 .com/afiliados/
@@ -29,20 +27,13 @@
 .es/imagenesDDN/banners/
 .es/traffic/?
 .imageshack.us^*/banner$domain=elchiguirebipolar.com,third-party,image
-.mx/ads/
 .net.ar/ads/
 .pt/images/banners/
 .publicidade.
 //adclient-
 //adware.
 /_publicidad/*
-/ad_lomadee.
-/ad_tpl.php?
-/adfactor_
 /adjuntos/imagenes/*.swf?link
-/adrequisitor-
-/ads/contextual
-/ads/creatives/*
 /adshotbrasil1.
 /adsligados.
 /banner300x80.
@@ -59,7 +50,6 @@
 /imgcontador.php?
 /linksPatGoogle.
 /mrec.aspx?
-/nflads.
 /planetup_
 /promocao-
 /publi.js
@@ -144,6 +134,7 @@ http://adw.
 ||elotrolado.net/styles/estiloeol/imageset/banner_
 ||elreloj.com/nkads/
 ||elsoldearica.com/Banner/
+||espirito-indomavel.com/sp.js
 ||estilourbanord.com^*/banners/
 ||expressomt.com.br/adminPortal/modBan/
 ||facua.org/es/$object
@@ -184,7 +175,6 @@ http://adw.
 ||nicaraguahoy.info/Banners/
 ||nossanoite.com.br//includebanners/
 ||ojo.com.pe/cargar.php?
-||series-br.com/js/popup_
 ||ojo.com.pe/flash/
 ||olhardireto.com.br/imgsite/banners/
 ||p.lasexta.com^*/sexta/
@@ -200,21 +190,20 @@ http://adw.
 ||record.xl.pt/pub/
 ||record.xl.pt/rec/i/pub
 ||sapo.pt/banner.swf
-||tugapirata.org/banners/
-||espirito-indomavel.com/sp.js
 ||sapo.pt/images_banner/
 ||sapo.pt/t2.asp$subdocument
+||series-br.com/js/popup_
 ||sl.pt/wa.gif?
 ||smartclip.net^$third-party
 ||sol.pt/flash/banner_
 ||t26.net/ads/
 ||tabascohoy.com/eid/images/
 ||tagmanfe.terra.com.br/ShowArea
-||wigetmedia.com/tags/serieonline.net.js
 ||terra.com.br/ads/
 ||thenews.com.mx/uploads/TBL_BANLAT_
 ||trincheraonline.com^*/originales/$object
 ||trivela.com/Banner.aspx?
+||tugapirata.org/banners/
 ||tvgente.com/adsover/
 ||ummilhao.com.br/1mil
 ||uol.com.br/flash/banner_
@@ -224,6 +213,7 @@ http://adw.
 ||ver-pelis.net/fox.htm
 ||ver-pelis.net/xtend.htm
 ||vooz.com.br/imagem/banners/
+||wigetmedia.com/tags/serieonline.net.js
 ||xl.pt/images/pub_banner_
 ||yucatan.com.mx/cuponazo
 ||zap.com.br/parceiros/
@@ -293,7 +283,6 @@ http://adw.
 ||box.zap.com.br^$third-party
 ||bpiexpressoimobiliario.pt^$third-party,subdocument
 ||buscape.com.br^$third-party
-||metododinheiro.pt^$third-party
 ||catho.com.br/parceiros/ad/$third-party
 ||codigobarras.net^$third-party
 ||coguan.com^$third-party
@@ -314,6 +303,7 @@ http://adw.
 ||maik.ff-bt.net^$third-party
 ||mercadolibre.com.ve^$third-party
 ||metaffiliation.com^$third-party
+||metododinheiro.pt^$third-party
 ||netfilia.com^$third-party
 ||nspmotion.com^$third-party
 ||offers.motime.com.br^$third-party
@@ -403,10 +393,8 @@ http://adw.
 ###ad-230x100-1
 ###ad-300x40-5
 ###ad-635x40-1
-###ad_publicidad
-##.googleAdFoot
-##.video_ads_overdiv
 ###ad4
+###ad_publicidad
 ###adhome
 ###ads_top
 ###adsense2
@@ -418,9 +406,21 @@ http://adw.
 ##.ctn-advertising
 ##.google-ads-obj
 ##.google-ads-rodape
+##.googleAdFoot
 ##.main-ads
 ##.publicidade-dotted
 ##.standard-ad
+##.video_ads_overdiv
+.br/ads/
+.cl/ads3/
+.mx/ads/
+/ad_lomadee.
+/ad_tpl.
+/adfactor_
+/adrequisitor-
+/ads/contextual
+/ads/creatives/*
+/nflads.
 !   
 ! ---------- Generic Spanish/Portuguese Element Hiding Rules ----------
 !   
@@ -811,7 +811,6 @@ jornaldenegocios.pt##a[href^="http://ad.doubleclick.net/"]
 jornaldigital.com##.glidecontent
 juegosypelis.ws##td[height="630"]
 justin.tv###iphone_banner
-series-br.com##.banner-home
 kidownload.com###sidebar_top
 kiosko.net##.promo
 lacartadelabolsa.com##.banners_cab
@@ -958,6 +957,7 @@ sapo.pt##[style="padding:20px 0px; text-align:center; height:90px"]
 sapo.pt##[style="WIDTH:300px; margin-bottom:10px; TEXT-ALIGN:right"]
 sapo.pt##[style="width:527px; height:150px; float:right"]
 sapo.pt##TABLE[cellpadding="5"][width="641"]
+series-br.com##.banner-home
 setenveo.es##.block-spti_operative
 soitu.es###publicidadsuperior
 soitu.es##.publicidad40
