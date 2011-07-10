@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: E0UsbzhUQM/f7OUPX3Aqpw
+! Checksum: 6cZNCFoLRxZwznFeBdnSNQ
 ! Fanboy's Polish-addon Adblock list 
-! Updated: 7 Jul 2011
+! Updated: 11 Jul 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -35,6 +35,8 @@
 ||fotka.pl/xds/
 ||gratka.pl/widget/
 ||gry-online.pl/grafiki/teaser/
+||interia.pl/cintpl/cintpl_$script
+||interia.pl/mailads
 ||jaslo4u.pl/pliki_swf/
 ||jaslo4u.pl/x/plakaty
 ||komputronik.pl^*/banner
@@ -44,8 +46,6 @@
 ||makro.pl^*/FrontPagePopup
 ||makro.pl^*/katalog-
 ||makro.pl^/FrontPageToplayer
-||interia.pl/mailads
-||interia.pl/cintpl/cintpl_$script
 ||napisy24.pl/files/
 ||napisy24.pl/images/baner_
 ||napisy24.pl/images/irj.jpg
@@ -85,7 +85,6 @@
 ||adkontekst.pl^$third-party
 ||adocean.pl^$third-party
 ||adp.glossymedia.pl^$third-party
-||files.lingvosoft.com^$third-party
 ||ads.adone.pl^$third-party
 ||ads.o2.pl^$third-party
 ||adsearch.pl^$third-party
@@ -96,6 +95,7 @@
 ||blogvertising.pl^$third-party
 ||businessclick.pl^$third-party
 ||clickad.pl^$third-party
+||files.lingvosoft.com^$third-party
 ||gambling-affiliation.com^$third-party
 ||helion.pl^$third-party,image
 ||metaffiliation.com^$third-party
@@ -237,7 +237,6 @@ pcworld.pl##.ramka1c
 pcworld.pl##.sky
 proline.pl###bannerside
 proline.pl###layer_top
-translate.pl###shikantaza_floater
 prv.pl##.boxOsobie
 psmania.pl##.sidebar-block-bot
 pudelek.pl###cu_popup
@@ -255,6 +254,7 @@ sfd.pl##td[width="160"]
 spryciarze.pl###gratka-widget
 tapeciarnia.pl###id_toplayer
 tapeciarnia.pl##table[height="100"][width="170"]
+translate.pl###shikantaza_floater
 trudne.pl##a[href^="http://clk.tradedoubler.com/"]
 tworzymyhistorie.pl##.reklpodskecz
 tworzymyhistorie.pl##.srodeklinema
@@ -272,19 +272,19 @@ wrzuc.to##a[href="http://www.tv.wrzuc.to/megavideo/special_offer"]
 !
 !---------- Standalone Rules ----------
 !
-/ad.js?id
-/admatik.
-/adtaily_
-/miniads?
-_gallery_ads.
-.box.ad.
-##.gallery_ads_box
-##.miniads
-##.mod_ad
-##.art_ad
-##.art_ad_body
 ###adnet
 ###miniAdsAd
 ##.ad_adInfo
 ##.adBillboard
 ##.adhref_box_ads
+##.art_ad
+##.art_ad_body
+##.gallery_ads_box
+##.miniads
+##.mod_ad
+.box.ad.
+/ad.js?id
+/admatik.
+/adtaily_
+/miniads?
+_gallery_ads.
