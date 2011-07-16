@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: j6zAa6f3t+65FIgp/6glhQ
+! Checksum: jTTVvmdtNc8KNo5awiqYAQ
 ! Fanboy's Russian-V2-addon Adblock list 
-! Updated: 16 Jul 2011
+! Updated: 17 Jul 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -29,9 +29,9 @@
 .ru/swf/banner_
 .su/Reklama/
 .swf?alink
+.swf?flash_
 .swf?link1=
 .swf?link=
-.swf?flash_
 .swf?path=
 .swf?pid=
 .ua/adbn/
@@ -105,9 +105,6 @@ http://r.e1.ru/
 ||allfreegame.ru/4682.gif
 ||allhockey.ru^*/advert_
 ||allsoft.ru/allsoftru/img/Partners/
-||vdv-up.ru/bans/
-||vdv-up.ru/files/B/
-||vdv-up.ru^*.swf
 ||ami-tass.ru/index.fcgi?
 ||anekdotov.net/show/sell/lenty/billiard500.jpg
 ||anime-zone.ru/inc/partners
@@ -378,6 +375,9 @@ http://r.e1.ru/
 ||urwb.ru/2.html
 ||urwb.ru/262.html
 ||urwb.ru/8.html
+||vdv-up.ru/bans/
+||vdv-up.ru/files/B/
+||vdv-up.ru^*.swf
 ||vesti.kz/static/vb/
 ||video.begun.ru/vpaid_lib.swf
 ||vmdaily.ru/img/baner/
@@ -434,6 +434,7 @@ http://r.e1.ru/
 ||ad1.ru^
 ||ad4.tutu.ru^
 ||adboon.ru^
+||addflow.ru^
 ||adfun.ru^
 ||adgo-online.de^
 ||adhub.ru^
@@ -441,7 +442,6 @@ http://r.e1.ru/
 ||admoon.net^
 ||adnet.com.ua^
 ||adonweb.ru^
-||addflow.ru^
 ||ads.domik.net^
 ||ads.ertelecom.ru^
 ||ads.focus-news.net^
@@ -633,6 +633,7 @@ http://ad.ir.ru^$third-party
 ||alldigital.ru^$third-party
 ||allsiemens.com^$third-party,object
 ||arbocontext.ru^$third-party
+||arcada.do.am^$third-party
 ||art-gu.ru^$third-party,image
 ||associazio.com^$third-party
 ||associeta.com^$third-party
@@ -734,8 +735,6 @@ http://ad.ir.ru^$third-party
 ||im4-tub.com^$third-party
 ||im5-tub.com^$third-party
 ||img.sape.ru/bn/$third-party
-||arcada.do.am^$third-party
-||py4ki.3dn.ru^$third-party
 ||individual-ki.com^$third-party
 ||informers.ukr.net^$third-party
 ||inforotor.net^$third-party
@@ -831,6 +830,7 @@ http://ad.ir.ru^$third-party
 ||protizer.net^$third-party
 ||pullcorn.com^$third-party
 ||putana.cz/index.php?partner$third-party
+||py4ki.3dn.ru^$third-party
 ||quintura.ru^$third-party
 ||rambler.ru/top100/$third-party
 ||region70.ru^$third-party
@@ -974,6 +974,7 @@ http://ad.ir.ru^$third-party
 ||admega.feed.gr^
 ||aif.ru^*/counter.php
 ||appsmail.ru/cgi-bin/$third-party
+||b2b.oldi.ru^
 ||bannuncio.com^$third-party
 ||banstat.nadavi.net^
 ||bigler.ru/bsystem/
@@ -986,7 +987,6 @@ http://ad.ir.ru^$third-party
 ||ch.rbc.ru^
 ||chance.ru/c/$image
 ||clck.yandex.ru^
-||b2b.oldi.ru^
 ||clicklink.ro^$third-party
 ||clicks.runews.radeant.com^$third-party
 ||cnstats.ru^$third-party
@@ -1524,7 +1524,6 @@ irn.ru##.adv
 irr.ru##.round-block[style="padding-top: 10px;"]
 irr.ru##[style="position: relative; z-index: 2;"] > .round-block
 isra.com##.adbg4
-vdv-up.ru##.bnbtop
 isra.com##.adv240
 isra.com##.banwth
 isra.com##table[style="width:300px; background-color:#f2f2f2; border:1px #6082d7 solid; margin-bottom:6px;"]
@@ -1546,9 +1545,6 @@ izvestia.ru##[style="height: 90px; width: 1000px; background-color: white; float
 izvestia.ru##tr[height="70"]
 jlady.ru##.newsblock
 job.ru##.banner_728
-vdv-up.ru##.bnbside
-vdv-up.ru##.bnbmiddle
-vdv-up.ru##table[style="height:65px;border:0px;margin:auto;padding-left:10%;padding-right:10%;align:center;"]
 k2kapital.com##.padd_banner_bottom
 k2kapital.com##.tpad10.bpad10
 k2kapital.com##[style="width: 240px; height: 400px; padding: 0pt; margin: 0pt;"]
@@ -1575,10 +1571,10 @@ ksweb.ru##.banner
 lifehacker.ru##.rblock1
 lifehacker.ru##.rblock4
 lifenews.ru###banner_120
+longhorn.at.ua##DIV[style="height: 23px;"]
 lost-abc.ru##table[width="630"][height="90"]
 lrnews.ru##.top_banner1
 lrnews.ru##.top_banner2
-longhorn.at.ua##DIV[style="height: 23px;"]
 macdigger.ru##[style="height:230px;width:100%;text-align:center;margin:20px 0 20px 0; padding:10px 0 15px 0;"]
 macradar.ru##.reclame
 mail.ru###banner_2
@@ -1591,7 +1587,6 @@ mail.ru##.ban
 mail.ru##.banner
 mail.ru##.blockPartners2Iframe
 mail.ru##.left_banner
-oldi.ru##.leftadv
 mail.ru##.rb_banner
 mail.ru##.top760
 margosha-tv.ru##.msnot
@@ -1672,6 +1667,8 @@ odnoklassniki.ru##.sideadv
 odnoklassniki.ru##.topadv
 oldheaven.ru###block34
 oldheaven.ru###block35
+oldi.ru##.leftadv
+oldi.ru##.mainbanner
 onlinepic.org##[style="position: relative; width: 730px; margin: auto;"]
 opennet.ru###adv
 opennet.ru###adv
@@ -1737,7 +1734,6 @@ rambler.ru##.r--footer-news
 rambler.ru##.r--hat-search-promo
 rambler.ru##.rb--TopTeaser
 rambler.ru##a[href^="http://autocontext.begun.ru/search/?"]
-oldi.ru##.mainbanner
 rambler.ru##a[href^="http://www.begun.ru/advertiser/"]
 rbc.ru##.banner
 rbc.ru##.creditInf
@@ -1876,6 +1872,10 @@ utro.ru##.banner_bottom_art
 utro.ru##.manga
 vakant.ru###banner69
 vakant.ru##.flash_watch
+vdv-up.ru##.bnbmiddle
+vdv-up.ru##.bnbside
+vdv-up.ru##.bnbtop
+vdv-up.ru##table[style="height:65px;border:0px;margin:auto;padding-left:10%;padding-right:10%;align:center;"]
 vedomosti.ru###banner_rast
 vedomosti.ru##.ears1
 vedomosti.ru##.ears2
