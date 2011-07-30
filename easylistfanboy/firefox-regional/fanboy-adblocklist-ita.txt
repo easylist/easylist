@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: xCzFqg+c142WoZkG05sEMA
+! Checksum: v9ne6ycXgBmWz3zqd+Ml6w
 ! Fanboy's Italian-addon Adblock list 
-! Updated: 28 Jul 2011
+! Updated: 30 Jul 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -14,6 +14,7 @@
 .it/cqadv/
 .it/img/ban/
 /adv_300x250.
+/advbanner/*
 /banner_js/*
 /bannermgt/*
 /box_tuttomercato/*
@@ -23,7 +24,6 @@
 /images/bg_adv$image
 /img/partner/*
 /js/adv.js|
-/advbanner/*
 /negozi_accordion.swf?
 /preloadBanner.
 /pubblicita.
@@ -58,7 +58,6 @@ _pubblicita.
 ||amadeusonline.net/sponsor/
 ||azpoint.net/190x100_banner.
 ||azpoint.net/aruba_
-||spaziogames.it^*/adv.htm
 ||azpoint.net/sfondo_
 ||bergamonews.it/agp/
 ||bergamonews.it/agp/
@@ -169,7 +168,6 @@ _pubblicita.
 ||r101.it/banner/
 ||radioitalia.it/banner/
 ||radionostalgia.fm/images/stories/banner_
-||spaziogames.it^*/backgrounds/
 ||radiovaticana.org/img_common/Alitalia
 ||radiovaticana.org/img_common/Eni
 ||radiovaticana.org/img_common/FAmBibbia
@@ -188,6 +186,8 @@ _pubblicita.
 ||siap-polizia.org/images/banners/
 ||soldionline.it/images/300x100_
 ||spartoo.it/object.html
+||spaziogames.it^*/adv.htm
+||spaziogames.it^*/backgrounds/
 ||stopandgo.tv^*/banner/
 ||style.it/cont/promo-sposa/
 ||tccstatic.com^*/banner/
@@ -251,6 +251,7 @@ _pubblicita.
 ||6sicuro.it^$third-party
 ||89.96.219.14^$third-party
 ||ad.harrenmedianetwork.com^
+||advplace.com^$third-party
 ||affiliati.cellulare.net^$third-party
 ||affiliazione.immobiliare.it^$third-party
 ||aimon.it^$third-party
@@ -261,7 +262,6 @@ _pubblicita.
 ||banzaimedia.it^$third-party
 ||buycentraladv.it^$third-party
 ||chunnel.de^$third-party
-||advplace.com^$third-party
 ||clickpoint.it^$third-party
 ||crmpilot.it^$third-party
 ||delosnetwork.it^$third-party
@@ -321,6 +321,7 @@ _pubblicita.
 ||allanalpass.com/track/
 ||ansa.it/nseevo/counter?
 ||aspstats.wallstreetitalia.com^
+||bstracker.blogspirit.net^
 ||c-date.it/tracking?
 ||counter.inter.it^
 ||counterlinks.com^$third-party
@@ -346,7 +347,6 @@ _pubblicita.
 ||shinystat.it^$third-party
 ||simply.com/magellan.html?
 ||sprintrade.com^$third-party
-||bstracker.blogspirit.net^
 ||stat.ipfrom.com^$third-party
 ||statistiche.ws^$third-party
 ||stats.e-go.gr^
@@ -466,8 +466,8 @@ tio.ch##[style="border: 1px solid rgb(1, 84, 136);"]
 ##.sponsoredtextlinkseo_container
 ##a[href^="http://adserver.hwupgrade.it/"]
 ##a[href^="http://adserver.ilmessaggero.it/"]
-##a[href^="http://adv.moto.it/adv/"]
 ##a[href^="http://adserver.webads.it/"]
+##a[href^="http://adv.moto.it/adv/"]
 !
 !---------- Italian Site Specific Element Hiding Rules ----------
 !
@@ -483,8 +483,6 @@ agichina24.it##.strip
 agichina24.it##.topbanner1
 agimondo.it###overhp
 agoravox.it##.publarge
-moto.it###rchm_overlay
-moto.it###topboard
 alfemminile.com##iframe[id^="SaS_InsertionID"]
 allaguida.it###top-banner
 angolotesti.it###leo-adv
@@ -503,7 +501,6 @@ avvenire.it###ctl00_MasterContent_ctl05_box
 avvenire.it###ctl00_MasterContent_ctl06_box
 avvenire.it###ctl00_MasterContent_ctl08_box
 avvenire.it###ctl00_MasterContent_ctl09_box
-spaziogames.it###banner300
 avvenire.it##.banner
 axn.it###block-spti_ga-spti_ga_adwords
 axn.it###block-spti_operative-spti_operative_square
@@ -515,7 +512,6 @@ bergamonews.it##div[style="width:468px;height:60px;overflow:hidden;"]
 bitcity.it###banner-90
 bitcity.it###banner-leader
 bitcity.it###banner-leaderboard
-fcinternews.it##.banner_sx_160x600
 bitcity.it###banner-mpu
 bitcity.it###banner-normal
 bitcity.it###banner-sky
@@ -555,7 +551,6 @@ corriere.it###vxFlashPlayerStaticIMUFrame
 corriere.it##.bacheca-mkt
 corriere.it##.bacheca-pub
 corriere.it##.bacheca-pub-home
-giornalettismo.com##div[style="height:272px;margin:30px 0;background:white"]
 corriere.it##.box-corriere-superenalotto
 corriere.it##.boxpub
 corriere.it##.collaborazione
@@ -592,6 +587,7 @@ fantagazzetta.com##[style="width: 728px; height: 90px; background-color: rgb(255
 fantascienza.com###delosstore-box
 fantascienza.com###long-banner
 fantascienza.com###partners
+fcinternews.it##.banner_sx_160x600
 film.it##.right_advertise_cnt
 film.it##.top_advertizing_cnt
 finanza.com###top-banner
@@ -620,6 +616,7 @@ gds.it##.pubb
 geekissimo.com###iSaySlider
 geovisites.com##.bg_flash
 giornalettismo.com##.liq-frame
+giornalettismo.com##div[style="height:272px;margin:30px 0;background:white"]
 giovani.it##.adv_leaderboard
 giovani.it##.sidebar_adv_pp
 gizmodo.it###bodyGoogleAnnounces
@@ -673,7 +670,6 @@ ilsecoloxix.it##.artbanner
 ilsole24ore.com###block300x250
 ilsole24ore.com##.vetrina
 ilsole24ore.com##[style="width: 300px; margin-top: 6px;"]
-lastminuteviaggio.com##.result
 infomotori.com###leaderboard-top
 infomotori.com###strisciamenu
 infomotori.com##.chiudi
@@ -708,6 +704,7 @@ lastampa.it###spazioalto1
 lastampa.it###spazioalto2
 lastampa.it###topbanner_container
 lastampa.it##.top-right-banner
+lastminuteviaggio.com##.result
 latitudeslife.com###head_banner
 lavocedelnordest.it###banner-alto
 lavocedelnordest.it##[style="height: 45px; width: 960px;"]
@@ -748,6 +745,8 @@ metronews.it###spot_top
 metropolisweb.it##.BannerMezzoNotizia
 milanoweb.com###banner
 monde-diplomatique.it###spotsinistra
+moto.it###rchm_overlay
+moto.it###topboard
 motonline.com###box-bacheca
 motonline.com###box-bachecapremium
 mrwebmaster.it##.banner
@@ -835,6 +834,8 @@ secondamano.it##.moreblock
 sherlockmagazine.it###delosstore-box
 siap-polizia.org###popup_interstitial
 spartoo.it##.cust_bottom_link
+spaziogames.it###b728
+spaziogames.it###banner300
 studenti.it##.boxConsiglia
 style.it##.info-box
 style.it##.slide-items
@@ -857,7 +858,6 @@ theinquirer.it##.pubind1
 thrillermagazine.it###delosstore-box
 ticinolibero.ch###sponsor
 tio.ch##[style="border:1px solid #015488;"]
-spaziogames.it###b728
 tiscali.it###banner300x250c20
 tiscali.it###banner304x860
 tiscali.it##.ADV
