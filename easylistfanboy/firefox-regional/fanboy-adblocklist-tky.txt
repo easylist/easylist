@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: T8m3svnJZxQf+MR1IGq6gA
+! Checksum: L84sGHWod9fi3UGjy6g2sQ
 ! Fanboy's Turkish-addon Adblock list 
-! Updated: 11 Aug 2011
+! Updated: 13 Aug 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -92,6 +92,7 @@ _reklam_125_
 ||emlakkulisi.com/Banner
 ||enguzelpornolari.biz/sagbanner.gif
 ||enguzelpornolari.biz/splash.php
+||filminiizle.com/reklamigec.html
 ||frmtr.com/images/r/
 ||gazetevatan.com/adv_
 ||gazetevatan.com/resimler/rightbanner
@@ -100,11 +101,8 @@ _reklam_125_
 ||gizleseneee.net/sol.swf
 ||haber365.com/bn.php?BannerTIP=
 ||haber7.com/load-banner.php
-||inilti.com/dikbanner.jpg
-||inilti.com/gecis.png
 ||haberdiyarbakir.com/images/banner/
 ||habervaktim.com/1453
-||filminiizle.com/reklamigec.html
 ||habervaktim.com/hvreklam/
 ||habervaktim.com/rd.swf
 ||hemmenindir.org/mypop.js
@@ -112,6 +110,9 @@ _reklam_125_
 ||hikayehikaye.net^*-clickjacking.js
 ||hurriyet.com.tr/ReadCountOfNews.aspx?
 ||hurriyet.de/_banners/
+||inilti.com/dikbanner.jpg
+||inilti.com/gecis.png
+||inilti.com/splash
 ||inilti.com/yenipop.js
 ||inndir.com/ads/
 ||internethaber.com/banner/
@@ -141,7 +142,6 @@ _reklam_125_
 ||realist.gen.tr/logo.php?
 ||resim.sinemalarizle.com/kucukresim/$script,subdocument
 ||rokettube.me/splash3.
-||inilti.com/splash
 ||sabah.com.tr/banner/
 ||sabah.com.tr/geo
 ||sadecegir.com/ifr/mypop.js
@@ -155,6 +155,7 @@ _reklam_125_
 ||t24.com.tr^*/banner.swf
 ||takvim.com.tr/banner/
 ||techno-labs.com/banner/
+||tinyurl.com^$domain=xpornosikis1.com
 ||trt.net.tr/flash/
 ||tumgazeteler.com/?cat
 ||turizmhaberleri.com/img/banner/
@@ -168,10 +169,6 @@ _reklam_125_
 ||uyesiz.org/pop.js
 ||uzunpenisler.com/splash.gif
 ||vakit.com.tr/0s.swf
-||xpornosikis1.com/rek1.gif
-||xpornosikis1.com/rek2.gif
-||xpornosikis1.com/splash.php
-||tinyurl.com^$domain=xpornosikis1.com
 ||vakit.com.tr/ad.
 ||virgul.com/ad_
 ||wardom.com.tr/keylogger.gif
@@ -181,6 +178,9 @@ _reklam_125_
 ||web.tr/banner/
 ||web.tr/v2/banner/
 ||webhaber.com/advers/
+||xpornosikis1.com/rek1.gif
+||xpornosikis1.com/rek2.gif
+||xpornosikis1.com/splash.php
 ||yabancidiziizle.com/logro.html
 ||yahoyt.com/main_banner
 ||yenicaggazetesi.com.tr/banner/
@@ -240,24 +240,24 @@ _reklam_125_
 ||baskentmedya.com^$third-party,object
 ||dulsohbet.net^$third-party
 ||fotocunuz.com^$third-party,domain=divxm.com
+||grimex.net^$third-party
 ||hizlicevap.com^$third-party,subdocument
 ||ingilizce.tk^*.swf
 ||inilti.com^$third-party
 ||lalmp3.org^*.html$third-party
 ||linkcenneti.net^$third-party
 ||modatrendim.com^$third-party
+||nealirsan3lira.com/banner/$third-party
 ||netizle.net^$third-party
 ||orjinalshop.net^$third-party
-||nealirsan3lira.com/banner/$third-party
 ||oyunsayar.com^$third-party
 ||penisbuyutucuhaplari.com^$third-party
 ||reklamdor.com^$third-party
-||sikispornosextv.com^$third-party
 ||reklamint.com^$third-party
 ||reklamoloji.com^$third-party
-||grimex.net^$third-party
 ||reklamstore.com^$third-party
 ||saglik.meltemhastanesi.com^$third-party
+||sikispornosextv.com^$third-party
 ||softreklam.com^$third-party
 ||sokakkizi.com^$third-party
 ||topeuro.biz^$third-party
@@ -314,6 +314,7 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###reklam300x250
 ###reklam300x600
 ###reklamdetay
+###reklamgoster
 ###reklami
 ###reklamlar
 ###rightreklam2div
@@ -326,7 +327,6 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###ustReklam
 ###ustreklam
 ###ustreklamlar
-###reklamgoster
 ###video_reklam2
 ###video_reklam3
 ##.adnet120
@@ -433,6 +433,8 @@ donanimhaber.com##.forumSponsor
 donanimhaber.com##.konulisteTextReklam
 donanimhaber.com##[width="135"]
 donanimhaber.com##td[align="right"][width="125"]
+downsen.net###backgroundPopup
+downsen.net###popupContact
 dunya.com###FullBanner
 dunya.com###leaderTop
 dunya.com###rectangleBanner
@@ -458,7 +460,6 @@ enguzelpornolari.biz##IMG[width="569"][height="450"]
 etutodasi.biz##span[style="margin: 10px; float: left; width: 301px; height: 251px;"]
 forum.donanimhaber.com##td[width="135"]
 forumgaleri.com###tamindir_topbar
-inilti.com###reklam
 fotospor.com###logoaltinew_banner
 fotospor.com##.banneritem
 fotospor.com##.module-hilite2a
@@ -473,9 +474,6 @@ google.com.tr###tads
 google.com.tr##.ra[align="right"]
 google.com.tr##table[style="border: 1px solid #0000cc"]
 grafi2000.com###Layer4
-inilti.com##a[href="http://www.cicikedi.com"]
-downsen.net###backgroundPopup
-downsen.net###popupContact
 haber.ekolay.net##div[style="height: 200px; overflow: hidden; width: 300px; margin-bottom: 5px"]
 haber.turk.net###top_banner
 haber365.com###BN_SayfaOrta
@@ -503,10 +501,13 @@ hurriyet.com.tr##div[style="width:890px; height:150px; text-align:center; backgr
 hurriyet.com.tr##div[style="width:890px;float:left"]
 indirmedenfilmizleseyret.com###kayan_reklam
 inilti.com###PopWin
+inilti.com###reklam
+inilti.com##a[href="http://www.cicikedi.com"]
+inilti.com##a[href="http://www.cicikedi.com/"]
+inilti.com##a[href="http://www.kiztelefonu.org/"]
+inilti.com##div[style="position:fixed;top:0;left:0;width:100%;height:100px;text-align:center"]
 kanald.com.tr##.adn
 kanald.com.tr##.adv
-inilti.com##a[href="http://www.kiztelefonu.org/"]
-inilti.com##a[href="http://www.cicikedi.com/"]
 kpsscafe.com###ihtiyac
 kraloyun.com###app_advertising_leaderboard_ph
 kraloyun.com###app_advertising_rectangle
@@ -542,7 +543,6 @@ morbiber.com##.modal-overlay
 mynet.com###atpsl
 mynet.com##.aidxcrBanner
 mynet.com##.banner300x250
-inilti.com##div[style="position:fixed;top:0;left:0;width:100%;height:100px;text-align:center"]
 mynet.com##.myBanner250
 mynet.com##.onAdvert300x250
 mynet.com##div[style=" clear:both;width: 635px; color: rgb(102, 102, 102); background: none repeat scroll 0% 0% rgb(212, 212, 212); font-weight: bold; padding-left: 5px; margin-bottom: 3px; font-family:Arial, Helvetica, sans-serif;font-size:12px;"]
