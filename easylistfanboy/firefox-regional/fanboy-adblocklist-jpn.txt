@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: ZQ1pYvS6m6dO99eiuI8Rkg
+! Checksum: guhD4cs+hW1DmBO4tTPgxQ
 ! Fanboy's Japanese-addon Adblock list 
-! Updated: 13 Aug 2011
+! Updated: 18 Aug 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -273,12 +273,13 @@ _ds_adtag_
 !---------- Japanese Whitelist ------------
 !
 @@/weblog/*$domain=mplus-fonts.sourceforge.jp
-@@|http://lrgads.net/www/delivery/ajs.php?$domain=japantimes.co.jp
+@@||lrgads.net/www/delivery/ajs.php?$domain=japantimes.co.jp
 @@||ad.adlantis.jp/ad/load_ad?zid=FM9TTM6yoVDcOMoJFB32bQ%3D%3D$domain=labaq.com
 @@||ad.adlantis.jp/ad/show?s=201&zid=FM9TTM6yoVDcOMoJFB32bQ%3D%3D$domain=labaq.com
 @@||gyoen.minpos.com/delivery/ajs.php?zoneid=79
 @@||ov.yahoo.co.jp^$domain=jp.msn.com,script
 @@||yimg.jp/bdv/yahoo/javascript/gyao/clover.js$domain=gyao.yahoo.co.jp
+@@||rcm-jp.amazon.co.jp^$domain=toscana.sakura.ne.jp
 !
 !---------- Japanese Generic (Standalone) Element Hiding Rules ----------
 !
@@ -537,6 +538,7 @@ yahoo.co.jp##UL[class^="sponsor"]
 yomiuri.co.jp##.m-tab
 yomiuri.co.jp##.m-txtad-weekly
 yomiuri.co.jp##.m-txtad2
+infoseek.co.jp##a[href^="http://c.p-advg.com/"]
 yomiuri.co.jp##.t-shopping
 yomiuri.co.jp##[style="margin: 8px 0pt;"]
 yomiuri.co.jp##[style="margin:8px 0 8px;"]
