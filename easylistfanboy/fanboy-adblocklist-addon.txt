@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: trkCEg5B57vyhPZOkKQh4w
+! Checksum: lRXH5qmPsh54eUi/kisVig
 ! Fanboy's Annoyance list Addon 
 ! Updated: 25 Aug 2011
 ! This list expires after 4 days
@@ -188,6 +188,7 @@ _social_icons.
 ||buzz-stats.com^$third-party
 ||c.liveintent.com^$third-party,subdocument
 ||care2.com/petitions/$third-party,domain=~thepetitionsite.com
+||cmpnet.com^*/popup.js
 ||cnet.com/rest/v1.0/tweets/
 ||complex.com/toolbar/
 ||d.yimg.com/ds/badge2.js
@@ -243,7 +244,6 @@ _social_icons.
 ||socialtwist.com^$third-party
 ||space.com/images/site/social/
 ||space.com/social.html
-||cmpnet.com^*/popup.js
 ||static.addtoany.com^$third-party
 ||static.delicious.com^$third-party
 ||stumble-upon.com^$third-party,domain=~stumbleupon.com
@@ -280,12 +280,12 @@ _social_icons.
 ###facebookLikeBox
 ###facebookLikeButton
 ###fb-activity
-###fb-recommend
 ###fb-fan-box
 ###fb-friends
 ###fb-like
 ###fb-like-btn
 ###fb-rec-box
+###fb-recommend
 ###fb-share-counter-link
 ###fb_container
 ###fb_ico
@@ -1196,7 +1196,9 @@ alternativeto.net##.twitter
 alternativeto.net##[href="http://twitter.com/alternativeto"]
 alternet.org###splashy_div
 alternet.org##.redditit
+alternet.org##.share_top
 alternet.org##.subscribe
+alternet.org##div[style="min-height: 100px; margin-left: 5px; margin-top: 25px;"]
 amd.com##.social
 amodernmilitarymother.com###blog-stats
 amodernmilitarymother.com###blog_subscription-4
@@ -1354,6 +1356,7 @@ criosweb.ro##.feed
 criosweb.ro##.feed
 crooksandliars.com###ps-widgets
 csmonitor.com###newsletter-container
+csmonitor.com###newsletterSignupPromo
 csmonitor.com##.facebookLike
 csmonitor.com##.pgTools
 csmonitor.com##.podBrdr
@@ -1391,6 +1394,7 @@ diet-blog.com##.social
 digg.com###feedback-bar
 digitaljournal.com###djstickyfoot
 digitalspy.co.uk###topunit
+digitaltrends.com###newsletter
 digitizor.com###upprev_box
 discovermagazine.com###Table_01[width="300"]
 discovermagazine.com##.articleToolsPhoto
@@ -1427,6 +1431,8 @@ electronicdesign.com###roadblockbackground
 electronicdesign.com###roadblockcontainer
 epicurious.com###luxury_link_promo
 eric-richardson.com###follow
+esquire.com###rr_social_tout
+etidbits.com###cevhershare
 ew.com###share-article
 examiner.com###block-ex_article-article_facebook_block
 examiner.com###block-ex_article-homepage_facebook_block
@@ -1553,7 +1559,6 @@ huffingtonpost.com###facebook_promo
 huffingtonpost.com###most_popular_social
 huffingtonpost.com###promo_ny
 huffingtonpost.com###twitter_promo
-esquire.com###rr_social_tout
 huffingtonpost.com###vertical_promo
 huffingtonpost.com##.apps-feeds
 huffingtonpost.com##.bing_pixie
@@ -1634,6 +1639,7 @@ labnol.org##.spread
 labnol.org##.subscribe
 laptopmag.com###slider
 latimes.com###social 
+latimes.com###socialmedia
 latimes.com##.articlerail
 latimes.com##.classifiedAdOne
 latimes.com##.classifiedAdThree
@@ -1665,7 +1671,6 @@ makeuseof.com##.sub
 marketwatch.com###dockingbar
 mashable.com##.channel-coverage
 mashable.com##.facebook-like
-latimes.com###socialmedia
 mashable.com##.jobs
 mashable.com##.mashable-head-shortad
 mashable.com##.post_share
@@ -1675,9 +1680,6 @@ matadornetwork.com##.socialbadge
 matadornetwork.com##.subscription_options
 maxim.com###headersearchsocial
 maxim.com##.footercol5
-etidbits.com###cevhershare
-alternet.org##.share_top
-alternet.org##div[style="min-height: 100px; margin-left: 5px; margin-top: 25px;"]
 maxim.com##.g_subs_Container
 maxim.com##.ShareLinksContainer
 maxim.com##.subscribeform
@@ -1686,7 +1688,6 @@ maximumpc.com##maximumpc-connect
 mayoclinic.com###link_share
 mayoclinic.com###newsletter
 mayoclinic.com###rss
-tvnz.co.nz##.share
 mayoclinic.com###social
 mcdonalds.com###mcd_facebook
 mcdonalds.com###mcd_twitter
@@ -1818,7 +1819,6 @@ npr.org##.storytoolswrap
 nydailynews.com##.art_share_right
 nydailynews.com##.art_shr_top
 nydailynews.com##.twtr-ftr
-csmonitor.com###newsletterSignupPromo
 nymag.com##.follow-vulture
 nymag.com##.newsletter
 nytimes.com###facebook_item
@@ -1911,13 +1911,11 @@ radbox.me##.social
 ranker.com###followRanker
 ranker.com###mainlist_social_stuff
 rasamalaysia.com##.cute_profiles_sprite
-digitaltrends.com###newsletter
 rawstory.com###follow_container
 rawstory.com###raw-updates-signup
 rawstory.com##[style="height: 28px; background-color: #ffffff; padding:10px; margin-bottom: 10px;"]
 rdmag.com###article_subscriptioncenter
 rdmag.com###dialog
-singularityhub.com##.facebook_connect
 rdmag.com###highlighted_text_ad\20
 rdmag.com###mask
 rdmag.com###socialmedia
@@ -1967,6 +1965,7 @@ shoutmeloud.com##DIV[style="float:right;width:120px;height:135px;padding-left:3p
 silicon.com##.magic-box
 similarweb.com##.share
 similarweb.com##.share
+singularityhub.com##.facebook_connect
 slashdot.org##.synd
 slashfilm.com###sharebox
 slate.com###article_bottom_tools
@@ -2158,6 +2157,7 @@ truth-out.org##[alt="Follow Truthout on Twitter"]
 truth-out.org##[alt="Get Truthout in your Email, Free!"]
 tuaw.com###slidebox
 tv.com##.connect_prompt_box
+tvnz.co.nz##.share
 tvsquad.com###tout-followUs
 tvsquad.com##.addthis
 typomaps.net##.social
@@ -2229,7 +2229,6 @@ webmd.com##.share_rdr
 webmd.com##.tw
 weirdasianews.com###socmedTop
 wetpaint.com##.wp-article-recommender
-wisebread.com##.follow-block
 whatbrowser.org###share
 which.co.uk##.share-article
 wikipedia.org###centralNotice
@@ -2240,6 +2239,7 @@ windows7news.com##.subscribebox
 windowsvalley.com##.social
 wired.com###blog_subscription_unit
 wireupdate.com###icons
+wisebread.com##.follow-block
 womenwithmustaches.com###twitter
 wordweb.info##[alt="RSS Feeds"]
 wsj.com###aFbLikeBottom

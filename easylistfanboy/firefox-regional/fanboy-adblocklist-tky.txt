@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: +sBDknm2VtnM5vq+nsescQ
+! Checksum: 9XqHVdBTR2aSylXeVYiahQ
 ! Fanboy's Turkish-addon Adblock list 
-! Updated: 19 Aug 2011
+! Updated: 25 Aug 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -61,6 +61,7 @@ _reklam_125_
 ! ---------- 1st party blocking rules ----------
 !
 ||add.bugun.com.tr^
+||ahmetturan.org/splash.
 ||akademikles.org/omur/
 ||aksam.com.tr/images/banner_
 ||antoloji.com/images/banners/
@@ -176,19 +177,18 @@ _reklam_125_
 ||wardom.com.tr/splash.js
 ||wardom.org/msnpop
 ||web.tr/banner/
-||ahmetturan.org/splash.
 ||web.tr/v2/banner/
 ||webhaber.com/advers/
 ||xpornosikis1.com/rek1.gif
 ||xpornosikis1.com/rek2.gif
 ||xpornosikis1.com/splash.php
 ||yabancidiziizle.com/logro.html
-||zorgenclik.us/pop.js
-||zorgenclik.us/splash.php
 ||yahoyt.com/main_banner
 ||yenicaggazetesi.com.tr/banner/
 ||zehirli.net/splash.
 ||zevkli.org/okey.gif
+||zorgenclik.us/pop.js
+||zorgenclik.us/splash.php
 !
 ! ---------- General blocking rules ----------
 !
@@ -249,13 +249,13 @@ _reklam_125_
 ||inilti.com^$third-party
 ||lalmp3.org^*.html$third-party
 ||linkcenneti.net^$third-party
-||rdrtr.com^$third-party
 ||modatrendim.com^$third-party
 ||nealirsan3lira.com/banner/$third-party
 ||netizle.net^$third-party
 ||orjinalshop.net^$third-party
 ||oyunsayar.com^$third-party
 ||penisbuyutucuhaplari.com^$third-party
+||rdrtr.com^$third-party
 ||reklamdor.com^$third-party
 ||reklamint.com^$third-party
 ||reklamoloji.com^$third-party
@@ -340,12 +340,15 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ##.adsindirim
 ##.adsortalaindirim
 ##.adsVideo
+##.adsVideoAlti
 ##.degisenalti_reklam
 ##.detayreklam
+##.dikeyreklam
 ##.gogads
 ##.gogads4
 ##.kutu_reklam
 ##.logoyani_reklam
+##.ortaReklam
 ##.reklam-1
 ##.reklam-2
 ##.reklam-3
@@ -362,18 +365,15 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ##.reklamDiv
 ##.reklamlar
 ##.reklamoynama
-##.dikeyreklam
-##.ortaReklam
 ##.reklamUst
-##.vSagReklam-1
-##.vSagReklam-2
-##.adsVideoAlti
 ##.reklamyatay
 ##.sag_reklam
 ##.sag_reklam2
 ##.sagreklam
 ##.sRightAdSpace
 ##.start__advertising_container
+##.vSagReklam-1
+##.vSagReklam-2
 ##.yediyuzads
 !
 !---------- Turkish Site Specific Element Hiding Rules ----------
@@ -562,8 +562,6 @@ mynet.com##div[style="width: 300px; height: 250px; margin:0 0 10px"]
 mynet.com##div[style="width: 640px; overflow: hidden; height: 190px;"]
 mynet.com##div[style="width:296px;height:250px;border:solid 1px #C0C0C0;padding:3px"]
 mynet.com##DIV[style="width:298px;height:250px;border:solid 1px #C0C0C0;padding:3px"]
-tividizi.com##a[href^="http://www.turkpartnerim.net/referans.php"]
-tividizi.com##div[style="position: fixed; bottom: 105px;  right: 900px;"]
 mynet.com##div[style="width:298px;height:250px;border:solid 1px #C0C0C0;padding:5px"]
 mynet.com##div[style="width:640px; height:180px; overflow:hidden;margin-top:15px;"]
 mynet.com##div[style="width:640px; height:95px; overflow:hidden"]
@@ -621,6 +619,8 @@ techno-labs.com##[height="100"][width="738"]
 techno-labs.com##TD[width="738"]
 tiklaveizle.net###fadeinbox
 timeturk.com##.banner
+tividizi.com##a[href^="http://www.turkpartnerim.net/referans.php"]
+tividizi.com##div[style="position: fixed; bottom: 105px;  right: 900px;"]
 tumgazeteler.com##div[id$="Reklam"]
 turizmhaberleri.com##DIV.banner
 turkeydailynews.com##TABLE[width="100%"][cellpadding="2"][border="1"]
