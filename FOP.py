@@ -213,6 +213,7 @@ def elementtidy (rule):
         domainlist = sorted(domainlist, key=lambda domain: domain.strip("~"))
         domains = ",".join(domainlist)
     
+    # Mark the beginning and the end of the selector in an unambiguous manner
     selector = "@" + selector + "@"
     # Make the tags lower case wherever possible
     for tag in re.finditer(SELECTORPATTERN, selector):
@@ -227,7 +228,7 @@ def elementtidy (rule):
         ac = str(pseudo.group(3))
         selector = selector.replace(pseudoclass + ac, pseudoclass.lower() + ac, 1)
     
-    # Join the rule once more and return it
+    # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     selector = selector[1:-1]
     return domains + "##" + selector
 
