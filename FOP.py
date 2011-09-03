@@ -17,7 +17,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 
 # FOP version number
-VERSION = 1.1
+VERSION = 1.2
 
 # Import the required modules
 import os, re, subprocess, time
@@ -33,7 +33,7 @@ REPATTERN = re.compile(r"^(@@)?\/.*\/$")
 SELECTORPATTERN = re.compile(r"(?<=([^\/\"\.\,\w\;\#\_\-\?\=\:\(\&\'\s]))(\s*[a-zA-Z]+\s*)((?=([^\"\\/;\w\d\-\,\'\.])))")
 
 # The following patterns match pseudo classes
-PSEUDOPATTERN = re.compile(r"(?<=([\:\]]))(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
+PSEUDOPATTERN = re.compile(r"((?<=[\:\]])|[>+]\s*[a-z]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
 # The following separates the sections of commit messages:
 COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s|)(.*)$")
@@ -223,11 +223,9 @@ def elementtidy (rule):
     
     # Make pseudo classes lower case where possible
     for pseudo in re.finditer(PSEUDOPATTERN, selector):
-        bc = str(pseudo.group(1))
         pseudoclass = str(pseudo.group(2))
         ac = str(pseudo.group(3))
-        
-        selector = selector.replace(bc + pseudoclass + ac, bc + pseudoclass.lower() + ac, 1)
+        selector = selector.replace(pseudoclass + ac, pseudoclass.lower() + ac, 1)
     
     # Join the rule once more and return it
     selector = selector[1:-1]
