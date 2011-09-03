@@ -16,8 +16,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 
-# FOP's version number
-VERSION = 1.0
+# FOP version number
+VERSION = 1.1
 
 # Import the required modules
 import os, re, subprocess, time
@@ -30,10 +30,10 @@ OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+
 REPATTERN = re.compile(r"^(@@)?\/.*\/$")
 
 # The following identifies element tag names
-SELECTORPATTERN = re.compile(r"((?<=[^\/\*\|\@\"\!\.\,\w\d\;\#\_\-\?\=\:\(\&])|^)([^\W\d]+)(?=[^\/\|\@\"\!\;\w\d\-\,])""")
+SELECTORPATTERN = re.compile(r"(?<=([^\/\"\.\,\w\;\#\_\-\?\=\:\(\&\'\s]))(\s*[a-zA-Z]+\s*)((?=([^\"\\/;\w\d\-\,\'\.])))")
 
 # The following patterns match pseudo classes
-PSEUDOPATTERN = re.compile(r"\:([\w-]+)((?=[\(\:\d ])|$)""")
+PSEUDOPATTERN = re.compile(r"(?<=([\:\]]))(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
 # The following separates the sections of commit messages:
 COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s|)(.*)$")
@@ -162,7 +162,7 @@ def filtertidy (filterin):
         # Remove unnecessary asterisks
         while True:
             proposed = filtertext[:-1]
-            if filtertext.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed):
+            if filtertext.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
                 filtertext = proposed
             else:
                 break
@@ -194,7 +194,7 @@ def filtertidy (filterin):
         # Remove unnecessary asterisks and return the filter
         while True:
             proposed = filterin[:-1]
-            if filterin.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed):
+            if filterin.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
                 filterin = proposed
             else:
                 break
@@ -213,17 +213,24 @@ def elementtidy (rule):
         domainlist = sorted(domainlist, key=lambda domain: domain.strip("~"))
         domains = ",".join(domainlist)
     
+    selector = "@" + selector + "@"
     # Make the tags lower case wherever possible
-    for tag in re.finditer(SELECTORPATTERN, selector.replace(" ", "")):
+    for tag in re.finditer(SELECTORPATTERN, selector):
+        bc = str(tag.group(1))
         tagname = str(tag.group(2))
-        selector = selector.replace(tagname, tagname.lower(), 1)
+        ac = str(tag.group(4))
+        selector = selector.replace(bc + tagname + ac, bc + tagname.lower() + ac, 1)
     
     # Make pseudo classes lower case where possible
     for pseudo in re.finditer(PSEUDOPATTERN, selector):
-        pseudoclass = str(pseudo.group(1))
-        selector = selector.replace(pseudoclass, pseudoclass.lower(), 1)
+        bc = str(pseudo.group(1))
+        pseudoclass = str(pseudo.group(2))
+        ac = str(pseudo.group(3))
+        
+        selector = selector.replace(bc + pseudoclass + ac, bc + pseudoclass.lower() + ac, 1)
     
     # Join the rule once more and return it
+    selector = selector[1:-1]
     return domains + "##" + selector
 
 def hgcommit (userchanges = True):
