@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: gliatRRzO2bhdwnJ8ZZ8eg
+! Checksum: gfGSv52QSqVdjsw3q0qnlA
 ! Fanboy's Japanese-addon Adblock list 
 ! Updated: 3 Sep 2011
 ! This list expires after 5 days
@@ -50,7 +50,6 @@ _ds_adtag_
 ||adlantis.jp/ad/
 ||adp.joins.com/event
 ||affiliate.rakuten.co.jp^
-||inside-games.jp/ad/
 ||alfalfalfa.com/banner/
 ||amazon.co.jp/widgets/
 ||animate.tv/ad/
@@ -76,6 +75,7 @@ _ds_adtag_
 ||infoseek.co.jp/isweb/
 ||infoseek.rakuten.co.jp*/rectangle/*
 ||infoseek.rakuten.co.jp*/weekly_recommend/*
+||inside-games.jp/ad/
 ||japanese.joins.com/shopping/$subdocument
 ||joins.com/upload/ad/
 ||jp.wsj.com^*/media/banners/
@@ -223,9 +223,9 @@ _ds_adtag_
 !
 !---------- Japanese Popups (Adblock Plus Pop-up Addon required) ----------
 !
+||cvh.jp^$other
 ||sundayomg.blogspot.com^$other
 ||travian.jp^$other
-||cvh.jp^$other
 !
 !---------- Japanese Trackers ------------
 !
@@ -253,11 +253,11 @@ _ds_adtag_
 ||218.145.28.155^
 ||analyzer.fc2.com^
 ||analyzer5.fc2.com^
-||iogous.com^
 ||eco-tag.jp^$third-party
 ||em1.shinobi.jp^
 ||hitgraph.jp^$third-party
 ||hitweb.chosun.com^
+||iogous.com^
 ||itgear.jp^$third-party
 ||japanmetrix.jp^$third-party
 ||jpwy.net/stats/
@@ -373,8 +373,8 @@ _ds_adtag_
 !---------- Japanese Site Specific Element Hiding Rules ----------
 ! 
 ##a[href^="http://ad2.trafficgate.net/"]
-##a[href^="http://www.rssad.jp/"]
 ##A[href^="http://rss.rssad.jp/"]
+##a[href^="http://www.rssad.jp/"]
 12freeweb.com###pr_table
 12freeweb.com##A[href^="http://www.adultshoping.com/"]
 12freeweb.com##A[href^="http://www.benri21.com/"]
@@ -398,6 +398,7 @@ bikebros.co.jp##div[style="float:left; margin-bottom:5px"]
 bloomberg.co.jp###header_leaderboard_container
 chunichi.co.jp###Banner-area
 chunichi.co.jp##.PR
+cnet.com###affiliate_info
 cnn.co.jp##.spBnr08
 cnn.co.jp##.txtPR
 cyzo.com##.banner486
@@ -464,7 +465,6 @@ jp.msn.com###ajax_banner
 jp.msn.com###pt
 jp.msn.com##.banner
 jp.msn.com##.bigadtxt1
-cnet.com###affiliate_info
 jp.msn.com##.parent.chromeCustom4G
 jp.techcrunch.com##.boxy
 jp.techcrunch.com##.overture_vertical

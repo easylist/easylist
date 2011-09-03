@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: qOE2zVNpTD4g08R+DUVVgQ
+! Checksum: ScgecXI9zerre2Xzc6Hn+w
 ! Fanboy's Chinese-addon Adblock list 
 ! Updated: 3 Sep 2011
 ! This list expires after 5 days
@@ -27,7 +27,6 @@
 //richmedia.
 //spcode.
 /chinaadclient.js
-/myad-
 /chinazhanad/*
 /cmnen_counter.js
 /GetAdListForTencent.
@@ -47,6 +46,7 @@
 /js/ivy.js
 /js/picad.js
 /js/rollflash.js
+/myad-
 /neiyead.js
 /news_ad/*
 /promo/lAd_
@@ -100,6 +100,7 @@ http://i1.hk/ad/
 ||blog.sina.com.cn/lm/
 ||booksky.org/gg1.htm
 ||booksky.org/hero.htm
+||btn.pchome.net^
 ||cangtoushi.net/code/
 ||casting.openv.com/getPlaySkin_De.php
 ||cb.baidu.com/ecom?
@@ -239,7 +240,6 @@ http://i1.hk/ad/
 ||xidalu.com/configs/article/page*.js
 ||xidalu.com/gg/*.js
 ||xinhuanet.com/*banner/
-||btn.pchome.net^
 ||xinhuanet.com/ad/
 ||xinhuanet.com/edu/10flash
 ||xinhuanet.com/sd/$subdocument
@@ -262,8 +262,8 @@ http://i1.hk/ad/
 ||116.9.156.88^
 ||203.80.0.202^
 ||203.80.0.226^
-||211.147.20.14^
 ||211.144.95.196^
+||211.147.20.14^
 ||219.239.88.50^
 ||37117.com/show.php?
 ||5j5l.com^
@@ -291,6 +291,7 @@ http://i1.hk/ad/
 ||clickeye.com.cn^
 ||cpro.baidu.com^
 ||cs.twcczhu.com^
+||ct10000.com^
 ||d1.sina.com.cn^
 ||d2.sina.com.cn^
 ||d3.sina.com.cn^
@@ -319,7 +320,6 @@ http://i1.hk/ad/
 ||newtest.5622.cn^
 ||onetad.com^
 ||pingfore.qq.com^
-||ct10000.com^
 ||pingjs.qq.com^
 ||qiyi.com^*/afp/home_
 ||rec.ynet.com^
@@ -346,9 +346,9 @@ http://i1.hk/ad/
 !     
 !---------- Popups (Adblock Plus Pop-up Addon required) ----------
 !   
+||ct10000.com^$other
 ||gogo.com^$other
 ||groupon.com.tw^$other
-||ct10000.com^$other
 !
 ! ---------- 3rd party blocking rules ----------
 !
@@ -374,6 +374,7 @@ http://i1.hk/ad/
 ||alimama.cn^$third-party,script
 ||allyes.com.cn^*.gif?$third-party
 ||as.sinahk.net^$third-party
+||baizoon.com^$third-party
 ||chapm.com^$third-party
 ||cnxad.com^$third-party
 ||cpm9v.cn^$third-party
@@ -384,7 +385,6 @@ http://i1.hk/ad/
 ||gamediad.com^$third-party
 ||heroclick.cn^$third-party
 ||heziyou.com^$third-party
-||youxitui.net^$third-party
 ||iloveyouxi.com^$third-party
 ||is686.com^$third-party
 ||l.yimg.com^*/promo/$third-party
@@ -393,10 +393,9 @@ http://i1.hk/ad/
 ||mini.artxun.com^$third-party,subdocument
 ||qiyou.com^$third-party
 ||shendu.cc^$third-party
-||svem.cc^$third-party
-||baizoon.com^$third-party
 ||shenduchuanmei.com^$third-party
 ||sinaad.proximic.cn^$third-party
+||svem.cc^$third-party
 ||swf.yxcpm.com^$third-party
 ||tgame.joqoo.com^$third-party
 ||uctrac.com^$third-party
@@ -404,31 +403,32 @@ http://i1.hk/ad/
 ||vod.szzwch.com^$third-party
 ||y4dg.cc^$third-party
 ||y4dg.org^$third-party
+||youxitui.net^$third-party
 !
 !---------- Chinese Trackers ----------
 !
 .cn/c.gif?
 .cn/urchin.js
 /click_rate.php?
+/ClickTotal.
 /get_mood_count.
 /iplookup.
-/ClickTotal.
 /logcount.php?
 /LogFriend/*
 /mystat/*
 /viewlist/service.jsp?
 _stat.php?$image
 ||114.com.cn/stat/
-||59.37.54.194^
 ||211.100.52.143^$third-party
 ||220.181.111.115^$third-party
 ||51yes.com^$third-party
 ||58.68.146.44^$third-party
+||59.37.54.194^
 ||analytics-union.sandai.net^
 ||analytics-union.xunlei.com^
+||atm.yoyi.com.cn^
 ||chinatimes.com/analytics/
 ||cnzz.com/stat.gif?
-||atm.yoyi.com.cn^
 ||cookie4you.com^$third-party
 ||count.taobao.com^
 ||ifeng.com/count_
@@ -561,7 +561,11 @@ _sidebar_ad.
 163.com##.gg360
 163.com##.ggarea
 591.com.tw###slidetexts
+5asd.com##.a_mu
 93zw.com###logor
+99manga.com###book_01
+99manga.com###book_02
+99manga.com###yw__on_pp
 alixixi.com##[style="width: 300px; height: 250px; float: right;"]
 baidu.com###qb-ad-cpro
 baidu.com###wap-iknow-sms
@@ -573,14 +577,12 @@ boosj.com###ad_140x385_r
 caihongwenxue.com##.adll
 caihongwenxue.com##.adrr
 china.com###clm01
-5asd.com##.a_mu
 chinanews.com.cn##.gghzh
 chinanews.com.cn##.rightgg
 cjdby.net##.a_pb
 cnfol.com###top 
 cnhubei.com###listdoc1
 cnhubei.com###listdoc4
-pchome.net##div[id^="yad_"]
 cnhubei.com###listdocn2
 dayoo.com###DayooFloatingPaneNews
 discuss.com.hk##.section[style="border: 0px none;"]
@@ -592,7 +594,6 @@ google.cn###tadsb
 google.com.hk###mbEnd
 google.com.hk###tads
 groupon.cn##.couplet
-pchome.net##div[style="width:960px;height:62px;"]
 hjenglish.com##.a4_EN-A-S1P-5-1
 hjenglish.com##.a4_EN-A-Z1T-16-15
 hkdailynews.com.hk##[style="width: 300px; height: 257px; float: right;"]
@@ -622,6 +623,8 @@ news.qq.com###nav
 news.qq.com###News_Rectangle
 nextmedia.com###promoBox
 nextmedia.com##.dv_playlist_right_adv_1
+pchome.net##div[id^="yad_"]
+pchome.net##div[style="width:960px;height:62px;"]
 phpwind.net###pwSlidePlayer
 pingpinganan.gov.cn###divAnAn
 pingpinganan.gov.cn###divPingPing
@@ -634,9 +637,6 @@ qidian.com##.gg06
 qiyi.com###j-ad
 qiyi.com##div[style="POSITION:relative;Z-INDEX:1;width:970px;height:100px;border-top:15px solid #fff;"]
 qq.com###nav
-99manga.com###book_01
-99manga.com###book_02
-99manga.com###yw__on_pp
 qq.com###News_F_UpRight
 sina.com.cn###PublicRelation9
 sina.com.cn###top_bar
