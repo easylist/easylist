@@ -17,7 +17,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 
 # FOP version number
-VERSION = 1.2
+VERSION = 1.3
 
 # Import the required modules
 import os, re, subprocess, time
@@ -29,13 +29,11 @@ ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 REPATTERN = re.compile(r"^(@@)?\/.*\/$")
 
-# The following identifies element tag names
+# The following patterns match element tags and pseudo classes; "@" indicates either the beginning or end of a selector
 SELECTORPATTERN = re.compile(r"(?<=([^\/\"\.\,\w\;\#\_\-\?\=\:\(\&\'\s]))(\s*[a-zA-Z]+\s*)((?=([^\"\\/;\w\d\-\,\'\.])))")
-
-# The following patterns match pseudo classes
 PSEUDOPATTERN = re.compile(r"((?<=[\:\]])|[>+]\s*[a-z]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
-# The following separates the sections of commit messages:
+# The following pattern identifies the sections of commit messages
 COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s|)(.*)$")
 
 # The files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
@@ -48,7 +46,8 @@ KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "third-party", "xbl", "xmlhttprequest")
 
 def main (location = "."):
-    # Welcome the user
+    # Print the name and version of the program
+    print("=" * 44)
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
     print("=" * 44 + "\n")
     
@@ -154,19 +153,10 @@ def filtertidy (filterin):
     # If applicable, sort options
     optionsplit = re.search(OPTIONPATTERN, filterin)
     if optionsplit:
-        # Split and sort options
-        filtertext = optionsplit.group(1)
-        options = optionsplit.group(2)
-        optionlist = options.split(",")
+        # Split, clean and sort options
+        filtertext = removeunnecessarywildcards(str(optionsplit.group(1)))
+        optionlist = str(optionsplit.group(2)).split(",")
         
-        # Remove unnecessary asterisks
-        while True:
-            proposed = filtertext[:-1]
-            if filtertext.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
-                filtertext = proposed
-            else:
-                break
-
         domainlist = []
         newoptionlist = []
         for option in optionlist:
@@ -183,34 +173,24 @@ def filtertidy (filterin):
         
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
-            domainlist = sorted(domainlist, key=lambda domain: domain.strip("~"))
-            domainoption = "domain=" + "|".join(domainlist)
+            domainoption = "domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~")))
             newoptionlist.append(domainoption)
         
         # Join the options once more, separated by commas, add them to the filter and return it
-        options = ",".join(newoptionlist)
-        return filtertext + "$" + options
+        return filtertext + "$" + ",".join(newoptionlist)
     else:
         # Remove unnecessary asterisks and return the filter
-        while True:
-            proposed = filterin[:-1]
-            if filterin.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
-                filterin = proposed
-            else:
-                break
-        return filterin
+        return removeunnecessarywildcards(filterin)
 
 def elementtidy (rule):
-    # Split the rule into the domains and the selector
+    # Split the rule into the domains and the selector and set the former as lower case
     split = re.search(ELEMENTPATTERN, rule)
-    domains = split.group(1)
-    selector = split.group(2)
+    domains = str(split.group(1)).lower()
+    selector = str(split.group(2))
 
     # Order domain names alphabetically, ignoring exceptions
-    domains = domains.lower()
     if "," in domains:
-        domainlist = domains.split(",")
-        domainlist = sorted(domainlist, key=lambda domain: domain.strip("~"))
+        domainlist = sorted(domains.split(","), key=lambda domain: domain.strip("~"))
         domains = ",".join(domainlist)
     
     # Mark the beginning and the end of the selector in an unambiguous manner
@@ -229,8 +209,7 @@ def elementtidy (rule):
         selector = selector.replace(pseudoclass + ac, pseudoclass.lower() + ac, 1)
     
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
-    selector = selector[1:-1]
-    return domains + "##" + selector
+    return domains + "##" + selector[1:-1]
 
 def hgcommit (userchanges = True):
     print("\nStarting Mercurial commit procedure...\n")
@@ -251,9 +230,9 @@ def hgcommit (userchanges = True):
             if sections == None:
                 print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
             else:
-                indicator = sections.group(1)
-                message = sections.group(3)
-                address = sections.group(4)
+                indicator = str(sections.group(1))
+                message = str(sections.group(3))
+                address = str(sections.group(4))
                 
                 if validurl(address):
                     if indicator == "M":
@@ -310,9 +289,8 @@ def isglobalelement (rule):
     # Check whether a rule is an element hiding rule and, if so, whether it is to be applied to all domains
     split = re.search(ELEMENTPATTERN, rule)
     if split:
-        domains = split.group(1)
-        selector = split.group(2)
-        domainlist = domains.split(",")
+        domainlist = str(split.group(1)).split(",")
+        selector = str(split.group(2))
         # Check whether all domains are negations
         for domain in domainlist:
             if domain != "" and not domain.startswith("~"):
@@ -330,6 +308,31 @@ def validurl (url):
         return True
     else:
         return False
+
+def removeunnecessarywildcards (filtertext):
+    whitelist = False
+    if filtertext.startswith("@@"):
+        whitelist = True
+        filtertext = filtertext[2:]
+    
+    # Remove wildcards from the beginning of the filter
+    while True:
+        proposed = filtertext[1:]
+        if filtertext.startswith("*") and len(proposed) > 1 and not proposed.startswith("|"):
+            filtertext = proposed
+        else:
+            break
+    # Remove wildcards from the end of the filter
+    while True:
+        proposed = filtertext[:-1]
+        if filtertext.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
+            filtertext = proposed
+        else:
+            break
+    
+    if whitelist:
+        filtertext = "@@" + filtertext
+    return filtertext
     
 if __name__ == '__main__':
     main()
