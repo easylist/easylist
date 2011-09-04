@@ -16,12 +16,12 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 
-# FOP version number
-VERSION = 1.3
-
 # Import the required modules
-import os, re, subprocess, time
+import os, re, subprocess, sys, time
 from urllib.parse import urlparse
+
+# FOP version number
+VERSION = 1.4
 
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
@@ -44,12 +44,27 @@ KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
                 "third-party", "xbl", "xmlhttprequest")
-
-def main (location = "."):
+def start ():
     # Print the name and version of the program
     print("=" * 44)
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
     print("=" * 44 + "\n")
+    
+    # Run the program in each of the locations specified, or the current working directory
+    places = (sys.argv)[1:]
+    if places:
+        for place in places:
+            main(place)
+    else:
+        main()
+
+def main (location = "."):
+    # Move to the specified location if it exists
+    if os.path.isdir(location):
+        os.chdir(location)
+    else:
+        print("{location} does not exist or is not a folder.".format(location=location))
+        return
     
     # Check for the presence of Mercurial and note whether any changes have been made by the user
     hgpresent = os.path.isdir("./.hg")
@@ -335,4 +350,4 @@ def removeunnecessarywildcards (filtertext):
     return filtertext
     
 if __name__ == '__main__':
-    main()
+    start()
