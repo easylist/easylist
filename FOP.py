@@ -17,17 +17,16 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 
 # Import the required modules
-import os, re, subprocess, sys, time
+import os, re, subprocess, sys
 from urllib.parse import urlparse
 
 # FOP version number
-VERSION = 1.4
+VERSION = 1.5
 
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-REPATTERN = re.compile(r"^(@@)?\/.*\/$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or end of a selector
 SELECTORPATTERN = re.compile(r"(?<=([^\/\"\.\,\w\;\#\_\-\?\=\:\(\&\'\s]))(\s*[a-zA-Z]+\s*)((?=([^\"\\/;\w\d\-\,\'\.])))")
@@ -50,8 +49,13 @@ def start ():
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
     print("=" * 44 + "\n")
     
+    # Check the version of Python
+    if sys.version_info[0] < 3:
+        print("FOP requires at the Python 3 branch; the version being used to run FOP at the moment is {version}".format(version=sys.version))
+        return
+    
     # Run the program in each of the locations specified, or the current working directory
-    places = (sys.argv)[1:]
+    places = (sys.argv[1:])
     if places:
         for place in places:
             main(place)
@@ -78,7 +82,7 @@ def main (location = "."):
         
     # Find the names of all text files in the present directory, including sub-directories but not including hidden folders
     allfiles = []
-    for path, directory, files in os.walk(location):
+    for path, directory, files in os.walk("."):
         for filename in files:
             address = os.path.join(path, filename)
             if "/." not in address:
@@ -107,22 +111,20 @@ def main (location = "."):
     print("\nExiting...")
 
 def fopsort (filename):
-    filecontents = []
     # Read in the file given, removing blank lines
     with open(filename, "r") as inputfile:
-        for line in inputfile:
-            line = line.strip()
-            if line != "":
-                filecontents.append(line)
+        filecontents = inputfile.readlines()
     
     outfile = []
     section = []
     newsectionline = 1
+    CHECKLINES = 10
     filterlines = elementlines = 0
     # Work through the file, line by line
     for line in filecontents:
+        line = line.strip()
         # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
-        if line.startswith("!") or line.startswith("[") and line.endswith("]") or line.startswith("%include"):
+        if line[0] == "!" or line[0] == "[" and line[-1] == "]" or line[0:8] == "%include":
             if section:
                 if elementlines > filterlines:
                     outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
@@ -132,22 +134,24 @@ def fopsort (filename):
             newsectionline = 1
             filterlines = elementlines = 0
             outfile.append(line)
-        else:
-            # Check the first ten lines of new sections to determine the filter type
-            if newsectionline <= 10:
-                if isglobalelement(line):
-                    elementlines +=1
-                else:
-                    filterlines += 1
-                newsectionline += 1
-            
-            # Neaten up filters
-            if re.match(ELEMENTPATTERN, line):
-                line = elementtidy(line)
+        elif line != "":
+            # Neaten up filters, checking their type if necessary
+            elementparts = re.search(ELEMENTPATTERN, line)
+            if elementparts:
+                domains = elementparts.group(1).lower()
+                if newsectionline <= CHECKLINES:
+                    if isglobalelement(domains):
+                        elementlines += 1
+                    else:
+                        filterlines += 1
+                line = elementtidy(domains, elementparts.group(2))
             else:
+                if newsectionline <= CHECKLINES:
+                    filterlines += 1
                 line = filtertidy(line)
             # Add the filter to the present section
             section.append(line)
+            newsectionline += 1
     
     # At the end of the file, sort and add any remaining filters
     if section:
@@ -169,59 +173,54 @@ def filtertidy (filterin):
     optionsplit = re.search(OPTIONPATTERN, filterin)
     if optionsplit:
         # Split, clean and sort options
-        filtertext = removeunnecessarywildcards(str(optionsplit.group(1)))
-        optionlist = str(optionsplit.group(2)).split(",")
+        filtertext = removeunnecessarywildcards(optionsplit.group(1))
+        optionlist = optionsplit.group(2).split(",")
         
-        domainlist = []
-        newoptionlist = []
+        domainlist = set()
         for option in optionlist:
-            if "domain=" in option:
-                thislist = option.replace("domain=", "")
-                thislist = thislist.split("|")
-                domainlist.extend(thislist)
+            if option[0:7] == "domain=":
+                thisset = option[7:].split("|")
+                domainlist.update(thisset)
+                optionlist.remove(option)
             else:
                 # Warn if an unrecognised option is present
-                if option.replace("~", "") not in KNOWNOPTIONS:
+                if option.strip("~") not in KNOWNOPTIONS:
                     print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
-                newoptionlist.append(option)
-        newoptionlist = sorted(newoptionlist, key=lambda option: option.strip("~"))
+        optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
         
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
-            domainoption = "domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~")))
-            newoptionlist.append(domainoption)
+            optionlist.append("domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~"))))
         
         # Join the options once more, separated by commas, add them to the filter and return it
-        return filtertext + "$" + ",".join(newoptionlist)
+        return filtertext + "$" + ",".join(optionlist)
     else:
         # Remove unnecessary asterisks and return the filter
         return removeunnecessarywildcards(filterin)
 
-def elementtidy (rule):
-    # Split the rule into the domains and the selector and set the former as lower case
-    split = re.search(ELEMENTPATTERN, rule)
-    domains = str(split.group(1)).lower()
-    selector = str(split.group(2))
-
+def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domainlist = sorted(domains.split(","), key=lambda domain: domain.strip("~"))
-        domains = ",".join(domainlist)
+        domains = ",".join(sorted(domains.split(","), key=lambda domain: domain.strip("~")))
     
     # Mark the beginning and the end of the selector in an unambiguous manner
     selector = "@" + selector + "@"
     # Make the tags lower case wherever possible
     for tag in re.finditer(SELECTORPATTERN, selector):
-        bc = str(tag.group(1))
-        tagname = str(tag.group(2))
-        ac = str(tag.group(4))
-        selector = selector.replace(bc + tagname + ac, bc + tagname.lower() + ac, 1)
+        tagname = tag.group(2)
+        lowertagname = tagname.lower()
+        if tagname != lowertagname:
+            bc = tag.group(1)
+            ac = tag.group(4)
+            selector = selector.replace(bc + tagname + ac, bc + lowertagname + ac, 1)
     
     # Make pseudo classes lower case where possible
     for pseudo in re.finditer(PSEUDOPATTERN, selector):
-        pseudoclass = str(pseudo.group(2))
-        ac = str(pseudo.group(3))
-        selector = selector.replace(pseudoclass + ac, pseudoclass.lower() + ac, 1)
+        pseudoclass = pseudo.group(2)
+        lowerpseudoclass = pseudoclass.lower()
+        if pseudoclass != lowerpseudoclass:
+            ac = pseudo.group(3)
+            selector = selector.replace(pseudoclass + ac, lowerpseudoclass + ac, 1)
     
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return domains + "##" + selector[1:-1]
@@ -245,29 +244,21 @@ def hgcommit (userchanges = True):
             if sections == None:
                 print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
             else:
-                indicator = str(sections.group(1))
-                message = str(sections.group(3))
-                address = str(sections.group(4))
-                
-                if validurl(address):
-                    if indicator == "M":
-                        # The address is valid and the indicator is correct - leave the loop to commit the changes
-                        break
-                    elif (indicator == "A" or indicator == "P"):
-                        if userchanges:
-                            # The address is valid, the indicator is correct and the user made some modifications - leave the loop to commit the changes
-                            break
-                        else:
-                            print("You have indicated that you have added or removed a rule, but no changes were initially noted by Mercurial.")
-                    else:
-                        print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
-                elif indicator == "M":
-                    # Allow modifications to be made in an alternative format, but delay to allow the user time to abort if necessary
-                    print("No recognised address in the comment \"{comment}\", but proceeding anyway in five seconds.".format(comment=comment))
-                    time.sleep(5)
+                indicator = sections.group(1)
+                if indicator == "M":
+                    # Allow modifications to be made in practically any format
                     break
+                elif indicator == "A" or indicator == "P":
+                    if not userchanges:
+                        print("You have indicated that you have added or removed a rule, but no changes were initially noted by Mercurial.")
+                    if not validurl(sections.group(4)):
+                        print("Unrecognised address \"{address}\".".format(address=address))
+                    else:
+                        # The user has changed the subscription and selected a suitable comment message with a valid address
+                        break
                 else:
-                    print("Unrecognised address \"{address}\".".format(address=address))
+                    print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
+                    
                 
                 print("")
     # Allow users to abort if necessary
@@ -300,19 +291,12 @@ def hgcommit (userchanges = True):
         
     print("\nCompleted commit process succesfully.")
         
-def isglobalelement (rule):
-    # Check whether a rule is an element hiding rule and, if so, whether it is to be applied to all domains
-    split = re.search(ELEMENTPATTERN, rule)
-    if split:
-        domainlist = str(split.group(1)).split(",")
-        selector = str(split.group(2))
-        # Check whether all domains are negations
-        for domain in domainlist:
-            if domain != "" and not domain.startswith("~"):
-                return False
-        return True
-    else:
-        return False
+def isglobalelement (domainlist):
+    # Check whether all domains are negations
+    for domain in domainlist:
+        if domain != "" and not domain[0] == "~":
+            return False
+    return True
 
 def validurl (url):
     addresspart = urlparse(url)
@@ -326,22 +310,26 @@ def validurl (url):
 
 def removeunnecessarywildcards (filtertext):
     whitelist = False
-    if filtertext.startswith("@@"):
+    if filtertext[0:1] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
     
     # Remove wildcards from the beginning of the filter
     while True:
         proposed = filtertext[1:]
-        if filtertext.startswith("*") and len(proposed) > 1 and not proposed.startswith("|"):
+        if filtertext[0] == "*" and proposed != "" and proposed[0] != "|":
             filtertext = proposed
         else:
             break
     # Remove wildcards from the end of the filter
     while True:
         proposed = filtertext[:-1]
-        if filtertext.endswith("*") and len(proposed) > 1 and not re.match(REPATTERN, proposed) and not proposed.endswith("|"):
-            filtertext = proposed
+        if filtertext[-1] == "*" and proposed != "" and proposed[-1] != "|":
+            # Check for the potential to make regular expressions
+            if proposed[0] == "/" and proposed[-1] == "/":
+                break
+            else:
+                filtertext = proposed
         else:
             break
     
