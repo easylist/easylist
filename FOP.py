@@ -71,7 +71,7 @@ def main (location = "."):
         return
     
     # Check for the presence of Mercurial and note whether any changes have been made by the user
-    hgpresent = os.path.isdir("./.hg")
+    hgpresent = os.path.isdir("./.hg/")
     if hgpresent:
         originaldifference = subprocess.check_output(["hg", "diff"])
         if originaldifference:
