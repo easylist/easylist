@@ -81,27 +81,21 @@ def main (location = "."):
             print("Mercurial indicates that you have not made any changes to the repository.\n")
         
     # Find the names of all text files in the present directory, including sub-directories but not including hidden folders
-    allfiles = []
     for path, directory, files in os.walk("."):
         for filename in files:
-            address = os.path.join(path, filename)
-            if "/." not in address:
-                allfiles.append(address)
+            if "/." not in path:
+                address = os.path.join(path, filename)
+                (name, extension) = os.path.splitext(filename)
+                # Sort all text files that are not blacklisted
+                if extension == ".txt"  and filename not in IGNORE:
+                    print("Sorting {filename}...".format(filename=address))
+                    fopsort(address)
+                # Delete unnecessary Mercurial backups as they are found
+                if extension == ".orig":
+                    print("Deleting {filename}...".format(filename=address))
+                    os.remove(address)
     
-    # Process files as required
-    for filename in allfiles:
-        basename = os.path.basename(filename)
-        (name, extension) = os.path.splitext(basename)
-        # Sort all text files that are not blacklisted
-        if extension == ".txt"  and basename not in IGNORE:
-            print("Sorting {filename}...".format(filename=filename))
-            fopsort(filename)
-        # Delete unnecessary Mercurial backups as they are found
-        if extension == ".orig":
-            print("Deleting {filename}...".format(filename=filename))
-            os.remove(filename)
-    
-    # Check whether the script is in a Mercurial repository and, if so, offer to commit the changes
+    # If this is a Mercurial repository, offer to commit any changes
     if hgpresent:
         if originaldifference:
             hgcommit(True)
