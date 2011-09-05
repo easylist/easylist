@@ -16,10 +16,17 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.7
+VERSION = 1.8
 
 # Import the key modules
 import os, re, subprocess, sys
+
+# Check the version of Python and only continue if Python 3 is being used
+if sys.version_info[0] < 3:
+    print("FOP requires Python 3; the version being used to run FOP at the moment is {version}\n\nExiting...".format(version=sys.version))
+    sys.exit()
+# Import the Python 3 module
+from urllib.parse import urlparse
 
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
@@ -46,13 +53,6 @@ def start ():
     print("=" * 44)
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
     print("=" * 44 + "\n")
-    
-    # Check the version of Python and only continue if Python 3 is being used
-    if sys.version_info[0] < 3:
-        print("FOP requires Python 3; the version being used to run FOP at the moment is {version}\n\nExiting...".format(version=sys.version))
-        return
-    # Import the Python 3 module
-    from urllib.parse import urlparse
     
     # Run the program in each of the locations specified, or the current working directory
     places = (sys.argv[1:])
