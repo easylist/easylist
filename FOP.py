@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.6
+VERSION = 1.7
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -106,7 +106,7 @@ def main (location = "."):
 
 def fopsort (filename):
     # Read in the file given, removing blank lines
-    with open(filename, "r") as inputfile:
+    with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
         filecontents = inputfile.readlines()
     
     outfile = []
@@ -155,9 +155,8 @@ def fopsort (filename):
             outfile.extend(sorted(section))
     
     # Save the updated file
-    outstream = "\n".join(outfile) + "\n"
-    with open(filename, "w") as outputfile:
-        outputfile.write(outstream)
+    with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
+        outputfile.write("\n".join(outfile) + "\n")
         
 def filtertidy (filterin):
     # Make regular filters entirely lower case
@@ -172,9 +171,9 @@ def filtertidy (filterin):
         
         domainlist = set()
         for option in optionlist:
+            # Detect and separate domain options
             if option[0:7] == "domain=":
-                thisset = option[7:].split("|")
-                domainlist.update(thisset)
+                domainlist.update(option[7:].split("|"))
                 optionlist.remove(option)
             else:
                 # Warn if an unrecognised option is present
@@ -242,7 +241,7 @@ def hgcommit (userchanges = True):
             else:
                 indicator = sections.group(1)
                 if indicator == "M":
-                    # Allow modifications to be made in practically any format
+                    # Allow modification comments to have practically any format
                     break
                 elif indicator == "A" or indicator == "P":
                     if not userchanges:
