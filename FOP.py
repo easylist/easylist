@@ -27,8 +27,8 @@ ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or end of a selector
-SELECTORPATTERN = re.compile(r"(?<=([^\/\"\.\,\w\;\#\_\-\?\=\:\(\&\'\s]))(\s*[a-zA-Z]+\s*)((?=([^\"\\/;\w\d\-\,\'\.])))")
-PSEUDOPATTERN = re.compile(r"((?<=[\:\]])|[>+]\s*[a-z]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
+SELECTORPATTERN = re.compile(r"((?<=([@\+>\[\)]))|[>+#\.]\s*[\w]+\s+)(\s*[\w]+\s*)(?=([\[@\+>=\]\^\*\$\:]))")
+PSEUDOPATTERN = re.compile(r"((?<=[\:\]])|[>+#\.\s]\s*[\w]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
 # The following pattern identifies the sections of commit messages
 COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s|)(.*)$")
@@ -201,10 +201,12 @@ def elementtidy (domains, selector):
     selector = "@" + selector + "@"
     # Make the tags lower case wherever possible
     for tag in re.finditer(SELECTORPATTERN, selector):
-        tagname = tag.group(2)
+        tagname = tag.group(3)
         lowertagname = tagname.lower()
         if tagname != lowertagname:
-            bc = tag.group(1)
+            bc = tag.group(2)
+            if bc == None:
+                bc = tag.group(1)
             ac = tag.group(4)
             selector = selector.replace(bc + tagname + ac, bc + lowertagname + ac, 1)
     
@@ -253,7 +255,6 @@ def hgcommit (userchanges = True):
                 else:
                     print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
                     
-                
                 print("")
     # Allow users to abort if necessary
     except (KeyboardInterrupt, SystemExit):
