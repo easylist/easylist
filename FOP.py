@@ -57,7 +57,7 @@ def start ():
     if places:
         absoluteplaces = set()
         for place in places:
-            # Make all of the references absolute before changing working directories
+            # Make all of the references absolute before changing the working directory
             absoluteplaces.add(os.path.abspath(place))
         for place in absoluteplaces:
             main(place)
@@ -173,16 +173,16 @@ def filtertidy (filterin):
             elif option.strip("~") not in KNOWNOPTIONS:
                 # Warn if an unrecognised option is present
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
-        # Sort all options that do not specify domain
+        # Sort all options other than domain alphabetically
         for option in domainentries:
             optionlist.remove(option)
-        optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
+        optionlist = sorted(optionlist, key=lambda option: option.strip("~"))
         
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
             optionlist.append("domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~"))))
         
-        # Join the options once more, separated by commas, add them to the filter and return it
+        # Add the options back to the filter and return it
         return filtertext + "$" + ",".join(optionlist)
     else:
         # Remove unnecessary asterisks and return the filter
@@ -214,7 +214,7 @@ def elementtidy (domains, selector):
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return domains + "##" + selector[1:-1]
 
-def hgcommit (userchanges = True):
+def hgcommit (userchanges):
     # Check for file changes and only continue if some have been made
     difference = subprocess.check_output(["hg", "diff"])
     if not difference:
@@ -300,7 +300,6 @@ def removeunnecessarywildcards (filtertext):
     if filtertext[0:1] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
-    
     # Remove wildcards from the beginning of the filter
     while True:
         if filtertext[0] != "*":
@@ -325,7 +324,6 @@ def removeunnecessarywildcards (filtertext):
                     filtertext = proposed
             else:
                 break
-    
     if whitelist:
         filtertext = "@@" + filtertext
     return filtertext
