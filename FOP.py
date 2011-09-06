@@ -16,17 +16,15 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.8
+VERSION = 1.9
 
 # Import the key modules
 import os, re, subprocess, sys
-
-# Check the version of Python and only continue if Python 3 is being used
-if sys.version_info[0] < 3:
-    print("FOP requires Python 3; the version being used to run FOP at the moment is {version}\n\nExiting...".format(version=sys.version))
-    sys.exit()
-# Import the Python 3 module
-from urllib.parse import urlparse
+# The following module is only available in Python 3; if it is not available, exit
+try:
+    from urllib.parse import urlparse
+except ImportError:
+    raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
 
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
@@ -52,17 +50,22 @@ def start ():
     # Print the name and version of the program
     print("=" * 44)
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
-    print("=" * 44 + "\n")
+    print("=" * 44)
     
-    # Run the program in each of the locations specified, or the current working directory
-    places = (sys.argv[1:])
+    # Run the program in each of the locations specified, or the current working directory if no location is specified
+    places = set(sys.argv[1:])
     if places:
+        absoluteplaces = set()
         for place in places:
+            # Make all of the references absolute before changing working directories
+            absoluteplaces.add(os.path.abspath(place))
+        for place in absoluteplaces:
             main(place)
     else:
-        main()
+        main(os.getcwd())
+    print("\nExiting...")
 
-def main (location = "."):
+def main (location):
     # Move to the specified location if it exists
     if os.path.isdir(location):
         os.chdir(location)
@@ -73,14 +76,9 @@ def main (location = "."):
     # Check for the presence of Mercurial and note whether any changes have been made by the user
     hgpresent = os.path.isdir("./.hg/")
     if hgpresent:
-        originaldifference = subprocess.check_output(["hg", "diff"])
-        if originaldifference:
-            print("The following changes to the repository have been recorded by Mercurial:")
-            print(originaldifference.decode("utf-8"))
-        else:
-            print("Mercurial indicates that you have not made any changes to the repository.\n")
-        
-    # Find the names of all text files in the present directory, including sub-directories but not including hidden folders
+        originaldifference = True if subprocess.check_output(["hg", "diff"]) else False
+    
+    print("\nSorting the contents of {folder}".format(folder=location))
     for path, directory, files in os.walk("."):
         for filename in files:
             if "/." not in path:
@@ -88,64 +86,59 @@ def main (location = "."):
                 (name, extension) = os.path.splitext(filename)
                 # Sort all text files that are not blacklisted
                 if extension == ".txt"  and filename not in IGNORE:
-                    print("Sorting {filename}...".format(filename=address))
                     fopsort(address)
                 # Delete unnecessary Mercurial backups as they are found
                 if extension == ".orig":
-                    print("Deleting {filename}...".format(filename=address))
                     os.remove(address)
     
     # If this is a Mercurial repository, offer to commit any changes
     if hgpresent:
-        if originaldifference:
-            hgcommit(True)
-        else:
-            hgcommit(False)
-    
-    print("\nExiting...")
+        hgcommit(True) if originaldifference else hgcommit(False)
 
 def fopsort (filename):
-    # Read in the file given, removing blank lines
+    # Read in the file given
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
-        filecontents = inputfile.readlines()
+        filecontents = inputfile.read().split("\n")
+    if filecontents[:-1] == "":
+        filecontents = filecontents[:-1]
     
     outfile = []
-    section = []
+    section = set()
     newsectionline = 1
     CHECKLINES = 10
     filterlines = elementlines = 0
-    # Work through the file, line by line
+    # Work through the file line by line
     for line in filecontents:
-        line = line.strip()
-        # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
-        if line[0] == "!" or line[0] == "[" and line[-1] == "]" or line[0:8] == "%include":
-            if section:
-                if elementlines > filterlines:
-                    outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
-                else:
-                    outfile.extend(sorted(section))
-                section = []
-            newsectionline = 1
-            filterlines = elementlines = 0
-            outfile.append(line)
-        elif line != "":
-            # Neaten up filters, checking their type if necessary
-            elementparts = re.search(ELEMENTPATTERN, line)
-            if elementparts:
-                domains = elementparts.group(1).lower()
-                if newsectionline <= CHECKLINES:
-                    if isglobalelement(domains):
-                        elementlines += 1
+        if line != "":
+            # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
+            if line[0] == "!" or line[0] == "[" and line[-1] == "]" or line[:8] == "%include":
+                if section:
+                    if elementlines > filterlines:
+                        outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
                     else:
-                        filterlines += 1
-                line = elementtidy(domains, elementparts.group(2))
+                        outfile.extend(sorted(section))
+                    section = set()
+                newsectionline = 1
+                filterlines = elementlines = 0
+                outfile.append(line)
             else:
-                if newsectionline <= CHECKLINES:
-                    filterlines += 1
-                line = filtertidy(line)
-            # Add the filter to the present section
-            section.append(line)
-            newsectionline += 1
+                # Neaten up filters, checking their type if necessary
+                elementparts = re.search(ELEMENTPATTERN, line)
+                if elementparts:
+                    domains = elementparts.group(1).lower()
+                    if newsectionline <= CHECKLINES:
+                        if isglobalelement(domains):
+                            elementlines += 1
+                        else:
+                            filterlines += 1
+                    line = elementtidy(domains, elementparts.group(2))
+                else:
+                    if newsectionline <= CHECKLINES:
+                        filterlines += 1
+                    line = filtertidy(line)
+                # Add the filter to the present section
+                section.add(line)
+                newsectionline += 1
     
     # At the end of the file, sort and add any remaining filters
     if section:
@@ -154,9 +147,10 @@ def fopsort (filename):
         else:
             outfile.extend(sorted(section))
     
-    # Save the updated file
-    with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
-        outputfile.write("\n".join(outfile) + "\n")
+    # Only save the updated file if required it has changed
+    if outfile != filecontents:
+        with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
+            outputfile.write("\n".join(outfile) + "\n")
         
 def filtertidy (filterin):
     # Make regular filters entirely lower case
@@ -167,18 +161,21 @@ def filtertidy (filterin):
     if optionsplit:
         # Split, clean and sort options
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
-        optionlist = optionsplit.group(2).split(",")
+        optionlist = set(optionsplit.group(2).split(","))
         
         domainlist = set()
+        domainentries = set()
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
                 domainlist.update(option[7:].split("|"))
-                optionlist.remove(option)
-            else:
+                domainentries.add(option)
+            elif option.strip("~") not in KNOWNOPTIONS:
                 # Warn if an unrecognised option is present
-                if option.strip("~") not in KNOWNOPTIONS:
-                    print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
+                print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
+        # Sort all options that do not specify domain
+        for option in domainentries:
+            optionlist.remove(option)
         optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
         
         # If applicable, sort domain restrictions and add the option to the end of the list
@@ -194,9 +191,8 @@ def filtertidy (filterin):
 def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(domains.split(","), key=lambda domain: domain.strip("~")))
-    
-    # Mark the beginning and the end of the selector in an unambiguous manner
+        domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
+    # Mark the beginning and end of the selector in an unambiguous manner
     selector = "@" + selector + "@"
     # Make the tags lower case wherever possible
     for tag in re.finditer(SELECTORPATTERN, selector):
@@ -208,7 +204,6 @@ def elementtidy (domains, selector):
                 bc = tag.group(1)
             ac = tag.group(4)
             selector = selector.replace(bc + tagname + ac, bc + lowertagname + ac, 1)
-    
     # Make pseudo classes lower case where possible
     for pseudo in re.finditer(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(2)
@@ -216,13 +211,10 @@ def elementtidy (domains, selector):
         if pseudoclass != lowerpseudoclass:
             ac = pseudo.group(3)
             selector = selector.replace(pseudoclass + ac, lowerpseudoclass + ac, 1)
-    
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return domains + "##" + selector[1:-1]
 
 def hgcommit (userchanges = True):
-    print("\nStarting Mercurial commit procedure...\n")
-    
     # Check for file changes and only continue if some have been made
     difference = subprocess.check_output(["hg", "diff"])
     if not difference:
@@ -246,7 +238,8 @@ def hgcommit (userchanges = True):
                 elif indicator == "A" or indicator == "P":
                     if not userchanges:
                         print("You have indicated that you have added or removed a rule, but no changes were initially noted by Mercurial.")
-                    if not validurl(sections.group(4)):
+                    address = sections.group(4)
+                    if not validurl(address):
                         print("Unrecognised address \"{address}\".".format(address=address))
                     else:
                         # The user has changed the subscription and selected a suitable comment message with a valid address
@@ -310,22 +303,28 @@ def removeunnecessarywildcards (filtertext):
     
     # Remove wildcards from the beginning of the filter
     while True:
-        proposed = filtertext[1:]
-        if filtertext[0] == "*" and proposed != "" and proposed[0] != "|":
-            filtertext = proposed
-        else:
+        if filtertext[0] != "*":
             break
+        else:
+            proposed = filtertext[1:]
+            if proposed != "" and proposed[0] != "|":
+                filtertext = proposed
+            else:
+                break
     # Remove wildcards from the end of the filter
     while True:
-        proposed = filtertext[:-1]
-        if filtertext[-1] == "*" and proposed != "" and proposed[-1] != "|":
-            # Check for the potential to make regular expressions
-            if proposed[0] == "/" and proposed[-1] == "/":
-                break
-            else:
-                filtertext = proposed
-        else:
+        if filtertext[-1] != "*":
             break
+        else:
+            proposed = filtertext[:-1]
+            if proposed != "" and proposed[-1] != "|":
+                # Check for the potential to make regular expressions
+                if proposed[0] == "/" and proposed[-1] == "/":
+                    break
+                else:
+                    filtertext = proposed
+            else:
+                break
     
     if whitelist:
         filtertext = "@@" + filtertext
