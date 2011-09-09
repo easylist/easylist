@@ -236,7 +236,7 @@ def commit (repotype, userchanges):
     # Check for file changes and only continue if some have been made
     difference = subprocess.check_output(repotype[0])
     if not difference:
-        print("There are no recorded changes to the repository")
+        print("There are no recorded changes to the repository.")
         return
     print("The following changes have been recorded by the repository:")
     print(difference.decode("utf-8"))
