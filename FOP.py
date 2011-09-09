@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.9
+VERSION = 1.91
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -31,12 +31,15 @@ DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
+# The following pattern describes a completely blank line
+BLANKPATTERN = re.compile(r"^\s*$")
+
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or end of a selector
 SELECTORPATTERN = re.compile(r"((?<=([@\+>\[\)]))|[>+#\.]\s*[\w]+\s+)(\s*[\w]+\s*)(?=([\[@\+>=\]\^\*\$\:]))")
-PSEUDOPATTERN = re.compile(r"((?<=[\:\]])|[>+#\.\s]\s*[\w]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
+PSEUDOPATTERN = re.compile(r"((?<=[]])|[>+#\.\s]\s*[\w]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
 # The following pattern identifies the sections of commit messages
-COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s|)(.*)$")
+COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s)?(.*)$")
 
 # The files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
@@ -46,6 +49,13 @@ KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
                 "third-party", "xbl", "xmlhttprequest")
+
+# The following are commands for various version control systems. Only the HG commands have been tested
+GIT = (("git", "diff"), ("git", "commit", "-m"), ("git", "pull"), ("git", "push"))
+HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
+SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
+REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
+
 def start ():
     # Print the name and version of the program
     print("=" * 44)
@@ -73,10 +83,18 @@ def main (location):
         print("{location} does not exist or is not a folder.".format(location=location))
         return
     
-    # Check for the presence of Mercurial and note whether any changes have been made by the user
-    hgpresent = os.path.isdir("./.hg/")
-    if hgpresent:
-        originaldifference = True if subprocess.check_output(["hg", "diff"]) else False
+    # Set the repository type based on hidden directories
+    repository = None
+    for repotype in REPOTYPES:
+        if os.path.isdir(repotype[0]):
+            repository = repotype[1]
+            break
+    # Record the initial changes; if this fails, give up trying to use the repository
+    if repository:
+        try:
+            originaldifference = True if subprocess.check_output(repository[0]) else False
+        except(subprocess.CalledProcessError):
+            repository == None
     
     print("\nSorting the contents of {folder}".format(folder=location))
     for path, directory, files in os.walk("."):
@@ -87,39 +105,39 @@ def main (location):
                 # Sort all text files that are not blacklisted
                 if extension == ".txt"  and filename not in IGNORE:
                     fopsort(address)
-                # Delete unnecessary Mercurial backups as they are found
+                # Delete unnecessary backups as they are found
                 if extension == ".orig":
                     os.remove(address)
     
-    # If this is a Mercurial repository, offer to commit any changes
-    if hgpresent:
-        hgcommit(True) if originaldifference else hgcommit(False)
+    # Offer to commit any changes if in a repository
+    if repository:
+        commit(repository, originaldifference)
 
 def fopsort (filename):
-    # Read in the file given
+    # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
-        filecontents = inputfile.read().split("\n")
-    if filecontents[:-1] == "":
+        filecontents = inputfile.read().splitlines()
+    if filecontents[-1] == "":
         filecontents = filecontents[:-1]
     
     outfile = []
+    CHECKLINES = 10
     section = set()
     newsectionline = 1
-    CHECKLINES = 10
     filterlines = elementlines = 0
     # Work through the file line by line
     for line in filecontents:
-        if line != "":
+        if not re.match(BLANKPATTERN, line):
             # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
-            if line[0] == "!" or line[0] == "[" and line[-1] == "]" or line[:8] == "%include":
+            if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                 if section:
                     if elementlines > filterlines:
                         outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
                     else:
                         outfile.extend(sorted(section))
                     section = set()
-                newsectionline = 1
-                filterlines = elementlines = 0
+                    newsectionline = 1
+                    filterlines = elementlines = 0
                 outfile.append(line)
             else:
                 # Neaten up filters, checking their type if necessary
@@ -151,6 +169,7 @@ def fopsort (filename):
     if outfile != filecontents:
         with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
             outputfile.write("\n".join(outfile) + "\n")
+        print("Sorted {filename}...".format(filename=filename))
         
 def filtertidy (filterin):
     # Make regular filters entirely lower case
@@ -177,7 +196,6 @@ def filtertidy (filterin):
         for option in domainentries:
             optionlist.remove(option)
         optionlist = sorted(optionlist, key=lambda option: option.strip("~"))
-        
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
             optionlist.append("domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~"))))
@@ -214,40 +232,20 @@ def elementtidy (domains, selector):
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return domains + "##" + selector[1:-1]
 
-def hgcommit (userchanges):
+def commit (repotype, userchanges):
     # Check for file changes and only continue if some have been made
-    difference = subprocess.check_output(["hg", "diff"])
+    difference = subprocess.check_output(repotype[0])
     if not difference:
-        print("Mercurial has not recored any changes to the repository.")
+        print("There are no recorded changes to the repository")
         return
-    print("The following changes to the repository have been recorded by Mercurial:")
+    print("The following changes have been recorded by the repository:")
     print(difference.decode("utf-8"))
     try:
         # Persistently request for a suitable comment
         while True:
             comment = str(input("Please enter a valid commit comment or quit:\n"))
-            sections = re.search(COMMITPATTERN, comment)
-            # Check whether the comment matches the required format
-            if sections == None:
-                print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
-            else:
-                indicator = sections.group(1)
-                if indicator == "M":
-                    # Allow modification comments to have practically any format
-                    break
-                elif indicator == "A" or indicator == "P":
-                    if not userchanges:
-                        print("You have indicated that you have added or removed a rule, but no changes were initially noted by Mercurial.")
-                    address = sections.group(4)
-                    if not validurl(address):
-                        print("Unrecognised address \"{address}\".".format(address=address))
-                    else:
-                        # The user has changed the subscription and selected a suitable comment message with a valid address
-                        break
-                else:
-                    print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
-                    
-                print("")
+            if checkcomment(comment, userchanges):
+                break
     # Allow users to abort if necessary
     except (KeyboardInterrupt, SystemExit):
         print("\nCommit aborted.")
@@ -255,28 +253,20 @@ def hgcommit (userchanges):
     
     # When the comment has been accepted, commit the changes, checking for errors along the way and aborting if necessary
     print("Comment \"{comment}\" accepted.".format(comment=comment))
-    commitreturn = subprocess.check_call(["hg", "commit", "-m", comment])
-    if commitreturn != 0:
-        print("Unexpected error with the command \"hg commit -m \"{comment}\"\".".format(comment=comment))
+    try:
+        command = list(repotype[1])
+        command.append(comment)
+        subprocess.Popen(command).communicate()
+        print("\nConnecting to server. Please enter your password if required.")
+        for command in repotype[2:]:
+            subprocess.Popen(command).communicate()
+            print("")
+    except(subprocess.CalledProcessError):
+        print("Unexpected error with the command \"{command}\".".format(command=command))
         print("Aborting commit procedure.")
         return
-    print("\nConnecting to server. Please enter your password if required.")
-    pullreturn = subprocess.check_call(["hg", "pull"])
-    if pullreturn != 0:
-        print("Unexpected error with the command \"hg pull\".")
-        print("Aborting commit procedure.")
-        return
-    print("")
-    pushreturn = subprocess.check_call(["hg", "push"])
-    if pushreturn != 0:
-        if pushreturn == 1:
-            print("Nothing to push according to \"hg push\".")
-        else:
-            print("Unexpected error with the command \"hg pull\".")
-        print("Aborting commit procedure.")
-        return
-        
-    print("\nCompleted commit process succesfully.")
+
+    print("Completed commit process succesfully.")
         
 def isglobalelement (domainlist):
     # Check whether all domains are negations
@@ -327,6 +317,30 @@ def removeunnecessarywildcards (filtertext):
     if whitelist:
         filtertext = "@@" + filtertext
     return filtertext
+
+def checkcomment(comment, changed):
+    sections = re.search(COMMITPATTERN, comment)
+    if sections == None:
+        print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
+    else:
+        indicator = sections.group(1)
+        if indicator == "M":
+            # Allow modification comments to have practically any format
+            return True
+        elif indicator == "A" or indicator == "P":
+            if not changed:
+                print("You have indicated that you have added or removed a rule, but no changes were initially noted by the repository.")
+            address = sections.group(4)
+            if not validurl(address):
+                print("Unrecognised address \"{address}\".".format(address=address))
+            else:
+                # The user has changed the subscription and selected a suitable comment message with a valid address
+                return True
+        else:
+            print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
+            
+    print("")
+    return False
     
 if __name__ == '__main__':
     start()
