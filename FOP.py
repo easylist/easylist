@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.91
+VERSION = 1.92
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -275,16 +275,6 @@ def isglobalelement (domainlist):
             return False
     return True
 
-def validurl (url):
-    addresspart = urlparse(url)
-    # Require that an address has a scheme, domain name and path
-    if addresspart.scheme and addresspart.netloc and addresspart.path:
-        return True
-    elif addresspart.scheme == "about" and addresspart.path:
-        return True
-    else:
-        return False
-
 def removeunnecessarywildcards (filtertext):
     whitelist = False
     if filtertext[0:1] == "@@":
@@ -296,24 +286,20 @@ def removeunnecessarywildcards (filtertext):
             break
         else:
             proposed = filtertext[1:]
-            if proposed != "" and proposed[0] != "|":
-                filtertext = proposed
-            else:
+            if proposed == "" or proposed[0] == "|":
                 break
+            else:
+                filtertext = proposed
     # Remove wildcards from the end of the filter
     while True:
         if filtertext[-1] != "*":
             break
         else:
             proposed = filtertext[:-1]
-            if proposed != "" and proposed[-1] != "|":
-                # Check for the potential to make regular expressions
-                if proposed[0] == "/" and proposed[-1] == "/":
-                    break
-                else:
-                    filtertext = proposed
-            else:
+            if proposed == "" or proposed[-1] == "|" or proposed[0] == "/" and proposed[-1] == "/":
                 break
+            else:
+                filtertext = proposed
     if whitelist:
         filtertext = "@@" + filtertext
     return filtertext
@@ -338,9 +324,18 @@ def checkcomment(comment, changed):
                 return True
         else:
             print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
-            
     print("")
     return False
-    
+
+def validurl (url):
+    addresspart = urlparse(url)
+    # Require that an address has a scheme, domain name and path
+    if addresspart.scheme and addresspart.netloc and addresspart.path:
+        return True
+    elif addresspart.scheme == "about" and addresspart.path:
+        return True
+    else:
+        return False
+
 if __name__ == '__main__':
     start()
