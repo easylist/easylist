@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.51
+VERSION = 2.6
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -208,14 +208,14 @@ def filtertidy (filterin):
         optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
-            optionlist.append("domain=%s" % "|".join(sorted(set(domainlist), key=lambda domain: domain.strip("~"))))
+            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key=lambda domain: domain.strip("~")))))
         
         # If the option "match-case" is not present, make the filter text lower case
         if not case:
             filtertext = filtertext.lower()
         
         # Add the options back to the filter and return it
-        return "%s$%s" % (filtertext, ",".join(optionlist))
+        return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
     else:
         # Remove unnecessary asterisks and return the filter
         return removeunnecessarywildcards(filterin.lower())
@@ -224,7 +224,7 @@ def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
     domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector in an unambiguous manner
-    selector = "@%s@" % selector
+    selector = "@{selector}@".format(selector=selector)
     each = re.finditer
     # Make the tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
@@ -235,16 +235,16 @@ def elementtidy (domains, selector):
             if bc == None:
                 bc = tag.group(1)
             ac = tag.group(4)
-            selector = selector.replace("%s%s%s" % (bc, tagname, ac), "%s%s%s" % (bc, lowertagname, ac), 1)
+            selector = selector.replace("{before}{tag}{after}".format(before = bc, tag = tagname, after = ac), "{before}{tag}{after}".format(before = bc, tag = lowertagname, after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(2)
         lowerpseudoclass = pseudoclass.lower()
         if pseudoclass != lowerpseudoclass:
             ac = pseudo.group(3)
-            selector = selector.replace("%s%s" % (pseudoclass, ac), "%s%s" % (lowerpseudoclass, ac), 1)
+            selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = lowerpseudoclass, after = ac), 1)
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
-    return "%s##%s" % (domains, selector[1:-1])
+    return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
 
 def commit (repotype, userchanges):
     # Only continue if changes have been made to the repository
@@ -318,7 +318,7 @@ def removeunnecessarywildcards (filtertext):
             else:
                 filtertext = proposed
     if whitelist:
-        filtertext = "@@%s" % filtertext
+        filtertext = "@@{filtertext}".format(filtertext = filtertext)
     return filtertext
 
 def checkcomment(comment, changed):
