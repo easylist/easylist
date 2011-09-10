@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.4
+VERSION = 2.41
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -263,13 +263,14 @@ def commit (repotype, userchanges):
         print("\nCommit aborted.")
         return
     
-    # When the comment has been accepted, commit the changes,
     print("Comment \"{comment}\" accepted.".format(comment=comment))
     try:
+        # Commit changes
         command = list(repotype[1])
         command.append(comment)
         subprocess.Popen(command).communicate()
         print("\nConnecting to server. Please enter your password if required.")
+        # Update the server as required by the revision control system
         for command in repotype[2:]:
             subprocess.Popen(command).communicate()
             print("")
