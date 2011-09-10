@@ -92,7 +92,8 @@ def main (location):
     if repository:
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
-        except(subprocess.CalledProcessError):
+        except(subprocess.CalledProcessError, OSError):
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. Please ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
     
     print("\nSorting the contents of {folder}".format(folder=location))
@@ -264,6 +265,9 @@ def commit (repotype, userchanges):
     except(subprocess.CalledProcessError):
         print("Unexpected error with the command \"{command}\".".format(command=command))
         raise subprocess.CalledProcessError("Aborting FOP.")
+    except(OSError):   
+        print("Unexpected error with the command \"{command}\".".format(command=command))
+        raise OSError("Aborting FOP.")
 
     print("Completed commit process succesfully.")
         
