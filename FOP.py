@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.3
+VERSION = 2.4
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -201,8 +201,7 @@ def filtertidy (filterin):
             if option == "match-case":
                 case = True
         # Complete any required tasks
-        for option in removeentries:
-            optionlist.remove(option)
+        [optionlist.remove(option) for option in removeentries]
         # Sort all options other than domain alphabetically
         optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and add the option to the end of the list
@@ -221,8 +220,7 @@ def filtertidy (filterin):
 
 def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
-    if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
+    domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector in an unambiguous manner
     selector = "@%s@" % selector
     each = re.finditer
