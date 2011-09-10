@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.92
+VERSION = 1.93
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -117,6 +117,8 @@ def fopsort (filename):
     # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
         filecontents = inputfile.read().splitlines()
+    if not filecontents:
+        return
     if filecontents[-1] == "":
         filecontents = filecontents[:-1]
     
