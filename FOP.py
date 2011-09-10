@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.41
+VERSION = 2.5
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -62,9 +62,10 @@ substitute = re.sub
 
 def start ():
     # Print the name and version of the program
-    characters = 41 + len(str(VERSION))
+    greeting = "FOP (Filter Orderer and Preener) version {version}".format(version=VERSION)
+    characters = len(str(greeting))
     print("=" * characters)
-    print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
+    print(greeting)
     print("=" * characters)
     
     # Run the program in each of the locations specified in the command line, or the current working directory if no location is specified
