@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.1
+VERSION = 2.2
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -29,7 +29,7 @@ except ImportError:
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
-OPTIONPATTERN = re.compile(r"^(.+)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # The following pattern describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
