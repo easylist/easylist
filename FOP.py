@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.2
+VERSION = 2.3
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -56,6 +56,10 @@ HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
 SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
 REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
 
+# Some global regular expression definitions that are used a lot
+parts = re.search
+substitute = re.sub
+
 def start ():
     # Print the name and version of the program
     print("=" * 44)
@@ -93,21 +97,23 @@ def main (location):
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
         except(subprocess.CalledProcessError, OSError):
-            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you are required to run FOP as an administrator - the exact reason why is unknown reasons. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you are required to run FOP as an administrator - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
     
     print("\nSorting the contents of {folder}".format(folder=location))
     for path, directory, files in os.walk("."):
+        for direct in directory:
+            if direct[0] == ".":
+                directory.remove(direct)
         for filename in files:
-            if "/." not in path:
-                address = os.path.join(path, filename)
-                (name, extension) = os.path.splitext(filename)
-                # Sort all text files that are not blacklisted
-                if extension == ".txt"  and filename not in IGNORE:
-                    fopsort(address)
-                # Delete unnecessary backups if they are found
-                if extension == ".orig":
-                    os.remove(address)
+            address = os.path.join(path, filename)
+            (name, extension) = os.path.splitext(filename)
+            # Sort all text files that are not blacklisted
+            if extension == ".txt"  and filename not in IGNORE:
+                fopsort(address)
+            # Delete unnecessary backups if they are found
+            if extension == ".orig":
+                os.remove(address)
     
     # Offer to commit any changes if in a repository
     if repository:
@@ -134,7 +140,7 @@ def fopsort (filename):
             if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                 if section:
                     if elementlines > filterlines:
-                        outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
+                        outfile.extend(sorted(section, key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
                     else:
                         outfile.extend(sorted(section))
                     section = set()
@@ -143,7 +149,7 @@ def fopsort (filename):
                 outfile.append(line)
             else:
                 # Neaten up filters, checking their type if necessary
-                elementparts = re.search(ELEMENTPATTERN, line)
+                elementparts = parts(ELEMENTPATTERN, line)
                 if elementparts:
                     domains = elementparts.group(1).lower()
                     if newsectionline <= CHECKLINES:
@@ -163,7 +169,7 @@ def fopsort (filename):
     # At the end of the file, sort and add any remaining filters
     if section:
         if elementlines > filterlines:
-            outfile.extend(sorted(section, key=lambda rule: re.sub(DOMAINPATTERN, "", rule)))
+            outfile.extend(sorted(section, key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
         else:
             outfile.extend(sorted(section))
     
@@ -175,40 +181,40 @@ def fopsort (filename):
         
 def filtertidy (filterin):   
     # If applicable, sort options
-    optionsplit = re.search(OPTIONPATTERN, filterin)
+    optionsplit = parts(OPTIONPATTERN, filterin)
     if optionsplit:
         # Split, clean and sort options
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
-        optionlist = set(optionsplit.group(2).lower().split(","))
+        optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
         
-        domainlist = set()
-        domainentries = set()
+        domainlist = []
+        removeentries = []
         case = False
         for option in optionlist:
-            option = option.replace("_", "-")
             # Detect and separate domain options
             if option[0:7] == "domain=":
-                domainlist.update(option[7:].split("|"))
-                domainentries.add(option)
+                domainlist.extend(option[7:].split("|"))
+                removeentries.append(option)
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
             # Check for the match-case option
             if option == "match-case":
                 case = True
-        # Sort all options other than domain alphabetically
-        for option in domainentries:
+        # Complete any required tasks
+        for option in removeentries:
             optionlist.remove(option)
-        optionlist = sorted(optionlist, key=lambda option: option.strip("~"))
+        # Sort all options other than domain alphabetically
+        optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
-            optionlist.append("domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~"))))
+            optionlist.append("domain=%s" % "|".join(sorted(set(domainlist), key=lambda domain: domain.strip("~"))))
         
         # If the option "match-case" is not present, make the filter text lower case
         if not case:
             filtertext = filtertext.lower()
         
         # Add the options back to the filter and return it
-        return filtertext + "$" + ",".join(optionlist)
+        return "%s$%s" % (filtertext, ",".join(optionlist))
     else:
         # Remove unnecessary asterisks and return the filter
         return removeunnecessarywildcards(filterin.lower())
@@ -218,9 +224,10 @@ def elementtidy (domains, selector):
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector in an unambiguous manner
-    selector = "@" + selector + "@"
+    selector = "@%s@" % selector
+    each = re.finditer
     # Make the tags lower case wherever possible
-    for tag in re.finditer(SELECTORPATTERN, selector):
+    for tag in each(SELECTORPATTERN, selector):
         tagname = tag.group(3)
         lowertagname = tagname.lower()
         if tagname != lowertagname:
@@ -228,16 +235,16 @@ def elementtidy (domains, selector):
             if bc == None:
                 bc = tag.group(1)
             ac = tag.group(4)
-            selector = selector.replace(bc + tagname + ac, bc + lowertagname + ac, 1)
+            selector = selector.replace("%s%s%s" % (bc, tagname, ac), "%s%s%s" % (bc, lowertagname, ac), 1)
     # Make pseudo classes lower case where possible
-    for pseudo in re.finditer(PSEUDOPATTERN, selector):
+    for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(2)
         lowerpseudoclass = pseudoclass.lower()
         if pseudoclass != lowerpseudoclass:
             ac = pseudo.group(3)
-            selector = selector.replace(pseudoclass + ac, lowerpseudoclass + ac, 1)
+            selector = selector.replace("%s%s" % (pseudoclass, ac), "%s%s" % (lowerpseudoclass, ac), 1)
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
-    return domains + "##" + selector[1:-1]
+    return "%s##%s" % (domains, selector[1:-1])
 
 def commit (repotype, userchanges):
     # Only continue if changes have been made to the repository
@@ -310,11 +317,11 @@ def removeunnecessarywildcards (filtertext):
             else:
                 filtertext = proposed
     if whitelist:
-        filtertext = "@@" + filtertext
+        filtertext = "@@%s" % filtertext
     return filtertext
 
 def checkcomment(comment, changed):
-    sections = re.search(COMMITPATTERN, comment)
+    sections = parts(COMMITPATTERN, comment)
     if sections == None:
         print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
     else:
