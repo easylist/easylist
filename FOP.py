@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.00
+VERSION = 2.1
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -29,7 +29,7 @@ except ImportError:
 # The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
 DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
-OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+OPTIONPATTERN = re.compile(r"^(.+)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # The following pattern describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -93,7 +93,7 @@ def main (location):
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
         except(subprocess.CalledProcessError, OSError):
-            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. Please ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you are required to run FOP as an administrator - the exact reason why is unknown reasons. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
     
     print("\nSorting the contents of {folder}".format(folder=location))
@@ -173,26 +173,28 @@ def fopsort (filename):
             outputfile.write("\n".join(outfile) + "\n")
         print("{filename} has been sorted".format(filename=filename))
         
-def filtertidy (filterin):
-    # Make regular filters entirely lower case
-    filterin = filterin.lower()
-    
+def filtertidy (filterin):   
     # If applicable, sort options
     optionsplit = re.search(OPTIONPATTERN, filterin)
     if optionsplit:
         # Split, clean and sort options
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
-        optionlist = set(optionsplit.group(2).split(","))
+        optionlist = set(optionsplit.group(2).lower().split(","))
         
         domainlist = set()
         domainentries = set()
+        case = False
         for option in optionlist:
+            option = option.replace("_", "-")
             # Detect and separate domain options
             if option[0:7] == "domain=":
                 domainlist.update(option[7:].split("|"))
                 domainentries.add(option)
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
+            # Check for the match-case option
+            if option == "match-case":
+                case = True
         # Sort all options other than domain alphabetically
         for option in domainentries:
             optionlist.remove(option)
@@ -201,11 +203,15 @@ def filtertidy (filterin):
         if domainlist:
             optionlist.append("domain=" + "|".join(sorted(domainlist, key=lambda domain: domain.strip("~"))))
         
+        # If the option "match-case" is not present, make the filter text lower case
+        if not case:
+            filtertext = filtertext.lower()
+        
         # Add the options back to the filter and return it
         return filtertext + "$" + ",".join(optionlist)
     else:
         # Remove unnecessary asterisks and return the filter
-        return removeunnecessarywildcards(filterin)
+        return removeunnecessarywildcards(filterin.lower())
 
 def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
