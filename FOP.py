@@ -62,9 +62,10 @@ substitute = re.sub
 
 def start ():
     # Print the name and version of the program
-    print("=" * 44)
+    characters = 41 + len(str(VERSION))
+    print("=" * characters)
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
-    print("=" * 44)
+    print("=" * characters)
     
     # Run the program in each of the locations specified in the command line, or the current working directory if no location is specified
     places = set(sys.argv[1:])
