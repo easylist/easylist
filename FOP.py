@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.5
+VERSION = 2.51
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -99,7 +99,7 @@ def main (location):
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
         except(subprocess.CalledProcessError, OSError):
-            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you are required to run FOP as an administrator - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
     
     print("\nSorting the contents of {folder}".format(folder=location))
