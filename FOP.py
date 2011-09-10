@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 1.93
+VERSION = 2.00
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -34,7 +34,7 @@ OPTIONPATTERN = re.compile(r"^([^\/\"!]*?)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+
 # The following pattern describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-# The following patterns match element tags and pseudo classes; "@" indicates either the beginning or end of a selector
+# The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"((?<=([@\+>\[\)]))|[>+#\.]\s*[\w]+\s+)(\s*[\w]+\s*)(?=([\[@\+>=\]\^\*\$\:]))")
 PSEUDOPATTERN = re.compile(r"((?<=[]])|[>+#\.\s]\s*[\w]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
 
@@ -44,13 +44,13 @@ COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s)?(.*)$")
 # The files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
-# The following is a tuple of the known Adblock Plus options
+# The following is a tuple of the Adblock Plus options, as of version 1.3.9
 KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
                 "third-party", "xbl", "xmlhttprequest")
 
-# The following are commands for various version control systems. Only the HG commands have been tested
+# The following are commands for various version control systems; only the HG commands have been throughly tested
 GIT = (("git", "diff"), ("git", "commit", "-m"), ("git", "pull"), ("git", "push"))
 HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
 SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
@@ -62,7 +62,7 @@ def start ():
     print("FOP (Filter Orderer and Preener) version {version}".format(version=VERSION))
     print("=" * 44)
     
-    # Run the program in each of the locations specified, or the current working directory if no location is specified
+    # Run the program in each of the locations specified in the command line, or the current working directory if no location is specified
     places = set(sys.argv[1:])
     if places:
         absoluteplaces = set()
@@ -73,7 +73,6 @@ def start ():
             main(place)
     else:
         main(os.getcwd())
-    print("\nExiting...")
 
 def main (location):
     # Move to the specified location if it exists
@@ -105,7 +104,7 @@ def main (location):
                 # Sort all text files that are not blacklisted
                 if extension == ".txt"  and filename not in IGNORE:
                     fopsort(address)
-                # Delete unnecessary backups as they are found
+                # Delete unnecessary backups if they are found
                 if extension == ".orig":
                     os.remove(address)
     
@@ -167,11 +166,11 @@ def fopsort (filename):
         else:
             outfile.extend(sorted(section))
     
-    # Only save the updated file if required it has changed
+    # Only save the updated file if it has changed
     if outfile != filecontents:
         with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
             outputfile.write("\n".join(outfile) + "\n")
-        print("Sorted {filename}...".format(filename=filename))
+        print("{filename} has been sorted".format(filename=filename))
         
 def filtertidy (filterin):
     # Make regular filters entirely lower case
@@ -192,7 +191,6 @@ def filtertidy (filterin):
                 domainlist.update(option[7:].split("|"))
                 domainentries.add(option)
             elif option.strip("~") not in KNOWNOPTIONS:
-                # Warn if an unrecognised option is present
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
         # Sort all options other than domain alphabetically
         for option in domainentries:
@@ -235,7 +233,7 @@ def elementtidy (domains, selector):
     return domains + "##" + selector[1:-1]
 
 def commit (repotype, userchanges):
-    # Check for file changes and only continue if some have been made
+    # Only continue if changes have been made to the repository
     difference = subprocess.check_output(repotype[0])
     if not difference:
         print("There are no recorded changes to the repository.")
@@ -248,12 +246,12 @@ def commit (repotype, userchanges):
             comment = str(input("Please enter a valid commit comment or quit:\n"))
             if checkcomment(comment, userchanges):
                 break
-    # Allow users to abort if necessary
+    # Allow users to abort
     except (KeyboardInterrupt, SystemExit):
         print("\nCommit aborted.")
         return
     
-    # When the comment has been accepted, commit the changes, checking for errors along the way and aborting if necessary
+    # When the comment has been accepted, commit the changes,
     print("Comment \"{comment}\" accepted.".format(comment=comment))
     try:
         command = list(repotype[1])
@@ -265,8 +263,7 @@ def commit (repotype, userchanges):
             print("")
     except(subprocess.CalledProcessError):
         print("Unexpected error with the command \"{command}\".".format(command=command))
-        print("Aborting commit procedure.")
-        return
+        raise subprocess.CalledProcessError("Aborting FOP.")
 
     print("Completed commit process succesfully.")
         
