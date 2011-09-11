@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.8
+VERSION = 2.9
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -35,8 +35,8 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 BLANKPATTERN = re.compile(r"^\s*$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"(?<=([\s\[@]))([a-zA-Z]+)((?=([\[\]\^\*\$\=:@]))|(?=(\s[+>])))")
-PSEUDOPATTERN = re.compile(r"((?<=])|[>+#\.\s]\s\w+)(\:[a-zA-Z\-]{3,})((?=([\(\:\@]))|(?=\s[+>]))")
+SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]+)((?=([\[\]\^\*\$\=:@]))|(?=(\s[+>])))")
+PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]{3,})((?=([\(\:\@]))|(?=(\s[+>])))")
 
 # The following selects unnecessary tags
 REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
@@ -238,20 +238,21 @@ def elementtidy (domains, selector):
         selector = selector.replace("{before}{untag}{after}".format(before = bc, untag = untagname, after = ac), "{before}{after}".format(before = bc, after = ac), 1)
     # Make the tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
-        tagname = tag.group(2)
+        tagname = tag.group(1)
         lowertagname = tagname.lower()
         if tagname != lowertagname:
-            bc = tag.group(1)
-            ac = tag.group(4)
+            ac = tag.group(3)
             if ac == None:
-                ac = tag.group(5)
-            selector = selector.replace("{before}{tag}{after}".format(before = bc, tag = tagname, after = ac), "{before}{tag}{after}".format(before = bc, tag = lowertagname, after = ac), 1)
+                ac = tag.group(4)
+            selector = selector.replace("{tag}{after}".format(tag = tagname, after = ac), "{tag}{after}".format(tag = lowertagname, after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
-        pseudoclass = pseudo.group(2)
+        pseudoclass = pseudo.group(1)
         lowerpseudoclass = pseudoclass.lower()
         if pseudoclass != lowerpseudoclass:
             ac = pseudo.group(3)
+            if ac == None:
+                ac = pseudo.group(4)
             selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = lowerpseudoclass, after = ac), 1)
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
