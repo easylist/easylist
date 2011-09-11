@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.9
+VERSION = 2.91
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -35,10 +35,8 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 BLANKPATTERN = re.compile(r"^\s*$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]+)((?=([\[\]\^\*\$\=:@]))|(?=(\s[+>])))")
+SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]+)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]{3,})((?=([\(\:\@]))|(?=(\s[+>])))")
-
-# The following selects unnecessary tags
 REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
 
 # The following pattern identifies the sections of commit messages
@@ -60,8 +58,7 @@ SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
 REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
 
 # Some global regular expression definitions that are used a lot
-parts = re.search
-substitute = re.sub
+parts = re.match
 
 def start ():
     # Print the name and version of the program
@@ -138,9 +135,10 @@ def fopsort (filename):
     section = []
     newsectionline = 1
     filterlines = elementlines = 0
+    substitute = re.sub
     # Work through the file line by line
     for line in filecontents:
-        if not re.match(BLANKPATTERN, line):
+        if not parts(BLANKPATTERN, line):
             # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
             if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                 if section:
@@ -225,7 +223,8 @@ def filtertidy (filterin):
 
 def elementtidy (domains, selector):
     # Order domain names alphabetically, ignoring exceptions
-    domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
+    if "," in domains:
+        domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector in an unambiguous manner
     selector = "@{selector}@".format(selector=selector)
     each = re.finditer
