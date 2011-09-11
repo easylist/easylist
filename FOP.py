@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.7
+VERSION = 2.8
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -35,14 +35,14 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 BLANKPATTERN = re.compile(r"^\s*$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"((?<=([@\[\)]))|(?<=([>+\]]\s)))(\w+\s?)(?=([\[@\+>=\]\^\*\$\:\#\.]))")
-PSEUDOPATTERN = re.compile(r"((?<=])|[>+#\.\s]\s\w+)(\:[a-zA-Z\-]{3,}\s?)(?=([\(\:\+\>\@]))")
+SELECTORPATTERN = re.compile(r"(?<=([\s\[@]))([a-zA-Z]+)((?=([\[\]\^\*\$\=:@]))|(?=(\s[+>])))")
+PSEUDOPATTERN = re.compile(r"((?<=])|[>+#\.\s]\s\w+)(\:[a-zA-Z\-]{3,})((?=([\(\:\@]))|(?=\s[+>]))")
 
 # The following selects unnecessary tags
 REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
 
 # The following pattern identifies the sections of commit messages
-COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s)?(.*)$")
+COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # The files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
@@ -135,7 +135,7 @@ def fopsort (filename):
     
     outfile = []
     CHECKLINES = 10
-    section = set()
+    section = []
     newsectionline = 1
     filterlines = elementlines = 0
     # Work through the file line by line
@@ -145,10 +145,10 @@ def fopsort (filename):
             if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                 if section:
                     if elementlines > filterlines:
-                        outfile.extend(sorted(section, key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
+                        outfile.extend(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
                     else:
-                        outfile.extend(sorted(section))
-                    section = set()
+                        outfile.extend(sorted(set(section)))
+                    section = []
                     newsectionline = 1
                     filterlines = elementlines = 0
                 outfile.append(line)
@@ -168,15 +168,15 @@ def fopsort (filename):
                         filterlines += 1
                     line = filtertidy(line)
                 # Add the filter to the present section
-                section.add(line)
+                section.append(line)
                 newsectionline += 1
     
     # At the end of the file, sort and add any remaining filters
     if section:
         if elementlines > filterlines:
-            outfile.extend(sorted(section, key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
+            outfile.extend(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
         else:
-            outfile.extend(sorted(section))
+            outfile.extend(sorted(set(section)))
     
     # Only save the updated file if it has changed
     if outfile != filecontents:
@@ -230,17 +230,21 @@ def elementtidy (domains, selector):
     selector = "@{selector}@".format(selector=selector)
     each = re.finditer
     for untag in each(REMOVALPATTERN, selector):
-        bc = untag.group(2) if untag.group(2) != None else untag.group(3)
+        bc = untag.group(2)
+        if bc == None:
+            bc = untag.group(3)
         untagname = untag.group(4)
         ac = untag.group(5)
         selector = selector.replace("{before}{untag}{after}".format(before = bc, untag = untagname, after = ac), "{before}{after}".format(before = bc, after = ac), 1)
     # Make the tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
-        tagname = tag.group(4)
+        tagname = tag.group(2)
         lowertagname = tagname.lower()
         if tagname != lowertagname:
-            bc = tag.group(2) if tag.group(2) != None else tag.group(3)
-            ac = tag.group(5)
+            bc = tag.group(1)
+            ac = tag.group(4)
+            if ac == None:
+                ac = tag.group(5)
             selector = selector.replace("{before}{tag}{after}".format(before = bc, tag = tagname, after = ac), "{before}{tag}{after}".format(before = bc, tag = lowertagname, after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
@@ -339,14 +343,13 @@ def checkcomment(comment, changed):
         elif indicator == "A" or indicator == "P":
             if not changed:
                 print("You have indicated that you have added or removed a rule, but no changes were initially noted by the repository.")
+                return False
             address = sections.group(4)
             if not validurl(address):
                 print("Unrecognised address \"{address}\".".format(address=address))
             else:
                 # The user has changed the subscription and selected a suitable comment message with a valid address
                 return True
-        else:
-            print("Unrecognised indicator \"{character}\". Please select either \"A\", \"M\" or \"P\".".format(character=indicator))
     print("")
     return False
 
