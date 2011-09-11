@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.92
+VERSION = 2.93
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -74,7 +74,6 @@ def start ():
         absplaces = [os.path.normpath(os.path.abspath(place)) for place in places]
         for place in set(absplaces):
             main(place)
-            visited.append(place)
             print("")
     else:
         main((os.path.normpath(os.path.abspath(os.getcwd()))))
