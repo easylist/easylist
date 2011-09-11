@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.91
+VERSION = 2.92
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -69,19 +69,18 @@ def start ():
     print("=" * characters)
     
     # Run the program in each of the locations specified in the command line, or the current working directory if no location is specified
-    places = set(sys.argv[1:])
+    places = sys.argv[1:]
     if places:
-        absoluteplaces = set()
-        for place in places:
-            # Make all of the references absolute before changing the working directory
-            absoluteplaces.add(os.path.abspath(place))
-        for place in absoluteplaces:
+        absplaces = [os.path.normpath(os.path.abspath(place)) for place in places]
+        for place in set(absplaces):
             main(place)
+            visited.append(place)
+            print("")
     else:
-        main(os.getcwd())
+        main((os.path.normpath(os.path.abspath(os.getcwd()))))
 
 def main (location):
-    # Move to the specified location if it exists
+    # Change to the specified directory if it exists
     if os.path.isdir(location):
         os.chdir(location)
     else:
@@ -91,7 +90,7 @@ def main (location):
     # Set the repository type based on hidden directories
     repository = None
     for repotype in REPOTYPES:
-        if os.path.isdir(repotype[0]):
+        if os.path.isdir(os.path.normpath(repotype[0])):
             repository = repotype[1]
             break
     # Record the initial changes; if this fails, give up trying to use the repository
@@ -102,8 +101,9 @@ def main (location):
             print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
     
-    print("\nSorting the contents of {folder}".format(folder=location))
-    for path, directory, files in os.walk("."):
+    print("\nPrimary location: {folder}{separator}".format(folder=location, separator=os.sep))
+    for path, directory, files in os.walk(location):
+        print("Current directory: {folder}{separator}".format(folder=os.path.abspath(path), separator=os.sep))
         for direct in directory:
             if direct[0] == ".":
                 directory.remove(direct)
@@ -116,10 +116,10 @@ def main (location):
             # Delete unnecessary backups if they are found
             if extension == ".orig":
                 os.remove(address)
-    
+
     # Offer to commit any changes if in a repository
     if repository:
-        commit(repository, originaldifference)
+        commit(repository, location, originaldifference)
 
 def fopsort (filename):
     # Read in the file
@@ -179,8 +179,8 @@ def fopsort (filename):
     # Only save the updated file if it has changed
     if outfile != filecontents:
         with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
-            outputfile.write("\n".join(outfile) + "\n")
-        print("{filename} has been sorted".format(filename=filename))
+            outputfile.write("{filters}\n".format(filters= "\n".join(outfile)))
+        print("Sorted: {filename}".format(filename=os.path.abspath(filename)))
         
 def filtertidy (filterin):   
     # If applicable, sort options
@@ -203,7 +203,7 @@ def filtertidy (filterin):
             # Check for the match-case option
             if option == "match-case":
                 case = True
-        # Complete any required tasks
+        # Remove any special options
         [optionlist.remove(option) for option in removeentries]
         # Sort all options other than domain alphabetically
         optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
@@ -256,13 +256,13 @@ def elementtidy (domains, selector):
     # Remove the markers for the beginning and end of the selector, join the rule once more and return it
     return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
 
-def commit (repotype, userchanges):
+def commit (repotype, location, userchanges):
     # Only continue if changes have been made to the repository
     difference = subprocess.check_output(repotype[0])
     if not difference:
-        print("There are no recorded changes to the repository.")
+        print("\nNo changes have been recorded by the repository.")
         return
-    print("The following changes have been recorded by the repository:")
+    print("\nThe following changes have been recorded by the repository:")
     print(difference.decode("utf-8"))
     try:
         # Persistently request for a suitable comment
@@ -292,7 +292,6 @@ def commit (repotype, userchanges):
     except(OSError):   
         print("Unexpected error with the command \"{command}\".".format(command=command))
         raise OSError("Aborting FOP.")
-
     print("Completed commit process succesfully.")
         
 def isglobalelement (domainlist):
