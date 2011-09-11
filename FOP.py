@@ -35,7 +35,7 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 BLANKPATTERN = re.compile(r"^\s*$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"((?<=([@\[\)]))|(?<=([>+]\s)))(\w+\s?)(?=([\[@\+>=\]\^\*\$\:\#\.]))")
+SELECTORPATTERN = re.compile(r"((?<=([@\[\)]))|(?<=([>+\]]\s)))(\w+\s?)(?=([\[@\+>=\]\^\*\$\:\#\.]))")
 PSEUDOPATTERN = re.compile(r"((?<=])|[>+#\.\s]\s\w+)(\:[a-zA-Z\-]{3,}\s?)(?=([\(\:\+\>\@]))")
 
 # The following selects unnecessary tags
