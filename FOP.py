@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.6
+VERSION = 2.7
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -35,8 +35,11 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 BLANKPATTERN = re.compile(r"^\s*$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"((?<=([@\+>\[\)]))|[>+#\.]\s*[\w]+\s+)(\s*[\w]+\s*)(?=([\[@\+>=\]\^\*\$\:]))")
-PSEUDOPATTERN = re.compile(r"((?<=[]])|[>+#\.\s]\s*[\w]+)(\s*\:[a-zA-Z\-]{3,}\s*)(?=([\(\:\+\>\@]))")
+SELECTORPATTERN = re.compile(r"((?<=([@\[\)]))|(?<=([>+]\s)))(\w+\s?)(?=([\[@\+>=\]\^\*\$\:\#\.]))")
+PSEUDOPATTERN = re.compile(r"((?<=])|[>+#\.\s]\s\w+)(\:[a-zA-Z\-]{3,}\s?)(?=([\(\:\+\>\@]))")
+
+# The following selects unnecessary tags
+REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
 
 # The following pattern identifies the sections of commit messages
 COMMITPATTERN = re.compile(r"^(\w)\:\s(\((.+)\)\s)?(.*)$")
@@ -226,15 +229,18 @@ def elementtidy (domains, selector):
     # Mark the beginning and end of the selector in an unambiguous manner
     selector = "@{selector}@".format(selector=selector)
     each = re.finditer
+    for untag in each(REMOVALPATTERN, selector):
+        bc = untag.group(2) if untag.group(2) != None else untag.group(3)
+        untagname = untag.group(4)
+        ac = untag.group(5)
+        selector = selector.replace("{before}{untag}{after}".format(before = bc, untag = untagname, after = ac), "{before}{after}".format(before = bc, after = ac), 1)
     # Make the tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
-        tagname = tag.group(3)
+        tagname = tag.group(4)
         lowertagname = tagname.lower()
         if tagname != lowertagname:
-            bc = tag.group(2)
-            if bc == None:
-                bc = tag.group(1)
-            ac = tag.group(4)
+            bc = tag.group(2) if tag.group(2) != None else tag.group(3)
+            ac = tag.group(5)
             selector = selector.replace("{before}{tag}{after}".format(before = bc, tag = tagname, after = ac), "{before}{tag}{after}".format(before = bc, tag = lowertagname, after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
