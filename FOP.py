@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.93
+VERSION = 2.94
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -108,7 +108,7 @@ def main (location):
                 directory.remove(direct)
         for filename in files:
             address = os.path.join(path, filename)
-            (name, extension) = os.path.splitext(filename)
+            extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
             if extension == ".txt"  and filename not in IGNORE:
                 fopsort(address)
@@ -291,7 +291,7 @@ def commit (repotype, location, userchanges):
     except(OSError):   
         print("Unexpected error with the command \"{command}\".".format(command=command))
         raise OSError("Aborting FOP.")
-    print("Completed commit process succesfully.")
+    print("Completed commit process successfully.")
         
 def isglobalelement (domainlist):
     # Check whether all domains are negations
