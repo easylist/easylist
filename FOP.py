@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.94
+VERSION = 2.95
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -121,13 +121,15 @@ def main (location):
         commit(repository, location, originaldifference)
 
 def fopsort (filename):
+    filecontents = []
+    newlinechange = False
     # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
-        filecontents = inputfile.read().splitlines()
-    if not filecontents:
-        return
-    if filecontents[-1] == "":
-        filecontents = filecontents[:-1]
+        for line in inputfile:
+            modline = line.strip()
+            if "{modline}\n".format(modline=modline) != line:
+                newlinechange = True
+            filecontents.append(modline)
     
     outfile = []
     CHECKLINES = 10
@@ -175,8 +177,8 @@ def fopsort (filename):
         else:
             outfile.extend(sorted(set(section)))
     
-    # Only save the updated file if it has changed
-    if outfile != filecontents:
+    # Only save if changes have been made to the file, including newline corrections
+    if newlinechange or outfile != filecontents:
         with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
             outputfile.write("{filters}\n".format(filters= "\n".join(outfile)))
         print("Sorted: {filename}".format(filename=os.path.abspath(filename)))
