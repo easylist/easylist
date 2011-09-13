@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.991
+VERSION = 2.992
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -25,6 +25,10 @@ try:
     from urllib.parse import urlparse
 except ImportError:
     raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
+
+# Define WindowsError if required to allow FOP to run on non Windows platforms
+if not getattr(__builtins__, "WindowsError", None):
+    class WindowsError(OSError): pass
 
 # Define some frequently used modules as local variables for efficiency
 parts = re.match
@@ -134,6 +138,12 @@ def fopsort (filename):
     newsectionline = 1
     filterlines = elementlines = 0
     substitute = re.sub
+
+    try:
+        os.remove(temporaryfile)
+    except(IOError, OSError, WindowsError):
+        # The file has likely already been deleted
+        pass
 
     # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
