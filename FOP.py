@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.99
+VERSION = 2.991
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -26,7 +26,7 @@ try:
 except ImportError:
     raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
 
-# Define some frequently used regular expressions as local variables for efficiency
+# Define some frequently used modules as local variables for efficiency
 parts = re.match
 setpattern = re.compile
 
@@ -118,8 +118,8 @@ def main (location):
             if extension == ".orig" or extension == ".temp":
                 try:
                     os.remove(address)
-                except(OSError):
-                    # The file has probably been deleted already
+                except(IOError, OSError, WindowsError):
+                    # The file has likely already been deleted
                     pass
 
     # Offer to commit any changes if in a repository
