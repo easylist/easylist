@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.995
+VERSION = 2.996
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -159,6 +159,8 @@ def fopsort (filename):
                         section = []
                         newsectionline = 1
                         filterlines = elementlines = 0
+                    if "{line}\n".format(line = line) != originalline:
+                        changed = True
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
