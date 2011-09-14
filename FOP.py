@@ -10,13 +10,13 @@
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>."""
+    along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.95
+VERSION = 2.992
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -26,26 +26,34 @@ try:
 except ImportError:
     raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
 
-# The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
-DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
-OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+# Define WindowsError if required to allow FOP to run on non Windows platforms
+if not getattr(__builtins__, "WindowsError", None):
+    class WindowsError(OSError): pass
 
-# The following pattern describes a completely blank line
-BLANKPATTERN = re.compile(r"^\s*$")
+# Define some frequently used modules as local variables for efficiency
+parts = re.match
+setpattern = re.compile
+
+# The following patterns are either taken from or based on Wladimir Palant's Adblock Plus source code
+DOMAINPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##")
+ELEMENTPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
+OPTIONPATTERN = setpattern(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]+)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
-PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]{3,})((?=([\(\:\@]))|(?=(\s[+>])))")
-REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
+SELECTORPATTERN = setpattern(r"(?<=[\s\[@])([a-zA-Z]*[A-Z]+[a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
+PSEUDOPATTERN = setpattern(r"(\:[a-zA-Z\-]*[A-Z]+[a-zA-Z\-]*)(?=([\(\:\@\s]))")
+REMOVALPATTERN = setpattern(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
+
+# The following pattern describes a completely blank line
+BLANKPATTERN = setpattern(r"^\s*$")
 
 # The following pattern identifies the sections of commit messages
-COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
+COMMITPATTERN = setpattern(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
-# The files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
+# Files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
-# The following is a tuple of the Adblock Plus options, as of version 1.3.9
+# The following is a tuple of the Adblock Plus options, as of version 1.3.9. This list intentionally ommits the domain option, which is handled separately
 KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
@@ -57,9 +65,6 @@ HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
 SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
 REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
 
-# Some global regular expression definitions that are used a lot
-parts = re.match
-
 def start ():
     # Print the name and version of the program
     greeting = "FOP (Filter Orderer and Preener) version {version}".format(version=VERSION)
@@ -67,7 +72,7 @@ def start ():
     print("=" * characters)
     print(greeting)
     print("=" * characters)
-    
+
     # Run the program in each of the locations specified in the command line, or the current working directory if no location is specified
     places = sys.argv[1:]
     if places:
@@ -85,7 +90,7 @@ def main (location):
     else:
         print("{location} does not exist or is not a folder.".format(location=location))
         return
-    
+
     # Set the repository type based on hidden directories
     repository = None
     for repotype in REPOTYPES:
@@ -99,98 +104,108 @@ def main (location):
         except(subprocess.CalledProcessError, OSError):
             print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
             repository == None
-    
+
     print("\nPrimary location: {folder}{separator}".format(folder=location, separator=os.sep))
-    for path, directory, files in os.walk(location):
+    for path, directories, files in os.walk(location):
         print("Current directory: {folder}{separator}".format(folder=os.path.abspath(path), separator=os.sep))
-        for direct in directory:
+        for direct in directories:
             if direct[0] == ".":
-                directory.remove(direct)
-        for filename in files:
+                directories.remove(direct)
+        directories = sorted(directories)
+        for filename in sorted(files):
             address = os.path.join(path, filename)
             extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
-            if extension == ".txt"  and filename not in IGNORE:
+            if extension == ".txt" and filename not in IGNORE:
                 fopsort(address)
             # Delete unnecessary backups if they are found
-            if extension == ".orig":
-                os.remove(address)
+            if extension == ".orig" or extension == ".temp":
+                try:
+                    os.remove(address)
+                except(IOError, OSError, WindowsError):
+                    # The file has likely already been deleted
+                    pass
 
     # Offer to commit any changes if in a repository
     if repository:
         commit(repository, location, originaldifference)
 
 def fopsort (filename):
-    filecontents = []
-    newlinechange = False
-    # Read in the file
-    with open(filename, "r", encoding="utf-8", newline="\n") as inputfile:
-        for line in inputfile:
-            modline = line.strip()
-            if "{modline}\n".format(modline=modline) != line:
-                newlinechange = True
-            filecontents.append(modline)
-    
-    outfile = []
+    changed = False
+    temporaryfile = "{filename}.temp".format(filename=filename)
     CHECKLINES = 10
     section = []
     newsectionline = 1
     filterlines = elementlines = 0
     substitute = re.sub
-    # Work through the file line by line
-    for line in filecontents:
-        if not parts(BLANKPATTERN, line):
-            # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
-            if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
-                if section:
-                    if elementlines > filterlines:
-                        outfile.extend(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
-                    else:
-                        outfile.extend(sorted(set(section)))
-                    section = []
-                    newsectionline = 1
-                    filterlines = elementlines = 0
-                outfile.append(line)
+
+    try:
+        os.remove(temporaryfile)
+    except(IOError, OSError, WindowsError):
+        # The file has likely already been deleted
+        pass
+
+    # Read in the file
+    with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
+        for originalline in inputfile:
+            line = originalline.strip()
+            # Blank lines are removed
+            if parts(BLANKPATTERN, line):
+                changed = True
             else:
-                # Neaten up filters, checking their type if necessary
-                elementparts = parts(ELEMENTPATTERN, line)
-                if elementparts:
-                    domains = elementparts.group(1).lower()
-                    if newsectionline <= CHECKLINES:
-                        if isglobalelement(domains):
-                            elementlines += 1
+                # Ignore comments and, if applicable, sort the preceding section of filters and add them to the new version of the file
+                if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
+                    if section:
+                        if elementlines > filterlines:
+                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))))
                         else:
-                            filterlines += 1
-                    line = elementtidy(domains, elementparts.group(2))
+                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
+                        section = []
+                        newsectionline = 1
+                        filterlines = elementlines = 0
+                    outputfile.write("{line}\n".format(line=line))
                 else:
-                    if newsectionline <= CHECKLINES:
-                        filterlines += 1
-                    line = filtertidy(line)
-                # Add the filter to the present section
-                section.append(line)
-                newsectionline += 1
-    
-    # At the end of the file, sort and add any remaining filters
-    if section:
-        if elementlines > filterlines:
-            outfile.extend(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))
-        else:
-            outfile.extend(sorted(set(section)))
-    
+                    # Neaten up filters, checking their type if necessary
+                    elementparts = parts(ELEMENTPATTERN, line)
+                    if elementparts:
+                        domains = elementparts.group(1).lower()
+                        if newsectionline <= CHECKLINES:
+                            if isglobalelement(domains):
+                                elementlines += 1
+                            else:
+                                filterlines += 1
+                        line = elementtidy(domains, elementparts.group(2))
+                    else:
+                        if newsectionline <= CHECKLINES:
+                            filterlines += 1
+                        line = filtertidy(line)
+                    # Add the filter to the present section
+                    if "{line}\n".format(line=line) != originalline:
+                        changed = True
+                    section.append(line)
+                    newsectionline += 1
+        # At the end of the file, sort and add any remaining filters and add a newline regardless
+        if section:
+            if elementlines > filterlines:
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))))
+            else:
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
+
     # Only save if changes have been made to the file, including newline corrections
-    if newlinechange or outfile != filecontents:
-        with open(filename, "w", encoding="utf-8", newline="\n") as outputfile:
-            outputfile.write("{filters}\n".format(filters= "\n".join(outfile)))
+    if changed:
+        os.rename(temporaryfile, filename)
         print("Sorted: {filename}".format(filename=os.path.abspath(filename)))
-        
-def filtertidy (filterin):   
+    else:
+        os.remove(temporaryfile)
+
+def filtertidy (filterin):
     # If applicable, sort options
     optionsplit = parts(OPTIONPATTERN, filterin)
     if optionsplit:
         # Split, clean and sort options
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
-        
+
         domainlist = []
         removeentries = []
         case = False
@@ -211,11 +226,11 @@ def filtertidy (filterin):
         # If applicable, sort domain restrictions and add the option to the end of the list
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key=lambda domain: domain.strip("~")))))
-        
+
         # If the option "match-case" is not present, make the filter text lower case
         if not case:
             filtertext = filtertext.lower()
-        
+
         # Add the options back to the filter and return it
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
     else:
@@ -239,22 +254,16 @@ def elementtidy (domains, selector):
     # Make the tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
         tagname = tag.group(1)
-        lowertagname = tagname.lower()
-        if tagname != lowertagname:
-            ac = tag.group(3)
-            if ac == None:
-                ac = tag.group(4)
-            selector = selector.replace("{tag}{after}".format(tag = tagname, after = ac), "{tag}{after}".format(tag = lowertagname, after = ac), 1)
+        ac = tag.group(3)
+        if ac == None:
+            ac = tag.group(4)
+        selector = selector.replace("{tag}{after}".format(tag = tagname, after = ac), "{tag}{after}".format(tag = tagname.lower(), after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(1)
-        lowerpseudoclass = pseudoclass.lower()
-        if pseudoclass != lowerpseudoclass:
-            ac = pseudo.group(3)
-            if ac == None:
-                ac = pseudo.group(4)
-            selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = lowerpseudoclass, after = ac), 1)
-    # Remove the markers for the beginning and end of the selector, join the rule once more and return it
+        ac = pseudo.group(3)
+        selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
+    # Remove the markers from the beginning and end of the selector, join the rule once more and return it
     return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
 
 def commit (repotype, location, userchanges):
@@ -275,7 +284,7 @@ def commit (repotype, location, userchanges):
     except (KeyboardInterrupt, SystemExit):
         print("\nCommit aborted.")
         return
-    
+
     print("Comment \"{comment}\" accepted.".format(comment=comment))
     try:
         # Commit changes
@@ -290,11 +299,11 @@ def commit (repotype, location, userchanges):
     except(subprocess.CalledProcessError):
         print("Unexpected error with the command \"{command}\".".format(command=command))
         raise subprocess.CalledProcessError("Aborting FOP.")
-    except(OSError):   
+    except(OSError):
         print("Unexpected error with the command \"{command}\".".format(command=command))
         raise OSError("Aborting FOP.")
     print("Completed commit process successfully.")
-        
+
 def isglobalelement (domainlist):
     # Check whether all domains are negations
     for domain in domainlist:
