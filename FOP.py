@@ -16,10 +16,10 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.996
+VERSION = 2.997
 
 # Import the key modules
-import os, re, subprocess, sys
+import filecmp, os, re, subprocess, sys
 # Attempt to import a module only available in Python 3 and raise an exception if it is not present
 try:
     from urllib.parse import urlparse
@@ -133,7 +133,6 @@ def main (location):
 def fopsort (filename):
     """ Sort the sections of the file and save the changes, if any have
     been made."""
-    changed = False
     temporaryfile = "{filename}.temp".format(filename = filename)
     CHECKLINES = 10
     section = []
@@ -143,12 +142,9 @@ def fopsort (filename):
 
     # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
-        for originalline in inputfile:
-            line = originalline.strip()
-            # Remove blank lines and mark that the file has changed
-            if parts(BLANKPATTERN, line):
-                changed = True
-            else:
+        for line in inputfile:
+            line = line.strip()
+            if not parts(BLANKPATTERN, line):
                 # Ignore comments and, if applicable, sort the preceding section of filters and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
@@ -159,8 +155,6 @@ def fopsort (filename):
                         section = []
                         newsectionline = 1
                         filterlines = elementlines = 0
-                    if "{line}\n".format(line = line) != originalline:
-                        changed = True
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
@@ -177,9 +171,7 @@ def fopsort (filename):
                         if newsectionline <= CHECKLINES:
                             filterlines += 1
                         line = filtertidy(line)
-                    # Add the filter to the present section, marking if it is different
-                    if "{line}\n".format(line = line) != originalline:
-                        changed = True
+                    # Add the filter to the present section
                     section.append(line)
                     newsectionline += 1
         # At the end of the file, sort and save any remaining filters
@@ -190,7 +182,7 @@ def fopsort (filename):
                 outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
 
     # Only replace the existing file with the new one if it is different
-    if changed:
+    if not filecmp.cmp(temporaryfile, filename):
         # Check the operating system and, if it is Windows, delete the old file to avoid an exception (you are unable to rename files to names already in use)
         if os.name == "nt":
             os.remove(filename)
