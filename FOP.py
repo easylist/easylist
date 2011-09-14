@@ -97,7 +97,7 @@ def main (location):
         if os.path.isdir(os.path.normpath(repotype[0])):
             repository = repotype[1]
             break
-    # If this is a repository, record the initial changes to; if this fails, give up trying to use the repository
+    # If this is a repository, record the initial changes; if this fails, give up trying to use the repository
     if repository:
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
