@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.994
+VERSION = 2.995
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -356,13 +356,13 @@ def checkcomment(comment, changed):
         elif indicator == "A" or indicator == "P":
             if not changed:
                 print("You have indicated that you have added or removed a rule, but no changes were initially noted by the repository.")
-                return False
-            address = sections.group(4)
-            if not validurl(address):
-                print("Unrecognised address \"{address}\".".format(address = address))
             else:
-                # The user has changed the subscription and has selected a suitable comment message with a valid address
-                return True
+                address = sections.group(4)
+                if not validurl(address):
+                    print("Unrecognised address \"{address}\".".format(address = address))
+                else:
+                    # The user has changed the subscription and has written a suitable comment message with a valid address
+                    return True
     print("")
     return False
 
