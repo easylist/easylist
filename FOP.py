@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.992
+VERSION = 2.993
 
 # Import the key modules
 import os, re, subprocess, sys
@@ -25,10 +25,6 @@ try:
     from urllib.parse import urlparse
 except ImportError:
     raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
-
-# Define WindowsError if required to allow FOP to run on non Windows platforms
-if not getattr(__builtins__, "WindowsError", None):
-    class WindowsError(OSError): pass
 
 # Define some frequently used modules as local variables for efficiency
 parts = re.match
@@ -67,7 +63,7 @@ REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
 
 def start ():
     # Print the name and version of the program
-    greeting = "FOP (Filter Orderer and Preener) version {version}".format(version=VERSION)
+    greeting = "FOP (Filter Orderer and Preener) version {version}".format(version = VERSION)
     characters = len(str(greeting))
     print("=" * characters)
     print(greeting)
@@ -88,7 +84,7 @@ def main (location):
     if os.path.isdir(location):
         os.chdir(location)
     else:
-        print("{location} does not exist or is not a folder.".format(location=location))
+        print("{location} does not exist or is not a folder.".format(location = location))
         return
 
     # Set the repository type based on hidden directories
@@ -102,12 +98,12 @@ def main (location):
         try:
             originaldifference = True if subprocess.check_output(repository[0]) else False
         except(subprocess.CalledProcessError, OSError):
-            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command=repository[0]))
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command = repository[0]))
             repository == None
 
-    print("\nPrimary location: {folder}{separator}".format(folder=location, separator=os.sep))
+    print("\nPrimary location: {folder}{separator}".format(folder = location, separator = os.sep))
     for path, directories, files in os.walk(location):
-        print("Current directory: {folder}{separator}".format(folder=os.path.abspath(path), separator=os.sep))
+        print("Current directory: {folder}{separator}".format(folder = os.path.abspath(path), separator = os.sep))
         for direct in directories:
             if direct[0] == ".":
                 directories.remove(direct)
@@ -118,11 +114,11 @@ def main (location):
             # Sort all text files that are not blacklisted
             if extension == ".txt" and filename not in IGNORE:
                 fopsort(address)
-            # Delete unnecessary backups if they are found
+            # Delete unnecessary backups and temporary files if they are found
             if extension == ".orig" or extension == ".temp":
                 try:
                     os.remove(address)
-                except(IOError, OSError, WindowsError):
+                except(IOError, OSError):
                     # The file has likely already been deleted
                     pass
 
@@ -132,18 +128,12 @@ def main (location):
 
 def fopsort (filename):
     changed = False
-    temporaryfile = "{filename}.temp".format(filename=filename)
+    temporaryfile = "{filename}.temp".format(filename = filename)
     CHECKLINES = 10
     section = []
     newsectionline = 1
     filterlines = elementlines = 0
     substitute = re.sub
-
-    try:
-        os.remove(temporaryfile)
-    except(IOError, OSError, WindowsError):
-        # The file has likely already been deleted
-        pass
 
     # Read in the file
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
@@ -163,7 +153,7 @@ def fopsort (filename):
                         section = []
                         newsectionline = 1
                         filterlines = elementlines = 0
-                    outputfile.write("{line}\n".format(line=line))
+                    outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters, checking their type if necessary
                     elementparts = parts(ELEMENTPATTERN, line)
@@ -180,7 +170,7 @@ def fopsort (filename):
                             filterlines += 1
                         line = filtertidy(line)
                     # Add the filter to the present section
-                    if "{line}\n".format(line=line) != originalline:
+                    if "{line}\n".format(line = line) != originalline:
                         changed = True
                     section.append(line)
                     newsectionline += 1
@@ -193,8 +183,11 @@ def fopsort (filename):
 
     # Only save if changes have been made to the file, including newline corrections
     if changed:
+        # Windows requires a file to be renamed to a name not already in use
+        if os.name == "nt":
+            os.remove(filename)
         os.rename(temporaryfile, filename)
-        print("Sorted: {filename}".format(filename=os.path.abspath(filename)))
+        print("Sorted: {filename}".format(filename = os.path.abspath(filename)))
     else:
         os.remove(temporaryfile)
 
@@ -215,7 +208,7 @@ def filtertidy (filterin):
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
             elif option.strip("~") not in KNOWNOPTIONS:
-                print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option=option, problemfilter=filterin))
+                print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
             # Check for the match-case option
             if option == "match-case":
                 case = True
@@ -242,7 +235,7 @@ def elementtidy (domains, selector):
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector in an unambiguous manner
-    selector = "@{selector}@".format(selector=selector)
+    selector = "@{selector}@".format(selector = selector)
     each = re.finditer
     for untag in each(REMOVALPATTERN, selector):
         bc = untag.group(2)
@@ -285,7 +278,7 @@ def commit (repotype, location, userchanges):
         print("\nCommit aborted.")
         return
 
-    print("Comment \"{comment}\" accepted.".format(comment=comment))
+    print("Comment \"{comment}\" accepted.".format(comment = comment))
     try:
         # Commit changes
         command = list(repotype[1])
@@ -297,10 +290,10 @@ def commit (repotype, location, userchanges):
             subprocess.Popen(command).communicate()
             print("")
     except(subprocess.CalledProcessError):
-        print("Unexpected error with the command \"{command}\".".format(command=command))
+        print("Unexpected error with the command \"{command}\".".format(command = command))
         raise subprocess.CalledProcessError("Aborting FOP.")
     except(OSError):
-        print("Unexpected error with the command \"{command}\".".format(command=command))
+        print("Unexpected error with the command \"{command}\".".format(command = command))
         raise OSError("Aborting FOP.")
     print("Completed commit process successfully.")
 
@@ -343,7 +336,7 @@ def removeunnecessarywildcards (filtertext):
 def checkcomment(comment, changed):
     sections = parts(COMMITPATTERN, comment)
     if sections == None:
-        print("The comment \"{comment}\" is not in the recognised format.".format(comment=comment))
+        print("The comment \"{comment}\" is not in the recognised format.".format(comment = comment))
     else:
         indicator = sections.group(1)
         if indicator == "M":
@@ -355,7 +348,7 @@ def checkcomment(comment, changed):
                 return False
             address = sections.group(4)
             if not validurl(address):
-                print("Unrecognised address \"{address}\".".format(address=address))
+                print("Unrecognised address \"{address}\".".format(address = address))
             else:
                 # The user has changed the subscription and selected a suitable comment message with a valid address
                 return True
