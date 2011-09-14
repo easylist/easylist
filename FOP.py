@@ -26,7 +26,7 @@ try:
 except ImportError:
     raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
 
-# Define some frequently used modules as local variables for efficiency
+# Define some frequently used module functions as local variables for efficiency
 parts = re.match
 setpattern = re.compile
 
@@ -36,8 +36,8 @@ ELEMENTPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = setpattern(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # The following patterns match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = setpattern(r"(?<=[\s\[@])([a-zA-Z]*[A-Z]+[a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
-PSEUDOPATTERN = setpattern(r"(\:[a-zA-Z\-]*[A-Z]+[a-zA-Z\-]*)(?=([\(\:\@\s]))")
+SELECTORPATTERN = setpattern(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
+PSEUDOPATTERN = setpattern(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 REMOVALPATTERN = setpattern(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
 
 # The following pattern describes a completely blank line
@@ -49,7 +49,7 @@ COMMITPATTERN = setpattern(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 # Files with the following names should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
-# The following is a tuple of the Adblock Plus options, as of version 1.3.9. This list intentionally ommits the domain option, which is handled separately
+# The following is a tuple of the Adblock Plus options, as of version 1.3.9. The domain option has been intentionally omited because it is handled separately.
 KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
