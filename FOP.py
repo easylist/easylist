@@ -49,7 +49,7 @@ COMMITPATTERN = setpattern(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
-# List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9.
+# List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "image", "object", "object-subrequest", "other",
                 "match-case", "script", "stylesheet", "subdocument",
