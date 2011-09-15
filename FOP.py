@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.997
+VERSION = 2.998
 
 # Import the key modules
 import filecmp, os, re, subprocess, sys
@@ -30,7 +30,7 @@ except ImportError:
 parts = re.match
 setpattern = re.compile
 
-# Compile some regular expressions to match important filter parts (taken from Wladimir Palant's Adblock Plus source code)
+# Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
 DOMAINPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##")
 ELEMENTPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
 OPTIONPATTERN = setpattern(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
@@ -55,7 +55,7 @@ KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "match-case", "script", "stylesheet", "subdocument",
                 "third-party", "xbl", "xmlhttprequest")
 
-# List the commands used by different version control systems
+# List the commands used by some reversion control systems
 GIT = (("git", "diff"), ("git", "commit", "-m"), ("git", "pull"), ("git", "push"))
 HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
 SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
@@ -108,9 +108,7 @@ def main (location):
     print("\nPrimary location: {folder}{separator}".format(folder = location, separator = os.sep))
     for path, directories, files in os.walk(location):
         print("Current directory: {folder}{separator}".format(folder = os.path.abspath(path), separator = os.sep))
-        for direct in directories:
-            if direct[0] == ".":
-                directories.remove(direct)
+        [directories.remove(direct) for direct in directories if direct[0] == "."]
         directories = sorted(directories)
         for filename in sorted(files):
             address = os.path.join(path, filename)
@@ -131,25 +129,24 @@ def main (location):
         commit(repository, location, originaldifference)
 
 def fopsort (filename):
-    """ Sort the sections of the file and save the changes, if any have
-    been made."""
+    """ Sort the sections of the file and save any modifications."""
     temporaryfile = "{filename}.temp".format(filename = filename)
     CHECKLINES = 10
     section = []
-    newsectionline = 1
+    lineschecked = 1
     filterlines = elementlines = 0
     substitute = re.sub
 
-    # Read in the file
-    with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
+    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
+    with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
         for line in inputfile:
             line = line.strip()
             if not parts(BLANKPATTERN, line):
-                # Ignore comments and, if applicable, sort the preceding section of filters and save them in the new version of the file
+                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
                         if elementlines > filterlines:
-                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))))
+                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: substitute(DOMAINPATTERN, "", rule)))))
                         else:
                             outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
                         section = []
@@ -161,29 +158,30 @@ def fopsort (filename):
                     elementparts = parts(ELEMENTPATTERN, line)
                     if elementparts:
                         domains = elementparts.group(1).lower()
-                        if newsectionline <= CHECKLINES:
+                        if lineschecked <= CHECKLINES:
                             if isglobalelement(domains):
                                 elementlines += 1
                             else:
                                 filterlines += 1
+                            lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2))
                     else:
-                        if newsectionline <= CHECKLINES:
+                        if lineschecked <= CHECKLINES:
                             filterlines += 1
+                            lineschecked += 1
                         line = filtertidy(line)
-                    # Add the filter to the present section
+                    # Add the filter to the section
                     section.append(line)
-                    newsectionline += 1
         # At the end of the file, sort and save any remaining filters
         if section:
             if elementlines > filterlines:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key=lambda rule: substitute(DOMAINPATTERN, "", rule)))))
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: substitute(DOMAINPATTERN, "", rule)))))
             else:
                 outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
 
-    # Only replace the existing file with the new one if it is different
+    # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
-        # Check the operating system and, if it is Windows, delete the old file to avoid an exception (you are unable to rename files to names already in use)
+        # Check the operating system and, if it is Windows, delete the old file to avoid an exception (it is not possible to rename files to names already in use on this operating system)
         if os.name == "nt":
             os.remove(filename)
         os.rename(temporaryfile, filename)
@@ -215,10 +213,10 @@ def filtertidy (filterin):
                 case = True
         # Sort all options other than domain alphabetically
         [optionlist.remove(option) for option in removeentries]
-        optionlist = sorted(set(optionlist), key=lambda option: option.strip("~"))
+        optionlist = sorted(set(optionlist), key = lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and add them, with the relevant option, to the end of the list of options
         if domainlist:
-            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key=lambda domain: domain.strip("~")))))
+            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
 
         # If the option "match-case" is not present, make the filter text lower case
         if not case:
@@ -235,7 +233,7 @@ def elementtidy (domains, selector):
     tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key=lambda domain: domain.strip("~")))
+        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
     selector = "@{selector}@".format(selector = selector)
     each = re.finditer
@@ -303,7 +301,7 @@ def commit (repotype, location, userchanges):
 def isglobalelement (domainlist):
     """ Check whether all domains are negations."""
     for domain in domainlist:
-        if domain != "" and not domain[0] == "~":
+        if domain and not domain[0] == "~":
             return False
     return True
 
@@ -319,7 +317,7 @@ def removeunnecessarywildcards (filtertext):
             break
         else:
             proposed = filtertext[1:]
-            if proposed == "" or proposed[0] == "|":
+            if not proposed or proposed[0] == "|":
                 break
             else:
                 filtertext = proposed
@@ -328,7 +326,7 @@ def removeunnecessarywildcards (filtertext):
             break
         else:
             proposed = filtertext[:-1]
-            if proposed == "" or proposed[-1] == "|" or proposed[0] == "/" and proposed[-1] == "/":
+            if not proposed or proposed[-1] == "|" or proposed[0] == "/" and proposed[-1] == "/":
                 break
             else:
                 filtertext = proposed
