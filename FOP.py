@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.998
+VERSION = 2.999
 
 # Import the key modules
 import filecmp, os, re, subprocess, sys
@@ -150,7 +150,7 @@ def fopsort (filename):
                         else:
                             outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
                         section = []
-                        newsectionline = 1
+                        lineschecked = 1
                         filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
@@ -298,10 +298,10 @@ def commit (repotype, location, userchanges):
         raise OSError("Aborting FOP.")
     print("Completed commit process successfully.")
 
-def isglobalelement (domainlist):
+def isglobalelement (domains):
     """ Check whether all domains are negations."""
-    for domain in domainlist:
-        if domain and not domain[0] == "~":
+    for domain in domains.split(","):
+        if domain != "" and not domain[0] == "~":
             return False
     return True
 
