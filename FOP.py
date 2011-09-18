@@ -19,32 +19,33 @@
 VERSION = 2.999
 
 # Import the key modules
-import filecmp, os, re, subprocess, sys
-# Attempt to import a module only available in Python 3 and raise an exception if it is not present
-try:
-    from urllib.parse import urlparse
-except ImportError:
-    raise ImportError("The module urllib.parse is unable to be loaded; please upgrade to Python 3.")
+import collections, filecmp, os, re, subprocess, sys
 
-# Define some frequently used module functions as local variables for efficiency
-parts = re.match
-setpattern = re.compile
+# Check the version of Python for language compatibility and subprocess.check_output()
+MAJORREQUIRED = 3
+MINORREQUIRED = 1
+pythonversion = sys.version_info
+if not ((pythonversion. major > MAJORREQUIRED) or (pythonversion.major == MAJORREQUIRED and pythonversion.minor >= MINORREQUIRED)):
+    raise ImportError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = pythonversion.major, isminor = pythonversion.minor))
+
+# Import a module only available in Python 3
+from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-DOMAINPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##")
-ELEMENTPATTERN = setpattern(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
-OPTIONPATTERN = setpattern(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
+ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
+OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = setpattern(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
-PSEUDOPATTERN = setpattern(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
-REMOVALPATTERN = setpattern(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
+SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s[+>])))")
+PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
+REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
 
 # Compile a regular expression that describes a completely blank line
-BLANKPATTERN = setpattern(r"^\s*$")
+BLANKPATTERN = re.compile(r"^\s*$")
 
 # Compile a regular expression that validates commit comments
-COMMITPATTERN = setpattern(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
+COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
@@ -55,11 +56,11 @@ KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
                 "match-case", "script", "stylesheet", "subdocument",
                 "third-party", "xbl", "xmlhttprequest")
 
-# List the commands used by some reversion control systems
-GIT = (("git", "diff"), ("git", "commit", "-m"), ("git", "pull"), ("git", "push"))
-HG = (("hg", "diff"), ("hg", "commit", "-m"), ("hg", "pull"), ("hg", "push"))
-SVN = (("svn", "diff"), ("svn", "commit", "-m"), ("svn", "update"))
-REPOTYPES = (("./.git/", GIT), ("./.hg/", HG), ("./.svn/", SVN))
+# List the supported revision control system commands
+REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-m"], ["pull"], ["push"])
+HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["commit", "-m"], ["pull"], ["push"])
+REPOTYPES = (GIT, HG)
 
 def start ():
     """ Print a greeting message and run FOP in the directories
@@ -74,42 +75,54 @@ def start ():
     # Convert the directory names to absolute references and visit each unique location
     places = sys.argv[1:]
     if places:
-        absplaces = [os.path.normpath(os.path.abspath(place)) for place in places]
-        for place in set(absplaces):
+        places = [os.path.abspath(place) for place in places]
+        for place in sorted(set(places)):
             main(place)
-            print("")
+            print()
     else:
-        main((os.path.normpath(os.path.abspath(os.getcwd()))))
+        main(os.getcwd())
 
 def main (location):
     """ Find and sort all the files in a given directory, committing
     changes to a repository if one exists"""
-    # Change the working directory to the specified directory if it exists, otherwise return
-    if os.path.isdir(location):
-        os.chdir(location)
-    else:
+    # Check that the directory exists, otherwise return
+    if not os.path.isdir(location):
         print("{location} does not exist or is not a folder.".format(location = location))
         return
 
     # Set the repository type based on hidden directories
     repository = None
     for repotype in REPOTYPES:
-        if os.path.isdir(os.path.normpath(repotype[0])):
-            repository = repotype[1]
+        if os.path.isdir(os.path.join(location, repotype.directory)):
+            repository = repotype
             break
     # If this is a repository, record the initial changes; if this fails, give up trying to use the repository
     if repository:
         try:
-            originaldifference = True if subprocess.check_output(repository[0]) else False
+            basecommand = repository.name
+            if repository.locationoption.endswith("="):
+                basecommand.append("{locationoption}\"{location}\"".format(locationoption = repository.locationoption, location = location))
+            else:
+                basecommand.extend([repository.locationoption, location])
+            if repository.repodirectoryoption:
+                if repository.repodirectoryoption.endswith("="):
+                    basecommand.append("{repodirectoryoption}\"{location}\"".format(repodirectoryoption = repository.repodirectoryoption, location = os.path.normpath(os.path.join(location, repository.directory))))
+                else:
+                    basecommand.extend([repository.repodirectoryoption, location])
+            command = basecommand + repository.checkchanges
+            originaldifference = True if subprocess.check_output(command) else False
         except(subprocess.CalledProcessError, OSError):
-            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command = repository[0]))
-            repository == None
+            print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command = " ".join(command)))
+            repository = None
     # Work through the directory and any subdirectories, ignoring hidden directories
-    print("\nPrimary location: {folder}{separator}".format(folder = location, separator = os.sep))
+    print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
     for path, directories, files in os.walk(location):
-        print("Current directory: {folder}{separator}".format(folder = os.path.abspath(path), separator = os.sep))
-        [directories.remove(direct) for direct in directories if direct[0] == "."]
-        directories = sorted(directories)
+        print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
+        #directories = sorted(filter(lambda direct: not direct.startswith("."), directories))
+        for direct in directories:
+            if direct.startswith("."):
+                directories.remove(direct)
+        directories.sort()
         for filename in sorted(files):
             address = os.path.join(path, filename)
             extension = os.path.splitext(filename)[1]
@@ -126,7 +139,7 @@ def main (location):
 
     # Offer to commit any changes if in a repository
     if repository:
-        commit(repository, location, originaldifference)
+        commit(repository, basecommand, originaldifference)
 
 def fopsort (filename):
     """ Sort the sections of the file and save any modifications."""
@@ -135,18 +148,17 @@ def fopsort (filename):
     section = []
     lineschecked = 1
     filterlines = elementlines = 0
-    substitute = re.sub
 
     # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
         for line in inputfile:
             line = line.strip()
-            if not parts(BLANKPATTERN, line):
+            if not re.match(BLANKPATTERN, line):
                 # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
                         if elementlines > filterlines:
-                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: substitute(DOMAINPATTERN, "", rule)))))
+                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
                         else:
                             outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
                         section = []
@@ -155,7 +167,7 @@ def fopsort (filename):
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
-                    elementparts = parts(ELEMENTPATTERN, line)
+                    elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
                         domains = elementparts.group(1).lower()
                         if lineschecked <= CHECKLINES:
@@ -175,7 +187,7 @@ def fopsort (filename):
         # At the end of the file, sort and save any remaining filters
         if section:
             if elementlines > filterlines:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: substitute(DOMAINPATTERN, "", rule)))))
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
             else:
                 outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
 
@@ -192,7 +204,7 @@ def fopsort (filename):
 def filtertidy (filterin):
     """ Sort the options of blocking filters and make the filter text
     lower case if applicable."""
-    optionsplit = parts(OPTIONPATTERN, filterin)
+    optionsplit = re.match(OPTIONPATTERN, filterin)
     if optionsplit:
         # If applicable, separate and sort the filter options
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
@@ -212,9 +224,8 @@ def filtertidy (filterin):
             if option == "match-case":
                 case = True
         # Sort all options other than domain alphabetically
-        [optionlist.remove(option) for option in removeentries]
-        optionlist = sorted(set(optionlist), key = lambda option: option.strip("~"))
-        # If applicable, sort domain restrictions and add them, with the relevant option, to the end of the list of options
+        optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: option.strip("~"))
+        # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
 
@@ -260,9 +271,9 @@ def elementtidy (domains, selector):
     # Remove the markers from the beginning and end of the selector and return the complete rule
     return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
 
-def commit (repotype, location, userchanges):
+def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
-    difference = subprocess.check_output(repotype[0])
+    difference = subprocess.check_output(basecommand + repository.difference)
     if not difference:
         print("\nNo changes have been recorded by the repository.")
         return
@@ -271,7 +282,7 @@ def commit (repotype, location, userchanges):
     try:
         # Persistently request for a suitable comment
         while True:
-            comment = str(input("Please enter a valid commit comment or quit:\n"))
+            comment = input("Please enter a valid commit comment or quit:\n")
             if checkcomment(comment, userchanges):
                 break
     # Allow users to abort the commit process
@@ -282,14 +293,14 @@ def commit (repotype, location, userchanges):
     print("Comment \"{comment}\" accepted.".format(comment = comment))
     try:
         # Commit the changes
-        command = list(repotype[1])
-        command.append(comment)
+        command = basecommand + repository.commit + [comment]
         subprocess.Popen(command).communicate()
         print("\nConnecting to server. Please enter your password if required.")
         # Update the server repository as required by the revision control system
-        for command in repotype[2:]:
+        for command in repository[7:]:
+            command = basecommand + command
             subprocess.Popen(command).communicate()
-            print("")
+            print()
     except(subprocess.CalledProcessError):
         print("Unexpected error with the command \"{command}\".".format(command = command))
         raise subprocess.CalledProcessError("Aborting FOP.")
@@ -301,7 +312,7 @@ def commit (repotype, location, userchanges):
 def isglobalelement (domains):
     """ Check whether all domains are negations."""
     for domain in domains.split(","):
-        if domain != "" and not domain[0] == "~":
+        if domain and not domain.startswith("~"):
             return False
     return True
 
@@ -337,7 +348,7 @@ def removeunnecessarywildcards (filtertext):
 def checkcomment(comment, changed):
     """ Check the commit comment and return True if the comment is
     acceptable and False if it is not."""
-    sections = parts(COMMITPATTERN, comment)
+    sections = re.match(COMMITPATTERN, comment)
     if sections == None:
         print("The comment \"{comment}\" is not in the recognised format.".format(comment = comment))
     else:
@@ -355,7 +366,7 @@ def checkcomment(comment, changed):
                 else:
                     # The user has changed the subscription and has written a suitable comment message with a valid address
                     return True
-    print("")
+    print()
     return False
 
 def validurl (url):
