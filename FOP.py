@@ -24,9 +24,8 @@ import collections, filecmp, os, re, subprocess, sys
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
 MINORREQUIRED = 1
-pythonversion = sys.version_info
-if not ((pythonversion. major > MAJORREQUIRED) or (pythonversion.major == MAJORREQUIRED and pythonversion.minor >= MINORREQUIRED)):
-    raise ImportError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = pythonversion.major, isminor = pythonversion.minor))
+if not sys.version_info >= (MAJORREQUIRED, MINORREQUIRED):
+    raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
 # Import a module only available in Python 3
 from urllib.parse import urlparse
@@ -101,12 +100,12 @@ def main (location):
         try:
             basecommand = repository.name
             if repository.locationoption.endswith("="):
-                basecommand.append("{locationoption}\"{location}\"".format(locationoption = repository.locationoption, location = location))
+                basecommand.append("{locationoption}{location}".format(locationoption = repository.locationoption, location = location))
             else:
                 basecommand.extend([repository.locationoption, location])
             if repository.repodirectoryoption:
                 if repository.repodirectoryoption.endswith("="):
-                    basecommand.append("{repodirectoryoption}\"{location}\"".format(repodirectoryoption = repository.repodirectoryoption, location = os.path.normpath(os.path.join(location, repository.directory))))
+                    basecommand.append("{repodirectoryoption}{location}".format(repodirectoryoption = repository.repodirectoryoption, location = os.path.normpath(os.path.join(location, repository.directory))))
                 else:
                     basecommand.extend([repository.repodirectoryoption, location])
             command = basecommand + repository.checkchanges
