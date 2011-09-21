@@ -24,7 +24,7 @@ import collections, filecmp, os, re, subprocess, sys
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
 MINORREQUIRED = 1
-if not sys.version_info >= (MAJORREQUIRED, MINORREQUIRED):
+if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
 # Import a module only available in Python 3
