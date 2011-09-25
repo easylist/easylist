@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: n1JDwnCP6zrzXRo8YUHv8A
+! Checksum: gHd1DByZfCQDa8dmkEoSqw
 ! Fanboy's Russian-V2-addon Adblock list 
-! Updated: 24 Sep 2011
+! Updated: 25 Sep 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -82,7 +82,6 @@ _reklama.
 !
 ! ---------- 1st party blocking rules ----------
 !
-||r.e1.ru^
 ||003.com.ua/cgi/adv/
 ||195.82.146.52/iframe-begun-
 ||1web.su/img/reklama/
@@ -170,6 +169,7 @@ _reklama.
 ||getalbums.ru/atakama.swf
 ||getalbums.ru/atakama2.swf
 ||getalbums.ru/baner
+||getalbums.ws/atakama3.swf
 ||gismeteo.ru/rian.html
 ||gismeteo.ua/static/js/xgemiusua.js
 ||goallurl.ru/upload/banner/
@@ -312,6 +312,7 @@ _reklama.
 ||probki.net/Images
 ||prre.ru/bout.php?
 ||qzx.ru/gf/banner_
+||r.e1.ru^
 ||r2.mail.ru/b*.swf
 ||rabota.ru/banner/
 ||rabota05.ru/pic/adv/
@@ -345,6 +346,7 @@ _reklama.
 ||samforum.ws/autorefresh
 ||samlab.ws/img/archivarius
 ||samlab.ws/img/peredovaya
+||samlab.ws/img/samforum.gif
 ||samlab.ws^*/combatz.jpg
 ||sape.ru/images/banners/sape_001.swf
 ||seti.ee/images/baner.
@@ -382,7 +384,6 @@ _reklama.
 ||trinixy.ru/r/
 ||trud.ru/ad/
 ||tt-i.ru/bantt-i_ru.gif
-||samlab.ws/img/samforum.gif
 ||turbobit.net/files/news/*.swf
 ||tx2.ru/informers/
 ||uandi.ru/images/b-
@@ -407,7 +408,6 @@ _reklama.
 ||vokrugsveta.ru/img/bx/
 ||vokrugsveta.ru^*/banner_
 ||vpsite.ru/600x200
-||getalbums.ws/atakama3.swf
 ||vpsite.ru/images/cas/
 ||vremenno.net^*/banners/
 ||vtomske.ru/partner/$script
@@ -577,7 +577,6 @@ _reklama.
 !
 ! ---------- 3rd party blocking rules ----------
 !
-||ad.ir.ru^$third-party
 ||001forex.com^$third-party
 ||0324.0x96.34.0163^$third-party
 ||100projects.ru^$third-party,subdocument
@@ -592,6 +591,7 @@ _reklama.
 ||2x2.kz^$third-party
 ||3dn.ru/big_banner.gif
 ||3dn.ru/images/banner.gif
+||4allclick.ru^$third-party
 ||77.109.85.18^$third-party
 ||77.91.228.66^$third-party
 ||78.140.145.178^$third-party
@@ -614,6 +614,7 @@ _reklama.
 ||ad.bannerbank.com.ua^$third-party
 ||ad.bmo.tbn.ru^$third-party
 ||ad.fasty.net^$third-party
+||ad.ir.ru^$third-party
 ||ad.sweb.ru^$third-party
 ||ad.tetramedia.ru^$third-party
 ||ad.trafmonster.biz^$third-party
@@ -870,7 +871,6 @@ _reklama.
 ||promo.1000zakazov.ru^$third-party
 ||promo.md^$third-party
 ||prostoprint.com^$third-party
-||4allclick.ru^$third-party
 ||protizer.net^$third-party
 ||pullcorn.com^$third-party
 ||putana.cz/index.php?partner$third-party
@@ -936,6 +936,7 @@ _reklama.
 ||tizer.passion.ru^$third-party
 ||tizer6.net^$third-party
 ||tizer7.net^$third-party
+||tizer8.net^$third-party
 ||tizerbest.net^$third-party
 ||tizerset.net^$third-party
 ||tnx.net/$third-party
@@ -959,7 +960,6 @@ _reklama.
 ||v-med.ru^$third-party
 ||vestey.ru^$third-party
 ||via-shop.ru^$third-party
-||tizer8.net^$third-party
 ||visitweb.com^$third-party
 ||voffka.com^$third-party,script
 ||vsemayki.ru^$third-party
@@ -987,11 +987,11 @@ _reklama.
 !---------- Popups (Adblock Plus Pop-up Addon required) ----------
 !   
 ||am10.ru^$other
+||gemius.com.ua^$other
 ||promo.karosgame.ru^$other
 ||qiq.ws^$other
 ||rapidzona.com^$other
 ||rutor.org^$other
-||gemius.com.ua^$other
 ||vipsoftware.org^$other
 !
 !---------- Russian Trackers/Counters ------------
@@ -1378,6 +1378,7 @@ ag.ru###upadbg2
 ag.ru##.a_blk
 ag.ru##.dotsbg2[height="80"]
 alfabank.ru##.main-banner
+all-hentai.su##TABLE[style="z-index:10000;width:262px"]
 amdclub.ru###topline
 ameno.ru###BannerBlock300500
 ameno.ru###RefContentBox
@@ -1498,6 +1499,7 @@ dreamlair.net##.reklam
 dreamlair.net##table[height="200"]
 dreamprogs.net###topbanner2
 drwares.net##.topbannerbg
+dsvload.net##td[height="126"]
 dungeonmaster.ru##.mainbanner
 eg.ru###banner3
 eplus.com.ua###adbn
@@ -1544,7 +1546,6 @@ foto.rambler.ru##[width="100%"][cellspacing="5"][cellpadding="5"]
 freesoft.ru##[width="472"][align="center"]
 freesoft.ru##table[style="border: 1px solid #000000;"]
 gagadget.com###block-block-10
-kinopoisk.ru##a[href^="http://ad.adriver.ru/"]
 gagadget.com##.banner2
 gametech.ru##.header
 gazeta.ua###baner_top
@@ -1629,6 +1630,7 @@ k2kapital.com##[style="width: 980px; height: 90px; padding: 0pt; margin: 0pt;"]
 kanobu.ru##.banner
 kanobu.ru##.wide-banner-place
 kinopoisk.ru###loadb
+kinopoisk.ru##a[href^="http://ad.adriver.ru/"]
 kinoslide.ru##table[style="background-color:#F6FAE9;"]
 km.ru###tbn
 km.ru##div[style="width:1000px; height:90px;"]
@@ -1742,7 +1744,6 @@ nowa.cc###topbar
 nowa.cc##.mc_cars_row
 nsoft-s.com###ja-banner2
 null-team.com##table[height="500px"]
-dsvload.net##td[height="126"]
 nvo.ng.ru##DIV[style="background-color: #eceeef; height: 160px; padding-left: 5px;"]
 nvo.ng.ru##DIV[style="margin: 0 0 20px 0; border: 0px solid #C7C7C7; text-align: center; padding: 0 0 20px 0;"]
 nvo.ng.ru##DIV[style="margin: 20px 0 20px 0; border: 0px solid #C7C7C7; text-align: center; padding: 10px 0 20px 0;"]
@@ -1873,7 +1874,6 @@ rutracker.org###adriver-240x120
 rutracker.org###bn-bot-wrap
 s3.ua##.unda_banner
 samlab.ws###banner-top
-all-hentai.su##TABLE[style="z-index:10000;width:262px"]
 samlab.ws##[style="text-align: center; line-height: 100%; width: 99%; border: 1px solid rgb(0, 0, 0); margin: 0pt auto;"]
 samlab.ws##[style="width: 480px; height: 160px;"]
 samlab.ws##div[id^="MarketGid"]

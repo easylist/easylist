@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: NWA2NgEGsf0OJIst3wN31Q
+! Checksum: S53oT13X8bD7tnsaUh9bsw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 25 Sep 2011
 ! This list expires after 4 days
@@ -43,13 +43,13 @@
 /footer_myspace.
 /footer_youtube.
 /getnetworkwidget?
+/ico-delicious.
+/ico-digg.
 /ico-rss.
 /ico-share-
 /ico-social-
-/ico_delicious.
-/ico-delicious.
 /ico-technorati.
-/ico-digg.
+/ico_delicious.
 /ico_facebook_
 /ico_share_
 /ico_youtube.
@@ -103,7 +103,6 @@
 /newsgator.gif
 /newsletter-icon_
 /norightclick.
-/social-locker/*$script
 /plugins/delicious-bookmark-button/*
 /plugins/sexybookmarks/*$~stylesheet
 /plugins/sociable-$~stylesheet
@@ -136,6 +135,7 @@
 /share_myspace.
 /share_sprite.
 /share_twitter.
+/social-locker/*$script
 /social-myspace-
 /social-networking/*
 /social-rss-
@@ -244,7 +244,6 @@ _social_icons.
 ||rapid8.com/images/*.cur
 ||reddit.com/static/$third-party
 ||sharethis.com^$third-party
-||tsbmag.com^*/tsb_b31.jpg
 ||skysa.com^
 ||slashdot.org^$third-party
 ||smarterfox.com^$third-party
@@ -264,6 +263,7 @@ _social_icons.
 ||technorati.com^$third-party
 ||theslingshot.com^$third-party
 ||toolbar.cdn.gigya.com^
+||tsbmag.com^*/tsb_b31.jpg
 ||tuaw.com^*/related-slider.js
 ||votes.buzz.yahoo.com^$third-party
 ||widgets.backtype.com^$third-party
@@ -279,6 +279,7 @@ _social_icons.
 ###ck_facebook_1
 ###ck_facebook_2
 ###facebook-fanbox
+###facebook-like-page
 ###facebook-module
 ###facebook-wdgt
 ###facebook_button
@@ -290,8 +291,6 @@ _social_icons.
 ###facebookLike
 ###facebookLikeBox
 ###facebookLikeButton
-###like-this
-###facebook-like-page
 ###fb-activity
 ###fb-fan-box
 ###fb-fanbox
@@ -319,6 +318,7 @@ _social_icons.
 ###header_subscribe_facebook_notext
 ###icon_facebook_small
 ###index-fb-likebox
+###like-this
 ###module-fbActivityFeed
 ###module-fbLikeBox
 ###sdac_footer_facebook_widget-3
@@ -745,6 +745,8 @@ _stumble_btn.
 ###ctl00_mainContent_lblSharingLink
 ###cxShareLinks
 ###dd_ajax_float
+###dsq-reactions
+###facebook-twitter-block
 ###fdbk_tab
 ###flwUsMod
 ###flyoutWidget
@@ -793,6 +795,7 @@ _stumble_btn.
 ###shareBadges
 ###sharebot
 ###shareBottom
+###sharebtns
 ###shareButton1
 ###shareicon
 ###shareLinks
@@ -807,7 +810,6 @@ _stumble_btn.
 ###sidebar_social_icons
 ###singlesubscribe
 ###social-bar
-###sharebtns
 ###social-buttons
 ###social-icon
 ###social-icons
@@ -918,11 +920,10 @@ _stumble_btn.
 ##.comment_share_link
 ##.dd_post_share
 ##.delicious-blogbadge
-###dsq-reactions
-##.dsq-h3-reactions
 ##.digg-widget
 ##.diggShare
 ##.dsq-global-toolbar-container
+##.dsq-h3-reactions
 ##.email-to-a-friend
 ##.email_subscribe_container
 ##.Entry_Sharer_Buttons
@@ -983,7 +984,6 @@ _stumble_btn.
 ##.share-page
 ##.share-reddit
 ##.share-this-page
-##.side-post-social
 ##.share-toolbar-container
 ##.share-tools
 ##.share-widgets
@@ -1025,6 +1025,7 @@ _stumble_btn.
 ##.sharing-box
 ##.sharing-counters
 ##.shr-bookmarks
+##.side-post-social
 ##.simplesocial
 ##.single-share
 ##.singlepost-like
@@ -1058,7 +1059,6 @@ _stumble_btn.
 ##.social_networks
 ##.social_rss
 ##.socialBadge
-###facebook-twitter-block
 ##.socialBadges
 ##.socialbkmark
 ##.SocialBookmark
@@ -1175,15 +1175,13 @@ _stumble_btn.
 2createawebsite.com##[title="Become a Fan!"]
 6wunderkinder.com###newsletter
 7is7.com##.feed
+9gag.com##.message-block
 9gag.com##.share
 9gag.com##.spread-bar
-9gag.com##.message-block
-addictivetips.com###follow-addictive
 abcnews.go.com###rsslisting
 abcnews.go.com###socialtoolkit
 ablog4guys.com###subscribe
 ablog4guys.com##[title="Social Slider"]
-androidapps.com##.join-appolicious
 about.com###QZTrackbacks
 academicearth.org###bottom_toolbar
 academicearth.org###kampylink
@@ -1192,6 +1190,7 @@ addictinggames.com###socialIcons
 addictinggames.com###socialiconsContainer
 addictivetips.com###connect-menu
 addictivetips.com###email-updates
+addictivetips.com###follow-addictive
 addictivetips.com##.rss
 addictivetips.com##.twitter
 addictivetips.com##.xoxo
@@ -1230,6 +1229,7 @@ amodernmilitarymother.com###blog_subscription-4
 ampercent.com##.subscribe2
 amygrindhouse.com###pp-subscribe
 anandtech.com##.follow
+androidapps.com##.join-appolicious
 animatedexplanations.com###linkShare
 animatedexplanations.com##.sharinglink
 answers.yahoo.com##.syndication-links
@@ -1295,6 +1295,7 @@ boostinspiration.com###subs
 boostinspiration.com##.sharing
 boredpanda.com###do-you-like-box
 bornrich.com###slidebox
+boston.com###area-vertical-social
 boston.com###blogtools
 boston.com###relatedContent
 broadcastingcable.com###login_subscribe
@@ -1330,18 +1331,23 @@ cinemablend.com##[alt="Follow Cinema Blend's movie news on Twitter"]
 clickindia.com##.fb
 clickindia.com##.tw
 cnet.com###cnetToolbarWrap
+cnet.com###connectModule
 cnet.com###facebookRecommend
 cnet.com###mobileApp
 cnet.com###shareTags
+cnet.com##.about
 cnet.com##.connectModule
 cnet.com##.frontDoorPromo
 cnet.com##.share
 cnet.com##.subscribe
 cnn.com###fbcStoryContainer
 cnn.com###MagStoryOFIE
+cnn.com###mm-like-facebook
+cnn.com###mm-share-twitter
 cnn.com###pmFacebook
 cnn.com###sh_search_box
 cnn.com##.share-counters
+cnn.com##.sideShareContainer
 coedmagazine.com###digg-widget-1286548294481
 coedmagazine.com###fbtwitter
 coedmagazine.com###home-social
@@ -1396,8 +1402,6 @@ dailyfinance.com##.follow
 dailyfinance.com##.followHead
 dailygalaxy.com###message_digg
 dailygalaxy.com###yahoo
-soccercaffe.com###stp-bg
-soccercaffe.com###stp-main
 dailygalaxy.com##[style="float:left;margin:0;padding:0;width:280px;height:90px;margin-top:20px;text-align:center;margin-left:55px;"]
 dailygalaxy.com##[style="float:left;text-align:center;padding-top: 20px;font-size:11px;text-transform: uppercase;letter-spacing: .2em;padding-left:95px;"]
 dailykos.com###simplemodal-container
@@ -1479,6 +1483,7 @@ filehippo.com###feeds
 filehippo.com##.box-two-feature
 filehippo.com##[href="http://feeds.feedburner.com/filehippo"]
 filestube.com###fb-root
+filmschoolrejects.com###sharebox
 firefoxfacts.com##.rss
 flamefusion.net##[alt="Facebook icon"]
 flipkart.com##.keep_in_touch
@@ -1525,6 +1530,8 @@ gawker.com##.welcome_form
 gdgt.com##.gdgtRecd
 geeksaresexy.net###rss
 geeksugar.com###sugar-post-cross-sell
+geektyrant.com##.gt_twitter
+geektyrant.com##.sidebar_facebook
 gigaom.com##.giga-email-subscribe
 givesmehope.com##.publicite
 gizmag.com###mb_bottom
@@ -1568,26 +1575,19 @@ healthcommunities.com###slidebox
 heavy.com###cboxOverlay
 heavy.com###colorbox
 heavy.com###footer-nav-follow
-pcmag.com###pcm-subscribe
 heavy.com###sharesumo
 hitfix.com##.promoboxee
 hitfix.com##.social
 hollywire.com###post-social
 hollywire.com###social
 hollywoodreporter.com##.social2
-patchtogether.com##.blockUI
-reuters.com##.socialComments
-popsugar.com###sugar-post-cross-sell
+holytaco.com###stumble
 honda.com##.lnkFacebook
 hothardware.com###Follow
 howstuffworks.com###smToolBar
 howstuffworks.com###smToolBarSpacer
 huffingtonpost.com###apps-feeds
-stupidrumors.com##.share_tools
 huffingtonpost.com###bing_module
-yahoo.com##.membermodal
-yahoo.com##.screen
-yahoo.com##.ysc-promos
 huffingtonpost.com###ccw_widget
 huffingtonpost.com###chicklets
 huffingtonpost.com###custom_promo
@@ -1597,8 +1597,6 @@ huffingtonpost.com###promo_ny
 huffingtonpost.com###twitter_promo
 huffingtonpost.com###vertical_promo
 huffingtonpost.com##.apps-feeds
-nypost.com##a[href="http://twitter.com/newyorkpost"]
-newscientist.com###skycol
 huffingtonpost.com##.bing_pixie
 huffingtonpost.com##.chicklets_box_outter_v05
 huffingtonpost.com##.close
@@ -1612,6 +1610,7 @@ huffingtonpost.com##.share_boxes_box_block_b_wraper
 huffingtonpost.com##.sidebar_header_text_floating
 huffingtonpost.com##.sidebarHeader
 huffingtonpost.com##div[style="z-index: 1; border: 7px solid rgb(59, 89, 152); background-color: rgb(255, 255, 255); background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-origin: padding-box; background-size: auto auto; border-radius: 15px 15px 15px 15px; background-clip: padding-box ! important; padding: 8px; min-height: 100px; min-width: 100px; width: 680px; position: absolute; left: 612px; top: 47px;"]
+huffingtonpost.com##div[style^="z-index: 1; border: 7px"]
 hulkshare.com##DIV[style="width: 990px; margin: 0 auto; overflow: auto;"]
 ibtimes.com###bk_follow
 ibtimes.com###bk_share
@@ -1619,7 +1618,10 @@ ibtimes.com###ibt_ftrletters
 ibtimes.com###subscribediv
 ibtimes.com##.box_bookmark
 ibtimes.com##.box_fb_livestream
+icanhascheezburger.com###fb_hook
+icanhascheezburger.com###rss_widget
 icanhascheezburger.com###showSlideInNotificationContainer
+icanhascheezburger.com##.socmark_container
 idg.com.au###article_actions
 idg.com.au###article_main_top
 ifitsmovies.com###sharediv
@@ -1647,8 +1649,6 @@ infoworld.com###floating_tools
 infoworld.com###it_job_module
 infoworld.com###newsletter
 insidehighered.com##.news-alert
-holytaco.com###stumble
-scribol.com###scribol-fb-like
 intomobile.com##.services
 intomobile.com##.share
 intomobile.com##.subscribe
@@ -1657,21 +1657,8 @@ intomobile.com##.subscribe_to_im
 intomobile.com##div[style="border-left: 5px solid #3f9fe3; height: 55px; padding-top: 10px; margin-bottom: 20px"]
 investorwords.com###subscribe_popup
 iol.co.za###social_networks
-cnn.com##.sideShareContainer
-cnn.com###mm-share-twitter
-cnn.com###mm-like-facebook
-cnet.com##.about
-cnet.com###connectModule
 iol.co.za##.article_tool
 itech7.com##[alt="Syndicate content"]
-filmschoolrejects.com###sharebox
-readwriteweb.com###upprev_box
-icanhascheezburger.com###fb_hook
-icanhascheezburger.com###rss_widget
-geektyrant.com##.sidebar_facebook
-geektyrant.com##.gt_twitter
-icanhascheezburger.com##.socmark_container
-minyanville.com###share_bar
 itech7.com##[alt="Syndicate content"]
 itthing.com###greet_block
 itthing.com##.getsocial
@@ -1769,7 +1756,6 @@ metacafe.com###BmkDigg
 metacafe.com###BmkFB
 metacafe.com###BmkStumble
 metacafe.com###BmkTweeter
-techcrunch.com##.lazy-share-widget
 metacafe.com##.AdProduct
 metromix.com###bottom-premium-banner
 metromix.com##.socmed-links
@@ -1778,6 +1764,7 @@ microsoft.com###gsfx_brnd_corpflyoutad_inner
 miniclip.com##.letterbox
 mint.com##.article-share
 minti.com###slideupBanner
+minyanville.com###share_bar
 mnn.com###block-portals-mothernature-delivered
 mnn.com##.join-earth-shares-widget
 mobileattack.com###follow
@@ -1833,6 +1820,7 @@ networkworld.com##.rel_nl_signup
 networkworld.com##.resalert
 networkworld.com##.storytools_nav_twit
 news.com.au##.text-m-stay-switched-on
+newscientist.com###skycol
 newser.com###BF_BUZZBOX
 newser.com###ToolsHider
 newser.com###ToolsShareStory
@@ -1880,6 +1868,7 @@ nydailynews.com##.art_shr_top
 nydailynews.com##.twtr-ftr
 nymag.com##.follow-vulture
 nymag.com##.newsletter
+nypost.com##a[href="http://twitter.com/newyorkpost"]
 nytimes.com###facebook_item
 nytimes.com###upNext
 nytimes.com##.feeds
@@ -1904,9 +1893,11 @@ parents.com###slideshowPromo
 parents.com###stayConnected
 patch.com###previous_in_category_for_publication
 patch.com##.modal_dialog_inner
+patchtogether.com##.blockUI
 pcauthority.com.au##.facebook-twitter
 pcmag.com###facebooktrend
 pcmag.com###newsletter-module
+pcmag.com###pcm-subscribe
 pcmag.com###subscribe-module
 pcmag.com##.about-ads
 pcmag.com##.btn-holder
@@ -1954,6 +1945,7 @@ popsci.com###block-block-76
 popsci.com###circ-container
 popsugar.com###control_overlay
 popsugar.com###promote-box-container
+popsugar.com###sugar-post-cross-sell
 popsugar.com##.modal_container
 portableapps.com##[alt="facebook"]
 portableapps.com##[alt="RSS"]
@@ -1980,6 +1972,7 @@ rdmag.com###mask
 rdmag.com###socialmedia
 readwriteweb.com###Subscribe
 readwriteweb.com###subsribe_right
+readwriteweb.com###upprev_box
 readwriteweb.com##.addthis_button_email
 readwriteweb.com##.digg
 readwriteweb.com##.subscribe
@@ -1994,6 +1987,7 @@ refinery29.com##.tip-follow
 reghardware.com###follow
 regretfulmorning.com###attentionGrabberWrap
 reuters.com###trackTabs
+reuters.com##.socialComments
 revision3.com###alertsCallout
 robotswithfeelings.com###subscribes
 rolandgarros.com###articleShare
@@ -2005,10 +1999,14 @@ scientificamerican.com###followList
 scientificamerican.com##.signupForm
 scientificamerican.com##.subscriptionForm
 scribd.com##.fb_like_container
+scribol.com###scribol-fb-like
 searchengineland.com###TB_overlay
 searchengineland.com###TB_window
+securityweek.com###block-block-13
+securityweek.com###block-block-5
 securityweek.com###simplemodal-container
 securityweek.com###simplemodal-overlay
+securityweek.com##.sharethis
 seekingalpha.com###floating_bar
 sfweekly.com##.besocial
 sfweekly.com##.tools
@@ -2031,15 +2029,14 @@ slate.com###article_bottom_tools
 slate.com###fbog_module
 slate.com###slatest_twitter
 slate.com##.subscription-box-cntr
-securityweek.com##.sharethis
-securityweek.com###block-block-5
-securityweek.com###block-block-13
 smashingmagazine.com##.facebook
 smashingmagazine.com##.rss
 smashingmagazine.com##.soc-icons-bar
 smashingmagazine.com##.twitter
 smithsonianmag.com###relatedTabBody_large_only
 snaptu.com##[title="Facebook"]
+soccercaffe.com###stp-bg
+soccercaffe.com###stp-main
 softonic.com###toolbar_promotion
 sohh.com###panel-social
 songza.com##.share_list
@@ -2068,13 +2065,13 @@ steampowered.com##.share
 stereomood.com###stereoSocial
 stuff.co.nz###sharebox
 stuff.co.nz##.share_icon
+stupidrumors.com##.share_tools
 stylelist.com##.bylinefb
 stylelist.com##.follow-us-main
 stylelist.com##.home-newsletter
 suberapps.com##.box2
 suberapps.com##[title="Follow @SUBERAPPS on Twitter!"]
 suberapps.com##[title="Subscribe to get updates on new apps!"]
-boston.com###area-vertical-social
 sugarsync.com###hpsocial
 sulekha.com##[src="/images/facebook.gif"]
 surfgarden.de##.rss
@@ -2088,6 +2085,7 @@ tamilwire.com##.greet_block.wpgb_cornered
 tamilwire.com##DIV[style="position: fixed; opacity: 1; left: 0px; bottom: 100px;"]
 techcrunch.com###sharing-322449
 techcrunch.com##.boxy
+techcrunch.com##.lazy-share-widget
 techdrivein.com###float_corner
 techeye.net##.subscribe
 techi.com###top-icons
@@ -2101,6 +2099,7 @@ techrepublic.com##.siu-vertical-cont
 techworld.com###loginSubscribeBoxout
 techworld.com###newsletterSidebar
 teenchatdecoder.com##.subscribe
+tehkseven.net###dcssb-float
 tekgoblin.com###upprev_box
 tekw.org##.subscribe_content
 tenthamendmentcenter.com###cboxOverlay
@@ -2149,12 +2148,9 @@ thefablife.com###subscribe_holder
 thefablife.com##.sharing_is_caring
 thefader.com##.ff-facebook-feed
 thefreewarejunkie.com###Subscribe1
-tehkseven.net###dcssb-float
 thefrisky.com###follow
-huffingtonpost.com##div[style^="z-index: 1; border: 7px"]
 thefrisky.com###newsletter_header
 thefrisky.com###relatedPostsContainer
-yahoo.com##.yui3-overlay
 thefrisky.com##.likeboxwrap
 thefrisky.com##.metatools_v2
 thehdroom.com###Column-3ad300
@@ -2199,8 +2195,8 @@ time.com##.subHeaderNavTools
 time.com##.syndicate
 time.com##.widget_time_social_module_widget
 time.com##.widget_wellness_newsletter_widget
-timesofindia.indiatimes.com##DIV[style="padding:5px;border: 1px solid #D7D7D7;background-color:#F5F5F5;margin-left: 4px; margin-bottom: 3px; width: 290px;"]
 timesfreepress.com##[style="float:right; width:292px; height:202px; border:1px solid #cccccc; padding: 3px; background-color:#ededed; margin-left:5px; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; overflow-x:hidden; overflow-y:auto;"]
+timesofindia.indiatimes.com##DIV[style="padding:5px;border: 1px solid #D7D7D7;background-color:#F5F5F5;margin-left: 4px; margin-bottom: 3px; width: 290px;"]
 tineye.com###footer-newsletter
 tineye.com##.facebook
 tineye.com##.posterous
@@ -2243,8 +2239,6 @@ unhearit.com##.follow
 unhearit.com##.share
 upi.com###b_tbr
 upi.com###b_tbr_c
-wired.com##.popup
-wired.com###subscription-dock
 upi.com###feedback_side
 upi.com###ffb_button_larger
 uproxx.com###block-728
@@ -2308,6 +2302,8 @@ windows7news.com##.subscribe
 windows7news.com##.subscribebox
 windowsvalley.com##.social
 wired.com###blog_subscription_unit
+wired.com###subscription-dock
+wired.com##.popup
 wireupdate.com###icons
 wisebread.com##.follow-block
 womenwithmustaches.com###twitter
@@ -2316,6 +2312,10 @@ wsj.com###aFbLikeBottom
 wsj.com##.fbRecWidget
 wsj.com##.share
 xkcdb.com###nagbox
+yahoo.com##.membermodal
+yahoo.com##.screen
+yahoo.com##.ysc-promos
+yahoo.com##.yui3-overlay
 yoink.com##.facebook
 yoink.com##.twitter
 youtube.com###watch-share

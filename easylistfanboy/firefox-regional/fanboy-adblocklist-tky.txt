@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: jcQx/TWyg4q5vdg4IIREaA
+! Checksum: DwM9aMeZ8p6NISmT2Jsasw
 ! Fanboy's Turkish-addon Adblock list 
 ! Updated: 25 Sep 2011
 ! This list expires after 5 days
@@ -63,10 +63,13 @@ _reklam_125_
 ||add.bugun.com.tr^
 ||ahmetturan.org/splash.
 ||akademikles.org/omur/
+||akilli.tv^*/banner/
 ||aksam.com.tr/images/banner_
+||alkislarlayasiyorum.com/300_250_
 ||antoloji.com/images/banners/
 ||aofforum.com^*banner
 ||appleturk.net^*.swf
+||aslanlar.tv/js/popup.js
 ||azginvideoo.com/vpillsss.gif
 ||azgnvideo.com/vidust.gif
 ||bitturk.net/pasta_tarifleri.gif
@@ -90,7 +93,6 @@ _reklam_125_
 ||ekolhoca.com/flash/
 ||ekolhoca.com/resim/
 ||emlakkulisi.com/ad/
-||alkislarlayasiyorum.com/300_250_
 ||emlakkulisi.com/Banner
 ||enguzelpornolari.biz/sagbanner.gif
 ||enguzelpornolari.biz/splash.php
@@ -138,14 +140,13 @@ _reklam_125_
 ||ntvmsnbc.com/adv/
 ||odatv.com/staticimages/
 ||ogile.com/banner
+||photobucket.com^$domain=rokettube.co
 ||posta.com.tr^*/advertorial/
 ||r10.net/reklam
-||akilli.tv^*/banner/
 ||realist.gen.tr/125
 ||realist.gen.tr/777
 ||realist.gen.tr/banner.
 ||realist.gen.tr/logo.php?
-||photobucket.com^$domain=rokettube.co
 ||resim.sinemalarizle.com/kucukresim/$script,subdocument
 ||rokettube.me/splash3.
 ||rokettubefile.com/splash
@@ -169,7 +170,6 @@ _reklam_125_
 ||turkiyegazetesi.com.tr/images/$object
 ||turkiyegazetesi.com.tr^*/banner/
 ||turkticaret.net/ads/
-||aslanlar.tv/js/popup.js
 ||turktime.com/banner/
 ||turuncutime.com/images/sinasi
 ||ucanhoroz.com^*.swf
@@ -245,12 +245,13 @@ _reklam_125_
 ||adserver.adklik.com.tr^$third-party
 ||adsp.ciner.com.tr^$third-party
 ||adtech.com.tr^$third-party
-||fotocunuz.com^$third-party
 ||aff.tamvakti.com^$third-party
 ||altinpiyasa.com^*-banner.swf$third-party
+||arealistikmanken.net^$third-party
 ||bakire.ws^$third-party
 ||baskentmedya.com^$third-party,object
 ||dulsohbet.net^$third-party
+||fotocunuz.com^$third-party
 ||fotocunuz.com^$third-party,domain=divxm.com
 ||grimex.net^$third-party
 ||hizlicevap.com^$third-party,subdocument
@@ -270,7 +271,6 @@ _reklam_125_
 ||reklamoloji.com^$third-party
 ||reklamstore.com^$third-party
 ||saglik.meltemhastanesi.com^$third-party
-||arealistikmanken.net^$third-party
 ||sikispornosextv.com^$third-party
 ||softreklam.com^$third-party
 ||sokakkizi.com^$third-party
@@ -287,27 +287,27 @@ _reklam_125_
 ||bingomingo.com^$other
 ||htfilmindir.com^$other
 ||iload.to^$other
+||mpornoizle.info^$other
 ||notification.travian.com.tr^$other
 ||zorgenclik.us^$other
-||mpornoizle.info^$other
 !
 !---------- Whitelist  ----------
 !
 @@||ad.e-kolay.net/crossdomain.xml$object-subrequest
 @@||ad.e-kolay.net/vast.a2?target$domain=shiftdelete.net|milliyet.com.tr
 @@||ad.e-kolay.net/xmlad.a2?target$domain=medyafaresi.com
+@@||cdntr.com/ntvspor/reklam_playlist.asp
 @@||delivery.reklamz.com/please/showit/$domain=xdiziizle.com
 @@||zapkolik.com/reklam.xml
 @@||zapkolik.com/zaplayer.swf?
-@@||cdntr.com/ntvspor/reklam_playlist.asp
 !
 !---------- Turkish Trackers ----------
 !
+||alkislarlayasiyorum.com/tracker.html
 ||bugun.com.tr^*/stat.aspx?
 ||panel.gazetevatan.com^
 ||reali.st^$third-party
 ||realist.gen.tr^$third-party
-||alkislarlayasiyorum.com/tracker.html
 ||webtemsilcisi.com^$third-party
 !
 ! ---------- Firefox 3.x Specific Hiding Rules ----------
@@ -334,6 +334,7 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###reklam300x250
 ###reklam300x600
 ###reklamdetay
+###reklamdiv
 ###reklamgoster
 ###reklami
 ###reklamlar
@@ -343,7 +344,6 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ###sliderAdHolder
 ###sol_kayan_reklam
 ###tatiladvertorial
-###reklamdiv
 ###Ust-Reklam-Piyasa
 ###ust_ara_reklam
 ###ustReklam
@@ -444,7 +444,6 @@ cumhuriyet.com.tr###ilan_7_3
 cumhuriyet.com.tr##TD[style="padding:4px;"]
 digiturkwebtv.com###jquery-lightbox
 digiturkwebtv.com###jquery-overlay
-rokettube.co###PopWin
 dikeygecis.org##.cms_widget_content
 dipnot.tv###leftbanner
 dipnot.tv###rightbanner
@@ -607,6 +606,7 @@ pckoloji.com##.ust-banner_468x60
 pornoizlenir.net###PopWin
 posta.com.tr##.bannerContent
 referansgazetesi.com###Referans_bolum_728x90
+rokettube.co###PopWin
 rokettube.me###PopWin
 rokettube.me##a[href^="http://www.peniskaldiricihaplar.com/?ref="]
 ruyatabirleri1.com##div[style="position:absolute;top:5px;left:735px;width:160px;height:610px;background-color:#fff;"]
