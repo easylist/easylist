@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 2.999
+VERSION = 3.0
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -83,7 +83,7 @@ def start ():
 
 def main (location):
     """ Find and sort all the files in a given directory, committing
-    changes to a repository if one exists"""
+    changes to a repository if one exists."""
     # Check that the directory exists, otherwise return
     if not os.path.isdir(location):
         print("{location} does not exist or is not a folder.".format(location = location))
@@ -113,11 +113,11 @@ def main (location):
         except(subprocess.CalledProcessError, OSError):
             print("The command \"{command}\" was unable to run; FOP will therefore not attempt to use the repository tools. On Windows, this may be an indication that you do not have sufficient privileges to run FOP - the exact reason why is unknown. Please also ensure that your revision control system is installed correctly and understood by FOP.".format(command = " ".join(command)))
             repository = None
+
     # Work through the directory and any subdirectories, ignoring hidden directories
     print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
     for path, directories, files in os.walk(location):
         print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
-        #directories = sorted(filter(lambda direct: not direct.startswith("."), directories))
         for direct in directories:
             if direct.startswith("."):
                 directories.remove(direct)
@@ -133,10 +133,10 @@ def main (location):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting an unnecessary file, as they likely indicate that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
                     pass
 
-    # Offer to commit any changes if in a repository
+    # If in a repository, offer to commit any changes
     if repository:
         commit(repository, basecommand, originaldifference)
 
@@ -204,8 +204,12 @@ def filtertidy (filterin):
     """ Sort the options of blocking filters and make the filter text
     lower case if applicable."""
     optionsplit = re.match(OPTIONPATTERN, filterin)
-    if optionsplit:
-        # If applicable, separate and sort the filter options
+
+    if not optionsplit:
+        # Remove unnecessary asterisks from filters without any options and return them
+        return removeunnecessarywildcards(filterin.lower())
+    else:
+        # If applicable, separate and sort the filter options in addition to the filter text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
 
@@ -234,9 +238,6 @@ def filtertidy (filterin):
 
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
-    else:
-        # Remove unnecessary asterisks and return the filter
-        return removeunnecessarywildcards(filterin.lower())
 
 def elementtidy (domains, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
@@ -279,12 +280,12 @@ def commit (repository, basecommand, userchanges):
     print("\nThe following changes have been recorded by the repository:")
     print(difference.decode("utf-8"))
     try:
-        # Persistently request for a suitable comment
+        # Persistently request a suitable comment
         while True:
             comment = input("Please enter a valid commit comment or quit:\n")
             if checkcomment(comment, userchanges):
                 break
-    # Allow users to abort the commit process
+    # Allow users to abort the commit process if they do not approve of the changes
     except (KeyboardInterrupt, SystemExit):
         print("\nCommit aborted.")
         return
