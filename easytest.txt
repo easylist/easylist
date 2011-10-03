@@ -71,3 +71,12 @@ _ad6.
 ||google-analytics.com^$third-party
 @@||google-analytics.com/ga.js$domain=jetbrains.com|imageshack.us
 @@||google-analytics.com/urchin.js$domain=muselive.com|wickedthemusical.com
+!
+! Test 4: Experimental Popup Blocking
+!
+! By originating domain
+!|http:$popup,image,~image,domain=NULL
+!|https:$popup,image,~image,domain=NULL
+!
+! By popup url
+||livejasmin.com^$popup,image,~image
