@@ -55,24 +55,13 @@ _ads-
 =ads&
 @@||facebook.com/settings?tab=ads&$subdocument
 !
-! Test 2: More "ad[0-9]" combos
-!
-_ad1.
--ad1.
--ad2.
-/ad2/*
-/ad2_
-/ad3-
--ad3.
-_ad6.
-!
-! Test 3: Google Analytics
+! Test 2: Google Analytics
 !
 ||google-analytics.com^$third-party
 @@||google-analytics.com/ga.js$domain=jetbrains.com|imageshack.us
 @@||google-analytics.com/urchin.js$domain=muselive.com|wickedthemusical.com
 !
-! Test 4: Experimental Popup Blocking
+! Test 3: Experimental Popup Blocking
 !
 ! By originating domain
 |http:$popup,third-party,image,~image,domain=extreme-board.com|load.to|megaupload.com|mofunzone.com
