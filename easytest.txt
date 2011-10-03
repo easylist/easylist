@@ -75,8 +75,8 @@ _ad6.
 ! Test 4: Experimental Popup Blocking
 !
 ! By originating domain
-|http:$popup,image,~image,domain=megaupload.com|mofunzone.com
-!|https:$popup,image,~image,domain=NULL
+|http:$popup,third-party,image,~image,domain=megaupload.com|mofunzone.com
+!|https:$popup,third-party,image,~image,domain=NULL
 !
 ! By popup url
 ||livejasmin.com^$popup,image,~image
