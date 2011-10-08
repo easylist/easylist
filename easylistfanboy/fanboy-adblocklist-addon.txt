@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: YXxrwI5pmXXDPdnWcU2XvA
+! Checksum: 2TxZFNLzrgNN2H80UKyO1w
 ! Fanboy's Annoyance list Addon 
 ! Updated: 8 Oct 2011
 ! This list expires after 4 days
@@ -14,8 +14,6 @@
 /18x18-reddit.
 /addtomyyahoo4.
 /bing-ad-unit/*
-/digg_32.
-/delicious_32.
 /bloglines.gif
 /btn-share.
 /btn_share_
@@ -25,7 +23,9 @@
 /delicious-icon.
 /delicious.gif|$domain=~delicious.com
 /delicious.png|$domain=~delicious.com
+/delicious_32.
 /delicious_64.
+/digg_32.
 /digg_64.
 /disableRightClick.
 /disablerightclick.
@@ -105,8 +105,8 @@
 /newsgator.gif
 /newsletter-icon_
 /norightclick.
-/plugins/delicious-bookmark-button/*
 /plugins/anmiated-twitter-bird/*
+/plugins/delicious-bookmark-button/*
 /plugins/sexybookmarks/*$~stylesheet
 /plugins/sociable-$~stylesheet
 /plugins/sociable-30/*$~stylesheet
@@ -116,6 +116,7 @@
 /plugins/wp-plus-one/*
 /plugins/wp-social-toolbar-pro/*
 /popup_do_
+/reddit_32.
 /retweet-button.
 /RSS-Button.
 /rss-icon.
@@ -134,8 +135,6 @@
 /share_digg.
 /share_facebook.
 /share_icons.
-/reddit_32.
-/stumbleupon_32.
 /share_icons_
 /share_myspace.
 /share_sprite.
@@ -161,6 +160,7 @@
 /spriteIco.png
 /st_add-this_
 /st_buzz_
+/stumbleupon_32.
 /technorati.png|$domain=~technorati.com
 /toolbar-digg.
 /toolbar-facebook.
@@ -225,7 +225,6 @@ _social_icons.
 ||images.slashdot.org^$third-party
 ||img.fark.net/pub/$third-party
 ||imgzzz.com/styles/buttons_
-||news.yahoo.com/media/modules/socialchrome/
 ||invite.linescale.com^
 ||jisbar.com^
 ||jobthread.com^$third-party
@@ -242,11 +241,12 @@ _social_icons.
 ||motorolasolutions.com^*/survey/
 ||neowin.net/images/header_promos/
 ||networkedblogs.com^$third-party
+||news.yahoo.com/media/modules/socialchrome/
 ||parse.ly^$third-party
-||printfriendly.com^$third-party
 ||pastebin.com/etc/social/
 ||platform.linkedin.com^$third-party
 ||plusone.google.com^$third-party
+||printfriendly.com^$third-party
 ||raaga.com/social/
 ||rapid8.com/images/*.cur
 ||reddit.com/static/$third-party
@@ -712,6 +712,7 @@ _stumble_btn.
 !     
 @@/facebook-button.$domain=imdb.com
 @@/socialmedia/*$domain=about.me,image
+@@||adobe.com^*/delicious.png$domain=adobe.com
 @@||api.tweetmeme.com^*$domain=smashingapps.com
 @@||bing.net/videos/thumbnail.aspx?$domain=bing.com
 @@||eceplayground.com^*/plugins/sociable/
@@ -725,7 +726,6 @@ _stumble_btn.
 @@||redbullusa.com^*/socialmedia/
 @@||redditarchive.com^
 @@||s7.addthis.com^$domain=egotastic.com|whitehouse.gov
-@@||adobe.com^*/delicious.png$domain=adobe.com
 @@||search.twitter.com/search.json?$domain=thedailyshow.com|colbertnation.com
 @@||sharethis.com^$domain=thedailyshow.com|thedailybeast.com|fox23.com|salon.com|imgur.com|cbslocal.com|fandango.com|colbertnation.com
 @@||tweetmeme.com/i/scripts/button.js$domain=smashingapps.com
@@ -1296,6 +1296,7 @@ bloomberg.com###footer_social
 bloomberg.com###mini_q
 bloomberg.com###story_tools_bottom
 bloomberg.com###story_tools_top
+boingboing.net##.shareMe
 boostinspiration.com###subs
 boostinspiration.com##.sharing
 boredpanda.com###do-you-like-box
@@ -1336,10 +1337,6 @@ cinemablend.com##[alt="Follow Cinema Blend's movie news on Twitter"]
 clickindia.com##.fb
 clickindia.com##.tw
 cnet.com###cnetToolbarWrap
-latimes.com##.tweet_button
-latimes.com##.comment_button_container
-latimes.com##.tweet_container
-gigaom.com##.go-toaster
 cnet.com###connectModule
 cnet.com###facebookRecommend
 cnet.com###mobileApp
@@ -1349,6 +1346,7 @@ cnet.com##.connectModule
 cnet.com##.frontDoorPromo
 cnet.com##.share
 cnet.com##.subscribe
+cnet.com.au###toolbar-nav-outer-wrap
 cnn.com###fbcStoryContainer
 cnn.com###MagStoryOFIE
 cnn.com###mm-like-facebook
@@ -1395,11 +1393,13 @@ criosweb.ro##.feed
 crooksandliars.com###ps-widgets
 csmonitor.com###newsletter-container
 csmonitor.com###newsletterSignupPromo
+csmonitor.com##.csmAd
 csmonitor.com##.facebookLike
 csmonitor.com##.pgTools
 csmonitor.com##.podBrdr
 csmonitor.com##.podStorySidebars
 csmonitor.com##.storyToolbar
+csmonitor.com##.ui-newsletter
 csmonitor.com##div[style="width: 296px; margin: 0 0 30px 0; padding: 0; border: 2px solid #eaf2ee;"]
 csmonitor.com##img[alt="Subscribe to the weekly Monitor"]
 curbed.com###follow-us
@@ -1417,8 +1417,6 @@ dailykos.com###simplemodal-overlay
 dailymotion.com###share
 daniweb.com##.ui-dialog
 daniweb.com##.ui-widget-overlay
-imm.io###share
-imm.io###fb
 datingish.com##[alt="share"]
 davemcelfatrick.com##.social
 dealspl.us##.facebookLikeBox
@@ -1480,13 +1478,10 @@ examiner.com###parsely_widget_ct
 explosm.net##[style="border: 6px solid #ff9900; padding: 6px; background-color: #ffffff;"]
 factcheck.org##.connections
 famouslyfit.com##.share
-csmonitor.com##.csmAd
-csmonitor.com##.ui-newsletter
 fastcompany.com##.curr_issue_wrap
 feedmyapp.com###facebook
 feedmyapp.com###twitter
 femalefirst.co.uk##.ShareThis
-guidingtech.com###optincrusher
 fightthesmears.com##.facebook
 fightthesmears.com##.myspace
 filefront.com##[style="margin-left: 15px; padding-left: 26px; background: url(/images/icons/facebook_16.png) left no-repeat; clear: both; line-height: 30px;"]
@@ -1546,6 +1541,7 @@ geeksugar.com###sugar-post-cross-sell
 geektyrant.com##.gt_twitter
 geektyrant.com##.sidebar_facebook
 gigaom.com##.giga-email-subscribe
+gigaom.com##.go-toaster
 givesmehope.com##.publicite
 gizmag.com###mb_bottom
 gizmag.com###mb_center
@@ -1572,6 +1568,7 @@ guanabee.com##.entryShare
 guanabee.com##.followUsSubColPod
 guardian.co.uk##.trail-icon
 guardianbookshop.co.uk##.moduleBookmarkLinks
+guidingtech.com###optincrusher
 guidingtech.com###text-3
 guidingtech.com###upprev_box
 guyism.com##.newsletter
@@ -1641,12 +1638,17 @@ ifitsmovies.com###sharediv
 ign.com###uservoice-feedback-tab
 ign.com##.followBox
 imagecrook.com##.bookmarks
+imageshack.us###done-popup
 imageshack.us##.new-info[style="float:right;height:76px;width:332px;background-color:#FFFFFF;border: 1px #cccccc solid; _overflow:hidden;"]
+imageshack.us##div[style="padding: 5px; margin: 5px; border: 1px solid #A00; font-weight: bold; color: #A00;"]
+imageshack.us##div[style^="position: absolute; top: 0px; left: 0px; width: 1751px; height: 989px;"]
 imdb.com##.social
 imdb.com##[href="http://twitter.com/imdb"]
 imgur.com###awesome-bar
 imgur.com###social
 imgzzz.com##.auth
+imm.io###fb
+imm.io###share
 impulsedriven.com##.social
 inc.com###moreSlideContainer
 inc.com###newsletter-signup
@@ -1661,6 +1663,7 @@ infoworld.com###block-infoworld-newsletter_subscribe
 infoworld.com###floating_tools
 infoworld.com###it_job_module
 infoworld.com###newsletter
+inrumor.com###mostRead2
 insidehighered.com##.news-alert
 intomobile.com##.services
 intomobile.com##.share
@@ -1685,10 +1688,10 @@ jkwebtalks.com##.toprss
 jokes.com###vid_ad
 jokes.com##.infoVideo
 keep-tube.com##[alt="Keep Tube on Twitter"]
+ketv.com##DIV[style="width:200px;float:left;border-top:1px double #C9C9C9;border-bottom:1px double #C9C9C9;padding:8px 5px 4px 10px;margin: 5px 10px 5px 0;"]
 killerstartups.com##.killerRss
 kiplinger.com###email-alert
 kiplinger.com###targeted-promo
-ketv.com##DIV[style="width:200px;float:left;border-top:1px double #C9C9C9;border-bottom:1px double #C9C9C9;padding:8px 5px 4px 10px;margin: 5px 10px 5px 0;"]
 kk.org##[alt="Follow Me"]
 kk.org##[href="http://www.kk.org/follow-me.php "]
 kotaku.com##.welcome_form
@@ -1701,6 +1704,9 @@ latimes.com##.articlerail
 latimes.com##.classifiedAdOne
 latimes.com##.classifiedAdThree
 latimes.com##.classifiedAdTwo
+latimes.com##.comment_button_container
+latimes.com##.tweet_button
+latimes.com##.tweet_container
 latimes.com##[style="background-color: transparent; margin-top: 20px;border:2px solid #dddddd;margin-bottom:18px;padding:12px;position:relative;width:auto;"]
 latimes.com##[style="height: 104px; border: 1px solid #000000; width: 335px; font-size: 11px;  margin-bottom: 20px;"]
 latimes.com##div[style="border:1px solid #DDDDDD; padding: 14px 10px 18px 16px;  "]
@@ -1722,6 +1728,7 @@ lycos.com##.facebookFrame
 lynda.com###follow
 macnews.de###marktplatz
 macstories.net##.social
+makeuseof.com###subscription-box
 makeuseof.com##.new_form
 makeuseof.com##.new_form2
 makeuseof.com##.sub
@@ -1746,7 +1753,6 @@ mayoclinic.com###link_share
 mayoclinic.com###newsletter
 mayoclinic.com###rss
 mayoclinic.com###social
-makeuseof.com###subscription-box
 mcdonalds.com###mcd_facebook
 mcdonalds.com###mcd_twitter
 mcdonalds.com###share
@@ -1843,7 +1849,6 @@ newser.com##.headerPromos
 newsfeed.time.com###follow
 newsfeed.time.com###newsfeed_tweetbox_widget-3
 newsfeed.time.com###sdac_subscribe_widget-3
-boingboing.net##.shareMe
 newsvine.com###tbcontainer
 newsweek.com###upprev_box
 newsweek.com##.stay-connected
@@ -1857,14 +1862,12 @@ nih.gov###bookmark_horz_nav
 nintendogal.com###rss
 nintendogal.com###twitter
 nirmaltv.com##.email
-imageshack.us###done-popup
-imageshack.us##div[style="padding: 5px; margin: 5px; border: 1px solid #A00; font-weight: bold; color: #A00;"]
-imageshack.us##div[style^="position: absolute; top: 0px; left: 0px; width: 1751px; height: 989px;"]
 nirmaltv.com##.rss
 nirmaltv.com##.twitter
 nj.com##.share
 nj.com##.sharing_wide
 nokia.co.in###follownokia-tk
+nokia.co.in###follownokia-tktop
 nokia.co.in##[alt="Facebook logo"]
 nokia.co.in##[alt="Twitter logo"]
 nokia.co.in##[alt="YouTube logo"]
@@ -2208,7 +2211,6 @@ time.com##.articleTools2
 time.com##.more-ways
 time.com##.subHeaderNavTools
 time.com##.syndicate
-nokia.co.in###follownokia-tktop
 time.com##.widget_time_social_module_widget
 time.com##.widget_wellness_newsletter_widget
 timesfreepress.com##[style="float:right; width:292px; height:202px; border:1px solid #cccccc; padding: 3px; background-color:#ededed; margin-left:5px; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; overflow-x:hidden; overflow-y:auto;"]
@@ -2247,7 +2249,6 @@ ugo.com###fb_login
 ugo.com###fb_userbox
 ugo.com###liveintent_app_iframe
 ugo.com###omni-digg-most-dugg
-cnet.com.au###toolbar-nav-outer-wrap
 ugo.com###omni-fb-activity-feed
 ugo.com##.facebook-icon
 ugo.com##.rss-icon
@@ -2260,7 +2261,6 @@ upi.com###feedback_side
 upi.com###ffb_button_larger
 uproxx.com###block-728
 urbandictionary.com##.facebook_image
-inrumor.com###mostRead2
 urbandictionary.com##.rss_image
 urbandictionary.com##.twitter_image
 urbandictionary.com##.zazzle_links
