@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.0
+VERSION = 3.1
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -51,9 +51,9 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
-                "image", "object", "object-subrequest", "other",
-                "match-case", "script", "stylesheet", "subdocument",
-                "third-party", "xbl", "xmlhttprequest")
+                "font", "image", "match-case", "object",
+                "object-subrequest", "other", "popup", "script",
+                "stylesheet", "subdocument", "third-party", "xmlhttprequest")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
