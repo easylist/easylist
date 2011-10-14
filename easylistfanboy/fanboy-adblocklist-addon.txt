@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: nEet45sGFcF4WQIRNVJVrQ
+! Checksum: myzGPcA8UNyVUsImHJZkcA
 ! Fanboy's Annoyance list Addon 
 ! Updated: 14 Oct 2011
 ! This list expires after 4 days
@@ -131,6 +131,7 @@
 /rssicon.
 /sendtofriend.gif
 /share-and-follow/*$~stylesheet
+/share-email.
 /share-icons.
 /share-icons/*
 /share_bebo.
@@ -151,7 +152,6 @@
 /social_clip_icons.
 /social_media_icons/*
 /socialbadges.
-/share-email.
 /socialbar-
 /SocialBookmark/*
 /socialIcons-
@@ -262,8 +262,8 @@ _social_icons.
 ||platform.linkedin.com^$third-party
 ||plusone.google.com^$third-party
 ||printfriendly.com^$third-party
-||reddit.com/static/$third-party
 ||reddit.com/button.js?$third-party
+||reddit.com/static/$third-party
 ||sharethis.com^$third-party
 ||skysa.com^$third-party
 ||slashdot.org^$third-party
@@ -448,7 +448,6 @@ _social_icons.
 /ico-facebook.
 /ico_facebook.
 /icon-facebook.
-/share-facebook.
 /icon_face.
 /icon_facebook.
 /icon_fb_
@@ -456,6 +455,7 @@ _social_icons.
 /icons/facebook_
 /js/FB.Share|$third-party
 /link-facebook.
+/share-facebook.
 /small_fb.
 /social-facebook-
 /social-fb.
@@ -578,7 +578,6 @@ _btn_facebook.
 /footer_twitter.
 /ico-twitter.
 /ico_twitter.
-/share-twitter.
 /icon-share.
 /icon-twitter.
 /icon-twitter2.
@@ -587,6 +586,7 @@ _btn_facebook.
 /icon_twitter_
 /icons/twitter.
 /icons/twitter_
+/share-twitter.
 /small_twitter.
 /social-twit.
 /social-twitter-
@@ -840,7 +840,6 @@ _stumble_btn.
 ###sidebar_social_icons
 ###singlesubscribe
 ###social-bar
-###socialBar
 ###social-buttons
 ###social-icon
 ###social-icons
@@ -868,7 +867,9 @@ _stumble_btn.
 ###social_menuShare1
 ###social_share_bar
 ###socialAreaStoryBlog
+###socialBar
 ###socialbar
+###socialBar
 ###socialbar-container
 ###socialBookMarks
 ###socialBookmarks
@@ -880,6 +881,7 @@ _stumble_btn.
 ###socialFooter
 ###SocialIcons
 ###socialicons
+###socialIcons
 ###socialize
 ###socialize-this
 ###socialize_top_right
@@ -1021,7 +1023,6 @@ _stumble_btn.
 ##.share_bar
 ##.share_btn
 ##.share_button_container
-###socialIcons
 ##.share_buttons
 ##.share_buttons_style
 ##.share_con
@@ -1080,7 +1081,6 @@ _stumble_btn.
 ##.social_bookmarks
 ##.social_bookmarks_title
 ##.social_bot
-###socialBar
 ##.social_box
 ##.social_boxes
 ##.social_button
@@ -1335,6 +1335,10 @@ boostinspiration.com###subs
 boostinspiration.com##.sharing
 boredpanda.com###do-you-like-box
 bornrich.com###slidebox
+bossip.com###bossipMobile
+bossip.com###followTwiiter
+bossip.com###newsletterSignup
+bossip.com##.share
 boston.com###area-vertical-social
 boston.com###blogtools
 boston.com###relatedContent
@@ -1386,7 +1390,6 @@ cnn.com###fbcStoryContainer
 cnn.com###MagStoryOFIE
 cnn.com###mm-like-facebook
 cnn.com###mm-share-twitter
-people.com##.sharelinkcont
 cnn.com###pmFacebook
 cnn.com###sh_search_box
 cnn.com##.mod-simplyhired
@@ -1398,8 +1401,6 @@ coedmagazine.com###home-social
 coedmagazine.com###rss-feed
 collegehumor.com###followch
 collegehumor.com###share_options
-finestdaily.com##.twitter-follow
-finestdaily.com###socialbox
 collegehumor.com##.stalk
 comedycentral.com##.comedy_share
 comedycentral.com##.comedy_share_title
@@ -1431,6 +1432,7 @@ cracked.com##.share_buttons_col_1
 cracked.com##.VideoShare
 criosweb.ro##.feed
 crooksandliars.com###ps-widgets
+csmonitor.com###igg_container
 csmonitor.com###newsletter-container
 csmonitor.com###newsletterSignupPromo
 csmonitor.com##.csmAd
@@ -1542,6 +1544,8 @@ filehippo.com##.box-two-feature
 filehippo.com##[href="http://feeds.feedburner.com/filehippo"]
 filestube.com###fb-root
 filmschoolrejects.com###sharebox
+finestdaily.com###socialbox
+finestdaily.com##.twitter-follow
 firefoxfacts.com##.rss
 flamefusion.net##[alt="Facebook icon"]
 flipkart.com##.keep_in_touch
@@ -1699,6 +1703,8 @@ icanhascheezburger.com##.socmark_container
 idg.com.au###article_actions
 idg.com.au###article_main_top
 ifitsmovies.com###sharediv
+ifixit.com###helpLink
+ifixit.com###notifications
 ign.com###uservoice-feedback-tab
 ign.com##.followBox
 imagecrook.com##.bookmarks
@@ -1838,16 +1844,8 @@ mediafire.com##div[style="margin-top:15px;"]
 mediamatters.org###modalBox
 mediamatters.org##.jqmOverlay
 memebase.com###sendtofriend
-newscientist.com###hldartIssueInfo
 memebase.com##.rssTable
-wolframalpha.com###share
-wolframalpha.com##.connect-icons
 memebase.com##.socmarklast
-csmonitor.com###igg_container
-bossip.com##.share
-bossip.com###followTwiiter
-bossip.com###newsletterSignup
-bossip.com###bossipMobile
 menshealth.com##.article-share
 menshealth.com##.subscribe_link
 mercurynews.com###followus
@@ -1921,6 +1919,7 @@ networkworld.com##.rel_nl_signup
 networkworld.com##.resalert
 networkworld.com##.storytools_nav_twit
 news.com.au##.text-m-stay-switched-on
+newscientist.com###hldartIssueInfo
 newscientist.com###skycol
 newser.com###BF_BUZZBOX
 newser.com###ToolsHider
@@ -1960,7 +1959,6 @@ nola.com##.share
 nola.com##[href="http://www.nola.com/connect"]
 northjersey.com###slidebox
 novirusthanks.org##.rss
-softwarecrew.com###stayInTouch
 novirusthanks.org##.share
 novirusthanks.org##.twitter
 npr.org##.facebook
@@ -2026,6 +2024,7 @@ pcworld.in##[alt="RSS"]
 people.com###flyingrecirc
 people.com###getPeopleEverywhere
 people.com##.cmad
+people.com##.sharelinkcont
 people.com##.subscribe
 peoplestylewatch.com###getPeopleEverywhere
 physorg.com##.sharemenu
@@ -2052,8 +2051,6 @@ popsugar.com##.modal_container
 portableapps.com##[alt="facebook"]
 portableapps.com##[alt="RSS"]
 portableapps.com##[alt="twitter"]
-ifixit.com###notifications
-ifixit.com###helpLink
 posterous.com###posterous_footerbar
 presidiacreative.com##.socials
 pressandjournal.co.uk###preamble
@@ -2150,6 +2147,7 @@ smithsonianmag.com###relatedTabBody_large_only
 soccercaffe.com###stp-bg
 soccercaffe.com###stp-main
 softonic.com###toolbar_promotion
+softwarecrew.com###stayInTouch
 sohh.com###panel-social
 songza.com##.share_list
 sophos.com##.share-rail
@@ -2401,6 +2399,8 @@ wired.com###subscription-dock
 wired.com##.popup
 wireupdate.com###icons
 wisebread.com##.follow-block
+wolframalpha.com###share
+wolframalpha.com##.connect-icons
 womenwithmustaches.com###twitter
 wordweb.info##[alt="RSS Feeds"]
 wsj.com###aFbLikeBottom
