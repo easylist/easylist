@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: 9QeNSJmoiVFVVqlwfL2rIw
+! Checksum: spcZJwVOTcRyDP8qICDoXA
 ! Fanboy's Turkish-addon Adblock list 
-! Updated: 16 Oct 2011
+! Updated: 18 Oct 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -63,6 +63,7 @@ _reklam_125_
 !
 ! ---------- 1st party blocking rules ----------
 !
+||50.7.242.74^*/splash.php
 ||add.bugun.com.tr^
 ||ahmetturan.org/splash.
 ||akademikles.org/omur/
@@ -81,8 +82,6 @@ _reklam_125_
 ||bizimkocaeli.com/reklam_
 ||chip.com.tr/bmedia/
 ||cumhuriyet.com.tr/medya.php?mn=46327
-||50.7.242.74^*/splash.php
-||mailce.com/wp-content/plugins/wp-super-popup/
 ||cumhuriyet.com.tr/medya.php?mn=59367
 ||cumhuriyet.com.tr/medya.php?mn=59378
 ||derinport.in/pop.js
@@ -132,6 +131,7 @@ _reklam_125_
 ||kobi-efor.com.tr/banner/
 ||kpsscafe.com/images/ihtiyac.jpg
 ||kpsscafe.com^*.swf
+||mailce.com/wp-content/plugins/wp-super-popup/
 ||maraton.com.tr/banner
 ||maraton.com.tr/img/iddaabanner
 ||medya73.com/images/banner/
@@ -304,13 +304,13 @@ _reklam_125_
 !---------- Popups (Adblock Plus Pop-up Addon required) ----------
 !   
 ||bingomingo.com^$other,popup,image,~image
+||cafecanli.com^$other,popup,image,~image
 ||htfilmindir.com^$other,popup,image,~image
 ||iload.to^$other,popup,image,~image
 ||mpornoizle.info^$other,popup,image,~image
 ||notification.travian.com.tr^$other,popup,image,~image
 ||xsikisizle.net^$other,popup,image,~image
 ||zorgenclik.us^$other,popup,image,~image
-||cafecanli.com^$other,popup,image,~image
 !
 !---------- Whitelist  ----------
 !
@@ -386,7 +386,6 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ##.detayreklam
 ##.dikeyreklam
 ##.gogads
-##.ReklamBir
 ##.gogads4
 ##.kutu_reklam
 ##.logoyani_reklam
@@ -404,6 +403,7 @@ samanyoluhaber.com##[style="position: absolute; text-align: center; left: 55px; 
 ##.reklam_728_90
 ##.ReklamBandi
 ##.ReklamBandi2
+##.ReklamBir
 ##.reklamDiv
 ##.reklamlar
 ##.reklamoynama
@@ -573,15 +573,9 @@ inilti.com##div[style="position:fixed;top:0;left:0;width:100%;height:100px;text-
 kanald.com.tr##.adn
 kanald.com.tr##.adv
 kpsscafe.com###ihtiyac
-rokettube.tk###PopWin
-ulusoy.com.tr###fancybox-overlay
-ulusoy.com.tr###fancybox-wrap
 kraloyun.com###app_advertising_leaderboard_ph
 kraloyun.com###app_advertising_rectangle
 kraloyun.com###app_advertising_skyscraper_right
-mailce.com##.sponsorlar
-mailce.com##div[style="float:right;margin-top:-35px;margin-right:0px;"]
-mailce.com##div[style="float:right;margin-top:10px;margin-right:0px;"]
 kraloyun.com##.adv_info_text
 kraloyun.com##.game__adv_containerLeaderboard
 kraloyun.com##.instructionAdvContent
@@ -589,6 +583,9 @@ kraloyun.com##.instructionAdvHeadline
 lg.web.tr##TABLE[width="100%"][height="60"]
 linkcenneti.net##table[height="280"]
 linkcenneti.net##table[width="750"]
+mailce.com##.sponsorlar
+mailce.com##div[style="float:right;margin-top:-35px;margin-right:0px;"]
+mailce.com##div[style="float:right;margin-top:10px;margin-right:0px;"]
 medya73.com##.banner
 medyafaresi.com##.banner
 medyafaresi.com##.banneralan
@@ -648,6 +645,7 @@ referansgazetesi.com###Referans_bolum_728x90
 rokettube.co###PopWin
 rokettube.me###PopWin
 rokettube.me##a[href^="http://www.peniskaldiricihaplar.com/?ref="]
+rokettube.tk###PopWin
 ruyatabirleri1.com##div[style="position:absolute;top:5px;left:735px;width:160px;height:610px;background-color:#fff;"]
 sabah.com.tr##.vimjo
 sabah.com.tr##[width="430"][height="50"]
@@ -692,6 +690,8 @@ turkmmo.com###template01_border
 turkmmo.com##div[style="position:relative;width:600px;height:60px;background-image:url(OpenMembership600x60.jpg);overflow:hidden;"]
 turkmmo.com##img[width="728"][height="90"]
 uludagsozluk.com###fragmanizle1
+ulusoy.com.tr###fancybox-overlay
+ulusoy.com.tr###fancybox-wrap
 uyesiz.org###sponsor
 vakit.com.tr###pa
 videonette.com###fadeinbox
