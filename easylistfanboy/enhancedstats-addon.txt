@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 4TgKyAnxhDmYYDr1MWEbjQ
+! Checksum: x98lua7nSEY/XX11hIzv/A
 ! Fanboy Enhanced Tracking Blocking (Various Tracking scripts)
 ! Updated: 20 Oct 2011
 ! This list expires after 3 days
@@ -222,10 +222,13 @@ _wtbaseV2.
 !     
 ! ---------- General blocking rules ----------
 !     
-/urchin.js$domain=~pepsico.com|~arvest.com
-||google-analytics.com^$third-party,domain=~google.com|~jetbrains.com|~fora.tv|~thevine.com.au|~americanapparel.net|~expresspcparts.com.au|~mashable.com|~brobible.com|~oyster.com|~photobucket.com|~nuts.co.uk|~alatest.com|~apps.facebook.com|~billabong.com|~weeworld.com|~youtube.com|~philips.com|~googlelabs.com|~tvunetworks.com|~g4tv.com|~jobsite.co.uk|~avast.com|~ehow.com|~gasbuddy.com|~globaltv.com|~nme.com|~imageshack.us|~tube8.com|~priestville.org|~coedmagazine.com|~maxcdn.com|~bolha.com|~seekingalpha.com|~threatfire.com|~aftonbladet.se|~frequency.com|~tweetgrid.com|~yestosafesex.com|~eonline.com|~tomshardware.com|~yellow.co.nz|~lucasarts.com|~logitech.com
-||mail.google.com/mail/rc/?$image
 ||coremetrics.com^
+||google-analytics.com^$third-party
+||mail.google.com/mail/rc/?$image
+@@||pepsico.com/scripts/urchin.js
+@@||arvest.com/common/urchin/urchin.js
+@@||google-analytics.com/urchin.js$domain=expresspcparts.com.au
+@@||google-analytics.com/ga.js$domain=google.com|banshee.fm|eonline.com|yellow.co.nz|logitech.com|lucasarts.com|tomshardware.com|maxcdn.com|tweetgrid.com|frequency.com|aftonbladet.se|seekingalpha.com|threatfire.com|bolha.com|jetbrains.com|fora.tv|thevine.com.au|americanapparel.net|mashable.com|brobible.com|oyster.com|photobucket.com|nuts.co.uk|alatest.com|apps.facebook.com|billabong.com|weeworld.com|youtube.com|philips.com|tvunetworks.com|g4tv.com|jobsite.co.uk|avast.com|ehow.com|gasbuddy.com|globaltv.com|nme.com|imageshack.us|tube8.com|priestville.org|coedmagazine.com
 !     
 ! ---------- 1st party blocking rules ----------
 !  
@@ -258,5 +261,4 @@ _wtbaseV2.
 @@||chron.com^*/omniture/$script
 @@||eloqua.com^*/svrGP.aspx?$subdocument,domain=itworld.com
 @@||juniper.net/elqNow/$domain=juniper.net,script
-@@||google-analytics.com/ga.js$domain=banshee.fm
 @@||eweek.com/js/s_code_remote_new.js$domain=eweek.com
