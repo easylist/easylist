@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: sdc9HCxcxWVlpSkHd+W4fA
+! Checksum: 1vHP/vZEUg5Lhir4mX0URA
 ! Fanboy's Russian-V2-addon Adblock list 
 ! Updated: 22 Oct 2011
 ! This list expires after 5 days
@@ -82,6 +82,8 @@ _reklama.
 !
 ! ---------- 1st party blocking rules ----------
 !
+|http://63.ru^$object
+|http://74.ru/$object
 ||003.com.ua/cgi/adv/
 ||195.82.146.52/iframe-begun-
 ||1web.su/img/reklama/
@@ -90,19 +92,18 @@ _reklama.
 ||2x2.su/reclama/
 ||77.120.122.117^*/banners/
 ||actualcomment.ru^*/banner/
+||ad.3dnews.ru^
 ||ad.stopgame.ru^
 ||ad.sweb.ru^
 ||adv.creara.ru^
 ||advesti.ru/banners/
 ||advesti.ru/poligrafia
-||ad.3dnews.ru^
 ||agronews.ru^*.swf|
 ||agrotv.ru/informer.swf?
 ||aif.ru/iframes/
 ||akipress.org/ban/
 ||akipress.org/bimages
 ||aktobeinfo.kz/media/swf/
-|http://74.ru/$object
 ||allfreegame.ru/4681.gif
 ||allfreegame.ru/4682.gif
 ||allhockey.ru^*/advert_
@@ -349,7 +350,6 @@ _reklama.
 ||s-up.ru/banner/
 ||s-up.ru/banner2/
 ||s.tfile.ru^$object
-|http://63.ru^$object
 ||saint-petersburg.ru/i/ban2/
 ||samforum.ws/autorefresh
 ||samlab.ws/img/archivarius
@@ -682,7 +682,6 @@ _reklama.
 ||alldigital.ru^$third-party
 ||allsiemens.com^$third-party,object
 ||apocence.com^$third-party
-||profitwizard.ru^$third-party
 ||arbocontext.ru^$third-party
 ||arcada.do.am^$third-party
 ||art-gu.ru^$third-party,image
@@ -886,6 +885,7 @@ _reklama.
 ||portamir.com^$third-party
 ||profistats.net^$third-party
 ||profitwizard.net^$third-party
+||profitwizard.ru^$third-party
 ||profstat.net^$third-party
 ||promo.1000zakazov.ru^$third-party
 ||promo.md^$third-party
@@ -1007,9 +1007,9 @@ _reklama.
 !   
 ||am10.ru^$other,popup,image,~image
 ||gemius.com.ua^$other,popup,image,~image
+||kupikupon.ru^$other,popup,image,~image
 ||promo.karosgame.ru^$other,popup,image,~image
 ||qiq.ws^$other,popup,image,~image
-||kupikupon.ru^$other,popup,image,~image
 ||rapidzona.com^$other,popup,image,~image
 ||rutor.org^$other,popup,image,~image
 ||vipsoftware.org^$other,popup,image,~image
@@ -1393,6 +1393,9 @@ xxx-tracker.com##table[style="border-spacing: 0px; background-color: rgb(0, 0, 0
 50ml.com.ua##.popup
 5ka.su###girlsBar
 5ka.su##.topBanner
+63.ru##[id^="sb_"]
+63.ru##table[style="height:60px"]
+74.ru##div[id^="sb_"]
 actualcomment.ru###topbanner
 advert.kp.ru##.baner
 advert.kp.ru##[height="400"]
@@ -1586,8 +1589,6 @@ glavred.info##.block-banner
 goodfon.ru##table[height="460"]
 goodhouse.ru##.banner_right
 google.com,google.ru###mbEnd
-63.ru##table[style="height:60px"]
-63.ru##[id^="sb_"]
 google.com,google.ru###tads
 google.com,google.ru##table.ra
 gorod.cn.ua##.bann_210
@@ -1723,7 +1724,6 @@ motodrive.com.ua##.table_banners
 motor.ru##.b-car-ad--4-cols-wrap
 moyaradost.ru###pasya_81
 moyaradost.ru##.tizer
-74.ru##div[id^="sb_"]
 mp3lemon.net##table[style="border:dotted; border-color:#cccccc; background-color:#FFFFFF"]
 msk.ru###fp-buttons
 msk.ru##.knopki

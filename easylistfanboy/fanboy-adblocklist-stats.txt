@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: cfD0P8zHdq332bOd2uFC8Q
+! Checksum: Uzt8jwzDv8thYoq6aluSpQ
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 22 Oct 2011
 ! This list expires after 7 days
@@ -190,6 +190,7 @@
 /analyse.js
 /analytic_data_
 /analyticReportingAS3.$domain=~miniclip.com
+/analytics-beacon-
 /analytics.php.
 /analytics.php?
 /analytics.swf?
@@ -234,7 +235,6 @@
 /Baynote.Observer-
 /baynote/tags2/*
 /baynote_bundle.
-/analytics-beacon-
 /baynote_global.
 /baynote_observer.
 /baynoteObserver/*
@@ -906,10 +906,10 @@
 /printtracker.js
 /prnx_track.
 /pro-ping.php?
-/promo_tracking/*
 /process.php?ut=*&rf=
 /prodtracker?
 /profile_tracker.
+/promo_tracking/*
 /promos/pixels?
 /ptrack.
 /pubimppixel/*
@@ -1390,6 +1390,7 @@ size=1x1;
 ||barilliance.net^$third-party
 ||bigmir.net^$third-party
 ||bridgetrack.com^*=visitor&$third-party
+||cerebral.typn.com^$third-party
 ||clicker.com^*pageurl$third-party
 ||clicks.superpages.com^$third-party
 ||cloudfront.net/track.html
@@ -1414,14 +1415,13 @@ size=1x1;
 ||gaug.es^$third-party
 ||geobytes.com^$third-party
 ||geocompteur.com^$third-party
+||getfreebacklinks.com^$third-party
 ||globel.co.uk^$third-party
 ||grabnetworks.com/beacons/?$third-party
 ||haymarket.com^$third-party
 ||hypestat.com^$third-party
 ||imagedoll.com^$third-party,subdocument
 ||imgfarm.com^*/mw.gif?$third-party
-||stats.olark.com^$third-party
-||cerebral.typn.com^$third-party
 ||inq.com^*/onEvent?_
 ||intensedebate.com/remotevisit.php?$third-party
 ||iplocationtools.com^$third-party
@@ -1442,8 +1442,6 @@ size=1x1;
 ||ocp.cnettv.com^*/Request.jsp?
 ||paypalobjects.com^*/pixel.gif$third-party,domain=~paypal.com
 ||pingomatic.com^$third-party
-||getfreebacklinks.com^$third-party
-||smallseotools.com^$third-party
 ||pixel.quantserve.com^*&type=gif$third-party
 ||platform.communicatorcorp.com^$third-party
 ||projop.dnsalias.com^$third-party
@@ -1457,8 +1455,10 @@ size=1x1;
 ||simplereach.com^$third-party
 ||sitereport.org^$third-party
 ||sitetistik.com^$third-party
+||smallseotools.com^$third-party
 ||statcounter.com^$third-party
 ||static.parsely.com^$third-party
+||stats.olark.com^$third-party
 ||stippleit.com^$third-party
 ||su.pr/hosted_js$third-party
 ||sv2.biz^$third-party
@@ -1618,7 +1618,6 @@ size=1x1;
 ||everythinggirl.com/assets/tracker/
 ||exp.www.msn.com^
 ||experts-exchange.com/pageLoaded.jsp?
-||flixstercdn.com^*/tracking.
 ||facebook.com*/impression.php?
 ||facebook.com/ap.php?i=$image
 ||farecompare.com/resources/ga/ga.js
@@ -1629,8 +1628,10 @@ size=1x1;
 ||feeds.feedburner.com/~r/$image
 ||feeds.timesonline.co.uk^*/mf.gif
 ||fixya.com/ttimer.gif?
+||flixstercdn.com^*/tracking.
 ||flybe.com^*/tracking.js
 ||flybmi.com/livetrack/
+||forbes.com/scripts/data_pixels.js
 ||fostersbeer.com/js/tracking.js
 ||foxbusiness.com/control/
 ||freecause.com^*.png?
@@ -1641,7 +1642,6 @@ size=1x1;
 ||gamesgames.com/WebAnalysis/
 ||gamezone.com/?ACT
 ||gamezone.com/site/linktracker
-||forbes.com/scripts/data_pixels.js
 ||gardenweb.com^*/iv_footer.js
 ||gardenweb.com^*/pt.js
 ||geo.perezhilton.com^
@@ -1712,7 +1712,6 @@ size=1x1;
 ||linkwithin.com/pixel.png
 ||livescience.com/common/track.
 ||llbean.com/js/metrics.js
-||pixel.pcworld.com^
 ||llbean.com/js/metrics_
 ||log.olark.com^
 ||log1.music.yahoo.com^
@@ -1792,6 +1791,7 @@ size=1x1;
 ||pictopia.com^*/hb.gif?
 ||pixazza.com/track/
 ||pixel.klout.com^
+||pixel.pcworld.com^
 ||pixel.reddit.com^
 ||pixel.redditmedia.com^
 ||play.com/analytics/

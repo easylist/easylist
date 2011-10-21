@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: KymziVG61Vrq0Xq2J6QzlQ
+! Checksum: zmJqJN4BgEkVhMHcSqIAjQ
 ! Fanboy's Annoyance list Addon 
 ! Updated: 22 Oct 2011
 ! This list expires after 4 days
@@ -209,17 +209,17 @@ _social_icons.
 ||imgzzz.com/styles/buttons_
 ||l.yimg.com^*/img/badge-
 ||livescience.com/social.php
+||mediaoneutah.com/add_slt_small_icontact.php
 ||motorolasolutions.com^*/survey/
 ||neowin.net/images/header_promos/
+||news.cnet.com^*/side-sharebar.html
 ||news.yahoo.com/media/modules/socialchrome/
 ||pastebin.com/etc/social/
 ||raaga.com/social/
 ||rapid8.com/images/*.cur
 ||rawstory.com^*_300x2501.jpg
-||mediaoneutah.com/add_slt_small_icontact.php
 ||space.com/images/site/social/
 ||space.com/social.html
-||news.cnet.com^*/side-sharebar.html
 ||tsbmag.com^*/tsb_b31.jpg
 ||tuaw.com^*/related-slider.js
 !  
@@ -248,6 +248,7 @@ _social_icons.
 ||fark.com/js/$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||feeds.delicious.com^$third-party
+||finderfox.smarterfox.com^*/finderfox.js$third-party
 ||gigya.com^$third-party
 ||google.com/js/plusone.js$third-party
 ||hellobar.com^$third-party
@@ -278,7 +279,6 @@ _social_icons.
 ||sharethis.com^$third-party
 ||skysa.com^$third-party
 ||slashdot.org^$third-party
-||finderfox.smarterfox.com^*/finderfox.js$third-party
 ||sociallist.org^$third-party
 ||socialmarker.com^$third-party
 ||socialmediabuttons.com^$third-party
@@ -455,6 +455,7 @@ _social_icons.
 /fb-banner.
 /FB-Button.
 /fb-icon.
+/FB.Share.
 /fb_share.
 /fbpromo.
 /followus_facebook.
@@ -478,23 +479,22 @@ _social_icons.
 /social-fb.
 /st_facebook_
 _btn_facebook.
-/FB.Share.
 ||badge.facebook.com^$third-party
 ||blogsmithmedia.com^*facebook$image
 ||facebook.com/connect/connect.*connections$third-party,domain=~farmville.com 
 ||facebook.com/favicon.ico$third-party
 ||facebook.com/plugins/activity.php?$third-party
+||facebook.com/plugins/facepile.php?$third-party
 ||facebook.com/plugins/fan.php?$third-party
 ||facebook.com/plugins/like.php?$third-party
 ||facebook.com/plugins/likebox.php?$third-party
 ||facebook.com/plugins/recommendations.php?$third-party
 ||facebook.com/plugins/send.php?$third-party
+||facebook.com/restserver.php?*.getStats&$third-party
 ||facebook.com/widgets/activity.php?$third-party
 ||facebook.com/widgets/fan.php?$third-party
-||facebook.com/plugins/facepile.php?$third-party
 ||facebook.com/widgets/like.php?$third-party
 ||facebook.com/widgets/recommendations.php?$third-party
-||facebook.com/restserver.php?*.getStats&$third-party
 ||facebookicon.net^$third-party
 ||widgets.fbshare.me^$third-party
 ~break.com###facebook_btn
@@ -1393,6 +1393,10 @@ cars-sky.info##.feed-links
 cbsnews.com###cbsfacebookConnect
 cbsnews.com###cbsSMPB
 cbsnews.com##.about
+cbsnews.com##.aboutBox
+cbsnews.com##.bnFBLink
+cbsnews.com##.bnSharePrompt
+cbsnews.com##.bnTWLink
 cbsnews.com##.connectModule
 cbsnews.com##.share
 cbsnews.com##.tabbedPromoUnit
@@ -1590,16 +1594,9 @@ focus.com###home-subscribe-icons
 focus.com###offer-research-center-newsletter
 fool.com###ecapShell
 fool.com###webTwoPointOh
-cbsnews.com##.aboutBox
-cbsnews.com##.bnSharePrompt
-cbsnews.com##.bnFBLink
-cbsnews.com##.bnTWLink
 fora.tv###join_plus
 fora.tv###join_plus_video
 fora.tv###plft_icon_container
-techspot.com###pf_bar
-washingtonpost.com##.image-promotion
-washingtonpost.com###trove-footer
 forbes.com###controlsbox
 forbes.com##.votecolumn
 foreignpolicy.com###fb-soc-box
@@ -1619,6 +1616,9 @@ freemake.com##.bookmark
 freemake.com##.community
 freesfx.co.uk###popout
 freewaregenius.com###nrelate_flyout_1
+freshome.com###submit_newsletter
+freshome.com###subscribe_under_post
+freshome.com##.social_ntw
 frooglegeek.com###sharepost
 ft.com###optimostOverlay
 fundoomails.com##.social
@@ -1675,6 +1675,7 @@ groceryiq.com##.pod_share
 grooveshark.com###notifications
 guanabee.com##.entryShare
 guanabee.com##.followUsSubColPod
+guardian.co.uk##.reader-offers
 guardian.co.uk##.trail-icon
 guardianbookshop.co.uk##.moduleBookmarkLinks
 guidingtech.com###optincrusher
@@ -1750,8 +1751,6 @@ idg.com.au###article_main_top
 ifitsmovies.com###sharediv
 ifixit.com###helpLink
 ifixit.com###notifications
-infoworld.com##.tweet-follow
-infoworld.com##.blog_nl_signup_link
 ign.com###uservoice-feedback-tab
 ign.com##.followBox
 imagecrook.com##.bookmarks
@@ -1783,6 +1782,8 @@ infoworld.com###block-infoworld-newsletter_subscribe
 infoworld.com###floating_tools
 infoworld.com###it_job_module
 infoworld.com###newsletter
+infoworld.com##.blog_nl_signup_link
+infoworld.com##.tweet-follow
 inrumor.com###mostRead2
 insidehighered.com##.news-alert
 intomobile.com##.services
@@ -1874,8 +1875,6 @@ matadornetwork.com##.subscription_options
 maxim.com###headersearchsocial
 maxim.com##.footercol5
 maxim.com##.g_subs_Container
-stuff.co.nz##.homesky_image
-guardian.co.uk##.reader-offers
 maxim.com##.ShareLinksContainer
 maxim.com##.subscribeform
 maximumpc.com###monthly-issue
@@ -2068,6 +2067,7 @@ pcmag.com##.share
 pcmag.com##.shareModule
 pcmag.com##.subscribe-panel
 pcworld.com###connect
+pcworld.com###homepageconnect
 pcworld.com###joinPCW
 pcworld.com###newsletters
 pcworld.com###slideshowSocial
@@ -2075,6 +2075,7 @@ pcworld.com###smbRightSubscribe
 pcworld.com###socailBarComponentDiv_page
 pcworld.com###subscribeMWForm
 pcworld.com###syndication
+pcworld.com###todaysSpecialOffers
 pcworld.com##.delicious
 pcworld.com##.fb-login
 pcworld.com##.syndication
@@ -2083,8 +2084,6 @@ pcworld.in##.email
 pcworld.in##.facebook
 pcworld.in##.twitter
 pcworld.in##[alt="RSS"]
-pcworld.com###todaysSpecialOffers
-pcworld.com###homepageconnect
 people.com###flyingrecirc
 people.com###getPeopleEverywhere
 people.com##.cmad
@@ -2155,9 +2154,6 @@ reference.com###fcrds
 reference.com###sftr
 refinery29.com###signup-ws
 refinery29.com##.tip-follow
-freshome.com###submit_newsletter
-freshome.com##.social_ntw
-freshome.com###subscribe_under_post
 reghardware.com###follow
 regretfulmorning.com###attentionGrabberWrap
 reuters.com###trackTabs
@@ -2250,6 +2246,7 @@ status.twitter.com###rss
 steampowered.com##.share
 stereomood.com###stereoSocial
 stuff.co.nz###sharebox
+stuff.co.nz##.homesky_image
 stuff.co.nz##.share_icon
 stupidrumors.com##.share_tools
 stylelist.com##.bylinefb
@@ -2275,6 +2272,7 @@ technologyreview.com##.optionsbox
 techrepublic.com###cnet-brand
 techrepublic.com##.medusa-promo
 techrepublic.com##.siu-vertical-cont
+techspot.com###pf_bar
 techworld.com###loginSubscribeBoxout
 techworld.com###newsletterSidebar
 techworld.com###socialMediaBoxout
@@ -2430,6 +2428,7 @@ usatoday.com###finishedArticleLoader
 usatoday.com###section-nav
 usatoday.com###shareBarWrapper
 usatoday.com###social2
+usatoday.com##.promotion
 usatoday.com##.subscribe
 userscripts.org##[alt="Delicious_32x32"]
 userscripts.org##[alt="Digg_32x32"]
@@ -2438,7 +2437,6 @@ userscripts.org##[alt="Twitter_32"]
 usmagazine.com###sweeps_add336x125
 usmagazine.com##.us_exclusive_box
 usmagazine.com##div[style="float:left;display:block;padding-bottom:15px;margin-bottom:15px;"]
-usatoday.com##.promotion
 usnews.com##.tools
 vaildaily.com##.aggregatorlinksbottom
 vaildaily.com##.aggregatorlinkstop
@@ -2459,6 +2457,8 @@ walyou.com###counter
 washingtonpost.com###bc-badges
 washingtonpost.com###content_column_table
 washingtonpost.com###saveshare-bottom
+washingtonpost.com###trove-footer
+washingtonpost.com##.image-promotion
 washingtonpost.com##.rate-share
 washingtontimes.com##.nag
 washingtontimes.com##.registration-flag
