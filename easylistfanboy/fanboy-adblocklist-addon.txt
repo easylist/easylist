@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: CgTc/CDtFP8rFUNlkZnGVA
+! Checksum: RuvR+mHyEo+2tAz002cNFw
 ! Fanboy's Annoyance list Addon 
 ! Updated: 23 Oct 2011
 ! This list expires after 4 days
@@ -24,10 +24,12 @@
 /delicious-icon.
 /delicious.gif|$domain=~delicious.com
 /delicious.png|$domain=~delicious.com
+/delicious_16.
 /delicious_32.
 /delicious_64.
 /digg_32.
 /digg_64.
+/digg_alt_16.
 /disablerightclick.
 /email_follow.
 /facebook-icon-
@@ -40,12 +42,13 @@
 /feeds_36x
 /flickr_32.
 /follow-icons.
-/follow_us_
 /follow_us.
+/follow_us_
 /followus_linkedin.
 /followus_youtube.
 /footer_myspace.
 /footer_youtube.
+/friendfeed_16.
 /getnetworkwidget?
 /ico-delicious.
 /ico-digg.
@@ -100,20 +103,12 @@
 /linkedin-icon.
 /linkedin.gif|$domain=~linkedin.com
 /linkedin2.png|$domain=~linkedin.com
+/linkedin_16.
 /linkedin_32.
 /linkedin_36x
 /modules/sharetools/*$script
 /myspace-32x32.
 /myspace.gif|$domain=~myspace.com
-/delicious_16.
-/digg_alt_16.
-/friendfeed_16.
-/linkedin_16.
-/reddit_16.
-/stumbleupon_16.
-/technorati_16.
-/yahoo_16.
-/yammer_16.
 /myspace.png|$domain=~myspace.com
 /myspace_16.
 /myspace_add.
@@ -135,6 +130,7 @@
 /plugins/wp-plus-one/*
 /plugins/wp-social-toolbar-pro/*
 /popup_do_
+/reddit_16.
 /reddit_32.
 /retweet-button.
 /RSS-Button.
@@ -182,8 +178,10 @@
 /spriteIco.png
 /st_add-this_
 /st_buzz_
+/stumbleupon_16.
 /stumbleupon_32.
 /technorati.png|$domain=~technorati.com
+/technorati_16.
 /toolbar-digg.
 /toolbar-facebook.
 /twittbutton.png
@@ -194,7 +192,9 @@
 /upprev_js.
 /vimeo_32.
 /w/index.php?title=*:bannercontroller
+/yahoo_16.
 /yahoobuzz.
+/yammer_16.
 /youtube-32x32.
 /youtube-icon.
 /youtube_follow.
@@ -544,6 +544,7 @@ _btn_facebook.
 ###twitter_widget
 ###twitterContainer
 ###twitterfeed
+###twitterFollow
 ###twitterFollowBadge
 ##.actions_twitter
 ##.block-idg_twitter
@@ -564,7 +565,6 @@ _btn_facebook.
 ##.twitter-btn
 ##.twitter-follow-button
 ##.twitter-link
-###twitterFollow
 ##.twitter-share-button
 ##.twitter.icon
 ##.twitter_box
@@ -1094,6 +1094,7 @@ _stumble_btn.
 ##.sharing-counters
 ##.shr-bookmarks
 ##.side-post-social
+##.sidebar-share
 ##.simplesocial
 ##.single-share
 ##.singlepost-like
@@ -1154,7 +1155,6 @@ _stumble_btn.
 ##.stico_default
 ##.story_tools_social_buttons_top
 ##.tool-share
-##.sidebar-share
 ##.toolsShare
 ##.utilities-fblike-twitter
 ##.ve2_sharebox
@@ -1244,6 +1244,7 @@ _stumble_btn.
 !     
 1000awesomethings.com##.sharing_label
 123tamiltv.com###mysitelogo
+1channel.ch##.email_subscribe_box
 247wallst.com###TB_load
 247wallst.com###TB_overlay
 247wallst.com###TB_window
@@ -1324,7 +1325,9 @@ artsyspot.com##.social
 ask.com###promoTray
 askmen.com###fancybox-overlay
 askmen.com###fancybox-wrap
+askmen.com###newsletterSignUpHeader
 askmen.com##.socialMedia
+askmen.com##.socialMedias
 askmen.com##.tools
 associatedcontent.com##.mini_ct_inner
 asylum.com###CE_follow_us_H2
@@ -1410,6 +1413,7 @@ cbsnews.com##.bnFBLink
 cbsnews.com##.bnSharePrompt
 cbsnews.com##.bnTWLink
 cbsnews.com##.connectModule
+cbsnews.com##.galleryShareBox
 cbsnews.com##.share
 cbsnews.com##.tabbedPromoUnit
 celebuzz.com###actions
@@ -1606,7 +1610,6 @@ focus.com###home-subscribe-icons
 focus.com###offer-research-center-newsletter
 fool.com###ecapShell
 fool.com###webTwoPointOh
-1channel.ch##.email_subscribe_box
 fora.tv###join_plus
 fora.tv###join_plus_video
 fora.tv###plft_icon_container
@@ -1652,7 +1655,9 @@ gdgt.com##.gdgtRecd
 geeksailor.com###getUpdates
 geeksailor.com###subscribeSocial
 geeksaresexy.net###rss
+geeksugar.com###promote-box-container
 geeksugar.com###sugar-post-cross-sell
+geeksugar.com##.post-share-element
 geektyrant.com##.gt_twitter
 geektyrant.com##.sidebar_facebook
 giantfreakinrobot.com###social
@@ -1668,7 +1673,6 @@ globalgrind.com##.ns-diag
 globalgrind.com##[ggregion="NewsLetterRC"]
 globalpost.com###block-block-17
 globalpost.com###block-block-7
-cbsnews.com##.galleryShareBox
 goal.com###bettingWidgetAnchor
 good.is##.daily-good
 good.is##.get-good
@@ -1687,6 +1691,7 @@ greencarreports.com##.static-email-subscribe
 groceryiq.com##.lp_share
 groceryiq.com##.pod_share
 grooveshark.com###notifications
+grooveshark.com##a[href="http://twitter.com/#!/grooveshark"]
 guanabee.com##.entryShare
 guanabee.com##.followUsSubColPod
 guardian.co.uk##.reader-offers
@@ -1716,7 +1721,6 @@ hitfix.com##.promoboxee
 hitfix.com##.social
 holidayscentral.com##.share-stuff
 hollywire.com###post-social
-microsoft.com##.SocialMedia
 hollywire.com###social
 hollywoodreporter.com##.social2
 holytaco.com###stumble
@@ -1910,8 +1914,6 @@ mcdonalds.com###share
 mediadump.com###sharebox
 mediadump.com###sidebarbox
 mediadump.com###skybox
-askmen.com###newsletterSignUpHeader
-askmen.com##.socialMedias
 mediafire.com###dl_share_icons
 mediafire.com###mf_like_box
 mediafire.com###mf_like_heading
@@ -1934,6 +1936,7 @@ metromix.com###bottom-premium-banner
 metromix.com##.socmed-links
 micgadget.com###scdiv
 microsoft.com###gsfx_brnd_corpflyoutad_inner
+microsoft.com##.SocialMedia
 miniclip.com##.letterbox
 mint.com##.article-share
 minti.com###slideupBanner
@@ -2064,7 +2067,6 @@ openforum.com##.share
 opera.com###opera-social
 opposingviews.com###facebook-twitter-page-top
 opposingviews.com###share-block
-grooveshark.com##a[href="http://twitter.com/#!/grooveshark"]
 oyetimes.com###uBarDiv
 paidcontent.org##.subscribe_box
 parents.com###adtrafficright
@@ -2108,6 +2110,8 @@ people.com##.cmad
 people.com##.sharelinkcont
 people.com##.subscribe
 peoplestylewatch.com###getPeopleEverywhere
+phonearena.com###top_share
+phonearena.com##.s_share_box
 physorg.com##.sharemenu
 physorg.com##.toolswrapper
 picswan.com##.bookmarks
@@ -2125,9 +2129,6 @@ popsci.com###block-block-43
 popsci.com###block-block-64
 popsci.com###block-block-76
 popsci.com###circ-container
-suntimes.com##.share
-phonearena.com##.s_share_box
-phonearena.com###top_share
 popsugar.com###control_overlay
 popsugar.com###promote-box-container
 popsugar.com###sugar-post-cross-sell
@@ -2190,10 +2191,7 @@ rtwincustomize.net##[alt="feed-image"]
 salon.com##.catMetaNav
 salon.com##.share
 salon.com##.shareForm
-scribol.com##.tweetme
 sbnation.com###newsletter-slide
-geeksugar.com###promote-box-container
-geeksugar.com##.post-share-element
 sbnation.com##.fb-like-box
 sbnation.com##.rail-stream-bottom
 scientificamerican.com###followList
@@ -2201,6 +2199,7 @@ scientificamerican.com##.signupForm
 scientificamerican.com##.subscriptionForm
 scribd.com##.fb_like_container
 scribol.com###scribol-fb-like
+scribol.com##.tweetme
 searchengineland.com###socialBlock
 searchengineland.com###TB_overlay
 searchengineland.com###TB_window
@@ -2280,6 +2279,7 @@ suberapps.com##.box2
 suberapps.com##img[title="Follow @SUBERAPPS on Twitter!"]
 suberapps.com##img[title="Subscribe to get updates on new apps!"]
 sugarsync.com###hpsocial
+suntimes.com##.share
 surfgarden.de##.rss
 take.fm##.facebook
 take.fm##.twitter
