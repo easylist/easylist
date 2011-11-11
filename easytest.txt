@@ -7,62 +7,15 @@
 ! The only legitimate reason to use this list is to provide
 ! feedback in the forum topic above - now go do that! :P
 !
-! Test 1: Combining rules containing the string "ads" to more general ones
-!
-/ads/*
-@@||buzznet.com^*/ads/comscore_footer/comscore_background.png
-@@||foxsports.com.au^*/ads/fsadtag_$object-subrequest
-@@||llnw.net^*/ads/*.mp4$domain=talent.itv.com
-@@||llnwd.net^*/ads/*.mp4$domain=talent.itv.com
-@@||megachords.com/mxr/ads/sc.js
-@@||megachords.com/mxr/ads/rt1.js
-@@||musotalk.de/fileadmin/mt2/videos/ads/$object-subrequest
-@@||rte.ie/ads/video/ads-config.js?
-@@||rwandair.com/public/themes/rwandair/ads/$image
-@@||sat1.de/imperia/gvp/player/plugins/ads/*/AdBridgePlugin.swf$object-subrequest
-@@||www.google.com/ads/preferences/$image,script,subdocument
-@@||yimg.com^*/ads/$domain=yahoo.com,stylesheet,script
-@@||zpag.es/ads/$xmlhttprequest
-/ads.
-@@||linkbucks.com/tmpl/mint/css/ads.css
-@@||media-imdb.com^*/ads.js
-@@||rottentomatoescdn.com^*/ads.css$domain=rottentomatoes.com
-@@||rottentomatoescdn.com^*&f=/js/comp/ads.js
-@@||saugking.net/css/ads.css
-@@||washingtonpost.com/wpost/css/combo?*/ads.css
-@@||wpdigital.net^*/ads.css$domain=washingtonpost.com
-_ads.
-@@/smdg_ads.js$domain=chbcnews.ca|globaltvbc.com|globaltvcalgary.com|globallethbridge.com|globalmaritimes.com|globaltvedmonton.com|globalmontreal.com|globalnews.ca|globalregina.com|globalsaskatoon.com|globaltoronto.com|globalwinnipeg.com
-@@||dwdl.de/core/css/DWDL11_ads.css
-@@||huffpost.com/assets/js.php?*_ads.js
-@@||jizzhut.com/inline_ads.xml?$object-subrequest
-@@||skoften.net/js/video_ads.functions.js
-_ads_
-@@||ooyala.com/3rdparty/*_ads_manager_*.swf
-@@||domaintools.com/composite/code.js?*_ads_
-/ads-
-@@||ooyala.com/static/modules/ads-*.swf
-.ads.
-@@||screwattack.com/js/*.js,gr.ads.js
-_ads&
-@@||domaintools.com/composite/style.css?*_ads&
-=ads&
-@@||facebook.com/settings?tab=ads&$subdocument
-/ads_$~object-subrequest
-!
-! Test 2: Google Analytics
+! Test 1: Google Analytics
 !
 ||google-analytics.com^$third-party
 @@||google-analytics.com/ga.js$domain=appspot.com|jetbrains.com|imageshack.us
 @@||google-analytics.com/urchin.js$domain=muselive.com|wickedthemusical.com
 ||gstatic.com/gadf/ga_dyn.js$third-party
 !
-! Test 3: Third-party, ad-related subdomains
+! Test 2: Third-party, ad-related subdomains
 !
 ://banner.$third-party
 ://affiliate.$third-party
 ://affiliates.$third-party
-!
-! Test 4: Adding rules containing the string "adv"
-!
-.com/adv/
