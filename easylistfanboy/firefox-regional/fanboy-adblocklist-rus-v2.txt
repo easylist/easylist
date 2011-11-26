@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: YJEGDTH/OhjmzK15ZH0w4g
+! Checksum: WYY4ZbNqee6xPJWF1nMYiA
 ! Fanboy's Russian-V2-addon Adblock list 
-! Updated: 24 Nov 2011
+! Updated: 26 Nov 2011
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
@@ -621,7 +621,6 @@ _reklama.
 ||87.242.91.25^$third-party
 ||87.242.91.5^$third-party
 ||88.208.22.84^$third-party
-||ad.realweb.ru^$third-party
 ||89.108.72.16^$third-party
 ||89.208.145.187^$third-party
 ||a.ava.com.ua^$third-party
@@ -630,6 +629,7 @@ _reklama.
 ||ad.bannerbank.com.ua^$third-party
 ||ad.fasty.net^$third-party
 ||ad.ir.ru^$third-party
+||ad.realweb.ru^$third-party
 ||ad.tetramedia.ru^$third-party
 ||ad.trafmonster.biz^$third-party
 ||ad2.rambler.ru^$third-party
@@ -855,13 +855,13 @@ _reklama.
 ||narod.ru/images/banner.gif
 ||neboisya.com^$third-party
 ||neosmi.ru^$third-party
-||open.by^$third-party
 ||nnn.novoteka.ru^$third-party
 ||noev-kovcheg.ru^$third-party
 ||novostimira.com.ua^$third-party
 ||novostimira.com^$third-party
 ||nsoft-s.com^$third-party
 ||oneund.com^$third-party
+||open.by^$third-party
 ||partner.azartplay.com^$third-party
 ||partner.dmir.ru^$third-party
 ||partner.gameboss.ru^$third-party
@@ -976,12 +976,12 @@ _reklama.
 ||twistcasino.net^$third-party
 ||uadvt.net^$third-party
 ||ucoz.es/banners/
-||videoclick.ru^$third-party
 ||under-click.ru^$third-party
 ||underclick.ru^$third-party
 ||v-med.ru^$third-party
 ||vestey.ru^$third-party
 ||via-shop.ru^$third-party
+||videoclick.ru^$third-party
 ||visitweb.com^$third-party
 ||voffka.com^$third-party,script
 ||vsemayki.ru^$third-party
@@ -1023,8 +1023,8 @@ _reklama.
 !
 -gemius.js
 .cqc.ru/*
-.ru/cnt/?
 .ru/c.gif?
+.ru/cnt/?
 .ru/counter?
 .ru/counter_
 .ru/counters?
@@ -1120,13 +1120,12 @@ _reklama.
 ||interquest.fi^$third-party
 ||irr.ru/counter/
 ||joblist.ru/cstat/
-||nadavi.net/pix_st.php
 ||kavanga.ru^$third-party
-||kommersant.ru/a.asp?
 ||kiev.ua/partner.php?
 ||klikki.com^$third-party
 ||kmindex.ru^$third-party
 ||knalru.ru^$third-party
+||kommersant.ru/a.asp?
 ||ladycash.ru/ping.php
 ||lifenews.ru/count/
 ||lstats.qip.ru^
@@ -1148,6 +1147,7 @@ _reklama.
 ||moto.com.ua/scooter_baner.
 ||mycounter.com.ua^
 ||mycounter.ua^$third-party
+||nadavi.net/pix_st.php
 ||odnaknopka.ru^$third-party
 ||online.ua/stat_main/
 ||opensharing.org/s/avtokorea
@@ -1296,13 +1296,13 @@ _reklama.
 @@||afisha.ru/proxy/VideoNetworkProxy.ashx?$xmlhttprequest
 @@||amfam.com/site-assets/swf/banners/
 @@||b.dclick.ru^$domain=vesti.ru,object_subrequest
-@@||images.wildberries.ru/banners/$domain=wildberries.ru
 @@||cbs.com/thunder/*.swf?pid=
 @@||citydom.ru/themes/citydom/*.swf?link
 @@||digital.ru^*/images/banner/main-banner.swf?
 @@||echo.msk.ru/att/*-thumb_
 @@||fotonons.ru/images/$domain=kinozal.tv
 @@||gorillanation.com/storage/*.swf?pid=
+@@||images.wildberries.ru/banners/$domain=wildberries.ru
 @@||liveinternet.ru/ad/banner$script
 @@||mtsweb.adcast.ru^$domain=mts.ru
 @@||nationalgeographic.com/channel/*.swf?link
@@ -1571,6 +1571,9 @@ dreamprogs.net###topbanner2
 drwares.net##.topbannerbg
 dsvload.net##td[height="126"]
 dungeonmaster.ru##.mainbanner
+e-katalog.ru##a[href^="http://unit7.nadavi.net/clcp.php?idB"]
+e-katalog.ru##table[background^="http://price.nadavi.com.ua/ekbn/"]
+e-katalog.ru##table[style="border: #272727 1px solid;"]
 eg.ru###banner3
 eplus.com.ua###adbn
 etag.com.ua###top468
@@ -1647,13 +1650,11 @@ gudok.ru###HEAD
 habrahabr.ru##.announce
 habrahabr.ru##.banner
 habrahabr.ru##.company-banner
-e-katalog.ru##table[background^="http://price.nadavi.com.ua/ekbn/"]
 hdtracker.ru##.mybantext
 hdtracker.ru##.plads
 headhunter.com.kz##.b-topbanner
 hh.by##.b-topbanner
 hh.ru##.b-topbanner
-promodj.ru##.adv240x400
 hh.ua##.b-topbanner
 hmn.ru##[height="70"][width="240"]
 i.ua###banner730
@@ -1674,8 +1675,6 @@ inosmi.ru##.banners
 iphones.ru##.rc10
 iphones.ru##TD[style="padding-left:29px"]
 irk.ru##.adv_news
-playground.ru##.branding
-playground.ru##.brandingLogo
 irk.ru##.banner_place
 irn.ru###head
 irn.ru##.adv
@@ -1695,6 +1694,7 @@ ixbt.com##div[style="height: 90px;"]
 izvestia.ru###topBanner
 izvestia.ru##.anons1
 izvestia.ru##.banner
+izvestia.ru##.right_banner_block
 izvestia.ru##.top_banner
 izvestia.ru##.topline
 izvestia.ru##.zag-banner
@@ -1706,10 +1706,7 @@ jlady.ru##.newsblock
 job.ru##.banner_728
 job.ru##.showcaseNew
 k2kapital.com##.padd_banner_bottom
-e-katalog.ru##table[style="border: #272727 1px solid;"]
-e-katalog.ru##a[href^="http://unit7.nadavi.net/clcp.php?idB"]
 k2kapital.com##.tpad10.bpad10
-travel.ru##img[width="12"][height="90"]
 k2kapital.com##[style="width: 240px; height: 400px; padding: 0pt; margin: 0pt;"]
 k2kapital.com##[style="width: 980px; height: 90px; padding: 0pt; margin: 0pt;"]
 kanobu.ru##.banner
@@ -1725,9 +1722,9 @@ kinoslide.ru##table[style="background-color:#F6FAE9;"]
 km.ru###tbn
 km.ru##DIV[style="width: 1000px; height:337px;margin: 0px auto; text-align: center; clear: both; background-color: #FFFFFF;"]
 km.ru##div[style="width:1000px; height:90px;"]
-korrespondent.net##.topbaner
-kommersant.ru##.online240x50
 kommersant.ru##.online240x100
+kommersant.ru##.online240x50
+korrespondent.net##.topbaner
 kp.by###banner-after-menu
 kp.by###top-banners
 kp.by##.banner-middle
@@ -1789,6 +1786,7 @@ mk.ru##.NewGrRight
 mk.ru##.right_banner
 mk.ru##[height="90"][style="margin:10px 0 10px 0;"]
 mk.ru##table[style="margin: 10px 0pt;"]
+mk.ru##TABLE[style="margin:10px 0 0 0;"]
 money.yandex.ru##.banner-space
 moskva.fm##.banner-block
 motodrive.com.ua##.table_banners
@@ -1817,10 +1815,10 @@ newslab.ru###top_banners
 newsru.com###b125x217
 ng.ru###partner_news
 ngs.ru###nbs-block
-ngs.ru##.jveis
 ngs.ru##.adv
 ngs.ru##.block_adv
 ngs.ru##.iznhrhs
+ngs.ru##.jveis
 ngs.ru##.nb
 ngs.ru##.vgisex
 ngs.ru##.zwfnlbz
@@ -1880,6 +1878,8 @@ phpbbguru.net###banner_top
 pic2profit.com###referal
 pic2profit.com##DIV[style="padding:0;text-align: left; margin-top:-15px;"]
 playground.ru##.BanBlock
+playground.ru##.branding
+playground.ru##.brandingLogo
 podrobnosti.ua##.b-middle-banner
 podrobnosti.ua##.b-premium-banner
 podrobnosti.ua##.b-top-banners
@@ -1887,18 +1887,17 @@ poiskm.ru##DIV[style="background:none repeat scroll 0 0 #F5F5F5;padding:5px;heig
 polit.ru##.adv-block
 polit.ru##div[style="background-color:#ededed; padding:20px; overflow:hidden; margin-bottom:20px; padding-left:24px; padding-top:16px;"]
 pop3.ru###h_24x4
-pravda.ru###div_sf_62
-pravda.ru###div_sf_263
-pravda.ru##DIV[style="float:left; width:82%; height:98px;"]
-izvestia.ru##.right_banner_block
-mk.ru##TABLE[style="margin:10px 0 0 0;"]
 pr-cy.ru###ad
 pr-cy.ru###footer-adv
 pr-cy.ru###footer-adv-arrow
 pr-cy.ru##.buyit
 pr-cy.ru##a[href^="http://seopult.ru/ref.php?"]
+pravda.ru###div_sf_263
+pravda.ru###div_sf_62
+pravda.ru##DIV[style="float:left; width:82%; height:98px;"]
 pravda.ru##div[style="width:240px;height:400px;"]
 pravda.ru##div[style="width:240px;height:405px;"]
+promodj.ru##.adv240x400
 qip.ru##.q_teaser
 qiq.ws###icqwin_advmaker
 qiq.ws##div[id^="MarketGid"]
@@ -2049,6 +2048,7 @@ topnews.ru##.newsOfPartners
 torrentino.com##.real-teasers
 torrentino.ru##.a-panel
 translate.ru###bottomAdv
+travel.ru##img[width="12"][height="90"]
 travelgps.com.ua##[style="width: 170px; vertical-align: top;"]
 trud.ru##.anons
 tsn.ua##.banner
@@ -2090,13 +2090,13 @@ vedomosti.ru##.ears2
 vedomosti.ru##.ears3
 vedomosti.ru##.right_ban240
 vedomosti.ru##.right_ban400
+vedomosti.ru##DIV[style="width: 240px; height: 400px;"]
 vesti.kz###banner3
 vesti.kz###banner5
 vesti.ru##.ban_bg
 vesti.ru##.ban_border
 vesti.ru##.banner_order_reclama
 vesti.ru##.banner_vesti_reclama
-vedomosti.ru##DIV[style="width: 240px; height: 400px;"]
 videofiles.com.ua###m-pad.menu-blue
 vipnovosti33.ru##div[style="border: 1px solid #ccc; width: 920px; height: 100px; margin 0 auto;"]
 virpl.ru###logoslide
