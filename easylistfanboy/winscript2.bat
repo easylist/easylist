@@ -47,7 +47,6 @@ perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-swe.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-tky.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-vtn.txt
 :: Opera
-echo Sort Opera Subscriptions...
 perl docs\sorting\sorter.pl opera\urlfilter.ini
 perl docs\sorting\sorter.pl opera\urlfilter-chn.ini
 perl docs\sorting\sorter.pl opera\urlfilter-cz.ini
