@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: j+ERIfi4SDnIM5gZtMGjqw
+! Checksum: qRvDyqEz4Bkew5Gp7s8e9g
 ! Fanboy's Czech-addon Adblock list 
 ! Updated: 14 Dec 2011
 ! This list expires after 4 days
@@ -11,7 +11,7 @@
 ! ---------- Generic Blocking Rules ----------
 !
 .com/bannery/
-.cz/ads/$~object_subrequest
+.cz/ads/$~object_subrequest,domain=~hcplzen.cz
 .cz/BAN/
 .cz/banners/$domain=~web.volny.cz
 .cz/bannery/
@@ -57,6 +57,7 @@ _clickthru.swf?
 ||espoluprace.cz/affiliate/
 ||flash.stream.cz/get_sklik/
 ||geewa.ws/js/ad.
+||hcplzen.cz/ads/homepage/
 ||hostareal.cz/provize/bannery/
 ||hry.cz/t/h/ad/
 ||i.iinfo.cz/l/ads/
@@ -133,6 +134,7 @@ _clickthru.swf?
 ||admarket.cz^$third-party
 ||admatik.pl^$third-party
 ||adocean.pl^$third-party
+||ads.esports.cz^$third-party
 ||advantage.as^$third-party
 ||aukro.cz/ap/ap_show.php?$third-party
 ||b.lookit.cz^$third-party,subdocument
@@ -169,6 +171,7 @@ _clickthru.swf?
 @@||activesolutions.cz/ad/www/delivery/ajs.php?zoneid=19&$script,domain=autoroad.cz
 @@||autotube.cz/ui/player/ad.php
 @@||g.idnes.cz/o/lidovky_ln3b/poutaky/sport/
+@@||hcplzen.cz^$elemhide
 @@||hry.cz/ad/ad.aspx?
 @@||hry.cz/ad/adcode.js
 @@||i.imedia.cz/js/im2.js
