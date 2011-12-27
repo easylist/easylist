@@ -4,10 +4,9 @@ hg pull -u
 perl docs\sorting\sorter.pl fanboy-adblocklist-current-expanded.txt
 perl docs\sorting\sorter.pl fanboy-adblocklist-stats.txt
 perl docs\sorting\sorter.pl fanboy-adblocklist-addon.txt
-perl docs\sorting\sorter.pl adblock-gannett.txt
+perl docs\sorting\sorter.pl other\adblock-gannett.txt
 perl docs\sorting\sorter.pl other\enhancedstats-addon.txt
 :: Firefox Regional lists
-perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-chn.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-esp.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-ind.txt
@@ -21,7 +20,6 @@ perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-tky.txt
 perl docs\sorting\sorter.pl firefox-regional\fanboy-adblocklist-vtn.txt
 :: Opera
 perl docs\sorting\sorter.pl opera\urlfilter.ini
-perl docs\sorting\sorter.pl opera\urlfilter-chn.ini
 perl docs\sorting\sorter.pl opera\urlfilter-cz.ini
 perl docs\sorting\sorter.pl opera\urlfilter-esp.ini
 perl docs\sorting\sorter.pl opera\urlfilter-ind.ini
