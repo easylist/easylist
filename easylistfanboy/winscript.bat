@@ -39,12 +39,11 @@ perl docs\sorting\sorter.pl ie\fanboy-russian-addon.txt
 perl scripts\addChecksum.pl fanboy-adblocklist-current-expanded.txt
 perl scripts\addChecksum.pl fanboy-adblocklist-stats.txt
 perl scripts\addChecksum.pl fanboy-adblocklist-addon.txt
-perl scripts\addChecksum.pl adblock-gannett.txt
+perl scripts\addChecksum.pl other\adblock-gannett.txt
 perl scripts\addChecksum.pl other\chrome-addon.txt
 perl scripts\addChecksum.pl enhancedstats-addon.txt
 perl scripts\addChecksum.pl other\tracking-intl.txt
 :: Firefox Regional lists
-perl scripts\addChecksum.pl firefox-regional\fanboy-adblocklist-chn.txt
 perl scripts\addChecksum.pl firefox-regional\fanboy-adblocklist-cz.txt
 perl scripts\addChecksum.pl firefox-regional\fanboy-adblocklist-esp.txt
 perl scripts\addChecksum.pl firefox-regional\fanboy-adblocklist-ita.txt
