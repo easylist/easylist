@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vNZTH2qV8wZcu6rDxz72Rg
+! Checksum: uIXnvFYkl+/miu1pPt2PZQ
 ! Fanboy Enhanced Tracking Blocking (Various Tracking scripts)
 ! Updated: 19 Jan 2012
 ! This list expires after 3 days
@@ -259,6 +259,7 @@ _SiteCatalyst.
 /wtid.js
 /wtinit.js
 _s_code_
+/urchin.js
 /wtrack/?
 /wx-metrics.js
 .hbx.js?
@@ -284,34 +285,7 @@ _wtInit.js
 _hcode.js
 _wtBase.js
 _wtbaseV2.
-!     
-! ---------- General blocking rules ----------
-!     
-/urchin.js
-||coremetrics.com^
-||google-analytics.com^$third-party
-||googletagservices.com/tag/js/gpt.js$third-party
-||mail.google.com/mail/rc/?$image
-@@||hrblock.com/includes/offermatica/mbox.js$domain=hrblock.com
-@@||yimg.com^*/js/omniture-$script
-@@||pepsico.com/scripts/urchin.js
-@@||abcnews.com/assets/flash/kdp/omniturePlugin.swf$domain=abcnews.go.com
-@@||healthgrades.com/Consumer/scripts/omniture.js
-@@||healthgrades.com/Consumer/scripts/omniture_settings.js
-@@||redbookmag.com/cm/shared/scripts/s_code.js
-@@||logitech.com/javascript/*/webtrends.js$domain=logitech.com
-@@||similarpages.com/search/js/analytics.js
-@@||statics.192.com^*/scripts/lib/s_code.js
-@@||cfnews13.com/static/common/javascript/s_code.js
-@@||converse.com/handler/OmnitureHandler.ashx$domain=converse.com
-@@||ebaystatic.com^*_Omniture_$script
-@@||cycletrader.com/lwmvcjs/$script,domain=cycletrader.com
-@@||targetimg3.com^*/omniture/omniture_minified.js$domain=target.com
-@@||arvest.com/common/urchin/urchin.js
-@@||google-analytics.com/urchin.js$domain=expresspcparts.com.au|roblox.com
-@@||beautyoftheweb.com/cdn/scripts/s_code_
-@@||google-analytics.com/ga.js$domain=google.com|priceme.co.nz|games.latimes.com|banshee.fm|myyearbook.com|eonline.com|yellow.co.nz|logitech.com|lucasarts.com|tomshardware.com|maxcdn.com|tweetgrid.com|frequency.com|aftonbladet.se|seekingalpha.com|threatfire.com|bolha.com|jetbrains.com|fora.tv|thevine.com.au|americanapparel.net|mashable.com|brobible.com|oyster.com|photobucket.com|nuts.co.uk|alatest.com|apps.facebook.com|billabong.com|weeworld.com|youtube.com|philips.com|tvunetworks.com|g4tv.com|jobsite.co.uk|avast.com|ehow.com|gasbuddy.com|globaltv.com|nme.com|imageshack.us|tube8.com|priestville.org|coedmagazine.com|umbro.com
-!     
+!
 ! ---------- 1st party blocking rules ----------
 !  
 ||anywho.com/javascript/tracking.js
@@ -328,6 +302,7 @@ _wtbaseV2.
 ||libertymutual.com^*/lmcomleg_a.$script
 ||thomasnet.com/javascript/dcs_
 ||callawaygolf.com/Scripts/s_remote_code_
+||mail.google.com/mail/rc/?$image
 ||bankofamerica.com/www/global/js/tc_logging.js$domain=bankofamerica.com
 ||onlineshoes.com^*/s_ols_code.
 ||webroot.com/js/om_sc.js
@@ -345,7 +320,13 @@ _wtbaseV2.
 ||imagesbn.com^*/bncoremetrics.js
 ||cbc.ca/includes/stats/hbx_
 ||cbc.ca/g/stats/linktracker.js
-!     
+!
+! ---------- 3rd party blocking rules ----------
+!
+||coremetrics.com^$third-party
+||google-analytics.com^$third-party
+||googletagservices.com/tag/js/gpt.js$third-party
+!
 ! ---------- Whitelisting rules ----------
 !
 @@||encyclopedia.com/encyclopedia.axd/omniturejs/$script
@@ -365,6 +346,25 @@ _wtbaseV2.
 @@||reuters.com/resources_v2/js/webtrends.js
 @@||skypeassets.com/i/js/wanalytics/$domain=skype.com
 @@||ytv.com/scripts.axd?$script
+@@||hrblock.com/includes/offermatica/mbox.js$domain=hrblock.com
+@@||yimg.com^*/js/omniture-$script
+@@||pepsico.com/scripts/urchin.js
+@@||abcnews.com/assets/flash/kdp/omniturePlugin.swf$domain=abcnews.go.com
+@@||healthgrades.com/Consumer/scripts/omniture.js
+@@||healthgrades.com/Consumer/scripts/omniture_settings.js
+@@||redbookmag.com/cm/shared/scripts/s_code.js
+@@||logitech.com/javascript/*/webtrends.js$domain=logitech.com
+@@||similarpages.com/search/js/analytics.js
+@@||statics.192.com^*/scripts/lib/s_code.js
+@@||cfnews13.com/static/common/javascript/s_code.js
+@@||converse.com/handler/OmnitureHandler.ashx$domain=converse.com
+@@||ebaystatic.com^*_Omniture_$script
+@@||cycletrader.com/lwmvcjs/$script,domain=cycletrader.com
+@@||targetimg3.com^*/omniture/omniture_minified.js$domain=target.com
+@@||arvest.com/common/urchin/urchin.js
+@@||google-analytics.com/urchin.js$domain=expresspcparts.com.au|roblox.com
+@@||beautyoftheweb.com/cdn/scripts/s_code_
+@@||google-analytics.com/ga.js$domain=google.com|priceme.co.nz|games.latimes.com|banshee.fm|myyearbook.com|eonline.com|yellow.co.nz|logitech.com|lucasarts.com|tomshardware.com|maxcdn.com|tweetgrid.com|frequency.com|aftonbladet.se|seekingalpha.com|threatfire.com|bolha.com|jetbrains.com|fora.tv|thevine.com.au|americanapparel.net|mashable.com|brobible.com|oyster.com|photobucket.com|nuts.co.uk|alatest.com|apps.facebook.com|billabong.com|weeworld.com|youtube.com|philips.com|tvunetworks.com|g4tv.com|jobsite.co.uk|avast.com|ehow.com|gasbuddy.com|globaltv.com|nme.com|imageshack.us|tube8.com|priestville.org|coedmagazine.com|umbro.com
 @@||o.aolcdn.com^*&file=/aol/omniture.min.js
 @@||dicksmith.co.nz^*/site-tracker.js
 @@||chron.com^*/omniture/$script
