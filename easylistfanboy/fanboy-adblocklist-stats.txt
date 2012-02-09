@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: NcW5V9aOWFmavgFvvAYuhw
+! Checksum: 7PQe1P1OKYb1MtUR6RMWYw
 ! Fanboy Tracking/Stats V3 Blocking
 ! Updated: 10 Feb 2012
 ! This list expires after 5 days
@@ -209,6 +209,7 @@
 /analyticReportingAS3.$domain=~miniclip.com
 /analytics-beacon-
 /analytics.ashx
+/Analytics.aspx?
 /analytics.php.
 /analytics.php?
 /analytics.swf?
@@ -471,6 +472,7 @@
 /DecideDNATrackingCode-
 /demandbase.
 /demdex.js
+/demdex/*
 /DemdexBehavioralTracking.
 /dla_tracker.
 /dltrack.
@@ -926,7 +928,10 @@
 /optimost_
 /optimostBody1.
 /optimostBody2.
+/optimostfoot.
 /OptimostFooter.
+/optimosthead.
+/optimosthead/
 /optimostHeader.
 /optimostHeader1.
 /optimostHeader2.
@@ -1536,6 +1541,7 @@ _empty.ad?
 _ga_code.
 _google_analytics.
 _googleAnalytics_
+_imp_logging?
 _impressions.gif?
 _logimpressions.
 _nielsen.js
@@ -1603,6 +1609,7 @@ size=1x1;
 ||analytk.com^$third-party
 ||anametrix.net^
 ||anatid3.com^$third-party
+||apextwo.com^$third-party
 ||arena-quantum.co.uk^$third-party
 ||assoctrac.com^$third-party
 ||astro-way.com^$third-party
@@ -1981,20 +1988,18 @@ size=1x1;
 ||angelfire.com/cgi-bin/Count.cgi
 ||anntaylor.com/js/page_code.js
 ||anntaylorloft.com/js/page_code.js
-||answers.com^*/tac.html?
+||answers.com/resources/tac.html
 ||aol.ca/track/
 ||aol.com/ping?
-||aolanswers.com^*/PlaceHolder.jpg?
 ||aolcdn.com^*/beacon.
 ||apex.com.com^
-||apextwo.com^*/stats/
 ||api.tinypic.com/api.php?action=track
 ||apple.com^*_master_tracker.js
 ||arstechnica.com/dragons/breath.gif
 ||arstechnica.com^*.gif?id=
-||art.*/asp/robot/
+||art.co.uk/asp/robot/
+||art.com/asp/robot/
 ||asahi.com^*/beacon.js
-||ashleyfurniture.com^*/Ashleyi2a.js
 ||askamum.co.uk/Shared/js/tracking.js
 ||askmen.com/tracking/
 ||assets.olark.com^
@@ -2030,21 +2035,13 @@ size=1x1;
 ||bloomberg.com/apps/data?referrer
 ||boats.com/images/tracking/
 ||break.com/apextracker/
-||break.com^*/track-cdp.html
 ||bridgetrack.com/site/
 ||bridgetrack.com/track/
 ||britannica.com/webstats/
-||brothersoft.com/textlink_click.
-||bstatic.com/static/js/ga.
 ||business.com/images2/anal.gif?
-||business.com/images2/directory.gif?
-||business.com^*.gif?ord=
-||business.com^*.gif?partner=
+||businessinsider.com/assets/js/track.js
 ||businessinsider.com/tracker.js
-||businessinsider.com^*/track.js
 ||buto.tv/track/
-||buzzfed.com^/ABTest.js?
-||buzzfeed.com^*/small.gif?
 ||c.microsoft.com/ms.js
 ||c.ypcdn.com^*/webyp?rid=
 ||capitalone.com/tracker/
@@ -2199,13 +2196,12 @@ size=1x1;
 ||giganews.com/images/rpp.gif
 ||glam.com/gad/glamadapt_jsrv.act?
 ||glamourmagazine.co.uk^*/LogPageView
-||glgroup.com^*/GLGUI.Analytics.
 ||globes.co.il/ga.asp
 ||globes.co.il/shared/s.ashx
 ||go.com/globalelements/utils/tracking
 ||goadv.com/roi/js/track.js
 ||godaddy.com/image.aspx?
-||godaddy.com/pageevents.aspx?
+||godaddy.com/pageevents.aspx
 ||golfsmith.com/ci/
 ||good.is/?js
 ||goodyear.com/assets/js/libs/jquery.analytics.js
@@ -2224,7 +2220,7 @@ size=1x1;
 ||hasbro.com/includes/js/metrics/liveManager.js
 ||hasbrotoyshop.com/metrics/liveManager.js
 ||hb.lycos.com/hb.js
-||healthgrades.com^*.scorecardresearch.com/beacon.js
+||healthgrades.com^*/beacon.js
 ||helium.com/javascripts/helium-beacons.
 ||hellobar.com/ping?
 ||hellomagazine.com/idcookie/pixel.png?
@@ -2235,18 +2231,18 @@ size=1x1;
 ||homeaway.com^*/tracking.html
 ||homesalez.com/itop/hits.php
 ||hostelbookers.com/track/request/
-||hostels.com^*/lb.php?
-||hostels.com^*/thing.php?
+||hostels.com^*/lb.php
+||hostels.com^*/thing.php
 ||hostelseurope.com^*/thing.php
 ||hostelworld.com^*/thing.php
 ||hotels.nl^*/ga.js
 ||hottopic.com^*/techprops.
 ||hp.com^*/metrics.js
 ||hp.msn.com/scr/op/$script
-||hrblock.com/includes/pixel/pix_
+||hrblock.com/includes/pixel/
 ||hubpages.com/c/
 ||huggiesclub.co.uk/scripts/tracking.js
-||hulkshare.com/stats.php?
+||hulkshare.com/stats.php
 ||hulu.com/guid.swf
 ||i.com.com^*/apex.js
 ||i.walmartimages.com/i/icon/
@@ -2259,18 +2255,17 @@ size=1x1;
 ||id.google.*/verify/
 ||imdb.com/rd/?q
 ||imdb.com/video/*metrics?
-||imgfarm.com/images/anx/anemone-
 ||immassets.s3.amazonaws.com^
 ||imonitor.dhgate.com^
 ||imvu.com/mod_pagespeed_beacon
 ||imx.comedycentral.com/sitewide/droplets/
-||indianexpress.com/hitCount.php?
+||indianexpress.com/hitCount.php
 ||info.break.com^*/track-cdp-user.html
 ||infospace.com^*=pageview&
-||ino.com/img/sites/mkt/click.gif?
+||ino.com/img/sites/mkt/click.gif
 ||inquiries.redhat.com^
 ||intensedebate.com/empty.php
-||intuit.com^*/one_pixel.gif?
+||intuit.com^*/one_pixel.gif
 ||intuit.com^*/survey_iframe_
 ||ipetitions.com/img.php?*&referer=
 ||ishare.metric.rediff.com^
@@ -2282,33 +2277,25 @@ size=1x1;
 ||jetsetter.com/tracker.php
 ||jimmysworld.org/m1/px/
 ||js.map24.com^*/webtrekk174.js
-||kbb.com/combine/demdex/
-||kbb.com/combine/optimosthead/
-||kbb.com/js/optimostfoot.
-||kbb.com/js/optimosthead.
 ||kelkoo.com/kk_track?
 ||king.com/boxes/trackingCode.jsp
 ||kloth.net/images/pixel.gif
 ||kosmix.com/images/*.txt?pvid
 ||kotaku.com^*/trackers.html
-||kyte.tv/flash/MarbachMetricsOmniture.
-||kyte.tv/flash/MarbachMetricsProvider.
+||kyte.tv/flash/MarbachMetricsOmniture.swf
+||kyte.tv/flash/MarbachMetricsProvider.swf
 ||lancasteronline.com/javascript/ga.php
 ||landrover.com/system/logging/
 ||learn.aol.com^*/tracker.
 ||lendingtree.com/forms/eventtracking?
 ||letitbit.net^*/counter/?
 ||levenger.com^*/Analytics/
-||lifehacker.com/at.js.
 ||lifehacker.com^*/trackers.html
 ||lightreading.com/client_pathlog.asp
 ||linkedin.com/analytics/
 ||linkwithin.com/pixel.png
 ||live.com/handlers/Watson.mvc?$image
-||livescience.com/common/track.
-||llbean.com/js/metrics.js
-||llbean.com/js/metrics_
-||lockerz.us^*t.gif?
+||lockerz.us^*/t.gif?
 ||log.olark.com^
 ||log1.music.yahoo.com^
 ||loglady.publicbroadcasting.net^
@@ -2345,7 +2332,7 @@ size=1x1;
 ||mkt931.com/lp/static/js/iMAWebCookie.js?
 ||ml.com/js/ml_dcs_tag_
 ||modernsalon.com/includes/sc_video_tracking.js
-||moen.com/scripts/moencom/analytics.
+||moen.com/scripts/moencom/analytics.js
 ||momslikeme.com/ra/
 ||moneysupermarket.com^*/ProphetInsert.js
 ||mortgage101.com/tracking/
@@ -2617,7 +2604,7 @@ size=1x1;
 ||tscapeplay.com/msvp.php?
 ||tscapeplay.com/pvim?
 ||ttxm.co.uk^*/log.js
-||tumblr.com/javascript/tumblelog.
+||tumblr.com/javascript/tumblelog.js
 ||tweako.com/imp.php
 ||twitter.com/abacus?
 ||twitter.com/scribe?log
@@ -2630,7 +2617,7 @@ size=1x1;
 ||up.boston.com^
 ||up.nytimes.com^
 ||upi.com/story/stat/
-||upromise.com^*/csgather.js
+||upromise.com/js/csgather.js
 ||uptpro.homestead.com^
 ||urlcheck.hulu.com^*/track.ashx?
 ||usell.com/bug.gif?
@@ -2646,7 +2633,6 @@ size=1x1;
 ||video-stats.video.google.com^
 ||video.nbc.com^*/metrics_viral.xml
 ||video.syfy.com/lg.php
-||videobash.com/customer_imp_logging?
 ||videoplaza.com/proxy/tracker?
 ||vietnamnet.vn^*/tracking.js
 ||villarenters.com/inttrack.aspx
