@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: G04m4sAwjVB93dDxhPr5xw
+! Checksum: FVFKXw1H/MC8jBr0+vAIgg
 ! Fanboy Enhanced Tracking Blocking (Various Tracking scripts)
-! Updated: 22 Feb 2012
+! Updated: 23 Feb 2012
 ! This list expires after 4 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Email: fanboyadblock@googlegroups.com
@@ -11,9 +11,9 @@
 -coremetrics-
 -elqImg.
 -omniture-
--omniture.js$domain=~nfl.com
+-omniture.js
 -sitecatalyst.
--webtrends-$domain=~rentals.com
+-webtrends-
 -Webtrends.
 -webtrends_
 .cmdatatagutils.
@@ -39,13 +39,13 @@
 /catalyst.js
 /cllc.tracking.js
 /cmdatagutils.
-/cmdatatagutils.$domain=~qvc.com|~rewardsnetwork.com
+/cmdatatagutils.
 /cmdatatagutils_
 /cmEluminate.
 /cmtaggingservices.
 /coremetrics-
-/coremetrics.$domain=~westelm.com|~potterybarn.com|~potterybarnkids.com
-/coremetrics/*$domain=~staples.com|~victoriassecret.com|~internet-taxprep.com|~interflora.co.uk
+/coremetrics.
+/coremetrics/*
 /CoreMetricsSupportLib/*
 /CoreMetricsTracking.
 /dcs.gif?
@@ -61,10 +61,10 @@
 /elqFCS.
 /elqImg.
 /elqNow/*
-/eluminate.$domain=~qvc.com|~rewardsnetwork.com|~victoriassecret.com
+/eluminate.
 /eluminate?
 /eluminate_
-/foresee-$domain=~marriott.com|~nintendo.com|~sixflags.com
+/foresee-
 /foresee/*
 /foreseeforesee-
 /forsee-
@@ -121,7 +121,7 @@
 /omnitrack.js$domain=~nba.com
 /omnitracking.
 /omniture-
-/omniture.$domain=~tdbimg.com|~yellow.co.nz|~thedailybeast.com|~veer.com|~cbs.com|~pogo.com
+/omniture.
 /omniture/*$domain=~forbes.com|~pogo.com|~tdameritrade.com|~games.msn.com|~torontosun.com|~timewarnercable.com|~cartoonnetworkasia.com|~mercurynews.com|~cartoonnetwork.com.au
 /omniture2.
 /omniture?
@@ -438,6 +438,7 @@ _wtInit.js
 @@||cartoonnetworkasia.com/include/omniture/s_code.php$domain=cartoonnetworkasia.com
 @@||cfnews13.com/static/common/javascript/s_code.js
 @@||chron.com^*/omniture/$script
+@@||content.idine.com^*/cmdatatagutils.js$domain=rewardsnetwork.com
 @@||converse.com/handler/OmnitureHandler.ashx$domain=converse.com
 @@||coremetrics.com/eluminate.js$domain=mycricket.com|vans.com
 @@||coremetrics.com^$domain=garnethill.com
@@ -465,6 +466,8 @@ _wtInit.js
 @@||hrblock.com/includes/offermatica/mbox.js$domain=hrblock.com
 @@||img.timeinc.net/tii/omniture/h/common.js$domain=life.com
 @@||img.timeinc.net/tii/omniture/h/config/life.js$domain=life.com
+@@||interflora.co.uk/kernel/coremetrics/cmdatatagutils.js
+@@||interflora.co.uk/kernel/coremetrics/eluminate.js
 @@||itworld.com/elqNow/$script
 @@||jsonline.com/templates/Proxy.api?$domain=jsonline.com
 @@||juniper.net/elqNow/$domain=juniper.net,script
@@ -475,6 +478,7 @@ _wtInit.js
 @@||mycricket.com/js/hbx.js$domain=mycricket.com
 @@||nedvang.nl/sites/all/*/PageView.js$domain=nedvang.nl
 @@||networkworld.com/includes/jqlib/s_code.js$domain=networkworld.com
+@@||nflcdn.com/static/site/*-omniture.js$domain=nfl.com
 @@||nflcdn.com/static/site/*/analytics/s_code.js$domain=nfl.com
 @@||nike.com/nikeos/*/js/s_code.js$domain=nike.com
 @@||o.aolcdn.com^*&file=/aol/omniture.min.js
@@ -483,8 +487,12 @@ _wtInit.js
 @@||optimum.net/js/omniture/s_code_h.js$domain=optimum.net
 @@||ostkcdn.com/js/s_code.js$domain=overstock.com
 @@||pepsico.com/scripts/urchin.js
+@@||pogo.com^*/shared/omniture.js
+@@||potterybarn.com/pbimgs/ab/images/*/coremetrics.js
+@@||potterybarnkids.com/pkimgs/ab/images/*/coremetrics.js
 @@||quill.com/js/Omniture/quill_s_code.js?
 @@||redbookmag.com/cm/shared/scripts/s_code.js
+@@||rentals.com/javascripts/primedia-webtrends-
 @@||rentals.com/javascripts/webtrends-bindings.js
 @@||reuters.com/resources_v2/js/webtrends.js
 @@||rolandgarros.com/s_code.js$domain=rolandgarros.com
@@ -503,6 +511,9 @@ _wtInit.js
 @@||traderonline.com/javascript/master_s_code.js$domain=traderonline.com
 @@||tvlistings.optimum.net/foresee/foresee-trigger.js$domain=optimum.net
 @@||usps.com/ContentTemplates/common/scripts/webtrends.js$domain=usps.com
+@@||veer.com/includes/*/omniture.js
+@@||victoriassecret.com/app/coremetrics/eluminate.js
+@@||westelm.com/weimgs/rk/images/*/coremetrics.js
 @@||whirlpool.com/foresee/foresee-trigger.js$domain=whirlpool.com
 @@||wholeliving.com/images/assets/script/wholeliving/s_code.js$domain=wholeliving.com
 @@||williams-sonoma.com^*/js/external/mbox-pb.js
