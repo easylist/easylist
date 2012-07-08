@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.1
+VERSION = 3.2
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -31,8 +31,8 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)##([^{}]+)$")
+DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#\@?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
@@ -175,7 +175,7 @@ def fopsort (filename):
                             else:
                                 filterlines += 1
                             lineschecked += 1
-                        line = elementtidy(domains, elementparts.group(2))
+                        line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
@@ -239,7 +239,7 @@ def filtertidy (filterin):
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
 
-def elementtidy (domains, selector):
+def elementtidy (domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
     tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
@@ -269,7 +269,7 @@ def elementtidy (domains, selector):
         ac = pseudo.group(3)
         selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
     # Remove the markers from the beginning and end of the selector and return the complete rule
-    return "{domain}##{selector}".format(domain = domains, selector = selector[1:-1])
+    return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector[1:-1])
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
