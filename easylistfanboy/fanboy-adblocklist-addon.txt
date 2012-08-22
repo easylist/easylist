@@ -1,11 +1,10 @@
 [Adblock Plus 1.1]
-! Checksum: pI3Pmor5RzcyroQi2ENnLA
+! Checksum: ThkddlvrvGECFMPMqu5jNw
 ! Title: Fanboy's Annoyance List
-! Updated: 18 Aug 2012
+! Updated: 22 Aug 2012
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
-! Redirect: https://secure.fanboy.co.nz/fanboy-addon.txt
 ! Email: fanboyadblock@googlegroups.com
 ! Homepage: http://www.fanboy.co.nz/
 ! Forums: http://forums.fanboy.co.nz/
@@ -618,6 +617,7 @@
 /socialBtns.
 /socialbutton_
 /socialButtons.
+/socialcounters/*
 /socialIcons-
 /socialIcons.
 /socialicons/*
@@ -629,6 +629,7 @@
 /socialmedia_
 /socialmediasprite.
 /socialNetworkSprite.
+/socialShare.
 /SocialSprite.
 /socila-media-
 /sociofluid/*$~stylesheet,~script
@@ -1049,6 +1050,7 @@ _youtube-button.
 ||teamautofollow.com/modules/mod_jtwitter/
 ||technorati.com^$third-party
 ||theechosystem.com^$third-party
+||thelovebucks.com^$third-party
 ||theslingshot.com^$third-party
 ||tinker.com^$third-party
 ||topsy.com^$third-party
@@ -1104,6 +1106,7 @@ _youtube-button.
 @@||bestof.s3.amazonaws.com/tumblr.png$domain=makeuseof.com
 @@||bestof.s3.amazonaws.com/twitter.png$domain=makeuseof.com
 @@||bing.net/videos/thumbnail.aspx?$domain=bing.com
+@@||britishairways.com/cms/global/scripts/pages/interstitial.js
 @@||cdn.complexmedianetwork.com/cdn/$script,subdocument,domain=kicksonfire.com
 @@||cdn.gigya.com/gs/GetSprite.ashx?*$domain=cnet.com
 @@||cdn.gigya.com/JS/socialize.js$domain=midwestliving.com|wholeliving.com|forbes.com|quickflix.co.nz|quickflix.com.au|nfl.com|nhl.com|tvguide.com|games.co.uk|agame.com|ctvolympics.ca|we7.com|goal.com|gamesgames.com|tntdrama.com|cnet.com
@@ -1597,6 +1600,7 @@ zaycev.net##.bookmarks
 ###sidebar-fb-social-reader
 ###sidebar-social
 ###sidebar-twitter
+###sidebar_newsletter
 ###sidebar_share_links
 ###sidebar_share_title
 ###sidebar_social_icons
@@ -2063,6 +2067,8 @@ zaycev.net##.bookmarks
 ##.header_social_text
 ##.headersocials
 ##.hn-share-button
+##.homepage-facebook-widget
+##.homepage-twitter-widget
 ##.horizontal-share-buttons
 ##.horizontal-social-links
 ##.icn-addthis
@@ -2152,7 +2158,6 @@ zaycev.net##.bookmarks
 ##.post-share-panel
 ##.post-share-widget
 ##.post-sharebtns
-##.post-social
 ##.post-social-buttons
 ##.post_share
 ##.post_share_dig
@@ -2381,6 +2386,7 @@ zaycev.net##.bookmarks
 ##.social-buttons
 ##.social-buttons-left
 ##.social-connect-widget
+##.social-counter
 ##.social-counts-single
 ##.social-facebook-link
 ##.social-follow
@@ -2433,7 +2439,6 @@ zaycev.net##.bookmarks
 ##.social-widget
 ##.social2
 ##.social4i
-##.social_bar
 ##.social_block
 ##.social_bookmark
 ##.social_bookmarking_module
@@ -2469,6 +2474,7 @@ zaycev.net##.bookmarks
 ##.social_options
 ##.social_row
 ##.social_rss
+##.social_share_actions
 ##.social_sharing
 ##.social_sidebar
 ##.social_subscribe
@@ -2558,6 +2564,7 @@ zaycev.net##.bookmarks
 ##.story-footer-social
 ##.story-tools-social
 ##.story_allsocial
+##.story_tools_right
 ##.story_tools_social_buttons_top
 ##.strx-simple-sharing-sidebar-buttons
 ##.stumble-box-header
@@ -3060,6 +3067,8 @@ benzinga.com##.block-email-bnz
 bestweekever.tv###sb_follow
 bestweekever.tv###sendtomobileswf
 bestweekever.tv##.sharing
+betabeat.com###follow-wrapper
+betabeat.com###mailing-list-form-wrapper
 beyondlimitsmagazine.com###follow
 bgr.com##.gal-post-bottom
 bgr.com##.post-fb
@@ -3078,6 +3087,9 @@ bit.com.au###regPromptModal
 bit.com.au###regSignupBoxout
 bit.com.au###slidebox
 bitcoins.lc###twitter
+bitrebels.com###inspiredmagz-mashable-bar
+bitrebels.com##div[style="margin-bottom: 26px; margin-top: -23px;"]
+bitrebels.com##table[style="border-collapse: collapse; margin-bottom: -10px; margin-top: 10px;"]
 bizjournals.com##.persistentFooter
 bleacherreport.com###article-newsletter-engage-content
 bleacherreport.com###fans-of-br-module
@@ -3468,6 +3480,8 @@ digitaltrends.com##.next-article-flyout
 digitimes.com##.ArtMore
 digitimes.com##.facebook
 digitimes.com##.twitter
+directmirror.com###mbtsidebar
+directmirror.com##.w2bslikebox
 dirwell.com###facebook
 dirwell.com##.subscribe_widget
 discovermagazine.com###Table_01[width="300"]
@@ -3825,6 +3839,7 @@ guardian.co.uk##.trail-icon
 guardianbookshop.co.uk##.moduleBookmarkLinks
 guidingtech.com###optincrusher
 guidingtech.com###text-3
+guildwars2.com##.social
 guistyles.com###Social
 guistyles.com###ZCOverlay
 guistyles.com###ZCWindow
@@ -3904,6 +3919,7 @@ hp.com##.hp_share
 hp.com##.tnb_followus
 hpcwire.com##.grayBox
 hpcwire.com##.halfColumnRight
+html5test.com###share
 huffingtonpost.co.uk###apps-feeds
 huffingtonpost.co.uk###read-edge
 huffingtonpost.co.uk##.collection_holder
@@ -4116,6 +4132,7 @@ knowyourmeme.com##.addthis_horizontal
 knoxnews.com##.story_tools
 kogan.com##.tbox
 kogan.com##.tmask
+kokomoperspective.com##.grid_12
 kotaku.com##.welcome_form
 kotaku.com.au###social
 kotaku.com.au##.share
@@ -4664,6 +4681,9 @@ patch.com##.form-card
 patch.com##.modal_dialog_inner
 patchtogether.com##.blockUI
 patheos.com###newsletter-wrp
+pbh2.com##.one-half[style="width: 320px;"]
+pbh2.com##div[style="position: fixed; top: 400px; left: 0; z-index: 1000;"]
+pbh2.com##div[style="position: fixed; top: 400px; right: 0; z-index: 1000;"]
 pbs.org###pbs-main-overlay
 pbs.org###popup-overlay
 pcauthority.com.au###magazine-popout
@@ -4834,6 +4854,7 @@ reason.com##.social
 reddit.com##.share
 redferret.net###scdiv
 redmondpie.com##.twitterBarForSb
+redpepperland.com###share
 reference.com###enterleave
 reference.com###fcrds
 reference.com###hdmd
@@ -5342,6 +5363,8 @@ thewrap.com###tw-newsletter-signup
 thewrap.com##.h-share
 thewrap.com##.user-op
 thinkdigit.com###callout
+thinkprogress.org###backgroundPopup
+thinkprogress.org###popupContact
 thinkprogress.org###PRpromo
 thinkprogress.org###subscribe
 thinkprogress.org##.hot-tip
@@ -5748,7 +5771,9 @@ zeropaid.com##.thumbnail-container
 zmescience.com###cevhershare
 ~geekli.st##.facebook-button
 ~geekli.st##.twitter-button
+~guildwars2.com##.post-social
 ~hollywoodreporter.com##.pinterest-button
+~iq-student-accommodation.com##.social_bar
 ~mozilla.org###social-footer
 ~seznam.cz##.rss-feed
 ~twitter.com###tweets
