@@ -1,18 +1,18 @@
 [Adblock Plus 1.1]
-! Checksum: A3HwVvt4F5z291o6Uoa+tQ
-! IsraelList
-! http://code.google.com/p/israellist/
+! Title: Fanboy's IsraelList
+! Updated: 20 Aug 2012
+! This list expires after 4 days
+! Email: fanboyadblock@googlegroups.com
+! Homepage: http://www.fanboy.co.nz/
+! Forums: http://forums.fanboy.co.nz/
+!
+!
+! Fork of: IsraelList http://code.google.com/p/israellist/
 ! License:
 !          CC-BY-SA 3.0 - http://creativecommons.org/licenses/by-sa/3.0/
 !          GFDL 1.3 or later - http://www.gnu.org/licenses/fdl.html
 !          GPL 2.0 or later - http://www.gnu.org/licenses/gpl-2.0.html
 !          (at your option)
-! Last modified: 30 Jan 2012
-! Expires: 4 days (updates automatically)
-! Please report unblocked ads or mistakenly blocked content
-! Forum: http://mozilla.org.il/board/viewtopic.php?f=8&t=8679
-! E-mail: list.israel@gmail.com
-! NO WARRANTY but Best Wishes
 !----------------------------General ad blocking rules-----------------------------!
 !----Subdomains----!
 |http://ad.$domain=co.il
@@ -23,31 +23,19 @@
 !----Folders----!
 .co.il/ads/$~object-subrequest,domain=~lips.co.il|~sexadir.co.il|~seximo.co.il
 .co.il/adv/$~object-subrequest
-.co.il/ads/banners/
 .co.il/advert/$~object-subrequest
-/banners/ad_$domain=co.il
 /dcloadads/*$domain=co.il
 /pirsum/*$script,object
-/realmedia/ads/*$domain=co.il
-/www/delivery/*$domain=co.il
 !----Misc.----!
-&adsize=$domain=co.il
 ^ad_type=$domain=co.il
 /@ads.js&$domain=co.il
-/acc_random=*/aamsz=$domain=co.il
 /AdPhreakClient.$domain=co.il
 /adsclickos.$script
-/adsense.php?$domain=co.il
 /AdsManager.$domain=co.il
 /advert.as$domain=co.il
-/google-ads.$domain=co.il,script
-/GoogleAds.js$domain=co.il
-/js/GoogleAds.$domain=co.il
 /MsgAds.$domain=co.il
 /PopUnder_Net.$domain=co.il,script
-/sidead.htm$domain=co.il
 /show_afs_ads.$domain=co.il
-/ShowAd.php?$domain=co.il
 !------------------------Israeli third-party adservers-----------------------------!
 ||3dots.co.il^$third-party,domain=~maple-team.com
 ||adbrands.co.il^$third-party
@@ -94,35 +82,17 @@
 /Merlin.$script,domain=co.il
 ?MerlinID=$domain=co.il
 !----First-party blocking----!
-||ad.adserverplus.com^
 ||ad.clickosmedia.com^
-||live.sekindo.com^
-||ad.xtendmedia.com^
 ||ad.z5x.net^
 !----Popups (Adservers)----!
-||adserverplus.com^$image,~image,popup
 ||clickosmedia.com^$image,~image,popup
 ||sekindo.com^$image,~image,popup
-||xtendmedia.com^$image,~image,popup
 ||z5x.net^$image,~image,popup
 !----------------------Non-Israeli third-party adservers---------------------------!
 ||adgalax.com^$third-party
-||adtech.de^$third-party,domain=co.il
-||atdmt.com^$third-party,domain=co.il
-||bidvertiser.com^$third-party,domain=co.il|torec.net
-||checkm8.com^$third-party,domain=co.il
-||clicksor.com^$third-party,domain=co.il
-||cpmstar.com^$third-party,domain=co.il
-||doubleclick.net^$~object-subrequest,third-party,domain=co.il
-||g.doubleclick.net^$third-party,domain=co.il|blogtv.com
-||googleadservices.com^$third-party,domain=co.il|ynetnews.com|blogtv.com
 ||pagead2.googlesyndication.com^$~object-subrequest,third-party,domain=co.il|rotter.net|themarker.com|haaretz.com|ynetnews.com|news-israel.net|israelnationalnews.com|yeshanews.com|sdarot.be
-||serving-sys.com^*/adServer.$third-party,domain=co.il
 ||media6degrees.com^$third-party,domain=co.il
-||ngads.com^$third-party,domain=co.il
-||smartadserver.com^$third-party,domain=co.il
-||zedo.com/jsc/$third-party,domain=co.il|elsf.net
-!------------------------------Third-party ads-------------------------------------!
+|!------------------------------Third-party ads-------------------------------------!
 ||213.8.137.51^
 ||1800550.net^$third-party
 ||1buy1.co.il^$third-party
@@ -307,9 +277,6 @@ bipbip.co.il###LeftBanner
 calcalist.co.il##[id="ads.top"]
 calcalist.co.il###ArticleBanner
 calcalist.co.il##.MerlinAreaCalcalist
-calcalist.co.il##.adsBox
-calcalist.co.il##.adspace
-calcalist.co.il##.bottomAds
 calcalist.co.il###divAdvertisingSection
 calcalist.co.il##div[style="width: 315px; overflow-x: hidden;"]
 d.co.il##.header_banner
@@ -331,11 +298,8 @@ globes.co.il###divArticleInnerAd
 globes.co.il###div_prsomi
 globes.co.il##.G_BoxTH
 globes.co.il##.G_SendToFriendBannerBorders
-globes.co.il###innerad
 globes.co.il##[id^="ads."]
-gvr.co.il###top-ad
-haaretz.com##.headerAds
-haaretz.com##.googleAds_article_page_above_comments
+hhaaretz.com##.googleAds_article_page_above_comments
 haaretz.co.il##.border-box.bottomStripBanners
 haaretz.co.il##.topSectionBanners
 hwzone.co.il##[class^="banner"]
@@ -402,8 +366,6 @@ mail.ynet.co.il###divBottomCommercials
 mako.co.il##.ad
 mako.co.il##.adv_ordering
 mako.co.il###banner_jambo_frame
-mako.co.il###googleAds
-mako.co.il###googleads
 mako.co.il###googleLinkUnits.not_for_print
 mako.co.il##.item.adv_ordering_image_block
 mako.co.il###rAdContainer
@@ -452,7 +414,6 @@ movinsane.com###divStripBanner
 movinsane.com##[href^="http://live.sekindo.com/"]
 mp3music.co.il###adv
 mp3music.co.il##.posb
-mynet.co.il##.adwrap
 myvod.tv###staticcontent
 nana10.co.il##.AdvertisementMenuBg
 nana10.co.il###AdvertisementNavigationBar
@@ -516,7 +477,6 @@ reshet.ynet.co.il###bannerDiv
 rest.co.il##.ad
 rest.co.il##.adBox1
 rest.co.il###divLeftBanner
-rest.co.il##.footerTextAd
 ring10.net##.advadv2
 ring10.net##.banner
 saloona.co.il###top_banner
@@ -578,8 +538,6 @@ themarker.com##[src^="/tmc/banners/dclk"]
 tog.co.il##.banner_298_116
 tog.co.il##.banners_bottom_place
 upf.co.il##.bgbanner
-vgames.co.il##.ad_box
-walla.co.il##.adBox
 walla.co.il##.greenline
 walla.co.il###sec_katavot_ads
 walla.co.il##.vertical.benfitsAd
@@ -588,8 +546,6 @@ walla.co.il##.ct_ad
 walla.co.il###ct_med_ad
 walla.co.il###ctl_bottom_ad
 walla.co.il##.r_ad
-walla.co.il###text_ads
-walla.co.il##.top_ad
 walla.co.il###navbar
 walla.co.il##.greenline_top
 walla.co.il##.greenLine.left
@@ -611,13 +567,11 @@ wallashops.co.il###mainBanner
 wallashops.co.il##[id^="textBanner"]
 winwin.co.il###tvBannerContWinWin
 winwin.co.il##.TotalMediaFooter
-winwin.co.il##.addvert
 winwin.co.il##[id^="ads."]
 winwin.co.il##.HomePageContainer > [style="width:965px; height:120px;float:right; background-color:#EEEFF3;"]
 wisebuy.co.il###bigAdd
 wisebuy.co.il###TblFooter1
 xnet.co.il###XnetAdSenceThinkAdAD-300
-yad2.co.il###left_ads
 yad2.co.il###left_banner
 yad2.co.il###left_textlink_bg
 yad2.co.il##.plasma_banner
@@ -644,18 +598,9 @@ ynet.co.il##[src*="/DisplayAdvertisingBox/"]
 ynet.co.il##[src*="/ShowAdsLikeIframe/"]
 ynet.co.il##iframe[src^="http://go.ynet.co.il/jdate"]
 ynet.co.il,mynet.co.il##[align="left"][style="float:left;"] > [style="padding-top:10px;padding-bottom:10px;padding-right:10px"]
-zap.co.il##.adBox
 zap.co.il##.MartefTbl
 zap.co.il##.headerBannerBottom
 zap.co.il##.headerBannerCenter
 zap.co.il##.midBan
 zone.walla.co.il##.w2.wp-0-b
-zvz.co.il##.ad_footer
 zvz.co.il##.ad_upper_sdera_container
-!---For Firefox 3.x---!
-hwzone.co.il##.bordercolor [style="padding: 1px 1px 0pt;"] .windowbg3
-hwzone.co.il##.content_hold > .clear + [style="height: 95px; padding: 5px 0pt 2px;"]
-walla.co.il##div[style="width: 468px; margin: 0pt auto;"]
-walla.co.il##.wp-0-b[style="float: left; width: 142px;"]
-winwin.co.il##.HomePageContainer > [style^="width: 940px; height: 120px; float: right;"]
-ynet.co.il,mynet.co.il##[align="left"][style="float: left;"] > [style="padding-top: 10px; padding-bottom: 10px; padding-right: 10px;"]
