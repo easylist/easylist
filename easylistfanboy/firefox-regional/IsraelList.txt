@@ -208,6 +208,8 @@
 ||adorika.com^$third-party,domain=preil.org
 ||ads.one.co.il^
 ||ads.yeshanews.com^
+||ashams.com/banners_all.php
+||ashams.com/Files/banners/
 ||banners.news1.co.il^
 ||banners5.bizportal.co.il^
 ||beok.co.il/banners/
@@ -246,6 +248,7 @@
 !
 !-------------------------Exception rules to fix problems--------------------------!
 @@||ads.doctors.co.il/banners/$~third-party,image
+@@||ashams.com/Files/banners/221860881.png
 @@||hiro.co.il^*/LayerWrapperReshet.swf
 @@||i.total-media.net/yc/dc.$script,domain=winwin.co.il
 @@||mako.checkm8.com/adam/$script
@@ -269,6 +272,10 @@
 !---------------------------Element hiding rules-----------------------------------!
 
 2all.co.il##.DivFlowBannerRight
+ashams.com###apDiv1
+ashams.com##table[width="900"][height="100"]
+ashams.com##table[width="900"][height="80"]
+ashams.com##table[width="900"][height="92"]
 atzuma.co.il###two_boxes
 atzuma.co.il##.adv_container
 atzuma.co.il##.adv_container_lower
