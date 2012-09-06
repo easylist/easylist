@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: o9Aj6y9Gen7Abg5p4EInpg
+! Checksum: QF8YJBZe8uqSAGEu0iYdbg
 ! Title: Fanboy's IsraelList
 ! Updated: 6 Sep 2012
 ! This list expires after 4 days
@@ -14,19 +14,19 @@
 !          GFDL 1.3 or later - http://www.gnu.org/licenses/fdl.html
 !          GPL 2.0 or later - http://www.gnu.org/licenses/gpl-2.0.html
 !          (at your option)
-!----------------------------General ad blocking rules-----------------------------!
-!----Subdomains----!
-|http://ad.$domain=co.il
-|http://ads.$domain=co.il
-|http://ads.*.co.il^
-|http://adserv.$domain=co.il
-|http://adv.$domain=co.il
-!----Folders----!
+!
+! ---------- Generic Blocking Rules ----------
+!
 .co.il/ads/$~object-subrequest,domain=~lips.co.il|~sexadir.co.il|~seximo.co.il
 .co.il/adv/$~object-subrequest
 .co.il/advert/$~object-subrequest
 /dcloadads/*$domain=co.il
 /pirsum/*$script,object
+|http://ad.$domain=co.il
+|http://ads.$domain=co.il
+|http://ads.*.co.il^
+|http://adserv.$domain=co.il
+|http://adv.$domain=co.il
 !----Misc.----!
 /@ads.js&$domain=co.il
 /AdPhreakClient.$domain=co.il
@@ -34,35 +34,61 @@
 /AdsManager.$domain=co.il
 /advert.as$domain=co.il
 /MsgAds.$domain=co.il
-/PopUnder_Net.$domain=co.il,script
 /show_afs_ads.$domain=co.il
 ^ad_type=$domain=co.il
-!------------------------Israeli third-party adservers-----------------------------!
+!
+! ---------- 3rd party blocking rules ----------
+!
+||1800550.net^$third-party
+||1buy1.co.il^$third-party
+||213.8.137.51^
+||24love.co.il^$third-party
 ||3dots.co.il^$third-party,domain=~maple-team.com
+||ad.msn.co.il^$third-party
+||ad.smilemedia.co.il^$third-party
 ||adbrands.co.il^$third-party
 ||adbytime.co.il^$third-party
+||adgalax.com^$third-party
 ||adphreak.com^$third-party
 ||adpremium.co.il^$third-party
 ||adprimes.co.il^$third-party
+||adserver1.contx.co.il^$third-party
 ||adserverplus.com^$third-party
 ||adsmarket.co.il^$third-party
 ||adsolutions.co.il^$third-party
 ||aduacni.com^$third-party
 ||advernet.co.il^$third-party
+||affiliate.zap.co.il^$third-party
 ||amadesa.com^$third-party
 ||atpclick.com^$third-party
 ||chart.co.il^$third-party
 ||clickon.co.il^$third-party
+||colmextrading.com^$third-party
+||conduit-banners.com^$third-party
+||dateland.co.il^$third-party
 ||finder.co.il^$third-party
 ||go.xnet.co.il^$third-party
+||gz.sytes.net^$third-party
 ||hiro.co.il^$third-party
+||ifile.co.il^$third-party
 ||imedia.co.il^$third-party
 ||infra-ad.com^$third-party
+||jdate.co.il^$third-party
+||lead-machine.co.il^$third-party
+||leadim.co.il^$image,~image,popup
+||mako.buy2.co.il^$third-party
+||media-vertex.com^$third-party
+||media.foxweb.co.il^$third-party
+||media6degrees.com^$third-party,domain=co.il
 ||merlin.co.il^$third-party
 ||mvertex.co.il^$third-party
 ||neto.co.il^$third-party
 ||next-net.co.il^$third-party
+||openx.gns.co.il^$third-party
+||osef.co.il^$third-party
+||pagead2.googlesyndication.com^$~object-subrequest,third-party,domain=co.il|rotter.net|themarker.com|haaretz.com|ynetnews.com|news-israel.net|israelnationalnews.com|yeshanews.com|sdarot.be
 ||payperclick.co.il^$third-party
+||pbid.iforex.com^$third-party
 ||pera.co.il^$third-party
 ||predictad.com^$third-party
 ||relevanti.com^$third-party
@@ -71,9 +97,13 @@
 ||smowtion.com^$third-party
 ||talkahead.com^$third-party
 ||total-media.net^$third-party
+||wap.co.il^$third-party
 ||websense-media.co.il^$third-party
 ||wesell.co.il^$third-party
+||ws.walla.co.il^$third-party
+||www.21.tv^$third-party
 ||xtendmedia.com^$third-party
+||youtoo.co.il^$third-party
 ||z5x.net^$third-party
 ||zuzmedia.com^$third-party
 !----Merlin----!
@@ -82,35 +112,9 @@
 /merlin.asp?$domain=co.il
 /merlin_$script,subdocument,xmlhttprequest,domain=co.il
 ?MerlinID=$domain=co.il
-!----------------------Non-Israeli third-party adservers---------------------------!
-!------------------------------Third-party ads-------------------------------------!
-||1800550.net^$third-party
-||1buy1.co.il^$third-party
-||213.8.137.51^
-||24love.co.il^$third-party
-||ad.msn.co.il^$third-party
-||ad.smilemedia.co.il^$third-party
-||adgalax.com^$third-party
-||affiliate.zap.co.il^$third-party
-||colmextrading.com^$third-party
-||conduit-banners.com^$third-party
-||dateland.co.il^$third-party
-||gz.sytes.net^$third-party
-||ifile.co.il^$third-party
-||jdate.co.il^$third-party
-||leadim.co.il^$image,~image,popup
-||mako.buy2.co.il^$third-party
-||media-vertex.com^$third-party
-||media.foxweb.co.il^$third-party
-||media6degrees.com^$third-party,domain=co.il
-||osef.co.il^$third-party
-||pagead2.googlesyndication.com^$~object-subrequest,third-party,domain=co.il|rotter.net|themarker.com|haaretz.com|ynetnews.com|news-israel.net|israelnationalnews.com|yeshanews.com|sdarot.be
-||pbid.iforex.com^$third-party
-||wap.co.il^$third-party
-||ws.walla.co.il^$third-party
-||www.21.tv^$third-party
-||youtoo.co.il^$third-party
-!----Popups----!
+!
+!---------- Popups (Adblock Plus 2.0 or better) ----------
+!
 ||1010.co.il^$popup,image,~image
 ||amazecell.com^$popup,image,~image
 ||b4u.com^$popup,image,~image
@@ -135,14 +139,13 @@
 ||btg.mtvnservices.com/aria/$domain=mtv.walla.co.il
 ||clicks.walla.co.il^
 ||fus.walla.co.il/js/
-||mekusharim.walla.co.il^*/advertisement.
 ||xban.walla.co.il^$domain=~jobcity.co.il
 ||xwne.wcdn.co.il^$domain=walla.co.il
 !-ynet-!
-/CdaMarketingLink/*$domain=ynet.co.il|mynet.co.il
-/CdaMarketTextlinks_$domain=ynet.co.il|mynet.co.il
-/DisplayAdvertisingBox/*$domain=ynet.co.il|mynet.co.il
-/DisplayTalkbacksAdvertisingBox/*$domain=ynet.co.il|mynet.co.il
+/CdaMarketingLink/*
+/CdaMarketTextlinks_
+/DisplayAdvertisingBox/*
+/DisplayTalkbacksAdvertisingBox/*
 ||go.ynet.co.il/*/YnetBannerAdmin/
 ||go.ynet.co.il/jdate
 ||go.ynet.co.il/short/commerce/*/JDate/
@@ -154,11 +157,9 @@
 !-nana10-!
 ||nana10.co.il/SiteServicePromotion/
 ||nsc.nana10.co.il^
-||rad.msn.com^$domain=nana10.co.il
 !-Haaretz/TheMarker/Mouse.co.il-!
 /neto_search.$domain=haaretz.co.il|themarker.com|mouse.co.il|haaretz.com
 |http://dclk.$domain=haaretz.co.il|themarker.com|mouse.co.il|haaretz.com
-||ads.adap.tv^$domain=themarker.com
 ||themarker.com/dclk/
 !-Tapuz/Flix-!
 /albums/intro5.flv$domain=flix.co.il|tapuz.co.il
@@ -168,7 +169,6 @@
 ||tapuz.co.il^*CloseBanner.gif
 ||tapuz.co.il^*ClosePopup.gif
 !-sport5-!
-||adserver1.contx.co.il^$third-party,domain=sport5.co.il
 ||sport5.co.il/banners2/files/3/
 !-inn-!
 ||info.a7.org^$domain=inn.co.il
@@ -196,7 +196,9 @@
 ||rcs.mako.co.il/rss/yad2.
 ||sdc.mako.co.il^
 ||stats.mako.co.il^
-!---------
+!
+! ---------- 1st party blocking rules ----------
+!
 ||100fm.co.il/Banners/129.swf
 ||100fm.co.il/getXmlp1000.
 ||adorika.com^$third-party,domain=preil.org
@@ -213,7 +215,6 @@
 ||d.co.il/Hebrew/images/Premium/
 ||date.dacho.co.il^
 ||ddlil.com/banners/
-||drp.co.il/openads/
 ||exoclick.com^$third-party,domain=vod4all.net
 ||fus.walla.co.il^
 ||globes.co.il/data/js/gtv_ads.js
@@ -223,25 +224,21 @@
 ||hometheater.co.il/opx/
 ||hometheater.co.il/pir/
 ||hwzone.co.il/jobs/
-||kipa.co.il/banner/$object
+||kipa.co.il/banner/
 ||kipa.co.il/inc_files/banner.asp?
 ||kipasruga.com/banner/
 ||ladaat.net/advfiles/
-||lead-machine.co.il^$third-party,domain=views.co.il
-||ltassrv.com^$third-party,domain=sdarot.be
 ||moreshet.co.il/banners/
 ||news-israel.net/images/topAd
-||openx.gns.co.il^$third-party
 ||preil.org/ads/
 ||raddar.co.il/bannersa.php
 ||sonara.net/js/asyn_banners.php
 ||sonara.net/static_banners.php
 ||sport5.co.il/banners2/
 ||tog.co.il/Resources/JS/Site/Banner.js
-||triad.technorati.com^$domain=blogtv.com
 ||views.co.il/banners/
 ||wink.globes.co.il^
-||yeshanews.com/banners/banner
+||yeshanews.com/banners/
 ||ynet.co.il/images/hp_player_lightbox_top.png
 ||ynet.co.il/WinWinCooperation/
 !
@@ -256,7 +253,8 @@
 ||nana10.co.il/statistics/
 ||walla.co.il/impression/
 !
-!-------------------------Exception rules to fix problems--------------------------!
+!---------- Whitelists ----------
+!
 @@||ads.doctors.co.il/banners/$~third-party,image
 @@||ashams.com/Files/banners/221860881.png
 @@||hiro.co.il/clientaccesspolicy.xml
