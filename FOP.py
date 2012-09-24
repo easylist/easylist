@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.2
+VERSION = 3.3
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -146,23 +146,30 @@ def fopsort (filename):
     CHECKLINES = 10
     section = []
     lineschecked = 1
-    filterlines = elementlines = 0
+    filterlines = globalelementlines = nonglobalelementlines = 0
 
     # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
+
+        # Writes the filter lines to the file
+        def writefilters():
+            if globalelementlines > (filterlines + nonglobalelementlines):
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
+            elif filterlines > nonglobalelementlines:
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = str.lower))))
+            else:
+                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
+
         for line in inputfile:
             line = line.strip()
             if not re.match(BLANKPATTERN, line):
                 # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
-                        if elementlines > filterlines:
-                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
-                        else:
-                            outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
+                        writefilters()
                         section = []
                         lineschecked = 1
-                        filterlines = elementlines = 0
+                        filterlines = globalelementlines = nonglobalelementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
@@ -171,9 +178,9 @@ def fopsort (filename):
                         domains = elementparts.group(1).lower()
                         if lineschecked <= CHECKLINES:
                             if isglobalelement(domains):
-                                elementlines += 1
+                                globalelementlines += 1
                             else:
-                                filterlines += 1
+                                nonglobalelementlines += 1
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
@@ -185,10 +192,7 @@ def fopsort (filename):
                     section.append(line)
         # At the end of the file, sort and save any remaining filters
         if section:
-            if elementlines > filterlines:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
-            else:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
+            writefilters()
 
     # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
@@ -207,7 +211,7 @@ def filtertidy (filterin):
 
     if not optionsplit:
         # Remove unnecessary asterisks from filters without any options and return them
-        return removeunnecessarywildcards(filterin.lower())
+        return removeunnecessarywildcards(filterin)
     else:
         # If applicable, separate and sort the filter options in addition to the filter text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
@@ -215,7 +219,6 @@ def filtertidy (filterin):
 
         domainlist = []
         removeentries = []
-        case = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
@@ -223,18 +226,11 @@ def filtertidy (filterin):
                 removeentries.append(option)
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
-            # Check for the match-case option
-            if option == "match-case":
-                case = True
         # Sort all options other than domain alphabetically
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
-
-        # If the option "match-case" is not present, make the filter text lower case
-        if not case:
-            filtertext = filtertext.lower()
 
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
