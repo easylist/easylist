@@ -227,11 +227,7 @@ def filtertidy (filterin):
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically
-        def negotiationslast (option):
-            if option[0] == "~":
-                option = option[1:] + "~"
-            return option
-        optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = negotiationslast)
+        optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: option.strip("~"))
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
