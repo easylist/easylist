@@ -30,7 +30,7 @@
 -ad-home.
 -ad-left.
 -ad-limits.
--ad-manager/
+-ad-manager/$~stylesheet
 -ad-marker.
 -ad-right.
 -ad-top.
@@ -407,9 +407,7 @@
 /ad2gate.
 /ad2gather.
 /ad2push.
-/ad3-
 /ad3.
-/ad3/*
 /ad300.
 /ad300x145.
 /ad300x250_
@@ -647,7 +645,7 @@
 /adcollector.
 /adcommon?
 /adcomp.
-/adcontent.
+/adcontent.$~object-subrequest
 /adcontent/*
 /adcontents_
 /adcontrol.
@@ -659,7 +657,7 @@
 /addatasandbox?
 /addeliverymodule/*
 /addisplay.
-/addyn/*
+/addyn/3.0/*
 /addyn|*|adtech;
 /adengage-
 /adengage.
@@ -727,7 +725,7 @@
 /adguard.
 /adhads.
 /adhandler.
-/adhandler/*
+/adhandler/*$~subdocument
 /adhandlers2.
 /adheader.
 /adheadertxt.
@@ -752,7 +750,7 @@
 /adim.html?ad
 /adimage.
 /adimages.
-/adimages/*
+/adimages/*$~subdocument
 /adimg.
 /adimg/*
 /adinator/*
@@ -875,7 +873,7 @@
 /adright.
 /adright/*
 /adrightcol.
-/adriver.
+/adriver.$~object-subrequest
 /adrobot.
 /adrollpixel.
 /adroot/*
@@ -1637,7 +1635,8 @@
 /dblclick.
 /dblclickad.
 /dcads.
-/dclk_ads
+/dclk_ads.
+/dclk_ads_
 /ddlads/*
 /default_ads/*
 /default_oas.
@@ -1951,9 +1950,7 @@
 /images/adds/*
 /images/ads-
 /images/adv/*
-/images/affiliates/*
 /images/gads_
-/images/sponsors/*
 /images2/ads/*
 /images_ad/*
 /img-ads/*
@@ -1961,7 +1958,6 @@
 /img/ad_
 /img/ads/*
 /img/adv/*
-/img/sponsor/*
 /img2/ad/*
 /img3/ads/*
 /img_ad_
@@ -2394,6 +2390,7 @@
 /siteads/*
 /sitewide/ads/*
 /skin/ad/*
+/skin/ad3/*
 /skin3/ads/*
 /skinads/*
 /skins/ads/*
@@ -2489,6 +2486,7 @@
 /svnad/*
 /swf/ad-
 /swfbin/ad-
+/swfbin/ad3-
 /swfbin/ad3_
 /switchadbanner.
 /synad2.
@@ -2568,7 +2566,6 @@
 /ugoads.
 /ukc-ad.
 /unibluead.
-/upload/ad/*
 /upload/ads/*
 /uploads/ads/*
 /usenext16.
@@ -2617,7 +2614,7 @@
 /wired/ads/*
 /wp-content/ads/*
 /wp-popup-scheduler/*
-/wpads/*
+/wpads/iframe.
 /wwe_ads.
 /wwe_ads/*
 /www/ads/*
@@ -2653,7 +2650,6 @@
 ://bwp.*/search
 ://feeds.*/~a/
 ://oas.*@
-://ox-d.
 =ad_iframe&
 =adslot&
 =adtech_
@@ -2886,3 +2882,4 @@ _web_adhoc?
 _yahooads/
 _your_ad.
 _zedo.
+|http://ox-d.*/jstag^
