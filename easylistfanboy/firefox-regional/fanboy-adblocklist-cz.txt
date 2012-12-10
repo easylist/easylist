@@ -11,7 +11,7 @@
 ! ---------- Generic Blocking Rules ----------
 !
 .com/bannery/
-.cz/ads/$~object_subrequest,domain=~hcplzen.cz
+.cz/ads/$~object-subrequest,domain=~hcplzen.cz
 .cz/BAN/
 .cz/banners/$domain=~web.volny.cz
 .cz/bannery/
@@ -150,7 +150,7 @@ _clickthru.swf?
 ||ads.esports.cz^$third-party
 ||advantage.as^$third-party
 ||aukro.cz/ap/ap_show.php?$third-party
-||b.lookit.cz^$third-party,subdocument
+||b.lookit.cz^$subdocument,third-party
 ||banan.cz^$third-party
 ||banner.ifortuna.cz^$third-party
 ||banners.onebit.cz^$third-party
@@ -254,10 +254,10 @@ fotoaparat.cz##[style="margin: 0pt 0pt 8px; border: 1px solid rgb(199, 208, 220)
 fotoaparat.cz##[style="position: absolute; top: 610px; left: 633px; width: 155px;"]
 fotoaparat.cz##[style="position: absolute; top: 610px; left: 770px; width: 155px;"]
 fotoaparat.cz##[style="width: 628px; height: 60px;"]
-kurzy.cz##DIV[style="border: 1px solid silver; float: left;"]
-ronnie.cz##DIV[style="width: 100%; height: 50px; background-color: rgb(245, 250, 255); margin-bottom: 19px; padding-top: 5px;"]
+kurzy.cz##div[style="border: 1px solid silver; float: left;"]
+ronnie.cz##div[style="width: 100%; height: 50px; background-color: rgb(245, 250, 255); margin-bottom: 19px; padding-top: 5px;"]
 sms.cz##[style="vertical-align: middle; text-align: left; width: 139px;"]
-stesti.cz##DIV[style="width: 960px; margin: 0pt auto; text-align: left;"]
+stesti.cz##div[style="width: 960px; margin: 0pt auto; text-align: left;"]
 tv.sms.cz##.P_nadpis[style="text-align: center; height: 1em;"]
 tv.sms.cz##[style="background-color: rgb(204, 204, 204); margin-top: 0.5em; padding: 0.1em 0.7em; width: 90%;"]
 tv.sms.cz##[style="border: 1px solid rgb(183, 183, 183); width: 320px;"]
@@ -266,6 +266,7 @@ war-board.net##.mainmenu[style="color: red; font-weight: bold;"]
 !
 !---------- Czech Generic Element Hiding Rules ----------
 !
+###P_reklama_120x600
 ###bnrhacksky
 ###bnrhacksqr
 ###bnrskyr
@@ -276,7 +277,6 @@ war-board.net##.mainmenu[style="color: red; font-weight: bold;"]
 ###etarget-container
 ###etarget-container-big
 ###full_ad_note
-###P_reklama_120x600
 ###reklama-etarget
 ###reklama-nudle
 ###reklamy
@@ -296,13 +296,13 @@ war-board.net##.mainmenu[style="color: red; font-weight: bold;"]
 ##.reklama-lista
 ##.reklama-right
 ##.reklama-top
+##.reklamaBottom
+##.reklamaHorniLista
+##.reklamaOdkazyVeVetachDole
 ##.reklama_ahead
 ##.reklama_box_standard
 ##.reklama_square
 ##.reklama_title_flat
-##.reklamaBottom
-##.reklamaHorniLista
-##.reklamaOdkazyVeVetachDole
 ##.reklamni-up-1
 ##.reklamni-up-2
 ##.sklik-block
@@ -358,8 +358,8 @@ ct24.cz##.commercialBox
 cztorrent.net###banner_header
 cztorrent.net###banner_skyscraper_right
 cztorrent.net###hracky
-digitalnitelevize.cz##DIV[style="position: absolute; width: auto; height: auto; top: 0px; left: 783px; z-index: 1; background-color: #EBEEF7; text-align: center;"]
-digitalnitelevize.cz##TD[style="font-size: 12px; font-family: Arial, sans-serif; color: Navy"]
+digitalnitelevize.cz##div[style="position: absolute; width: auto; height: auto; top: 0px; left: 783px; z-index: 1; background-color: #EBEEF7; text-align: center;"]
+digitalnitelevize.cz##td[style="font-size: 12px; font-family: Arial, sans-serif; color: Navy"]
 diit.cz##.footer_links
 diit.cz##.leftbox-main
 doktorka.cz###zone-doktorka-box
@@ -383,8 +383,8 @@ gamepark.cz###bmenu
 gamepark.cz###supersize
 gamepark.cz##.banner
 gamepark.cz##.headerpicture
-google.cz,google.com###mbEnd
-google.cz,google.com###tads
+google.com,google.cz###mbEnd
+google.com,google.cz###tads
 hcplzen.cz###ads_top_box
 hokej.cz##.ban1
 hokej.cz##.dolni_reklama
@@ -431,7 +431,7 @@ kurzy.cz##.box2
 kurzy.cz##.box4
 kurzy.cz##.box9
 kurzy.cz##.textovka
-kurzy.cz##DIV[style="border: 1px silver solid; float: left;"]
+kurzy.cz##div[style="border: 1px silver solid; float: left;"]
 lamer.cz##.square
 lidovky.cz###reality-idnes
 lidovky.cz###self-box
@@ -445,7 +445,7 @@ mediafax.cz##.casetaright
 medop.cz###block-nodesinblock-0
 mesec.cz###jobs
 moda.cz##.square
-moda.cz##DIV[style="clear:both; padding-top:30px; width:540px;"]
+moda.cz##div[style="clear:both; padding-top:30px; width:540px;"]
 mojevideo.sk###brnd_koz
 naakup.cz###ad-selfpromo
 naakup.cz###footer-link
@@ -477,7 +477,7 @@ pcworld.cz###skyscraper
 pcworld.cz##.banner
 penize.tiscali.cz###zone-tiscali-penize-wide
 podnikatel.cz##.promo-in-article
-prague.cz##TABLE[bgcolor="BLACK"]
+prague.cz##table[bgcolor="BLACK"]
 pravidla.cz##.advtick
 recepty.vareni.cz##.banner
 restaurace.cz##.banner-120-600
@@ -485,7 +485,7 @@ restaurace.cz##.banner-300-300
 ronnie.cz###fixedMenu
 ronnie.cz###rek3
 ronnie.cz###rodkaz
-ronnie.cz##DIV[style="width:100%;height:50px;background-color:#F5FAFF;margin-bottom:19px;padding-top:5px;"]
+ronnie.cz##div[style="width:100%;height:50px;background-color:#F5FAFF;margin-bottom:19px;padding-top:5px;"]
 root.cz###box-64bit-eu
 root.cz###promo-box
 root.cz###servers-promo
@@ -497,9 +497,9 @@ smartmania.cz##.heureka3-content
 sms.cz##[style="vertical-align:middle; text-align: left; width: 139px;"]
 sms.t-zones.cz###adv-topmenu-bar
 sms.t-zones.cz###gk-skyscraper
-sms.t-zones.cz##P[style="font-size:10px;margin:0;"]
-sokolov.cz##IMG[src="/images/reklama/Banner_Wolf.jpg"]
-sokolov.cz##IMG[src="/images/reklama/toyota_men__.gif"]
+sms.t-zones.cz##p[style="font-size:10px;margin:0;"]
+sokolov.cz##img[src="/images/reklama/Banner_Wolf.jpg"]
+sokolov.cz##img[src="/images/reklama/toyota_men__.gif"]
 sony-playstation.cz###banner1
 sport.tiscali.cz###zone-tiscali-sport-wide
 stesti.cz##.mabo.faa
@@ -549,9 +549,9 @@ zvraceny.cz##.reklama-vodorovne
 !
 !---------- For EasyList Users ----------
 !
+###adSkyPosition
 ###ad_img_banner
 ###adcontextlinks
-###adSkyPosition
 ###advert-ahead
 ###advert-sky
 ###advert-stickysky

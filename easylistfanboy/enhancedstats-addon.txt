@@ -8,7 +8,7 @@
 ! Homepage: http://www.fanboy.co.nz/
 ! Forums: http://forums.fanboy.co.nz/
 !
-&referer=$script,image
+&referer=$image,script
 -coremetrics-
 -CoreMetrics.
 -elqImg.
@@ -421,10 +421,10 @@ _wtInit.js
 ||cloudharmony.net^$third-party
 ||coremetrics.com^$third-party
 ||google-analytics.com^$third-party
-||google.co.il/cse/$third-party,~stylesheet
-||google.co.uk/cse/$third-party,~stylesheet
-||google.com/coop/cse/$third-party,~stylesheet
-||google.com/cse/$third-party,~stylesheet
+||google.co.il/cse/$~stylesheet,third-party
+||google.co.uk/cse/$~stylesheet,third-party
+||google.com/coop/cse/$~stylesheet,third-party
+||google.com/cse/$~stylesheet,third-party
 ||googletagmanager.com/gtm.js$third-party
 ||salecycle.com^$third-party
 ||services.disqus.com/event.js?$third-party
@@ -518,7 +518,6 @@ _wtInit.js
 !
 ! ---------- Whitelisting rules ----------
 !
-
 @@||aarp.net/etc/aarp/statics/global/js/omniture*.js
 @@||abcnews.com/assets/flash/kdp/omniturePlugin.swf
 @@||ae.com/web/javascript/omniture/min/omniture.js
@@ -560,7 +559,7 @@ _wtInit.js
 @@||consumerist.com/mt.js
 @@||content.idine.com^*/cmdatatagutils.js$domain=rewardsnetwork.com
 @@||converse.com/handler/OmnitureHandler.ashx
-@@||coremetrics.com/eluminate.js$domain=mycricket.com|vans.com|menshealth.com|oo.com.au|champssports.com|hsn.com|michaels.com|footlocker.com
+@@||coremetrics.com/eluminate.js$domain=champssports.com|footlocker.com|hsn.com|menshealth.com|michaels.com|mycricket.com|oo.com.au|vans.com
 @@||coremetrics.com^$domain=garnethill.com
 @@||countryliving.com/cm/shared/scripts/s_code.js
 @@||cycletrader.com/lwmvcjs/$script
@@ -592,7 +591,7 @@ _wtInit.js
 @@||foxnews.com/js/omtr_code.js$domain=foxbusiness.com|foxnews.com
 @@||frontdoor.com/includes/javascript/s_code_remote.js
 @@||goodhousekeeping.com/cm/shared/scripts/s_code.js
-@@||google-analytics.com/ga.js$domain=donanimhaber.com|break.com|mevio.com|mommyish.com|thegrindstone.com|sundance.org|justjared.com|kleinanzeigen.ebay.de|timberland.com|billboard.com|google.com|priceme.co.nz|games.latimes.com|banshee.fm|eonline.com|yellow.co.nz|logitech.com|lucasarts.com|tomshardware.com|maxcdn.com|tweetgrid.com|frequency.com|aftonbladet.se|seekingalpha.com|threatfire.com|bolha.com|jetbrains.com|fora.tv|thevine.com.au|americanapparel.net|mashable.com|brobible.com|oyster.com|photobucket.com|nuts.co.uk|meetme.com|alatest.com|apps.facebook.com|billabong.com|weeworld.com|youtube.com|philips.com|tvunetworks.com|g4tv.com|jobsite.co.uk|avast.com|ehow.com|gasbuddy.com|globaltv.com|nme.com|imageshack.us|tube8.com|priestville.org|latimes.com|umbro.com|tempe12.com|account.hirezstudios.com|salon.com|juxtapoz.com|wonka.com|medonet.pl|asus.com|7digital.com|lemonfree.com|babylon.com|theweek.com|bookadumpster.com
+@@||google-analytics.com/ga.js$domain=7digital.com|account.hirezstudios.com|aftonbladet.se|alatest.com|americanapparel.net|apps.facebook.com|asus.com|avast.com|babylon.com|banshee.fm|billabong.com|billboard.com|bolha.com|bookadumpster.com|break.com|brobible.com|donanimhaber.com|ehow.com|eonline.com|fora.tv|frequency.com|g4tv.com|games.latimes.com|gasbuddy.com|globaltv.com|google.com|imageshack.us|jetbrains.com|jobsite.co.uk|justjared.com|juxtapoz.com|kleinanzeigen.ebay.de|latimes.com|lemonfree.com|logitech.com|lucasarts.com|mashable.com|maxcdn.com|medonet.pl|meetme.com|mevio.com|mommyish.com|nme.com|nuts.co.uk|oyster.com|philips.com|photobucket.com|priceme.co.nz|priestville.org|salon.com|seekingalpha.com|sundance.org|tempe12.com|thegrindstone.com|thevine.com.au|theweek.com|threatfire.com|timberland.com|tomshardware.com|tube8.com|tvunetworks.com|tweetgrid.com|umbro.com|weeworld.com|wonka.com|yellow.co.nz|youtube.com
 @@||google-analytics.com/urchin.js$domain=expresspcparts.com.au|roblox.com
 @@||google.com/coop/cse/brand?form=searchbox_$script,domain=wellness.com
 @@||google.com/cse/cse.js$domain=collegehumor.com
@@ -676,12 +675,12 @@ _wtInit.js
 @@||odcdn.com^*/coremetrics.js
 @@||omniture.com^$document,~third-party
 @@||online.citibank.com^*/s_code.js
-@@||ooyala.com/3rdparty/omniture_other_$domain=thesun.co.uk|bloomberg.com|businessweek.com
+@@||ooyala.com/3rdparty/omniture_other_$domain=bloomberg.com|businessweek.com|thesun.co.uk
 @@||optimum.net/js/omniture/external.js
 @@||optimum.net/js/omniture/s_code_h.js
 @@||oreillyauto.com/site/globals/js/s_code.js
 @@||ostkcdn.com/js/s_code.js$domain=overstock.com
-@@||outbrain.com/nanoWidget/3rd/comScore/comScore.htm$domain=theinsider.com|telegraph.co.uk
+@@||outbrain.com/nanoWidget/3rd/comScore/comScore.htm$domain=telegraph.co.uk|theinsider.com
 @@||paypalobjects.com^*/js/site_catalyst/
 @@||pcworld.com/script/omniture/video.js
 @@||pcworld.com/www.pcw/js/analytics/*/s_code.js

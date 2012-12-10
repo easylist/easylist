@@ -11,7 +11,7 @@
 !---------- Generic Blocking Rules ----------
 !
 .com/admanager/
-.com/bAds/$script,image,subdocument
+.com/bAds/$image,script,subdocument
 .com/player/ads/
 .in/ads/
 .net/Ads/
@@ -38,7 +38,7 @@
 !
 !---------- 1st Party Blocking Rules ----------
 !
-/fmw11com_TB-$domain=fmw11.net,subdocument
+/fmw11com_TB-$subdocument,domain=fmw11.net
 ||123musiq.com/DS/
 ||amazonaws.com/gfknokia/gfk_nokia_on_exit.js
 ||andhra4you.com/images/add/
@@ -70,7 +70,7 @@
 ||hotbollywoodactress.net/spm.
 ||hotbollywoodactress.net/spmm.
 ||hotbollywoodactress.net/wgpopup.
-||i.imgci.com/homepage/india/*$image,domain=espncricinfo.com
+||i.imgci.com/homepage/india/$image,domain=espncricinfo.com
 ||in.com/swf/ads/
 ||indiadaily.com/editorial/leaderboard.
 ||indiadaily.com/leaderboard.
@@ -135,11 +135,11 @@
 ||shaadi.com^$third-party
 ||smaato.net^$third-party
 ||smashingcinema.com/var/thumbs/$domain=gilma.in
-||virakesari.lk/flash/$domain=expressnews.lk,third-party,object
+||virakesari.lk/flash/$object,third-party,domain=expressnews.lk
 !
 !---------- Popups (Adblock Plus 2.0 or better) ----------
 !
-||profile.bharatmatrimony.com^$popup,image,~image
+||profile.bharatmatrimony.com^$image,~image,popup
 !
 !---------- Indian Trackers ----------
 !
@@ -174,48 +174,51 @@
 !
 @@||123musiq.com/DS/123Musiq.gif
 @@||thinakkural.com/images/stories/ADDZ/add-54.jpg
-@@||vdopia.com^*/resolver.php?$domain=bollywoodhungama.com,third-party
-@@||vdopia.com^*/vastxml/$domain=bollywoodhungama.com,third-party
+@@||vdopia.com^*/resolver.php?$third-party,domain=bollywoodhungama.com
+@@||vdopia.com^*/vastxml/$third-party,domain=bollywoodhungama.com
 @@||weather.com/web/wow/180x150/
 !
 !---------- Indian Generic Element Hiding Rules ----------
 !
 ###adv_container
 ###advtop
-##A[href^="http://ads1.adzmob.com/"]
-##A[href^="http://ads1.mojiva.com/"]
-##A[href^="http://ads2.adzmob.com/"]
-##A[href^="http://c.ad4fun.com/"]
-##A[href^="http://c.admob.com/"]
-##A[href^="http://c.adtwirl.com/click.php?ad="]
+##a[href^="http://ads1.adzmob.com/"]
+##a[href^="http://ads1.mojiva.com/"]
+##a[href^="http://ads2.adzmob.com/"]
+##a[href^="http://c.ad4fun.com/"]
+##a[href^="http://c.admob.com/"]
+##a[href^="http://c.adtwirl.com/click.php?ad="]
 ##a[href^="http://c.mobpartner.mobi/"]
-##A[href^="http://c27.smaato.net/oapi/"]
-##A[href^="http://click.buzzcity.net/"]
-##A[href^="http://clk.mobgold.com/click.php?"]
-##A[href^="http://newtraffic.mobi/?i="]
-##A[href^="http://usmed.amobee.com/"]
-##A[href^="http://wap4ads.com/ref.php?id="]
+##a[href^="http://c27.smaato.net/oapi/"]
+##a[href^="http://click.buzzcity.net/"]
+##a[href^="http://clk.mobgold.com/click.php?"]
+##a[href^="http://newtraffic.mobi/?i="]
+##a[href^="http://usmed.amobee.com/"]
+##a[href^="http://wap4ads.com/ref.php?id="]
 !
 !---------- Indian Specific Element Hiding Rules ----------
 !
-123musiq.com##TABLE[width="300"][height="250"]
+123musiq.com##table[width="300"][height="250"]
 andhra4you.com##.style14[align="center"]
 andhra4you.com##.style24
 andhra4you.com##.style47
 andhra4you.com##.style5
-andhra4you.com##TABLE[style="width: 100%; height: 76px"]
-andhra4you.com##TD[style="width: 127px"]
+andhra4you.com##table[style="width: 100%; height: 76px"]
+andhra4you.com##td[style="width: 127px"]
 andhraprabhaonline.com##.mediumrectangle
 apniisp.com##[width="140"]
 asklaila.com##.spnsrSrpOffer
 athirvu.com##.clsR1C20
-behindwoods.com##TABLE[width="120"][align="center"]
-behindwoods.com##TD[height="95"]
+behindwoods.com##table[width="120"][align="center"]
+behindwoods.com##td[height="95"]
 bhaskar.com##.tar.fs70
+bhaskar.com,divyabhaskar.co.in##[style="font-size: 70%; text-align: right; padding-right: 135px; color: rgb(204, 204, 204);"]
 bollyclips.com##[width="755"][height="220"]
-business-standard.com##TABLE[width="240"][style="border-top:#cecece solid 1px;border-bottom: #cecece solid 1px;border-right: #cecece solid 1px;border-left: #cecece solid 1px;"]
+business-standard.com##table[width="240"][style="border-top:#cecece solid 1px;border-bottom: #cecece solid 1px;border-right: #cecece solid 1px;border-left: #cecece solid 1px;"]
 cinema.dinamalar.com##[style="margin: 0px auto; clear: both; padding-bottom: 8px;"]
 cinema.dinamalar.com##[style="width: 159px; height: 600px; vertical-align: top; float: left;"]
+coolswiss.com,lankasrisports.com,newindianews.com,z9world.com###barright
+coolswiss.com,lankasrisports.com,newindianews.com,z9world.com###barrightx
 cricinfo.com##.seriesSpncr
 cricinfo.com##.spnsrLivelks
 cricinfo.com##.topFrameBanner
@@ -232,29 +235,26 @@ dinamalar.com##.newsht
 dinamani.com##.adv
 dinamani.com##.home_728x90_div
 dinamani.com##.inside_728x90_div
-divyabhaskar.co.in,bhaskar.com##[style="font-size: 70%; text-align: right; padding-right: 135px; color: rgb(204, 204, 204);"]
 freshbollywood.com###block-block-3
 freshbollywood.com##.dock-back.container.clearfix
 gilma.in###hd_block2
 hotbollywoodactress.net###rssincl-box-221564
 in.specials.yahoo.com###index-nt1
-indiaglitz.com##TABLE[width="740"]
+indiaglitz.com##table[width="740"]
 indiainfo.com###ind_biz_top_adv
 indianetzone.com##[height="100"]
 indianetzone.com##[height="110"]
 intoday.in##[style="background-color: rgb(61, 61, 61); margin-right: 15px; padding: 5px 0pt 10px; width: 315px;"]
-irctc.co.in##DIV[style="width:850px; height:133px; margin:12px auto 0 auto;"]
-irctc.co.in##TABLE[style="margin-top:6px;"]
-jagran.yahoo.com##DIV[style="border:1px solid #B1BEC7;width:348px;height:270px"]
+irctc.co.in##div[style="width:850px; height:133px; margin:12px auto 0 auto;"]
+irctc.co.in##table[style="margin-top:6px;"]
+jagran.yahoo.com##div[style="border:1px solid #B1BEC7;width:348px;height:270px"]
 josh18.in.com##[style="width: 300px; border: 1px solid rgb(182, 182, 180);"]
-lankasri.com,lankasri.asia,lankasri.eu,lankasrinew.com###col1
-lankasri.com,lankasri.asia,lankasri.eu,lankasrinew.com##TD[style="padding-top: 5px;"]
+lankasri.asia,lankasri.com,lankasri.eu,lankasrinew.com###col1
+lankasri.asia,lankasri.com,lankasri.eu,lankasrinew.com##td[style="padding-top: 5px;"]
 lankasrinews.com##.aContent
-lankasrinews.net,lankasrinews.com##.aBottom
-lankasrinews.net,lankasrinews.com##.aTop
-lankasrisports.com,z9world.com,newindianews.com,coolswiss.com###barright
-lankasrisports.com,z9world.com,newindianews.com,coolswiss.com###barrightx
-maalaimalar.com##DIV[style="float:left;width:100%;text-align:center;margin-top:5px;"]
+lankasrinews.com,lankasrinews.net##.aBottom
+lankasrinews.com,lankasrinews.net##.aTop
+maalaimalar.com##div[style="float:left;width:100%;text-align:center;margin-top:5px;"]
 maalaisudar.com##[width="31%"][bgcolor="#ffffff"]
 manithan.com##.banner
 mathrubhumi.com###topbanner1
@@ -267,15 +267,15 @@ musicmaza.com##.smtxt
 musicmaza.com##[height="600"]
 musicmaza.com##[width="349"]
 musicmaza.com##[width="476"]
-musicmaza.com##TABLE[width="245"]
+musicmaza.com##table[width="245"]
 musicplug.in##[style="height: 100px; width: 100%; border-bottom-color: rgb(255, 0, 0);"]
-nakkheeeran.com##TABLE[style="WIDTH: 300px; BORDER-COLLAPSE: collapse; HEIGHT: 250px"]
+nakkheeeran.com##table[style="WIDTH: 300px; BORDER-COLLAPSE: collapse; height: 250px"]
 nakkheeran.in###Add1
 nakkheeran.in###Add6
 nakkheeran.in###Add8
 nakkheeran.in###ctl00_Add1
 nakkheeran.in##[style="background-color: rgb(239, 239, 239); width: 128px; vertical-align: top;"]
-nakkheeran.in##TABLE[style="WIDTH: 300px; BORDER-COLLAPSE: collapse; HEIGHT: 250px"]
+nakkheeran.in##table[style="WIDTH: 300px; BORDER-COLLAPSE: collapse; height: 250px"]
 oneindia.in###a4p1
 oneindia.in##[style="width:300px;float:left;"]
 oneindia.in##[style="width:300px;float:left;padding-top:5px;padding-bottom:1px;"]
@@ -285,7 +285,7 @@ prajasakti.com##.mediumrectangle
 prajasakti.com##.skyscraper
 prajasakti.com##.wideskyscraper
 raaga.com###AE1D21A6-A178-11DD-B52D-811056D89593
-raaga.com##DIV[style="width:300px;height:250px;margin-top:5px;margin-bottom:5px;"]
+raaga.com##div[style="width:300px;height:250px;margin-top:5px;margin-bottom:5px;"]
 rajshrimobile.com##[style="width:728px; height:90px; float:left; vertical-align:middle; margin-bottom:2px;"]
 samachar.com##[height="90"]
 sivajitv.com###centerbanner
@@ -303,16 +303,16 @@ songs.pk##[width="468"][height="60"]
 southdreamz.com##.postareawide[style="text-align: center; margin: 0pt 10px; height: 90px;"]
 southdreamz.com##.postareawide[style="text-align: center; margin:0 10px; height: 90px"]
 stateofkerala.in##[width="180"][height="610"]
-stateofkerala.in##TD[height="103"]
-stateofkerala.in##TD[height="77"]
+stateofkerala.in##td[height="103"]
+stateofkerala.in##td[height="77"]
 sulekha.com##[style="width: 350px; margin-left: 0pt ! important;"]
 sulekha.com##[style="z-index: 1; width: 950px; height: 90px; margin-top: 10px; margin-bottom: 5px; clear: both;"]
 tamildigitalcinema.com##.inner468ad
 tamilmp3world.com##[width="162"]
 tamilmp3world.com##[width="728"]
 tamilmurasu.org###add_top
-tamilmurasu.org##TABLE[width="1000"][cellspacing="10"]
-tamilnaduentertainment.com##TD[width="300"]
+tamilmurasu.org##table[width="1000"][cellspacing="10"]
+tamilnaduentertainment.com##td[width="300"]
 tamilnirubar.org##.classifiedstop
 tamiltorrent.net###banner
 tamiltorrent.net##.bigBanner
@@ -345,9 +345,9 @@ zonkerala.com##[width="650"]
 !
 andhra4you.com##[style="width: 100%; height: 76px;"]
 andhra4you.com##[style="width: 127px;"]
-irctc.co.in##DIV[style="width: 850px; height: 133px; margin: 12px auto 0pt;"]
-irctc.co.in##TABLE[style="margin-top: 6px;"]
-jagran.yahoo.com##DIV[style="border: 1px solid rgb(177, 190, 199); width: 348px; height: 270px;"]
+irctc.co.in##div[style="width: 850px; height: 133px; margin: 12px auto 0pt;"]
+irctc.co.in##table[style="margin-top: 6px;"]
+jagran.yahoo.com##div[style="border: 1px solid rgb(177, 190, 199); width: 348px; height: 270px;"]
 raaga.com##[style="width: 300px; height: 250px; margin-top: 5px; margin-bottom: 5px;"]
 !
 !---------- Temporary Filters ----------

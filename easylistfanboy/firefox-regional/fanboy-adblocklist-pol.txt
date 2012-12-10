@@ -91,7 +91,6 @@
 ||tvn24.pl/_s/advAsync.js
 ||tvnfakty.pl/iframe-forum
 ||vda.wp.pl^
-||vda.wp.pl^
 ||wrzuta.pl/ad/
 ||wrzuta.pl/mp3_*_top.swf
 ||www.wp.pl/*?rekid=
@@ -139,7 +138,7 @@
 ||digi-tv.pl^$third-party
 ||files.lingvosoft.com^$third-party
 ||gambling-affiliation.com^$third-party
-||helion.pl^$third-party,image
+||helion.pl^$image,third-party
 ||hub.com.pl^$third-party
 ||metaffiliation.com^$third-party
 ||netsales.pl^$third-party
@@ -155,12 +154,12 @@
 !
 !---------- Polish Popups (Adblock Plus 2.0 or better) ----------
 !
-||ankieta-online.pl^$other,popup,image,~image
-||eurogrand.com^$other,popup,image,~image
-||gem.pl^$other,popup,image,~image
-||polska-iphone.com--win.net^$other,popup,image,~image
+||ankieta-online.pl^$image,~image,other,popup
+||eurogrand.com^$image,~image,other,popup
+||gem.pl^$image,~image,other,popup
+||polska-iphone.com--win.net^$image,~image,other,popup
 ||surveymonkey.com^$popup,third-party,domain=gazeta.pl
-||wygrywasz.pl^$other,popup,image,~image
+||wygrywasz.pl^$image,~image,other,popup
 !
 !---------- Polish Trackers ------------
 !
@@ -175,7 +174,7 @@ _gemius.
 ||adct.gg.pl^$third-party
 ||analytics.gazeta.pl^
 ||buka.skapiec.pl^*/bukavw/
-||buka.skapiecstatic.pl^*/bukavw/*
+||buka.skapiecstatic.pl^*/bukavw/
 ||criteo.com^
 ||darmowe-statystyki.com^$third-party
 ||dot.wp.pl^
@@ -238,17 +237,17 @@ sfd.pl##[style="position: relative; z-index: 0; width: 900px; height: 80px; text
 ###under_placead3_1
 ###under_placead5_1
 ###zasobnikAds
-##.ad_pasekart
+##.TopAd-Wrapper
 ##.adBoks
-##.adsense-wide
 ##.adSrodek
+##.ad_pasekart
+##.adsense-wide
 ##.advCenter
 ##.advCenterColumn
 ##.box_filmu_reklama
 ##.box_reklama
 ##.prv-domena-advert
 ##.reklama_wysz
-##.TopAd-Wrapper
 !
 !---------- Polish Site Annoyances ----------
 !
@@ -330,8 +329,8 @@ insomnia.pl###showimage
 insomnia.pl##.a7[style="width:160px;"]
 insomnia.pl##.ptw-widget
 insomnia.pl##[style="margin:0;padding:0;width: 950px; height: 100px;background: white; border: solid 2px red"]
-insomnia.pl##DIV[style="z-index: 0; width: 600px; height: 60px; text-align: center; margin-top:5px; margin-bottom: 5px;"]
-insomnia.pl##TD[style="padding-top: 200px"]
+insomnia.pl##div[style="z-index: 0; width: 600px; height: 60px; text-align: center; margin-top:5px; margin-bottom: 5px;"]
+insomnia.pl##td[style="padding-top: 200px"]
 interia.pl###ecommerce
 interia.pl###see_also_fixed
 interia.pl##.headerGraphic
@@ -357,11 +356,11 @@ makro.pl###flashKartka
 makro.pl###opiniac_blk
 meteogroup.pl###lower_header_right_area
 meteogroup.pl###upper_header
-mgsm.pl##SMALL[style="display: block; color: #c0c0c0; font-size: 9px; text-align:center; "]
+mgsm.pl##small[style="display: block; color: #c0c0c0; font-size: 9px; text-align:center; "]
 money.pl##.inContext_disabled
 napisy24.pl###baner_300_250
 napisy24.pl###billboard_700_250
-napisy24.pl##UL#irj
+napisy24.pl###irj
 nk.pl##.nk_popup_body
 nk.pl##.nk_popup_overlay
 onet.pl###adMagazine
@@ -405,7 +404,7 @@ skapiec.pl###promoOfferList
 skapiec.pl###rotation_box
 skapiec.pl##.content_rotation
 skapiec.pl##.rotation
-spidersweb.pl##DIV[style="position: relative; display: block; width: 510px; height: 140px; margin: 0 auto;"]
+spidersweb.pl##div[style="position: relative; display: block; width: 510px; height: 140px; margin: 0 auto;"]
 spryciarze.pl###gratka-widget
 spryciarze.pl##.film_rgoogle
 tapeciarnia.pl###id_toplayer
@@ -445,15 +444,15 @@ wykop.pl##.sponsoredby
 !
 ###adnet
 ###miniAdsAd
-##.ad_adInfo
 ##.adBillboard
+##.ad_adInfo
 ##.adhref_box_ads
 ##.art_ad
 ##.art_ad_body
+.box.ad.
 ##.gallery_ads_box
 ##.miniads
 ##.mod_ad
-.box.ad.
 /ad.js?id
 /admatik.
 /adtaily_

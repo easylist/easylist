@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
 ! Checksum: yTznE3UMpwFJmWj13IN0tA
-! Fanboy's Chinese-addon Adblock list 
+! Fanboy's Chinese-addon Adblock list
 ! Updated: 15 Jul 2012
 ! This list expires after 5 days
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -170,7 +170,7 @@ _souvv_ads.js
 ||l.yimg.com/f/a/tw/*.swf
 ||lemao.cn/blueidea/
 ||liaoning.nen.com.cn/images/content/$object
-||m.openv.tv^$object_subquest
+||m.openv.tv^$object-subquest
 ||mat1.gtimg.com/ent/
 ||mingpao.com/js/Adv/
 ||mingpao.com/js/Keywords
@@ -348,13 +348,13 @@ _souvv_ads.js
 ||yiqiwin.com^
 ||ylunion.com^
 ||youdaylove.cn^
-!     
+!
 !---------- Popups (Adblock Plus 2.0 or better) ----------
-!   
-||ct10000.com^$popup,image,~image
-||gogo.com^$popup,image,~image
-||groupon.com.tw^$popup,image,~image
-||ranwen.com^$popup,image,~image
+!
+||ct10000.com^$image,~image,popup
+||gogo.com^$image,~image,popup
+||groupon.com.tw^$image,~image,popup
+||ranwen.com^$image,~image,popup
 !
 ! ---------- 3rd party blocking rules ----------
 !
@@ -378,7 +378,7 @@ _souvv_ads.js
 ||acode.ifocus.cn^$third-party
 ||adsame.com^$third-party
 ||adsame.cyol.com^$third-party
-||alimama.cn^$third-party,script
+||alimama.cn^$script,third-party
 ||allyes.com.cn^*.gif?$third-party
 ||as.sinahk.net^$third-party
 ||baizoon.com^$third-party
@@ -395,9 +395,9 @@ _souvv_ads.js
 ||iloveyouxi.com^$third-party
 ||is686.com^$third-party
 ||l.yimg.com^*/promo/$third-party
-||lz.tbcdn.cn^$third-party,script
+||lz.tbcdn.cn^$script,third-party
 ||mediav.com^$third-party
-||mini.artxun.com^$third-party,subdocument
+||mini.artxun.com^$subdocument,third-party
 ||qiyou.com^$third-party
 ||shendu.cc^$third-party
 ||shenduchuanmei.com^$third-party
@@ -480,21 +480,21 @@ _stat.php?$image
 !
 ###ShowAD
 ###turnAD
-##.ad-links
 ##.AD355125
+##.ad-links
 ##.ad360
 ##.ad590
+##.adImg
+##.adListB
+##.adNone
+##.adSpace
 ##.ad_index02
 ##.ad_pic
 ##.ad_text
 ##.ad_word
-##.adImg
 ##.adlist
 ##.adlist1
 ##.adlist2
-##.adListB
-##.adNone
-##.adSpace
 ##.adtext
 ##.advbox
 ##.area1_2_ad1
@@ -503,6 +503,7 @@ _stat.php?$image
 ##.news_ad_box
 ##.p_topad
 ##.right_picAd
+/ADPlay.
 /ad/600-
 /ad/content/*
 /ad2010.
@@ -518,7 +519,6 @@ _stat.php?$image
 /adphoto.
 /adpic.
 /adping.
-/ADPlay.
 /adpolestar/*
 /adservice/*
 /adsfile.
@@ -534,6 +534,7 @@ _sidebar_ad.
 !
 !---------- Chinese Generic Element Hiding Rules ----------
 !
+###AdRight-Article-QQ
 ###ad_A
 ###ad_B
 ###ad_C
@@ -542,12 +543,11 @@ _sidebar_ad.
 ###ad_G
 ###ad_H
 ###ad_M
-###ad_mntl
 ###ad_N
 ###ad_O
 ###ad_P
+###ad_mntl
 ###ad_text
-###AdRight-Article-QQ
 ###adst
 ###banner02
 ###banner03
@@ -585,7 +585,7 @@ baidu.com##.ad-fc-down
 baidu.com##div[id^="bdfs"]
 baidu.com##div[style="display:block;width:990px;height:90px; padding-bottom:15px;"]
 baidu.com##table[bgcolor="#f5f5f5"]
-baidu.com##TABLE[width="30%"][align="right"]
+baidu.com##table[width="30%"][align="right"]
 bayuq.com###ShowMeitu
 boosj.com###ad_140x385_l
 boosj.com###ad_140x385_r
@@ -595,7 +595,7 @@ china.com###clm01
 chinanews.com.cn##.gghzh
 chinanews.com.cn##.rightgg
 cjdby.net##.a_pb
-cnfol.com###top 
+cnfol.com###top
 cnhubei.com###listdoc1
 cnhubei.com###listdoc4
 cnhubei.com###listdocn2
@@ -614,8 +614,8 @@ hjenglish.com##.a4_EN-A-S1P-5-1
 hjenglish.com##.a4_EN-A-Z1T-16-15
 hkdailynews.com.hk##[style="width: 300px; height: 257px; float: right;"]
 hkheadline.com###top_banner
-hkheadline.com##TABLE[width="1002"][height="102"]
-huanqiu.com##IFRAME[width="200px"][height="300px"]
+hkheadline.com##table[width="1002"][height="102"]
+huanqiu.com##iframe[width="200px"][height="300px"]
 ifeng.com##.gg298
 ifeng.com##.maidunbox
 ifeng.com##.pic640
@@ -632,7 +632,7 @@ mobile01.com##.widget.article
 msn.com.cn##a[href^="http://msn.allyes.com/"]
 mt30.com##.softdownR
 nen.com.cn##.fla
-nen.com.cn##TABLE[height="312"][width="310"]
+nen.com.cn##table[height="312"][width="310"]
 newhua.com###lovexin12
 newhua.com##.a500
 newhua.com##[style="left: 22px; position: absolute; top: 1094px;"]
@@ -653,8 +653,8 @@ qidian.com##.gg05
 qidian.com##.gg06
 qiyi.com###j-ad
 qiyi.com##div[style="POSITION:relative;Z-INDEX:1;width:970px;height:100px;border-top:15px solid #fff;"]
-qq.com###nav
 qq.com###News_F_UpRight
+qq.com###nav
 sina.com.cn###PublicRelation9
 sina.com.cn###top_bar
 sina.com.cn##.blkTopGoogleSearch
@@ -665,10 +665,10 @@ sohu.com##.picList.Area
 sohu.com##.sogouService
 sxrb.com###QQ_Full
 taobao.com###winpop
+taobao.com##.J_ECPM
 taobao.com##.big-gg
 taobao.com##.bottom-gg
 taobao.com##.category-sub-smallgg
-taobao.com##.J_ECPM
 taobao.com##.small-gg
 taobao.com##.top-banner
 tianya.cn##.fence_channle_rig
@@ -678,9 +678,9 @@ tiexue.net##.banner03
 tiexue.net##.banner04
 tiexue.net##.banner05
 tw.news.yahoo.com###ynwsadk
-xinhuanet.com##TD[height="240"]
-xinhuanet.com##TD[height="250"]
-xinhuanet.com##TD[height="90"]
+xinhuanet.com##td[height="240"]
+xinhuanet.com##td[height="250"]
+xinhuanet.com##td[height="90"]
 xinmin.cn##.image2
 xinmin.cn##[style="border: 0px none; width: 100%; height: 92px;"]
 xinmin.cn##[style="width: 736px; height: 90px; border: 0px none; margin: 0pt auto; text-align: center;"]
