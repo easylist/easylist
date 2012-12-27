@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.3
+VERSION = 3.4
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -177,7 +177,7 @@ def fopsort (filename):
                     if elementparts:
                         domains = elementparts.group(1).lower()
                         if lineschecked <= CHECKLINES:
-                            if isglobalelement(domains):
+                            if isglobalelement(domains) or elementparts.group(2) == "#@#":
                                 globalelementlines += 1
                             else:
                                 nonglobalelementlines += 1
