@@ -41,6 +41,7 @@ PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))")
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
+UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -274,6 +275,7 @@ def elementtidy (domains, separator, selector):
     for tag in each(SELECTORPATTERN, selector):
         tagname = tag.group(1)
         if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
+        if re.search(UNICODESELECTOR, selector) != None: break
         ac = tag.group(3)
         if ac == None:
             ac = tag.group(4)
