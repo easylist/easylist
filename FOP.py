@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.4
+VERSION = 3.5
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -35,10 +35,12 @@ DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#\@?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
-# Compile regular expressions that match element tags and pseudo classes; "@" indicates either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z]*)((?=([\[\]\^\*\$=:@]))|(?=(\s([+>]|[a-zA-Z]+[\[:@]))))")
+# Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
+SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
-REMOVALPATTERN = re.compile(r"((?<=(@))|(?<=([>+]\s)))([a-zA-Z]+)(?=([#\.]))")
+REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))")
+ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
+TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -245,17 +247,33 @@ def elementtidy (domains, separator, selector):
     # Mark the beginning and end of the selector with "@"
     selector = "@{selector}@".format(selector = selector)
     each = re.finditer
+    # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
+    selectorwithoutstrings = selector
+    selectoronlystrings = ""
+    while True:
+        stringmatch = re.match(ATTRIBUTEVALUEPATTERN, selectorwithoutstrings)
+        if stringmatch == None: break
+        selectorwithoutstrings = selectorwithoutstrings.replace("{before}{stringpart}".format(before = stringmatch.group(1), stringpart = stringmatch.group(2)), "{before}".format(before = stringmatch.group(1)), 1)
+        selectoronlystrings = "{old}{new}".format(old = selectoronlystrings, new = stringmatch.group(2))
+    # Clean up tree selectors
+    for tree in each(TREESELECTOR, selector):
+        if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
+        replaceby = " {g2} ".format(g2 = tree.group(2))
+        if replaceby == "   ": replaceby = " "
+        selector = selector.replace(tree.group(0), "{g1}{replaceby}{g3}".format(g1 = tree.group(1), replaceby = replaceby, g3 = tree.group(3)), 1)
     # Remove unnecessary tags
     for untag in each(REMOVALPATTERN, selector):
+        untagname = untag.group(4)
+        if untagname in selectoronlystrings or not untagname in selectorwithoutstrings: continue
         bc = untag.group(2)
         if bc == None:
             bc = untag.group(3)
-        untagname = untag.group(4)
         ac = untag.group(5)
         selector = selector.replace("{before}{untag}{after}".format(before = bc, untag = untagname, after = ac), "{before}{after}".format(before = bc, after = ac), 1)
     # Make the remaining tags lower case wherever possible
     for tag in each(SELECTORPATTERN, selector):
         tagname = tag.group(1)
+        if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
         ac = tag.group(3)
         if ac == None:
             ac = tag.group(4)
@@ -263,6 +281,7 @@ def elementtidy (domains, separator, selector):
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(1)
+        if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings: continue
         ac = pseudo.group(3)
         selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
     # Remove the markers from the beginning and end of the selector and return the complete rule
