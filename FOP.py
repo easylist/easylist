@@ -53,7 +53,7 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS =  ("collapse", "document", "donottrack", "elemhide",
+KNOWNOPTIONS = ("collapse", "document", "elemhide",
                 "font", "image", "match-case", "object",
                 "object-subrequest", "other", "popup", "script",
                 "stylesheet", "subdocument", "third-party", "xmlhttprequest")
