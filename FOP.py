@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.5
+VERSION = 3.6
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -338,7 +338,7 @@ def removeunnecessarywildcards (filtertext):
     """ Where possible, remove unnecessary wildcards from the beginnings
     and ends of blocking filters."""
     whitelist = False
-    if filtertext[0:1] == "@@":
+    if filtertext[0:2] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
     while True:
@@ -346,7 +346,7 @@ def removeunnecessarywildcards (filtertext):
             break
         else:
             proposed = filtertext[1:]
-            if not proposed or proposed[0] == "|":
+            if not proposed or proposed[0] == "|" or proposed[0] == "/" and proposed[-1] == "/":
                 break
             else:
                 filtertext = proposed
