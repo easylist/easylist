@@ -50,7 +50,8 @@ BLANKPATTERN = re.compile(r"^\s*$")
 COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
-IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt")
+IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
+          "enhancedstats-addon.txt", "fanboy-addon", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("collapse", "document", "elemhide",
@@ -120,10 +121,13 @@ def main (location):
     # Work through the directory and any subdirectories, ignoring hidden directories
     print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
     for path, directories, files in os.walk(location):
-        print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
+        ignored = []
         for direct in directories:
-            if direct.startswith("."):
-                directories.remove(direct)
+            if direct.startswith(".") or direct in IGNORE:
+                ignored.append(direct)
+        for direct in ignored:
+            directories.remove(direct)
+        print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
         directories.sort()
         for filename in sorted(files):
             address = os.path.join(path, filename)
