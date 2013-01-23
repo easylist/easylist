@@ -121,12 +121,9 @@ def main (location):
     # Work through the directory and any subdirectories, ignoring hidden directories
     print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
     for path, directories, files in os.walk(location):
-        ignored = []
-        for direct in directories:
+        for direct in directories[:]:
             if direct.startswith(".") or direct in IGNORE:
-                ignored.append(direct)
-        for direct in ignored:
-            directories.remove(direct)
+                directories.remove(direct)
         print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
         directories.sort()
         for filename in sorted(files):
