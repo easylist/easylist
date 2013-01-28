@@ -343,7 +343,7 @@ def removeunnecessarywildcards (filtertext):
     if filtertext[0:2] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
-    while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|":
+    while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
         hadStar = True
     while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|":
