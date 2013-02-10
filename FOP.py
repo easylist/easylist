@@ -276,7 +276,7 @@ def elementtidy (domains, separator, selector):
     for tag in each(SELECTORPATTERN, selector):
         tagname = tag.group(1)
         if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
-        if re.search(UNICODESELECTOR, selector) != None: break
+        if re.search(UNICODESELECTOR, selectorwithoutstrings) != None: break
         ac = tag.group(3)
         if ac == None:
             ac = tag.group(4)
