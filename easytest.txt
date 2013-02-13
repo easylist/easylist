@@ -29,3 +29,14 @@ _46860_
 @@||yenicarsim.com/images/upload/ad/$image
 /pop.js|
 /pop2.js|
+!
+! Test 3: Splitting tracking/ads
+! Test if it is possible to split some adserver rules into a reasonable amount of ad-blocking versus tracking-blocking rules.
+! If you want to help, disable the following filters in your local filters:
+! ||googleadservices.com^$third-party
+! ||doubleclick.net^$~object-subrequest,third-party
+! ||g.doubleclick.net^$third-party
+! Tracking rules for those domains will directly be added to EasyPrivacy. Adblocking rules are listed below
+!
+||ad.doubleclick.net^$third-party,~object-subrequest
+||partner.googleadservices.com^$third-party
