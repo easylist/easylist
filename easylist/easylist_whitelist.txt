@@ -1492,3 +1492,8 @@
 @@||videoplaza.tv/proxy/distributor?$object-subrequest,domain=aftenposten.no|bt.no|ekstrabladet.dk|kuriren.nu|qbrick.com|svd.se
 @@||videos.lanacion.com.ar^*/xml/publicidad/$object
 @@||xe.gr/property/recent_ads?$xmlhttprequest
+! Whitelists to fix broken pages of advertisers
+! Google
+@@||accounts.google.com/accounts/adwords/$image,~third-party
+@@||gstatic.com/accounts/services/adwords/$image,domain=accounts.google.com
+accounts.google.com#@#.adwords
