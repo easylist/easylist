@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.6
+VERSION = 3.7
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -31,7 +31,8 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-DOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#\@?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
@@ -155,12 +156,43 @@ def fopsort (filename):
     # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
 
+        # Combines domains for (further) identical rules
+        def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
+            combinedFilters = []
+            for i in range(len(uncombinedFilters)):
+                domains1 = re.search(DOMAINPATTERN, uncombinedFilters[i])
+                if i+1 < len(uncombinedFilters) and domains1:
+                    domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
+                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domains1.group(1)) == 0 or len(domains2.group(1)) == 0:
+                    # last filter or filter didn't match regex or no domains
+                    combinedFilters.append(uncombinedFilters[i])
+                elif domains1.group(0).replace(domains1.group(1), domains2.group(1), 1) != domains2.group(0):
+                    # non-identical filters shouldn't be combined
+                    combinedFilters.append(uncombinedFilters[i])
+                elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
+                    # identical filters. Try to combine them...
+                    newDomains = "{d1}{sep}{d2}".format(d1=domains1.group(1), sep=domainseparator, d2=domains2.group(1))
+                    newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
+                    if newDomains.count("~") > 0 and newDomains.count("~") != newDomains.count(domainseparator) + 1:
+                        # skip combining rules with both included and excluded domains. It can go wrong in many ways and is not worth the code needed to do it correctly
+                        combinedFilters.append(uncombinedFilters[i])
+                    else:
+                        domainssubstitute = domains1.group(0).replace(domains1.group(1), newDomains, 1)
+                        uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
+                else:
+                    # non-identical filters shouldn't be combined
+                    combinedFilters.append(uncombinedFilters[i])
+            return combinedFilters
+
+
         # Writes the filter lines to the file
         def writefilters():
             if globalelementlines > (filterlines + nonglobalelementlines):
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = lambda rule: re.sub(DOMAINPATTERN, "", rule)))))
+                uncombinedFilters = sorted(set(section), key = lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule))
+                outputfile.write("{filters}\n".format(filters = "\n".join(combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))))
             elif filterlines > nonglobalelementlines:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section), key = str.lower))))
+                uncombinedFilters = sorted(set(section), key = str.lower)
+                outputfile.write("{filters}\n".format(filters = "\n".join(combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))))
             else:
                 outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
 
