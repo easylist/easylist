@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.7
+VERSION = 3.8
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -151,7 +151,7 @@ def fopsort (filename):
     CHECKLINES = 10
     section = []
     lineschecked = 1
-    filterlines = globalelementlines = nonglobalelementlines = 0
+    filterlines = elementlines = 0
 
     # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
@@ -187,14 +187,12 @@ def fopsort (filename):
 
         # Writes the filter lines to the file
         def writefilters():
-            if globalelementlines > (filterlines + nonglobalelementlines):
+            if elementlines > filterlines:
                 uncombinedFilters = sorted(set(section), key = lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule))
                 outputfile.write("{filters}\n".format(filters = "\n".join(combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))))
-            elif filterlines > nonglobalelementlines:
+            else:
                 uncombinedFilters = sorted(set(section), key = str.lower)
                 outputfile.write("{filters}\n".format(filters = "\n".join(combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))))
-            else:
-                outputfile.write("{filters}\n".format(filters = "\n".join(sorted(set(section)))))
 
         for line in inputfile:
             line = line.strip()
@@ -205,7 +203,7 @@ def fopsort (filename):
                         writefilters()
                         section = []
                         lineschecked = 1
-                        filterlines = globalelementlines = nonglobalelementlines = 0
+                        filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
@@ -213,10 +211,7 @@ def fopsort (filename):
                     if elementparts:
                         domains = elementparts.group(1).lower()
                         if lineschecked <= CHECKLINES:
-                            if isglobalelement(domains) or elementparts.group(2) == "#@#":
-                                globalelementlines += 1
-                            else:
-                                nonglobalelementlines += 1
+                            elementlines += 1
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
