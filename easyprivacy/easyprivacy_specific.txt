@@ -93,7 +93,7 @@
 ||analysis.focalprice.com^
 ||analytic.imlive.com^
 ||analytics.bloomberg.com^
-||analytics.disneyinternational.com^
+||analytics.disneyinternational.com^$~script
 ||analytics.femalefirst.co.uk^
 ||analytics.go.com^
 ||analytics.gorillanation.com^
@@ -698,6 +698,7 @@
 ||icq.com/search/js/stats.js
 ||id.allegisgroup.com^
 ||id.google.*/verify/*.gif
+||ign.com/global/analytics/drones.js
 ||image.providesupport.com/cmd/
 ||images-amazon.com^*/beacon-$domain=imdb.com
 ||images-amazon.com^*/clog/clog-platform*.js$script
@@ -723,6 +724,7 @@
 ||inquiries.redhat.com^
 ||insideline.com^*/dart1x1.gif
 ||insideline.com^*/edw1x1.gif
+||insidesoci.al/track
 ||insire.com/imp?
 ||instyle.co.uk^*/tracking.js
 ||insynchq.com/wf/open?
@@ -856,6 +858,7 @@
 ||media-imdb.com^*/beacon.js
 ||mediabistro.com/blogshare/js/trackingheader.js
 ||mediaplex.com^*/universal.html
+||medium.com/_/stat/
 ||medscape.com/pi/1x1/pv/profreg-1x1.gif
 ||mercent.com/js/tracker.js
 ||merchantcircle.com/static/track.js
@@ -1072,6 +1075,7 @@
 ||plentyoffish.com/tracking.js
 ||pluto.airbnb.com^*.php?uuid=
 ||pnet.co.za/js/ga.js
+||pokernews.com/track-views.php?
 ||popcap.com^*/interstitial_zones.js
 ||potterybarn.com/pbimgs/*/external/thirdparty.js
 ||potterybarnkids.com/pkimgs/*/external/thirdparty.js
@@ -1300,6 +1304,7 @@
 ||stats.farfetch.com^
 ||stats.ft.com^
 ||stats.harpercollins.com^
+||stats.irishmirror.ie^
 ||stats.jtvnw.net^
 ||stats.justin.tv^
 ||stats.macmillanusa.com^
@@ -1692,6 +1697,7 @@
 ||yourfilehost.com/counter.htm
 ||youronlinechoices.com/activity/
 ||yourtv.com.au/share/com/js/fb_google_intercept.js
+||youtube-nocookie.com/device_204?
 ||youtube-nocookie.com/gen_204?
 ||youtube-nocookie.com/robots.txt?
 ||youtube.com/gen_204?
@@ -1724,7 +1730,7 @@
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
-||adobe.com/uber/js/omniture_s_code.js
+||adobe.com^*/omniture_s_code.js
 ||bahn.de/common/view/static/*/js/lib/omniture/s_code.min.js
 ||chip.de/js/omniture_somtr_code_vH.25.js
 ||img-bahn.de/v/*/js/s_code.js$domain=bahn.de
