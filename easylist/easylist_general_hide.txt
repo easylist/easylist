@@ -422,6 +422,7 @@
 ###MPUAdSpace
 ###MPUadvertising
 ###MPUadvertisingDetail
+###M_AD
 ###MainAd
 ###MainAd1
 ###MainContent_ucTopRightAdvert
@@ -6938,6 +6939,8 @@
 ##.Loge_AD
 ##.LoungeAdsBottomLinks
 ##.M2Advertisement
+##.MBoxAdMain
+##.MBoxAdRight
 ##.MDCadSummary
 ##.MD_adZone
 ##.MOS-ad-hack
@@ -14436,6 +14439,9 @@
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ! Magnify transparient advert on video
 ###magnify_widget_playlist_item_companion
+! Playbb.me / easyvideo.me / videozoo.me / paypanda.net
+###flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"]
+##.Mpopup + #Mad > #MadZone
 ! https://adblockplus.org/forum/viewtopic.php?f=2&t=17016
 ##.l-container > #fishtank
 ! Google
