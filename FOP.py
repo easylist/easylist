@@ -323,8 +323,13 @@ def commit (repository, basecommand, userchanges):
     if not difference:
         print("\nNo changes have been recorded by the repository.")
         return
-    print("\nThe following changes have been recorded by the repository:")
-    print(difference.decode("utf-8"))
+    print("\nThe following changes have been recorded by the repository:")    
+    try:
+        print(difference.decode("utf-8"))
+    except UnicodeEncodeError as e:
+        print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n");
+        print(difference)
+
     try:
         # Persistently request a suitable comment
         while True:
