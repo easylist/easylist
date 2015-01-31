@@ -1,8 +1,7 @@
 .info^$script,domain=pornhub.com
-/\.youporn\.com\/.*[a-zA-Z0-9]{4}/$xmlhttprequest
+/\.pornhub\.com\/.*[a-zA-Z0-9]{4}/$image,xmlhttprequest
+/\.youporn\.com\/.*[a-zA-Z0-9]{4}/$image,xmlhttprequest
 /^https?\:\/\/(?!(ajax\.googleapis\.com|ss\.phncdn\.com|ct1\.addthis\.com|s7\.addthis\.com|www\.google\.com|www\.google-analytics\.com|www\.pornhub\.com|www\.keezmovies\.com|cdn1\.static\.keezmovies\.phncdn\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=keezmovies.com
-/^https?\:\/\/(?!(apis\.google\.com|ajax\.googleapis\.com|accounts\.google\.com|platform\.twitter\.com|ss\.phncdn\.com|www\.youporn\.com|www\.google-analytics\.com|platform\.tumblr\.com|cdn1\.static\.youporn\.phncdn\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=youporn.com
-/^https?\:\/\/(?!(apis\.google\.com|ss\.phncdn\.com|www\.google-analytics\.com|public\.tableausoftware\.com|platform\.twitter\.com|pornhubinsights\.disqus\.com|accounts\.google\.com|www\.pornhub\.com|cdn1b\.static\.pornhub\.phncdn\.com|cdn1a\.static\.pornhub\.phncdn\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=pornhub.com
 /^https?\:\/\/(?!(apis\.google\.com|ss\.phncdn\.com|www\.google-analytics\.com|www\.redtube\.com|www\.google\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=redtube.com
 /^https?\:\/\/(?!(ss\.phncdn\.com|ct1\.addthis\.com|s7\.addthis\.com|www\.google-analytics\.com|www\.gaytube\.com|cdn\.static\.gaytube\.phncdn\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=gaytube.com
 /^https?\:\/\/(?!(www\.google\.com|accounts\.google\.com|platform\.twitter\.com|assets0\.uvcdn\.com|assets1\.uvcdn\.com|widget\.uservoice\.com|apis\.google\.com|ct1\.addthis\.com|www\.tube8\.com|feedback\.tube8\.com|s7\.addthis\.com|ss\.phncdn\.com|www\.google-analytics\.com|cdn1\.static\.tube8\.phncdn\.com|cdn1b\.static\.tube8\.phncdn\.com)\/)/$script,subdocument,third-party,xmlhttprequest,domain=tube8.com
@@ -491,7 +490,6 @@
 ||pornhub.com/front/alternative/
 ||pornhub.com/jpg/
 ||pornhub.com/pics/latest/$xmlhttprequest
-||pornhub.com/svvt/add?$xmlhttprequest,domain=pornhub.com
 ||pornhub.com^$script,domain=pornhub.com
 ||pornhub.com^$subdocument,~third-party
 ||pornhub.phncdn.com/images/campaign-backgrounds/
