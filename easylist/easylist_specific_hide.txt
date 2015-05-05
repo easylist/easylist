@@ -1898,8 +1898,9 @@ mediaite.com###magnify_widget_rect_content
 mediaite.com###magnify_widget_rect_handle
 reallygoodemails.com###mailchimp-link
 adv.li###main
+search.yahoo.com###main .dd .layoutCenter .compDlink
 search.yahoo.com###main .dd .layoutCenter > .compDlink
-search.yahoo.com###main .dd .layoutLeft + .layoutCenter
+search.yahoo.com###main .dd[style="cursor: pointer;"] > .layoutMiddle
 cryptocoinsnews.com###main > .mobile > .special > center
 search.yahoo.com###main > .reg > li[id^="yui_"][data-bid] > [data-bid]
 search.yahoo.com###main > div[id^="yui_"] > ul > .res
@@ -1910,7 +1911,8 @@ search.yahoo.com###main > div[style="background-color: rgb(250, 250, 255);"]
 search.yahoo.com###main > noscript + div[id^="yui_"][class][data-bk][data-bns="Yahoo"]
 search.yahoo.com###main > noscript + div[id^="yui_"][class][data-bk][data-bns="Yahoo"] + #web + div[id^="yui_"][class][data-bk][data-bns="Yahoo"]
 search.yahoo.com###main > ol li[id^="yui_"]
-search.yahoo.com###main li[id^="yui_"] > .dd > .layoutMiddle
+search.yahoo.com###main > style:first-child + * + #web + style + * > ol[class]:first-child:last-child
+search.yahoo.com###main > style:first-child + * > ol[class]:first-child:last-child
 mobilesyrup.com###main-banner
 yasni.ca,yasni.co.uk,yasni.com###main-content-ac1
 stylist.co.uk###main-header
@@ -2477,6 +2479,9 @@ pcworld.idg.com.au###rhs_resource_promo
 stream2watch.com###rhw_footer
 eel.surf7.net.my,macdailynews.com,ocia.net###right
 search.yahoo.com###right .dd .mb-11 + .compList
+search.yahoo.com###right .dd > .layoutMiddle
+search.yahoo.com###right .dd[style="cursor: pointer;"] > .layoutMiddle
+search.yahoo.com###right .dd[style^="background-color:#FFF;border-color:#FFF;padding:"] .compList
 search.yahoo.com###right .first > div[style="background-color:#fafaff;border-color:#FAFAFF;padding:4px 10px 12px;"]
 search.yahoo.com###right .reg > li[id^="yui_"][data-bid] > [data-bid]
 search.yahoo.com###right .res
