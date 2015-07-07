@@ -2656,10 +2656,10 @@
 /advertisements_
 /AdvertisementShare.
 /advertisementview/*
-/advertiser.$domain=~advertiser.growmobile.com
+/advertiser.$domain=~advertiser.growmobile.com|~panel.rightflow.com
 /advertiser/*$domain=~bingads.microsoft.com|~mobileapptracking.com|~trialpay.com
-/advertisers.$image,script,subdocument
-/advertisers/*
+/advertisers.$image,script,subdocument,domain=~panel.rightflow.com
+/advertisers/*$domain=~panel.rightflow.com
 /advertiserwidget.
 /advertises/*
 /advertisewithus_
@@ -5657,7 +5657,7 @@
 ?adversion=
 ?advertisement=
 ?advertiser=
-?advertiser_id=
+?advertiser_id=$domain=~panel.rightflow.com
 ?advertiserid=$domain=~outbrain.com
 ?advertising=
 ?advideo_
