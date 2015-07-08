@@ -3739,13 +3739,16 @@
 ! speedtest.net
 @@||google.com/coop/$script,domain=speedtest.net
 @@||googletagmanager.com/gtm.js?$script,domain=speedtest.net
+@@||speedtest.net/javascript/extMouseWheel.js
+@@||speedtest.net/javascript/functions.js
+@@||speedtest.net/javascript/highcharts.js
+@@||speedtest.net/javascript/jquery*.js
+@@||speedtest.net/javascript/speedtest-main.js
+@@||speedtest.net/javascript/swfobject.js
 @@||speedtest.zendesk.com^$script,domain=speedtest.net
 @@||zdassets.com^$script,domain=speedtest.net
-|http://$script,third-party,domain=speedtest.net
-|https://$script,third-party,domain=speedtest.net
-||speedtest.net^*.com/$script
-||speedtest.net^*.net/$script
-||speedtest.net^*cloudfront$script
+|http://$script,domain=speedtest.net
+|https://$script,domain=speedtest.net
 ! extratorrentlive
 /\/[a-zA-Z0-9]{3}/$script,third-party,domain=extratorrent.cc|extratorrentlive.com
 ! Filenuke/sharesix
