@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.8
+VERSION = 3.9
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -163,25 +163,30 @@ def fopsort (filename):
                 domains1 = re.search(DOMAINPATTERN, uncombinedFilters[i])
                 if i+1 < len(uncombinedFilters) and domains1:
                     domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
-                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domains1.group(1)) == 0 or len(domains2.group(1)) == 0:
+                    domain1str = domains1.group(1)
+                
+                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
                     combinedFilters.append(uncombinedFilters[i])
-                elif domains1.group(0).replace(domains1.group(1), domains2.group(1), 1) != domains2.group(0):
-                    # non-identical filters shouldn't be combined
-                    combinedFilters.append(uncombinedFilters[i])
-                elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
-                    # identical filters. Try to combine them...
-                    newDomains = "{d1}{sep}{d2}".format(d1=domains1.group(1), sep=domainseparator, d2=domains2.group(1))
-                    newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
-                    if newDomains.count("~") > 0 and newDomains.count("~") != newDomains.count(domainseparator) + 1:
-                        # skip combining rules with both included and excluded domains. It can go wrong in many ways and is not worth the code needed to do it correctly
-                        combinedFilters.append(uncombinedFilters[i])
-                    else:
-                        domainssubstitute = domains1.group(0).replace(domains1.group(1), newDomains, 1)
-                        uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
                 else:
-                    # non-identical filters shouldn't be combined
-                    combinedFilters.append(uncombinedFilters[i])
+                    domain2str = domains2.group(1)
+                    if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
+                        # non-identical filters shouldn't be combined
+                        combinedFilters.append(uncombinedFilters[i])
+                    elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
+                        # identical filters. Try to combine them...
+                        newDomains = "{d1}{sep}{d2}".format(d1=domain1str, sep=domainseparator, d2=domain2str)
+                        newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
+                        if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
+                            # do not combine rules containing included domains with rules containing only excluded domains
+                            combinedFilters.append(uncombinedFilters[i])
+                        else:
+                            # either both contain one or more included domains, or both contain only excluded domains
+                            domainssubstitute = domains1.group(0).replace(domain1str, newDomains, 1)
+                            uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
+                    else:
+                        # non-identical filters shouldn't be combined
+                        combinedFilters.append(uncombinedFilters[i])
             return combinedFilters
 
 
