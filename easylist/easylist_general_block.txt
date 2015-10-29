@@ -393,7 +393,8 @@
 .com/a?pagetype
 .com/a?size
 .com/ad.$domain=~ad-tuning.de
-.com/ad/$domain=~channel4.com|~mediaplex.com
+.com/ad/$~image,third-party,domain=~mediaplex.com
+.com/ad/$~third-party,domain=~channel4.com|~mediaplex.com
 .com/ad2/
 .com/ad6/
 .com/ad?
@@ -1420,7 +1421,8 @@
 /adfactory-
 /adfactory.$domain=~adfactory.rocks
 /adfactory_
-/adfarm.$domain=~mediaplex.com
+/adfarm.$~image,third-party,domain=~mediaplex.com
+/adfarm.$~third-party,domain=~mediaplex.com
 /adfarm/*
 /adfeed.
 /adfeedback/*
