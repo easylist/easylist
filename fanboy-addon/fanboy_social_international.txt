@@ -127,6 +127,11 @@ gmx.net,web.de##iframe[src^="https://www.facebook.com/plugins/like.php"]
 ! Specific hiding filters necessary for sites whitelisted with $generichide filter option
 ! Spiegel.de
 spiegel.de##.social-bar
+! Specific blocking filters necessary for sites whitelisted with $genericblock filter option
+! Gamestar.de
+||facebook.com^*/plugins/like.php?$domain=gamestar.de
+||google.com^*/fastbutton?$domain=gamestar.de
+||platform.twitter.com*/widgets/$domain=gamestar.de
 !
 !---------- Polish Site Specific Hiding Rules ----------
 !
