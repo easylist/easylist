@@ -387,7 +387,7 @@
 @@||banners.goldbroker.com/widget/
 @@||banners.wunderground.com^$image
 @@||bannersnack.net^$domain=bannersnack.com
-@@||barafranca.*/banner.php|
+@@||barafranca.*/banner.php|$~third-party
 @@||bbc.co.uk^*/adsense_write.js$domain=bbc.com
 @@||bbc.co.uk^*/advert.js$domain=bbc.com
 @@||bbc.co.uk^*/adverts.js$domain=bbc.com
@@ -1667,9 +1667,6 @@
 @@||veetle.com/images/common/ads/
 @@||ventunotech.akamai-http.edgesuite.net/VtnGoogleVpaid.swf?*&ad_type=$object-subrequest,domain=cricketcountry.com
 @@||vhobbies.com/admgr/*.aspx?ZoneID=$script,domain=vcoins.com
-@@||viamichelin.*/rentacar.js$script,~third-party
-@@||viamichelin.*/static/advert/afsquery/afsquery.js$script,~third-party
-@@||viamichelin.*/static/advert/sponsoring/itinerarypage/itinerarypage.js$script,~third-party
 @@||vidcoin.com/adserver/$subdocument,xmlhttprequest
 @@||video.economist.com/adfinder.jsp?
 @@||video.nbcuni.com^*/ad_engine_extension_nbc.swf
@@ -1748,7 +1745,7 @@
 @@||wsj.net^*/images/adv-$image,domain=marketwatch.com
 @@||www.facebook.com/ad.*^ajaxpipe^$subdocument,~third-party
 @@||www.google.*/aclk?*&adurl=$subdocument,~third-party
-@@||www.google.*/search?$subdocument
+@@||www.google.*/search?$subdocument,~third-party
 @@||www.google.*/settings/u/0/ads/preferences/$~third-party,xmlhttprequest
 @@||www.google.com/ads/preferences/$image,script,subdocument
 @@||www.networkadvertising.org/choices/|$document
@@ -2003,7 +2000,7 @@
 @@||aucun.science/bloggerex.js$domain=uptobox.com
 @@||auditude.com/player/js/lib/aud.html5player.js
 @@||auroravid.to/banner.php
-@@||autogespot.*/JavaScript/ads.js?
+@@||autogespot.*/JavaScript/ads.js?$~third-party
 @@||autolikergroup.com/advertisement.js
 @@||autolikesgroups.com^$elemhide
 @@||avforums.com/*ad$script
@@ -2834,7 +2831,7 @@
 @@||xlocker.net^$elemhide
 @@||xooimg.com/magesy/js-cdn/adblock.js
 @@||xup.in^$elemhide
-@@||yasni.*/adframe.js
+@@||yasni.*/adframe.js$~third-party
 @@||yellowbridge.com/ad/show_ads.js
 @@||yellowbridge.com^$elemhide
 @@||yellowbridge.com^*/advertisement.js
@@ -2910,7 +2907,7 @@
 @@||app.medyanetads.com/ad.js$domain=fanatik.com.tr
 @@||applevideo.edgesuite.net/admedia/$object-subrequest
 @@||atresplayer.com/static/imgs/no_ads.jpg$object-subrequest
-@@||autoscout24.*/all.js.aspx?m=css&*=/stylesheets/adbanner.css
+@@||autoscout24.*/all.js.aspx?m=css&*=/stylesheets/adbanner.css$~third-party
 @@||autotube.cz/ui/player/ad.php?id=$object-subrequest
 @@||bancainternet.com.ar/eBanking/images/*-PUBLICIDAD.
 @@||bancodevenezuela.com/imagenes/publicidad/$~third-party
@@ -2985,7 +2982,7 @@
 @@||kompas.com^*/supersized.*.min_ads.js?
 @@||kopavogur.is/umsoknarvefur/advertisement.aspx$subdocument
 @@||krotoszyn.pl/uploads/pub/ads_files/$image,~third-party
-@@||laredoute.*/scripts/combinejs.ashx?*/affiliation/$script
+@@||laredoute.*/scripts/combinejs.ashx?*/affiliation/$script,~third-party
 @@||longtailvideo.com/5/adttext/adttext.js$domain=ostrow24.tv|yuvutu.com
 @@||longtailvideo.com/5/adtvideo/adtvideo.js$domain=ostrow24.tv
 @@||lrytas.lt/ads/video_feed.js
@@ -3108,9 +3105,9 @@
 @@||support.google.com/adwords/$~third-party
 @@||www.google.*/adometry.$~third-party
 @@||www.google.*/adometry/$~third-party
-@@||www.google.*/ads/*/images/
+@@||www.google.*/ads/*/images/$image
 @@||www.google.*/ads/css/$~third-party
-@@||www.google.*/ads/images/
+@@||www.google.*/ads/images/$image
 @@||www.google.*/ads/js/$~third-party
 @@||www.google.*/ads/start/$~third-party
 @@||www.google.*/adsense/$~third-party
