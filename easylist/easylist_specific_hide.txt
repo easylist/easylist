@@ -7638,6 +7638,7 @@ yahoo.com##[data-ad-enhanced="text"]
 facebook.com##[data-referrer="pagelet_side_ads"]
 hulu.com##[flashvars^="backgroundURL=http://ads.hulu.com/published/"]
 bunalti.com##[height="90"][width="728"]
+monova.org##[href] > div[class]:first-child
 facebook.com##[href^="/ads/adboard/"]
 forums.motortrend.com##[id^="IN_HOUSE_AD_SWITCHER_"]
 explosm.net##[id^="MarketGid"]
@@ -8328,6 +8329,7 @@ christiantoday.com##article + div + div[id]
 thegatewaypundit.com##article > .entry-content + span *
 latinopost.com##article > .story-picture + .story-contents + *
 enstarz.com##article > [align="center"] > p + div[class] + div[class] + [class]
+monova.org##article > article
 kpopstarz.com##article > div > div:first-child + :last-child
 thegatewaypundit.com##article > div > span:first-child
 thegatewaypundit.com##article > span + span
@@ -8388,6 +8390,8 @@ christiantoday.com##div > .article-content + div[class] + div > *
 dragoart.com##div > :first-child + .box_pad
 monova.org##div > :first-child > [onclick]
 activistpost.com##div > :first-child > article + div + * + *
+monova.org##div > [link]
+monova.org##div > [style*="width:"]
 limetorrents.cc##div > [style="float:left; padding: 5px"] + div[style="float:left"]
 monova.org##div > a > img
 monova.org##div > a[style][href^="http://"]
@@ -8398,8 +8402,10 @@ speedtest.net##div > div > iframe[id]
 christiantoday.com##div > div:first-child > .sec-main-right > :first-child + * + *
 hngn.com##div > div[class]:first-child + div > div > div[class]:first-child
 search.mywebsearch.com##div > div[style="padding-bottom: 12px;"]
+monova.org##div > div[style^="display:"]
 thegatewaypundit.com##div > div[style^="padding"]
 d-h.st##div > iframe
+monova.org##div > img[style][src]
 thegatewaypundit.com##div > main > article > div + div + *
 filenuke.com,sharesix.com##div > p:first-child + div
 monova.org##div > script + [class][style]
@@ -8409,7 +8415,9 @@ mobilelikez.com##div > span > div + *
 monova.org##div > span > span
 mobilelikez.com##div > span:last-child > [id][class]
 mobilelikez.com##div > span[style] > div:last-child
+monova.org##div article
 mail.yahoo.com##div#msg-list .list-view .ml-bg:not(.list-view-item-container)
+monova.org##div:first-child > div > div + div + [class]
 thefreedictionary.com##div[acid^="AD|"]
 cdrlabs.com##div[align="center"]
 vitorrentz.tv##div[align="center"] > h1 + .divTableee
@@ -9780,6 +9788,7 @@ truthdig.com##p[style="text-align: center; font-size: small;"]
 talkarcades.com##p[style="text-align: center; font-weight: bold; font-size: 150%;"]
 pcsx2.net##p[style="text-align: center;margin: 0px 160px -10px 0px;"]
 monova.org##script + [class] > [class]:first-child
+monova.org##script + [id][href]
 sorelatable.com##script + a[target="_blank"]
 infowars.com##script + div + div[class]
 gboxes.com##script + div[style^="width: "]
