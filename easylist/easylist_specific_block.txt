@@ -4087,16 +4087,19 @@
 |http://$script,third-party,domain=vid.ag
 |https://$script,third-party,domain=vid.ag
 ! flashx.tv
-@@||static.flashx.*/google.js$script,~third-party
-@@||static.flashx.*/jquery.cookie.js$script,~third-party
-@@||static.flashx.*/jquery.min.js$script,~third-party
-@@||static.flashx.*/js/xfs.js$script,third-party
-@@||static.flashx.*/jwplayer.html5.js$script,third-party
-@@||static.flashx.*/jwplayer.js$script,third-party
-@@||static.flashx.*/light.min.js$script,~third-party
-@@||static.flashx.*/xupload.js$script,~third-party
-|http://$script,third-party,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.top
-|https://$script,third-party,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.top
+@@||flashx.*/download|$script,~third-party
+@@||flashx.*/embed$script,~third-party
+@@||flashx.*/google.js$script,~third-party
+@@||flashx.*/jquery.cookie.js$script,~third-party
+@@||flashx.*/jquery.min.js$script,~third-party
+@@||flashx.*/js/tabber.js$script,third-party
+@@||flashx.*/js/xfs.js$script,third-party
+@@||flashx.*/jwplayer.html5.js$script,third-party
+@@||flashx.*/jwplayer.js$script,third-party
+@@||flashx.*/light.min.js$script,~third-party
+@@||flashx.*/xupload.js$script,~third-party
+|http://$script,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top
+|https://$script,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top
 ! patheos.com
 @@||a.disquscdn.com/next/embed/$script,domain=disqus.com
 @@||ajax.googleapis.com^$domain=shop.patheos.com
