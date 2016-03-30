@@ -4091,6 +4091,7 @@
 |http://$script,third-party,domain=vid.ag
 |https://$script,third-party,domain=vid.ag
 ! flashx.tv
+@@||flashx.*/download1|$script
 @@||flashx.*/download|$script
 @@||flashx.*/embed1|$script
 @@||flashx.*/embed2|$script
@@ -4102,9 +4103,10 @@
 @@||flashx.*/jwplayer.html5.js|$script
 @@||flashx.*/jwplayer.js|$script
 @@||flashx.*/light.min.js|$script
+@@||flashx.*/srt/*.srt|$xmlhttprequest
 @@||flashx.*/xupload.js|$script
-|http://$script,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top|flashx.tv
-|https://$script,xmlhttprequest,domain=flashx.cc|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top|flashx.tv
+|http://$script,xmlhttprequest,domain=flashx.cc|flashx.click|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top|flashx.tv
+|https://$script,xmlhttprequest,domain=flashx.cc|flashx.click|flashx.co|flashx.host|flashx.me|flashx.pw|flashx.run|flashx.space|flashx.top|flashx.tv
 ! patheos.com
 @@||a.disquscdn.com/next/embed/$script,domain=disqus.com
 @@||ajax.googleapis.com^$domain=shop.patheos.com
