@@ -29,6 +29,7 @@
 ?random=$script,domain=allmyvideos.net|mediafire.com|mooshare.biz|muchshare.net|tvmuse.com|tvmuse.eu|vidspot.net
 ^guid=$script,domain=allmyvideos.net|mediafire.com|mooshare.biz|muchshare.net|tvmuse.com|tvmuse.eu|vidspot.net
 |http:$subdocument,third-party,domain=2ad.in|ad2links.com|adf.ly|adfoc.us|adv.li|adyou.me|allmyvideos.net|amvtv.net|ay.gy|fuestfka.com|imgmega.com|j.gs|linkbucksmedia.com|mortastica.com|prodsetter-in.com|q.gs|sh.st|shr77.com|sonomerit.com|ssovgoxbvppy.net|streamcloud.eu|thevideo.me|twer.info|u.bb|vidspot.net
+|http:$third-party,xmlhttprequest,domain=primewire.ag|primewire.in
 |http://*.com^*|*$script,third-party,domain=sporcle.com
 |http://creative.*/smart.js$script,third-party
 |http://j.gs/omnigy*.swf
@@ -2598,11 +2599,13 @@
 ||prerollads.ign.com^
 ||pressrepublican.com/wallpaper/
 ||primenews.com.bd/add/
+||primewire.ag/additional_content.php
 ||primewire.ag/frame_header.php?$subdocument
 ||primewire.ag/js/jquery*.js
 ||primewire.ag/load_link.php?
 ||primewire.guru/load_link.php?
 ||primewire.guru/pagetop.php
+||primewire.in/additional_content.php
 ||primewire.in/load_link.php?
 ||printfriendly.com/a/lijit/
 ||prisonplanet.com^*banner
