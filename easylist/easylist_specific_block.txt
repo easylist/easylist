@@ -4146,13 +4146,14 @@
 |https://$script,third-party,domain=extremetech.com
 ||extremetech.com/wp-content/themes/extremetech/$object
 ! youwatch.org/exashare.com
+@@/embed-*.html?$subdocument,domain=youwatch.org
 @@||ajax.googleapis.com/ajax/libs/$script,domain=youwatch.org
 @@||exashare.com/ad.js
 @@||exashare.com/js/$script
 @@||exashare.com/player$script
 @@||plugins.longtailvideo.com^$script,domain=youwatch.org
-|http://$script,third-party,domain=exashare.com|twer.info|youwatch.org
-|https://$script,third-party,domain=exashare.com|twer.info|youwatch.org
+|http://$script,subdocument,third-party,domain=exashare.com|twer.info|youwatch.org
+|https://$script,subdocument,third-party,domain=exashare.com|twer.info|youwatch.org
 ! promptfile.com
 @@||addthis.com/url/shares.json$domain=promptfile.com
 @@||ajax.googleapis.com/ajax/libs/$script,domain=promptfile.com
