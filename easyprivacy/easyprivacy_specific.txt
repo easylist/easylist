@@ -2151,3 +2151,10 @@
 ||yell.com/js/omniture-H.25.js
 ! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
 ||radio-canada.ca/omniture/omni_stats_base.js?
+! Specific filters necessary for sites whitelisted with $genericblock filter option
+/__utm.gif$domain=tellows.de
+/csi?v=*&action=$domain=tellows.de
+||facebook.com*/impression.php$domain=tellows.de
+||googleapis.com^*/gen_204?$domain=tellows.de
+||ioam.de/?$domain=tellows.de
+||ioam.de/tx.io?$domain=tellows.de
