@@ -1833,6 +1833,7 @@
 @@||zillow.com/ads/FlexAd.htm?did=$subdocument
 @@||zillow.com/widgets/search/ZillowListingsWidget.htm?*&adsize=$subdocument,domain=patch.com
 ! Anti-Adblock
+@@.com/*.js|$domain=openload.co
 @@.css^$stylesheet,domain=openload.co
 @@.gif#$domain=aseanlegacy.net|budget101.com|cbox.ws|corepacks.com|danydanielrt.com|dx-tv.com|eventosppv.me|funniermoments.com|gameurs.net|ibmmainframeforum.com|loadlum.com|onlinemoviesfreee.com|premiumleecher.com|remo-xp.com|showsport-tv.com|superplatyna.com|turktorrent.cc|tv-porinternet.com.mx|tvrex.altervista.org|ver-flv.com|verdirectotv.com|wallpapersimages.co.uk|wowebook.org|wrestlingtalk.org|wwe2day.tv|xup.in
 @@.gif#$image,domain=360haven.com
@@ -1852,7 +1853,6 @@
 @@.science/$script,domain=pencurimovie.pw
 @@.to/ads/$domain=kissanime.to
 @@.xzn.ir/$script,third-party,domain=psarips.com
-@@/Ad2.js$script,domain=openload.co
 @@/adBlockDetector/*$~third-party
 @@/adcode.js$domain=cityam.com|techworld.com
 @@/adlogger_tracker.php$subdocument,domain=chrissmoove.com
@@ -1867,7 +1867,7 @@
 @@/crosdomain.xml$object-subrequest,domain=dramafever.com
 @@/crossdomain.xml$object-subrequest,domain=dramafever.com|vaughnlive.tv
 @@/mod_jpayday/js/*$script,domain=gsmpro.com.pl|lechia.net
-@@/openload.co^$image,script,domain=openload.co
+@@/openload.co^$image,script,xmlhttprequest,domain=openload.co
 @@/smart_ad/*$subdocument,domain=wstream.video
 @@/wp-content/*/plugins/adblock.js$script,~third-party
 @@/wp-content/plugins/adblock-notify-by-bweb/js/advertisement.js$~third-party
@@ -2605,7 +2605,6 @@
 @@||onrpg.com/advertisement.js
 @@||onvasortir.com/advert$script
 @@||openload.co^$generichide
-@@||openload.co^$xmlhttprequest,domain=openload.co
 @@||openload.io/assets/$script,domain=bombuj.sk
 @@||openload.io^$generichide
 @@||openload.io^$image,script,stylesheet,subdocument,domain=openload.io
