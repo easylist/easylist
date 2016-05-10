@@ -4076,9 +4076,20 @@
 |http://$script,third-party,xmlhttprequest,domain=opensubtitles.org
 |https://$script,third-party,xmlhttprequest,domain=opensubtitles.org
 ! thefreedictionary.com
+@@||img.tfd.com/favicon.ico|
+@@||img.tfd.com/hp/all.png|
+@@||img.tfd.com/IOD/$image
+@@||img.tfd.com/m/child.jpg|
+@@||img.tfd.com/m/hangman.png|
+@@||img.tfd.com/m/wait16.gif|
+@@||img.tfd.com/sprite.png|
+@@||img.tfd.com/wiki/thumbs/$image
+@@||img.tfd.com/wordhub-logo-120.png|
+@@||img.tfd.com/wordhub-logo.png|
 @@||secure.thefreedictionary.com/static/$script,~third-party
 @@||thefreedictionary.com/recentSearches.ashx?$script,~third-party
 ||freethesaurus.com^$image,script,~third-party
+||tfd.com^$image,domain=freethesaurus.com|thefreedictionary.com
 ||thefreedictionary.com^$image,script,~third-party
 ! uplea.com
 @@||ajax.googleapis.com^$script,domain=uplea.com
