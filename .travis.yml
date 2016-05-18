@@ -24,5 +24,7 @@ script:
   - git clone -b gh-pages "https://$GITHUB_TOKEN@github.com/easylist/easylist" output
   - flrender -i easylist=. easylist.template output/easylist.txt
   - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
+  - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
+  - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt  
   - cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages
 
