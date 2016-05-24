@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201605241803
+! Version: 201605241814
 ! Title: EasyList
-! Last modified: 24 May 2016 18:03 UTC
+! Last modified: 24 May 2016 18:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.github.io/
 ! Licence: https://easylist.github.io/pages/licence.html
@@ -37221,6 +37221,10 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! Non-English (instead of whitelisting ads)
 ||youtube.com/yva_video?adformat=$object-subrequest,domain=antena3.com|atresplayer.com|lasexta.com
 ! Mobile
+! Specific filters necessary for sites whitelisted with $genericblock filter option
+@@||thewatchseries.to^$genericblock
+||31.7.60.66/script/ad.$domain=thewatchseries.to
+||nativly.com/tds/widget?wid=$domain=thewatchseries.to
 ! *** easylist:easylist/easylist_specific_block_popup.txt ***
 /sendspace-pop.$popup,domain=sendspace.com
 ^utm_source=$popup,domain=exashare.com|sex.com|thepiratebay.am|thepiratebay.gd|thepiratebay.la|thepiratebay.mn|thepiratebay.vg
@@ -53771,4 +53775,4 @@ www.google.com#@##videoads
 @@||t8premium.com/track/*/join?$popup,domain=tube8.com|tube8.es|tube8.fr
 @@||tube8live.com/?AFNO=$popup,domain=tube8.com|tube8.es|tube8.fr
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: hVIMqPYHgsIi1ysrugz6dQ
+! Checksum: zmeJ7vPQbYeSjoEObD2esQ
