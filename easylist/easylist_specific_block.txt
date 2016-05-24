@@ -4561,3 +4561,7 @@
 ! Non-English (instead of whitelisting ads)
 ||youtube.com/yva_video?adformat=$object-subrequest,domain=antena3.com|atresplayer.com|lasexta.com
 ! Mobile
+! Specific filters necessary for sites whitelisted with $genericblock filter option
+@@||thewatchseries.to^$genericblock
+||31.7.60.66/script/ad.$domain=thewatchseries.to
+||nativly.com/tds/widget?wid=$domain=thewatchseries.to
