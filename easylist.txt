@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201606202032
+! Version: 201606202226
 ! Title: EasyList
-! Last modified: 20 Jun 2016 20:32 UTC
+! Last modified: 20 Jun 2016 22:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.github.io/
 ! Licence: https://easylist.github.io/pages/licence.html
@@ -25982,6 +25982,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||badjocks.com^$third-party
 ||baldiro.de^$third-party
 ||bambergerkennanchitinous.com^$third-party
+||bamboocast.com^$third-party
 ||bananaflippy.com^$third-party
 ||bandelcot.com^$third-party
 ||banner-clix.com^$third-party
@@ -37029,6 +37030,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! tweaktown
+@@||connect.facebook.net^$script,domain=tweaktown.com
+|http://$script,third-party,xmlhttprequest,domain=tweaktown.com
+|https://$script,third-party,xmlhttprequest,domain=tweaktown.com
+||tweaktown.com^$object
 ! tvmuse.com
 @@||apis.google.com^$script,third-party,domain=tvmuse.com
 @@||s.tvmuze.eu^$script,third-party,domain=tvmuse.com
@@ -48415,6 +48421,7 @@ thestreet.com##iframe[style="margin-top:5px;"]
 bizjournals.com##iframe[style="width: 340px; height: 165px; overflow: hidden; padding: 10px; margin: 0px; border-style: none;"]
 hinduwebsite.com##iframe[style="width:320px; height:260px;"]
 adjet.biz##iframe[style^=" width:100%;"]
+tweaktown.com##iframe[title="3rd party ad content"]
 animefreak.tv,animmex.co##iframe[width="300"]
 france24.com##iframe[width="300"][height="170"]
 therecord.com##iframe[width="300"][height="180"]
@@ -54302,4 +54309,4 @@ www.google.com#@##videoads
 @@||t8premium.com/track/*/join?$popup,domain=tube8.com|tube8.es|tube8.fr
 @@||tube8live.com/?AFNO=$popup,domain=tube8.com|tube8.es|tube8.fr
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: UuT+v+a3WbrqyVKiMi76Qg
+! Checksum: 5CfNdJW5ONjH/cKL6C+Nmg
