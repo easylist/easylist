@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201606231836
+! Version: 201606231844
 ! Title: EasyPrivacy
-! Last modified: 23 Jun 2016 18:36 UTC
+! Last modified: 23 Jun 2016 18:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.github.io/
 ! Licence: https://easylist.github.io/pages/licence.html
@@ -9996,14 +9996,21 @@ _mongo_stats/
 ! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
 ||radio-canada.ca/omniture/omni_stats_base.js?
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
-/__utm.gif$domain=tellows.de|thewatchseries.to
+/__utm.gif$domain=quoka.de|tellows.de|thewatchseries.to
 /csi?v=*&action=$domain=tellows.de
 ||a.watchseries.to^$domain=thewatchseries.to
 ||addthis.com/live/$domain=thewatchseries.to
+||cpx.to^$domain=quoka.de
+||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
+||exactag.com^$domain=quoka.de
 ||facebook.com*/impression.php$domain=tellows.de
+||google-analytics.com/analytics.js$domain=quoka.de
 ||googleapis.com^*/gen_204?$domain=tellows.de
+||hotjar.com^$domain=quoka.de
 ||ioam.de/?$domain=tellows.de
-||ioam.de/tx.io?$domain=tellows.de
+||ioam.de/tx.io?$domain=quoka.de|tellows.de
+||nuggad.net^$domain=quoka.de
+||theadex.com^$domain=quoka.de
 ||watchseries.to/piwik.js
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
@@ -11695,4 +11702,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: ekj2FetQIIP7/AxdKUpBMQ
+! Checksum: qgBiK7+Jn2JbZ7kDAuhj4A
