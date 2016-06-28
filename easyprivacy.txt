@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201606281152
+! Version: 201606281200
 ! Title: EasyPrivacy
-! Last modified: 28 Jun 2016 11:52 UTC
+! Last modified: 28 Jun 2016 12:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.github.io/
 ! Licence: https://easylist.github.io/pages/licence.html
@@ -13,7 +13,7 @@
 ! -----------------General tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
 &ctxId=*&pubId=*&objId=
-&http_referer=
+&http_referer=$script
 &pageReferrer=
 &refererPageDetail=
 &trackingserver=
@@ -268,6 +268,7 @@
 /admantx/*
 /admonitoring.js
 /AdobeCustomVideoMeasurement.swf
+/adonis_event/*
 /adpixel.
 /adrum-
 /adrum.
@@ -2113,6 +2114,7 @@
 /stats.php?type=
 /stats/?js
 /stats/add/*
+/stats/adonis_
 /stats/collector.js
 /stats/counter.
 /stats/CounterPage.
@@ -4446,6 +4448,7 @@ _mongo_stats/
 ||stats4all.com^$third-party
 ||stats4you.com^$third-party
 ||statsbox.nl^$third-party
+||statsevent.com^$third-party
 ||statsimg.com^$third-party
 ||statsinsight.com^$third-party
 ||statsit.com^$third-party
@@ -11708,4 +11711,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: iJY/vyTfWQe6/KVypNEG8A
+! Checksum: gvQcQjyjIMburZHFw50VSQ
