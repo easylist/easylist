@@ -66,7 +66,7 @@
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
-@@||cdn-d-img.pornhub.com/m=*/original/$image,domain=pornhub.com
+@@||cdn-d-img.pornhub.com/m=$image,domain=pornhub.com
 @@||connect.facebook.net^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disqus.com/count.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disqus.com/embed.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -81,8 +81,14 @@
 @@||img.pornhub.com/gif/*.gif|$image,~third-party
 @@||keezmovies.phncdn.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||nsimg.net^$image,domain=pornhub.com
-@@||phncdn.com/assets/pc/js/common.js?$script
-@@||phncdn.com/assets/pc/js/video_page_asset_list.js?$script
+@@||phncdn.com//js/popUnder/exclusions-min.js
+@@||phncdn.com/assets/pc/js/common.js$script
+@@||phncdn.com/assets/pc/js/home_page_asset_list.js$script
+@@||phncdn.com/assets/pc/js/searchporntag_page_asset_list.js$script
+@@||phncdn.com/assets/pc/js/searchresult_page_asset_list.js$script
+@@||phncdn.com/assets/pc/js/signup_page_asset_list.js$script
+@@||phncdn.com/assets/pc/js/uservideos_output.js$script
+@@||phncdn.com/assets/pc/js/video_page_asset_list.js$script
 @@||phncdn.com/cb/assets/$script
 @@||phncdn.com/cb/bundles/$script
 @@||phncdn.com/head/$script
@@ -286,6 +292,9 @@
 @@||phncdn.com/zeroclipboard-$script
 @@||phncdn.com^*/html5Uploader/$script
 @@||phncdn.com^*/streamate/client.js|$script
+@@||phncdn.com^*/userfavorites.js$script
+@@||phncdn.com^*/xp_bubble-$script
+@@||phncdn.com^*/xp_bubble_$script
 @@||platform.tumblr.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||platform.twitter.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||pornhub.com/_Incapsula_Resource?$image,subdocument,xmlhttprequest
@@ -318,6 +327,7 @@
 @@||redtube.com.br/_Incapsula_Resource?$image,subdocument,xmlhttprequest
 @@||redtube.com/_Incapsula_Resource?$image,subdocument,xmlhttprequest
 @@||redtube.com/_thumbs/$image
+@@||redtube.com/account_auto_complete?$xmlhttprequest
 @@||redtube.com/addfavorite/$xmlhttprequest
 @@||redtube.com/addfriend/$xmlhttprequest
 @@||redtube.com/advancedsearch$xmlhttprequest
@@ -326,12 +336,14 @@
 @@||redtube.com/comments/$xmlhttprequest
 @@||redtube.com/embed/$xmlhttprequest
 @@||redtube.com/gallery/$xmlhttprequest
+@@||redtube.com/htmllogin?$subdocument
 @@||redtube.com/htmllogin|
 @@||redtube.com/js/jquery/$xmlhttprequest
 @@||redtube.com/language-star-suggestion/$xmlhttprequest
 @@||redtube.com/logout$xmlhttprequest
 @@||redtube.com/media/avatars/$image
 @@||redtube.com/message/$xmlhttprequest
+@@||redtube.com/notificationcontractors|$xmlhttprequest
 @@||redtube.com/notifications/$xmlhttprequest
 @@||redtube.com/panel/$xmlhttprequest
 @@||redtube.com/profile/$subdocument
@@ -340,6 +352,7 @@
 @@||redtube.com/register$xmlhttprequest
 @@||redtube.com/relatedvideos/$xmlhttprequest
 @@||redtube.com/searchsuggest?$xmlhttprequest
+@@||redtube.com/settings/$xmlhttprequest
 @@||redtube.com/starsuggestion/$xmlhttprequest
 @@||redtube.com/subscribe/$xmlhttprequest
 @@||redtube.com/tags-stars$xmlhttprequest
