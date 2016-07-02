@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201607020206
+! Version: 201607020215
 ! Title: EasyList
-! Last modified: 02 Jul 2016 02:06 UTC
+! Last modified: 02 Jul 2016 02:15 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.github.io/
 ! Licence: https://easylist.github.io/pages/licence.html
@@ -46635,6 +46635,7 @@ facebook.com##[href^="/ads/adboard/"]
 clickmngr.com##[href^="https://www.safenetdir.com/"]
 notebookcheck.net##[id] > div[class] > div[class] > img[src^="/"]
 thefreethoughtproject.com##[id]:first-child > .widget-container
+thevideo.me##[id][class][style] > [class][onclick]
 forums.motortrend.com##[id^="IN_HOUSE_AD_SWITCHER_"]
 explosm.net##[id^="MarketGid"]
 extremetech.com##[id^="zdAdContainer"]
@@ -47517,6 +47518,7 @@ facebook.com##div[class="ego_column pagelet"]
 facebook.com##div[class="ego_column"]
 infowars.com##div[class] + div + script + *
 mobilelikez.com##div[class] > span > span > :first-child
+thevideo.me##div[class][style] > a[style]:last-child
 bulletsfirst.net##div[class][style^="display:"]
 kinox.to##div[class^="Mother_"][style^="display: block;"]
 britannicaenglish.com,nglish.com##div[class^="WordFromSponsor"]
@@ -47600,6 +47602,7 @@ thevideo.me##div[id^="vpn_notice"]
 statigr.am##div[id^="zone"]
 4shared.com##div[onclick="window.location='/premium.jsp?ref=removeads'"]
 gsprating.com##div[onclick="window.open('http://www.nationvoice.com')"]
+thevideo.me##div[onclick] > a
 viphackforums.net##div[onclick^="MyAdvertisements.do_click"]
 ncrypt.in##div[onclick^="window.open('http://www.FriendlyDuck.com/AF_"]
 rapidfiledownload.com##div[onclick^="window.open('http://www.rapidfiledownload.com/out.php?"]
@@ -48915,6 +48918,8 @@ faithit.com##script + div.fram + div
 gboxes.com##script + div[style^="width: "]
 service.mail.com##script + div[tabindex="1"] div[style="z-index:99996;position:absolute;cursor:default;background-color:white;opacity:0.95;left:0px;top:0px;width:1600px;height:552px;"]
 service.mail.com##script + div[tabindex="1"] div[style^="z-index:99998;position:absolute;cursor:default;left:0px;top:0px;width:"]
+thevideo.me##script[src^="data:text/"] + div[id][style]
+thevideo.me##script[type="text/javascript"] + [style="display: block;"]
 traileraddict.com##section + div + div + div[class]
 mobilelikez.com##section > #content > [class] > div[style^="float:"]:first-child
 kpopstarz.com##section > .innerwrap > div > :first-child + *
@@ -54536,4 +54541,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: Xalf0RkuGRPGJ0V7OpkHUg
+! Checksum: vi+HRkRkG0IMSvLbV3oLNA
