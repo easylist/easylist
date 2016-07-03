@@ -4134,17 +4134,6 @@
 .xyz/$popup,domain=streamplay.to
 |http://$script,third-party,xmlhttprequest,domain=streamplay.to
 |https://$script,third-party,xmlhttprequest,domain=streamplay.to
-! pcmag
-@@||ajax.googleapis.com^$script,domain=pcmag.com
-@@||ajax.microsoft.com/ajax/$script,domain=pcmag.com
-@@||api.pinterest.com^$script,domain=pcmag.com
-@@||connect.facebook.net^$script,domain=pcmag.com
-@@||disqus.com^$script,domain=pcmag.com
-@@||disquscdn.com^$script,domain=pcmag.com
-@@||graph.facebook.com^$script,domain=pcmag.com
-|http://$script,third-party,domain=pcmag.com
-|https://$script,third-party,domain=pcmag.com
-||pcmag.com/xyz?*.js
 ! jpost.com
 @@||addthis.com^*/addthis_widget.js$script,domain=jpost.com
 @@||admin.brightcove.com^$script,domain=jpost.com
