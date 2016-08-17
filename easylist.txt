@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201608171226
+! Version: 201608171241
 ! Title: EasyList
-! Last modified: 17 Aug 2016 12:26 UTC
+! Last modified: 17 Aug 2016 12:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38443,12 +38443,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,script,third-party,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-|http://$object,domain=pornhub.com|redtube.com
-|http://$object-subrequest,third-party,domain=redtube.com
+|http://$object,domain=pornhub.com|redtube.com|youporn.com
+|http://$object-subrequest,third-party,domain=redtube.com|youporn.com
 |http://$script,third-party,domain=have69.net|i-gay.org
 |https://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |https://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-|https://$object,domain=pornhub.com|redtube.com
+|https://$object,domain=pornhub.com|redtube.com|youporn.com
 ||109.201.146.142^$domain=xxxbunker.com
 ||213.174.140.38/bftv/js/msn-
 ||213.174.140.38^*/msn-*.js$domain=boyfriendtv.com|pornoxo.com
@@ -50709,7 +50709,7 @@ extremetube.com##.float-left[style="width: 49.9%; height: 534px;"]
 wankerhut.com##.float-right
 extremetube.com##.float-right[style="width: 49.9%; height: 534px;"]
 teensexyvirgins.com,xtravids.com##.foot_squares
-scio.us##.footer
+scio.us,youporn.com##.footer
 4tube.com,fux.com,porntube.com##.footer-banners
 youporn.com,youporngay.com##.footer-element-container
 babesandstars.com##.footer_banners
@@ -50816,6 +50816,7 @@ bustedcoverage.com##.rcr-tower
 candidvoyeurism.com##.rectangle
 xporno.me##.rekl
 burningcamel.com##.reklaim
+youporn.com##.removeAdLink + * > figure
 cam4.com##.removeAds
 tubaholic.com##.result_under_video
 youporn.com##.right-column > div[style^="float: none;"]:first-child
@@ -50947,6 +50948,7 @@ mrskin.com##.yui3-u-1-3:last-child
 porn.com##.zone
 badjojo.com##A[href*="/out.php?siteid=13&id=0&url=http%3A%2F%2Fsyndication.traffichaus.com"]
 motherless.com##[class][style] > [width][height]
+youporn.com##[class^="zone"]
 redtube.com##[data-h]
 redtube.com##[data-w]
 xhamster.com##[height="280"][width="960"]
@@ -55074,8 +55076,7 @@ www.google.com#@##videoads
 @@||phncdn.com/head/$script
 @@||phncdn.com/highcharts-$script
 @@||phncdn.com/html5player/$script
-@@||phncdn.com/html5player/videoPlayer/$object-subrequest,domain=redtube.com
-@@||phncdn.com/html5player/videoPlayer/*/4Play.swf|$object,domain=pornhub.com
+@@||phncdn.com/html5player/videoPlayer/$object,object-subrequest,domain=pornhub.com|youporn.com
 @@||phncdn.com/html5shiv-$script
 @@||phncdn.com/jquery-$script
 @@||phncdn.com/jquery/$script
@@ -55311,6 +55312,7 @@ www.google.com#@##videoads
 @@||pornhub.phncdn.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||pornhubcommunity.com/cdn_files/images/$image
 @@||pornhublive.com/blacklabel/bl.client.min.js|$script
+@@||public.youporn.phncdn.com$object-subrequest,domain=youporn.com
 @@||redtube.com.br/_Incapsula_Resource?$image,subdocument,xmlhttprequest
 @@||redtube.com.br/images/$image,domain=redtube.com.br
 @@||redtube.com/_Incapsula_Resource?$image,subdocument,xmlhttprequest
@@ -55355,6 +55357,7 @@ www.google.com#@##videoads
 @@||redtube.com^*/media/videos/$image
 @@||redtubefiles.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||rncdn3.com/videos/$media,other,domain=pornhub.com
+@@||rncdn3.com^$object-subrequest,domain=youporn.com
 @@||s7.addthis.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||spankwire.phncdn.com^$image,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||static.tube8.phncdn.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -55484,4 +55487,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 1BiNWkrwlF7iPo3diG2DUg
+! Checksum: xDGpyoY4m+c9B7oS2JTBHw
