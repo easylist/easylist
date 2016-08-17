@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201608171157
+! Version: 201608171213
 ! Title: EasyList
-! Last modified: 17 Aug 2016 11:57 UTC
+! Last modified: 17 Aug 2016 12:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38443,9 +38443,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,script,third-party,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
+|http://$object,domain=pornhub.com
 |http://$script,third-party,domain=have69.net|i-gay.org
 |https://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |https://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
+|https://$object,domain=pornhub.com
 ||109.201.146.142^$domain=xxxbunker.com
 ||213.174.140.38/bftv/js/msn-
 ||213.174.140.38^*/msn-*.js$domain=boyfriendtv.com|pornoxo.com
@@ -50411,6 +50413,7 @@ beardedperv.com###pauseRoll
 extremetube.com,mofosex.com,redtube.com,redtube.com.br,spankwire.com,youporngay.com###pb_block
 pornhub.com,tube8.com,youporn.com###pb_template
 youporn.com###personalizedHomePage > div:nth-child(2)
+pornhub.com###player + [id][class]
 pornhub.com###player + div + div[style]
 pornhub.com###player + div[style]
 vidgrab.net,xxvideo.us###player > #stop
@@ -50552,6 +50555,7 @@ pornvideofile.com##.aWrapper
 vrsmash.com##.abovePlayer
 celebspank.com,chaturbate.com,cliphunter.com,gamcore.com,playboy.com,pornhub.com,rampant.tv,signbucks.com,sxx.com,tehvids.com,uflash.tv,wankoz.com,yobt.tv##.ad
 extremetube.com##.ad-container
+pornhub.com##.ad-link + table
 celebspank.com##.ad1
 pornhub.com##.adContainer
 cumsearcher.com##.adb
@@ -50831,6 +50835,7 @@ xxxymovies.com##.rtoptbl
 sticking.com##.sb-box
 woodrocket.com##.sb-store
 dominationtube.com,gaysexarchive.com,skeezy.com,sticking.com##.sb-txt
+pornhub.com##.sectionWrapper > [class] > [style] + [id][style]
 pornhub.com##.sectionWrapper > div[class] > figure
 thenude.eu##.sexart_sidebar
 uselessjunk.com##.shadow_NFL
@@ -50934,6 +50939,7 @@ youporn.com##.views_left
 lubetube.com##.viewvideobanner
 imagearn.com##.wide_banner
 beeg.com##.window
+pornhub.com##.wrapper + [style="display: block;"]
 mrskin.com##.yui3-u-1-3:last-child
 porn.com##.zone
 badjojo.com##A[href*="/out.php?siteid=13&id=0&url=http%3A%2F%2Fsyndication.traffichaus.com"]
@@ -50941,6 +50947,7 @@ motherless.com##[class][style] > [width][height]
 xhamster.com##[height="280"][width="960"]
 imagehaven.net##[href="http://clicks.totemcash.com/?s=38739&p=21&pp=4"]
 motherless.com##[id] > iframe[style]
+pornhub.com##[id][class] > div[style="float:none"]
 imagevenue.com##[id^="MarketGid"]
 youporn.com##[id^="parent_zone_"]
 pornhub.com##[onclick] > [style] > [id]
@@ -55062,6 +55069,7 @@ www.google.com#@##videoads
 @@||phncdn.com/head/$script
 @@||phncdn.com/highcharts-$script
 @@||phncdn.com/html5player/$script
+@@||phncdn.com/html5player/videoPlayer/*/4Play.swf|$object,domain=pornhub.com
 @@||phncdn.com/html5shiv-$script
 @@||phncdn.com/jquery-$script
 @@||phncdn.com/jquery/$script
@@ -55469,4 +55477,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: PboXkJdaBU9qiSAHKYISQg
+! Checksum: a6SgmqobEMx73msOKqXjBg
