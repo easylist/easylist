@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201608300451
+! Version: 201608300457
 ! Title: EasyList
-! Last modified: 30 Aug 2016 04:51 UTC
+! Last modified: 30 Aug 2016 04:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -24442,6 +24442,7 @@ _popunder+$popup
 ##a[href^="http://cpaway.afftrack.com/"]
 ##a[href^="http://d2.zedo.com/"]
 ##a[href^="http://data.ad.yieldmanager.net/"]
+##a[href^="http://data.committeemenencyclopedicrepertory.info/"]
 ##a[href^="http://databass.info/"]
 ##a[href^="http://ddownload39.club/"]
 ##a[href^="http://down1oads.com/"]
@@ -38065,11 +38066,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$script,third-party,xmlhttprequest,domain=1337x.to
 |https://$script,third-party,xmlhttprequest,domain=1337x.to
 ! watchseries
-@@||connect.facebook.net^$script,domain=thewatchseries.to|watchseries.li
-@@||maxcdn.bootstrapcdn.com^$script,domain=thewatchseries.to|watchseries.li
-@@||platform.twitter.com^$script,domain=thewatchseries.to|watchseries.li
-|http://$other,script,third-party,xmlhttprequest,domain=thewatchseries.to|watchseries.li
-|https://$other,script,third-party,xmlhttprequest,domain=thewatchseries.to|watchseries.li
+@@||connect.facebook.net^$script,domain=thewatchseries.to|watch-series.to|watchseries.li
+@@||maxcdn.bootstrapcdn.com^$script,domain=thewatchseries.to|watch-series.to|watchseries.li
+@@||platform.twitter.com^$script,domain=thewatchseries.to|watch-series.to|watchseries.li
+|http://$other,script,third-party,xmlhttprequest,domain=thewatchseries.to|watch-series.to|watchseries.li
+|https://$other,script,third-party,xmlhttprequest,domain=thewatchseries.to|watch-series.to|watchseries.li
 ! briskfile.com
 @@||ajax.googleapis.com^$script,domain=briskfile.com
 @@||connect.facebook.net^$script,domain=briskfile.com
@@ -42343,6 +42344,7 @@ ebay.com###rtm_html_441
 ebay.co.uk###rtm_html_566
 ebay.co.uk###rtm_html_567
 ebay.co.uk,ebay.com###rtm_html_569
+watch-series.to###rufous-sandbox + *
 dailywire.com###rv-smallvid-mobile
 food.com###rz-leaderboard-wrap
 ragezone.com###rz_global_below_navbar
@@ -48398,6 +48400,7 @@ mobilelikez.com##div > span > div + *
 monova.org##div > span > span
 mobilelikez.com##div > span:last-child > [id][class]
 mobilelikez.com##div > span[style] > div:last-child
+watch-series.to##div > style + div[id] > [id][style]:first-child
 monova.org##div article
 mail.yahoo.com##div#msg-list .list-view .ml-bg:not(.list-view-item-container)
 sitepoint.com##div.maestro > div > [id^="ember"]
@@ -49490,6 +49493,7 @@ thegatewaypundit.com##header + div + span + *
 techpowerup.com##header > div[class] > a[href][target="_blank"] > img:first-child
 forums.eteknix.com##hgroup[style="width:728px; margin:10px auto; height:90px;"]
 discovermagazine.com##hr[size="1"]
+watch-series.to##iframe + div[class]
 gelbooru.com##iframe + style + [class]
 strikeout.co##iframe[class][src]
 esbuzz.net##iframe[frameborder][src]
@@ -55742,4 +55746,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: RoL9ISO6UeJHtZFBXAG+2w
+! Checksum: HxmNjG8YStOBNboq71IAew
