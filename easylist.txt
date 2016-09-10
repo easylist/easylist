@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609100047
+! Version: 201609100059
 ! Title: EasyList
-! Last modified: 10 Sep 2016 00:47 UTC
+! Last modified: 10 Sep 2016 00:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -37934,6 +37934,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 @@||wp.com/wp-content/js/$script,domain=s0ft4pc.com
 |http://$script,third-party,xmlhttprequest,domain=s0ft4pc.com
 |https://$script,third-party,xmlhttprequest,domain=s0ft4pc.com
+! putlocker9.com
+@@||apis.google.com^$script,domain=putlocker9.com
+@@||connect.facebook.net^$script,domain=putlocker9.com
+@@||jsc.mgid.com^$script,domain=putlocker9.com
+|http://$script,third-party,xmlhttprequest,domain=putlocker9.com
+|https://$script,third-party,xmlhttprequest,domain=putlocker9.com
 ! depositfiles.com
 @@||api.solvemedia.com^$third-party,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 |http://$script,third-party,xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
@@ -48555,6 +48561,7 @@ oddee.com##br + br + :last-child
 oddee.com##br + div + span
 jguru.com##center
 findagrave.com##center > .search-widget
+putlocker9.com##center > [id][style*="overflow: visible;"]
 nzbindex.com,nzbindex.nl##center > a > img[style="border: 1px solid #000000;"]
 cryptocoinsnews.com##center > a[href="https://xbt.social"]
 proxyserver.asia##center > a[href^="http://goo.gl/"][target="_blank"]
@@ -50080,6 +50087,7 @@ sh.st##script + a[onclick]
 sorelatable.com##script + a[target="_blank"]
 infowars.com##script + div + div[class]
 faithit.com##script + div.fram + div
+putlocker9.com##script + div[style="text-align:center"]
 extratorrent.cc##script + div[style] + div[class]
 gboxes.com##script + div[style^="width: "]
 service.mail.com##script + div[tabindex="1"] div[style="z-index:99996;position:absolute;cursor:default;background-color:white;opacity:0.95;left:0px;top:0px;width:1600px;height:552px;"]
@@ -56005,4 +56013,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: S4jCr2SiVZR1cxwDg1DqgQ
+! Checksum: gpauXBfuAfWlY7CVDiVmwA
