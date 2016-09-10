@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609100038
+! Version: 201609100047
 ! Title: EasyList
-! Last modified: 10 Sep 2016 00:38 UTC
+! Last modified: 10 Sep 2016 00:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -24424,7 +24424,6 @@ data:text/html;base64$popup
 ##a[href^="http://affiliate.coral.co.uk/processing/"]
 ##a[href^="http://affiliate.glbtracker.com/"]
 ##a[href^="http://affiliate.godaddy.com/"]
-##a[href^="http://affiliate.trust.zone/"]
 ##a[href^="http://affiliates.pinnaclesports.com/processing/"]
 ##a[href^="http://affiliates.score-affiliates.com/"]
 ##a[href^="http://aflrm.com/"]
@@ -24713,6 +24712,8 @@ data:text/html;base64$popup
 ##input[onclick^="window.open('http://www.friendlyduck.com/AF_"]
 ##p[id^="div-gpt-ad-"]
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
+! Trust zone
+##a[href*=".trust.zone"]
 ! Adreclaim
 ###rc-row-container
 ##.impo-b-overlay
@@ -25452,6 +25453,7 @@ britannica.com,cam4.com#@#.withAds
 statejournal.com#@#.wnad
 americannews.com,theuspatriot.com#@#.wpInsertInPostAd
 weather.yahoo.com#@#.yom-ad
+trust.zone#@#a[href*=".trust.zone"]
 bitrebels.com#@#a[href*="/adrotate-out.php?"]
 santander.co.uk#@#a[href^="http://ad-emea.doubleclick.net/"]
 jabong.com,people.com,techrepublic.com,time.com#@#a[href^="http://ad.doubleclick.net/"]
@@ -47944,7 +47946,6 @@ extratorrent.cc##a[href][target="_blank"][rel="nofollow"] > img[src][style]
 idm-crack-patch.com##a[href^=" http://backkeyconsole.com/"]
 akstream.video##a[href^="../hd/movie.php?"]
 300mbmovies4u.com##a[href^="//1phads.com/"]
-etmirror.com,etproxy.com,extratorrent.cc,extratorrent.date,extratorrent.works,extratorrentlive.com,extratorrentonline.com##a[href^="//a.trust.zone/"]
 fastpiratebay.eu,kanyebay.com,pbp.wtf,pirata.online,pirateproxy.pl,pirateproxy.pw,pirateproxy.sx,thehiddenbay.me,themirror.xyz,thepiratebay.org,thepiratebay.plus,thepiratebay.rs,theproxypirate.pw,tpb.immunicity.info,tpb.today,ukpirate.org##a[href^="//cdn.bitx.tv/"]
 doubleclick.net##a[href^="//dp.g.doubleclick.net/apps/domainpark/"]
 video2mp3.net##a[href^="//lp.ezdownloadpro.info/"]
@@ -50320,6 +50321,7 @@ cnykiss.com,wbkvam.com,wutqfm.com##table[width="990"][height="100"]
 cbc-radio.com##table[width="990"][height="100"][align="center"]
 965ksom.com##table[width="990"][height="101"]
 wbrn.com##table[width="990"][height="98"]
+extratorrent.cc##td + td[style^="font-size: 12px; padding-bottom:"]
 extratorrent.cc##td > table[align="center"][width]
 v8x.com.au##td[align="RIGHT"][width="50%"][valign="BOTTOM"]
 findagrave.com##td[align="center"] > style + .search-widget
@@ -56003,4 +56005,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: S9wwrSZDo8Y//FIhn1gvnw
+! Checksum: S4jCr2SiVZR1cxwDg1DqgQ
