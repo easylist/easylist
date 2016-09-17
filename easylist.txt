@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609170157
+! Version: 201609170206
 ! Title: EasyList
-! Last modified: 17 Sep 2016 01:57 UTC
+! Last modified: 17 Sep 2016 02:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -47878,10 +47878,13 @@ monova.org##[onclick] > [target="_blank"]
 monova.org##[onclick] > a[class]
 monova.org##[onclick] > a[href^="javascript:"]
 eztv.ag##[rel*="nofollow"] > [id][style]
+gelbooru.com##[rel="nofollow "] > [style]
 techpowerup.com##[rel="nofollow"] > i > img[alt][src]
 naturalblaze.com##[rel="nofollow"][href^="http://products.naturalblaze.com/"] > img
 gelbooru.com##[src*="exoclick"] + *
+gelbooru.com##[style*="height:"][width]
 gelbooru.com##[style*="height:250px;"]
+gelbooru.com##[style*="width:"][height]
 google.com,~mail.google.com##[style="border: 1px solid rgb(0, 90, 136);"]
 google.com,~mail.google.com##[style="border: 1px solid rgb(145, 117, 77);"]
 google.com,~mail.google.com##[style="border: 1px solid rgb(241, 250, 248);"]
@@ -47916,6 +47919,7 @@ timeanddate.com##[width="728"][height="90"]
 crackdump.com##[width="74"]
 empireonline.com##[width="950"][height="130"][align="center"]
 oddee.com##a + br + br + span
+gelbooru.com##a > [style][autoplay]
 lindaikeji.blogspot.com##a > img[height="600"]
 thefreedictionary.com##a > img[src^="//img.tfd.com/"]
 powerbot.org##a > img[width="729"]
@@ -56191,4 +56195,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 2Ll3xoBCSN8nHyYC6qLLew
+! Checksum: iwl3WwzkD95CTeQ2a4XNvw
