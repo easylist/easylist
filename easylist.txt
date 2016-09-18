@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609180101
+! Version: 201609180116
 ! Title: EasyList
-! Last modified: 18 Sep 2016 01:01 UTC
+! Last modified: 18 Sep 2016 01:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38299,11 +38299,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 @@||ajax.googleapis.com^$script,third-party,domain=powvideo.net
 |http://$script,subdocument,third-party,domain=powvideo.net
 |https://$script,subdocument,third-party,domain=powvideo.net
-! animmex.net
-@@|https://$image,third-party,domain=animmex.net
-@@||ajax.googleapis.com^$script,third-party,domain=animmex.net
-|http://$script,third-party,xmlhttprequest,domain=animmex.net
-|https://$script,third-party,xmlhttprequest,domain=animmex.net
+! animmex
+@@|https://$image,third-party,domain=animmex.club|animmex.co|animmex.co.uk|animmex.com|animmex.info|animmex.net|animmex.online|animmex.org|animmex.press|animmex.site|animmex.space|animmex.tech|animmex.website|animmex.xyz
+@@||ajax.googleapis.com^$script,third-party,domain=animmex.club|animmex.co|animmex.co.uk|animmex.com|animmex.info|animmex.net|animmex.online|animmex.org|animmex.press|animmex.site|animmex.space|animmex.tech|animmex.website|animmex.xyz
+|http://$script,third-party,xmlhttprequest,domain=animmex.club|animmex.co|animmex.co.uk|animmex.com|animmex.info|animmex.net|animmex.online|animmex.org|animmex.press|animmex.site|animmex.space|animmex.tech|animmex.website|animmex.xyz
+|https://$script,third-party,xmlhttprequest,domain=animmex.club|animmex.co|animmex.co.uk|animmex.com|animmex.info|animmex.net|animmex.online|animmex.org|animmex.press|animmex.site|animmex.space|animmex.tech|animmex.website|animmex.xyz
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
@@ -47896,6 +47896,7 @@ gelbooru.com##[href*="ccbill."]
 monova.org##[href] > div[class]:first-child
 facebook.com##[href^="/ads/adboard/"]
 clickmngr.com##[href^="https://www.safenetdir.com/"]
+animmex.club,animmex.co,animmex.co.uk,animmex.com,animmex.info,animmex.net,animmex.online,animmex.org,animmex.press,animmex.site,animmex.space,animmex.tech,animmex.website,animmex.xyz##[id*="ScriptRoot"]
 tweaktown.com##[id*="_"][style*="border"]
 notebookcheck.net##[id] > div[class] > div[class] > img[src^="/"]
 thefreethoughtproject.com##[id]:first-child > .widget-container
@@ -53910,7 +53911,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@|http://*.tk^$script,domain=ilive.to
 @@|http://*_ad$image,third-party,domain=socketloop.com
 @@|http://ad$image,third-party,domain=socketloop.com
-@@|https://$image,third-party,domain=360haven.com|4553t5pugtt1qslvsnmpc0tpfz5fo.xyz|animmex.com|ip-address.org|linkdrop.net
+@@|https://$image,third-party,domain=360haven.com|4553t5pugtt1qslvsnmpc0tpfz5fo.xyz|animmex.club|animmex.co|animmex.co.uk|animmex.com|animmex.info|animmex.net|animmex.online|animmex.org|animmex.press|animmex.site|animmex.space|animmex.tech|animmex.website|animmex.xyz|ip-address.org|linkdrop.net
 @@|https://$script,third-party,domain=eventhubs.com
 @@|https://*_ad$image,third-party,domain=socketloop.com
 @@|https://ad$image,third-party,domain=socketloop.com
@@ -54036,8 +54037,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||animerebel.com^$generichide
 @@||animesproject.com^*/player.php$generichide
 @@||animizer.net/js/adframe.js
-@@||animmex.com^$generichide
-@@||animmex.net^$generichide
+@@||animmex.$generichide
 @@||anisearch.com^*/ads.js?
 @@||anizm.com^$generichide
 @@||anonymousemail.me/js/$~script
@@ -56235,4 +56235,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: UCdh9QJiG/2dfyFXmt5OTg
+! Checksum: 7fJFLa3ivvkjx2I4mdMzYA
