@@ -4251,8 +4251,11 @@
 |http://$script,third-party,xmlhttprequest,domain=torrent-dx.com
 |https://$script,third-party,xmlhttprequest,domain=torrent-dx.com
 ! eztv.ag
-||eztv.ag/js/img.js
-||eztv.ag/js/jsc.js
+@@||ajax.googleapis.com^$script,domain=eztv.ag
+@@||cdnjs.cloudflare.com^$script,domain=eztv.ag
+@@||connect.facebook.net^$script,domain=eztv.ag
+|http://$script,xmlhttprequest,domain=eztv.ag
+|https://$script,xmlhttprequest,domain=eztv.ag
 ! strikeout.co
 @@||ajax.googleapis.com^$domain=strikeout.co
 @@||apis.google.com^$script,domain=strikeout.co
