@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609240046
+! Version: 201609240144
 ! Title: EasyList
-! Last modified: 24 Sep 2016 00:46 UTC
+! Last modified: 24 Sep 2016 01:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38076,6 +38076,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! gelbooru.com
+@@||gelbooru.com/script/application.js.php$script
+@@||platform.twitter.com^$script,domain=gelbooru.com
+|http://$script,xmlhttprequest,domain=gelbooru.com
+|https://$script,xmlhttprequest,domain=gelbooru.com
 ! theinquirer.net / professionaladviser.com
 @@||disqus.com^$script,domain=professionaladviser.com|theinquirer.net
 @@||disquscdn.com^$script,domain=professionaladviser.com|theinquirer.net
@@ -42397,7 +42402,6 @@ radaronline.com###page_content_right_small
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
 warriorforum.com###pagenav_menu + div[align="center"] > a[target="_blank"] > img
 offtopic.com###pagenav_menu + table[height="61"][cellspacing="0"][cellpadding="0"][border="0"][width="100%"]
-gelbooru.com###paginator > center > div[style$="overflow:hidden;"]
 sme.sk###paidLinks
 thesun.co.uk###paidProducts
 weather.com###paid_search
@@ -47934,18 +47938,14 @@ bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
 primewire.ag,primewire.in##[class*="-adsupply"] + a
 filenuke.com,sharesix.com##[class] + div + div > a[href*="/"]
 monova.org##[class] > div + span[class]
-gelbooru.com##[class][style*="data:image"]
 tubeoffline.com##[class][style] > a[href][data-hash]
 yahoo.com##[data-ad-enhanced="card"]
 yahoo.com##[data-ad-enhanced="pencil"]
 yahoo.com##[data-ad-enhanced="text"]
 facebook.com##[data-referrer="pagelet_side_ads"]
 hulu.com##[flashvars^="backgroundURL=http://ads.hulu.com/published/"]
-gelbooru.com##[height="250"]
 bunalti.com##[height="90"][width="728"]
-gelbooru.com##[href*=".cgi?"][target="_blank"] > video
 news.softpedia.com##[href*=".php?"] > img[src]
-gelbooru.com##[href*="ccbill."]
 monova.org##[href] > div[class]:first-child
 facebook.com##[href^="/ads/adboard/"]
 clickmngr.com##[href^="https://www.safenetdir.com/"]
@@ -47963,12 +47963,8 @@ monova.org##[onclick] > [target="_blank"]
 monova.org##[onclick] > a[class]
 monova.org##[onclick] > a[href^="javascript:"]
 eztv.ag##[rel*="nofollow"] > [id][style]
-gelbooru.com##[rel="nofollow "] > [style]
 techpowerup.com##[rel="nofollow"] > i > img[alt][src]
 naturalblaze.com##[rel="nofollow"][href^="http://products.naturalblaze.com/"] > img
-gelbooru.com##[style*="height:"][width]
-gelbooru.com##[style*="height:250px;"]
-gelbooru.com##[style*="width:"][height]
 google.com,~mail.google.com##[style="border: 1px solid rgb(0, 90, 136);"]
 google.com,~mail.google.com##[style="border: 1px solid rgb(145, 117, 77);"]
 google.com,~mail.google.com##[style="border: 1px solid rgb(241, 250, 248);"]
@@ -48003,7 +47999,6 @@ timeanddate.com##[width="728"][height="90"]
 crackdump.com##[width="74"]
 empireonline.com##[width="950"][height="130"][align="center"]
 oddee.com##a + br + br + span
-gelbooru.com##a > [style][autoplay]
 lindaikeji.blogspot.com##a > img[height="600"]
 thefreedictionary.com##a > img[src^="//img.tfd.com/"]
 powerbot.org##a > img[width="729"]
@@ -48046,7 +48041,6 @@ itweb.co.za##a[href*="/adredir.php?"]
 bitcoinist.net##a[href*="/adserv/click.php?id="]
 f1today.net##a[href*="/advertorial--"]
 streamplay.to##a[href*="/apu.php"]
-gelbooru.com##a[href*="/clicks.cgi"]
 streamcloud.eu##a[href*="/clicktag."]
 adlock.org##a[href*="/download/"]
 bittorrentz.net##a[href*="/download_torrent.php?"]
@@ -48064,7 +48058,6 @@ devshed.com##a[href*="/www/delivery/"]
 ietab.net##a[href*="/xadnet/"]
 bossmp3.in,heromaza.in,songmix.in,wapking.site##a[href*=":80/key/?id="]
 ultimate-guitar.com##a[href*="=http://www.jamplay.com/"]
-gelbooru.com##a[href*="?"][rel] > video
 mp3skull.is##a[href*="adreactor.com"]
 streamcloud.eu##a[href*="engine.4dsply.com"]
 federalnewsradio.com##a[href*="http://federalnewsradio.com/sponsored-content/"]
@@ -48193,7 +48186,6 @@ eztv.ag##a[href] > div[style*="width: 100%"]
 allmyvideos.net##a[href] > img[id]
 horriblesubs.info##a[href][rel="nofollow"]
 eztv.ag##a[href][target="_blank"]
-gelbooru.com##a[href][target="_blank"] > video
 extratorrent.cc##a[href][target="_blank"][rel="nofollow"] > img[src][style]
 idm-crack-patch.com##a[href^=" http://backkeyconsole.com/"]
 akstream.video##a[href^="../hd/movie.php?"]
@@ -48672,7 +48664,6 @@ xscores.com##a[href^="https://www.rivalo1.com/?affiliateId="]
 youtube.com##a[href^="https://www.youtube.com/cthru?"]
 krapps.com##a[href^="index.php?adclick="]
 torlock.com,torrentfunk.com,yourbittorrent.com##a[href^="javascript:"]
-gelbooru.com##a[id][href][rel*="nofollow"]
 essayscam.org##a[id^="banner_"]
 eztv.ag##a[id^="mell"]
 limetorrents.cc,torrentdownloads.me##a[key]
@@ -48815,7 +48806,6 @@ nzbindex.com,nzbindex.nl##center > a > img[style="border: 1px solid #000000;"]
 cryptocoinsnews.com##center > a[href="https://xbt.social"]
 proxyserver.asia##center > a[href^="http://goo.gl/"][target="_blank"]
 go4up.com##center > a[target="_blank"]
-gelbooru.com##center > div[style^="overflow:hidden;"]
 4shared.com##center[dir="ltr"]
 ehow.com##center[id^="DartAd_"]
 forumswindows8.com##center[style="font-size:15px;font-weight:bold;margin-left:auto; margin-right:auto;"]
@@ -48839,7 +48829,6 @@ drivers.softpedia.com##div > [class][style^="padding: "]
 notebookcheck.net##div > [id][class] > img[src^="/"]
 daweya.info##div > [id][style*="z-index:"]
 monova.org##div > [link]
-gelbooru.com##div > [rel] > video[width]
 monova.org##div > [src]:first-child
 monova.org##div > [style*="width:"]
 limetorrents.cc##div > [style="float:left; padding: 5px"] + div[style="float:left"]
@@ -49064,7 +49053,6 @@ usacarry.com##div[style="background-image:url(http://layout.opticsplanet.com/ima
 vosizneias.com##div[style="background: #DADADA; border: 1px solid gray; color: gray; width: 300px; padding: 5px; float: right; font-size: 0.8em; line-height: 1.5em; font-family: arial; margin: 10px 0 10px 20px;"]
 regmender.com##div[style="background: #FFFDCA;border: 1px solid #C7C7C7;margin-top:8px;padding: 8px;color:#000;"]
 singletracks.com##div[style="background: #fff; height: 250px; width: 300px; margin-top: 0px; margin-bottom: 10px;"]
-gelbooru.com##div[style="background: #fff; width: 728px; margin-left: 15px;"]
 skyatnightmagazine.com##div[style="background: none repeat scroll 0% 0% #B3E3FA; height: 95px; padding: 5px; margin-bottom: 5px;"]
 cnn.com##div[style="background: transparent url(http://i.cdn.turner.com/cnn/.element/img/3.0/video/336x280_ad.gif) no-repeat scroll left top; height:304px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"]
 sternfannetwork.com##div[style="background: white; padding: 10px; margin: 10p\a \a x auto; border: 1px solid black; border-radius: 10px;"]
@@ -49621,7 +49609,6 @@ ripoffreport.com##div[style="width: 728px; height: 90px; margin: 20px auto; over
 uproxx.com##div[style="width: 728px; height: 90px; margin: 20px auto;"]
 mbworld.org##div[style="width: 728px; height: 90px; overflow: hidden; margin: 0px auto;"]
 nitroflare.com##div[style="width: 728px; height: 90px; text-align: center;"]
-gelbooru.com##div[style="width: 728px; height: 90px; text-align: left;"]
 bit-tech.net,eatliver.com,lightreading.com,urbandictionary.com##div[style="width: 728px; height: 90px;"]
 itnews.com.au##div[style="width: 728px; height:90px; margin-left: auto; margin-right: auto; padding-bottom: 20px;"]
 coinwarz.com##div[style="width: 728px; margin-left: auto; margin-right: auto; height:90px;"]
@@ -49897,7 +49884,6 @@ teleservices.mu##div[style="width:980px;height:50px;float:left; "]
 performanceboats.com##div[style="width:994px; height:238px;"]
 search.ch##div[style="width:994px; height:250px"]
 happystreams.net##div[style="z-index: 2000; background-image: url(\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"); left: 145px; top: 120px; height: 576px; width: 1024px; position: absolute;"]
-gelbooru.com##div[style] > [class][style]
 monova.org##div[style] > a
 crossmap.com##div[style] > div:first-child > div[class]
 downloadsfreemovie.net##div[style^="background-color: rgb"]
@@ -49973,7 +49959,6 @@ techpowerup.com##header > div[class] > a[href][target="_blank"] > img:first-chil
 forums.eteknix.com##hgroup[style="width:728px; margin:10px auto; height:90px;"]
 discovermagazine.com##hr[size="1"]
 watch-series.to##iframe + div[class]
-gelbooru.com##iframe + style + [class]
 strikeout.co##iframe[class][src]
 esbuzz.net##iframe[frameborder][src]
 bangfiles.net##iframe[height="210px"]
@@ -50014,7 +49999,6 @@ nowwatchtvlive.com##iframe[width="460"]
 headlinepolitics.com,imgchili.net,tmn.today##iframe[width="728"][height="90"]
 shoesession.com##iframe[width="732"]
 gamecopyworld.com##iframe[width="760"]
-gelbooru.com##iframe[width]
 newsbtc.com##img.aligncenter[width="200"][height="200"]
 thegremlin.co.za##img[alt*="Advertising"]
 chroniclelive.co.uk,liverpoolecho.co.uk##img[alt*="sponsor"]
@@ -50378,7 +50362,6 @@ monova.org##span > script + a[target="_blank"]
 monova.org##span > span > [onclick]
 monova.org##span > span > div:last-child
 thegatewaypundit.com##span > span:first-child > span > [id][class]
-gelbooru.com##span > style[type="text/css"] + *
 easyvideo.me,playbb.me,videowing.me,videozoo.me##span[original^="http://byzoo.org/"]
 rokked.com##span[style="color: #555; font-size: 10px"]
 toucharcade.com##span[style="color:#555;"]
@@ -50837,6 +50820,32 @@ search.aol.com##ul[content="SLMP"]
 search.aol.com##ul[content="SLMS"]
 facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
 elizium.nu##ul[style="padding: 0; width: 100%; margin: 0; list-style: none;"]
+! gelbooru.com
+gelbooru.com###paginator > center > div[style$="overflow:hidden;"]
+gelbooru.com##[autoplay][loop]
+gelbooru.com##[class][style*="data:image"]
+gelbooru.com##[height="250"]
+gelbooru.com##[href*=".cgi?"][target="_blank"] > video
+gelbooru.com##[href*="ccbill."]
+elbooru.com##[rel="nofollow "] > [style]
+gelbooru.com##[style*="height:"][width]
+elbooru.com##[style*="height:250px;"]
+gelbooru.com##[style*="width:"][height]
+gelbooru.com##a > [style][autoplay]
+gelbooru.com##a[href*="/clicks.cgi"]
+gelbooru.com##a[href*="?"][rel] > video
+gelbooru.com##a[href][target="_blank"] > video
+gelbooru.com##a[id][href][rel*="nofollow"]
+gelbooru.com##center > div > style + div[class]
+gelbooru.com##center > div[style*="overflow:"]
+gelbooru.com##center > div[style^="overflow:hidden;"]
+gelbooru.com##div > [rel] > video[width]
+gelbooru.com##div > div[style*="width:"]
+gelbooru.com##div > style + div[class*=" "]
+gelbooru.com##div[style] > [class][style]
+gelbooru.com##iframe + style + [class]
+gelbooru.com##iframe[width]
+gelbooru.com##span > style[type="text/css"] + *
 ! thefreethoughtproject.com
 thefreethoughtproject.com##.b-modal
 thefreethoughtproject.com##.b-modal + div[style^="width:"]
@@ -56304,4 +56313,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: YiCaRjMZvfnClKvvaN68VA
+! Checksum: VZsEhbyBNn4GO96PHyjm9w
