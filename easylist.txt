@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609250231
+! Version: 201609250251
 ! Title: EasyList
-! Last modified: 25 Sep 2016 02:31 UTC
+! Last modified: 25 Sep 2016 02:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38475,7 +38475,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |https://$script,third-party,xmlhttprequest,domain=wstream.video
 ! gorillavid.in
 @@||ajax.googleapis.com^$script,domain=gorillavid.in
-|http://$script,third-party,xmlhttprequest,domain=gorillavid.in
+@@||gorillavid.in/tabber.js
+@@||gorillavid.in/xupload.js
+@@||gorillavid.in^*/jsSelect.js
+@@||gorillavid.in^*/jwplayer.js
+|http://$script,xmlhttprequest,domain=gorillavid.in
 |https://$popup,third-party,domain=gorillavid.in
 |https://$script,third-party,xmlhttprequest,domain=gorillavid.in
 ! fastpic
@@ -50392,6 +50396,8 @@ sh.st##script + a[onclick]
 sorelatable.com##script + a[target="_blank"]
 infowars.com##script + div + div[class]
 faithit.com##script + div.fram + div
+gorillavid.in##script + div[style*="position: fixed"]
+gorillavid.in##script + div[style*="position:fixed"]
 putlocker9.com##script + div[style="text-align:center"]
 extratorrent.cc##script + div[style] + div[class]
 gboxes.com##script + div[style^="width: "]
@@ -56403,4 +56409,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: b5iJv4kMcAG3oikPCfxUgg
+! Checksum: 7fyp8keoMByQ6rk9kNDCCQ
