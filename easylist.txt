@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201609280840
+! Version: 201609281102
 ! Title: EasyList
-! Last modified: 28 Sep 2016 08:40 UTC
+! Last modified: 28 Sep 2016 11:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52158,6 +52158,9 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@/iframe_video/ad.php?$object-subrequest,~third-party
 @@/wordpress/wp-admin/*-ads-manager/*$~third-party
 @@/wordpress/wp-admin/*/adrotate/*$~third-party
+@@/wp-content/plugins/ad-inserter/css/*$image,stylesheet,~third-party
+@@/wp-content/plugins/ad-inserter/includes/*$script,~third-party
+@@/wp-content/plugins/ad-inserter/js/ad-inserter.js$script,~third-party
 @@/wp-content/plugins/bwp-minify/min/?f=$script,stylesheet,~third-party
 @@||192.168.$~third-party,xmlhttprequest
 @@||192.168.*/images/adv_$~third-party
@@ -56437,4 +56440,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: FGfdkqLfLKt3RKYVUX0eXQ
+! Checksum: bpdUmdIn+qRsZQVr9RBItg
