@@ -4198,6 +4198,14 @@
 ! upload.so
 |http://$script,third-party,xmlhttprequest,domain=upload.so
 |https://$script,third-party,xmlhttprequest,domain=upload.so
+! twoddl
+@@||ajax.googleapis.com^$script,domain=twoddl.link
+@@||tvmaze.com^$xmlhttprequest,domain=twoddl.link
+@@||twoddl.link/wp-content/plugins/$script,~third-party
+@@||twoddl.link/wp-includes/js/$script,~third-party
+|http://$script,third-party,xmlhttprequest,domain=twoddl.link
+|https://$script,third-party,xmlhttprequest,domain=twoddl.link
+||twoddl.link^$script,~third-party
 ! technobuffalo.com
 @@||disqus.com^$script,domain=technobuffalo.com
 @@||jsdelivr.net^$script,domain=technobuffalo.com
