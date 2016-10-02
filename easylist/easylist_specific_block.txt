@@ -4198,13 +4198,14 @@
 ! upload.so
 |http://$script,third-party,xmlhttprequest,domain=upload.so
 |https://$script,third-party,xmlhttprequest,domain=upload.so
-! twoddl
+! twoddl / 2ddl
+@@||2ddl.ag/css/jquery-1.4.2.min.js$script,~third-party
 @@||ajax.googleapis.com^$script,domain=twoddl.link
 @@||tvmaze.com^$xmlhttprequest,domain=twoddl.link
 @@||twoddl.link/wp-content/plugins/$script,~third-party
 @@||twoddl.link/wp-includes/js/$script,~third-party
-|http://$script,third-party,xmlhttprequest,domain=twoddl.link
-|https://$script,third-party,xmlhttprequest,domain=twoddl.link
+|http://$script,third-party,xmlhttprequest,domain=2ddl.ag|twoddl.link
+|https://$script,third-party,xmlhttprequest,domain=2ddl.ag|twoddl.link
 ||twoddl.link^$script,~third-party
 ! technobuffalo.com
 @@||disqus.com^$script,domain=technobuffalo.com
@@ -4323,11 +4324,6 @@
 @@||s1-adfly.com/show.php?$subdocument,third-party,domain=adf.ly
 |http://$third-party,domain=adf.ly|s1-adfly.com
 |https://$third-party,domain=adf.ly|s1-adfly.com
-! 2ddl.online
-|http://$script,third-party,xmlhttprequest,domain=2ddl.online
-|https://$script,third-party,xmlhttprequest,domain=2ddl.online
-||ajax.googleapis.com^$script,domain=2ddl.online
-||api.tvmaze.com^$domain=2ddl.online
 ! linkdrop.net
 |http://$script,third-party,xmlhttprequest,domain=linkdrop.net
 |https://$script,third-party,xmlhttprequest,domain=linkdrop.net
