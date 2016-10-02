@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610020525
+! Version: 201610020535
 ! Title: EasyList
-! Last modified: 02 Oct 2016 05:25 UTC
+! Last modified: 02 Oct 2016 05:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38207,6 +38207,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! wccftech
+@@||api.traq.li^$script,domain=wccftech.com
+@@||cdn.goroost.com^$script,domain=wccftech.com
+@@||disqus.com^$script,domain=wccftech.com
+|http://$script,third-party,xmlhttprequest,domain=wccftech.com
+|https://$script,third-party,xmlhttprequest,domain=wccftech.com
 ! woop.io
 @@||cdn.jsdelivr.net^$script,domain=woop.io
 @@||cdnjs.cloudflare.com^$script,domain=woop.io
@@ -51100,6 +51106,7 @@ ndtv.com##.adhead
 bitfeed.co,dailymail.co.uk,technoshouter.com##.adsbygoogle
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au##.adspot-300x250-pos1
 universityherald.com##.adunit_rectangle
+wccftech.com##.banner-ad
 samaup.com##.bannernone
 playwire.com##.bolt-ad-container
 monova.org##.btn-lg
@@ -53317,7 +53324,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||lelong.com.my/UserImages/Ads/$image,~third-party
 @@||lemon-ads.com^$~document,~third-party
 @@||lesacasino.com/banners/$~third-party
-@@||letsadvertisetogether.com^$script,domain=the-watch-series.to|universityherald.com
+@@||letsadvertisetogether.com^$script,domain=the-watch-series.to|universityherald.com|wccftech.com
 @@||libraryjournal.com/wp-content/plugins/wp-intern-ads/$script,stylesheet
 @@||lightningcast.net/servlets/getplaylist?*&responsetype=asx&$object
 @@||lijit.com///www/delivery/fpi.js?*&width=728&height=90$script,domain=hypeseek.com
@@ -55397,6 +55404,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||wallrider.top^$script,~third-party
 @@||wanamlite.com/images/ad/$image
 @@||watchcartoononline.com/advertisement.js
+@@||wccftech.com^$generichide
 @@||weather.com^*/advertisement.js
 @@||webfirstrow.eu/advertisement.js
 @@||webfirstrow.eu^*/advertisement.js
@@ -56562,4 +56570,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: V2nxRDT0iSCQC8R/cLCIoA
+! Checksum: /yBLpN+Ojk3GuExDr5RQPQ
