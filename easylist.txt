@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610051123
+! Version: 201610051131
 ! Title: EasyList
-! Last modified: 05 Oct 2016 11:23 UTC
+! Last modified: 05 Oct 2016 11:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38269,6 +38269,9 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! extratorrent.cc
+|http://$script,third-party,xmlhttprequest,domain=extratorrent.cc
+|https://$script,third-party,xmlhttprequest,domain=extratorrent.cc
 ! downace.com
 |http://$script,third-party,xmlhttprequest,domain=downace.com
 |https://$script,third-party,xmlhttprequest,domain=downace.com
@@ -48342,6 +48345,7 @@ ietab.net##a[href*="/xadnet/"]
 bossmp3.in,heromaza.in,songmix.in,wapking.site##a[href*=":80/key/?id="]
 ultimate-guitar.com##a[href*="=http://www.jamplay.com/"]
 mp3skull.is##a[href*="adreactor.com"]
+extratorrent.cc##a[href*="download"]
 streamcloud.eu##a[href*="engine.4dsply.com"]
 federalnewsradio.com##a[href*="http://federalnewsradio.com/sponsored-content/"]
 encyclopediadramatica.se##a[href*="http://torguard.net/aff.php"]
@@ -51085,6 +51089,7 @@ howstuffworks.com##td[width="980"][height="90"]
 hongkongindians.com##th[width="1000"][height="141"]
 legendarydevils.com##th[width="600"]
 rarbg.to,rarbgmirror.com,rarbgproxy.com##tr > td + td[style*="height:"]
+extratorrent.cc##tr > td[style*="font-size:"]
 rarbg.to,rarbgmirror.com,rarbgproxy.com##tr > td[style*="font-size:"] > table
 extratorrent.cc##tr > td[style^="text-align:left"]
 uvnc.com##tr > td[valign="middle"][style="width: 10px;"]:first-child + td[valign="top"][style="width: 180px;"]
@@ -54335,7 +54340,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||ad.yieldmanager.com/imp^$script,domain=watchseries-online.eu
 @@||ad4game.com*/images/$image,domain=kissanime.com
 @@||ad4game.com/js/$script,domain=kissanime.com|kisscartoon.me
-@@||ad8k.com^script,domain=wccftech.com
+@@||ad8k.com^script,domain=wccftech.com|extratorrent.cc
 @@||adadvisor.net^$script,domain=kisscartoon.me
 @@||adblockdetect.xyz^$script,domain=openload.co
 @@||adbooth.com/adserver/iframe.php?*&w=300&h=250&$subdocument,domain=planetatvonlinehd.blogspot.com.ar
@@ -56666,4 +56671,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: GX5hhJAEM7VyMAOsDObCIA
+! Checksum: BSym6ymzoMvrhoU1kYBaew
