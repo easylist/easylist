@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610072248
+! Version: 201610072309
 ! Title: EasyList
-! Last modified: 07 Oct 2016 22:48 UTC
+! Last modified: 07 Oct 2016 23:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38245,7 +38245,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ytimg.com^*_banner$domain=youtube.com
 ||ytmnd.com/ugh
 ||yts.ag/images/vpnanim.gif
-||yts.ag/js/bgb.js
 ||yudu.com^*_intro_ads
 ||zabasearch.com/search_box.php?*&adword=
 ||zads.care2.com^
@@ -38283,6 +38282,10 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! yts.ag
+@@||yts.ag/assets/minified/modded1.js$script,~third-party
+|http://$script,domain=yts.ag
+|https://$script,domain=yts.ag
 ! extratorrent.cc
 |http://$script,third-party,xmlhttprequest,domain=extratorrent.cc
 |https://$script,third-party,xmlhttprequest,domain=extratorrent.cc
@@ -45545,7 +45548,7 @@ tormovies.org##.fbd-banner
 sharkscope.com##.fbstyle
 bankrate.com##.fcAdGrey
 webcenters.netscape.compuserve.com##.fcCntnr
-yts.to##.fd
+yts.ag,yts.to##.fd
 ebay.com##.fdad1
 firedrive.com##.fdad_container
 investopedia.com##.fe-sponsorbox
@@ -48376,6 +48379,7 @@ fooooo.com##a[href="/bannerClickCount.php"]
 yts.ag##a[href="/buy-vpn"]
 opensubtitles.org##a[href="/en/aoxwnwylgqtvicv"]
 gtplanet.net##a[href="/geo-GT6-preorder.php"]
+yts.ag##a[href="/get-vpn"]
 viewdocsonline.com##a[href="/links/regboost_header.php"]
 mailinator.com##a[href="/soget.jsp"]
 dlldll.com##a[href="/stw_lp/fmr/"]
@@ -56685,4 +56689,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: rySKoRLdY0BfkLoWxF51sQ
+! Checksum: 47I/Vc+4374f91BUohLrpQ
