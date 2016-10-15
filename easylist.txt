@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610150050
+! Version: 201610150100
 ! Title: EasyList
-! Last modified: 15 Oct 2016 00:50 UTC
+! Last modified: 15 Oct 2016 01:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -367,6 +367,7 @@
 .ad.premiere.
 .ad/tag.
 .ad1.nspace
+.ad6media.$domain=~ad6media.fr
 .adbanner.
 .adbutler-
 .adcenter.
@@ -26550,6 +26551,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||bh3.net^$third-party
 ||bidgewatr.com^$third-party
 ||bidsystem.com^$third-party
+||bidverdrd.com^$third-party
 ||bidvertiser.com^$third-party
 ||biemedia.com^$third-party
 ||bigadpoint.net^$third-party
@@ -30280,6 +30282,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ad2387.com^$popup,third-party
 ||ad2games.com^$popup,third-party
 ||ad4game.com^$popup,third-party
+||ad6media.fr^$popup,third-party
 ||adbma.com^$popup,third-party
 ||adboost.it^$popup,third-party
 ||adcash.com^$popup,third-party
@@ -38832,10 +38835,10 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$script,third-party,xmlhttprequest,domain=couchtuner.ag|couchtuner.ch|couchtuner.city|couchtuner2.to
 |https://$script,third-party,xmlhttprequest,domain=couchtuner.ag|couchtuner.ch|couchtuner.city|couchtuner2.to
 ! uptobox.com
-@@||ajax.googleapis.com^$script,domain=uptobox.com
-@@||platform.twitter.com/widgets.js$domain=uptobox.com
-|http://$script,third-party,xmlhttprequest,domain=uptobox.com
-|https://$script,third-party,xmlhttprequest,domain=uptobox.com
+@@||ajax.googleapis.com^$script,domain=uptobox.com|uptostream.com
+@@||platform.twitter.com/widgets.js$domain=uptobox.com|uptostream.com
+|http://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
+|https://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
 ! userscloud.com
 @@||d3edizycpjjo07.cloudfront.net/assets/library/jquery/jquery.min.js$script,domain=userscloud.com
 @@||d3edizycpjjo07.cloudfront.net/xupload.js$script,domain=userscloud.com
@@ -39264,8 +39267,8 @@ $websocket,domain=allkpop.com|boards2go.com|dailycaller.com|extratorrent.cc|firs
 .link/$popup,domain=bigfile.to
 /sendspace-pop.$popup,domain=sendspace.com
 ^utm_source=$popup,domain=exashare.com|sex.com|thepiratebay.am|thepiratebay.gd|thepiratebay.la|thepiratebay.mn|thepiratebay.vg
-|http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|daclips.in|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastspics.net|filepost.com|filmovizija.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|nosteam.ro|openload.co|pic2pic.site|pixsense.net|pornparadise.org|promptfile.com|thevideo.me|twer.info|vid.ag|vidspot.net|watchcartoononline.com|xtshare.com|youwatch.org|yts.ag
-|https:$popup,third-party,domain=eztv.ag|flashx.tv|imagerar.com|thevideo.me|yts.ag
+|http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|daclips.in|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastspics.net|filepost.com|filmovizija.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|nosteam.ro|openload.co|pic2pic.site|pixsense.net|pornparadise.org|promptfile.com|thevideo.me|twer.info|uptobox.com|uptostream.com|vid.ag|vidspot.net|watchcartoononline.com|xtshare.com|youwatch.org|yts.ag
+|https:$popup,third-party,domain=eztv.ag|flashx.tv|imagerar.com|thevideo.me|uptobox.com|uptostream.com|yts.ag
 ||104.198.221.99^$popup,domain=viralitytoday.com
 ||104.239.139.5/display/$popup
 ||4fuckr.com/api.php$popup
@@ -56940,4 +56943,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: cejnFjG4f3UUydaUQv2dkA
+! Checksum: 5oep9TNfDE1BdjkFeahTLg
