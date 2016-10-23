@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610232217
+! Version: 201610232235
 ! Title: EasyList
-! Last modified: 23 Oct 2016 22:17 UTC
+! Last modified: 23 Oct 2016 22:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -40522,6 +40522,16 @@ $websocket,domain=allkpop.com|boards2go.com|celebritymozo.com|dailycaller.com|ex
 ||yumymilf.com^*/banners/
 ||yuvutu.com^*/banners/
 ||zazzybabes.com/misc/virtuagirl-skin.js
+! drtuber.com
+@@||drtst.com/templates/drtuber/js/drtuber-min.js$script
+@@||drtst.com/templates/drtuber/js/jquery.profile.drtuber.js$script
+@@||drtuber.com/templates/base_master/js/jquery.shows.min.js$script
+@@||drtuber.com/templates/base_master/js/plupload/plupload.full.min.js$script
+@@||drtuber.com/templates/base_master/js/upload/jquery.fileprogress.plupload.drtuber.js$script
+@@||drtuber.com/templates/base_master/js/upload/jquery.upload-avatar.plupload.drtuber.js$script
+@@||drtuber.com/templates/base_master/libs/$script
+|http://$script,xmlhttprequest,domain=drtuber.com
+|https://$script,xmlhttprequest,domain=drtuber.com
 ! anyporn
 @@||anyporn.com/captcha/comments/?$image
 @@||anyporn.com/player/btn_play_old.png$image
@@ -57063,6 +57073,7 @@ www.google.com#@##videoads
 @@||crazyshit.com^$generichide
 @@||desihoes.com/advertisement.js
 @@||drtst.com^*/ads.js$script
+@@||drtuber.com^$generichide
 @@||ero-advertising.com/banads/$subdocument,domain=palimas.com
 @@||exoclick.com/ad_track.js
 @@||exoclick.com/invideo.js
@@ -57117,8 +57128,7 @@ www.google.com#@##videoads
 @@||submityourflicks.com/player/player-ads.swf$object
 @@||syndication.exoclick.com/ads.php?type=728x90&$script,domain=dirtstyle.tv
 @@||tmoncdn.com/scripts/advertisement.js$domain=tubemonsoon.com
-@@||traffichaus.com^*/ads.js$script
-@@||traffichaus.com^*/advertisement.js$script
+@@||traffichaus.com^*/ad$script
 @@||trafficshop.com/show.php$script,domain=palimas.com
 @@||trafficshop.com/show_std_auction.php$script,domain=palimas.com
 @@||tube8.com/js/advertisement.js
@@ -57159,4 +57169,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 4zIIG3yZXCbFo7bL7T0mnQ
+! Checksum: 1EJzsfYILQmfNas0XyRRaw
