@@ -4217,6 +4217,12 @@
 ! multiup.org
 |http://$script,third-party,xmlhttprequest,domain=multiup.org
 |https://$script,third-party,xmlhttprequest,domain=multiup.org
+! uploadocean
+@@/^((?!.*\.(amazonaws|cloudfront|mobicow|puhtml)\W?).)*$/$script,domain=uploadocean.com
+@@|http://$image,third-party,domain=uploadocean.com
+@@|https://$image,third-party,domain=uploadocean.com
+|http://$script,third-party,xmlhttprequest,domain=uploadocean.com
+|https://$script,third-party,xmlhttprequest,domain=uploadocean.com
 ! xmovies8
 @@||connect.facebook.net^$script,domain=xmovies8.ru|xmovies8.tv
 @@||disqus.com^$script,domain=xmovies8.ru|xmovies8.tv
