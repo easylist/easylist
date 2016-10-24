@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201610240035
+! Version: 201610240102
 ! Title: EasyList
-! Last modified: 24 Oct 2016 00:35 UTC
+! Last modified: 24 Oct 2016 01:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38600,6 +38600,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! multiup.org
 |http://$script,third-party,xmlhttprequest,domain=multiup.org
 |https://$script,third-party,xmlhttprequest,domain=multiup.org
+! uploadocean
+@@/^((?!.*\.(amazonaws|cloudfront|mobicow|puhtml)\W?).)*$/$script,domain=uploadocean.com
+@@|http://$image,third-party,domain=uploadocean.com
+@@|https://$image,third-party,domain=uploadocean.com
+|http://$script,third-party,xmlhttprequest,domain=uploadocean.com
+|https://$script,third-party,xmlhttprequest,domain=uploadocean.com
 ! xmovies8
 @@||connect.facebook.net^$script,domain=xmovies8.ru|xmovies8.tv
 @@||disqus.com^$script,domain=xmovies8.ru|xmovies8.tv
@@ -50834,7 +50840,7 @@ ozarkssportszone.com##img[style="width: 320px; height: 160px;"]
 pricecheck.co.za##img[style="width: 460px;"]
 bulletin.us.com##img[style="width: 600px; height: 50px;"]
 check-host.net##img[style="width: 640px"]
-indypendent.org##img[style="width: 728px; height: 90px;"]
+indypendent.org,uploadocean.com##img[style="width: 728px; height: 90px;"]
 espn1420am.com##img[style="width: 900px; height: 150px;"]
 galaxyfm.co.ug##img[style="width: auto; height: 90px;"]
 unionleader.com##img[style="width:100px;height:38px;margin-top:-10px"]
@@ -51039,6 +51045,7 @@ bittorrent.am##input[value="Download x10 faster"]
 lix.in##input[value="Download"]
 wareznova.com##input[value="Start Premium Downloader"]
 moneyinpjs.com##ins[class^="bmadblock-"]
+uploadocean.com##ins[id][style]
 startlr.com##ins[style="display:inline-block;width:300px;height:600px"]
 politics.ie##ins[style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"]
 timesofisrael.com##item-spotlight
@@ -57178,4 +57185,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: ndVGZdbZI4udZ5xwUN5eHQ
+! Checksum: InYXt+ptNnga/GCfZWxauw
