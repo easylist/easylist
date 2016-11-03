@@ -871,9 +871,9 @@
 @@||goember.com/ad/*.xml?$xmlhttprequest
 @@||goodeed.com/donation/pr/*/makegoodeed$document
 @@||goodyhoo.com/banners/
-@@||google.*/s?*&q=$xmlhttprequest
-@@||google.*/search?sclient=*&q=$xmlhttprequest
-@@||google.*/webpagethumbnail?*&query=$script
+@@||google.*/s?*&q=$~third-party,xmlhttprequest
+@@||google.*/search?sclient=*&q=$~third-party,xmlhttprequest
+@@||google.*/webpagethumbnail?*&query=$script,~third-party
 @@||google.com/_/apps-static/*/socialads/$script,stylesheet
 @@||google.com/_static/images/*/ads.png
 @@||google.com/ads/search/module/ads/*/search.js$domain=about.com|armstrongmywire.com|atlanticbb.net|bestbuy.com|bresnan.net|broadstripe.net|buckeyecablesystem.net|cableone.net|centurylink.net|charter.net|cincinnatibell.net|dish.net|ehow.com|forbbbs.org|forbes.com|hargray.net|hawaiiantel.net|hickorytech.net|homeaway.co.uk|knology.net|livestrong.com|mediacomtoday.com|midco.net|mybendbroadband.com|mybrctv.com|mycenturylink.com|myconsolidated.net|myepb.net|mygrande.net|mygvtc.com|myhughesnet.com|myritter.com|northstate.net|nwcable.net|query.nytimes.com|rentals.com|search.rr.com|searchresults.verizon.com|suddenlink.net|surewest.com|synacor.net|tds.net|toshiba.com|trustedreviews.com|truvista.net|windstream.net|windstreambusiness.net|wowway.net|zoover.co.uk|zoover.com
@@ -1499,7 +1499,7 @@
 @@||sales.liveperson.net/visitor/addons/deploy2.asp?*&d_id=adcenter&$script
 @@||salfordonline.com/wp-content/plugins/wp_pro_ad_system/templates/js/jquery.jshowoff.min.js?
 @@||salon.com/content/plugins/salon-ad-controller/ad-utilities.js
-@@||samples.audible.*/bk/adbl/$media,other
+@@||samples.audible.*/bk/adbl/$media,other,~third-party
 @@||sascdn.com/crossdomain.xml$object-subrequest
 @@||sascdn.com^*/jwplayer-plugin.swf?$object-subrequest
 @@||sascdn.com^*/jwplayerAdPlugin.swf$object-subrequest
