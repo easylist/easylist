@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201611040453
+! Version: 201611040515
 ! Title: EasyList
-! Last modified: 04 Nov 2016 04:53 UTC
+! Last modified: 04 Nov 2016 05:15 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -18193,6 +18193,7 @@ data:text/html$popup
 ##.ads_under_player
 ##.ads_up
 ##.ads_up_big2
+##.ads_upper_right_wrap
 ##.ads_verticalSpace
 ##.ads_vtlLink
 ##.ads_vtlList
@@ -52451,7 +52452,7 @@ porn.com##.fZone
 imagepost.com##.favsites
 mrstiff.com##.feedadv-wrap
 extremetube.com##.float-left[style="width: 49.9%; height: 534px;"]
-wankerhut.com##.float-right
+tube8.com,wankerhut.com##.float-right
 extremetube.com##.float-right[style="width: 49.9%; height: 534px;"]
 teensexyvirgins.com,xtravids.com##.foot_squares
 scio.us,youporn.com##.footer
@@ -56919,6 +56920,8 @@ www.google.com#@##videoads
 @@||youjizz.com/videos/embed/$subdocument,domain=youjizz.com
 ! Pornhub network
 @@||ajax.googleapis.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
+@@||algolia.net^*/indexes/$xmlhttprequest,domain=tube8.com
+@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com
 @@||amazonaws.com/uploads.uservoice.com/$image,domain=pornhub.com|redtube.com|tube8.com|youporn.com
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -57400,4 +57403,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: Dp7dOpYEI05dZvqnDmWIwQ
+! Checksum: 8N9yOxczx2JkK6Z0eidYsg
