@@ -4205,6 +4205,13 @@
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! allkpop
+/http://.*[a-z0-9+]{15}/$image,domain=allkpop.com
+@@||connect.facebook.net^$script,domain=allkpop.com
+@@||platform.instagram.com^$script,domain=allkpop.com
+@@||platform.twitter.com^$script,domain=allkpop.com
+|http://$script,third-party,domain=allkpop.com
+|https://$script,third-party,domain=allkpop.com
 ! en.yibada.com
 @@||ajax.aspnetcdn.com^$third-party,domain=yibada.com
 @@||ajax.googleapis.com^$script,domain=yibada.com
