@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201611271109
+! Version: 201611271118
 ! Title: EasyList
-! Last modified: 27 Nov 2016 11:09 UTC
+! Last modified: 27 Nov 2016 11:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6789,6 +6789,9 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! https://github.com/sanosay/exads-adblock
+/backend_loader.php$script,~third-party
+/frontend_loader.js$script,~third-party
 ! prebid scripts
 /biddr-*.js
 /prebid.$script
@@ -34912,9 +34915,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||3dwallpaperstudio.com/hd_wallpapers.png
 ||3g.co.uk/fad/
 ||3pmpickup.com.au/images/kmart_v2.jpg
-||4archive.org/frontend_loader.js
 ||4chan.org/support/
-||4chanarchives.cu.cc/frontend_loader.js
 ||4downfiles.com/open1.js
 ||4fastfile.com/afiliat.png
 ||4fuckr.com/g/$image
@@ -36488,7 +36489,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||imageporter.com/hiokax.js
 ||imageporter.com/micromoo.html
 ||imageporter.com/someo.html
-||imagerar.com^*/frontend_loader.js
 ||imagerise.com/ir.js
 ||imagerise.com/ir2.js
 ||images-amazon.com/images/*/browser-scripts/da-
@@ -36506,7 +36506,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||imageshack.us/ym.php?
 ||imagesnake.com^*/oc.js
 ||imagetoupload.com/images/87633952425570896161.jpg
-||imagetwist.com/frontend_loader.js
 ||imagevenue.com/interstitial.
 ||imcdb.org/res/cth_
 ||imdb.com/images/*/scriptloader.$subdocument
@@ -36521,7 +36520,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||imgchili.net/js/showa.js
 ||imgchili.net/lj.js
 ||imgking.co/poudr.js
-||imgkings.com/frontend_loader.js
 ||imgshots.com/includes/js/layer.js
 ||imgur.com/i2iBMaD.gif$domain=cpahero.com
 ||imgur.com/include/zedoinviewstub1621.html
@@ -40186,7 +40184,6 @@ $websocket,domain=anime-joy.tv|boards2go.com|celebdirtylaundry.com|celebritymozo
 ||3xupdate.com^*/ryusharepremium.gif
 ||3yen.com/wfn_
 ||4sex4.com/pd/
-||4tube.com/frontend_loader.js
 ||4tube.com/tb/banner/
 ||4ufrom.me/xpw.gif
 ||5ilthy.com/porn.php
@@ -40798,7 +40795,6 @@ $websocket,domain=anime-joy.tv|boards2go.com|celebdirtylaundry.com|celebritymozo
 ||porntube.com/adb/
 ||porntube.com/ads|
 ||porntube.com/assets/adb$script
-||porntube.com/frontend_loader.js
 ||pornup.me/js/pp.js
 ||pornvideoq.com/*.html$subdocument,~third-party
 ||pornvideoxo.com^$subdocument,~third-party
@@ -40881,7 +40877,6 @@ $websocket,domain=anime-joy.tv|boards2go.com|celebdirtylaundry.com|celebritymozo
 ||sexyfuckgames.com/images/promo/
 ||sexyshare.net//banners/
 ||sexytime.com/img/sexytime_anima.gif
-||sh-cdn.com/backend_loader.php$domain=simply-hentai.com
 ||shanbara.jp/300_200plus.jpg
 ||shanbara.jp/okusamadx.gif
 ||sharew.org/modalfiles/
@@ -57807,4 +57802,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: F+D0ect4ez3xWH/Wp2Bq2A
+! Checksum: olSuy+pY1b8A/vAKO2WuKw
