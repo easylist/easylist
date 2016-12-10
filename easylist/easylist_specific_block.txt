@@ -4232,9 +4232,11 @@
 |http://$subdocument,third-party,domain=goolink.me
 |https://$subdocument,third-party,domain=goolink.me
 ! adlipay.com
+@@||connect.facebook.net^$script,domain=adlipay.com
 @@||google.com/recaptcha/$subdocument,domain=adlipay.com
-|http://$subdocument,third-party,domain=adlipay.com
-|https://$subdocument,third-party,domain=adlipay.com
+@@||rawgit.com/Brando07/seocips/newbe/loading1.js$script,domain=adlipay.com
+|http://$script,subdocument,third-party,xmlhttprequest,domain=adlipay.com
+|https://$script,subdocument,third-party,xmlhttprequest,domain=adlipay.com
 ! veekyforums.com
 @@||ajax.googleapis.com^$script,domain=veekyforums.com
 |http://$script,third-party,xmlhttprequest,domain=veekyforums.com
