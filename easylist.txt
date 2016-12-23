@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201612230911
+! Version: 201612230918
 ! Title: EasyList
-! Last modified: 23 Dec 2016 09:11 UTC
+! Last modified: 23 Dec 2016 09:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -27718,6 +27718,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||grabmyads.com^$third-party
 ||grabo.bg^$third-party
 ||grafpedia.com^$third-party
+||granodiorite.com^$third-party
 ||grapeshot.co.uk^$third-party
 ||gratisnetwork.com^$third-party
 ||green-red.com^$third-party
@@ -39454,22 +39455,30 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 @@||imore.com^$script,domain=forums.androidcentral.com
 @@||imore.com^$script,~third-party,domain=forums.imore.com
 @@||store.imore.com^$script,~third-party
+|http://$third-party,xmlhttprequest,domain=imore.com
+|https://$third-party,xmlhttprequest,domain=imore.com
 ||imore.com^$script,~third-party
 ! crackberry.com
 @@||crackberry.com/sites/crackberry.com/files/advagg_js/js_$script
 @@||crackberry.com^$script,~third-party,domain=forums.crackberry.com
 @@||imore.com^$script,domain=forums.crackberry.com
 @@||shop.crackberry.com^$script,~third-party
+|http://$third-party,xmlhttprequest,domain=crackberry.com
+|https://$third-party,xmlhttprequest,domain=crackberry.com
 ||crackberry.com^$script,~third-party
 ! windowscentral.com
 @@||shop.windowscentral.com^$script,~third-party
 @@||windowscentral.com/sites/wpcentral.com/files/advagg_js/js_$script
 @@||windowscentral.com^$script,domain=forums.windowscentral.com
+|http://$third-party,xmlhttprequest,domain=windowscentral.com
+|https://$third-party,xmlhttprequest,domain=windowscentral.com
 ||windowscentral.com^$script,~third-party
 ! androidcentral.com
 @@||androidcentral.com/sites/$script,domain=forums.androidcentral.com
 @@||androidcentral.com/sites/androidcentral.com/files/advagg_js/js_$script
 @@||forums.androidcentral.com^$script,~third-party
+|http://$third-party,xmlhttprequest,domain=androidcentral.com
+|https://$third-party,xmlhttprequest,domain=androidcentral.com
 ||androidcentral.com^$script,~third-party
 ! kissasian.com
 @@||disqus.com^$script,domain=kissasian.com
@@ -58363,4 +58372,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: kHaxUqhn7b5LTmEeD0KiPA
+! Checksum: LN196Qd5ZIolZLsfn845Cg
