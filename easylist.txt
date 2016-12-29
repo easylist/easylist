@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201612292311
+! Version: 201612292317
 ! Title: EasyList
-! Last modified: 29 Dec 2016 23:11 UTC
+! Last modified: 29 Dec 2016 23:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -29715,6 +29715,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||xgraph.net^$third-party
 ||xjfjx8hw.com^$third-party
 ||xmasdom.com^$third-party
+||xmaswrite.com^$third-party
 ||xmlconfig.ltassrv.com^$third-party
 ||xs.mochiads.com^$third-party
 ||xtcie.com^$third-party
@@ -39494,6 +39495,15 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! video-download.online
+@@||cdndoge.xyz/common/js/jquery.js
+@@||cdndoge.xyz/lib/sweetalert/sweetalert.js
+@@||cdndoge.xyz/video-download/js/bootstrap.js
+@@||cdndoge.xyz/video-download/js/dropdown.js
+@@||cdndoge.xyz/video-download/js/event.js
+@@||cdndoge.xyz/video-download/js/waves.js
+|http://$script,third-party,xmlhttprequest,domain=video-download.online
+|https://$script,third-party,xmlhttprequest,domain=video-download.online
 ! Mobile Nations (windowscentral.com imore.com crackberry.com androidcentral.com)
 |http://$third-party,xmlhttprequest,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
 |https://$third-party,xmlhttprequest,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
@@ -49889,6 +49899,7 @@ crackdump.com##[width="74"]
 empireonline.com##[width="950"][height="130"][align="center"]
 oddee.com##a + br + br + span
 lindaikeji.blogspot.com##a > img[height="600"]
+video-download.online##a > img[src][style]
 thefreedictionary.com##a > img[src^="//img.tfd.com/"]
 powerbot.org##a > img[width="729"]
 etmirror.com,etproxy.com,extra.to,extratorrent.cc,extratorrent.works,extratorrentlive.com,extratorrentonline.com##a[class][href][onclick]
@@ -58454,4 +58465,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: Nu2KUnO8/UJWQRGatKCw/Q
+! Checksum: XImr6aZH8VXcP3aYkZCaQw
