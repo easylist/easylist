@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201612291715
+! Version: 201612291953
 ! Title: EasyPrivacy
-! Last modified: 29 Dec 2016 17:15 UTC
+! Last modified: 29 Dec 2016 19:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10456,19 +10456,23 @@ _mongo_stats/
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
 /__utm.gif$domain=quoka.de|tellows.de|thewatchseries.to
 /csi?v=*&action=$domain=tellows.de
+/nm_trck.gif?$domain=spiegel.de
 ||a.watchseries.to^$domain=thewatchseries.to
 ||addthis.com/live/$domain=thewatchseries.to
 ||cpx.to^$domain=quoka.de
 ||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
 ||exactag.com^$domain=quoka.de
 ||facebook.com*/impression.php$domain=tellows.de
-||google-analytics.com/analytics.js$domain=quoka.de
+||google-analytics.com/analytics.js$domain=quoka.de|spiegel.de
 ||googleapis.com^*/gen_204?$domain=tellows.de
 ||hotjar.com^$domain=quoka.de
-||ioam.de/?$domain=tellows.de
-||ioam.de/tx.io?$domain=quoka.de|tellows.de
+||ioam.de/?$domain=spiegel.de|tellows.de
+||ioam.de/tx.io?$domain=quoka.de|spiegel.de|tellows.de
+||met.vgwort.de^$domain=spiegel.de
+||mxcdn.net^$domain=spiegel.de
 ||nuggad.net^$domain=quoka.de
 ||theadex.com^$domain=quoka.de
+||visualrevenue.com^$domain=spiegel.de
 ||watchseries.to/piwik.js
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
@@ -12246,4 +12250,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: tIjOmhif2McgYJJAy0FNlA
+! Checksum: McsRCj88X018x6l9044mCw
