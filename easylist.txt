@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201612302158
+! Version: 201612302204
 ! Title: EasyList
-! Last modified: 30 Dec 2016 21:58 UTC
+! Last modified: 30 Dec 2016 22:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -41736,8 +41736,12 @@ $websocket,domain=anime-joy.tv|boards2go.com|celebdirtylaundry.com|celebritymozo
 |http://$script,third-party,xmlhttprequest,domain=xhamster.com
 |https://$script,third-party,xmlhttprequest,domain=xhamster.com
 ! hdzog.com
+@@||hdzog.com/key=$~third-party,xmlhttprequest
+@@||hdzog.com/player/timelines.php?$~third-party,xmlhttprequest
 |http://$script,third-party,xmlhttprequest,domain=hdzog.com
 |https://$script,third-party,xmlhttprequest,domain=hdzog.com
+||hdzog.com/njs/$script
+||hdzog.com^$~third-party,xmlhttprequest
 ! xvideos.com
 @@||ajax.googleapis.com^$script,domain=xvideos.com
 |http://$script,third-party,xmlhttprequest,domain=xvideos.com
@@ -58493,4 +58497,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: aR2J31zdKwnW9bZLMvp6eg
+! Checksum: fMeJ62R5Rf91T6IGAe5lng
