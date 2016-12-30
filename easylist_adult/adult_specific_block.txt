@@ -1049,8 +1049,12 @@
 |http://$script,third-party,xmlhttprequest,domain=xhamster.com
 |https://$script,third-party,xmlhttprequest,domain=xhamster.com
 ! hdzog.com
+@@||hdzog.com/key=$~third-party,xmlhttprequest
+@@||hdzog.com/player/timelines.php?$~third-party,xmlhttprequest
 |http://$script,third-party,xmlhttprequest,domain=hdzog.com
 |https://$script,third-party,xmlhttprequest,domain=hdzog.com
+||hdzog.com/njs/$script
+||hdzog.com^$~third-party,xmlhttprequest
 ! xvideos.com
 @@||ajax.googleapis.com^$script,domain=xvideos.com
 |http://$script,third-party,xmlhttprequest,domain=xvideos.com
