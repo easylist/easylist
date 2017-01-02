@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201701021737
+! Version: 201701021746
 ! Title: EasyPrivacy
-! Last modified: 02 Jan 2017 17:37 UTC
+! Last modified: 02 Jan 2017 17:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10474,25 +10474,35 @@ _mongo_stats/
 ! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
 ||radio-canada.ca/omniture/omni_stats_base.js?
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
-/__utm.gif$domain=quoka.de|tellows.de|thewatchseries.to
+/__utm.gif$domain=autobild.de|quoka.de|tellows.de|thewatchseries.to
 /csi?v=*&action=$domain=tellows.de
 /nm_trck.gif?$domain=spiegel.de
+/pic.gif?m=$domain=autobild.de
 ||a.watchseries.to^$domain=thewatchseries.to
 ||addthis.com/live/$domain=thewatchseries.to
+||bluekai.com^$domain=disqus.com
 ||cpx.to^$domain=quoka.de
+||crwdcntrl.net^$domain=disqus.com
+||disqus.com/api/ping?$domain=autobild.de
 ||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
 ||exactag.com^$domain=quoka.de
-||facebook.com*/impression.php$domain=tellows.de
+||exelator.com^$domain=disqus.com
+||facebook.com*/impression.php$domain=autobild.de|tellows.de
 ||google-analytics.com/analytics.js$domain=quoka.de|spiegel.de
 ||googleapis.com^*/gen_204?$domain=tellows.de
+||googletagmanager.com/gtm.js?$domain=autobild.de
 ||hotjar.com^$domain=quoka.de
-||ioam.de/?$domain=spiegel.de|tellows.de
-||ioam.de/tx.io?$domain=quoka.de|spiegel.de|tellows.de
+||ioam.de/?$domain=autobild.de|spiegel.de|tellows.de
+||ioam.de/tx.io?$domain=autobild.de|quoka.de|spiegel.de|tellows.de
+||log.outbrain.com^$domain=autobild.de
 ||met.vgwort.de^$domain=spiegel.de
 ||mxcdn.net^$domain=spiegel.de
 ||nuggad.net^$domain=quoka.de
+||pippio.com^$domain=disqus.com
+||referrer.disqus.com^$domain=autobild.de
+||tealiumiq.com^$domain=autobild.de
 ||theadex.com^$domain=quoka.de
-||visualrevenue.com^$domain=spiegel.de
+||visualrevenue.com^$domain=autobild.de|spiegel.de
 ||watchseries.to/piwik.js
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
@@ -12272,4 +12282,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: VODpUhBexTjea1vAJ0ibeA
+! Checksum: X2TcsyHW/vKiYqr9y+7e3w
