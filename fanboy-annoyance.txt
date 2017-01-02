@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701021758
+! Version: 201701022118
 ! Title: Fanboy's Annoyance List
-! Last modified: 02 Jan 2017 17:58 UTC
+! Last modified: 02 Jan 2017 21:18 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -14638,12 +14638,12 @@ _youtube_social_
 ||wordpress.com^*/twitter1.png
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
 ||addthis.com^$domain=thewatchseries.to
-||facebook.com*/plugins/like.php?$domain=autobild.de
+||facebook.com*/plugins/like.php?$domain=autobild.de|transfermarkt.de
 ||facebook.com/plugins/like.php$domain=tellows.de|thewatchseries.to
 ||facebook.com^*/plugins/page.php$domain=thewatchseries.to
 ||facebook.com^*/plugins/page.php?$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||google.com^*/fastbutton?$domain=autobild.de|tellows.de
-||platform.twitter.com/js/button.$domain=spiegel.de|thewatchseries.to
+||platform.twitter.com/js/button.$domain=spiegel.de|thewatchseries.to|transfermarkt.de
 ||twitter.com/js/timeline.$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ! ------------------------Specific element hiding rules------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_specific_hide.txt ***
@@ -19383,9 +19383,9 @@ usatoday.com##.util-bar-module-share
 usapoliticstoday.com##.widget_facebook_likebox
 wccftech.com##.wp-share
 kabeleins.de,prosieben.de,prosiebenmaxx.de,ran.de,sat1.de,sixx.de##[name="fb_share"]
-autobild.de##a[href^="http://www.facebook.com/share.php?u="]
+autobild.de,transfermarkt.de##a[href^="http://www.facebook.com/share.php?u="]
 autobild.de##a[href^="https://plus.google.com/share?url="]
-autobild.de##a[href^="https://twitter.com/share?"]
+autobild.de,transfermarkt.de##a[href^="https://twitter.com/share?"]
 ! ------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_international.txt ***
 ! 
@@ -21322,4 +21322,4 @@ fark.com,marketplace.firefox.com,vvhp.net#@#img[title="YouTube"]
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: 5hHIbBwK2ijLcjLt18T/GA
+! Checksum: 6Np+CGw4azdGgLYDpc569A
