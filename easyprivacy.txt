@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201701022134
+! Version: 201701022144
 ! Title: EasyPrivacy
-! Last modified: 02 Jan 2017 21:34 UTC
+! Last modified: 02 Jan 2017 21:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10478,9 +10478,11 @@ _mongo_stats/
 /csi?v=*&action=$domain=tellows.de
 /nm_trck.gif?$domain=spiegel.de
 /pic.gif?m=$domain=autobild.de
+||3gl.net^$domain=stern.de
 ||a.watchseries.to^$domain=thewatchseries.to
 ||addthis.com/live/$domain=thewatchseries.to
 ||bluekai.com^$domain=disqus.com
+||chartbeat.com^$domain=stern.de
 ||contentexchange.me^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||contentspread.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||cpx.to^$domain=quoka.de
@@ -10494,14 +10496,16 @@ _mongo_stats/
 ||facebook.com*/impression.php$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|tellows.de|transfermarkt.de
 ||facebook.com/common/scribe_endpoint.php$domain=transfermarkt.de
 ||google-analytics.com/analytics.js$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de
+||google-analytics.com/collect$domain=stern.de
 ||googleapis.com^*/gen_204?$domain=tellows.de
 ||googletagmanager.com/gtm.js?$domain=autobild.de|transfermarkt.de
 ||hotjar.com^$domain=quoka.de
 ||imrworldwide.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||ioam.de/?$domain=autobild.de|spiegel.de|tellows.de|transfermarkt.de
-||ioam.de/tx.io?$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|tellows.de|transfermarkt.de
+||ioam.de/?$domain=autobild.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
+||ioam.de/tx.io?$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
 ||log.outbrain.com^$domain=autobild.de
-||met.vgwort.de^$domain=spiegel.de
+||met.vgwort.de^$domain=spiegel.de|stern.de
+||metrics.brightcove.com^$domain=stern.de
 ||mxcdn.net^$domain=spiegel.de
 ||nuggad.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|transfermarkt.de
 ||optimizely.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
@@ -10511,10 +10515,13 @@ _mongo_stats/
 ||semasio.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||tealiumiq.com^$domain=autobild.de|transfermarkt.de
 ||theadex.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de
+||tracking-rce.veeseo.com^$domain=stern.de
 ||twitter.com/i/jot$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||visualrevenue.com^$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de
 ||watchseries.to/piwik.js
 ||webtrekk.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||wt-eu02.net^$domain=stern.de
+||wt-safetag.com^$domain=stern.de
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
 ! German
@@ -12293,4 +12300,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: 0MSsAViOkpdBwneg2y2gNA
+! Checksum: QBxiQDtUyWrhRe83hJR8SA
