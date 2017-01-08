@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701080425
+! Version: 201701080432
 ! Title: EasyList
-! Last modified: 08 Jan 2017 04:25 UTC
+! Last modified: 08 Jan 2017 04:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -40036,12 +40036,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$script,third-party,xmlhttprequest,domain=torrent-dx.com
 |https://$script,third-party,xmlhttprequest,domain=torrent-dx.com
 ! eztv.ag
-@@||ajax.googleapis.com^$script,domain=eztv.ag
-@@||cdnjs.cloudflare.com^$script,domain=eztv.ag
-@@||connect.facebook.net^$script,domain=eztv.ag
-@@||eztv.ag/js/search_shows*.js$script,domain=eztv.ag
-|http://$script,xmlhttprequest,domain=eztv.ag
-|https://$script,xmlhttprequest,domain=eztv.ag
+@@||ajax.googleapis.com^$script,domain=eztv.ag|eztv.tf|eztv.yt
+@@||cdnjs.cloudflare.com^$script,domain=eztv.ag|eztv.tf|eztv.yt
+@@||connect.facebook.net^$script,domain=eztv.ag|eztv.tf|eztv.yt
+@@||eztv.ag/js/search_shows*.js$script,domain=eztv.ag|eztv.tf|eztv.yt
+|http://$script,xmlhttprequest,domain=eztv.ag|eztv.tf|eztv.yt
+|https://$script,xmlhttprequest,domain=eztv.ag|eztv.tf|eztv.yt
 ! strikeout.co
 @@||ajax.googleapis.com^$domain=strikeout.co
 @@||apis.google.com^$script,domain=strikeout.co
@@ -40708,7 +40708,7 @@ $websocket,domain=anime-joy.tv|batmanstream.com|boards2go.com|boreburn.com|celeb
 |data^$popup,domain=gorillavid.in|nowvideo.to|zippyshare.com
 |http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|daclips.in|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastspics.net|filepost.com|filmovizija.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|nosteam.ro|openload.co|pic2pic.site|pixsense.net|pornparadise.org|projectfreetv.at|promptfile.com|thevideo.me|twer.info|uptobox.com|uptostream.com|vid.ag|vidspot.net|vidzi.tv|watchcartoononline.com|xtshare.com|youwatch.org|yts.ag
 |https:$popup,third-party,domain=eztv.ag|flashx.tv|imagerar.com|imgbox.com|thevideo.me|uptobox.com|uptostream.com|yts.ag
-|javascript^$popup,domain=biology-online.org|bitvid.sx|cloudtime.to|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
+|javascript^$popup,domain=biology-online.org|bitvid.sx|cloudtime.to|eztv.ag|eztv.tf|eztv.yt|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
 ||104.198.221.99^$popup
 ||104.239.139.5/display/$popup
 ||130.211.198.219^$popup
@@ -52941,7 +52941,7 @@ hongkongindians.com##th[width="1000"][height="141"]
 legendarydevils.com##th[width="600"]
 etmirror.com,etproxy.com,extra.to,extratorrent.cc,extratorrent.works,extratorrentlive.com,extratorrentonline.com##tr > [style] > table[class]:first-child
 rarbg.to,rarbgmirror.com,rarbgproxy.com##tr > td + td[style*="height:"]
-eztv.ag##tr > td[style*="border:"]
+eztv.ag,eztv.tf,eztv.yt##tr > td[style*="border:"]
 uvnc.com##tr > td[valign="middle"][style="width: 10px;"]:first-child + td[valign="top"][style="width: 180px;"]
 forums.creativecow.net##tr > td[width="126"][valign="top"][style="padding:6px 0px 0px 10px;"]:first-child
 rarlab.com,rarlabs.com##tr:first-child > .tbar2[width="48%"]:first-child + td[width="4%"] + .tbar2[width="48%"]:last-child
@@ -58698,4 +58698,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: QLezLK9ea2VdOGZOK4ETJw
+! Checksum: oc8BiWYzT1fjfbZz0qkqew
