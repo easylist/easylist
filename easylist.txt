@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701142316
+! Version: 201701142321
 ! Title: EasyList
-! Last modified: 14 Jan 2017 23:16 UTC
+! Last modified: 14 Jan 2017 23:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7552,6 +7552,8 @@ _a468x60.
 ?iiadext=$popup
 ?zoneid=*_bannerid=$popup
 _popunder+$popup
+! Commonly used popup scripts on movie/tv streaming sites
+|javascript:*setTimeout*location.href$popup
 ! Used with many websites to generate multiple popups
 |data:text$popup
 ! ------------------------General element hiding rules-------------------------!
@@ -58843,4 +58845,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: EQSG4UwkgWY+RzlKLHEWWw
+! Checksum: A4n73t26re9xC0cz2yiBfQ
