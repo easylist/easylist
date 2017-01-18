@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701181844
+! Version: 201701181857
 ! Title: EasyList
-! Last modified: 18 Jan 2017 18:44 UTC
+! Last modified: 18 Jan 2017 18:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -36739,6 +36739,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||fastpic.ru/b/
 ||fastvideo.eu/images/down.png
 ||fastvideo.eu/images/pl_box_rapid.jpg
+||fbcdn.net/safe_image.php?d=*&url=http%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3F$domain=facebook.com
 ||fbcdn.net^*/flyers/$domain=facebook.com
 ||feed-the-beast.com^*/gamevox.png
 ||feedly.com/amazon.$xmlhttprequest
@@ -44582,6 +44583,12 @@ weather.com###pageSpon2
 ninemsn.com.au###page_content_right
 radaronline.com###page_content_right_small
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
+facebook.com###pagelet_ego_pane a[href^="http://l.facebook.com/l.php?u="][href*="utm_source%3Dfacebook%26"][href*="%26utm_medium%3Dcpc"]
+facebook.com###pagelet_ego_pane a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
+facebook.com###pagelet_ego_pane a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
+facebook.com###pagelet_ego_pane a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
+facebook.com###pagelet_ego_pane a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
+facebook.com###pagelet_ego_pane a[href^="https://l.facebook.com/l.php?u="][href*="utm_source%3Dfacebook%26"][href*="%26utm_medium%3Dcpc"]
 warriorforum.com###pagenav_menu + div[align="center"] > a[target="_blank"] > img
 offtopic.com###pagenav_menu + table[height="61"][cellspacing="0"][cellpadding="0"][border="0"][width="100%"]
 sme.sk###paidLinks
@@ -51111,6 +51118,7 @@ domains.googlesyndication.com##body > table:first-child > tbody:first-child > tr
 oddee.com##br + br + :last-child
 etmirror.com,etproxy.com,extra.to,extratorrent.cc,extratorrent.works,extratorrentlive.com,extratorrentonline.com##br + br + table[class][align]
 oddee.com##br + div + span
+facebook.com##button[data-gt*="\"ref\":\"ad\""]
 onhax.me##button[onclick]
 onhax.me##button[type]
 jguru.com##center
@@ -51203,6 +51211,7 @@ facebook.com##div[class="ego_column _5qrt"]
 facebook.com##div[class="ego_column _8_9"]
 facebook.com##div[class="ego_column pagelet _5qrt _1snm _xi9"]
 facebook.com##div[class="ego_column pagelet _5qrt _1snm l_1br60i3rxk"]
+facebook.com##div[class="ego_column pagelet _5qrt _1snm n_1bbmy10ju8"]
 facebook.com##div[class="ego_column pagelet _5qrt _1snm"]
 facebook.com##div[class="ego_column pagelet _5qrt _xi9"]
 facebook.com##div[class="ego_column pagelet _5qrt _y92 _1snm"]
@@ -58941,4 +58950,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: Eecava33kpsLY6h+6ldejQ
+! Checksum: oBR5YEK6V6vw/a9ZAOBMlA
