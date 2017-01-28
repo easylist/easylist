@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701281031
+! Version: 201701281123
 ! Title: EasyList
-! Last modified: 28 Jan 2017 10:31 UTC
+! Last modified: 28 Jan 2017 11:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12443,6 +12443,7 @@ _popunder+$popup
 ###floating-ads
 ###floating-advert
 ###floatingAd
+###floatingAdContainer
 ###floatingAds
 ###floating_ad
 ###floating_ad_container
@@ -18173,6 +18174,7 @@ _popunder+$popup
 ##.adsBottom
 ##.adsBox
 ##.adsBoxTop
+##.adsByTJ
 ##.adsCap
 ##.adsCategoryIcon
 ##.adsCategoryTitleLink
@@ -25125,6 +25127,7 @@ _popunder+$popup
 ##a[target="_blank"][href^="http://api.taboola.com/"]
 ##a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"]
 ##aside[id^="div-gpt-ad"]
+##bottomadblock
 ##div[class^="gemini-ad"]
 ##div[id^="ADV-SLOT-"]
 ##div[id^="MarketGid"]
@@ -25154,6 +25157,7 @@ _popunder+$popup
 ##input[onclick^="window.open('http://www.friendlyduck.com/AF_"]
 ##p[id^="div-gpt-ad-"]
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
+##topadblock
 ! issuu advertising
 ##.issuuembed
 ! Anti-adblock (https://forums.lanik.us/viewtopic.php?f=62&t=32738)
@@ -54670,7 +54674,6 @@ imagedunk.com##td[width="250"]
 imagedax.net,youjizz.com##td[width="300"]
 xhamster.com##td[width="360"]
 pornwikileaks.com##td[width="43"]
-tube8.com##topadblock
 imagefap.com##tr > td + td[style*="width:"]
 youjizz.com##tr > td + td[valign="top"]
 imagefap.com##tr > td[style*="display:"]
@@ -58591,13 +58594,15 @@ www.google.com#@##videoads
 @@||youjizz.com/videos/embed/$subdocument,domain=youjizz.com
 ! Pornhub network
 @@||ajax.googleapis.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com
+@@||algolia.net^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
+@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
 @@||amazonaws.com/uploads.uservoice.com/$image,domain=pornhub.com|redtube.com|tube8.com|youporn.com
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
 @@||cdn-d-img.pornhub.com/m=$image,domain=pornhub.com|redtube.com|redtube.com.br
-@@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com
+@@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com|tube8.es|tube8.fr
+@@||cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js$script,domain=tube8.com|tube8.es|tube8.fr
 @@||cdne-st.redtubefiles.com^$script,domain=redtube.com|redtube.com.br
 @@||connect.facebook.net^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disqus.com/count.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -58613,9 +58618,14 @@ www.google.com#@##videoads
 @@||img.pornhub.com/gif/*.gif|$image,~third-party
 @@||keezmovies.phncdn.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||nsimg.net^$image,domain=pornhub.com
+@@||phncdn.com/*/js/likeDislike/$script
+@@||phncdn.com/*/js/t8.util-min.js?$script
 @@||phncdn.com//js/popUnder/exclusions-min.js
+@@||phncdn.com/assets/*/js/common.js$script
+@@||phncdn.com/assets/*/js/user_notification.js$script
+@@||phncdn.com/assets/*/js/video.js$script
+@@||phncdn.com/assets/*/js/video_page.js$script
 @@||phncdn.com/assets/pc/js/categories_page_asset_list.js$script
-@@||phncdn.com/assets/pc/js/common.js$script
 @@||phncdn.com/assets/pc/js/contact_page_asset_list.js$script
 @@||phncdn.com/assets/pc/js/halloffap_asset_list.js$script
 @@||phncdn.com/assets/pc/js/home_page_asset_list.js$script
@@ -58719,6 +58729,7 @@ www.google.com#@##videoads
 @@||phncdn.com/js/userSettings_setUp-min.js?$script
 @@||phncdn.com/js/userVideos_setUp-min.js?$script
 @@||phncdn.com/js/utils/mg-utils-min.js$script
+@@||phncdn.com/js/video_favorite/$script
 @@||phncdn.com/js/video_setUp-min.js$script
 @@||phncdn.com/js/video_setUp_tablet-min.js$script
 @@||phncdn.com/js/videoDetection.js?$script
@@ -58736,7 +58747,7 @@ www.google.com#@##videoads
 @@||phncdn.com/tubes.infopages-$script
 @@||phncdn.com/underscore-$script
 @@||phncdn.com/videos/$media,object,object-subrequest,other,domain=pornhub.com|redtube.com|tube8.com|youporn.com|youporngay.com
-@@||phncdn.com/vortex-simple-*.js|$script,domain=redtube.com
+@@||phncdn.com/vortex-simple-*.js|$script
 @@||phncdn.com/vortex.modern-*.js$script
 @@||phncdn.com/www-static/*/autocomplete.$script
 @@||phncdn.com/www-static/*/gif-view-functions.js$script
@@ -59086,4 +59097,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: SdzFsf42l7u4C0RvU9LW5Q
+! Checksum: Tz4Ej/mkTAl8jgSy5h0/bg
