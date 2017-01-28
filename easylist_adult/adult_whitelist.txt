@@ -64,13 +64,15 @@
 @@||youjizz.com/videos/embed/$subdocument,domain=youjizz.com
 ! Pornhub network
 @@||ajax.googleapis.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com
+@@||algolia.net^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
+@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
 @@||amazonaws.com/uploads.uservoice.com/$image,domain=pornhub.com|redtube.com|tube8.com|youporn.com
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
 @@||cdn-d-img.pornhub.com/m=$image,domain=pornhub.com|redtube.com|redtube.com.br
-@@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com
+@@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com|tube8.es|tube8.fr
+@@||cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js$script,domain=tube8.com|tube8.es|tube8.fr
 @@||cdne-st.redtubefiles.com^$script,domain=redtube.com|redtube.com.br
 @@||connect.facebook.net^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disqus.com/count.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -86,9 +88,14 @@
 @@||img.pornhub.com/gif/*.gif|$image,~third-party
 @@||keezmovies.phncdn.com^$image,object-subrequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||nsimg.net^$image,domain=pornhub.com
+@@||phncdn.com/*/js/likeDislike/$script
+@@||phncdn.com/*/js/t8.util-min.js?$script
 @@||phncdn.com//js/popUnder/exclusions-min.js
+@@||phncdn.com/assets/*/js/common.js$script
+@@||phncdn.com/assets/*/js/user_notification.js$script
+@@||phncdn.com/assets/*/js/video.js$script
+@@||phncdn.com/assets/*/js/video_page.js$script
 @@||phncdn.com/assets/pc/js/categories_page_asset_list.js$script
-@@||phncdn.com/assets/pc/js/common.js$script
 @@||phncdn.com/assets/pc/js/contact_page_asset_list.js$script
 @@||phncdn.com/assets/pc/js/halloffap_asset_list.js$script
 @@||phncdn.com/assets/pc/js/home_page_asset_list.js$script
@@ -192,6 +199,7 @@
 @@||phncdn.com/js/userSettings_setUp-min.js?$script
 @@||phncdn.com/js/userVideos_setUp-min.js?$script
 @@||phncdn.com/js/utils/mg-utils-min.js$script
+@@||phncdn.com/js/video_favorite/$script
 @@||phncdn.com/js/video_setUp-min.js$script
 @@||phncdn.com/js/video_setUp_tablet-min.js$script
 @@||phncdn.com/js/videoDetection.js?$script
@@ -209,7 +217,7 @@
 @@||phncdn.com/tubes.infopages-$script
 @@||phncdn.com/underscore-$script
 @@||phncdn.com/videos/$media,object,object-subrequest,other,domain=pornhub.com|redtube.com|tube8.com|youporn.com|youporngay.com
-@@||phncdn.com/vortex-simple-*.js|$script,domain=redtube.com
+@@||phncdn.com/vortex-simple-*.js|$script
 @@||phncdn.com/vortex.modern-*.js$script
 @@||phncdn.com/www-static/*/autocomplete.$script
 @@||phncdn.com/www-static/*/gif-view-functions.js$script
