@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201701311203
+! Version: 201702010953
 ! Title: EasyList
-! Last modified: 31 Jan 2017 12:03 UTC
+! Last modified: 01 Feb 2017 09:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -41371,7 +41371,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 /\/[0-9].*\-.*\-[a-z0-9]{4}/$script,xmlhttprequest,domain=gaytube.com|keezmovies.com|spankwire.com|tube8.com|tube8.es|tube8.fr
 /http://[a-zA-Z0-9]+\.[a-z]+\/.*(?:[!"#$%&'()*+,:;<=>?@/\^_`{|}~-]).*[a-zA-Z0-9]+/$script,third-party,domain=keezmovies.com|redtube.com|tube8.com|tube8.es|tube8.fr|www.pornhub.com|youporn.com
 /json^$other,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
-|blob:$script,domain=pornhub.com|xhamster.com|xvideos.com|youporn.com
+|blob:$script,domain=pornhub.com|xhamster.com|youporn.com
 |http://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,script,third-party,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |http://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -42420,6 +42420,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||hdzog.com^$~third-party,xmlhttprequest
 ! xvideos.com
 @@||ajax.googleapis.com^$script,domain=xvideos.com
+@@||llnwd.net^$third-party,xmlhttprequest,domain=xvideos.com
 |http://$script,third-party,xmlhttprequest,domain=xvideos.com
 |https://$script,third-party,xmlhttprequest,domain=xvideos.com
 ||xvideos.com/pics-error/$~third-party,xmlhttprequest
@@ -54466,7 +54467,7 @@ beeg.com##.window
 pornhub.com##.wnrhouer > [style] + [id][style="float: inherit;"]
 mrskin.com##.yui3-u-1-3:last-child
 porn.com##.zone
-pornhub.com,youporn.com,youporngay.com##[-abp-properties='data:']
+pornhub.com,xvideos.com,youporn.com,youporngay.com##[-abp-properties='data:']
 youjizz.com##[class][style*="padding-bottom:"]
 youporn.com##[class^="zone"]
 redtube.com##[data-h]
@@ -59270,4 +59271,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: HibrGtcXeSyI7V7fEMuZyA
+! Checksum: C/aIUT+qd8RmHZojWSGfEQ
