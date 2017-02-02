@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201702021242
+! Version: 201702021257
 ! Title: EasyList
-! Last modified: 02 Feb 2017 12:42 UTC
+! Last modified: 02 Feb 2017 12:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -25276,8 +25276,6 @@ _popunder+$popup
 ##p[id^="div-gpt-ad-"]
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##topadblock
-! issuu advertising
-##.issuuembed
 ! Anti-adblock (https://forums.lanik.us/viewtopic.php?f=62&t=32738)
 ###\5f _nq__hh[style="display:block!important"]
 ! Trust zone
@@ -34793,7 +34791,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||pubexchange.com/module/*-prod$third-party
 ||pubexchange.com/modules/display/$script,third-party
 ||public.porn.fr^$third-party
-||publication.isu.pub^$domain=~issuu.com
 ||publicidees.com/banner.php$third-party
 ||publicidees.com/showbanner.php$third-party
 ||pubs.hiddennetwork.com^
@@ -51691,6 +51688,8 @@ alternet.org##div[aria-labelledby="ui-dialog-title-altsocial_splash"] + .ui-widg
 ctpost.com,seattlepi.com,timesunion.com##div[class$="-dealnews"]
 filecrop.com##div[class$="160_600"]
 filecrop.com##div[class$="728_90"]
+issuu.com##div[class*="adContainer"]
+issuu.com##div[class*="adLeaderboardContainer"]
 facebook.com##div[class="ego_column _5qrt"]
 facebook.com##div[class="ego_column _8_9"]
 facebook.com##div[class="ego_column pagelet _5qrt _1snm _xi9"]
@@ -51712,6 +51711,7 @@ mobilelikez.com##div[class] > span > span > :first-child
 thevideo.me##div[class][style*="height:100%;"]:last-child
 thevideo.me##div[class][style] > a[style]:last-child
 bulletsfirst.net##div[class][style^="display:"]
+issuu.com##div[class^="ExploreShelf__ad"]
 kinox.to##div[class^="Mother_"][style^="display: block;"]
 britannicaenglish.com,nglish.com##div[class^="WordFromSponsor"]
 anime1.com,animefreak.tv##div[class^="a-filter"]
@@ -59395,4 +59395,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: muKpNzUEhdCCMVSyFeWtug
+! Checksum: kuNYt3NoU6T1WcSK1qj4tw
