@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201702131816
+! Version: 201702132230
 ! Title: EasyList
-! Last modified: 13 Feb 2017 18:16 UTC
+! Last modified: 13 Feb 2017 22:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3209,6 +3209,7 @@
 /affpic/*
 /afr.php?
 /afr?auid=
+/afs/ads/*
 /ahmestatic/ads/*
 /ajax-ad/*
 /ajax-advert-
@@ -58305,6 +58306,11 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||openload.io^$image,script,stylesheet,subdocument,domain=openload.io
 @@||openload.tv^$image,domain=openload.io
 @@||openload.tv^$script,domain=openload.co|openload.io
+! Google "Related Searches"
+@@||domains.googlesyndication.com/apps/domainpark/domainpark.cgi?*^channel=csa_use_rs^$subdocument
+@@||www.google.com/adsense/search/ads.js$domain=domains.googlesyndication.com
+@@||www.google.com/adsense/search/async-ads.js
+@@||www.google.com/afs/ads?*^channel=csa_use_rs^$subdocument
 ! Non-English
 @@||247realmedia.com/RealMedia/ads/adstream_sx.ads/wm-desktop/home/$xmlhttprequest,domain=walmart.com.br
 @@||2mdn.net/viewad/*.jpg|$domain=dafiti.cl|dafiti.com.ar|dafiti.com.br|dafiti.com.co|kbb.com
@@ -59470,4 +59476,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: BZh7dINwd/StVGATv+YHiQ
+! Checksum: GUXuaHc5cALu3YpcLfUnGQ
