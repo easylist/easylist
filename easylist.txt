@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201702180634
+! Version: 201702180642
 ! Title: EasyList
-! Last modified: 18 Feb 2017 06:34 UTC
+! Last modified: 18 Feb 2017 06:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -42619,6 +42619,12 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||yumymilf.com^*/banners/
 ||yuvutu.com^*/banners/
 ||zazzybabes.com/misc/virtuagirl-skin.js
+! txxx.com
+@@||ahcdn.com^$xmlhttprequest,domain=txxx.com
+@@||ajax.googleapis.com^$domain=txxx.com
+@@||tubecup.org^$xmlhttprequest,domain=txxx.com
+|http://$script,third-party,xmlhttprequest,domain=txxx.com
+|https://$script,third-party,xmlhttprequest,domain=txxx.com
 ! urlgalleries.net
 |http://$script,third-party,xmlhttprequest,domain=urlgalleries.net
 |https://$script,third-party,xmlhttprequest,domain=urlgalleries.net
@@ -54921,6 +54927,7 @@ drtuber.com##div + style[id] + div[class]
 youporn.com##div > .default > #switch
 pornhub.com##div > .removeAdLink + [style]
 pornhub.com##div > .sectionTitle + div[style="float: right;"]
+txxx.com##div > [class][style="display: block;"]
 xvideos.com##div > [id][class][style] > img[src][style]
 pornhub.com##div > [style*="width: 100%;"]:first-child
 pornhub.com##div > aside > aside
@@ -59588,4 +59595,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: Jy0UY2R5tPHU5IH7kyOPsQ
+! Checksum: qEhmiEcQwh1xSu+jMDaMLg
