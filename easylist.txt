@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201702212021
+! Version: 201702212032
 ! Title: EasyList
-! Last modified: 21 Feb 2017 20:21 UTC
+! Last modified: 21 Feb 2017 20:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1024,7 +1024,7 @@
 /ad01.
 /ad02/background_
 /ad1-728-
-/ad1.$domain=~ad1.in|~vereinslinie.de
+/ad1.$domain=~ad1.de|~ad1.in|~vereinslinie.de
 /ad1/index.
 /ad11c.
 /ad12.
@@ -41677,6 +41677,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ^utm_source=$popup,domain=exashare.com|sex.com
 |data^$popup,domain=gorillavid.in|nowvideo.to|zippyshare.com
 |http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|daclips.in|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|nosteam.ro|nowvideo.li|openload.co|pic2pic.site|pixsense.net|pornparadise.org|projectfreetv.at|promptfile.com|sendvid.com|streamcloud.eu|streamin.to|thevideo.me|twer.info|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidspot.net|vidzi.tv|vshare.eu|watchcartoononline.com|xtshare.com|youwatch.org|yts.ag
+|http:*=$popup,domain=grammarist.com
 |https:$popup,third-party,domain=eztv.ag|flashx.tv|imagerar.com|imgbox.com|sendvid.com|thevideo.me|uptobox.com|uptostream.com|yts.ag
 |javascript^$popup,domain=biology-online.org|bitvid.sx|cloudtime.to|eztv.ag|eztv.tf|eztv.yt|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
 ||104.198.221.99^$popup
@@ -51153,6 +51154,7 @@ etmirror.com,etproxy.com,extra.to,extratorrent.cc,extratorrent.works,extratorren
 dx-torrent.com##a[class][target="_blank"][rel="nofollow"][href]
 experthometips.com##a[class^="abp_image_"]
 bitcointalk.org##a[class^="td_headerandpost"][href^="https://www.privateinternetaccess.com"]
+grammarist.com##a[data-delivery^="/"]
 stream2watch.cc##a[data-h^="http://www.downloadplayer1.com/"]
 pcmag.com##a[data-section="Ads"]
 roadracerunner.com##a[data-target]
@@ -51869,6 +51871,7 @@ kingfiles.net##a[onclick^="window.open('http://lp.sharelive.net/"]
 w3schools.com##a[rel="nofollow"]
 nixiepixel.com##a[rel^="http://bit.ly/"]
 bitcointalk.org##a[style$=";width:700px;"]
+grammarist.com##a[style*="cursor: pointer"]
 activistpost.com##a[style="clear: right; float: right; margin-bottom: 0em; margin-left: 1em;"]
 torrenticity.com##a[style="color:#05c200;text-decoration:none;"]
 urbandictionary.com##a[style="display: block; width: 300px; height: 500px"]
@@ -52209,6 +52212,7 @@ sockshare.com##div[style*="background-color:#FFF;text-align"]
 sockshare.com##div[style*="background-color:white;text-align"]
 maxgames.com##div[style*="background-image: URL('/images/sponsor_"]
 thegauntlet.ca##div[style*="background-image:url('/advertisers/your-ad-here-"]
+grammarist.com##div[style*="blob:"]
 imgchili.net##div[style*="data:image/gif;base64,"]
 pencurimovie.ph##div[style*="float:none;"]
 thevideo.me##div[style*="height: 300px;width: 300px"]
@@ -53193,6 +53197,7 @@ goolink.me##iframe[src][style][height]
 cybergamer.com##iframe[src^="http://au.cybergamer.com/iframe_cgbanners.php?"]
 pcmag.com##iframe[src^="http://sp.pcmag.com/"]
 biology-online.org##iframe[style*=" ! important"]
+grammarist.com##iframe[style*="display: block ! important"]
 dailymail.co.uk##iframe[style*="width:308px;border:0px"]
 dailymail.co.uk##iframe[style="border:0px;height:258px;margin-bottom:15px;width:308px;"]
 dailymail.co.uk##iframe[style="border:0px;width:308px;height:258px;margin-bottom:15px;"]
@@ -56686,6 +56691,7 @@ pornhub.com##[-abp-properties='height: 300px; width: 315px;']
 @@||onetravel.com/desktopmodules/adsales/adsaleshandle.ashx?$xmlhttprequest
 @@||onionstatic.com^*/videoads.js
 @@||openload.io/deliverad/$xmlhttprequest
+@@||openx.com/favicon.ico$domain=grammarist.com
 @@||openx.ideastudios.ro^$script,domain=enjoydressup.com
 @@||openx.infrontams.tv/www/$image,object,script,domain=acmilan.com
 @@||openx.nobelprize.org/openx/www/delivery/$script
@@ -59800,4 +59806,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: q+F8TK2DIRjZfeu6gwtcJg
+! Checksum: AMPXp5WBCFEvZaCvISzyoA
