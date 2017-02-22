@@ -5448,3 +5448,40 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||pub1.cope.es^
 ! Mobile
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
+! Spiegel.de
+://ads.$domain=spiegel.de
+@@||adition.com/s?$script,domain=spiegel.de
+@@||imagesrv.adition.com/banners/1337/files/00/0b/bf/a*/00000076995*.jpg$domain=spiegel.de
+@@||imagesrv.adition.com/js/srp.js$domain=spiegel.de
+@@||spiegel.de^$genericblock,generichide
+spiegel.de##.article-section.clearfix > .asset-box.asset-buchwerbekasten.clearfix
+widgets.outbrain.com##.OUTBRAIN[data-src^="http://www.spiegel.de/"] .ob-p
+||a-ssl.ligatus.com^$domain=spiegel.de
+||ad.doubleclick.net^$domain=spiegel.de
+||adform.net^$domain=spiegel.de
+||adition.com/banner?$domain=spiegel.de
+||adition.com^$domain=spiegel.de
+||adition.com^$popup,domain=spiegel.de
+||adnxs.com^$domain=spiegel.de
+||adsafeprotected.com^$domain=spiegel.de
+||adverserve.net^$domain=spiegel.de
+||cas.criteo.com^$domain=spiegel.de
+||flashtalking.com^$domain=spiegel.de
+||g.doubleclick.net^$domain=spiegel.de
+||googlesyndication.com/safeframe/$domain=spiegel.de
+||googlesyndication.com/sodar/$domain=spiegel.de
+||mediaplex.com^$domain=spiegel.de
+||mookie1.com^$domain=spiegel.de
+||movad.net^$domain=spiegel.de
+||openx.net^$domain=spiegel.de
+||pagead2.googlesyndication.com^$domain=spiegel.de
+||qservz.com^$domain=spiegel.de
+||rtax.criteo.com^$domain=spiegel.de
+||serving-sys.com^$domain=spiegel.de
+||t4ft.de^$domain=spiegel.de
+||teads.tv^$domain=spiegel.de
+||yieldlab.net^$domain=spiegel.de
+! bento.de
+bento.de##.plistaList > .itemLinkPET
+@@||bento.de^$generichide
+bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"]
