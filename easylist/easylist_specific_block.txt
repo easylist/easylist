@@ -5051,9 +5051,6 @@
 ! speedplay
 @@||content.jwplatform.com/libraries/$script,domain=jatttv.pw|speedplay.pw|speedplay.site|speedplay.us|speedplay1.pw|speedplay1.site|speedplay2.pw|speedplay2.site|speedplay3.pw|speedplayx.site|speedplayy.site
 @@||speedplay.us/js/$script,domain=jatttv.pw|speedplay.pw|speedplay.site|speedplay.us|speedplay1.pw|speedplay1.site|speedplay2.pw|speedplay2.site|speedplay3.pw|speedplayx.site|speedplayy.site
-@@||speedtest.net/api/js/host-redirect$xmlhttprequest,domain=speedtest.net
-@@||speedtest.net/api/js/isp-rating.php$~third-party,xmlhttprequest
-@@||speedtest.net/api/js/servers$~third-party,xmlhttprequest
 |http://$script,third-party,xmlhttprequest,domain=jatttv.pw|speedplay.pw|speedplay.site|speedplay.us|speedplay1.pw|speedplay1.site|speedplay2.pw|speedplay2.site|speedplay3.pw|speedplayx.site|speedplayy.site
 |https://$script,third-party,xmlhttprequest,domain=jatttv.pw|speedplay.pw|speedplay.site|speedplay.us|speedplay1.pw|speedplay1.site|speedplay2.pw|speedplay2.site|speedplay3.pw|speedplayx.site|speedplayy.site
 ! speedtest.net
@@ -5062,6 +5059,9 @@
 @@||beta.speedtest.net^$script,xmlhttprequest,domain=speedtest.net
 @@||cdnst.net^$script,domain=speedtest.net
 @@||google.com/coop/$script,domain=speedtest.net
+@@||speedtest.net/api/js/host-redirect$xmlhttprequest,domain=speedtest.net
+@@||speedtest.net/api/js/isp-rating.php$~third-party,xmlhttprequest
+@@||speedtest.net/api/js/servers$~third-party,xmlhttprequest
 @@||speedtest.net/globe_feed.php?$script,domain=speedtest.net
 @@||speedtest.net/javascript/extMouseWheel.js
 @@||speedtest.net/javascript/functions.js
