@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201703121035
+! Version: 201703121245
 ! Title: EasyList
-! Last modified: 12 Mar 2017 10:35 UTC
+! Last modified: 12 Mar 2017 12:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2673,6 +2673,7 @@
 /adspace?
 /adspacer.
 /adspan.
+/adspd.
 /adspeeler/*
 /adspending01.
 /adspi.
@@ -41136,10 +41137,15 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |https://$script,third-party,xmlhttprequest,domain=putlocker.is|putlocker.live|putlocker9.co|putlockers.ch
 ! Depositfiles/Dfiles
 @@||api.solvemedia.com^$third-party,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+@@||depositfiles.com/get_file.php?$xmlhttprequest
+@@||depositfiles.org/get_file.php?$xmlhttprequest
+@@||dfiles.eu/get_file.php?$xmlhttprequest
+@@||dfiles.ru/get_file.php?$xmlhttprequest
 @@||google.com/js/bg/$script,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
-@@||static.depositfiles.com^$script,domain=depositfiles.org|dfiles.eu|dfiles.ru
-|http://$script,xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
-|https://$script,xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+@@||google.com/recaptcha/$subdocument,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+@@||static.depositfiles.com^$script
+|http://$script,subdocument,xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+|https://$script,subdocument,xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 ! Adreclaim
 @@||ajax.googleapis.com^$script,domain=autoworldnews.com|biohealthinnovation.org|counselheal.com|dolphnsix.com|foodworldnews.com|gamenguide.com|itechpost.com|mobilenapps.com|scienceworldreport.com|travelerstoday.com|universityherald.com|wrestlinginc.com
 @@||cdnjs.cloudflare.com^$script,domain=autoworldnews.com|biohealthinnovation.org|counselheal.com|dolphnsix.com|foodworldnews.com|gamenguide.com|itechpost.com|mobilenapps.com|scienceworldreport.com|travelerstoday.com|universityherald.com
@@ -60273,4 +60279,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: kxCJ79PI9fh61od1DMSt+g
+! Checksum: JY96z1qDdio5WVEpEZVTdw
