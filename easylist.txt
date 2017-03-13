@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201703131110
+! Version: 201703131154
 ! Title: EasyList
-! Last modified: 13 Mar 2017 11:10 UTC
+! Last modified: 13 Mar 2017 11:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -36689,6 +36689,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||adshare.freedocast.com^
 ||adsl2exchanges.com.au/images/spintel
 ||adsor.openrunner.com^
+||adspf.depositfiles.com^
 ||adss.yahoo.com^
 ||adstil.indiatimes.com^
 ||adswikia.com^*banner
@@ -41147,7 +41148,12 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |https://$script,third-party,xmlhttprequest,domain=putlocker.is|putlocker.live|putlocker9.co|putlockers.ch
 ! Depositfiles/Dfiles
 @@||api.solvemedia.com^$third-party,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
-@@||depositfiles.com/get_file.php?$xmlhttprequest
+@@||depositfiles.com/get_file.php$xmlhttprequest
+@@||depositfiles.com/js/base2.js$script
+@@||depositfiles.com/js/download_utils.js$script
+@@||depositfiles.com/js/function.js$script
+@@||depositfiles.com/js/gold_offer.js$script
+@@||depositfiles.com/js/jquery.validate.js$script
 @@||depositfiles.org/get_file.php?$xmlhttprequest
 @@||dfiles.eu/get_file.php?$xmlhttprequest
 @@||dfiles.ru/get_file.php?$xmlhttprequest
@@ -60301,4 +60307,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 93nG1TOuc/ingw5LuRqZ0w
+! Checksum: fA9KYaEyQXjhkwl2/y+tlw
