@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201703280752
+! Version: 201703280802
 ! Title: EasyList
-! Last modified: 28 Mar 2017 07:52 UTC
+! Last modified: 28 Mar 2017 08:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30752,6 +30752,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||waptrick.com^$third-party
 ||yieldmo.com^$third-party
 ! Admiral
+||actuallysheep.com^$third-party
 ||beamkite.com^$third-party
 ||brassrule.com^$third-party
 ||breezybath.com^$third-party
@@ -41003,6 +41004,14 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zorrovpn.com/static/img/promo/
 ||zshares.net/fm.html
 ||zurrieqfc.com/images/banners/
+! destructoid.com
+@@||ajax.googleapis.com^$script,domain=destructoid.com
+@@||code.jquery.com^$script,domain=destructoid.com
+@@||disqus.com^$script,domain=destructoid.com
+@@||disquscdn.com^$script,domain=destructoid.com
+@@||maxcdn.bootstrapcdn.com^$script,domain=destructoid.com
+|http://$script,third-party,xmlhttprequest,domain=destructoid.com
+|https://$script,third-party,xmlhttprequest,domain=destructoid.com
 ! fmovies.to
 |http://$script,stylesheet,third-party,domain=fmovies.to
 ||fmovies.to^$popup,~third-party
@@ -52825,7 +52834,7 @@ pocketnow.com##div > div > table:last-child
 christiantoday.com##div > div:first-child > .sec-main-right > :first-child + * + *
 christianpost.com##div > div[class] > div[style*="visibility: visible !important;"]
 hngn.com##div > div[class]:first-child + div > div > div[class]:first-child
-tweaktown.com##div > div[id] > iframe[id]
+destructoid.com,tweaktown.com##div > div[id] > iframe[id]
 search.mywebsearch.com##div > div[style="padding-bottom: 12px;"]
 monova.org##div > div[style^="display:"]
 thegatewaypundit.com##div > div[style^="padding"]
@@ -60714,4 +60723,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: RLtEEPy/Y01XsreNt+hTuQ
+! Checksum: UynEvQ77UQcBBl/smOC7PA
