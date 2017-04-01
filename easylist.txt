@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201704010200
+! Version: 201704010237
 ! Title: EasyList
-! Last modified: 01 Apr 2017 02:00 UTC
+! Last modified: 01 Apr 2017 02:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14,6 +14,9 @@
 ! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
+##.ad-region
+##.widget_com_ad_widget
+##a[href^="http://api.content.ad/"]
 &ad.vid=
 &ad_box_
 &ad_channel=
@@ -7010,7 +7013,9 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
-! Ad-insertion script (see on: celebrityweightloss.com, myfirstclasslife.com)
+! Ad-insertion script (see on: celebrityweightloss.com, myfirstclasslife.com, cultofmac.com)
+/ez_aba_load/*
+/ezf-min.php$script
 /ezoic/banger.js$script
 ! Self hosted Ad scripts (seen on: ibtimes.co.uk/newsweek.com)
 /ima3.js
@@ -50749,6 +50754,7 @@ slack-time.com##.scraper
 drizzydrake.org##.scrbl
 farmanddairy.com##.screen-4
 phonedog.com##.scribol
+cultofmac.com##.sda_container
 stardoll.com##.sdadinfo
 stardoll.com##.sdadinfoTrans
 ebay.co.uk##.sdcBox
@@ -60714,4 +60720,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: qN0HO1dWt827FeGNlxTWgg
+! Checksum: q5HkJuFcvaV/0ticsQGdEg
