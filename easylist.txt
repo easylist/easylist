@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201704020550
+! Version: 201704020702
 ! Title: EasyList
-! Last modified: 02 Apr 2017 05:50 UTC
+! Last modified: 02 Apr 2017 07:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7016,8 +7016,8 @@ takeover_banner_
 ||serve.*/promoload?
 ! Ad-insertion script (see on: celebrityweightloss.com, myfirstclasslife.com, cultofmac.com)
 /ez_aba_load/*
-/ezf-min.php$script
-/ezoic/banger.js$script
+/ezf-min.$script
+/ezoic/*.js
 ! Self hosted Ad scripts (seen on: ibtimes.co.uk/newsweek.com)
 /ima3.js
 /imasdk/*
@@ -25689,6 +25689,10 @@ _popunder+$popup
 ##p[id^="div-gpt-ad-"]
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##topadblock
+! ezoic
+###ezmob_footer
+##.ezo_ad
+##.ezoic-floating-bottom
 ! Anti-adblock (https://forums.lanik.us/viewtopic.php?f=62&t=32738)
 ###\5f _nq__hh[style="display:block!important"]
 ! Trust zone
@@ -60811,4 +60815,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: wP9XfjNVCSbip1mxFcHxVA
+! Checksum: 4Bp0Di8bA2uNijjaAZQjJA
