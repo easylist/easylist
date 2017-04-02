@@ -21,6 +21,7 @@
 |http://$object,domain=pornhub.com|redtube.com|youporn.com
 |http://$object-subrequest,third-party,domain=redtube.com|youporn.com
 |http://$script,third-party,domain=duckmovies.net|have69.net|i-gay.org|openload.co|playpornx.net|watchxxxfree.com|whorehd.net
+|http://$third-party,xmlhttprequest,domain=duckmovies.net
 |http://$xmlhttprequest,domain=pornbeu.com|watchjavonline.com
 |https://$image,media,script,third-party,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 |https://$image,xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
@@ -946,13 +947,6 @@
 ||yobt.tv/js/ttu.js
 ||yobt.tv/rec/
 ||youaresogay.com/*.html
-||youjizz.com/adb/
-||youjizz.com/vivid/
-||youjizz.com/xoa/$script
-||youjizz.com^$subdocument,~third-party
-||youjizz.com^$~third-party,xmlhttprequest
-||youjizz.com^*?*=$image
-||youjizz.com^*_yjserve.js
 ||youngpornvideos.com/images/bangbros/
 ||youngpornvideos.com/images/glamglam/
 ||youngpornvideos.com/images/mofoscash/
@@ -979,6 +973,17 @@
 ||yumymilf.com^*/banners/
 ||yuvutu.com^*/banners/
 ||zazzybabes.com/misc/virtuagirl-skin.js
+! youjizz
+@@||youjizz.com/app/$script
+@@||youjizz.com/js/contentlist.js$script
+@@||youjizz.com/js/jquery.$script
+@@||youjizz.com/js/knockout-2.2.1.js$script
+@@||youjizz.com/js/localdata.js$script
+@@||youjizz.com/js/videojs.$script
+@@||youjizz.com/player/$script
+@@||youjizz.com/rating/$script
+@@||youjizz.com^*/swfobject.js$script
+||youjizz.com^$script
 ! fantasti.cc
 ||fantasti.cc^$xmlhttprequest
 ! zone-anime.net
