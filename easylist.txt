@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201704031236
+! Version: 201704031238
 ! Title: EasyList
-! Last modified: 03 Apr 2017 12:36 UTC
+! Last modified: 03 Apr 2017 12:38 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14,9 +14,6 @@
 ! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
-##.ad-region
-##.widget_com_ad_widget
-##a[href^="http://api.content.ad/"]
 &ad.vid=
 &ad_box_
 &ad_channel=
@@ -16669,6 +16666,7 @@ _popunder+$popup
 ##.ad-rectangle-wide
 ##.ad-rectangle-xs
 ##.ad-refresh
+##.ad-region
 ##.ad-region-delay-load
 ##.ad-region__top
 ##.ad-related
@@ -25118,6 +25116,7 @@ _popunder+$popup
 ##.widget_boss_banner_ad
 ##.widget_catchbox_adwidget
 ##.widget_cevo_contentad
+##.widget_com_ad_widget
 ##.widget_cpxadvert_widgets
 ##.widget_customad_widget
 ##.widget_customadvertising
@@ -25375,6 +25374,7 @@ _popunder+$popup
 ##a[href^="http://affiliates.score-affiliates.com/"]
 ##a[href^="http://aflrm.com/"]
 ##a[href^="http://amzn.to/"] > img[src^="data"]
+##a[href^="http://api.content.ad/"]
 ##a[href^="http://api.ringtonematcher.com/"]
 ##a[href^="http://at.atwola.com/"]
 ##a[href^="http://b.bestcompleteusa.info/"]
@@ -60842,4 +60842,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: s9dBcxWBevK29ybnBYpwTA
+! Checksum: 4zZflgFG6MdA84V+AVfI9g
