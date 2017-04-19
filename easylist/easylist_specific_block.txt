@@ -4904,8 +4904,17 @@
 |https://$script,third-party,xmlhttprequest,domain=tvmuse.com
 ! streamplay
 .xyz/$popup,domain=streamplay.to
+@@||streamplay.to/js/bootstrap.min.js|$script,domain=streamplay.to
+@@||streamplay.to/js/jquery.cookie.js|$script,domain=streamplay.to
+@@||streamplay.to/js/jquery.min.js|$script,domain=streamplay.to
+@@||streamplay.to/js/modernizr.custom.*.js|$script,domain=streamplay.to
+@@||streamplay.to/js/xupload.js|$script,domain=streamplay.to
+@@||streamplay.to/player6/jwplayer.js?$script,domain=streamplay.to
+@@||streamplay.to/player6/jwpsrv.js|$script,domain=streamplay.to
+@@||streamplay.to/player6/lightsout.js|$script,domain=streamplay.to
 |http://$script,third-party,xmlhttprequest,domain=streamplay.to
 |https://$script,third-party,xmlhttprequest,domain=streamplay.to
+||streamplay.to^$script,domain=streamplay.to
 ! powvideo.net
 @@||ajax.googleapis.com^$script,third-party,domain=powvideo.net
 |http://$script,subdocument,third-party,domain=powvideo.net
