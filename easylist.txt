@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201704191819
+! Version: 201704191829
 ! Title: EasyList
-! Last modified: 19 Apr 2017 18:19 UTC
+! Last modified: 19 Apr 2017 18:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -41926,8 +41926,17 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |https://$script,third-party,xmlhttprequest,domain=tvmuse.com
 ! streamplay
 .xyz/$popup,domain=streamplay.to
+@@||streamplay.to/js/bootstrap.min.js|$script,domain=streamplay.to
+@@||streamplay.to/js/jquery.cookie.js|$script,domain=streamplay.to
+@@||streamplay.to/js/jquery.min.js|$script,domain=streamplay.to
+@@||streamplay.to/js/modernizr.custom.*.js|$script,domain=streamplay.to
+@@||streamplay.to/js/xupload.js|$script,domain=streamplay.to
+@@||streamplay.to/player6/jwplayer.js?$script,domain=streamplay.to
+@@||streamplay.to/player6/jwpsrv.js|$script,domain=streamplay.to
+@@||streamplay.to/player6/lightsout.js|$script,domain=streamplay.to
 |http://$script,third-party,xmlhttprequest,domain=streamplay.to
 |https://$script,third-party,xmlhttprequest,domain=streamplay.to
+||streamplay.to^$script,domain=streamplay.to
 ! powvideo.net
 @@||ajax.googleapis.com^$script,third-party,domain=powvideo.net
 |http://$script,subdocument,third-party,domain=powvideo.net
@@ -61195,4 +61204,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: /yPpPUsF/Zz9yUg5kpZT7Q
+! Checksum: kG+zfzgMYR8rkdof8pF0uA
