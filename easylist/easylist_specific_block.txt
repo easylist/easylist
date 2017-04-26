@@ -4906,14 +4906,14 @@
 ! streamplay
 .xyz/$popup,domain=streamplay.to
 @@||streamplay.to/js/bootstrap.min.js|$script,domain=streamplay.to
+@@||streamplay.to/js/jquery*min.js|$script,domain=streamplay.to
 @@||streamplay.to/js/jquery.cookie.js|$script,domain=streamplay.to
-@@||streamplay.to/js/jquery.min.js|$script,domain=streamplay.to
 @@||streamplay.to/js/modernizr.custom.*.js|$script,domain=streamplay.to
 @@||streamplay.to/js/xupload.js|$script,domain=streamplay.to
-@@||streamplay.to/player6/jwplayer.html5.js|$script,domain=streamplay.to
-@@||streamplay.to/player6/jwplayer.js?$script,domain=streamplay.to
-@@||streamplay.to/player6/jwpsrv.js|$script,domain=streamplay.to
-@@||streamplay.to/player6/lightsout.js|$script,domain=streamplay.to
+@@||streamplay.to/player*/jwplayer.html5.js|$script,domain=streamplay.to
+@@||streamplay.to/player*/jwplayer.js?$script,domain=streamplay.to
+@@||streamplay.to/player*/jwpsrv.js|$script,domain=streamplay.to
+@@||streamplay.to/player*/lightsout.js|$script,domain=streamplay.to
 |http://$script,third-party,xmlhttprequest,domain=streamplay.to
 |https://$script,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
