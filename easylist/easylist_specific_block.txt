@@ -4306,8 +4306,14 @@
 |http://$script,third-party,xmlhttprequest,domain=demonoid.pw
 |https://$script,third-party,xmlhttprequest,domain=demonoid.pw
 ! imagebam
-||imagebam.com/files/abps.js$script
-||imagebam.com/files/index*.php$script
+@@||ajax.googleapis.com^$script,domain=imagebam.com
+@@||imagebam.com/JS/imagebam.js$script
+@@||imagebam.com/JS/jquery.1.5.js$script
+@@||imagebam.com/JS/plupload.full.min.new.js$script
+@@||imagebam.com/JS/pt.js$script
+@@||imagebam.com/JS/pupload_anon.js$script
+@@||maxcdn.bootstrapcdn.com^$script,domain=imagebam.com
+||imagebam.com^$script
 ! debridnet.com
 @@||code.jquery.com^$script,domain=debridnet.com
 |http://$script,third-party,xmlhttprequest,domain=debridnet.com
