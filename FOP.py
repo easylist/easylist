@@ -58,7 +58,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
 KNOWNOPTIONS = ("collapse", "document", "elemhide",
                 "font", "genericblock", "generichide", "image", "match-case",
                 "object", "media", "object-subrequest", "other", "ping", "popup", 
-                "script", "stylesheet", "subdocument", "third-party", "websocket", "xmlhttprequest")
+                "script", "stylesheet", "subdocument", "third-party", "websocket", "webrtc", "xmlhttprequest")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
