@@ -4311,8 +4311,10 @@
 |http://$third-party,xmlhttprequest,domain=freewarefiles.com
 |https://$third-party,xmlhttprequest,domain=freewarefiles.com
 ! demonoid.pw
-|http://$script,third-party,xmlhttprequest,domain=demonoid.pw
-|https://$script,third-party,xmlhttprequest,domain=demonoid.pw
+@@||demonoid.pw/cached/dropdown7.js|$script
+@@||demonoid.pw/torrent_categories_script.php|$script
+|http://$script,xmlhttprequest,domain=demonoid.pw
+|https://$script,xmlhttprequest,domain=demonoid.pw
 ! imagebam
 @@||ajax.googleapis.com^$script,domain=imagebam.com
 @@||imagebam.com/JS/imagebam.js$script
