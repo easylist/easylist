@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201705071657
+! Version: 201705071702
 ! Title: EasyList
-! Last modified: 07 May 2017 16:57 UTC
+! Last modified: 07 May 2017 17:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -42331,9 +42331,11 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 |http://$script,third-party,xmlhttprequest,domain=openload.co
 |https://$script,third-party,xmlhttprequest,domain=openload.co
 ! opensubtitles.org
+@@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
+@@||static.opensubtitles.org/libs/js/$script,domain=opensubtitles.org
 |http://$script,third-party,xmlhttprequest,domain=opensubtitles.org
 |https://$script,third-party,xmlhttprequest,domain=opensubtitles.org
-||opensubtitles.org^*=.js$script,domain=opensubtitles.org
+||opensubtitles.org^*.js|$script,domain=opensubtitles.org
 ! uplea.com
 @@||ajax.googleapis.com^$script,domain=uplea.com
 |http://$script,third-party,xmlhttprequest,domain=uplea.com
@@ -61419,4 +61421,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: d/zDLbinuU8zZ3HqKd4nug
+! Checksum: jQjPjm9BfK6UhMAjo/jkSQ
