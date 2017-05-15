@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201705151710
+! Version: 201705151714
 ! Title: EasyPrivacy
-! Last modified: 15 May 2017 17:10 UTC
+! Last modified: 15 May 2017 17:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11044,6 +11044,7 @@ _mongo_stats/
 ||radio-canada.ca/omniture/omni_stats_base.js?
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
 /__utm.gif$domain=autobild.de|quoka.de|tellows.de|thewatchseries.to|transfermarkt.de
+/analytics/track?$domain=widgets.azureedge.net
 /csi?v=*&action=$domain=tellows.de
 /nm_trck.gif?$domain=spiegel.de
 /pic.gif?m=$domain=autobild.de
@@ -11066,8 +11067,8 @@ _mongo_stats/
 ||exelator.com^$domain=disqus.com
 ||facebook.com*/impression.php$domain=autobild.de|focus.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|tellows.de|transfermarkt.de
 ||facebook.com/common/scribe_endpoint.php$domain=transfermarkt.de
-||facebook.com/tr/?$domain=gala.de|musikexpress.de
-||google-analytics.com/analytics.js$domain=gala.de|kabeleins.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de
+||facebook.com/tr/?$domain=gala.de|metal-hammer.de|musikexpress.de
+||google-analytics.com/analytics.js$domain=gala.de|kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de
 ||google-analytics.com/collect$domain=stern.de
 ||googleapis.com^*/gen_204?$domain=tellows.de
 ||googletagmanager.com/gtm.js?$domain=autobild.de|transfermarkt.de
@@ -11075,9 +11076,9 @@ _mongo_stats/
 ||hpr.outbrain.com^$domain=focus.de
 ||imrworldwide.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||ioam.de/?$domain=autobild.de|focus.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
-||ioam.de/tx.io?$domain=autobild.de|focus.de|gala.de|kabeleins.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
-||irqs.ioam.de^$domain=musikexpress.de
-||log.outbrain.com^$domain=autobild.de|focus.de|musikexpress.de|widgets.outbrain.com
+||ioam.de/tx.io?$domain=autobild.de|focus.de|gala.de|kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
+||irqs.ioam.de^$domain=metal-hammer.de|musikexpress.de
+||log.outbrain.com^$domain=autobild.de|focus.de|metal-hammer.de|musikexpress.de|widgets.outbrain.com
 ||meetrics.net^$domain=spiegel.de|stern.de
 ||met.vgwort.de^$domain=focus.de|gala.de|spiegel.de|stern.de
 ||metrics.brightcove.com^$domain=gala.de|stern.de
@@ -11091,14 +11092,14 @@ _mongo_stats/
 ||rqtrk.eu^$domain=stern.de
 ||semasio.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||static.parsely.com^$domain=spiegel.de
-||tealiumiq.com^$domain=autobild.de|musikexpress.de|transfermarkt.de
+||tealiumiq.com^$domain=autobild.de|metal-hammer.de|musikexpress.de|transfermarkt.de
 ||theadex.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de
-||tisoomi-services.com^$domain=musikexpress.de
+||tisoomi-services.com^$domain=metal-hammer.de|musikexpress.de
 ||tracking-rce.veeseo.com^$domain=stern.de
 ||twitter.com/i/jot$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||visualrevenue.com^$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de
 ||watchseries.to/piwik.js
-||webtrekk.net^$domain=kabeleins.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||webtrekk.net^$domain=kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||wt-eu02.net^$domain=gala.de|stern.de
 ||wt-safetag.com^$domain=stern.de
 ||xplosion.de^$domain=spiegel.de|stern.de
@@ -12992,4 +12993,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: ST0v8xufd2VhwpqV36tbmw
+! Checksum: S5PcF6gz5YTTWXijnjHDtg
