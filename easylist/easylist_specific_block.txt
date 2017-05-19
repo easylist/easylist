@@ -4995,16 +4995,10 @@
 |http://$image,script,third-party,domain=streamcloud.eu
 |https://$image,script,third-party,domain=streamcloud.eu
 ! openload
-@@/adcde.js|$script,domain=openload.co
-@@/adlabs.js|$script,domain=openload.co
-@@/googlead.js|$script,domain=openload.co
-@@/popunder.js|$script,domain=openload.co
-@@/popunder4.js|$script,domain=openload.co
-@@/popunder5.js|$script,domain=openload.co
-@@||ajax.googleapis.com^$script,domain=openload.co
-@@||oloadcdn.net^$third-party,xmlhttprequest,domain=openload.co
-|http://$script,third-party,xmlhttprequest,domain=openload.co
-|https://$script,third-party,xmlhttprequest,domain=openload.co
+@@||openload.co^$genericblock,generichide
+||openload.co/assets/js/license.$domain=openload.co
+||openload.co/assets/js/script.$domain=openload.co
+||openload.co/log$domain=openload.co
 ! opensubtitles.org
 @@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
 @@||static.opensubtitles.org/libs/js/$script,domain=opensubtitles.org
