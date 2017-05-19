@@ -5922,11 +5922,15 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
 ! Spiegel.de
 ://ads.$domain=spiegel.de
+@@||adition.com/banner?sid=$image,domain=spiegel.de
 @@||adition.com/s?$script,domain=spiegel.de
 @@||damoh.spiegel.de^$script,domain=spiegel.de
+@@||imagesrv.adition.com/1x1.gif$image,domain=spiegel.de
 @@||imagesrv.adition.com/banners/1337/files/00/0b/bf/a*/00000076995*.jpg$domain=spiegel.de
+@@||imagesrv.adition.com/js/adition.js$domain=spiegel.de
 @@||imagesrv.adition.com/js/srp.js$domain=spiegel.de
 @@||spiegel.de^$genericblock,generichide
+@@||static.adfarm1.adition.com/ci.html$subdocument,domain=spiegel.de
 widgets.outbrain.com##.OUTBRAIN[data-src^="http://www.spiegel.de/"] .ob-p
 ||a-ssl.ligatus.com^$domain=spiegel.de
 ||ad.doubleclick.net^$domain=spiegel.de
