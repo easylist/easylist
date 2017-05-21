@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201705211249
+! Version: 201705211301
 ! Title: EasyList
-! Last modified: 21 May 2017 12:49 UTC
+! Last modified: 21 May 2017 13:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -40376,6 +40376,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||okccdn.com/media/img/takeovers/
 ||okcupid.com/daisy?$subdocument
 ||oldgames.sk/images/topbar/
+||oload.tv/logpopup/
 ||omgpop.com/dc?
 ||on.net/images/gon_nodestore.jpg
 ||oncyprus.com^*/banners/
@@ -42800,11 +42801,20 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 @@||ajax.googleapis.com^$script,third-party,domain=streamcloud.eu
 |http://$image,script,third-party,domain=streamcloud.eu
 |https://$image,script,third-party,domain=streamcloud.eu
-! openload
+! openload/oload/streamango
+@@||oload.tv^$genericblock,generichide
 @@||openload.co^$genericblock,generichide
-||openload.co/assets/js/license.$domain=openload.co
+@@||streamango.com^$genericblock,generichide
+||oload.tv/assets/js/script.$domain=oload.tv
+||oload.tv/log$domain=oload.tv
+||openload.co/assets/js/script.$domain=openload.co
 ||openload.co/log$domain=openload.co
-||popads.net^$domain=openload.co
+||padsdel.com^$domain=oload.tv|openload.co|streamango.com
+||padstm.com^$domain=oload.tv|openload.co|streamango.com
+||popads.net^$domain=oload.tv|openload.co|streamango.com
+||streamango.com/assets/js/license.$domain=streamango.com
+||streamango.com/assets/js/script.$domain=streamango.com
+||streamango.com/log$domain=streamango.com
 ! opensubtitles.org
 @@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
 @@||static.opensubtitles.org/libs/js/$script,domain=opensubtitles.org
@@ -61937,4 +61947,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: IO/X9U67OmPNWlRfQRSeVg
+! Checksum: sXyxII9+FTmsSTyH/I0MKQ
