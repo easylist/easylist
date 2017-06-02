@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201706021628
+! Version: 201706021632
 ! Title: EasyList
-! Last modified: 02 Jun 2017 16:28 UTC
+! Last modified: 02 Jun 2017 16:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2335,6 +2335,7 @@
 /ads/triggers/*
 /ads/tso
 /ads/txt_
+/ads/v2/*
 /ads/vertical/*
 /ads/vg/*
 /ads/video/*
@@ -44035,6 +44036,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 @@||adition.com/s?$script,domain=spiegel.de
 @@||cdn.teads.tv/media/format.js$domain=spiegel.de
 @@||conative.de/serve/domain/158/config.js$domain=spiegel.de
+@@||conative.de^*/adscript.min.js$domain=spiegel.de
 @@||damoh.spiegel.de^$script,domain=spiegel.de
 @@||imagesrv.adition.com/1x1.gif$image,domain=spiegel.de
 @@||imagesrv.adition.com/banners/1337/files/00/0b/bf/a*/00000076995*.jpg$domain=spiegel.de
@@ -44045,6 +44047,8 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 widgets.outbrain.com##.OUTBRAIN[data-src^="http://www.spiegel.de/"] .ob-p
 ||2mdn.net^$domain=spiegel.de
 ||a-ssl.ligatus.com^$domain=spiegel.de
+||ad.atdmt.com/i/a.html$domain=spiegel.de
+||ad.atdmt.com/i/a.js$domain=spiegel.de
 ||ad.doubleclick.net^$domain=spiegel.de
 ||adform.net^$domain=spiegel.de
 ||adition.com/banner?$domain=spiegel.de
@@ -44073,6 +44077,9 @@ widgets.outbrain.com##.OUTBRAIN[data-src^="http://www.spiegel.de/"] .ob-p
 ||t4ft.de^$domain=spiegel.de
 ||tarife.spiegel.de/widget.php?wt_mc=1333.extern.rotation.promoflaeche$domain=spiegel.de
 ||teads.tv^$domain=spiegel.de
+||view.atdmt.com/partner/$domain=spiegel.de
+||view.atdmt.com^*/iview/$domain=spiegel.de
+||view.atdmt.com^*/view/$domain=spiegel.de
 ||yieldlab.net^$domain=spiegel.de
 ! bento.de
 bento.de,playbuzz.com##.pbads_after-question_wrapper
@@ -53641,9 +53648,12 @@ naturalblaze.com##[rel="nofollow"][href^="http://products.naturalblaze.com/"] > 
 gelbooru.com##[src^="http://syndication.exoclick.com/"] + * + * + [class]
 tomshardware.co.uk,tomshardware.com##[style*="animation:"]
 fullmatchesandshows.com##[style*="background-image: url(\"blob"]
+gorillavid.in##[style*="background-image: url(\"data:image"]
 fullmatchesandshows.com##[style*="background-image: url(data"]
 datpiff.com,fullmatchesandshows.com,jewsnews.co.il,trifind.com##[style*="base64"]
 pocketnow.com##[style*="blob:"]
+gorillavid.in##[style*="display: inline-block !important"]
+gorillavid.in##[style*="display:block !important"]
 tomshardware.co.uk,tomshardware.com##[style*="transition:"]
 destructoid.com##[style*="url(\"data:image/"]
 google.com,~mail.google.com##[style="border: 1px solid rgb(0, 90, 136);"]
@@ -54373,6 +54383,7 @@ bitcointalk.org##a[style$=";width:700px;"]
 grammarist.com##a[style*="cursor: pointer"]
 activistpost.com##a[style="clear: right; float: right; margin-bottom: 0em; margin-left: 1em;"]
 torrenticity.com##a[style="color:#05c200;text-decoration:none;"]
+gorillavid.in##a[style="cursor: pointer;"]
 softpedia.com##a[style="display: block; width: 970px; height: 90px;"]
 billionuploads.com##a[style="display: inline-block;width: 728px;margin: 25px auto -17px auto;height: 90px;"]
 bitcointalk.org##a[style="text-decoration:none; display:inline-block; "]
@@ -62296,4 +62307,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: arbwGZgORaXVYEC/L5SipA
+! Checksum: 5zPZ9kW9/veRCnhDA6iMaQ
