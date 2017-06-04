@@ -154,3 +154,5 @@
 ||zanox.com^$popup,domain=pregen.net
 ||ziddu.com/onclickpop.php$popup
 ||zmovie.tv^$popup,domain=deditv.com|vidbox.net
+! regex to pickup ip-address popups
+/([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=pelisplus.tv
