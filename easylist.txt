@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201706121007
+! Version: 201706121012
 ! Title: EasyList
-! Last modified: 12 Jun 2017 10:07 UTC
+! Last modified: 12 Jun 2017 10:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4263,6 +4263,7 @@
 /get/ad/*
 /get/ad?
 /get_ad_
+/get_adds_
 /get_ads.
 /get_ads/*
 /get_banner.asp?
@@ -44487,7 +44488,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||ziddu.com/onclickpop.php$popup
 ||zmovie.tv^$popup,domain=deditv.com|vidbox.net
 ! regex to pickup ip-address popups
-/([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=pelisplus.tv
+/([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=briansarmiento.website|pelisplus.tv
 ! *** easylist:easylist_adult/adult_specific_block.txt ***
 .download^$other,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
 .info^$script,domain=www.pornhub.com
@@ -55787,7 +55788,7 @@ pcmag.com##iframe[id][marginheight="0"]
 kissanime.com,kisscartoon.me##iframe[id^="adsIfrme"]
 baltimoresun.com,boston.com,calgaryherald.com,capitalgazette.com,carrollcountytimes.com,chicagotribune.com,citypaper.com,courant.com,dailypress.com,deathandtaxesmag.com,edmontonjournal.com,edmunds.com,financialpost.com,gofugyourself.com,hearthhead.com,infinitiev.com,latimes.com,leaderpost.com,lolking.net,mcall.com,montrealgazette.com,nasdaq.com,nationalpost.com,orlandosentinel.com,ottawacitizen.com,ranker.com,sandiegouniontribune.com,saveur.com,sherdog.com,spin.com,sporcle.com,stereogum.com,sun-sentinel.com,theprovince.com,thestarphoenix.com,timeanddate.com,tmn.today,vagazette.com,vancouversun.com,vibe.com,windsorstar.com##iframe[name*="ads_iframe"]
 imgbar.net##iframe[src="earn.php"]
-streamin.to##iframe[src]
+briansarmiento.website,streamin.to##iframe[src]
 goolink.me##iframe[src][style][height]
 cybergamer.com##iframe[src^="http://au.cybergamer.com/iframe_cgbanners.php?"]
 pcmag.com##iframe[src^="http://sp.pcmag.com/"]
@@ -62600,4 +62601,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: m/YcffilThKNoJ11xPKTCQ
+! Checksum: T2Lhuuz9IKcyKPVf3kSYlQ
