@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201706200955
+! Version: 201706201015
 ! Title: EasyPrivacy
-! Last modified: 20 Jun 2017 09:55 UTC
+! Last modified: 20 Jun 2017 10:15 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -39,6 +39,7 @@
 -google-analytics.
 -google-analytics/
 -google-tag-manager/$script
+-imppix/
 -logging/log?
 -mediaplex_
 -optimost-
@@ -1462,6 +1463,7 @@
 /imp?imgid=
 /imp_cnt.gif?
 /imp_img.php?
+/imppix/*
 /impr.xlg?
 /impress.php?
 /impression.ashx
@@ -1676,6 +1678,7 @@
 /logcollectscript_
 /LogCompany.aspx?$image
 /logcounter.
+/logduration/*
 /logevent.action?
 /logEvent?
 /logextrastats.
@@ -1743,6 +1746,7 @@
 /megacounter/*
 /mendelstats.
 /meta-analytics/*
+/meta-tracker/*
 /metatraffic/track.asp?
 /metrics-ga.
 /metrics.xml
@@ -2323,6 +2327,7 @@
 /SEMTracking.
 /send-impressions.html
 /sensor/statistic?
+/seo/tr_aff_
 /seomonitor/*
 /seosite-tracker/*
 /seostats/*
@@ -3052,6 +3057,7 @@
 /vztrack.gif?
 /vzTracker/*
 /wa01.gif?log=
+/wadsAdsLoaded/*
 /wanalytics/*
 /wcount.php?
 /wdg/tracking-
@@ -5892,6 +5898,7 @@ _mongo_stats/
 ||ferank.fr^$third-party
 ||fogl1onf.com^$third-party
 ||geocompteur.com^$third-party
+||goutee.top^$third-party
 ||goyavelab.com^$third-party
 ||graphinsider.com^$third-party
 ||hunkal.com^$third-party
@@ -11483,12 +11490,13 @@ _mongo_stats/
 ||zeit.de/js/rsa.js
 ||zeit.de/js/rsa2.js
 ! French
-||acceptable.allocine.fr^
+/acceptable.$domain=750g.com|allocine.fr|chartsinfrance.net|jeuxvideo.com|ozap.com|purebreak.com|purepeople.com|puretrend.com|shopoon.fr|terrafemina.com
+/autopromo.$domain=750g.com|allocine.fr|chartsinfrance.net|jeuxvideo.com|ozap.com|purebreak.com|purepeople.com|puretrend.com|shopoon.fr|terrafemina.com
+/autopromotion.$domain=750g.com|allocine.fr|chartsinfrance.net|jeuxvideo.com|ozap.com|purebreak.com|purepeople.com|puretrend.com|shopoon.fr|terrafemina.com
 ||accn.allocine.net^
 ||analytics.rtbf.be^
 ||arte.tv/includes/xiti/
 ||autoplus.fr/st?
-||autopromo.allocine.fr^
 ||azurewebsites.net^*/mnr-mediametrie-tracking-
 ||bloguez.com/manager/compteurs/
 ||cfcn.allocine.net^
@@ -13127,4 +13135,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: USPJyb4LyXt5hsXi6Nz+GQ
+! Checksum: 1WwIePWSRRiesUZXhaHcfA
