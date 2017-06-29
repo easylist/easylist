@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201706291110
+! Version: 201706291322
 ! Title: EasyList
-! Last modified: 29 Jun 2017 11:10 UTC
+! Last modified: 29 Jun 2017 13:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7119,6 +7119,7 @@ takeover_banner_
 ! CDN-based filters
 /cdn-cgi/pe/bag2?*.speednetwork1.com
 /cdn-cgi/pe/bag2?*adsrvmedia
+/cdn-cgi/pe/bag2?*ajs.php
 /cdn-cgi/pe/bag2?r*.adglare.org
 /cdn-cgi/pe/bag2?r*.adroll.com
 /cdn-cgi/pe/bag2?r*.codeonclick.com
@@ -31538,6 +31539,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||badtopwitch.work^$third-party
 ||bandelcot.com^$third-party
 ||belwrite.com^$third-party
+||borotango.com^$third-party
 ||cap-cap-pop.com^$third-party
 ||catwrite.com^$third-party
 ||centwrite.com^$third-party
@@ -43725,8 +43727,8 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! opensubtitles.org
 @@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
 @@||static.opensubtitles.org/libs/js/$script,domain=opensubtitles.org
-|http://$script,third-party,xmlhttprequest,domain=opensubtitles.org
-|https://$script,third-party,xmlhttprequest,domain=opensubtitles.org
+|http://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
+|https://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
 ||opensubtitles.org^*.js|$script,domain=opensubtitles.org
 ! uplea.com
 @@||ajax.googleapis.com^$script,domain=uplea.com
@@ -63079,4 +63081,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: ugGpetBsnYdT+0qLCZWw3A
+! Checksum: sQOqyrrw0ZfMHgsWkYa2Bw
