@@ -4357,8 +4357,10 @@
 ! auroravid.to
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
-! iwatchonline.cr
-@@||spot.im^$script,domain=iwatchonline.cr|iwatchonline.eu
+! iwatchonline
+@@||spot.im/api/all/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
+@@||spot.im/api/newsfeed-sync/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
+@@||spot.im^$script,subdocument,domain=iwatchonline.cr|iwatchonline.eu
 |http://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
 |https://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
 ! imagetwist.com
