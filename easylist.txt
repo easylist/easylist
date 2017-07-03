@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201707031235
+! Version: 201707031252
 ! Title: EasyList
-! Last modified: 03 Jul 2017 12:35 UTC
+! Last modified: 03 Jul 2017 12:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -43042,8 +43042,10 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! auroravid.to
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
-! iwatchonline.cr
-@@||spot.im^$script,domain=iwatchonline.cr|iwatchonline.eu
+! iwatchonline
+@@||spot.im/api/all/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
+@@||spot.im/api/newsfeed-sync/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
+@@||spot.im^$script,subdocument,domain=iwatchonline.cr|iwatchonline.eu
 |http://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
 |https://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
 ! imagetwist.com
@@ -55182,6 +55184,7 @@ sportcategory.org##a[onclick*="trafficinvest.com"]
 ndtv.com##a[onclick*="window.open("][href$="=p"]
 titanmule.to##a[onclick="emuleInst();"]
 titanmule.to##a[onclick="installerEmule();"]
+iwatchonline.cr##a[onclick="javascript: loadm();"]
 fullstuff.co,watchers.to,yogisoftworld.blogspot.co.nz,yogisoftworld.blogspot.co.uk,yogisoftworld.blogspot.com##a[onclick]
 powerbot.org##a[onclick][href^="http://px.rs/"]
 platinlyrics.com##a[onclick^="DownloadFile('lyrics',"]
@@ -63146,4 +63149,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: awYvpdllCnnrcRlUOGWtiA
+! Checksum: i7nvuPEgmrjgACLcwPuwvg
