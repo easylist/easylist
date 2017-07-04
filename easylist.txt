@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201707041310
+! Version: 201707041314
 ! Title: EasyList
-! Last modified: 04 Jul 2017 13:10 UTC
+! Last modified: 04 Jul 2017 13:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4969,6 +4969,8 @@
 /mpads/*
 /mpu-dm.htm
 /mpuad.
+/MPUAd/*
+/MPUAdHelper.
 /mpuguardian.
 /mpumessage.
 /mrskinleftside.
@@ -58080,6 +58082,7 @@ starpix.us##[style="left: 644px; top: 552.5px; visibility: visible;"]
 pornerbros.com##[style="margin: -150px auto 0px; width: 920px; height: 400px;"]
 myprops.org##[style="padding-top: 15px; padding-left: 81px;"]
 sexyclips.org##[style="text-align: center; width: 1000px; height: 250px;"]
+pornhub.com##[style] > div > iframe[width]:first-child
 porn.com##[style] > div[style*="background-color:"]
 txxx.com##[target="_blank"] > img[src][height]
 tube8.com##[value][style*="float:"][type="hidden"] + [class]
@@ -58217,6 +58220,8 @@ pornhub.com##div > :first-child + [class][style*="z-index:"]
 pornhub.com##div > [class][style*="float:"]
 txxx.com##div > [class][style="display: block;"]
 xvideos.com##div > [id][class][style] > img[src][style]
+pornhub.com##div > [style] + iframe[width]
+pornhub.com##div > [style] iframe[width][height]
 imagefap.com##div > [type="text/javascript"] + * > div > div[class]:first-child
 ngentot.tv##div > a[href][target="_blank"]
 pornhub.com##div > aside > aside
@@ -62637,6 +62642,7 @@ www.google.com#@##videoads
 @@||algolia.net^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
 @@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
 @@||amazonaws.com/uploads.uservoice.com/$image,domain=pornhub.com|redtube.com|tube8.com|youporn.com
+@@||api.feel-app.com^$xmlhttprequest,domain=pornhub.com
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
@@ -63162,4 +63168,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: bTEbsittO6unI4JXZSduRQ
+! Checksum: qf81nxhJXr3fug5kOuSfgg
