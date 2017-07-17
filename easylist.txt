@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201707171120
+! Version: 201707171150
 ! Title: EasyList
-! Last modified: 17 Jul 2017 11:20 UTC
+! Last modified: 17 Jul 2017 11:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6550,6 +6550,7 @@
 ?module=ads/
 ?OASTagURL=
 ?phpAds_
+?poll=ad_
 ?PopAd=
 ?service=ad&
 ?sid=ads
@@ -7114,6 +7115,8 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! Native advert
+/\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! propellar
 /\.accountant\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
 /\.bid\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
@@ -17020,6 +17023,7 @@ _popunder+$popup
 ##.ad-space-topbanner
 ##.ad-spacer
 ##.ad-span
+##.ad-special-article
 ##.ad-speedbump
 ##.ad-splash
 ##.ad-sponsor
@@ -18100,6 +18104,7 @@ _popunder+$popup
 ##.ad_plane_336
 ##.ad_plus
 ##.ad_policy_link_br
+##.ad_poll
 ##.ad_position
 ##.ad_post
 ##.ad_posttop
@@ -63425,4 +63430,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: dhvkMbbGDbnhE5y/bHqJ5g
+! Checksum: d0SzersOcVS4modHvtz8CA
