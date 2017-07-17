@@ -4481,10 +4481,15 @@
 |http://$script,third-party,xmlhttprequest,domain=destructoid.com
 |https://$script,third-party,xmlhttprequest,domain=destructoid.com
 !  fmovies
+@@||fmovies.is/ajax/$xmlhttprequest,domain=fmovies.is
+@@||fmovies.is/user/ajax/$xmlhttprequest,domain=fmovies.is
 @@||platform.twitter.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
+|http:$popup,third-party,domain=fmovies.is
 |http://$script,stylesheet,third-party,domain=fmovies.is|fmovies.se|fmovies.to
+|https:$popup,third-party,domain=fmovies.is
 |https://$script,stylesheet,third-party,domain=fmovies.is|fmovies.se|fmovies.to
 ||fmovies.is^$popup,~third-party
+||fmovies.is^$xmlhttprequest,domain=fmovies.is
 ||fmovies.se^$popup,~third-party
 ||fmovies.to^$popup,~third-party
 ! wholecloud.net
