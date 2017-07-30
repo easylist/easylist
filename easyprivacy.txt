@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201707301451
+! Version: 201707301503
 ! Title: EasyPrivacy
-! Last modified: 30 Jul 2017 14:51 UTC
+! Last modified: 30 Jul 2017 15:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -44,6 +44,7 @@
 -google-analytics/
 -google-tag-manager/$script
 -imppix/
+-log?referUrl=
 -logging/log?
 -mediaplex_
 -optimost-
@@ -54,6 +55,7 @@
 -seo-tracker.
 -social-tracking.
 -stat/collect/
+-stat?callback=
 -stats/fab.
 -stats/ga.
 -stats/imr.
@@ -384,6 +386,7 @@
 /aftrackingplugin.swf
 /aggbug.aspx?
 /agof/iam-
+/agwebtracking_
 /aimp.php?
 /ajax-hits-counter/*
 /ajax/analytics/*
@@ -847,6 +850,8 @@
 /clientlibs/ga.js
 /clientstat?
 /cls_rpt.gif?
+/cm-xtgreat?
+/cm.gif?
 /cm?ci=*&tid=
 /cm?tid=
 /cmarketing.countus.js
@@ -1673,6 +1678,7 @@
 /Log.ashx?
 /log.bi?
 /log.cfm?
+/log.collect.
 /log.gif?
 /log.htm?
 /log.jphp?
@@ -1997,6 +2003,7 @@
 /page-track.
 /page-view.gif?
 /page.gif?p=
+/page?referUrl=
 /page_analytics.
 /page_counter.
 /page_imp;
@@ -2990,6 +2997,7 @@
 /ucount.php?
 /udctrack.
 /uds/stats?
+/uf-stat?
 /ui/analytics/*
 /uim.html/*
 /ulpixel.
@@ -3003,6 +3011,7 @@
 /Universal-Federated-Analytics.
 /universal-tracking-
 /universalPixelStatic.
+/uo-stat?
 /updateBotStatus.do?
 /updateStats.
 /urchin.gif?
@@ -3056,6 +3065,7 @@
 /VideoTracking.
 /videotracking/*
 /vidtrack.
+/view-log?
 /view.gif?
 /view_stats.js.php
 /viewcount.ashx?*&referrer=
@@ -6113,6 +6123,7 @@ _mongo_stats/
 ||vamaker.com^$third-party
 ||vdoing.com^$third-party
 ||webdissector.com^$third-party
+||xtgreat.com^$third-party
 ||yigao.com^$third-party
 ||zampda.net^$third-party
 ||ztcadx.com^$third-party
@@ -11762,6 +11773,7 @@ _mongo_stats/
 ||clkstat.qihoo.com^
 ||cmstool.youku.com^
 ||collect.tianya.cn^
+||collect.yinyuetai.com^
 ||count.joy.cn^
 ||count.kandian.com^$object-subrequest
 ||count.newhua.com^
@@ -11777,6 +11789,7 @@ _mongo_stats/
 ||dc.letv.com^
 ||deliver.ifeng.com^
 ||dj.renren.com^
+||dmtrack.xiu.com^
 ||dmtracking.1688.com^
 ||docin.com/app/playerLoadLog/
 ||duowan.com/duowan.js
@@ -11871,6 +11884,7 @@ _mongo_stats/
 ||statistic.takungpao.com^
 ||stats.autohome.com.cn^
 ||stats.tudou.com^
+||stats.yinyuetai.com^
 ||tf.360.cn^
 ||tinglog.baidu.com^
 ||titan24.com/scripts/stats.js
@@ -13329,4 +13343,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: aXTg+C6lcDUlC4jhtKB3Rw
+! Checksum: UO8mRWUpwz26Azx5kTQu3Q
