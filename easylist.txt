@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201708050746
+! Version: 201708050853
 ! Title: EasyList
-! Last modified: 05 Aug 2017 07:46 UTC
+! Last modified: 05 Aug 2017 08:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7191,6 +7191,7 @@ takeover_banner_
 /bl.php?*=$script
 /frontend_loader.js$script,~third-party
 /scripts/sweet/*$script
+_nb_sys.$script,~third-party
 ! prebid scripts
 -prebid.$script
 /biddr-*.js
@@ -30258,6 +30259,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||pas-rahav.com^$third-party
 ||passionfruitads.com^$third-party
 ||passive-earner.com^$third-party
+||patiland.co^$third-party
 ||pautaspr.com^$third-party
 ||pay-click.ru^$third-party
 ||paydotcom.com^$third-party
@@ -30402,6 +30404,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ppctrck.com^$third-party
 ||ppcwebspy.com^$third-party
 ||ppsearcher.ru^$third-party
+||practively.com^$third-party
 ||prebid.org^$third-party
 ||precisionclick.com^$third-party
 ||predictad.com^$third-party
@@ -30724,6 +30727,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||sekindo.com^$third-party
 ||selectablemedia.com^$third-party
 ||sellhealth.com^$third-party
+||sellously.info^$third-party
 ||selloweb.com^$third-party
 ||selsin.net^$third-party
 ||semanticrep.com^$third-party
@@ -32481,6 +32485,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||dhmhdiozqbnq.com^$third-party
 ||dhomixidnkas.com^$third-party
 ||dhsztvyjwcmk.com^$third-party
+||difyt-m-tlb.co^$third-party
 ||disbkzufvqhk.com^$third-party
 ||ditouyldfqgt.com^$third-party
 ||diysqcbfyuru.com^$third-party
@@ -36985,6 +36990,7 @@ a.upnorma.com^$webrtc
 ||d2omcicc3a4zlg.cloudfront.net^
 ||d2pgy8h4i30on1.cloudfront.net^
 ||d2plxos94peuwp.cloudfront.net^
+||d2pxbld8wrqyrk.cloudfront.net^
 ||d2qz7ofajpstv5.cloudfront.net^
 ||d2r359adnh3sfn.cloudfront.net^
 ||d2s64zaa9ua7uv.cloudfront.net^
@@ -38610,7 +38616,6 @@ a.upnorma.com^$webrtc
 ||clickz.lonelycheatingwives.com^$third-party
 ||clipjunkie.com/sftopbanner$third-party
 ||closepics.com/media/banners/
-||cloudfront.net^$script,domain=pornve.com
 ||cmix.org/teasers/?
 ||cockfortwo.com/track/$third-party
 ||content.liveuniverse.com^$third-party
@@ -45134,7 +45139,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||chatrandom.com/js/slider.js
 ||chubby-ocean.com/banner/
 ||clips-and-pics.org/clipsandpics.js
-||cloudfront.net^$script,domain=pornscum.com|watch8x.com|xmovies.to|xmovies247.com|yourporn.sexy
+||cloudfront.net^$script,domain=pornscum.com|pornve.com|watch8x.com|xmovies.to|xmovies247.com|yourporn.sexy
 ||cloudsdns.net^$media,domain=pornleech.com
 ||comdotgame.com/vgirl/
 ||coolmovs.com/js/focus.*.js
@@ -45981,9 +45986,8 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 |https://$script,third-party,xmlhttprequest,domain=zone-anime.net
 ! xmoviesforyou.com
 @@||datoporn.com^$script,domain=29443kmq.video
-https://$script,third-party,xmlhttprequest,domain=29443kmq.video
 |http://$script,third-party,xmlhttprequest,domain=29443kmq.video|xmoviesforyou.com
-|https://$script,third-party,xmlhttprequest,domain=xmoviesforyou.com
+|https://$script,third-party,xmlhttprequest,domain=29443kmq.video|xmoviesforyou.com
 ! rule34hentai.net
 @@||rule34hentai.net/data/cache/$script
 |http://$script,third-party,xmlhttprequest,domain=rule34hentai.net
@@ -46118,6 +46122,9 @@ https://$script,third-party,xmlhttprequest,domain=29443kmq.video
 ! dreamamateurs.com
 |http://$script,third-party,xmlhttprequest,domain=dreamamateurs.com
 |https://$script,third-party,xmlhttprequest,domain=dreamamateurs.com
+! Yourporn.sexy
+@@||ajax.googleapis.com^$script,domain=yourporn.sexy
+|https://$script,third-party,domain=yourporn.sexy
 ! websocket ads (Adblock Plus beta)
 $websocket,domain=24video.cc|24video.in|24video.me|24video.sex|24video.xxx|pornhub.com|redtube.com|redtube.com.br|russian-porn.me|tube8.com|tube8.es|tube8.fr|xhamster.com|xtube.com|xvideos.com|youporn.com|youporngay.com
 ! Vintageeroticaforum
@@ -63207,4 +63214,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: H1SJMC7EOoKIXB5SF10Lsw
+! Checksum: T6enTcpS+qbfLXValh/WdQ
