@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201708141905
+! Version: 201708142122
 ! Title: EasyList
-! Last modified: 14 Aug 2017 19:05 UTC
+! Last modified: 14 Aug 2017 21:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -44249,8 +44249,10 @@ $script,third-party,domain=171gifs.com|1proxy.de|2ddl.download|300mbfilms.co|300
 |https://$script,third-party,xmlhttprequest,domain=vidbull.com
 ! streamcloud.eu
 @@||ajax.googleapis.com^$script,third-party,domain=streamcloud.eu
+@@||streamcloud.eu^*/jwpsrv.js$domain=streamcloud.eu
 |http://$image,script,third-party,domain=streamcloud.eu
 |https://$image,script,third-party,domain=streamcloud.eu
+||meta.streamcloud.eu^$domain=streamcloud.eu
 ! openload/oload/streamango
 /assets/js/license.$domain=oload.tv|openload.co|streamango.com
 /assets/js/script.$domain=oload.tv|openload.co|streamango.com
@@ -55281,6 +55283,7 @@ conservativereview.com##a[href^="https://www.levintv.com/?utm_source="]
 linkbucks.com##a[href^="https://www.linkbucks.com/advertising"]
 avxhome.se##a[href^="https://www.nitroflare.com/payment?webmaster="]
 freenode.org,magnetdl.com,rarbg.to,rarbgmirror.com,rarbgproxy.com##a[href^="https://www.privateinternetaccess.com/"]
+quora.com##a[href^="https://www.quora.com/re="][target="_blank"]
 xscores.com##a[href^="https://www.rivalo1.com/?affiliateId="]
 alternet.org##a[href^="https://www.rtqscore.com/?ptr="]
 youtube.com##a[href^="https://www.youtube.com/cthru?"]
@@ -56575,6 +56578,7 @@ airplaydirect.com,bentelevision.com,itsfoss.com,newseveryhour.com,proxy.org,road
 prowrestling.com##img[height="91"]
 windycitymediagroup.com##img[name="Sponsor"]
 modelhorseblab.com##img[name="js_ad"]
+streamcloud.eu##img[src*="base64"]
 cryptocoinsnews.com,imgchili.net,magnetdl.com,opensubtitles.org,sporcle.com,thefreethoughtproject.com,veteranstoday.com##img[src*="data:image"]
 monova.org##img[src]
 minecraftforum.net##img[src][height="96"]
@@ -63348,4 +63352,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: cPRbUHikdjtwSorgTfgVOA
+! Checksum: z5gOY4vClvfzTc2defP5Og
