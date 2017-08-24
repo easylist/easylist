@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201708241237
+! Version: 201708241921
 ! Title: EasyList
-! Last modified: 24 Aug 2017 12:37 UTC
+! Last modified: 24 Aug 2017 19:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -40357,7 +40357,6 @@ a.upnorma.com^$webrtc
 ||file.org/fo/scripts/download_helpopt.js
 ||file.org^*/images/promo/
 ||file2hd.com/sweet.jpg
-||filecrypt.cc/js/license.$script
 ||filedino.com/imagesn/downloadgif.gif
 ||fileepic.com/download-$domain=media1fire.com
 ||filefactory.com/img/casinopilots/
@@ -43538,6 +43537,19 @@ $script,third-party,domain=171gifs.com|1proxy.de|2ddl.download|300mbfilms.co|300
 @@||youtube.com/embed/$domain=xclusivejams.xyz
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams.xyz
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams.xyz
+! filecrypt.cc
+@@||filecrypt.cc/js/container.js$script
+@@||filecrypt.cc/js/fcwindow.js$script
+@@||filecrypt.cc/js/indexV2.js$script
+@@||filecrypt.cc/js/indexV2_Plugin.js$script
+@@||filecrypt.cc/js/prototype.js$script
+@@||filecrypt.cc/js/scriptaculous/builder.js$script
+@@||filecrypt.cc/js/scriptaculous/controls.js$script
+@@||filecrypt.cc/js/scriptaculous/dragdrop.js$script
+@@||filecrypt.cc/js/scriptaculous/effects.js$script
+@@||filecrypt.cc/js/scriptaculous/scriptaculous.js$script
+@@||filecrypt.cc/js/scriptaculous/slider.js$script
+||filecrypt.cc/js/$script
 ! auroravid.to
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
@@ -54592,7 +54604,7 @@ cultofmac.com##[name="dn-frame-1"]
 monova.org##[onclick] > [target="_blank"]
 monova.org##[onclick] > a[class]
 monova.org##[onclick] > a[href^="javascript:"]
-filecrypt.cc##[onmouseup*=", fu, true"]
+filecrypt.cc##[onmouseup$=", true);"]
 eztv.ag##[rel*="nofollow"] > [id][style]
 techpowerup.com##[rel="nofollow"] > i > img[alt][src]
 naturalblaze.com##[rel="nofollow"][href^="http://products.naturalblaze.com/"] > img
@@ -55461,7 +55473,6 @@ oddee.com##br + br + :last-child
 oddee.com##br + div + span
 facebook.com##button[data-gt*="\"ref\":\"ad\""]
 onhax.me##button[onclick]
-filecrypt.cc##button[onmouseup*=", fu, true"]
 onhax.me##button[type]
 jguru.com##center
 pocketnow.com##center + a[href^="/"]
@@ -63393,4 +63404,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: X+tYq2rwz4atOfmpOilmHg
+! Checksum: gjr7D5Tdk+5qzcs3vk6kZg
