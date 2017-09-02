@@ -282,7 +282,7 @@
 ||amazonaws.com/kbnetworkz/$domain=hardforum.com
 ||amazonaws.com/videos/$domain=technewstoday.com
 ||amazonaws.com^$script,domain=300mbdownload.net|forbes.com|globes.co.il|kannadamovies.biz|mp3goo.com|ndtv.com|streamplay.to|thevideobee.to|uplod.ws|usersfiles.com|vshare.eu
-||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|4chanarchives.cu.cc|bdupload.info|bigfile.to|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|imgchili.net|mirrorcreator.com|nachostime.net|sadeempc.com|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|uplod.ws|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
+||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|4chanarchives.cu.cc|bdupload.info|bigfile.to|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|imgchili.net|mirrorcreator.com|nachostime.net|sadeempc.com|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|uplod.ws|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
 ||amazonaws.com^*-ad.jpg$domain=ewn.co.za
 ||amazonaws.com^*-Banner.jpg$domain=ewn.co.za
 ||amazonaws.com^*/site-takeover/$domain=songza.com
@@ -737,7 +737,7 @@
 ||cloudfront.net/hot/ars.dart/$domain=arstechnica.com
 ||cloudfront.net/images/amazon/$domain=slader.com
 ||cloudfront.net/pop?$domain=clipconverter.cc
-||cloudfront.net^$script,subdocument,domain=300mbfilms.co|4archive.org|4chanarchives.cu.cc|786zx.com|adbull.me|addic7ed.com|animeflv.net|animehaven.to|auroravid.to|bdupload.info|beforeitsnews.com|beinsport-streaming.com|biology-online.org|bitvid.sx|chronos.to|cloudtime.to|cloudyfiles.co|coreimg.net|crackingpatching.com|croco.site|dailyuploads.net|dbzsuper.tv|downloadming.io|downloadming.tv|extremetech.com|eztv.ag|file-upload.com|frendz4m.com|fulldowngames.biz|fullstuff.co|goodvideohost.com|hdencoders.com|hon3yhd.com|imgchili.net|jazztv.co|kannadamovies.biz|letwatch.to|linksprotection.com|media1fire.com|mirrorcreator.com|mp3goo.com|multiup.org|mystream.la|nachostime.net|nitroflare.com|noslocker.com|nowvideo.li|nowvideo.sx|nowvideo.to|omghype.com|onhax.me|openload.co|otorrents.com|ouo.io|pirateiro.com|psarips.com|reevown.com|sadeempc.com|scambiofile.info|sceper.ws|shink.in|sparknotes.com|streamplay.to|suprafiles.co|textsfromlastnight.com|thecoolersoftwares.net|thevideobee.to|tinypaste.me|torlock.com|torrentfunk.com|torrentproject.se|tsumino.com|tubeoffline.com|tvlivenow.com|unblocked.cam|upload.so|uplod.ws|usersfiles.com|vidlox.tv|vidshare.us|vshare.eu|watchers.to|watchfomny.tv|wholecloud.net|world4ufree.be|yahmaib3ai.com|yourbittorrent.com|yourvideohost.com|zone-telechargement.ws
+||cloudfront.net^$script,subdocument,domain=300mbfilms.co|4archive.org|4chanarchives.cu.cc|786zx.com|adbull.me|addic7ed.com|animeflv.net|animehaven.to|auroravid.to|bdupload.info|beforeitsnews.com|beinsport-streaming.com|biology-online.org|bitvid.sx|chronos.to|cloudtime.to|cloudyfiles.co|coreimg.net|crackingpatching.com|croco.site|dailyuploads.net|dbzsuper.tv|downloadming.io|downloadming.tv|extremetech.com|eztv.ag|file-upload.com|frendz4m.com|fulldowngames.biz|fullstuff.co|goodvideohost.com|hdencoders.com|hon3yhd.com|imgchili.net|jazztv.co|kannadamovies.biz|letwatch.to|linksprotection.com|media1fire.com|mirrorcreator.com|mp3goo.com|multiup.org|mystream.la|nachostime.net|nitroflare.com|noslocker.com|nowvideo.li|nowvideo.sx|nowvideo.to|omghype.com|onhax.me|openload.co|otorrents.com|ouo.io|pirateiro.com|psarips.com|reevown.com|sadeempc.com|scambiofile.info|sceper.ws|shink.in|sparknotes.com|streamplay.to|suprafiles.co|textsfromlastnight.com|thecoolersoftwares.net|thevideobee.to|tinypaste.me|torlock.com|torrentfunk.com|torrentproject.se|tsumino.com|tubeoffline.com|tvlivenow.com|unblocked.cam|upload.so|uplod.ws|usersfiles.com|vidshare.us|vshare.eu|watchers.to|watchfomny.tv|wholecloud.net|world4ufree.be|yahmaib3ai.com|yourbittorrent.com|yourvideohost.com|zone-telechargement.ws
 ||cloudfront.net^*/shaadi.com/$domain=deccanchronicle.com
 ||cloudfront.net^*/Sponsors/$domain=indycar.com
 ||cloudyvideos.com/banner/
@@ -4560,8 +4560,8 @@ $script,third-party,domain=171gifs.com|1proxy.de|2ddl.download|300mbfilms.co|300
 ! vidlox.tv
 @@||api.peer5.com^$script,domain=vidlox.tv
 @@||cdn.jsdelivr.net^$script,domain=vidlox.tv
-|http://$script,subdocument,third-party,xmlhttprequest,domain=vidlox.tv
-|https://$script,subdocument,third-party,xmlhttprequest,domain=vidlox.tv
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=vidlox.tv
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=vidlox.tv
 ! ancient-origins.net
 @@||ajax.googleapis.com^$script,domain=ancient-origins.net
 @@||connect.facebook.net^$script,domain=ancient-origins.net
