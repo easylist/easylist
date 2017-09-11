@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201709111422
+! Version: 201709111633
 ! Title: EasyList
-! Last modified: 11 Sep 2017 14:22 UTC
+! Last modified: 11 Sep 2017 16:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54701,6 +54701,7 @@ gorillavid.in##a[data-delivery^="/?i="]
 stream2watch.cc##a[data-h^="http://www.downloadplayer1.com/"]
 pcmag.com##a[data-section="Ads"]
 roadracerunner.com##a[data-target]
+mail.yahoo.com##a[data-test-id="pencil-ad"]
 kdramaindo.com##a[data-wpel-link="external"]
 bestvpn.com##a[href$="_banner"]
 primewire.ag,primewire.in##a[href*="&ZoneId="]
@@ -56528,8 +56529,8 @@ blackcatradio.biz##div[width="969"][height="282"]
 filepuma.com##dt[style="height:25px; text-indent:3px; padding-top:5px;"]
 kitguru.net##embed[src][quality]
 xtremesystems.org##embed[width="728"]
-facebook.com#?#.ego_column :-abp-has(.adsCategoryTitleLink)
-facebook.com#?#.fbUserPost:-abp-has(a:-abp-contains(Sponsored))
+facebook.com#?#.ego_column:-abp-has(.adsCategoryTitleLink)
+facebook.com#?#.fbUserPost:-abp-has(a[href*="[is_sponsored]=1"])
 opensubtitles.org##fieldset > a[target="_blank"][href]
 opensubtitles.org##fieldset > legend + a[class]
 opensubtitles.org##fieldset > table[style="width:100%;"] > tbody > .change
@@ -63448,4 +63449,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 6vYG/m6pDzcK1ok8hJzqEw
+! Checksum: dlfTTsrvRxRWZ8yWbhGnnA
