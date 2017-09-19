@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201709191550
+! Version: 201709191609
 ! Title: Fanboy's Annoyance List
-! Last modified: 19 Sep 2017 15:50 UTC
+! Last modified: 19 Sep 2017 16:09 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3262,6 +3262,7 @@ _youtube_social_
 ##.alert-subscribe-small
 ##.ampz-icon-email
 ##.ampz_email
+##.anews-web-widget
 ##.aptureTMMBar
 ##.article-next-sticky
 ##.article__subscribe
@@ -3608,6 +3609,10 @@ _youtube_social_
 ##a[title="Subscribe to our RSS Feed"]
 ##a[title="Subscribe with RSS"]
 ##div[class^="popupally-pro"]
+##div[class^="teaser_six_smi-"]
+##div[id^="mediametrics-"]
+##div[id^="smi2adblock_"]
+##div[id^="smi_teaser_"]
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
 ##img[alt="Add to Google"]
 ##img[alt="Add to Live Alerts"]
@@ -9025,10 +9030,12 @@ _youtube_social_
 ##.b-fb_share
 ##.b-follow-us
 ##.b-header__nav-social
+##.b-image-share
 ##.b-s-share
 ##.b-share-btn__count
 ##.b-share__facebook
 ##.b-share__twitter
+##.b-sharebar
 ##.b-social
 ##.b-social-icons
 ##.b-social-links--slide-out
@@ -14609,6 +14616,7 @@ _youtube_social_
 ! *** easylist:fanboy-addon/fanboy_annoyance_thirdparty.txt ***
 ||123cursors.com^$third-party
 ||1worldonline.com^$third-party
+||24smi.net^$third-party
 ||2kurl.com^$third-party
 ||2leep.com^$third-party
 ||37signals.com^$third-party
@@ -14861,6 +14869,7 @@ _youtube_social_
 ||slashdot.org^$third-party
 ||sleeknoteboxcontent.sleeknote.com^$third-party
 ||smartcookies.it^$third-party
+||smi2.ru^$third-party
 ||snapwidget.com^$third-party
 ||sociallist.org^$third-party
 ||socialoomph.com^$third-party
@@ -15201,6 +15210,7 @@ _youtube_social_
 ! --------------------------Specific blocking filters--------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_specific_block.txt ***
 ||4chan.org/b/*.swf
+||anews.com/s/js/widget.js
 ||bostonglobe.com/common/js/velocity/
 ||businessdictionary.com/min/g=boxysubscribejs
 ||cjr.org/interstitial_
@@ -22494,4 +22504,4 @@ fark.com,marketplace.firefox.com,vvhp.net#@#img[title="YouTube"]
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: BBVk98oklDHjGNZWbXBuww
+! Checksum: UYhZumX4aQp4ExVjJ2rSLg
