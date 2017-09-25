@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201709251537
+! Version: 201709251718
 ! Title: EasyList
-! Last modified: 25 Sep 2017 15:37 UTC
+! Last modified: 25 Sep 2017 17:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -37060,6 +37060,7 @@ a.upnorma.com^$webrtc
 ||complexmedianetwork.com/js/cmnUNT.js
 ||comx-computers.co.za/banners/$third-party
 ||conduit.com//banners/$third-party
+||connect.facebook.net^*/fbevents.js$third-party
 ||connect.summit.co.uk^
 ||connectok.com/brightcove/?$domain=newsok.com
 ||consolpub.com/weatherwindow/
@@ -56612,8 +56613,11 @@ blackcatradio.biz##div[width="969"][height="282"]
 filepuma.com##dt[style="height:25px; text-indent:3px; padding-top:5px;"]
 kitguru.net##embed[src][quality]
 xtremesystems.org##embed[width="728"]
-facebook.com#?#.ego_column:-abp-has(.adsCategoryTitleLink)
-facebook.com#?#.fbUserPost:-abp-has(a[href*="[is_sponsored]=1"])
+facebook.com#?#.ego_column :-abp-has(.adsCategoryTitleLink)
+facebook.com#?#.fbUserContent :-abp-has(a:-abp-contains(Chartered))
+facebook.com#?#.fbUserContent :-abp-has(a:-abp-contains(Sponsored))
+facebook.com#?#.fbUserPost :-abp-has(a:-abp-contains(Chartered))
+facebook.com#?#.fbUserPost :-abp-has(a:-abp-contains(Sponsored))
 opensubtitles.org##fieldset > a[target="_blank"][href]
 opensubtitles.org##fieldset > legend + a[class]
 opensubtitles.org##fieldset > table[style="width:100%;"] > tbody > .change
@@ -63548,4 +63552,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: sj2vcMCO+6RKrYKEUezP7Q
+! Checksum: RlxP78ONCS52yvNhojlYdA
