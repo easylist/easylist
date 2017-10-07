@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201710070215
+! Version: 201710070251
 ! Title: EasyPrivacy
-! Last modified: 07 Oct 2017 02:15 UTC
+! Last modified: 07 Oct 2017 02:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3518,6 +3518,8 @@ _zag_cookie.
 cgi-bin/counter
 http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
+! Mining
+/c-hive.js
 ! Adblock tracking
 -logabpstatus.
 /adb.policy.js
@@ -5754,10 +5756,19 @@ _mongo_stats/
 ||zroitracker.com^$third-party
 ||ztsrv.com^$third-party
 ! Mining
+||azvjudwr.info^$third-party
+||cnhv.co^$third-party
 ||coin-hive.com^$third-party
 ||coinhive.com^$third-party
+||jroqvbvw.info^$third-party
 ||jsecoin.com^$third-party
+||jyhfuqoh.info^$third-party
+||kdowqlpt.info^$third-party
 ||minemytraffic.com^$third-party
+||miner.pr0gramm.com^$third-party
+||ppoi.org^$third-party
+||projectpoi.com^$third-party
+||xbasfbno.info^$third-party
 ! Admiral
 ||6ldu6qa.com^$third-party
 ||aheadday.com^$third-party
@@ -11423,6 +11434,11 @@ _mongo_stats/
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
+! Mining
+.info^$script,third-party,domain=oload.info|oload.tv|openload.co|streamango.com|streamcherry.com
+||2giga.link^*/hive.js
+||goodolddownloads.com/js/dolladollabillz.js
+||gus.host/coins.js
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
@@ -13490,4 +13506,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: pSLw7WOKSNKbrYq7bs2Ihg
+! Checksum: 8CUzWq858SAJnx9Lys0B4A
