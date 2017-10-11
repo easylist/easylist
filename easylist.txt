@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710110340
+! Version: 201710110403
 ! Title: EasyList
-! Last modified: 11 Oct 2017 03:40 UTC
+! Last modified: 11 Oct 2017 04:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -43775,6 +43775,14 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||spot.im^$script,subdocument,domain=iwatchonline.cr|iwatchonline.eu
 |http://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
 |https://$script,subdocument,third-party,xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
+! blacklistednews.com
+@@||ajax.googleapis.com^$script,domain=blacklistednews.com
+@@||disqus.com^$domain=blacklistednews.com
+@@||disquscdn.com^$domain=blacklistednews.com
+@@||maxcdn.bootstrapcdn.com^$script,domain=blacklistednews.com
+@@||ravenjs.com^*/raven.min.js$domain=blacklistednews.com
+|http://$script,stylesheet,subdocument,third-party,webrtc,xmlhttprequest,domain=blacklistednews.com
+|https://$script,stylesheet,subdocument,third-party,webrtc,xmlhttprequest,domain=blacklistednews.com
 ! imagetwist.com
 @@||imagetwist.com/bootstrap.min.js
 @@||imagetwist.com/clipboard.min.js
@@ -63634,4 +63642,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: N3n5QFRk/Ks4B9iRc5/Ntg
+! Checksum: P5PJmdDaeq+V3BqQQFs7gg
