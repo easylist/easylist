@@ -4463,13 +4463,24 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||ravenjs.com^*/raven.min.js$domain=blacklistednews.com
 |http://$script,stylesheet,subdocument,third-party,webrtc,xmlhttprequest,domain=blacklistednews.com
 |https://$script,stylesheet,subdocument,third-party,webrtc,xmlhttprequest,domain=blacklistednews.com
-! imagetwist.com
+! Imagetwist/Imagenpic/Imageshimage
+@@||imagenpic.com/jquery-*.js
+@@||imagenpic.com/jquery.*.js
+@@||imagenpic.com/xupload.js
+@@||imageshimage.com/jquery-*.js
+@@||imageshimage.com/jquery.*.js
+@@||imageshimage.com/xupload.js
 @@||imagetwist.com/bootstrap.min.js
 @@||imagetwist.com/clipboard.min.js
 @@||imagetwist.com/jquery-*.js
 @@||imagetwist.com/jquery.*.js
 @@||imagetwist.com/swfobject.js
 @@||imagetwist.com/xupload.js
+@@||imagetwist.com/ZeroClipboard.js
+||imagenpic.com^$script,~third-party
+||imagenpic.com^$~third-party,xmlhttprequest
+||imageshimage.com^$script,~third-party
+||imageshimage.com^$~third-party,xmlhttprequest
 ||imagetwist.com/*?$image,~third-party
 ||imagetwist.com^$script,~third-party
 ||imagetwist.com^$~third-party,xmlhttprequest
@@ -4493,10 +4504,6 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 ||imgchili.net^$script,~third-party
-! Imagetwist
-||imagenpic.com/*.php$script
-||imageshimage.com/*.php$script
-||imagetwist.com/*.php$script
 ! youtube-mp3.org
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
