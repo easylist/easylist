@@ -4500,10 +4500,30 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||imgchili.net/js/screenfull.min.js|$script
 @@||imgchili.net/source/includes/scripts/genjscript.js|$script
 @@||imgchili.net/source/includes/scripts/jquery.$script
-@@||imgchili.net/source/includes/scripts/phpjs_*.js
+http://imgchili.net/source/includes/scripts/phpjs_*.js
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 ||imgchili.net^$script,~third-party
+! Pixhost
+@@||pixhost.org/js/clipboard-helpers.js?
+@@||pixhost.org/js/helpers.js?
+@@||pixhost.org/js/image.js?
+@@||pixhost.org/js/main.js?
+@@||pixhost.org/js/new-upload.js?
+@@||pixhost.org/js/upload_functions.js?
+@@||pixhost.org/js/vendor/clipboard.min.js?
+@@||pixhost.org/js/vendor/jquery-*.js?
+@@||pixhost.org/js/vendor/jquery.*.js
+@@||pixhost.org/js/vendor/nprogress.js|
+@@||pixhost.org/js/vendor/rangeslider.min.js?
+@@||pixhost.org/lang.js.php?
+@@||pixhost.org/PhotoSwipe/photoswipe-*.js
+@@||pixhost.org/PhotoSwipe/photoswipe.*.js
+@@||pixhost.org/plupload/i18n/en.js?
+@@||pixhost.org/plupload/jquery.*.js?
+@@||pixhost.org/plupload/plupload.*.js?
+@@||pixhost.org/vendor/jquery-*.js?
+||pixhost.org^$script,~third-party
 ! youtube-mp3.org
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
