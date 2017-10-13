@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710131414
+! Version: 201710131439
 ! Title: EasyList
-! Last modified: 13 Oct 2017 14:14 UTC
+! Last modified: 13 Oct 2017 14:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28342,6 +28342,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||best5ex.com^$third-party
 ||bestarmour4u.work^$third-party
 ||bestcasinopartner.com^$third-party
+||bestcontentsoftware.top^$third-party
 ||bestdeals.ws^$third-party
 ||bestfindsite.com^$third-party
 ||bestforexpartners.com^$third-party
@@ -43848,10 +43849,30 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||imgchili.net/js/screenfull.min.js|$script
 @@||imgchili.net/source/includes/scripts/genjscript.js|$script
 @@||imgchili.net/source/includes/scripts/jquery.$script
-@@||imgchili.net/source/includes/scripts/phpjs_*.js
+http://imgchili.net/source/includes/scripts/phpjs_*.js
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 ||imgchili.net^$script,~third-party
+! Pixhost
+@@||pixhost.org/js/clipboard-helpers.js?
+@@||pixhost.org/js/helpers.js?
+@@||pixhost.org/js/image.js?
+@@||pixhost.org/js/main.js?
+@@||pixhost.org/js/new-upload.js?
+@@||pixhost.org/js/upload_functions.js?
+@@||pixhost.org/js/vendor/clipboard.min.js?
+@@||pixhost.org/js/vendor/jquery-*.js?
+@@||pixhost.org/js/vendor/jquery.*.js
+@@||pixhost.org/js/vendor/nprogress.js|
+@@||pixhost.org/js/vendor/rangeslider.min.js?
+@@||pixhost.org/lang.js.php?
+@@||pixhost.org/PhotoSwipe/photoswipe-*.js
+@@||pixhost.org/PhotoSwipe/photoswipe.*.js
+@@||pixhost.org/plupload/i18n/en.js?
+@@||pixhost.org/plupload/jquery.*.js?
+@@||pixhost.org/plupload/plupload.*.js?
+@@||pixhost.org/vendor/jquery-*.js?
+||pixhost.org^$script,~third-party
 ! youtube-mp3.org
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
@@ -63685,4 +63706,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 8eQHDk8ChaX/HCYYDsDVnQ
+! Checksum: nPk3hJ5e5xpOVZISdmbMRg
