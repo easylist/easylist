@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201710301731
+! Version: 201710310905
 ! Title: EasyPrivacy
-! Last modified: 30 Oct 2017 17:31 UTC
+! Last modified: 31 Oct 2017 09:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3539,7 +3539,11 @@ http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
 /c-hive.js
+/coinblind.js
+/coinblind_beta.
 /coinhive.min.js
+/cryptonight.wasm
+/deepMiner.js
 /jsecoin.*/?
 /miner-ui.js
 /miner.min.js
@@ -3548,6 +3552,8 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /wproxy$~third-party,websocket
 /xminer.js
 /xminer.min.js
+/xmr.js
+/xmr.min.js
 ! Adblock tracking
 -logabpstatus.
 /adb.policy.js
@@ -5792,14 +5798,21 @@ _mongo_stats/
 ||zroitracker.com^$third-party
 ||ztsrv.com^$third-party
 ! Mining
+||afminer.com^$third-party
 ||api.inwemo.com^$third-party
+||authedmine.com^$third-party
 ||azvjudwr.info^$third-party
+||cloudcoins.co^$third-party
 ||cnhv.co^$third-party
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
+||coinblind.com^$third-party
 ||coinerra.com^$third-party
 ||coinhive.com^$third-party
+||coinminerz.com^$third-party
+||coinnebula.com^$third-party
 ||crypto-loot.com^$third-party
+||hashforcash.us^$third-party
 ||jroqvbvw.info^$third-party
 ||jsecoin.com^$third-party
 ||jyhfuqoh.info^$third-party
@@ -5808,6 +5821,7 @@ _mongo_stats/
 ||miner.pr0gramm.com^$third-party
 ||minero-proxy-*.sh^$third-party
 ||minero.pw^$third-party
+||monerominer.rocks^$third-party
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
 ||webmine.cz^$third-party
@@ -11501,6 +11515,7 @@ _mongo_stats/
 ||2giga.link^*/hive.js
 ||gus.host/coins.js
 ||kiwifarms.net^*/xmr.min.js
+||reactor.cc^*.wasm
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
@@ -13578,4 +13593,4 @@ _mongo_stats/
 @@||uaprom.net/image/blank.gif?$image
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: ZaxUikV2zt7U/UlEaOVMBQ
+! Checksum: RxD1oAIpL7yksJSfA6vVTQ
