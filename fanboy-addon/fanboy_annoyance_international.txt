@@ -8,6 +8,7 @@
 ||share.gree.jp^$third-party
 ||tweetbuzz.jp^$third-party
 ||vk.com/images/$third-party
+||static.infoglobo.com.br/paywall/*$domain=oglobo.globo.com
 !
 !---------- Latvian Specific Annoyances ----------
 !
@@ -20,17 +21,13 @@ miljons.com##div[style^="position:fixed; z-index:99999;"]
 !
 ##.odkl-klass-stat
 !
-!---------- Non-enlish Site Specific Hiding Rules ----------
+!---------- Non-english Site Specific Hiding Rules ----------
 !
-gentside.com.br###actionreceiver
 weltwoche.ch###alteAusgabenCovers
 boligliv.dk,rumid.dk###banner-floating
-abril.com.br###barra-mini-home
 rast.hr###blokDiv
 digimanie.cz,svethardware.cz###cfooter
 movieview.dk###cookie
-dostavanadom.com,gentside.com.br###cookies
-folha.uol.com.br###corner_box
 mojkvart.hr###dcw1
 novasol.at###disclosure-container
 qr.cz###eu-fck
@@ -75,6 +72,15 @@ krovni-nosaci.hr##.topbarBox
 034portal.hr##.vijesti
 boligliv.dk,rumid.dk##div[style^="bottom: 0px; height: 1px; left: 0px;"]
 dba.dk##div[style^="position: fixed; bottom: 0px;"]
+!
+!---------- Brazil Site Specific Hiding Rules ----------
+!
+abril.com.br###barra-mini-home
+canaltech.com.br###floatBar
+folha.uol.com.br###corner_box
+gentside.com.br###actionreceiver
+gentside.com.br###cookies
+uol.com.br###follow
 !
 !---------- German Site Specific Hiding Rules ----------
 !
@@ -525,8 +531,6 @@ clementoni.com###disclaimer
 leroymerlin.es###divFlotante
 biomet.pt###fancybox-overlay
 biomet.pt###fancybox-wrap
-canaltech.com.br###floatBar
-uol.com.br###follow
 ing.es,ingdirect.es###ico_banner
 sapo.pt###redesSociais
 terra.es###trr-root
