@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201711242033
+! Version: 201711242037
 ! Title: Fanboy's Annoyance List
-! Last modified: 24 Nov 2017 20:33 UTC
+! Last modified: 24 Nov 2017 20:37 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -4681,6 +4681,7 @@ _youtube_social_
 ##img[title="Subscribe to our daily email"]
 ! Cookie,privacy,legal Messages
 ###AcceptCookieContainer
+###AcceptPrivacyDisclaimBoxWrap
 ###AvisoCookieslaw
 ###AvvisoCookie
 ###BandeauInfoCookie
@@ -4738,11 +4739,14 @@ _youtube_social_
 ###Divcookie
 ###EUCookie
 ###EUCookieMsg
+###EUCookiesWarning
 ###EUDirectiveCookiePanel
 ###EU_cookie
+###EUcookieStatment
 ###EuCookieBar-8
 ###EuCookieLawForm
 ###FT_Cookies
+###FooterCookie
 ###Footer_cookieLawBox
 ###GMI_Privacy_Policy
 ###GlobalCookieBanner
@@ -4769,17 +4773,57 @@ _youtube_social_
 ###aboutCookieUsageBox
 ###ac_cookiesvalidation
 ###accept-cookie
+###accept-cookie-bar
+###accept-cookie-box
+###accept-cookie-compliance-section
+###accept-cookie-permission
 ###accept-cookies
+###accept-cookies-block
 ###accept-cookies-div
+###accept-cookies-msg
+###accept-cookies-regulation
 ###acceptCookie
 ###acceptCookieMeg
+###acceptCookiePolicy
+###acceptCookiePolicyPopup
 ###acceptCookies
 ###acceptCookiesDiv
+###acceptCookiesForm
+###acceptCookiesHolder
+###acceptCookiesId
+###acceptCookiesPanel
+###acceptCookiesText
+###acceptCookiesWrapper
+###acceptTrackingCookieWrapper
 ###accept_cookie
+###accept_cookie_box
+###accept_cookie_widget
 ###accept_cookies
 ###accept_cookies_cont_outer
 ###acceptcookie
+###acceptcookies
+###acceptcookiesWrapper
+###accepte_cookies
+###acceptedCookies
+###accetta_cookie
+###accetta_cookies
+###accettazioneCookieCnt
+###aceptacioncookies
+###aceptarCookie
+###aceptar_container
+###aceptar_cookies
+###aceptarcookie
+###acknowledge_cookies
 ###acookie
+###acookiesRoot
+###adc_aviso_cookies_bar_style
+###adimo-cookie
+###adult-and-cookies
+###adv_cookie
+###adv_cookies
+###adviceCookies
+###ae-cookiebar
+###aeg-cookie-banner
 ###af-cookie-policy
 ###agree-with-cookies
 ###agreecookies
@@ -5495,6 +5539,9 @@ _youtube_social_
 ###eu-cp-banner
 ###eu-privacy
 ###euCookieDirective
+###euCookieRequester
+###euCookies
+###euCookiesQuestion
 ###euCookiesZone
 ###euNotice
 ###eu_cookie
@@ -5507,7 +5554,13 @@ _youtube_social_
 ###eucookieconsent
 ###eucookielaw
 ###eucookienotice
+###eucookies
 ###eucookies-note
+###eupolicy
+###eupopup
+###euro_cookie_content
+###eurociastko
+###eurocookie
 ###eurocookielaw
 ###expat_cookies
 ###external-cookie-bar
@@ -5516,12 +5569,20 @@ _youtube_social_
 ###foCookieNotice
 ###foodfood_cookie
 ###footer-cnil-space
+###footer-cookie
+###footer-cookie-info-bar
+###footer-cookie-itlaw
+###footer-cookie-notice
+###footer-cookie-notifier
 ###footer-cookies
 ###footerCookieArticle
 ###footerCookieDirective
+###footerCookieaccept
 ###footerCookies
 ###footer_cookies
 ###footer_tc_privacy
+###footercookie
+###footercookie-container
 ###fp_cookieMessageContainer
 ###frameCookiesBox
 ###front-no-cookies-warn
@@ -5780,6 +5841,11 @@ _youtube_social_
 ###trackingCookie
 ###truste-banner
 ###ts_cookie_info
+###tscookiebar
+###tt-cookie-badge
+###tt-cookie-check
+###tt-cookie-overlay
+###tt-cookie-window
 ###tto-cookieMessage
 ###tv2cookiebar
 ###twCookieConsent
@@ -5817,6 +5883,17 @@ _youtube_social_
 ###wpx_cookie
 ###wrap_alert_message_cookie2
 ###wrapper--cookie
+###wrapper-cookies
+###wrapperCookieBar
+###wrapperMensajeCookie
+###wrapper_cookies
+###ws-cookie-consent-msg
+###ws-cookie-notifier-bar
+###ws-cookie-notifier-modal
+###ws-cookie-notifier-modal-bg
+###ws-cookie-wrapper
+###ws_cookie_layer
+###wsbcook_alert
 ###wsjconsent
 ###wt-cookie-box
 ###zaz-nb-plugin-cookie-message
@@ -14868,6 +14945,7 @@ _youtube_social_
 ##a[href^="http://vk.com/share.php?url="]
 ##a[href^="http://www.digg.com/submit?"]
 ##a[href^="http://www.facebook.com/dialog/feed?"]
+##a[href^="http://www.facebook.com/share.php/?u="]
 ##a[href^="http://www.facebook.com/share.php?u="]
 ##a[href^="http://www.facebook.com/sharer.php?"]
 ##a[href^="http://www.facebook.com/sharer/sharer.php?"]
@@ -21691,6 +21769,7 @@ ilpost.it##.subscribe
 ##.theeclbox
 evomagazine.it##.top
 ingdirect.it##.topalertbanner
+##.torna-su
 ##.tornasu
 email.it##script + div[style^="background: #000000;"]
 ! 
@@ -22015,6 +22094,7 @@ rai.tv##.Mail
 rai.tv##.Opzioni
 evomagazine.it##.Twitter
 barfuss.it##.barfuss-fblikebox
+comingsoon.it##.box-tags
 ##.condividi
 ##.condividi-addthis
 everyeye.it##.cont_reply > .link-post
@@ -22028,6 +22108,7 @@ comune.torino.it,ilsecoloxix.it,ilsole24ore.com,tivusat.tv##.share
 ilsole24ore.com##.share-elements
 vg247.it##.social
 italiaoggi.it##.socialdiv
+##.tasti-social-top
 ilpost.it##.tw
 ||calciomercato.it/img/notizie/social/
 ! 
@@ -23186,4 +23267,4 @@ fark.com,marketplace.firefox.com,vvhp.net#@#img[title="YouTube"]
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: UJ6Kip89DCYdMVXd18byMQ
+! Checksum: PWZaDycOy92Jik77ThzZYA
