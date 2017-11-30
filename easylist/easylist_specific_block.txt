@@ -4524,7 +4524,7 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=imgchili.net
 ||imgchili.net^$script,~third-party
-! Pixhost
+! Pixhost/Pixroute
 @@||pixhost.org/js/clipboard-helpers.js?
 @@||pixhost.org/js/helpers.js?
 @@||pixhost.org/js/image.js?
@@ -4543,7 +4543,14 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||pixhost.org/plupload/jquery.*.js?
 @@||pixhost.org/plupload/plupload.*.js?
 @@||pixhost.org/vendor/jquery-*.js?
+@@||pixroute.com/cdn-cgi/scripts/ddc5a536/cloudflare-static/email-decode.min.js
+@@||pixroute.com/jquery-*.js|
+@@||pixroute.com/jquery.*.js|
+@@||pixroute.com/swfobject.js
+@@||pixroute.com/tabber.js|
+@@||pixroute.com/xupload.js?
 ||pixhost.org^$script,~third-party
+||pixroute.com^$script,~third-party
 ! youtube-mp3.org
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youtube-mp3.org
