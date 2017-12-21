@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201712211305
+! Version: 201712211314
 ! Title: Fanboy's Social Blocking List
-! Last modified: 21 Dec 2017 13:05 UTC
+! Last modified: 21 Dec 2017 13:14 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -2799,6 +2799,7 @@ _youtube_social_
 ###div_googlePlus
 ###div_pinterest
 ###div_twitter
+###div_twitter_follow_button
 ###div_youtube
 ###divtwitterWidget
 ###dl_share_icons
@@ -11441,6 +11442,7 @@ _youtube_social_
 ##a[href^="http://del.icio.us/post?url="]
 ##a[href^="http://digg.com/submit?"]
 ##a[href^="http://facebook.com/sharer.php?"]
+##a[href^="http://line.me/R/msg/text/"]
 ##a[href^="http://linkedin.com/shareArticle?"]
 ##a[href^="http://me2day.net/posts/new?new_post[body]="]
 ##a[href^="http://meneame.net/submit.php?"]
@@ -13388,6 +13390,14 @@ pearvideo.com##.video-tt-box > .box-right > .qr-code
 vapee.com##a[href^="http://e.weibo.com/"]
 vapee.com##a[href^="http://t.qq.com/"]
 ! 
+! ---------- Japanese Specific Media Elements ----------
+! 
+||st-hatena.com^$third-party
+! 
+! ---------- Japanese Site Specific Hiding Rules ----------
+! 
+zaikei.co.jp##.ninja_onebutton
+! 
 ! ---------- Non-English Generic Hiding Rules ----------
 ! 
 ! 
@@ -14681,4 +14691,4 @@ fark.com,marketplace.firefox.com,vvhp.net#@#img[title="YouTube"]
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: yFOoy4qe+s5PxHITU0G8Xw
+! Checksum: AYeFzG0goWjqFIp0lCk4Iw
