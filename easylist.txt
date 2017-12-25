@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201712250141
+! Version: 201712250144
 ! Title: EasyList
-! Last modified: 25 Dec 2017 01:41 UTC
+! Last modified: 25 Dec 2017 01:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14713,6 +14713,8 @@ _popunder+$popup
 ###region-regions-ad-top
 ###region-top-ad
 ###reklam-728x90
+###reklam_buton
+###reklam_center
 ###reklama
 ###reklama_big
 ###reklama_left_body
@@ -45878,13 +45880,14 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 |http://$script,third-party,domain=vidzi.tv
 ||ww1.vidzi.tv^*.js|$domain=vidzi.tv
 ! TPB
+$websocket,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|proxydl.cf|thehiddenbay.cc|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|tpb.crushus.com|tpbduck.com|tpbmonk.com
 @@||thepiratebay.org/static/js/details.js
 @@||thepiratebay.org/static/js/prototype.js
 @@||thepiratebay.org/static/js/scriptaculous.js
 @@||thepiratebay.org/static/js/tpb.js
 javascript:$popup,domain=thepiratebay.org
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.ist|thehiddenbay.cc|thepiratebay.org|thepiratebay.red
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.ist|thehiddenbay.cc|thepiratebay.org|thepiratebay.red
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|proxydl.cf|thehiddenbay.cc|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|tpb.crushus.com|tpbduck.com|tpbmonk.com
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|proxydl.cf|thehiddenbay.cc|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|tpb.crushus.com|tpbduck.com|tpbmonk.com
 ||thepiratebay.org^$script,subdocument,domain=thepiratebay.org
 ! watchseries-online.nl
 @@||watchseries-online.nl/app/wp-includes/js/$script,domain=watchseries-online.nl
@@ -64988,4 +64991,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 3YawMGXj43GuDUkUDVmCLw
+! Checksum: bo9pekoXJJdW3mLMCzqptA
