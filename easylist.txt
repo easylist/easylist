@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201801070107
+! Version: 201801070132
 ! Title: EasyList
-! Last modified: 07 Jan 2018 01:07 UTC
+! Last modified: 07 Jan 2018 01:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5031,6 +5031,7 @@
 /media_ads/*
 /mediaAd.
 /megaad.
+/mellowads.
 /meme_ad.
 /metaad.
 /metaadserver/*
@@ -7261,6 +7262,8 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! TPB
+/exo_na/*
 ! Native advert
 /\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Propellerads
@@ -36467,6 +36470,7 @@ a.zortinah.com^$webrtc,websocket
 ||firstmediahub.com^$popup,third-party
 ||fluxybe.work^$popup,third-party
 ||fmdwbsfxf0.com^$popup,third-party
+||focuusing.com^$popup
 ||fonderreader.info^$popup
 ||foxsnews.net^$popup,third-party
 ||friendlyduck.com^$popup,third-party
@@ -45961,13 +45965,13 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 |http://$script,third-party,domain=vidzi.tv
 ||ww1.vidzi.tv^*.js|$domain=vidzi.tv
 ! TPB
-$websocket,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
+$websocket,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 @@||thepiratebay.org/static/js/details.js
 @@||thepiratebay.org/static/js/prototype.js
 @@||thepiratebay.org/static/js/scriptaculous.js
 @@||thepiratebay.org/static/js/tpb.js
 javascript:$popup,domain=thepiratebay.org
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 ||thepiratebay.org^$script,subdocument,domain=thepiratebay.org
 ! watchseries-online.nl
@@ -46268,7 +46272,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 :text^$popup,domain=zippyshare.com
 ^utm_source=$popup,domain=exashare.com|sex.com
 |data^$popup,domain=1337x.to|gorillavid.in|nowvideo.to|zippyshare.com
-|http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|daclips.in|dropapk.com|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|mywebtv.info|nosteam.ro|nowvideo.li|openload.co|opentpb.com|pic2pic.site|pirateproxy.website|pixsense.net|pornparadise.org|projectfreetv.at|promptfile.com|sendvid.com|streamcloud.eu|streamin.to|thehiddenbay.cc|thevideo.me|tpbmirror.ga|tpbship.org|twer.info|unblocktpb.pro|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidspot.net|vidzi.tv|vshare.eu|watchcartoononline.com|xtshare.com|youwatch.org|yts.am
+|http:$popup,third-party,domain=24avarii.ru|adf.ly|allmyvideos.net|cruzing.xyz|daclips.in|dropapk.com|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|extreme-board.com|eztv.ag|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|ikwilthepiratebay.org|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|mywebtv.info|nosteam.ro|nowvideo.li|openload.co|opentpb.com|pic2pic.site|piratebayblocked.com|pirateproxy.ist|pirateproxy.website|pixsense.net|pornparadise.org|projectfreetv.at|promptfile.com|proxydl.cf|pussl18.com|sendvid.com|streamcloud.eu|streamin.to|thehiddenbay.cc|thepiratebay.red|thepiratebay.rocks|thepirateproxy.ws|theproxybay.me|thevideo.me|topclickguru.com|tpb.zone|tpbmirror.ga|tpbship.org|twer.info|uktpbmirror.pw|unblocktpb.pro|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidspot.net|vidzi.tv|vshare.eu|watchcartoononline.com|xtshare.com|youwatch.org|yts.am
 |http:*=$popup,domain=grammarist.com
 |https:$popup,third-party,domain=eztv.ag|flashx.tv|imagerar.com|imgbox.com|mywebtv.info|sendvid.com|thevideo.me|uptobox.com|uptostream.com|yts.am
 |javascript^$popup,domain=1337x.to|biology-online.org|bitvid.sx|cloudtime.to|eztv.ag|eztv.tf|eztv.yt|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
@@ -46425,7 +46429,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||ziddu.com/onclickpop.php$popup
 ||zmovie.tv^$popup,domain=deditv.com|vidbox.net
 ! regex to pickup ip-address popups
-/([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=123movies.net|briansarmiento.website|buzzfil.net|clicknupload.org|ddlvalley.me|divxatope1.com|ewatchseries.to|fbstreams.me|icefilms.info|igg-games.com|kissanime.ru|livecamtv.me|mlbstream.me|nbastreams.me|newpct.com|nflstreams.me|nhlstreams.me|opensubtitles.org|pelispedia.tv|pelisplus.tv|rapidvideo.com|readmanga.today|sawlive.tv|skidrowcrack.com|sportshd.me|stream2watch.cc|streamfilmzzz.com|streamzzz.online|strikeout.co|thevideobee.to|torrentz2.eu|uptobox.com|watchers.to|yts.ag|yts.am|yts.gs
+/([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=123movies.net|briansarmiento.website|buzzfil.net|clicknupload.org|ddlvalley.me|divxatope1.com|ewatchseries.to|fbstreams.me|icefilms.info|igg-games.com|kissanime.ru|livecamtv.me|mlbstream.me|nbastreams.me|newpct.com|nflstreams.me|nhlstreams.me|opensubtitles.org|pelispedia.tv|pelisplus.tv|pirateproxy.ist|rapidvideo.com|readmanga.today|sawlive.tv|skidrowcrack.com|sportshd.me|stream2watch.cc|streamfilmzzz.com|streamzzz.online|strikeout.co|thevideobee.to|torrentz2.eu|uptobox.com|watchers.to|yts.ag|yts.am|yts.gs
 ! *** easylist:easylist_adult/adult_specific_block.txt ***
 .download^$other,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
 .info^$script,domain=www.pornhub.com
@@ -64937,4 +64941,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: WN9aLTy1MSlED2wNSgH81w
+! Checksum: bmRtQF2UngJY1WPQwKD/SQ
