@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201801192124
+! Version: 201801192142
 ! Title: EasyList
-! Last modified: 19 Jan 2018 21:24 UTC
+! Last modified: 19 Jan 2018 21:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -42609,7 +42609,6 @@ a.zortinah.com^$webrtc,websocket
 ||khaleejtimes.com/imgactv/Umrah%20-%20290x60%20-%20EN.jpg
 ||khaleejtimes.com/imgactv/Umrah-Static-Background-Gutters-N.jpg
 ||khon2.com^*/sponsors/
-||kickass2.ch^$subdocument
 ||kickasstorrent.ph/kat_adplib.js
 ||kickoff.com/images/sleeves/
 ||kingfiles.net/images/bt.png
@@ -45118,6 +45117,8 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||youtube.com/embed/$domain=xclusivejams2.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams2.com
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams2.com
+! kickass2.ch
+||kickass2.ch^$script,subdocument
 ! img2share.com
 $xmlhttprequest,domain=img2share.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=img2share.com
@@ -46464,6 +46465,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||mydirtyhobby.de^$popup,domain=flashx.tv
 ||nesk.co^$popup,domain=veehd.com
 ||newsgate.pw^$popup,domain=adjet.biz
+||nordvpn.$popup,domain=kickass2.ch
 ||nordvpn.com^*?utm_source$popup
 ||nosteam.ro/pma/$popup
 ||oddschecker.com/clickout.htm?type=takeover-$popup
@@ -65066,4 +65068,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 6ZGVVej53YMmhm99LkJrLw
+! Checksum: E2TQ2NP516GQzCXrafc3xA
