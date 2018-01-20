@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201801200219
+! Version: 201801200309
 ! Title: EasyPrivacy
-! Last modified: 20 Jan 2018 02:19 UTC
+! Last modified: 20 Jan 2018 03:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3637,11 +3637,14 @@ cgi-bin/counter
 http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
+.ga/*.wasm
 /aj-crypto-miner/*
+/bootstrap.wasm$third-party
 /c-hive.js
 /c.wasm
 /cloudcoins.js
 /cloudcoins.min.js
+/cn.wasm
 /coinblind.js
 /coinblind_beta.
 /coinhive.min.js
@@ -3649,7 +3652,9 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
+/hash.wasm
 /hash.wasm$script,websocket
+/helper.wasm$third-party
 /inject.js?key=$script
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
@@ -3657,6 +3662,8 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /miner.js
 /miner.min.js
 /miner?key=
+/nano.wasm
+/noblock.js
 /obfus.min.js
 /projectpoi.min.js
 /wproxy$~third-party,websocket
@@ -5967,7 +5974,6 @@ _mongo_stats/
 .download^$third-party,websocket
 .faith^$third-party,websocket
 .fun^$third-party,websocket
-.ga/*.wasm
 .ga^$third-party,websocket
 .men^$third-party,websocket
 .ml^$third-party,websocket
@@ -5986,14 +5992,6 @@ _mongo_stats/
 .win^$third-party,websocket
 .xyz^$third-party,websocket
 .zone^$third-party,websocket
-/bootstrap.wasm$third-party
-/cn.wasm$third-party
-/hash.wasm
-/helper.wasm$third-party
-/lib/cn.wasm$third-party
-/nano.wasm
-/noblock.js
-://api.*/lib/native.wasm$third-party
 ||1beb2a44.space^$third-party
 ||1q2w3.fun^$third-party
 ||1q2w3.me^$third-party
@@ -14042,4 +14040,4 @@ $websocket,xmlhttprequest,domain=lewd.ninja|love-drama.pl|vidfile.net
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: nWmEWmPvUFxhiJ8fqREwSg
+! Checksum: C9fhmlmqy/Pc61+dAaT5MQ
