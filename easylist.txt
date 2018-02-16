@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201802162331
+! Version: 201802162339
 ! Title: EasyList
-! Last modified: 16 Feb 2018 23:31 UTC
+! Last modified: 16 Feb 2018 23:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -282,6 +282,7 @@
 -article-ad.
 -article-ads-
 -article-advert-
+-auto-ads-
 -banner-768.
 -banner-ad-
 -banner-ad.
@@ -47750,16 +47751,6 @@ $xmlhttprequest,domain=img2share.com
 ! hothardware.com
 |http://$script,third-party,xmlhttprequest,domain=hothardware.com
 |https://$script,third-party,xmlhttprequest,domain=hothardware.com
-! thewindowsclub.com (Admiral)
-@@||cse.google.com/cse.js$script,domain=thewindowsclub.com
-@@||puzzlingfall.com^$xmlhttprequest,domain=thewindowsclub.com
-@@||thewindowsclub.disqus.com^$script,domain=thewindowsclub.com
-|http://$script,third-party,xmlhttprequest,domain=thewindowsclub.com
-|https://$script,third-party,xmlhttprequest,domain=thewindowsclub.com
-! pcper.com (Admiral)
-@@||ajax.googleapis.com^$script,domain=pcper.com
-|http://$script,third-party,xmlhttprequest,domain=pcper.com
-|https://$script,third-party,xmlhttprequest,domain=pcper.com
 ! freewarefiles.com
 |http://$third-party,xmlhttprequest,domain=freewarefiles.com
 |https://$third-party,xmlhttprequest,domain=freewarefiles.com
@@ -47901,30 +47892,6 @@ $xmlhttprequest,domain=img2share.com
 @@||cdndoge.xyz/video-download/js/waves.js
 |http://$script,third-party,xmlhttprequest,domain=vvideo-download.co
 |https://$script,third-party,xmlhttprequest,domain=video-download.co
-! Mobile Nations (windowscentral.com imore.com crackberry.com androidcentral.com)
-@@||ajax.googleapis.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||apis.google.com^$script,domain=crackberry.com|forums.androidcentral.com|imore.com|windowscentral.com
-@@||cdnjs.cloudflare.com^$script,domain=crackberry.com|forums.androidcentral.com|imore.com|windowscentral.com
-@@||code.jquery.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||connect.facebook.net^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||fuzzyflavor.com^$xmlhttprequest,domain=crackberry.com
-@@||lightboxcdn.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||loudloss.com^$xmlhttprequest,domain=windowscentral.com
-@@||passport.mobilenations.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||platform.twitter.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||push.mobilenations.com^$xmlhttprequest,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-@@||s.ytimg.com^$script,domain=crackberry.com|forums.androidcentral.com|imore.com|windowscentral.com
-@@||similarsabine.com^$xmlhttprequest,domain=imore.com
-@@||sneakystamp.com^$xmlhttprequest,domain=androidcentral.com
-@@||tru.am/scripts/custom/mobilenations.js$script,domain=crackberry.com|forums.androidcentral.com|imore.com|windowscentral.com
-@@||tru.am/scripts/ta-pagesocial-sdk.js$script,domain=crackberry.com|forums.androidcentral.com|imore.com|windowscentral.com
-@@||youtube.com^$script,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-|http://$script,third-party,xmlhttprequest,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-|https://$script,third-party,xmlhttprequest,domain=androidcentral.com|crackberry.com|imore.com|windowscentral.com
-||androidcentral.com/sites/androidcentral.com/files/advagg_js/$script
-||crackberry.com/sites/crackberry.com/files/advagg_js/$script
-||imore.com/sites/imore.com/files/advagg_js/$script
-||windowscentral.com/sites/wpcentral.com/files/advagg_js/$script
 ! tamilmv
 @@||googleapis.com/ajax/$script,domain=tamilmv.yt
 |http://$script,third-party,xmlhttprequest,domain=tamilmv.yt
@@ -67819,4 +67786,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: VfjVlUQqIpXltzHI2LOG9Q
+! Checksum: X9J9pUTwMqfQhsozTA/D+A
