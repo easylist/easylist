@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201802172359
+! Version: 201802180012
 ! Title: EasyList
-! Last modified: 17 Feb 2018 23:59 UTC
+! Last modified: 18 Feb 2018 00:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38863,6 +38863,7 @@ tr.zozolilla.com^$webrtc,websocket
 ||adverkeyz.com^$popup,third-party
 ||advertserve.com^$popup,third-party
 ||advmedialtd.com^$popup,third-party
+||advnet.xyz^$popup
 ||adx-t.com^$popup,third-party
 ||adxprtz.com^$popup,third-party
 ||affbuzzads.com^$popup,third-party
@@ -39047,6 +39048,7 @@ tr.zozolilla.com^$webrtc,websocket
 ||focuusing.com^$popup
 ||fonderreader.info^$popup
 ||foxsnews.net^$popup,third-party
+||freehookupaffair.com^$popup
 ||friendlyduck.com^$popup,third-party
 ||frtya.com^$popup,third-party
 ||frtyb.com^$popup,third-party
@@ -48246,15 +48248,20 @@ $xmlhttprequest,domain=img2share.com
 $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles.com
 @@||maxcdn.bootstrapcdn.com^$domain=salefiles.com
 ! imgoutlet.com / imgdew.com / imgclick.net / imgtrex.com / imgtown.net / ironimg.net | imgkings.com
-@@||imgadult.com/advertisement.js
-@@||imgrock.co^$image,third-party
-@@||imgtaxi.com/advertisement.js
-@@||imgwallet.com/advertisement.js
-|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|ironimg.net
+! 
+@@||imgadult.com*/advertisement.js$script
+@@||imgdrive.net*/advertisement.js$script
+@@||imgtaxi.com*/advertisement.js$script
+@@||imgwallet.com*/advertisement.js$script
+|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
 |http://$image,third-party,domain=imgrock.info
-|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|ironimg.net
+|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
+||imgadult.com*?$image,~third-party
 ||imgadult.com^$subdocument
+||imgdrive.net*?$image,~third-party
+||imgtaxi.com*?$image,~third-party
 ||imgtaxi.com^$subdocument
+||imgwallet.com*?$image,~third-party
 ||imgwallet.com^$subdocument
 ! filedot.xyz
 |http://$script,third-party,xmlhttprequest,domain=filedot.xyz
@@ -48870,7 +48877,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 :text^$popup,domain=zippyshare.com
 ^utm_source=$popup,domain=exashare.com|sex.com
 |data^$popup,domain=1337x.to|gorillavid.in|nowvideo.to|zippyshare.com
-|http*://*?$popup,third-party,domain=animeflv.net|bmovies.to|gogoanime.io|katcr.party|masterani.me|newser.com|oloadcdn.net|openload.co|openloadmovies.tv|repelis.net|sportp2p.com|thehiddenbay.ws
+|http*://*?$popup,third-party,domain=animeflv.net|bmovies.to|gogoanime.io|imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com|katcr.party|masterani.me|newser.com|oloadcdn.net|openload.co|openloadmovies.tv|repelis.net|sportp2p.com|thehiddenbay.ws
 |http:$popup,third-party,domain=24avarii.ru|adf.ly|ahlamtv.com|allmyvideos.net|avgle.com|cruzing.xyz|daclips.in|divxatope1.com|dropapk.com|embed.nowvideo.sx|embed.videoweed.es|engtorrent.com|estream.to|extreme-board.com|eztv.ag|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|ikwilthepiratebay.org|imagebam.com|imagefruit.com|imageporter.com|img24.org|imgbox.com|imgmade.com|imgshots.com|imgsin.com|imgspice.com|jkanime.net|latestmoviesdl.com|load.to|mofunzone.com|mp3-torrents.net|mywebtv.info|newpct1.com|nosteam.ro|nowvideo.li|oload.info|oload.tv|oloadcdn.net|openload.co|opentpb.com|otakustream.tv|pic2pic.site|piratebayblocked.com|pirateproxy.ist|pirateproxy.website|pixsense.net|pornparadise.org|projectfreetv.at|promptfile.com|proxydl.cf|pussl18.com|sendvid.com|sportp2p.com|streamango.com|streamcherry.com|streamcloud.eu|streamin.to|thehiddenbay.cc|thepiratebay.red|thepiratebay.rocks|thepirateproxy.ws|theproxybay.me|thevideo.me|topclickguru.com|tpb.zone|tpbmirror.ga|tpbship.org|twer.info|uktpbmirror.pw|unblocktpb.pro|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidspot.net|vidzi.tv|vshare.eu|watchcartoononline.com|xtshare.com|youwatch.org|yts.am
 |http:*=$popup,domain=grammarist.com
 |https:$popup,third-party,domain=9anime.is|avgle.com|eztv.ag|flashx.tv|imagerar.com|imgbox.com|mywebtv.info|nosteam.ro|oload.info|oload.tv|oloadcdn.net|openload.co|sendvid.com|streamango.com|streamcherry.com|thevideo.me|uptobox.com|uptostream.com|yts.am
@@ -67849,4 +67856,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: wtZ2vvXOLEuFvsglseroDw
+! Checksum: i+Un7VPyqhwHo0gQO6hwZg
