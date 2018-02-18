@@ -5061,15 +5061,20 @@ $xmlhttprequest,domain=img2share.com
 $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles.com
 @@||maxcdn.bootstrapcdn.com^$domain=salefiles.com
 ! imgoutlet.com / imgdew.com / imgclick.net / imgtrex.com / imgtown.net / ironimg.net | imgkings.com
-@@||imgadult.com/advertisement.js
-@@||imgrock.co^$image,third-party
-@@||imgtaxi.com/advertisement.js
-@@||imgwallet.com/advertisement.js
-|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|ironimg.net
+!
+@@||imgadult.com*/advertisement.js$script
+@@||imgdrive.net*/advertisement.js$script
+@@||imgtaxi.com*/advertisement.js$script
+@@||imgwallet.com*/advertisement.js$script
+|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
 |http://$image,third-party,domain=imgrock.info
-|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|ironimg.net
+|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
+||imgadult.com*?$image,~third-party
 ||imgadult.com^$subdocument
+||imgdrive.net*?$image,~third-party
+||imgtaxi.com*?$image,~third-party
 ||imgtaxi.com^$subdocument
+||imgwallet.com*?$image,~third-party
 ||imgwallet.com^$subdocument
 ! filedot.xyz
 |http://$script,third-party,xmlhttprequest,domain=filedot.xyz
