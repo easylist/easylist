@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201802252235
+! Version: 201802252239
 ! Title: EasyPrivacy
-! Last modified: 25 Feb 2018 22:35 UTC
+! Last modified: 25 Feb 2018 22:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6273,6 +6273,7 @@ _mongo_stats/
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
 ||ppoi.org^$third-party
+||presjots.ga^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
 ||refunevent.com^$third-party
@@ -13931,6 +13932,8 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|ddmix.net|dekoder.ws|pow
 @@||zillowstatic.com/c/*/linktrack.js$domain=zillow.com
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! Mining-related whitelists
+@@||alltube.tv/jsverify.php$first-party,xmlhttprequest
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 @@||aplus.com/p.gif?$~third-party
 ! Preliminarily whitelisting Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues
@@ -14289,4 +14292,4 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|ddmix.net|dekoder.ws|pow
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: tgc18zhbehTW9dP0beXYhQ
+! Checksum: gbHhpdsr0MDAdNrS1Z6H7A
