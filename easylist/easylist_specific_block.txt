@@ -4633,20 +4633,15 @@ $xmlhttprequest,domain=img2share.com
 |http://$script,third-party,xmlhttprequest,domain=destructoid.com
 |https://$script,third-party,xmlhttprequest,domain=destructoid.com
 !  fmovies
-@@||disqus.com^$script,domain=fmovies.is
-@@||disquscdn.com^$script,stylesheet,domain=fmovies.is
-@@||fmovies.is/ajax/$xmlhttprequest,domain=fmovies.is
-@@||fmovies.is/grabber-api/?$domain=fmovies.is
-@@||fmovies.is/user/$xmlhttprequest,domain=fmovies.is
+@@||ajax.googleapis.com/ajax/libs/$script,domain=fmovies.is|fmovies.se|fmovies.to
+@@||disqus.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
+@@||disquscdn.com^$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
+@@||fmovies.*/ajax/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
+@@||fmovies.*/grabber-api/?$domain=fmovies.is|fmovies.se|fmovies.to
+@@||fmovies.*/user/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
 @@||platform.twitter.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
-|http:$popup,third-party,domain=fmovies.is
 |http://$script,stylesheet,third-party,domain=fmovies.is|fmovies.se|fmovies.to
-|https:$popup,third-party,domain=fmovies.is
 |https://$script,stylesheet,third-party,domain=fmovies.is|fmovies.se|fmovies.to
-||fmovies.is^$popup,~third-party
-||fmovies.is^$xmlhttprequest,domain=fmovies.is
-||fmovies.se^$popup,~third-party
-||fmovies.to^$popup,~third-party
 ! wholecloud.net
 @@||ajax.googleapis.com^$script,domain=wholecloud.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=wholecloud.net
