@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201803032056
+! Version: 201803032102
 ! Title: EasyPrivacy
-! Last modified: 03 Mar 2018 20:56 UTC
+! Last modified: 03 Mar 2018 21:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3704,6 +3704,7 @@ cgi-bin/counter
 http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
+-coin-hive/$script
 -monero-miner.
 -monero-miner/
 .ga/*.wasm
@@ -3743,6 +3744,8 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /noblock.js
 /obfus.min.js
 /projectpoi.min.js
+/simple-miner-tweaks/*
+/simple-monero-$script
 /sparechange.js
 /webcoin.js
 /webcoin.min.js
@@ -6289,6 +6292,7 @@ _mongo_stats/
 ||mmpool.org^$third-party
 ||monerise.com^$third-party
 ||monerominer.rocks^$third-party
+||moneromining.online^$third-party
 ||moneroocean.stream^$third-party
 ||moonsade.com^$third-party
 ||morningdigit.com^$third-party
@@ -14393,4 +14397,4 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: ERd2FgYJAf73coVbDFv0Gw
+! Checksum: aWK/sZ0m4dWlsNGwAcYthg
