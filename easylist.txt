@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201803110502
+! Version: 201803110522
 ! Title: EasyList
-! Last modified: 11 Mar 2018 05:02 UTC
+! Last modified: 11 Mar 2018 05:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -33835,6 +33835,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||vacwrite.com^$third-party
 ||vip-vip-vup.com^$third-party
 ||wrierville.com^$third-party
+||xelllwrite.com^$third-party
 ||xmas-xmas-wow.com^$third-party
 ||zel-zel-fie.com^$third-party
 ||zelllwrite.com^$third-party
@@ -40372,6 +40373,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||bbredir-ac-100.com^$popup,third-party
 ||bbuni.com^$popup,third-party
 ||bcvcmedia.com^$popup,third-party
+||becomicse.com^$popup
 ||becoquin.com^$popup,third-party
 ||becoquins.net^$popup,third-party
 ||bedorm.com^$popup,third-party
@@ -50057,10 +50059,8 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 ! Game Empire Enterprises
 @@||onrpg.com/boards/activityrss.php?$xmlhttprequest
 |http:$xmlhttprequest,domain=mmohuts.com|onrpg.com
-! vodlocker.com
-@@||disqus.com^$domain=vodlocker.com
-@@||jwpsrv.com^$script,domain=vodlocker.com
-|http://$script,third-party,domain=vodlocker.com
+! vodlock.co
+|http*://$script,subdocument,third-party,xmlhttprequest,domain=vodlock.co
 ! zippyshare.com
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=zippyshare.com
 ! Suprafiles
@@ -50537,6 +50537,8 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||zmovie.tv^$popup,domain=deditv.com|vidbox.net
 ! wyciwyg popups
 wyciwyg:$popup,domain=jkanime.net|vodlock.co
+! 
+/\/.*[a-zA-Z0-9\/]{100,}/$popup,third-party,domain=vodlock.co
 ! regex to pickup ip-address popups
 /([0-9]{1,3}\.){3}[0-9]{1,3}/$popup,domain=0dt.net|123movies.net|animesonlinetk.info|asianvote.com|biqle.ru|bmovies.to|bonstreams.net|briansarmiento.website|bro.adca.st|buzzfil.net|clicknupload.org|ddlvalley.me|divxatope1.com|dwatchseries.to|ewatchseries.to|fbstreams.me|fileone.tv|flash-x.tv|flashsx.tv|flashx.me|flashx.run|flashx.sx|flashx.to|flashx.tv|flashx1.tv|flashxx.tv|gorillavid.in|icefilms.info|igg-games.com|jkanime.net|kissanime.ru|lavamovies.se|livecamtv.me|mlbstream.me|myfeed4u.me|nbastreams.me|newpct.com|newpct1.com|nflstreams.me|nhlstreams.me|nowvideo.sx|opensubtitles.org|pcgames-download.com|pelispedia.tv|pelisplus.tv|pirateproxy.ist|pirateproxy.sh|putlockertv.se|rapidvideo.com|readmanga.today|sawlive.tv|serietvsubita.net|skidrowcrack.com|sportshd.me|stream2watch.cc|streamfilmzzz.com|streamzzz.online|strikeout.co|subtorrents.io|thehiddenbay.ws|thepiratebay.cr|thevideobee.to|torrentz2.eu|uptobox.com|vidgg.to|vidlox.me|vidlox.tv|vidtod.me|vidup.me|vidzi.tv|vodlock.co|watchers.to|watchonline.to|watchonlinemovies.com.pk|yts.ag|yts.am|yts.gs
 ! *** easylist:easylist_adult/adult_specific_block.txt ***
@@ -69443,4 +69445,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: wOD5CVpfYRaBrrXWNxWyQA
+! Checksum: ar+iFEzn2mcDLqNb3AE9Cg
