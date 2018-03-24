@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201803240704
+! Version: 201803240712
 ! Title: EasyPrivacy
-! Last modified: 24 Mar 2018 07:04 UTC
+! Last modified: 24 Mar 2018 07:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3748,6 +3748,7 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /cryptonight.wasm
 /deepMiner.js
 /deepMiner.min.js
+/facash.
 /hash.wasm
 /helper.wasm$third-party
 /inject.js?key=$script
@@ -6316,6 +6317,7 @@ _mongo_stats/
 ||l33tsite.info^$third-party
 ||ledhenone.com^$third-party
 ||ledinund.com^$third-party
+||leon08.tk^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
 ||losital.ru^$third-party
@@ -12311,7 +12313,7 @@ _mongo_stats/
 ||zytpirwai.net/track/
 ! Mining
 $subdocument,third-party,domain=estream.to
-$websocket,domain=123telugu.com|1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|bigspeeds.com|catrumahminimalis.me|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streambeam.io|streamcherry.com|streamplay.to|streamplay.top|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tomtop.com|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidtudu.com|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ziurim.eu|zona.plus
+$websocket,domain=123telugu.com|1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|bigspeeds.com|catrumahminimalis.me|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|leon08.tk|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|streamplay.top|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tomtop.com|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidtudu.com|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ziurim.eu|zona.plus
 $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahminimalis.me|ddmix.net|dekoder.ws|freecontent.stream|nowvideo.sx|onlinevideoconverter.com|powvideo.net|streambeam.io|streamplay.top|szukajka.tv|tainies.online|tomtop.com|vidfile.net|vidgg.to|wholecloud.net
 ! Temp blocks (2 reports of github being used for miners)
 ||github.io^*.wasm$third-party,websocket,xmlhttprequest,domain=~github.com
@@ -12328,7 +12330,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ||reactor.cc^*.wasm
 ||shrink-service.it/js/cM.js
 ||stackpathdns.com/assets/javascript/cr.js
-||streamplay.to^*.wasm$xmlhttprequest
+||streamplay.*.wasm$websocket,xmlhttprequest
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ||worker.salon.com^
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
@@ -14470,4 +14472,4 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: QtX4OzzW7TPZXSmfCOChfA
+! Checksum: jx4CuYpLI9CArWCNOVeD4A
