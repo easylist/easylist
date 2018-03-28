@@ -1,12 +1,16 @@
 &link_type=offer$popup,third-party
 &popunder=$popup
+&popundersPerIP=$popup
+&pppi=*=http$popup
 &program=revshare&$popup
+&zoneid=*&ad_$popup
 -ads-campaign/$popup
 .co/ads/$popup
 .com/?adv=$popup
 .com/?zoneid=$popup
 .com/ads?$popup
 .engine?PlacementId=$popup
+.net/adx.php?$popup
 /?a_aid=$popup
 /?placement=*&redirect$popup
 /?redirect&placement=$popup
@@ -24,19 +28,28 @@
 /adClick?$popup
 /AdHandler.aspx?$popup
 /ads.htm$popup
+/ads/click?$popup
 /adServe/*$popup
 /adserver.$popup
+/AdServer/*$popup,third-party
 /adstream_sx.ads/*$popup
 /adsxml.php$popup
 /adsynserveuserid=$popup
+/adsys/*$popup
 /advlink.$popup
+/adx.php?source=$popup
+/aff_ad?$popup
 /afu.php?$popup
 /apu.php?*&zoneid=$popup
 /bani/index.php?id=$popup
+/click.track?$popup
 /click?adv=$popup
 /fp.eng?$popup
 /fp.engine?$popup,third-party
 /lr.php?zoneid=$popup
+/play?*&refer=$popup
+/play?aver=$popup
+/play?refer=$popup
 /pop-imp/*$popup
 /popout.$popup
 /popunder.$popup
@@ -57,6 +70,10 @@
 /showads/*$popup
 /spopunder^$popup
 /srvclk.php?$popup
+/watch?*&refer=$popup
+/watch?key=$popup,third-party
+/watch?refer=$popup
+/watch?shu=$popup,third-party
 /xdirect.html?$popup
 /yesbaby.$popup
 ://ads.$popup
@@ -70,7 +87,8 @@
 ?zoneid=*_bannerid=$popup
 _popunder+$popup
 ! Commonly used popup scripts on movie/tv streaming sites
-|javascript:*setTimeout*location.href$popup
+|javascript:*setTimeout$popup
+|javascript:*window.location$popup
 ! Used with many websites to generate multiple popups
 |blob:$popup
 |data:text$popup
