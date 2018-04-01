@@ -4378,6 +4378,11 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 $image,third-party,xmlhttprequest,domain=rd.com
 ! kickass2.ch
 ||kickass2.ch^$script,subdocument
+! imageporter.com
+$script,domain=imageporter.com
+@@||imageporter.com/jquery-uploadifyd.js$script
+@@||imageporter.com/tabber.js$script
+@@||imageporter.com/ZeroClipboard.js$script
 ! img2share.com
 $xmlhttprequest,domain=img2share.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=img2share.com
