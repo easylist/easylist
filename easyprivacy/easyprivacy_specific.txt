@@ -2324,21 +2324,16 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ! Temp blocks (2 reports of github being used for miners)
 ||github.io^*.wasm$third-party,websocket,xmlhttprequest,domain=~github.com
 ||github.io^*.wsm$third-party,websocket,xmlhttprequest,domain=~github.com
+! regex
+/.*[a-zA-Z0-9]{3,}.*[\/proxy|.wsm|.wa]$/$websocket,xmlhttprequest,domain=rawgit.com|reactor.cc|streamplay.to|tubetitties.com|vidfile.net
 !
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
-||cryweb.github.io^
-||crywebber.github.io^
 ||gus.host/coins.js
-||hive.tubetitties.com^
 ||piti.bplaced.net^
-||rawgit.com/Pocketart/$script,third-party
-||reactor.cc^*.wasm
 ||shrink-service.it/js/cM.js
 ||sickrage.ca^$script
 ||stackpathdns.com/assets/javascript/cr.js
-||streamplay.*.wasm$websocket,xmlhttprequest
-||vidfile.net^$third-party,websocket,xmlhttprequest
 ||worker.salon.com^
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
