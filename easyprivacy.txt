@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201804012340
+! Version: 201804020017
 ! Title: EasyPrivacy
-! Last modified: 01 Apr 2018 23:40 UTC
+! Last modified: 02 Apr 2018 00:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12352,21 +12352,16 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ! Temp blocks (2 reports of github being used for miners)
 ||github.io^*.wasm$third-party,websocket,xmlhttprequest,domain=~github.com
 ||github.io^*.wsm$third-party,websocket,xmlhttprequest,domain=~github.com
+! regex
+/.*[a-zA-Z0-9]{3,}.*[\/proxy|.wsm|.wa]$/$websocket,xmlhttprequest,domain=rawgit.com|reactor.cc|streamplay.to|tubetitties.com|vidfile.net
 ! 
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
-||cryweb.github.io^
-||crywebber.github.io^
 ||gus.host/coins.js
-||hive.tubetitties.com^
 ||piti.bplaced.net^
-||rawgit.com/Pocketart/$script,third-party
-||reactor.cc^*.wasm
 ||shrink-service.it/js/cM.js
 ||sickrage.ca^$script
 ||stackpathdns.com/assets/javascript/cr.js
-||streamplay.*.wasm$websocket,xmlhttprequest
-||vidfile.net^$third-party,websocket,xmlhttprequest
 ||worker.salon.com^
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
@@ -14518,4 +14513,4 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: TM1k/Efcp+0OfEw+GENjWg
+! Checksum: as1SAmYqKDCPp3OyqlrSEw
