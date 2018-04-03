@@ -8147,9 +8147,6 @@ activistpost.com##:last-child > aside > div + span + *
 isearch.whitesmoke.com##:not(.item):not(.stats) + * + .item
 sitepoint.com##ADS-WEIGHTED
 washingtontimes.com##A[onclick*="'COMMENThomepageAds'"]
-gelbooru.com##[-abp-properties='*: *;base64,']
-ancient-origins.net,androidcentral.com,blacklistednews.com,breakingisraelnews.com,chicagotribune.com,citationmachine.net,codeproject.com,collectivelyconscious.net,connectedly.com,crackberry.com,datpiff.com,destructoid.com,easybib.com,freewarefiles.com,fullmatchesandshows.com,imore.com,mywatchseries.to,newsarama.com,onwatchseries.to,roadracerunner.com,teslacentral.com,tetrisfriends.com,thebarchive.com,thefreethoughtproject.com,thewatchseries.ac,trifind.com,unblckd.org,usherald.com,veteranstoday.com,vrheads.com,watchseries.sk,windowscentral.com##[-abp-properties='base64']
-blacklistednews.com##[-abp-properties='data:']
 mobilephonetalk.com##[align="center"] > b > a[href^="http://tinyurl.com/"]
 incredimail.com##[autoid="sponsoredLinks"]
 bittorrent.am##[bgcolor="#66CCCC"][style="background: rgb(126, 180, 224)"]
@@ -9013,6 +9010,7 @@ herold.at##a[title^="Werbung: "][target="_blank"]
 colourlovers.com,convert-me.com,movpod.in,videotoolbox.com##a[v-href^="/?i="]
 irrigator.com.au##advertisement
 flightglobal.com##advertisingheader
+ancient-origins.net,androidcentral.com,blacklistednews.com,breakingisraelnews.com,chicagotribune.com,citationmachine.net,codeproject.com,collectivelyconscious.net,connectedly.com,crackberry.com,datpiff.com,destructoid.com,easybib.com,freewarefiles.com,fullmatchesandshows.com,imore.com,mywatchseries.to,newsarama.com,onwatchseries.to,roadracerunner.com,teslacentral.com,tetrisfriends.com,thebarchive.com,thefreethoughtproject.com,thewatchseries.ac,trifind.com,unblckd.org,usherald.com,veteranstoday.com,vrheads.com,watchseries.sk,windowscentral.com#?#:-abp-properties(base64)
 aol.co.uk,moviefone.com,metabomb.net#?#.trc-content-sponsored
 ancient-origins.net,biology-online.org,breakingisraelnews.com,citationmachine.net,collectivelyconscious.net,datpiff.com,destructoid.com,freewarefiles.com,fullmatchesandshows.com,imagefap.com,imagetwist.com,imgwallet.com,mywatchseries.to,newsarama.com,onwatchseries.to,pocketnow.com,tetrisfriends.com,thefreethoughtproject.com,thegatewaypundit.com,thewatchseries.ac,tomshardware.co.uk,tomshardware.com,trifind.com,veteranstoday.com,watchseries.sk,watchtvseries.unblckd.org##article > .entry-content + span *
 itechpost.com##article > .story-contents a[href^="https://www.amazon.com/"]
@@ -9034,6 +9032,7 @@ makeuseof.com##aside a[href][target="_blank"]
 techpowerup.com##aside[class] > article + div[class]
 techpowerup.com##b > img[src]
 bing.com#?#.b_ad
+blacklistednews.com#?#:-abp-properties(data:)
 creatives.livejasmin.com##body
 just-dice.com##body > .wrapper > .container:first-child
 dansdeals.com##body > a[target="_blank"] > img
@@ -10032,6 +10031,7 @@ cloudtime.to##div[style^="zz-index: 999"]
 ebay.com##div[title="ADVERTISEMENT"]
 eclipse.org##div[width="200"]
 isnare.com##div[width="905"]
+drudgereport.com,usherald.com#?#span:-abp-properties(base64)
 filepuma.com##dt[style="height:25px; text-indent:3px; padding-top:5px;"]
 kitguru.net##embed[src][quality]
 xtremesystems.org##embed[width="728"]
@@ -10053,6 +10053,7 @@ realitytvworld.com##font[size="1"][color="gray"]
 nufc.com##font[size="1"][face="Verdana"] > table[width="297"][cellspacing="0"][cellpadding="0"][border="0"][align="center"]
 zippyshare.com##font[style="font-size: 10px; letter-spacing: 3px; word-spacing: 2px; line-height: 18px;"]
 zippyshare.com##font[style="font-size: 10px; letter-spacing: 3px; word-spacing: 2px;"]
+gelbooru.com#?#:-abp-properties(*: *;base64,)
 softpedia.com##h2 + div + a[style]
 law.com,topcultured.com##h3
 rapidog.com##h3[style="color:#00CC00"]
@@ -10453,7 +10454,6 @@ monova.org##span > script + a
 monova.org##span > span > [onclick]
 monova.org##span > span > div:last-child
 thegatewaypundit.com##span > span:first-child > span > [id][class]
-drudgereport.com,usherald.com##span[-abp-properties='base64']
 easyvideo.me,playbb.me,videowing.me,videozoo.me##span[original^="http://byzoo.org/"]
 washingtonmonthly.com##span[style="font-size:12px"]
 openwith.org##span[style="font-size:12px;"]
@@ -10817,8 +10817,8 @@ search.aol.com##ul[content="SLMS"]
 facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
 elizium.nu##ul[style="padding: 0; width: 100%; margin: 0; list-style: none;"]
 !
-geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span[-abp-properties='base64']
-geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span[-abp-properties='data:']
+geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span:-abp-properties(base64)
+geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span:-abp-properties(data:)
 ! uponit
 activistpost.com,bibme.org,dictionary.com,diffen.com,eurweb.com,freewarefiles.com,indiewire.commcodeproject.com,the4thofficial.net,usherald.com,wnd.com##[style] > [scrolling]
 activistpost.com,bibme.org,codeproject.com,diffen.com,eurweb.com,indiewire.com,movpod.in,playbill.com,the4thofficial.netdictionary.com,usherald.com,wnd.com##[style] > iframe
@@ -11006,16 +11006,16 @@ socketloop.com##span[data-ez-name]
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
 ! CSS property filters for Adblock Plus
-webfail.com###aside > [-abp-properties='cursor: pointer;']
-webfail.com###subheader + [-abp-properties='text-align: center;']
-tomshardware.com##.page-content-rightcol [-abp-properties='height: 600px;*width: 300px;']
-freethesaurus.com##.widget + [-abp-properties='height: 265px; width: 300px;']
-torrentsgroup.com##[-abp-properties='*data:image*']
-webfail.com##[-abp-properties='cursor: pointer; margin-left: *px;']
-space.com##[-abp-properties='height: 250px;*width: 300px;']
-webfail.com##[-abp-properties='position: relative; width: 728px']
-webfail.com##[-abp-properties='text-align: center;'] > img
+freethesaurus.com##.widget + :-abp-properties(height: 265px; width: 300px;)
+space.com#?#:-abp-properties(height: 250px;*width: 300px;)
+tomshardware.com##.page-content-rightcol :-abp-properties(height: 600px;*width: 300px;)
+torrentsgroup.com#?#:-abp-properties(*data:image*)
+webfail.com###aside > :-abp-properties(cursor: pointer;)
+webfail.com###subheader + :-abp-properties(text-align: center;)
 webfail.com##div[style="width:300px;height:auto;margin:30px 0;"] + div
+webfail.com#?#:-abp-properties(cursor: pointer; margin-left: *px;)
+webfail.com#?#:-abp-properties(position: relative; width: 728px)
+webfail.com#?#:-abp-properties(text-align: center;) > img
 ! IL
 boston.com#?#.ad-container
 cnet.com#?#.ad-leader-top
