@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804141042
+! Version: 201804141124
 ! Title: EasyList
-! Last modified: 14 Apr 2018 10:42 UTC
+! Last modified: 14 Apr 2018 11:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52326,7 +52326,7 @@ $websocket,domain=24video.cc|24video.in|24video.me|24video.sex|24video.xxx|pornh
 wyciwyg:$popup,domain=yourporn.sexy
 ! ------------------------Specific element hiding rules------------------------!
 ! *** easylist:easylist/easylist_specific_hide.txt ***
-0search.safefinder.com,search.snapdo.com###ABottomD
+search.safefinder.com,search.snapdo.com###ABottomD
 aol.com###AOLP_partnerSearch
 search.safefinder.com,search.snap.do,search.snapdo.com###ATopD
 avsforum.com###AVSForum_com_300x150_Sponsor_TECH_Forum
@@ -61507,7 +61507,7 @@ maxgames.com##div[style*="background-image: URL('/images/sponsor_"]
 thegauntlet.ca##div[style*="background-image:url('/advertisers/your-ad-here-"]
 grammarist.com##div[style*="blob:"]
 gogoanime.tv,gorillavid.in,movpod.in,omgcheckitout.com,tetrisfriends.com##div[style*="data:image"]
-israelnationalnews.com##div[style*="display: block !important]
+israelnationalnews.com##div[style*="display: block !important"]
 kizi.com##div[style*="display:block !important"]
 pencurimovie.ph##div[style*="float:none;"]
 thevideo.me##div[style*="height: 300px;width: 300px"]
@@ -62999,8 +62999,8 @@ search.aol.com##ul[content="SLMS"]
 facebook.com##ul[id^="typeahead_list_"] > ._20e._6_k._55y_
 elizium.nu##ul[style="padding: 0; width: 100%; margin: 0; list-style: none;"]
 ! 
-geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span:-abp-properties(base64)
-geekzone.co.nz,nydailynews.com##body > span + span + span + span + span[id][class] + span:-abp-properties(data:)
+geekzone.co.nz,nydailynews.com#?#body > span + span + span + span + span[id][class] + span:-abp-properties(base64)
+geekzone.co.nz,nydailynews.com#?#body > span + span + span + span + span[id][class] + span:-abp-properties(data:)
 ! uponit
 activistpost.com,bibme.org,dictionary.com,diffen.com,eurweb.com,freewarefiles.com,indiewire.commcodeproject.com,the4thofficial.net,usherald.com,wnd.com##[style] > [scrolling]
 activistpost.com,bibme.org,codeproject.com,diffen.com,eurweb.com,indiewire.com,movpod.in,playbill.com,the4thofficial.netdictionary.com,usherald.com,wnd.com##[style] > iframe
@@ -63191,16 +63191,16 @@ socketloop.com##span[data-ez-name]
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
 ! CSS property filters for Adblock Plus
-freethesaurus.com##.widget + :-abp-properties(height: 265px; width: 300px;)
+freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
 space.com#?#:-abp-properties(height: 250px;*width: 300px;)
-tomshardware.com##.page-content-rightcol :-abp-properties(height: 600px;*width: 300px;)
+tomshardware.com#?#.page-content-rightcol :-abp-properties(height: 600px;*width: 300px;)
 torrentsgroup.com#?#:-abp-properties(*data:image*)
-webfail.com###aside > :-abp-properties(cursor: pointer;)
-webfail.com###subheader + :-abp-properties(text-align: center;)
-webfail.com##div[style="width:300px;height:auto;margin:30px 0;"] + div
+webfail.com#?##aside > :-abp-properties(cursor: pointer;)
+webfail.com#?##subheader + :-abp-properties(text-align: center;)
 webfail.com#?#:-abp-properties(cursor: pointer; margin-left: *px;)
 webfail.com#?#:-abp-properties(position: relative; width: 728px)
 webfail.com#?#:-abp-properties(text-align: center;) > img
+webfail.com#?#div[style="width:300px;height:auto;margin:30px 0;"] + div
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 ashemaletube.com###ASHM_imBox_Container
 nudography.com###BannerContainer
@@ -66208,6 +66208,7 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||tags.bkrtx.com/js/bk-coretag.js$domain=tmz.com|zillow.com
 @@||talkgold.com/bans/rss.png
 @@||talkrtv.com/ad/channel.php?$subdocument
+@@||tampermonkey.net^*/adsbygoogle.js$domain=tampermonkey.net
 @@||tapad.com/tapestry/1?ta_partner_id=$script,domain=foxnews.com
 @@||tapad.com/tapestry/tapestry-$script,domain=foxnews.com
 @@||tbns.com.au/shops/images/ads/$~third-party
@@ -69454,4 +69455,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: SsmbAHFclNK8Ai2ffyekJg
+! Checksum: +EcQYwabiYFxlSL3tKBh/g
