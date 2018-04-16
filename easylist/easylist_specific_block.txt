@@ -4418,6 +4418,7 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||flowplayer.org^$script,domain=estream.nu|estream.to
 @@||fonts.googleapis.com^$stylesheet,domain=estream.nu|estream.to
 ! r4dm.com
+@@||api.solvemedia.com^$script,domain=r4dm.com
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=r4dm.com
 @@||code.jquery.com^$script,domain=r4dm.com
 |http://$script,third-party,domain=r4dm.com
@@ -4444,9 +4445,6 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||filecrypt.cc/js/scriptaculous/scriptaculous.js$script
 @@||filecrypt.cc/js/scriptaculous/slider.js$script
 ||filecrypt.cc/js/$script
-! auroravid.to
-|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
-|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=auroravid.to
 ! iwatchonline
 @@||spot.im/api/all/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu|watchonline.to
 @@||spot.im/api/newsfeed-sync/$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu|watchonline.to
@@ -4517,9 +4515,10 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 ||pixhost.to^$script,~third-party
 ||pixroute.com^$script,~third-party
 ! stream2watch.org
-@@||chatango.com^$domain=stream2watch.org
-@@||googleapis.com^$script,domain=stream2watch.org
-@@||jquery.com^$script,domain=stream2watch.org
+@@||chatango.com^$domain=stream2watch.mx|stream2watch.org
+@@||googleapis.com^$script,domain=stream2watch.mx|stream2watch.org
+@@||jquery.com^$script,domain=stream2watch.mx|stream2watch.org
+|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=stream2watch.mx|stream2watch.org
 ! shink
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me
 @@||google.com/recaptcha/$domain=shink.me
@@ -4536,6 +4535,7 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=up-4ever.com
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=up-4ever.com
 ! hothardware.com
+@@||ajax.googleapis.com^$domain=www.freewarefiles.com
 |http://$script,third-party,xmlhttprequest,domain=hothardware.com
 |https://$script,third-party,xmlhttprequest,domain=hothardware.com
 ! freewarefiles.com
@@ -4577,9 +4577,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 ||imagebam.com^$script
 ||www.imagebam.com^$image
 ! myprojectfreetv.net
-@@||ajax.googleapis.com^$script,domain=myprojectfreetv.net
-|http://$script,third-party,xmlhttprequest,domain=myprojectfreetv.net
-|https://$script,third-party,xmlhttprequest,domain=myprojectfreetv.net
+@@||ajax.googleapis.com^$script,domain=my-project-free.tv|myprojectfreetv.net
+|http://$script,third-party,xmlhttprequest,domain=my-project-free.tv|myprojectfreetv.net
+|https://$script,third-party,xmlhttprequest,domain=my-project-free.tv|myprojectfreetv.net
 ! destructoid.com
 @@||ajax.googleapis.com^$script,domain=destructoid.com
 @@||code.jquery.com^$script,domain=destructoid.com
@@ -5047,14 +5047,14 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||streamplay.to/player*/jwplayer.js?$script,domain=streamplay.to
 @@||streamplay.to/player*/jwpsrv.js|$script,domain=streamplay.to
 @@||streamplay.to/player*/lightsout.js|$script,domain=streamplay.to
-|http://$script,third-party,xmlhttprequest,domain=streamplay.to
-|https://$script,third-party,xmlhttprequest,domain=streamplay.to
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
 ! Powvideo/powvideo
 @@||ajax.googleapis.com^$script,third-party,domain=povwideo.net|powvideo.net
 @@||code.jquery.com^$script,domain=povwideo.net|powvideo.net
 @@||codeorigin.jquery.com^$domain=povwideo.net|powvideo.net
-|http*://$script,subdocument,third-party,xmlhttprequest,domain=povwideo.net|powvideo.net
+|http*://$image,script,subdocument,third-party,xmlhttprequest,domain=povwideo.net|powvideo.net
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
@@ -5070,13 +5070,13 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 |http://$script,third-party,xmlhttprequest,domain=uplod.it
 |https://$script,third-party,xmlhttprequest,domain=uplod.it
 ! movpod.in
-|http://$script,third-party,xmlhttprequest,domain=movpod.in
-|https://$script,third-party,xmlhttprequest,domain=movpod.in
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=movpod.in
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=movpod.in
 ! daclips.in
 @@||ajax.googleapis.com^$script,third-party,domain=daclips.in
 @@||trandsey.info/popunder.gif$image,domain=daclips.in
-|http://$script,subdocument,third-party,xmlhttprequest,domain=daclips.in
-|https://$script,subdocument,third-party,xmlhttprequest,domain=daclips.in
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=daclips.in
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=daclips.in
 ! tinypic
 @@||addthis.com/static/$subdocument,domain=tinypic.com
 @@||api.solvemedia.com^$domain=tinypic.com
@@ -5087,12 +5087,6 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||jwpsrv.com/library/$script,domain=vidspot.net
 |http://$script,third-party,xmlhttprequest,domain=vidspot.net
 |https://$script,third-party,xmlhttprequest,domain=vidspot.net
-! vidbull.club
-@@||disqus.com^$script,xmlhttprequest,domain=vidbull.club
-@@||jsc.mgid.com^$script,domain=vidbull.club
-@@||lp.longtailvideo.com^$script,domain=vidbull.club
-|http://$script,third-party,xmlhttprequest,domain=vidbull.club
-|https://$script,third-party,xmlhttprequest,domain=vidbull.club
 ! streamcloud.eu
 @@||ajax.googleapis.com^$script,third-party,domain=streamcloud.eu
 @@||hoortols.org^$image,domain=streamcloud.eu
@@ -5137,9 +5131,9 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 |http://$image,third-party,domain=thefreethoughtproject.com
 |https://$image,third-party,domain=thefreethoughtproject.com
 ! couchtuner.city
-@@||disqus.com^$script,third-party,domain=couchtuner.onl
-|http://$script,third-party,xmlhttprequest,domain=couchtuner.onl
-|https://$script,third-party,xmlhttprequest,domain=couchtuner.onl
+@@||disqus.com^$script,third-party,domain=couchtuner.onl|couchtuner.rocks
+|http://$image,script,third-party,xmlhttprequest,domain=couchtuner.onl|couchtuner.rocks
+|https://$image,script,third-party,xmlhttprequest,domain=couchtuner.onl|couchtuner.rocks
 ! uptobox.com
 @@||ajax.googleapis.com^$script,domain=uptobox.com|uptostream.com
 @@||googleapis.com/js/sdkloader/ima3.js$script,domain=uptobox.com|uptostream.com
@@ -5165,12 +5159,6 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||connect.facebook.net^$script,domain=revclouds.com
 |http://$script,third-party,xmlhttprequest,domain=revclouds.com
 |https://$script,third-party,xmlhttprequest,domain=revclouds.com
-! wstream.video
-@@||cloudflare.com/ajax/libs/$script,domain=wstream.video
-@@||rivcash.com/it/webmaster/show_banner.js$script,domain=wstream.video
-@@||rivcash.com/webmaster/banners/$subdocument,domain=wstream.video
-|http://$script,third-party,xmlhttprequest,domain=wstream.video
-|https://$script,third-party,xmlhttprequest,domain=wstream.video
 ! gorillavid.in
 @@||ajax.googleapis.com^$script,domain=gorillavid.in
 @@||use.fontawesome.com^$script,domain=gorillavid.in
@@ -5193,6 +5181,7 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||connect.facebook.net^$script,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||maxcdn.bootstrapcdn.com^$script,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||platform.twitter.com^$script,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
+@@||watchseries.sk/check-auth$xmlhttprequest
 |http://$other,script,stylesheet,third-party,xmlhttprequest,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 |http://$xmlhttprequest,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 |https://$other,script,stylesheet,third-party,xmlhttprequest,domain=dwatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
