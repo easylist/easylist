@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804162231
+! Version: 201804162246
 ! Title: EasyList
-! Last modified: 16 Apr 2018 22:31 UTC
+! Last modified: 16 Apr 2018 22:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -27594,6 +27594,7 @@ gumtree.com#@#.ad-panel
 forums.soompi.com#@#.ad-placement
 apartmenttherapy.com,thekitchn.com#@#.ad-rail
 jerseyinsight.com#@#.ad-right
+forbes.com#@#.ad-row
 saavn.com#@#.ad-scroll
 signatus.eu#@#.ad-section
 wmagazine.com#@#.ad-served
@@ -49737,6 +49738,12 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||youtube.com/embed/$domain=xclusivejams2.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams2.com
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=xclusivejams2.com
+! imx.to
+$script,domain=imx.to
+@@||imx.to/dropzone.js$script
+@@||imx.to/js/bootstrap.min.js$script
+@@||imx.to/js/csTransPieManual.js$script
+@@||imx.to/js/jquery$script
 ! rd.com (Revolving adservers)
 $image,third-party,xmlhttprequest,domain=rd.com
 ! kickass2.ch
@@ -69542,4 +69549,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: k7NZ2JVf5spJk7OIi+Cbaw
+! Checksum: 4GU+HjiURmVW2SDAHGZPzQ
