@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804171805
+! Version: 201804171820
 ! Title: EasyList
-! Last modified: 17 Apr 2018 18:05 UTC
+! Last modified: 17 Apr 2018 18:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -49757,6 +49757,13 @@ $script,domain=imx.to
 @@||imx.to/js/csTransPieManual.js$script
 @@||imx.to/js/jquery$script
 ! hltv.org
+@@||google.com/recaptcha/$domain=hltv.org
+@@||hltv.gainskins.com^$domain=hltv.org
+@@||hltv.org/gallery/$xmlhttprequest,domain=hltv.org
+@@||hltv.org/login$xmlhttprequest,domain=hltv.org
+@@||hltv.org/profile/$xmlhttprequest,domain=hltv.org
+@@||hltv.org/usernamesearch?$xmlhttprequest,domain=hltv.org
+@@||notification-secure.hltv.org^$xmlhttprequest,domain=hltv.org
 @@||scorebot-secure.hltv.org/socket.io/?$xmlhttprequest,domain=hltv.org
 |http*://$image,script,subdocument,third-party,domain=hltv.org
 |http*://$xmlhttprequest,domain=hltv.org
@@ -69577,4 +69584,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 3QlovUdgdzB8eGvsJZcknQ
+! Checksum: J24TMTWMt9PJ2VSAvAjETg
