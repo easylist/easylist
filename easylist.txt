@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804192022
+! Version: 201804192032
 ! Title: EasyList
-! Last modified: 19 Apr 2018 20:22 UTC
+! Last modified: 19 Apr 2018 20:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51091,8 +51091,10 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||plarium.com/play/*adCampaign=$popup
 ||playhd.eu/test$popup
 ||pop.billionuploads.com^$popup
+||quora.com/_$popup
 ||quora.com/_/$popup,domain=quora.com
 ||quora.com/_/ad/$popup
+||quora.com^*/redir?$popup
 ||quora.com^*^id=$popup,domain=quora.com
 ||r.search.yahoo.com/_ylt=*;_ylu=*.r.msn.com$popup,domain=search.yahoo.com
 ||rediff.com/uim/ads/$popup
@@ -62759,6 +62761,8 @@ talkarcades.com##p[style="text-align: center; font-weight: bold; font-size: 150%
 quora.com#?#.content_box:-abp-has(a:-abp-contains(ad))
 quora.com#?#.content_box:-abp-has(a:-abp-contains(promoted))
 quora.com#?#.content_box:-abp-has(div[class*="advertiser"])
+quora.com#?#.outer_content:-abp-has(a:-abp-contains(ad))
+quora.com#?#.outer_content:-abp-has(a:-abp-contains(promoted))
 monova.org##script + [class] > [class]:first-child
 9to5mac.com##script + [class] > div[class]:first-child
 monova.org##script + [id][href]
@@ -69499,4 +69503,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: BZxl9oVDVqY9e77IQzZyoA
+! Checksum: 6+90r6y6OZjt+xc5eeTddQ
