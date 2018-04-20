@@ -5156,8 +5156,7 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||usercdn.com/cgi-bin/upload.cgi?$subdocument,domain=userscloud.com
 @@||usercdn.com/tmp/status.html?$subdocument,domain=userscloud.com
 @@||widget.uservoice.com^$script,domain=userscloud.com
-|http://$script,third-party,xmlhttprequest,domain=userscloud.com
-|https://$script,third-party,xmlhttprequest,domain=userscloud.com
+|http*://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com
 ! uploadrocket.net
 @@||api.solvemedia.com^$script,third-party,domain=uploadrocket.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=uploadrocket.net
