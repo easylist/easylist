@@ -40,7 +40,6 @@
 @@||2mdn.net/instream/html5/ima3.js$domain=~superfilm.pl
 @@||2mdn.net/instream/video/client.js$domain=cbc.ca
 @@||2mdn.net/viewad/*/B*_$image,domain=jabong.com
-@@||2mdn.net^$xmlhttprequest,domain=twitch.tv
 @@||2mdn.net^*/1x1image.jpg$image,domain=convert-me.com
 @@||2mdn.net^*/html_inpage_rendering_lib_$script,domain=investopedia.com
 @@||2mdn.net^*/jwplayer.js$domain=doubleclick.net
@@ -209,7 +208,6 @@
 @@||adserver.yahoo.com/crossdomain.xml$object-subrequest
 @@||adserver.yahoo.com^*=weather&$domain=ca.weather.yahoo.com
 @@||adservice.google.*/integrator.js$domain=champion.gg|gsmarena.com|nydailynews.com
-@@||adservice.google.com^$xmlhttprequest,domain=twitch.tv
 @@||adshost1.com/crossdomain.xml$object-subrequest
 @@||adshost1.com/ova/*.xml$object-subrequest,domain=4shared.com
 @@||adsign.republika.pl^$subdocument,domain=a-d-sign.pl
@@ -302,7 +300,6 @@
 @@||alusa.org/store/modules/blockadvertising/$~third-party
 @@||amazon-adsystem.com/aax2/amzn_ads.js$domain=deadspin.com|eurogamer.net|food.com|foodnetwork.com|gawker.com|gizmodo.com|io9.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|nintendolife.com|rockpapershotgun.com|usgamer.net|vg247.com|weather.com
 @@||amazon-adsystem.com/aax2/apstag.js$domain=blastingnews.com|champion.gg|eurogamer.net|nintendolife.com|nydailynews.com|rockpapershotgun.com|usgamer.net|vg247.com|wcvb.com
-@@||amazon-adsystem.com/aax2/apstag.js$xmlhttprequest,domain=www.twitch.tv
 @@||amazon-adsystem.com/aax2/getads.js$domain=eurogamer.net|nintendolife.com|rockpapershotgun.com|usgamer.net|vg247.com
 @@||amazon-adsystem.com/js/$script,domain=voldingenglish.com
 @@||amazon-adsystem.com/panda/$script,domain=voldingenglish.com
@@ -702,7 +699,6 @@
 @@||doubleclick.net/adj/profootballreference.fsv/$script,domain=pro-football-reference.com
 @@||doubleclick.net/adj/yorkshire.jp/main-section;*;sz=120x600,160x600$script,domain=yorkshirepost.co.uk
 @@||doubleclick.net/ddm/$image,domain=aetv.com|fyi.tv|history.com|mylifetime.com|speedtest.net|tweaktown.com
-@@||doubleclick.net/ddm/ad/$xmlhttprequest,domain=twitch.tv
 @@||doubleclick.net/ddm/clk/*://www.amazon.jobs/jobs/$subdocument,domain=glassdoor.com
 @@||doubleclick.net/favicon.ico$image,domain=convert-me.com|goal.com|grammarist.com|videotoolbox.com
 @@||doubleclick.net/instream/ad_status.js$domain=eurogamer.net|nintendolife.com|rockpapershotgun.com|usgamer.net|vg247.com
@@ -873,7 +869,6 @@
 @@||g.doubleclick.net/pcs/click^$popup,domain=economist.com
 @@||g.doubleclick.net/static/glade.js$domain=eurogamer.net|nintendolife.com|rockpapershotgun.com|usgamer.net|vg247.com
 @@||g.doubleclick.net/static/glade/extra_$script,domain=eurogamer.net|nintendolife.com|rockpapershotgun.com|usgamer.net|vg247.com
-@@||g.doubleclick.net^$xmlhttprequest,domain=twitch.tv
 @@||g4tv.com/clientscriptoptimizer.ashx?*-ads.$script,stylesheet
 @@||gactv.com^*/javascript/ad/coread/$script
 @@||game.zylom.com^*.swf?*&adURL=$object
@@ -2033,6 +2028,13 @@
 @@||zillow.com/widgets/search/ZillowListingsWidget.htm?*&adsize=$subdocument,domain=patch.com
 @@||zippyshare.com^$generichide
 @@||zstream.to/js/pop.js$domain=zstream.to
+! twitch
+@@||2mdn.net^$xmlhttprequest,domain=twitch.tv
+@@||amazon-adsystem.com^$xmlhttprequest,domain=twitch.tv
+@@||doubleclick.net^$xmlhttprequest,domain=twitch.tv
+@@||google.com^$xmlhttprequest,domain=twitch.tv
+@@||googleapis.com^$xmlhttprequest,domain=twitch.tv
+@@||googlesyndication.com^$xmlhttprequest,domain=twitch.tv
 ! Zazzle https://github.com/easylist/easylist/pull/939
 @@||zcache.ca^$image,domain=zazzle.ca
 @@||zcache.co.nz^$image,domain=zazzle.co.nz
