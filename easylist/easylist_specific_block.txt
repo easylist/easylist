@@ -4628,9 +4628,10 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||connect.facebook.net^$script,domain=9anime.is
 @@||disqus.com^$domain=9anime.is
 @@||disquscdn.com^$domain=9anime.is
+@@||googleusercontent.com/gadgets/$image,domain=www4.9anime.is
 @@||platform.twitter.com^$script,domain=9anime.is
-|http://$script,third-party,xmlhttprequest,domain=9anime.is
-|https://$script,third-party,xmlhttprequest,domain=9anime.is
+|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=9anime.is
+||9anime.is/*callback
 ! watchvideo / watchme
 @@/index-*.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
 @@/master.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
