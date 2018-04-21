@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804210157
+! Version: 201804210210
 ! Title: EasyList
-! Last modified: 21 Apr 2018 01:57 UTC
+! Last modified: 21 Apr 2018 02:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -32583,6 +32583,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||valuecontent.net^$third-party
 ||vamartin.work^$third-party
 ||vapedia.com^$third-party
+||variablefitness.com^$third-party
 ||vashoot.com^$third-party
 ||vastopped.com^$third-party
 ||vaultwrite.com^$third-party
@@ -41102,6 +41103,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||cpmterra.com^$popup,third-party
 ||cpvadvertise.com^$popup,third-party
 ||crazyad.net^$popup,third-party
+||cyberlink.pro^$popup,third-party
 ||dagnar.com^$popup
 ||day-multi.work^$popup,third-party
 ||debrium-surbara.com^$popup
@@ -49815,6 +49817,11 @@ $script,domain=imx.to
 @@||imx.to/js/bootstrap.min.js$script
 @@||imx.to/js/csTransPieManual.js$script
 @@||imx.to/js/jquery$script
+! torlock.com
+@@||ajax.cloudflare.com^$script,domain=torlock.com
+@@||torlock.com/cdn-cgi/pe/bag2?r$xmlhttprequest,domain=torlock.com
+|http*://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=torlock.com
+||torlock.com^$xmlhttprequest
 ! rd.com (Revolving adservers)
 $image,third-party,xmlhttprequest,domain=rd.com
 ! kickass2.ch
@@ -51047,6 +51054,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||conservativepost.com/pu/$popup
 ||content.powvideo.net^$popup,domain=powvideo.net
 ||csgofast.com^$popup,domain=hltv.org
+||cyberprotection.pro^*?aff$popup
 ||deb.gs^*?ref=$popup
 ||eafyfsuh.net^*/?name=$popup
 ||edomz.com/re.php?mid=$popup
@@ -61254,6 +61262,7 @@ gelbooru.com##center > a[href]
 pocketnow.com##center > a[href^="/"]
 go4up.com##center > a[target="_blank"]
 destructoid.com##center > div > iframe
+torlock.com##center > table
 4shared.com##center[dir="ltr"]
 ehow.com##center[id^="DartAd_"]
 cesoirtv.com#?#a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
@@ -69121,4 +69130,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: +KMFkfQKA/sicG6zJJ1Svg
+! Checksum: CsfNt0kWJrrx5zPIombf+A
