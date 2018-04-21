@@ -4387,6 +4387,11 @@ $script,domain=imx.to
 @@||imx.to/js/bootstrap.min.js$script
 @@||imx.to/js/csTransPieManual.js$script
 @@||imx.to/js/jquery$script
+! torlock.com
+@@||ajax.cloudflare.com^$script,domain=torlock.com
+@@||torlock.com/cdn-cgi/pe/bag2?r$xmlhttprequest,domain=torlock.com
+|http*://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=torlock.com
+||torlock.com^$xmlhttprequest
 ! rd.com (Revolving adservers)
 $image,third-party,xmlhttprequest,domain=rd.com
 ! kickass2.ch
