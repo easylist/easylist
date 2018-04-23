@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201804231646
+! Version: 201804231656
 ! Title: EasyList
-! Last modified: 23 Apr 2018 16:46 UTC
+! Last modified: 23 Apr 2018 16:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -62788,6 +62788,7 @@ webfail.com#?#:-abp-properties(text-align: center;) > img
 webfail.com#?#div[style="width:300px;height:auto;margin:30px 0;"] + div
 ! msn.com
 msn.com##.amazon
+msn.com##[data-aop^="morefromprovidervnext_"]
 msn.com##[style*="width: 300px; height: 250px;"]
 msn.com##[style*="width:300px; height:250px;"]
 msn.com##a[href*="&utm_campaign"]
@@ -62796,10 +62797,13 @@ msn.com##a[href*="g00.msn.com"]
 msn.com##div[data-aop$="_ad"]
 msn.com##div[data-aop*=".ad"]
 msn.com##div[data-item-id] a[href*="&adsite="]
+msn.com##div[data-item-id] a[href*="&campaign_"]
 msn.com##div[data-item-id] a[href*="&pid="]
 msn.com##div[data-item-id] a[href*="&publisher="]
 msn.com##div[data-item-id] a[href*="&utm_"]
 msn.com##div[data-item-id] a[href*=".adform.net"]
+msn.com##div[data-item-id] a[href*=".adition.com"]
+msn.com##div[data-item-id] a[href*=".prdct-now.com"]
 msn.com##div[data-item-id] a[href*="?campaignid="]
 msn.com##div[data-item-id] a[href*="?partner="]
 msn.com##div[data-item-id] a[href*="?publisherID="]
@@ -68775,4 +68779,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: /km6ni5cvpCEUsYKybOpIg
+! Checksum: 1SsXnNabV5WYLKsEbYiCaw
