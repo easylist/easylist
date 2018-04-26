@@ -2289,6 +2289,7 @@
 /ads/elementViewability.
 /ads/empty.
 /ads/exit.
+/ads/exo_
 /ads/fb-
 /ads/flash/*
 /ads/flash_
@@ -7402,8 +7403,6 @@ takeover_banner_
 ||serve.*/promoload?
 ! al.ly https://forums.lanik.us/viewtopic.php?f=62&t=36357
 /full-page-script.$script
-! TPB
-/exo_na/*
 ! Native advert
 /\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Propellerads
@@ -7458,9 +7457,16 @@ takeover_banner_
 /b3.php?img=$image
 /backend_loader.php$script,~third-party
 /bl.php?*=$image,script
+/exads-
 /exbl.php?
+/exo-force-
+/exo-loader/*
+/exo_frnd_
+/exo_na/*
+/exo-loader/*
 /floader.js$script
-/frontend_loader.js$script,~third-party
+/frontend_loader.js$script
+/frontend_loador.js$script
 /lib/?img=$image
 /scripts/sweet/*$script
 _nb_sys.$script,~third-party
