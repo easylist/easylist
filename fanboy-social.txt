@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201805120402
+! Version: 201805120435
 ! Title: Fanboy's Social Blocking List
-! Last modified: 12 May 2018 04:02 UTC
+! Last modified: 12 May 2018 04:35 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -631,6 +631,7 @@
 /follow-us.$~stylesheet
 /follow-widget-
 /follow-widget.
+/follow-with-google-
 /follow-youtube.
 /follow/Facebook-
 /follow/Google+
@@ -1565,6 +1566,7 @@
 /share_button?
 /share_button_
 /share_buttons-
+/share_buttons_
 /share_byline_
 /share_count.
 /share_delicious.
@@ -2416,6 +2418,7 @@ _facebook_main.
 _facebook_small.
 _facebook_social_
 _facebook_white.
+_facebookbadge.
 _FacebookIcon.
 _facebooklogo.
 _FaceBookSlider/$~stylesheet
@@ -12572,8 +12575,6 @@ _youtube_social_
 ##[title="Post to del.icio.us"]
 ##[title="Reddit!"]
 ##[title="Share to Facebook"]:not(.wpel-icon-right)
-##[title="Submit this post on newsvine.com."]
-##[title="Submit this post on reddit.com."]
 ##[title="Submit to Digg"]
 ##[title="Subscribe by Facebook"]
 ##[title="Subscribe by Twitter"]
@@ -12582,18 +12583,11 @@ _youtube_social_
 ##[title="Yahoo! Buzz"]
 ##[title="submit to redit"]
 ##[title^="Follow On Twitter"]
-##[title^="Follow Us On Digg"]
-##[title^="Follow Us On Facebook"]
-##[title^="Follow Us On Twitter"]
-##[title^="Follow Us on Twitter"]
-##[title^="Follow me on Twitter"]
+##[title^="Follow Us On "]
+##[title^="Follow Us on "]
+##[title^="Follow me on "]
 ##[title^="Follow on Twitter"]
-##[title^="Follow us on Facebook"]
-##[title^="Follow us on Twitter!"]
-##[title^="Follow us on Twitter"]
-##[title^="Follow us on YouTube"]
-##[title^="Follow us on Youtube"]
-##[title^="Follow us on twitter"]
+##[title^="Follow us on "]
 ##[title^="Share on Facebook"]
 ##[title^="Share on LinkedIn"]
 ##[title^="Share on Linkedin"]
@@ -12608,6 +12602,7 @@ _youtube_social_
 ##[title^="Share with Stumble Upon"]
 ##[title^="Share with Twitter"]
 ##[title^="Stumble This Post"]
+##[title^="Submit this post on "]
 ##a[alt="Follow Us on Twitter"]
 ##a[alt="follow us on twitter"]
 ##a[data-tm-ref-type-id="Follow-on-Facebook"]
@@ -12823,6 +12818,7 @@ _youtube_social_
 ##button[aria-label="Toggle social share buttons"]
 ##button[title="Share"]
 ##div[button="share"]
+##div[class$="_social_icons_widget"]
 ##div[class^="ArticleShareLinks_"]
 ##div[class^="FooterSocialLinks"]
 ##div[class^="ShareButtons_"]
@@ -16175,4 +16171,4 @@ fark.com,github.com,github.io,marketplace.firefox.com,vvhp.net,wikipedia.org#@#i
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: aF1I4J4FXMnq0kXsq1qRUw
+! Checksum: 034dx/zAYrCUMaI4khuTUQ
