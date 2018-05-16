@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201805161310
+! Version: 201805161605
 ! Title: EasyList
-! Last modified: 16 May 2018 13:10 UTC
+! Last modified: 16 May 2018 16:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51442,6 +51442,8 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! CSP filters
 @@||emathhelp.net/search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+@@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+@@||kiplinger.com/search/$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||pocketnow.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||talkwithstranger.com/custom-search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||acidcow.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -51472,11 +51474,13 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gogoanime.se^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
 ||grammarist.com^$csp=script-src 'self' * 'unsafe-inline'
+||healthline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||hiphoplately.com^$csp=script-src 'self' * 'unsafe-inline'
 ||investopedia.com^$csp=script-src 'self' * 'unsafe-inline'
 ||jerusalemonline.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
 ||jewsnews.co.il^$csp=script-src 'self' *
 ||jpost.com^$csp=script-src 'self' 'unsafe-inline' http: https: blob:
+||kiplinger.com^$csp=script-src 'self' * 'unsafe-inline'
 ||kshowonline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||lolcounter.com^$csp=script-src 'self' * 'unsafe-inline'
 ||lucianne.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -51502,6 +51506,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||trifind.com^$csp=script-src 'self' * 'unsafe-inline'
 ||tworeddots.com^$csp=script-src 'self' * 'unsafe-inline'
 ||virtualjerusalem.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
+||wikia.com^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||winit.winchristmas.co.uk^$csp=script-src 'self' * 'unsafe-inline'
 ||wnd.com^$csp=script-src 'self' * 'unsafe-inline'
 ||wuxiaworld.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -61647,7 +61652,7 @@ coinurl.com,cur.lv##a[onclick^="open_ad('"]
 w3schools.com##a[rel="nofollow"]
 nixiepixel.com##a[rel^="http://bit.ly/"]
 grammarist.com##a[style*="cursor: pointer"]
-9anime.is,putlockertv.se##a[style*="z-index:"]
+putlockertv.se##a[style*="z-index:"]
 gorillavid.in##a[style="cursor: pointer;"]
 softpedia.com##a[style="display: block; width: 970px; height: 90px;"]
 desi-tashan.org,mp3red.cc,mp3red.me##a[style]
@@ -69406,4 +69411,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: FET9lyiMVpEAE61QZIK33w
+! Checksum: vhbRSQxfJSqKY39eC4MnUw
