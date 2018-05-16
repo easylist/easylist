@@ -40,7 +40,7 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))")
-ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
+ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 
@@ -380,16 +380,16 @@ def removeunnecessarywildcards (filtertext):
     if filtertext[0:2] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
-    while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
-        filtertext = filtertext[1:]
-        hadStar = True
-    while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|":
-        filtertext = filtertext[:-1]
-        hadStar = True
+    #while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
+    #    filtertext = filtertext[1:]
+    #    hadStar = True
+    #while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|":
+    #    filtertext = filtertext[:-1]
+    #    hadStar = True
     if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
         filtertext = "{filtertext}*".format(filtertext = filtertext)
-    if filtertext == "*":
-        filtertext = ""
+    #if filtertext == "*":
+    #    filtertext = ""
     if whitelist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)
     return filtertext
