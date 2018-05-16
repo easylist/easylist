@@ -5531,6 +5531,8 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! CSP filters
 @@||emathhelp.net/search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+@@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+@@||kiplinger.com/search/$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||pocketnow.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||talkwithstranger.com/custom-search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||acidcow.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -5561,11 +5563,13 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gogoanime.se^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
 ||grammarist.com^$csp=script-src 'self' * 'unsafe-inline'
+||healthline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||hiphoplately.com^$csp=script-src 'self' * 'unsafe-inline'
 ||investopedia.com^$csp=script-src 'self' * 'unsafe-inline'
 ||jerusalemonline.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
 ||jewsnews.co.il^$csp=script-src 'self' *
 ||jpost.com^$csp=script-src 'self' 'unsafe-inline' http: https: blob:
+||kiplinger.com^$csp=script-src 'self' * 'unsafe-inline'
 ||kshowonline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||lolcounter.com^$csp=script-src 'self' * 'unsafe-inline'
 ||lucianne.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -5591,6 +5595,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||trifind.com^$csp=script-src 'self' * 'unsafe-inline'
 ||tworeddots.com^$csp=script-src 'self' * 'unsafe-inline'
 ||virtualjerusalem.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
+||wikia.com^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||winit.winchristmas.co.uk^$csp=script-src 'self' * 'unsafe-inline'
 ||wnd.com^$csp=script-src 'self' * 'unsafe-inline'
 ||wuxiaworld.com^$csp=script-src 'self' * 'unsafe-inline'
