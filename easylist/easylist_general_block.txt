@@ -125,6 +125,7 @@
 -ad-live.
 -ad-loading.
 -ad-manager/$~stylesheet
+-ad-map/
 -ad-marker.
 -ad-mpu+
 -ad-new_
@@ -133,6 +134,8 @@
 -ad-random/
 -ad-refresh.
 -ad-refresh/
+-ad-reload.
+-ad-reload/
 -ad-resize-
 -ad-right.
 -ad-rotator-
@@ -234,6 +237,7 @@
 -adspace_
 -adSponsors.
 -adspot-
+-adsscript.
 -adswizz-
 -adsystem-
 -adtechfront.
@@ -394,6 +398,7 @@
 -third-ad.
 -top-ad.
 -top-ads.
+-tower-ad-
 -us/ads/
 -video-ads/
 -web-ad-
@@ -431,6 +436,7 @@
 .adinject.$domain=~adinject.com
 .adlabs.$domain=~adlabs.ru
 .admarvel.
+.admicro.
 .adnetwork.$domain=~adnetwork.ie|~adnetwork.sk
 .adnigma.
 .adpartner.$domain=~adpartner.cz
@@ -570,6 +576,7 @@
 .eu/adv/
 .exp_ad-
 .fm/ads/
+.ga/ads.
 .gg/ads/
 .gif?ad=
 .GoogleDfpSlot.
@@ -674,6 +681,7 @@
 .popup_im.
 .popupvideoad.
 .refit.ads.
+.ro/ads/
 .rolloverad.
 .ru/ads/
 .se/*placement=$script,subdocument,third-party
@@ -835,6 +843,7 @@
 /ad-builder.
 /ad-button1.
 /ad-callback.
+/ad-catalogue-
 /ad-cdn.
 /ad-channel-
 /ad-choices-
@@ -850,6 +859,7 @@
 /ad-fix-
 /ad-flashgame.
 /ad-format.
+/ad-forumhome/*
 /ad-frame.
 /ad-frame/*
 /ad-gallery.$~stylesheet
@@ -972,6 +982,7 @@
 /ad.valary?
 /ad.view?
 /ad.ytn.
+/ad/*&ifid=
 /ad/130-
 /ad/402_
 /ad/600-
@@ -990,6 +1001,7 @@
 /ad/afc_
 /ad/article_
 /ad/audsci.
+/ad/b_view?
 /ad/banner.
 /ad/banner/*
 /ad/banner?
@@ -1632,7 +1644,7 @@
 /adcycle.
 /adcycle/*
 /add728.
-/addata.
+/addata.$domain=~addata.io
 /addatasandbox?
 /addeals/*
 /addefend.
@@ -1727,6 +1739,7 @@
 /adframe728b.
 /adframe728b2.
 /adframe728bot.
+/adframe728homebh.
 /adframe?
 /adframe_
 /adframebottom.
@@ -2027,6 +2040,7 @@
 /adplayer.$domain=~adplayer.media
 /adplayer/*
 /adplugin.
+/adplugin/*
 /adplugin_
 /adpoint.
 /adpolestar/*
@@ -2134,6 +2148,7 @@
 /ads-mopub?
 /ads-net.
 /ads-new.
+/ads-no-
 /ads-nodep.
 /ads-pd.
 /ads-rectangle.
@@ -2159,6 +2174,7 @@
 /ads.bmp?
 /ads.bundle.
 /ads.cfm?
+/ads.client-
 /ads.cms
 /ads.compat.
 /ads.css
@@ -2209,6 +2225,7 @@
 /ads/ad-
 /ads/ad.
 /ads/ad_
+/ads/adp4.
 /ads/adrime/*
 /Ads/adrp0.
 /ads/ads-$~stylesheet
@@ -2281,6 +2298,7 @@
 /ads/elementViewability.
 /ads/empty.
 /ads/exit.
+/ads/exo_
 /ads/fb-
 /ads/flash/*
 /ads/flash_
@@ -2850,6 +2868,8 @@
 /adspot_
 /adspots/*
 /adspro/*
+/adspromo-
+/adspromo.
 /AdsPublisher.
 /adsq/*
 /adsquare.
@@ -3452,6 +3472,7 @@
 /alwebad_
 /am/ads.
 /amazon-ad-
+/amazon-associates-link-
 /amazon-async-
 /amazon/iframeproxy-
 /amazon/widget/*
@@ -3476,6 +3497,7 @@
 /app/ads/*
 /aptads/*
 /Article-Ad-
+/article-advert-
 /article_ad.
 /articlempuadvert/*
 /articleSponsorDeriv_
@@ -3785,6 +3807,7 @@
 /buildAdriverBanner.
 /bundle/ads.
 /bundles/Ad/*
+/bundles/ads-
 /bunyad_
 /burt/adv_
 /butler.php?type=
@@ -4245,7 +4268,6 @@
 /exitpopunder_
 /exitpopup.
 /exitsplash.
-/exo-force-render.js
 /exo120x60.
 /exo_bck_
 /exobanner.
@@ -4385,6 +4407,7 @@
 /frequencyads.
 /friendfinder_
 /frnads.
+/front/ad/*
 /front/ads-
 /frontads/*
 /frontend/ads/*
@@ -4629,6 +4652,7 @@
 /home/sponsor_
 /home30/ad.
 /home_adv.
+/homeadsscript.
 /homeoutside/ads/*
 /homepage-ads/*
 /homepage/ads/*
@@ -5584,6 +5608,7 @@
 /product-ad/*
 /product-ads/*
 /product_ad_widget/*
+/ProductAd.
 /productAds/*
 /production/ads/*
 /prog-sponsor/*
@@ -6208,6 +6233,7 @@
 /tag_sys.
 /tagadv_
 /talkads/*
+/targetingAd.
 /taxonomy-ads.
 /td-ads-
 /td_ads/*
@@ -6280,6 +6306,7 @@
 /toonad.
 /top-ad-
 /top-ad.
+/top-ad/*
 /top-ad_
 /top-ads.
 /top_ad.
@@ -6442,6 +6469,7 @@
 /VideoAdsServingService/*
 /videoadv-
 /videoadv.
+/videojs.ads-
 /videojs.ads.
 /videostreaming_ads.
 /videowall-ad.
@@ -6786,6 +6814,7 @@
 ?canp=adv_
 ?category=ad&
 ?dfpadname=
+?exo_zones=
 ?file=ads&
 ?framId=ad_
 ?g1t2h=*&t1m2k3=
@@ -6799,6 +6828,7 @@
 ?phpAds_
 ?poll=ad_
 ?PopAd=
+?q=ads_
 ?service=ad&
 ?sid=ads
 ?simple_ad_
@@ -6922,6 +6952,7 @@ _ad_right.
 _ad_right_
 _ad_rolling.
 _ad_run.
+_ad_sense/
 _ad_service.
 _ad_serving.
 _ad_show&
@@ -6930,6 +6961,7 @@ _ad_sidebar_
 _ad_size.
 _ad_sky.
 _ad_skyscraper.
+_ad_slot/
 _ad_slot=
 _ad_small.
 _ad_sponsor/
@@ -7387,12 +7419,10 @@ takeover_banner_
 ||serve.*/promoload?
 ! al.ly https://forums.lanik.us/viewtopic.php?f=62&t=36357
 /full-page-script.$script
-! TPB
-/exo_na/*
 ! Native advert
 /\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Propellerads
-/\.(accountant|bid|click|club|com|cricket|date|download|faith|link|loan|lol|men|online|party|racing|review|science|site|space|stream|top|trade|webcam|website|win|xyz|com)\/(([0-9]{2,9})(\.|\/)(css)?)$/$script,stylesheet,third-party,xmlhttprequest
+/\.(accountant|bid|click|club|com|cricket|date|download|faith|link|loan|lol|men|online|party|racing|review|science|site|space|stream|top|trade|webcam|website|win|xyz|com)\/(([0-9]{2,9})(\.|\/)(css|\?)?)$/$script,stylesheet,third-party,xmlhttprequest
 /\.accountant\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
 /\.bid\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
 /\.click\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
@@ -7443,9 +7473,16 @@ takeover_banner_
 /b3.php?img=$image
 /backend_loader.php$script,~third-party
 /bl.php?*=$image,script
+/exads-
 /exbl.php?
+/exo-force-
+/exo-loader/*
+/exo_frnd_
+/exo_na/*
 /floader.js$script
-/frontend_loader.js$script,~third-party
+/fro_lo.js$script
+/frontend_loader.js$script
+/frontend_loador.js$script
 /lib/?img=$image
 /scripts/sweet/*$script
 _nb_sys.$script,~third-party
@@ -7506,6 +7543,7 @@ _nb_sys.$script,~third-party
 /cdn-cgi/pe/bag2?r*revcontent.com
 /cdn-cgi/pe/bag2?r*revdepo.com
 /cdn-cgi/pe/bag2?r*srvpub.com
+/cdn-cgi/pe/bag2?r*zwaar.org
 /cdn-cgi/pe/bag?r*cpalead.com
 /cdn-cgi/pe/bag?r*pubads.g.doubleclick.net
 ! adinsertion used on gizmodo.in lifehacker.co.in
