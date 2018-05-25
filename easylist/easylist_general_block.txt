@@ -398,6 +398,7 @@
 -third-ad.
 -top-ad.
 -top-ads.
+-tower-ad-
 -us/ads/
 -video-ads/
 -web-ad-
@@ -680,6 +681,7 @@
 .popup_im.
 .popupvideoad.
 .refit.ads.
+.ro/ads/
 .rolloverad.
 .ru/ads/
 .se/*placement=$script,subdocument,third-party
@@ -857,6 +859,7 @@
 /ad-fix-
 /ad-flashgame.
 /ad-format.
+/ad-forumhome/*
 /ad-frame.
 /ad-frame/*
 /ad-gallery.$~stylesheet
@@ -979,6 +982,7 @@
 /ad.valary?
 /ad.view?
 /ad.ytn.
+/ad/*&ifid=
 /ad/130-
 /ad/402_
 /ad/600-
@@ -997,6 +1001,7 @@
 /ad/afc_
 /ad/article_
 /ad/audsci.
+/ad/b_view?
 /ad/banner.
 /ad/banner/*
 /ad/banner?
@@ -1734,6 +1739,7 @@
 /adframe728b.
 /adframe728b2.
 /adframe728bot.
+/adframe728homebh.
 /adframe?
 /adframe_
 /adframebottom.
@@ -2034,6 +2040,7 @@
 /adplayer.$domain=~adplayer.media
 /adplayer/*
 /adplugin.
+/adplugin/*
 /adplugin_
 /adpoint.
 /adpolestar/*
@@ -2141,6 +2148,7 @@
 /ads-mopub?
 /ads-net.
 /ads-new.
+/ads-no-
 /ads-nodep.
 /ads-pd.
 /ads-rectangle.
@@ -2217,6 +2225,7 @@
 /ads/ad-
 /ads/ad.
 /ads/ad_
+/ads/adp4.
 /ads/adrime/*
 /Ads/adrp0.
 /ads/ads-$~stylesheet
@@ -2289,6 +2298,7 @@
 /ads/elementViewability.
 /ads/empty.
 /ads/exit.
+/ads/exo_
 /ads/fb-
 /ads/flash/*
 /ads/flash_
@@ -2858,6 +2868,8 @@
 /adspot_
 /adspots/*
 /adspro/*
+/adspromo-
+/adspromo.
 /AdsPublisher.
 /adsq/*
 /adsquare.
@@ -3795,6 +3807,7 @@
 /buildAdriverBanner.
 /bundle/ads.
 /bundles/Ad/*
+/bundles/ads-
 /bunyad_
 /burt/adv_
 /butler.php?type=
@@ -4255,7 +4268,6 @@
 /exitpopunder_
 /exitpopup.
 /exitsplash.
-/exo-force-render.js
 /exo120x60.
 /exo_bck_
 /exobanner.
@@ -6221,6 +6233,7 @@
 /tag_sys.
 /tagadv_
 /talkads/*
+/targetingAd.
 /taxonomy-ads.
 /td-ads-
 /td_ads/*
@@ -6293,6 +6306,7 @@
 /toonad.
 /top-ad-
 /top-ad.
+/top-ad/*
 /top-ad_
 /top-ads.
 /top_ad.
@@ -6455,6 +6469,7 @@
 /VideoAdsServingService/*
 /videoadv-
 /videoadv.
+/videojs.ads-
 /videojs.ads.
 /videostreaming_ads.
 /videowall-ad.
@@ -6813,6 +6828,7 @@
 ?phpAds_
 ?poll=ad_
 ?PopAd=
+?q=ads_
 ?service=ad&
 ?sid=ads
 ?simple_ad_
@@ -6936,6 +6952,7 @@ _ad_right.
 _ad_right_
 _ad_rolling.
 _ad_run.
+_ad_sense/
 _ad_service.
 _ad_serving.
 _ad_show&
@@ -7402,12 +7419,10 @@ takeover_banner_
 ||serve.*/promoload?
 ! al.ly https://forums.lanik.us/viewtopic.php?f=62&t=36357
 /full-page-script.$script
-! TPB
-/exo_na/*
 ! Native advert
 /\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Propellerads
-/\.(accountant|bid|click|club|com|cricket|date|download|faith|link|loan|lol|men|online|party|racing|review|science|site|space|stream|top|trade|webcam|website|win|xyz|com)\/(([0-9]{2,9})(\.|\/)(css)?)$/$script,stylesheet,third-party,xmlhttprequest
+/\.(accountant|bid|click|club|com|cricket|date|download|faith|link|loan|lol|men|online|party|racing|review|science|site|space|stream|top|trade|webcam|website|win|xyz|com)\/(([0-9]{2,9})(\.|\/)(css|\?)?)$/$script,stylesheet,third-party,xmlhttprequest
 /\.accountant\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
 /\.bid\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
 /\.click\/[0-9]{2,9}\/$/$script,stylesheet,third-party,xmlhttprequest
@@ -7458,9 +7473,16 @@ takeover_banner_
 /b3.php?img=$image
 /backend_loader.php$script,~third-party
 /bl.php?*=$image,script
+/exads-
 /exbl.php?
+/exo-force-
+/exo-loader/*
+/exo_frnd_
+/exo_na/*
 /floader.js$script
-/frontend_loader.js$script,~third-party
+/fro_lo.js$script
+/frontend_loader.js$script
+/frontend_loador.js$script
 /lib/?img=$image
 /scripts/sweet/*$script
 _nb_sys.$script,~third-party
