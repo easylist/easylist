@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201806021514
+! Version: 201806021519
 ! Title: Fanboy's Annoyance List
-! Last modified: 02 Jun 2018 15:14 UTC
+! Last modified: 02 Jun 2018 15:19 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3282,6 +3282,7 @@ _youtube_social_
 /gdpr_footer.
 /gdpr_optout.
 /GestionCookiesCNILPlugin/*
+/gestione_cookie.js
 /header.cookies.
 /headerCookies.
 /headerCookies_
@@ -3312,6 +3313,7 @@ _youtube_social_
 /mod_jbcookies/*
 /mweb.cookie/*$script
 /newprivacypolicy.
+/nibirumail.cookie.min.js
 /ocgcookie?
 /oupcookiepolicy_
 /plugin_cookie/*
@@ -16275,7 +16277,6 @@ _site_cookie_
 ! Amazon sites
 ##.feature > #tell-a-friend
 ! *** easylist:fanboy-addon/fanboy_cookie_general_hide.txt ***
-! Cookie,privacy,legal Messages
 ###AcceptCookie
 ###AcceptCookieContainer
 ###AcceptCookies
@@ -16699,6 +16700,7 @@ _site_cookie_
 ###agreeCookie
 ###agreeWithCookies
 ###agree_cookies
+###agree_privacy_policy
 ###agreecookies
 ###agrio_cookie_notification
 ###ahhg-cookie-button
@@ -19060,6 +19062,7 @@ _site_cookie_
 ||cookies.innershed.co.uk^
 ||cookiescript.info^$third-party
 ||evidon.com^$third-party
+||mycookies.it^$third-party
 ||smartcookies.it^$third-party
 ||thirdfloor.it^$third-party
 ! --------------------------Specific blocking filters--------------------------!
@@ -25362,8 +25365,6 @@ castroelectronica.pt##div[style="height: 35px; background:#2a2a2a; position:abso
 ! 
 ! ---------- Italian Site Specific Blocking Rules ----------
 ! 
-/gestione_cookie.js
-/nibirumail.cookie.min.js
 ||24o.it^*/ias/
 ||booster3d.com^$third-party
 ||cml.to/robot/
@@ -25373,7 +25374,6 @@ castroelectronica.pt##div[style="height: 35px; background:#2a2a2a; position:abso
 ||linkwelove.it^$third-party
 ||mastertop100.org^$third-party
 ||milanofinanza.it/img/top.png
-||mycookies.it^$third-party
 ||player.pulsemediatv.com^$third-party
 ||player.streamshow.it^$third-party
 ||publy.com^$third-party
@@ -25383,14 +25383,10 @@ castroelectronica.pt##div[style="height: 35px; background:#2a2a2a; position:abso
 ! 
 ! ---------- Italian Site Specific Hiding Rules ----------
 ! 
-controcampus.it###Controcampus_cookie_advice
-educazioneemotiva.it,viterbonews24.it,viterbooggi.eu###Cookie
 focusjunior.it###FJToTop
 dailybest.it###G_info
 katorishintoryu.it###POPUPS_ROOT
 evomagazine.it###RegSito
-corriere.it,gazzetta.it###\5f evh-ric
-ubuntu-it.org###\5f ubuntu-it_cookie_policy
 affaronissimo.it###af-cw-box
 centromedicobeb.it###alert
 gds.it###alert_container
@@ -25401,24 +25397,15 @@ virgilio.it###bottom_chat
 ilgiornale.it,prezzoforte.it,virgilio.it###bottombar
 lacnews24.it###box1
 paginegialle.it###btt
-proversi.it###c-agree
-centrometeolombardo.com###cc_div
-ecodallecitta.it###contenuto_consenso
-citroen-club.it,giornaledicalabria.it,ildolomiti.it,tecnocasa.it,wd40.it###cookie
-angolotesti.it,automobilismo.it,evomagazine.it###cookies
 yakult.it###custom-bottom-banner
-ilfruttarolo.it###decretopr
 amref.it###divCk
 eprice.it###fastRegBottom
 ridewill.it###footerCk
 autobelle.it###freccetta
-ilmeteo.net###gpdr
 accessibilitacentristorici.it###htmlbox_div1
 ilsole24ore.com###ias-footer
 flatme.it###ic
-musicworks.it###infromativap
 italiaoggi.it###lig_movingup2it_smartbox
-marbaro.it###marbaro_cookielaw_banner
 grandecinema3.it###mask
 davidemaggio.it###mc_embed_signup
 iit.it###messageContainer
@@ -25427,7 +25414,6 @@ eprice.it###moveUp
 playme.it###msg-close
 gazzetta.it###multifunctionBar-container
 termometropolitico.it,terranuova.it###newsletter
-demaiogroup.it###normativa
 euronics.it###note
 columbiasportswear.it###notify-bar
 lainox.it###overlay_form
@@ -25435,10 +25421,6 @@ ansa.it###pg-slide
 pusc.it###pixelfabrica-cs-banner
 confartigianato.it,tuodi.it###popup
 voloweb.it###popupDivC
-alceosalentino.it,chemistresearch.it,cinquantamila.it###privacy
-jusan.it###privacy-popup
-rio2016.coni.it###privacy-wrapper
-cinquantamila.corriere.it,cinquantamila.it###privacy_advisor
 repubblica.it###related
 greenme.it###related-newsletter
 genovaquotidiana.com###scroll-up
@@ -25454,10 +25436,8 @@ meltybuzz.it###toastsWrapper
 luxuryzone.it###top-notification-container
 tvsoap.it###topcontrol
 scuolerimini.it###upper_div
-puglialive.net###visitor_info
 farmacieaperte.it###warning-popup
 alvolante.it###wrapper-header-small-up
-intrage.it##.BoxPrivacy
 fosse-biologiche.it##._CL_main
 cassoni-usati.it##.activebar-container
 cafassoefigli.it,playinfinity.it,saperesalute.it##.alert
@@ -25474,12 +25454,9 @@ elettrocasa.it,ntp-shop.it##.bottomBarMessage
 raikaritten.it##.bottom_note
 studenti.it##.box-outbrain
 calendario-365.it,epochtimes.it,ridble.com##.cd-top
-mivoq.it##.check-policy
 tomshw.it##.content-autopromo
 tomshw.it##.content-related
 corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,leggo.it,quotidianodipuglia.it##.control_top
-aeroportoditorino.it,botfactory.info,peugeot.it,telepace.it##.cookie
-ebayextra.it,italotreno.it,radioitalia.it,tivusat.tv,walliance.eu##.cookies
 dentisti-italia.it##.di-banner
 spindox.it##.disclaimer-box
 donnamoderna.com##.donnam-footer-newsletter
@@ -25507,10 +25484,8 @@ vg247.it##.notif-bar
 infojobs.it##.notification-body
 landrover.it##.notificationBars
 everyeye.it##.playert
-nh-hotels.it##.politicaRewards
 enzopennetta.it##.popmake
 giocodigitale.it##.preheader
-edilvetta.it##.privacy
 prelex.it##.rstboxes
 tempoitalia.it##.scroll
 italotreno.it##.scroll-up
@@ -26166,8 +26141,33 @@ orvosilexikon.hu##.region-bottom
 bestdoor.hu##.rstbox
 gyakorikerdesek.hu##body > div[style^="text-align: left;"]
 filmkatalogus.hu##table[width="870"][cellspacing="3"]
-! Italian
 ! Israeli
+! Italian
+controcampus.it###Controcampus_cookie_advice
+educazioneemotiva.it,viterbonews24.it,viterbooggi.eu###Cookie
+corriere.it,gazzetta.it###\5f evh-ric
+ubuntu-it.org###\5f ubuntu-it_cookie_policy
+proversi.it###c-agree
+centrometeolombardo.com###cc_div
+ecodallecitta.it###contenuto_consenso
+citroen-club.it,giornaledicalabria.it,ildolomiti.it,tecnocasa.it,wd40.it###cookie
+angolotesti.it,automobilismo.it,evomagazine.it###cookies
+ilfruttarolo.it###decretopr
+ilmeteo.net###gpdr
+musicworks.it###infromativap
+marbaro.it###marbaro_cookielaw_banner
+demaiogroup.it###normativa
+alceosalentino.it,chemistresearch.it,cinquantamila.it###privacy
+jusan.it###privacy-popup
+coni.it###privacy-wrapper
+cinquantamila.corriere.it,cinquantamila.it###privacy_advisor
+puglialive.net###visitor_info
+intrage.it##.BoxPrivacy
+mivoq.it##.check-policy
+aeroportoditorino.it,botfactory.info,peugeot.it,telepace.it##.cookie
+ebayextra.it,italotreno.it,radioitalia.it,tivusat.tv,walliance.eu##.cookies
+nh-hotels.it##.politicaRewards
+edilvetta.it##.privacy
 ! Finnish
 spot-a-shop.fi###popup-notifications
 americanairlines.fi##.alert
@@ -27594,4 +27594,4 @@ account.microsoft.com#@#.privacy-container
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: dFtd9GNqiRPJ2PwJ1HJ/QA
+! Checksum: +9lSTD0hASAhAEr+khrLmg
