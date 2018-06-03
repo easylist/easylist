@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201806030103
+! Version: 201806030107
 ! Title: Fanboy's Annoyance List
-! Last modified: 03 Jun 2018 01:03 UTC
+! Last modified: 03 Jun 2018 01:07 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3031,6 +3031,7 @@ _youtube_social_
 .divascookies-
 .EuCookieCompliance.
 .fscookieconsent.
+.gdpr.js
 /__cookie_js.php
 /ac_cookiesvalidation/*
 /accept-cookie.
@@ -3042,6 +3043,7 @@ _youtube_social_
 /alertcookies.
 /amCookieApproval.
 /angular-cookies-
+/api/gdpr$script
 /asesor-cookies-$~image
 /avisCookies.
 /avisopcgdpr.
@@ -6703,6 +6705,7 @@ _site_cookie_
 ###linkedin_social_sidebar
 ###list--share-buttons
 ###listMasterShareListBottom
+###logShare
 ###logo-socials-follow
 ###lr_social_tout
 ###ls-facebook-box
@@ -12963,6 +12966,7 @@ _site_cookie_
 ##.sharePost
 ##.shareProp
 ##.shareRow
+##.shareSelector
 ##.shareShare
 ##.shareSideBar
 ##.shareSocialArticle
@@ -13360,6 +13364,7 @@ _site_cookie_
 ##.showsocial
 ##.showthread-social
 ##.shr-bookmarks
+##.shr-btn
 ##.shr-btn-scl2
 ##.shr-btn-tbl
 ##.shr-btns
@@ -16280,6 +16285,7 @@ _site_cookie_
 ! Amazon sites
 ##.feature > #tell-a-friend
 ! *** easylist:fanboy-addon/fanboy_cookie_general_hide.txt ***
+###AF_GDPR
 ###AcceptCookie
 ###AcceptCookieContainer
 ###AcceptCookies
@@ -16610,6 +16616,7 @@ _site_cookie_
 ###__cookie_consent
 ###__fr_cookie_notifier
 ###__ntk_banner_cookie
+###__tealiumGDPRecModal
 ###_avviso_cookie
 ###_cookieNotificationBar
 ###_cookie_banner
@@ -16971,6 +16978,7 @@ _site_cookie_
 ###box-cookie
 ###box-cookie-overlay
 ###box-cookies
+###box-gdpr
 ###boxCookie
 ###boxCookies
 ###boxTextCookie
@@ -18492,6 +18500,7 @@ _site_cookie_
 ###cookies-eu-banner
 ###cookies-fancybox
 ###cookies-footer
+###cookies-gdpr-host
 ###cookies-gratki-info
 ###cookies-guide
 ###cookies-header
@@ -19379,13 +19388,22 @@ _site_cookie_
 ###gc_web_user_allow_cookie_box
 ###gdpr-banner
 ###gdpr-box
+###gdpr-consent-banner
 ###gdpr-cookieNotice
 ###gdpr-is-fun
 ###gdpr-script
+###gdprAgree
+###gdprBox
+###gdprContainer
 ###gdprCookieBanner
 ###gdprNotice
 ###gdprNotification
+###gdprVxConsentBar
 ###gdpr_banner
+###gdpr_box
+###gdpr_modal
+###gdpr_user_consent_banner
+###gdprbar
 ###gdprc_bar
 ###gdprpopup
 ###gel-cookie
@@ -19808,6 +19826,7 @@ _site_cookie_
 ###mod-svmb-cookie-layer-1
 ###modal-cookie
 ###modal-cookies
+###modal-gdpr
 ###modalCookieContainer
 ###modalStaticAvisoCookies
 ###modal_cookie
@@ -19942,6 +19961,7 @@ _site_cookie_
 ###nw_cookie_alert_box
 ###nwcook-message
 ###nwe-cookie-bar
+###nx_gdpr_modal
 ###o-cookie
 ###o99_cookie-information
 ###oH_cookie
@@ -20125,6 +20145,7 @@ _site_cookie_
 ###popup_info_cookie
 ###popupcookie
 ###popupcookies
+###popupgdpr
 ###portal-cookieoptout
 ###positiv_cookies_field
 ###powa-cookie
@@ -20725,6 +20746,8 @@ _site_cookie_
 ##.EuropeanCookieBar
 ##.F6-cookies_w_js-entrypoint
 ##.GAcookies
+##.GDPR-tools-consent
+##.GDPRPanel--visible
 ##.Header-cookie
 ##.IP__CookieConsent
 ##.LAW_cookie_alert
@@ -22508,21 +22531,29 @@ _site_cookie_
 ##.gb-cookie-consent
 ##.gb-gnb__notice-bar
 ##.gdl-cookie-dialog
+##.gdpr-ask-modal
 ##.gdpr-banner
 ##.gdpr-bar
 ##.gdpr-consent
+##.gdpr-cookie
 ##.gdpr-cookie-banner
+##.gdpr-cookie-notice
 ##.gdpr-cookie-wrapper
 ##.gdpr-cookieNotice
 ##.gdpr-cookies-hint
 ##.gdpr-cookies-line
 ##.gdpr-disclaimer
 ##.gdpr-modal-dialog
+##.gdpr-notice
+##.gdpr-notification
+##.gdpr-notification-banner
+##.gdpr-popup-border
 ##.gdpr-privacy-banner
 ##.gdpr-privacy-bar
 ##.gdprPopup
 ##.gdpr_banner
 ##.gdpr_gdpr-composer-panel__toolbar
+##.gdpr_popup_wrap
 ##.general-cookie-notification
 ##.gfl-widget-gdpr-wrap
 ##.ghost-cookiebar
@@ -23362,6 +23393,8 @@ _site_cookie_
 ##.w-cookie-notice
 ##.w-notifications__noty_cookie
 ##.w3_cnil
+##.waGDPR_consentButton
+##.waGDPR_modalFrameBackground
 ##.wami_cookie_div
 ##.warn-cookie
 ##.warning-cookie
@@ -23490,6 +23523,7 @@ _site_cookie_
 ##div[data-cookie-name="header_cookie_policy"]
 ##div[data-cookie-warning]
 ##div[data-cookie="on"]
+##div[data-gdpr-consent-prompt]
 ##div[data-id="cookieBar"]
 ##div[data-is-cookieinfo]
 ##div[data-module="cookie_banner"]
@@ -32760,4 +32794,4 @@ account.microsoft.com#@#.privacy-container
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: zhJurxVcP9QI2lJA1Pf3kA
+! Checksum: uLlg0q50l2Qo3bLaWzJ2ZA
