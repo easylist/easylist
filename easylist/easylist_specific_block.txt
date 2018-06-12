@@ -4465,8 +4465,6 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||escdn.co^*/1.js$script,domain=estream.nu|estream.to
 @@||flowplayer.org^$script,domain=estream.nu|estream.to
 @@||fonts.googleapis.com^$stylesheet,domain=estream.nu|estream.to
-! cheezburger.com
-$subdocument,third-party,xmlhttprequest,domain=cheezburger.com
 ! r4dm.com
 @@||api.solvemedia.com^$script,domain=r4dm.com
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=r4dm.com
@@ -5592,7 +5590,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||btsproxy.com^$csp=script-src 'self' 'unsafe-inline' data: *.google.com *.google-analytics.com
 ||btstor.cc^$csp=script-src 'self' 'unsafe-inline' data: *.google.com *.google-analytics.com
 ||campussports.net^$csp=script-src 'self' * 'unsafe-inline'
-||cheezburger.com^$csp=script-src 'self' * 'unsafe-inline'
+||cheezburger.com^$csp=script-src 'self' 'unsafe-eval' 'unsafe-inline' data: *.youtube.com *.ytimg.com *.google-analytics.com *.facebook.net *.complex.com *.b2c.com *.chartbeat.com *.chzbgr.com *.scorecardresearch.com *.air.tv *.quantserve.com *.optimizely.com *.cheezburger.com *.quantcount.com *.newrelic.com
 ||colourlovers.com^$csp=script-src 'self' * 'unsafe-inline'
 ||convertcase.net$csp=script-src 'self' * 'unsafe-inline'
 ||convertfiles.com^$csp=script-src 'self' * 'unsafe-inline'
