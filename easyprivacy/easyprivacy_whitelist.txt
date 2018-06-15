@@ -100,6 +100,7 @@
 @@||barclays.co.uk/touchclarity/mbox.js
 @@||barclays.touchclarity.com^$domain=barclaycard.co.uk
 @@||bbc.co.uk/frameworks/nedstat/$script,~third-party
+@@||bbc.co.uk/radio/player/*/logger.js$script,~third-party
 @@||bbci.co.uk/bbcdotcom/*/script/av/emp/analytics.js$domain=bbc.co.uk
 @@||bbci.co.uk^*/comscore.js$domain=bbc.co.uk
 @@||bc.geocities.*/not_found/
@@ -180,9 +181,11 @@
 @@||cloudfront.net/mngr/$script,domain=theladbible.com
 @@||cloudfront.net/opentag-*.js$domain=mackweldon.com|telegraph.co.uk
 @@||cloudfront.net/releases/current/tracker.js$domain=triage.superservice.com
+@@||cloudfront.net^*/AppMeasurement.js$domain=financialpost.com
 @@||cloudfront.net^*/comscore.$script,domain=my5.tv
 @@||cloudfront.net^*/jquery.google-analytics.js$domain=homepath.com
 @@||cloudfront.net^*/keen.min.js$domain=foodnetwork.co.uk
+@@||cloudfront.net^*/VisitorAPI.js$domain=financialpost.com
 @@||collect.igodigital.com/collect.js$script,domain=cars.com
 @@||collector.shorte.st/interstitial-page-event$xmlhttprequest
 @@||collegeboard.org/webanalytics/
@@ -215,6 +218,7 @@
 @@||dailycaller.com^*_chartbeat.js
 @@||dailyfinance.com/traffic/?
 @@||dailymail.co.uk/brightcove/tracking/ted3.js
+@@||darksky.net^*/analytics.js$script,~third-party
 @@||deals.nextag.com^*/ClickTracker.jsp
 @@||debenhams.com/foresee/foresee-trigger.js
 @@||demandbase.com^*/ip.json?$xmlhttprequest,domain=vmware.com
@@ -458,7 +462,7 @@
 @@||msn.com/c.gif?rid=$image,domain=my.msn.com
 @@||munchkin.marketo.net/munchkin.js
 @@||musicvideogenome.com/javascripts/stats.js
-@@||mxpnl.com/libs/mixpanel-*.min.js$domain=change.org|greentoe.com|intuit.com|nbc.com|thefrisky.com
+@@||mxpnl.com/libs/mixpanel-*.min.js$domain=change.org|frigidaire.com|greentoe.com|intuit.com|nbc.com|thefrisky.com
 @@||mxpnl.com^$domain=mixpanel.com
 @@||mybuys.com/webrec/wr.do?
 @@||mycokerewards.com^*/webtrends/mcr3-webtrends_POST_$script
@@ -503,10 +507,12 @@
 @@||office365.com^*/owa.Analytics.js$script
 @@||officeworks.com.au^*/site-tracker.js
 @@||oktacdn.com/assets/js/*/mixpanel-$script
+@@||omtrdc.net/cdn/target.js$script,domain=swisscom.ch
 @@||omtrdc.net/crossdomain.xml$domain=crackle.com
 @@||omtrdc.net/settings/$object-subrequest,domain=crackle.com
-@@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=argos.co.uk|att.com|t-mobile.com
-@@||omtrdc.net^*/mbox/standard?$script,domain=ancestry.co.uk|ancestry.com|ancestry.com.au|ancestry.it|blogtalkradio.com
+@@||omtrdc.net^*/mbox/ajax?$script,domain=swisscom.ch
+@@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=argos.co.uk|att.com|swisscom.ch|t-mobile.com
+@@||omtrdc.net^*/mbox/standard?$script,domain=ancestry.co.uk|ancestry.com|ancestry.com.au|ancestry.it|blogtalkradio.com|swisscom.ch
 @@||ooyala.com/3rdparty/comscore_$object-subrequest,domain=livetvcafe.net|player.complex.com
 @@||ooyala.com/crossdomain.xml$object-subrequest
 @@||optimize.webtrends.com^$domain=peterboroughtoday.co.uk
@@ -685,6 +691,7 @@
 @@||ups.com/*/WebTracking/track&dcs
 @@||ups.com/WebTracking/$xmlhttprequest
 @@||urlcheck.hulu.com/crossdomain.xml$object-subrequest
+@@||userzoom.com/analytics/$domain=userzoom.com
 @@||usps.com/m/js/tracking.js$domain=usps.com
 @@||usps.com^*/metrics.js$domain=usps.com
 @@||utm.alibaba.com/eventdriver/recommendEntry.do?$script

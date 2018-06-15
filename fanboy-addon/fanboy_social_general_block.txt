@@ -19,6 +19,7 @@
 -facebook-icon-
 -facebook-icon.
 -facebook-icons-
+-facebook-like-box/
 -facebook-widget.
 -facebook.js$domain=~king.com
 -facebook.svg
@@ -58,6 +59,9 @@
 -icon-youtube.
 -icon_social.
 -iconFacebook.
+-icons/facebook.
+-icons/google.
+-icons/twitter.
 -iconTwitter.
 -Instagram-Button.
 -instagram-icon.
@@ -96,8 +100,10 @@
 -share-16.
 -share-bar/
 -share-button.
+-share-buttons.
 -share-buttons/$~stylesheet
 -share-buttons2.
+-share-buttons3/
 -share-icon.
 -share-icons-
 -share-icons.
@@ -201,6 +207,7 @@
 .bztotalshare.
 .facebookLikePopUp.
 .fbshare.js
+.mobile-share.
 .pluckCount.
 .share.dossierheader.
 .share.lead.
@@ -242,6 +249,7 @@
 /amp-social-
 /app/social.
 /article-social/*
+/aspexi-facebook-
 /assets/*discord.png
 /assets/*Facebook.jpg
 /assets/*facebook.png
@@ -347,6 +355,7 @@
 /bz_share/*
 /color-facebook-
 /color-twitter-
+/common/sns/*
 /commonSprites/social/*
 /components/share/*
 /connect-facebook-
@@ -366,6 +375,7 @@
 /context-social.
 /crowdbooster-
 /crowdbooster_
+/css/social-$~stylesheet
 /custom-share.
 /customSocialBar/*$~stylesheet
 /data/twitter/*
@@ -446,6 +456,7 @@
 /facebook-vertical.
 /facebook.gif|$domain=~facebook.com
 /facebook.svg
+/facebook/likes?
 /facebook1.png|$domain=~facebook.com
 /facebook16x16.
 /facebook2.
@@ -534,6 +545,7 @@
 /fb-banner.
 /FB-Button.
 /FB-f-Logo_
+/fb-footer.
 /fb-grey-
 /fb-icn.
 /fb-ico.
@@ -692,6 +704,7 @@
 /footer_youtube.
 /footerFacebookIcon.
 /footerSocialIcons.
+/footerSocialNet2.
 /footerSocialSprite.
 /footerTwitterIcon.
 /foursquare_64.
@@ -873,6 +886,7 @@
 /ico_google.
 /ico_google_
 /ico_gp.
+/ico_insta_
 /ico_instagram-
 /ico_linkedin.
 /ico_myspace.
@@ -1008,12 +1022,19 @@
 /icon_youtube_
 /icona-social.
 /iconbig-twitter-
+/icone-facebook-
+/icone-instagram-
+/icone-twiter-
+/icone-youtube-
 /icone_fb.
 /icone_tw.
 /icone_yt.
 /iconFacebook-
 /iconFacebook.
+/iconFb.
 /iconGooglePlus.
+/iconGPlus.
+/iconInstagram.
 /icono-facebook.
 /icono-twitter.
 /icono_google.
@@ -1022,6 +1043,7 @@
 /iconogoogleplus.
 /IconoTW.
 /IconoYT.
+/iconPinterest.
 /icons-share-
 /icons-social-
 /icons-social.$~stylesheet
@@ -1058,9 +1080,11 @@
 /icons_twitter_
 /iconSocial.
 /iconTwitter.
+/iconYoutube.
 /icosocialbar.
 /icotwitter.
 /ig-socials.
+/ig_icon.
 /im_sns_
 /image/social_
 /images/*/delicious.jpg
@@ -1190,12 +1214,15 @@
 /instagram-icon.
 /instagram-logo-
 /instagram-logo.
+/instagram.svg
 /instagram1.gif
 /instagram_48.
 /instagram_icon.
 /Instagram_Icon_
 /Instagram_logo.
+/instagram_social_
 /instagram_title_
+/instagramicon_
 /instagramLogo.
 /itunes-icon.
 /jiathis_share.
@@ -1209,6 +1236,7 @@
 /layoutsharedelicious.
 /layoutsharetechnorati.
 /layoutshareyahoo.
+/lg-share.
 /li_share.
 /liinkedInBtn.
 /like-facebook-
@@ -1282,6 +1310,7 @@
 /media/*twitter.png
 /media/*twitter20.png
 /media/*youtube20.png
+/menusbhshare2.
 /min_share.
 /mobile-sharing/*
 /mobilesharetools.
@@ -1347,6 +1376,7 @@
 /pinterest-new-
 /pinterest-over.
 /pinterest-share-
+/pinterest-share.
 /pinterest-sidebar.
 /pinterest.png
 /pinterest1.
@@ -1370,6 +1400,7 @@
 /plain/pinterest-
 /plain/tumblr-
 /plain/twitter-
+/player/share-
 /plugins/*facebook.png
 /plugins/*google.png
 /plugins/*twitter.png
@@ -1435,6 +1466,7 @@
 /portals/*linkedin.jpg
 /portals/*you-tube.jpg
 /printarest.
+/prn.share.
 /public/*/facebook_$~stylesheet
 /public/*/tumblr_$~stylesheet
 /public/*/twitter_$~stylesheet
@@ -1459,9 +1491,11 @@
 /Resources/twitter-$~xmlhttprequest
 /retweet-button.
 /rotating_tweet.
+/rss-icon_
 /rss-iconheader.
 /rss-new.
 /RSS-top-
+/rsstop1.
 /rtsocial/*
 /sc-twitter-
 /ScoailMedia_
@@ -1503,7 +1537,9 @@
 /share-icons/*
 /share-ig-
 /share-img.
+/share-instagram-
 /share-link-
+/share-linkedin-
 /share-media.
 /share-mobile.
 /share-myspace.
@@ -1609,6 +1645,7 @@
 /sharebutts.
 /shared/btn_
 /shared/social/*
+/sharedaddy.js
 /sharedaddy/*$image,script
 /sharedcount.
 /shareFacebook.
@@ -1718,6 +1755,7 @@
 /social-core
 /social-delicious.
 /social-digg.
+/social-dm.
 /social-facebook-
 /social-facebook.
 /social-fb.
@@ -1726,6 +1764,7 @@
 /social-google.
 /social-header.
 /social-icon-$~font
+/social-icon.
 /social-icon/*
 /social-icons-
 /social-icons.
@@ -1736,7 +1775,7 @@
 /social-instagram.
 /social-like-
 /social-likes-
-/social-likes_
+/social-likes_$~stylesheet
 /social-links-
 /social-locker/*$script
 /social-logos.
@@ -1760,6 +1799,7 @@
 /social-pin.
 /social-pinterest-
 /social-plugin/*
+/social-popup/*
 /social-profiles-widget/*$~stylesheet
 /social-proof-
 /social-search-
@@ -1834,6 +1874,10 @@
 /social2.
 /social3.
 /social4.
+/social5.
+/social6.
+/social7.
+/social8.
 /social_01.
 /social_02.
 /social_2.
@@ -1944,6 +1988,7 @@
 /socialize/*$image
 /sociallink-
 /sociallinks.
+/sociallinks_
 /sociallocker-
 /socialMedia-
 /socialMedia.
@@ -2028,7 +2073,6 @@
 /st_digg_
 /st_facebook_
 /st_twitter_
-/static/*fb.png
 /static/social/*$image
 /stocktwits_share.
 /storage/social/*
@@ -2241,7 +2285,7 @@
 /twitter_menu_
 /twitter_share.
 /Twitter_social.
-/Twitter_Social_
+/twitter_social_
 /twitter_sprite.
 /twitter_square.
 /twitter_subscribe.
@@ -2378,6 +2422,7 @@
 /youtubebutton.
 /youtubeFooterIcon-
 /youtubeIcon.
+/youtubeicon_
 /youtubesquare.
 /yt-icon1.
 /ytwitter_widget_
@@ -2500,6 +2545,7 @@ _slideshare.
 _small_share.
 _sns_me2day.
 _sns_twitter.
+_soc_rss.
 _social-google+
 _social-media_
 _social-sprite.
@@ -2517,6 +2563,7 @@ _social_crains.
 _social_email.
 _social_facebook.
 _social_fb.
+_social_fb_
 _social_flicker.
 _social_footer_
 _social_google_
@@ -2526,6 +2573,7 @@ _social_icon2.
 _social_icons.
 _social_icons/
 _social_instagram.
+_social_instagram_
 _social_linked_
 _social_media_icons_
 _social_pinterest.
