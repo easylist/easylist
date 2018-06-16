@@ -4418,8 +4418,7 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||kimcartoon.me/Scripts/$script,domain=kimcartoon.me
 ||kimcartoon.me^$script,domain=kimcartoon.me
 !
-/^https?:\/\/([0-9a-z\-]+\.)?(9anime|kimcartoon|memecenter|readcomiconline|watchcartoononline)\.[a-z]{2,4}\/(?!(Content|Uploads|assets|static|thumbs|wp-content|wp-includes))(.*)/$image,script,~third-party
-@@||9anime.is/assets/min/frontend/all.js$script
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|kimcartoon|memecenter|readcomiconline|watchcartoononline)\.[a-z]{2,4}\/(?!(Content|Uploads|static|thumbs|wp-content|wp-includes))(.*)/$image,script,~third-party
 @@||9anime.is/assets/player/jwplayer-7.12.3/jwplayer.js$script
 @@||readcomiconline.to^*/customjavascript.js|$script,~third-party
 @@||readcomiconline.to^*/jquery.tools.min.js|$script,~third-party
