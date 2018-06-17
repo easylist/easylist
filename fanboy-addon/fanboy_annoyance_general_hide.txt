@@ -130,12 +130,14 @@
 ###my_web_push_app_box_confirm
 ###network_floaty_icons
 ###newsLetterSignUp
+###newsletter-banner
 ###newsletter-banner-bottom
 ###newsletter-form-holder
 ###newsletter-popup-left
 ###newsletter-signup-form
 ###newsletter-strip
 ###newsletter-top-banner
+###newsletter_div
 ###newsletter_holder
 ###newsletter_signup_ft
 ###newsletter_signup_sb
@@ -150,6 +152,7 @@
 ###ob_roadblock_container
 ###obog_signup_widget
 ###ody-nextstoryslider
+###onesignal-bell-container
 ###onesignal-popover-container
 ###openshare
 ###orkut-button
@@ -166,6 +169,7 @@
 ###ppsPopupBgOverlay
 ###prev-post-wrap
 ###promotion-floater
+###push-alert-block
 ###pushwoosh-pop
 ###react_wrapper_edition_newsletter_signup
 ###read-next-modal
@@ -299,6 +303,7 @@
 ##.bloc-newsletter
 ##.block-content-newsletter
 ##.block-dennis-newsletter-popup
+##.block-nst-cxense
 ##.block-simplenews
 ##.block-trinity-newsletter
 ##.bookmark_services
@@ -394,6 +399,7 @@
 ##.gt-popup
 ##.hellobar-signup
 ##.home-twitterfeed
+##.homepg-newsletter-sign-up-form
 ##.i-rss
 ##.i_big_rss
 ##.ibbsub
@@ -457,6 +463,7 @@
 ##.navigation_social
 ##.new_head_rss
 ##.newedge-newsletter
+##.newletter-item
 ##.newsLetter-subscription
 ##.newsLetter-subscription-wrapper
 ##.newsLetterHolder
@@ -471,6 +478,7 @@
 ##.newsletter-subscription-module
 ##.newsletterBtn
 ##.newsletterContainer
+##.newsletterWrapper
 ##.newsletter_callout
 ##.newsletter_footer
 ##.newsletter_footer_container
@@ -489,6 +497,7 @@
 ##.object-subscribe-newsletter
 ##.om-has-email
 ##.omniWidget-article-signup-large
+##.onesignal-bell-container
 ##.oo_tab_right
 ##.opinionlab-sidebar
 ##.optin-monster-overlay
@@ -623,6 +632,7 @@
 ##.subscribe-widget-container
 ##.subscribeBox
 ##.subscribeNewsletter
+##.subscribeWidgetContainer
 ##.subscribe_rss
 ##.subscribe_widget
 ##.subscription-toaster
@@ -664,6 +674,7 @@
 ##.widget_feedburnerformwidget
 ##.widget_feeds
 ##.widget_ione-jobs_v2
+##.widget_ligatus
 ##.widget_mailchimpsf_widget
 ##.widget_mc4wp_widget
 ##.widget_mybloglog
@@ -791,6 +802,7 @@
 ###taboola-text-2-columns-mix
 ###taboola-vid-container
 ###taboola-widget-wrapper
+###taboolaSave
 ###taboola_wrapper
 ##.divider-taboola
 ##.js-taboola
@@ -799,17 +811,20 @@
 ##.story-taboola-related-module
 ##.taboola
 ##.taboola-bottom-adunit
+##.taboola-frame
 ##.taboola-inbetweener
 ##.taboola-list-mod
 ##.taboola-module
 ##.taboola-recommends
 ##.taboola-sidebar-container
+##.taboola-skip-wrapper
 ##.taboola-thumbnails-container
 ##.taboola-vertical
 ##.taboola-wrapper
+##.taboolaDiv
 ##.taboola_module
 ##.taboola_v8
-##.taboolaDiv
+##.taboolaloader
 ##.widget_am_taboola_main_widget
 ##.widget_ione-taboola
 ! nbc websites app element
@@ -1152,7 +1167,9 @@
 ###pro_newsletter_signup
 ###promo-subscription
 ###promo-subscription-overlay
+###pushAdUpBanner
 ###push_subscribe
+###rb-newsletter
 ###rdc-newsletter
 ###relatedNavNewsletter
 ###remodalnewsletter
@@ -1928,6 +1945,8 @@
 ##div[class^="NewsletterForm_"]
 ##div[class^="NewsletterPopup_"]
 ##img[title="Subscribe to our daily email"]
+! medium.com related newsletters
+##.js-stickyFooter.u-fixed
 ! nlgate Newsletter
 ###nlgate
 ###nlgate-overlay-0
@@ -2061,6 +2080,7 @@
 ##.back-to-top-wrap
 ##.back-top
 ##.back-top-btn
+##.back-top-top
 ##.back-top_button
 ##.back2top
 ##.backToTop
@@ -2082,6 +2102,7 @@
 ##.block_to_top
 ##.body-back-to-top
 ##.body-btn-top
+##.body-scrollToTop
 ##.btn--move-to-top
 ##.btn-back-to-top
 ##.btn-go-top
@@ -2156,6 +2177,7 @@
 ##.js-scroll-to-top
 ##.js_btn_gotop
 ##.jscroll-to-top_link
+##.layout__scroll-to-top
 ##.link_to_top
 ##.m-go-top
 ##.menu-back-to-top
@@ -2211,6 +2233,7 @@
 ##.stt-gototop
 ##.stt-top
 ##.sublink_back_top
+##.tc-back-to-top
 ##.td-scroll-up
 ##.tdr-backtop
 ##.ti_scroll
@@ -2247,6 +2270,7 @@
 ##.yukari_git
 ##.z-navigation-footer_backToTop
 ##[app="back-to-top-button"]
+##[data-funct="GoToPageTop"]
 ##a[class^="bd-backtotop-"]
 ##a[data-bind="toTopButton"]
 ##a[data-scroll-to-anchor="top"]
@@ -2272,6 +2296,7 @@
 ##button[data-widgetclass="backToTopBtn"]
 ##button[title="Back to the top of this page"]
 ##button[title="Go to top"]
+##div[aria-label="Scroll to top"]
 ##div[title="Back to Top"]
 ##div[title="Scroll Back to Top"]
 ##div[title="Scroll To Top"]
