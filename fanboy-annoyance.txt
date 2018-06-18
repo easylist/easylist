@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201806182259
+! Version: 201806182310
 ! Title: Fanboy's Annoyance List
-! Last modified: 18 Jun 2018 22:59 UTC
+! Last modified: 18 Jun 2018 23:10 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -5394,6 +5394,7 @@ _site_cookie_
 ###floaty-rss
 ###follow-rss
 ###followRSS
+###followrss
 ###footer_rss_image
 ###footerrss
 ###frss
@@ -5410,6 +5411,7 @@ _site_cookie_
 ##.image_logo_rss_footer
 ##.p-footer-rssLink
 ##.rss-div
+##.share-rss
 ##[title="SUBSCRIBE TO RSS FEEDS"]
 ##[title="Subscribe to RSS Feed"]
 ##[title="Subscribe to our RSS feed"]
@@ -23319,6 +23321,7 @@ _site_cookie_
 ##.gdpr-bar
 ##.gdpr-consent
 ##.gdpr-consent-backdrop
+##.gdpr-consent-banner
 ##.gdpr-cookie
 ##.gdpr-cookie-banner
 ##.gdpr-cookie-consent-banner
@@ -31560,6 +31563,7 @@ la-croix.com##.prev
 tourhebdo.com##.resocs
 radins.com##.reveal-modal
 radins.com##.reveal-modal-bg
+express.live##.rss
 rtbf.be##.rtbf-newsletter
 rtbf.be##.rtbf-newsletter-article
 tourhebdo.com##.social
@@ -31593,6 +31597,7 @@ girlsheaven-job.net,gnavi.co.jp,harpersbazaar.jp,news24.jp###pageTop
 radionikkei.jp###page_top
 nhk.or.jp,webtsc.com###pagetop
 yahoo.co.jp###pg_top
+news24.jp###rss
 j-wave.co.jp###totop
 webtsc.com##.footer-totop
 allnightnippon.com##.footer_pagetop
@@ -31606,11 +31611,14 @@ harpersbazaar.jp##.subModuleMailMagazine
 ||okjapan.jp^*/btn_top.
 ||okjapan.jp^*_gotop_
 ||radionikkei.jp^*/pagetop.
+! 
 ! ---------- Turkish Site Specific Hiding Rules ----------
+! 
 milliyet.com.tr###upNextWrapper
 nefisyemektarifleri.com###veriUyari
 meleklermekani.com##.FloatingContainer
 unikampus.net##.more-stories
+trt.net.tr##.rss
 diyanet.tv##.scrollup
 hileliapkoyunindir.com##.site-desc
 milliyet.com.tr##.sticky
@@ -31643,6 +31651,8 @@ aeiou.pt##.newsletter-form
 globo.com##.newsletters
 soychile.cl##.overli
 daf.es##.page-overlay
+larazon.es##.rrss
+beteve.cat##.rrss-buttons
 europafm.com##.scrollup
 eleconomista.es##.suscribe-all
 infotechnology.com##.suscription
@@ -31754,6 +31764,7 @@ ravennanotizie.it##.newsletter-section
 starbene.it##.nlslim
 everyeye.it##.playert
 enzopennetta.it##.popmake
+ilfoglio.it##.rss
 tempoitalia.it##.scroll
 italotreno.it##.scroll-up
 allmusicitalia.it,animeclick.it,gamerclick.it,gruppogavio.it,ilcorrieredelgiorno.it,salt.it,satapweb.it,sav-a5.it,serialclick.it,utet.it##.scrollup
@@ -31816,15 +31827,13 @@ dcnews.ro##.pushinstruments
 ! ---------- Non-English Social Media Elements ----------
 ! 
 dinamani.com,samakalikamalayalam.com###print_article
-armeniasputnik.am,rtvslo.si,sputnik-abkhazia.info,sputnik-abkhazia.ru,sputnik-georgia.com,sputnik-georgia.ru,sputnik-news.ee,sputnik-ossetia.com,sputnik-ossetia.ru,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.kz,sputniknews.lt,sputniknewslv.com###share
+armeniasputnik.am,rtvslo.si,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-news.ee,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.kz,sputniknews.lt,sputniknewslv.com###share
 trt.net.tr##.facebook
 diyanet.tv##.lobibox-notify-wrapper
 diyanet.tv##.navbar-sosyal
-trt.net.tr##.rss
 aljazeera.net,autoline-arabic.com,autoline-eu.rs,autoline.com.tr,autoline.lt,autoline.lv,autoline.me,autoline.mk,autoline.ro,autoline.si,autoline.sk,cnbcindonesia.com,cnnturk.com,hrt.hr##.share
 sahartv.ir##.share-instagram
 sahartv.ir##.share-mail
-sahartv.ir##.share-rss
 sahartv.ir##.share-soundcloud
 sahartv.ir##.share-telegram
 sahartv.ir##.share-youtube
@@ -31889,7 +31898,6 @@ vapee.com##a[href^="http://t.qq.com/"]
 ! 
 srad.jp###article-bottom
 tv-aichi.co.jp###box-officialsns
-news24.jp###rss
 ntv.co.jp###sns
 1242.com##.conts_Facebook
 1242.com##.conts_Twitter
@@ -31928,7 +31936,6 @@ kress.de###facebookbox-open
 sprachnudel.de###facebox
 sprachnudel.de###facebox_overlay
 moviepilot.de###fb-connect-dialog
-golem.de###followrss
 dls-logistics.de###footerlinks
 presseportal.de###iLike
 derstandard.at###infoslide
@@ -32067,16 +32074,7 @@ mf24.pl##.youtube
 ! 
 ! ---------- Dutch Site Specific Hiding Rules ----------
 ! 
-welovemusthaves.com#@##socialContainer
-net-kanker.nl#@##socialmedia
-ontharen.org#@#.addthis_toolbox
 autoline-nl.be,autoline.nl##.share
-nu.nl#@#.social-button
-nu.nl#@#.social-buttons
-nu.nl#@#.socialbar
-@@||pollland.nl^*/share/js/jquery
-@@||s7.addthis.com^*/addthis_widget.js$domain=carsom.nl|ticketmaster.nl
-@@||static.autojunk.nl/javascript/SocialMedia.js
 ||sanoma.nl/media/static/images/icon_zienl.png
 ! 
 ! ---------- Swedish Site Specific Hiding Rules ----------
@@ -32089,6 +32087,7 @@ radioplay.se##div[style="flex-shrink: 0; border-left: 1px solid rgba(255, 255, 2
 ntv.ru###bottomsoc
 rg.ru###rgb_vk
 rg.ru###rgb_yandex-zen_zen
+sputnik-abkhazia.ru,sputnik-georgia.ru,sputnik-ossetia.ru###share
 gidonline.in###soc
 7kanal.co.il##.Share
 5-tv.ru##._links
@@ -32156,7 +32155,6 @@ europe1.fr,lemonde.fr##.partage
 jeuxvideo.fr,jeuxvideopc.com##.pictos
 leparisien.fr##.plusRecommande
 madagascar-tribune.com##.rezo_sociaux
-express.live##.rss
 autoline-eu.fr,autoline.be,autoline.lu,buzzmoica.fr,francetvinfo.fr,gamekult.com,la-croix.com,nieuwsblad.be##.share
 rtl.fr##.shared-logo
 20minutes.fr,buyindz.com,europe1.fr,gamergen.com,journaldugeek.com,korben.info,ladepeche.fr,leboncoin.fr,lorientlejour.com,methodelafayfemme.fr,petitfute.com,sudouest.fr##.social
@@ -32192,8 +32190,6 @@ meteored.cl,meteored.com.ar,meteored.mx,tempo.com,tempo.pt,tiempo.com##.liCompar
 uol.com.br##.likebox
 cadenaser.com##.modulo_compartir
 crea-mexico.com,futbol.com.uy,montevideo.com.uy,pantallazo.com.uy,telesurtv.net##.redes
-larazon.es##.rrss
-beteve.cat##.rrss-buttons
 autoline-br.com,autoline-market.cl,autoline.bo,autoline.com.py,autoline.es,autoline.pe,autoline.pt,clarin.com,elperiodico.cat,elperiodico.com,hispantv.com##.share
 tn.com.ar##.shares
 globo.com##.sharing
@@ -32273,7 +32269,6 @@ ilmeteo.net##.liCompartir
 gruppoeditorialesanpaolo.it##.menu-icons-list
 rockol.it##.menu__facebook
 corriere.it##.player-email-ctn
-ilfoglio.it##.rss
 autoline-eu.it,basketinside.com,carpicalcionews.it,cittaceleste.it,comune.torino.it,coopcasarsa.it,corriere.it,corsedimoto.com,famigliacristiana.it,fantamagazine.com,fcinter1908.it,forzaroma.info,gazzamercato.it,gazzetta.it,golssip.it,ildolomiti.it,ilmilanista.it,ilsecoloxix.it,ilsole24ore.com,itasportpress.it,juvenews.eu,lifegate.it,mediagol.it,mobilita.org,mondoudinese.it,numericalcio.it,padovasport.tv,paginegialle.it,panorama.it,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,ravennanotizie.it,repubblica.it,sassuolocalcionews.it,sportavellino.it,supereva.it,tenniscircus.com,tivusat.tv,toronews.net,tuttobolognaweb.it,violanews.com##.share
 ilsole24ore.com##.share-elements
 provincia.bz.it##.sharing
@@ -32886,10 +32881,12 @@ fitocracy.com#@##social-media
 prism-break.org#@##social-networks
 amongtech.com#@##social-sidebar
 okanime.com#@##social-wrapper
+welovemusthaves.com#@##socialContainer
 coverscreen.com#@##social_bar
 base.de#@##social_footer
 ghostery.com#@##social_media
 nextinpact.com#@##socialbar
+net-kanker.nl#@##socialmedia
 arte.tv,lenta.ru#@##socials
 youtube.com#@##subscribe-button
 feedburner.com#@##subscribe-options
@@ -32913,7 +32910,7 @@ instagram.com,pinterest.com#@#.FollowButton
 tomshardware.com#@#.SocialButton
 onbeing.org#@#.addthis_32x32_style
 free18.net,onbeing.org#@#.addthis_default_style
-gadgetlove.com,nrc.gov,onbeing.org,rapgenius.com,tmz.com#@#.addthis_toolbox
+gadgetlove.com,nrc.gov,onbeing.org,ontharen.org,rapgenius.com,tmz.com#@#.addthis_toolbox
 onbeing.org#@#.addthisbuttons
 beautifulplanet4u.com#@#.advanced-social-widget
 kino-vorschau.com#@#.arqam-widget-counter
@@ -33151,8 +33148,8 @@ chillitorun.pl,rta24.eu,vonguru.fr#@#.social-bottom
 bitbucket.org,foodit.com,paypal.com,tvspielfilm.de#@#.social-box
 buzzerie.com,gog.com,poradnikprzedsiebiorcy.pl,udemy.com#@#.social-btn
 chess.com#@#.social-btns
-fastcompany.com,golem.de#@#.social-button
-adevarul.ro,airbnb.cat,airbnb.com,airbnb.de,airbnb.it,bilingua.io,cheezburger.com,musixmatch.com,ozy.com,tipranks.com#@#.social-buttons
+fastcompany.com,golem.de,nu.nl#@#.social-button
+adevarul.ro,airbnb.cat,airbnb.com,airbnb.de,airbnb.it,bilingua.io,cheezburger.com,musixmatch.com,nu.nl,ozy.com,tipranks.com#@#.social-buttons
 twitch.tv#@#.social-column
 cheezburger.com#@#.social-container
 github.com#@#.social-count
@@ -33207,7 +33204,7 @@ neoseeker.com#@#.social_share
 meilleurmobile.com#@#.social_tabs
 leica-camera.com#@#.social_toolbar
 ruliweb.com#@#.social_wrapper
-0calc.es,0calc.fr,0calc.in,0calc.ru,0rechner.de,web2.0calc.com#@#.socialbar
+0calc.es,0calc.fr,0calc.in,0calc.ru,0rechner.de,nu.nl,web2.0calc.com#@#.socialbar
 wuala.com#@#.socialbox
 wuala.com#@#.socialboxp
 jobs.jnj.com,realogy.com#@#.socialbutton
@@ -33853,6 +33850,7 @@ account.microsoft.com#@#.privacy-container
 @@||podaj.to/thumbs/$image,~third-party
 @@||podcasts.joerogan.net^*/sharetools.js
 @@||pokemon-gl.com/share/js/
+@@||pollland.nl^*/share/js/jquery
 @@||popsters.ru/assets/images/fb-login-btn.png
 @@||popsters.ru/assets/images/graph/share.png
 @@||popsters.ru/assets/landing/images/logos/fb.png
@@ -33890,7 +33888,7 @@ account.microsoft.com#@#.privacy-container
 @@||s10i.com/hp/images/fallback/twitter.png$domain=sky.com
 @@||s3.amazonaws.com/digital/social-media-part-*/images/social-media-part-$image,domain=circusstreet.com
 @@||s7.addthis.com/static/r07/$script,stylesheet,domain=majorgeeks.com
-@@||s7.addthis.com^*/addthis_widget.js$domain=channelnewsasia.com|hatsandcaps.co.uk|politico.com|washingtonexaminer.com
+@@||s7.addthis.com^*/addthis_widget.js$domain=carsom.nl|channelnewsasia.com|hatsandcaps.co.uk|politico.com|ticketmaster.nl|washingtonexaminer.com
 @@||s7.addthis.com^*/addthis_widget.js*async=$domain=koeln.de|moneytalksnews.com
 @@||s7.addthis.com^*/addthis_widget.js*pubid=
 @@||s7.addthis.com^*/addthis_widget.js*username=$domain=iamsecond.com
@@ -33943,6 +33941,7 @@ account.microsoft.com#@#.privacy-container
 @@||stadt-bremerhaven.de/wp-content/uploads/*/Twitter-$image,domain=stadt-bremerhaven.de
 @@||stadt-bremerhaven.de/wp-content/uploads/*/twitter.$image,domain=stadt-bremerhaven.de
 @@||stadt-bremerhaven.de/wp-content/uploads/*_twitter-$image
+@@||static.autojunk.nl/javascript/SocialMedia.js
 @@||static.canva.com/designThumbnails/pinterest.png
 @@||stipple.cachefly.net^$domain=stipple.com
 @@||stuff.co.nz/video/*.mp4$media
@@ -34065,4 +34064,4 @@ account.microsoft.com#@#.privacy-container
 @@||material.cmiscm.com/images/share.png
 @@||privacypal.co/assets/img/fb.jpg
 @@||volkswagen-electrique.fr/img/share/share.jpg
-! Checksum: oSBa5L2GKQraGANaFPKEbw
+! Checksum: A+x91A6/OOXYv2j31O0bGQ
