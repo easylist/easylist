@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201806211659
+! Version: 201806211709
 ! Title: EasyPrivacy
-! Last modified: 21 Jun 2018 16:59 UTC
+! Last modified: 21 Jun 2018 17:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12,7 +12,6 @@
 ! 
 ! -----------------General tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
-&ctxId=*&pubId=*&clientDT=
 &ctxId=*&pubId=*&objId=
 &event=view&
 &http_referer=$script
@@ -78,6 +77,7 @@
 -tracking?referrer=
 -trackingScript.
 -xtcore.js
+.&ctxId=*&pubId=*&clientDT=
 .AdmPixelsCacheController?
 .analysis.pv.
 .analytics.min.
@@ -745,6 +745,7 @@
 /betamax_tracker.js
 /better-analytics/*
 /bf.gif?ac=
+/bfs-track.
 /bg_j.gif?
 /bglog.gif?
 /bh_counter.js
@@ -15066,4 +15067,4 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: ZDDmd4Pgw9aNiJt1XU3IOw
+! Checksum: TuDJndpouNF+WRF8UQikpQ
