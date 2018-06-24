@@ -2452,7 +2452,7 @@
 ||zytpirwai.net/track/
 ! Mining
 $subdocument,third-party,domain=estream.to
-$websocket,domain=123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|bigspeeds.com|biter.tv|bitvid.sx|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cloudtime.to|ddmix.net|dekoder.ws|deltabit.co|djs.sk|drama-cool.me|estream.nu|estream.to|extratorrent.cd|fileone.tv|flashx.cc|flashx.ws|fruitstreams.com|gofile.io|hdyayinmac1.com|hentai-online.pl|hq-porns.com|ianimes.co|ifrp.xyz|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|openload.co|potomy.ru|povwideo.net|powvideo.net|protect-iframe.com|reactor.cc|reservedoffers.club|rus.ec|sherlockonline.ru|shrink-service.it|skyback.ru|sleeptimer.org|sorteosrd.com|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|streamplay.top|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|tokyodrift.ga|tubetitties.com|tvad.me|vidfile.net|vidgg.to|vidoza.net|vidto.me|vidtod.me|vidtodo.com|vidtudu.com|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ya3ale.com|zenexplayer.com|ziurim.eu|zona.plus
+$websocket,domain=123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|bigspeeds.com|biter.tv|bitvid.sx|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cloudtime.to|coinhub.win|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|djs.sk|drama-cool.me|estream.nu|estream.to|estream.xyz|extratorrent.cd|fileone.tv|flashx.cc|flashx.ws|fruitstreams.com|gofile.io|hdyayinmac1.com|hentai-online.pl|hq-porns.com|ianimes.co|ifrp.xyz|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|openload.co|potomy.ru|povwideo.net|powvideo.net|protect-iframe.com|reactor.cc|reservedoffers.club|rus.ec|sherlockonline.ru|shrink-service.it|skyback.ru|sleeptimer.org|sorteosrd.com|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|streamplay.top|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|tokyodrift.ga|tubetitties.com|tvad.me|vidfile.net|vidgg.to|vidoza.net|vidto.me|vidtod.me|vidtodo.com|vidtudu.com|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ya3ale.com|zenexplayer.com|ziurim.eu|zona.plus
 $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahminimalis.me|ddmix.net|dekoder.ws|estream.to|flashx.cc|freecontent.stream|leon08.tk|leon12.tk|leon16.tk|myeffect.net|nowvideo.sx|onlinevideoconverter.com|powvideo.net|sleeptimer.org|sorteosrd.com|streambeam.io|streamplay.top|szukajka.tv|tainies.online|vidfile.net|vidgg.to|wholecloud.net
 ! regex
 /([0-9]{1,3}\.){3}[0-9]{1,3}.*(\/proxy|\.wasm|\.wsm|\.wa)$/$third-party,websocket
@@ -2467,6 +2467,9 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ||flashx.*/bootstrap.min.js
 ||gus.host/coins.js
 ||piti.bplaced.net^
+||play.estream.nu^
+||play.estream.to^
+||play.estream.xyz^
 ||s*.site.flashx.
 ||shrink-service.it/js/cM.js
 ||stackpathdns.com/assets/javascript/cr.js
@@ -2477,6 +2480,8 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ||vidto.me/*bootstrap.
 ||vidzi.tv/*bootstrap.
 ||worker.salon.com^
+! CSP Mining
+$csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.us|tvad.me|vidup.me
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
