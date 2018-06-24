@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201806241213
+! Version: 201806241219
 ! Title: EasyList
-! Last modified: 24 Jun 2018 12:13 UTC
+! Last modified: 24 Jun 2018 12:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -581,6 +581,7 @@
 .com/js/ads/
 .com/js/adsense
 .com/miads/
+.com/ntfc.php?$script
 .com/peels/
 .com/pm/ad-
 .com/promodisplay?
@@ -29779,6 +29780,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||cdnativ.com^$third-party
 ||cdnload.top^$third-party
 ||cdnondemand.org^$third-party
+||cdnproviders.net^$third-party
 ||cdnquality.com^$third-party
 ||cdnrl.com^$third-party
 ||cdnservr.com^$third-party
@@ -29947,6 +29949,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||connexplace.com^$third-party
 ||connextra.com^$third-party
 ||consivenu.com^$third-party
+||constintptr.com^$third-party
 ||construment.com^$third-party
 ||consumable.com^$third-party
 ||consumergenepool.com^$third-party
@@ -32093,8 +32096,13 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||purpleflag.net^$third-party
 ||puserving.com^$third-party
 ||push2check.com^$third-party
+||pushame.com^$third-party
 ||pushance.com^$third-party
+||pushbaddy.com^$third-party
+||pushbasic.com^$third-party
+||pushdusk.com^$third-party
 ||pusherism.com^$third-party
+||pushimer.com^$third-party
 ||pushnative.com^$third-party
 ||pushnest.com^$third-party
 ||pushservice.one^$third-party
@@ -33166,6 +33174,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||webads.nl^$third-party
 ||webadvertise123.com^$third-party
 ||webeatyouradblocker.com^$third-party
+||webmasterspub.com^$third-party
 ||webmedia.co.il^$third-party
 ||webonlinnew.com^$third-party
 ||weborama.fr^$third-party
@@ -51294,17 +51303,17 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=destructoid.com
 |https://$script,third-party,xmlhttprequest,domain=destructoid.com
 ! fmovies
-@@||ajax.googleapis.com/ajax/libs/$script,domain=fmovies.is|fmovies.se|fmovies.to
-@@||cloudflare.com^$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
-@@||disqus.com^$script,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
-@@||disquscdn.com^$script,stylesheet,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
-@@||fmovies.*/ajax/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
-@@||fmovies.*/grabber-api/?$domain=fmovies.is|fmovies.se|fmovies.to
-@@||fmovies.*/user/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
-@@||platform.twitter.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
-@@||static1.akacdn.ru/assets/$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
-|http://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
-|https://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.to
+@@||ajax.googleapis.com/ajax/libs/$script,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||cloudflare.com^$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||disqus.com^$script,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||disquscdn.com^$script,stylesheet,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||fmovies.*/ajax/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||fmovies.*/grabber-api/?$domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||fmovies.*/user/$xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||platform.twitter.com^$script,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+@@||static1.akacdn.ru/assets/$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+|http://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
+|https://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to
 ! wholecloud.net
 @@||ajax.googleapis.com^$script,domain=wholecloud.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=wholecloud.net
@@ -70255,4 +70264,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: sASE/oBchGuRClSLd2wFww
+! Checksum: PGmrewMdcW1bVJ14u5Ab9Q
