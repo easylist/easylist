@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201807021320
+! Version: 201807021346
 ! Title: EasyList
-! Last modified: 02 Jul 2018 13:20 UTC
+! Last modified: 02 Jul 2018 13:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52032,11 +52032,13 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 ! movpod.in
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=movpod.in
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=movpod.in
+||movpod.in/sw.js$script
 ! daclips.in
 @@||ajax.googleapis.com^$script,third-party,domain=daclips.in
 @@||trandsey.info/popunder.gif$image,domain=daclips.in
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=daclips.in
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=daclips.in
+||daclips.in/sw.js$script
 ! tinypic
 @@||addthis.com/static/$subdocument,domain=tinypic.com
 @@||api.solvemedia.com^$domain=tinypic.com
@@ -52128,6 +52130,7 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=salefiles
 @@||ajax.googleapis.com^$script,domain=gorillavid.in
 @@||use.fontawesome.com^$script,domain=gorillavid.in
 |http*://$image,script,subdocument,third-party,xmlhttprequest,domain=gorillavid.in
+||gorillavid.in/sw.js$script
 ! fastpic
 |http://$script,stylesheet,third-party,domain=fastpic.ru
 |https://$script,stylesheet,third-party,domain=fastpic.ru
@@ -52808,7 +52811,7 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ! data popups
 |data^$popup,domain=1337x.to|gorillavid.in|nowvideo.to|zippyshare.com
 ! Block http and https popups
-/http*.:\/\/.*/$popup,third-party,domain=35.188.59.75|adf.ly|daclips.in|escdn.co|estream.to|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|jwpcdn.com|latestmoviesdl.com|load.to|moecdn.io|mofunzone.com|monova.org|oload.info|oload.stream|oload.tv|oload.xyz|oloadcdn.net|openload.co|sendvid.com|speedvid.net|sportp2p.com|stream.moe|stream2watch.org|streamango.com|streamcloud.eu|streamin.to|thevideo.me|topclickguru.com|twer.info|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidcpm.com|vidgg.to|vidspot.net|vidstreaming.io|vidto.me|vidzi.tv|vodlock.co|vshare.eu
+/http*.:\/\/.*/$popup,third-party,domain=35.188.59.75|adf.ly|daclips.in|escdn.co|estream.to|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|jwpcdn.com|latestmoviesdl.com|load.to|moecdn.io|mofunzone.com|monova.org|movpod.in|oload.info|oload.stream|oload.tv|oload.xyz|oloadcdn.net|openload.co|sendvid.com|speedvid.net|sportp2p.com|stream.moe|stream2watch.org|streamango.com|streamcloud.eu|streamin.to|thevideo.me|topclickguru.com|twer.info|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidcpm.com|vidgg.to|vidspot.net|vidstreaming.io|vidto.me|vidzi.tv|vodlock.co|vshare.eu
 ! javascript popups
 |javascript^$popup,domain=1337x.to|biology-online.org|bitvid.sx|cloudtime.to|eztv.ag|eztv.tf|eztv.yt|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
 ! regex to pickup ip-address popups
@@ -70548,4 +70551,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: p0QVzrUVK6QIZWJwmNKwaw
+! Checksum: tXPPQGYrkt8M+xvjGlLy2A
