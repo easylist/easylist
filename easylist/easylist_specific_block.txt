@@ -4582,10 +4582,12 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||jquery.com^$script,domain=stream2watch.mx|stream2watch.org
 |http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=stream2watch.mx|stream2watch.org
 ! shink
-@@||cloudflare.com/ajax/$stylesheet,domain=shink.me
-@@||google.com/recaptcha/$domain=shink.me
-@@||googleapis.com^$script,domain=shink.me
-|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me
+@@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
+@@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
+@@||google.com/recaptcha/$domain=shink.me|shon.xyz
+@@||maxcdn.bootstrapcdn.com^$stylesheet,domain=$stylesheet,domain=shink.me|shon.xyz
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
 ! bypassed.net
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bypassed.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bypassed.net
