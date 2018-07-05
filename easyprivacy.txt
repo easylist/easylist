@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201807051547
+! Version: 201807051557
 ! Title: EasyPrivacy
-! Last modified: 05 Jul 2018 15:47 UTC
+! Last modified: 05 Jul 2018 15:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -13,6 +13,7 @@
 ! -----------------General tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
 &action=js_stats&
+&callback=hitStats_
 &ctxId=*&pubId=*&clientDT=
 &ctxId=*&pubId=*&objId=
 &event=view&
@@ -1657,7 +1658,10 @@
 /homepage/analytics.
 /homepage_pixels.
 /homePixelTracking.
+/horizon-pageview?
+/horizon-track.
 /horizon.*/track?
+/horizon.*/watch?
 /horizon/track?
 /hotmobtag_
 /hpanalytics_
@@ -1891,6 +1895,7 @@
 /lbi_ga.
 /leadgen/ga.js
 /leadgen_track
+/lib.tailtarget/*
 /lib/analytics.
 /lib/tracking/*
 /library/svy/*/broker.js
@@ -2932,6 +2937,7 @@
 /stats-amp.
 /stats-js.cgi?
 /stats-tracking.js
+/stats.*/hits/
 /stats.asp?id
 /stats.cgi$image
 /stats.gif?
@@ -3043,6 +3049,7 @@
 /tags?session_id=
 /TagSvc/*
 /tagx.js
+/tailtarget.js
 /targetemsecure.
 /taxtag.js
 /tbuy/tracker/*
@@ -13763,6 +13770,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 ||lancenet.com.br/pw.js
 ||log.r7.com^
 ||logger.rm.uol.com.br^
+||logger.uol.com.br^
 ||metrics.uol.com.br^
 ||sapo.*/clk?u=
 ||sl.pt/wa.gif?
@@ -15126,4 +15134,4 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: sB99IYPo9oEvV7DEBSNNdg
+! Checksum: H9gYbVcMg0MyzGqiR3doAQ
