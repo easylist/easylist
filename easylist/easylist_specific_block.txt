@@ -691,6 +691,7 @@
 ||cdmediaworld.com*/!
 ||cdn-surfline.com/home/billabong-xxl.png
 ||cdn.bidvertiser.com^$domain=bidvertiser.com
+||cdn.free-power-point-templates.com/images/aff/
 ||cdn.turner.com^*/groupon/
 ||cdn77.org^$script,domain=kinox.to|movie4k.to|unblocked.work|vidup.me
 ||ceforum.co.uk/images/misc/PartnerLinks
@@ -1070,7 +1071,8 @@
 ||dvdvideosoft.com^*/banners/
 ||dwarfgames.com/pub/728_top.
 ||dyncdn.celebuzz.com/assets/
-||dyncdn.me/static/20/js/expla*.js$domain=rarbg.is|rarbg.to|rarbg.unblocked.work|rarbgmirror.com|rarbgproxy.org
+||dyncdn.me/static/20/js/expla*.js$domain=rarbg.is|rarbg.to|rarbgmirror.com|rarbgproxy.org
+||totalstatic.com/static/20/js/expla*.js$domain=rarbg.is|rarbg.to|rarbgmirror.com|rarbgproxy.org
 ||e90post.com/forums/images/banners/
 ||eacash.streamplay.to^
 ||earthlink.net^*/promos/
@@ -4471,16 +4473,16 @@ $script,domain=imageporter.com
 $xmlhttprequest,domain=img2share.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=img2share.com
 ! estream.to
-$script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estream.nu|estream.to
-@@||cloudflare.com/ajax/$script,domain=estream.nu|estream.to
-@@||escdn.co/js/sandblaster.js$script,domain=estream.nu|estream.to
-@@||escdn.co/js/tabber.js$script,domain=estream.nu|estream.to
-@@||escdn.co/player$script,domain=estream.nu|estream.to
-@@||escdn.co/t6/$script,domain=estream.nu|estream.to
-@@||escdn.co^$stylesheet,xmlhttprequest,domain=estream.nu|estream.to
-@@||escdn.co^*/1.js$script,domain=estream.nu|estream.to
-@@||flowplayer.org^$script,domain=estream.nu|estream.to
-@@||fonts.googleapis.com^$stylesheet,domain=estream.nu|estream.to
+$script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estream.nu|estream.to|estream.xyz
+@@||cloudflare.com/ajax/$script,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co/js/sandblaster.js$script,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co/js/tabber.js$script,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co/player$script,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co/t6/$script,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co^$stylesheet,xmlhttprequest,domain=estream.nu|estream.to|estream.xyz
+@@||escdn.co^*/1.js$script,domain=estream.nu|estream.to|estream.xyz
+@@||flowplayer.org^$script,domain=estream.nu|estream.to|estream.xyz
+@@||fonts.googleapis.com^$stylesheet,domain=estream.nu|estream.to|estream.xyz
 ! r4dm.com
 @@||api.solvemedia.com^$script,domain=r4dm.com
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=r4dm.com
@@ -4494,8 +4496,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||vidoza.net/js/ads.js$script,domain=vidoza.net
 @@||vidoza.net/js/pop.js$script,domain=vidoza.net
 @@||vidoza.net^$generichide
-|http://$image,script,third-party,domain=vidoza.net
-|https://$image,script,third-party,domain=vidoza.net
+|http://$image,script,subdocument,third-party,domain=vidoza.net
+|https://$image,script,subdocument,third-party,domain=vidoza.net
+||js.vidoza.net^
 ! filecrypt.cc
 @@||filecrypt.cc/js/container.js$script
 @@||filecrypt.cc/js/fcwindow.js$script
@@ -4584,10 +4587,12 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||jquery.com^$script,domain=stream2watch.mx|stream2watch.org
 |http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=stream2watch.mx|stream2watch.org
 ! shink
-@@||cloudflare.com/ajax/$stylesheet,domain=shink.me
-@@||google.com/recaptcha/$domain=shink.me
-@@||googleapis.com^$script,domain=shink.me
-|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me
+@@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
+@@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
+@@||google.com/recaptcha/$domain=shink.me|shon.xyz
+@@||maxcdn.bootstrapcdn.com^$stylesheet,domain=$stylesheet,domain=shink.me|shon.xyz
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
 ! bypassed.net
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bypassed.net
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bypassed.net
@@ -5363,12 +5368,12 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 ! Suprafiles
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.org
 ! vidzi.tv
-@@||ajax.googleapis.com^$script,domain=vidzi.si|vidzi.tv
-@@||vidzi.tv/hls2/$xmlhttprequest,domain=vidzi.si|vidzi.tv
-@@||zopim.com^$script,domain=vidzi.si|vidzi.tv
-|http://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.si|vidzi.tv
-|https://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.si|vidzi.tv
-||ww45.vidzi.tv^
+@@||ajax.googleapis.com^$script,domain=vidzi.online|vidzi.si|vidzi.tv
+@@||static.vidzi.tv/jwplayer-$script,domain=vidzi.online|vidzi.si|vidzi.tv
+@@||vidzi.tv/hls2/$xmlhttprequest,domain=vidzi.online|vidzi.si|vidzi.tv
+@@||zopim.com^$script,domain=vidzi.online|vidzi.si|vidzi.tv
+|http://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.online|vidzi.si|vidzi.tv
+|https://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.online|vidzi.si|vidzi.tv
 ! TPB
 $websocket,xmlhttprequest,domain=bay.maik.rocks|bypassed.st|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 @@||thepiratebay.*/static/js/details.js$domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
