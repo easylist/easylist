@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201807181528
+! Version: 201807181636
 ! Title: EasyList
-! Last modified: 18 Jul 2018 15:28 UTC
+! Last modified: 18 Jul 2018 16:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52827,16 +52827,16 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! IP address
 /^https?:\/\/([0-9]{1,3}\.){3}[0-9]{1,3}/$image,script,subdocument,domain=o2tvseries.com|readcomiconline.to|speedvid.net
 ! CSP filters
-@@||emathhelp.net/search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+@@||emathhelp.net/search/$csp=script-src 'self' * blob: data:
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||kiplinger.com/search/$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||pocketnow.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||talkwithstranger.com/custom-search^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||4chan.org^$csp=script-src 'self' * 'unsafe-inline'
-||acidcow.com^$csp=script-src 'self' * 'unsafe-inline'
+||acidcow.com^$csp=script-src 'self' * blob: data:
 ||activistpost.com^$csp=script-src 'self' * blob: data:
-||allthetests.com^$csp=script-src 'self' * blob: 'unsafe-inline'
+||allthetests.com^$csp=script-src 'self' * blob: data:
 ||almasdarnews.com^$csp=script-src 'self' * 'unsafe-inline'
 ||ancient-origins.net^$csp=script-src 'self' * 'unsafe-inline'
 ||androidcentral.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -52844,7 +52844,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||biology-online.org^$csp=script-src 'self' * 'unsafe-inline'
 ||bittorrentstart.com^$csp=script-src 'self' 'unsafe-inline' data: *.google.com *.google-analytics.com *.scorecardresearch.com
 ||blacklistednews.com^$csp=script-src 'self' * blob: data:
-||breakingisraelnews.com^$csp=script-src 'self' * 'unsafe-inline'
+||breakingisraelnews.com^$csp=script-src 'self' * blob: data:
 ||britannica.com^$csp=script-src 'self' * 'unsafe-inline'
 ||broadwayworld.com^$csp=script-src 'self' * 'unsafe-inline'
 ||bt-scene.cc^$csp=script-src 'self' 'unsafe-inline' data: *.google.com *.google-analytics.com *.scorecardresearch.com
@@ -52861,7 +52861,8 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||csgolounge.com^$csp=script-src 'self' * 'unsafe-inline'
 ||daclips.in^$csp=script-src 'self' * 'unsafe-inline'
 ||datpiff.com^$csp=script-src 'self' * blob: data:
-||diffen.com^$csp=script-src 'self' * 'unsafe-inline'
+||diffen.com^$csp=script-src 'self' * blob: data:
+||emathhelp.net^$csp=script-src 'self' * blob: data:
 ||freebeacon.com^$csp=script-src 'self' * blob: data:
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gogoanime.se^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
@@ -52907,7 +52908,6 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||watchcartoononline.io^$csp=script-src 'self' * 'unsafe-inline'
 ||wikia.com^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 ||winit.winchristmas.co.uk^$csp=script-src 'self' * 'unsafe-inline'
-||wnd.com^$csp=script-src 'self' * 'unsafe-inline'
 ||wuxiaworld.com^$csp=script-src 'self' * 'unsafe-inline'
 ! buggy script
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/65
@@ -70930,4 +70930,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: IzHYQfJwfRClB7NdRuiAcQ
+! Checksum: 44A1G2Nb2LTi4r0QwigS4w
