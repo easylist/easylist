@@ -5585,7 +5585,6 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! IP address
 /^https?:\/\/([0-9]{1,3}\.){3}[0-9]{1,3}/$image,script,subdocument,domain=o2tvseries.com|readcomiconline.to|speedvid.net
 ! CSP filters
-@@||emathhelp.net/search/$csp=script-src 'self' * blob: data:
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||kiplinger.com/search/$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
@@ -5620,7 +5619,6 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ||daclips.in^$csp=script-src 'self' * 'unsafe-inline'
 ||datpiff.com^$csp=script-src 'self' * blob: data:
 ||diffen.com^$csp=script-src 'self' * blob: data:
-||emathhelp.net^$csp=script-src 'self' * blob: data:
 ||freebeacon.com^$csp=script-src 'self' * blob: data:
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gogoanime.se^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
