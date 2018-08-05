@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201808050937
+! Version: 201808050944
 ! Title: EasyList
-! Last modified: 05 Aug 2018 09:37 UTC
+! Last modified: 05 Aug 2018 09:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52020,6 +52020,14 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||watchcartoononline.io/tema/images/jwplayer.jpg$image,~third-party
 ! igg-games.com
 /igg-games\.com\/[a-zA-Z0-9]{10,}.*/$script,~third-party
+! adyou.me
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
+! hdmoza.com
+$webrtc,domain=hdmoza.com
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
+||hdmoza.com/nb/
 ! xclusivejams2.com
 @@||cbox.ws^$third-party,domain=xclusivejams2.com
 @@||disqus.com^$script,domain=xclusivejams2.com
@@ -71314,4 +71322,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 35ltK+rXjQFMjFFXMvHe7A
+! Checksum: Q/2E6MwTy0bA2IbGfu6wkw
