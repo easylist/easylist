@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201808081706
+! Version: 201808081845
 ! Title: EasyList
-! Last modified: 08 Aug 2018 17:06 UTC
+! Last modified: 08 Aug 2018 18:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -45866,6 +45866,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||heyoya.com^*&aff_id=
 ||hide-my-ip.com/promo/
 ||highepcoffer.com/images/banners/
+||hirepurpose.com/static/widgets/$third-party
 ||hitfox-jobboard.c66.me^
 ||hitleap.com/assets/banner-
 ||hitleap.com/assets/banner.png
@@ -52729,10 +52730,13 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
 ! Powvideo/powvideo
-@@||ajax.googleapis.com^$script,third-party,domain=povwideo.net|powvideo.net
-@@||code.jquery.com^$script,domain=povwideo.net|powvideo.net
-@@||codeorigin.jquery.com^$domain=povwideo.net|powvideo.net
-|http*://$image,script,subdocument,third-party,xmlhttprequest,domain=povwideo.net|powvideo.net
+$websocket,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||ajax.googleapis.com^$script,third-party,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||code.jquery.com^$script,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||codeorigin.jquery.com^$domain=|povw1deo.com|povwideo.net|powvideo.net
+@@||img.powvideo.net/scap/$image,domain=povw1deo.com|povwideo.net
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
@@ -71352,4 +71356,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: OtA/3xORKlg6r3zz54fGcA
+! Checksum: cplVme/yk6eU5X6YGcBJhw
