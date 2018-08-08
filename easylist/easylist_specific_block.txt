@@ -5141,10 +5141,13 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
 ! Powvideo/powvideo
-@@||ajax.googleapis.com^$script,third-party,domain=povwideo.net|powvideo.net
-@@||code.jquery.com^$script,domain=povwideo.net|powvideo.net
-@@||codeorigin.jquery.com^$domain=povwideo.net|powvideo.net
-|http*://$image,script,subdocument,third-party,xmlhttprequest,domain=povwideo.net|powvideo.net
+$websocket,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||ajax.googleapis.com^$script,third-party,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||code.jquery.com^$script,domain=povw1deo.com|povwideo.net|powvideo.net
+@@||codeorigin.jquery.com^$domain=|povw1deo.com|povwideo.net|powvideo.net
+@@||img.powvideo.net/scap/$image,domain=povw1deo.com|povwideo.net
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
