@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201808121354
+! Version: 201808121408
 ! Title: EasyPrivacy
-! Last modified: 12 Aug 2018 13:54 UTC
+! Last modified: 12 Aug 2018 14:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1542,6 +1542,7 @@
 /get_browser_info.
 /get_cdns?$third-party,xmlhttprequest
 /get_geoip?
+/get_site_data?*&cookie=
 /get_statistics.php?screen_width=
 /get_tracking_id?
 /get_tracking_url.
@@ -2148,6 +2149,7 @@
 /mmcore.js
 /mmetrix.mobi/*
 /mms.*/pv?
+/mms/get_loaders?
 /mngi/tracking/*
 /mnt/imp?
 /mobify_ga.gif
@@ -5681,6 +5683,7 @@ _mongo_stats/
 ||pntrac.com^$third-party
 ||pntrs.com^$third-party
 ||pointomatic.com^$third-party
+||polarcdn-pentos.com^$third-party
 ||popsample.com^$third-party
 ||popt.in^$third-party
 ||populr.me^$third-party
@@ -15381,4 +15384,4 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-! Checksum: LI3dWNNCs3b7TVunFgMmoQ
+! Checksum: Pva4SVbBQ87c65dBg1Q3NA
