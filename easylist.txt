@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201808120943
+! Version: 201808120950
 ! Title: EasyList
-! Last modified: 12 Aug 2018 09:43 UTC
+! Last modified: 12 Aug 2018 09:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -17938,6 +17938,7 @@ _popunder+$popup
 ##.ad-wrapper--slideshowhalfpage
 ##.ad-wrapper-left
 ##.ad-wrapper-sticky
+##.ad-wrapper-top
 ##.ad-wrapper-with-text
 ##.ad-wrapper__ad-slug
 ##.ad-x10x20x30
@@ -32033,6 +32034,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||optimizesocial.com^$third-party
 ||optinemailpro.com^$third-party
 ||optinmonster.com^$third-party
+||optnmstr.com^$third-party,domain=whatismyipaddress.com
 ||orangeads.fr^$third-party
 ||orarala.com^$third-party
 ||oratosaeron.com^$third-party
@@ -49135,6 +49137,8 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||get.thefile.me^
 ||getfoxyproxy.org/images/abine/
 ||gethigh.com/wp-content/uploads/*/pass_a_drug_test_get_high_banner.jpg
+||getmyuni.com*_page_ad$image
+||getmyuni.com*_pages_ads$script,xmlhttprequest
 ||getprice.com.au/searchwidget.aspx?$subdocument
 ||getreading.co.uk/static/img/bg_takeover_
 ||getresponse.com^$domain=wigflip.com
@@ -54762,13 +54766,6 @@ $websocket,domain=24video.me|pornhub.com|redtube.com|redtube.com.br|tube8.com|tu
 wyciwyg:$popup,domain=yourporn.sexy
 ! ------------------------Specific element hiding rules------------------------!
 ! *** easylist:easylist/easylist_specific_hide.txt ***
-lawctopus.com##.ad-wrapper-top
-lawctopus.com##a[href*="?utm_source="]
-lawctopus.com###spu-bg-145865
-lawctopus.com###spu-145865
-lawctopus.com##A[target="_blank"] > IMG[height="250"][width="250"]
-lawctopus.com##A[target="_blank"] > IMG[height="251"][width="250"]
-lawctopus.com##A[href*="alc.edu.in/Lawctopus"]
 search.safefinder.com,search.snapdo.com###ABottomD
 aol.com###AOLP_partnerSearch
 search.safefinder.com,search.snap.do,search.snapdo.com###ATopD
@@ -57870,6 +57867,8 @@ cnet.com###spotBidHeader
 cnet.com###spotbid
 memory-alpha.org###spotlight_footer
 justdubs.tv###spots
+lawctopus.com###spu-145865
+lawctopus.com###spu-bg-145865
 qj.net###sqspan
 zam.com###square-box
 allakhazam.com###square-box:first-child
@@ -62899,7 +62898,9 @@ imagenpic.com,imageshimage.com,imagetwist.com##a[href*="/xyz"]
 distrowatch.com##a[href*="3cx.com"]
 bossmp3.in,heromaza.in,wapking.site##a[href*=":80/key/?id="]
 mathwarehouse.com,sowetanlive.co.za##a[href*="?affiliateid="]
+lawctopus.com##a[href*="?utm_source="]
 distrowatch.com##a[href*="acunetix.com"]
+lawctopus.com##a[href*="alc.edu.in/Lawctopus"]
 torlock.com##a[href*="an0n.download/"]
 worldfree4u.lol##a[href*="clksite.com/"]
 snaptest.org##a[href*="edutourism.in/?utm_source=snapportalemail"]
@@ -63501,6 +63502,8 @@ easyvideo.me,playbb.me,playpanda.net,video66.org,videofun.me,videowing.me,videoz
 nba-stream.com##a[style^="width:100%; height:100%;"]
 betfooty.com##a[target="_blank"] > .wsite-image[alt="Picture"]
 mmorpg.com##a[target="_blank"] > [id][src]
+lawctopus.com##a[target="_blank"] > img[height="250"][width="250"]
+lawctopus.com##a[target="_blank"] > img[height="251"][width="250"]
 neko-miku.com##a[target="_blank"] > img[src]
 ndtv.com##a[target="_blank"][href$="=p"]
 thejointblog.com##a[target="_blank"][href="http://smokecartel.com/"]
@@ -71240,4 +71243,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: 9vaRi8vg1O5ZABhcsTht3Q
+! Checksum: 8oGijLu8sfEGihXH4stI3A
