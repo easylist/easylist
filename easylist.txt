@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201808180253
+! Version: 201808180312
 ! Title: EasyList
-! Last modified: 18 Aug 2018 02:53 UTC
+! Last modified: 18 Aug 2018 03:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -25768,6 +25768,7 @@ _popunder+$popup
 ##.single_bottom_ad
 ##.single_fm_ad_bottom
 ##.single_post_ads_cont
+##.single_related_posts_ad_container
 ##.single_top_ad
 ##.singlead
 ##.singleads
@@ -52771,16 +52772,20 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 ! imgskull.com
 |http://$image,script,third-party,xmlhttprequest,domain=imgskull.com
 |https://$image,script,third-party,xmlhttprequest,domain=imgskull.com
+||imgdew.pw^$script
+||imgmaze.pw^$script
 ||imgskull.com^$xmlhttprequest
+||imgtown.pw^$script
+||imgview.pw^$script
 ! imgoutlet.com / imgdew.com / imgclick.net / imgtrex.com / imgtown.net / ironimg.net | imgkings.com
 ! 
 @@||imgadult.com*/advertisement.js$script
 @@||imgdrive.net*/advertisement.js$script
 @@||imgtaxi.com*/advertisement.js$script
 @@||imgwallet.com*/advertisement.js$script
-|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
+|http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgmaze.pw|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgtrex.com|imgview.net|imgview.pw|imgwallet.com|ironimg.net
 |http://$image,third-party,domain=imgrock.info
-|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtrex.com|imgview.net|imgwallet.com|ironimg.net
+|https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgmaze.pw|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgtrex.com|imgview.net|imgview.pw|imgwallet.com|ironimg.net
 ||imgadult.com*?$image,~third-party
 ||imgadult.com^$subdocument
 ||imgdrive.net*?$image,~third-party
@@ -65190,6 +65195,9 @@ computerworlduk.com##.jsAdContainer > #dynamicAd1
 mediafire.com##.lb-ad
 menshealth.com,runnersworld.com,womenshealthmag.com##.leaderboard-ad
 mediafire.com##.lr-ad
+ubergizmo.com##.mediumbox_container
+ubergizmo.com##.mediumbox_container_incontent
+ubergizmo.com##.mediumbox_incontent_wide
 indiatimes.com##.middle-ads
 lifewire.com##.mntl-lazy-ad
 ibtimes.co.uk##.mpu-wrap
@@ -71311,4 +71319,4 @@ www.google.com#@##videoads
 @@||tumblr.com^$popup,domain=pornhub.com
 @@||twitter.com^$popup,domain=pornhub.com
 @@||wmtrafficentry.com/cgi-bin/ewm.cgi/*_HeaderTab?$popup,domain=extremetube.com|spankwire.com
-! Checksum: usFV6GxRmRijJ5TcREYcuA
+! Checksum: zAlAKu7Zt1CZFKyzBPU3wg
