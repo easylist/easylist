@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201808211209
+! Version: 201808211217
 ! Title: EasyList
-! Last modified: 21 Aug 2018 12:09 UTC
+! Last modified: 21 Aug 2018 12:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54614,6 +54614,12 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||yuvutu.com^*/banners/
 ||zazzybabes.com/misc/virtuagirl-skin.js
 ||zuzandra.info/b?
+! efukt.com
+$script,subdocument,third-party,domain=efukt.com
+@@||ajax.googleapis.com/ajax/$script,domain=efukt.com
+@@||twitter.com^$script,subdocument,domain=efukt.com
+@@||twitter.com^$subdocument,domain=efukt.com
+@@||zencdn.net^$script,domain=efukt.com
 ! camwhorestv.org
 $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 ! 4tube.com, porntube.com, pornerbros.com, fux.com
