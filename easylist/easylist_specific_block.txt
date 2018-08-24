@@ -4453,8 +4453,11 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! igg-games.com
 /igg-games\.com\/[a-zA-Z0-9]{10,}.*/$script,~third-party
 ! adyou.me
-|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
-|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
+@@||ajax.googleapis.com/ajax/libs/$script,domain=adyou.co|adyou.me
+@@||google.com/recaptcha/$domain=adyou.co|adyou.me
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
+||imageshack.com^$domain=adyou.co|adyou.me
 ! hdmoza.com
 $webrtc,domain=hdmoza.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
