@@ -294,8 +294,8 @@
 ||amazonaws.com/files.bannersnack.com/$domain=~bannersnack.com
 ||amazonaws.com/kbnetworkz/$domain=hardforum.com
 ||amazonaws.com/videos/$domain=technewstoday.com
-||amazonaws.com^$script,domain=300mbdownload.net|bittorrent.am|globes.co.il|gounlimited.to|grantorrent.net|kannadamovies.biz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|serietvsubita.net|streamplay.to|thevideobee.to|usersfiles.com|vshare.eu
-||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|bdupload.info|bigfile.to|bittorrent.am|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|gounlimited.to|katcr.host|macupload.net|mirrorcreator.com|nachostime.net|onhax.me|sadeempc.com|serietvsubita.net|suprafiles.org|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
+||amazonaws.com^$script,domain=300mbdownload.net|bittorrent.am|globes.co.il|grantorrent.net|kannadamovies.biz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|serietvsubita.net|streamplay.to|thevideobee.to|usersfiles.com|vshare.eu
+||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|bdupload.info|bigfile.to|bittorrent.am|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|katcr.host|macupload.net|mirrorcreator.com|nachostime.net|onhax.me|sadeempc.com|serietvsubita.net|suprafiles.org|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
 ||amazonaws.com^*-ad.jpg$domain=ewn.co.za
 ||amazonaws.com^*-Banner.jpg$domain=ewn.co.za
 ||amazonaws.com^*/site-takeover/$domain=songza.com
@@ -5274,6 +5274,9 @@ $websocket,domain=povw1deo.com|povwideo.net|powvideo.net
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=sendit.cloud
 ||sendit.cloud/images/banner/
 ||sendit.cloud/sw.js
+! gounlimited.to
+|http://$script,third-party,xmlhttprequest,domain=gounlimited.to
+|https://$script,third-party,xmlhttprequest,domain=gounlimited.to
 ! uploadrocket.net
 @@||api.solvemedia.com^$script,third-party,domain=uploadrocket.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=uploadrocket.net
