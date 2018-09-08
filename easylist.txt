@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809080042
+! Version: 201809080047
 ! Title: EasyList
-! Last modified: 08 Sep 2018 00:42 UTC
+! Last modified: 08 Sep 2018 00:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14474,6 +14474,7 @@ _popunder+$popup
 ###left_global_adspace
 ###left_side_ads
 ###left_sidebar_ads
+###left_top_ad
 ###left_skyscraper_ad
 ###left_ws_ad_container
 ###leftad
@@ -15303,6 +15304,7 @@ _popunder+$popup
 ###right_adverts
 ###right_bg_ad
 ###right_block_ads
+###right_bottom_ad
 ###right_column_ad
 ###right_column_ad_container
 ###right_column_ads
@@ -24942,6 +24944,7 @@ _popunder+$popup
 ##.player-ad
 ##.player-ad-overlay
 ##.player-ads
+##.player-ads2
 ##.player-leaderboard-ad-wrapper
 ##.player-under-ad
 ##.playerAd
@@ -27349,6 +27352,8 @@ _popunder+$popup
 ##a[href*="=exoclick"]
 ##a[href*="a2g-secure.com"]
 ##a[href*="ad2upapp.com/"]
+##a[href*="deliver.trafficfabrik.com"]
+##a[href*="delivery.trafficfabrik.com"]
 ##a[href*="emprestimo.eu"]
 ##a[href*="googleme.eu"]
 ##a[href*="letsadvertisetogether.com"]
@@ -27719,8 +27724,6 @@ _popunder+$popup
 ##a[href^="https://click.plista.com/pets"]
 ##a[href^="https://dcs.adgear.com/clicks/"]
 ##a[href^="https://dediseedbox.com/clients/aff.php?"]
-##a[href^="https://deliver.trafficfabrik.com/"]
-##a[href^="https://delivery.trafficfabrik.com/"]
 ##a[href^="https://dltags.com/"]
 ##a[href^="https://evaporate.pw/"]
 ##a[href^="https://farm.plista.com/pets"]
@@ -55125,6 +55128,9 @@ $websocket,domain=24video.me|pornhub.com|redtube.com|redtube.com.br|tube8.com|tu
 @@||fritchy.com/images/icons/$image
 @@||fritchy.com/images/styles/$image
 ||fritchy.com^$image
+! vporn.com
+|http://$script,third-party,xmlhttprequest,domain=vporn.com
+|https://$script,third-party,xmlhttprequest,domain=vporn.com
 ! *** easylist:easylist_adult/adult_specific_block_popup.txt ***
 ^utm_medium=pops^$popup,domain=ratedporntube.com|sextuberate.com
 |http*://*?$popup,third-party,domain=avgle.com|camwhorestv.org|extremetube.com|pornflip.com|pornhub.com|redtube.com|spankwire.com|streamjav.net|theync.com|tube8.com|vidz7.com|xxxkingtube.com|youporn.com|youporngay.com
