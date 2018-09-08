@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809080053
+! Version: 201809080057
 ! Title: EasyList
-! Last modified: 08 Sep 2018 00:53 UTC
+! Last modified: 08 Sep 2018 00:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1677,8 +1677,8 @@
 /adcontrol.
 /adcontrol/*
 /adcontroller.
-/adcore.$domain=~adcore.com.au|~adcore.ua
-/adcore_$domain=~adcore.com.au
+/adcore.$domain=~adcore.com.au|~adcore.ua|~adcore.ch
+/adcore_$domain=~adcore.com.au|~adcore.ch
 /adcount.
 /adcounter.
 /adcreative.
@@ -52470,8 +52470,11 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! igg-games.com
 /igg-games\.com\/[a-zA-Z0-9]{10,}.*/$script,~third-party
 ! adyou.me
-|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
-|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.me
+@@||ajax.googleapis.com/ajax/libs/$script,domain=adyou.co|adyou.me
+@@||google.com/recaptcha/$domain=adyou.co|adyou.me
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
+||imageshack.com^$domain=adyou.co|adyou.me
 ! hdmoza.com
 $webrtc,domain=hdmoza.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
