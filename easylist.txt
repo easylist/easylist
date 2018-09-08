@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809080022
+! Version: 201809080028
 ! Title: EasyList
-! Last modified: 08 Sep 2018 00:22 UTC
+! Last modified: 08 Sep 2018 00:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10066,6 +10066,9 @@ _popunder+$popup
 ###adTag-genre
 ###adTag1
 ###adTag2
+###adTakeOverInner
+###adTakeOverLeft
+###adTakeOverRight
 ###adTeaser
 ###adText
 ###adText01
@@ -25122,6 +25125,7 @@ _popunder+$popup
 ##.quads-ad2_widget.first
 ##.quads-ad4
 ##.quads-location
+##.queue_ad
 ##.quick-tz-ad
 ##.quicklinks-ad
 ##.quigo
@@ -44224,6 +44228,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||adrent.net^$third-party
 ||adrevenuerescue.com^$third-party
 ||adsbr.info^$third-party
+||adsession.com^$third-party
 ||adsgangsta.com^$third-party
 ||adshostview.com^$third-party
 ||adskape.ru^$third-party
@@ -65620,6 +65625,7 @@ testpages.adblockplus.org###abptest
 ! CSS property filters for Adblock Plus
 webfail.com#?##aside > :-abp-properties(cursor: pointer;)
 freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
+ksl.com#?#.queue:-abp-has(.sponsored)
 multiup.eu,multiup.org#?#.trtbl:-abp-has(.warnIp)
 space.com#?#:-abp-properties(height: 250px;*width: 300px;)
 webfail.com#?##subheader + :-abp-properties(text-align: center;)
