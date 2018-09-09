@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809091146
+! Version: 201809091333
 ! Title: EasyList
-! Last modified: 09 Sep 2018 11:46 UTC
+! Last modified: 09 Sep 2018 13:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -64853,9 +64853,9 @@ filepuma.com##dt[style="height:25px; text-indent:3px; padding-top:5px;"]
 kitguru.net##embed[src][quality]
 xtremesystems.org##embed[width="728"]
 facebook.com#?#.ego_section:-abp-has(a[href^="/ad_campaign"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href*="is_sponsored"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(div[id^="feed_subtitle_"] > span a[class*="_"][href="#"] > div)
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(.fcg > span:-abp-contains(/ likes | like | gefällt /))
 facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(input[data-next-question-id])
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(span:-abp-contains(/Suggested Post|Vorgeschlagener Beitrag/))
 opensubtitles.org##fieldset > a[target="_blank"][href]
 opensubtitles.org##fieldset > legend + a[class]
 opensubtitles.org##fieldset > table[style="width:100%;"] > tbody > .change
