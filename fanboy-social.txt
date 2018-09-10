@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809101523
+! Version: 201809101528
 ! Title: Fanboy's Social Blocking List
-! Last modified: 10 Sep 2018 15:23 UTC
+! Last modified: 10 Sep 2018 15:28 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3268,6 +3268,7 @@ _youtube_social_
 ###facebookRecommend
 ###facebookRodape
 ###facebookShareButton
+###facebookSlideIn
 ###facebookTab
 ###facebookTabset
 ###facebookWidget
@@ -4133,6 +4134,7 @@ _youtube_social_
 ###share-ad-inner
 ###share-ad-link
 ###share-addthis
+###share-area
 ###share-article-below
 ###share-bar
 ###share-bar-fixed
@@ -7251,6 +7253,7 @@ _youtube_social_
 ##.fbRecsSide
 ##.fbShare
 ##.fbShareButton
+##.fbShareTrigger
 ##.fbSocialPluginWr
 ##.fbStripeVer-facebook
 ##.fbSubheader
@@ -8742,6 +8745,7 @@ _youtube_social_
 ##.inline-share-btn-facebook
 ##.inline-share-btn-linkedin
 ##.inline-share-btn-twitter
+##.inline-share-buttons
 ##.inline-share-tools
 ##.inline-share-tools-label
 ##.inline-sharebar
@@ -9775,6 +9779,7 @@ _youtube_social_
 ##.pinterestButton
 ##.pinterestComponentShare
 ##.pinterestShare
+##.pinterestShareTrigger
 ##.pinterest_24
 ##.pinterest_btn
 ##.pinterest_cont
@@ -13068,6 +13073,7 @@ _youtube_social_
 ##.twitterShareContainer
 ##.twitterShareIcon
 ##.twitterShareToolsContainer
+##.twitterShareTrigger
 ##.twitterSocialIcon
 ##.twitterSs
 ##.twitterTweet__button
@@ -13667,7 +13673,10 @@ _youtube_social_
 ##[data-pin-log^="button_pinit"]
 ##[data-social-action="visit"]
 ##[data-trigger="share-links-manager"]
+##[data-type="facebook-bottom-share"]
+##[data-type="pinterest-bottom-share"]
 ##[data-type="shareCardAction"]
+##[data-type="twitter-bottom-share"]
 ##[href="http://www.addthis.com/bookmark.php"]
 ##[href^="//twitter.com/share"]
 ##[href^="http://reddit.com/submit"]
@@ -16274,6 +16283,7 @@ knack.be##.toolbar
 ! ---------- Swedish Site Specific Hiding Rules ----------
 ! 
 autoline-eu.se,va.se##.share
+sportbibeln.se##.wsfb-wrapper
 radioplay.se##div[style="flex-shrink: 0; border-left: 1px solid rgba(255, 255, 255, 0.3); height: 100%; display: flex; justify-content: center; align-items: center; padding: 0px 30px; font-size: 16px; font-weight: 100; cursor: pointer;"]
 ! 
 ! ---------- Russian Site Specific Hiding Rules ----------
