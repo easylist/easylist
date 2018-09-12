@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809121210
+! Version: 201809121217
 ! Title: EasyList
-! Last modified: 12 Sep 2018 12:10 UTC
+! Last modified: 12 Sep 2018 12:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1952,7 +1952,7 @@
 /adman/*
 /admanagement/*
 /admanagementadvanced.
-/admanager.$~object-subrequest
+/admanager.$~object-subrequest,domain=~admanager.google.com
 /admanager/*$~object-subrequest
 /admanager3.
 /admanager_
@@ -53478,9 +53478,12 @@ $websocket,domain=povw1deo.com|povwideo.net|powvideo.net
 |http://$script,third-party,xmlhttprequest,domain=1337x.to
 |https://$script,third-party,xmlhttprequest,domain=1337x.to
 ! watchseries
+@@||code.jquery.com^$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||connect.facebook.net^$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||maxcdn.bootstrapcdn.com^$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||platform.twitter.com^$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
+@@||swatchseries.to/public/js/jquery$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
+@@||swatchseries.to/public/js/slick.js$script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 @@||watchseries.sk/check-auth$xmlhttprequest
 |http://$other,script,stylesheet,third-party,xmlhttprequest,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
 |http://$xmlhttprequest,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk
