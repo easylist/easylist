@@ -90,7 +90,6 @@
 ||anon-v.com/neverlikedcocksmuch.php
 ||anon-v.com/titswerentoiledup.php
 ||anonimag.es^$domain=anon-v.com
-||anyporn.com^$image,subdocument
 ||anysex.com/b/
 ||anysex.com/content_sources/
 ||arionmovies.com/*/popup.php
@@ -988,13 +987,14 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 |https://$script,third-party,xmlhttprequest,domain=milfzr.com
 ! anyporn
 @@||anyporn.com/captcha/comments/?$image
-@@||anyporn.com/player/$script
+@@||anyporn.com/js/videopreview.js$script
+@@||anyporn.com/player/fluidplayer/$script
 @@||anyporn.com/v4_js/main.min.js$script
 @@||anyporn.com/videojs/video.js$script
 @@||anyporn.com/videojs/videojs-overlay.js$script
 @@||anyporn.com/videojs/vjs-related.js$script
 @@||anyporn.com/videos_screenshots/$image
-||anyporn.com^$script,~third-party
+||anyporn.com^$image,script,subdocument,xmlhttprequest
 ! imagefap
 @@||imagefap.com/ajax/image_related.php?$xmlhttprequest
 @@||imagefap.com/ajax_favorites.php$xmlhttprequest
