@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809151706
+! Version: 201809151918
 ! Title: EasyList
-! Last modified: 15 Sep 2018 17:06 UTC
+! Last modified: 15 Sep 2018 19:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -22138,6 +22138,7 @@ _popunder+$popup
 ##.change-ad-h-btn
 ##.change_AdContainer
 ##.changeableadzone
+##.channel--ad
 ##.channel-adv
 ##.channel_ad_2016
 ##.channel_brand_ad
@@ -22738,6 +22739,10 @@ _popunder+$popup
 ##.fbCalendarAds
 ##.fbPhotoSnowboxAds
 ##.fblockad
+##.fbs-ad--ntv-home-wrapper
+##.fbs-ad--progressive
+##.fbs-ad--top-wrapper
+##.fbs-ad--topx-wrapper
 ##.fc_splash_ad
 ##.fd-ad
 ##.fd-display-ad
@@ -52697,8 +52702,8 @@ $webrtc,domain=hdmoza.com
 ||hdmoza.com/nb/
 ! itdmusic.com
 $webrtc,domain=itdmusic.com|itdmusic.in
-|http://$script,xmlhttprequest,third-party,domain=itdmusic.com|itdmusic.in
-|https://$script,xmlhttprequest,third-party,domain=itdmusic.com|itdmusic.in
+|http://$script,third-party,xmlhttprequest,domain=itdmusic.com|itdmusic.in
+|https://$script,third-party,xmlhttprequest,domain=itdmusic.com|itdmusic.in
 ! xclusivejams2.com
 @@||cbox.ws^$third-party,domain=xclusivejams2.com
 @@||disqus.com^$script,domain=xclusivejams2.com
