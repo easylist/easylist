@@ -962,10 +962,12 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 |http://$script,third-party,xmlhttprequest,domain=29443kmq.video|xmoviesforyou.com
 |https://$script,third-party,xmlhttprequest,domain=29443kmq.video|xmoviesforyou.com
 ! rule34hentai.net
+@@||ajax.googleapis.com/ajax/libs/$script,domain=rule34hentai.net
+@@||cdn.fluidplayer.com/v2/current/fluidplayer.min.js$script,domain=rule34hentai.net
 @@||rule34hentai.net/data/cache/$script
 |http://$script,third-party,xmlhttprequest,domain=rule34hentai.net
 |https://$script,third-party,xmlhttprequest,domain=rule34hentai.net
-||rule34hentai.net^$script,~third-party
+||rule34hentai.net^$script
 ! txxx.com
 @@||ahcdn.com^$xmlhttprequest,domain=txxx.com
 @@||ajax.googleapis.com^$domain=txxx.com
