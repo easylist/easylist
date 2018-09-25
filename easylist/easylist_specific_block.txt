@@ -4997,13 +4997,13 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||depositfiles.com/get_file.php$xmlhttprequest
 @@||depositfiles.com/gold/$xmlhttprequest
 @@||depositfiles.com/js/$script
-@@||depositfiles.com/thumb/$xmlhttprequest
+@@||depositfiles.com/thumb/$image,xmlhttprequest
 @@||depositfiles.com/upload/$subdocument
 @@||depositfiles.org/api/$xmlhttprequest
 @@||depositfiles.org/get_file.php$xmlhttprequest
 @@||depositfiles.org/gold/$xmlhttprequest
 @@||depositfiles.org/js/$script
-@@||depositfiles.org/thumb/$xmlhttprequest
+@@||depositfiles.org/thumb/$image,xmlhttprequest
 @@||depositfiles.org/upload/$subdocument,xmlhttprequest
 @@||depositvpn.com/api/$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@||depositvpn.com/iframe/$subdocument,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
@@ -5011,13 +5011,13 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||dfiles.eu/get_file.php?$xmlhttprequest
 @@||dfiles.eu/gold/$xmlhttprequest
 @@||dfiles.eu/js/$script
-@@||dfiles.eu/thumb/$xmlhttprequest
+@@||dfiles.eu/thumb/$image,xmlhttprequest
 @@||dfiles.eu/upload/$subdocument,xmlhttprequest
 @@||dfiles.ru/api/$xmlhttprequest
 @@||dfiles.ru/get_file.php$xmlhttprequest
 @@||dfiles.ru/gold/$xmlhttprequest
 @@||dfiles.ru/js/$script
-@@||dfiles.ru/thumb/$xmlhttprequest
+@@||dfiles.ru/thumb/$image,xmlhttprequest
 @@||dfiles.ru/upload/$subdocument,xmlhttprequest
 @@||google.com/js/bg/$script,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@||google.com/recaptcha/$subdocument,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
@@ -5442,6 +5442,8 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=zippyshare.com
 ! Suprafiles
 @@||google.com/recaptcha/$subdocument,domain=suprafiles.me
+@@||gstatic.com/recaptcha/$script,domain=suprafiles.me
+@@||suprafiles.me^$generichide
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
 ! vidzi.tv
