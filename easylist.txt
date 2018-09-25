@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809250104
+! Version: 201809250108
 ! Title: EasyList
-! Last modified: 25 Sep 2018 01:04 UTC
+! Last modified: 25 Sep 2018 01:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -55002,8 +55002,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||pornoid.com/js/adppornoid
 ||pornoid.com/pornoid_html/
 ||pornoinside.com/efpop.js
-||pornomovies.com/js/1/login_bonus
-||pornomovies.com/pop/
 ||pornorips.com/hwpop.js
 ||pornorips.com^*/rda.js
 ||pornorips.com^*/rotate*.php
@@ -55529,6 +55527,11 @@ $websocket,domain=24video.me|pornhub.com|redtube.com|redtube.com.br|tube8.com|tu
 ! vporn.com
 |http://$script,third-party,xmlhttprequest,domain=vporn.com
 |https://$script,third-party,xmlhttprequest,domain=vporn.com
+! pornomovies.com
+@@||pornomovies.com/includes/video-js-5.20.4/video.min.js$script
+@@||pornomovies.com/templates/pornomovies/js/main.js$script
+@@||pornomovies.com/templates/pornomovies/js/site.functions.js$script
+||pornomovies.com^$script
 ! *** easylist:easylist_adult/adult_specific_block_popup.txt ***
 ^utm_medium=pops^$popup,domain=ratedporntube.com|sextuberate.com
 |http*://*?$popup,third-party,domain=avgle.com|camwhorestv.org|extremetube.com|pornflip.com|pornhub.com|redtube.com|spankwire.com|streamjav.net|theync.com|tube8.com|vidz7.com|xxxkingtube.com|youporn.com|youporngay.com
