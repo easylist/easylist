@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809250511
+! Version: 201809250516
 ! Title: EasyList
-! Last modified: 25 Sep 2018 05:11 UTC
+! Last modified: 25 Sep 2018 05:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -25415,7 +25415,9 @@ _popunder+$popup
 ##.rightSideSponsor
 ##.rightTopAdWrapper
 ##.right_ad
+##.right_ad_1
 ##.right_ad_160
+##.right_ad_2
 ##.right_ad_box
 ##.right_ad_box1
 ##.right_ad_common_block
@@ -25652,6 +25654,7 @@ _popunder+$popup
 ##.section-front__top-ad
 ##.section-publicity
 ##.section-sponsor
+##.section-sponsors__label
 ##.section_ad
 ##.section_ad_left
 ##.section_adarea
@@ -26147,6 +26150,7 @@ _popunder+$popup
 ##.sponsored-article-item
 ##.sponsored-b
 ##.sponsored-by-label
+##.sponsored-by__label
 ##.sponsored-chunk
 ##.sponsored-container-bottom
 ##.sponsored-content
@@ -53680,10 +53684,13 @@ $websocket,domain=povw1deo.com|povwideo.net|powvideo.net
 @@||d3edizycpjjo07.cloudfront.net/assets/library/jquery/jquery.min.js$script,domain=userscloud.com
 @@||d3edizycpjjo07.cloudfront.net/xupload.js$script,domain=userscloud.com
 @@||usercdn.com/cgi-bin/upload.cgi?$subdocument,domain=userscloud.com
+@@||usercdn.com/i/$image,domain=userscloud.com
 @@||usercdn.com/tmp/status.html?$subdocument,domain=userscloud.com
+@@||vjs.zencdn.net^$script,domain=userscloud.com
 @@||widget.uservoice.com^$script,domain=userscloud.com
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com
+||userscloud.com/js/vendor/core/bootstrap.js
 ||userscloud.com/sw.js
 ! sendit.cloud
 @@||code.jquery.com^$script,domain=sendit.cloud
@@ -54453,6 +54460,7 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||109.201.146.142^$domain=xxxbunker.com
 ||213.174.140.38/bftv/js/msn-
 ||213.174.140.38^*/msn-*.js$domain=boyfriendtv.com|pornoxo.com
+||22pixx.xyz^$script
 ||244pix.com/webop.jpg
 ||24porn7.com/24roll.html
 ||24porn7.com/300.php
