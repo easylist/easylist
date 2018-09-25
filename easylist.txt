@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809251401
+! Version: 201809251408
 ! Title: EasyList
-! Last modified: 25 Sep 2018 14:01 UTC
+! Last modified: 25 Sep 2018 14:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -27452,6 +27452,7 @@ _popunder+$popup
 ##a[href^="http://2pxg8bcf.top/"]
 ##a[href^="http://360ads.go2cloud.org/"]
 ##a[href^="http://3wr110.net/"]
+##a[href^="http://9amq5z4y1y.com/"]
 ##a[href^="http://9nl.es/"]
 ##a[href^="http://NowDownloadAll.com"]
 ##a[href^="http://a.adquantix.com/"]
@@ -27774,6 +27775,7 @@ _popunder+$popup
 ##a[href^="http://yads.zedo.com/"]
 ##a[href^="http://z1.zedo.com/"]
 ##a[href^="http://zevera.com/afi.html"]
+##a[href^="https://aaucwbe.com/"]
 ##a[href^="https://ad.atdmt.com/"]
 ##a[href^="https://ad.doubleclick.net/"]
 ##a[href^="https://adhealers.com/"]
@@ -43714,6 +43716,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||9amq5z4y1y.com^$popup
 ||9newstoday.net^$popup,third-party
 ||9t5.me^$popup,third-party
+||aaucwbe.com^$popup
 ||abbeyblog.me^$popup,third-party
 ||abbp1.pw^$popup
 ||ablogica.com^$popup,third-party
@@ -53411,13 +53414,13 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||depositfiles.com/get_file.php$xmlhttprequest
 @@||depositfiles.com/gold/$xmlhttprequest
 @@||depositfiles.com/js/$script
-@@||depositfiles.com/thumb/$xmlhttprequest
+@@||depositfiles.com/thumb/$image,xmlhttprequest
 @@||depositfiles.com/upload/$subdocument
 @@||depositfiles.org/api/$xmlhttprequest
 @@||depositfiles.org/get_file.php$xmlhttprequest
 @@||depositfiles.org/gold/$xmlhttprequest
 @@||depositfiles.org/js/$script
-@@||depositfiles.org/thumb/$xmlhttprequest
+@@||depositfiles.org/thumb/$image,xmlhttprequest
 @@||depositfiles.org/upload/$subdocument,xmlhttprequest
 @@||depositvpn.com/api/$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@||depositvpn.com/iframe/$subdocument,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
@@ -53425,13 +53428,13 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||dfiles.eu/get_file.php?$xmlhttprequest
 @@||dfiles.eu/gold/$xmlhttprequest
 @@||dfiles.eu/js/$script
-@@||dfiles.eu/thumb/$xmlhttprequest
+@@||dfiles.eu/thumb/$image,xmlhttprequest
 @@||dfiles.eu/upload/$subdocument,xmlhttprequest
 @@||dfiles.ru/api/$xmlhttprequest
 @@||dfiles.ru/get_file.php$xmlhttprequest
 @@||dfiles.ru/gold/$xmlhttprequest
 @@||dfiles.ru/js/$script
-@@||dfiles.ru/thumb/$xmlhttprequest
+@@||dfiles.ru/thumb/$image,xmlhttprequest
 @@||dfiles.ru/upload/$subdocument,xmlhttprequest
 @@||google.com/js/bg/$script,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@||google.com/recaptcha/$subdocument,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
@@ -53856,6 +53859,8 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=zippyshare.com
 ! Suprafiles
 @@||google.com/recaptcha/$subdocument,domain=suprafiles.me
+@@||gstatic.com/recaptcha/$script,domain=suprafiles.me
+@@||suprafiles.me^$generichide
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
 ! vidzi.tv
@@ -54425,7 +54430,7 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ! data popups
 |data^$popup,domain=1337x.to|gorillavid.in|nowvideo.to|zippyshare.com
 ! Block http and https popups
-/http*.:\/\/.*/$popup,third-party,domain=35.188.59.75|adf.ly|daclips.in|escdn.co|estream.to|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|jwpcdn.com|latestmoviesdl.com|load.to|moecdn.io|mofunzone.com|monova.org|movpod.in|oload.info|oload.stream|oload.tv|oload.xyz|oloadcdn.net|openload.co|putlockers.fm|sendvid.com|speedvid.net|sportp2p.com|stream.moe|stream2watch.org|streamango.com|streamcloud.eu|streamin.to|thevideo.me|topclickguru.com|twer.info|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidcpm.com|vidgg.to|vidspot.net|vidstreaming.io|vidto.me|vidzi.tv|vodlock.co|vshare.eu
+/http*.:\/\/.*/$popup,third-party,domain=35.188.59.75|adf.ly|daclips.in|depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru|escdn.co|estream.to|fastbay.net|fastspics.net|filepost.com|flash-x.tv|flashx.tv|go4up.com|gorillavid.in|jwpcdn.com|latestmoviesdl.com|load.to|moecdn.io|mofunzone.com|monova.org|movpod.in|oload.info|oload.stream|oload.tv|oload.xyz|oloadcdn.net|openload.co|putlockers.fm|sendvid.com|speedvid.net|sportp2p.com|stream.moe|stream2watch.org|streamango.com|streamcloud.eu|streamin.to|thevideo.me|topclickguru.com|twer.info|uptobox.com|uptostream.com|vid.ag|vidabc.com|vidcpm.com|vidgg.to|vidspot.net|vidstreaming.io|vidto.me|vidzi.tv|vodlock.co|vshare.eu
 ! javascript popups
 |javascript^$popup,domain=1337x.to|biology-online.org|bitvid.sx|cloudtime.to|eztv.ag|eztv.tf|eztv.yt|flashx.tv|gorillavid.in|letwatch.us|movpod.in|nowvideo.sx|nowvideo.to|wholecloud.net
 ! regex to pickup ip-address popups
