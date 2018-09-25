@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809250146
+! Version: 201809250150
 ! Title: EasyList
-! Last modified: 25 Sep 2018 01:46 UTC
+! Last modified: 25 Sep 2018 01:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5108,6 +5108,8 @@
 /layout/ads/*
 /lazy-ads-
 /lazy-ads.
+/lazy-ads@
+/lazyad-
 /lazyad.
 /lbl_ad.
 /leadads/*
@@ -53629,6 +53631,8 @@ $websocket,domain=povw1deo.com|povwideo.net|powvideo.net
 @@||google.com/recaptcha/$domain=adsrt.com
 |http://$image,other,script,subdocument,third-party,xmlhttprequest,domain=adsrt.com
 |https://$image,other,script,subdocument,third-party,xmlhttprequest,domain=adsrt.com
+||adsrt.com/sw.js
+||adsrt.com^$subdocument,first-party
 ! opensubtitles.org
 @@||google.com/recaptcha/$domain=opensubtitles.org
 @@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
