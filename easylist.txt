@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809251408
+! Version: 201809251418
 ! Title: EasyList
-! Last modified: 25 Sep 2018 14:08 UTC
+! Last modified: 25 Sep 2018 14:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -26081,6 +26081,7 @@ _popunder+$popup
 ##.sponsor-inner
 ##.sponsor-left
 ##.sponsor-link
+##.sponsor-link-banner
 ##.sponsor-link-text
 ##.sponsor-links
 ##.sponsor-logo
@@ -55494,14 +55495,6 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 @@||taxidrivermovie.com/style/core-min.js$script,~third-party
 |http://$script,~third-party,xmlhttprequest,domain=taxidrivermovie.com
 |https://$script,~third-party,xmlhttprequest,domain=taxidrivermovie.com
-! xhamster.com
-@@||ahcdn.com/key=$xmlhttprequest,domain=xhamster.com
-@@||cdn*.com/hls/$xmlhttprequest,domain=xhamster.com
-@@||video.xhcdn.com/key=$xmlhttprequest,domain=xhamster.com
-@@||xhcdn.com^$script,domain=xhamster.com
-@@||xhcdn.com^*/shader/$xmlhttprequest,domain=xhamster.com
-|http://$script,third-party,xmlhttprequest,domain=xhamster.com
-|https://$script,third-party,xmlhttprequest,domain=xhamster.com
 ! hdzog.com
 @@||ajax.googleapis.com^$script,domain=hdzog.com
 @@||hdzog.com/key=$~third-party,xmlhttprequest
@@ -67007,6 +67000,7 @@ sexyandfunny.com,yourdailypornstars.com##a[href*="/out.php?"]
 badjojo.com##a[href*="/out.php?siteid=13&id=0&url=http%3A%2F%2Fsyndication.traffichaus.com"]
 mansurfer.com##a[href*="/out/"]
 avgle.com##a[href*="/redirect"]
+xhamster.com##a[href*="/spclick.php?"]
 celebrity-slips.com##a[href*="?_atc="]
 gotporn.com,katestube.com,sextvx.com,spankbang.com,vporn.com,xnostars.com,xxxporn.pics##a[href*="?ats="]
 redtube.com,thumbzilla.com##a[href*="?coupon="]
@@ -70333,7 +70327,6 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||mylifetime.com^$generichide
 @@||mypapercraft.net^$generichide
 @@||mzstatic.com^*.jpg#$image,domain=newmusicforpeople.org
-@@||namesakeoscilloscopemarquis.com^*/ads.js$domain=~tvil.me
 @@||narkive.com^$generichide
 @@||nationalgeographic.com^*/advertising.js
 @@||nbahd.com^$generichide
