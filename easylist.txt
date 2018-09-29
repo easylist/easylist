@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809290205
+! Version: 201809290228
 ! Title: EasyList
-! Last modified: 29 Sep 2018 02:05 UTC
+! Last modified: 29 Sep 2018 02:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -63771,7 +63771,6 @@ filecrypt.cc##[onmouseup$=", true);"]
 eztv.ag##[rel*="nofollow"] > [id][style]
 naturalblaze.com##[rel="nofollow"][href^="http://products.naturalblaze.com/"] > img
 msn.com##[src*="g00.msn.com/goo"]
-reuters.com##[src*="reutersmedia.net/resources_"]
 uploadocean.com##[src][width]
 tomshardware.co.uk,tomshardware.com##[style*="animation:"]
 drudgereport.com##[style*="background-blend"]
@@ -66032,6 +66031,15 @@ gelbooru.com##iframe + style + [class]
 gelbooru.com##iframe[width]
 gelbooru.com##span > style[type="text/css"] + *
 gelbooru.com##span[class]:last-child > a img[src]
+! reuters.com
+reuters.com###content > * > * > [src*="reutersmedia.net/resources"]
+reuters.com##.StandardArticleBody_container > * > * > [src*="reutersmedia.net/resources"]
+reuters.com##.StandardArticleBody_container > * > [class] > [src*="reutersmedia.net/resources"]
+reuters.com##.StandardArticleBody_container > * > [src*="reutersmedia.net/resources"]
+reuters.com##.StandardArticle_container > * > * > * > * > [src*="reutersmedia.net/resources"]
+reuters.com##.StandardArticle_container > * > [src*="reutersmedia.net/resources"]
+reuters.com##.TwoColumnLayout_container > * > * > [src*="reutersmedia.net/resources"]
+reuters.com##.mod-sticky > * > [src*="reutersmedia.net/resources"]
 ! Site Specific filters (used with $generichide)
 autoevolution.com###\5f wlts
 credio.com,findthedata.com###ad-atf-mid
