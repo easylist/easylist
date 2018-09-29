@@ -5673,6 +5673,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! IP address
 /^https?:\/\/([0-9]{1,3}\.){3}[0-9]{1,3}/$image,script,subdocument,domain=o2tvseries.com|readcomiconline.to|speedvid.net
 ! CSP filters
+$csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|streamango.com|vidoza.net|vidto.me|vidto.se|vidtudu.com
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||kiplinger.com/search/$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
