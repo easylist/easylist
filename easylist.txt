@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201809300837
+! Version: 201809300844
 ! Title: EasyList
-! Last modified: 30 Sep 2018 08:37 UTC
+! Last modified: 30 Sep 2018 08:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54003,7 +54003,9 @@ javascript:$popup,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 ||thepiratebay.$script,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 ||thepiratebay.*/static/$subdocument
 ! hdvid.tv
-@@||hdvid.tv/dl?op=view&file_code$~third-party,xmlhttprequest
+@@||hdvid.tv/?op$~third-party
+@@||hdvid.tv/adm?$~third-party
+@@||hdvid.tv/dl?$~third-party,xmlhttprequest
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
 ||hdvid.tv/sw.js
@@ -71774,9 +71776,8 @@ www.google.com#@##videoads
 @@||disqus.com/embed.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disquscdn.com/count.js$domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||feedback.pornhub.com^$xmlhttprequest,domain=feedback.pornhub.com
-@@||google.com/recaptcha/$image
-@@||gstatic.com/recaptcha/$domain=youporn.com
-@@||gstatic.com/recaptcha/$script
+@@||google.com/recaptcha/$image,script
+@@||gstatic.com/recaptcha/$image,script
 @@||img.pornhub.com/gif/*.gif|$image,~third-party
 @@||img.youtube.com/vi/*/sddefault.jpg$domain=pornhub.com
 @@||maps.googleapis.com^$domain=pornhub.com
@@ -71923,6 +71924,7 @@ www.google.com#@##videoads
 @@||phncdn.com/www-static/js/amateur/dropdown.js?$script
 @@||phncdn.com/www-static/js/autocomplete-search.js$script
 @@||phncdn.com/www-static/js/channel-main.js?$script
+@@||phncdn.com/www-static/js/claimed-pornstar.js$script
 @@||phncdn.com/www-static/js/comments.js?$script
 @@||phncdn.com/www-static/js/content-removal.js$script
 @@||phncdn.com/www-static/js/create-account.js?$script
@@ -71948,6 +71950,7 @@ www.google.com#@##videoads
 @@||phncdn.com/www-static/js/mg_flipbook-$script
 @@||phncdn.com/www-static/js/mg_modal-$script
 @@||phncdn.com/www-static/js/mg_utils-$script
+@@||phncdn.com/www-static/js/modal-tipping.js$script
 @@||phncdn.com/www-static/js/notified-modal.js?$script
 @@||phncdn.com/www-static/js/ph-footer.js$script
 @@||phncdn.com/www-static/js/ph-networkbar.js$script
