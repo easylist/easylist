@@ -4468,6 +4468,10 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
+! clipwatching.com
+@@||clipwatching.com^$script,~third-party
+|http://$script,third-party,domain=clipwatching.com
+|https://$script,third-party,domain=clipwatching.com
 ! hdmoza.com
 $webrtc,domain=hdmoza.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
