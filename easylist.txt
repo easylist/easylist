@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810010927
+! Version: 201810011056
 ! Title: EasyList
-! Last modified: 01 Oct 2018 09:27 UTC
+! Last modified: 01 Oct 2018 10:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54028,7 +54028,12 @@ javascript:$popup,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 @@||hdvid.tv/adm?$~third-party
 @@||hdvid.tv/dl?$~third-party,xmlhttprequest
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
+|http://$script,third-party,domain=wstream.video
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
+! wstream.video
+@@||wstream.video/img2/0_rivcash_banner_468x60_650.gif$image,domain=wstream.video
+|http://$script,third-party,domain=wstream.video
+|https://$script,third-party,domain=wstream.video
 ||hdvid.tv/sw.js
 ! mashable.com
 @@||g.doubleclick.net/gpt/pubads_impl_$script,domain=mashable.com

@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201810010927
+! Version: 201810011056
 ! Title: EasyPrivacy
-! Last modified: 01 Oct 2018 09:27 UTC
+! Last modified: 01 Oct 2018 10:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6587,50 +6587,10 @@ _mongo_stats/
 ||ztsrv.com^$third-party
 ! Mining
 .1.1.1.l80.js^$third-party
-.accountant^$third-party,websocket
-.bid^$third-party,websocket
-.cf^$third-party,websocket
-.club^$third-party,websocket
-.company^$third-party,websocket
-.cricket^$third-party,websocket
-.date^$third-party,websocket
-.download^$third-party,websocket
-.faith^$third-party,websocket
-.fun^$third-party,websocket
-.ga^$third-party,websocket
-.gdn^$third-party,websocket
-.gq^$third-party,websocket
-.group^$third-party,websocket
-.host^$third-party,websocket
-.ink^$third-party,websocket
-.loan^$third-party,websocket
-.ltd^$third-party,websocket
-.me^$third-party,websocket
-.men^$third-party,websocket
-.ml^$third-party,websocket,domain=~myinterview.com
 .n.2.1.js^$third-party
 .n.2.1.l50.js^$third-party
 .n.2.1.l60.js^$third-party
-.ovh^$third-party,websocket
-.party^$third-party,websocket
-.pro^$third-party,websocket
-.promo^$third-party,websocket
-.pw^$third-party,websocket
-.racing^$third-party,websocket
-.review^$third-party,websocket
-.rocks^$third-party,websocket
-.science^$third-party,websocket
-.site^$third-party,websocket
-.space^$third-party,websocket
-.stream^$third-party,websocket
-.tk^$third-party,websocket
-.top^$third-party,websocket
-.trade^$third-party,websocket
-.webcam^$third-party,websocket
-.website^$third-party,websocket
-.win^$third-party,websocket
-.xyz^$third-party,websocket,domain=~btorrent.xyz|~kiedywakacje.pl|~webtorrent.io
-.zone^$third-party,websocket
+/^(http|https|ws|wss):\/\/([0-9a-z\.-_]+)\.(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|loan|men|ml|network|ovh|party|pro|pw|racing|review|rocks|science|site|space|stream|tk|top|trade|webcam|win|xyz|zone)\.\/(.*)/$script,third-party,websocket,xmlhttprequest,domain=~btorrent.xyz|~kiedywakacje.pl|~myinterview.com|~webtorrent.io
 /cdn-cgi/pe/bag2?r[]=*eth-pocket.de
 ||0x1f4b0.com^$third-party
 ||1beb2a44.space^$third-party
