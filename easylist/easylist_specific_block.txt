@@ -294,8 +294,8 @@
 ||amazonaws.com/files.bannersnack.com/$domain=~bannersnack.com
 ||amazonaws.com/kbnetworkz/$domain=hardforum.com
 ||amazonaws.com/videos/$domain=technewstoday.com
-||amazonaws.com^$script,domain=300mbdownload.net|bittorrent.am|globes.co.il|grantorrent.net|hdvid.tv|kannadamovies.biz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|rgmechanicsgames.com|serietvsubita.net|streamplay.to|thevideobee.to|usersfiles.com|vshare.eu
-||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|bdupload.info|bigfile.to|bittorrent.am|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|hdvid.tv|katcr.host|macupload.net|mirrorcreator.com|nachostime.net|ocean0fgames.com|onhax.me|rgmechanicsgames.com|sadeempc.com|serietvsubita.net|suprafiles.org|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
+||amazonaws.com^$script,domain=300mbdownload.net|bittorrent.am|globes.co.il|grantorrent.net|kannadamovies.biz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|rgmechanicsgames.com|serietvsubita.net|streamplay.to|thevideobee.to|usersfiles.com|vshare.eu
+||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|bdupload.info|bigfile.to|bittorrent.am|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|katcr.host|macupload.net|mirrorcreator.com|nachostime.net|ocean0fgames.com|onhax.me|rgmechanicsgames.com|sadeempc.com|serietvsubita.net|suprafiles.org|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
 ||amazonaws.com^*-ad.jpg$domain=ewn.co.za
 ||amazonaws.com^*-Banner.jpg$domain=ewn.co.za
 ||amazonaws.com^*/site-takeover/$domain=songza.com
@@ -5468,7 +5468,7 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 |http://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.online|vidzi.si|vidzi.tv
 |https://$script,subdocument,third-party,xmlhttprequest,domain=vidzi.online|vidzi.si|vidzi.tv
 ! TPB
-$webrtc,websocket,xmlhttprequest,domain=bay.maik.rocks|bypassed.st|cruzing.xyz|depiratenbaai.nl|hdvid.tv|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.mx|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
+$webrtc,websocket,xmlhttprequest,domain=bay.maik.rocks|bypassed.st|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.mx|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 @@||thepiratebay.*/static/js/details.js$domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 @@||thepiratebay.*/static/js/prototype.js$domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 @@||thepiratebay.*/static/js/scriptaculous.js$domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
@@ -5478,16 +5478,17 @@ javascript:$popup,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 ||thepiratebay.$script,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 ||thepiratebay.*/static/$subdocument
 ! hdvid.tv
+$webrtc,websocket,domain=hdvid.tv|hdvid.xyz
+/sw.js$domain=hdvid.tv|hdvid.xyz
 @@||hdvid.tv/?op$~third-party
 @@||hdvid.tv/adm?$~third-party
 @@||hdvid.tv/dl?$~third-party,xmlhttprequest
-|http://$script,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
-|https://$script,subdocument,third-party,xmlhttprequest,domain=hdvid.tv
+|http://$script,subdocument,third-party,xmlhttprequest,domain=hdvid.tv|hdvid.xyz
+|https://$script,subdocument,third-party,xmlhttprequest,domain=hdvid.tv|hdvid.xyz
 ! wstream.video
 @@||wstream.video/img2/0_rivcash_banner_468x60_650.gif$image,domain=wstream.video
 |http://$script,third-party,domain=wstream.video
 |https://$script,third-party,domain=wstream.video
-||hdvid.tv/sw.js
 ! mashable.com
 @@||g.doubleclick.net/gpt/pubads_impl_$script,domain=mashable.com
 @@||mashable.com^$generichide
