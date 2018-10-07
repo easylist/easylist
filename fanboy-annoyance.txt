@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810070031
+! Version: 201810070037
 ! Title: Fanboy's Annoyance List
-! Last modified: 07 Oct 2018 00:31 UTC
+! Last modified: 07 Oct 2018 00:37 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -473,6 +473,9 @@ _xmlrss.
 ! Test filters for embeded/in-article video ads
 /banner/videos/player.htm?$subdocument
 /plugin/banner/videos/*$subdocument
+! Particles dynamic background
+/particles.js
+/particles.min.js
 ! *** easylist:fanboy-addon/fanboy_social_general_block.txt ***
 -box-facebook_
 -box-twitter_
@@ -29554,6 +29557,7 @@ reddit.com##.DualPartInterstitialFooter
 mindfood.com##.LeaderBoardContainer
 legacy.com##.MyMemorialAd
 juxtapoz.com##.NewFollowBox
+myegy.cc##.NotifyProposal
 priceme.co.nz##.PrettyBreadCrumbRightDiv
 inc.com##.SectionUpDown
 m.reddit.com##.SmartBannerContainer
@@ -37147,6 +37151,7 @@ mymuesli.com#@#cookies_consent
 @@||bbci.co.uk^*/cookie-library.min.js
 @@||bolha.com/js/obj.cookiesPolicy.js
 @@||civiccomputing.com^*/cookieControl-$script,domain=msi.com
+@@||cloudflare.com^*/cookieconsent.min.js$domain=pixieset.com
 @@||consent-pref.trustarc.com^$subdocument,domain=forbes.com
 @@||consent.cmp.oath.com^$script,domain=dailystar.co.uk|express.co.uk
 @@||consent.trustarc.com^$image,script,domain=forbes.com
