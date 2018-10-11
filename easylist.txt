@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810110048
+! Version: 201810110101
 ! Title: EasyList
-! Last modified: 11 Oct 2018 00:48 UTC
+! Last modified: 11 Oct 2018 01:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54224,11 +54224,12 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=zippyshare.com
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=zippyshare.com
 ! Suprafiles
-@@||google.com/recaptcha/$subdocument,domain=suprafiles.me
-@@||gstatic.com/recaptcha/$script,domain=suprafiles.me
-@@||suprafiles.me^$generichide
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=suprafiles.me|suprafiles.net|suprafiles.org
+@@||google.com/recaptcha/$subdocument,domain=sfiles.org
+@@||gstatic.com/recaptcha/$script,domain=sfiles.org
+@@||sfiles.org^$generichide
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=sfiles.org|suprafiles.me|suprafiles.net|suprafiles.org
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=sfiles.org|suprafiles.me|suprafiles.net|suprafiles.org
+||sfiles.org/sw.js
 ! vidzi.tv
 @@||ajax.googleapis.com^$script,domain=vidzi.online|vidzi.si|vidzi.tv
 @@||static.vidzi.tv/jwplayer-$script,domain=vidzi.online|vidzi.si|vidzi.tv
