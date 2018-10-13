@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810130344
+! Version: 201810130350
 ! Title: Fanboy's Social Blocking List
-! Last modified: 13 Oct 2018 03:44 UTC
+! Last modified: 13 Oct 2018 03:50 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3436,6 +3436,7 @@ _youtube_social_
 ###fb_share_btn
 ###fb_share_button
 ###fb_social
+###fb_socialPageLink
 ###fb_twitter_bar
 ###fb_video_link
 ###fb_widget
@@ -3661,6 +3662,7 @@ _youtube_social_
 ###globalSocialPromo
 ###globalSocialPromoWrap
 ###gmi-ResourceViewShare
+###go_socialPageLink
 ###goog-plus
 ###google-plus-link
 ###google-share
@@ -5204,6 +5206,7 @@ _youtube_social_
 ###tumblr-follow
 ###tumblr-icon
 ###tumblrlogo
+###tw_socialPageLink
 ###tweet-button
 ###tweetContainer
 ###tweet_it_bro
@@ -8491,7 +8494,10 @@ _youtube_social_
 ##.icon--vine
 ##.icon--youtube
 ##.icon-FB
+##.icon-Facebook
+##.icon-GooglePlus
 ##.icon-TWITTER
+##.icon-Twitter
 ##.icon-VK
 ##.icon-YOUTUBE
 ##.icon-circle-facebook
@@ -13846,7 +13852,9 @@ _youtube_social_
 ##[data-type="shareCardAction"]
 ##[data-type="twitter-bottom-share"]
 ##[href="http://www.addthis.com/bookmark.php"]
+##[href^="//plus.google.com/share"]
 ##[href^="//twitter.com/share"]
+##[href^="//www.twitter.com/share"]
 ##[href^="http://reddit.com/submit"]
 ##[id^="gigya_inline_share_"]
 ##[name="Click to follow us on twitter"]
