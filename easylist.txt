@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810192359
+! Version: 201810200004
 ! Title: EasyList
-! Last modified: 19 Oct 2018 23:59 UTC
+! Last modified: 20 Oct 2018 00:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -21050,6 +21050,9 @@ _popunder+$popup
 ##.advertiser-links
 ##.advertisesingle
 ##.advertisespace_div
+##.advertising--desktop
+##.advertising--mobile
+##.advertising--tablet
 ##.advertising-aside-top
 ##.advertising-banner
 ##.advertising-block
@@ -21698,6 +21701,8 @@ _popunder+$popup
 ##.bloc_adsense_acc
 ##.block--ad-superleaderboard
 ##.block--ads
+##.block--advertising
+##.block--advertising-header
 ##.block--bean-artadocean-splitter
 ##.block--bean-artadocean-text-link-1
 ##.block--bean-artadocean-text-link-2
@@ -21802,6 +21807,9 @@ _popunder+$popup
 ##.blockAd300x97
 ##.blockAds
 ##.blockAdvertise
+##.block__advertising
+##.block__advertising-content
+##.block__advertising-header
 ##.block_ad
 ##.block_ad_floating_bar
 ##.block_ad_middle
@@ -53380,7 +53388,7 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! kimcartoon.me
 ||kimcartoon.me^$script,domain=kimcartoon.me
 ! bebi script
-/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest
 @@||gogoanime.to/player.js$script
 @@||watchcartoononline.io/tema/images/jwplayer.jpg$image,~third-party
 ! adyou.me
