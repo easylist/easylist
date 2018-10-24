@@ -4946,12 +4946,10 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 |https://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 ! gelbooru.com
-@@||gelbooru.com/index.php?$xmlhttprequest
-@@||gelbooru.com/public/$xmlhttprequest,domain=gelbooru.com
-@@||gelbooru.com/script/application.js$script
-@@||platform.twitter.com^$script,domain=gelbooru.com
-|http://$script,xmlhttprequest,domain=gelbooru.com
-|https://$script,xmlhttprequest,domain=gelbooru.com
+/gelbooru\.com.*[a-zA-Z0-9?!=@%#]{30,}/$image,other
+@@||ads.exosrv.com^$script,domain=gelbooru.com
+@@||gelbooru.com/ads.js$script,~third-party
+@@||gelbooru.com^$generichide
 ! theinquirer.net / professionaladviser.com
 @@||disqus.com^$script,domain=professionaladviser.com|theinquirer.net
 @@||disquscdn.com^$script,domain=professionaladviser.com|theinquirer.net
