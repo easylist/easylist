@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810240835
+! Version: 201810240908
 ! Title: EasyList
-! Last modified: 24 Oct 2018 08:35 UTC
+! Last modified: 24 Oct 2018 09:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -44468,6 +44468,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||dradvice.in^$popup,third-party
 ||durokuro.com^$popup,third-party
 ||dynsrvaba.com^$popup
+||dynsrvazf.com^$popup
 ||dynsrvwer.com^$popup
 ||eaoueopa.com^$popup
 ||eastbour.mobi^$popup
@@ -44589,6 +44590,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||indianweeklynews.com^$popup,third-party
 ||infra.systems^$popup,third-party
 ||injuredcandy.com^$popup
+||insigit.com^$popup
 ||insta-cash.net^$popup,third-party
 ||installcdnfile.com^$popup,third-party
 ||instanceyou.info^$popup,third-party
@@ -53891,12 +53893,10 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 |https://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 ! gelbooru.com
-@@||gelbooru.com/index.php?$xmlhttprequest
-@@||gelbooru.com/public/$xmlhttprequest,domain=gelbooru.com
-@@||gelbooru.com/script/application.js$script
-@@||platform.twitter.com^$script,domain=gelbooru.com
-|http://$script,xmlhttprequest,domain=gelbooru.com
-|https://$script,xmlhttprequest,domain=gelbooru.com
+/gelbooru\.com.*[a-zA-Z0-9?!=@%#]{30,}/$image,other
+@@||ads.exosrv.com^$script,domain=gelbooru.com
+@@||gelbooru.com/ads.js$script,~third-party
+@@||gelbooru.com^$generichide
 ! theinquirer.net / professionaladviser.com
 @@||disqus.com^$script,domain=professionaladviser.com|theinquirer.net
 @@||disquscdn.com^$script,domain=professionaladviser.com|theinquirer.net
@@ -65047,7 +65047,6 @@ jguru.com##center
 pocketnow.com##center + a[href^="/"]
 findagrave.com##center > .search-widget
 nzbindex.com,nzbindex.nl##center > a > img[style="border: 1px solid #000000;"]
-gelbooru.com##center > a[href]
 pocketnow.com##center > a[href^="/"]
 go4up.com##center > a[target="_blank"]
 destructoid.com##center > div > iframe
@@ -66530,29 +66529,9 @@ codeproject.com,indiewire.com##iframe[name][style]
 codeproject.com,indiewire.com##iframe[style][scrolling]
 codeproject.com,indiewire.com##iframe[style][src]
 ! gelbooru.com
-gelbooru.com###paginator
-gelbooru.com##[height="250"]
-gelbooru.com##[href*="ccbill."]
-gelbooru.com##[href][rel*="nofollow"] video
-gelbooru.com##[href][target*="blank"] video
-gelbooru.com##[rel*="nofollow"] > [style]
-gelbooru.com##[style*="height:"][width]
-gelbooru.com##[style*="height:250px;"]
-gelbooru.com##[style*="width:"][height]
-gelbooru.com##a > [style][autoplay]
-gelbooru.com##a[href*="/clicks.cgi"]
-gelbooru.com##a[href*="?"][rel] > video
-gelbooru.com##a[href] > :last-child > img[src]
-gelbooru.com##a[id][href][rel*="nofollow"]
-gelbooru.com##center > div > style + div[class]
-gelbooru.com##center > div[style*="overflow:"]
-gelbooru.com##div > [rel] > video[width]
-gelbooru.com##div > div[id] > [href] > img[src]
-gelbooru.com##div[style] > [class][style]
-gelbooru.com##iframe + style + [class]
-gelbooru.com##iframe[width]
-gelbooru.com##span > style[type="text/css"] + *
-gelbooru.com##span[class]:last-child > a img[src]
+gelbooru.com##.contain-push > .hidden-xs
+gelbooru.com##.contain-push > center > [class]
+gelbooru.com##center > center > .hidden-xs
 ! reuters.com
 reuters.com##* > * > * > [src*="/r/?I"]
 reuters.com##* > * > * > [src*="/r/?l"]
