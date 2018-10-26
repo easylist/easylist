@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810260031
+! Version: 201810260037
 ! Title: EasyList
-! Last modified: 26 Oct 2018 00:31 UTC
+! Last modified: 26 Oct 2018 00:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53943,6 +53943,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||ads.exosrv.com^$script,domain=gelbooru.com
 @@||gelbooru.com/ads.js$script,~third-party
 @@||gelbooru.com^$generichide
+||gelbooru.com/halloween/
+||gelbooru.com/script/license.
+||gelbooru.com/script/tryt.
 ! theinquirer.net / professionaladviser.com
 @@||disqus.com^$script,domain=professionaladviser.com|theinquirer.net
 @@||disquscdn.com^$script,domain=professionaladviser.com|theinquirer.net
@@ -65895,7 +65898,6 @@ realitytvworld.com##font[size="1"][color="gray"]
 nufc.com##font[size="1"][face="Verdana"] > table[width="297"][cellspacing="0"][cellpadding="0"][border="0"][align="center"]
 zippyshare.com##font[style="font-size: 10px; letter-spacing: 3px; word-spacing: 2px; line-height: 18px;"]
 zippyshare.com##font[style="font-size: 10px; letter-spacing: 3px; word-spacing: 2px;"]
-gelbooru.com#?#:-abp-properties(*: *;base64,)
 softpedia.com##h2 + div + a[style]
 cnn.com##h2[data-analytics^="Paid Partner Content_list-"]
 law.com,topcultured.com##h3
@@ -66582,7 +66584,9 @@ codeproject.com,indiewire.com##iframe[style][src]
 ! gelbooru.com
 gelbooru.com##.contain-push > .hidden-xs
 gelbooru.com##.contain-push > center > [class]
+gelbooru.com##a[href^="https://network.nutaku.net/"]
 gelbooru.com##center > center > .hidden-xs
+gelbooru.com#?#:-abp-properties(base64)
 ! reuters.com
 reuters.com##* > * > * > [src*="/r/?I"]
 reuters.com##* > * > * > [src*="/r/?l"]
