@@ -3804,7 +3804,6 @@
 ||torrenteditor.com/img/graphical-network-monitor.gif
 ||torrentfreak.com/images/torguard.gif
 ||torrentfreak.com/images/vuze.png
-||torrentfunk.com/affprofslider.js
 ||torrentking.eu/js/script.packed.js
 ||torrentproject.org/out/
 ||torrentroom.com/js/torrents.js
@@ -5137,6 +5136,13 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 ! torrenteo.com
 |http://$script,third-party,xmlhttprequest,domain=torrenteo.com
 |https://$script,third-party,xmlhttprequest,domain=torrenteo.com
+! torrentfunk.com
+$webrtc,domain=torrentfunk.com
+@@||code.jquery.com^$script,domain=torrentfunk.com
+|http://$script,subdocument,third-party,xmlhttprequest,domain=torrentfunk.com
+|https://$script,subdocument,third-party,xmlhttprequest,domain=torrentfunk.com
+||sun.torrentfunk.com^
+||torrentfunk.com/sw*.js
 ! embed.nowvideo.sx / animeflv.net
 @@||ajax.googleapis.com^$script,domain=embed.nowvideo.sx
 @@||zerocdn.to/dash/$third-party,xmlhttprequest,domain=nowvideo.sx
