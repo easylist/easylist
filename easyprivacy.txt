@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201811011842
+! Version: 201811011848
 ! Title: EasyPrivacy
-! Last modified: 01 Nov 2018 18:42 UTC
+! Last modified: 01 Nov 2018 18:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -265,6 +265,7 @@
 .tracking.js?dpv=
 .trackUserAction&
 .trafficTracking.
+.tstracker.
 .tv/log?event
 .tv/t.png?
 .uk/o.gif?
@@ -2037,6 +2038,7 @@
 /log/ad-
 /log/analytics
 /log/browser/event
+/log/collect/*
 /log/error?
 /log/event?
 /log/impression/*
@@ -10454,6 +10456,7 @@ _mongo_stats/
 ||3.cn/cesu/r?
 ||360.cn/mapping_service?
 ||4gtv.tv/js/ga_
+||aixifan.com/acsdk/log.min.js?
 ||alimama.cn/inf.js
 ||alipay.com/common/um/lsa.swf
 ||analytics.21cn.com^
@@ -15420,6 +15423,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ! Bulgarian
 @@||google-analytics.com/analytics.js$domain=novatv.bg
 ! Chinese
+@@||aixifan.com^*/sensorsdata.min.js?$domain=acfun.cn
 @@||amazonaws.com^*-google-analytics.js$domain=dcard.tw
 @@||aolcdn.com/js/mg2.js$domain=engadget.com
 @@||aolcdn.com/omniunih_int.js$domain=engadget.com
