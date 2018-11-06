@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201811061457
+! Version: 201811061510
 ! Title: Fanboy's Annoyance List
-! Last modified: 06 Nov 2018 14:57 UTC
+! Last modified: 06 Nov 2018 15:10 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -21,6 +21,8 @@
 -taboola-loader.
 -twitter-128x128.
 -youtube-128x128.
+.ui.totop.
+/1pixel.
 /1pxtransparent.
 /1x1Transparent.
 /?spu_action=*spu_load&
@@ -1382,6 +1384,7 @@ _xmlrss.
 /head_twitter.
 /header-facebook.png
 /header-social-
+/header-social/*
 /header-twitter.png
 /header/fb-
 /header/share.
@@ -2334,6 +2337,7 @@ _xmlrss.
 /sn_facebook_
 /sn_plurk_
 /sn_share_
+/snaShare.
 /sns_fb.
 /sns_instagram.
 /sns_tw.
@@ -3399,7 +3403,10 @@ _youtube_social_
 /cmp-banner.js
 /cmp.bundle.js
 /cmp.complete.bundle.js
+/cmp/cmp.js
+/cmp/cmpui-
 /cmp_consentStorage.
+/cmpui-banner-
 /cmpui-banner.js
 /cmpui-popup.js
 /cnil-banner/*
@@ -12222,6 +12229,7 @@ _site_cookie_
 ##.headertwittericon
 ##.headline-sns
 ##.headsocial
+##.headsocial-wrapper
 ##.headsocialicons
 ##.headsocialitem
 ##.heateorSssSharingRound
@@ -17488,6 +17496,7 @@ _site_cookie_
 ##.vs-social
 ##.vs-social-link
 ##.vs-twitter
+##.vshare
 ##.vxp-share__channel-link
 ##.w-content-details-article-extra-sharing
 ##.w-content-details-sharing
@@ -21731,6 +21740,7 @@ _site_cookie_
 ###dotbandeaucookie
 ###dpWarningWrapper
 ###dr-cookie-info-box
+###drop-cookie
 ###dsgvo-bottom
 ###dsgvo-cookie-configurator
 ###dsgvo-cookie-container
@@ -35265,6 +35275,7 @@ newuthayan.com##.more-stories
 dinamalar.com##.new_nextarrow
 dinamalar.com##.new_prevarrow
 desh.co.in##.newsLetter
+skynewsarabia.com##.news_letter
 sangbadpratidin.in,vtvgujarati.com##.newsletter
 news247.gr##.newsletter-form
 uitinvlaanderen.be##.noty_bar
@@ -35968,6 +35979,7 @@ jyllands-posten.dk##.bylineToolbar
 capital.gr##.controls
 trt.net.tr##.facebook
 epaperlokmat.in,gujaratsamacharepaper.com##.facebook-page
+skynewsarabia.com##.fb_messanger
 inneram.com##.gplus
 transfermarkt.com.tr##.header-social
 lionexpress.in##.like-text
@@ -35990,8 +36002,10 @@ cnnindonesia.com##.sosmed
 diyanet.tv##.sosyal-alt-ust
 mathrubhumi.com##.tFB
 mathrubhumi.com##.tYT
+skynewsarabia.com##.telegram
 gazzetta.gr##.toolbar
 trt.net.tr##.twitter
+skynewsarabia.com##.whats_app
 yle.fi##.yle__article__header__shareButtons
 ||seitzeichen.de^$third-party
 ||social-bookmarking-tools.de^$third-party
@@ -36464,6 +36478,7 @@ barfuss.it##.barfuss-fblikebox
 nurse24.it##.block-segui-nurse24it
 comingsoon.it##.box-tags
 ansa.it##.bt-suggest
+fantagazzetta.com##.btn-sm
 cirio.it##.cirioYou
 optimaitalia.com##.condivisioni
 everyeye.it##.cont_reply > .link-post
@@ -38326,6 +38341,7 @@ mymuesli.com#@#.js-cookies-consent
 theverge.com#@#.m-privacy-consent
 oattravel.com,piaggiogroup.com#@#.mod_cookies
 multimediago.pl#@#.modal-cookie
+betway.it#@#.module-cookie
 ramics-conference.org#@#.nf-form-content
 aklagare.se,boekmeter.nl,gamesmeter.nl,moviemeter.nl,musicmeter.nl,nzherald.co.nz,pokemon.com,shopstyle.com,thenextweb.com#@#.no-cookies
 account.microsoft.com#@#.privacy-container
