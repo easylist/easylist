@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201811170258
+! Version: 201811170403
 ! Title: EasyPrivacy
-! Last modified: 17 Nov 2018 02:58 UTC
+! Last modified: 17 Nov 2018 04:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -13459,6 +13459,8 @@ $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahmi
 ||vidzi.tv/*bootstrap.
 ||wallpoper.com^*/c.js
 ||worker.salon.com^
+! salon.com cpu mining
+|http*://$script,third-party,domain=salon.com
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
