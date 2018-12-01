@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812010731
+! Version: 201812010753
 ! Title: EasyList
-! Last modified: 01 Dec 2018 07:31 UTC
+! Last modified: 01 Dec 2018 07:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53943,6 +53943,8 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||youtube.com/player_api$third-party
 ! kimcartoon.me
 ||kimcartoon.me^$script,domain=kimcartoon.me
+! reuters.com
+||reuters.com/resources/g/r/$image,subdocument
 ! bebi script
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest
 @@||gogoanime.to/player.js$script
@@ -56587,10 +56589,6 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 |http://$third-party,xmlhttprequest,domain=motherless.com
 |https://$script,domain=motherless.com
 |https://$third-party,xmlhttprequest,domain=motherless.com
-! taxidrivermovie.com
-@@||taxidrivermovie.com/style/core-min.js$script,~third-party
-|http://$script,~third-party,xmlhttprequest,domain=taxidrivermovie.com
-|https://$script,~third-party,xmlhttprequest,domain=taxidrivermovie.com
 ! hdzog.com
 @@||ajax.googleapis.com^$script,domain=hdzog.com
 @@||hdzog.com/key=$~third-party,xmlhttprequest
@@ -67088,7 +67086,7 @@ gelbooru.com##a[target="_blank"] > img
 gelbooru.com##center > center > .hidden-xs
 gelbooru.com#?#:-abp-properties(base64)
 ! reuters.com
-reuters.com##* > * > * > [src*="/g/r/?a="]
+! reuters.com##* > * > * > [src*="/g/r/?a="]
 ! Site Specific filters (used with $generichide)
 autoevolution.com###\5f wlts
 credio.com,findthedata.com###ad-atf-mid
