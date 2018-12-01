@@ -280,6 +280,7 @@
 ###GDPRCookieBox
 ###GDPRCookieDisclaimer
 ###GDPRCookieDisplay
+###GDPRModal
 ###GDPRPopupContainer
 ###GDPR_block
 ###GDPRtoast
@@ -3406,7 +3407,7 @@
 ###doc-banner-cookie
 ###docookiecookie
 ###documentCookieInfo
-###domCookieWarning
+###domCookieWarning:not(html):not(body)
 ###donut-law
 ###dotbandeaucookie
 ###dpWarningWrapper
@@ -4968,6 +4969,7 @@
 ###simplecookienotification
 ###simplecookienotification_v01
 ###site-alert-cookienotice
+###site-banner-gdpr
 ###site-cookie-policy
 ###site-cookies
 ###site-footer__cookies
@@ -5824,6 +5826,7 @@
 ##.b-footer-cookie
 ##.b-notification-push__wrapper
 ##.b-notification[data-name*="consent"]
+##.b-privacy-policy
 ##.b10-cookie-notification
 ##.bCnil
 ##.b_cookieBanner
@@ -6147,6 +6150,7 @@
 ##.ck_banner
 ##.ckn-container
 ##.cl_bar
+##.cl_gdpr_banner
 ##.clm-cookie-banner
 ##.clone-cookie-alert
 ##.close-cookies
@@ -7096,6 +7100,7 @@
 ##.cookie_overlay_container
 ##.cookie_overlayshow
 ##.cookie_panel
+##.cookie_plugin
 ##.cookie_policy
 ##.cookie_policy_box
 ##.cookie_policy_cont
@@ -7176,7 +7181,7 @@
 ##.cookiecontrol
 ##.cookiecrap
 ##.cookiecutter
-##.cookied
+##.cookied:not(body):not(html)
 ##.cookiedOuter
 ##.cookiedetails
 ##.cookiedialog
@@ -7617,7 +7622,7 @@
 ##.cookieuse-open
 ##.cookievarning-wrap
 ##.cookiewLawLayer
-##.cookiewall:not(body)
+##.cookiewall:not(body):not(html)
 ##.cookiewallpopup
 ##.cookiewarn
 ##.cookiewarning
@@ -7841,6 +7846,7 @@
 ##.eu-cookie
 ##.eu-cookie-banner
 ##.eu-cookie-bar-notification
+##.eu-cookie-compliance-banner
 ##.eu-cookie-info
 ##.eu-cookie-law
 ##.eu-cookie-law-wrapper
@@ -8572,6 +8578,7 @@
 ##.mms-cookielayer
 ##.mmui-cookie-disclaimer
 ##.mnd-cookies
+##.mo-sitePriv
 ##.moc-cookie-container
 ##.mod-aw_cookieabfrage
 ##.mod-cookie
@@ -8744,6 +8751,7 @@
 ##.notification-ctr.cookie-privacy
 ##.notification-layout[ng-class="cookie-bar"]
 ##.notification-widget.cookie
+##.notification-wrapper-bottom
 ##.notification.cookie
 ##.notification.cookies:not(body):not(html)
 ##.notification.show-cookie
@@ -9639,6 +9647,7 @@
 ##div[class^="cookiesAlert_"]
 ##div[data-automation="cookies-banner"]
 ##div[data-banner="cookies"]
+##div[data-borlabs-cookie-wrap]
 ##div[data-box-name="cookie policy"]
 ##div[data-cmp-no-consent]
 ##div[data-component="cookie-policy"]
