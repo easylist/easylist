@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812091705
+! Version: 201812091718
 ! Title: Fanboy's Annoyance List
-! Last modified: 09 Dec 2018 17:05 UTC
+! Last modified: 09 Dec 2018 17:18 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -9489,6 +9489,7 @@ _site_cookie_
 ##.FacebookICN
 ##.FacebookLike
 ##.FacebookShare
+##.FacebookShareButton
 ##.FacebookTwitter
 ##.Facebook_like
 ##.FeatureShare
@@ -9527,6 +9528,7 @@ _site_cookie_
 ##.LikeBox
 ##.LikeButton
 ##.LikeContainer
+##.LineShareButton
 ##.LinkedinFollowButton
 ##.Links-Social
 ##.ListSocial
@@ -9590,6 +9592,7 @@ _site_cookie_
 ##.ShareList
 ##.ShareOptions
 ##.SharePanelText
+##.SharePanelVisibleButton
 ##.SharePrompt
 ##.ShareRail
 ##.ShareRow
@@ -9689,6 +9692,7 @@ _site_cookie_
 ##.TwitterFollowButton
 ##.TwitterFollowUs
 ##.TwitterICN
+##.TwitterShareButton
 ##.Twitter_Widget
 ##.Twitter__social
 ##.V7-social-buttons
@@ -18435,6 +18439,8 @@ _site_cookie_
 ##a[title^="share on Facebook"]
 ##a[title^="share on Twitter"]
 ##button[aria-label="Toggle social share buttons"]
+##button[data-title="Share on Facebook"]
+##button[data-title="Share"]
 ##button[onclick^="Javascript:void(window.open('http://twitter.com/share?text="]
 ##button[onclick^="Javascript:void(window.open('http://www.facebook.com/sharer.php?"]
 ##button[onclick^="Javascript:void(window.open('https://www.linkedin.com/shareArticle?"]
@@ -36706,6 +36712,7 @@ nikkei-cnbc.co.jp##.officialAccount
 fnn-news.com,gettyimages.co.jp##.share
 newsweekjapan.jp##.side_sns
 bestcarweb.jp,coffee-break.me##.sns
+gamewith.jp##.sns-btn-wrap
 webcartop.jp##.sns-wrapper
 originalnews.nico##.snsPalette
 mobilenews.jp##.social
