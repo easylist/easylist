@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812101851
+! Version: 201812101858
 ! Title: Fanboy's Annoyance List
-! Last modified: 10 Dec 2018 18:51 UTC
+! Last modified: 10 Dec 2018 18:58 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -949,6 +949,7 @@ _xmlrss.
 /color-facebook-
 /color-twitter-
 /common/sns/*
+/common/sns_
 /commons/social/*
 /commonSprites/social/*
 /components/share/*
@@ -2398,6 +2399,7 @@ _xmlrss.
 /snaShare.
 /sns/icon/*
 /sns_fb.
+/sns_follow_
 /sns_goo.
 /sns_instagram.
 /sns_kakaostory.
@@ -6790,6 +6792,7 @@ _site_cookie_
 ##a[href="#back-to-top"]
 ##a[href="#scrolltop"]
 ##a[href="#top-of-page"]
+##a[href="javascript:GoToTop();"]
 ##a[onclick="go_on_top();"]
 ##a[onclick="scroll2Top()"]
 ##a[title="Back To Top"]
@@ -6917,6 +6920,7 @@ _site_cookie_
 ###ShowsRightSocial
 ###SideBarSocialMedia
 ###Side_Block_Facebook
+###SnsFollow
 ###Social-Box
 ###Social-Container-Right
 ###Social-Left
@@ -15039,6 +15043,7 @@ _site_cookie_
 ##.share_content
 ##.share_control
 ##.share_count
+##.share_cover
 ##.share_cta
 ##.share_digg
 ##.share_email_article
@@ -15596,6 +15601,7 @@ _site_cookie_
 ##.snsZone
 ##.sns_box
 ##.sns_comm
+##.sns_follow
 ##.sns_right
 ##.sns_share
 ##.snsb-balloon
@@ -36642,15 +36648,18 @@ inran.it##div[style="background-color: #f0f0f0; text-align: center; font-size:12
 ! 
 ! ---------- Korean Site Specific Hiding Rules ----------
 ! 
+sedaily.com###FooterTop
 etnews.com###wingBanner
 radiokorea.com##.link_top
 radioseoul1650.com##.nav_top
 etnews.com##.sns_btn
-newsis.com##.top
+sedaily.com##.subscribe_cover
+newsis.com,sedaily.com##.top
 nnews.mk.co.kr##div[style="width: 525px; border:1px solid #ddd; border-radius: 3px; background: #fafafa; padding: 10px; margin-bottom: 20px; height: 62px;"]
 ||kodcad.kr^$third-party
 ||newsis.com^*/btn_top.
 ||radioseoul1650.com^*/nav_top.
+||sedaily.com^*/btn_top_
 ! 
 ! ---------- Israeli Site Specific Hiding Rules ----------
 ! 
@@ -37295,10 +37304,13 @@ tongilvoice.com###sns_bar
 epochtimes.co.kr##.aht-sns
 sbs.co.kr##.atend_sns
 dknet730.com##.btn-sm
+koreatimes.com##.fab
 sbs.co.kr##.fi_sns
 newsis.com##.function
 myfocus.co.kr##.postSr
+sedaily.com##.share
 news1.kr##.sns_sub
+koreatimes.com##.twit
 ! 
 ! 
 ! ---------- Hebrew Site Specific Hiding Rules ----------
