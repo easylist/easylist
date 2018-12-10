@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812101841
+! Version: 201812101851
 ! Title: Fanboy's Annoyance List
-! Last modified: 10 Dec 2018 18:41 UTC
+! Last modified: 10 Dec 2018 18:51 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -2396,9 +2396,14 @@ _xmlrss.
 /sn_plurk_
 /sn_share_
 /snaShare.
+/sns/icon/*
 /sns_fb.
+/sns_goo.
 /sns_instagram.
+/sns_kakaostory.
+/sns_naverband.
 /sns_tw.
+/sns_twt.
 /snsbiglogo.
 /snslogo.
 /snslogo_
@@ -7123,6 +7128,7 @@ _site_cookie_
 ###blog-social
 ###blog_social
 ###bloggerspiceFBpop
+###bo_v_sns
 ###body_ContentModule_ctl00_ucArticleTemplated_acContainer_pnlSocialMedia
 ###bookmarks-share
 ###bottom-menu-social-icons
@@ -15583,6 +15589,7 @@ _site_cookie_
 ##.sns-fb
 ##.sns-link
 ##.sns-share
+##.sns-share-icon
 ##.sns-tw
 ##.sns-yt
 ##.snsBox
@@ -36637,11 +36644,13 @@ inran.it##div[style="background-color: #f0f0f0; text-align: center; font-size:12
 ! 
 etnews.com###wingBanner
 radiokorea.com##.link_top
+radioseoul1650.com##.nav_top
 etnews.com##.sns_btn
 newsis.com##.top
 nnews.mk.co.kr##div[style="width: 525px; border:1px solid #ddd; border-radius: 3px; background: #fafafa; padding: 10px; margin-bottom: 20px; height: 62px;"]
 ||kodcad.kr^$third-party
 ||newsis.com^*/btn_top.
+||radioseoul1650.com^*/nav_top.
 ! 
 ! ---------- Israeli Site Specific Hiding Rules ----------
 ! 
@@ -37285,6 +37294,7 @@ epochtimes.co.kr###SnsBtn
 tongilvoice.com###sns_bar
 epochtimes.co.kr##.aht-sns
 sbs.co.kr##.atend_sns
+dknet730.com##.btn-sm
 sbs.co.kr##.fi_sns
 newsis.com##.function
 myfocus.co.kr##.postSr
@@ -39483,6 +39493,7 @@ mymuesli.com#@#cookies_consent
 @@||disqus.com/embed/comments/?$subdocument
 @@||disquscdn.com^*/img/icons/$domain=disqus.com
 @@||disquscdn.com^*/social-icons$image
+@@||dknet730.com/plugin/login-oauth/img/$image
 @@||dmi.dk^*/jquery_cookie.js
 @@||dontbubble.us/images/google-$~third-party
 @@||donttrack.us/images/google-$image,~third-party
