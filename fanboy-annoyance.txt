@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812251115
+! Version: 201812251124
 ! Title: Fanboy's Annoyance List
-! Last modified: 25 Dec 2018 11:15 UTC
+! Last modified: 25 Dec 2018 11:24 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -36507,6 +36507,7 @@ nos.nl##div[class^="notificationBar_"]
 ! 
 dagbladet.no###db-inger
 bt.no##.flyout
+firkloveren.no##.reveal-modal-bg
 israeltoday.no##a[href="#top"]
 ! 
 ! ---------- Swedish Site Specific Hiding Rules ----------
@@ -39673,6 +39674,7 @@ timeout.com#@#div[data-module="cookie_banner"]
 ! https://github.com/ryanbr/fanboy-adblock/issues/721#issuecomment-443395851
 @@/wp-content/plugins/wp-minify/min/?*,wp-content$stylesheet
 ! 
+@@.php?f=js/*.js,js$script,domain=undicom.pl
 @@||adobe.com/downloadcenter/*/cookies/cookies.js
 @@||alicdn.com/js/*/cookie-info.js$script
 @@||alicdn.com/js/*/ws-cookie.js$script
@@ -39683,7 +39685,7 @@ timeout.com#@#div[data-module="cookie_banner"]
 @@||bbci.co.uk^*/cookie-library.min.js
 @@||bolha.com/js/obj.cookiesPolicy.js
 @@||civiccomputing.com^*/cookieControl-$script,domain=msi.com
-@@||cloudflare.com^*/cookieconsent.min.js$domain=pixieset.com|sammobile.com
+@@||cloudflare.com^*/cookieconsent.min.js$domain=pixieset.com|sammobile.com|xnview.com
 @@||consent-pref.trustarc.com^$subdocument,domain=forbes.com
 @@||consent.cmp.oath.com^$script,domain=dailystar.co.uk|express.co.uk
 @@||consent.cookiebot.com^$script,domain=refinery29.com
@@ -39711,7 +39713,7 @@ timeout.com#@#div[data-module="cookie_banner"]
 @@||4ka.sk/js/cookiebar.min.js
 @@||candidat.pole-emploi.fr^*/modules/jquery-eu-cookie-law-popup.js$script
 @@||cdp.pl/skin/*/cookies.js
-@@||cloudflare.com^*/cookieconsent.min.js$domain=firkloveren.no
+@@||cloudflare.com^*/cookieconsent.min.js$domain=firkloveren.no|pl.bab.la|satkurier.pl
 @@||cloudfront.net/js/cookie-banner-gdpr/app.min.js?$script,domain=cn.nytimes.com
 @@||comparic.pl^*/eu-cookie-law.js
 @@||consent.truste.com/notice?$script,domain=forbes.it
