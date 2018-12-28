@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812280132
+! Version: 201812280138
 ! Title: Fanboy's Annoyance List
-! Last modified: 28 Dec 2018 01:32 UTC
+! Last modified: 28 Dec 2018 01:38 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3590,6 +3590,7 @@ _youtube_social_
 /cookie-manager/*
 /cookie-master.js
 /cookie-message.
+/cookie-module/*
 /cookie-notice-
 /cookie-notice.
 /cookie-notice/*$~stylesheet
@@ -4793,6 +4794,7 @@ _site_cookie_
 ###modal-subscribe
 ###modale_inscription_newsletter
 ###moduleNewsletter
+###mp-popupwrapper1
 ###navnewslettermailboxID
 ###new_newsletter
 ###new_newsletter_subscription
@@ -26219,7 +26221,7 @@ _site_cookie_
 ##.cookiebar_container
 ##.cookiebarcontainer
 ##.cookiebarinner
-##.cookiebg
+##.cookiebg:not(body):not(html)
 ##.cookieboks
 ##.cookiebox
 ##.cookiecall
