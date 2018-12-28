@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812281052
+! Version: 201812281059
 ! Title: EasyList
-! Last modified: 28 Dec 2018 10:52 UTC
+! Last modified: 28 Dec 2018 10:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -773,8 +773,8 @@
 .uk/ads/
 .uk/adv/
 .us/ad/*?
-.us/ads/
 .us/ads.
+.us/ads/
 .utils.ads.
 .vert.ad.
 .videoad3.
@@ -17974,6 +17974,8 @@ _popunder+$popup
 ##.ad-pushdown
 ##.ad-r
 ##.ad-rail
+##.ad-reader
+##.ad-reader-con-item
 ##.ad-rect
 ##.ad-rect-atf-01
 ##.ad-rect-top-right
@@ -49924,9 +49926,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||xvideoslive.com/landing/$popup,third-party
 ! ----------------------Specific advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_specific_block.txt ***
-||iimjobs.com^*/topbanner$image
-||iimjobs.com/media/featuredinstitute
-||iimjobs.com^*/banners/
+||amulyam.in^*banners$image
 .buzz/?*=$script,~third-party,domain=todayshealth.buzz
 .com/?$script,third-party,domain=streamcloud.eu
 .com/?*=$script,~third-party,domain=100percentfedup.com|americannewsx.com|barbwire.com|bestfunnyjokes4u.com|clashdaily.com|conservativebyte.com|conservativeintel.com|conservativevideos.com|coviral.com|dailysurge.com|eaglerising.com|freedomoutpost.com|girlsjustwannahaveguns.com|godfatherpolitics.com|greatamericanrepublic.com|hispolitica.com|janmorganmedia.com|joeforamerica.com|libertyalliance.com|libertyunyielding.com|lidblog.com|minutemennews.com|occupydemocrats.com|patriottribune.com|politichicks.com|politicops.com|redhotchacha.com|religionlo.com|reviveusa.com|shark-tank.com|theblacksphere.net|thefreethoughtproject.com|themattwalshblog.com|theoswatch.com|usherald.com|veteranstoday.com
@@ -51698,6 +51698,9 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||iftn.ie/images/data/banners/
 ||iimg.in^*-banner-
 ||iimg.in^*/sponsor_
+||iimjobs.com/media/featuredinstitute
+||iimjobs.com^*/banners/
+||iimjobs.com^*/topbanner$image
 ||ijn.com/images/banners/
 ||ijoomla.com/aff/banners/
 ||ilcorsaronero.info/home.gif
@@ -57259,7 +57262,8 @@ $websocket,domain=24video.me|pornhub.com|redtube.com|redtube.com.br|tube8.com|tu
 wyciwyg:$popup,domain=yourporn.sexy
 ! ------------------------Specific element hiding rules------------------------!
 ! *** easylist:easylist/easylist_specific_hide.txt ***
-iimjobs.com##.bannerspace
+amulyam.in##.banner_slider
+amulyam.in##.horzl_ad
 search.safefinder.com,search.snapdo.com###ABottomD
 poodwaddle.com###AD2
 aol.com###AOLP_partnerSearch
@@ -61740,6 +61744,7 @@ ecr.co.za,jacarandafm.com##.banners120
 rt.com##.banners__border
 wdna.org##.banners_right
 cbc.ca##.bannerslot-container
+iimjobs.com##.bannerspace
 musictory.com,widih.org##.bannertop
 urlcash.org##.bannertop > center > #leftbox
 goldengirlfinance.ca##.bannerwrap
