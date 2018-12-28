@@ -1,27 +1,27 @@
 !
 ! ---------- Non-english Annoyances ----------
 !
-||4gtv.tv^*/scriptUP.
-||contentexchange.me^$third-party
-||gnezdo.ru^$third-party
-||img.mixi.net^$third-party,domain=~mixi.jp
-||odnoklassniki.ru^$~stylesheet,domain=~odnoklassniki.ru|~ok.ru
 ||push.cnnindonesia.com^
 ||pusha.se^$third-party
-||share.gree.jp^$third-party
-||tweetbuzz.jp^$third-party
-||vk.com/images/$third-party
 !
 ! ---------- Croatian Site Specific Hiding Rules ----------
 !
+rast.hr###blokDiv
+nasiljudi.hr###footer
+hrportfolio.hr###kolac
 jutarnji.hr###side-article-widget
+apartmanija.hr###site_nt
+poba.hr##.meerkat
 sptv.hr##.scroll-top-arrow
+krovni-nosaci.hr##.topbarBox
+034portal.hr##.vijesti
 ||linker.hr^$third-party
 !
 ! ---------- Latvian Site Specific Hiding Rules ----------
 !
 delfi.lv###sbookmarks_left
 delfi.lv##.after_body
+sputniknewslv.com##.arrowup
 delfi.lv##.notification-widget
 delfi.lv##.sbookmarks
 !
@@ -31,70 +31,47 @@ delfi.lv##.sbookmarks
 !
 ! ---------- Non-english Site Specific Hiding Rules ----------
 !
-abril.com.br###barra-mini-home
-rast.hr###blokDiv
-acfun.cn###btn-top-shortcut
-naver.com###btn_top
-folha.uol.com.br###corner_box
-nasiljudi.hr###footer
-capital.gr###infiload-return-top
-nbnews.com.ua###iosauth
 sme.sk###js-top-info-bar
-hrportfolio.hr###kolac
 egmont.cz###nrlskswidget
-thepaper.cn###pjax-switch
-nooz.gr###right_popout
-xiachufang.com###scrollTop
-epochtimes.com.ua###scroll_house
-apartmanija.hr###site_nt
-teluguone.com###slidebox
-udn.com###story_related
-bhaskarhindi.com###subscribeForm
+thscore.mobi###returnTop
 dkn.tv###topcontrol
-bcc.com.tw###topx
-huanqiukexue.com###totop
-yahoo.co.jp##.ScrollButton
-airbnb.be##._puzpiop
-adevarul.ro##.abonare
-armeniasputnik.am,sputnik-abkhazia.info,sputnik-abkhazia.ru,sputnik-georgia.com,sputnik-georgia.ru,sputnik-news.ee,sputnik-ossetia.com,sputnik-ossetia.ru,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.kz,sputniknews.lt,sputniknewslv.com##.arrowup
-valor.com.br,wanda.cn##.backtop
-zaycev.net##.bookmarks
-worldjournal.com##.btn-top
-sangbadpratidin.in##.cd-top
-gujaratsamachar.com##.email-subscriber
-4399.cn,cts.com.tw,digitimes.com.tw,weather.com.cn##.gotop
-baidu.com##.gotop-button
-markapark.com##.htext
-sogou.com##.index-top
-hisense.com##.js-return-top
-baike.com##.li-top
-poba.hr##.meerkat
-newuthayan.com##.more-stories
-dinamalar.com##.new_nextarrow
-dinamalar.com##.new_prevarrow
-desh.co.in##.newsLetter
-almasryalyoum.com##.news_SMSBox
-skynewsarabia.com##.news_letter
-administradores.com.br,sangbadpratidin.in,vtvgujarati.com##.newsletter
-news247.gr##.newsletter-form
-uitinvlaanderen.be##.noty_bar
-etstur.com##.protectionOfData
-capital.gr,inneram.com##.rss
-4gtv.tv##.scrollUP
-kp.ru##.seti
-uralpress.ru##.sticker
+kapook.com###totop
+armeniasputnik.am,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-news.ee,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt##.arrowup
+thscore.co##.backTop
 beritaharian.sg##.subscribe
-youm7.com##.topTop
-krovni-nosaci.hr##.topbarBox
-034portal.hr##.vijesti
-n11.com##.warningAlert
-jarir.com##a[title="top"]
+||thscore.co^*/backTop.
+||thscore.mobi^*/top.
 !
 ! ---------- Arabic Site Specific Hiding Rules ----------
 !
+businessnews.com.tn###block-webform-client-block-281
 tv.om###topcontrol
-syria.tv##.newsletter
+almasryalyoum.com##.news_SMSBox
+skynewsarabia.com##.news_letter
+syria.tv,tunisna.tv##.newsletter
 iwaatch.com##.s-up
+youm7.com##.topTop
+dz-algerie.info##a[href="#top"]
+jarir.com##a[title="top"]
+!
+! ---------- Chinese Site Specific Hiding Rules ----------
+!
+acfun.cn###btn-top-shortcut
+thepaper.cn###pjax-switch
+xiachufang.com###scrollTop
+udn.com###story_related
+bcc.com.tw###topx
+huanqiukexue.com###totop
+sputniknews.cn##.arrowup
+wanda.cn##.backtop
+worldjournal.com##.btn-top
+4399.cn,cts.com.tw,digitimes.com.tw,weather.com.cn##.gotop
+baidu.com##.gotop-button
+sogou.com##.index-top
+hisense.com##.js-return-top
+baike.com##.li-top
+4gtv.tv##.scrollUP
+||4gtv.tv^*/scriptUP.
 !
 ! ---------- Danish Site Specific Hiding Rules ----------
 !
@@ -168,19 +145,41 @@ antennebrandenburg.de,israelheute.com,radioberlin.de,vodafone.de##a[href="#top"]
 ||stncdn.it^*/smartbanner.
 ||vebidoo.de/images/xtotop.
 !
+! ---------- Greek Site Generic Hiding Rules ----------
+!
+capital.gr###infiload-return-top
+nooz.gr###right_popout
+news247.gr##.newsletter-form
+capital.gr##.rss
+!
 ! ---------- Hungary Site Generic Hiding Rules ----------
 !
 168ora.hu###article_toolbar
+pcworld.hu###back_top
+life.hu###beuszoAjanlo
+privatbankar.hu###cikk-kovetkezo-container
 decathlon.hu###container-screen
 oszkar.com###footerbar
 elittars.hu###info-bar
 hbo.hu###overlay
-hasznaltauto.hu###scroll_top
+autonavigator.hu###scroll-up
+hasznaltauto.hu,nagyhaszon.hu,szalonauto.hu###scroll_top
+portfolio.hu###sp_left
+portfolio.hu###sp_right
+hazipatika.com##.cd-top
 hrportal.hu##.fixedbox
 tesco.hu##.infoBarClosable
+infostart.hu##.newsletter-form
 !
-! ---------- Polish Site Generic Hiding Rules ----------
+! ---------- Indian Site Specific Hiding Rules ----------
 !
+teluguone.com###slidebox
+bhaskarhindi.com###subscribeForm
+sangbadpratidin.in##.cd-top
+gujaratsamachar.com##.email-subscriber
+newuthayan.com##.more-stories
+desh.co.in##.newsLetter
+sangbadpratidin.in,vtvgujarati.com##.newsletter
 !
 ! ---------- Polish Site Specific Hiding Rules ----------
 !
@@ -263,6 +262,7 @@ nos.nl##div[class^="notificationBar_"]
 !
 dagbladet.no###db-inger
 bt.no##.flyout
+firkloveren.no##.reveal-modal-bg
 israeltoday.no##a[href="#top"]
 !
 ! ---------- Swedish Site Specific Hiding Rules ----------
@@ -285,8 +285,10 @@ bolagsverket.se##div[style^="margin: 0px 0px"]
 ! ---------- Russian Site Specific Blocking Rules ----------
 !
 ||5-tv.ru^*/up.png
+||gnezdo.ru^$third-party
 ||mirtesen.ru^$third-party
 ||news.net.finam.ru^$third-party
+||odnoklassniki.ru^$~stylesheet,domain=~odnoklassniki.ru|~ok.ru
 ||static.smi2.net^$third-party
 ||top100.rambler.ru^$third-party
 ||tvzvezda.ru^*/up_btn.
@@ -304,10 +306,12 @@ nation-news.ru###top
 lenta.ru###up
 rt.ru###up-btn
 tvzvezda.ru###upbutton
+sputnik-abkhazia.ru,sputnik-georgia.ru,sputnik-ossetia.ru##.arrowup
 vestifinance.ru##.b-button-up
 banki.ua##.b-fb-overlay
 banki.ua##.b-fb-popup
 ria.ru##.b-scroller-up
+zaycev.net##.bookmarks
 tophotels.ru##.buttonUp
 sport-express.ru##.gotop
 5-tv.ru##.gttt
@@ -318,6 +322,8 @@ rzn.info##.panel-top-link
 ntv.ru##.popup_overlay
 avtoradio.ru##.rss
 rambler.ru##.scrollback
+kp.ru##.seti
+uralpress.ru##.sticker
 ubr.ua##.story-nav
 popmech.ru##.subscription_block
 pravoslavie.ru##.toplink
@@ -361,6 +367,7 @@ monster.fr###interMsgsW
 bycontext.com###lcBar
 paperblog.fr###left-block
 fnac.com###link-top
+onorient.com###mc_embed_signup
 solocalgroup.com###message-plugin
 elsevier-masson.fr###myModal
 acpm.fr###newsletter
@@ -470,6 +477,7 @@ yahoo.co.jp###pg_top
 news24.jp###rss
 gazoo.com###scroll-button
 j-wave.co.jp###totop
+yahoo.co.jp##.ScrollButton
 webtsc.com##.footer-totop
 allnightnippon.com##.footer_pagetop
 toyota.jp##.global-footer-pagetop-href
@@ -479,29 +487,38 @@ mobilenews.jp,nikkei-cnbc.co.jp,tv-asahi.co.jp##.pagetop
 hotpepper.jp##.scrollWrap
 okjapan.jp##.scroller
 harpersbazaar.jp##.subModuleMailMagazine
-||girlsheaven-job.net^*/pagetop.js
+||girlsheaven-job.net^*/pagetop.
+||img.mixi.net^$third-party,domain=~mixi.jp
 ||j-wave.co.jp^*/pagetop.
 ||okjapan.jp^*/btn_top.
 ||okjapan.jp^*_gotop_
 ||radionikkei.jp^*/pagetop.
+||share.gree.jp^$third-party
+||tweetbuzz.jp^$third-party
 !
 ! ---------- Turkish Site Specific Hiding Rules ----------
 !
 milliyet.com.tr###upNextWrapper
 nefisyemektarifleri.com###veriUyari
 meleklermekani.com##.FloatingContainer
+markapark.com##.htext
 unikampus.net##.more-stories
+dinamalar.com##.new_nextarrow
+dinamalar.com##.new_prevarrow
 trt.net.tr##.rss
 hileliapkoyunindir.com##.site-desc
 milliyet.com.tr##.sticky
 fikriyat.com##.veriAltBar
+n11.com##.warningAlert
 !
 ! ---------- Portuguese Site Specific Hiding Rules ----------
 !
 record.xl.pt###MenuDinamico
 record.xl.pt###apDiv2
 oantagonista.com###backtotop
+abril.com.br###barra-mini-home
 oantagonista.com###buttonopenmannychat
+folha.uol.com.br###corner_box
 biomet.pt###fancybox-overlay
 biomet.pt###fancybox-wrap
 canaltech.com.br###floatBar
@@ -509,8 +526,9 @@ uol.com.br###follow
 iol.pt###iol-onlive
 sapo.pt###redesSociais
 abola.pt##.ancora
+valor.com.br##.backtop
 globo.com##.geral-nextprevious
-record.pt##.newsletter
+administradores.com.br,record.pt##.newsletter
 aeiou.pt##.newsletter-form
 globo.com##.newsletters
 em.com.br##.read-more-about
@@ -723,6 +741,7 @@ sky.it##.j-navTop
 linkiesta.it##.lkPopover
 avvenire.it##.moveToTop
 spaziogames.it##.nav-reveal
+everyeye.it##.nav_articoli
 ilsitodellozoo.com##.navbar-alt
 laleggepertutti.it##.news-letter
 01net.it,basketinside.com,carpicalcionews.it,cittaceleste.it,corsedimoto.com,fantamagazine.com,fcinter1908.it,forzaroma.info,gazzamercato.it,gogedizioni.it,golssip.it,guidafisco.it,ilfoglio.it,ilmilanista.it,ilposticipo.it,ilsecoloxix.it,itasportpress.it,juvenews.eu,lescienze.it,linkiesta.it,mediagol.it,mondoudinese.it,numericalcio.it,padovasport.tv,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,rivistacontrasti.it,sassuolocalcionews.it,sportavellino.it,tenniscircus.com,toronews.net,tuttobolognaweb.it,violanews.com##.newsletter
@@ -766,6 +785,7 @@ inran.it##div[style="background-color: #f0f0f0; text-align: center; font-size:12
 ! ---------- Korean Site Specific Hiding Rules ----------
 !
 sedaily.com###FooterTop
+naver.com###btn_top
 atlantaradiokorea.com###top_up
 etnews.com###wingBanner
 radiokorea.com##.link_top
@@ -816,9 +836,16 @@ zf.ro###scrollTop
 antena3.ro###slidebox
 dcnews.ro###sliding
 zf.ro##.NL
+adevarul.ro##.abonare
+sputnik.md##.arrowup
 revistablogurilor.ro##.cd-top
 hotnews.ro##.josSus
 capital.ro,evz.ro##.newsletter
 stirileprotv.ro##.notification-wrapper
 antena3.ro##.push-notification
 dcnews.ro##.pushinstruments
+!
+! ---------- Ukranian Site Specific Hiding Rules ----------
+!
+nbnews.com.ua###iosauth
+epochtimes.com.ua###scroll_house
