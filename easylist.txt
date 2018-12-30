@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812301540
+! Version: 201812301547
 ! Title: EasyList
-! Last modified: 30 Dec 2018 15:40 UTC
+! Last modified: 30 Dec 2018 15:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -20692,6 +20692,7 @@ _popunder+$popup
 ##.adv-bottom
 ##.adv-box
 ##.adv-box-wrapper
+##.adv-center
 ##.adv-click
 ##.adv-comment--opened
 ##.adv-comments
@@ -27797,7 +27798,10 @@ _popunder+$popup
 ##LEADERBOARD-AD
 ##[ad-id^="googlead"]
 ##[id^="bunyad_ads_"]
+##[lazy-ad="leftbottom_banner"]
+##[lazy-ad="leftthin_banner"]
 ##[lazy-ad="lefttop_banner"]
+##[lazy-ad="top_banner"]
 ##[onclick^="window.open('http://adultfriendfinder.com/search/"]
 ##[onclick^="window.open('window.open('//delivery.trafficfabrik.com/"]
 ##a[data-obtrack^="http://paid.outbrain.com/network/redir?"]
@@ -73432,6 +73436,7 @@ www.google.com#@##videoads
 @@||g.doubleclick.net/pcs/click?$popup,domain=wsj.com
 @@||gsmarena.com/adclick.php?bannerid=$popup
 @@||hutchgo.advertserve.com^$popup,domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
+@@||imgbox.com/?src=$popup,domain=sendvid.com
 @@||nosvideo.com^$popup,domain=putlocker.is
 @@||online.europartners.com/promoRedirect?$popup
 @@||online.winner.co.uk/promoRedirect?$popup
