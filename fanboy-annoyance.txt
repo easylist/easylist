@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812301704
+! Version: 201812301712
 ! Title: Fanboy's Annoyance List
-! Last modified: 30 Dec 2018 17:04 UTC
+! Last modified: 30 Dec 2018 17:12 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -407,7 +407,9 @@ _subscribe_button
 /btn-rss-
 /btn-rss.
 /btn_rss.
+/btn_rss_
 /btnRSS.
+/bulle_rss.
 /buttons/rss_
 /ct_rss.
 /f_rss.
@@ -451,6 +453,7 @@ _subscribe_button
 /icon_emailrss.
 /icon_feed.
 /icon_rss.
+/icon_rss02.
 /icon_rss_
 /icona-rss.
 /icono-rss.
@@ -468,6 +471,7 @@ _subscribe_button
 /images/rss_
 /img/*rss.gif
 /img/*rss.png
+/img/rss.
 /img/rss_
 /navicon-rss_
 /navicon_feeds.
@@ -494,8 +498,12 @@ _subscribe_button
 /RSS-Home.
 /rss-ico.
 /rss-icon.
+/rss-icon_
+/rss-iconheader.
 /rss-logo.
+/rss-new.
 /rss-small.
+/RSS-top-
 /rss.gif
 /rss.jpg
 /rss.png
@@ -544,6 +552,7 @@ _subscribe_button
 /rssicon.
 /rssicon_
 /rssred.
+/rsstop1.
 /sc_rss.
 /section-rss-
 /sns_rss.
@@ -558,6 +567,7 @@ _subscribe_button
 /ticker/rss_
 /tickerRSS.
 /tm-rss.
+/uploads/*rss.png
 _feed_24.
 _footer_rss.
 _fullimage_RSS.
@@ -570,6 +580,7 @@ _rss_small.
 _rss_square.
 _rssbig.
 _rssfeed_
+_rssicon.
 _s_rss_
 _social_rss.
 _xmlrss.
@@ -922,7 +933,6 @@ _xmlrss.
 /btn_facebook_
 /btn_fb.
 /btn_google_
-/btn_rss_
 /btn_share_
 /btn_social.
 /btn_social_
@@ -934,7 +944,6 @@ _xmlrss.
 /btnShareSprite.
 /btnsSocialMedia.
 /btnTwitter.
-/bulle_rss.
 /button-facebook-
 /button-facebook.
 /button-fb.
@@ -1000,8 +1009,6 @@ _xmlrss.
 /context-social.
 /controller/share-
 /contshare.
-/cookie_ack/*
-/cookie_ack_
 /crowdbooster-
 /crowdbooster_
 /css/social-$~stylesheet
@@ -1363,9 +1370,6 @@ _xmlrss.
 /g-share.
 /gadgets/Social/*
 /gallery/social/*$image
-/gdpr-cookie.
-/gdpr_css/*
-/gdpr_js/*
 /GetPocketButton_
 /gfx/socials/*
 /gg-share.
@@ -1660,7 +1664,6 @@ _xmlrss.
 /icon_pinterest_
 /icon_reddit.
 /icon_reddit_
-/icon_rss02.
 /icon_share.
 /icon_share_
 /icon_sharethis_
@@ -1864,7 +1867,6 @@ _xmlrss.
 /img/gplus_
 /img/instagram-
 /img/instragram.
-/img/rss.
 /img/share-
 /img/share/*
 /img/share_
@@ -2188,11 +2190,6 @@ _xmlrss.
 /rotating_tweet.
 /rrshare.
 /rrssb.
-/rss-icon_
-/rss-iconheader.
-/rss-new.
-/RSS-top-
-/rsstop1.
 /rtsocial/*
 /rw_share_
 /sc-twitter-
@@ -3125,7 +3122,6 @@ _xmlrss.
 /UIFollow.
 /uploads/*facebook.jpg
 /uploads/*pinterest.jpg
-/uploads/*rss.png
 /uploads/*twitter.png
 /uploads/facebook-
 /uploads/facebook.
@@ -3347,7 +3343,6 @@ _pinterest_social_
 _pinterest_square_
 _pinterest_white.
 _pinteresticon.
-_rssicon.
 _share_bookmark.
 _share_bt.
 _share_buttons.
@@ -3657,6 +3652,8 @@ _youtube_social_
 /cookie/support-
 /cookie2.jsx
 /cookie_acceptance_
+/cookie_ack/*
+/cookie_ack_
 /cookie_alert*.js
 /cookie_banner-
 /cookie_banner.
@@ -3886,6 +3883,7 @@ _youtube_social_
 /gdpr-cmp-
 /gdpr-consent.
 /gdpr-consent/*
+/gdpr-cookie.
 /gdpr-min.
 /gdpr-public.
 /gdpr-transparency-
@@ -3903,7 +3901,9 @@ _youtube_social_
 /gdpr/messaging.
 /gdpr_check.
 /gdpr_consent.
+/gdpr_css/*
 /gdpr_footer.
+/gdpr_js/*
 /gdpr_optout.
 /gdpr_plugin.
 /gdpr_status.
@@ -4336,9 +4336,6 @@ _site_cookie_
 ##.engagementStory_container
 ##.fby-tab
 ##.fdbk_tab_right
-##.feed-icon
-##.feed-links
-##.feed_share
 ##.feedback-button-left
 ##.feedback-opinionlabs-module
 ##.feedbackTab
@@ -6347,6 +6344,9 @@ _site_cookie_
 ##.fa-rss
 ##.fa-rss-square
 ##.fa232-rss
+##.feed-icon
+##.feed-links
+##.feed_share
 ##.fi-rss
 ##.floating-rss
 ##.fluxRss
@@ -6399,6 +6399,7 @@ _site_cookie_
 ##.p-footer-rssLink
 ##.pl-rss
 ##.red-rss
+##.redes-sprite-rss
 ##.resoc-rss
 ##.rn_AnswerTop_rss
 ##.rss-b
@@ -7386,7 +7387,6 @@ _site_cookie_
 ###content_share
 ###contentfb
 ###contributor-social-media
-###cookie-acknowledgement
 ###count_r2r
 ###cpf-viewbox-sharebar
 ###cphBanner_Banner_divBannerShare
@@ -12378,7 +12378,6 @@ _site_cookie_
 ##.gc_social_floating
 ##.gd-newsletter-subscribe-sharelinks
 ##.gdhp-share
-##.gdprcookie
 ##.geShareTool
 ##.general_social_icons
 ##.genericon-facebook
@@ -13186,6 +13185,7 @@ _site_cookie_
 ##.icons-instagram
 ##.icons-linkedin
 ##.icons-pinterest
+##.icons-rrss
 ##.icons-share
 ##.icons-social
 ##.icons-social_medium_facebook
@@ -14586,7 +14586,6 @@ _site_cookie_
 ##.redes-sociais
 ##.redes-sociales
 ##.redes-sprite-facebook
-##.redes-sprite-rss
 ##.redes-sprite-twitter
 ##.redes_sociales
 ##.redes_sociales_zz2
@@ -20276,6 +20275,7 @@ _site_cookie_
 ###cookie-accepted
 ###cookie-accpet
 ###cookie-ack
+###cookie-acknowledgement
 ###cookie-adv
 ###cookie-advarsel
 ###cookie-advert
@@ -27257,6 +27257,7 @@ _site_cookie_
 ##.gdprbar
 ##.gdprbox
 ##.gdprboxcolor
+##.gdprcookie
 ##.gdprfooter
 ##.gdprpopup
 ##.gdprrhs
