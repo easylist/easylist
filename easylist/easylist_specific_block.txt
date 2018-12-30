@@ -4984,10 +4984,13 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=fullmatchesandshows.com
 |https://$script,third-party,xmlhttprequest,domain=fullmatchesandshows.com
 ! yts
+@@||fonts.googleapis.com^$stylesheet,domain=yify.is|yts.am
+@@||yify.is/assets/$stylesheet,~third-party
+@@||yify.is/assets/js/b0f127a10831e175bbf44e730789dd85.js$script,~third-party
+@@||yts.am/assets/$stylesheet,~third-party
 @@||yts.am/assets/minified/modded1.js$script,~third-party
-@@||yts.am/cdn-cgi/scripts/$script,~third-party
-|http://$script,domain=yts.am
-|https://$script,domain=yts.am
+|http://$script,stylesheet,domain=yify.is|yts.am
+|https://$script,stylesheet,domain=yify.is|yts.am
 ! downace.com
 |http://$script,third-party,xmlhttprequest,domain=downace.com
 |https://$script,third-party,xmlhttprequest,domain=downace.com
