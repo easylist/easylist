@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812302201
+! Version: 201812310104
 ! Title: EasyList
-! Last modified: 30 Dec 2018 22:01 UTC
+! Last modified: 31 Dec 2018 01:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -55418,12 +55418,15 @@ $webrtc,domain=uptobox.com
 |http://$script,third-party,xmlhttprequest,domain=revclouds.com
 |https://$script,third-party,xmlhttprequest,domain=revclouds.com
 ! gorillavid.in
+||gorillavid.in^$script
+! 12/31/2018, 1:54:04 PM gorillavid.in
 @@||ajax.googleapis.com^$script,domain=gorillavid.in
+@@||gorillavid.in/js/jsSelect.js$script,~third-party
+@@||gorillavid.in/tabber.js$script,~third-party
+@@||gorillavid.in/vs/jwplayer.js$script,~third-party
+@@||gorillavid.in/xupload.js$script,~third-party
 @@||use.fontawesome.com^$script,domain=gorillavid.in
 |http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=gorillavid.in
-||gorillavid.in/*bootstrap$script
-||gorillavid.in/script.js
-||gorillavid.in/sw.js$script
 ! fastpic
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=fastpic.ru
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=fastpic.ru
