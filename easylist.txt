@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901010116
+! Version: 201901010125
 ! Title: EasyList
-! Last modified: 01 Jan 2019 01:16 UTC
+! Last modified: 01 Jan 2019 01:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54577,18 +54577,14 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
-! 1movies.is
-|http://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is
-|https://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is
-||1movies.is/*?$script
-||1movies.is/sw_$script,xmlhttprequest,domain=1movies.is
+! 
+|http://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|http://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
 |https://$script,third-party,domain=clipwatching.com
-! torrentfunk.com
-|http://$script,subdocument,third-party,xmlhttprequest,domain=torrentfunk.com
-|https://$script,subdocument,third-party,xmlhttprequest,domain=torrentfunk.com
-||torrentfunk.com/sw1.js
 ! hdmoza.com
 $webrtc,domain=hdmoza.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=hdmoza.com
