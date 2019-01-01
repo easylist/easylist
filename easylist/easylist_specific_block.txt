@@ -4554,7 +4554,8 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! 1movies.is
 |http://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is
 |https://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is
-||1movies.is/sw_$script=1movies.is,xmlhttprequest
+||1movies.is/*?$script
+||1movies.is/sw_$script,xmlhttprequest,domain=1movies.is
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
 |https://$script,third-party,domain=clipwatching.com
