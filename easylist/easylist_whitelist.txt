@@ -932,7 +932,7 @@
 @@||google.com/afs/ads?$document,subdocument,domain=ehow.com|livestrong.com
 @@||google.com/doubleclick/studio/swiffy/$domain=www.google.com
 @@||google.com/images/integrations/$image,~third-party
-@@||google.com/recaptcha/$subdocument,domain=123short.com|cut-link-earn.com|sh.st
+@@||google.com/recaptcha/$subdocument,domain=123short.com|cut-link-earn.com|limetorrents.info|sh.st
 @@||google.com/search?q=$xmlhttprequest
 @@||google.com/uds/?file=ads&$script,domain=guardian.co.uk|landandfarm.com
 @@||google.com/uds/afs?$document,subdocument,domain=about.com|ehow.com|livestrong.com
@@ -2041,6 +2041,12 @@
 @@||zillow.com/widgets/search/ZillowListingsWidget.htm?*&adsize=$subdocument,domain=patch.com
 @@||zippyshare.com^$generichide
 @@||zstream.to/js/pop.js$domain=zstream.to
+! csp whitelists
+@@||1337x.to/login$csp,~third-party
+@@||1337x.to/register$csp,~third-party
+@@||uploadproper.com/login.html$csp,~third-party
+@@||uploadproper.com/register.html$csp,~third-party
+@@||www.limetorrents.info/register/$csp,~third-party
 ! Zazzle https://github.com/easylist/easylist/pull/939
 @@||zcache.ca^$image,domain=zazzle.ca
 @@||zcache.co.nz^$image,domain=zazzle.co.nz

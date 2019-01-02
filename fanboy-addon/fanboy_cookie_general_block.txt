@@ -2,9 +2,9 @@
 -consent-banner.
 -cookie-banner-
 -cookie-cnil.
--cookie-consent-
--cookie-consent.
--cookie-consent/
+-cookie-consent-$~script
+-cookie-consent.$~script
+-cookie-consent/$~script
 -cookie-dialog.
 -cookie-filter/$script
 -cookie-law-popup.
@@ -99,7 +99,7 @@
 /cCookiesH.
 /cdcookie/*
 /check_cookie_
-/checkCookie?
+/checkCookie?$script
 /cipr-cookie-opt-out/*
 /cmp-banner.js
 /cmp.bundle.js
@@ -622,3 +622,5 @@ _gdpr_consent.
 _js__cookie_functions.
 _logikamentecookielaw/
 _site_cookie_
+! https://github.com/AdguardTeam/AdguardFilters/blob/master/AnnoyancesFilter/sections/cookies_specific.txt#L53
+/pp-t-a-c.js$script
