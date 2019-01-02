@@ -24,8 +24,6 @@
 @@/wp-content/plugins/ad-inserter/js/ad-inserter.js$script,~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/wp-content/plugins/bwp-minify/min/?f=$script,stylesheet,~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@|blob:resource://$image
-@@||1337x.to/login$csp,~third-party
-@@||1337x.to/register$csp,~third-party
 @@||192.168.$~third-party,xmlhttprequest,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@||192.168.*/images/adv_$~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@||196.30.218.174/admentor/sirius_sdo_top.htm$subdocument,domain=sharedata.co.za
@@ -1988,7 +1986,6 @@
 @@||www.google.*/aclk?*&adurl=$subdocument,~third-party,domain=google.ca|google.co.in|google.co.nz|google.co.uk|google.com|google.com.au|google.com.eg|google.de|google.es
 @@||www.google.*/search?$subdocument,~third-party,domain=google.ca|google.co.in|google.co.nz|google.co.uk|google.com|google.com.au|google.com.eg|google.de|google.es
 @@||www.google.com/ads/preferences/$image,script,subdocument
-@@||www.limetorrents.info/register/$csp,domain=limetorrents.info
 @@||www8-hp.com^*/styles/ads/$domain=hp.com
 @@||wz856.com^$domain=nme.com|trustedreviews.com
 @@||xbox.com/assets/ad/$image,~third-party
@@ -2044,6 +2041,12 @@
 @@||zillow.com/widgets/search/ZillowListingsWidget.htm?*&adsize=$subdocument,domain=patch.com
 @@||zippyshare.com^$generichide
 @@||zstream.to/js/pop.js$domain=zstream.to
+! csp whitelists
+@@||1337x.to/login$csp,~third-party
+@@||1337x.to/register$csp,~third-party
+@@||uploadproper.com/login.html$csp,~third-party
+@@||uploadproper.com/register.html$csp,~third-party
+@@||www.limetorrents.info/register/$csp,~third-party
 ! Zazzle https://github.com/easylist/easylist/pull/939
 @@||zcache.ca^$image,domain=zazzle.ca
 @@||zcache.co.nz^$image,domain=zazzle.co.nz
