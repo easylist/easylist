@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901030941
+! Version: 201901031201
 ! Title: EasyList
-! Last modified: 03 Jan 2019 09:41 UTC
+! Last modified: 03 Jan 2019 12:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -32661,6 +32661,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||nmwrdr.net^$third-party
 ||nobleppc.com^$third-party
 ||nobsetfinvestor.com^$third-party
+||nompakru.click^$third-party
 ||nonpaly.ru^$third-party
 ||nonstoppartner.de^$third-party
 ||norentisol.com^$third-party
@@ -32942,6 +32943,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||pip-pip-pop.com^$third-party
 ||pipeaota.com^$third-party
 ||pipsol.net^$third-party
+||pirdoust.com^$third-party
 ||pitally.info^$third-party
 ||piticlik.com^$third-party
 ||pivotalmedialabs.com^$third-party
@@ -54583,6 +54585,12 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ||torrentdownload.ch/sw.js$script
 ||torrentdownloads.me/sw.js$script
 ||torrentfunk2.com/sw.js$script
+! 
+! ymovies.tv
+@@||ajax.googleapis.com^$script,domain=ymovies.tv
+|http://$script,subdocument,third-party,domain=ymovies.tv
+|https://$script,subdocument,third-party,domain=ymovies.tv
+||ymovies.tv/sw.js
 ! yify-movies.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=yify-movies.net
 |https://$script,subdocument,third-party,xmlhttprequest,domain=yify-movies.net
@@ -54609,9 +54617,9 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
 ! 
-|http://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|http://$script,subdocument,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
 |http://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://$script,subdocument,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
 |https://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
@@ -55874,7 +55882,7 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||eztv.io^$csp=script-src 'self' 'unsafe-inline'
 ||freebeacon.com^$csp=script-src 'self' * blob: data:
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
-||gogoanime.sh^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
+||gogoanimes.co^$csp=script-src 'self' * disquscdn.com 'unsafe-inline'
 ||grammarist.com^$csp=script-src 'self' * 'unsafe-inline'
 ||healthline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||hiphoplately.com^$csp=script-src 'self' * blob: data:
@@ -55917,6 +55925,7 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||textsfromlastnight.com^$csp=script-src 'self' * 'unsafe-inline'
 ||tfln.co^$csp=script-src 'self' * 'unsafe-inline' blob:
 ||thehornnews.com^$csp=script-src 'self' * 'unsafe-inline'
+||thewatchcartoononline.tv^$csp=script-src 'self' * 'unsafe-inline'
 ||torlock.com^$csp=script-src 'self' 'unsafe-inline'
 ||torrentdownload.ch^$csp=script-src 'self' 'unsafe-inline'
 ||torrentdownloads.me^$csp=script-src 'self' 'unsafe-inline'
@@ -55927,7 +55936,6 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||uploadproper.com^$csp=script-src 'self' 'unsafe-inline'
 ||videolike.org^$csp=script-src 'self' * 'unsafe-inline'
 ||virtualjerusalem.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
-||watchcartoononline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||watchcartoononline.io^$csp=script-src 'self' * 'unsafe-inline'
 ||watchsomuch.info^$csp=script-src 'self' 'unsafe-inline'
 ||wikia.com^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval' *.jwpsrv.com *.jwplayer.com
