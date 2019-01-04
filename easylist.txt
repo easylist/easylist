@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901041122
+! Version: 201901041136
 ! Title: EasyList
-! Last modified: 04 Jan 2019 11:22 UTC
+! Last modified: 04 Jan 2019 11:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54855,6 +54855,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$image,other,script,stylesheet,third-party,domain=movies123.xyz
 |https://$image,other,script,stylesheet,third-party,domain=movies123.xyz
 ||putlocker68.com^$popup,domain=movies123.xyz
+! oneload.site
+|http://$other,script,stylesheet,third-party,xmlhttprequest,domain=oneload.site
+|https://$other,script,stylesheet,third-party,xmlhttprequest,domain=oneload.site
 ! gomovies
 @@||bootstrapcdn.com^$domain=gomovies.sc
 |http://$other,script,stylesheet,third-party,xmlhttprequest,domain=gomovies.sc
@@ -55951,6 +55954,7 @@ $csp=worker-src 'none',domain=pirateproxy.app|ukpass.co|theproxybay.net|thepirat
 ||nintendoeverything.com^$csp=script-src 'self' * 'unsafe-inline'
 ||nowwatchtvlive.ws^$csp=script-src 'self' *
 ||nsfwyoutube.com^$csp=script-src 'self' * 'unsafe-inline'
+||oneload.site^$csp=script-src 'self' 'unsafe-inline'
 ||onhax.me^$csp=script-src 'self' * 'unsafe-inline'
 ||phonearena.com^$csp=script-src 'self' * 'unsafe-inline'
 ||phonesreview.co.uk^$csp=script-src 'self' * 'unsafe-inline'
