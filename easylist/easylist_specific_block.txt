@@ -4529,6 +4529,10 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ||torrentdownloads.me/sw.js$script
 ||torrentfunk2.com/sw.js$script
 !
+! moviewatcher.is
+|http://$script,stylesheet,third-party,domain=moviewatcher.is
+|https://$script,stylesheet,third-party,domain=moviewatcher.is
+||moviewatcher.is/sw.js
 ! ymovies.tv
 @@||ajax.googleapis.com^$script,domain=ymovies.tv
 |http://$script,stylesheet,third-party,domain=ymovies.tv
@@ -5846,6 +5850,7 @@ $csp=worker-src 'none',domain=pirateproxy.app|ukpass.co|theproxybay.net|thepirat
 ||moneyversed.com^$csp=script-src 'self' * 'unsafe-inline'
 ||monova.org^$csp=script-src 'self' 'unsafe-inline'
 ||monova.to^$csp=script-src 'self' 'unsafe-inline'
+||moviewatcher.is^$csp=script-src 'self' * 'unsafe-inline'
 ||neonnettle.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
 ||newser.com^$csp=script-src 'self' * 'unsafe-inline'
 ||nintendoeverything.com^$csp=script-src 'self' * 'unsafe-inline'
