@@ -4563,10 +4563,10 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
 !
-|http://$script,subdocument,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
-|http://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://$script,subdocument,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|http://$script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://$script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
+||1movies.is/sw_$script
+||moviescouch.co/sw.js
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
 |https://$script,third-party,domain=clipwatching.com
@@ -5865,6 +5865,7 @@ $csp=worker-src 'none',domain=pirateproxy.app|ukpass.co|theproxybay.net|thepirat
 ||schoolholidayseurope.eu^$csp=script-src 'self' * 'unsafe-inline'
 ||seedpeer.me^$csp=script-src 'self' 'unsafe-inline'
 ||skidrowcrack.com^$csp=script-src 'self' * 'unsafe-inline'
+||solarmoviez.ru^$csp=script-src 'self' * 'unsafe-inline'
 ||sportspickle.com^$csp=script-src 'self' * 'unsafe-inline'
 ||swatchseries.to^$csp=script-src 'self' * 'unsafe-inline'
 ||talkwithstranger.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -5877,6 +5878,7 @@ $csp=worker-src 'none',domain=pirateproxy.app|ukpass.co|theproxybay.net|thepirat
 ||torlock.com^$csp=script-src 'self' 'unsafe-inline'
 ||torrentdownload.ch^$csp=script-src 'self' 'unsafe-inline'
 ||torrentdownloads.me^$csp=script-src 'self' 'unsafe-inline'
+||torrentfunk.com^$csp=script-src 'self' * 'unsafe-inline'
 ||torrentfunk2.com^$csp=script-src 'self' 'unsafe-inline'
 ||torrentz2.eu^$csp=script-src 'self' 'unsafe-inline'
 ||trifind.com^$csp=script-src 'self' * 'unsafe-inline'
