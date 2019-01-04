@@ -4520,6 +4520,7 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||wp.com/wp-content/js/$script,domain=onhax.me
 |http://$script,subdocument,third-party,domain=onhax.me
 |https://$script,subdocument,third-party,domain=onhax.me
+||onhax.me/sw.js
 ! kimcartoon.me
 ||kimcartoon.me^$script,domain=kimcartoon.me
 !torrentdownloads.me | limetorrents.info
@@ -4597,10 +4598,10 @@ $script,domain=imx.to
 @@||imx.to/js/csTransPieManual.js$script
 @@||imx.to/js/jquery$script
 ! torlock.com
-||torlock.com/sw.js
 @@||ajax.cloudflare.com^$script,domain=torlock.com
 @@||torlock.com/cdn-cgi/pe/bag2?r$xmlhttprequest,domain=torlock.com
 |http*://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=torlock.com
+||torlock.com/sw.js
 ||torlock.com^$xmlhttprequest
 ! rd.com (Revolving adservers)
 $image,third-party,xmlhttprequest,domain=rd.com
@@ -5836,6 +5837,7 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||jewsnews.co.il^$csp=script-src 'self' *
 ||jpost.com^$csp=script-src 'self' 'unsafe-inline' http: https: blob:
 ||katcr.co^$csp=script-src 'self' 'unsafe-inline'
+||kickass2.st^$csp=script-src 'self' 'unsafe-inline'
 ||kiplinger.com^$csp=script-src 'self' * 'unsafe-inline'
 ||kshowonline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||limetorrents.info^$csp=script-src 'self' 'unsafe-inline'
@@ -5882,6 +5884,8 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||trifind.com^$csp=script-src 'self' * 'unsafe-inline'
 ||tworeddots.com^$csp=script-src 'self' * 'unsafe-inline'
 ||unblocked.app^$csp=script-src 'self' * 'unsafe-inline'
+||unblocked.lol^$csp=script-src 'self' * 'unsafe-inline'
+||unblocked.si^$csp=script-src 'self' * 'unsafe-inline'
 ||uploadproper.com^$csp=script-src 'self' 'unsafe-inline'
 ||videolike.org^$csp=script-src 'self' * 'unsafe-inline'
 ||virtualjerusalem.com^$csp=script-src http: https: 'self' * 'unsafe-inline'
@@ -5892,6 +5896,7 @@ $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamang
 ||wuxiaworld.com^$csp=script-src 'self' * 'unsafe-inline'
 ||yifyddl.com^$csp=script-src 'self' 'unsafe-inline'
 ||yourbittorrent2.com^$csp=script-src 'self' 'unsafe-inline'
+||yts.am^$csp=script-src 'self' * 'unsafe-inline'
 ! buggy script
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/65
 @@||rapidvideo.com/js/jquery-ui.min.js$script
