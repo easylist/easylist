@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901121557
+! Version: 201901121603
 ! Title: EasyList
-! Last modified: 12 Jan 2019 15:57 UTC
+! Last modified: 12 Jan 2019 16:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12491,6 +12491,12 @@ _popunder+$popup
 ###b5_ad_top
 ###b5ad300
 ###bLinkAdv
+###b_ad1
+###b_ad138
+###b_ad172
+###b_ad2792
+###b_ad3
+###b_ad3564
 ###babAdTop
 ###backad
 ###background-ad-head-spacer
@@ -21738,6 +21744,7 @@ _popunder+$popup
 ##.b5ad_bigbox
 ##.b5ad_skyscraper
 ##.b_ad
+##.b_ad480
 ##.b_adLastChild
 ##.b_ads
 ##.b_ads_cont
@@ -27230,6 +27237,7 @@ _popunder+$popup
 ##.topRightAd
 ##.top_Ad
 ##.top_ad
+##.top_ad-tw
 ##.top_ad1
 ##.top_ad_336x280
 ##.top_ad_728
@@ -54791,10 +54799,8 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||image.tmdb.org^$image,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||platform.twitter.com^$script,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||static1.akacdn.ru/assets/$script,stylesheet,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
-|http://$image,third-party,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
-|http://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
-|https://$image,third-party,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
-|https://$other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
+|http://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
+|https://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 ! wholecloud.net
 @@||ajax.googleapis.com^$script,domain=wholecloud.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=wholecloud.net
