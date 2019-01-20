@@ -238,6 +238,7 @@
 ||eskimotube.com/kellyban.gif
 ||exit.macandbumble.com^
 ||extreme-board.com/bannrs/
+||extremetube.com/*=$xmlhttprequest
 ||extremetube.com/player_related?
 ||fakeporn.tv/bb/
 ||fantasti.cc/_special/
@@ -984,6 +985,17 @@
 ||zuzandra.info/b?
 !
 /^https?:\/\/.*\/.*sw[0-9(.|_)].*/$script,domain=incesto69.com|mypornstarbook.net|porn555.com|txxx.com|vidmo.org
+! Spankwire
+@@||spankwire.com/api/categories/list.json?$xmlhttprequest
+@@||spankwire.com/api/categories/popular.json?$xmlhttprequest
+@@||spankwire.com/api/comments/video.json?$xmlhttprequest
+@@||spankwire.com/api/pornstars?$xmlhttprequest
+@@||spankwire.com/api/video/list.json?$xmlhttprequest
+@@||spankwire.com/api/video/popular.json?$xmlhttprequest
+@@||spankwire.com/api/video/recent.json?$xmlhttprequest
+@@||spankwire.com/api/video/relateds.json?$xmlhttprequest
+@@||spankwire.com/api/video/trending.json?$xmlhttprequest
+||spankwire.com/*=$xmlhttprequest
 ! pornhive.tv
 $script,subdocument,third-party,domain=pornhive.tv
 ! pornhd.com
@@ -1062,24 +1074,6 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 @@||anyporn.com/videojs/vjs-related.js$script
 @@||anyporn.com/videos_screenshots/$image
 ||anyporn.com^$image,script,subdocument,xmlhttprequest
-! imagefap
-@@||imagefap.com/ajax/image_related.php?$xmlhttprequest
-@@||imagefap.com/ajax_favorites.php$xmlhttprequest
-@@||imagefap.com/ajax_usergallery_folder.php?$xmlhttprequest
-@@||imagefap.com/combine.php?$script
-@@||imagefap.com/forum/styles/$script,domain=imagefap.com
-@@||imagefap.com/gallery_add_favorites.php?$xmlhttprequest
-@@||imagefap.com/gallery_display_favorites.php?$xmlhttprequest
-@@||imagefap.com/img/logo.gif$xmlhttprequest
-@@||imagefap.com/jscripts/gallery.js$script
-@@||imagefap.com/jscripts/imagesloaded.min.js$script
-@@||imagefap.com/jscripts/masonry.min.js$script
-@@||imagefap.com/jscripts/thumbnail_change.js$script
-@@||imagefap.com/photo/*/?gid=$xmlhttprequest
-@@||imagefap.com/ubr_file_upload.js$script
-@@||moviefap.com/js/swfobject.js$script
-|http://$script,xmlhttprequest,domain=imagefap.com
-|https://$script,xmlhttprequest,domain=imagefap.com
 ! hotpornfile.org
 @@||ajax.googleapis.com^$script,domain=hotpornfile.org
 @@||code.jquery.com^$script,domain=hotpornfile.org
