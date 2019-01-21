@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901210304
+! Version: 201901210324
 ! Title: EasyList
-! Last modified: 21 Jan 2019 03:04 UTC
+! Last modified: 21 Jan 2019 03:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -45785,6 +45785,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||mysagagame.com^$popup,third-party
 ||n388hkxg.com^$popup,third-party
 ||nadstive.com^$popup
+||naganoadigei.com^$popup
 ||namesakeoscilloscopemarquis.com^$popup,third-party
 ||nanoadexchange.com^$popup,third-party
 ||netliker.com^$popup,third-party
@@ -46049,6 +46050,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||tracker*.bingohall.ag^$popup,third-party
 ||tracker*.richcasino.com^$popup,third-party
 ||tracki112.com^$popup,third-party
+||tracking.marketing^$popup
 ||tracking.sportsbet.$popup,third-party
 ||trackmkxoffers.se^$popup
 ||traffic-c.com^$popup,third-party
@@ -54691,6 +54693,10 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! yify-movies.net
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
+! tornadomovies.co
+@@||loadshare.org^$xmlhttprequest,domain=tornadomovies.co
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=tornadomovies.co
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=tornadomovies.co
 ! megaup.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=megaup.net
 |https://$script,subdocument,third-party,xmlhttprequest,domain=megaup.net
@@ -63042,6 +63048,7 @@ macworld.co.uk##.ghostMpu
 sporcle.com##.giIMU
 hotfileserve.ws##.glb-opec
 bikeradar.com##.global-banner
+tornadomovies.co##.glx-teaser
 tripadvisor.com##.goLists
 astro.com##.goad
 newburytoday.co.uk,thelakewoodscoop.com##.gofollow
