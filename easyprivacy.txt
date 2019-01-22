@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201901221458
+! Version: 201901221504
 ! Title: EasyPrivacy
-! Last modified: 22 Jan 2019 14:58 UTC
+! Last modified: 22 Jan 2019 15:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -36,6 +36,7 @@
 -analitycs/metrica.
 -analytics-tagserver-
 -analytics-wi.
+-analytics/analytics.
 -analytics/insight.
 -appanalytics-
 -asset-tag.
@@ -596,6 +597,7 @@
 /analytics/mouse_
 /analytics/newrelic_
 /analytics/p.gif?
+/analytics/page/*
 /analytics/pageview.
 /Analytics/Pdp/*
 /analytics/ping^
@@ -920,6 +922,7 @@
 /callbacks/stats?
 /campaign_tracker.
 /campaign_trax.
+/caos-analytics/*
 /capture_client.js
 /CaptureStat.
 /cbanalytics.
@@ -1684,6 +1687,7 @@
 /getcookie.php?
 /getcount?ids=
 /getPixels?*&referer=
+/getPixelSso
 /getRemoteDomainCookies?
 /getsidpixeltag?sid=
 /getThirdPartyTracking?
@@ -2342,6 +2346,7 @@
 /monitor/log/*
 /monitor?rtype=
 /monitus.js
+/moose-track.
 /morega.js
 /mormont.js
 /mouseover-tracker.
@@ -2802,6 +2807,7 @@
 /pxlspamanalyst-
 /pxtrk.gif
 /pzn/proxysignature
+/qa-tracker.
 /qlitics.js
 /qtracker-
 /QualtricsSurvey.
@@ -3604,6 +3610,7 @@
 /tracking/adobe.js
 /tracking/adobe/*
 /tracking/ads.
+/tracking/analytics/*
 /tracking/article.
 /tracking/article/*
 /tracking/at.js
@@ -5823,6 +5830,7 @@ _mongo_stats/
 ||mongoosemetrics.com^$third-party
 ||monitis.com^$third-party
 ||monitus.net^$third-party
+||mooseway.com^$third-party
 ||motrixi.com^$third-party
 ||mouse3k.com^$third-party
 ||mouseflow.com^$third-party
