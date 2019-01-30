@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901300658
+! Version: 201901301130
 ! Title: EasyList
-! Last modified: 30 Jan 2019 06:58 UTC
+! Last modified: 30 Jan 2019 11:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -36081,6 +36081,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||fcpispplqq.com^$third-party
 ||fdbrwxtm.com^$third-party
 ||fdrkesvb.com^$third-party
+||fdxdjkswppg.com^$third-party
 ||fdzylxffu.com^$third-party
 ||febalwby.com^$third-party
 ||fepzygektdt.com^$third-party
@@ -54835,8 +54836,9 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |http://$image,script,third-party,xmlhttprequest,domain=nowwatchtvlive.ws
 |https://$image,script,third-party,xmlhttprequest,domain=nowwatchtvlive.ws
 ! Reuters
-@@||static.reuters.com/resources/assets/$image
+@@||reutersmedia.net/resources/r/?m=02$image
 ||reuters.com/resources/$image,subdocument
+||reutersmedia.net/resources/r/?m=$image,subdocument
 ! bebi script
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu
 @@||gogoanime.to/player.js$script
