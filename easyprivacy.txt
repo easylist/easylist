@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201902082331
+! Version: 201902090127
 ! Title: EasyPrivacy
-! Last modified: 08 Feb 2019 23:31 UTC
+! Last modified: 09 Feb 2019 01:27 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1735,19 +1735,19 @@
 /gomez/*$script
 /GomezTracking.
 /google-analyticator/*
-/google-analytics-
-/google-analytics.
+/google-analytics-$~image
+/google-analytics.$~image
 /google-analytics/*
 /google-nielsen-analytics.
 /google-tracking/*
 /google.analytics.
 /google/analytics.js
-/google/analytics_
+/google/analytics_$~image
 /google/autotrack.
 /Google/ga.js
 /google_analitycs.
 /google_analytics-bc.swf
-/google_analytics.
+/google_analytics.$~image
 /google_analytics/*
 /google_analytics3_
 /google_analytics_
@@ -4195,6 +4195,8 @@
 /~utm_gif?
 ://adclear.*/acc?
 ://adclear.*/acv?
+://analytics.*/collect?
+://analytics.*/tracker.
 ://anx.*/anx.gif?
 ://apex.*/apexTarget?
 ://b.*/click?
@@ -8870,6 +8872,7 @@ _mongo_stats/
 ||analytics.livestream.com^
 ||analytics.mailmunch.co^
 ||analytics.matchbin.com^
+||analytics.midwesternmac.com^
 ||analytics.mlstatic.com^
 ||analytics.myfinance.com^
 ||analytics.newscred.com^
