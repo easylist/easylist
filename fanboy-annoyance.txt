@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201902130744
+! Version: 201902130801
 ! Title: Fanboy's Annoyance List
-! Last modified: 13 Feb 2019 07:44 UTC
+! Last modified: 13 Feb 2019 08:01 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -298,6 +298,7 @@ _push_sw.
 /Components/newsletter/*
 /content/newsletter/*
 /email/subscribe.
+/embeds/newsletter/*
 /esnewsletterad.
 /f_newsletter.
 /footer-newsletter.
@@ -8564,6 +8565,7 @@ _site_cookie_
 ###module_fblike
 ###module_social_links
 ###modulo-buttons-share
+###more_share
 ###mrf-shareOptions
 ###mrt-node-Side-0-CanvasShareButtons
 ###multiplesocialwidget-id
@@ -10244,6 +10246,7 @@ _site_cookie_
 ##.Social_container
 ##.Social_title
 ##.Socialbuttons
+##.Socials
 ##.Ssns-head
 ##.StickyShareBlock
 ##.StlyeSocial
@@ -30657,6 +30660,7 @@ _site_cookie_
 ||wykop.pl/dataprovider/diggerwidget/$third-party
 ||xing-share.com^$third-party
 ||xing.com/img/buttons/$third-party
+||yandex.st/share/
 ||youtube.com/subscribe_embed?$third-party
 ||youtube.com/subscribe_widget$third-party
 ||ywidgets.awe.sm^$third-party
@@ -30712,47 +30716,29 @@ _site_cookie_
 ! --------------------------Specific blocking filters--------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_specific_block.txt ***
 ||4chan.org/b/*.swf
-||alerts.ndtv.com^
-||alerts.thedailystar.net^
 ||anews.com/s/js/widget.js
 ||apnarm.net.au^*/keep-up-with_
-||bdstatic.com/linksubmit/push.js
 ||bostonglobe.com/common/js/velocity/
 ||businessinsider.in/bimed/
 ||bwbx.io^*/mini_player/
 ||cdprojektred.com^*/top.png
 ||cf-particle-html.eip.telegraph.co.uk^
 ||cjr.org/interstitial_
-||cloudfront.net^*/nav-top.$domain=bdnews24.com
 ||complex.com/toolbar/
 ||conteudo.jsuol.com.br^*/ucopy.js$script,domain=uol.com.br
-||cricketcountry.com^*/topa.jpg
 ||cultofmac.com/e2ma.js
 ||d.yimg.com/ds/badge2.js
 ||dailymaverick.co.za/images/iabsa.png
-||dailypioneer.com/images/top.png
-||denso.com^*/pagetop.
 ||eatout.co.za^*/iab-
 ||emailsherlock.com/javascripts/lightbox.js
-||filmaffinity.com^*/arrow-up2.
 ||fin24.com^*/iabLogo.
 ||findthebest.co.uk/ajax/load_tracker
-||gagasiradio.fm^*/htop.
-||gamestop.com^*/btt.jpg
-||gameyum.com/_static/popup/
-||gogoanime.se^*/croll.
-||gogoanime.se^*/croll_
-||gogoanime.se^*/crollvertical/
+||gameyum.com/_static/popup
 ||google.com/images/*_promo_
 ||google.com^*/friendconnect.js
-||hotpepper-gourmet.com^*/pagetop_
-||howtogermany.com^*/top.png
 ||imgzzz.com/styles/buttons_
 ||intoday.in^*/dailyo3_img1.
-||irishtimes.com/assets/js/notify.js
 ||jobs.newscientist.com^$subdocument
-||jtbcorp.jp^*/pagetop.
-||katestube.com^*/up.
 ||l.yimg.com/zz/combo?pv*/promo-banner_$script
 ||l.yimg.com^*/img/badge-
 ||lightboxcdn.com/vendor/*/lightbox.js?$script,third-party
@@ -30764,24 +30750,15 @@ _site_cookie_
 ||media-amazon.com^*/zergnet-$domain=imdb.com
 ||mediafire.com/images/backgrounds/download/*promo
 ||mg.co.za^*/iabsa_
-||millenniumpost.in^*/cd-top-
 ||moneytalksnews.com/wp-content/themes/mtn/assets/js/mtn-modal.$script
-||mufg.jp^*/top_btn_
-||myip.ms^*/nav_
-||ndtv.com/popupNotification.aspx
 ||netdna-cdn.com/wp-content/plugins/omg-magnific/magnific.min.js?$domain=omgchrome.com
 ||newyorker.com^*/failsafe/
-||notify.hindustantimes.com^
 ||orain.org/w/index.php/Special:BannerRandom?
 ||planelogger.com^*/avitop6.
-||radiomirchi.com^*/soc_iconNew
 ||realstylenetwork.com/celebrities/*&action=inc_popup
 ||redbunker.net/images/redb/redyeni.gif
 ||sabcnews.com^*-iabsa-
 ||scmp.com/misc/abacus_
-||sexuria.com^*/scroll.
-||smbc.co.jp^*/btn_pageTop01.
-||smfg.co.jp^*/go_top.
 ||snip.ly^$script
 ||space.com/images/site/social/
 ||thelocal.*/interstitial/
@@ -30789,21 +30766,22 @@ _site_cookie_
 ||thrillist.com/campaigns/vortexInfo/$script
 ||tunein.com/account/newiframe/signup/*conversionPopup
 ||tutorvista.com/iframe_container/
-||tvnz.co.nz^*/backtop-
 ||washingtonmonthly.com/interstitial
 ||wikimedia.org/wiki/Special:BannerLoader?$domain=wikipedia.org
 ||wikimedia.org/wiki/Special:BannerRandom?$domain=wikipedia.org
-||winhelponline.com/feed.png
 ||wp.com/wp-content/mu-plugins/post-flair/
 ||wp.com^*/linkwidgets/slingshot_
 ||wufoo.com/embed/$subdocument,third-party,domain=heavy.com
 ||xhamster.com/ajax/cams-widget/
 ||xhamster.com/ajax/wid-cams-widget/
-||yandex.st/share/
-||yna.co.kr^*_btn_top.
-||zte.com.cn^*_back_top.
 ! ---------- Push Notifications ----------
+||alerts.ndtv.com^
+||alerts.thedailystar.net^
+||bdstatic.com/linksubmit/push.js
 ||indiatimes.com/pn/
+||irishtimes.com/assets/js/notify.js
+||ndtv.com/popupNotification.aspx
+||notify.hindustantimes.com^
 ! ---------- Newsletter/Signup Buttons ----------
 ||aish.com^*-Subscribe-
 ||aish.com^*/Newsletter-
@@ -30812,7 +30790,6 @@ _site_cookie_
 ||bestbuy.com^*/email_submission_modal.
 ||breitbart.com/t/assets/js/fancybox.js
 ||businessdictionary.com/min/g=boxysubscribejs
-||cloudfront.net/embeds/newsletter/$domain=wbur.org
 ||cultofmac.com^*/sidebar_weekender_
 ||destinyconnect.com^*/sing-up-sidebar.
 ||destinyman.com^*/sign-up-banner.
@@ -30850,6 +30827,30 @@ _site_cookie_
 ||tmform.azurewebsites.net^
 ||webmd.com/dtmcms/live/webmd/*/newsletter/
 ||womenonwheels.co.za^*/subscribe-
+! ---------- Scroll To Top Buttons ----------
+||cloudfront.net^*/nav-top.$domain=bdnews24.com
+||cricketcountry.com^*/topa.jpg
+||dailypioneer.com/images/top.png
+||denso.com^*/pagetop.
+||filmaffinity.com^*/arrow-up2.
+||gagasiradio.fm^*/htop.
+||gamestop.com^*/btt.jpg
+||gogoanime.se^*/croll.
+||gogoanime.se^*/croll_
+||gogoanime.se^*/crollvertical/
+||hotpepper-gourmet.com^*/pagetop_
+||howtogermany.com^*/top.png
+||jtbcorp.jp^*/pagetop.
+||katestube.com^*/up.
+||millenniumpost.in^*/cd-top-
+||mufg.jp^*/top_btn_
+||myip.ms^*/nav_
+||sexuria.com^*/scroll.
+||smbc.co.jp^*/btn_pageTop01.
+||smfg.co.jp^*/go_top.
+||tvnz.co.nz^*/backtop-
+||yna.co.kr^*_btn_top.
+||zte.com.cn^*_back_top.
 ! *** easylist:fanboy-addon/fanboy_social_specific_block.txt ***
 ||3dmark.com/proxycon/images/front-some-fb.png
 ||5movies.to/share.php
@@ -30923,6 +30924,7 @@ _site_cookie_
 ||pistonheads.com^*/profile-icons.gif
 ||presstv.ir/images/sn_
 ||rackcdn.com/Instagram/
+||radiomirchi.com^*/soc_iconNew
 ||radiotunes.com/_papi/v1/radiotunes/timed_alerts$xmlhttprequest
 ||safewow.com^*/faceback.png
 ||schwalbe.co.uk/_webedit/cached-images/172-37-38-0-0-37-38
@@ -38975,7 +38977,6 @@ gallorosso.it###flyingMenu
 valgardena.it###footerbottomlinks
 andriaviva.it,bariviva.it,barlettaviva.it,bisceglieviva.it,bitontoviva.it,canosaviva.it,cerignolaviva.it,coratoviva.it,giovinazzoviva.it,margheritaviva.it,minervinoviva.it,modugnoviva.it,molfettaviva.it,ruvoviva.it,sanferdinandoviva.it,spinazzolaviva.it,terlizziviva.it,traniviva.it,trinitapoliviva.it###header-fanpage
 ecodibergamo.it###iconz
-corriereadriatico.it,ilgazzettino.it,ilmattino.it,ilmessaggero.it,leggo.it,quotidianodipuglia.it###more_share
 repubblica.it###oro-action-top
 mediaset.it###pinit
 gelatipepino.it###popupalert
@@ -38984,7 +38985,6 @@ casertanews.it###script-bannOverLayer
 repubblica.it###segno-fb
 termometropolitico.it###seguici
 gazzetta.it###share
-misya.info###side-share
 deejay.it###slider
 autobelle.it,bancadipiacenza.it,canavesenews.it,creditocooperativo.it,fotografidigitali.it,gianlucadimarzio.com,ilsecoloxix.it,lavoro.gov.it,meteogiornale.it,meteovista.it,optimaitalia.com,radioitalia.it,rasom.it,superwheels.net,unibo.it,virginactive.it###social
 radioetv.it###social_presence
@@ -39001,7 +39001,6 @@ rai.tv##.Mail
 rai.tv##.Opzioni
 focusjunior.it##.SATover
 focusjunior.it##.Share
-mentelocale.it##.Socials
 evomagazine.it##.Twitter
 ocaholic.it##.a2a_counter
 ocaholic.it##.a2a_svg
