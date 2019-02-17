@@ -4513,7 +4513,11 @@ $script,third-party,domain=|0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.down
 ! moviewatcher.is
 |http://$script,stylesheet,third-party,domain=moviewatcher.is
 |https://$script,stylesheet,third-party,domain=moviewatcher.is
-!
+! ibit.to
+@@||cloudflare.com/ajax/libs/$script,domain=ibit.to
+@@||jsdelivr.net/webtorrent/$script,domain=ibit.to
+|http://$script,stylesheet,third-party,domain=ibit.to
+|https://$script,stylesheet,third-party,domain=ibit.to
 ! unblocked proxies
 ! unblocksource.com + unblocked.app + unblocked.si
 @@||bootstrapcdn.com^$script,stylesheet,domain=123unblock.info|123unblock.xyz|mrunlock.icu|mrunlock.pro|myunblock.com|nocensor.icu|nocensor.pro|prox4you.pw|prox4you.xyz|unblockall.org|unblocked.app|unblocked.llc|unblocked.lol|unblocked.si|unlockproject.icu|unlockproject.live
@@ -5787,7 +5791,7 @@ $websocket,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123m
 ! IP address
 /^https?:\/\/([0-9]{1,3}\.){3}[0-9]{1,3}/$domain=1337x.st|1337x.to|bittorrent.am|katcr.co|limetorrents.info|magnetdl.com|megaup.net|monova.org|monova.to|o2tvseries.com|pirateiro.com|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirror.xyz|rarbgmirrored.org|rarbgproxy.org|rarbgprx.org|readcomiconline.to|speedvid.net|torrentdownload.ch|torrentdownloads.me|torrentfunk2.com|torrentz2.eu|watchsomuch.info|x1337x.eu|x1337x.se|x1337x.ws|yourbittorrent2.com
 ! CSP filters
-$csp=script-src 'self' * 'unsafe-inline',domain=piratbaypirate.link|unblocktheship.org|noobnoob.rocks|indiaproxydl.org|magnetbay.eu|airproxyproxy.pw|thepirate.xyz|pietpiraat.org|ahoypirate.in|tpb.tw|proxyindia.net|thepiratebay.blue|ahoypiratebaai.eu|pirate.bet|airproxytpb.red|ikwildepiratebay.xyz|piratebay.tel|bayception.pw|piratebay.town|superbay.link|thepiratebay.kiwi|tpb.one|baypirateproxy.pw|rarbgmirrored.org|rarbgmirror.org|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgmirror.xyz|rarbgproxy.org|rarbgprx.org|mrunlock.pro|downloadpirate.com|prox4you.xyz|123unblock.info|nocensor.icu|unlockproject.live|pirateproxy.bet|thepiratebay.vip|theproxybay.net|thepiratebay.tips|thepiratebay10.org|prox1.info|kickass.vip|torrent9.uno|torrentsearchweb.ws|pirateproxy.app|ukpass.co|theproxybay.net|thepiratebay.tips|prox.icu|proxybay.ga|pirateproxy.life|piratebae.co.uk|berhampore-gateway.ml|ikwilthepiratebay.org|thepiratebay10.org|bayfortaiwan.online|unblockthe.net|cruzing.xyz
+$csp=script-src 'self' * 'unsafe-inline',domain=ibit.to|piratbaypirate.link|unblocktheship.org|noobnoob.rocks|indiaproxydl.org|magnetbay.eu|airproxyproxy.pw|thepirate.xyz|pietpiraat.org|ahoypirate.in|tpb.tw|proxyindia.net|thepiratebay.blue|ahoypiratebaai.eu|pirate.bet|airproxytpb.red|ikwildepiratebay.xyz|piratebay.tel|bayception.pw|piratebay.town|superbay.link|thepiratebay.kiwi|tpb.one|baypirateproxy.pw|rarbgmirrored.org|rarbgmirror.org|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgmirror.xyz|rarbgproxy.org|rarbgprx.org|mrunlock.pro|downloadpirate.com|prox4you.xyz|123unblock.info|nocensor.icu|unlockproject.live|pirateproxy.bet|thepiratebay.vip|theproxybay.net|thepiratebay.tips|thepiratebay10.org|prox1.info|kickass.vip|torrent9.uno|torrentsearchweb.ws|pirateproxy.app|ukpass.co|theproxybay.net|thepiratebay.tips|prox.icu|proxybay.ga|pirateproxy.life|piratebae.co.uk|berhampore-gateway.ml|ikwilthepiratebay.org|thepiratebay10.org|bayfortaiwan.online|unblockthe.net|cruzing.xyz
 $csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|flashx.co|streamango.com|vidoza.net|vidto.me|vidto.se|vidtudu.com
 @@||freebeacon.com/?s=$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
 @@||healthline.com/search?$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
