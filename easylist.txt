@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201902201610
+! Version: 201902201848
 ! Title: EasyList
-! Last modified: 20 Feb 2019 16:10 UTC
+! Last modified: 20 Feb 2019 18:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -258,6 +258,7 @@
 -adscript.
 -adsense2.
 -adserver-
+-adserver.
 -adserver/
 -adskin.
 -adsmanager/
@@ -341,6 +342,7 @@
 -cpm-ad.
 -cpm-ads.
 -dfp-ads/
+-dfp-adunits.
 -doubleclick-plugin/
 -doubleclick.js
 -doubleclick.min.js
@@ -2813,6 +2815,10 @@
 /adscontrol.
 /adscot/*
 /adscpv/*
+/adscript-dfp-
+/adscript-dfp.
+/adscript-dianomi.
+/adscript-optimera.
 /adscript.
 /adscript1.
 /adscript?
@@ -5149,6 +5155,7 @@
 /introduction_ad.
 /inv/ads/*
 /inventory/ad/*
+/investors-advertising/*
 /invideoad.
 /inviteads/*
 /inx-ad.
@@ -7864,6 +7871,7 @@ takeover_banner_
 /exbl.min.js?
 /exbl.php?
 /exbls1.js?
+/exblss1.js?
 /exo-force-
 /exo-loader/*
 /exo_frnd_
@@ -8917,6 +8925,7 @@ _popunder+$popup
 ###AdTop
 ###AdTopBlock
 ###AdTopLeader
+###AdTrackVideoPlayer
 ###AdWidgetContainer
 ###AdZone1
 ###AdZone2
@@ -14666,6 +14675,7 @@ _popunder+$popup
 ###js-outbrain-ads-module
 ###js-outbrain-rightrail-ads-module
 ###js-page-ad-top
+###js-react-video-player-ad-right
 ###js-site-nav-ad-wrap
 ###js-story__ad-storyrec
 ###js-wide-ad
@@ -23043,6 +23053,7 @@ _popunder+$popup
 ##.desktop_only_ad
 ##.desktopads
 ##.desktoponlyad
+##.detach_container__sponsor-link
 ##.detail-ad
 ##.detail-ads
 ##.detailMpu
@@ -24506,6 +24517,7 @@ _popunder+$popup
 ##.js-header-ad
 ##.js-native-ad
 ##.js-outbrain-container
+##.js-react-simple-ad
 ##.js-site-header-advert
 ##.js-slide-right-ad
 ##.js-slide-top-ad
@@ -28673,6 +28685,7 @@ _popunder+$popup
 ##div[class^="local-feed-banner-ads"]
 ##div[class^="pane-google-admanager-"]
 ##div[class^="proadszone-"]
+##div[data-ad-underplayer]
 ##div[data-mediatype="advertising"]
 ##div[data-native_ad]
 ##div[data-spotim-slot]
@@ -32206,6 +32219,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ibatom.com^$third-party
 ||ibbyu85u.com^$third-party
 ||iberate.club^$third-party
+||ibillboard.com^$third-party
 ||ibryte.com^$third-party
 ||icartory.info^$third-party
 ||icdirect.com^$third-party
@@ -36665,6 +36679,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||glvjbogft.com^$third-party
 ||glzaaewyvdkae.com^$third-party
 ||gmeomlvmqlmu.com^$third-party
+||gmqczpcyzjeen.com^$third-party
 ||gmquualzdmqtxp.com^$third-party
 ||gmutfgxdvwmtf.com^$third-party
 ||gmwqmjkggg.com^$third-party
@@ -36860,6 +36875,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||jdskyjntuhea.com^$third-party
 ||jecbbkrnfn.com^$third-party
 ||jeeumttalzwt.com^$third-party
+||jegugqcvo.com^$third-party
 ||jenaowzhtbi.com^$third-party
 ||jevxjcdnrd.com^$third-party
 ||jffdktcyr.com^$third-party
@@ -38022,6 +38038,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||zvdacnjhetcrq.com^$third-party
 ||zvovdtomwa.com^$third-party
 ||zwfvzxmc.com^$third-party
+||zwpaujzg.com^$third-party
 ||zwsyqdnhnyzckt.com^$third-party
 ||zxbzuyuifdqj.com^$third-party
 ||zxczritytzsjz.com^$third-party
@@ -51552,6 +51569,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||btkitty.org/static/images/880X60.gif
 ||btmon.com/da/$subdocument
 ||bundesliga.com^*/_partner/
+||businessincameroon.com/images/stories/*_Banner_
 ||businessincameroon.com/images/stories/pub/$image
 ||busiweek.com^*/banners/
 ||bustocoach.com/*/banner_
@@ -54304,7 +54322,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||slyck.com/pics/*304x83_
 ||smallseotools.com/hun_
 ||smallseotools.com/images/$image,domain=smallseotools.com
-||smallseotools.com/js/bioep.js
 ||smartcompany.com.au/images/stories/sponsored-posts/
 ||smartearningsecrets.com^*/FameThemes.png
 ||smartmoney.net^*-sponsor-
@@ -67289,6 +67306,7 @@ streetmap.co.uk##div[id^="advert_"]
 askyourandroid.com##div[id^="advertisespace"]
 askubuntu.com,stackexchange.com,stackoverflow.com,superuser.com##div[id^="adzerk"]
 blogspot.co.nz,blogspot.com,bosscast.net,time4tv.com,tv-link.me##div[id^="bannerfloat"]
+smallseotools.com##div[id^="bio_ep"]
 designtaxi.com##div[id^="bza-"]
 theteacherscorner.net##div[id^="catfish"]
 pcmag.com##div[id^="ebBannerDiv"]
@@ -68783,6 +68801,7 @@ belfasttelegraph.co.uk,boredomtherapy.com,broadwayworld.com,independent.ie,mingl
 sharespark.net##div[id^="randomContentServe"]
 upi.com##div[id^="smi2adblock"]
 cinemablend.com##div[style="height:250px; width:300px;"]
+smallseotools.com##iframe[id^="google_ads_frame"]
 androidsage.com##ins[data-ad-client]
 world4.eu##ins[style="display:inline-block;width:336px;height:280px"]
 socketloop.com##span[data-ez-name]
@@ -69698,6 +69717,7 @@ bravotube.net##.under-video
 redtube.com##.under-video-banner
 spankwire.com##.underplayer
 tubepornclassic.com##.underplayer-container
+spankwire.com##.underplayer__view
 megatube.xxx##.unlock-video
 upornia.com##.vda-closeplay
 porn555.com,sss.xxx,tuberel.com##.vda-item
@@ -71478,8 +71498,8 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||pagead2.googlesyndication.com/pagead/googlevideoadslibrary.swf$object-subrequest,domain=flashgames247.com|freeonlinegames.com|gameitnow.com|play181.com|toongames.com
 @@||pagead2.googlesyndication.com/pagead/imgad?$image,domain=kingofgames.net|virginaustralia.com
 @@||pagead2.googlesyndication.com/pagead/imgad?id=$object-subrequest,domain=bn0.com|ebog.com|gameark.com|yepi.com
-@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=downloads.codefi.re|freeclaimbtc.xyz|globaldjmix.com|gsmdude.com|hulkusc.com|nlfreevpn.com|oldapps.com|pattayaone.net|receive-a-sms.com|slideplayer.com|talksms.com|tampermonkey.net|thefreedictionary.com|unlockpwd.com|uploadex.com|windows7themes.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=slideplayer.com|tampermonkey.net|thefreedictionary.com
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=downloads.codefi.re|freeclaimbtc.xyz|globaldjmix.com|gsmdude.com|hulkusc.com|nlfreevpn.com|oldapps.com|pattayaone.net|receive-a-sms.com|slideplayer.com|smallseotools.com|talksms.com|tampermonkey.net|thefreedictionary.com|unlockpwd.com|uploadex.com|windows7themes.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=slideplayer.com|smallseotools.com|tampermonkey.net|thefreedictionary.com
 @@||pagead2.googlesyndication.com/pagead/js/lidar.js$domain=convert-me.com|destructoid.com|grammarist.com|videotoolbox.com
 @@||pagead2.googlesyndication.com/pagead/scache/googlevideoads.swf$object-subrequest,domain=flashgames247.com|freeonlinegames.com|gameitnow.com|play181.com|toongames.com
 @@||pagead2.googlesyndication.com/pagead/scache/googlevideoadslibraryas3.swf$object-subrequest,domain=didigames.com|nitrome.com|nx8.com|oyunlar1.com
@@ -71726,6 +71746,7 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||slowblog.com/ad.js
 @@||smallseotools.com/asets/js/adframe.js
 @@||smallseotools.com/js/ads.js
+@@||smallseotools.com^$generichide
 @@||smartadserver.com/call/pubj/*/8596/s/*/?$script,domain=cuantarazon.com|cuantocabron.com|vistoenfb.com
 @@||smartclip.net/delivery/tag?$object-subrequest,domain=nfl.com
 @@||smc.temple.edu/advertising/$domain=smctemple.wpengine.com
