@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201902211341
+! Version: 201902211453
 ! Title: EasyList
-! Last modified: 21 Feb 2019 13:41 UTC
+! Last modified: 21 Feb 2019 14:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -36253,6 +36253,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||aclwlkyzxxhn.com^$third-party
 ||acrsgxeah.com^$third-party
 ||acvxsptoqh.com^$third-party
+||addgfxnb.com^$third-party
 ||adeyujimmmh.com^$third-party
 ||adxpddpc.com^$third-party
 ||aeizbvtknp.com^$third-party
@@ -58193,14 +58194,16 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ! Spankwire
 @@||spankwire.com/api/categories/list.json?$xmlhttprequest
 @@||spankwire.com/api/categories/popular.json?$xmlhttprequest
-@@||spankwire.com/api/comments/video.json?$xmlhttprequest
+@@||spankwire.com/api/comments/$xmlhttprequest
 @@||spankwire.com/api/pornstars?$xmlhttprequest
 @@||spankwire.com/api/video/list.json?$xmlhttprequest
 @@||spankwire.com/api/video/popular.json?$xmlhttprequest
 @@||spankwire.com/api/video/recent.json?$xmlhttprequest
 @@||spankwire.com/api/video/relateds.json?$xmlhttprequest
 @@||spankwire.com/api/video/trending.json?$xmlhttprequest
-||spankwire.com/*=$xmlhttprequest
+@@||spankwire.com/player_related?$xmlhttprequest
+@@||spankwire.com/videoView?$xmlhttprequest
+||spankwire.com^*=$xmlhttprequest
 ! pornhive.tv
 $script,subdocument,third-party,domain=pornhive.tv
 ! pornhd.com
