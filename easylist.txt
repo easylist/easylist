@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201902231311
+! Version: 201902231335
 ! Title: EasyList
-! Last modified: 23 Feb 2019 13:11 UTC
+! Last modified: 23 Feb 2019 13:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -29374,7 +29374,6 @@ consumerist.com#@#.after-post-ad
 thisismoney.co.uk#@#.article-advert
 deluxemusic.tv#@#.article_ad
 jiji.ng#@#.b-advert
-bing.com#@#.b_ad
 pbs.org#@#.banner-ad
 annfammed.org#@#.banner-ads
 plus.net,putlocker.com#@#.banner300
@@ -62135,7 +62134,6 @@ hulkshare.com,rockyou.com###zone1
 hulkshare.com###zone2
 luxury-insider.com###zone_728x90
 theonion.com###zoosk
-bing.com###zune_upsell
 theverge.com##.-ad
 automobilemag.com##.-adslot
 skysports.com##.-skybet-widget
@@ -62401,9 +62399,7 @@ buy.com##.adBG
 cafemom.com,cio.co.uk,cvs.com,digitalartsonline.co.uk,emarketer.com,flightradar24.com,geek.com,globaltv.com,glosbe.com,hgtv.ca,macworld.co.uk,newspakistan.pk,nytimes.com,ocweekly.com,petagadget.com,sky.com,t3.com,thehimalayantimes.com,yakimaherald.com##.adContainer
 technologicvehicles.com##.adEvTaiwan
 webfail.com##.adMR
-bing.com##.ad_cvr
 ifaonline.co.uk,relink.us##.ad_right
-bing.com##.ad_sc
 telegraph.co.uk##.adarea + .summaryMedium
 englishrussia.com,keepvid.com,metrowestdailynews.com##.adb
 pencurimovie.cc##.adb_overlay
@@ -64829,8 +64825,6 @@ worldoftanks-wot.com##.p2small
 local.com##.pB5.mB15
 polls.aol.com##.p_divR
 amazon.com##.pa-sp-container
-bing.com##.pa_mlo
-bing.com##.pa_sbo
 chaptercheats.com,longislandpress.com,tucows.com##.pad10
 inquirer.net##.padtopbot5
 xtremevbtalk.com##.page > #collapseobj_rbit
@@ -64886,7 +64880,6 @@ domainmasters.co.ke##.partner2
 newser.com##.partnerBottomBorder
 mybroadband.co.za##.partnerBreaking
 solarmovie.ac,solarmovie.ag##.partnerButton
-bing.com##.partnerLinks
 newser.com##.partnerLinksText
 delish.com##.partnerPromoCntr
 youbeauty.com##.partner_content
@@ -65391,8 +65384,6 @@ teamfortress.tv##.sau
 cointelegraph.com##.sb-area-wrap
 casinonewsdaily.com##.sb-live-dealers
 scienceblogs.com##.sb-sponsor
-bing.com##.sb_adTA
-bing.com##.sb_add
 usmagazine.com##.sb_logo
 thedirty.com##.sbanner
 4kidstv.com##.sbbox1
@@ -67131,7 +67122,6 @@ leo.org##a[href^="https://www.advertising.de/"]
 scaredstiffreviews.com##a[href^="https://www.amazon."][href*="ref="]
 9to5google.com,9to5mac.com,9to5toys.com,ancient-origins.net,aol.co.uk,arstechnica.com,catholicculture.org,electrek.co,gamenguide.com,ign.com,indianexpress.com,lewrockwell.com,livescience.com,macworld.co.uk,marineelectronics.com,marinelink.com,marinetechnologynews.com,maritimejobs.com,maritimeprofessional.com,maritimepropulsion.com,myanimelist.net,oneangrygamer.net,parentherald.com,segmentnext.com,spartareport.com,ssbcrack.com,wonkette.com,yachtingjournal.com##a[href^="https://www.amazon."][href*="tag="]
 androidcentral.com##a[href^="https://www.amazon.com/b?"]
-bing.com##a[href^="https://www.bing.com/aclick?"]
 tampermonkey.net##a[href^="https://www.bitcoin.de/"]
 canalwp.com##a[href^="https://www.canalwp.com/refer/"]
 bitminter.com##a[href^="https://www.cloudbet.com/en/?af_token="]
@@ -68920,6 +68910,13 @@ msn.com##a[target="_blank"][x-enc]
 msn.com##div[x-enc] > a
 msn.com##iframe:not([src])
 msn.com##iframe[src="about:blank"]
+! Bing
+bing.com##.pa_list_sbo
+@@||bing.com^$generichide
+bing.com##a[href^="https://www.bing.com/aclick?"]
+bing.com##a[href^="https://www.bing.com/aclk?"]
+bing.com#?##b_context > li + li :-abp-has(span.b_adSlug)
+bing.com#?##b_results > li :-abp-has(span.b_adSlug)
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 ashemaletube.com###ASHM_imBox_Container
 nudography.com###BannerContainer
