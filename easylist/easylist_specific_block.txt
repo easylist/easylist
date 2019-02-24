@@ -5383,6 +5383,12 @@ $webrtc,domain=uptobox.com
 @@||uptostream.com^$generichide
 |http://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
 |https://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
+! uploadmp4.com
+$popup,webrtc,domain=uploadmp4.com
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=uploadmp4.com
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=uploadmp4.com
+@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=uploadmp4.com
+@@||gstatic.com^$script,domain=uploadmp4.com
 ! userscloud.com
 @@||cdnjs.cloudflare.com^$script,domain=userscloud.com
 @@||d3edizycpjjo07.cloudfront.net/assets/library/jquery/jquery.min.js$script,domain=userscloud.com
