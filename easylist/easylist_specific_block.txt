@@ -4971,13 +4971,11 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||platform.twitter.com^$script,domain=yibada.com
 |http://$script,third-party,xmlhttprequest,domain=yibada.com
 |https://$script,third-party,xmlhttprequest,domain=yibada.com
-! kickass.cd (eems to be a scam site)
-@@||ajax.googleapis.com^$script,domain=kickass.cd
-@@||connect.facebook.net^$script,domain=kickass.cd
-@@||platform.twitter.com/widgets.js$domain=kickass.cd
-|http://$script,third-party,xmlhttprequest,domain=kickass.cd
-|https://$script,third-party,xmlhttprequest,domain=kickass.cd
-||kickass.cd/test.js
+! kat.sx
+@@||ajax.googleapis.com^$script,domain=kat.sx
+@@||kat.sx/jquery.min.js$script,~third-party
+|http://$script,domain=kat.sx
+|https://$script,domain=kat.sx
 ! tv-trader.me / vidshare.us
 @@||vidshare.us/player6/jwplayer.js
 ||vidshare.us^$script,~third-party
