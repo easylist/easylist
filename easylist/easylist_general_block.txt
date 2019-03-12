@@ -211,6 +211,7 @@
 -ads-master/
 -ads-ns.
 -ads-placement.
+-ads-plugin/
 -ads-prod/
 -ads-production.
 -ads-right.
@@ -242,6 +243,7 @@
 -adscript.
 -adsense2.
 -adserver-
+-adserver.
 -adserver/
 -adskin.
 -adsmanager/
@@ -291,6 +293,7 @@
 -affiliate-link.
 -affiliates/img_
 -amazon-ads/
+-amazon-apstag/
 -article-ad-
 -article-ad.
 -article-ads-
@@ -325,6 +328,7 @@
 -cpm-ad.
 -cpm-ads.
 -dfp-ads/
+-dfp-adunits.
 -doubleclick-plugin/
 -doubleclick.js
 -doubleclick.min.js
@@ -393,6 +397,8 @@
 -pri/adv-
 -printhousead-
 -publicidad.
+-rail-ads.
+-rail-ads/
 -rectangle/ad-
 -Results-Sponsored.
 -right-ad.
@@ -492,6 +498,7 @@
 .ads5-
 .ads9.
 .ads_clickthru.
+.adsales.
 .adsame-
 .adsbox.$domain=~adsbox.in
 .adsby.
@@ -1621,7 +1628,7 @@
 /adblockl.
 /adblockr.
 /adbn?
-/adboost.$domain=~adboost.io|~adboost.sellerboost.de
+/adboost.$domain=~adboost.io|~adboost.se|~adboost.sellerboost.de
 /adborder.
 /adbot160.
 /adbot300.
@@ -1656,6 +1663,7 @@
 /adbucks/*
 /adbug_
 /adbureau.
+/adbutler-
 /adbutler/*
 /adbytes.
 /adcache.
@@ -2781,7 +2789,7 @@
 /adsbyfalcon.
 /adsbygoogle.
 /adsbytenmax.
-/adscale.$domain=~adscale.com
+/adscale.$domain=~adscale.com|~adscale.io|~adscale.net
 /adscale1.
 /adscale_$domain=~adscale.com
 /adscalebigsize.
@@ -2797,6 +2805,10 @@
 /adscontrol.
 /adscot/*
 /adscpv/*
+/adscript-dfp-
+/adscript-dfp.
+/adscript-dianomi.
+/adscript-optimera.
 /adscript.
 /adscript1.
 /adscript?
@@ -3643,6 +3655,7 @@
 /alwebad_
 /am/ads.
 /amazon-ad-
+/amazon-apstag.
 /amazon-associates-link-$~stylesheet
 /amazon-async-
 /amazon/iframeproxy-
@@ -4176,6 +4189,7 @@
 /corner-ad.
 /corner_ads/*
 /cornerbig.swf
+/cornerpeel-bbn/*
 /cornersmall.swf
 /country_ad.
 /couponAd.
@@ -4426,7 +4440,7 @@
 /eas?cu=*;ord=
 /eas_fif.
 /eas_tag.1.0.js
-/easyads.$domain=~easyads.io
+/easyads.$domain=~easyads.io|~easyads.lk
 /easyads/*$domain=~easyads.io
 /easyadstrack.
 /easyazon-
@@ -4763,7 +4777,7 @@
 /globalads-
 /globalAdTag.
 /globalbannerad.
-/glp?r=http*&u=*&rw=*&rh=*&ww=*&wh=$script,~third-party
+/glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 /goodtagmanagerapi.
 /googad300by600.
 /googima.js
@@ -5133,6 +5147,7 @@
 /introduction_ad.
 /inv/ads/*
 /inventory/ad/*
+/investors-advertising/*
 /invideoad.
 /inviteads/*
 /inx-ad.
@@ -5160,6 +5175,10 @@
 /Javascripts/Abigail.js
 /javascripts/ads.
 /javascripts/ads/*
+/Javascripts/Cindy-
+/Javascripts/Cindy.js
+/Javascripts/Darla-
+/Javascripts/Darla.js
 /Javascripts/SBA-
 /jcorner.php?partner=
 /jetpack-ads/*
@@ -5610,7 +5629,7 @@
 /online-ad_
 /Online-Adv-
 /online/ads/*
-/online_ads/*
+/online_ads/*$domain=~rexona.com
 /onlineads/*
 /OnlineAdServing/*
 /onplayerad.
@@ -5778,6 +5797,7 @@
 /player/ads.
 /player/ads/*
 /player_ads/*
+/playerjs/ads.
 /players/ads.
 /pledgead.
 /plugin/ad/*
@@ -6003,6 +6023,7 @@
 /rect_ad.
 /rectangle_ad.
 /rectangle_advertorials_
+/Redirect.a2b?$document
 /redirect?tid=
 /redirect_awe.
 /refads/*
@@ -6343,6 +6364,7 @@
 /smedia/ad/*
 /smoozed-ad/*
 /SmpAds.
+/sni-ads.
 /socialads.$domain=~socialads.eu|~socialads.guru
 /socialads/*
 /somaadscaleskyscraperscript.
@@ -6537,6 +6559,7 @@
 /td-ads-
 /td_ads/*
 /tdlads/*
+/tds-ads-
 /teamplayer-ads.
 /teaseimg/ads/*
 /technomedia.$domain=~technomedia.co
@@ -6846,7 +6869,7 @@
 /webadvert3/*
 /webadverts/*
 /webapp/ads-
-/webmailad.
+/webmailad.$domain=~webmailad.com
 /webmaster_ads/*
 /weborama.js
 /websie-ads-
@@ -7839,6 +7862,7 @@ takeover_banner_
 /ba_*/?fel=$script
 /backend_loader.php$script,~third-party
 /bl.php?*=$image,script
+/dg.php?wr=
 /ebldr.php
 /ebloader.
 /ex/b.php
@@ -7847,6 +7871,7 @@ takeover_banner_
 /exbl.min.js?
 /exbl.php?
 /exbls1.js?
+/exblss1.js?
 /exo-force-
 /exo-loader/*
 /exo_frnd_
