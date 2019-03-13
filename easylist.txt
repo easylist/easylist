@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201903130816
+! Version: 201903130825
 ! Title: EasyList
-! Last modified: 13 Mar 2019 08:16 UTC
+! Last modified: 13 Mar 2019 08:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -8747,7 +8747,7 @@ _popunder+$popup
 |javascript:*window.location$popup
 ! Used with many websites to generate multiple popups
 |blob:$popup
-|data:text$popup$domain=~clker.com
+|data:text$popup,domain=~clker.com
 |dddata:text$popup
 ! ------------------------General element hiding rules-------------------------!
 ! *** easylist:easylist/easylist_general_hide.txt ***
@@ -56152,7 +56152,7 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
 @@||google.com/recaptcha/$domain=shink.me|shon.xyz
-@@||maxcdn.bootstrapcdn.com^$stylesheet,domain=$stylesheet,domain=shink.me|shon.xyz
+@@||maxcdn.bootstrapcdn.com^$stylesheet,domain=shink.me|shon.xyz
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=shink.me|shon.xyz
 ! bypassed.net
