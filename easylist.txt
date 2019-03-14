@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201903141253
+! Version: 201903141301
 ! Title: EasyList
-! Last modified: 14 Mar 2019 12:53 UTC
+! Last modified: 14 Mar 2019 13:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56444,13 +56444,11 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||platform.twitter.com^$script,domain=yibada.com
 |http://$script,third-party,xmlhttprequest,domain=yibada.com
 |https://$script,third-party,xmlhttprequest,domain=yibada.com
-! kickass.cd (eems to be a scam site)
-@@||ajax.googleapis.com^$script,domain=kickass.cd
-@@||connect.facebook.net^$script,domain=kickass.cd
-@@||platform.twitter.com/widgets.js$domain=kickass.cd
-|http://$script,third-party,xmlhttprequest,domain=kickass.cd
-|https://$script,third-party,xmlhttprequest,domain=kickass.cd
-||kickass.cd/test.js
+! kat.sx
+@@||ajax.googleapis.com^$script,domain=kat.sx
+@@||kat.sx/jquery.min.js$script,~third-party
+|http://$script,domain=kat.sx
+|https://$script,domain=kat.sx
 ! tv-trader.me / vidshare.us
 @@||vidshare.us/player6/jwplayer.js
 ||vidshare.us^$script,~third-party
@@ -58741,6 +58739,8 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 @@||code.jquery.com^$script,domain=hotpornfile.org
 |http://$script,third-party,domain=hotpornfile.org
 |https://$script,third-party,domain=hotpornfile.org
+||hotpornfile.org/*/ban/
+||hotpornfile.org/*/ex/
 ! gaybeeg.info
 @@||netdna-storage.com^$xmlhttprequest,domain=gaybeeg.info
 @@||translate.google.com^$script,domain=gaybeeg.info
@@ -67220,7 +67220,7 @@ lyriczz.com##a[href^="http://app.toneshub.com/"]
 datafilehost.com,load.to##a[href^="http://applicationgrabb.net/"]
 datafilehost.com##a[href^="http://b.contractallsinstance.info/"]
 thetvdb.com##a[href^="http://billing.frugalusenet.com/"]
-123moviesfree.com,alaskapublic.org,arabtimesonline.com,coinad.com,dexerto.com,digitallydownloaded.net,dotmmo.com,ebookw.com,goal.com,majorgeeks.com,mymp3singer.site,naijaloaded.com.ng,pcgamesn.com,premiumtimesng.com,retail.org.nz,rustourismnews.com,sh.st,sports.yahoo.com,ssbcrack.com,theblaze.com,thehackernews.com,thenationonlineng.net,ultshare.com,vumafm.co.za,wapking.site,yeyeboyz.net##a[href^="http://bit.ly/"]
+123moviesfree.com,alaskapublic.org,allkeyshop.com,arabtimesonline.com,coinad.com,dexerto.com,digitallydownloaded.net,dotmmo.com,ebookw.com,goal.com,majorgeeks.com,mymp3singer.site,naijaloaded.com.ng,pcgamesn.com,premiumtimesng.com,retail.org.nz,rustourismnews.com,sh.st,sports.yahoo.com,ssbcrack.com,theblaze.com,thehackernews.com,thenationonlineng.net,ultshare.com,vumafm.co.za,wapking.site,yeyeboyz.net##a[href^="http://bit.ly/"]
 ancient-origins.net,wideopenspaces.com##a[href^="http://bit.ly/"] > img
 themediafire.com##a[href^="http://bit.ly/"] > img[src^="http://i.imgur.com/"]
 bitminter.com##a[href^="http://bitcasino.io?ref="]
