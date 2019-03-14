@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201903140909
+! Version: 201903140917
 ! Title: EasyList
-! Last modified: 14 Mar 2019 09:09 UTC
+! Last modified: 14 Mar 2019 09:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4935,7 +4935,7 @@
 /house_ad-
 /house_ad_
 /house_ads/*
-/housead.
+/housead.$domain=~housead.ru
 /housead/*
 /housead_
 /houseads.
@@ -7055,6 +7055,7 @@
 ://rss.*/~a/
 ://synad.
 ://wrapper.*/a?
+://xml.*/redirect?*&pubid=$subdocument
 :8080/ads/
 ;ad_meta=
 ;adsense_
@@ -17068,6 +17069,7 @@ _popunder+$popup
 ##.AdCaption
 ##.AdCommercial
 ##.AdContainer-Banner
+##.AdContainer-Sidebar
 ##.AdContainer160x600
 ##.AdContainerBottom
 ##.AdContainerBox308
@@ -17452,6 +17454,7 @@ _popunder+$popup
 ##.Squareadspot
 ##.StandardAdLeft
 ##.StandardAdRight
+##.SummaryPage-HeaderAd
 ##.TOP-ADS
 ##.TRADING_AD_RELATED
 ##.TRU-onsite-ads-leaderboard
@@ -17500,6 +17503,8 @@ _popunder+$popup
 ##.YEN_Ads_125
 ##.ZventsSponsoredLabel
 ##.ZventsSponsoredList
+##._SummaryPageHeaderAdView
+##._SummaryPageSidebarStickyAdView
 ##.__hub--ad
 ##.__lg-ad
 ##.__small-ad
@@ -17510,6 +17515,7 @@ _popunder+$popup
 ##._bannerAds
 ##._bottom_ad_wrapper
 ##._fullsquaread
+##._has-ads
 ##._iub_cs_activate_google_ads
 ##._top_ad_wrapper
 ##.a-ad
@@ -27343,6 +27349,7 @@ _popunder+$popup
 ##.tmg-ad-300x250
 ##.tmg-ad-mpu
 ##.tmnAdsenseContainer
+##.tmsads
 ##.tmz-dart-ad
 ##.tn-ads-widget
 ##.tncms-region-ads
