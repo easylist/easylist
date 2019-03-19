@@ -57,6 +57,7 @@
 /click?pid=*&offer$popup
 /cpm/*?subid_$popup
 /cradver.$popup,third-party
+/dynamic/url/zone?*&pid=$popup,third-party
 /fp.eng?$popup
 /fp.engine?$popup,third-party
 /goads|$popup
@@ -119,5 +120,5 @@ _popunder+$popup
 |javascript:*window.location$popup
 ! Used with many websites to generate multiple popups
 |blob:$popup
-|data:text$popup$domain=~clker.com
+|data:text$popup,domain=~clker.com
 |dddata:text$popup
