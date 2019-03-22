@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201903220157
+! Version: 201903220211
 ! Title: EasyList
-! Last modified: 22 Mar 2019 01:57 UTC
+! Last modified: 22 Mar 2019 02:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28789,6 +28789,10 @@ _popunder+$popup
 ##div[class^="backfill-taboola-home-slot-"]
 ##div[class^="block-openx-"]
 ##div[class^="gemini-ad"]
+##div[class^="index_adAfterContent_"]
+##div[class^="index_adBeforeContent_"]
+##div[class^="index_displayAd_"]
+##div[class^="largeRectangleAd_"]
 ##div[class^="lifeOnwerAd"]
 ##div[class^="local-feed-banner-ads"]
 ##div[class^="pane-google-admanager-"]
@@ -28901,7 +28905,11 @@ _popunder+$popup
 ##div[class$="dealnews"] > .dealnews
 ! Genric mobile element
 ###mobile-swipe-banner
-! komonews.com / ktul.com / etc
+! Sinclair Broadcast Group
+###rightrail_bottom_ddb_0
+###rightrail_top_ddb_0
+###story_bottom_ddb_0
+###story_top_ddb_0
 ##.component-ddb-300x250-v2
 ##.component-ddb-728x90-v1
 ##.component-ddb-728x90-v2
