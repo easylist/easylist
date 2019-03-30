@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201903301149
+! Version: 201903301156
 ! Title: EasyList
-! Last modified: 30 Mar 2019 11:49 UTC
+! Last modified: 30 Mar 2019 11:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -419,7 +419,6 @@
 -popup-ads-
 -pri/adv-
 -printhousead-
-.propellerads.
 -publicidad.
 -rail-ads.
 -rail-ads/
@@ -761,6 +760,7 @@
 .popunder.js
 .popup_im.
 .popupvideoad.
+.propellerads.
 .pw/ads/
 .refit.ads.
 .ro/ads/
@@ -16245,6 +16245,7 @@ _popunder+$popup
 ###sponsored-listings
 ###sponsored-message
 ###sponsored-not
+###sponsored-products
 ###sponsored-products-dp_feature_div
 ###sponsored-recommendations
 ###sponsored-resources
@@ -26975,6 +26976,7 @@ _popunder+$popup
 ##.sponsored-offers-box
 ##.sponsored-post
 ##.sponsored-post_ad
+##.sponsored-products-container
 ##.sponsored-result
 ##.sponsored-result-row-2
 ##.sponsored-results
@@ -56233,7 +56235,7 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 ! Torrent/Pirate sites
 /^https?:\/\/.*\/.*sw[0-9a-z(.|_)].*/$script,domain=123movies.com|123unblock.info|123unblock.xyz|1337x.st|1337x.to|1movies.is|adsrt.com|ancient-origins.net|aniwatcher.com|c123movies.com|clicknupload.org|couchtuner.onl|couchtuner.rocks|daclips.in|datpiff.com|downloadpirate.com|dwatchseries.to|estream.nu|estream.to|estream.xyz|eztv.ag|eztv.io|eztv.tf|eztv.yt|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world|fullmatchesandshows.com|gifsis.com|gomovies.sc|gomovieshub.is|gorillavid.in|gostreams.net|hdmoza.com|hdonline.is|healthline.com|intoupload.net|kickass2.ch|kickass2.st|kimcartoon.to|limetorrents.info|masterkreatif.com|megaup.net|monova.org|monova.to|movies.is|movies123.xyz|moviescouch.co|moviewatcher.is|movpod.in|mrunlock.icu|mrunlock.pro|newser.com|nocensor.icu|nocensor.pro|nowwatchtvlive.ws|onhax.me|openload.co|openload.pw|peggo.tv|pirateiro.com|postimg.cc|prox4you.pw|prox4you.xyz|putlocker.ninja|putlockers.movie|seedpeer.me|sendit.cloud|skidrowcrack.com|solarmovie.one|solarmoviez.ru|swatchseries.to|thewatchseries.ac|tinypic.com|torlock.com|torrentdownload.ch|torrentdownloads.me|torrentfunk.com|torrentfunk2.com|torrentz2.eu|tubidy.io|uiz.io|unblckd.org|unblockall.org|unblocked.app|unblocked.cx|unblocked.is|unblocked.llc|unblocked.lol|unblocked.pet|unblocked.si|unlockproject.icu|unlockproject.live|uptobox.com|userscloud.com|vidbull.tv|vidoza.net|vidup.io|watchcartoononline.io|watchseries.sk|watchsomuch.info|x1337x.eu|x1337x.se|x1337x.ws|yesmovies.to|yify-movies.net|yify.bz|yifyddl.movie|yifytorrent.co|ymovies.tv|yourbittorrent2.com|yts.am|zippyshare.com
 ! Openload
-/^((?!(^https?):\/\/(ajax\.googleapis\.com|cdnjs\.cloudflare\.com)\/).*)$/$script,third-party,domain=oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.live|oload.space|oload.win|openload.pw|oload.info|oload.site|oload.stream|oload.tv|openload.co|openloed.co
+/^((?!(^https?):\/\/(ajax\.googleapis\.com|cdnjs\.cloudflare\.com)\/).*)$/$script,third-party,domain=oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|openload.co|openload.pw|openloed.co
 ! vidotodo
 @@||google.com/recaptcha/$script,subdocument,domain=vidtodo.com
 @@||vidtodo.com^$image,script,domain=vidotodo.com
@@ -64358,6 +64360,7 @@ sidereel.com##.featured-episode-link
 everydayhealth.com##.featured-group
 bbc.com##.featured-native
 siliconrepublic.com##.featured-partners
+canstar.com.au##.featured-product-container
 pcauthority.com.au##.featured-retailers
 ar12gaming.com,geekwire.com##.featured-sponsor
 upworthy.com##.featured-sponsor-iframe
@@ -64805,7 +64808,7 @@ telegraph.co.uk##.iabUnit
 tripadvisor.com##.iab_medRec
 whattoexpect.com##.iabicon
 infobetting.com##.ibBanner
-yifyddl.movie##.ibox-bordered
+yifyddl.movie,yts.am##.ibox-bordered
 shockwave.com##.icon16AdChoices
 nme.com##.icon_amazon
 thebull.com.au##.iconos
@@ -74865,7 +74868,7 @@ www.google.com#@##videoads
 @@/redirect.aspx?pid=$popup,domain=askgamblers.com|betbeaver.com|casinobonus24.se|casinosonline.co.uk|gamble.co.uk|gokkeninonlinecasino.nl|internetcasinot.com|onlinecasinos.co.uk|sportsfavoritesodds.com|sportsgo365.com
 @@/tracking.php?*&pid=$popup,domain=casinobonus24.se
 @@^utm_source=aff^$popup,domain=gamble.co.uk|gokkeninonlinecasino.nl|top5casinosites.co.uk
-@@|blob:$popup,domain=codepen.io|elo.fi|hardingevans.com|hevans.com|kipp.6f.io|mozo.awana.org|tidepool.org
+@@|blob:$popup,domain=arbeitsagentur.de|codepen.io|elo.fi|hardingevans.com|hevans.com|kipp.6f.io|mozo.awana.org|tidepool.org
 @@|data:text^$popup,domain=arestwo.org|box.com|labcorp.com|zipit.io
 @@||888casino.com^$popup,domain=casinobonus24.se|casinosonline.co.uk|onlinecasinos.co.uk
 @@||ad.doubleclick.net/ddm/clk/*http$popup
