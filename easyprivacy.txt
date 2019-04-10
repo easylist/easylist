@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201904100723
+! Version: 201904100729
 ! Title: EasyPrivacy
-! Last modified: 10 Apr 2019 07:23 UTC
+! Last modified: 10 Apr 2019 07:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -570,6 +570,7 @@
 /analytics-tag.
 /analytics-v1.
 /analytics.*/i?stm=
+/analytics.*/ping/?
 /analytics.ad.
 /analytics.ashx
 /analytics.asmx
@@ -4026,6 +4027,7 @@
 /visistat.js
 /visit-tracker.js
 /visit.gif?
+/visit/?*&ref=
 /visit/log.js?
 /visit/record.gif?
 /visit/record?
@@ -14979,6 +14981,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||o2.cz^*-ga_o2cz_bundle.js?
 ||stat.novinky.cz^
 ! Dutch
+||analytics.rambla.be^
 ||klik.nrc.nl/ping?
 ||logs.ggweb.nl^
 ||marktplaats.nl/add_counter_image.
