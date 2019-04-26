@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201904260634
+! Version: 201904260643
 ! Title: EasyList
-! Last modified: 26 Apr 2019 06:34 UTC
+! Last modified: 26 Apr 2019 06:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56883,6 +56883,10 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 /^https?:\/\/.*(bitly|bit)\.(com|ly)\/.*/$domain=123movies.com|123unblock.info|123unblock.xyz|1337x.st|1337x.to|1movies.is|adsrt.com|ancient-origins.net|c123movies.com|clicknupload.org|couchtuner.onl|couchtuner.rocks|daclips.in|datpiff.com|downloadpirate.com|dwatchseries.to|estream.nu|estream.to|estream.xyz|eztv.ag|eztv.io|eztv.tf|eztv.yt|ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world|fullmatchesandshows.com|gifsis.com|gomovies.sc|gomovieshub.is|gorillavid.in|gostreams.net|hdmoza.com|hdonline.is|healthline.com|intoupload.net|kickass2.ch|kickass2.st|kimcartoon.to|limetorrents.info|masterkreatif.com|megaup.net|monova.org|monova.to|movies.is|movies123.xyz|moviescouch.co|moviewatcher.is|movpod.in|mrunlock.icu|mrunlock.pro|newser.com|nocensor.icu|nocensor.pro|nowwatchtvlive.ws|onhax.me|pirateiro.com|postimg.cc|prox4you.pw|prox4you.xyz|seedpeer.me|sendit.cloud|skidrowcrack.com|solarmovie.one|solarmoviez.ru|swatchseries.to|thewatchseries.ac|tinypic.com|torlock.com|torrentdownload.ch|torrentdownloads.me|torrentfunk.com|torrentfunk2.com|torrentz2.eu|tubidy.io|uiz.io|unblckd.org|unblockall.org|unblocked.app|unblocked.cx|unblocked.llc|unblocked.lol|unblocked.pet|unblocked.si|unblocked.win|unlockproject.icu|unlockproject.live|uptobox.com|userscloud.com|vcstream.to|vidbull.tv|watchcartoononline.io|watchseries.sk|watchsomuch.info|x1337x.eu|x1337x.se|x1337x.ws|yesmovies.to|yify-movies.net|yify.bz|yifyddl.movie|yifytorrent.co|ymovies.tv|yourbittorrent2.com|yts.am|zippyshare.com
 ! Torrent/Pirate sites /sw.js
 /^https?:\/\/.*\/.*sw[0-9a-z(.|_)].*/$script,domain=123movies.com|123unblock.info|123unblock.xyz|1337x.st|1337x.to|1movies.is|adsrt.com|ancient-origins.net|aniwatcher.com|c123movies.com|clicknupload.org|couchtuner.onl|couchtuner.rocks|daclips.in|datpiff.com|downloadpirate.com|dwatchseries.to|estream.nu|estream.to|estream.xyz|eztv.ag|eztv.io|eztv.tf|eztv.yt|ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world|fullmatchesandshows.com|gifsis.com|gomovies.sc|gomovieshub.is|gorillavid.in|gostreams.net|hdmoza.com|hdonline.is|healthline.com|intoupload.net|kickass2.ch|kickass2.st|kimcartoon.to|limetorrents.info|masterkreatif.com|megaup.net|monova.org|monova.to|movies.is|movies123.xyz|moviescouch.co|moviewatcher.is|movpod.in|mrunlock.icu|mrunlock.pro|newser.com|nocensor.icu|nocensor.pro|nowwatchtvlive.ws|onhax.me|openload.co|openload.pw|peggo.tv|pirateiro.com|postimg.cc|prox4you.pw|prox4you.xyz|putlocker.ninja|putlockers.movie|seedpeer.me|sendit.cloud|skidrowcrack.com|solarmovie.one|solarmoviez.ru|swatchseries.to|thewatchseries.ac|tinypic.com|torlock.com|torrentdownload.ch|torrentdownloads.me|torrentfunk.com|torrentfunk2.com|torrentz2.eu|tubidy.io|uiz.io|unblckd.org|unblockall.org|unblocked.app|unblocked.cx|unblocked.is|unblocked.llc|unblocked.lol|unblocked.pet|unblocked.si|unlockproject.icu|unlockproject.live|uploadproper.net|uptobox.com|userscloud.com|ustreamix.com|ustreamyx.com|vidbull.tv|vidoza.net|vidup.io|watchcartoononline.io|watchseries.sk|watchsomuch.info|x1337x.eu|x1337x.se|x1337x.ws|yesmovies.to|yify-movies.net|yify.bz|yifyddl.movie|yifytorrent.co|ymovies.tv|yourbittorrent2.com|yts.am|zippyshare.com
+! Juicyads
+.php/$image,~third-party,domain=imagetwist.com|imgadult.com|imgdrive.net|imgrock.net|imgrock.pw|imgtaxi.com|imgwallet.com
+=$image,~third-party,domain=imagetwist.com|imgadult.com|imgdrive.net|imgrock.net|imgrock.pw|imgtaxi.com|imgwallet.com
+?$image,~third-party,domain=imagetwist.com|imgadult.com|imgdrive.net|imgrock.net|imgrock.pw|imgtaxi.com|imgwallet.com
 ! Openload
 /^((?!(^https?):\/\/(ajax\.googleapis\.com|cdnjs\.cloudflare\.com)\/).*)$/$script,third-party,domain=oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|openload.co|openload.pw|openloed.co
 ! vidotodo
@@ -57047,7 +57051,6 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 ||imagenpic.com^$~third-party,xmlhttprequest
 ||imageshimage.com^$script,~third-party
 ||imageshimage.com^$~third-party,xmlhttprequest
-||imagetwist.com/*?$image,~third-party
 ||imagetwist.com^$script,~third-party
 ||imagetwist.com^$~third-party,xmlhttprequest
 ! imgspice.com
@@ -57571,14 +57574,8 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 @@||imgwallet.com*/advertisement.js$script
 |http://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaze.com|imgmaze.pw|imgoutlet.com|imgrock.info|imgrock.net|imgrock.pw|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgview.net|imgview.pw|imgwallet.com
 |https://$image,script,third-party,xmlhttprequest,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaze.com|imgmaze.pw|imgoutlet.com|imgrock.info|imgrock.net|imgrock.pw|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgview.net|imgview.pw|imgwallet.com
-||imgadult.com*?$image,~third-party
 ||imgadult.com^$subdocument
-||imgdrive.net*?$image,~third-party
-||imgrock.net*?$image,~third-party
-||imgrock.pw*?$image,~third-party
-||imgtaxi.com*?$image,~third-party
 ||imgtaxi.com^$subdocument
-||imgwallet.com*?$image,~third-party
 ||imgwallet.com^$subdocument
 ! filedot.xyz
 |http://$script,third-party,xmlhttprequest,domain=filedot.xyz
@@ -58569,7 +58566,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||3movs.com/contents/content_sources/
 ||3yen.com/wfn_
 ||4sex4.com/pd/
-||4tube.com/*.php?$image
 ||4tube.com/assets/abpe-
 ||4tube.com/assets/adf-
 ||4tube.com/assets/adn-
@@ -58613,7 +58609,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||anon-v.com/neverlikedcocksmuch.php
 ||anon-v.com/titswerentoiledup.php
 ||anonimag.es^$domain=anon-v.com
-||anysex.com/*=$image
 ||anysex.com/assets/
 ||anysex.com/b/
 ||anysex.com/content_sources/
@@ -58639,7 +58634,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||babeshows.co.uk/fvn53.jpg
 ||babeshows.co.uk^*banner
 ||babesmachine.com/html/
-||badjojo.com/*=$image
 ||badjojo.com/js/tools.js
 ||badjojo.com/js/tools2.js
 ||bagslap.com/*.html
@@ -59001,7 +58995,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||monstertube.com/images/vjoin_
 ||morazzia.com^*/banners/
 ||morebabes.to/morebabes.js
-||motherless.com/*=$image
 ||motherless.com/images/banners/
 ||motherman.com/*.html
 ||movierls.net/abecloader
@@ -59169,13 +59162,11 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||pornmaturetube.com/show_adv.
 ||pornnavigate.com/feeds/delivery.php?
 ||pornobae.com^*.php$script
-||pornobae.com^*?$image,~third-party
 ||pornoid.com/contents/content_sources/
 ||pornoid.com/iframes/bottom
 ||pornoid.com/js/adppornoid
 ||pornoid.com/pornoid_html/
 ||pornoinside.com/efpop.js
-||pornoreino.com/*=$image
 ||pornorips.com/hwpop.js
 ||pornorips.com^*/rda.js
 ||pornorips.com^*/rotate*.php
@@ -59213,7 +59204,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||purelynsfw.com^*/banners/
 ||purepornvids.com/randomadseb.
 ||purpleporno.com/pop*.js
-||pussyspace.com/*=$image
 ||putascaseiras.com/botao/
 ||pwpwpoker.com/images/*/strip_poker_
 ||pwpwpoker.com/images/banners/
@@ -59465,7 +59455,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||xhcdn.com^*/ads_
 ||xhcdn.com^*/sponsor-
 ||xhcdn.com^*/xpops.
-||xnxx-sexfilme.com/*.php?$image
 ||xogogo.com/images/latestpt.gif
 ||xozilla.com/62ca745f.js
 ||xozilla.com/js/pu.js
@@ -59510,7 +59499,6 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||yourdarkdesires.com/1.html
 ||yourdarkdesires.com/2.html
 ||yourdarkdesires.com/3.html
-||yourlust.com/*=$image
 ||yourlust.com/im/
 ||yourporn.sexy/vast/
 ||youtubelike.com/ftt2/toplists/
@@ -59524,6 +59512,10 @@ wyciwyg:$popup,domain=jkanime.net|vodlock.co
 ||zuzandra.info/b?
 ! (/sw.js)
 /^https?:\/\/.*\/.*sw[0-9(.|_)].*/$script,domain=24-video.me|analdin.com|fux.com|heavy-r.com|incesto69.com|mypornstarbook.net|porn555.com|pornerbros.com|porntube.com|tubepornclassic.com|txxx.com|vidmo.org|vpornvideos.com
+! Juicyads
+.php/$image,~third-party,domain=4tube.com|anysex.com|badjojo.com|motherless.com|pornobae.com|pornoreino.com|pussyspace.com|xnxx-sexfilme.com|yourlust.com
+=$image,~third-party,domain=4tube.com|anysex.com|badjojo.com|motherless.com|pornobae.com|pornoreino.com|pussyspace.com|xnxx-sexfilme.com|yourlust.com
+?$image,~third-party,domain=4tube.com|anysex.com|badjojo.com|motherless.com|pornobae.com|pornoreino.com|pussyspace.com|xnxx-sexfilme.com|yourlust.com
 ! Spankwire
 @@||spankwire.com/api/categories/list.json?$xmlhttprequest
 @@||spankwire.com/api/categories/popular.json?$xmlhttprequest
@@ -64361,6 +64353,7 @@ theticketmiami.com##.bottom-super-leaderboard
 weatheroffice.gc.ca##.bottomBanner
 softicons.com##.bottom_125_block
 softicons.com##.bottom_600_250_block
+imgtaxi.com##.bottom_abs
 themoscowtimes.com##.bottom_banner
 secdigitalnetwork.com##.bottom_banners_outer
 gamenguide.com##.bottom_bn
@@ -71223,7 +71216,7 @@ pornhub.com##a[href*="abbp"]
 taxidrivermovie.com##a[href*="mrskin.com/"]
 pornhub.com##a[href*="pleasedontslaymy"]
 pronpic.org##a[href*="takyake.ru"]
-adultfilmdatabase.com,animeidhentai.com,bos.so,camvideos.tv,camwhores.tv,celebrity-slips.com,cutscenes.net,dbnaked.com,devporn.net,efukt.com,gifsauce.com,hentai2read.com,hpjav.com,imagebam.com,imgbox.com,motherless.com,myporn.club,planetsuzy.org,pussyspace.com,sendvid.com,sexgalaxy.net,sextvx.com,sexuria.com,sxyprn.com,thefappeningblog.com,ultrahorny.com,vintage-erotica-forum.com,waxtube.com,xopenload.com,yeapornpls.com,yourporn.sexy##a[href*="theporndude.com"]
+adultfilmdatabase.com,animeidhentai.com,bos.so,camvideos.tv,camwhores.tv,celebrity-slips.com,cutscenes.net,dbnaked.com,devporn.net,efukt.com,gifsauce.com,hentai2read.com,hpjav.com,imagebam.com,imgbox.com,imgtaxi.com,motherless.com,myporn.club,planetsuzy.org,pussyspace.com,sendvid.com,sexgalaxy.net,sextvx.com,sexuria.com,sxyprn.com,thefappeningblog.com,ultrahorny.com,vintage-erotica-forum.com,waxtube.com,xopenload.com,yeapornpls.com,yourporn.sexy##a[href*="theporndude.com"]
 gaytube.com##a[href="/external/meet_and_fuck"]
 efukt.com##a[href="http://crazyshit.com/?utm_"]
 sex.com##a[href="http://idg.idealgasm.com/"]
