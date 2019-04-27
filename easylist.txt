@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201904270023
+! Version: 201904270100
 ! Title: EasyList
-! Last modified: 27 Apr 2019 00:23 UTC
+! Last modified: 27 Apr 2019 01:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -49740,7 +49740,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||amazonaws.com/wafmedia6.com/
 ||amazonaws.com/widgets.youcompare.com.au/
 ||amazonaws.com/youpop/
-||amazonaws.com^$script,domain=300mbdownload.net|bittorrent.am|gelbooru.com|grantorrent.net|hdvid.life|hdvid.tv|hdvid.xyz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|rgmechanicsgames.com|streamplay.to|thevideobee.to|usersfiles.com|vidhd.club|vidhd.icu|vidhd.pw|vshare.eu
+||amazonaws.com^$script,subdocument,domain=300mbdownload.net|bittorrent.am|gelbooru.com|grantorrent.net|hdvid.life|hdvid.tv|hdvid.xyz|katcr.host|macupload.net|mp3goo.com|ndtv.com|onhax.me|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|rgmechanicsgames.com|streamplay.to|thevideobee.to|usersfiles.com|vidhd.club|vidhd.icu|vidhd.pw|vshare.eu
 ||amazonaws.com^$third-party,xmlhttprequest,domain=300mbdownload.net|300mbfilms.co|bdupload.info|bigfile.to|bittorrent.am|c123movies.com|ddlvalley.cool|file-upload.com|frendz4m.com|fullstuff.co|hdvid.life|hdvid.tv|hdvid.xyz|katcr.host|macupload.net|ocean0fgames.com|onhax.me|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|rgmechanicsgames.com|sadeempc.com|suprafiles.org|thevideobee.to|tinypaste.me|tsumino.com|tvlivenow.com|vidhd.club|vidhd.icu|vidhd.pw|vidlox.tv|vidshare.us|vshare.eu|watchers.to|wizhdsports.is|yourvideohost.com
 ||amazonaws.com^*/ads/$image,domain=washingtonmonthly.com
 ||amazonaws.com^*/direct/$domain=mycbseguide.com
@@ -57408,7 +57408,7 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 |https://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 ! gelbooru.com
-/gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other
+/^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other
 @@||ads.exosrv.com^$script,domain=gelbooru.com
 @@||gelbooru.com/ads.js$script,~third-party
 @@||gelbooru.com^$generichide
