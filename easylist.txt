@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905040534
+! Version: 201905040608
 ! Title: EasyList
-! Last modified: 04 May 2019 05:34 UTC
+! Last modified: 04 May 2019 06:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6072,7 +6072,6 @@
 /rect_ad.
 /rectangle_ad.
 /rectangle_advertorials_
-/Redirect.a2b?$document
 /redirect?tid=
 /redirect_awe.
 /refads/*
@@ -8028,11 +8027,11 @@ _prebid_
 ! adinsertion used on gizmodo.in lifehacker.co.in
 /datomata.widget.js
 ! Common adserver string
-/mediahosting.engine$document,script
-/Redirect.a2b?MediaSegmentId=$script,subdocument
-/sitetestclickcount.engine
-/Tag.eng$script,third-party
-/Tag.rb$script,third-party
+/mediahosting.engine$document,script,subdocument
+/Redirect.a2b?$document,script,subdocument
+/sitetestclickcount.enginedocument,script,subdocument
+/Tag.eng$document,script,subdocument
+/Tag.rb$document,script,subdocument
 ! White papers insert
 /sl/assetlisting/?
 ! Peel script
