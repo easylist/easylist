@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905050839
+! Version: 201905050903
 ! Title: EasyList
-! Last modified: 05 May 2019 08:39 UTC
+! Last modified: 05 May 2019 09:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57457,16 +57457,20 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 ! 9anime.vip
+@@||9anime.*/home/ajax/schedule?$~third-party,xmlhttprequest,domain=9anime.to|9anime.vip
+@@||9anime.*/user/ajax/menu-bar?$~third-party,xmlhttprequest,domain=9anime.to|9anime.vip
 @@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.to|9anime.vip
 @@||connect.facebook.net^$script,domain=9anime.to|9anime.vip
 @@||disqus.com^$domain=9anime.to|9anime.vip
 @@||disquscdn.com^$domain=9anime.to|9anime.vip
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.to|9anime.vip
 @@||googleusercontent.com/gadgets/$image,domain=9anime.to|9anime.vip
 @@||platform.twitter.com^$script,domain=9anime.to|9anime.vip
-|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.vip
+|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.vip
+|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.vip
+||9anime.*/*callback
+||9anime.*/inc/$script
 ||9anime.*/sw.js
-||9anime.to/inc/$script
-||9anime.vip/*callback
 ! watchvideo / watchme
 @@/index-*.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
 @@/master.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
