@@ -4846,8 +4846,8 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 ! 9anime.vip
-@@||9anime.*/home/ajax/schedule?$xmlhttprequest,~third-party,domain=9anime.to|9anime.vip
-@@||9anime.*/user/ajax/menu-bar?$xmlhttprequest,~third-party,domain=9anime.to|9anime.vip
+@@||9anime.*/home/ajax/schedule?$~third-party,xmlhttprequest,domain=9anime.to|9anime.vip
+@@||9anime.*/user/ajax/menu-bar?$~third-party,xmlhttprequest,domain=9anime.to|9anime.vip
 @@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.to|9anime.vip
 @@||connect.facebook.net^$script,domain=9anime.to|9anime.vip
 @@||disqus.com^$domain=9anime.to|9anime.vip
@@ -4857,9 +4857,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||platform.twitter.com^$script,domain=9anime.to|9anime.vip
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.vip
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.vip
-||9anime.*/sw.js
-||9anime.*/inc/$script
 ||9anime.*/*callback
+||9anime.*/inc/$script
+||9anime.*/sw.js
 ! watchvideo / watchme
 @@/index-*.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
 @@/master.m3u8$xmlhttprequest,domain=vidwatch3.me|watchvideo.us|watchvideo10.us|watchvideo11.us|watchvideo12.us|watchvideo13.us|watchvideo14.us|watchvideo15.us
