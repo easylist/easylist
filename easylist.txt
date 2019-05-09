@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905092135
+! Version: 201905092143
 ! Title: EasyList
-! Last modified: 09 May 2019 21:35 UTC
+! Last modified: 09 May 2019 21:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -70620,6 +70620,8 @@ webfail.com#?#:-abp-properties(position: relative; width: 728px)
 webfail.com#?#:-abp-properties(text-align: center;) > img
 webfail.com#?#div[style="width:300px;height:auto;margin:30px 0;"] + div
 yelp.com#?#li[class^="domtags--li"]:-abp-has(a[href^="/adredir?"])
+yelp.com#?#li[class^="lemon--li"]:-abp-contains(Sponsored Results)
+yelp.com#?#li[class^="lemon--li"]:-abp-has(a[href^="/adredir?"])
 ! IL
 metacritic.com###leader_bottom
 metacritic.com###leader_middle
