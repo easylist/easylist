@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905102354
+! Version: 201905110023
 ! Title: EasyList
-! Last modified: 10 May 2019 23:54 UTC
+! Last modified: 11 May 2019 00:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57780,7 +57780,7 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |http://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 |https://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
 ! gelbooru.com
-/^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other
+/^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other,domain=gelbooru.com
 @@||ads.exosrv.com^$script,domain=gelbooru.com
 @@||gelbooru.com/ads.js$script,~third-party
 @@||gelbooru.com^$generichide
