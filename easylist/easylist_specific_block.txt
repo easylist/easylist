@@ -2926,6 +2926,7 @@
 ||poststar.com^*/ad_
 ||poststar.com^*/dealwidget.php?
 ||poststar.com^*/promos/
+||povvideo.net/ben/
 ||power1035fm.com^*/banners/
 ||power977.com/images/banners/
 ||powerbot.org^*/ads/
@@ -5312,14 +5313,14 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
-! Powvideo/powvideo
-$websocket,domain=povw1deo.com|povwideo.net|powvideo.net
-@@||ajax.googleapis.com^$script,third-party,domain=povw1deo.com|povwideo.net|powvideo.net
-@@||code.jquery.com^$script,domain=povw1deo.com|povwideo.net|powvideo.net
-@@||codeorigin.jquery.com^$domain=povw1deo.com|povwideo.net|powvideo.net
-@@||img.powvideo.net/scap/$image,domain=povw1deo.com|povwideo.net
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=povw1deo.com|povwideo.net|powvideo.net
+! Powvideo
+$websocket,domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
+@@||ajax.googleapis.com^$script,third-party,domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
+@@||code.jquery.com^$script,domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
+@@||codeorigin.jquery.com^$domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
+@@||img.powvideo.net/scap/$image,domain=povvideo.net|povwideo.cc|povwideo.net
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|povwideo.cc|povwideo.net|powvideo.net
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
