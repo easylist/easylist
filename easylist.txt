@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905162141
+! Version: 201905162148
 ! Title: EasyList
-! Last modified: 16 May 2019 21:41 UTC
+! Last modified: 16 May 2019 21:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -34044,6 +34044,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||revenuehits.com^$third-party
 ||revenuemantra.com^$third-party
 ||revenuemax.de^$third-party
+||revenuevids.com^$third-party
 ||revfusion.net^$third-party
 ||revgennetwork.com^$third-party
 ||revimedia.com^$third-party
@@ -57615,8 +57616,8 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 ! fmovies
 @@||ajax.googleapis.com/ajax/libs/$script,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||akacdn.ru/assets/$image,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
-@@||akacdn.ru/static/images/$image,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||akacdn.ru^*/assets/$script,stylesheet,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
+@@||akacdn.ru^*/images/$image,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||cloudflare.com^$script,stylesheet,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||disqus.com^$script,xmlhttprequest,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
 @@||disquscdn.com^$script,stylesheet,xmlhttprequest,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world
@@ -57876,9 +57877,9 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||streamwoop.com^$script,domain=streamwoop.tv
 |http://$script,third-party,xmlhttprequest,domain=streamwoop.tv
 |https://$script,third-party,xmlhttprequest,domain=streamwoop.tv
-! upload.so
-|http://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
-|https://$script,third-party,xmlhttprequest,domain=upload.so|uplod.cc|uplod.io|uplod.ws
+! upload.ac
+|http://$script,third-party,xmlhttprequest,domain=upload.ac|uplod.cc|uplod.io|uplod.ws
+|https://$script,third-party,xmlhttprequest,domain=upload.ac|uplod.cc|uplod.io|uplod.ws
 ! gelbooru.com
 /^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other,domain=gelbooru.com
 @@||ads.exosrv.com^$script,domain=gelbooru.com
