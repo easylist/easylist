@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201905162109
+! Version: 201905162116
 ! Title: EasyPrivacy
-! Last modified: 16 May 2019 21:09 UTC
+! Last modified: 16 May 2019 21:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -19,7 +19,7 @@
 &ctxId=*&pubId=*&objId=
 &event=view&
 &funnel_state=
-&http_referer=$script
+&http_referer=$script,xmlhttprequest
 &pageReferrer=
 &ref=*&tag=
 &refer=http$script
@@ -1862,6 +1862,7 @@
 /gtm/gtm-
 /gtmTracking.
 /gtrack.
+/gv-analytics/*
 /gweb/analytics/*
 /hash_stat_bulk/*
 /hc/tracking/*
@@ -3040,6 +3041,7 @@
 /revtracking/*
 /RioTracking2.
 /risk_fp_log?
+/riveted.js
 /riveted.min.js
 /rkrt_tracker-
 /rm.gif?
@@ -3451,6 +3453,7 @@
 /statsd_proxy
 /StatsHelper.gif?
 /StatsMngrWebInterface.
+/StatsPage.
 /statspider?
 /statspixel.
 /StatsRadioAnalyticsHub.htm
