@@ -5133,10 +5133,12 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 |https://$script,third-party,xmlhttprequest,domain=imgvip.net|pixsense.net
 ! Putlocker
 @@||ajax.googleapis.com^$script,domain=putlocker.ninja|putlockers.movie
-@@||apis.google.com^$script,domain=putlocker.ninja|putlockers.movie
-@@||cdnjs.cloudflare.com^$script,domain=putlocker.ninja|putlockers.movie
+@@||apis.google.com^$script,subdocument,domain=putlocker.ninja|putlockers.movie
+@@||cdn.jsdelivr.net^$script,stylesheet,domain=putlocker.ninja|putlockers.movie
+@@||cdnjs.cloudflare.com^$script,stylesheet,domain=putlocker.ninja|putlockers.movie
 @@||connect.facebook.net^$script,domain=putlocker.ninja|putlockers.movie
-|https://$script,third-party,xmlhttprequest,domain=putlocker.ninja|putlockers.movie
+|http://$script,stylesheet,third-party,xmlhttprequest,domain=putlocker.ninja|putlockers.movie
+|https://$script,stylesheet,third-party,xmlhttprequest,domain=putlocker.ninja|putlockers.movie
 ! Depositfiles/Dfiles
 @@||api-secure.solvemedia.com^$domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@||api.solvemedia.com^$third-party,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
