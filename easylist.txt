@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905170942
+! Version: 201905170958
 ! Title: EasyList
-! Last modified: 17 May 2019 09:42 UTC
+! Last modified: 17 May 2019 09:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28849,6 +28849,7 @@ _popunder+$popup
 ##a[href^="https://tracking.truthfinder.com/?a="]
 ##a[href^="https://trackjs.com/?utm_source"]
 ##a[href^="https://traffic.bannerator.com/"]
+##a[href^="https://trafficmedia.center/"]
 ##a[href^="https://transfer.xe.com/signup/track/redirect?"]
 ##a[href^="https://trklvs.com/"]
 ##a[href^="https://trust.zone/go/r.php?RID="]
@@ -58244,8 +58245,7 @@ $webrtc,domain=uptobox.com
 |ws://$other,third-party,domain=fastpic.ru
 ! monova
 @@||gstatic.com^$script,third-party,domain=monova.org|monova.to
-@@||monova.org/js/main.js?v=$script
-|http*://$image,other,script,subdocument,xmlhttprequest,domain=monova.org|monova.to
+|http*://$image,other,script,subdocument,third-party,xmlhttprequest,domain=monova.org|monova.to
 ! 1337x.to
 @@||code.jquery.com^$script,domain=1337x.st|1337x.to|x1337x.eu|x1337x.se|x1337x.ws
 @@||gstatic.com^*/recaptcha/$script,domain=1337x.st|1337x.to|x1337x.eu|x1337x.se|x1337x.ws
