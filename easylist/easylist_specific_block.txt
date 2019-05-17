@@ -5435,8 +5435,7 @@ $webrtc,domain=uptobox.com
 |ws://$other,third-party,domain=fastpic.ru
 ! monova
 @@||gstatic.com^$script,third-party,domain=monova.org|monova.to
-@@||monova.org/js/main.js?v=$script
-|http*://$image,other,script,subdocument,xmlhttprequest,domain=monova.org|monova.to
+|http*://$image,other,script,subdocument,third-party,xmlhttprequest,domain=monova.org|monova.to
 ! 1337x.to
 @@||code.jquery.com^$script,domain=1337x.st|1337x.to|x1337x.eu|x1337x.se|x1337x.ws
 @@||gstatic.com^*/recaptcha/$script,domain=1337x.st|1337x.to|x1337x.eu|x1337x.se|x1337x.ws
