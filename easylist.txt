@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905180718
+! Version: 201905180733
 ! Title: EasyList
-! Last modified: 18 May 2019 07:18 UTC
+! Last modified: 18 May 2019 07:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57351,6 +57351,9 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||wp.com/wp-content/js/$script,domain=onhax.me
 |http://$script,subdocument,third-party,domain=onhax.me
 |https://$script,subdocument,third-party,domain=onhax.me
+! kiss-anime.ws
+@@||kiss-anime.ws/embed.php$subdocument,~third-party
+||kiss-anime.ws^$subdocument,~third-party
 ! torrentdownloads.me | limetorrents.info
 @@||ajax.googleapis.com^$script,domain=limetorrents.info|torrentdownload.ch|torrentdownloads.me|torrentfunk2.com
 |http://$script,subdocument,third-party,xmlhttprequest,domain=limetorrents.info|torrentdownload.ch|torrentdownloads.me|torrentfunk2.com
@@ -57415,9 +57418,11 @@ $webrtc,domain=ibit.to
 ! nowwatchtvlive.ws
 |http://$image,script,third-party,xmlhttprequest,domain=nowwatchtvlive.ws
 |https://$image,script,third-party,xmlhttprequest,domain=nowwatchtvlive.ws
-! 
+! kimcartoon.to
+@@||code.jquery.com^$script,domain=kimcartoon.to
 @@||disqus.com^$domain=kimcartoon.to
 @@||disquscdn.com^$domain=kimcartoon.to
+@@||zencdn.net^$script,domain=kimcartoon.to
 |http://$script,subdocument,third-party,xmlhttprequest,domain=kimcartoon.to
 |https://$script,subdocument,third-party,xmlhttprequest,domain=kimcartoon.to
 ! bebi script
