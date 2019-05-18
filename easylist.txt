@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905180355
+! Version: 201905180404
 ! Title: EasyList
-! Last modified: 18 May 2019 03:55 UTC
+! Last modified: 18 May 2019 04:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57425,8 +57425,9 @@ $webrtc,domain=ibit.to
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
 ! 
-|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+/^http*.:\/\/.*[a-zA-Z0-9]{10,}.*/$xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|http://$image,script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://$image,script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
 ||1movies.is/sw_$script
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
