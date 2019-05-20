@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201905202046
+! Version: 201905202132
 ! Title: EasyList
-! Last modified: 20 May 2019 20:46 UTC
+! Last modified: 20 May 2019 21:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28179,6 +28179,7 @@ _popunder+$popup
 ##.wpInsertAdWidget
 ##.wpInsertInPostAd
 ##.wp_bannerize
+##.wp_bannerize_container
 ##.wp_bnn
 ##.wp_bnnatcode_wp_bnn
 ##.wpadvert
@@ -31375,6 +31376,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||cegludse.net^$third-party
 ||celeritascdn.com^$third-party
 ||centralnervous.net^$third-party
+||ceraitoa.com^$third-party
 ||cerotop.com^$third-party
 ||cfasync.cf^$third-party
 ||cfasync.ga^$third-party
@@ -31794,6 +31796,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||doomna.com^$third-party
 ||dopor.info^$third-party
 ||dorenga.com^$third-party
+||doshaido.com^$third-party
 ||dotandad.com^$third-party
 ||dotandads.com^$third-party
 ||dotnxdomain.net^$third-party
@@ -32350,6 +32353,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||globalsuccessclub.com^$third-party
 ||globaltakeoff.net^$third-party
 ||globaltraffico.com^$third-party
+||glodrips.com^$third-party
 ||glotchat.click^$third-party
 ||glowdot.com^$third-party
 ||glumifo.info^$third-party
@@ -32970,6 +32974,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||loseads.eu^$third-party
 ||losomy.com^$third-party
 ||lotteryaffiliates.com^$third-party
+||lovacmar.click^$third-party
 ||love-banner.com^$third-party
 ||loxtk.com^$third-party
 ||lqcdn.com^$third-party
@@ -33379,6 +33384,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||nichter.space^$third-party
 ||nightened.com^$third-party
 ||nighter.club^$third-party
+||niltutch.com^$third-party
 ||nitmus.com^$third-party
 ||nization.com^$third-party
 ||njkiho.info^$third-party
@@ -57463,9 +57469,12 @@ $webrtc,domain=ibit.to
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
 ! 
-/^http*.:\/\/.*[a-zA-Z0-9]{10,}.*/$xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-|http://$image,script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://$image,script,stylesheet,third-party,domain=1movies.is|moviescouch.co|torrentfunk.com
+@@||1movies.is/comments/$~third-party,xmlhttprequest
+@@||1movies.is/series/$~third-party,xmlhttprequest
+@@||1movies.is/user/$~third-party,xmlhttprequest
+@@||blogspot.com^$image,domain=www3.1movies.is
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
 ||1movies.is/sw_$script
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
