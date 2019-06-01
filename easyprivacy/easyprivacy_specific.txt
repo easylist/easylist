@@ -2642,14 +2642,12 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
 ||radio-canada.ca/omniture/omni_stats_base.js?
 ! Specific filters necessary for sites whitelisted with $genericblock filter option
-/__utm.gif$domain=autobild.de|quoka.de|tellows.de|thewatchseries.to|transfermarkt.de
+/__utm.gif$domain=autobild.de|quoka.de|tellows.de|transfermarkt.de
 /analytics/track?$domain=widgets.azureedge.net
 /csi?v=*&action=$domain=tellows.de
 /nm_trck.gif?$domain=spiegel.de
 /pic.gif?m=$domain=autobild.de
 ||3gl.net^$domain=stern.de
-||a.watchseries.to^$domain=thewatchseries.to
-||addthis.com/live/$domain=thewatchseries.to
 ||babator.com^$domain=focus.de
 ||bluekai.com^$domain=disqus.com|widgets.outbrain.com
 ||chartbeat.com^$domain=stern.de
