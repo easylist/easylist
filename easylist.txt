@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906010542
+! Version: 201906010555
 ! Title: EasyList
-! Last modified: 01 Jun 2019 05:42 UTC
+! Last modified: 01 Jun 2019 05:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -33930,6 +33930,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ptchits.com^$third-party
 ||ptmopenclose.click^$third-party
 ||ptmzr.com^$third-party
+||ptocmaux.com^$third-party
 ||ptp.lolco.net^$third-party
 ||ptp22.com^$third-party
 ||ptp24.com^$third-party
@@ -33981,6 +33982,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||pushlommy.com^$third-party
 ||pushnative.com^$third-party
 ||pushnest.com^$third-party
+||pushnevis.com^$third-party
 ||pushnice.com^$third-party
 ||pushno.com^$third-party
 ||pushservice.one^$third-party
@@ -34909,6 +34911,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||uptimecdn.com^$third-party
 ||urbation.net^$third-party
 ||ureace.com^$third-party
+||uriqirelle.xyz^$third-party
 ||urlads.net^$third-party
 ||urlcash.net^$third-party
 ||urldelivery.com^$third-party
@@ -53018,7 +53021,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||180upload.com/pir/729.js
 ||194.14.0.39/pia.png$domain=tokyo-tosho.net|tokyotosho.info|tokyotosho.se
 ||194.14.0.39/pia_wide.png$domain=tokyo-tosho.net|tokyotosho.info|tokyotosho.se
-||1movies.to/site/videoroller
 ||1up.com/scripts/takeover.js
 ||1up.com/vip/vip_games.html
 ||1up.com^*/promos/
@@ -57560,14 +57562,19 @@ $webrtc,domain=ibit.to
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
-! 
+! 1movies
 @@||1movies.is/comments/$~third-party,xmlhttprequest
 @@||1movies.is/series/$~third-party,xmlhttprequest
 @@||1movies.is/user/$~third-party,xmlhttprequest
 @@||blogspot.com^$image,domain=1movies.is
-|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com
-||1movies.is/sw_$script
+|http://$image,script,stylesheet,third-party,domain=1movies.is
+|https://$image,script,stylesheet,third-party,domain=1movies.is
+! moviescouch.co
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=moviescouch.co
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=moviescouch.co
+! torrentfunk.com
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=torrentfunk.com
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=torrentfunk.com
 ! clipwatching.com
 |http://$script,third-party,domain=clipwatching.com
 |https://$script,third-party,domain=clipwatching.com
