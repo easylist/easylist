@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906021323
+! Version: 201906021348
 ! Title: EasyList
-! Last modified: 02 Jun 2019 13:23 UTC
+! Last modified: 02 Jun 2019 13:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -60931,8 +60931,6 @@ highstakesdb.com###bSpecificR
 blinkbox.com###b_ad_zc
 blinkbox.com###b_ee_de
 blinkbox.com###b_jd_id
-bing.com###b_results > li > ul > li > div > .b_caption
-bing.com###b_results > li > ul > li > div > .b_vlist2col
 huhmagazine.co.uk###back
 gayvegas.com###background
 mmoculture.com###background-link
@@ -70906,13 +70904,17 @@ msn.com##div[x-enc] > a
 msn.com##iframe:not([src])
 msn.com##iframe[src="about:blank"]
 ! Bing
+bing.com###b_results > li > ul > li > div > .b_caption
+bing.com###b_results > li > ul > li > div > .b_vlist2col
 bing.com###mm_pla
 bing.com##.ad_cvr
 bing.com##.ad_sc
 bing.com##.b_mhdr
+bing.com##.pa_carousel_mlo
 bing.com##.pa_list_sbo
 @@||bing.com/shop^$elemhide
 @@||bing.com^$generichide
+bing.com##a[data-url^="https://www.bing.com/aclk?"]
 bing.com##a[href^="https://www.bing.com/aclick?"]
 bing.com##a[href^="https://www.bing.com/aclk?"]
 bing.com#?##b_context > li + li :-abp-has(span.b_adSlug)
