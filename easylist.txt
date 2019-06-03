@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906031859
+! Version: 201906031910
 ! Title: EasyList
-! Last modified: 03 Jun 2019 18:59 UTC
+! Last modified: 03 Jun 2019 19:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57526,6 +57526,7 @@ $webrtc,domain=ibit.to
 |https://$script,subdocument,third-party,xmlhttprequest,domain=kimcartoon.to
 ! bebi script
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
+@@||9anime.nl/user/ajax/$xmlhttprequest,domain=9anime.nl
 @@||gogoanime.to/player.js$script
 @@||watchcartoononline.io/tema/images/jwplayer.jpg$image,~third-party
 ||readcomiconline.to/Scripts/customjavascript.js
