@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906041033
+! Version: 201906041044
 ! Title: EasyList
-! Last modified: 04 Jun 2019 10:33 UTC
+! Last modified: 04 Jun 2019 10:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -60127,19 +60127,9 @@ wyciwyg:$popup,domain=jkanime.net
 ||watchmygf.me/contents/content_sources/
 ||wauporn.com/nb/
 ||waxtube.com/b/
-||waybig.com/blog/wp-content/uploads/*?pas=$image
-||waybig.com/js/lic14.js
-||waybig.com/js/license.$script
-||waybig.com/js/univ6.js
 ||weberotic.net/banners/
-||wetplace.com/iframes/$subdocument
-||wetplace.com/js/adpwetplace
-||wetplace.com/wetplace_html/
 ||wetpussygames.com/images/promo/
 ||whitedolly.com/wcf/images/redbar/logo_neu.gif
-||whozacunt.com/images/*-300x250.
-||whozacunt.com/images/*_300x200_
-||whozacunt.com/images/banner_
 ||wiki-stars.com/thumb_if.php?
 ||wiki-stars.com/trade/
 ||wikiporno.org/header2.html
@@ -60194,12 +60184,6 @@ wyciwyg:$popup,domain=jkanime.net
 ||xxxymovies.com^*/bottom-banner.
 ||yea.xxx/img/creatives/
 ||youaresogay.com/*.html
-||youngpornvideos.com/images/bangbros/
-||youngpornvideos.com/images/glamglam/
-||youngpornvideos.com/images/mofoscash/
-||youngpornvideos.com/images/teencash/
-||youngpornvideos.com/images/webmasterdelightlinks/
-||youngpornvideos.com/images/wmasterthecoolporn/
 ||youporn.com/capedorset/
 ||youporn.com/watch_postroll/
 ||youporn.com^$script,domain=youporn.com
@@ -60227,6 +60211,9 @@ wyciwyg:$popup,domain=jkanime.net
 /^https?:\/\/.*\/.*sw[0-9(.|_)].*/$script,domain=24-video.me|9xmovies.cc|analdin.com|extremetube.com|fux.com|heavy-r.com|incesto69.com|indianbfvideos.com|keezmovies.com|mofosex.com|mypornstarbook.net|niceporn.xxx|porn555.com|pornerbros.com|porntube.com|tubepornclassic.com|tubev.sex|txxx.com|vidmo.org|vpornvideos.com|yourdailypornstars.com
 ! pornhive.tv
 $script,subdocument,third-party,domain=pornhive.tv
+! wetplace.com
+|http://$script,third-party,xmlhttprequest,domain=wetplace.com
+|https://$script,third-party,xmlhttprequest,domain=wetplace.com
 ! pornhd.com
 $script,domain=pornhd.com
 @@||cdn-static.pornhd.com/pornhd/$script,domain=pornhd.com
@@ -71379,6 +71366,7 @@ playpornfree.org##.custom-html-widget
 jigglegifs.com##.dating
 anysex.com##.desc
 txxx.com##.desk-list
+youngpornvideos.com##.detail-side-td
 pornalized.com,pornoid.com##.discount
 fapdu.com##.disp-underplayer
 pornhd.com##.double-zone
