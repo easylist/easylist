@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906041044
+! Version: 201906041100
 ! Title: EasyList
-! Last modified: 04 Jun 2019 10:44 UTC
+! Last modified: 04 Jun 2019 11:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -60158,9 +60158,6 @@ wyciwyg:$popup,domain=jkanime.net
 ||xhcdn.com^*/sponsor-
 ||xhcdn.com^*/xpops.
 ||xogogo.com/images/latestpt.gif
-||xozilla.com/62ca745f.js
-||xozilla.com/js/pu.js
-||xozilla.com/player/html.php?aid=
 ||xpics.me/everyone.
 ||xvideohost.com/hor_banner.php
 ||xvideos-free.com/d/
@@ -60175,7 +60172,6 @@ wyciwyg:$popup,domain=jkanime.net
 ||xxxhdd.com/player_banners/
 ||xxxhdd.com/plugs-thumbs/
 ||xxxhost.me/xpw.gif
-||xxxjizz.net/125_125.
 ||xxxkinky.com/pap.js
 ||xxxporntalk.com/images/
 ||xxxselected.com/cdn_files/dist/js/blockPlaces.js
@@ -60191,9 +60187,7 @@ wyciwyg:$popup,domain=jkanime.net
 ||youporn.com^$subdocument,~third-party
 ||yourdailygirls.com/vanilla/process.php
 ||yourdailypornstars.com/nothing/
-||yourdarkdesires.com/1.html
-||yourdarkdesires.com/2.html
-||yourdarkdesires.com/3.html
+||yourdarkdesires.com^$subdocument
 ||yourlust.com/im/
 ||yourporn.sexy/vast/
 ||youtubelike.com/ftt2/toplists/
@@ -60218,6 +60212,12 @@ $script,subdocument,third-party,domain=pornhive.tv
 $script,domain=pornhd.com
 @@||cdn-static.pornhd.com/pornhd/$script,domain=pornhd.com
 @@||cdnb-static.pornhd.com/pornhd/$script,domain=pornhd.com
+! xozilla.com
+@@||awemwh.com^$image,domain=xozilla.com
+@@||cdnjs.cloudflare.com^$script,domain=xozilla.com
+|http://$image,script,third-party,xmlhttprequest,domain=xozilla.com
+|https://$image,script,third-party,xmlhttprequest,domain=xozilla.com
+||xozilla.com/agent.php$image,script,subdocument
 ! efukt.com
 $script,subdocument,third-party,domain=efukt.com
 @@||ajax.googleapis.com/ajax/$script,domain=efukt.com
@@ -60286,6 +60286,11 @@ $image,script,subdocument,third-party,webrtc,websocket,domain=camwhorestv.org
 @@||translate.google.com^$script,domain=gaybeeg.info
 @@||wp.com/wp-content/js/$script,domain=gaybeeg.info
 |http://$script,third-party,xmlhttprequest,domain=gaybeeg.info
+! xxxjizz.net
+@@||s.ytimg.com^$script,domain=xxxjizz.net
+|http://$script,subdocument,third-party,xmlhttprequest,domain=xxxjizz.net
+|https://$script,subdocument,third-party,xmlhttprequest,domain=xxxjizz.net
+||xxxjizz.net^*.php$image,script
 ! hdzog.com
 @@||ajax.googleapis.com^$script,domain=hdzog.com
 @@||hdzog.com/key=$~third-party,xmlhttprequest
@@ -71205,6 +71210,7 @@ katestube.com##.add
 sex3.com##.add-box
 perfectgirls.net##.additional-block-bg
 hentaistream.com##.adds
+yourdarkdesires.com##.adequate > .pleasant
 pinflix.com##.adhesion-zone
 adultbox.eu,bangyoulater.com,beemtube.com,cam4.com,djs-teens.net,femdom-fetish-tube.com,free-celebrity-tube.com,glarysoft.com,gosexy.mobi,hdporn.in,mobilepornmovies.com,onlyhot.biz,pichunter.com,pornshaft.com,porntalk.com,pornxs.com,ratemypeach.com,teentube18.com,thisav.com,youporn.com##.ads
 myfreeblack.com##.ads-player
@@ -71762,6 +71768,7 @@ sexyshare.net##.videosz_banner
 myxvids.com##.vidtopbanner
 youporn.com##.views_left
 lubetube.com##.viewvideobanner
+yourdarkdesires.com##.visibility
 yourlust.com##.visit_cs
 eporner.com##.vjs-inplayer-container
 pornhd.com##.vp-under-video-spot
@@ -71807,7 +71814,7 @@ porn.com##a[href*="&ref="]
 asspoint.com,babepedia.com,babesandstars.com,babesource.com,dachix.com,datoporn.co,dbnaked.com,definebabe.com,fux.com,gaytube.com,gfycatporn.com,girlsnaked.net,javfor.me,mansurfer.com,newpornstarblogs.com,pichunter.com,porn.com,porndoe.com,pornerbros.com,pornhubpremium.com,pornoxo.com,pornstarchive.com,porntube.com,redtube.com,rogreviews.com,sexyandfunny.com,shemaletubevideos.com,spankbang.com,spankwire.com,str8upgayporn.com,the-new-lagoon.com,theanalist.info,tube8.com,vporn.com,xhamster.one,xxxhdd.com,youjizz.com,youporn.com,yourdailypornstars.com##a[href*=".com/track/"]
 pornhub.com##a[href*=".download/"]
 redtube.com##a[href*=".hop.clickbank.net"]
-badjojo.com,boysfood.com,celebrity-leaks.net,definebabe.com,efukt.com,eskimotube.com,fantasti.cc,gaytube.com,girlsofdesire.org,imagepix.org,keezmovies.com,madthumbs.com,pornerbros.com,pornxs.com,redtube.com,shemaletubevideos.com,therealpornwikileaks.com,xhamster.com,yea.xxx,youngpornvideos.com,yourdailypornstars.com##a[href*=".php"]
+badjojo.com,boysfood.com,celebrity-leaks.net,definebabe.com,efukt.com,eskimotube.com,fantasti.cc,gaytube.com,girlsofdesire.org,imagepix.org,keezmovies.com,madthumbs.com,pornerbros.com,pornxs.com,redtube.com,shemaletubevideos.com,therealpornwikileaks.com,xhamster.com,xxxjizz.net,yea.xxx,youngpornvideos.com,yourdailypornstars.com##a[href*=".php"]
 xxxporn.pics##a[href*=".solidcams.com?"]
 cfake.com,porn-w.org,porn99.net##a[href*="//bit.ly/"]
 cfake.com##a[href*="//bitly.com/"]
