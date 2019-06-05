@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906050922
+! Version: 201906050943
 ! Title: EasyList
-! Last modified: 05 Jun 2019 09:22 UTC
+! Last modified: 05 Jun 2019 09:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -8806,6 +8806,8 @@ _a468x60.
 ?xref=*&zoneid=$popup
 ?zoneid=*_bannerid=$popup
 _popunder+$popup
+! popupads
+=direct&siteId=*=http$popup
 ! Commonly used popup scripts on movie/tv streaming sites
 |javascript:*setTimeout$popup
 |javascript:*window.location$popup
@@ -36282,6 +36284,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||3el-3el-fie.com^$third-party
 ||4dtrk.com^$third-party
 ||addroplet.com^$third-party
+||adqy6rzwcs.com^$third-party
 ||badtopwitch.work^$third-party
 ||baletingo.com^$third-party
 ||bandelcot.com^$third-party
@@ -59397,7 +59400,7 @@ wyciwyg:$popup,domain=jkanime.net
 ||chatrandom.com/js/slider.js
 ||chubby-ocean.com/banner/
 ||clips-and-pics.org/clipsandpics.js
-||cloudfront.net^$domain=extremetube.com|niceporn.xxx
+||cloudfront.net^$domain=extremetube.com|niceporn.xxx|theync.com
 ||comdotgame.com/vgirl/
 ||coolmovs.com/js/focus.*.js
 ||coolmovs.com/rec/$subdocument
@@ -60168,6 +60171,11 @@ $script,subdocument,third-party,domain=pornhive.tv
 ! wetplace.com
 |http://$script,third-party,xmlhttprequest,domain=wetplace.com
 |https://$script,third-party,xmlhttprequest,domain=wetplace.com
+! javfhd.net / myhdjav.info
+|http://$script,third-party,xmlhttprequest,domain=javfhd.net|myhdjav.info
+|https://$script,third-party,xmlhttprequest,domain=javfhd.net|myhdjav.info
+! xxxkingtube.com
+||xxxkingtube.com/*.php$image,script
 ! updatetube.com
 |http://$script,third-party,xmlhttprequest,domain=updatetube.com
 |https://$script,third-party,xmlhttprequest,domain=updatetube.com
@@ -60313,7 +60321,7 @@ $websocket,domain=24video.me|pornhub.com|redtube.com|redtube.com.br|tube8.com|tu
 ||pussyspace.com^$script
 ! *** easylist:easylist_adult/adult_specific_block_popup.txt ***
 ^utm_medium=pops^$popup,domain=ratedporntube.com|sextuberate.com
-|http*://*?$popup,third-party,domain=pornflip.com|pornhub.com|pornsocket.com|redtube.com|spankwire.com|streamjav.net|theync.com|tube8.com|vidz7.com|xxxkingtube.com|youporn.com|youporngay.com
+|http*://*?$popup,third-party,domain=pornhub.com|pornsocket.com|redtube.com|spankwire.com|tube8.com|vidz78.com|xxxkingtube.com|youporn.com|youporngay.com
 |https:$popup,third-party,domain=yourporn.sexy
 ||bitchcrawler.com/?$popup
 ||delivery.porn.com^$popup
@@ -71773,7 +71781,7 @@ porn.com##a[href*="&ref="]
 asspoint.com,babepedia.com,babesandstars.com,babesource.com,dachix.com,datoporn.co,dbnaked.com,definebabe.com,fux.com,gaytube.com,gfycatporn.com,girlsnaked.net,javfor.me,mansurfer.com,newpornstarblogs.com,pichunter.com,porn.com,porndoe.com,pornerbros.com,pornhubpremium.com,pornoxo.com,pornstarchive.com,porntube.com,redtube.com,rogreviews.com,sexyandfunny.com,shemaletubevideos.com,spankbang.com,spankwire.com,str8upgayporn.com,the-new-lagoon.com,theanalist.info,tube8.com,vporn.com,xhamster.one,xxxhdd.com,youjizz.com,youporn.com,yourdailypornstars.com##a[href*=".com/track/"]
 pornhub.com##a[href*=".download/"]
 redtube.com##a[href*=".hop.clickbank.net"]
-badjojo.com,boysfood.com,celebrity-leaks.net,definebabe.com,efukt.com,eskimotube.com,fantasti.cc,gaytube.com,girlsofdesire.org,imagepix.org,keezmovies.com,madthumbs.com,pornerbros.com,pornxs.com,redtube.com,shemaletubevideos.com,therealpornwikileaks.com,xhamster.com,xxxjizz.net,yea.xxx,youngpornvideos.com,yourdailypornstars.com##a[href*=".php"]
+badjojo.com,boysfood.com,celebrity-leaks.net,definebabe.com,efukt.com,eskimotube.com,fantasti.cc,gaytube.com,girlsofdesire.org,imagepix.org,keezmovies.com,madthumbs.com,pornerbros.com,pornxs.com,redtube.com,shemaletubevideos.com,therealpornwikileaks.com,xhamster.com,xxxjizz.net,xxxkingtube.com,yea.xxx,youngpornvideos.com,yourdailypornstars.com##a[href*=".php"]
 xxxporn.pics##a[href*=".solidcams.com?"]
 cfake.com,porn-w.org,porn99.net##a[href*="//bit.ly/"]
 cfake.com##a[href*="//bitly.com/"]
