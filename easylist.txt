@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906080606
+! Version: 201906080617
 ! Title: EasyList
-! Last modified: 08 Jun 2019 06:06 UTC
+! Last modified: 08 Jun 2019 06:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57446,7 +57446,11 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 @@||cdnjs.cloudflare.com^$script,domain=4downfiles.org
 ! strikeout
 $websocket,domain=strikeout.co|strikeout.nu
+@@||cdnfiles.site/js/loadjs.min.js$script,domain=strikeout.co|strikeout.nu
+@@||cdnfiles.site^$image,domain=strikeout.co|strikeout.nu
 @@||chatango.com^$domain=strikeout.co|strikeout.nu
+@@||jsdelivr.net^$script,domain=strikeout.co|strikeout.nu
+@@||kuntv.pw^$script,subdocument,domain=strikeout.co|strikeout.nu
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu
 ! clipconverter.cc
