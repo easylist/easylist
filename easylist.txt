@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906080625
+! Version: 201906080636
 ! Title: EasyList
-! Last modified: 08 Jun 2019 06:25 UTC
+! Last modified: 08 Jun 2019 06:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -32809,6 +32809,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||jdoqocy.com/placeholder-$third-party
 ||jdproject.net^$third-party
 ||jdzw3frs.com^$third-party
+||jeegopte.com^$third-party
 ||jeeh7eet.com^$third-party
 ||jeetyetmedia.com^$third-party
 ||jemmgroup.com^$third-party
@@ -33635,6 +33636,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ottomdisede.club^$third-party
 ||ouloutso.net^$third-party
 ||oultuwee.net^$third-party
+||ouptoobe.net^$third-party
 ||oupushee.com^$third-party
 ||ourbanners.net^$third-party
 ||ourunlimitedleads.com^$third-party
@@ -57444,15 +57446,15 @@ $script,third-party,domain=0dt.net|123videos.tv|171gifs.com|1proxy.de|2ddl.downl
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=olympicstreams.me|vipstand.se
 ! 4downfiles.org
 @@||cdnjs.cloudflare.com^$script,domain=4downfiles.org
-! strikeout
-$websocket,domain=strikeout.co|strikeout.nu
-@@||cdnfiles.site/js/loadjs.min.js$script,domain=strikeout.co|strikeout.nu
-@@||cdnfiles.site^$image,domain=strikeout.co|strikeout.nu
-@@||chatango.com^$domain=strikeout.co|strikeout.nu
-@@||jsdelivr.net^$script,domain=strikeout.co|strikeout.nu
-@@||kuntv.pw^$script,subdocument,domain=strikeout.co|strikeout.nu
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu
+! strikeout / vipleague
+$websocket,domain=strikeout.co|strikeout.nu|vipleague.pw
+@@||cdnfiles.site/js/loadjs.min.js$script,domain=strikeout.co|strikeout.nu|vipleague.pw
+@@||cdnfiles.site^$image,domain=strikeout.co|strikeout.nu|vipleague.pw
+@@||chatango.com^$domain=strikeout.co|strikeout.nu|vipleague.pw
+@@||jsdelivr.net^$script,domain=strikeout.co|strikeout.nu|vipleague.pw
+@@||kuntv.pw^$script,subdocument,domain=strikeout.co|strikeout.nu|vipleague.pw
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu|vipleague.pw
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=strikeout.co|strikeout.nu|vipleague.pw
 ! clipconverter.cc
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=clipconverter.cc
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=clipconverter.cc
@@ -57526,19 +57528,13 @@ $webrtc,domain=ibit.to
 @@||google.com/uds/$script,domain=tamilrockerss.ch
 |http://$script,third-party,domain=tamilrockerss.ch
 |https://$script,third-party,domain=tamilrockerss.ch
-! vipleague
-@@||cdn000.club/js/loadjs.min.js$script,domain=vipleague.pw
-@@||cdn000.club/site/$image,domain=vipleague.pw
-@@||chatango.com^$script,domain=vipleague.pw
-@@||jsdelivr.net^$script,stylesheet,domain=vipleague.pw
-@@||kuntv.pw/embed.min.js$script,domain=vipleague.pw
-@@||kuntv.pw/sdembed?$subdocument,domain=vipleague.pw
-|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=vipleague.pw
-|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=vipleague.pw
 ! ymovies.tv
 @@||ajax.googleapis.com^$script,domain=ymovies.tv
-|http://$script,stylesheet,third-party,domain=ymovies.tv
-|https://$script,stylesheet,third-party,domain=ymovies.tv
+@@||blogspot.com^$image,domain=ymovies.tv
+@@||media-imdb.com^$image,script,domain=ymovies.tv
+@@||tmdb.org^$image,domain=ymovies.tv
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=ymovies.tv
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=ymovies.tv
 ! yify-movies.net
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
@@ -58555,7 +58551,7 @@ javascript:$popup,domain=thepiratebay.cr|thepiratebay.org|thepiratebay.red
 ! More Yavli
 /lxx*.$image,domain=100percentfedup.com|4chan.org|addictinginfo.com|allthingsvegas.com|americasfreedomfighters.com|appleeats.com|askmefast.com|auntyacid.com|barbwire.com|bb4sp.com|bestfunnyjokes4u.com|bighealthreport.com|bigleaguepolitics.com|bizpacreview.com|boomsbeat.com|boredomtherapy.com|breakingfirst.com|breathecast.com|bulletsfirst.net|canadafreepress.com|celebrity-gossip.net|cheapism.com|cheatsheet.com|chicksonright.com|clashamerica.com|clashdaily.com|comicallyincorrect.com|conservativebyte.com|conservativefiringline.com|conservativeintel.com|conservativetribune.com|conservativevideos.com|constitution.com|coviral.com|craigjames.com|crossmap.com|dailyfeed.co.uk|dailyheadlines.com|dailyheadlines.net|dailyhealthpost.com|dailysurge.com|dcdirtylaundry.com|deneenborelli.com|designbump.com|digitaljournal.com|directexpose.com|eaglerising.com|earnthenecklace.com|enstarz.com|faithit.com|firstinfreedomdaily.com|fitnessconnoisseur.com|foreverymom.com|freedomforce.com|freedomoutpost.com|freewarefiles.com|funnyand.com|gamer4k.com|gamerant.com|gamersheroes.com|godfatherpolitics.com|gosocial.co|grammarist.com|greatamericanpolitics.com|greatamericanrepublic.com|gymflow100.com|hackspirit.com|hallels.com|hautereport.com|headcramp.com|healthstatus.com|hispolitica.com|hngn.com|honesttopaws.com|icepop.com|infowars.com|intellectualconservative.com|ipatriot.com|itechpost.com|jobsnhire.com|joeforamerica.com|juicerhead.com|justdiy.com|kdramastars.com|keepandbear.com|knowledgedish.com|kpopstarz.com|lastresistance.com|latinpost.com|legalinsurrection.com|libertyunyielding.com|lidblog.com|lifebuzz.com|madworldnews.com|makeagif.com|menrec.com|mentalflare.com|minutemennews.com|moneyversed.com|myscienceacademy.org|naturalblaze.com|naturalsociety.com|natureworldnews.com|newser.com|newseveryday.com|newsthump.com|o4anews.com|oddee.com|opednews.com|parentherald.com|patriotoutdoornews.com|patriottribune.com|pickthebrain.com|politicalcowboy.com|politicaloutcast.com|politichicks.com|practicallyviral.com|profitconfidential.com|quirlycues.com|readysethealth.com|realfarmacy.com|realmomsrealreviews.com|realtytoday.com|redmaryland.com|reverbpress.com|reviveusa.com|rightwingnews.com|rightwingtribune.com|rollingout.com|rpnewswire.com|sarahpalin.com|sciencetimes.com|shark-tank.com|shedthoselbs.com|sonsoflibertymedia.com|sportsworldnews.com|sportsworldreport.com|stevedeace.com|supercheats.com|survivalnation.com|sweepstakesfanatics.com|techconsumer.com|technobuffalo.com|techtimes.com|telexplorer.com.ar|terezowens.com|theblacksphere.net|theboredmind.com|thedesigninspiration.com|thehayride.com|thelibertydaily.com|themattwalshblog.com|thepolitistick.com|therealside.com|theviralmob.com|thinkamericana.com|threepercenternation.com|tiebreaker.com|tinypic.com|tosavealife.com|traileraddict.com|truththeory.com|truthuncensored.net|universityherald.com|urbantabloid.com|valuewalk.com|vcpost.com|vgpie.com|victoriajackson.com|videogamesblogger.com|viralnova.com|viralthread.com|visiontoamerica.com|wakingtimes.com|whatfinger.com|youthhealthmag.com
 ! Yavli threepercenternation.com
-||threepercenternation.com/RjQWZiVd/
+||threepercenternation.com/dXRcjNfVTS/
 ! Yavli Specific
 @@/wp-content/plugins/akismet/*$script,~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@||4cdn.org/*.js$script,xmlhttprequest,domain=4chan.org
