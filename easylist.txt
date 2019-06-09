@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906090710
+! Version: 201906090718
 ! Title: EasyList
-! Last modified: 09 Jun 2019 07:10 UTC
+! Last modified: 09 Jun 2019 07:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56658,6 +56658,9 @@ $webrtc,domain=ibit.to
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
 ||imageshack.com^$domain=adyou.co|adyou.me
+! nzbstars.com
+|http://$image,script,stylesheet,third-party,domain=nzbstars.com
+|https://$image,script,stylesheet,third-party,domain=nzbstars.com
 ! 1movies
 @@||1movies.is/comments/$~third-party,xmlhttprequest
 @@||1movies.is/series/$~third-party,xmlhttprequest
@@ -58140,6 +58143,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||newsgate.pw^$popup,domain=adjet.biz
 ||nordvpn.$popup,domain=kickass2.ch
 ||nosteam.ro/pma/$popup
+||nyafilmer.com/*.html$popup
 ||oddschecker.com/clickout.htm?type=takeover-$popup
 ||oload.tv^*/_$popup
 ||openload.co^*/_$popup
