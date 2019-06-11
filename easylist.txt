@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906111303
+! Version: 201906111328
 ! Title: EasyList
-! Last modified: 11 Jun 2019 13:03 UTC
+! Last modified: 11 Jun 2019 13:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -38903,6 +38903,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||rxbbddhkl.com^$third-party
 ||rxgbytxipwa.com^$third-party
 ||rxhicseychr.com^$third-party
+||rxksulmbu.com^$third-party
 ||rxysradiyvcp.com^$third-party
 ||ryrrhgpmlif.com^$third-party
 ||ryybhoklizmuew.com^$third-party
@@ -56760,7 +56761,8 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||chatango.com^$domain=stream2watch.ws
 @@||googleapis.com^$script,domain=stream2watch.ws
 @@||jquery.com^$script,domain=stream2watch.ws
-|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=stream2watch.ws
+@@||zencdn.net^$script,stylesheet,domain=stream2watch.ws
+|http*://$image,script,stylesheet,third-party,xmlhttprequest,domain=stream2watch.ws
 ! shink
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
