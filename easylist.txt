@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906130939
+! Version: 201906130953
 ! Title: EasyList
-! Last modified: 13 Jun 2019 09:39 UTC
+! Last modified: 13 Jun 2019 09:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56806,6 +56806,15 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 @@||jquery.com^$script,domain=stream2watch.ws
 @@||zencdn.net^$script,stylesheet,domain=stream2watch.ws
 |http*://$image,script,stylesheet,third-party,xmlhttprequest,domain=stream2watch.ws
+! dotesports.com
+@@||ajax.googleapis.com^$script,domain=dotesports.com
+@@||cdnjs.cloudflare.com^$script,domain=dotesports.com
+@@||dotesports.com^$generichide
+@@||embed.ly^$script,xmlhttprequest,domain=dotesports.com
+@@||quantcast.mgr.consensu.org^$script,domain=dotesports.com
+@@||reddit.com^$xmlhttprequest,domain=dotesports.com
+@@||s0.wp.com/wp-content/$script,domain=dotesports.com
+|http*://$script,third-party,xmlhttprequest,domain=dotesports.com
 ! shink
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
@@ -67352,7 +67361,7 @@ hulu.com##[flashvars^="backgroundURL=http://ads.hulu.com/published/"]
 bunalti.com##[height="90"][width="728"]
 torrentfunk.com,torrentfunk2.com,yourbittorrent2.com##[href*=".an0n."]
 news.softpedia.com##[href*=".php?"] > img[src]
-123moviesfree.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,coinad.com,dailypost.ng,dexerto.com,digitallydownloaded.net,dotmmo.com,ebookw.com,gizmochina.com,goal.com,guidedhacking.com,hlstester.com,limetorrents.info,majorgeeks.com,mydramalist.com,mymp3singer.site,naijaloaded.com.ng,onlinevideoconverter.com,owaahh.com,pcgamesn.com,premiumtimesng.com,retail.org.nz,rustourismnews.com,sh.st,smallseotools.com,sports.yahoo.com,ssbcrack.com,tetris.com,theblaze.com,thehackernews.com,thenationonlineng.net,torrentdownloads.me,ultshare.com,vumafm.co.za,wapking.site,yeyeboyz.net,zmescience.com##[href*="bit.ly/"]
+123moviesfree.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,coinad.com,dailypost.ng,dexerto.com,digitallydownloaded.net,dotesports.com,dotmmo.com,ebookw.com,gizmochina.com,goal.com,guidedhacking.com,hlstester.com,limetorrents.info,majorgeeks.com,mydramalist.com,mymp3singer.site,naijaloaded.com.ng,onlinevideoconverter.com,owaahh.com,pcgamesn.com,premiumtimesng.com,retail.org.nz,rustourismnews.com,sh.st,smallseotools.com,sports.yahoo.com,ssbcrack.com,tetris.com,theblaze.com,thehackernews.com,thenationonlineng.net,torrentdownloads.me,ultshare.com,vumafm.co.za,wapking.site,yeyeboyz.net,zmescience.com##[href*="bit.ly/"]
 monova.to##[href*="https://medictiona.info/"]
 eztv.io##[href] > [id][style*="padding"]
 watchcartoonsonline.la##[href^="/scripts/"]
