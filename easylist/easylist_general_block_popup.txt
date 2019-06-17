@@ -3,6 +3,8 @@
 &popundersPerIP=$popup
 &pppi=*=http$popup
 &program=revshare&$popup
+&r=*&zoneid=$popup
+&rf=*&zoneid=$popup
 &zoneid=*&ad_$popup
 -ads-campaign/$popup
 .co/ads/$popup
@@ -11,11 +13,16 @@
 .com/ads?$popup
 .engine?PlacementId=$popup
 .net/adx.php?$popup
-/?a_aid=$popup
+/?a_aid=*&$popup
+/?cver=0&refer$popup
+/?cver=1&refer$popup
+/?ip=*&zoneid=$popup
 /?placement=*&redirect$popup
 /?pmxy=$popup
+/?r=*&zoneid=$popup
 /?redirect&placement=$popup
 /?reef=$popup
+/?sid=*site_id=*conv_id=$popup
 /?zoneid=*&timeout=$popup
 /a/display.php?$popup
 /ad.php?tag=$popup
@@ -29,6 +36,7 @@
 /adClick/*$popup
 /adClick?$popup
 /AdHandler.aspx?$popup
+/adpreview?$popup
 /ads.htm$popup
 /ads/click?$popup
 /adServe/*$popup
@@ -46,9 +54,15 @@
 /bani/index.php?id=$popup
 /click.track?$popup
 /click?adv=$popup
-/click?pid=*&offer$popup
+/click?pid=*&offer$popup,domain=~checkmoney.com.ua
+/cpm/*?subid_$popup
+/cradver.$popup,third-party
+/dynamic/url/zone?*&pid=$popup,third-party
 /fp.eng?$popup
 /fp.engine?$popup,third-party
+/goads|$popup
+/goad|$popup
+/itab/*&pid=$popup
 /lib/*&adb=$popup
 /lr.php?zoneid=$popup
 /open?shu=$popup
@@ -56,6 +70,7 @@
 /play?aver=$popup
 /play?refer=$popup
 /pop-imp/*$popup
+/popad|$popup
 /popout.$popup
 /popunder.$popup
 /popunder_$popup
@@ -75,6 +90,7 @@
 /rotator.php?$popup
 /servlet/ajrotator/*$popup
 /show?*&refer=$popup
+/show?bver=$popup
 /showads/*$popup
 /spopunder^$popup
 /srvclk.php?$popup
@@ -88,17 +104,23 @@
 ://adv.$popup
 =popunder&$popup
 =popunders&$popup
+=redirect_adv&$popup
 ?ad_domain=$popup
 ?AdUrl=$popup
 ?bannerid=*&punder=$popup
+?bver=1&refer=$popup
+?direct=*&zoneid=$popup
 ?iiadext=$popup
+?partnerkey=*&utm_source=$popup
 ?xref=*&zoneid=$popup
 ?zoneid=*_bannerid=$popup
 _popunder+$popup
+! popupads
+=direct&siteId=*=http$popup
 ! Commonly used popup scripts on movie/tv streaming sites
 |javascript:*setTimeout$popup
 |javascript:*window.location$popup
 ! Used with many websites to generate multiple popups
 |blob:$popup
-|data:text$popup
+|data:text$popup,domain=~clker.com
 |dddata:text$popup
