@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201906231111
+! Version: 201906231125
 ! Title: EasyList
-! Last modified: 23 Jun 2019 11:11 UTC
+! Last modified: 23 Jun 2019 11:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -13578,6 +13578,7 @@ _popunder+$popup
 ###custom-advert-leadboard-spacer
 ###custom-small-ad
 ###customAd
+###customAds
 ###cxnAdrail
 ###d-adCont543x90
 ###d-adCont728x90Inner
@@ -29907,6 +29908,7 @@ revimedia.com#@#a[href*=".revimedia.com/"]
 trust.zone#@#a[href*=".trust.zone"]
 bitrebels.com#@#a[href*="/adrotate-out.php?"]
 theporndude.com#@#a[href*="theporndude.com"]
+pornstarbyface.com#@#a[href^="//awejmp.com/"]
 santander.co.uk#@#a[href^="http://ad-emea.doubleclick.net/"]
 jabong.com,people.com,techrepublic.com,time.com#@#a[href^="http://ad.doubleclick.net/"]
 pcmag.com,watchever.de#@#a[href^="http://adfarm.mediaplex.com/"]
@@ -70738,6 +70740,7 @@ hentaistream.com##div[id^="adx_ad-"]
 celeb.gate.cc##div[id^="bnrrotator_"]
 voyeurhit.com##div[id^="div-ad-"]
 hentaistream.com##div[id^="hs_ad"]
+pornstarbyface.com##div[id^="sponcored-content-"]
 tube8.com##div[id^="tj-zone"]
 pornhub.com,redtube.com,youporn.com,youporngay.com##div[onclick*="bbbp1.com"]
 ceporn.net##div[style="border:4px solid;width:300px;height:250px;background:#7e7e7e;"]
@@ -72511,8 +72514,16 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||zippyshare.com^$generichide
 @@||zstream.to/js/pop.js$domain=zstream.to
 ! csp whitelists
+@@||1337x.to/cat/$csp,~third-party
+@@||1337x.to/home/$csp,~third-party
 @@||1337x.to/login$csp,~third-party
+@@||1337x.to/movie-library/$csp,~third-party
+@@||1337x.to/new-episodes/$csp,~third-party
 @@||1337x.to/register$csp,~third-party
+@@||1337x.to/series-library/$csp,~third-party
+@@||1337x.to/top-100$csp,~third-party
+@@||1337x.to/torrent/$csp,~third-party
+@@||1337x.to/upload$csp,~third-party
 @@||swatchseries.to/latest$csp,~third-party
 @@||swatchseries.to/login$csp,~third-party
 @@||swatchseries.to/new$csp,~third-party
