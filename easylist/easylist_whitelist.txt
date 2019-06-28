@@ -1583,8 +1583,8 @@
 @@||wsj.net^*/images/adv-$image,domain=marketwatch.com
 @@||wsls.com/gmg.static/ads/$script
 @@||www.facebook.com/ad.*^ajaxpipe^$subdocument,~third-party
-@@||www.google.*/aclk?*&adurl=$subdocument,~third-party,domain=google.ca|google.co.in|google.co.nz|google.co.uk|google.com|google.com.au|google.com.eg|google.de|google.es
-@@||www.google.*/search?$subdocument,~third-party,domain=google.ca|google.co.in|google.co.nz|google.co.uk|google.com|google.com.au|google.com.eg|google.de|google.es
+@@||www.google.*/aclk?$~third-party
+@@||www.google.*/search?$~third-party
 @@||www.google.com/ads/preferences/$image,script,subdocument
 @@||www8-hp.com^*/styles/ads/$domain=hp.com
 @@||wz856.com^$domain=nme.com|trustedreviews.com
