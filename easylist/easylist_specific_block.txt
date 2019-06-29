@@ -3303,6 +3303,12 @@ $webrtc,domain=ibit.to
 @@||connect.facebook.net^$script,domain=audioz.download
 |http://$image,script,third-party,domain=audioz.download
 |https://$image,script,third-party,domain=audioz.download
+! ytmp3.cc
+$popup,third-party,domain=ytmp3.cc
+@@||oeaa.cc/check.php$script,domain=ytmp3.cc
+@@||oeaa.cc/progress.php$script,domain=ytmp3.cc
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=ytmp3.cc
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=ytmp3.cc
 ! ymovies.tv
 @@||ajax.googleapis.com^$script,domain=ymovies.tv
 @@||blogspot.com^$image,domain=ymovies.tv
