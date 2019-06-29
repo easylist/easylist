@@ -3303,6 +3303,11 @@ $webrtc,domain=ibit.to
 @@||connect.facebook.net^$script,domain=audioz.download
 |http://$image,script,third-party,domain=audioz.download
 |https://$image,script,third-party,domain=audioz.download
+! youzik.com
+@@||vnadigital.com^$xmlhttprequest,domain=youzik.com
+@@||www.google.com/recaptcha/$subdocument,domain=youzik.com
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=youzik.com
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=youzik.com
 ! ytmp3.cc
 $popup,third-party,domain=ytmp3.cc
 @@||oeaa.cc/check.php$script,domain=ytmp3.cc
