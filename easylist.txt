@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201907081747
+! Version: 201907081757
 ! Title: EasyList
-! Last modified: 08 Jul 2019 17:47 UTC
+! Last modified: 08 Jul 2019 17:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -65940,6 +65940,7 @@ mybroadband.co.za##.partner_post
 411.com##.partner_searches
 ioljobs.co.za##.partner_sites
 freshnewgames.com##.partnercontent_box
+discordbots.org##.partnered
 phorio.com##.partnerlogos-wrapper
 bhg.com##.partnerpromos
 2oceansvibe.com,bundesliga.com,evertonfc.com,freedict.com,juventus.com,letour.fr,nrl.com,pcmag.com,speedcafe.com,tgdaily.com,travelweekly.com,tweetmeme.com,wbj.pl,wilv.com##.partners
@@ -69870,12 +69871,14 @@ bing.com##.pa_list_sbo
 bing.com##.pa_sb
 @@||bing.com/shop^$elemhide
 @@||bing.com^$generichide
+bing.com##a[bdata-uri^="https://www.bing.com/aclk?"]
 bing.com##a[data-uri^="https://www.bing.com/aclk?"]
 bing.com##a[data-url^="https://www.bing.com/aclk?"]
 bing.com##a[href^="https://www.bing.com/aclick?"]
 bing.com##a[href^="https://www.bing.com/aclk?"]
 bing.com#?##b_context > li + li :-abp-has(span.b_adSlug)
 bing.com#?##b_results > li :-abp-has(span.b_aslcp)
+bing.com#?##b_results > li :-abp-has(span.b_aslcpv4)
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 ashemaletube.com###ASHM_imBox_Container
 nudography.com###BannerContainer
@@ -72187,8 +72190,6 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||netdna-cdn.com/banners/$image,domain=arktv.ro
 @@||netupd8.com/webupd8/*/adsense.js$domain=webupd8.org
 @@||netupd8.com/webupd8/*/advertisement.js$domain=webupd8.org
-@@||networkadvertising.org/choices/|$document
-@@||networkadvertising.org/|$document
 @@||networkworld.com/www/js/ads/gpt_includes.js?
 @@||newgrounds.com/ads/ad_medals.gif
 @@||newgrounds.com/ads/advertisement.js
@@ -72276,6 +72277,7 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||optimatic.com/shell.js$domain=pch.com
 @@||optimatic.com^*/shell.swf$object,domain=pch.com
 @@||optimatic.com^*/shell_$object,domain=pch.com
+@@||optout.networkadvertising.org^$document
 @@||oregonlive.com/static/common/js/ads/ads.js
 @@||otakumode.com/shop/titleArea?*_promo_id=$xmlhttprequest
 @@||otrkeyfinder.com/otr/frame*.php?ads=*&search=$subdocument,domain=onlinetvrecorder.com
