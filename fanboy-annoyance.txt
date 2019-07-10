@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201907101313
+! Version: 201907101327
 ! Title: Fanboy's Annoyance List
-! Last modified: 10 Jul 2019 13:13 UTC
+! Last modified: 10 Jul 2019 13:27 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -24422,6 +24422,7 @@ _site_cookie_
 ###gdpr_nav
 ###gdpr_notice
 ###gdpr_overlay
+###gdpr_popin:not()
 ###gdpr_popup_container
 ###gdpr_user_consent_banner
 ###gdprbar
@@ -28866,7 +28867,7 @@ _site_cookie_
 ##.gdn-wrap-mobile
 ##.gdp_cookie_widget
 ##.gdpr-Popup
-##.gdpr-agree
+##.gdpr-agree:not()
 ##.gdpr-agreement-box
 ##.gdpr-alert
 ##.gdpr-ask-modal
@@ -28887,7 +28888,7 @@ _site_cookie_
 ##.gdpr-consent-banner
 ##.gdpr-consent-form
 ##.gdpr-consent-guard-cookie-notice
-##.gdpr-container
+##.gdpr-container:not()
 ##.gdpr-content_blk-indepth
 ##.gdpr-cookie
 ##.gdpr-cookie-alert-wrap
@@ -28912,8 +28913,8 @@ _site_cookie_
 ##.gdpr-hellobar
 ##.gdpr-message
 ##.gdpr-message-banner
-##.gdpr-modal
 ##.gdpr-modal-dialog
+##.gdpr-modal:not()
 ##.gdpr-msg
 ##.gdpr-notice
 ##.gdpr-notice-policy-container
@@ -28926,7 +28927,7 @@ _site_cookie_
 ##.gdpr-overlay
 ##.gdpr-overlay--initial
 ##.gdpr-overlay--video
-##.gdpr-panel
+##.gdpr-panel:not()
 ##.gdpr-pn-container
 ##.gdpr-policy-bar
 ##.gdpr-popup
