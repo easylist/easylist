@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201907101807
+! Version: 201907101825
 ! Title: EasyList
-! Last modified: 10 Jul 2019 18:07 UTC
+! Last modified: 10 Jul 2019 18:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -55910,8 +55910,6 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||oncyprus.com^*/banners/
 ||onlineshopping.co.za/expop/
 ||optics.org/banners/
-||ouo.io/js/pop.
-||ouo.press/js/pop.
 ||paktribune.com^*/banner
 ||pdn-1.com^$domain=arenabg.ch
 ||pe.com^*/biice2scripts.js
@@ -57888,6 +57886,11 @@ $webrtc,domain=m4ufree.com|m4ufree.tv
 ! upload4earn.org
 |http://$script,third-party,domain=uploadbyte.com
 |https://$script,third-party,domain=uploadbyte.com
+! ouo
+$script,third-party,xmlhttprequest,domain=ouo.io|ouo.press
+||ouo.io/js/*.js?
+||ouo.io/js/pop.
+||ouo.press/js/pop.
 ! TPB
 $webrtc,websocket,xmlhttprequest,domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.superproxy.biz|mypirate.cc|noobnoob.rocks|piratebay.tel|piratebay.town|piratebay1.top|piratebayblocked.com|pirateproxy.ch|pirateproxy.live|pirateproxy.rocks|prox1.info|proxyfrom.asia|proxyindia.net|superbay.link|superproxy.biz|thehiddenbay.com|thepiratebay.kiwi|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|tpb.crushus.com|tpb.hid.li|tpb6.ukpass.co|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.org|unblockpirate.uk|unblocktheship.org
 .info^$popup,domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.superproxy.biz|mypirate.cc|noobnoob.rocks|piratebay.tel|piratebay.town|piratebay1.top|piratebayblocked.com|pirateproxy.ch|pirateproxy.live|pirateproxy.rocks|proxyfrom.asia|proxyindia.net|superbay.link|superproxy.biz|thehiddenbay.com|thepiratebay.kiwi|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|tpb.crushus.com|tpb.hid.li|tpb6.ukpass.co|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.org|unblockpirate.uk|unblocktheship.org
@@ -58372,6 +58375,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ! *** easylist:easylist/easylist_specific_block_popup.txt ***
 %3D$popup,domain=nme.com
 .link/$popup,domain=bigfile.to
+/dlads.$popup,domain=ouo.io|ouo.press
 /sendspace-pop.$popup,domain=sendspace.com
 :text^$popup,domain=zippyshare.com
 ^utm_medium=video^$popup,domain=twitch.tv
@@ -58395,7 +58399,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||avalanchers.com/out/$popup
 ||bangstage.com^$popup,domain=datacloud.to
 ||beap.gemini.yahoo.com^$popup,domain=mail.yahoo.com
-||bit.ly^$popup,domain=dexerto.com|gdriveplayer.us|kitguru.com|rapidvideo.org|sh.st
+||bit.ly^$popup,domain=dexerto.com|gdriveplayer.us|kitguru.com|ouo.io|ouo.press|rapidvideo.org|sh.st
 ||casino-x.com^*&promo$popup
 ||channel4.com/ad/$popup
 ||click.aliexpress.com^$popup,domain=multiupfile.com
