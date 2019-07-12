@@ -200,6 +200,7 @@
 .gif?pixels=
 .gif?pixelToken=
 .gif?ref=*&ev=
+.gif?ref=*&url=
 .gif?track_
 .gif?uri=
 .Google.Tracker.js
@@ -612,6 +613,7 @@
 /analytics/hmac-
 /analytics/idg_
 /analytics/js$script
+/analytics/klaviyo_
 /analytics/liferay-
 /analytics/logging
 /analytics/mbox.js
@@ -705,6 +707,7 @@
 /api/pixel?
 /api/stat?
 /api/tracking/*
+/api/v1/collector
 /api/v1/metrics
 /api/v1/stat?
 /api/x.gif?
@@ -840,6 +843,7 @@
 /beacon.html?
 /beacon.js
 /beacon/b.ashx?
+/beacon/baminsights.
 /beacon/event?
 /beacon/metrics
 /beacon/performance?
@@ -1104,6 +1108,7 @@
 /clicky.js
 /client-event-logger.
 /client-event.axd?
+/client-metrics/?target
 /client_pathlog.asp?
 /clientdatacollector/*
 /clientlib-analytics-
@@ -1153,9 +1158,11 @@
 /collect?*&cid=
 /collect?*&tid=
 /collect?callback=
+/collect?data=
 /collect?eid=
 /collect?event=
 /collect?iid=
+/collect?r=
 /collect?tid=
 /collect_data.php?
 /collect_stat.
@@ -1170,6 +1177,7 @@
 /com_joomlawatch/*
 /common/tracker.js
 /competeTracking_test.html?
+/comscore-min.js
 /comscore.
 /comscore/pageview_
 /comscore/streamsense.
@@ -1619,6 +1627,7 @@
 /ft/hit/*
 /FTTrack2.js
 /g-track/*
+/g2insights.
 /g=analytics&
 /g_track.php?
 /ga*.js?PID=
@@ -1945,6 +1954,7 @@
 /ics/2/pview.gif?
 /id?d_visid_ver=$~xmlhttprequest
 /ident/hit.js
+/identify?data=
 /identify?fp=
 /iframe-tracker.js
 /iframe.tracker.js
@@ -2159,6 +2169,7 @@
 /kissmetrics/*
 /KISSmetricsTrackCode.
 /kiwip.js
+/klaviyo_analytics.
 /kontera.js
 /konterayahoooo.
 /kooomo.tracker.
@@ -2308,6 +2319,7 @@
 /logHandler.
 /LogImpression.
 /LogImpression?
+/logImpressions?
 /logLoad/?
 /LogMediaClick?
 /logo.gif?a=
@@ -2646,9 +2658,11 @@
 /packaged-js/trackers.
 /packed.analytics.
 /page-analytics.
+/page-events/trackclick/*
 /page-track.
 /page-view.gif?
 /page.gif?p=
+/page/load?
 /page?referUrl=
 /page_analytics.
 /page_counter.
@@ -2799,6 +2813,7 @@
 /pixel?sm_
 /pixel?tag=
 /pixel?type=
+/pixel_event_data?
 /pixel_iframe.
 /pixel_track.
 /pixel_tracking.
@@ -3387,6 +3402,7 @@
 /stats.gif?
 /stats.hitbox.com/*
 /stats.php?*http
+/stats.php?format=
 /stats.php?type=
 /stats.php?uri=
 /stats/*?category=$image
@@ -3529,6 +3545,7 @@
 /tda.*/in.gif
 /tealeaf.cgi
 /TeaLeaf.js
+/tealeaf.min.js
 /TeaLeafCfg.js
 /TealeafSDK.js
 /TealeafSDKConfig.js
@@ -3647,6 +3664,7 @@
 /track?*&ref=
 /track?browserId
 /track?cb=
+/track?data=
 /track?event=
 /track?name=
 /track?pid=
@@ -3734,6 +3752,7 @@
 /trackEvent.js?
 /trackEvent.min.js?
 /trackga.
+/trackgablocked_
 /trackGAEvents.
 /trackhandler.ashx?
 /trackimage/*
@@ -3852,6 +3871,7 @@
 /trackingCode-
 /trackingCode.js
 /TrackingCookieCheck.
+/TrackingCookieCheck?
 /trackingcookies.
 /TrackingData.
 /trackingDTM.js
@@ -3972,6 +3992,8 @@
 /ultra_track/*
 /umg-analytics/*
 /umt.gif?
+/unbxdAnalytics.
+/unbxdAnalyticsConfig.
 /unica.gif?
 /unica.js
 /unica_$domain=~unica.fi
@@ -4146,6 +4168,7 @@
 /wdg/tracking-
 /wdg_tracking-
 /web-analytics.
+/web-api/log/*
 /web/analytics.$script
 /web_analytics/*
 /web_answertip.
@@ -4470,6 +4493,7 @@ _google_analytics.
 _googleAnalytics.
 _googleAnalytics_
 _gstat.gif?uid=
+_hitcount1.
 _hits_stat.
 _hptag.asis?
 _i2a.js
@@ -4510,6 +4534,7 @@ _quantcast.swf
 _quantcast_tag.
 _resource/analytics.js
 _rpc/log?
+_sa_track/
 _saveUserEventLog.
 _sdctag1_
 _sdctag2.
@@ -4526,6 +4551,7 @@ _Tacoda_
 _tag.ofs.
 _tag_mobylog.
 _track/ad/
+_track/page/
 _tracker-active/
 _tracker.js.
 _tracker.js?
