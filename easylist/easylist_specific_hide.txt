@@ -6330,7 +6330,6 @@ mybroadband.co.za##.partner_post
 411.com##.partner_searches
 ioljobs.co.za##.partner_sites
 freshnewgames.com##.partnercontent_box
-discordbots.org##.partnered
 phorio.com##.partnerlogos-wrapper
 bhg.com##.partnerpromos
 2oceansvibe.com,bundesliga.com,evertonfc.com,freedict.com,juventus.com,letour.fr,nrl.com,pcmag.com,speedcafe.com,tgdaily.com,travelweekly.com,tweetmeme.com,wbj.pl,wilv.com##.partners
@@ -10196,8 +10195,9 @@ socketloop.com##span[data-ez-name]
 newyorker.com##div[class^="Ad_"]
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
-! CSS property filters for Adblock Plus
+! Advanced element hiding rules for Adblock Plus
 webfail.com#?##aside > :-abp-properties(cursor: pointer;)
+discordbots.org#?#.bot-card:-abp-has(.lib:-abp-contains(Promoted))
 freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
 ksl.com#?#.queue:-abp-has(.sponsored)
 multiup.eu,multiup.org#?#.alert:-abp-contains(VPN)
