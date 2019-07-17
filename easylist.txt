@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201907171611
+! Version: 201907171634
 ! Title: EasyList
-! Last modified: 17 Jul 2019 16:11 UTC
+! Last modified: 17 Jul 2019 16:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2253,7 +2253,7 @@
 /adright.$domain=~adright.com
 /adright/*
 /adrightcol.
-/adriver.$~object-subrequest
+/adriver.$~object-subrequest,domain=~adriver.co
 /adriver/*
 /adriver_$~object-subrequest
 /adrobot.$domain=~adrobot.com.au
@@ -69503,6 +69503,7 @@ bitcoinfees.com##p > span[style="color:#aaaaaa; font-size:8pt;"]
 crmbuyer.com,ecommercetimes.com,linuxinsider.com,technewsworld.com##p[style="clear: left;padding: 5px;border-top: solid 1px #cbcbcb;border-bottom: solid 1px #cbcbcb;"]
 lyricsmania.com##p[style="font-size:14px; text-align:center;"]
 history.ca##p[style="height:15px;"]
+pinterest.com#?#.PinRep :-abp-has(div[data-test-id="oneTapPromotedPin"])
 quora.com#?#.question_page_content:-abp-has(div:-abp-contains(ad))
 quora.com#?#.question_page_content:-abp-has(div:-abp-contains(promoted))
 scotch.io#?#div.card:-abp-has(a > span:-abp-contains(Sponsor))
