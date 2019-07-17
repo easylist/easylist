@@ -3505,11 +3505,12 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 ||pixhost.to^$script,~third-party
 ||pixroute.com^$script,~third-party
 ! stream2watch
+$image,script,stylesheet,third-party,xmlhttprequest,domain=stream2watch.ws
+@@||cdn.jsdelivr.net^$script,domain=stream2watch.ws
 @@||chatango.com^$domain=stream2watch.ws
 @@||googleapis.com^$script,domain=stream2watch.ws
 @@||jquery.com^$script,domain=stream2watch.ws
 @@||zencdn.net^$script,stylesheet,domain=stream2watch.ws
-|http*://$image,script,stylesheet,third-party,xmlhttprequest,domain=stream2watch.ws
 ! shink
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
