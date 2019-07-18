@@ -3383,8 +3383,8 @@ $popup,third-party,domain=ytmp3.cc
 |http://$image,script,stylesheet,third-party,xmlhttprequest,domain=torrentfunk.com
 |https://$image,script,stylesheet,third-party,xmlhttprequest,domain=torrentfunk.com
 ! clipwatching.com
-|http://$script,third-party,domain=clipwatching.com
-|https://$script,third-party,domain=clipwatching.com
+@@||bootstrapcdn.com^$script,stylesheet,domain=clipwatching.com
+$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=clipwatching.com
 ! hdmoza.com
 $webrtc,domain=hdmoza.com
 @@||google.com/recaptcha/$script,subdocument,domain=hdmoza.com
