@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201907181851
+! Version: 201907181902
 ! Title: EasyList
-! Last modified: 18 Jul 2019 18:51 UTC
+! Last modified: 18 Jul 2019 19:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57444,6 +57444,8 @@ $script,stylesheet,subdocument,third-party,websocket,xmlhttprequest,domain=estre
 $image,script,stylesheet,third-party,xmlhttprequest,domain=stream2watch.ws
 @@||cdn.jsdelivr.net^$script,domain=stream2watch.ws
 @@||chatango.com^$domain=stream2watch.ws
+@@||cloudfront.net^*.m3u8|$xmlhttprequest,domain=stream2watch.ws
+@@||cloudfront.net^*.ts|$xmlhttprequest,domain=stream2watch.ws
 @@||googleapis.com^$script,domain=stream2watch.ws
 @@||jquery.com^$script,domain=stream2watch.ws
 @@||zencdn.net^$script,stylesheet,domain=stream2watch.ws
