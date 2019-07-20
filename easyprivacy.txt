@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201907201019
+! Version: 201907201123
 ! Title: EasyPrivacy
-! Last modified: 20 Jul 2019 10:19 UTC
+! Last modified: 20 Jul 2019 11:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -563,6 +563,7 @@
 /analytics-assets/*
 /analytics-beacon-
 /analytics-cdn.
+/analytics-core-bundle-
 /analytics-corp.js
 /analytics-dotcom/*
 /analytics-efukt.
@@ -1125,6 +1126,7 @@
 /clicky.js
 /client-event-logger.
 /client-event.axd?
+/client-logging-bundle-
 /client-metrics/?target
 /client_pathlog.asp?
 /clientdatacollector/*
@@ -2737,6 +2739,7 @@
 /pcookie_get_key
 /pcount.asp
 /Peermap/Log/*
+/perfmetrics.js
 /performance.fcgi?
 /performance_timing/log?
 /performance_tracker-
@@ -5429,6 +5432,7 @@ _mongo_stats/
 ||doubleclick.net/pixel?$third-party
 ||doubleclick.net^$image,third-party
 ||doubleclick.net^*/trackimp/$third-party
+||doubleverify.com^$third-party
 ||downture.in^$third-party
 ||dpbolvw.net^$third-party
 ||dps-reach.com^$third-party
@@ -10993,6 +10997,7 @@ _mongo_stats/
 ||trafficfuelpixel.s3-us-west-2.amazonaws.com^
 ||trakksocial.googlecode.com^$third-party
 ||traq.li/tracker/
+||travel-assets.com/datacapture/
 ||travpan.com/out/$third-party
 ||trax.dirxion.com^
 ||trc.pushnami.com^
@@ -12648,6 +12653,9 @@ _mongo_stats/
 ||expatnetwork.com/mtc.js
 ||expbl2ro.xbox.com^
 ||expdb2.msn.com^
+||expedia.*/cl/
+||expedia.*/count?
+||expedia.*/gc/
 ||experiandirect.com/javascripts/tracking.js
 ||experts-exchange.com/pageloaded.jsp?
 ||extremetech.com/sac/mostclicked/$script
