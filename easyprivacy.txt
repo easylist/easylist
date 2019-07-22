@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201907221440
+! Version: 201907221654
 ! Title: EasyPrivacy
-! Last modified: 22 Jul 2019 14:40 UTC
+! Last modified: 22 Jul 2019 16:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1180,10 +1180,12 @@
 /collect?*&cid=
 /collect?*&tid=
 /collect?callback=
+/collect?d=
 /collect?data=
 /collect?eid=
 /collect?event=
 /collect?iid=
+/collect?k=
 /collect?r=
 /collect?tid=
 /collect_data.php?
@@ -2746,6 +2748,7 @@
 /pap.swf?
 /particles/analytics.
 /partner/transparent_pixel-$image
+/partner_tracking_
 /pbasitetracker.
 /PBSTrackingPlugIn.
 /pc-log?
@@ -3862,6 +3865,7 @@
 /tracking/log.php?
 /tracking/open?
 /tracking/pageview.
+/tracking/partner_
 /tracking/pixel.
 /tracking/pixel/*
 /tracking/pixel_
@@ -8521,6 +8525,7 @@ _mongo_stats/
 ||dotmetrics.net^$third-party
 ||xclaimwords.net^$third-party
 ! Czech
+||affilbox.cz^$third-party
 ||analights.com^$third-party
 ||itop.cz^$third-party
 ||lookit.cz^$third-party
@@ -8724,6 +8729,7 @@ _mongo_stats/
 ||cms.lv^$third-party
 ||erotop.lv^$third-party
 ||on-line.lv^$third-party
+||ppdb.pl^$third-party
 ||puls.lv^$third-party
 ||reitingi.lv^$third-party
 ||statistika.lv^$third-party
@@ -8734,6 +8740,8 @@ _mongo_stats/
 ||wos.lv^$third-party
 ! Lithuanian
 ||easy.lv^$third-party
+||maxtraffic.com^$third-party
+||mxapis.com^$third-party
 ||reitingas.lt^$third-party
 ||stats.lt^$third-party
 ||visits.lt^$third-party
@@ -8756,10 +8764,13 @@ _mongo_stats/
 ||adstat.4u.pl^$third-party
 ||caanalytics.com^$third-party
 ||clickmatic.pl^$third-party
+||conversion.pl^$third-party
+||dmdi.pl^$third-party
 ||gostats.pl^$third-party
 ||hub.com.pl^$third-party
 ||i22lo.com^$third-party
 ||inaudium.com^$third-party
+||inistrack.net^$third-party
 ||legenhit.com^$third-party
 ||ngacm.com^$third-party
 ||ngastatic.com^$third-party
@@ -8767,6 +8778,7 @@ _mongo_stats/
 ||p071qmn.com^$third-party
 ||pushdom.co^$third-party
 ||rejestr.org^$third-party
+||sare25.com^$third-party
 ||snrbox.com^$third-party
 ||spolecznosci.net^$third-party
 ||stat.4u.pl^$third-party
@@ -8928,6 +8940,7 @@ _mongo_stats/
 ! Singaporean
 ||blogtraffic.sg^$third-party
 ! Slovak
+||algopine.com^$third-party
 ||idot.cz^$third-party
 ||pocitadlo.sk^$third-party
 ||toplist.sk^$third-party
@@ -9828,6 +9841,7 @@ _mongo_stats/
 ||edge.bredg.com^$third-party
 ||edge.sqweb.com^
 ||edgesuite.net^*/googleanalyt
+||edrone.me/trace?
 ||edrta.mol.im^
 ||edw.insideline.com^$third-party
 ||elb.amazonaws.com/?page=$image
@@ -10958,6 +10972,7 @@ _mongo_stats/
 ||tracker.neon-lab.com^
 ||tracker.roitesting.com^
 ||tracker.seoboost.net^$third-party
+||tracker.softcube.com^
 ||tracker.streamroot.io^
 ||tracker.timesgroup.com^
 ||tracker.twenga.
@@ -11790,13 +11805,18 @@ _mongo_stats/
 ! Persian
 ||analytics.aasaam.com^
 ! Polish
+||analytics.ceneo.pl^
 ||analytics.greensender.pl^$third-party
 ||cafenews.pl/mpl/static/static.js?
 ||fab.interia.pl^
 ||hit.interia.pl^
 ||liczniki.org/hit.php
+||marketing.tr.netsalesmedia.pl^
 ||pixel.homebook.pl^
 ||ppstatic.pl^*/track.js
+||px.wp.pl^
+||qai-ir.quartic.pl^
+||qai.quartic.pl^
 ||rec.quartic.pl^
 ||scontent.services.tvn.pl^
 ||stats.asp24.pl^
