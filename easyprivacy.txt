@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201908060841
+! Version: 201908060910
 ! Title: EasyPrivacy
-! Last modified: 06 Aug 2019 08:41 UTC
+! Last modified: 06 Aug 2019 09:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1774,8 +1774,6 @@
 /gemius1.js
 /gemius_
 /gemiusAudience.
-/gen_204?$image,script
-/generate_204$image
 /generictracking.
 /geo.php?
 /geoAnalysis.js
@@ -4736,6 +4734,10 @@ cgi-bin/counter
 ?proxy=*?pools=
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
+! google tracking
+/client_204?$image,other,script
+/gen_204?$image,other,script
+/generate_204$image,other,script
 ! Adblock tracking
 -logabpstatus.
 /adb.policy.js
@@ -12407,7 +12409,6 @@ _mongo_stats/
 ||booking.com/navigation_times?
 ||booking.com/track_join_app_landing?
 ||boston.com/upixel/
-||box.com/gen204?
 ||brandrepublic.com/session-img/
 ||branica.com/counter.php?
 ||brazzerscontent.com/atlas/
@@ -12941,9 +12942,6 @@ _mongo_stats/
 ||go.theregister.com^$image
 ||golfsmith.com/ci/
 ||google.*/api/sclk?
-||google.*/client_204?
-||google.*/gen204?
-||google.*/gen_204?$~xmlhttprequest
 ||google.*/gwt/x/ts?
 ||google.*/log204?
 ||google.*/logxhraction?
@@ -14618,13 +14616,11 @@ _mongo_stats/
 ||yourfilehost.com/counter.htm
 ||youronlinechoices.com/activity/
 ||yourtv.com.au/share/com/js/fb_google_intercept.js
-||youtube-nocookie.com/*_204?$~xmlhttprequest
 ||youtube-nocookie.com/api/stats/delayplay?
 ||youtube-nocookie.com/api/stats/playback?
 ||youtube-nocookie.com/api/stats/qoe?
 ||youtube-nocookie.com/ptracking?
 ||youtube-nocookie.com/robots.txt?
-||youtube.com/*_204?$~xmlhttprequest
 ||youtube.com/api/stats/ads?
 ||youtube.com/api/stats/delayplay?
 ||youtube.com/api/stats/playback?
