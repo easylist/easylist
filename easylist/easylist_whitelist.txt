@@ -474,16 +474,14 @@
 @@||thetvdb.com/banners/
 @@||theweathernetwork.com/js/ads.js
 @@||tooltrucks.com/banners/$image,~third-party
-@@||tradee.com^$generichide
 @@||translate.google.*/translate_*&q=$~third-party,xmlhttprequest,domain=google.ae|google.at|google.be|google.bg|google.by|google.ca|google.ch|google.cl|google.co.id|google.co.il|google.co.in|google.co.jp|google.co.ke|google.co.kr|google.co.nz|google.co.th|google.co.uk|google.co.ve|google.co.za|google.com|google.com.ar|google.com.au|google.com.br|google.com.co|google.com.ec|google.com.eg|google.com.hk|google.com.mx|google.com.my|google.com.pe|google.com.ph|google.com.pk|google.com.py|google.com.sa|google.com.sg|google.com.tr|google.com.tw|google.com.ua|google.com.uy|google.com.vn|google.cz|google.de|google.dk|google.dz|google.ee|google.es|google.fi|google.fr|google.gr|google.hr|google.hu|google.ie|google.it|google.lt|google.lv|google.nl|google.no|google.pl|google.pt|google.ro|google.rs|google.ru|google.se|google.sk
-@@||translate.google.com/translate/static/*-ads/
 @@||tritondigital.com/adv/$~third-party
 @@||trustedreviews.com^$generichide
 @@||tttcdn.com/advertising/$image,domain=tomtop.com
 @@||ukbride.co.uk/css/*/adverts.css
 @@||upload.wikimedia.org/wikipedia/
 @@||urbanog.com/banners/$image
-@@||v.fwmrm.net/ad/p/1?$domain=abc.go.com|abcfamily.go.com|abcnews.go.com|adultswim.com|cartoonnetwork.com|cc.com|channel5.com|cmt.com|comedycentral.com|crackle.com|eonline.com|flexonline.com|foodnetwork.com|ign.com|logotv.com|mlb.mlb.com|mtv.com|mtvnservices.com|muscleandfitness.com|nascar.com|nbc.com|nbcnews.com|nbcsports.com|ncaa.com|nick.com|player.theplatform.com|simpsonsworld.com|sky.com|southpark.nl|southparkstudios.com|spike.com|teamcoco.com|teennick.com|thedailyshow.com|thingx.tv|today.com|travelchannel.com|tvland.com|uverseonline.att.net|vevo.com|vh1.com|video.cnbc.com|vod.fxnetworks.com|watch.aetnd.com
+@@||v.fwmrm.net/ad/p/1?$domain=cc.com|channel5.com|cmt.com|eonline.com|foodnetwork.com|nbcnews.com|ncaa.com|player.theplatform.com|simpsonsworld.com|sonycrackle.com|today.com
 @@||videotoolbox.com^$generichide
 @@||vidible.tv/prod/$media,object,other
 @@||vidible.tv/stage/$media,object,other
@@ -512,28 +510,8 @@
 @@||yoox.com/img//banner/affiliation/$image,domain=catalogfavoritesvip.com|freeshipping.com|freeshippingrewards.com|habandvipplus.com|inthecompanyofdogsvip.com|naturesjewelryvip.com|northstylevip.com|pyramidcollectionvip.com|serengeticatalogvip.com|travelplus.com
 @@||yourtailorednews.com^$generichide
 @@||youtube.com^*_adsense_$xmlhttprequest
-@@||ytimg.com/yts/img/*/display-ads$image,domain=youtube.com
-@@||ytimg.com/yts/img/channels/*_banner-*.jpg$domain=youtube.com
-@@||ytimg.com/yts/img/channels/*_banner-*.png$domain=youtube.com
-@@||ytimg.com^*/channels4_banner.jpg?$domain=youtube.com
-@@||ytimg.com^*/channels4_banner_hd.jpg?$domain=youtube.com
-@@||yttalk.com/threads/*/add-reply$domain=yttalk.com
-@@||yumenetworks.com/content/static/$domain=dailygames.com
-@@||yumenetworks.com/dynamic_preroll_playlist.vast2xml$domain=contv.com
-@@||zanox-affiliate.de/images/$domain=sunsteps.org
-@@||zanox.com/images//programs/$image,domain=sunsteps.org
-@@||zanox.com/images/programs/$domain=sunsteps.org
-@@||zap2it.com/ads/newsletter/$image,~third-party
-@@||zattoo.com/advertising/channelswitch/$subdocument
-@@||zedo.com/jsc/c5/fhs.js$domain=rrstar.com
-@@||zedo.com/swf/$domain=startv.in
-@@||zemanta.com/plugins/$script,third-party
 @@||zergnet.com^$image,script,stylesheet,domain=ci.craveonline.com|ci.gamerevolution.com|ci.momtastic.com|ci.thefashionspot.com|ci.totallyher.com
-@@||ziehl-abegg.com/images/img_adverts/$~third-party
-@@||zillow.com/ads/FlexAd.htm?did=$subdocument
-@@||zillow.com/widgets/search/ZillowListingsWidget.htm?*&adsize=$subdocument,domain=patch.com
 @@||zippyshare.com^$generichide
-@@||zstream.to/js/pop.js$domain=zstream.to
 ! csp whitelists
 @@||1337x.to/cat/$csp,~third-party
 @@||1337x.to/home/$csp,~third-party
@@ -562,10 +540,6 @@
 ! allow vk.com to confirm age.
 ! https://forums.lanik.us/viewtopic.php?p=131491#p131491
 @@||oauth.vk.com/authorize?
-! propellar ad false positives
-@@||8m5sew59gr.bid^$xmlhttprequest,domain=drudgereport.com
-@@||cdn-surfline.com^*.stream/$xmlhttprequest,domain=surfline.com
-@@||screenshot3.bid^$xmlhttprequest
 ! Yavli
 @@||100percentfedup.com^$generichide
 @@||allenwestrepublic.com^$generichide
@@ -687,16 +661,7 @@
 @@||visiontoamerica.com^$generichide
 @@||youthhealthmag.com^$generichide
 ! Anti-Adblock
-@@.gif#$domain=budget101.com|cbox.ws|dx-tv.com|funniermoments.com|gameurs.net|liveonlinetv247.info|loadlum.com|premiumleecher.com|remo-xp.com|showsport-tv.com|superplatyna.com|turktorrent.cc|ver-flv.com|verdirectotv.com|wallpapersimages.co.uk|wowebook.org|wwe2day.tv|xup.in
-@@.ico#$domain=xup.in|xup.to
-@@.jpg#$domain=bicimotosargentina.com|calcularindemnizacion.es|dragoart.com|galna.org|haxlog.com|idevnote.com|lag10.net|legionpeliculas.org|livrosdoexilado.org|lomeutec.com|mac2sell.net|masfuertequeelhierro.com|max-deportv.info|max-deportv.net|megacineonline.biz|movie1k.net|musicacelestial.net|mypapercraft.net|naasongs.com|play-old-pc-games.com|pxstream.tv|rtube.de|tv-msn.com|wallpapersimages.co.uk
-@@.min.js$domain=ftlauderdalewebcam.com|nyharborwebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com
-@@.png#$domain=amigosdelamili.com|anime2enjoy.com|anizm.com|anonytext.tk|backin.net|bitcoin-cloud.eu|calcularindemnizacion.es|cleodesktop.com|compartiendofull.org|debrastagi.com|debridit.com|debridx.com|dragoart.com|freelive365.com|hubturkey.net|idevnote.com|kwikupload.com|latinomegahd.net|legionprogramas.org|maamp3.com|magesy.be|marketmilitia.org|media1fire.com|media4up.com|mediaplaybox.com|megacineonline.net|minecraft-forum.net|mintmovies.net|mpc-g.com|mundoprogramas.net|myksn.net|nontonanime.org|nornar.com|noticiasautomotivas.com.br|omaredomex.org|oploverz.net|osdarlings.com|pes-patch.com|pocosmegashdd.com|portalzuca.com|portalzuca.net|puromarketing.com|realidadscans.org|sawlive.tv|scriptnulled.eu|short.am|skidrowcrack.com|superanimes.com|superplatyna.com|technoshouter.com|trackitonline.ru|trizone91.com|turkdown.com|tv-msn.com|ulto.ga|unlockpwd.com|uploadex.com|uploadocean.com|url4u.org|vbaddict.net|vencko.net|vidlockers.ag|wolverdon-filmes.com|wowhq.eu
-@@.png?*#$domain=mypapercraft.net
-@@.xzn.ir/$script,third-party,domain=psarips.com
 @@/adBlockDetector/*$~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
-@@/advertisement.js$domain=dramacafe.in|mackolik.com|sahadan.com
-@@/banman/*$script,domain=atlanticcitywebcam.com|ftlauderdalebeachcam.com|ftlauderdalewebcam.com|keywestharborwebcam.com|morganhillwebcam.com|nyharborwebcam.com|portarubawebcam.com|portbermudawebcam.com|portcanaveralwebcam.com|portevergladeswebcam.com|portmiamiwebcam.com|portnywebcam.com
 @@/blockalyzer-adblock-counter/js/advertisement.js$script,~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/wp-content/*/plugins/adblock.js$script,~third-party,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/wp-content/plugins/adblock-notify-by-bweb/js/advertisement.js$script,domain=~calcalist.co.il|~gaytube.com|~mako.co.il|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~walla.co.il|~xtube.com|~ynet.co.il|~youjizz.com|~youporn.com|~youporngay.com
