@@ -16,7 +16,14 @@ poba.hr##.meerkat
 sptv.hr##.scroll-top-arrow
 krovni-nosaci.hr##.topbarBox
 034portal.hr##.vijesti
+||ds-recommender.styria.hr^
 ||linker.hr^$third-party
+||traffic.styria.hr^
+!
+! ---------- Serbian Site Specific Blocking Rules ----------
+!
+||aklamator.com^$third-party
+||espreso.rs/widget?$third-party
 !
 ! ---------- Latvian Site Specific Hiding Rules ----------
 !
@@ -25,6 +32,8 @@ delfi.lv##.after_body
 sputniknewslv.com##.arrowup
 delfi.lv##.notification-widget
 delfi.lv##.sbookmarks
+skaties.lv##.skaties-push-notification
+1a.lv##.up-btn
 !
 ! ---------- Non-english Generic Hiding Rules ----------
 !
@@ -38,6 +47,8 @@ thscore.mobi###returnTop
 kapook.com###totop
 armeniasputnik.am,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-news.ee,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt##.arrowup
 thscore.co##.backTop
+cazin.net##.btn-btt
+avaz.ba##.float-top
 beritaharian.sg##.subscribe
 ||thscore.co^*/backTop.
 ||thscore.mobi^*/top.
@@ -71,10 +82,11 @@ xiachufang.com###scrollTop
 udn.com###story_related
 bcc.com.tw###topx
 huanqiukexue.com###totop
+cna.com.tw##.Subscription
 sputniknews.cn##.arrowup
 wanda.cn##.backtop
 worldjournal.com##.btn-top
-4399.cn,cts.com.tw,digitimes.com.tw,weather.com.cn##.gotop
+4399.cn,cna.com.tw,cts.com.tw,digitimes.com.tw,weather.com.cn##.gotop
 baidu.com##.gotop-button
 sogou.com##.index-top
 hisense.com##.js-return-top
@@ -82,6 +94,7 @@ baike.com##.li-top
 am730.com.hk##.news-pagination
 metrodaily.hk##.rss
 4gtv.tv##.scrollUP
+mtime.com##.topbar
 am730.com.hk##.topic-pagination
 ||4gtv.tv^*/scriptUP.
 !
@@ -325,6 +338,7 @@ bolagsverket.se##div[style^="margin: 0px 0px"]
 !
 ! ---------- Russian Site Specific Hiding Rules ----------
 !
+kinopoisk.ru###GOWrapper
 rzn.info###myNotification
 rbc.ru###popup_box
 rbc.ru###popup_inner
@@ -518,6 +532,7 @@ yahoo.co.jp###RSAB
 tv-tokyo.co.jp###bangumi_page_top
 jti.co.jp###footer-pagetop
 meiji.com###ftr-pagetop
+suumo.jp###js-pageTop
 biglobe.ne.jp,keisei.co.jp###page-top
 tabelog.com###page-up
 girlsheaven-job.net,gnavi.co.jp,harpersbazaar.jp,news24.jp###pageTop
@@ -560,6 +575,7 @@ bloomberg.co.jp##BB-MINI-PLAYER
 ||okjapan.jp^*_gotop_
 ||radionikkei.jp^*/pagetop.
 ||share.gree.jp^$third-party
+||suumo.jp^*/pagetop.
 ||takashimaya.co.jp^*/pagetop.
 ||tweetbuzz.jp^$third-party
 !
@@ -627,6 +643,7 @@ telemundo20.com,telemundo31.com,telemundo40.com,telemundo47.com,telemundo48elpas
 rtve.es##.arrow
 andro4all.com,applesencia.com,atlascultural.com,capitalibre.com,frenomotor.com,placeralplato.com,rootear.com,sportadictos.com,winphonemetro.com,xombit.com,xombitgames.com,xombitmusic.com##.border-button
 economiahoy.mx##.box-sus
+elplural.com##.btn-subscribe
 telesurtv.net##.btnBoletin
 cadenaser.com##.cnt-subir
 cadenaser.com##.cont_webpush
@@ -653,6 +670,7 @@ lanacion.com.ar##.titulares-del-dia
 andro4all.com,applesencia.com,atlascultural.com,capitalibre.com,frenomotor.com,placeralplato.com,rootear.com,sportadictos.com,winphonemetro.com,xombit.com,xombitgames.com,xombitmusic.com##.top-button
 lanacion.com.ar##.twitter
 telcel.com##.up_button
+larepublica.cat##.widget_mailpoet_form
 infobae.com##a[href^="/newsletter/"]
 clarin.com##a[href^="/newsletters/"]
 ||ara.cat^*/newsletters/
@@ -875,11 +893,12 @@ lasicilia.it##.sali
 tempoitalia.it##.scroll
 simplymarket.it##.scroll-top-footer
 assologico.it##.scrollbutton
+ilsole24ore.com##.scta
 nazarenogabrielli.it##.shopress_scroll
 ilfattoquotidiano.it##.side-arrow
 tavoloeditoriradio.it##.sm-up-container
 calciomercato.com,sky.it##.smartbanner
-ilpost.it##.subscribe
+ilglobo.com.au,ilpost.it##.subscribe
 la7.it##.tgla7-condividi
 obi-italia.it##.to-top-nav
 anothersound.it##.to_top
@@ -894,6 +913,7 @@ mader.bz.it##.top_trigger
 peugeot.it##.toplink
 ilvibonese.it##.torna_su
 americantourister.it##.ui-widget-overlay
+lospecialista.tv##.widget_mailpoet_form
 secoloditalia.it##.widget_wpmailup_widget
 inpharmamag.it##.wptbbarheaddiv
 corriere.it##a[href*="/newsletter"]

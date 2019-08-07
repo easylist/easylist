@@ -1,8 +1,6 @@
 -christmasification-
 -copy-paste-blocker/
 -job-widget.
--taboola-article.
--taboola-loader.
 /1pixel.
 /1pxtransparent.
 /1x1.trans.
@@ -22,9 +20,7 @@
 /btnGigpark.
 /btnMobile.
 /cdn-cgi/pe/bag2?*addthis.com
-/cdn-cgi/pe/bag2?*odb.outbrain.com
 /christmas-snow.js
-/components/taboola/*
 /conversional-popup.
 /cx-scrolldepth.js
 /dealsaver/widget/*
@@ -62,7 +58,6 @@
 /mailchimp-iframe/*
 /mobile-welcome-overlay/*$script
 /mobile_top_icon.
-/modulo/taboola/*
 /navicon_ap.gif
 /navigation_scroll_
 /newsgator.gif
@@ -74,8 +69,6 @@
 /Opinion8.min.js
 /opinionlab/*
 /opinionstage-
-/outbrain.js
-/outbrain?
 /pixel_transparent.
 /pixel_trasp.gif?
 /plugins/advanced-browser-check/*$~stylesheet
@@ -104,15 +97,6 @@
 /snowstorm.js
 /snowstorm.min.js
 /surveyShower.
-/taboola-iframe/*
-/taboola.js
-/taboola/footer.
-/taboola/head.
-/taboola_header.
-/taboolaArticleFooter.
-/taboolaArticleHead.
-/taboolaBottomBody.
-/taboolaHead.
 /tapatalkdetect.
 /tellafriend32.
 /thedaywefightback.js
@@ -133,9 +117,30 @@
 /wp-content/plugins/vto_plus/*
 /wp-snow-effect/*
 /yammer_16.
+! Taboola
+-taboola-article.
+-taboola-loader.
+/components/taboola/*
+/modulo/taboola/*
+/taboola-iframe/*
+/taboola.js
+/taboola/footer.
+/taboola/head.
+/taboola_header.
+/taboolaArticleFooter.
+/taboolaArticleHead.
+/taboolaBottomBody.
+/taboolaHead.
+! Outbrain
+/cdn-cgi/pe/bag2?*odb.outbrain.com
+/outbrain-load-
+/outbrain.js
+/outbrain/base?
+/outbrain?
 ! Push Notifications
 -push-notification.
 -push-notification/
+/av/push-
 /build/push.js
 /checkPush.js
 /flying_push.
@@ -149,11 +154,14 @@
 /one-signal.
 /onesignal-modal.
 /onesignal.min.
+/onesignal/manifest.
 /onesignalfix.
 /OneSignalSDKWorker.
 /openpushwoosh_
 /plugins/wp-notification-bars/*
+/push-notification.
 /push-notification/*
+/push-notifications.
 /push-notifications/*
 /push-sw.
 /push-worker-$script
@@ -165,6 +173,7 @@
 /push_notification/*
 /push_notification_
 /push_subscription.
+/push_token_
 /pushes/firebase.
 /pushes/notification.
 /pushly-sdk.
@@ -191,6 +200,7 @@
 /wordpress-fire-push/*
 _push_sw.
 ! Newsletter/Subscribe
+-email-newsletter-
 -footer-newsletter.
 -icon-newsletter.
 -newsletter-300x120.
@@ -198,6 +208,7 @@ _push_sw.
 -Newsletter-button.
 -newsletter-popup.
 -newsletter-subscription-
+-newsletter/popup/
 -newsletterwidget-
 -newsletterwidget.
 -newssletter-V3.
@@ -226,6 +237,9 @@ _push_sw.
 /common/newsletter-
 /Components/newsletter/*
 /content/newsletter/*
+/content/newsletter_
+/edjnewsletter.
+/email-newsletter/*
 /email/subscribe.
 /embeds/newsletter/*
 /emma-content-aggregates-prd.
@@ -233,7 +247,7 @@ _push_sw.
 /esnewsletterad.
 /f_newsletter.
 /footer-newsletter.
-/footer/newsletter_
+/footer/newsletter
 /getnewsletter.
 /ico-subscribe-
 /ico_newsletter.
@@ -303,10 +317,12 @@ _push_sw.
 /newsletter-signup.
 /newsletter-subscribe-
 /newsletter-subscription-
+/Newsletter.asp
 /newsletter/ct-
 /newsletter/icon-
 /newsletter/iscriviti-
 /newsletter/Iscrizione.
+/newsletter/it.
 /newsletter/newsletter-
 /newsletter/newsletter_
 /newsletter/popin/*
@@ -328,6 +344,7 @@ _push_sw.
 /newsletter_icona.
 /newsletter_modal_
 /newsletter_popup/*
+/newsletter_reading_
 /newsletter_small-
 /newsletter_sms/*
 /newsletter_subscribe_
@@ -365,6 +382,7 @@ _push_sw.
 /registrazione/newsletter/*
 /site/newsletter-
 /social/newsletters_
+/sph_newsletter/*
 /static/newsletter.
 /subscribe-buttons.
 /subscribe-newsletter-
@@ -465,6 +483,7 @@ _subscribe_button
 /icon-rss-
 /icon-rss.
 /icon-rss2.
+/icon.rss.
 /icon/rss-
 /icon/rss.
 /icon_16_rss.
@@ -500,6 +519,7 @@ _subscribe_button
 /newsfeed_rss20.
 /picto-rss-
 /pictosRss.
+/podcast-rss1.
 /public/*/rss_
 /Redes_RSS.
 /Rss-128.
@@ -571,7 +591,7 @@ _subscribe_button
 /rssblusmall.
 /rssBtn.
 /rssbutton.
-/rssfeed-85.
+/rssfeed-
 /rssfeed.
 /rssfeed32.
 /rssfeedIcon.
@@ -619,7 +639,9 @@ _rssicon.
 _s_rss_
 _social_rss.
 _xmlrss.
+!
 ! ---------- Scroll To Top Buttons ----------
+!
 -scroll-to-top/
 .ui.totop.
 /avada-to-top.
@@ -645,11 +667,13 @@ _xmlrss.
 /hs.go-to.min.js
 /ic_pagetop.
 /icon_gototop.
+/icon_scrollup.
 /sbtt.js
 /scroll-to-top/*
 /scroll-top-and-bottom/*
 /scroll-top.
 /scroll_top.
+/scrollBtnTop.
 /scrolltop.
 /scrolltop/*
 /scrolltopcontrol.
