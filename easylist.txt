@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201908081127
+! Version: 201908081912
 ! Title: EasyList
-! Last modified: 08 Aug 2019 11:27 UTC
+! Last modified: 08 Aug 2019 19:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3451,13 +3451,13 @@
 /advertises/*
 /advertisewithus_
 /advertising-$domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~microsoft.com|~outbrain.com|~yellowimages.com
-/advertising.$domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.org.il|~advertising.roku.com|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com
+/advertising.$domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr
 /advertising/*$~xmlhttprequest,domain=~advertising.org.il|~commercialplanet.eu|~kloterfarms.com|~temple.edu|~themarker.com
 /advertising02.
 /advertising2.
 /advertising300x250.
 /advertising?
-/advertising_
+/advertising_$domain=~advertising.scoop.co.nz
 /advertisingbanner.
 /advertisingbanner/*
 /advertisingbanner1.
@@ -7129,7 +7129,7 @@
 ://a.ads.
 ://ad.*/jstag^
 ://adcl.$domain=~adcl.com
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
 ://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com
 ://affiliate.$third-party
 ://affiliates.$third-party
@@ -7634,7 +7634,7 @@ _advertisementbar.
 _advertisements/
 _advertisementtxt_
 _advertising.
-_advertising/
+_advertising/$domain=~advertising.scoop.co.nz
 _advertising_header.
 _advertising_iframe.
 _advertisment.
@@ -71832,24 +71832,15 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||ads.eu.com/ads-$~third-party
 @@||ads.exoclick.com/*.js$script,domain=gelbooru.com|thepiratebay.org
 @@||ads.freewheel.tv/|$media,domain=cnbc.com|fxnetworks.com|my.xfinity.com|nbc.com|nbcsports.com
-@@||ads.indeed.com^$~third-party
 @@||ads.muxiv.com/address/$xmlhttprequest
 @@||ads.nationmedia.com/webfonts/$font
-@@||ads.pinterest.com^$~third-party
 @@||ads1.atpclick.com/atpClick.aspx?$image,script,domain=jobnet.co.il|jobs-israel.com
 @@||adsales.snidigital.com/*/ads-config.min.js$script
 @@||adserve.atedra.com/js/$script,domain=repeatmyvids.com
 @@||adserve.atedra.com/vast/wrap.php?$script,domain=repeatmyvids.com
 @@||adserve.atedra.com/zones.php$xmlhttprequest,domain=repeatmyvids.com
 @@||advantabankcorp.com/ADV/$~third-party
-@@||advertising.nzme.co.nz/media/$image,~third-party
-@@||advertising.racingpost.com^$image,script,stylesheet,~third-party,xmlhttprequest
-@@||advertising.scoop.co.nz^
-@@||advertising.utexas.edu^$~third-party
-@@||advertising.vrisko.gr^$~third-party
 @@||advweb.ua.cmu.edu^$~third-party
-@@||adweb.cis.mcmaster.ca^$~third-party
-@@||adweb.pl^$~third-party
 @@||affiliate.kickapps.com/service/
 @@||airplaydirect.com/openx/www/images/$image
 @@||amazon-adsystem.com/aax2/apstag.js$domain=twitch.tv
