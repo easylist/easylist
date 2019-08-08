@@ -3848,8 +3848,8 @@ $subdocument,third-party,domain=vidcloud.icu
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=putlocker.ninja|putlocker.style|putlockers.mn|putlockers.movie
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=putlocker.ninja|putlocker.style|putlockers.mn|putlockers.movie
 ! Depositfiles/Dfiles
-@@||api-secure.solvemedia.com^$domain=depositfiles.com
-@@||api.solvemedia.com^$third-party,domain=depositfiles.com
+@@||api-secure.solvemedia.com^$domain=depositfiles.com|dfiles.eu|dfiles.ru
+@@||api.solvemedia.com^$third-party,domain=depositfiles.com|dfiles.eu|dfiles.ru
 @@||depositfiles.com/api/$xmlhttprequest
 @@||depositfiles.com/get_file.php$xmlhttprequest
 @@||depositfiles.com/gold/$xmlhttprequest
@@ -3858,13 +3858,29 @@ $subdocument,third-party,domain=vidcloud.icu
 @@||depositfiles.com/thumbs/$image,xmlhttprequest
 @@||depositfiles.com/upload/$subdocument
 @@||depositfiles.com^$generichide
-@@||depositvpn.com/api/$xmlhttprequest,domain=depositfiles.com
-@@||depositvpn.com/iframe/$subdocument,domain=depositfiles.com
-@@||google.com/js/bg/$script,domain=depositfiles.com
-@@||google.com/recaptcha/$subdocument,domain=depositfiles.com
+@@||dfiles.eu/api/$xmlhttprequest
+@@||dfiles.eu/get_file.php$xmlhttprequest
+@@||dfiles.eu/gold/$xmlhttprequest
+@@||dfiles.eu/js/$script
+@@||dfiles.eu/thumb/$image,xmlhttprequest
+@@||dfiles.eu/thumbs/$image,xmlhttprequest
+@@||dfiles.eu/upload/$subdocument
+@@||dfiles.eu^$generichide
+@@||dfiles.ru/api/$xmlhttprequest
+@@||dfiles.ru/get_file.php$xmlhttprequest
+@@||dfiles.ru/gold/$xmlhttprequest
+@@||dfiles.ru/js/$script
+@@||dfiles.ru/thumb/$image,xmlhttprequest
+@@||dfiles.ru/thumbs/$image,xmlhttprequest
+@@||dfiles.ru/upload/$subdocument
+@@||dfiles.ru^$generichide
+@@||google.com/js/bg/$script,domain=depositfiles.com|dfiles.eu|dfiles.ru
+@@||google.com/recaptcha/$subdocument,domain=depositfiles.com|dfiles.eu|dfiles.ru
 @@||static.depositfiles.com^$image,script
-|http://$image,script,subdocument,xmlhttprequest,domain=depositfiles.com
-|https://$image,script,subdocument,xmlhttprequest,domain=depositfiles.com
+@@||static.dfiles.eu^$image,script
+@@||static.dfiles.ru^$image,script
+|http://$image,script,subdocument,xmlhttprequest,domain=depositfiles.com|dfiles.eu|dfiles.ru
+|https://$image,script,subdocument,xmlhttprequest,domain=depositfiles.com|dfiles.eu|dfiles.ru
 ! Adreclaim
 @@||ajax.googleapis.com^$script,domain=autoworldnews.com|biohealthinnovation.org|counselheal.com|dolphnsix.com|foodworldnews.com|gamenguide.com|itechpost.com|mobilenapps.com|scienceworldreport.com|travelerstoday.com|universityherald.com|wrestlinginc.com
 @@||cdnjs.cloudflare.com^$script,domain=autoworldnews.com|biohealthinnovation.org|counselheal.com|dolphnsix.com|foodworldnews.com|gamenguide.com|itechpost.com|mobilenapps.com|scienceworldreport.com|travelerstoday.com|universityherald.com
