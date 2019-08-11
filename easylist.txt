@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201908110513
+! Version: 201908110530
 ! Title: EasyList
-! Last modified: 11 Aug 2019 05:13 UTC
+! Last modified: 11 Aug 2019 05:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -29180,6 +29180,8 @@ _popunder+$popup
 ##p[id^="div-gpt-ad-"]
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##topadblock
+! https://github.com/easylist/easylist/issues/3902
+##.partner-loading-shown.partner-label
 ! brave browser overlay ad
 ##.brave-overlay
 ! Mgid
