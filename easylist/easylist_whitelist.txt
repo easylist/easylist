@@ -697,10 +697,6 @@
 @@||fastly.net/ad2/$image,script,xmlhttprequest
 @@||fastly.net/js/*_ads.$script
 ! Whitelists to fix broken pages of advertisers
-! adwolf.eu
-@@||adwolf.eu^$~third-party
-! breitbart
-@@||realvu.net/realvu_*.js$domain=breitbart.com
 ! Facebook
 @@||www.facebook.com/ads/$generichide
 @@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=www.facebook.com
@@ -744,10 +740,6 @@ accounts.google.com#@#.adwords
 www.google.com#@##videoads
 ! YouTube
 @@||youtube.com/yt/js/www-advertise.min.js$domain=youtube.com
-! Mobicow.com
-@@||adcenter.mobicow.com^$~third-party
-! advertising.com
-@@||www.advertising.com^$~third-party
 ! Quantcast.com
 ! http://forums.lanik.us/viewtopic.php?f=64&t=15116&p=53518
 @@||quantcast.com/advertise$domain=quantcast.com
@@ -757,14 +749,10 @@ www.google.com#@##videoads
 @@||dashboard.marketgid.com^$~third-party
 @@||dashboard.mgid.com^$~third-party
 @@||dashboard.tovarro.com^$~third-party
-! Full.Ad
-@@||fullad.com.br^$~third-party
 ! Healthy Advertising (Spanish)
 @@||healthyadvertising.es^$~third-party
 ! Adfox
 @@||adfox.ru^$~third-party
-! Apple (iAd)
-@@||advertising.apple.com^$domain=advertising.apple.com
 ! Adhese
 @@||adhese.com^$~third-party
 ! Openx.com
@@ -774,12 +762,7 @@ www.google.com#@##videoads
 @@||api-merchants.skimlinks.com^
 @@||authentication-api.skimlinks.com^
 ! Microsoft
-@@||ads.bingads.microsoft.com^$domain=ads.bingads.microsoft.com
 @@||ads.microsoft.com^$~third-party
-@@||advertise.bingads.microsoft.com/Includes/$domain=login.live.com
-@@||advertise.bingads.microsoft.com/wwimages/search/global/$image
-@@||advertising.microsoft.com^$~third-party
-@@||bingads.microsoft.com/ApexContentHandler.ashx?$script,domain=bingads.microsoft.com
 ! VK.ru/.com
 @@||api.vigo.ru^*/network_status?$object,xmlhttprequest,domain=vk.com
 @@||paymentgate.ru/payment/*_Advert/
@@ -794,10 +777,6 @@ www.google.com#@##videoads
 @@||vk.com^*/ads.css$domain=vk.com
 @@||vk.me/css/al/ads.css$domain=vk.com
 @@||vk.me/images/ads_$domain=vk.com
-! Mxit
-@@||advertise.mxit.com^$~third-party
-! Sanoma media
-@@||advertising.sanoma.be^$domain=advertising.sanoma.be
 ! AdRoll
 @@||adroll.com^$xmlhttprequest,domain=adroll.com
 @@||app.adroll.com^$generichide
@@ -806,37 +785,22 @@ www.google.com#@##videoads
 @@||teliad.*/advertiser/$~third-party,xmlhttprequest,domain=~gaytube.com|~pornhub.com|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 ! EasyAds
 @@||easyads.eu^$domain=easyads.eu
-! SiteAds
-@@||siteads.com^$domain=siteads.com
 ! Amazon Associates/PartnerNet
 @@||amazon-adsystem.com/e/cm?$document,subdocument,domain=affiliate-program.amazon.co.uk|affiliate-program.amazon.com|affiliate-program.amazon.in|affiliate.amazon.co.jp|afiliados.amazon.es|associados.amazon.com.br|associates.amazon.ca|associates.amazon.cn|partenaires.amazon.fr|partnernet.amazon.de|programma-affiliazione.amazon.it
 @@||amazon-adsystem.com^$domain=affiliate-program.amazon.com
 @@||amazon.com/home/ads/$document,subdocument,domain=affiliate-program.amazon.com
 @@||ssl-images-amazon.com/images/$image,domain=affiliate-program.amazon.co.uk|affiliate-program.amazon.com|affiliate-program.amazon.in|affiliate.amazon.co.jp|afiliados.amazon.es|associados.amazon.com.br|associates.amazon.ca|associates.amazon.cn|partenaires.amazon.fr|partnernet.amazon.de|programma-affiliazione.amazon.it
-! championat.com
-@@||eagleplatform.com/player/$stylesheet,domain=championat.com
 ! Yahoo
-@@||eioservices.marketingsolutions.yahoo.com^$domain=eio.manhattan.yahoo.com
 @@||gemini.yahoo.com/advertiser/$domain=gemini.yahoo.com
 @@||yimg.com/av/gemini-ui/*/advertiser/$domain=gemini.yahoo.com
 ! Twitter
 @@||ads.twitter.com^$domain=ads.twitter.com|analytics.twitter.com
 @@||ton.twimg.com/ads-manager/$domain=twitter.com
 @@||ton.twimg.com^$domain=ads.twitter.com|analytics.twitter.com
-! StumbleUpon
-@@||ads.stumbleupon.com^$popup
-@@||ads.stumbleupon.com^$~third-party
 ! advertise.ru
 @@||advertise.ru^$~third-party
-! acesse.com
-@@||ads.acesse.com^$generichide
-@@||ads.acesse.com^$~third-party
-! integralads.com
-@@||integralplatform.com/static/js/Advertiser/$~third-party
 ! Revealads.com
 @@||revealads.com^$~third-party
-! Adsbox.io
-@@||adsbox.io^$~third-party
 ! Gameloft
 @@||gameloft.com/advertising-$~third-party
 ! Dailymotion
@@ -847,14 +811,8 @@ www.google.com#@##videoads
 @@||ams.amazon.co.uk^$domain=ams.amazon.co.uk
 @@||ams.amazon.com^$domain=ams.amazon.com
 ! Adservice.com
-@@||ad-server.one.com/click?agency=adservice-$domain=adservicemedia.dk
 @@||adservice.com/wp-content/themes/adservice/$~third-party
-@@||adservicemedia.dk/images/$~third-party
-@@||adservicemedia.dk^$generichide
-@@||banners.one.com/bannere/$domain=adservicemedia.dk
 @@||publisher.adservice.com^$domain=publisher.adservice.com
 @@||publisher.adservice.com^$generichide
 ! chameleon.ad
 @@||chameleon.ad/demo/$elemhide
-! Memo2
-@@||ads.memo2.nl^
