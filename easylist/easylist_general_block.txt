@@ -343,7 +343,7 @@
 -doubleclick-plugin/
 -doubleclick.js
 -doubleclick.min.js
--euads.
+-euads.$domain=~euads.org
 -fe-ads/
 -featured-ads.
 -featured-ads/
@@ -582,7 +582,7 @@
 .com/a?size
 .com/ad.$domain=~ad-tuning.de
 .com/ad/$~image,third-party,domain=~mediaplex.com
-.com/ad/$~third-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~online.wsj.com
+.com/ad/$~third-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com
 .com/ad1/
 .com/ad2/
 .com/ad6/
@@ -596,10 +596,10 @@
 .com/adpicture
 .com/ads-
 .com/ads.
-.com/ads/$image,object,subdocument
+.com/ads/$image,object,subdocument,domain=~sabotage-films.com
 .com/ads?
 .com/ads_
-.com/adv/$domain=~advantabankcorp.com
+.com/adv/$domain=~advantabankcorp.com|~archiproducts.com
 .com/adv3/
 .com/adv?
 .com/adv_
@@ -634,7 +634,7 @@
 .eg/ads/
 .es/ads/
 .es/adv/
-.eu/ads/
+.eu/ads/$domain=~scutt.eu
 .eu/adv/
 .exp_ad-
 .fi/ads/
@@ -4548,7 +4548,7 @@
 /eshopoffer.
 /esi/ads/*
 /etology.$domain=~etology.com
-/euads/*
+/euads/*$domain=~euads.org
 /eureka-ads.
 /eureka/eureka.js
 /eureka_ban/*
@@ -5123,7 +5123,7 @@
 /img/ad.
 /img/ad/*
 /img/ad_$domain=~rakuten.co.jp
-/img/ads/*
+/img/ads/*$domain=~save.ca
 /img/adv.
 /img/adv/*
 /img/aff/*
@@ -5746,7 +5746,7 @@
 /overlay_ad_
 /overlayad.$domain=~buliba.pl
 /overlayads.
-/overture.$script,stylesheet,domain=~overture.doremus.org
+/overture.$script,stylesheet,domain=~overture.doremus.org|~overture.london
 /overture/*$script,subdocument
 /overture_
 /ovt_show.asp?
@@ -5914,7 +5914,7 @@
 /pop_under.
 /pop_under/*
 /popad-
-/popad.
+/popad.$domain=~popad.co
 /popads.
 /popads/*
 /popads_
@@ -7899,7 +7899,7 @@ takeover_background.
 takeover_banner_
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
-||com/banners/$image,object,subdocument
+||com/banners/$image,object,subdocument,domain=~thetvdb.com|~tooltrucks.com
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
