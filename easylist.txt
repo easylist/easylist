@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201908151038
+! Version: 201908151115
 ! Title: EasyList
-! Last modified: 15 Aug 2019 10:38 UTC
+! Last modified: 15 Aug 2019 11:15 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3446,7 +3446,7 @@
 /advertisementview/*
 /advertiser.$domain=~advertiser.adverbid.com|~advertiser.autorepairconnect.com|~advertiser.growmobile.com|~advertiser.livthecity.com|~advertiser.vungle.com|~linkpizza.com|~panel.rightflow.com|~trialpay.com|~unity3d.com
 /advertiser/*$domain=~ads.microsoft.com|~affili.net|~affiliprint.com|~bingads.microsoft.com|~linkpizza.com|~mediance.com|~mobileapptracking.com|~trialpay.com
-/advertisers.$image,script,subdocument,domain=~advertisers.adversense.com|~advertisers.careerone.com.au|~advertisers.dk|~advertisers.easyweddings.com.au|~advertisers.io|~advertisers.leadia.ru|~advertisers.ypfboost.ph|~panel.rightflow.com
+/advertisers.$image,script,subdocument,domain=~advertisers.adgoal.de|~advertisers.adversense.com|~advertisers.careerone.com.au|~advertisers.dk|~advertisers.easyweddings.com.au|~advertisers.io|~advertisers.leadia.ru|~advertisers.ypfboost.ph|~panel.rightflow.com
 /advertisers/*$domain=~datalift360.com|~home.tapjoy.com|~panel.rightflow.com|~propelmedia.com|~publisuites.com
 /advertiserwidget.
 /advertises/*
@@ -50193,8 +50193,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||216.21.13.$popup
 ||5.45.79.15^$popup
 ! IP Regex (commonly used, hax'd IP addresses)
-/^https?:\/\/[104\.]{3}[0-9]{1,3}\./$popup,third-party
-/^https?:\/\/[35\.]{3}[0-9]{1,3}\./$popup,third-party
+/^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$popup,third-party
 ! *** easylist:easylist_adult/adult_adservers.txt ***
 ||00zasdf.pw^$third-party
 ||0gw7e6s3wrao9y3q.pro^$third-party
@@ -52568,7 +52567,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||google.com/pagead/
 ||google.com/uds/afs?*adsense$subdocument
 ||googleadapis.l.google.com^$third-party
-||googleapis.com/xxx-mightyparty.appspot.com/$third-party,domain=~cuntwars.com
+||googleapis.com/xxx-mightyparty.appspot.com/$third-party,domain=~cuntwars.com|~nutaku.com|~nutaku.net
 ||googlesyndication.com/ddm/
 ||googlesyndication.com/ima3vpaid?
 ||googlesyndication.com/pagead/
@@ -72053,6 +72052,7 @@ pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width
 @@||cheapoair.ca/desktopmodules/adsales/adsaleshandle.ashx?$xmlhttprequest
 @@||cheapoair.com/desktopmodules/adsales/adsaleshandle.ashx?$xmlhttprequest
 @@||checkerdist.com/product-detail.cfm?*advert_id=$~third-party
+@@||chotot.com/v1/public/user_ads/$xmlhttprequest
 @@||cio.com/www/js/ads/gpt_includes.js
 @@||classifieds.wsj.com/ad/$~third-party
 @@||click2houston.com/gmg.static/ads/$script
