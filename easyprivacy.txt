@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201908172336
+! Version: 201908172357
 ! Title: EasyPrivacy
-! Last modified: 17 Aug 2019 23:36 UTC
+! Last modified: 17 Aug 2019 23:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7247,6 +7247,7 @@ _mongo_stats/
 ||vstats.co^$third-party
 ||vtracker.net^$third-party
 ||vunetotbe.com^$third-party
+||vuukle.com^$third-party
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
 ||waframedia9.com^$third-party
@@ -9565,7 +9566,6 @@ _mongo_stats/
 ||circonus.com/hit?
 ||citygridmedia.com/tracker/
 ||citysearch.com/tracker/
-||clarium.global.ssl.fastly.net^
 ||clearspring.com/at/
 ||clearspring.com/t/
 ||click.appinthestore.com^
@@ -10005,9 +10005,6 @@ _mongo_stats/
 ||fast.appcues.com^
 ||fastcounter.bcentral.com^
 ||fastcounter.onlinehoster.net^
-||fastly.net/collect?
-||fastly.net/gpt/
-||fastly.net/i?
 ||fbpixel.network.exchange^
 ||feed.informer.com/fdstats
 ||feedblitz.com/imp?$third-party
@@ -11304,6 +11301,7 @@ _mongo_stats/
 ||worldssl.net/reporting.js$third-party
 ||wpdigital.net/metrics/
 ||ws.amazon.com/widgets/*=gettrackingid|
+||ws.audioeye.com^
 ||wsb.aracert.com^
 ||wsf.com/tracking/$third-party
 ||wsj.net/MW5/content/analytics/hooks.js
@@ -11325,6 +11323,7 @@ _mongo_stats/
 ||ys.ddns.me^
 ||z.opmnstr.com^$xmlhttprequest
 ||zapcdn.space/zapret.js
+||zdcommerce.io/e2e.js
 ||zdlogs.sphereup.com^
 ||zemanta.com/reblog_*.png$image,third-party
 ||zemanta.com/usersync/outbrain/?
@@ -11334,6 +11333,12 @@ _mongo_stats/
 ||zoover.co.uk/tracking/
 ||zope.net^*/ghs_wa.js
 ||zvsuhljiha-a.akamaihd.net^
+! fastly
+||clarium.global.ssl.fastly.net^
+||fastly.net/collect?
+||fastly.net/gpt/
+||fastly.net/i?
+||fastly.net/sp.js
 ! Suspect trackers (from privacy badger)
 ||connatix.com^$third-party
 ||jsrdn.com/s/cs.js
@@ -12840,7 +12845,6 @@ _mongo_stats/
 ||farsnews.com/stcs.js.aspx?
 ||fast.forbes.com^
 ||fastexercise.com/logging.js
-||fastly.net^*/sp-analytics.min.$domain=spotify.com
 ||favicon.co.uk/stat/
 ||fc2.com/ana/
 ||fc2.com/ana2/
