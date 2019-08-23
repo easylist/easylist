@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201908231041
+! Version: 201908231146
 ! Title: Fanboy's Annoyance List
-! Last modified: 23 Aug 2019 10:41 UTC
+! Last modified: 23 Aug 2019 11:46 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -4416,6 +4416,7 @@ _youtube_social_
 /rodo/messages-
 /rodo/rodo.js
 /rodo_rmf.
+/rodoinfo/*/remodal.js
 /rtiCookieLaw.
 /script-rodo.
 /script_cookie.
@@ -42945,7 +42946,9 @@ unicode.org#@#div[data-nconvert-cookie]
 @@/cookie_law/plugin.js$script,~third-party
 @@/zig_cookiepolicybar/*/CookieBar.js$script,~third-party
 ! https://github.com/ryanbr/fanboy-adblock/issues/721#issuecomment-443395851
-@@/wp-content/plugins/wp-minify/min/?*,wp-content$stylesheet
+! https://github.com/ryanbr/fanboy-adblock/issues/1133
+@@/wp-content/plugins/bwp-minify/min/?*,wp-content$script,stylesheet,~third-party
+@@/wp-content/plugins/wp-minify/min/?*,wp-content$script,stylesheet,~third-party
 ! 
 @@||adobe.com/downloadcenter/*/cookies/cookies.js
 @@||alicdn.com/js/*/cookie-info.js$script
