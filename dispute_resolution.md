@@ -6,8 +6,8 @@
      There will be no guarantee that any filter will be removed, but it'll be stated in comments.
 
      Ticket maybe closed/locked if:
-        (a) Abuse chat (GH / Twitter /FB etc)
-        (b) Disagreements leading to an empass. 
+        (a) Abusive chat (GH / Twitter /FB etc)
+        (b) Disagreements leading to an impass. 
         
      Timeframe of any fix will depend on each ticket.   
      
@@ -22,7 +22,7 @@
 
 
 
-<!-- how is broken? If we visit the site directly whats broken? --> 
+<!-- How is broken? If we visit the site directly whats broken? --> 
 ### How is it broken?
 
 
