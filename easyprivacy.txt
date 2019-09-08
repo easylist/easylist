@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201909072312
+! Version: 201909080114
 ! Title: EasyPrivacy
-! Last modified: 07 Sep 2019 23:12 UTC
+! Last modified: 08 Sep 2019 01:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -405,6 +405,7 @@
 /adb/track.php?
 /adb1.gif?
 /adb_iub.js
+/adblock_logging.
 /AdBlockDetection/scriptForGA.
 /AdCookies.js
 /AdCount/*
@@ -3705,6 +3706,7 @@
 /track-event.
 /track-internal-links.
 /track-opening/*
+/track-page-view.
 /track-referrals.js
 /track.ads/*
 /track.ashx?*=http
@@ -3771,6 +3773,7 @@
 /track_in_overwatch.gif?
 /track_js/?
 /track_metric/*
+/track_outbound_
 /track_pageview?
 /track_proxy?
 /track_social.
@@ -5769,6 +5772,7 @@ _mongo_stats/
 ||fyreball.com^$third-party
 ||gameanalytics.com^$third-party
 ||gammachug.com^$third-party
+||gatorleads.co.uk^$third-party
 ||gaug.es^$third-party
 ||gbotvisit.com^$third-party
 ||gear5.me^$third-party
@@ -8113,6 +8117,7 @@ _mongo_stats/
 ||forecasttiger.com^$third-party
 ||frailoffer.com^$third-party
 ||giddycoat.com^$third-party
+||giraffepiano.com^$third-party
 ||gorgeousground.com^$third-party
 ||greyinstrument.com^$third-party
 ||hammerhearing.com^$third-party
@@ -9314,6 +9319,7 @@ _mongo_stats/
 ||amp-error-reporting.appspot.com^
 ||amplify.outbrain.com^$third-party
 ||amplifypixel.outbrain.com^
+||ampproject.org^*/ww.js
 ||ams.addflow.ru^
 ||an.yandex.ru^
 ||analytic.pho.fm^
@@ -9884,6 +9890,7 @@ _mongo_stats/
 ||d81mfvml8p5ml.cloudfront.net^
 ||d8rk54i4mohrb.cloudfront.net^
 ||d9lq0o81skkdj.cloudfront.net^
+||dadi.technology^$third-party
 ||dagda.vilynx.com^
 ||daq0d0aotgq0f.cloudfront.net^
 ||data.alexa.com^
@@ -9927,7 +9934,7 @@ _mongo_stats/
 ||directnews.co.uk/feedtrack/
 ||dirt.dennis.co.uk^
 ||discovery.com^*/events
-||disqus.com/api/ping?$third-party
+||disqus.com/api/ping
 ||disqus.com/event.js?$script
 ||disqus.com/stats.html
 ||distillery.wistia.com^
@@ -10078,6 +10085,7 @@ _mongo_stats/
 ||flocktory.com^*/tracks/
 ||fluidsurveys-com.fs.cm^$third-party
 ||flux.com/geo.html?
+||fog.pixual.co^
 ||followistic.com/widget/stat/
 ||footballmedia.com/tracking/
 ||forms.aweber.com^*/displays.htm?id=
@@ -10178,6 +10186,7 @@ _mongo_stats/
 ||haymarket.com/injector/deliver/
 ||heals.msgfocus.com^$third-party
 ||hearstmags.com^*/hdm-lib_hearstuser_proxy.html$third-party
+||hearstnp.com/treg.js
 ||heg-cp.com/upm/$third-party
 ||hello.staticstuff.net^
 ||hellobar.com/ping?
@@ -11188,6 +11197,7 @@ _mongo_stats/
 ||tracking2.interweave.com^$third-party
 ||trackingapi.cloudapp.net^
 ||trackingdev.nixxie.com^
+||trackjs.com/agent/$script,third-party
 ||trackjs.com/usage.gif?
 ||trackla.stackla.com^
 ||tracksys.developlabs.net^
@@ -11367,6 +11377,7 @@ _mongo_stats/
 ||woolik.com^*^tracker^
 ||wordpress.com/geo/
 ||worldssl.net/reporting.js$third-party
+||wp.com/i/mu.gif$image
 ||wpdigital.net/metrics/
 ||ws.amazon.com/widgets/*=gettrackingid|
 ||ws.audioeye.com^
@@ -16606,7 +16617,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||samepage.io/assets/lib/google-analytics/GoogleAnalytics.js?
 @@||sbphototours.com/includes/AWStats.js$~third-party
 @@||sbstatic.com.au/js/tealium.js$domain=sportsbet.com.au
-@@||scorecardresearch.com/beacon.js$domain=agame.com|allmusic.com|amctv.com|apl.tv|babycenter.com|bonappetit.com|calgaryherald.com|canada.com|cbc.ca|dailymail.co.uk|deviantart.com|discovery.com|doctoroz.com|edmontonjournal.com|fastcompany.com|financialpost.com|firstwefeast.com|hitfix.com|huffingtonpost.com|investigationdiscovery.com|landandfarm.com|last.fm|leaderpost.com|m.tmz.com|montrealgazette.com|nationalpost.com|newsday.com|ottawacitizen.com|outsideonline.com|radaronline.com|salon.com|sci2.tv|syfy.com|theprovince.com|thestar.com|thestarphoenix.com|thinkatheist.com|tlc.com|tmz.com|v3.co.uk|vancouversun.com|windsorstar.com
+@@||scorecardresearch.com/beacon.js$domain=agame.com|allmusic.com|amctv.com|apl.tv|babycenter.com|bonappetit.com|calgaryherald.com|canada.com|cbc.ca|dailymail.co.uk|dailymotion.com|deviantart.com|discovery.com|doctoroz.com|edmontonjournal.com|fastcompany.com|financialpost.com|firstwefeast.com|hitfix.com|huffingtonpost.com|investigationdiscovery.com|landandfarm.com|last.fm|leaderpost.com|m.tmz.com|montrealgazette.com|nationalpost.com|newsday.com|ottawacitizen.com|outsideonline.com|radaronline.com|salon.com|sci2.tv|syfy.com|theprovince.com|thestar.com|thestarphoenix.com|thinkatheist.com|tlc.com|tmz.com|v3.co.uk|vancouversun.com|windsorstar.com
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_html5.js
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_theplatform.js
 @@||scorecardresearch.com/crossdomain.xml$domain=rte.ie
