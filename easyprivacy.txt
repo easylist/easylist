@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201909091341
+! Version: 201909092250
 ! Title: EasyPrivacy
-! Last modified: 09 Sep 2019 13:41 UTC
+! Last modified: 09 Sep 2019 22:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1575,6 +1575,7 @@
 /events.gif?
 /events/*?event=
 /events/capture?
+/events?*&referrer=
 /events?_trigger=
 /events?data=
 /events?rpId=
@@ -11007,6 +11008,7 @@ _mongo_stats/
 ||tag.brandcdn.com^
 ||tag.email-attitude.com^
 ||tag.myplay.com^
+||tag.rightmessage.com^
 ||tag.rmp.rakuten.com^
 ||tag.sonymusic.com^
 ||tagcdn.com/pix/?
@@ -14554,6 +14556,7 @@ _mongo_stats/
 ||urlcheck.hulu.com^
 ||usage.zattoo.com/?adblock=
 ||usell.com/bug.gif?
+||user-metrics.onthemarket.com^
 ||userfly.com^
 ||usps.com/survey/
 ||ut.ratepoint.com^
@@ -16043,9 +16046,10 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ampproject.org/v0/amp-geo-$script,domain=tasty.co
 @@||ampush.io/js/tracker.js$domain=tunein.com
 @@||analytics.atomiconline.com/services/jquery.js
+@@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=abcnews.go.com
 @@||analytics.edgekey.net/js/brightcove-csma.js$domain=news.com.au
-@@||analytics.edgesuite.net/config/beacon-*.xml$domain=video.foxnews.com
-@@||analytics.edgesuite.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|resignationbrewery.com|threenow.co.nz|video.foxnews.com
+@@||analytics.edgesuite.net/config/beacon-*.xml$domain=foxnews.com
+@@||analytics.edgesuite.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com|resignationbrewery.com|threenow.co.nz
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
 @@||analytics.ooyala.com/static/analytics.js$domain=mashable.com
 @@||analytics.posttv.com/trending-videos-overall.json$domain=washingtonpost.com
@@ -16665,6 +16669,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||static.chartbeat.com/js/chartbeat_mab.js$domain=usatoday.com
 @@||static.parsely.com^$script,domain=dailystar.co.uk|express.co.uk
 @@||static.rpxnow.com/js/lib/rpx.js$domain=colbertnation.com|thedailyshow.com
+@@||staticflickr.com^*/analytics-min.js$domain=flickr.com
 @@||statics.cfmcdn.net/*/scripts/webtrends-$script,domain=cheapflights.com
 @@||stats.g.doubleclick.net/dc.js$domain=doverdowns.com|lifehack.org|maxiclimber.com|merriam-webster.com|toto.co.jp|tripinsurance.ru|vimeo.com
 @@||stats.jtvnw.net/crossdomain.xml$object-subrequest
