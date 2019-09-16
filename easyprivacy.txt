@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201909151900
+! Version: 201909160645
 ! Title: EasyPrivacy
-! Last modified: 15 Sep 2019 19:00 UTC
+! Last modified: 16 Sep 2019 06:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2537,6 +2537,7 @@
 /mongoose.fp.js
 /monitor/log/*
 /monitor?rtype=
+/monitor_analytic.
 /monitus.js
 /monsido.js
 /moose-track.
@@ -16281,6 +16282,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||cbsistatic.com^*/google-analytics.js$domain=cnet.com
 @@||cbsistatic.com^*/tealium.js$domain=cnet.com
 @@||ccom-cdn.com/assets/img/clear.gif?ccom_md5=$domain=credit.com
+@@||cdn-care.com/js/analytics/$script,domain=care.com
+@@||cdn-care.com/js/vendor/yarn_components/amplitude-js/amplitude.min.js$script,domain=care.com
 @@||cdn-redfin.com^*/clicktracker.js$domain=redfin.com
 @@||cdn-redfin.com^*/page_analytics.js$domain=redfin.com
 @@||cdn-redfin.com^*/page_analytics.xd.js
@@ -16501,8 +16504,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||images-iherb.com/js/ga-pro*.js$domain=iherb.com
 @@||img.en25.com/eloquaimages/clients/PentonMediaInc/$image,domain=windowsitpro.com
 @@||imrworldwide.com/crossdomain.xml$object-subrequest,domain=cc.com|sbs.com.au
-@@||imrworldwide.com/novms/*/gg*.js$domain=9now.com.au|bestrecipes.com.au|europafm.com|news.com.au
-@@||imrworldwide.com/v60.js$domain=bestrecipes.com.au|last.fm|musicfeeds.com.au|nzherald.co.nz|realestateview.com.au|sf.se|threenow.co.nz|weatherchannel.com.au
+@@||imrworldwide.com/novms/*/gg*.js$domain=9now.com.au|bestrecipes.com.au|europafm.com|heraldsun.com.au|news.com.au
+@@||imrworldwide.com/v60.js$domain=bestrecipes.com.au|heraldsun.com.au|last.fm|musicfeeds.com.au|nzherald.co.nz|realestateview.com.au|sf.se|threenow.co.nz|weatherchannel.com.au
 @@||imrworldwide.com^*-mediaplayer&$domain=au.launch.yahoo.com
 @@||imrworldwide.com^*/flashdetect.js
 @@||imrworldwide.com^*/swfobject.js
@@ -16817,9 +16820,11 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||tags.bkrtx.com/js/bk-coretag.js$domain=mlb.com
 @@||tags.bluekai.com/site/*?ret=$subdocument,domain=mlb.com|zillow.com
 @@||tags.crwdcntrl.net^$script,domain=indiatimes.com|weather.com
-@@||tags.news.com.au/prod/heartbeat/v2/VideoHeartbeat.min.js
+@@||tags.news.com.au/prod/heartbeat/
 @@||tags.news.com.au/prod/metrics/metrics.js$script,~third-party
+@@||tags.news.com.au/prod/mitas/mitas.js
 @@||tags.news.com.au/prod/nielsen/nielsen.js$script,domain=bestrecipes.com.au
+@@||tags.news.com.au/prod/tad/tad.js
 @@||tags.w55c.net/rs?*&t=marketing$image
 @@||tc.bankofamerica.com/c?
 @@||ted.com/decor/javascript/magnify_stats.js
