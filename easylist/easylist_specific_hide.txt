@@ -10007,7 +10007,7 @@ socketloop.com##span[data-ez-name]
 newyorker.com##div[class^="Ad_"]
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
-! CSS property filters for Adblock Plus
+! Advanced element hiding rules for Adblock Plus
 webfail.com#?##aside > :-abp-properties(cursor: pointer;)
 freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
 ksl.com#?#.queue:-abp-has(.sponsored)
@@ -10022,6 +10022,7 @@ webfail.com#?#:-abp-properties(cursor: pointer; margin-left: *px;)
 webfail.com#?#:-abp-properties(position: relative; width: 728px)
 webfail.com#?#:-abp-properties(text-align: center;) > img
 webfail.com#?#div[style="width:300px;height:auto;margin:30px 0;"] + div
+yaencontre.com#?#.one-col:-abp-has(.adunitContainer)
 yelp.com#?#li[class^="domtags--li"]:-abp-has(a[href^="/adredir?"])
 yelp.com#?#li[class^="lemon--li"]:-abp-contains(Sponsored Results)
 yelp.com#?#li[class^="lemon--li"]:-abp-has(a[href^="/adredir?"])
