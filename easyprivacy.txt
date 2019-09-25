@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201909231105
+! Version: 201909250208
 ! Title: EasyPrivacy
-! Last modified: 23 Sep 2019 11:05 UTC
+! Last modified: 25 Sep 2019 02:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4839,7 +4839,7 @@ cgi-bin/counter
 /projectpoi.min.js
 /rbcmetrika-
 /recordMetricsData.
-/relay/events$xmlhttprequest
+/relay/events|$xmlhttprequest
 /rum_analytics/*
 /safelinkconverter.js
 /scripts/analytics/*
@@ -4852,8 +4852,8 @@ cgi-bin/counter
 /tenant.min.js
 /track/pageview?
 /tracker.bx/*
-/v1/events$other
-/v2/events$other
+/v1/events$other,xmlhttprequest
+/v2/events$other,xmlhttprequest
 /web_miner/*
 /webcoin.js
 /webcoin.min.js
@@ -12811,6 +12811,7 @@ _mongo_stats/
 ||cnt.nicemix.com^
 ||cnt.nuvid.com^
 ||cnt.vivatube.com^
+||co.hltv.org^
 ||codecguide.com/stats.js
 ||codeweblog.com/js/count.js
 ||coherentpath.com/tracker/
@@ -14972,6 +14973,9 @@ _mongo_stats/
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
+! stackoverflow
+/client-timings$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
+/gps/event$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
 ! Mining
 $subdocument,third-party,domain=estream.to
 $websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|2giga.link|7tors.com|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bypassed.ws|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|clipwatching.com|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|dragonballzpolo.blogspot.com|drama-cool.me|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|gofile.io|gomovie123.me|gomovies123.me|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hq-porns.com|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|intactoffers.club|jkanime.net|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|openload.co|openloed.co|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|protect-iframe.com|proxyportal.eu|reactor.cc|replaytvstreaming.com|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tomadivx.tv|tvad.me|unblockall.org|unblocked.gdn|vidoza.net|vidtodo.com|vidtodo.me|vidtodo.pro|vidup.io|vidup.me|vidup.tv|vidzi.tv|void.cat|wallpoper.com|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|zenexplayer.com|zona.plus
@@ -16378,6 +16382,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||criteo.investorroom.com^$domain=criteo.investorroom.com
 @@||crowdscience.com/max-$script,domain=everydayhealth.com
 @@||crowdscience.com/start-$script,domain=everydayhealth.com
+@@||crowdtwist.com/img/$image
 @@||cschat.ebay.com^*/scripts/log.js
 @@||csdata1.com/data/js/$domain=acehardware.com
 @@||csid.com/wp-content/plugins/bwp-minify/min/?*/google-analyticator/$script
@@ -17348,6 +17353,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Polish
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.pl
 @@||akamaized.net^*/tracking/ninja.js$domain=olx.pl
+@@||fastwhitecat.com/wp-content/plugins/duracelltomi-google-tag-manager/$script,domain=fastwhitecat.com
 @@||gemius.pl/gstream.js
 @@||gminazamosc.pl/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js?
 @@||kropka.onet.pl^*/onet.js$domain=tvnwarszawa.pl
@@ -17392,6 +17398,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||megafon.ru/static/?files=*/tealeaf.js
 @@||mts.ru/app/vendor/angular-google-analytics.min.js
 @@||online.bcs.ru^*/piwik.bcs.js$script
+@@||pladform.ru/player$subdocument
 @@||player.fc-zenit.ru/msi/geoip?$xmlhttprequest
 @@||player.vgtrk.com/js/stat.js?
 @@||rtr-vesti.ru/pvc_cdn/js/stat.js$domain=player.vgtrk.com
