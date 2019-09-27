@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201909261414
+! Version: 201909271806
 ! Title: EasyPrivacy
-! Last modified: 26 Sep 2019 14:14 UTC
+! Last modified: 27 Sep 2019 18:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1580,6 +1580,8 @@
 /event?token=
 /event_logger
 /EventhubStats.js
+/eventing/v1/*/current|
+/eventing/v1/*/session|
 /EventLog.axd?
 /eventlog.js
 /eventLogServlet?
@@ -4853,8 +4855,6 @@ cgi-bin/counter
 /tenant.min.js
 /track/pageview?
 /tracker.bx/*
-/v1/events|$other,xmlhttprequest
-/v2/events|$other,xmlhttprequest
 /web_miner/*
 /webcoin.js
 /webcoin.min.js
@@ -13677,6 +13677,7 @@ _mongo_stats/
 ||musicstack.com/livezilla/server.php?request=track
 ||my.com/v1/hit/
 ||myanimelist.net/static/logging.html
+||mydirtyhobby.com/tracker
 ||myfitnesspal.com/assets/mfp_localytics.js
 ||mypaydayloan.com/setc.asp?
 ||mypoints.com/js/*ga.js?
@@ -15299,6 +15300,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||muensterland.de^*/zaehlpixel.php?
 ||multicounter.de^$third-party
 ||musik4fun.com/ga.php?
+||mydirtyhobby.de/tracker
 ||mytoys.de/acv/
 ||myvideo.at/dynamic/mingreport.php$object-subrequest
 ||myvideo.ch/dynamic/mingreport.php$object-subrequest
@@ -15466,6 +15468,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||franceculture.fr/static/js/xtcore-
 ||futura-sciences.com^*/xtcore.js
 ||g.itespresso.fr^
+||galerieslafayette.com/c/
 ||grazia.fr/ea.js
 ||gstat.orange.fr^
 ||hit.leboncoin.fr^
