@@ -13,7 +13,7 @@ env:
 
 # https://docs.travis-ci.com/user/customizing-the-build/#git-clone-depth
 git:
-  depth: 3
+  depth: 10
 
 # https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
 install:
@@ -25,7 +25,7 @@ before_script:
 
 # https://docs.travis-ci.com/user/customizing-the-build/#Customizing-the-Build-Step
 script:
-  - git clone --depth=3 -b gh-pages "https://$GITHUB_TOKEN@github.com/easylist/easylist" output
+  - git clone --depth=10 -b gh-pages "https://$GITHUB_TOKEN@github.com/easylist/easylist" output
   - flrender -i easylist=. easylist.template output/easylist.txt
   - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
   - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
