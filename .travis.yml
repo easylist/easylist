@@ -1,10 +1,21 @@
+dist: bionic
+
 # https://docs.travis-ci.com/user/languages/python/
 language: python
 
-# https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches
+python:
+  - "3.7"
+
+# https://docs.travis-ci.com/user/customizing-the-build/#safelisting-or-blocklisting-branches
 branches:
-  only:
-    - master
+  except:
+    - gh-pages
+
+matrix:
+  fast_finish: true
+
+cache:
+  - pip
 
 # https://docs.travis-ci.com/user/encryption-keys/
 env:
@@ -13,22 +24,24 @@ env:
 
 # https://docs.travis-ci.com/user/customizing-the-build/#git-clone-depth
 git:
-  depth: 3
+  depth: 1
 
 # https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
 install:
   - pip install git+https://github.com/adblockplus/python-abp
+
 before_script:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "TravisCI"
   - git config --global push.default "matching"
 
-# https://docs.travis-ci.com/user/customizing-the-build/#Customizing-the-Build-Step
+# https://docs.travis-ci.com/user/pull-requests/#pull-requests-and-security-restrictions
+
 script:
-  - git clone --depth=3 -b gh-pages "https://$GITHUB_TOKEN@github.com/easylist/easylist" output
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ${TRAVIS_BUILD_DIR}/lint_fop.sh; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git clone --depth=2 -b gh-pages "https://$GITHUB_TOKEN@github.com/${TRAVIS_REPO_SLUG}" output; fi'
   - flrender -i easylist=. easylist.template output/easylist.txt
   - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
   - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
-  - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt  
-  - cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages
-
+  - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt && ls output
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages; fi'
