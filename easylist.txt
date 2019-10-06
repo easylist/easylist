@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201910060340
+! Version: 201910060355
 ! Title: EasyList
-! Last modified: 06 Oct 2019 03:40 UTC
+! Last modified: 06 Oct 2019 03:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -59205,6 +59205,8 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 |ws://$domain=4shared.com
 ! streamplay
 .xyz/$popup,domain=streamplay.to
+@@||google.com/recaptcha/$subdocument,domain=streamplay.to
+@@||spcdn.cc/$image,xmlhttprequest,domain=streamplay.to
 @@||streamplay.to/js/bootstrap.min.js|$script,domain=streamplay.to
 @@||streamplay.to/js/jquery*min.js|$script,domain=streamplay.to
 @@||streamplay.to/js/jquery.cookie.js|$script,domain=streamplay.to
@@ -59214,6 +59216,7 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 @@||streamplay.to/player*/jwplayer.js?$script,domain=streamplay.to
 @@||streamplay.to/player*/jwpsrv.js|$script,domain=streamplay.to
 @@||streamplay.to/player*/lightsout.js|$script,domain=streamplay.to
+@@||streamplay.to/player_clappr/$script,domain=streamplay.to
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ||streamplay.to^$script,domain=streamplay.to
