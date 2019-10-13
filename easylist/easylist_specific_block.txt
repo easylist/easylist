@@ -3277,8 +3277,7 @@ $popup,third-party,domain=ytmp3.cc
 |http://$script,third-party,xmlhttprequest,domain=kimcartoon.to
 |https://$script,third-party,xmlhttprequest,domain=kimcartoon.to
 ! bebi script
-/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
-@@||9anime.nl/user/ajax/$xmlhttprequest,domain=9anime.nl
+/^https?:\/\/([0-9a-z\-]+\.)?(animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
 @@||readcomiconline.to/search/$~third-party,xmlhttprequest
 @@||watchcartoononline.io/tema/images/jwplayer.jpg$image,~third-party
 ! salon.com
@@ -3516,17 +3515,17 @@ $image,script,stylesheet,third-party,domain=stream2watch.ws
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 ! 9anime.vip
-@@||9anime.*/home/ajax/schedule?$~third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-@@||9anime.*/user/ajax/menu-bar?$~third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.nl|9anime.vip
-@@||connect.facebook.net^$script,domain=9anime.nl|9anime.vip
-@@||disqus.com^$domain=9anime.nl|9anime.vip
-@@||disquscdn.com^$domain=9anime.nl|9anime.vip
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.nl|9anime.vip
-@@||googleusercontent.com/gadgets/$image,domain=9anime.nl|9anime.vip
-@@||platform.twitter.com^$script,domain=9anime.nl|9anime.vip
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
+@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||connect.facebook.net^$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||disqus.com^$domain=9anime.one|9anime.tv|9anime.vip
+@@||disquscdn.com^$domain=9anime.one|9anime.tv|9anime.vip
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.tv|9anime.vip
+@@||googleusercontent.com/gadgets/$image,domain=9anime.one|9anime.tv|9anime.vip
+@@||platform.twitter.com^$script,domain=9anime.one|9anime.tv|9anime.vip
+|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
 ||9anime.*/*callback
 ||9anime.*/inc/$script
 ||9anime.*/sw.js
