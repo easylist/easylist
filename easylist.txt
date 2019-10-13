@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201910130800
+! Version: 201910130947
 ! Title: EasyList
-! Last modified: 13 Oct 2019 08:00 UTC
+! Last modified: 13 Oct 2019 09:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -31838,6 +31838,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||ckrf1.com^$third-party
 ||clarityray.com^$third-party
 ||clash-media.com^$third-party
+||class2deal.com^$third-party
 ||class64deal.com^$third-party
 ||claxonmedia.com^$third-party
 ||clayaim.com^$third-party
@@ -50156,6 +50157,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||a8a9455e53fbc75bc995.com^
 ||ae7c783736eb2ff.com^
 ! *** easylist:easylist/easylist_adservers_popup.txt ***
+||0byv9mgbn0.com^$popup
 ||11x11.com^$popup
 ||123vidz.com^$popup,third-party
 ||1phads.com^$popup,third-party
@@ -50949,6 +50951,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||safe-connection21.com^$popup
 ||sasontnwc.net^$popup,~third-party
 ||sconcentpract.info^$popup
+||secondchancetrack.fun^$popup
 ||sectivity.mobi^$popup
 ||secureintl.com^$popup,third-party
 ||securesmrt-dt.com^$popup
@@ -58483,8 +58486,7 @@ $popup,third-party,domain=ytmp3.cc
 |http://$script,third-party,xmlhttprequest,domain=kimcartoon.to
 |https://$script,third-party,xmlhttprequest,domain=kimcartoon.to
 ! bebi script
-/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
-@@||9anime.nl/user/ajax/$xmlhttprequest,domain=9anime.nl
+/^https?:\/\/([0-9a-z\-]+\.)?(animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
 @@||readcomiconline.to/search/$~third-party,xmlhttprequest
 @@||watchcartoononline.io/tema/images/jwplayer.jpg$image,~third-party
 ! salon.com
@@ -58722,17 +58724,17 @@ $image,script,stylesheet,third-party,domain=stream2watch.ws
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 ! 9anime.vip
-@@||9anime.*/home/ajax/schedule?$~third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-@@||9anime.*/user/ajax/menu-bar?$~third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.nl|9anime.vip
-@@||connect.facebook.net^$script,domain=9anime.nl|9anime.vip
-@@||disqus.com^$domain=9anime.nl|9anime.vip
-@@||disquscdn.com^$domain=9anime.nl|9anime.vip
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.nl|9anime.vip
-@@||googleusercontent.com/gadgets/$image,domain=9anime.nl|9anime.vip
-@@||platform.twitter.com^$script,domain=9anime.nl|9anime.vip
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.nl|9anime.vip
+@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||connect.facebook.net^$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||disqus.com^$domain=9anime.one|9anime.tv|9anime.vip
+@@||disquscdn.com^$domain=9anime.one|9anime.tv|9anime.vip
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.tv|9anime.vip
+@@||googleusercontent.com/gadgets/$image,domain=9anime.one|9anime.tv|9anime.vip
+@@||platform.twitter.com^$script,domain=9anime.one|9anime.tv|9anime.vip
+|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
 ||9anime.*/*callback
 ||9anime.*/inc/$script
 ||9anime.*/sw.js
