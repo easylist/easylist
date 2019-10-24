@@ -4925,10 +4925,10 @@ _sdcTrackingCode.
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
 ! google tracking
-/client_204?$image,other,script
-/csi_204?$image,other,script
-/gen_204?$image,other,script
-/generate_204$image,other,script
+/client_204?$image,other,ping,script
+/csi_204?$image,other,ping,script
+/gen_204?$image,other,ping,script
+/generate_204$image,other,ping,script
 ! Adblock tracking
 -logabpstatus.
 /adb.policy.js
