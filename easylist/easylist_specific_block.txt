@@ -3735,7 +3735,8 @@ $third-party,xmlhttprequest,domain=ancensored.com
 ! vidtodo.com
 @@||vidtodo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodoo.com
 @@||vidtodoo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com
-|http*://$image,script,stylesheet,third-party,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
+|http*://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=playtovid.com|vidtodo.com|vidtodoo.com
+||playtovid.com/img/logo.png$popup
 ! firstrow-related
 @@?stream=/embed/*&width=*&height=$script,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|ifirstrowit.eu|webfirstrow.eu
 @@||ajax.googleapis.com^$script,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|ifirstrowit.eu|webfirstrow.eu
