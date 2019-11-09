@@ -3226,10 +3226,11 @@ $webrtc,domain=ibit.to
 @@||disquscdn.com^$domain=otakustream.tv
 @@||fembed.com^$domain=otakustream.tv
 ! vidotodo
-@@||google.com/recaptcha/$script,subdocument,domain=playvidto.com|vidtodo.com|vidtoro.com
-@@||vidtodo.com^$image,script,domain=playvidto.com|vidotodo.com|vidtoro.com
-|http://$image,script,subdocument,third-party,domain=playvidto.com|vidotodo.com|vidtoro.com
-|https://$image,script,subdocument,third-party,domain=playvidto.com|vidotodo.com|vidtoro.com
+@@||google.com/recaptcha/$script,subdocument,domain=playvidto.com|vidtodo.com|vidtoro.com|playedvid.com
+@@||vidtodo.com^$image,script,domain=playvidto.com|vidotodo.com|vidtoro.com|playedvid.com
+@@||fonts.googleapis.com^$stylesheet,domain=playvidto.com|vidotodo.com|vidtoro.com|playedvid.com
+|http://$image,script,subdocument,xmlhttprequest,stylesheet,third-party,domain=playvidto.com|vidotodo.com|vidtoro.com|playedvid.com
+|https://$image,script,subdocument,xmlhttprequest,styleshet,third-party,domain=playvidto.com|vidotodo.com|vidtoro.com|playedvid.com
 ! tamilrockerss.ch
 @@||google.com/complete/search?$script,domain=tamilrockerss.ch
 @@||google.com/cse$script,domain=tamilrockerss.ch
