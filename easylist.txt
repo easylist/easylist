@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201911090950
+! Version: 201911090954
 ! Title: EasyList
-! Last modified: 09 Nov 2019 09:50 UTC
+! Last modified: 09 Nov 2019 09:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3070,7 +3070,7 @@
 /adsoverlay_
 /adsp/*
 /adspa.
-/adspace.
+/adspace.$domain=~adspace.pro
 /adspace/*
 /adspace1.
 /AdSpace160x60.
@@ -17279,7 +17279,6 @@ _popunder+$popup
 ##.A__smallSuperbannerAdvert-main
 ##.AcceptableTextAds
 ##.Accordion_ad
-##.ad-banners
 ##.Ad--header
 ##.Ad--sidebar
 ##.Ad-300x100
@@ -18037,6 +18036,7 @@ _popunder+$popup
 ##.ad-banner-vertical
 ##.ad-banner-wrapper
 ##.ad-banner728-top
+##.ad-banners
 ##.ad-banr
 ##.ad-bar
 ##.ad-below
@@ -61465,12 +61465,12 @@ $script,subdocument,third-party,domain=pornhive.tv
 |https://$script,third-party,xmlhttprequest,domain=updatetube.com
 ! pornhd.com
 $script,domain=pornhd.com
-@@||cdn-static.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdnb-static.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdn-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdnb-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
 @@||cdn-static-cf-s.pornhd.com/pornhd/$script,domain=pornhd.com
+@@||cdn-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
+@@||cdn-static.pornhd.com/pornhd/$script,domain=pornhd.com
 @@||cdnb-static-cf-s.pornhd.com/pornhd/$script,domain=pornhd.com
+@@||cdnb-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
+@@||cdnb-static.pornhd.com/pornhd/$script,domain=pornhd.com
 ! xozilla.com
 @@||awemwh.com^$image,domain=xozilla.com
 @@||cdnjs.cloudflare.com^$script,domain=xozilla.com
