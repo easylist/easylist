@@ -2068,7 +2068,7 @@
 /admarker.
 /admarker_
 /admarket/*
-/adMarketplace.
+/adMarketplace.$domain=~admarketplace.brave.com
 /admarubanners.
 /admarvel.
 /admaster.$domain=~admaster.biz
@@ -3054,7 +3054,7 @@
 /adsoverlay_
 /adsp/*
 /adspa.
-/adspace.
+/adspace.$domain=~adspace.pro
 /adspace/*
 /adspace1.
 /AdSpace160x60.
@@ -4790,6 +4790,7 @@
 /get-ad.
 /get-ad/*
 /get-advert-
+/get-inline-ad
 /get.*/get.$script
 /get.ad?
 /get/ad.
@@ -4944,6 +4945,7 @@
 /googleleads.
 /googlempu.
 /gourmetads-
+/gpt.js$script
 /gpt.min.js
 /gpt_ads-
 /graphics/ad_
@@ -6874,6 +6876,7 @@
 /usernext.
 /utep/ad/*
 /utep_ad.js
+/utils~ads~
 /v1/ads.
 /v1/ads/*
 /v2/ads.
@@ -7150,7 +7153,7 @@
 /~cdn/ads/*
 ://a.ads.
 ://ad.*/jstag^
-://adcl.$domain=~adcl.com
+://adcl.$domain=~adcl.com|~adcl.screenconnect.com
 ://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
 ://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
 ://affiliate.$third-party
@@ -7946,10 +7949,6 @@ takeover_banner_
 /earn.php?z=$popup,subdocument
 ! https://github.com/uBlockOrigin/uAssets/issues/2364
 /pop2.js?*=$script
-! al.ly https://forums.lanik.us/viewtopic.php?f=62&t=36357
-/full-page-script.$script
-/urlshortener.js
-/urlshortener.min.js
 ! Native advert
 /\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Propellerads
@@ -8068,6 +8067,7 @@ _prx/ba_$script
 /prebid1.
 /prebid14.js
 /prebid2.
+/prebid2140.
 /prebid?
 /prebid_$script
 /prodprebidheader-
@@ -8075,6 +8075,7 @@ _prx/ba_$script
 /pubfig.min.js
 /st_prebid.js
 /tagman/*
+_prebid8.
 _prebid_
 ! /g00 adware insertion
 ! https://github.com/uBlockOrigin/uAssets/issues/227
