@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201911182225
+! Version: 201911182226
 ! Title: EasyList
-! Last modified: 18 Nov 2019 22:25 UTC
+! Last modified: 18 Nov 2019 22:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57787,6 +57787,10 @@ $image,script,stylesheet,third-party,domain=stream2watch.ws
 ! filmlinks4u.is
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
+! downloadgameps3.com
+$stylesheet,subdocument,third-party,domain=downloadgameps3.com
+@@||fonts.googleapis.com^$stylesheet,domain=downloadgameps3.com
+@@||www.blogger.com^$stylesheet,domain=downloadgameps3.com
 ! 9anime.vip
 @@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
 @@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
