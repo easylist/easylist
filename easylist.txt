@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201911240013
+! Version: 201911240045
 ! Title: EasyList
-! Last modified: 24 Nov 2019 00:13 UTC
+! Last modified: 24 Nov 2019 00:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -8151,6 +8151,11 @@ _prebid_
 /cdn-cgi/pe/bag?r*pubads.g.doubleclick.net
 ! adinsertion used on gizmodo.in lifehacker.co.in
 /datomata.widget.js
+! domain parking redirection
+/affiliate/referral.asp?site=*&aff_id=$document
+/bdv_rd2.dbm?enparms$document
+/jscheck.php?enc=$xmlhttprequest
+/match-*/mf_*/feed$document
 ! Common adserver string
 /mediahosting.engine$document,script,subdocument
 /Redirect.a2b?$document,script,subdocument
@@ -36212,12 +36217,15 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! Document blocks
 ||7dp6g2rqzn.com^$document
 ||arrlnk.com^$document
+||bemobpath.com^$document
+||bidverdrd.com^$document
 ||buyeasy.by^$document
 ||cbbp1.com^$document
 ||cdaz.icu^$document
 ||clk-can.com^$document
 ||clk-sec.com^$document
 ||cominghamer.info^$document
+||cr-brands.net^$document
 ||dianomi.com^$document
 ||dilruwha.net^$document
 ||discoverredirect.com^$document
@@ -36237,6 +36245,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||hutrcksp.com^$document
 ||infra.systems^$document
 ||intab.site^$document
+||iredirect.net^$document
 ||iyfnzgb.com^$document
 ||letrenhegenmi.pro^$document
 ||lltrsknoob.click^$document
@@ -36246,13 +36255,16 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||outhulem.net^$document
 ||parronnotandone.info^$document
 ||premium-members.com^$document
+||privacysearching.com^$document
 ||redirectgang.com^$document
 ||reroplittrewheck.pro^$document
+||rsalcch.com^$document
 ||rsalcdp.com^$document
 ||rtmark.net^$document
 ||rtpdn10.com^$document
 ||runtnc.net^$document
 ||safe-connection21.com^$document
+||scenbe.com^$document
 ||securesmrt-dt.com^$document
 ||slideff.com^$document
 ||stream-all.com^$document
@@ -36260,6 +36272,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||syndication.exosrv.com^$document
 ||tncred.com^$document
 ||trackerislive.com^$document
+||trellian.com^$document
 ||tspops.com^$document
 ||tukuterus.com^$document
 ||vcommission.com^$document
@@ -51732,6 +51745,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||safe-connection21.com^$popup
 ||sagimedyer.xyz^$popup,third-party
 ||sasontnwc.net^$popup,~third-party
+||scenbe.com^$popup
 ||sconcentpract.info^$popup
 ||secondchancetrack.fun^$popup
 ||sectivity.mobi^$popup
@@ -51844,6 +51858,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||trafyield.com^$popup
 ||traktrafficflow.com^$popup,third-party
 ||trcklks.com^$popup
+||trellian.com^$popup
 ||trfsltions.info^$popup
 ||trido.club^$popup,third-party
 ||trklnks.com^$popup,third-party
