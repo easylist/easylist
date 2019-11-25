@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201911251113
+! Version: 201911251131
 ! Title: EasyPrivacy
-! Last modified: 25 Nov 2019 11:13 UTC
+! Last modified: 25 Nov 2019 11:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -416,6 +416,7 @@
 /ad/statistic
 /ad_1_trans.
 /ad_imp.
+/ad_tracking.
 /adam.js
 /AdAppSettings/*
 /adb/track.php?
@@ -3075,6 +3076,7 @@
 /prime-email-metrics/*$image
 /printpixel.js
 /printtracker.js
+/prismPixel/*
 /prn.google.analytics.
 /prnx_track.
 /pro-ping.php?
@@ -12349,6 +12351,8 @@ _mongo_stats/
 ||cafe24.com/weblog.js
 ||log.cizion.com^
 ||log2.adop.cc^
+||mtag.mman.kr^
+||performanceplay.co.kr^
 ||recobell.io/rest/logs?
 ||teralog.techhub.co.kr^
 ||tracking.adweb.co.kr^$third-party
@@ -16232,6 +16236,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||naver.com/PostView.nhn?$image
 ||nil.naver.com^
 ||pb.m.naver.com^
+||prism.pandora.tv^
 ||seoul.co.kr/weblog/
 ||sp.naver.com^
 ||track.tiara.daum.net^
@@ -16978,6 +16983,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||sanspo.com/parts/chartbeat/$xmlhttprequest
 ! Korean
 @@||naver.net/wcslog.js$domain=m.tv.naver.com
+@@||vod.midas-i.com^$media,domain=pandora.tv
 ! Latvian
 @@/webtracking/*$domain=pasts.lv
 @@||eveselibaspunkts.lv/js/global/fingerprint2.min.js?
