@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201912060700
+! Version: 201912060704
 ! Title: EasyPrivacy
-! Last modified: 06 Dec 2019 07:00 UTC
+! Last modified: 06 Dec 2019 07:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5036,6 +5036,7 @@ _sdcTrackingCode.
 ! google tracking
 /client_204?$image,other,ping,script
 /csi_204?$image,other,ping,script
+/gen204?$image,other,ping,script
 /gen_204?$image,other,ping,script
 /generate_204$image,other,ping,script
 ! Adblock tracking
@@ -13537,6 +13538,7 @@ _mongo_stats/
 ||google.*/gwt/x/ts?
 ||google.*/log204?
 ||google.*/logxhraction?
+||google.*/ping?
 ||google.*/stats?frame=
 ||google.com/_/DotsSplashUi/browserinfo
 ||google.com/appserve/mkt/img/*.gif
