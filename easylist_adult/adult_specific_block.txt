@@ -1002,10 +1002,11 @@ $script,subdocument,third-party,domain=efukt.com
 |http://$script,third-party,xmlhttprequest,domain=xmoviesforyou.com
 |https://$script,third-party,xmlhttprequest,domain=xmoviesforyou.com
 ! rule34hentai.net
+@@||code.jquery.com^$script,domain=rule34hentai.net
 @@||rule34hentai.net/data/cache/$script
 |http://$script,third-party,xmlhttprequest,domain=rule34hentai.net
 |https://$script,third-party,xmlhttprequest,domain=rule34hentai.net
-||rule34hentai.net^$script,~third-party
+||rule34hentai.net^$script,subdocument,~third-party
 ! txxx.com
 @@||ahcdn.com^$xmlhttprequest,domain=txxx.com
 @@||ajax.googleapis.com^$domain=txxx.com
