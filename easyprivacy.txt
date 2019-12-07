@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 201912071058
+! Version: 201912071114
 ! Title: EasyPrivacy
-! Last modified: 07 Dec 2019 10:58 UTC
+! Last modified: 07 Dec 2019 11:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1284,6 +1284,7 @@
 /comscore_engine.
 /comscore_stats.
 /comscorebeacon.
+/comscorepageviewcomscorekw=
 /ComScorePlugin.
 /ComScoreSWF.
 /concat/tracking.
@@ -12261,6 +12262,7 @@ _mongo_stats/
 ! Estonian
 ||counter.zone.ee^$third-party
 ! Finnish
+||almamedia.fi^*/scroll-monitor.min.js
 ||inpref.s3.amazonaws.com^$third-party
 ||insight.fonecta.fi^
 ||sestatic.fi^*/zig.js
@@ -16187,7 +16189,10 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||webstatistieken.xs4all.nl^
 ! Finnish
 ||analytics.sanoma.fi^
+||dp.alma.iltalehti.fi/v1/cookie
+||events.il.fi^
 ||huuto.net/js/analytic/
+||ilcdn.fi^*/Bootstrap.js
 ||mtv3.fi/remarketing.js
 ||stat.mtv3.fi^
 ||ts.fi^*/spring.js
