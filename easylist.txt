@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201912080611
+! Version: 201912080653
 ! Title: EasyList
-! Last modified: 08 Dec 2019 06:11 UTC
+! Last modified: 08 Dec 2019 06:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -58293,7 +58293,7 @@ $csp=worker-src 'none',domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.sup
 ||convertcase.net^$csp=script-src 'self' * blob: data:
 ||convertfiles.com^$csp=script-src 'self' * 'unsafe-inline'
 ||csgolounge.com^$csp=script-src 'self' * 'unsafe-inline'
-||eztv.io^$csp=script-src 'self' 'unsafe-inline'
+||eztv.io^$csp=script-src 'self' 'unsafe-inline' *.cloudflare.com *.googleapis.com *.facebook.net
 ||freebeacon.com^$csp=script-src 'self' * blob: data:
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gelbooru.com^$csp=script-src 'self' * 'unsafe-inline' *.gstatic.com *.google.com *.googleapis.com *.bootstrapcdn.com
@@ -59889,6 +59889,7 @@ lifenews.com###cta
 designtaxi.com###div-center-wrapper
 designtaxi.com###dt-small-sub-2
 designtaxi.com###dt-small-sub-3
+eztv.io,eztv.tf,eztv.yt###e40f08c607ae13f7af47fde248d904c6
 idlebrain.com###footer
 cd1025.com###hp-leader
 designtaxi.com###in-news-link-1
@@ -67535,7 +67536,6 @@ youtube.com##YTM-PROMOTED-VIDEO-RENDERER
 incredimail.com##[autoid="sponsoredLinks"]
 op.gg,torrentz2.eu,torrentz2.is##[class*="Ad"]
 op.gg##[class*="Notice"]
-eztv.io##[class] + * + table[style][width]
 monova.org##[class] > div + span[class]
 uploadocean.com##[class][src][alt]
 tubeoffline.com##[class][style] > a[href][data-hash]
@@ -67751,7 +67751,6 @@ time4hemp.com##a[href="https://www.seriousseeds.com/"]
 allmyvideos.net##a[href] > img[id]
 crackingpatching.com##a[href][onclick][rel]
 horriblesubs.info,naturalnews.com,naturalnewsblogs.com##a[href][rel="nofollow"]
-eztv.io##a[href][target="_blank"]
 rarbg.to,rarbg.unblockall.org,rarbgaccess.org,rarbgmirror.com,rarbgmirror.org,rarbgmirror.xyz,rarbgproxy.com,rarbgproxy.org,rarbgunblock.com##a[href][target="_blank"] > button
 idm-crack-patch.com##a[href^=" http://backkeyconsole.com/"]
 akstream.video##a[href^="../hd/movie.php?"]
@@ -69370,7 +69369,6 @@ chinapost.com.tw##table[cellspacing="0"][cellpadding="0"][border="0"][width="300
 iwebtool.com##table[cellspacing="0"][cellpadding="0"][border="1"]
 chinapost.com.tw##table[cellspacing="1"][cellpadding="1"][bgcolor="#DD0000"][width="120"]
 tdpri.com##table[cellspacing="2"][width="860"]
-eztv.io##table[class] + * + * + table[width]
 hotonlinenews.com,skyandtelescope.com##table[height="100"]
 airlinequality.com##table[height="110"][width="740"]
 empireonline.com##table[height="130"]
@@ -69477,7 +69475,6 @@ cbc-radio.com##table[width="990"][height="100"][align="center"]
 965ksom.com##table[width="990"][height="101"]
 wbrn.com##table[width="990"][height="98"]
 eztv.io##td > a[href][rel="noindex"]
-eztv.io##td > a[href][style]
 findagrave.com##td[align="center"] > style + .search-widget
 autosport.com##td[align="center"][valign="top"][height="266"][bgcolor="#dcdcdc"]
 coffeegeek.com##td[align="center"][width="100%"][valign="middle"]
