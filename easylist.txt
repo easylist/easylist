@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201912160749
+! Version: 201912160845
 ! Title: EasyList
-! Last modified: 16 Dec 2019 07:49 UTC
+! Last modified: 16 Dec 2019 08:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -33515,6 +33515,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||innity.com^$third-party
 ||innity.net^$third-party
 ||innovid.com^$third-party
+||inpagepush.com^$third-party
 ||insideall.com^$third-party
 ||insightexpress.com^$third-party
 ||insightexpressai.com^$third-party
@@ -57257,12 +57258,15 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|321jav.com|4downfiles.org|
 @@||youtube.com/iframe_api$third-party
 @@||youtube.com/player_api$third-party
 ! olympicstreams / vipstand
+@@||cdn.staticdata.site^$image,domain=olympicstreams.me|vipstand.se
 @@||cdn000.club/js/loadjs.min.js$script,domain=olympicstreams.me|vipstand.se
 @@||cdn000.club/site/$image,domain=olympicstreams.me|vipstand.se
 @@||chatango.com^$script,domain=olympicstreams.me|vipstand.se
+@@||jodata.site^$subdocument,domain=olympicstreams.me|vipstand.se
 @@||jsdelivr.net^$script,stylesheet,domain=olympicstreams.me|vipstand.se
 @@||kuntv.pw/embed.min.js$script,domain=olympicstreams.me|vipstand.se
 @@||kuntv.pw/sdembed?$subdocument,domain=olympicstreams.me|vipstand.se
+@@||staticdata.site/js/loadjs.min.js$script,domain=olympicstreams.me|vipstand.se
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=olympicstreams.me|vipstand.se
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=olympicstreams.me|vipstand.se
 ! https://publicwww.com/websites/%22cloudfront.net%2Fscript.js%22/
