@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201912182121
+! Version: 201912182123
 ! Title: EasyList
-! Last modified: 18 Dec 2019 21:21 UTC
+! Last modified: 18 Dec 2019 21:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -58619,6 +58619,8 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"]
 bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
 ! jetzt.de
 @@||jetzt.de^$generichide
+! Rewrite to internal resources rules for Adblock Plus
+||slacker.com^*/getspot/?spotid=$media,rewrite=abp-resource:blank-mp3,domain=slacker.com
 ! *** easylist:easylist/easylist_specific_block_popup.txt ***
 $popup,third-party,domain=prettyfast.to
 %3D$popup,domain=nme.com
