@@ -1148,6 +1148,10 @@ $third-party,xmlhttprequest,domain=ancensored.com
 ! upload.ac
 |http://$script,third-party,xmlhttprequest,domain=upload.ac
 |https://$script,third-party,xmlhttprequest,domain=upload.ac
+! gdtot.com
+$script,third-party,xmlhttprequest,domain=gdtot.com
+@@||ajax.googleapis.com/ajax/libs/$script,domain=gdtot.com
+@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=gdtot.com
 ! gelbooru.com
 /^https?:\/\/[\w.-]*gelbooru\.com.*[a-zA-Z0-9?!=@%#]{40,}/$image,other,domain=gelbooru.com
 @@||ads.exosrv.com^$script,domain=gelbooru.com
