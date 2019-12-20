@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201912200544
+! Version: 201912200602
 ! Title: EasyList
-! Last modified: 20 Dec 2019 05:44 UTC
+! Last modified: 20 Dec 2019 06:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30687,6 +30687,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||aa24h.com^$third-party
 ||aaadealstoday.com^$third-party
 ||aaddcount.com^$third-party
+||aamapi.com^$third-party
 ||aaxads.com^$third-party
 ||abctrack.bid^$third-party
 ||ablehed.pro^$third-party
@@ -57515,6 +57516,10 @@ $script,domain=imx.to
 @@||imx.to/js/jquery$script
 ! rd.com (Revolving adservers)
 $image,third-party,xmlhttprequest,domain=rd.com
+@@||assets-jpcust.jwpsrv.com^$image,domain=rd.com
+@@||content.jwplatform.com^$image,xmlhttprequest,domain=rd.com
+@@||jwplayer.com^$xmlhttprequest,domain=rd.com
+@@||jwpsrv.com^$xmlhttprequest,domain=rd.com
 ! vidoza.net
 @@$generichide,domain=vidoza.co|vidoza.net
 @@||ajax.googleapis.com/ajax/libs/$script,domain=vidoza.co|vidoza.net
