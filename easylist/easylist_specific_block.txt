@@ -800,8 +800,6 @@ $popup,third-party,domain=ytmp3.cc
 ! bebi script
 /^https?:\/\/([0-9a-z\-]+\.)?(animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$image,other,script,~third-party,xmlhttprequest,domain=~animeland.hu|~memecenter.fr
 @@||readcomiconline.to/search/$~third-party,xmlhttprequest
-! salon.com
-||salon.com^*/main.js$script
 ! adyou.me
 @@||ajax.googleapis.com/ajax/libs/$script,domain=adyou.co|adyou.me
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=adyou.co|adyou.me
