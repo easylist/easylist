@@ -767,10 +767,15 @@ $popup,third-party,domain=ytmp3.cc
 ! ymovies
 @@||ajax.googleapis.com^$script,domain=ymovies.to
 @@||blogspot.com^$image,domain=ymovies.to
+@@||gcloud.live^$subdocument,domain=ymovies.to
 @@||media-imdb.com^$image,script,domain=ymovies.to
+@@||playhydrax.com^$subdocument,domain=ymovies.to
 @@||tmdb.org^$image,domain=ymovies.to
-|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=ymovies.to
-|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=ymovies.to
+@@||uptostream.com^$domain=ymovies.to
+@@||vidlox.me^$subdocument,domain=ymovies.to
+@@||vidoza.net^$subdocument,domain=ymovies.to
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=ymovies.to
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=ymovies.to
 ! yify-movies.net
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
