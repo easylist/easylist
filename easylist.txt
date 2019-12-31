@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201912311009
+! Version: 201912311010
 ! Title: EasyList
-! Last modified: 31 Dec 2019 10:09 UTC
+! Last modified: 31 Dec 2019 10:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -57607,11 +57607,11 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 |http://$script,third-party,xmlhttprequest,domain=streamvid.co
 |https://$script,third-party,xmlhttprequest,domain=streamvid.co
 ! 4shared.com
+$image,script,subdocument,third-party,xmlhttprequest,domain=4shared.com
 @@||apis.google.com/js/plusone.js$script,domain=4shared.com
 @@||connect.facebook.net^$script,domain=4shared.com
-|http://$script,third-party,xmlhttprequest,domain=4shared.com
-|https://$script,third-party,xmlhttprequest,domain=4shared.com
 |ws://$domain=4shared.com
+||4shared.com/web/amscript/
 ! streamplay
 .xyz/$popup,domain=streamplay.to
 @@||spcdn.cc/$image,xmlhttprequest,domain=streamplay.to
