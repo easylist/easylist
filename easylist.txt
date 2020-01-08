@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202001081937
+! Version: 202001082026
 ! Title: EasyList
-! Last modified: 08 Jan 2020 19:37 UTC
+! Last modified: 08 Jan 2020 20:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -55543,8 +55543,7 @@ $csp=worker-src 'none',domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.sup
 @@||imagesrv.adition.com/js/srp.js$domain=spiegel.de
 @@||spiegel.de^$genericblock,generichide
 @@||static.adfarm1.adition.com/ci.html$subdocument,domain=spiegel.de
-widgets.outbrain.com##.OUTBRAIN[data-src^="http://www.spiegel.de/"] .ob-p
-widgets.outbrain.com##div[data-src^="http://m.spiegel.de/"] .ob-p
+spiegel.de##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
 ||2mdn.net^$domain=spiegel.de
 ||a-ssl.ligatus.com^$domain=spiegel.de
 ||ad.atdmt.com/i/a.html$domain=spiegel.de
@@ -55562,6 +55561,7 @@ widgets.outbrain.com##div[data-src^="http://m.spiegel.de/"] .ob-p
 ||bidder.criteo.com^$domain=spiegel.de
 ||cas.criteo.com^$domain=spiegel.de
 ||conative.de^$domain=spiegel.de
+||emsservice.de^$domain=spiegel.de
 ||g.doubleclick.net^$domain=spiegel.de
 ||googlesyndication.com/safeframe/$domain=spiegel.de
 ||googlesyndication.com/sodar/$domain=spiegel.de
