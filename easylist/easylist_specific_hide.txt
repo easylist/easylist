@@ -150,9 +150,11 @@ steroid.com##.top_banner
 steroid.com##.v_banner
 streamty.com##.video_adp3
 vidup.io##.vjs-overlay-background
-hltv.org##.widget-lootbet
-hltv.org##.widget-unikrn
+hltv.org##[class*="yabo"]
+hltv.org##[class*="xingwang"]
+hltv.org##[class*="unikrn"]
 wplift.com##.widget_bsa
+hltv.org##[class*="bet"]
 motachashma.com##[href*="bit.ly/"]
 steroid.com##[href^="/out.php"]
 wakingtimes.com##[href^="https://shiftnetwork.infusionsoft.com"]
@@ -170,9 +172,8 @@ esportsheaven.com##a[href^="https://tilt.heavenmedia.com/"]
 thinkmobiles.com##a[href^="https://track.wg-aff.com/"]
 powerlineblog.com##a[href^="https://www.amazon."][href*="tag="]
 trakt.tv##div[class*="dfp"][data-pan-sizes]
-hltv.org##div[class*="ggking"]
+hltv.org##[class*="ggking"]
 yahoo.com##div[class*="js-sponsored-"]
-hltv.org##div[class*="xbet"]
 ucas.com##div[data-google-slot-id]
 mail.yahoo.com##div[data-test-id="ad-viewability-tracker"]
 magicseaweed.com##div[data-type="advert"]
@@ -8485,6 +8486,7 @@ theteacherscorner.net##div[id^="catfish"]
 pcmag.com##div[id^="ebBannerDiv"]
 qz.com##div[id^="engage-"]
 reviewjournal.com##div[id^="ext-travel-zoo-"]
+tutiempo.net##div[id^="fab-"]
 cricfree.tv,micast.tv,wiz1.net##div[id^="floatLayer"]
 eventhubs.com,volokh.com##div[id^="google_ads_"]
 businessinsider.in##div[id^="gpt-"]
@@ -9916,6 +9918,7 @@ newyorker.com##div[class^="Ad_"]
 testpages.adblockplus.org###abptest
 ! Advanced element hiding rules for Adblock Plus
 webfail.com#?##aside > :-abp-properties(cursor: pointer;)
+etsy.com#?#.wt-list-unstyled:-abp-has(.ad-iindicator)
 euronews.com#?#article[data-sponsored]:-abp-properties(content: attr(data-sponsored);)
 freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
 imgur.com#?#div:-abp-has( > a > div > div.Post-item-external-ad)
