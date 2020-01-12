@@ -1000,17 +1000,17 @@ $stylesheet,subdocument,third-party,domain=downloadgameps3.com
 @@||fonts.googleapis.com^$stylesheet,domain=downloadgameps3.com
 @@||www.blogger.com^$stylesheet,domain=downloadgameps3.com
 ! 9anime.vip
-@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||akacdn.ru^$image,script,stylesheet,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
 @@||connect.facebook.net^$script,domain=9anime.one|9anime.tv|9anime.vip
-@@||disqus.com^$domain=9anime.one|9anime.tv|9anime.vip
-@@||disquscdn.com^$domain=9anime.one|9anime.tv|9anime.vip
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.tv|9anime.vip
-@@||googleusercontent.com/gadgets/$image,domain=9anime.one|9anime.tv|9anime.vip
-@@||platform.twitter.com^$script,domain=9anime.one|9anime.tv|9anime.vip
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||disqus.com^$domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||disquscdn.com^$domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||platform.twitter.com^$script,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
 ||9anime.*/*callback
 ||9anime.*/inc/$script
 ||9anime.*/sw.js
@@ -1377,6 +1377,10 @@ $script,stylesheet,third-party,xmlhttprequest,domain=vidshare.tv
 |https://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
 ||meta.streamcloud.eu^
 ||opensubtitles.org^*.js|$script,domain=opensubtitles.org
+! mcloud
+@@||gstatic.com^$script,domain=mcloud.to
+|http://$image,script,stylesheet,subdocuemt,third-party,xmlhttprequest,domain=mcloud.to
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=mcloud.to
 ! couchtuner
 @@||disqus.com^$script,third-party,domain=couchtuner.click
 |http://$image,script,third-party,xmlhttprequest,domain=couchtuner.click
