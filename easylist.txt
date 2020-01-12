@@ -65552,6 +65552,7 @@ newyorker.com##div[class^="Ad_"]
 testpages.adblockplus.org###abptest
 ! Advanced element hiding rules for Adblock Plus
 webfail.com#?##aside > :-abp-properties(cursor: pointer;)
+euronews.com#?#article[data-sponsored]:-abp-properties(content: attr(data-sponsored);)
 freethesaurus.com#?#.widget + :-abp-properties(height: 265px; width: 300px;)
 imgur.com#?#div:-abp-has( > a > div > div.Post-item-external-ad)
 ksl.com#?#.queue:-abp-has(.sponsored)
