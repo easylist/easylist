@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202001121932
+! Version: 202001122026
 ! Title: EasyList
-! Last modified: 12 Jan 2020 19:32 UTC
+! Last modified: 12 Jan 2020 20:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -17322,7 +17322,6 @@ _popunder+$popup
 ###zone_b_ad
 ###zone_c_ads
 ###zztextad
-##ad-desktop-sidebar
 ##.AD-POST
 ##.AD-RC-300x250
 ##.AD-Rotate
@@ -29419,6 +29418,7 @@ _popunder+$popup
 ##a[href^="https://zononi.com/"]
 ##a[onclick*="//m.economictimes.com/etmack/click.htm"]
 ##a[onmousedown^="this.href='/wp-content/embed-ad-content/"]
+##ad-desktop-sidebar
 ##ad-slot--header-banner
 ##aside[id^="adrotate_widgets-"]
 ##aside[id^="advads_ad_widget-"]
@@ -31760,6 +31760,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||boylesportsreklame.com^$third-party
 ||bpasyspro.com^$third-party
 ||bptracking.com^$third-party
+||bqiovml.com^$third-party
 ||br.rk.com^$third-party
 ||brainient.com^$third-party
 ||branchr.com^$third-party
@@ -32785,6 +32786,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||glauptan.net^$third-party
 ||glawheejoushpush.com^$third-party
 ||gleaminist.info^$third-party
+||gleebsex.net^$third-party
 ||gleechie.net^$third-party
 ||gleetait.net^$third-party
 ||gliese-682c.com^$third-party
@@ -47023,6 +47025,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||carvarial.pro^$popup
 ||casino.betsson.com^$popup,third-party
 ||cbbp1.com^$popup
+||cbdzone.online^$popup
 ||cdaz.ciu^$popup
 ||cdaz.icu^$popup
 ||cdnmedia.xyz^$popup
@@ -47170,6 +47173,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||gib-gib-la.com^$popup,third-party
 ||giveaways.club^$popup,third-party
 ||glauvoob.com^$popup
+||glookroz.net^$popup
 ||go2linkfast.com^$popup
 ||goldlambotrader.co^$popup,third-party
 ||goodbookbook.com^$popup,third-party
@@ -52476,17 +52480,17 @@ $stylesheet,subdocument,third-party,domain=downloadgameps3.com
 @@||fonts.googleapis.com^$stylesheet,domain=downloadgameps3.com
 @@||www.blogger.com^$stylesheet,domain=downloadgameps3.com
 ! 9anime.vip
-@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.tv|9anime.vip
+@@||9anime.*/home/ajax/schedule$~third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||9anime.*/user/ajax/menu-bar$~third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||ajax.googleapis.com/ajax/libs/jquery/$script,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||akacdn.ru^$image,script,stylesheet,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
 @@||connect.facebook.net^$script,domain=9anime.one|9anime.tv|9anime.vip
-@@||disqus.com^$domain=9anime.one|9anime.tv|9anime.vip
-@@||disquscdn.com^$domain=9anime.one|9anime.tv|9anime.vip
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.tv|9anime.vip
-@@||googleusercontent.com/gadgets/$image,domain=9anime.one|9anime.tv|9anime.vip
-@@||platform.twitter.com^$script,domain=9anime.one|9anime.tv|9anime.vip
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.tv|9anime.vip
+@@||disqus.com^$domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||disquscdn.com^$domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+@@||platform.twitter.com^$script,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+|http://$image,script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
+|https://$image,script,stylesheet,third-party,xmlhttprequest,domain=9anime.one|9anime.to|9anime.tv|9anime.vip
 ||9anime.*/*callback
 ||9anime.*/inc/$script
 ||9anime.*/sw.js
@@ -52853,6 +52857,10 @@ $script,stylesheet,third-party,xmlhttprequest,domain=vidshare.tv
 |https://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
 ||meta.streamcloud.eu^
 ||opensubtitles.org^*.js|$script,domain=opensubtitles.org
+! mcloud
+@@||gstatic.com^$script,domain=mcloud.to
+|http://$image,script,stylesheet,subdocuemt,third-party,xmlhttprequest,domain=mcloud.to
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=mcloud.to
 ! couchtuner
 @@||disqus.com^$script,third-party,domain=couchtuner.click
 |http://$image,script,third-party,xmlhttprequest,domain=couchtuner.click
