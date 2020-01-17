@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202001171704
+! Version: 202001171706
 ! Title: EasyList
-! Last modified: 17 Jan 2020 17:04 UTC
+! Last modified: 17 Jan 2020 17:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53324,6 +53324,8 @@ $csp=worker-src 'none',domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.sup
 @@||imagesrv.adition.com/js/srp.js$domain=spiegel.de
 @@||spiegel.de^$genericblock,generichide
 @@||static.adfarm1.adition.com/ci.html$subdocument,domain=spiegel.de
+spiegel.de##a[href^="http://paid.outbrain.com/network/redir?"]
+spiegel.de##a[href^="https://paid.outbrain.com/network/redir?"]
 spiegel.de##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
 ||2mdn.net^$domain=spiegel.de
 ||a-ssl.ligatus.com^$domain=spiegel.de
