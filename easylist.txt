@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202001272309
+! Version: 202001280004
 ! Title: EasyList
-! Last modified: 27 Jan 2020 23:09 UTC
+! Last modified: 28 Jan 2020 00:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -50228,6 +50228,9 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|321jav.com|4downfiles.org|
 ||yontent.powvideo.net^$script
 ! mangareader
 /^https?:\/\/.*mangareader\.net\/.{12,}/$script
+! pwinsider.com
+@@||amazonaws.com/prod/submit-video-id$xmlhttprequest,domain=pwinsider.com
+@@||truvidplayer.com^$script,xmlhttprequest,domain=pwinsider.com
 ! moviesweb
 @@||ibb.co^$image,domain=moviesweb.info
 @@||s.ytimg.com^$script,domain=moviesweb.info
