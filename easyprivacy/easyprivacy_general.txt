@@ -69,6 +69,7 @@
 -page-analytics.
 -pixel.*?uuid=
 -pixelfront-analytics.
+-realtime-logging-
 -rttracking.
 -sa-tracker-
 -sc-analytics.
@@ -682,6 +683,7 @@
 /analytics/metric/*
 /analytics/mouse_
 /analytics/newrelic_
+/analytics/onLoad/*
 /analytics/p.gif?
 /analytics/page/*
 /analytics/page_view.
@@ -1237,6 +1239,7 @@
 /cm?tid=
 /cmarketing.countus.js
 /cmd_track?
+/cmp-event-ioltrack.
 /cms-gg.js
 /cms.gif?
 /cms/stats/*
@@ -1521,6 +1524,7 @@
 /dmp-tracking-
 /dmp/pixel.js
 /dmpcollector.js
+/dmpmetrics.
 /dmtk.*_tag=
 /dmtracking2.
 /DNATracking.
@@ -2443,6 +2447,7 @@
 /linktracker/*
 /linktracking.
 /listener.php?userRef=
+/live/analytics/*
 /livestats.js
 /livestats.php?
 /livezilla/server.php?request=track&
@@ -4813,6 +4818,7 @@
 /zig_c.min.js
 /zonapixel.
 /zone-log.
+/zoomd.widget.logger.
 /ztagtrackedevent/*
 /ztracker.js
 /zxc.gif?
@@ -5051,14 +5057,11 @@ cgi-bin/counter
 /cmp/messaging.js
 ! Eulerian
 &pagegroup=*&url=$script
-/^https?:\/\/ea\..*\/[a-z0-9]{2,12}\.js/$script,~third-party
-/^https?:\/\/eulerian..*\/[a-z0-9]{2,12}\.js/$script
 /ajax/eulerian/*
 /eulerian.js
 /simpleEulerian.
 =eulerian&
 ?euidlls=$script,~third-party
-@@||ea.greaterwrong.com/script.js$script,~third-party
 ! clicktripz
 /r/ucb.js$script,~third-party
 ! Interim
