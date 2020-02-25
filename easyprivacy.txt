@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202002252155
+! Version: 202002252156
 ! Title: EasyPrivacy
-! Last modified: 25 Feb 2020 21:55 UTC
+! Last modified: 25 Feb 2020 21:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10064,7 +10064,7 @@ _mongo_stats/
 ||d1t9uctetvi0tu.cloudfront.net^
 ||d1uanozc5el74n.cloudfront.net^
 ||d1xfq2052q7thw.cloudfront.net^
-||d1z2jf7jlzjs58.cloudfront.net^
+||d1z2jf7jlzjs58.cloudfront.net^$third-party
 ||d21o24qxwf7uku.cloudfront.net^
 ||d22v2nmahyeg2a.cloudfront.net^
 ||d23p9gffjvre9v.cloudfront.net^
@@ -11529,6 +11529,8 @@ _mongo_stats/
 ! Suspect trackers (from privacy badger)
 ||connatix.com^$third-party
 ||jsrdn.com/s/cs.js
+! Rewrite to internal resources filters for Adblock Plus
+||d1z2jf7jlzjs58.cloudfront.net^$rewrite=abp-resource:blank-js,domain=voici.fr
 ! -----------------International third-party tracking services-----------------!
 ! *** easylist:easyprivacy/easyprivacy_thirdparty_international.txt ***
 ! German
