@@ -26,7 +26,7 @@
 ###pa-push-notification-subscription
 ###popUpNotification
 ###push-alert-block
-###push-container
+###push-container:not(body):not(html)
 ###push-notification
 ###push-notification-box
 ###push-notification-pop-up
@@ -88,7 +88,7 @@
 ##.page__notifications
 ##.push-area-btn
 ##.push-bx
-##.push-container
+##.push-container:not(body):not(html)
 ##.push-message
 ##.push-notice
 ##.push-notification
@@ -98,8 +98,8 @@
 ##.push-subscription-alert
 ##.push-subscription-prompt
 ##.push-subscription-wrapper
-##.push-wrap
-##.push-wrapper
+##.push-wrap:not(body):not(html)
+##.push-wrapper:not(body):not(html)
 ##.pushNotWrap
 ##.pushNotification
 ##.push_back
