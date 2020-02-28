@@ -16,7 +16,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 ### What happens?
 
-<!-- Just a desciption of the issue when you visit the site. Or steps on reproducing this  -->
+<!-- Just a description of the issue when you visit the site. Or steps on reproducing this  -->
 
 ### List Subscriptions you're using:
 
