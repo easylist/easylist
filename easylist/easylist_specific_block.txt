@@ -1058,12 +1058,13 @@ $script,stylesheet,third-party,xmlhttprequest,domain=up-4ever.com|up-4ever.org
 |http://$script,third-party,domain=alltube.pl
 |https://$script,third-party,domain=alltube.pl
 ! vshare.eu
+$script,stylesheet,third-party,xmlhttprequest,domain=vshare.eu
 @@||ajax.googleapis.com^$script,domain=vshare.eu
 @@||cdnjs.cloudflare.com^$script,domain=vshare.eu
 @@||lp.longtailvideo.com^$script,domain=vshare.eu
 @@||vjs.zencdn.net^$script,domain=vshare.eu
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=vshare.eu
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=vshare.eu
+||vshare.eu/service-worker.js
+||vshare.eu^$subdocument,~third-party
 ! filmlinks4u.is
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
