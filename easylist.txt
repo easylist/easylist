@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202002292101
+! Version: 202002292114
 ! Title: EasyList
-! Last modified: 29 Feb 2020 21:01 UTC
+! Last modified: 29 Feb 2020 21:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30251,7 +30251,6 @@ microsoft.com,northjersey.com#@#.adSpace
 autotrader.co.za,thebulletinboard.com#@#.adText
 autotrader.co.za,ksl.com,superbikeplanet.com#@#.adTitle
 empowher.com#@#.adTopHome
-streamcloud.eu#@#.adWidget
 cocktailsoftheworld.com,supersonicads.com#@#.adWrap
 sanmarcosrecord.com#@#.ad_1
 techreport.com#@#.ad_160
@@ -51864,15 +51863,11 @@ $websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.ne
 |https://$script,third-party,xmlhttprequest,domain=vidspot.net
 ! vidshare.tv
 $script,stylesheet,third-party,xmlhttprequest,domain=vidshare.tv
-! Streamcloud
-@@||ajax.googleapis.com^$script,third-party,domain=streamcloud.eu
+! opensubtitles
 @@||opensubtitles.org/cdn-cgi/nexp/dok3v=*/cloudflare/rocket.js$domain=opensubtitles.org
 @@||static.opensubtitles.org/libs/js/$script,domain=opensubtitles.org
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=streamcloud.eu
 |http://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=streamcloud.eu
 |https://$script,subdocument,third-party,xmlhttprequest,domain=opensubtitles.org
-||meta.streamcloud.eu^
 ||opensubtitles.org^*.js|$script,domain=opensubtitles.org
 ! mcloud
 @@||ajax.googleapis.com^$script,domain=mcloud.to
@@ -52578,7 +52573,6 @@ $popup,third-party,domain=prettyfast.to
 ||songspk.cc/pop*.html$popup
 ||spendcrazy.net^$popup,third-party,domain=animegalaxy.net|animenova.tv|animetoon.tv|animewow.eu|gogoanime.com|goodanime.eu|gooddrama.net|toonget.com
 ||sponsorselect.com/Common/LandingPage.aspx?eu=$popup
-||streamcloud.eu/deliver.php$popup
 ||streamplay.to/apu$popup
 ||streamtunerhd.com/signup?$popup,third-party
 ||taboola.com^$popup,domain=ndtv.com|scoopwhoop.com
@@ -54927,7 +54921,6 @@ modernluxury.com###div-rectangle-1
 modernluxury.com###div-rectangle-2
 articlesnatch.com###div-under-video
 abbotsfordgasprices.com,albertagasprices.com,barriegasprices.com,bcgasprices.com,calgarygasprices.com,edmontongasprices.com,gasbuddy.com,halifaxgasprices.com,hamiltongasprices.com,kwgasprices.com,londongasprices.com,manitobagasprices.com,montrealgasprices.com,newbrunswickgasprices.com,newfoundlandgasprices.com,novascotiagasprices.com,nwtgasprices.com,ontariogasprices.com,ottawagasprices.com,peigasprices.com,quebeccitygasprices.com,quebecgasprices.com,reginagasprices.com,saskatoongasprices.com,saskgasprices.com,torontogasprices.com,vancouvergasprices.com,victoriagasprices.com,winnipeggasprices.com###div728
-streamcloud.eu###divExoLayerWrapper
 klfm967.co.uk###divHeaderBannerRight
 classiccars.com###divLeaderboard
 israelnationalnews.com###divMaavaron2In
@@ -55517,7 +55510,6 @@ psychcentral.com###jadsq
 psychcentral.com###jadsq2
 lyriczz.com###jango
 pandora.tv###japan_ad
-streamcloud.eu###javawarning
 careerbuilder.com###jdpSponsoredBy
 jimdo.com###jimdobox
 extremetech.com###jivvmzil
@@ -61663,7 +61655,6 @@ huffingtonpost.com##a[href*=".atwola.com/"]
 concordnewsradio.com##a[href*=".be/"]
 msn.com##a[href*=".booking.com/"]
 concordnewsradio.com##a[href*=".cc/"]
-streamcloud.eu##a[href*=".engine"]
 concordnewsradio.com##a[href*=".es/"]
 autodealer.co.za,bitminter.com,shareae.com,spellcheck.net##a[href*=".go2cloud.org/aff_c?offer_id="]
 concordnewsradio.com##a[href*=".gy/"]
@@ -61683,7 +61674,6 @@ business-standard.com##a[href*="/adclicksTag.php?"]
 itweb.co.za##a[href*="/adredir.php?"]
 streamplay.to##a[href*="/apu.php"]
 movie4me.fun,webmusic.live##a[href*="/c.php?"][href*="&zn="]
-streamcloud.eu##a[href*="/clicktag."]
 adlock.org##a[href*="/download/"]
 bittorrentz.net##a[href*="/download_torrent.php?"]
 downloadwarez.org##a[href*="/fullversion-download/"]
@@ -61710,7 +61700,6 @@ distrowatch.com##a[href*="acunetix.com"]
 lawctopus.com##a[href*="alc.edu.in/Lawctopus"]
 worldfree4u.lol##a[href*="clksite.com/"]
 snaptest.org##a[href*="edutourism.in/?utm_source=snapportalemail"]
-streamcloud.eu##a[href*="engine.4dsply.com"]
 encyclopediadramatica.rs##a[href*="http://torguard.net/aff.php"]
 threepercenternation.com##a[href*="https://pro."]
 snaptest.org##a[href*="indianbank.net.in/jsp/startIB.jsp"]
@@ -62427,7 +62416,7 @@ drudgereport.com##div[style*="text-rendering:"]
 extremetech.com##div[style*="width: 300"]
 directupload.net##div[style*="width: 300px"]
 readcomiconline.to##div[style*="width: 300px; height: 250px;"]
-fansshare.com,hdfree.se,iconarchive.com,mcndirect.com,opensourcecms.com,slickdeals.net,streamcloud.eu,theawesomer.com,unexplained-mysteries.com,x64bitdownload.com,yuku.com##div[style*="width:300px"]
+fansshare.com,hdfree.se,iconarchive.com,mcndirect.com,opensourcecms.com,slickdeals.net,theawesomer.com,unexplained-mysteries.com,x64bitdownload.com,yuku.com##div[style*="width:300px"]
 inquirer.net##div[style*="width:629px;height:150px;"]
 rlslog.net##div[style*="z-index:"]:first-child
 ndtv.com##div[style=" margin:0 auto; width:970px; height:90px; text-align:center;"]
