@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202003072248
+! Version: 202003072351
 ! Title: EasyList
-! Last modified: 07 Mar 2020 22:48 UTC
+! Last modified: 07 Mar 2020 23:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51208,6 +51208,13 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|321jav.com|4downfiles.org|
 @@||youtube.com/player_api$third-party
 @@||youtube.com/yts/$domain=filmi7.com
 @@||zencdn.net^$script,domain=mixdrop.co
+! Test (Webkit Mobile/Desktop for Youtube)
+||googleads.g.doubleclick.net^$domain=youtube.com
+||m.youtube.com/get_midroll_$domain=youtube.com
+||pagead2.googlesyndication.com^$domain=youtube.com
+||static.doubleclick.net^$domain=youtube.com
+||www.google.com/pagead/$domain=youtube.com
+||www.youtube.com/get_midroll_$domain=youtube.com
 ! CPU abuse
 ||energi.world/wp-content/themes/energi/js/particles$script,~third-party
 ! https://publicwww.com/websites/%22cloudfront.net%2Fscript.js%22/
