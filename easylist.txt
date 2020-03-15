@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202003150858
+! Version: 202003150901
 ! Title: EasyList
-! Last modified: 15 Mar 2020 08:58 UTC
+! Last modified: 15 Mar 2020 09:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -8052,6 +8052,8 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! https://github.com/easylist/easylist/issues/5054
+/full-page-script.js$script,~third-party
 ! bc.vc (https://github.com/NanoMeow/QuickReports/issues/198)
 /earn.php?z=$popup,subdocument
 ! https://github.com/uBlockOrigin/uAssets/issues/2364
