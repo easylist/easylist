@@ -78,7 +78,9 @@
 @@||pornhub.org/favicon.ico$image,domain=pornhub.com|pornhub.org|pornhub.net
 @@||pornhub.net/favicon.ico$image,domain=pornhub.com|pornhub.org|pornhub.net
 ! help.pornhub
-@@||help.pornhub.*^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
+@@||help.pornhub.com^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
+@@||help.pornhub.org^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
+@@||help.pornhub.net^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
 @@||jsdelivr.net^$script,domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
 @@||zdassets.com^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
 @@||zendesk.com^$domain=help.pornhub.com|help.pornhub.org|help.pornhub.net
@@ -92,7 +94,9 @@
 @@||api.recaptcha.net^$script
 @@||apis.google.com^$script,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
-@@||cdn-*.pornhub.*^$image,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br
+@@||cdn-*.pornhub.com^$image,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br
+@@||cdn-*.pornhub.org^$image,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br
+@@||cdn-*.pornhub.net^$image,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br
 @@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com|tube8.es|tube8.fr
 @@||cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js$script,domain=tube8.com|tube8.es|tube8.fr
 @@||cdne-st.redtubefiles.com^$script,domain=redtube.com|redtube.com.br
@@ -100,11 +104,15 @@
 @@||disqus.com/count.js$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disqus.com/embed.js$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||disquscdn.com/count.js$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||feedback.pornhub.*^$xmlhttprequest,domain=feedback.pornhub.com|feedback.pornhub.org|feedback.pornhub.net|feedback.pornhubthbh7ap3u.onion
+@@||feedback.pornhub.com^$xmlhttprequest,domain=feedback.pornhub.com|feedback.pornhub.org|feedback.pornhub.net|feedback.pornhubthbh7ap3u.onion
+@@||feedback.pornhub.org^$xmlhttprequest,domain=feedback.pornhub.com|feedback.pornhub.org|feedback.pornhub.net|feedback.pornhubthbh7ap3u.onion
+@@||feedback.pornhub.net^$xmlhttprequest,domain=feedback.pornhub.com|feedback.pornhub.org|feedback.pornhub.net|feedback.pornhubthbh7ap3u.onion
 @@||google.com/recaptcha/$image,script
 @@||gstatic.com/recaptcha/$image,script
 @@||icfcdn.com^*/player.js$script,domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion
-@@||img.pornhub.*/gif/*.gif|$image,~third-party
+@@||img.pornhub.com/gif/*.gif|$image,~third-party
+@@||img.pornhub.org/gif/*.gif|$image,~third-party
+@@||img.pornhub.net/gif/*.gif|$image,~third-party
 @@||img.youtube.com/vi/*/sddefault.jpg$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion
 @@||maps.googleapis.com^$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion
 @@||maps.gstatic.com^$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion
