@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202003291421
+! Version: 202003291451
 ! Title: EasyList
-! Last modified: 29 Mar 2020 14:21 UTC
+! Last modified: 29 Mar 2020 14:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -29054,6 +29054,7 @@ _popunder+$popup
 ##[onclick^="window.open('https://www.brazzersnetwork.com/landing/"]
 ##[onclick^="window.open('window.open('//delivery.trafficfabrik.com/"]
 ##[src^="/Redirect.a2b?"]
+##a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"]
 ##a[href$="/vghd.shtml"]
 ##a[href*=".adk2x.com/"]
 ##a[href*=".adsrv.eacdn.com/"] > img
@@ -49446,6 +49447,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||lessemf.com/images/banner-$third-party
 ||letmewatchthis.ru/movies/linkbottom
 ||lg.com/in/cinema3d.jsp$subdocument,third-party
+||libs.sphere.com/video/outbrain-player/$third-party
 ||lifedaily.com/prebid.js
 ||lifestyle24h.com/reward/$third-party
 ||lijit.com/adif_px.php
@@ -50172,6 +50174,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||widgets.lendingtree.com^$third-party
 ||widgets.mobilelocalnews.com^$third-party
 ||widgets.mozo.com.au^$third-party
+||widgets.outbrain.com/nativeVideoPlayer/NVPInjector.min.js$third-party
 ||widgets.privateproperty.com.ng^$third-party
 ||widgets.progrids.com^$third-party
 ||widgets.realestate.com.au^
@@ -53001,6 +53004,7 @@ $csp=worker-src 'none',domain=ahoypirate.in|bayception.pw|cruzing.xyz|mirror.sup
 @@||pagead2.googlesyndication.com/getconfig/sodar?$xmlhttprequest,domain=spiegel.de
 @@||spiegel.de^$genericblock,generichide
 @@||static.adfarm1.adition.com/ci.html$subdocument,domain=spiegel.de
+spiegel.de##a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"]
 spiegel.de##a[href^="http://paid.outbrain.com/network/redir?"]
 spiegel.de##a[href^="https://paid.outbrain.com/network/redir?"]
 spiegel.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"]
@@ -53033,6 +53037,7 @@ spiegel.de##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"
 ||googlesyndication.com/safeframe/$domain=spiegel.de
 ||googlesyndication.com/sodar/$domain=spiegel.de
 ||images.*.criteo.net^$domain=spiegel.de
+||libs.sphere.com/video/outbrain-player/$domain=spiegel.de
 ||mediaplex.com^$domain=spiegel.de
 ||mookie1.com^$domain=spiegel.de
 ||movad.net^$domain=spiegel.de
@@ -53054,6 +53059,7 @@ spiegel.de##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"
 ||view.atdmt.com^*/view/$domain=spiegel.de
 ||vix.*.criteo.net^$domain=spiegel.de
 ||vix.criteo.net^$domain=spiegel.de
+||widgets.outbrain.com/nativeVideoPlayer/NVPInjector.min.js$domain=spiegel.de
 ||yieldlab.net^$domain=spiegel.de
 ! bento.de
 bento.de,playbuzz.com##.pbads_after-question_wrapper
