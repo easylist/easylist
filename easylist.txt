@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004051936
+! Version: 202004051945
 ! Title: EasyList
-! Last modified: 05 Apr 2020 19:36 UTC
+! Last modified: 05 Apr 2020 19:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53237,7 +53237,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ! Rewrite to internal resources rules for Adblock Plus
 ||slacker.com^*/getspot/?spotid=$media,rewrite=abp-resource:blank-mp3,domain=slacker.com
 ! *** easylist:easylist/easylist_specific_block_popup.txt ***
-$popup,third-party,domain=prettyfast.to
+$popup,third-party,domain=prettyfast.to|senimovie.co
 %3D$popup,domain=nme.com
 .link/$popup,domain=bigfile.to
 /dlads.$popup,domain=ouo.io|ouo.press
@@ -54815,7 +54815,7 @@ hltv.org##[class*="thunderfire"]
 hltv.org##[class*="unikrn"]
 hltv.org##[class*="xingwang"]
 hltv.org##[class*="yabo"]
-motachashma.com##[href*="bit.ly/"]
+motachashma.com,senimovie.co##[href*="bit.ly/"]
 vedbex.com##[href*="javascript:"]
 steroid.com##[href^="/out.php"]
 ettv.to##[href^="/poc.php"]
@@ -54833,6 +54833,7 @@ twitter.com##a[href*="src=promoted_trend_click"] + div
 geekzone.co.nz##a[href="https://gkz1.co/2FgZ9qm"]
 facebook.com##a[href^="/ads/"]
 androidcentral.com##a[href^="/e?link=https%3A%2F%2Fmint-mobile.pxf.io%2F"]
+senimovie.co##a[href^="http://dibuka.net/"]
 helpnetsecurity.com##a[href^="http://helpnet.pro/"]
 hltv.org##a[href^="http://sports.betway.com/"]
 myrailinfo.in##a[href^="http://www.amazon."][href*="tag="]
