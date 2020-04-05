@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202004050817
+! Version: 202004050842
 ! Title: EasyPrivacy
-! Last modified: 05 Apr 2020 08:17 UTC
+! Last modified: 05 Apr 2020 08:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3452,6 +3452,7 @@
 /res/x.gif?
 /resmeter.js
 /resonance.js
+/ResonateAnalytics.
 /resourcestat.
 /rest/analytics/*
 /restats_
@@ -15106,6 +15107,7 @@ _mongo_stats/
 ||rps-uk.rockpapershotgun.com^
 ||services.hmhost.co.uk^
 ||sm.pcmag.com^
+||sourcepoint-mms.history.com^
 ||sourcepoint-mms.mylifetime.com^
 ||sourcepoint.vice.com^
 ||sthelensstar-gb.sthelensstar.co.uk^
@@ -16641,6 +16643,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||hitfile.net/platform/js/fdlogger/fdlogger.js$script,~third-party
 @@||hmhco.com/one/js/conf/trackjs.config.$script,~third-party,xmlhttprequest
 @@||hobbyking.com^*/gtm.js$script,third-party
+@@||hopx.cedexis.com^$xmlhttprequest,domain=play.history.com|play.mylifetime.com
 @@||hscta.net/cta/current.js$script,domain=aucfan.com
 @@||ibispaint.com/js/googleAnalytics.js
 @@||ibm.com/software/reports/compatibility/clarity-reports/js/$script,~third-party
@@ -16725,6 +16728,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||pixel.quantserve.com/seg/$script,domain=photos.essence.com
 @@||pixelpressmedia.com/wp-content/plugins/duracelltomi-google-tag-manager/$script,domain=pixelpressmedia.com
 @@||play.google.com/log?$xmlhttprequest,domain=google.com
+@@||play.history.com/vendor/AppMeasurement.js$script,~third-party
+@@||play.history.com/vendor/FacebookPixel.min.js$script,~third-party
 @@||play.mylifetime.com/vendor/AppMeasurement.js$script,~third-party
 @@||play.mylifetime.com/vendor/FacebookPixel.min.js$script,~third-party
 @@||playcanvas.com.*/keen.min.js
