@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004090919
+! Version: 202004090926
 ! Title: EasyList
-! Last modified: 09 Apr 2020 09:19 UTC
+! Last modified: 09 Apr 2020 09:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11535,6 +11535,8 @@ _popunder+$popup
 ###adfooter
 ###adfooter_728x90
 ###adfooter_hidden
+###adform_leaderboard
+###adform_leaderboard_cover
 ###adframe:not(frameset)
 ###adframetop
 ###adfreead
@@ -52256,14 +52258,14 @@ $image,third-party,xmlhttprequest,domain=rd.com
 @@||filecrypt.cc/js/scriptaculous/slider.js$script
 ||filecrypt.cc/js/$script
 ! blacklistednews.com
-@@||instagram.com/embed.js$script,domain=blacklistednews.com
-@@||unpkg.com^$script,domain=blacklistednews.com
 $webrtc,domain=blacklistednews.com
 @@||ajax.googleapis.com^$script,domain=blacklistednews.com
 @@||disqus.com^$domain=blacklistednews.com
 @@||disquscdn.com^$domain=blacklistednews.com
+@@||instagram.com/embed.js$script,domain=blacklistednews.com
 @@||maxcdn.bootstrapcdn.com^$script,domain=blacklistednews.com
 @@||ravenjs.com^*/raven.min.js$domain=blacklistednews.com
+@@||unpkg.com^$script,domain=blacklistednews.com
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=blacklistednews.com
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=blacklistednews.com
 ! Imagetwist/Imagenpic/Imageshimage
@@ -52975,7 +52977,7 @@ javascript:$popup,domain=cruzing.xyz|mirror.superproxy.biz|mypirate.cc|piratebay
 ! Yavli threepercenternation.com
 ||threepercenternation.com/Zmalf/
 ! Yavli Specific
-/^https?:\/\/.*\/[a-z]{3,12}-[a-z0-9]{5,10}-[a-zA-Z0-9]{5,10}\.(png|jpg|jpeg)/$image,domain=funnyand.com|thepolitistick.com|truthuncensored.net|threepercenternation.com
+/^https?:\/\/.*\/[a-z]{3,12}-[a-z0-9]{5,10}-[a-zA-Z0-9]{5,10}\.(png|jpg|jpeg)/$image,domain=funnyand.com|thepolitistick.com|threepercenternation.com|truthuncensored.net
 @@/wp-content/plugins/akismet/*$script,~third-party,domain=~gaytube.com|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@||4cdn.org/*.js$script,xmlhttprequest,domain=4chan.org
 @@||5min.com/Scripts/PlayerSeed.js?$domain=allthingsvegas.com|askmefast.com|breathecast.com|bulletsfirst.net|comicallyincorrect.com|crossmap.com|dailyheadlines.net|dailyhealthpost.com|dailysurge.com|enstarz.com|foreverymom.com|greatamericanrepublic.com|hallels.com|hngn.com|joeforamerica.com|kdramastars.com|kpopstarz.com|latinpost.com|myscienceacademy.org|naturalblaze.com|natureworldnews.com|newser.com|newsthump.com|patriotoutdoornews.com|pickthebrain.com|rantlifestyle.com|realfarmacy.com|realtytoday.com|redmaryland.com|rightwingnews.com|shark-tank.com|techtimes.com|theblacksphere.net|themattwalshblog.com|theviralmob.comvcpost.com|victoriajackson.com|viralnova.com|viralthread.com
