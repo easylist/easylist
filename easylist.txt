@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004121159
+! Version: 202004121211
 ! Title: EasyList
-! Last modified: 12 Apr 2020 11:59 UTC
+! Last modified: 12 Apr 2020 12:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -605,7 +605,7 @@
 .com/a?network
 .com/a?pagetype
 .com/a?size
-.com/ad.$domain=~ad-tuning.de
+.com/ad.$~script,domain=~ad-tuning.de
 .com/ad/$~image,third-party,domain=~mediaplex.com
 .com/ad/$~third-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~namemc.com
 .com/ad1/
@@ -620,7 +620,7 @@
 .com/adlib_
 .com/adpicture
 .com/ads-
-.com/ads.
+.com/ads.$~script
 .com/ads/$image,object,subdocument,domain=~sabotage-films.com
 .com/ads?
 .com/ads_
@@ -639,7 +639,7 @@
 .com/im_ad/
 .com/iplgadshow
 .com/js.ng/
-.com/js/ad.
+.com/js/ad.$~script
 .com/js/ads/
 .com/js/adsense
 .com/miads/
@@ -746,7 +746,7 @@
 .openx.$domain=~openx.com
 .openxtag.
 .org/ad-
-.org/ad.
+.org/ad.$~script
 .org/ad/
 .org/ad_
 .org/adgallery1
@@ -3511,7 +3511,7 @@
 /advertises/*
 /advertisewithus_
 /advertising-$domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~advertising.amazon.com|~microsoft.com|~outbrain.com|~yellowimages.com
-/advertising.$domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr|~advision.co
+/advertising.$~script,domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr|~advision.co
 /advertising/*$~xmlhttprequest,domain=~advertising.org.il|~commercialplanet.eu|~kloterfarms.com|~temple.edu|~themarker.com
 /advertising02.
 /advertising2.
@@ -6382,12 +6382,12 @@
 /scn.php?
 /script-adv-
 /script/ad.$~script
-/script/ads.
+/script/ads.$~script
 /script/ads_
 /script/banniere_*.php?id=*&ref=$script,third-party
 /script/oas/*
 /scripts/ad-
-/scripts/ad.
+/scripts/ad.$~script
 /scripts/ad/*
 /scripts/ad_
 /scripts/ads.
