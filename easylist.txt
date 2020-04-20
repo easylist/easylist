@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004202306
+! Version: 202004202313
 ! Title: EasyList
-! Last modified: 20 Apr 2020 23:06 UTC
+! Last modified: 20 Apr 2020 23:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -621,7 +621,7 @@
 .com/adlib_
 .com/adpicture
 .com/ads-
-.com/ads.$~script
+.com/ads.$~script,~xmlhttprequest
 .com/ads/$image,object,subdocument,domain=~sabotage-films.com
 .com/ads?
 .com/ads_
@@ -2400,7 +2400,7 @@
 /ads.htm
 /ads.jplayer.
 /ads.js/*
-/ads.js?
+/ads.js?$~xmlhttprequest
 /ads.json?
 /ads.jsp
 /ads.load.
