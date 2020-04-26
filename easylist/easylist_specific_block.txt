@@ -226,7 +226,6 @@
 ||fishki.net/code?
 ||flvto.biz/scripts/banners.php?
 ||flyordie.com/games/free/b/
-||fontent.streamp1ay.me^
 ||fool.com/pitcher/
 ||footballtradedirectory.com/images/pictures/banner/
 ||fordforums.com.au/logos/
@@ -558,6 +557,7 @@
 ||ubuntugeek.com/images/ubuntu1.png
 ||ukcampsite.co.uk/banners/
 ||unsplash.com/nbsa/
+||uontent.powvideo.net^
 ||urs.zdnet.com^
 ||uvnc.com/img/teamviewerlogo.
 ||uxmatters.com/images/sponsors/
@@ -759,10 +759,6 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|321jav.com|4downfiles.org|
 @@||youtube.com/embed/$subdocument,domain=yesmovieshub.com
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=yesmovieshub.com
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=yesmovieshub.com
-! streamp1ay.me
-||streamp1ay.me/jquery-1.8.1.min.js$script
-||streamp1ay.me/player1/jwplayer.js$script
-||uontent.powvideo.net^
 ! mangareader
 /^https?:\/\/.*mangareader\.net\/.{12,}/$script
 ! pwinsider.com
@@ -1440,10 +1436,9 @@ $image,script,subdocument,third-party,xmlhttprequest,domain=4shared.com
 |ws://$domain=4shared.com
 ||4shared.com/web/amscript/
 ! streamplay
-@@||spcdn.cc^$image,script,xmlhttprequest,domain=streamp1ay.me|streamplay.to
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamp1ay.me|streamplay.to
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamp1ay.me|streamplay.to
-||streamp1ay.me/jquery-1.8.2.min.js$script
+@@||spcdn.cc^$image,script,xmlhttprequest,domain=streamplay.to
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ! Powvideo
 $websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
 @@||ajax.googleapis.com^$script,third-party,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
