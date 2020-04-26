@@ -109,7 +109,6 @@
 ||bustocoach.com/wp-content/*BANNER
 ||buyselltrade.ca/banners/
 ||c21media.net/wp-content/plugins/sam-images/
-||cache.sythe.org^$image
 ||cad.donga.com^
 ||calguns.net/images/ad
 ||carfinderph.com/popup/
@@ -290,10 +289,6 @@
 ||idlebrain.com^*/sky-
 ||idlebrain.com^*/square-
 ||iftn.ie/images/data/banners/
-||imgc.sythe.org^
-||imgca.sythe.org^
-||imgcac.sythe.org^
-||imgcache.sythe.org^
 ||imgking.co/frler.js
 ||imgshots.com/includes/js/layer.js
 ||immihelp.com/ats-tsd/
@@ -502,7 +497,6 @@
 ||sunshineradio.ie/images/banners/
 ||surfmusic.de/anz
 ||survivalblog.com/marketplace/
-||sythe.org/*=$image
 ||taadd.com/files/js/site_skin.js
 ||tag.vlitag.com^
 ||talkers.com/imagebase/
@@ -2084,3 +2078,5 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 @@||jetzt.de^$generichide
 ! Rewrite to internal resources rules for Adblock Plus
 ||slacker.com^*/getspot/?spotid=$media,rewrite=abp-resource:blank-mp3,domain=slacker.com
+! sythe.org
+/^https:\/\/([a-z]+\.)?sythe\.org\/[0-9a-zA-Z\/+=_]{36,}/$image
