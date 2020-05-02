@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202005022242
+! Version: 202005022302
 ! Title: Fanboy's Annoyance List
-! Last modified: 02 May 2020 22:42 UTC
+! Last modified: 02 May 2020 23:02 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -8054,6 +8054,9 @@ _site_cookie_
 ##.ys-push
 ##amp-web-push-widget
 ##div[class^="container_NotificationsBanner_"]
+! Mobile Notifications
+##a[href^="http://www.mobi24.net/"]
+##a[href^="https://www.mobi24.net/"]
 ! *** easylist:fanboy-addon/fanboy_social_general_hide.txt ***
 ###AKDSocialBottom
 ###BF_BUZZBOX
@@ -32971,6 +32974,8 @@ _site_cookie_
 ||wpush.biz^$third-party
 ||wwclicknews.club^$third-party
 ||xtremepush.com^$third-party
+! Mobile notifications
+||mobi24.net^$third-party
 ! *** easylist:fanboy-addon/fanboy_social_thirdparty.txt ***
 ||addnow.com^$third-party
 ||addthis.com^$third-party
@@ -43924,6 +43929,9 @@ audionetwork.com,carlsenfritzoe.no#@##push-container:not(body):not(html)
 carlsenfritzoe.no,meineschufa.de,push.abs-cbn.com,schufa.de#@#.push-container:not(body):not(html)
 asbclassic.co.nz,harmoney.co.nz,underconsideration.com#@#.push-wrap:not(body):not(html)
 arabbank.com.au,operon.pl#@#.push-wrapper:not(body):not(html)
+! Mobile notifications
+mobi24.net#@#a[href^="http://www.mobi24.net/"]
+mobi24.net#@#a[href^="https://www.mobi24.net/"]
 ! *** easylist:fanboy-addon/fanboy_social_whitelist_general_hide.txt ***
 answers.microsoft.com#@##SocialIcons
 beautifulplanet4u.com#@##advancedsocialwidget
