@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202005221217
+! Version: 202005251952
 ! Title: EasyPrivacy
-! Last modified: 22 May 2020 12:17 UTC
+! Last modified: 25 May 2020 19:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4788,6 +4788,7 @@
 /webAnalytics/*
 /webanalytics3.
 /WebAnalyticsInclude.
+/webanalyticsssl.
 /webbug.png?
 /webbug/*
 /webbug_c.gif?
@@ -6167,7 +6168,6 @@ _mongo_stats/
 ||easycounter.com^$third-party
 ||easyhitcounters.com^$third-party
 ||easyresearch.se^$third-party
-||eb4us.com^$third-party
 ||ebtrk1.com^$third-party
 ||ec-track.com^$third-party
 ||eclampsialemontree.net^$third-party
@@ -9292,7 +9292,6 @@ _mongo_stats/
 ||marsflag.com^$third-party
 ||mobylog.jp^$third-party
 ||msgs.jp^$third-party
-||n8s.jp^$third-party
 ||nex8.net^$third-party
 ||omiki.com^$third-party
 ||owldata.com^$third-party
@@ -9924,6 +9923,7 @@ _mongo_stats/
 ||audience.newscgp.com^
 ||audienceapi.newsdiscover.com.au^$third-party
 ||audienceinsights.net^$third-party
+||audioeye.com/ae.js
 ||audioeye.com/frame/cookieStorage.html
 ||audit.303br.net^
 ||audit.median.hu^
@@ -10471,7 +10471,6 @@ _mongo_stats/
 ||facebook.com*/impression.php
 ||facebook.com/*/plugins/send_to_messenger.php?app_id=$third-party
 ||facebook.com/ai.php?
-||facebook.com/ajax/bz?
 ||facebook.com/audience_network/$image
 ||facebook.com/brandlift.php
 ||facebook.com/common/cavalry_endpoint.php?
@@ -10709,6 +10708,7 @@ _mongo_stats/
 ||jailbaitchan.com/tp/
 ||jangomail.com^*?UID$third-party
 ||javascriptcounter.appspot.com^
+||jelly.mdhv.io^
 ||jobvite.com/analytics.js
 ||jotform.io/getReferrer/$third-party
 ||js-agent.newrelic.com^
@@ -13052,6 +13052,7 @@ _mongo_stats/
 ||codecguide.com/stats.js
 ||codeweblog.com/js/count.js
 ||coherentpath.com/tracker/
+||coinmarketcap.com/static/cloud/js/le.min.js
 ||collarity.com/ucs/tracker.js
 ||collector*.xhamster.
 ||collector-cdn.github.com^
@@ -15166,6 +15167,9 @@ _mongo_stats/
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
+! portscanning from ebay
+! https://nullsweep.com/why-is-this-website-port-scanning-me/
+||127.0.0.1^$third-party,domain=ebay.ca|ebay.co.uk|ebay.com|ebay.com.au|ebay.de|ebay.fr
 ! Forter
 /^https?:\/\/.*[a-f0-9]{6,}\.cdn.*\.forter\.com\//$script,third-party
 ||forter.com/events
@@ -16373,6 +16377,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||i2i.jp/bin/
 ||ln.ameba.jp^
 ||log.suumo.jp^
+||logql.yahoo.co.jp^
 ||measure.ameblo.jp^
 ||mmstat.com^$image
 ||mtc.nhk.or.jp^
@@ -17119,7 +17124,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||geo.kaloo.ga/json/$script,domain=tagesspiegel.de
 @@||google-analytics.com/analytics.js$domain=saturn.at|schweizerfleisch.ch
 @@||google-analytics.com/plugins/ua/ec.js$domain=saturn.at
-@@||googletagmanager.com/gtm.js?$domain=bunte.de|finanzen.net|saturn.at
+@@||googletagmanager.com/gtm.js?$domain=bunte.de|finanzen.net|radiorur.de|saturn.at
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=tvnow.de
 @@||ksta.de/cre-1.0/tracking/call.js?$domain=ksta.de
 @@||ksta.de^*/api/tracking/service/ksta/templateclient.js$domain=ksta.de
@@ -17247,7 +17252,9 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
+@@||analytics.edgekey.net/config/$xmlhttprequest,domain=nhk.or.jp
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=nhk.or.jp
+@@||analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$script,domain=nhk.or.jp
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
 @@||carsensor.net/usedcar/modules/clicklog_top_lp_revo.php$xmlhttprequest
