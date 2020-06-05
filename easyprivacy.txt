@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202006051215
+! Version: 202006051304
 ! Title: EasyPrivacy
-! Last modified: 05 Jun 2020 12:15 UTC
+! Last modified: 05 Jun 2020 13:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -17013,6 +17013,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! Cloudflare hcaptcha test
+@@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
 ! uBO-CNAME (Specific whitelists)
 @@||n8s.jp^$script,domain=nikkei.com
 ! facebook related (https://forums.lanik.us/viewtopic.php?f=64&t=43722)
