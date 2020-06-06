@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202006060931
+! Version: 202006061035
 ! Title: EasyList
-! Last modified: 06 Jun 2020 09:31 UTC
+! Last modified: 06 Jun 2020 10:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -31409,6 +31409,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||eseparediscou.fun^
 ||eseventent.info^
 ||estionexperime.info^
+||estoopsi.com^
 ||eswaldderinao.site^
 ||etsmercisely.site^
 ||eunformeranothe.info^
@@ -31528,6 +31529,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||gospecularavch.site^
 ||gr8y7z1xaq30.com^
 ||gragliapastri.info^
+||graizoah.com^
 ||grampouz.net^
 ||granticaffodily.club^
 ||graunada.com^
@@ -53060,8 +53062,8 @@ $image,third-party,xmlhttprequest,domain=rd.com
 |http://$image,script,subdocument,third-party,domain=vidoza.co|vidoza.net
 |https://$image,script,subdocument,third-party,domain=vidoza.co|vidoza.net
 ! govid.co
-@@||ajax.googleapis.com/ajax/libs/$script,domain=govid.co
 $script,third-party,xmlhttprequest,domain=govid.co
+@@||ajax.googleapis.com/ajax/libs/$script,domain=govid.co
 ! filecrypt.cc
 @@||filecrypt.cc/js/container.js$script
 @@||filecrypt.cc/js/fcwindow.js$script
@@ -53175,18 +53177,21 @@ $script,stylesheet,third-party,xmlhttprequest,domain=up-4ever.com|up-4ever.org
 @@/subtitles/*.vtt$xmlhttprequest,domain=mcloud.to
 @@||ajax.googleapis.com/ajax/libs/$script,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||akacdn.ru^$image,other,script,stylesheet,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
+@@||apis.google.com^$script,domain=fmovies.ag
 @@||cloudflare.com^$script,stylesheet,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||disqus.com^$other,script,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||disquscdn.com^$other,script,stylesheet,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||fmovies.*/ajax/$xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||fmovies.*/grabber-api/?$domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||fmovies.*/user/$xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
-@@||fonts.googleapis.com^$stylesheet,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
+@@||fonts.googleapis.com^$stylesheet,domain=01fmovies.com|ffmovies.ru|fmovies.ag|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
+@@||gstatic.com^$script,domain=fmovies.ag
+@@||img.streamloverx.com^$image,domain=fmovies.ag
 @@||platform.twitter.com^$script,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||playercdn.net^$image,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 @@||tmdb.org^$image,other,stylesheet,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
-|http://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
-|https://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
+|http://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.ag|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
+|https://$image,other,script,stylesheet,third-party,xmlhttprequest,domain=01fmovies.com|ffmovies.ru|fmovies.ag|fmovies.mx|fmovies.taxi|fmovies.world|fmovies123.cc|fmovieson.com|thefmovies.me
 ||01fmovies.com/mmmasdfl-asd
 ! ancient-origins.net
 @@||ajax.googleapis.com^$script,domain=ancient-origins.net
