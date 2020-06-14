@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202006141020
+! Version: 202006141025
 ! Title: EasyPrivacy
-! Last modified: 14 Jun 2020 10:20 UTC
+! Last modified: 14 Jun 2020 10:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2745,6 +2745,7 @@
 /mcounter/*
 /md.js?country=
 /mdwtc/click_thru/*
+/measure/data-capture/*
 /measure/spring.
 /measure/visit/*
 /measurement/access/contents?
@@ -16928,6 +16929,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||newrelic.com/public/charts/$subdocument,xmlhttprequest
 @@||nfltags.com/omniture/$script,domain=nfl.com
 @@||nhl.com/components/shared/omniture-tracking-scripts/newRelic.js
+@@||nike.com^*/optimizely.browser.umd.min.js$script,~third-party
 @@||nyt.com/analytics/json-kidd.min.js$script,domain=nytimes.com
 @@||nyt.com/bi/js/tagx/tagx.js$domain=nytimes.com
 @@||nytimes.com^*/EventTracker.js
