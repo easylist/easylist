@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202006181101
+! Version: 202006181124
 ! Title: EasyPrivacy
-! Last modified: 18 Jun 2020 11:01 UTC
+! Last modified: 18 Jun 2020 11:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -16754,6 +16754,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||api.academia.edu^*/stats?callback$script,~third-party
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.github.com^*/log?ref=$xmlhttprequest
+@@||api.ipstack.com/check$domain=withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||api.segment.io/v1/$xmlhttprequest,domain=instacart.com
 @@||api.vidaxl.com^*/trackingservice/customerportal/*?$xmlhttprequest,domain=tracking.vidaxl.com
