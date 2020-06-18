@@ -346,7 +346,7 @@
 @@||zergnet.com^$image,script,stylesheet,domain=ci.craveonline.com|ci.gamerevolution.com|ci.momtastic.com|ci.thefashionspot.com|ci.totallyher.com
 @@||zippyshare.com^$generichide
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
-! uBO-CNAME (Specific whitelists)
+! uBO-CNAME (Specific allowlists)
 @@||circularhub.com^$domain=canadiantire.ca
 @@||hwcdn.net^$script,domain=mp4upload.com
 ! ezfunnels.com (https://forums.lanik.us/viewtopic.php?f=64&t=44355)
@@ -360,7 +360,7 @@
 @@||ads.memo2.nl/banners/$subdocument
 ! vidto
 @@||playedvid.com^$generichide
-! csp whitelists
+! csp allowlists
 @@||1337x.to/cat/$csp,~third-party
 @@||1337x.to/home/$csp,~third-party
 @@||1337x.to/login$csp,~third-party
@@ -712,7 +712,7 @@
 @@||fastly.net/ad/$image,script,xmlhttprequest
 @@||fastly.net/ad2/$image,script,xmlhttprequest
 @@||fastly.net/js/*_ads.$script
-! Whitelists to fix broken pages of advertisers
+! Allowlists to fix broken pages of advertisers
 ! Facebook
 @@||www.facebook.com/ads/$generichide
 @@||www.facebook.com/ajax/ads/$xmlhttprequest,domain=facebookcorewwwi.onion|www.facebook.com

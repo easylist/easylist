@@ -348,7 +348,7 @@
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
 ! Cloudflare hcaptcha test
 @@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
-! uBO-CNAME (Specific whitelists)
+! uBO-CNAME (Specific allowlists)
 @@||n8s.jp^$script,domain=nikkei.com
 ! facebook related (https://forums.lanik.us/viewtopic.php?f=64&t=43722)
 @@||facebook.com/common/referer_frame.php$subdocument,domain=facebook.com
@@ -361,7 +361,7 @@
 @@/comscore.min.js$script,domain=1007sandiego.com|10tv.com|11alive.com|12news.com|12newsnow.com|13wmaz.com|760kfmb.com|971thefan.com|9news.com|abc10.com|cbs19.tv|cbs8.com|firstcoastnews.com|fox15abilene.com|kagstv.com|kare11.com|kcentv.com|kens5.com|kgw.com|khou.com|kiiitv.com|king5.com|kold.com|krem.com|ksdk.com|ktvb.com|kvue.com|myatltv.com|myfoxzone.com|newscentermaine.com|newswest9.com|thv11.com|wbir.com|wcnc.com|wfaa.com|wfmynews2.com|wgrz.com|whas11.com|wkyc.com|wltx.com|wthr.com|wtol.com|wtsp.com|wusa9.com|wvec.com|wwltv.com|wzzm13.com
 ! Expedia search breakage
 @@||travel-assets.com/platform-analytics-prime/$script
-! Mining-related whitelists
+! Mining-related allowlists
 @@||alltube.tv/jsverify.php$~third-party,xmlhttprequest
 @@||api.nyda.pro^$websocket
 @@||broadcastt.xyz/apps/$websocket
@@ -375,7 +375,7 @@
 @@||ws.webcaster.pro^$websocket
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 @@||aplus.com/p.gif?$~third-party
-! Preliminarily whitelisting Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues
+! Preliminarily allowlists Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues
 @@||112.2o7.net/b/ss/$image,domain=espn.com.br|mtv.co.uk|nissan-global.com
 @@||122.2o7.net/b/ss/$image,domain=billetnet.dk|billettservice.no|citibank.co.in|goal.com|lippupalvelu.fi|nbcsports.com|pcworld.com|riverisland.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se
 @@||abc.com/b/ss/$image
@@ -418,7 +418,7 @@
 @@||som.aeroplan.com/b/ss/$image
 @@||stat.safeway.com/b/ss/$image
 @@||walmart.com/b/ss/$image
-! Whitelists to fix broken pages of tracking companies
+! Allowlists to fix broken pages of tracking companies
 ! Heatmap
 @@||heatmap.it^$domain=heatmap.com|heatmap.it|heatmap.me|heatmap.org
 ! Google
