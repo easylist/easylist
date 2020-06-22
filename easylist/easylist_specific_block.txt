@@ -784,6 +784,11 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|321jav.com|4downfiles.org|
 |http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=akvideo.stream
 |https://$popup,third-party,domain=akvideo.stream
 |https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=akvideo.stream
+! mp4upload.com
+@@||cdnjs.cloudflare.com^$script,stylesheet,domain=mp4upload.com
+@@||fontawesome.com^$script,stylesheet,domain=mp4upload.com
+|http://$script,stylesheet,third-party,xmlhttprequest,domain=mp4upload.com
+|https://$script,stylesheet,third-party,xmlhttprequest,domain=mp4upload.com
 ! steamplay
 /^https?:\/\/.*.str?eamplay.*\/.*[?&$=!]/$script,subdocument
 @@||spcdn.cc^$xmlhttprequest,domain=steamplay.cc|streamplay.to
