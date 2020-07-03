@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202007030233
+! Version: 202007030244
 ! Title: EasyPrivacy
-! Last modified: 03 Jul 2020 02:33 UTC
+! Last modified: 03 Jul 2020 02:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -15224,11 +15224,13 @@ _mongo_stats/
 ! https://nullsweep.com/why-is-this-website-port-scanning-me/
 /^https?:\/\/ir\.ebaystatic\.com\/rs\/v\/[a-zA-Z0-9]{18,}\.js/$script,domain=vipr.ebaydesc.com
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
-||127.0.0.1^$third-party,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.com|gumtree.com|lendup.com|mbna.ca|sciencedirect.com|sky.com|td.com|tiaa.org|vedacheck.com|wepay.com
+||127.0.0.1^$third-party,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.com|gumtree.com|lendup.com|mbna.ca|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com
 ||ebay.com/nkfytkqtoxtljvzb.js$script,domain=ebay.com
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebaystatic.com^*/10341xh50yz21mhhydueu4m5wad.js$script,domain=ebay.com
 ||ebaystatic.com^*/g52yxhxv2mzcbealmlkri4kn5av.js$script,domain=ebay.com
+! Fingerpriting (port scans)
+/^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 ! authentication.mbna.ca | authentication.td.com  (fingerprint)
 /^https?:\/\/tmx\.td\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com
 ! Fingerprint
