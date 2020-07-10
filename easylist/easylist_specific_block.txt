@@ -2168,3 +2168,20 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 @@||jetzt.de^$generichide
 ! Rewrite to internal resources rules for Adblock Plus
 ||slacker.com^*/getspot/?spotid=$media,rewrite=abp-resource:blank-mp3,domain=slacker.com
+! block folha paywall
+||www1.folha.uol.com.br/folha/furniture/paywall/*
+||static.folha.com.br/paywall/*
+||static.folha.uol.com.br/paywall/*
+@@|http://www1.folha.uol.com.br/paywall/adblock.shtml?$document
+@@*paywall/js/1/publicidade.ads.js
+! youtube new ads
+||youtube.com/*/base.js$replace=/(playerResponse\.adPlacements|playerResponse\.playerAds)/_ad/
+||youtube.com/*/base.js$replace=/(playerAds|adPlacement[a-zA-Z]+)/_da/
+youtube.com#%#//scriptlet("json-prune", "playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds")
+youtube.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
+!#endif
+@@||youtube.com/get_video_info
+||tinypass.com^$domain=oglobo.globo.com
+||tinypass.com^$domain=revistaautoesporte.globo.com
+||paywall.estadao.com.br^
+||estadao.com.br/paywall/*
