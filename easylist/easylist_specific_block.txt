@@ -8,7 +8,7 @@
 |blob:$domain=allthetests.com|ancient-origins.net|antonymsfor.com|filmlinks4u.is|firstrowau.eu|gofirstrow.eu|jerusalemonline.com|jewsnews.co.il|keepvid.com|kiplinger.com|kissmanga.com|kshowonline.com|letmewatchthis.pl|lolcounter.com|ludokado.com|merriam-webster.com|olympicstreams.me|phonesreview.co.uk|pocketnow.com|primewire.to|sockshare.net|sportspickle.com|streamgaroo.com|textsfromlastnight.com|torrentz2.eu|trifind.com|videotoolbox.com|vidtodo.com|vivo.sx|watchvideo.us|webfirstrow.eu
 |http*://$image,other,third-party,domain=mp3clan.one|powvideo.net|streamplay.to
 |http*://$image,stylesheet,third-party,xmlhttprequest,domain=123movies.net|123moviesfree.com|clipconverter.cc|flyordie.com|kissanime.ru|kissasian.sh|mp3clan.one
-|http*://$script,third-party,domain=1jalshamoviez.cc|indishare.org|mp3clan.one|prostylex.org|starmusiq.net|topwwnews.com
+|http*://$script,third-party,domain=1jalshamoviez.cc|mp3clan.one|prostylex.org|starmusiq.net|topwwnews.com
 |http*://$subdocument,third-party,domain=adf.ly|adfoc.us|adv.li|adyou.me|ay.gy|j.gs|mylink.zone|q.gs|sh.st|vidspot.net
 |http://creative.*/smart.js$script,third-party
 |http://j.gs/omnigy*.swf
@@ -1662,6 +1662,10 @@ $script,third-party,domain=m4ufree.com|m4ufree.tv
 $webrtc,domain=m4ufree.com|m4ufree.tv
 @@||ajax.googleapis.com/ajax/libs/$script,domain=m4ufree.com|m4ufree.tv
 @@||iomovies.info/iomovies.js$script,domain=m4ufree.com|m4ufree.tv
+! indishare.org
+$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=indishare.org
+@@||code.jquery.com^$script,domain=indishare.org
+@@||bootstrapcdn.com^$script,stylesheet,domain=indishare.org
 ! youwatch.org
 @@/embed-*.html?$subdocument,domain=youwatch.org
 @@||ajax.googleapis.com/ajax/libs/$script,domain=youwatch.org
