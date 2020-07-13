@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202007130034
+! Version: 202007130038
 ! Title: Fanboy's Annoyance List
-! Last modified: 13 Jul 2020 00:34 UTC
+! Last modified: 13 Jul 2020 00:38 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -23088,7 +23088,6 @@ _site_cookie_
 ###cookie-popin
 ###cookie-popin-wrapper
 ###cookie-popover
-###cookie-popup
 ###cookie-popup-bar
 ###cookie-popup-container
 ###cookie-popup-content
@@ -23096,6 +23095,7 @@ _site_cookie_
 ###cookie-popup-outer
 ###cookie-popup-wrapper
 ###cookie-popup2
+###cookie-popup:not(html):not(body)
 ###cookie-powiadomienie
 ###cookie-preferences
 ###cookie-prefs
@@ -44932,7 +44932,7 @@ power.fi#@##cookie-notification
 danbolig.dk#@##cookie-overlay
 patient.info#@##cookie-policy
 flybe.com#@##cookie-policy-modal
-bk.com#@##cookie-popup
+bk.com,burgerking.co.nz###cookie-popup:not(html):not(body)
 lauritz.com,qxl.de,qxl.dk,qxl.fi,qxl.no,qxl.se#@##cookie-wrapper
 media.netflix.com#@##cookieAlert
 ad.win.nl,dehn.de,techopital.com#@##cookieConsent
