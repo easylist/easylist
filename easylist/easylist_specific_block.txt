@@ -1477,14 +1477,14 @@ $image,script,subdocument,third-party,xmlhttprequest,domain=4shared.com
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 ! Powvideo
-$websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|powv1deo.cc|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+$websocket,domain=povvideo.net|powv1deo.cc|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
 /^https?:\/\/.*(powvideo|powvldeo|povvideo).*\.*[?&$=!]/$script,subdocument
-@@||ajax.googleapis.com^$script,third-party,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
-@@||code.jquery.com^$script,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
-@@||codeorigin.jquery.com^$domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
-@@||img.powvideo.net/scap/$image,domain=povvideo.net|powv1deo.net|powvldeo.co|powvldeo.net
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+@@||ajax.googleapis.com^$script,third-party,domain=povvideo.net|powv1deo.cc|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+@@||code.jquery.com^$script,domain=povvideo.net|powv1deo.cc|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+@@||codeorigin.jquery.com^$domain=povvideo.net|powv1deo.cc|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
+@@||img.powvideo.net/scap/$image,domain=povvideo.net|powv1deo.cc|powv1deo.net|powvldeo.co|powvldeo.net
+||powv1deo.*/js/dpu3/
 ! cinenews.be/en/
 @@||ajax.googleapis.com^$script,third-party,domain=cinenews.be
 @@||connect.facebook.net^$script,third-party,domain=cinenews.be
