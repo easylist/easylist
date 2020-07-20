@@ -885,10 +885,17 @@ $websocket,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipst
 ||kiss-anime.ws^$subdocument,~third-party
 ! kissasian.sh
 $script,third-party,xmlhttprequest,domain=kissasian.sh
-!torrentdownloads.me | limetorrents.info
-@@||ajax.googleapis.com^$script,domain=limetorrents.info|torrentdownloads.me|torrentfunk2.com
-|http://$script,subdocument,third-party,xmlhttprequest,domain=limetorrents.info|torrentdownloads.me|torrentfunk2.com
-|https://$script,subdocument,third-party,xmlhttprequest,domain=limetorrents.info|torrentdownloads.me|torrentfunk2.com
+! limetorrents.info
+$script,subdocument,third-party,xmlhttprequest,domain=limetorrents.cc|limetorrents.asia|limetorrents.info
+@@||ajax.googleapis.com^$script,domain=limetorrents.cc|limetorrents.asia|limetorrents.info
+@@||assets.hcaptcha.com/captcha/$script,subdocument,domain=limetorrents.cc|limetorrents.asia|limetorrents.info
+@@||hcaptcha.com/1/api.js?$script,domain=limetorrents.cc|limetorrents.asia|limetorrents.info
+! torrentdownloads.me
+$script,subdocument,third-party,xmlhttprequest,domain=torrentdownloads.me
+@@||ajax.googleapis.com^$script,domain=torrentdownloads.me
+! torrentfunk2.com
+$script,subdocument,third-party,xmlhttprequest,domain=torrentfunk2.com
+@@||ajax.googleapis.com^$script,domain=torrentfunk2.com
 ! nowvideo
 |http://$script,subdocument,third-party,xmlhttprequest,domain=nowvideo.club
 |https://$script,subdocument,third-party,xmlhttprequest,domain=nowvideo.club
