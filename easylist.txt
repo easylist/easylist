@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202007220352
+! Version: 202007220402
 ! Title: EasyList
-! Last modified: 22 Jul 2020 03:52 UTC
+! Last modified: 22 Jul 2020 04:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30039,10 +30039,10 @@ _popunder+$popup
 ##input[onclick^="window.open('http://www.FriendlyDuck.com/"]
 ##input[onclick^="window.open('http://www.friendlyduck.com/"]
 ! Malware hotlinks
-##[href^="http://etracking.pro"]
-##[href^="http://mclick.net"]
-##[href^="http://www.etracking.pro"]
-##[href^="http://www.mclick.net"]
+##[href*=".etracking.pro"]
+##[href*=".mclick.net"]
+##[href*="//etracking.pro"]
+##[href*="//mclick.net"]
 ! ezoic
 ###ezmob_footer
 ! Anti-adblock (https://forums.lanik.us/viewtopic.php?f=62&t=32738)
