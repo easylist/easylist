@@ -229,7 +229,6 @@
 -ads-widget?
 -ads.generated.
 -ads.gif
--ads.js?
 -ads.php?
 -ads.swf
 -ads/728x
@@ -273,6 +272,7 @@
 -adv.jpg
 -adv.js
 -advert-100x100.
+-Advert-Banner-
 -Advert-JPEG-
 -advert-label-
 -advert-placeholder.
@@ -681,7 +681,6 @@
 .intad.
 .intad/
 .internads.
-.io/ads.
 .io/ads/
 .is/ads/
 .jp/ads/
@@ -1795,7 +1794,7 @@
 /adcontent.$~object
 /adcontent/*
 /adcontents_
-/adcontrol.$domain=~adcontrol.sk
+/adcontrol.$domain=~adcinjector.com|~adcontrol.sk
 /adcontrol/*
 /adcontroller.
 /adcore.$domain=~adcore.ch|~adcore.com.au|~adcore.ua
@@ -2172,6 +2171,7 @@
 /adng.html
 /adning/*
 /adnl.
+/adnostic/*
 /adnotice.
 /adnow-
 /adobject.
@@ -3314,6 +3314,7 @@
 /adunits?
 /adunittop|
 /adunix.
+/adurl/*
 /adutil.
 /adutils.
 /aduxads.
@@ -3576,7 +3577,7 @@
 /adviewer.
 /adviframe/*
 /advinfo.
-/advision.$domain=~advision.cl|~advision.co|~advision.dk
+/advision.$domain=~advision.cl|~advision.co|~advision.dk|~advision.sk
 /adVisit.
 /advlink300.
 /advloader.
@@ -3764,7 +3765,7 @@
 /ajax-advert-
 /ajax-advert.
 /ajax/ad/*
-/ajax/ads/*
+/ajax/ads/*$domain=~mobile.de
 /ajax/ads_
 /ajaxAd?
 /ajaxads.
@@ -4615,6 +4616,7 @@
 /eht.js?site_
 /emailads/*
 /embed-ad-
+/embed/ad/*
 /embed/ads.
 /embed_ad.
 /emediatead.
@@ -6446,7 +6448,6 @@
 /shared/ads/*
 /shortmediads/*
 /show-ad.
-/show-ads.
 /show.ad?
 /show.cgi?adp
 /show?zone_id=
@@ -6529,6 +6530,7 @@
 /site_under.
 /siteads.
 /siteads/*
+/siteAdsBidBarrel.js
 /siteadvert.
 /siteafs.txt?
 /sitefiles/ads/*
@@ -6973,6 +6975,7 @@
 /UploadAds/*
 /uploaded/ads/*
 /UploadedAds/*
+/uploads/ad-tech/*
 /uploads/ads/*$domain=~bayie.com
 /uploads/adv/*
 /uploads/adv_
@@ -7275,7 +7278,7 @@
 ://ad.*/jstag^
 ://adcl.$domain=~adcl.com|~adcl.screenconnect.com
 ://adn.*/zone/$subdocument
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
 ://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
 ://affiliate.$third-party
 ://affiliates.$third-party
@@ -7292,7 +7295,7 @@
 ://oas.*@
 ://ox-*/jstag^
 ://pop-over.
-://promo.$third-party
+://promo.$third-party,domain=~myshopify.com|~promo.com|~shopifycloud.com
 ://rss.*/~a/
 ://synad.
 ://wrapper.*/a?
@@ -8154,6 +8157,7 @@ takeover_banner_
 /exblss1.js?
 /exo-force-
 /exo-loader/*
+/exo/ExoNative
 /exo_frnd_
 /exo_na/*$script,subdocument
 /fel456.js
