@@ -817,6 +817,11 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|4downfiles.org|69sugar.com
 @@||wp.com^$image,script,domain=moviesweb.info
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=moviesweb.info
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=moviesweb.info
+! movieston.com
+$script,third-party,xmlhttprequest,domain=movieston.cc|movieston.com|movieston.net
+@@||ajax.googleapis.com/ajax/libs/$script,domain=movieston.cc|movieston.com|movieston.net
+@@||disqus.com/embed.js$script,domain=movieston.cc|movieston.com|movieston.net
+@@||disquscdn.com^$script,domain=movieston.cc|movieston.com|movieston.net
 ! 4downfiles.org
 @@||cdnjs.cloudflare.com^$script,domain=4downfiles.org
 ! bayfiles.com
