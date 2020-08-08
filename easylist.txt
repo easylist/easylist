@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202008080054
+! Version: 202008080113
 ! Title: EasyList
-! Last modified: 08 Aug 2020 00:54 UTC
+! Last modified: 08 Aug 2020 01:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -15509,7 +15509,6 @@ _popunder+$popup
 ###masterTopAds
 ###masterad
 ###mastercardAd
-###masthead-ad
 ###masthead_ad
 ###masthead_ads_container
 ###masthead_topad
@@ -52332,6 +52331,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com
 ||yimg.com/uu/api/*/ads/$domain=yahoo.com
 ||ynet.co.il/gpt/
+||youtube.com/ad_companion
 ||youtube.com/get_midroll_
 ||youtube.com/pagead/
 ||ytimg.com^*/new_watch_background.jpg?$domain=youtube.com
@@ -62748,10 +62748,12 @@ xing.com#?#div[class^="styles-grid-col-"]:-abp-has(div[class^="AdsCard-"])
 xing.com#?#div[class^="styles-grid-col-"]:-abp-has(span[class^="MediaObject-MediaObject-meta-"]:-abp-contains(/Gesponsert|Sponsored|Patrocinado|Sponsorisé|Sponsorizzato/))
 yelp.com#?#section:-abp-has(div > span > span:-abp-contains(Sponsored))
 ! youtube
+youtube.com###YtKevlarVisibilityIdentifier
 youtube.com###YtSparklesVisibilityIdentifier
 youtube.com###feed-pyv-container
 youtube.com###feedmodule-PRO
 youtube.com###homepage-chrome-side-promo
+youtube.com###masthead-ad
 youtube.com###merch-shelf
 youtube.com###pla-shelf
 youtube.com###premium-yva
@@ -62772,11 +62774,13 @@ youtube.com##.watch-extra-info-column
 youtube.com##.watch-extra-info-right
 youtube.com##.ytd-carousel-ad-renderer
 youtube.com##.ytd-compact-promoted-video-renderer
+youtube.com##.ytd-companion-slot-renderer
 youtube.com##.ytd-display-ad-renderer
 youtube.com##.ytd-merch-shelf-renderer
 youtube.com##.ytd-promoted-sparkles-text-search-renderer
 youtube.com##.ytd-promoted-video-renderer
 youtube.com##.ytd-search-pyv-renderer
+youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##.ytp-ad-action-interstitial-background-container
 youtube.com##.ytp-ad-action-interstitial-slot
 youtube.com##.ytp-ad-progress
