@@ -1753,6 +1753,8 @@
 ||ziffstatic.com/jst/zdvtools.
 ||zip2save.com/widget.php?
 ||zoomin.tv/video/*.flv$third-party,domain=twitch.tv
+! amazonaws (ad-fix)
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$third-party,xmlhttprequest,domain=~amazon.com
 ! charlotteobserver.com (audio advert)
 ||tsbluebox.com^$third-party
 ||vidoplay.com^$third-party
