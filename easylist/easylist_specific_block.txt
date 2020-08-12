@@ -1451,6 +1451,10 @@ $media,domain=damimage.com|imagedecode.com|imageteam.org
 @@||gstatic.com^$script,domain=streamvid.co
 |http://$script,third-party,xmlhttprequest,domain=streamvid.co
 |https://$script,third-party,xmlhttprequest,domain=streamvid.co
+! xfilesharing.com
+$script,subdocument,third-party,xmlhttprequest,domain=uppom.live|xfilesharing.com
+@@||ajax.googleapis.com/ajax/libs/$script,domain=uppom.live|xfilesharing.com
+@@||bootstrapcdn.com^$script,domain=uppom.live|xfilesharing.com
 ! abcvideo.cc
 $script,third-party,xmlhttprequest,domain=abcvideo.cc
 @@||assets.hcaptcha.com/captcha/$script,subdocument,domain=abcvideo.cc
