@@ -43,6 +43,8 @@ REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+# Remove any bad lines less the 3 chars, starting with.. |*~@$%
+BADLINE = re.compile(r"^([|*~@$%].{1,3}$)")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -377,10 +379,10 @@ def isglobalelement (domains):
 def removeunnecessarywildcards (filtertext):
     """ Where possible, remove unnecessary wildcards from the beginnings
     and ends of blocking filters."""
-    whitelist = False
+    allowlist = False
     hadStar = False
     if filtertext[0:2] == "@@":
-        whitelist = True
+        allowlist = True
         filtertext = filtertext[2:]
     while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
@@ -392,7 +394,7 @@ def removeunnecessarywildcards (filtertext):
         filtertext = "{filtertext}*".format(filtertext = filtertext)
     if filtertext == "*":
         filtertext = ""
-    if whitelist:
+    if allowlist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)
     return filtertext
 
