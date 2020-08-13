@@ -584,6 +584,7 @@
 /amp-omniture-iframe?
 /amp.gif?
 /amp/log.json
+/amp/pingback?
 /amp_ping/*
 /amplitude-*.js$script
 /ampmetrics.
@@ -1506,7 +1507,7 @@
 /ctr_tracker.
 /ctr_tracking.
 /ctrack?
-/ctracker/*
+/ctracker/*$domain=~charmtracker.com
 /ctrl.gif?ref=
 /custom-tracking.
 /CustomTrackingScript.
@@ -1757,6 +1758,7 @@
 /event?t=*&__seed=
 /event?t=view&
 /event?token=
+/event?tub_id=
 /event_logger
 /event_tracker?_
 /eventcnt.php?
@@ -1771,6 +1773,7 @@
 /events/*?event=
 /events/analytics/*
 /events/capture?
+/events/counter?
 /Events/Impression?
 /events/pixel/*$image
 /events?*&referrer=
@@ -2342,6 +2345,7 @@
 /in.php?*&referer=
 /in.php?p=
 /in.php?referer=
+/inboundAnalytics.
 /include/js/ga-
 /includes/analytics.
 /includes/tracker/*
@@ -2838,6 +2842,7 @@
 /mmt.gif?
 /mngi/tracking/*
 /mnt/imp?
+/moat-tracker.
 /moat/yield.js
 /moatanalytics-
 /mobify_ga.gif
@@ -3266,6 +3271,7 @@
 /pixel_tracking?
 /pixel_V2.
 /pixelappcollector.
+/pixelArticolo?
 /pixelcounter.
 /pixelframe/*
 /PixelImg.asp
@@ -3345,6 +3351,7 @@
 /prodtracker?
 /production/analytics.
 /profile_tracker.
+/promo_tracking.
 /promo_tracking/*
 /promos/pixels?
 /propagate_cookie.
@@ -4105,6 +4112,7 @@
 /tealiumTagsData.
 /telemetry/log/*
 /tenping.cpa.
+/testImpressions/beacon
 /textlink.php?text
 /thbeacon/*
 /thcn_code.
@@ -5269,13 +5277,17 @@ _xiti_js-
 _zag_cookie.
 cgi-bin/counter
 ||meetrics.netbb-
+! cloudflare tracking
+/cdn-cgi/apps/body/*$script,~third-party
+/cdn-cgi/apps/head/*$script,~third-party
 ! Notifcation scripts
+/epsilon.v2.
 /PushexSDK.
 ! propertyguru fingerprinting
 /pg*.js?PID=$xmlhttprequest
 ! Akamai fingerprinting
 ! https://publicwww.com/websites/%22_cf.push%22/
-/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest
+/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
 ! Cloudflare fingerprinting
 /cgi-bin/bm/cv/*$script
 ! Admiral
