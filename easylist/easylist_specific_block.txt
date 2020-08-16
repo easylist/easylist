@@ -1170,19 +1170,14 @@ $script,third-party,xmlhttprequest,domain=torrentdownload.info
 @@||disquscdn.com^$domain=series9.to
 @@||disqusservice.com^$domain=series9.to
 @@||themovieseries.net^$image,domain=series9.to
-@@||vidcloud.icu^$subdocument,domain=series9.to
 @@||vidcloud9.com^$subdocument,domain=series9.to
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=series9.to
 |https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=series9.to
-! gowatchseries
-$subdocument,third-party,domain=vidcloud.icu
-@@||disqus.com^$domain=gowatchseries.tv
-@@||disquscdn.com^$domain=gowatchseries.tv
-@@||fembed.com^$subdocument,domain=gowatchseries.tv
-@@||themovieseries.net^$image,domain=gowatchseries.tv
-@@||vidcloud.icu^$subdocument,domain=gowatchseries.tv
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=gowatchseries.tv
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=gowatchseries.tv
+! gowatchseries (> series.movie)
+$image,script,stylesheet,third-party,xmlhttprequest,domain=gowatchseries.movie|gowatchseries.tv|series.movie
+@@||disqus.com^$domain=series.movie
+@@||disquscdn.com^$domain=series.movie
+@@||themovieseries.net^$image,domain=series.movie
 ! skidrowreloaded.com
 |http://$script,third-party,xmlhttprequest,domain=skidrowreloaded.com
 |https://$script,third-party,xmlhttprequest,domain=skidrowreloaded.com
