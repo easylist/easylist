@@ -166,7 +166,7 @@
 ||amazonaws.com/streetpulse/ads/
 ||amazonaws.com/wafmedia6.com/
 ||amazonaws.com/youpop/
-||amazonaws.com^$script,subdocument,xmlhttprequest,domain=americanlookout.com|bittorrent.am|flagandcross.com|gelbooru.com|hdvid.tv|macupload.net|mp3goo.com|ndtv.com|ohmanhua.com|onvid.fun|onvid.pw|openloadmovies.bz|rawdevart.com|replaytvstreaming.com|streamplay.to|thelibertydaily.com|thevideobee.to|usersfiles.com|vidhd.icu|vshare.eu
+||amazonaws.com^$script,subdocument,xmlhttprequest,domain=americanlookout.com|bittorrent.am|flagandcross.com|gelbooru.com|hdvid.tv|macupload.net|mp3goo.com|ndtv.com|ohmanhua.com|onvid.fun|onvid.pw|openloadmovies.bz|rawdevart.com|replaytvstreaming.com|streamplay.to|thelibertydaily.com|thevideobee.to|usersfiles.com|vidhd.icu|vshare.eu|yify-movies.net
 ||amazonaws.com^$third-party,xmlhttprequest,domain=abcvideo.cc|animeheaven.ru|bdupload.info|bigfile.to|bittorrent.am|c123movies.com|downloadpirate.com|fullstuff.co|hdvid.tv|macupload.net|ocean0fgames.com|onvid.fun|onvid.pw|prostream.to|sadeempc.com|thevideobee.to|tsumino.com|vidhd.icu|vshare.eu|wizhdsports.is|yourvideohost.com
 ||amazonaws.com^*/ads/$image,domain=washingtonmonthly.com
 ||amazonaws.com^*/Amazon/$domain=systemrequirementslab.com
@@ -1746,7 +1746,7 @@
 ||ziffprod.com/CSE/BestPrice?
 ||zip2save.com/widget.php?
 ! amazonaws (ad-fix)
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
 ! charlotteobserver.com (audio advert)
 ||tsbluebox.com^$third-party
 ||vidoplay.com^$third-party
