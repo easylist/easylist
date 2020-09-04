@@ -650,7 +650,6 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|4downfiles.org|acidimg.cc|
 @@||zencdn.net^$script,domain=mixdrop.co
 ! Test (Webkit Mobile/Desktop for Youtube)
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
-! @@||youtube.com/get_video_info?*embedded$~third-party,xmlhttprequest
 ||googleads.g.doubleclick.net^$domain=youtube.com
 ||m.youtube.com/get_midroll_$domain=youtube.com
 ||pagead2.googlesyndication.com^$domain=youtube.com
@@ -703,18 +702,8 @@ $script,third-party,domain=171gifs.com|300mbfilms.org|4downfiles.org|acidimg.cc|
 @@||gstatic.com^$script,domain=dood.to|dood.watch
 |http://$image,other,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=dood.to|dood.watch
 |https://$image,other,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=dood.to|dood.watch
-! moviesweb
-@@||ibb.co^$image,domain=moviesweb.info
-@@||s.ytimg.com^$script,domain=moviesweb.info
-@@||wp.com^$image,script,domain=moviesweb.info
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=moviesweb.info
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=moviesweb.info
 ! 4downfiles.org
 @@||cdnjs.cloudflare.com^$script,domain=4downfiles.org
-! bayfiles.com
-@@||vjs.zencdn.net^$script,stylesheet,domain=bayfiles.com
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bayfiles.com
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bayfiles.com
 ! strikeout / vipleague / olympicstreams / vipstand
 $websocket,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipstand.se
 @@||cdn.staticdata.site^$image,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipstand.se
@@ -727,16 +716,6 @@ $websocket,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipst
 @@||staticdata.site/js/loadjs.min.js$script,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipstand.se
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipstand.se
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipstand.se
-! topeuropix.net
-@@||123europix.pro^$image,domain=topeuropix.net
-@@||ajax.googleapis.com^$script,domain=topeuropix.net
-@@||connect.facebook.net^$script,domain=topeuropix.net
-@@||hdeuropix.io/images/$image,domain=topeuropix.net
-@@||maxcdn.bootstrapcdn.com^$script,domain=topeuropix.net
-@@||topeuropix.com^$subdocument,domain=topeuropix.net
-|about:$popup,domain=topeuropix.net
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=topeuropix.net
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=topeuropix.net
 ! cmovies
 @@||api.streamdor.co^$subdocument,domain=cmovieshd.net
 @@||cmovieshd.com^$image,domain=cmovieshd.net
@@ -746,9 +725,6 @@ $websocket,domain=olympicstreams.me|strikeout.co|strikeout.nu|vipleague.pw|vipst
 ! kiss-anime.ws
 @@||kiss-anime.ws/embed.php$subdocument,~third-party
 ||kiss-anime.ws^$subdocument,~third-party
-! kissasian.sh
-$script,third-party,xmlhttprequest,domain=kissasian.sh
-@@||hcaptcha.com^$domain=kissasian.sh
 !torrentdownloads.me | limetorrents.info
 @@||ajax.googleapis.com^$script,domain=limetorrents.info|torrentdownloads.me|torrentfunk2.com
 |http://$script,subdocument,third-party,xmlhttprequest,domain=limetorrents.info|torrentdownloads.me|torrentfunk2.com
@@ -776,9 +752,6 @@ $webrtc,domain=ibit.to
 ! Torrent/Pirate sites /sw.js
 /^https?:\/\/.*\/.*(sw[0-9a-z._-]|\.notify\.).*/$script,domain=1337x.to|1360nobs.com|1newmoviesonline.me|68dare-t.com|8gharb.com|9rendezvous-l.com|9xflix.asia|ajournaledlife.us|ancient-origins.net|andomp3.com|androblanco.com|androidyes.com|animetak.net|animetrick.com|anitube.cz|aniwatcher.com|anonfiles.com|avimobilemovies.co|bayfiles.com|bdupload.asia|bestfullmoviesinhd.org|biobses.com|bit-url.com|books4arab.com|c123movies.com|canonprintersdrivers.com|cdnx.stream|channel1vids.com|cinemaghar.com|clicknupload.org|clipconverter.cc|clipwatching.com|clk.ink|cloudvideo.tv|cutewallpaper.org|cvalfabeta.com|dashbo15myapp.com|downace.com|downloadpirate.com|drestha.com|ebooksz.net|eztv.io|eztv.tf|eztv.yt|ffmovies.ru|filme-bune.biz|filmlinks4u.is|flashx.pw|flvto.biz|fmovies.taxi|fmovies.world|fmovieson.com|fp-news.com|freeroms.com|freetv.gq|fullmatchesandshows.com|gamez1a.com|gamezup.com|getlink.pro|glawheejoushpush.com|gnula.se|gomoviesfree.sc|gostreams.net|h-98reale.com|healthline.com|heapfiles.com|hotshotgamers.net|image-bugs.com|indishare.org|intoupload.net|j69i-browser.com|keratosispilaris101.com|kimcartoon.to|kissasian.sh|klubesocial.com|latestsocial.com|limetorrents.info|ling.online|livrefilmeshd.net|lookbeauty.ir|macupload.net|mangareader.net|megaup.net|mhktricks.org|mixdrop.co|mmsubtitles.co|mobdropro.com|mobile5shop.com|mobilemovies.info|mobilephonedir.com|monova.org|monova.to|movies2k.pro|moviewatcher.is|musicdl.org|myfile.is|naijagospelnews.info|narutoget.io|newmusicalbum.host|newser.com|nutritioninsight.com|nyafilmer.lol|obourguide.com|ogario.ovh|ojimail.ru|on4top.com|openloadmovies.bz|ouo.press|paidshitforfree.com|panduansaya.com|peggo.tv|phenomenologicalpsychology.com|piknu.com|pirateiro.com|podslushano-goroda.ru|powv1deo.cc|powvideo.net|powvldeo.cc|powvldeo.co|primewire.sc|pro100full.ru|prostream.to|pushedwebnews.com|putlocker.fyi|putlocker.style|putlockers.movie|q1-tdsge.com|q15homgeneral.com|r2sa.net|readcomiconline.to|realgfporn.com|sendit.cloud|sendspace.com|serials.ws|shuglaursech.com|shugraithou.com|socialvone.com|solarmovie.to|stickerdeals.net|swatchseries.to|taisachhay.com|thewpsite.com|tokusatsuindo.com|torlock.com|torrentdownload.info|torrentdownloads.me|torrentfunk2.com|tv-direct.net|tvbd.live|tvnachat.net|uiz.io|ukmagazinesfree.com|unbl0ck.kim|unblockall.org|unblocked.is|unblocked.lol|unblocked.si|up-load.io|upload-files.cc|upload.ac|uploadever.com|uploadproper.net|uploadrive.com|uplovd.com|upstream.to|uptobox.com|userscloud.com|ustreamix.com|ustreamix.info|v96-surf.com|vev.io|vev.red|vidbull.tv|videobin.co|vidlox.me|vidop.icu|vidoza.co|vidoza.net|vidtomp3.com|vidup.io|viralitytoday.com|vumoo.life|washingmachineinside.com|watchlivecricket.in|watchtvseries.video|waudeesestew.com|winnzo.com|wotcheatmods.com|xtgem.com|xxxfun.online|y2mate.com|yify-movies.net|yourbittorrent2.com|youzik.com|zeitschriftpdf.com|zippyshare.com
 /^https?:\/\/.*\/sw.js?.[a-zA-Z0-9%]{50,}/$script,~third-party
-! yourdailypornstars.com
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=yourdailypornstars.com
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=yourdailypornstars.com
 ! cloudvideo
 @@||cdncv.net^$script,xmlhttprequest,domain=cloudvideo.tv
 |http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=cloudvideo.tv
@@ -811,11 +784,6 @@ $webrtc,domain=ibit.to
 @@||connect.facebook.net^$script,domain=audioz.download
 |http://$image,script,third-party,domain=audioz.download
 |https://$image,script,third-party,domain=audioz.download
-! youzik.com
-@@||img.youtube.com^$image,domain=youzik.com
-@@||vnadigital.com^$xmlhttprequest,domain=youzik.com
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=youzik.com
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=youzik.com
 ! ytmp3.cc
 $popup,third-party,domain=ytmp3.cc
 @@||dropbox.com/static/$script,domain=ytmp3.cc
@@ -825,9 +793,6 @@ $popup,third-party,domain=ytmp3.cc
 ||ytmp3.cc/ad/
 ! ymovies
 @@$websocket,domain=hydrax.net|playhydrax.com
-! yify-movies.net
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=yify-movies.net
 ! megaup.net
 |http://$script,subdocument,third-party,xmlhttprequest,domain=megaup.net
 |https://$script,subdocument,third-party,xmlhttprequest,domain=megaup.net
