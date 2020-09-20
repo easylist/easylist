@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202009200427
+! Version: 202009200555
 ! Title: EasyList
-! Last modified: 20 Sep 2020 04:27 UTC
+! Last modified: 20 Sep 2020 05:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51431,14 +51431,6 @@ $script,third-party,domain=300mbfilms.org|4downfiles.org|acidimg.cc|adultdouga.b
 @@||4cdn.org^$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
-! steamplay
-/^https?:\/\/.*.str?eamplay.*\/.*[?&$=!]/$script,subdocument
-@@||spcdn.cc^$xmlhttprequest,domain=steamplay.cc|streamplay.to
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=steamplay.cc|streamplay.to
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=steamplay.cc|streamplay.to
-||steamplay.*/jquery-
-||streamp1ay.*/jquery-
-||streamplay.*/jquery-
 ! doood
 @@||cdn.jsdelivr.net^$script,stylesheet,domain=dood.to|dood.watch
 @@||cdnjs.cloudflare.com^$script,stylesheet,domain=dood.to|dood.watch
@@ -51873,9 +51865,13 @@ $script,third-party,xmlhttprequest,domain=abcvideo.cc
 @@||assets.hcaptcha.com/captcha/$script,subdocument,domain=abcvideo.cc
 @@||hcaptcha.com^*/api.js$script,domain=abcvideo.cc
 ! streamplay
+/^https?:\/\/.*.str?eamplay.*\/.*[?&$=!]/$script,subdocument
 @@||spcdn.cc^$image,script,xmlhttprequest,domain=streamplay.to
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
+||steamplay.*/jquery-
+||streamp1ay.*/jquery-
+||streamplay.*/jquery-
 ! Powvideo
 $websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
 /^https?:\/\/.*(powvideo|powvldeo|povvideo).*\.*[?&$=!]/$script,subdocument
