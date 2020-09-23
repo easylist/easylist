@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202009230017
+! Version: 202009230033
 ! Title: EasyList
-! Last modified: 23 Sep 2020 00:17 UTC
+! Last modified: 23 Sep 2020 00:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -21385,7 +21385,6 @@ _popunder+$popup
 ##.adsbttmpg
 ##.adsbyadop
 ##.adsbycircumventioncentral
-##.adsbygoogle
 ##.adsbygoogle-box
 ##.adsbygoogle-responsive-fix
 ##.adsbygoogle2
@@ -30166,6 +30165,9 @@ _popunder+$popup
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##span[data-component-type="s-ads-metrics"]
 ##topadblock
+! google
+##.adsbygoogle > [id^="aswift_"]
+##div > .adsbygoogle
 ! revcontent
 ##.default_rc_theme
 ##.inf-onclickvideo-adbox
