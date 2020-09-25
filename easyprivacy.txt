@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202009250639
+! Version: 202009250811
 ! Title: EasyPrivacy
-! Last modified: 25 Sep 2020 06:39 UTC
+! Last modified: 25 Sep 2020 08:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -997,6 +997,7 @@
 /beacon.min.js
 /beacon/b.ashx?
 /beacon/baminsights.
+/beacon/collector/*
 /beacon/cpcookie.
 /beacon/event/*
 /beacon/event?
@@ -16833,12 +16834,17 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||yahoo.co.jp/s?s=
 ||yjtag.yahoo.co.jp^
 ! Korean
+||ad-log.dable.io^
+||aem-collector.daumkakao.io^
 ||auction.co.kr/ad/log.js
 ||auction.co.kr/montelena.js
 ||chosun.com/hitlog/
 ||count.munhwa.com^
+||daumcdn.net^*/awsa.js
+||daumcdn.net^*/ba.min.js
 ||gmarket.co.kr/js/common/uuid.js
 ||hits.zdnet.co.kr^
+||kyson.kakao.com^
 ||l.m.naver.com^
 ||log.etoday.co.kr^
 ||log.sv.pandora.tv^
