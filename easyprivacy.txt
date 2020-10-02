@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202010021440
+! Version: 202010021449
 ! Title: EasyPrivacy
-! Last modified: 02 Oct 2020 14:40 UTC
+! Last modified: 02 Oct 2020 14:49 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -830,6 +830,7 @@
 /api/log?
 /api/lt/ref?
 /api/metrics$other
+/api/metrics|
 /api/pageview?
 /api/ping/*
 /api/pixel?
@@ -841,8 +842,10 @@
 /api/v1/metrics
 /api/v1/pixel?
 /api/v1/stat?
+/api/v1/streamtelemetry
 /api/v1/track/*
 /api/v2/collector
+/api/v2/jsonlogger
 /api/x.gif?
 /apilog?
 /apis/cpt.php?
@@ -11011,6 +11014,7 @@ _mongo_stats/
 ||livefyre.com^*/tracker.js
 ||livefyre.com^*/tracking/
 ||livehelpnow.net/lhn/jsutil/getinvitationmessage.aspx?
+||livelyvideo.tv/lb/logger
 ||liverail.com/?metric=
 ||liverail.com/track/?
 ||livestats.kaltura.com^
