@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202010042159
+! Version: 202010042208
 ! Title: EasyPrivacy
-! Last modified: 04 Oct 2020 21:59 UTC
+! Last modified: 04 Oct 2020 22:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2083,6 +2083,7 @@
 /geoip_cc
 /geoip_script?
 /geoipAPI.js?
+/geoLocationData/v1/*
 /geomap.js?
 /geov2.js
 /get-tracking-data
@@ -15510,6 +15511,7 @@ _mongo_stats/
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
 ! Fingerprint
 /^https?:\/\/www\.halifax-online\.co\.uk\/assets\/[0-9a-z]{25,}/$script,domain=halifax-online.co.uk
+/^https?:\/\/www\.imperva\.com\/[0-9a-f]{30,}\?/$script,xmlhttprequest,domain=imperva.com
 /^https?:\/\/www\.mouser\.com\/[a-z]{25,}.js/$script,xmlhttprequest,domain=mouser.com
 /^https?:\/\/www\.mouser\.com\/static\/[a-z0-9]{30,}/$script,domain=mouser.com
 /^https?:\/\/www\.ugg\.com\/static\/[a-z0-9]{15,}/$domain=ugg.com
