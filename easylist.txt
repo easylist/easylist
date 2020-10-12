@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202010120454
+! Version: 202010120524
 ! Title: EasyList
-! Last modified: 12 Oct 2020 04:54 UTC
+! Last modified: 12 Oct 2020 05:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51557,7 +51557,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! mimecast proxying
 ||mimecast.com^$domain=motorcycleshows.com
 ! united.com endless adserver loading
-||united.com/public/2525ad5661973a35c000d4c210009$script
+/^https?:\/\/www\.united\.com\/public\/[0-9a-zA-Z]{25,}/$script,domain=united.com
 ||united.com/sw.js
 ! Test (Webkit Mobile/Desktop for Youtube)
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
