@@ -506,7 +506,7 @@
 ! mimecast proxying
 ||mimecast.com^$domain=motorcycleshows.com
 ! united.com endless adserver loading
-||united.com/public/2525ad5661973a35c000d4c210009$script
+/^https?:\/\/www\.united\.com\/public\/[0-9a-zA-Z]{25,}/$script,domain=united.com
 ||united.com/sw.js
 ! Test (Webkit Mobile/Desktop for Youtube)
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
