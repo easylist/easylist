@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202010120536
+! Version: 202010120550
 ! Title: EasyList
-! Last modified: 12 Oct 2020 05:36 UTC
+! Last modified: 12 Oct 2020 05:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52079,22 +52079,22 @@ $script,stylesheet,third-party,xmlhttprequest,domain=insta-stories.com
 @@||code.jquery.com^$script,stylesheet,domain=insta-stories.com
 @@||stackpath.bootstrapcdn.com^$script,stylesheet,domain=insta-stories.com
 ! TPB
-$webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|pirateproxy.rocks|prox1.info|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org
-.info^$popup,domain=pirateproxy.live|pirateproxy.rocks|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org
+$webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org
+.info^$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
 @@||jsdelivr.net^$script,domain=thepiratebay.org
-@@||thepiratebay.*/static/js/details.js$domain=pirateproxy.live|pirateproxy.rocks|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
-@@||thepiratebay.*/static/js/prototype.js$domain=pirateproxy.live|pirateproxy.rocks|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
-@@||thepiratebay.*/static/js/scriptaculous.js$domain=pirateproxy.rocks|thepiratebay.org
+@@||thepiratebay.*/static/js/details.js$domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
+@@||thepiratebay.*/static/js/prototype.js$domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
+@@||thepiratebay.*/static/js/scriptaculous.js$domain=thepiratebay.org
 @@||thepiratebay.org/*.php$csp,~third-party
 @@||thepiratebay.org/static/main.js$script,~third-party
 @@||torrindex.net^$image,script,stylesheet,domain=thepiratebay.org
 @@||tpbprox.com/static/css/$stylesheet,domain=thepiratebay.vip
 @@||tpbprox.com/static/img/$image,domain=thepiratebay.vip
 javascript:$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|pirateproxy.rocks|prox1.info|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|pirateproxy.rocks|prox1.info|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net
-||thepiratebay.$script,domain=pirateproxy.live|pirateproxy.rocks|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net
+||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
 ||thepiratebay.*/static/$subdocument
 ! mp3songfree.net
 @@||ajax.googleapis.com/ajax/libs/$script,domain=mp3songfree.net
@@ -52210,8 +52210,8 @@ $websocket,domain=4archive.org|allthetests.com|boards2go.com|colourlovers.com|co
 ! IP address
 /^https?:\/\/([0-9]{1,3}\.){3}[0-9]{1,3}/$domain=1movies.is|bittorrent.am|limetorrents.info|magnetdl.com|megaup.net|monova.org|monova.to|o2tvseries.com|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|rarbgunblocked.org|rarbgway.org|readcomiconline.to|yourbittorrent2.com
 ! CSP filters
-$csp=script-src 'self' * 'unsafe-inline',domain=rarbgunblocked.org|rarbgway.org|rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|thepiratebay.vip|pirateproxy.live|thehiddenbay.com|pirateproxy.rocks|rarbgto.org|rarbgmirrored.org|rarbgmirror.org|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgproxy.org|rarbgprx.org|downloadpirate.com|theproxybay.net|thepiratebay10.org|prox1.info|kickass.vip|torrent9.uno|torrentsearchweb.ws|pirateproxy.app|ukpass.co|prox.icu|proxybay.ga|pirateproxy.life|unblockthe.net
-$csp=worker-src 'none',domain=pirateproxy.live|pirateproxy.rocks|prox1.info|thehiddenbay.com|tpb.party|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org|flashx.cc|flashx.co|vidoza.co|vidoza.net
+$csp=script-src 'self' * 'unsafe-inline',domain=rarbgunblocked.org|rarbgway.org|rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|thepiratebay.vip|pirateproxy.live|thehiddenbay.com|rarbgto.org|rarbgmirrored.org|rarbgmirror.org|rarbg.to|rarbgaccess.org|rarbgmirror.com|rarbgproxy.org|rarbgprx.org|downloadpirate.com|theproxybay.net|thepiratebay10.org|kickass.vip|pirateproxy.app|ukpass.co|prox.icu|pirateproxy.life
+$csp=worker-src 'none',domain=pirateproxy.live|thehiddenbay.com|tpb.party|thepiratebay.org|thepiratebay.vip|thepiratebay10.org|thepirateproxy.win|theproxybay.net|ukpirate.org|flashx.cc|flashx.co|vidoza.co|vidoza.net
 ||1337x.to^$csp=script-src 'self' 'unsafe-inline'
 ||1377x.to^$csp=script-src 'self' 'unsafe-inline'
 ||allthetests.com^$csp=script-src 'self' * blob: data:
