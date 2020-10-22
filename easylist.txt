@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202010220641
+! Version: 202010220823
 ! Title: EasyList
-! Last modified: 22 Oct 2020 06:41 UTC
+! Last modified: 22 Oct 2020 08:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52072,10 +52072,11 @@ $third-party,xmlhttprequest,domain=ancensored.com
 |https://$script,domain=kat.sx
 ! animepahe.com
 @@||cloudflare.com^$script,third-party,domain=animepahe.com
-@@||jsdelivr.net^$script,third-party,domain=animepahe.com
-@@||kwik.cx^$script,domain=animepahe.com
-|http://$script,third-party,domain=animepahe.com
-|https://$script,third-party,domain=animepahe.com
+@@||jsdelivr.net^$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe.com|kwik.cx
+@@||kwik.cx^$script,stylesheet,subdocument,xmlhttprequest,domain=animepahe.com|kwik.cx
+@@||nextstream.org^$xmlhttprequest,domain=animepahe.com|kwik.cx
+|http://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe.com
+|https://$script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe.com
 ! multiup.org
 @@||cdn.multiup.org/assets/js.js$script,domain=multiup.eu
 |http://$script,third-party,xmlhttprequest,domain=multiup.eu|multiup.org
