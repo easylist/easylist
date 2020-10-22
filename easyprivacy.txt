@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202010220930
+! Version: 202010220957
 ! Title: EasyPrivacy
-! Last modified: 22 Oct 2020 09:30 UTC
+! Last modified: 22 Oct 2020 09:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -17611,6 +17611,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 ! @@||segment.com/analytics.js/*/analytics.min.js$script
+@@||ps.w.org/wp-slimstat/$$domain=wordpress.org
 @@||segment.com/v1/projects/$xmlhttprequest,domain=benchling.com
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||segment.io/v1/$xmlhttprequest,domain=greentoe.com
@@ -17671,8 +17672,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||weightwatchers.com/optimizelyjs/$script,~third-party
 @@||wix.com/_api/*count?type$~third-party
-@@||wordpress.org/extend/plugins/wp-slimstat/screenshot-$image,~third-party
-@@||wordpress.org/wp-slimstat/assets/banner-$image,~third-party
 @@||wp.com^*/google-analytics-for-wordpress/$domain=wordpress.org
 @@||wplogout.com/wp-content/uploads/*Google$image,~third-party
 @@||xfinity.com^*/Comcast.SelfService.Sitecatalyst.js
