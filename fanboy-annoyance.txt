@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202011030936
+! Version: 202011030938
 ! Title: Fanboy's Annoyance List
-! Last modified: 03 Nov 2020 09:36 UTC
+! Last modified: 03 Nov 2020 09:38 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -33935,6 +33935,10 @@ _site_cookie_
 ||volksbund-cookie.de^$third-party
 ||widget.clym-sdk.net^$third-party
 ||wpcc.io^$third-party
+! Consent Trackers
+||opencmp.net^$script,third-party
+||privacy-mgmt.com^$script,third-party
+||sp-prod.net^$third-party
 ! --------------------------Specific blocking filters--------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_specific_block.txt ***
 ||4chan.org/b/*.swf
@@ -45942,6 +45946,7 @@ yoigo.com#@#thor-cookies
 @@||mitsubishielectric.com^*/cookie-gateway/$~third-party
 @@||natalieportman.com^*/js/cookielawinfo-$script
 @@||netdna-ssl.com/wp-content/plugins/bwp-minify/*/wp-gdpr-$script,stylesheet,domain=x-plane.com
+@@||notice.sp-prod.net^$subdocument,domain=telegraph.co.uk
 @@||oddschecker.com/OC-B2B/platform-uk-gdpr-banner/$script
 @@||oekostrom.at/js/lib/cookieconsent.js$script,~third-party
 @@||onetrust.com/request/$xmlhttprequest
