@@ -498,7 +498,7 @@
 ||yts.mx/ypt3.js
 ||zkillboard.com/img/brave_switch.png
 !
-/^https?:\/\/.*.(club|bid|xyz|site|pro|info)\/.*/$third-party,domain=9xupload.xyz|bdupload.asia|desiupload.co|flashx.tv|powvideo.net|powvldeo.me|streamplay.biz|streamplay.to|videobin.co
+/^https?:\/\/.*.(club|bid|xyz|site|pro|info)\/.*/$third-party,domain=9xupload.xyz|bdupload.asia|desiupload.co|flashx.tv|powvideo.net|powvldeo.me|videobin.co
 !
 /^https?:\/\/[0-9a-z]{11,20}.*.com\/.*/$third-party,domain=9xmovies.app|9xupload.xyz|mixdrop.co|mixdrop.to|ovagames.com
 ! In-page video advertising.
@@ -843,10 +843,10 @@ $script,third-party,xmlhttprequest,domain=abcvideo.cc
 @@||assets.hcaptcha.com/captcha/$script,subdocument,domain=abcvideo.cc
 @@||hcaptcha.com^*/api.js$script,domain=abcvideo.cc
 ! streamplay
+$image,script,subdocument,third-party,xmlhttprequest,domain=streamp1ay.cc|streamplay.to
 /^https?:\/\/.*.str?eamplay.*\/.*[?&$=!]/$script,subdocument
-@@||spcdn.cc^$image,script,xmlhttprequest,domain=streamplay.to
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=streamplay.to
+@@||spcdn.cc^$image,script,xmlhttprequest,domain=streamp1ay.cc|streamplay.to
+||centent.streamp1ay.
 ||steamplay.*/jquery-
 ||streamp1ay.*/jquery-
 ||streamplay.*/jquery-
