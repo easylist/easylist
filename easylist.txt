@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202011230102
+! Version: 202011230111
 ! Title: EasyList
-! Last modified: 23 Nov 2020 01:02 UTC
+! Last modified: 23 Nov 2020 01:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28294,6 +28294,7 @@ _popunder+$popup
 ##.sponsored-links-red
 ##.sponsored-links-right
 ##.sponsored-links-tbl
+##.sponsored-media
 ##.sponsored-offers-box
 ##.sponsored-post
 ##.sponsored-post-container
@@ -57232,6 +57233,7 @@ uefa.com##.geoTargetSponsor
 uefa.com##.geoTargetSponsorHeader
 motortrend.com##.get-quote
 health24.com##.get_quote
+pixabay.com##.getty-ad
 ksl.com##.gfp-slot
 mediacoderhq.com##.gg1
 bitcomet.com##.gg728
@@ -58748,6 +58750,8 @@ ksl.com#?#.queue:-abp-has(.sponsored)
 multiup.eu,multiup.org#?#.alert:-abp-contains(VPN)
 multiup.eu,multiup.org#?#.col-md-4:-abp-contains(Usenet.nl)
 multiup.eu,multiup.org#?#.trtbl:-abp-has(.warnIp)
+nex-software.com#?#.toolinfo:-abp-has(a[href$="/reimage"])
+nex-software.com#?#h4:-abp-has(a[href$="/reimage"])
 qwant.com#?#.result:-abp-has(.url:-abp-has(.info))
 radioreference.com#?#.box.gradient:-abp-has(a[href*="&Click="])
 solarmovie.ink#?#.row:-abp-contains(in HD)
