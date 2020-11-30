@@ -364,6 +364,7 @@
 ||oppfiles.com^*/jquery.
 ||optics.org/banners/
 ||pastebin.pl/custom-images/brave-
+||pcmag.com/s/js/zad.js
 ||pes-serbia.com/prijatelji/zero.png
 ||phorio.com^*/partners/
 ||phuketwan.com/img/b/
@@ -650,6 +651,14 @@ $script,third-party,xmlhttprequest,domain=govid.co
 ||imageshimage.com^$~third-party,xmlhttprequest
 ||imagetwist.com^$script,~third-party
 ||imagetwist.com^$~third-party,xmlhttprequest
+! canyoublockit.com
+@@||akamaiedge.net^$domain=canyoublockit.com
+@@||cloudflare.com^$script,stylesheet,domain=canyoublockit.com
+@@||fluidplayer.com^$script,stylesheet,domain=canyoublockit.com
+@@||googleapis.com^$script,stylesheet,domain=canyoublockit.com
+@@||hwcdn.net^$domain=canyoublockit.com
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
 ! shink
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
