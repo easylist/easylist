@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202011300931
+! Version: 202011300950
 ! Title: EasyList
-! Last modified: 30 Nov 2020 09:31 UTC
+! Last modified: 30 Nov 2020 09:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51586,6 +51586,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||bongacams2.com/track$popup
 ||bongacams7.com/track$popup
 ||bovada.lv^$popup,third-party
+||canyoublockit.com^$popup,third-party
 ||casino-x.com^*?partner=$popup,third-party
 ||casinoadviser.net^$popup
 ||cdn.optmd.com^$popup,third-party
@@ -52871,6 +52872,14 @@ $script,third-party,xmlhttprequest,domain=govid.co
 ||imageshimage.com^$~third-party,xmlhttprequest
 ||imagetwist.com^$script,~third-party
 ||imagetwist.com^$~third-party,xmlhttprequest
+! canyoublockit.com
+@@||akamaiedge.net^$domain=canyoublockit.com
+@@||cloudflare.com^$script,stylesheet,domain=canyoublockit.com
+@@||fluidplayer.com^$script,stylesheet,domain=canyoublockit.com
+@@||googleapis.com^$script,stylesheet,domain=canyoublockit.com
+@@||hwcdn.net^$domain=canyoublockit.com
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
 ! shink
 @@||ajax.googleapis.com/ajax/libs/$script,domain=shink.me|shon.xyz
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
