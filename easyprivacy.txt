@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202012032302
+! Version: 202012040317
 ! Title: EasyPrivacy
-! Last modified: 03 Dec 2020 23:02 UTC
+! Last modified: 04 Dec 2020 03:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -833,6 +833,7 @@
 /api/analytics/*
 /api/analytics?
 /api/analytics|
+/api/cmp_tracker
 /api/log?
 /api/lt/ref?
 /api/metrics$other
@@ -868,7 +869,6 @@
 /AppMeasurementCustom.
 /apTracker.
 /aptrk.js
-/apw.js
 /aqtag.
 /ard.png?
 /argtk.min.
@@ -12842,6 +12842,7 @@ _mongo_stats/
 ||pia.jp/akam/$script
 ||pia.jp/images/pt.gif$image
 ||popin.cc/popin_discovery
+||popin.cc/td_js_
 ||quant.jp/track/
 ||rcm.shinobi.jp^
 ||rd.rakuten.co.jp^$script
@@ -14235,7 +14236,6 @@ _mongo_stats/
 ||local.ch/track/
 ||localads-statistics.maps.me^
 ||localmonero.co/static/ga.js
-||location.bloomberg.com^
 ||log.china.cn^
 ||log.go.com^
 ||log.hypebeast.com^
@@ -17364,6 +17364,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||log.ttbc-hcm.gov.vn^
 ||logsbin.dantri.com.vn^
 ! Indonesian
+||analytic20.detik.com^
 ||ktracker.kumparan.com^
 ! Specific blocking filters necessary for sites allowlisting with $genericblock filter option
 ! Gamestar.de
@@ -17867,6 +17868,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
 ! Consent Fixes
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
+@@||sourcepointcmp.bloomberg.com/mms/get_site_data$xmlhttprequest,domain=bloomberg.com
 ! Stackoverflow-related. https://forums.lanik.us/viewtopic.php?f=64&t=44747
 @@||askubuntu.com/tags/$~third-party,xmlhttprequest
 @@||mathoverflow.net/tags/$~third-party,xmlhttprequest
