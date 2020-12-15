@@ -5417,7 +5417,7 @@ cgi-bin/counter
 /pg*.js?PID=$xmlhttprequest
 ! Akamai fingerprinting
 ! https://publicwww.com/websites/%22_cf.push%22/
-/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
+! /^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
 ! Cloudflare fingerprinting
 /cgi-bin/bm/cv/*$script
 ! Admiral
