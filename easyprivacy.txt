@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202012150648
+! Version: 202012150740
 ! Title: EasyPrivacy
-! Last modified: 15 Dec 2020 06:48 UTC
+! Last modified: 15 Dec 2020 07:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5431,7 +5431,7 @@ cgi-bin/counter
 /pg*.js?PID=$xmlhttprequest
 ! Akamai fingerprinting
 ! https://publicwww.com/websites/%22_cf.push%22/
-/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
+! /^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
 ! Cloudflare fingerprinting
 /cgi-bin/bm/cv/*$script
 ! Admiral
