@@ -2645,6 +2645,7 @@
 ! genieesspv https://github.com/easylist/easylist/issues/6471
 /^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
 ! Fingerprint
+/^https?:\/\/editorial\.rottentomatoes\.com\/bundles\/[a-z0-9]{30,}/$script,xmlhttprequest,domain=rottentomatoes.com
 /^https?:\/\/www\.halifax-online\.co\.uk\/bundles\/[a-z0-9]{15,}/$script,domain=halifax-online.co.uk
 /^https?:\/\/www\.imperva\.com\/[0-9a-f]{30,}\?/$script,xmlhttprequest,domain=imperva.com
 /^https?:\/\/www\.mouser\.com\/[a-z]{25,}.js/$script,xmlhttprequest,domain=mouser.com
