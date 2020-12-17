@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202012162258
+! Version: 202012170158
 ! Title: EasyList
-! Last modified: 16 Dec 2020 22:58 UTC
+! Last modified: 17 Dec 2020 01:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -168,6 +168,7 @@
 -ad-shortcodes/
 -ad-sidebar-
 -ad-sidebar.
+-Ad-Space-
 -ad-strip.
 -ad-switcher.
 -ad-tags.
@@ -5119,6 +5120,7 @@
 /hostgator-ad.
 /hosting/ads/*
 /hostkey-ad.
+/House-Ad-
 /house-ad.
 /house-ad/*
 /house-ads/*
@@ -15013,6 +15015,7 @@ _popunder+$popup
 ###homepage-right-rail-ad
 ###homepage-sidebar-ad
 ###homepage-sidebar-ads
+###homepage-sponsored
 ###homepageAd
 ###homepageAdsTop
 ###homepageFooterAd
@@ -26276,6 +26279,7 @@ _popunder+$popup
 ##.match-ad
 ##.match-results-cards-ad
 ##.mb-advert
+##.mb-advert__incontent
 ##.mb-advert__leaderboard--large
 ##.mb-advert__mpu
 ##.mb-advert__tweeny
@@ -53107,6 +53111,8 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 /^https?:\/\/.*.(club|bid|xyz|site|pro|info)\/.*/$third-party,domain=9xupload.xyz|bdupload.asia|desiupload.co|flashx.tv|powvideo.net|powvldeo.me|videobin.co
 ! 
 /^https?:\/\/[0-9a-z]{11,20}.*.com\/.*/$third-party,domain=9xmovies.app|9xupload.xyz|mixdrop.co|mixdrop.to|ovagames.com
+! prebid specific
+||bustle.com^*/prebid-
 ! In-page video advertising.
 ||avantisvideo.com/avm/js/video-loader.js$script,third-party
 ||minutemediaservices.com/mplayer_embed.html$third-party
@@ -57735,6 +57741,8 @@ chrisbrownworld.com,myplay.com##.fwas300x250
 masterworksbroadway.com##.fwas728x90_top
 fxstreet.com##.fxs_leaderboard
 bluntforcetruth.com,borneobulletin.com.bn,chicagodefender.com,dallasvoice.com,gematsu.com,hotnews.org.za,newsday.co.zw,nondoc.com,one.com.mt,radioinsight.com,thegolfnewsnet.com,theindependent.co.zw,thestandard.co.zw##.g
+moviemaker.com##.g-2.g
+moviemaker.com##.g-4.g
 thelakewoodscoop.com##.g-col > a
 nofilmschool.com##.g-leader
 businessofapps.com##.g-single
@@ -58917,6 +58925,7 @@ monova.org##[onclick] > [target="_blank"]
 monova.org##[onclick] > a[class]
 filecrypt.cc,filecrypt.co##[onclick^="location.href"]
 filecrypt.cc,filecrypt.co##[onclick^="top.location"]
+musicbusinessworldwide.com##[src*="/600x500.jpg"]
 smallseotools.com##[style*="height: 300px;"]
 washingtonpost.com##[style*="padding-left: 10px; padding-right: 10px;"]
 wahm.com##[style="min-height:250px;"]
