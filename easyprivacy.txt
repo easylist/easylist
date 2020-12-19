@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202012190256
+! Version: 202012190312
 ! Title: EasyPrivacy
-! Last modified: 19 Dec 2020 02:56 UTC
+! Last modified: 19 Dec 2020 03:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -85,6 +85,7 @@
 -lp-tracking.
 -mastertag.
 -mediaplex_
+-optimization-metrics.
 -optimost-
 -page-analytics.
 -pixel.*?uuid=
@@ -15596,6 +15597,9 @@ _mongo_stats/
 ||wallcannrewards.com^*/index.php?
 ||walletpop.com/track/
 ||wallpaperstock.net/partners.js
+||walmart.com/client/api/logs
+||walmart.com/client/api/metrics
+||walmartimages.com^*/cdn-perf.min.js$domain=walmart.com
 ||warp.prnewswire.co.uk^
 ||washingtonpost.com/notification-sw.js
 ||washingtonpost.com/wp-stat/analytics/
@@ -17955,7 +17959,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||vodafone.com.au/analytics/js/$script
 @@||vouchercodes.co.uk/__wsm.gif$ping
 @@||waitrosecellar.com^*/eventTracking-Cellar.js$domain=waitrosecellar.com
-@@||walmart.com^*/api/logger$xmlhttprequest
 @@||washingtonpost.com/wp-stat/analytics/latest/main.js
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||weightwatchers.com/optimizelyjs/$script,~third-party
