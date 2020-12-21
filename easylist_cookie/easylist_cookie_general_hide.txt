@@ -10053,7 +10053,7 @@
 ##.js-consent-popup
 ##.js-consent-react-root
 ##.js-coockie
-##.js-cookie
+##.js-cookie:not(html):not(body)
 ##.js-cookie--modal
 ##.js-cookie-agree
 ##.js-cookie-alert
@@ -11710,6 +11710,7 @@
 ##[data-at-selector="cookie-banner"]
 ##[data-bind="visible: showCookieWarning"]
 ##[data-cookie-id]
+##[data-cookie-msg]:not(html):not(body)
 ##[data-cookie-validity-days]
 ##[data-cookie="uso-accept-cookies"]
 ##[data-cookie^="cookie.disclaimer"]
