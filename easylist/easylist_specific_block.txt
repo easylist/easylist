@@ -601,27 +601,6 @@ $script,stylesheet,third-party,xmlhttprequest,domain=vshare.eu
 ! urlcash.net
 |http://$script,xmlhttprequest,domain=urlcash.net
 |https://$script,xmlhttprequest,domain=urlcash.net
-! Rarbg
-@@.php?$csp,~third-party,domain=rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|rarbgunblock.com|rarbgunblocked.org|rarbgway.org
-@@/scripts/hcaptcha.challenge.js$script,~third-party,domain=rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|rarbgunblock.com|rarbgunblocked.org|rarbgway.org
-@@||hcaptcha.com/captcha/$domain=rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|rarbgunblock.com|rarbgunblocked.org|rarbgway.org
-@@||hcaptcha.com^*/api.js$script,domain=rarbg.to|rarbg2019.org|rarbg2020.org|rarbg2021.org|rarbgaccess.org|rarbgmirror.com|rarbgmirror.org|rarbgmirrored.org|rarbgp2p.org|rarbgproxied.org|rarbgproxy.org|rarbgprx.org|rarbgto.org|rarbgunblock.com|rarbgunblocked.org|rarbgway.org
-||rarbg.to^$script,~third-party
-||rarbg2019.org^$script,~third-party
-||rarbg2020.org^$script,~third-party
-||rarbg2021.org^$script,~third-party
-||rarbgaccess.org^$script,~third-party
-||rarbgmirror.com^$script,~third-party
-||rarbgmirror.org^$script,~third-party
-||rarbgmirrored.org^$script,~third-party
-||rarbgp2p.org^$script,~third-party
-||rarbgproxied.org^$script,~third-party
-||rarbgproxy.org^$script,~third-party
-||rarbgprx.org^$script,~third-party
-||rarbgto.org^$script,~third-party
-||rarbgunblock.com^$script,~third-party
-||rarbgunblocked.org^$script,~third-party
-||rarbgway.org^$script,~third-party
 ! animepahe.com
 $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe.com
 @@||cloudflare.com^$script,third-party,domain=animepahe.com
@@ -642,12 +621,6 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe
 $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
 @@||vidtodo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
 @@||vidtodoo.com^$image,script,stylesheet,xmlhttprequest,domain=vidtodo.com|vidtodoo.com
-! firstrow-related
-@@?stream=/embed/*&width=*&height=$script,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|webfirstrow.eu
-@@||ajax.googleapis.com^$script,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|webfirstrow.eu
-@@||platform.twitter.com^$script,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|webfirstrow.eu
-|http://$script,third-party,xmlhttprequest,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|webfirstrow.eu
-|https://$script,third-party,xmlhttprequest,domain=firstrowas.co|gofirstrow.eu|ifirstrow.eu|webfirstrow.eu
 ! Putlocker
 @@||ajax.googleapis.com^$script,domain=putlocker.actor|putlocker.style|putlocker.to|putlockers.mn|putlockers.movie
 @@||apis.google.com^$script,subdocument,domain=putlocker.actor|putlocker.style|putlocker.to|putlockers.mn|putlockers.movie
