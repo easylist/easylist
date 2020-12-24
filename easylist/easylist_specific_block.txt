@@ -478,10 +478,6 @@
 @@||fontawesome.com^$script,stylesheet,domain=mp4upload.com
 |http://$script,stylesheet,third-party,xmlhttprequest,domain=mp4upload.com
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=mp4upload.com
-! 4chan
-@@||4cdn.org^$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=4chan.org
 ! doood
 @@||cdn.jsdelivr.net^$script,stylesheet,domain=dood.to|dood.watch
 @@||cdnjs.cloudflare.com^$script,stylesheet,domain=dood.to|dood.watch
@@ -520,11 +516,6 @@
 $script,stylesheet,subdocument,third-party,xmlhttprequest,domain=youdbox.com
 @@||bootstrapcdn.com^$script,stylesheet,domain=youdbox.com
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=youdbox.com
-! audioz.download
-$script,third-party,domain=audioz.download
-@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=audioz.download
-@@||code.jquery.com^$script,domain=audioz.download
-@@||connect.facebook.net^$script,domain=audioz.download
 ! filerio.in
 $script,third-party,domain=filerio.in
 @@||maxcdn.bootstrapcdn.com^$script,domain=filerio.in
@@ -539,13 +530,6 @@ $script,domain=imx.to
 @@||imx.to/js/bootstrap.min.js$script
 @@||imx.to/js/csTransPieManual.js$script
 @@||imx.to/js/jquery$script
-! rd.com (Revolving adservers)
-$image,third-party,xmlhttprequest,domain=rd.com
-@@||amazon-adsystem.com/aax2/apstag.js$domain=rd.com
-@@||assets-jpcust.jwpsrv.com^$image,domain=rd.com
-@@||content.jwplatform.com^$image,xmlhttprequest,domain=rd.com
-@@||jwplayer.com^$xmlhttprequest,domain=rd.com
-@@||jwpsrv.com^$xmlhttprequest,domain=rd.com
 ! vidoza.net
 $image,script,subdocument,third-party,xmlhttprequest,domain=heapfiles.com|vidoza.co|vidoza.net
 @@$generichide,domain=heapfiles.com|vidoza.co|vidoza.net
@@ -611,28 +595,6 @@ $script,stylesheet,third-party,xmlhttprequest,domain=vshare.eu
 ! filmlinks4u.is
 |http://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
 |https://$script,third-party,xmlhttprequest,domain=filmlinks4u.is
-! torrentdownload.info
-$script,third-party,xmlhttprequest,domain=torrentdownload.info
-@@||ajax.googleapis.com^$script,domain=torrentdownload.info
-! watchvideo
-@@/index-*.m3u8$xmlhttprequest,domain=watchvideo.us
-@@/master.m3u8$xmlhttprequest,domain=watchvideo.us
-@@/seg-*.ts$xmlhttprequest,domain=watchvideo.us
-@@||disqus.com^$domain=series.movie
-@@||disquscdn.com^$domain=series.movie
-@@||themovieseries.net^$image,domain=series.movie
-|http://$script,third-party,xmlhttprequest,domain=watchvideo.us
-|https://$script,third-party,xmlhttprequest,domain=watchvideo.us
-||bit.ly^$subdocument,domain=watchvideo.us
-! skidrowreloaded.com
-|http://$script,third-party,xmlhttprequest,domain=skidrowreloaded.com
-|https://$script,third-party,xmlhttprequest,domain=skidrowreloaded.com
-! ancensored.com (nsfw)
-$script,domain=ancensored.com
-$third-party,xmlhttprequest,domain=ancensored.com
-@@||ancensored.com/js/flowplayer.min.js$script,~third-party
-@@||ancensored.com/js/script.all.js$script,~third-party
-@@||ancensoredcdn2.xyz/script.js$script,domain=ancensored.com
 ! embedscr.to
 |http://$script,third-party,xmlhttprequest,domain=embedscr.to|embedsr.to|iembedrip.com
 |https://$script,third-party,xmlhttprequest,domain=embedscr.to|embedsr.to|iembedrip.com
@@ -660,23 +622,6 @@ $third-party,xmlhttprequest,domain=ancensored.com
 ||rarbgunblock.com^$script,~third-party
 ||rarbgunblocked.org^$script,~third-party
 ||rarbgway.org^$script,~third-party
-! rule34
-@@||code.jquery.com^$script,domain=rule34.xxx
-@@||rule34.xxx/ads.js$script,~third-party
-@@||rule34.xxx/cdn-cgi/scripts/*/email-decode.min.js$script,~third-party
-@@||rule34.xxx/css/sinni.js$script,~third-party
-@@||rule34.xxx/script/application.js$script,~third-party
-@@||rule34.xxx/script/awesomplete.min.js$script,~third-party
-@@||rule34.xxx/script/fluidplayer.min.js$script,~third-party
-@@||rule34.xxx/script/fluidplayer/fluidplayer.js$script,~third-party
-@@||sweetcaptcha.com^$script,domain=rule34.xxx
-|http://$script,domain=rule34.xxx
-|https://$script,domain=rule34.xxx
-! kat.sx
-@@||ajax.googleapis.com^$script,domain=kat.sx
-@@||kat.sx/jquery.min.js$script,~third-party
-|http://$script,domain=kat.sx
-|https://$script,domain=kat.sx
 ! animepahe.com
 $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe.com
 @@||cloudflare.com^$script,third-party,domain=animepahe.com
@@ -688,21 +633,6 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=animepahe
 @@||cdn.multiup.org/assets/js.js$script,domain=multiup.eu
 |http://$script,third-party,xmlhttprequest,domain=multiup.eu|multiup.org
 |https://$script,third-party,xmlhttprequest,domain=multiup.eu|multiup.org
-! fullmatchesandshows.com
-@@||amazonaws.com/html5player.gamezone.com/$script,domain=fullmatchesandshows.com
-@@||platform.instagram.com^$script,domain=fullmatchesandshows.com
-@@||playwire.com^$script,xmlhttprequest,domain=fullmatchesandshows.com
-@@||s.gravatar.com^$script,domain=fullmatchesandshows.com
-@@||video.twimg.com^$xmlhttprequest,domain=twitter.com
-@@||wp.com/wp-content/js/$script,domain=fullmatchesandshows.com
-|http://$script,third-party,xmlhttprequest,domain=fullmatchesandshows.com
-|https://$script,third-party,xmlhttprequest,domain=fullmatchesandshows.com
-! downace.com
-|http://$script,third-party,xmlhttprequest,domain=downace.com
-|https://$script,third-party,xmlhttprequest,domain=downace.com
-! upload.ac
-|http://$script,third-party,xmlhttprequest,domain=upload.ac
-|https://$script,third-party,xmlhttprequest,domain=upload.ac
 ! gelbooru.com
 @@||gelbooru.com^$generichide
 ||gelbooru.com*/license.$script
@@ -739,20 +669,6 @@ $image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=vidtodo.c
 ! bc.vc
 |http://$script,third-party,xmlhttprequest,domain=bc.vc
 |https://$script,third-party,xmlhttprequest,domain=bc.vc
-! eztv
-@@/email-decode.min.js$script,domain=eztv.io|eztv.tf|eztv.yt
-@@/img1.js$script,domain=eztv.io|eztv.tf|eztv.yt
-@@/jsc2.js$script,domain=eztv.io|eztv.tf|eztv.yt
-@@/search_shows2.js$script,domain=eztv.io|eztv.tf|eztv.yt
-@@||ajax.googleapis.com^$script,domain=eztv.io|eztv.tf|eztv.yt
-@@||cdnjs.cloudflare.com^$script,domain=eztv.io|eztv.tf|eztv.yt
-@@||connect.facebook.net^$script,domain=eztv.io|eztv.tf|eztv.yt
-@@||eztv.io^$generichide
-@@||eztv.tf^$generichide
-@@||eztv.yt^$generichide
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=eztv.io|eztv.tf|eztv.yt
-|http://$script,xmlhttprequest,domain=eztv.io|eztv.tf|eztv.yt
-|https://$script,xmlhttprequest,domain=eztv.io|eztv.tf|eztv.yt
 ! adf.ly
 @@||adf.ly/static/image/$image,~third-party
 @@||s1-adfly.com/show.php?$subdocument,third-party,domain=adf.ly
@@ -767,9 +683,6 @@ $script,third-party,xmlhttprequest,domain=tamilyogi.cc|tamilyogi.vip
 $media,domain=damimage.com|imagedecode.com|imageteam.org
 |http://$image,script,third-party,xmlhttprequest,domain=damimage.com|imagedecode.com|imageteam.org
 |https://$image,script,third-party,xmlhttprequest,domain=damimage.com|imagedecode.com|imageteam.org
-! imgskull.com
-|http://$image,script,third-party,xmlhttprequest,domain=imgskull.com
-|https://$image,script,third-party,xmlhttprequest,domain=imgskull.com
 ||imgskull.com^$xmlhttprequest
 ! Imgclick / Imgdew / Imgkings.com / Imgoutlet / Imgrock / Imgtown / Imgtrex / etc
 ||imgadult.com/anex/
