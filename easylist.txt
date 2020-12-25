@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202012250956
+! Version: 202012251047
 ! Title: EasyList
-! Last modified: 25 Dec 2020 09:56 UTC
+! Last modified: 25 Dec 2020 10:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -29825,7 +29825,6 @@ _popunder+$popup
 ##a[href*=".revimedia.com/"]
 ##a[href*=".smartadserver.com"]
 ##a[href*=".udncoeln.com/"]
-##a[href^=".vddfe.club/"]
 ##a[href*="//bongacams.com/track?"]
 ##a[href*="//bongacams2.com/track?"]
 ##a[href*="//bongacams5.com/track?"]
@@ -29851,6 +29850,7 @@ _popunder+$popup
 ##a[href*="onclkds."]
 ##a[href*="pussl3.com"]
 ##a[href^=" http://www.sex.com/"][href*="&utm_"]
+##a[href^=".vddfe.club/"]
 ##a[href^="//00ae8b5a9c1d597.com/"]
 ##a[href^="//40ceexln7929.com/"]
 ##a[href^="//4c7og3qcob.com/"]
@@ -54491,6 +54491,7 @@ $popup,third-party,domain=loader.to|play.hydracdn.network|streamtape.com|vidclou
 ||t-51.com^*/banners/
 ||taxidrivermovie.com/mrskin_runner/
 ||taxidrivermovie.com^$~third-party,xmlhttprequest
+||tbib.org/tbib.
 ||teenpornvideo.xxx/tpv.js
 ||theboys.be/nvrbl/
 ||thedoujin.com/*.php|
@@ -54575,133 +54576,20 @@ $popup,third-party,domain=loader.to|play.hydracdn.network|streamtape.com|vidclou
 ||zazzybabes.com/istr/t2eff4d92a2d.js
 ||zemporn.com/js/pns.min.js
 ||zuzandra.info/b?
-! tbib.org
-||tbib.org/tbib.
-! txxx network
-/poppy/*$domain=hclips.com|hdzog.com|hotmovs.com|shemalez.com|thegay.com|tubepornclassic.com|txxx.com|upornia.com|voyeurhit.com
-/saber/hdzog/*$script
+! third-party servers
+/^https?:\/\/.*.(club|bid|xyz|site|pro|info|online|icu|monster|buzz|fun|website|re|casa|top|space|network|live|work|systems|me|ml|world|life)\/.*/$script,third-party,xmlhttprequest,domain=4tube.com|asianpornmovies.com|hclips.com|hdzog.com|hotmovs.com|milfzr.com|shemalez.com|thegay.com|tubepornclassic.com|txxx.com|upornia.com|voyeurhit.com|xozilla.com
 ! motherless
 /^https?:\/\/motherless\.com\/[a-z0-9A-Z]{3,}\.[a-z0-9A-Z]{2,}\_/$image,subdocument
 ! (/sw.js)
 /^https?:\/\/.*\/.*sw[0-9._].*/$script,xmlhttprequest,domain=adult-channels.com|analdin.com|biguz.net|bogrodius.com|daftsex.com|extremetube.com|fantasti.cc|fux.com|heavy-r.com|incesto69.com|indianbfvideos.com|keezmovies.com|mofosex.com|mypornhere.com|mypornstarbook.net|niceporn.xxx|porn555.com|porndaa.com|pornerbros.com|pornj.com|pornototale.com|porntube.com|sexu.com|spankwire.com|thisav.com|titkino.net|tubepornclassic.com|tuberel.com|tubev.sex|txxx.com|vidmo.org|vpornvideos.com|xozilla.com|youporn.lc|youpornhub.it|yourdailypornstars.com
-! pornhive.tv
-$script,subdocument,third-party,domain=pornhive.tv
-! wetplace.com
-|http://$script,third-party,xmlhttprequest,domain=wetplace.com
-|https://$script,third-party,xmlhttprequest,domain=wetplace.com
-! javfhd.net / myhdjav.info
-|http://$script,third-party,xmlhttprequest,domain=javfhd.net|myhdjav.info
-|https://$script,third-party,xmlhttprequest,domain=javfhd.net|myhdjav.info
-! xkeezmovies.com
-|http://$script,third-party,xmlhttprequest,domain=xkeezmovies.com
-|https://$script,third-party,xmlhttprequest,domain=xkeezmovies.com
-! xxxkingtube.com
-||xxxkingtube.com/*.php$image,script
-! updatetube.com
-|http://$script,third-party,xmlhttprequest,domain=updatetube.com
-|https://$script,third-party,xmlhttprequest,domain=updatetube.com
-! pornhd.com
-$script,domain=pornhd.com
-@@||cdn-static-cf-s.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdn-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdn-static.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdnb-static-cf-s.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdnb-static-cf.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||cdnb-static.pornhd.com/pornhd/$script,domain=pornhd.com
-@@||gotprofits.com/contact-us-form/$script,domain=www.pornhd.com
-! xozilla.com
-@@||awemwh.com^$image,domain=xozilla.com
-@@||cdnjs.cloudflare.com^$script,domain=xozilla.com
-@@||fluidplayer.com^$domain=xozilla.com
-|http://$image,script,third-party,xmlhttprequest,domain=xozilla.com
-|https://$image,script,third-party,xmlhttprequest,domain=xozilla.com
-||xozilla.com/agent.php$image,script,subdocument
-! efukt.com
-$script,subdocument,third-party,domain=efukt.com
-@@||ajax.googleapis.com/ajax/$script,domain=efukt.com
-@@||twitter.com^$script,subdocument,domain=efukt.com
-@@||zencdn.net^$script,domain=efukt.com
-! 4tube.com, porntube.com, pornerbros.com, fux.com
-/ade/baloo.php
-! pronpic.org
-||bugel.pronpic.org^$image
-||newmail.pronpic.org^$script
-||pronpic.org^$media
-! fantasti.cc
-||fantasti.cc^$xmlhttprequest
-! zone-anime.net
-@@||connect.facebook.net^$script,domain=zone-anime.net
-@@||disqus.com^$script,domain=zone-anime.net
-|http://$script,third-party,xmlhttprequest,domain=zone-anime.net
-|https://$script,third-party,xmlhttprequest,domain=zone-anime.net
-! xmoviesforyou.com
-|http://$script,third-party,xmlhttprequest,domain=xmoviesforyou.com
-|https://$script,third-party,xmlhttprequest,domain=xmoviesforyou.com
-! txxx.com
-@@||ahcdn.com^$xmlhttprequest,domain=txxx.com
-@@||ajax.googleapis.com^$domain=txxx.com
-@@||tubecup.org^$xmlhttprequest,domain=txxx.com
-|http://$script,third-party,xmlhttprequest,domain=txxx.com
-|https://$script,third-party,xmlhttprequest,domain=txxx.com
-! urlgalleries.net
-@@||ajax.googleapis.com/ajax/$script,domain=urlgalleries.net
-|http://$script,third-party,xmlhttprequest,domain=urlgalleries.net
-|https://$script,third-party,xmlhttprequest,domain=urlgalleries.net
-! pornerbros.com
-|http://$script,third-party,xmlhttprequest,domain=pornerbros.com
-|https://$script,third-party,xmlhttprequest,domain=pornerbros.com
-! sextube.com
-@@||static.sextube.phncdn.com^$script,domain=sextube.com
-|http://$script,third-party,xmlhttprequest,domain=sextube.com
-|https://$script,third-party,xmlhttprequest,domain=sextube.com
-! milfzr.com
-@@||ajax.googleapis.com^$script,domain=milfzr.com
-@@||apis.google.com^$script,domain=milfzr.com
-@@||connect.facebook.net^$script,domain=milfzr.com
-@@||jwpcdn.com^$script,xmlhttprequest,domain=milfzr.com
-|http://$script,third-party,xmlhttprequest,domain=milfzr.com
-|https://$script,third-party,xmlhttprequest,domain=milfzr.com
-! anyporn
-@@||anyporn.com/captcha/comments/?$image
-@@||anyporn.com/js/videopreview.js$script
-@@||anyporn.com/player/fluidplayer/$script
-@@||anyporn.com/v4_js/main.min.js$script
-@@||anyporn.com/videojs/video.js$script
-@@||anyporn.com/videojs/videojs-overlay.js$script
-@@||anyporn.com/videojs/vjs-related.js$script
-@@||anyporn.com/videos_screenshots/$image
-||anyporn.com^$image,script,subdocument,xmlhttprequest
 ! gaybeeg.info
 @@||netdna-storage.com^$xmlhttprequest,domain=gaybeeg.info
 @@||translate.google.com^$script,domain=gaybeeg.info
 @@||wp.com/wp-content/js/$script,domain=gaybeeg.info
 |http://$script,third-party,xmlhttprequest,domain=gaybeeg.info
-! hdzog.com
-@@||ajax.googleapis.com^$script,domain=hdzog.com
-@@||hdzog.com/key=$~third-party,xmlhttprequest
-@@||hdzog.com/player/timelines.php?$~third-party,xmlhttprequest
-|http://$script,third-party,xmlhttprequest,domain=hdzog.com
-|https://$script,third-party,xmlhttprequest,domain=hdzog.com
-||hdzog.com/njs/$script
-||hdzog.com^$~third-party,xmlhttprequest
-! amateurdumper.com
-@@||ajax.googleapis.com^$script,third-party,domain=amateurdumper.com
-|http://$script,third-party,xmlhttprequest,domain=amateurdumper.com|myxvids.com
-|https://$script,third-party,xmlhttprequest,domain=amateurdumper.com|myxvids.com
-! dreamamateurs.com
-|http://$script,third-party,xmlhttprequest,domain=dreamamateurs.com
-|https://$script,third-party,xmlhttprequest,domain=dreamamateurs.com
-! Sxyprn.com/Myporn.club
-@@||ajax.googleapis.com^$script,domain=myporn.club|sxyprn.com
-@@||trafficdeposit.com//blog/$image,domain=sxyprn.com
-@@||trafficdeposit.com/blog/$image,domain=sxyprn.com
-@@||yps.link/emoji/$image,domain=sxyprn.com
-@@||yps.link/users/ava/$image,domain=sxyprn.com
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=myporn.club|sxyprn.com
+|https://$script,third-party,xmlhttprequest,domain=gaybeeg.info
 ! websocket ads
 $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xhamster.com|xtube.com|youporn.com|youporngay.com
-! Perfectgirls
-|http://$script,domain=perfectgirls.es|perfectgirls.net|perfektdamen.co
 ! 3movs.com
 @@||3movs.com/sd3/s/s/js/m/pr-before.js$script,~third-party
 ||3movs.com/ab-a.js
