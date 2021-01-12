@@ -2644,11 +2644,18 @@
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 /^https?:\/\/src\.ebay-us\.com\/[_a-zA-Z0-9]{10,}\?/$script,domain=pages.ebay.com
+/^https?:\/\/tjmaxx\.tjx\.com\/libraries\/[a-z0-9]{20,}$script,xmlhttprequest,domain=tjx.com
 /^https?:\/\/tmx\.td\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com
+/^https?:\/\/www\.backcountry\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=backcountry.com
 /^https?:\/\/www\.ebay-kleinanzeigen\.de\/[a-z0-9]{8}\-[0-9a-f]{4}\-/$script,domain=ebay-kleinanzeigen.de
-/^https?:\/\/www\.kohls\.com\/libraries\/[a-z0-9]{20,}/$script,domain=kohls.com
-/^https?:\/\/www\.macys\.com\/libraries\/[a-z0-9]{20,}/$script,domain=macys.com
+/^https?:\/\/www\.eddiebauer\.com\/content\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=eddiebauer.com
+/^https?:\/\/www\.finishline\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=finishline.com
+/^https?:\/\/www\.kohls\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=kohls.com
+/^https?:\/\/www\.macys\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=macys.com
+/^https?:\/\/www\.marshalls\.com\/utils\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=marshalls.com
 /^https?:\/\/www\.myservices\.equifax\.ca\/TSPD\/[0-9a-f]{30,}/$script,domain=equifax.ca
+/^https?:\/\/www\.sierra\.com\/content\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=sierra.com
+/^https?:\/\/www\.staples\.com\/bundles\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=staples.com
 ||127.0.0.1^$third-party,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay-kleinanzeigen.de|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.ca|equifax.com|globo.com|gumtree.com|lendup.com|mbna.ca|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com|whatleaks.com
 ||all3dp.com/kbcbqexpqvz8wrk88augy7b.js
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
@@ -3090,8 +3097,8 @@
 ://media.*/micb.js|$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 ://media.*/misites/$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 ! Fingerprintjs
+/^https?:\/\/(.+?\.)?bhphotovideo\.com\/[a-z]{10,}\-.*/$script,xmlhttprequest,domain=bhphotovideo.com
 /^https?:\/\/.*\.corsair\.(fr|ci|ca|gp|mq|re)\/[a-z0-9]{19,}\?/$script,xmlhttprequest
-/^https?:\/\/.*bhphotovideo\.com\/[a-z]{10,14}\-.*/$script,xmlhttprequest,domain=bhphotovideo.com
 ||aerlingus.com/ahktqsewxjhguuxe.js
 ||aerlingus.com/ahktqsewxjhguuxexhr.js
 ||greenmangaming.com/omnopfddrdlevbbh.js
