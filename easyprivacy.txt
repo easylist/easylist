@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202101200236
+! Version: 202101200316
 ! Title: EasyPrivacy
-! Last modified: 20 Jan 2021 02:36 UTC
+! Last modified: 20 Jan 2021 03:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -18178,6 +18178,9 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! Opera/Safari (buggy 3rd-party implementations)
+! https://forums.lanik.us/viewtopic.php?f=64&t=45603&p=158333
+@@||bugsnag.com^$~third-party,domain=app.bugsnag.com
 ! Consent Fixes
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
 @@||sourcepointcmp.bloomberg.com/mms/get_site_data$xmlhttprequest,domain=bloomberg.com
