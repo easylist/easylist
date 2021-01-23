@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202101221412
+! Version: 202101230445
 ! Title: EasyPrivacy
-! Last modified: 22 Jan 2021 14:12 UTC
+! Last modified: 23 Jan 2021 04:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -619,7 +619,9 @@
 /amazon-affiliate-
 /amdhfp/a.do?param$image
 /amdhfp/t.do?id$image
+/amp-access/cta?
 /amp-access/ping?
+/amp-access/set?
 /amp-analytics-
 /amp-analytics/*
 /amp-geo-
@@ -1036,6 +1038,7 @@
 /beacon/baminsights.
 /beacon/collector/*
 /beacon/cpcookie.
+/beacon/error?
 /beacon/event/*
 /beacon/event?
 /beacon/get/*
@@ -6178,6 +6181,7 @@ _mongo_stats/
 ||casalemedia.com^$third-party
 ||cashburners.com^$third-party
 ||cashcount.com^$third-party
+||cbdatatracker.com^$third-party
 ||cbtrk.net^$third-party
 ||cccpmo.com^$third-party
 ||ccgateway.net^$third-party
@@ -7823,7 +7827,7 @@ _mongo_stats/
 ||shippinginsights.com^$third-party
 ||shoelace.com^$third-party
 ||shoptimally.com^$third-party
-||showheroes.com^$third-party,domain=~bz-berlin.de
+||showheroes.com^$third-party
 ||showroomlogic.com^$third-party
 ||sift.com^$third-party
 ||siftscience.com^$third-party
@@ -16012,6 +16016,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /^https?:\/\/www\.eddiebauer\.com\/content\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=eddiebauer.com
 /^https?:\/\/www\.finishline\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=finishline.com
 /^https?:\/\/www\.kohls\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=kohls.com
+/^https?:\/\/www\.kroger\.com\/content\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=kroger.com
 /^https?:\/\/www\.macys\.com\/libraries\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=macys.com
 /^https?:\/\/www\.marshalls\.com\/utils\/[a-z0-9]{20,}/$script,xmlhttprequest,domain=marshalls.com
 /^https?:\/\/www\.myservices\.equifax\.ca\/TSPD\/[0-9a-f]{30,}/$script,domain=equifax.ca
@@ -18326,10 +18331,10 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ksta.de^*/tracking/tracking.js$domain=ksta.de
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
 @@||rtl.de^*/videotracking.min.js$domain=rtl.de
-@@||showheroes.com/playlist/vast3?$xmlhttprequest,domain=kochbar.de|rtl.de|rtl2.de
-@@||showheroes.com/publishertag.js$domain=kochbar.de|rtl.de|rtl2.de
-@@||showheroes.com/pubtag.js$domain=kochbar.de|rtl.de|rtl2.de
-@@||showheroes.com/spot/iframe?pageurl=$script,subdocument,domain=kochbar.de|rtl.de|rtl2.de
+@@||showheroes.com/playlist/vast3?$xmlhttprequest,domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
+@@||showheroes.com/publishertag.js$domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
+@@||showheroes.com/pubtag.js$domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
+@@||showheroes.com/spot/iframe?pageurl=$script,subdocument,domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
 @@||spatialbuzz.com/piwik/piwik.js$domain=spatialbuzz.com
 @@||spiegel.de/layout/js/http/netmind-$script
 @@||sunday.de/skin/*/googleanalytics.js$script
