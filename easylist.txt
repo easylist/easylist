@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101240349
+! Version: 202101240400
 ! Title: EasyList
-! Last modified: 24 Jan 2021 03:49 UTC
+! Last modified: 24 Jan 2021 04:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30820,6 +30820,8 @@ _popunder+$popup
 ##.gbfwa > div[class$="_item"]
 ! Mozo widget
 ##iframe[src^="http://static.mozo.com.au/strips/"]
+! In video div
+###ultimedia_wrapper
 ! In advert promo
 ##.brandpost_inarticle
 ! Forumotion.com related sites
@@ -53348,6 +53350,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||player.anyclip.com/anyclip-widget/$script,third-party
 ||player.avplayer.com^$third-party
 ||playwire.com/bolt/js/$script,third-party
+||ultimedia.com/js/common/smart.js$script,third-party
 ||vidazoo.com/basev/$script,third-party
 ||viewdeos.com^$script,third-party
 ! mimecast proxying
