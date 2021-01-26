@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101260952
+! Version: 202101261606
 ! Title: EasyList
-! Last modified: 26 Jan 2021 09:52 UTC
+! Last modified: 26 Jan 2021 16:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3623,7 +3623,7 @@
 /advtemplate/*
 /advtemplate_
 /advts/*
-/advweb.
+/advweb.$domain=~advweb.com.br
 /AdvWindow/*
 /advzones/*
 /adw.$domain=~adw.be|~adw.olsztyn.pl|~adw.org|~adw.org.pl
@@ -31492,6 +31492,7 @@ jamesedition.com#@#.advert2
 pdc.tv#@#.advertColumn
 basingstokehomebid.org.uk,homefindersomerset.co.uk#@#.advertContainer
 longstonetyres.co.uk#@#.advertLink
+rupors.com#@#.advertSlider
 longstonetyres.co.uk#@#.advertText
 niedziela.nl#@#.advert_container
 browsershots.org#@#.advert_list
@@ -34602,6 +34603,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||edspoiletkni.club^
 ||edsufferen.club^
 ||edsurrowin.club^
+||edthoutfre.fun^
 ||educatednicer.com^
 ||educationdemotediabete.com^
 ||eduyzcjsnoeokj.com^
@@ -35373,6 +35375,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||frenchayan.club^
 ||frequestabure.site^
 ||freshborne.com^
+||freychang.fun^
 ||frfnlvnpzeju.com^
 ||frgbgwnbjkgco.com^
 ||frhbrkjgerikm2f8mjek09.com^
@@ -39093,6 +39096,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||pkytbidauolavq.com^
 ||plainlycradlescalp.com^
 ||plaintiffalphabetslacken.com^
+||plannerladyreality.com^
 ||plantationthrillednoncommittal.com^
 ||plasminori.club^
 ||plathwardsve.site^
@@ -41762,6 +41766,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||virashux.net^
 ||virgbmkmear.com^
 ||visariomedia.com^
+||visitsfunk.com^
 ||visitstrack.com^
 ||vitoryjober.club^
 ||viunypnvhcw.com^
@@ -52273,8 +52278,8 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ! https://github.com/easylist/easylist/pull/6720
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,third-party
 ! amazonaws (ad-fix)
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{50,57}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{50,}\/secure\.js/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/secure\.js/$script,third-party,xmlhttprequest,domain=~amazon.com
 ! charlotteobserver.com (audio advert)
 ||tsbluebox.com^$third-party
 ||vidoplay.com^$third-party
@@ -53809,7 +53814,6 @@ $csp=worker-src 'none',domain=pirateproxy.live|thehiddenbay.com|tpb.party|thepir
 ||fullmatchesandshows.com^$csp=script-src 'self' * 'unsafe-inline'
 ||gelbooru.com^$csp=script-src 'self' * 'unsafe-inline' *.gstatic.com *.google.com *.googleapis.com *.bootstrapcdn.com
 ||grammarist.com^$csp=script-src 'self' * 'unsafe-inline'
-||healthline.com^$csp=script-src 'self' * 'unsafe-inline'
 ||limetorrents.info^$csp=script-src 'self' 'unsafe-inline'
 ||lucianne.com^$csp=script-src 'self' * blob: data:
 ||merriam-webster.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -57960,7 +57964,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||guardianapps.co.uk^*/advertisement-features^$xmlhttprequest,domain=theguardian.com
 @@||guim.co.uk/uploader/$image,~third-party
 @@||gumtree.com^*/advertising.js
-@@||healthline.com/search$csp,~third-party
 @@||himgs.com/js/comunes/ads/dynamicAds.js$script,domain=hola.com
 @@||houseofindya.com/lookbook/lookbookproducts?bannerid$~third-party
 @@||howmanysyllables.com/css/$stylesheet,~third-party
