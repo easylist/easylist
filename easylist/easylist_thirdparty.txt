@@ -1725,8 +1725,8 @@
 ! https://github.com/easylist/easylist/pull/6720
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,third-party
 ! amazonaws (ad-fix)
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{50,57}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{50,}\/secure\.js/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/secure\.js/$script,third-party,xmlhttprequest,domain=~amazon.com
 ! charlotteobserver.com (audio advert)
 ||tsbluebox.com^$third-party
 ||vidoplay.com^$third-party
