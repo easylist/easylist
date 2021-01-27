@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101270730
+! Version: 202101272024
 ! Title: EasyList
-! Last modified: 27 Jan 2021 07:30 UTC
+! Last modified: 27 Jan 2021 20:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4408,6 +4408,7 @@
 /custom/ads
 /custom/doubleclick/*
 /custom11x5ad.
+/custom_ads.
 /custom_ads/*
 /customad.
 /customadmode.
@@ -20287,6 +20288,7 @@ _popunder+$popup
 ##.ad_indicator
 ##.ad_info_block
 ##.ad_inline
+##.ad_inline_wrapper
 ##.ad_inset
 ##.ad_island
 ##.ad_island2_spacer
@@ -27193,6 +27195,7 @@ _popunder+$popup
 ##.pb-f-ads-dfp-leaderboard-728x90
 ##.pb-f-ads-nativo
 ##.pb-f-ads-taboola
+##.pb-f-ads-yieldmo
 ##.pb-f-advert-dfp-double-mpu
 ##.pb-mod-ad-flex
 ##.pb-mod-ad-leaderboard
@@ -31604,6 +31607,7 @@ amazinglytimedphotos.com#@#.item-container-ad
 itest.5ch.net#@#.js-cardview_ad-320x180
 rollingstone.com#@#.js-sticky-ad
 kseries.me#@#.jw-ad
+realgfporn.com#@#.large-right-ad
 everybodysucksbutus.com,usatoday.com#@#.leaderboard-ad
 ajcn.org,annfammed.org#@#.leaderboard-ads
 lolhit.com#@#.leftAd
@@ -32462,6 +32466,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||adservi.com^
 ||adskeeper.co.uk^$domain=~dashboard.adskeeper.co.uk
 ||adspop.me^
+||adspyglass.com^
 ||adsrefundattempts.com^
 ||adsrv.me^
 ||adstarget.net^
@@ -38897,6 +38902,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||parentful.club^
 ||paripartners.ru^
 ||parketbedde.info^
+||parkurl.com^
 ||parpapsit.com^
 ||parsruingmeld.com^
 ||particlesmanuscript.com^
@@ -53080,6 +53086,8 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||foxcharleston.com^*-300X250.
 ||free-webhosts.com/images/a/
 ||freecomiconline.me/script/$script
+||freedownloadmanager.org/js/achecker.js
+||freedownloadmanager.org/web/bannerinf.js
 ||freeworldgroup.com/banner
 ||freshplaza.com/b/
 ||ftp.uptobox.com^
@@ -53227,6 +53235,7 @@ coingamez.com,mangaumaru.com,milfzr.com,pencurimovie.cc#@#div[id^="div-gpt-ad"]
 ||radiotoday.co.uk/*.gif$image
 ||ragezone.com/wp-content/uploads/2019/02/Widget_HF.png
 ||readlightnovel.org/assets/taoist_images/
+||receive-sms-online.info/img/banner_
 ||richardroeper.com/assets/banner/
 ||rpgcodex.net^*/gog_button.jpg
 ||s.radioreference.com/sm/$image
@@ -53724,7 +53733,7 @@ $script,third-party,xmlhttprequest,domain=ouo.io|ouo.press
 $script,third-party,domain=imgbox.com
 @@||ajax.googleapis.com^$script,domain=imgbox.com
 ! TPB
-$webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+$webrtc,websocket,xmlhttprequest,domain=baytorrent.eu.org,pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
 .info^$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
 @@||jsdelivr.net^$script,domain=thepiratebay.org
@@ -53737,10 +53746,11 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 @@||tpbprox.com/static/css/$stylesheet,domain=thepiratebay.vip
 @@||tpbprox.com/static/img/$image,domain=thepiratebay.vip
 javascript:$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=baytorrent.eu.org,pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+||js.baytorrent.eu.org^
 ||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
 ||thepiratebay.*/static/$subdocument
+||thepiratebay10.org/static/js/UYaf3EPOVwZS3PP.js
 ! mp3songfree.net
 @@||ajax.googleapis.com/ajax/libs/$script,domain=mp3songfree.net
 |http://$script,stylesheet,third-party,domain=mp3songfree.net
@@ -54215,6 +54225,7 @@ browserleaks.com###vpn_img
 ||porno666.com/code/script/
 ||pornorips.com/td7ab49db374.js
 ||pornrabbit.com/baexo.php
+||pornrabbit.com^$subdocument
 ||pornvideoq.com/zCpWaxDcYr.js
 ||pornxp.com/*.vtt
 ||pornxp.com/sp
@@ -55423,6 +55434,7 @@ tass.com##.banner__wrapper
 caclubindia.com##.banner_border
 news.am##.banner_click
 domainmasters.co.ke##.banner_google
+zombooru.com##.banner_hor
 camfuze.com##.banner_inner
 livecharts.co.uk##.banner_long
 weatheronline.co.uk##.banner_oben
@@ -55705,7 +55717,6 @@ experts-exchange.com##.eeAD
 notebooks.com##.efbleft
 ctvnews.ca##.election-leaderboard
 pirateiro.com##.embedded > center
-winaero.com##.entry-content > div > div
 easyvoyage.co.uk##.esv-ads
 mobafire.com##.exhibit-narrow
 mobafire.com##.exhibit-vertical
@@ -56041,6 +56052,7 @@ tradingpost.com.au##.mainWrapper-csa
 designtaxi.com##.masonry-brick.dynamic-width
 pushsquare.com,songlyrics.com##.masthead
 lifesitenews.com##.matched-content-wrapper
+gamedev.net##.mb-3.align-items-center.justify-content-start
 indiatimes.com##.mb-36 > .top-trending
 thestar.com.my##.med-rec
 etonline.com##.med_rec
@@ -56061,6 +56073,7 @@ eawaz.com##.metaslider
 searchenginejournal.com##.mh-90
 krebsonsecurity.com##.mid-banner
 investing.com##.midHeader
+newsday.com##.midPg
 edutourism.in##.middMain
 scanwith.com##.middle-banner
 tradetrucks.com.au##.middle-banner-list
@@ -57060,6 +57073,7 @@ bing.com##li.b_adBottom
 swfchan.com###aaaa
 gaytube.com###ads
 flyingjizz.com###adv_inplayer
+m.drtuber.com###banner_overlay-postitial-video
 sexyandfunny.com###best-friends
 porntube.com###bottomBanner
 wankerhut.com###bottom_adv
