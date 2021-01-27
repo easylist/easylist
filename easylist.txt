@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101262042
+! Version: 202101270721
 ! Title: EasyList
-! Last modified: 26 Jan 2021 20:42 UTC
+! Last modified: 27 Jan 2021 07:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2568,6 +2568,7 @@
 /ads/house_
 /ads/html/*
 /ads/htmlparser.
+/ads/ias_
 /ads/iframe
 /ads/im2.
 /ads/image/*
@@ -24610,6 +24611,7 @@ _popunder+$popup
 ##.embedded-article-ad
 ##.embeddedAd
 ##.embeddedAds
+##.embedded_ad_wrapper
 ##.emm-ad
 ##.empty-ad
 ##.end-ad
@@ -55243,7 +55245,7 @@ apkcombo.com,journalism.co.uk,metrolyrics.com,thehindu.com,where.ca##.ad-box
 9news.com,abc7ny.com,ack.net,bizjournals.com,biznews.com,boonevilledemocrat.com,boston.com,businessinsider.com.au,cheapism.com,computerworld.com,dailysun.co.za,dnainfo.com,driven.co.nz,ecr.co.za,electrek.co,engineeringnews.co.za,etcanada.com,firehouse.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gamesindustry.biz,gfinityesports.com,glamour.com,gmanetwork.com,greenwooddemocrat.com,hbr.org,hollywoodreporter.com,insidehook.com,intouchweekly.com,ksdk.com,ktvu.com,macstories.net,miningweekly.com,mobilesyrup.com,modernhealthcare.com,morningstar.com,mpnnow.com,my9nj.com,myfitnesspal.com,nbcnews.com,nzherald.co.nz,ocala.com,pjmedia.com,pjstar.com,pressargus.com,pulaskinews.net,radicalresearch.co.uk,radio531pi.com,realsport101.com,recordnet.com,recordonline.com,ridgecrestca.com,rollingstone.com,scroll.in,seattletimes.com,sportskeeda.com,stackexchange.com,starfl.com,stockhouse.com,stuff.co.nz,talk.collegeconfidential.com,telegram.com,teutopolispress.com,the-dispatch.com,theaustralian.com.au,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,themercury.com.au,thesuntimes.com,thetimesnews.com,toofab.com,vice.com,waltonsun.com,wogx.com,youtube.com##.ad-container
 spanishdict.com##.ad-wrapper
 belfasttelegraph.co.uk##.ad.item
-djhungama.net,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,gamrreview.com,lolcounter.com,rodalenews.com,timesofindia.com,weathernationtv.com,webmaster-source.com##.ad1
+djhungama.net,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,gamrreview.com,iamgujarat.com,indiatimes.com,lolcounter.com,rodalenews.com,samayam.com,timesofindia.com,vijaykarnataka.com,weathernationtv.com,webmaster-source.com##.ad1
 famously-dead.com,famouslyarrested.com,famouslyscandalous.com,khaama.com##.ad2
 mpog100.com##.ad3
 khaama.com##.ad8
@@ -55595,7 +55597,7 @@ tineye.com##.col-md-4.sidebar
 disqus.com##.col-promoted
 nycgo.com##.colBBox
 jamendo.com##.col_extra
-indiatimes.com##.colombia
+iamgujarat.com,indiatimes.com,samayam.com,vijaykarnataka.com##.colombia
 2pass.co.uk##.column_right
 arcadebomb.com##.colunit1
 knowyourmeme.com##.combo-wrapper
@@ -55635,6 +55637,8 @@ troypoint.com##.cp-subscriber-newsletter
 politicalwire.com##.cqheadlinebox
 cgsociety.org##.creditcardAD
 thesimsresource.com##.crtv-top-wrapper
+healthline.com##.css-0 + div:not([class]):last-of-type
+healthline.com##.css-0 > div[class]
 stylist.co.uk##.css-1fz837r
 infowars.com##.css-1upmbem
 infowars.com##.css-1vj1npn
@@ -56106,6 +56110,7 @@ thetechpoint.org##.navigation-banner
 vocm.com##.nccBigBox
 danpatrick.com##.needsclick
 depositfiles.com,dfiles.eu##.network_downloader
+play.typeracer.com##.newNorthWidget
 democraticunderground.com##.nhome-mediumrectangle-container
 hulkshare.com##.nhsBotBan
 fiercetelecom.com,fiercevideo.com##.node--type-embed-promo
@@ -56116,6 +56121,7 @@ cheezburger.com##.nw-rail-min-250
 marineelectronics.com,marinetechnologynews.com,maritimeprofessional.com##.nwm-banner
 comicbook.com##.oas
 forums.somethingawful.com##.oma_pal
+out.com##.ourSponsors
 mma-core.com##.outVidAd
 golfweather.com##.ox300x250
 beermoneyforum.com##.p-body-sidebar
