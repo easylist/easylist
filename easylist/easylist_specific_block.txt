@@ -799,7 +799,7 @@ $script,third-party,xmlhttprequest,domain=ouo.io|ouo.press
 $script,third-party,domain=imgbox.com
 @@||ajax.googleapis.com^$script,domain=imgbox.com
 ! TPB
-$webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+$webrtc,websocket,xmlhttprequest,domain=baytorrent.eu.org,pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
 .info^$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
 @@||jsdelivr.net^$script,domain=thepiratebay.org
@@ -812,10 +812,11 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 @@||tpbprox.com/static/css/$stylesheet,domain=thepiratebay.vip
 @@||tpbprox.com/static/img/$image,domain=thepiratebay.vip
 javascript:$popup,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=baytorrent.eu.org,pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip|thepiratebay10.org
+||js.baytorrent.eu.org^
 ||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay.vip
 ||thepiratebay.*/static/$subdocument
+||thepiratebay10.org/static/js/UYaf3EPOVwZS3PP.js
 ! mp3songfree.net
 @@||ajax.googleapis.com/ajax/libs/$script,domain=mp3songfree.net
 |http://$script,stylesheet,third-party,domain=mp3songfree.net
