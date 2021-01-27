@@ -1,8 +1,11 @@
 <!-- 
 Note: If you're a website owner that has been specifically targeted, fix the site before reporting. 
-Remove revolving ad servers, popup ads, adblock countering etc. Only then will this request be reviewed. -->
+Remove revolving ad servers, popup ads, adblock countering etc. Only then will this request be reviewed. 
 
-<!-- Any additions, changes or removals is at the Authors discretion. 
+** If your site implements any tracking or monitoring, UA/IP checks, fingerprinting, event logging etc, regardless how helpful/needed the script(s)
+are, it'll be blocked in Easyprivacy. Don't complain. Privacy comes first.
+
+Any additions, changes or removals is at the Authors discretion. 
 You're free to counterargue (to a certain point) if you disagree with the decision. 
 To avoid being banned, don't constantly re-open or create new (related) issue reports.
 -->
