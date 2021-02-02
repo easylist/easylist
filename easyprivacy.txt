@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102012151
+! Version: 202102020504
 ! Title: EasyPrivacy
-! Last modified: 01 Feb 2021 21:51 UTC
+! Last modified: 02 Feb 2021 05:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -13751,7 +13751,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cartier.co.uk^*/eyeblaster.
 ||cartoonnetwork.com/tools/js/clickmap/
 ||cartoonnetwork.com^*/brandcma.js
-||cbc.ca/g/stats/
+||cbc.ca/g/stats/$mlhttprequest
 ||cbox.ws/box/relay.swf?
 ||cbox.ws^*/relay.swf?host=
 ||cbs.com/assets/js/*AdvCookie.js
@@ -17998,6 +17998,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||gannettdigital.com/universal-web-client/master/latest/elements/$xmlhttprequest
 @@||gatsbyjs.org/packages/$xmlhttprequest
 @@||gatsbyjs.org/page-data/packages/$xmlhttprequest
+@@||gem.cbc.ca/public/vendor/comscore.js$script,~third-party
 @@||geni.us/snippet.min.js$script,domain=pcmonitors.info
 @@||geo-targetly.com/geolocation?id$script,third-party
 @@||geo.kaloo.ga/json/?$script,domain=telesurtv.net
