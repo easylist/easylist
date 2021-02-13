@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102121932
+! Version: 202102130314
 ! Title: EasyPrivacy
-! Last modified: 12 Feb 2021 19:32 UTC
+! Last modified: 13 Feb 2021 03:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2695,6 +2695,7 @@
 /load.gif?
 /load.js.gz?
 /load_analytics.
+/load_time_metrics?
 /LoadAudienceSegs-
 /loadcounter.
 /loader-counter.
@@ -2725,6 +2726,7 @@
 /log/collect/*
 /log/error?
 /log/event?
+/log/exposed?
 /log/impression/*
 /log/init?
 /log/jserr.php
@@ -3291,6 +3293,7 @@
 /pcookie_get_key
 /pcount.asp
 /Peermap/Log/*
+/pepperjam.js
 /perf-beacon-
 /perflog/*
 /perfmetrics.js
@@ -4964,6 +4967,7 @@
 /visitor/identity?
 /visitor/index.php?*referrer$image
 /visitor/segment?*=
+/visitor_id.jsp
 /VisitorAPI.js
 /visitorCookie.
 /visitorcountry.svc/*
@@ -7496,7 +7500,6 @@ _mongo_stats/
 ||peep1alea.com^$third-party
 ||peerius.com^$third-party
 ||pendo.io^$third-party
-||pepperjam.com^$third-party
 ||percentmobile.com^$third-party
 ||perf-serving.com^$third-party
 ||perfdrive.com^$third-party
@@ -10788,6 +10791,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||consensu.org/geoip
 ||contactatonce.com/GetAgentStatusImage.aspx?
 ||contactatonce.com/VisitorContext.aspx?
+||container.pepperjam.com^$third-party
 ||content.cpcache.com^*/js/ga.js
 ||contentpass.net/stats?$third-party
 ||contents-tracking.beop.io^
@@ -11426,7 +11430,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||livefyre.com/tracking/
 ||livefyre.com^*/tracker.js
 ||livefyre.com^*/tracking/
-||livehelpnow.net/lhn/jsutil/getinvitationmessage.aspx?
+||livehelpnow.net/lhn/handler/$image
 ||livelyvideo.tv/lb/logger
 ||liverail.com/?metric=
 ||liverail.com/track/?
@@ -11613,6 +11617,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ninja.onap.io^
 ||nitropay.com/nads/$third-party
 ||noflake-aggregator-http.narvar.com^
+||nojscontainer.pepperjam.com^$third-party
 ||nol.yahoo.com^
 ||nova.dice.net^
 ||ns-cdn.com^*/ns_vmtag.js
@@ -12222,6 +12227,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.*.miui.com^
 ||tracking.adalyser.com^
 ||tracking.aegpresents.com^
+||tracking.americaneagle.com^
 ||tracking.badgeville.com^$third-party
 ||tracking.brandmentions.com^
 ||tracking.customerly.io^
@@ -18293,7 +18299,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||bugsnag.com^$~third-party,domain=app.bugsnag.com
 ! Consent Fixes
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
-@@||sourcepointcmp.bloomberg.com/mms/get_site_data$xmlhttprequest,domain=bloomberg.com
+@@||sourcepointcmp.bloomberg.com/ccpa.js$script,domain=bloomberg.com
 ! Stackoverflow-related. https://forums.lanik.us/viewtopic.php?f=64&t=44747
 @@||askubuntu.com/tags/$~third-party,xmlhttprequest
 @@||mathoverflow.net/tags/$~third-party,xmlhttprequest
