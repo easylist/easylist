@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102180011
+! Version: 202102180024
 ! Title: EasyPrivacy
-! Last modified: 18 Feb 2021 00:11 UTC
+! Last modified: 18 Feb 2021 00:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -105,7 +105,6 @@
 -stats/imr.
 -stats/metrica.
 -track-ati.
--track-email-open?
 -track-inview.
 -tracker-geoip.
 -tracking-pixel.
@@ -127,12 +126,10 @@
 .au/t.ashx?
 .be/uts/
 .beacon.min.js
-.bluekai.com/*?e_id_
 .bmp?*&referrer=
 .cc/s.gif?
 .cdn-tracking.js
 .click/track?
-.cmail19.com/t/
 .cn/0.gif?
 .cn/1.gif?
 .cn/2.gif?
@@ -217,16 +214,12 @@
 .de/l.gif?
 .de/o.gif?
 .de/z.gif?
-.delivery-status.com/open?
-.demdex.net/event?
 .do_tracking&
 .drive-analytics.
 .eloqua.js
-.emltrk.com/
 .emsecure.min.js
 .EventTracking.
 .EventTrackingPlugins.
-.flipboard.com/usage?
 .fr/z.gif?
 .gatracker.
 .gatracking.js
@@ -248,14 +241,11 @@
 .googleanalytics.prod.
 .GoogleAnalytics/
 .gov/stat?
-.hootsuite.com/trk?
 .htm?imprId=
 .html?wpl=
 .idge/js/analytics/
 .iframetracker/
 .in/c.gif?
-.innologica.com/t/
-.intercom-mail.com/q/
 .io/0.gif?
 .io/track?
 .io/w.gif?
@@ -264,7 +254,6 @@
 .js?referer=
 .js?referrer=
 .jsp/?Log=
-.kijiji.ca/r/
 .lms-analytics/
 .me/geoip/
 .me/l.gif?
@@ -308,12 +297,9 @@
 .png?cpn=
 .png?uid=*&tag=
 .pt/n.gif?
-.publish0x.com/t/
 .redux-logger-
 .ro/c.gif?
 .ru/0.gif?
-.sendcloud.net/track/
-.sendibm1.com/mk/
 .sharecounter.$third-party
 .sitecatalyst.js
 .siteclarity.
@@ -321,8 +307,6 @@
 .skimlinks.js
 .snowplowanalytics.$domain=~snowplowanalytics.com
 .social_tracking.
-.spotify.com/ss/
-.starbucks.com/a/
 .statData-eup.
 .stats?action=
 .svc/?tracking_id=
@@ -346,12 +330,9 @@
 .v4.analytics.
 .vn/0.gif?
 .vsTracking.
-.webex.com/q/
 .webmetrics.js
 .webstats.
-.wix.com/_api/ping/
 .wxAdTargeting.
-.zalando.com/images/probe.png
 /!crd_prm!.
 //feedproxy.*/~r/*$image
 /0.png?ver=
@@ -365,7 +346,6 @@
 /1x1.png?
 /1x1_akamai.gif
 /1x1_imp.gif?
-/1x1_usermatch.gif?
 /1x1p.gif?
 /1x1tracker.
 /247px.js
@@ -1321,7 +1301,6 @@
 /clickpathmedia.
 /clickpathmedia_
 /clickrecord.php?
-/clicks.email.
 /clicks/servlet/*
 /clickscript.
 /clickstats.
@@ -1786,7 +1765,6 @@
 /elqtracking.
 /elt.gif?
 /eluminate?
-/email-pixel?
 /email/track/*$image
 /email/tracking?
 /EmailOpenTrackLog.aspx?$image
@@ -1809,7 +1787,6 @@
 /entry.count?
 /entry_stats?
 /envoy.sb?sbaid
-/eo?_t=$image
 /epf_v1_95.js
 /epvplytics.
 /error/*.gif?msg=
@@ -1901,7 +1878,6 @@
 /exelator.
 /exittracker.
 /exittraffic.
-/exmo.email/open.html
 /expcount/*
 /experiment/impressions.js
 /expose.gif?
@@ -2857,7 +2833,6 @@
 /lunametrics-
 /lycostrack.js
 /lytics/*
-/lzdmailer.letter.open?
 /lzdtracker.
 /m.gif?
 /m1x1.jpg
@@ -3177,7 +3152,6 @@
 /onstuimig-tag-
 /opdc.gif?
 /opdc.js
-/open.aspx?
 /open/log/*
 /opentag-
 /opentag/*
@@ -3827,7 +3801,6 @@
 /SEMTracking.
 /send-impressions.html
 /sendLogs?cid
-/sendmail.backerupdate.com/t/*
 /sensor/statistic?
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
@@ -4401,8 +4374,6 @@
 /track/impression?
 /track/jsinfo
 /track/mygreendot/*
-/track/open.php?
-/track/open?
 /track/PartnerAnalyzerPageRequest?
 /track/pix.asp?
 /track/pix2.asp?
@@ -4767,7 +4738,6 @@
 /trbo.js
 /trck/eclick/*
 /trck/etms/*
-/trcksp.
 /trckUtil.
 /trclnk.js
 /trendmd.min.js
@@ -5095,7 +5065,6 @@
 /wego.farmer.
 /weizenbock/dist/*
 /wf-beacon-
-/wf/open?upn=$image
 /wffm-cookies.
 /wget?*&referer=
 /wh_tracking.
@@ -5501,7 +5470,38 @@ _zag_cookie.
 cgi-bin/counter
 ||meetrics.netbb-
 ! Email tracking pixels
+-track-email-open?
+.bluekai.com/*?e_id_
+.cmail19.com/t/
+.delivery-status.com/open?
+.demdex.net/event?
+.emltrk.com/
 .epicgames.com/O/
+.flipboard.com/usage?
+.hootsuite.com/trk?
+.innologica.com/t/
+.intercom-mail.com/q/
+.kijiji.ca/r/
+.publish0x.com/t/
+.sendcloud.net/track/
+.sendibm1.com/mk/
+.spotify.com/ss/
+.starbucks.com/a/
+.webex.com/q/
+.wix.com/_api/ping/
+.zalando.com/images/probe.png
+/1x1_usermatch.gif?
+/clicks.email.
+/email-pixel?
+/eo?_t=$image
+/exmo.email/open.html
+/lzdmailer.letter.open?
+/open.aspx?
+/sendmail.backerupdate.com/t/*
+/track/open.php?
+/track/open?
+/trcksp.
+/wf/open?upn=$image
 ! DNS checks
 /DNSCheck.js
 /DNSChecker.js
