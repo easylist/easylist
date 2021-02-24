@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102232356
+! Version: 202102240009
 ! Title: EasyPrivacy
-! Last modified: 23 Feb 2021 23:56 UTC
+! Last modified: 24 Feb 2021 00:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12594,7 +12594,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||targeting.voxus.tv^
 ||trwl1.com/ascripts/gcrt.js
 ||vtex.com.br/rc/rc.js
-! uBO-CNAME (Specific allowlists)
+! CNAME Tracedock
 ||a03674778d27211eabe260a5fac8573f-298900439.eu-central-1.elb.amazonaws.com^
 ||a177429ff0a2d11eab4120a5a92844d8-605541764.eu-central-1.elb.amazonaws.com^
 ||a351fec2c318c11ea9b9b0a0ae18fb0b-1529426863.eu-central-1.elb.amazonaws.com^
@@ -12602,6 +12602,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com^
 ||aea50b96a4dca11ea83360ac4ee80f26-253968598.eu-central-1.elb.amazonaws.com^
 ||afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com^
+! CNAME
 ||go.techtarget.com^$image,script
 ||trk.techtarget.com^
 ||users.techtarget.com^*/GetCookiesWithCallback?
@@ -13910,7 +13911,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||clvk.viki.io^
 ||clyp.it^*/log^
 ||cmap.alibaba.com^
-||cms.fyndable.online^
 ||cmstrendslog.indiatimes.com^
 ||cmstrendslog.timesnow.tv^
 ||cnn.com/analytics/
@@ -14276,7 +14276,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ft.com/conker/service/pageview?
 ||ft.com/ingest?
 ||ft.com^*/ft-tracking.js
-||ftp.chromeburner.com^
 ||fujifilm.com/js/shared/analyzer.js
 ||funbrain.com/a2.gif
 ||funn.graphiq.com^
@@ -15822,7 +15821,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||twitter.com^*/scribe^
 ||twitvid.com/mediaplayer/players/tracker.swf
 ||twnmm.com^*/promo_tracking.js$script,domain=theweathernetwork.com
-||two.tracedock.com^
 ||txmblr.com^*/pixel^
 ||typepad.com/t/stats?
 ||u.tv/utvplayer/everywhere/tracking.aspx?
@@ -16131,6 +16129,27 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
+! TraceDock
+||apollo.plein.be^
+||app1.maatwerkonline.nl^
+||bc.semwerkt.nl^
+||cdn3.lacoquepersonnalisee.fr^
+||cms.fyndable.online^
+||ds2.independer.nl^
+||dtch.brunel.nl^
+||erp2.pvc-strokengordijn.nl^
+||ftp.chromeburner.com^
+||host10.hotelissima.fr^
+||host11.vrgh-arena.nl^
+||pc4.boxers.be^
+||pc4.shirts.nl^
+||pc4.sokken.be^
+||pc4.sokken.nl^
+||pc4.zwembroeken.nl^
+||s2.combifit.be^
+||style.onvz.nl^
+||tdep.mijnonlineloket.nl^
+||two.tracedock.com^
 ! Adobe
 ||lightning.ncaa.com/launch/$script
 ! Bing
@@ -17088,7 +17107,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||bloguez.com/manager/compteurs/
 ||buf.lemonde.fr^
 ||c0011.boursorama.com^
-||cdn3.lacoquepersonnalisee.fr^
 ||cfcn.allocine.net^
 ||clk.boulanger.com^
 ||clubic.com/editorial/publier_count.php?
@@ -17107,7 +17125,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||fsm.lapresse.ca^
 ||g.itespresso.fr^
 ||galerieslafayette.com/c/
-||host10.hotelissima.fr^
 ||ianimes.org/img/tracker.gif
 ||iphdata.lequipe.fr^*/getInfapp.php?
 ||iphonesoft.fr/js/analytics-
@@ -17421,31 +17438,16 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||stat.novinky.cz^
 ! Dutch
 ||analytics.rambla.be^
-||apollo.plein.be^
-||app1.maatwerkonline.nl^
-||bc.semwerkt.nl^
 ||bol.com/tracking/
-||ds2.independer.nl^
-||dtch.brunel.nl^
-||erp2.pvc-strokengordijn.nl^
-||host11.vrgh-arena.nl^
 ||klik.nrc.nl/ping?
 ||logs.ggweb.nl^
 ||marktplaats.nl/add_counter_image.
 ||marktplaats.nl/metrics/
 ||marktplaats.nl/px/
-||pc4.boxers.be^
-||pc4.shirts.nl^
-||pc4.sokken.be^
-||pc4.sokken.nl^
-||pc4.zwembroeken.nl^
 ||rtl.nl/system/track/
-||s2.combifit.be^
 ||sanoma.nl/pixel/
 ||sat.sanoma.fi^
 ||stats.fd.nl^
-||style.onvz.nl^
-||tdep.mijnonlineloket.nl^
 ||tijd.be/fb/?
 ||vroom.be^*/stats.js?
 ||vroom.be^*/stats.php?
