@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102280038
+! Version: 202102280044
 ! Title: EasyPrivacy
-! Last modified: 28 Feb 2021 00:38 UTC
+! Last modified: 28 Feb 2021 00:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2712,6 +2712,7 @@
 /log/pageview
 /log/report/*
 /log/sentry/*
+/log/server?
 /log/ux_analytics^
 /log/web?
 /log2.php?
@@ -17388,6 +17389,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||firefoxchina.cn/*/trac.js
 ||ftchinese.com/js/log.js
 ||funshion.com/interface/
+||gia.jd.com^
 ||hdslb.com/images/isptrack.js
 ||his.tv.sohu.com/his/ping.do?
 ||hisense.com/ta.js
@@ -18675,6 +18677,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! 
 ! ---------- Chinese ----------
 ! 
+@@||360buyimg.com/item/unite/$script,domain=item.jd.com
 @@||360buyimg.com^*/components/default/$script,domain=jd.com
 @@||adobedtm.com^*/mbox-contents-$script,domain=ceair.com|fcbarcelona.cn
 @@||adobedtm.com^*/satelliteLib-$script,domain=ceair.com|fcbarcelona.cn
