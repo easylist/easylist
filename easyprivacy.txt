@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202103042248
+! Version: 202103042325
 ! Title: EasyPrivacy
-! Last modified: 04 Mar 2021 22:48 UTC
+! Last modified: 04 Mar 2021 23:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11362,6 +11362,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||go.com/capmon/GetDE/?
 ||go.optifuze.com^
 ||go.pardot.com^
+||go.techtarget.com^$image,script
 ||go.toutapp.com^$third-party
 ||goadv.com^*/track.js
 ||goaww.com/stats.php
@@ -12467,6 +12468,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||trk.email.dynect.net^
 ||trk.pswec.com^$third-party
 ||trk.sele.co^
+||trk.techtarget.com^
 ||trk.vindicosuite.com^
 ||trove.com^*&uid=$image
 ||tru.webelapp.com^
@@ -12510,6 +12512,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||uptime.com/static/rum/$third-party
 ||usercentrics.eu/session/$image
 ||userexperience.thehut.net^
+||users.techtarget.com^*/GetCookiesWithCallback?
 ||usersegment.wpdigital.net^
 ||uservoice.com^*/track.js
 ||userway.org/api/stats/
@@ -12699,18 +12702,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||targeting.voxus.tv^
 ||trwl1.com/ascripts/gcrt.js
 ||vtex.com.br/rc/rc.js
-! CNAME Tracedock
-||a03674778d27211eabe260a5fac8573f-298900439.eu-central-1.elb.amazonaws.com^
-||a177429ff0a2d11eab4120a5a92844d8-605541764.eu-central-1.elb.amazonaws.com^
-||a351fec2c318c11ea9b9b0a0ae18fb0b-1529426863.eu-central-1.elb.amazonaws.com^
-||a51404801860511eabe260a5fac8573f-308402611.eu-central-1.elb.amazonaws.com^
-||a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com^
-||aea50b96a4dca11ea83360ac4ee80f26-253968598.eu-central-1.elb.amazonaws.com^
-||afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com^
-! CNAME
-||go.techtarget.com^$image,script
-||trk.techtarget.com^
-||users.techtarget.com^*/GetCookiesWithCallback?
 ! akamai
 ||akamai.com/crs/lgsitewise.js
 ||akamai.net/*.babylon.com/trans_box/
@@ -16249,28 +16240,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dns.whatleaks.com^
 ||p0f.whatleaks.com
 ||whatleaks.com/check_ports/?
-! TraceDock
-||apollo.plein.be^
-||app1.maatwerkonline.nl^
-||bc.semwerkt.nl^
-||cdn3.lacoquepersonnalisee.fr^
-||cdn4.waisttrainer.co.nz^
-||cms.fyndable.online^
-||ds2.independer.nl^
-||dtch.brunel.nl^
-||erp2.pvc-strokengordijn.nl^
-||ftp.chromeburner.com^
-||host10.hotelissima.fr^
-||host11.vrgh-arena.nl^
-||pc4.boxers.be^
-||pc4.shirts.nl^
-||pc4.sokken.be^
-||pc4.sokken.nl^
-||pc4.zwembroeken.nl^
-||s2.combifit.be^
-||style.onvz.nl^
-||tdep.mijnonlineloket.nl^
-||two.tracedock.com^
 ! Adobe
 ||lightning.ncaa.com/launch/$script
 ! Bing
@@ -16536,7 +16505,193 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ttauri.whathifi.com^
 ||twch.20min.ch^
 ||vg247.com/wp-content/themes/vg247/scripts/mvg247-fsm.js
-! CNAME
+! McClatchy sites
+/yozons-lib/*$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+://media.*/escenic$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+://media.*/micb.js|$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+://media.*/misites/$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+! Fingerprintjs
+/^https?:\/\/.*\.corsair\.(fr|ci|ca|gp|mq|re)\/[a-z0-9]{19,}\?/$script,xmlhttprequest
+||aerlingus.com/ahktqsewxjhguuxe.js
+||aerlingus.com/ahktqsewxjhguuxexhr.js
+||greenmangaming.com/omnopfddrdlevbbh.js
+||paxful.com/bmlsclxndnomunnk.js
+||teepublic.com/binfgkxpxaizujgk.js
+! stackoverflow
+/client-timings$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
+/gps/event$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
+! Mining
+$subdocument,third-party,domain=estream.to
+$third-party,xmlhttprequest,domain=alltube.pl|alltube.tv
+$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bypassed.ws|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|clipwatching.com|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|dragonballzpolo.blogspot.com|drama-cool.me|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|gomovie123.me|gomovies123.me|hdvid.tv|hdyayinmac1.com|hentai-online.pl|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|jkanime.net|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|netiap.com|netu.tv|nowvideo.sx|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|protect-iframe.com|proxyportal.eu|reactor.cc|replaytvstreaming.com|seventorrents.cc|severita-service.ru|sherlockonline.ru|shortbitsfree.net|shrink-service.it|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streambeam.io|streamplay.me|streamplay.to|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.org|tomadivx.tv|unblockall.org|unblocked.gdn|vidoza.net|vidtodo.com|vidtodo.me|vidtodo.pro|vidup.io|vidup.tv|vidzi.tv|void.cat|wallpoper.com|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|zenexplayer.com|zona.plus
+$xmlhttprequest,domain=auroravid.to|catrumahminimalis.me|dekoder.ws|estream.to|flashx.cc|freecontent.stream|leon08.tk|leon12.tk|leon16.tk|myeffect.net|nowvideo.sx|onlinevideoconverter.com|povw1deo.com|powvideo.cc|powvideo.net|sleeptimer.org|sorteosrd.com|streambeam.io|szukajka.tv|tainies.online
+! regex !
+/([0-9]{1,3}\.){3}[0-9]{1,3}.*(\/proxy|\.wasm|\.wsm|\.wa)$/$third-party,websocket
+/.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
+! 
+/assets/application-$domain=iamdisappoint.com|shitbrix.com|tattoofailure.com
+||browsealoud.com/plus/scripts/$script
+||cdn1.pebx.pl^
+||cinemafacil.com/js.php
+||de-mi-nis-ner2.info^
+||estream.to/bootstrap.min.js$script
+||estream.to/player.js
+||flashx.*/bootstrap.min.js
+||gus.host/coins.js
+||piti.bplaced.net^
+||shrink-service.it/js/cM.js
+||site.flashx.
+||stackpathdns.com/assets/javascript/cr.js
+||vidoza.net/*bootstrap.
+||vidoza.net/app.js
+||vidzi.tv/*bootstrap.
+||wallpoper.com^*/c.js
+! CSP Mining
+$csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
+$csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|skyback.ru|szukajka.tv|thepiratebay.org|vidoza.net
+$csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.tv|hentai-online.pl|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|proxyportal.eu|reactor.cc|severita-service.ru|sickrage.ca|sorteosrd.com|tomadivx.tv|unblockall.org|unblocked.gdn|vidtodo.com|vidtodo.me|vidtodo.pro|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com
+! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
+||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
+||adobe.com^*/omniture_s_code.js
+||aircanada.com/shared/common/sitecatalyst/s_code.js
+||announcements.uk.com^*/s_code.js
+||atgstores.com/js/lowesca_s_code.js$domain=lowes.ca
+||bitdefender.com/resources/scripts/omniture/*/code.js
+||bleacherreport.net/pkg/javascripts/*_omniture.js
+||cdnds.net/js/s_code.js$domain=digitalspy.ca|digitalspy.co.nz|digitalspy.co.uk|digitalspy.com|digitalspy.com.au|digitalspy.ie
+||chip.de/js/omniture_somtr_code_vH.25.js
+||consumerreports.org^*/s_code.js
+||csmonitor.com/extension/csm_base/design/csm_design/javascript/omniture/s_code.js
+||csmonitor.com/extension/csm_base/design/standard/javascript/adobe/s_code.js
+||demandware.edgesuite.net^*/omniture.js$domain=otterbox.com
+||disneylandparis.fr^*/s_code.js
+||eltiempo.com/js/produccion/s_code_*.js
+||event-analytics.yesware.com^
+||expressen.se/static/scripts/s_code.js?
+||ge.com/sites/all/themes/ge_2012/assets/js/bin/s_code.js
+||hayneedle.com/js/s_code.min.*.js
+||images-amazon.com/images/*/wcs-help-omniture/wcs-help-omniture-$script
+||img-bahn.de/v/*/js/s_code.js$domain=bahn.de
+||jsfiddle.net/xdmuj68e/
+||loc.gov/js/*/s_code.js
+||mercedes-benz.ca/js/omniture.js
+||mercola.com/Assets/js/omniture/sitecatalyst/mercola_s_code.js
+||mercuryinsurance.com/static/js/s_code.js
+||michaelkors.com/common/js/extern/omniture/s_code.js
+||mnginteractive.com/live/js/omniture/SiteCatalystCode_H_22_1_NC.js
+||mnginteractive.com/live/omniture/custom_scripts/omnicore-blogs.js$domain=mercurynews.com
+||mnginteractive.com/live/omniture/sccore.js$domain=denverpost.com
+||mnginteractive.com/live/omniture/sccore_NEW.js$domain=pasadenastarnews.com|presstelegram.com
+||mnginteractive.com/live/omniture/sccore_NEW_JRC.js
+||navyfederal.org/js/s_code.js
+||nwsource.com/shared/js/s_code.js?$domain=seattletimes.com
+||nyteknik.se/ver02/javascript/2012_s_code_global.js
+||paypal.com/acquisition-app/static/js/s_code.js
+||playstation.com/pscomauth/groups/public/documents/webasset/community_secured_s_code.js
+||r7.com/scode/s_code_portal_$script
+||redbox.com^*/scripts/s_code.js
+||riverisland.com^*/s_code.min.omniture_$script
+||sephora.com/javascripts/analytics/wa2.js
+||skypeassets.com/i/tracking/js/s_code_20121127.js$domain=skype.com
+||skypeassets.com/static/skype.skypeloginstatic/js/s_code.js$domain=skype.com
+||sltrib.com/csp/mediapool/sites/Shared/assets/csp/includes/omniture/SiteCatalystCode_H_17.js
+||ssl-images-amazon.com^*/wcs-help-omniture-$script
+||ticketmaster.eu^*/omniture_tracker.js
+||timeinc.net/tii/omniture/h/config/timesi.js$domain=si.com
+||vitacost.com/Javascripts/s_code.js
+||vmware.com/files/templates/inc/s_code_my.js
+||wp.com/wp-content/themes/vip/metrouk/js/site-catalyst.js$domain=metro.co.uk
+||yell.com/js/omniture-H.25.js
+! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
+||radio-canada.ca/omniture/omni_stats_base.js?
+! Specific filters necessary for sites allowlisting with $genericblock filter option
+/__utm.gif$domain=autobild.de|quoka.de|tellows.de|transfermarkt.de
+/analytics/track?$domain=widgets.azureedge.net
+/csi?v=*&action=$domain=tellows.de
+/nm_trck.gif?$domain=spiegel.de
+/pic.gif?m=$domain=autobild.de
+||3gl.net^$domain=stern.de
+||babator.com^$domain=focus.de
+||bluekai.com^$domain=disqus.com|widgets.outbrain.com
+||chartbeat.com^$domain=stern.de
+||contentexchange.me^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||contentspread.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||cpx.to^$domain=quoka.de
+||crwdcntrl.net^$domain=disqus.com
+||cxense.com^$domain=focus.de
+||disqus.com/api/ping?$domain=autobild.de
+||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
+||ds-aksb-a.akamaihd.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||emetriq.de^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|transfermarkt.de
+||exactag.com^$domain=quoka.de
+||exelator.com^$domain=disqus.com
+||facebook.com*/impression.php$domain=autobild.de|focus.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|tellows.de|transfermarkt.de
+||facebook.com/common/scribe_endpoint.php$domain=transfermarkt.de
+||facebook.com/tr/?$domain=metal-hammer.de|musikexpress.de|rollingstone.de
+||google-analytics.com/analytics.js$domain=kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|rollingstone.de|sat1.de|sixx.de|spiegel.de|stern.de
+||google-analytics.com/collect$domain=stern.de
+||googleapis.com^*/gen_204?$domain=tellows.de
+||googletagmanager.com/gtm.js?$domain=autobild.de|transfermarkt.de
+||hotjar.com^$domain=quoka.de
+||hpr.outbrain.com^$domain=focus.de
+||imrworldwide.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||ioam.de/?$domain=autobild.de|focus.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
+||ioam.de/tx.io?$domain=autobild.de|focus.de|kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|rollingstone.de|sat1.de|sixx.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
+||irqs.ioam.de^$domain=metal-hammer.de|musikexpress.de|rollingstone.de
+||log.outbrain.com^$domain=autobild.de|focus.de|metal-hammer.de|musikexpress.de|rollingstone.de|widgets.outbrain.com
+||meetrics.net^$domain=spiegel.de|stern.de
+||metrics.brightcove.com^$domain=stern.de
+||mxcdn.net^$domain=spiegel.de|stern.de
+||nuggad.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|transfermarkt.de
+||optimizely.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||pingdom.net^$domain=musikexpress.de
+||pippio.com^$domain=disqus.com
+||referrer.disqus.com^$domain=autobild.de
+||rlcdn.com^$domain=autobild.de|widgets.outbrain.com
+||rqtrk.eu^$domain=stern.de
+||semasio.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+||static.parsely.com^$domain=spiegel.de
+||tealiumiq.com^$domain=autobild.de|metal-hammer.de|musikexpress.de|transfermarkt.de
+||theadex.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de
+||tisoomi-services.com^$domain=metal-hammer.de|musikexpress.de
+||twitter.com/i/jot$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|rollingstone.de|sat1.de|sixx.de
+||visualrevenue.com^$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de
+||watchseries.to/piwik.js
+||webtrekk.net^$domain=kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|ran.de|rollingstone.de|sat1.de|sixx.de
+||wt-eu02.net^$domain=stern.de
+||wt-safetag.com^$domain=stern.de
+||xplosion.de^$domain=spiegel.de|stern.de
+! -----------------Individual cname tracking systems-----------------!
+! *** easylist:easyprivacy/easyprivacy_specific_cname.txt ***
+! TraceDock
+||a03674778d27211eabe260a5fac8573f-298900439.eu-central-1.elb.amazonaws.com^
+||a177429ff0a2d11eab4120a5a92844d8-605541764.eu-central-1.elb.amazonaws.com^
+||a351fec2c318c11ea9b9b0a0ae18fb0b-1529426863.eu-central-1.elb.amazonaws.com^
+||a51404801860511eabe260a5fac8573f-308402611.eu-central-1.elb.amazonaws.com^
+||a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com^
+||aea50b96a4dca11ea83360ac4ee80f26-253968598.eu-central-1.elb.amazonaws.com^
+||afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com^
+||apollo.plein.be^
+||app1.maatwerkonline.nl^
+||bc.semwerkt.nl^
+||cdn3.lacoquepersonnalisee.fr^
+||cdn4.waisttrainer.co.nz^
+||cms.fyndable.online^
+||ds2.independer.nl^
+||dtch.brunel.nl^
+||erp2.pvc-strokengordijn.nl^
+||ftp.chromeburner.com^
+||host10.hotelissima.fr^
+||host11.vrgh-arena.nl^
+||pc4.boxers.be^
+||pc4.shirts.nl^
+||pc4.sokken.be^
+||pc4.sokken.nl^
+||pc4.zwembroeken.nl^
+||s2.combifit.be^
+||style.onvz.nl^
+||tdep.mijnonlineloket.nl^
+||two.tracedock.com^
 ! Eulerian
 ||0sbm.consobaby.co.uk^
 ||319dn.dieti-natura.com^
@@ -16702,165 +16857,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zrw1.destinia.jp^
 ||zsi7.destinia.do^
 ||zyq2.destinia.sk^
-! McClatchy sites
-/yozons-lib/*$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-://media.*/escenic$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-://media.*/micb.js|$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-://media.*/misites/$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-! Fingerprintjs
-/^https?:\/\/.*\.corsair\.(fr|ci|ca|gp|mq|re)\/[a-z0-9]{19,}\?/$script,xmlhttprequest
-||aerlingus.com/ahktqsewxjhguuxe.js
-||aerlingus.com/ahktqsewxjhguuxexhr.js
-||greenmangaming.com/omnopfddrdlevbbh.js
-||paxful.com/bmlsclxndnomunnk.js
-||teepublic.com/binfgkxpxaizujgk.js
-! stackoverflow
-/client-timings$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
-/gps/event$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
-! Mining
-$subdocument,third-party,domain=estream.to
-$third-party,xmlhttprequest,domain=alltube.pl|alltube.tv
-$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|7tors.com|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bypassed.ws|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|clipwatching.com|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|dragonballzpolo.blogspot.com|drama-cool.me|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|gomovie123.me|gomovies123.me|hdvid.tv|hdyayinmac1.com|hentai-online.pl|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|jkanime.net|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|netiap.com|netu.tv|nowvideo.sx|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|protect-iframe.com|proxyportal.eu|reactor.cc|replaytvstreaming.com|seventorrents.cc|severita-service.ru|sherlockonline.ru|shortbitsfree.net|shrink-service.it|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streambeam.io|streamplay.me|streamplay.to|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.org|tomadivx.tv|unblockall.org|unblocked.gdn|vidoza.net|vidtodo.com|vidtodo.me|vidtodo.pro|vidup.io|vidup.tv|vidzi.tv|void.cat|wallpoper.com|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|zenexplayer.com|zona.plus
-$xmlhttprequest,domain=auroravid.to|catrumahminimalis.me|dekoder.ws|estream.to|flashx.cc|freecontent.stream|leon08.tk|leon12.tk|leon16.tk|myeffect.net|nowvideo.sx|onlinevideoconverter.com|povw1deo.com|powvideo.cc|powvideo.net|sleeptimer.org|sorteosrd.com|streambeam.io|szukajka.tv|tainies.online
-! regex !
-/([0-9]{1,3}\.){3}[0-9]{1,3}.*(\/proxy|\.wasm|\.wsm|\.wa)$/$third-party,websocket
-/.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
-! 
-/assets/application-$domain=iamdisappoint.com|shitbrix.com|tattoofailure.com
-||browsealoud.com/plus/scripts/$script
-||cdn1.pebx.pl^
-||cinemafacil.com/js.php
-||de-mi-nis-ner2.info^
-||estream.to/bootstrap.min.js$script
-||estream.to/player.js
-||flashx.*/bootstrap.min.js
-||gus.host/coins.js
-||piti.bplaced.net^
-||shrink-service.it/js/cM.js
-||site.flashx.
-||stackpathdns.com/assets/javascript/cr.js
-||vidoza.net/*bootstrap.
-||vidoza.net/app.js
-||vidzi.tv/*bootstrap.
-||wallpoper.com^*/c.js
-! CSP Mining
-$csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
-$csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|skyback.ru|szukajka.tv|thepiratebay.org|vidoza.net
-$csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.tv|hentai-online.pl|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|proxyportal.eu|reactor.cc|severita-service.ru|sickrage.ca|sorteosrd.com|tomadivx.tv|unblockall.org|unblocked.gdn|vidtodo.com|vidtodo.me|vidtodo.pro|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com
-! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
-||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
-||adobe.com^*/omniture_s_code.js
-||aircanada.com/shared/common/sitecatalyst/s_code.js
-||announcements.uk.com^*/s_code.js
-||atgstores.com/js/lowesca_s_code.js$domain=lowes.ca
-||bitdefender.com/resources/scripts/omniture/*/code.js
-||bleacherreport.net/pkg/javascripts/*_omniture.js
-||cdnds.net/js/s_code.js$domain=digitalspy.ca|digitalspy.co.nz|digitalspy.co.uk|digitalspy.com|digitalspy.com.au|digitalspy.ie
-||chip.de/js/omniture_somtr_code_vH.25.js
-||consumerreports.org^*/s_code.js
-||csmonitor.com/extension/csm_base/design/csm_design/javascript/omniture/s_code.js
-||csmonitor.com/extension/csm_base/design/standard/javascript/adobe/s_code.js
-||demandware.edgesuite.net^*/omniture.js$domain=otterbox.com
-||disneylandparis.fr^*/s_code.js
-||eltiempo.com/js/produccion/s_code_*.js
-||event-analytics.yesware.com^
-||expressen.se/static/scripts/s_code.js?
-||ge.com/sites/all/themes/ge_2012/assets/js/bin/s_code.js
-||hayneedle.com/js/s_code.min.*.js
-||images-amazon.com/images/*/wcs-help-omniture/wcs-help-omniture-$script
-||img-bahn.de/v/*/js/s_code.js$domain=bahn.de
-||jsfiddle.net/xdmuj68e/
-||loc.gov/js/*/s_code.js
-||mercedes-benz.ca/js/omniture.js
-||mercola.com/Assets/js/omniture/sitecatalyst/mercola_s_code.js
-||mercuryinsurance.com/static/js/s_code.js
-||michaelkors.com/common/js/extern/omniture/s_code.js
-||mnginteractive.com/live/js/omniture/SiteCatalystCode_H_22_1_NC.js
-||mnginteractive.com/live/omniture/custom_scripts/omnicore-blogs.js$domain=mercurynews.com
-||mnginteractive.com/live/omniture/sccore.js$domain=denverpost.com
-||mnginteractive.com/live/omniture/sccore_NEW.js$domain=pasadenastarnews.com|presstelegram.com
-||mnginteractive.com/live/omniture/sccore_NEW_JRC.js
-||navyfederal.org/js/s_code.js
-||nwsource.com/shared/js/s_code.js?$domain=seattletimes.com
-||nyteknik.se/ver02/javascript/2012_s_code_global.js
-||paypal.com/acquisition-app/static/js/s_code.js
-||playstation.com/pscomauth/groups/public/documents/webasset/community_secured_s_code.js
-||r7.com/scode/s_code_portal_$script
-||redbox.com^*/scripts/s_code.js
-||riverisland.com^*/s_code.min.omniture_$script
-||sephora.com/javascripts/analytics/wa2.js
-||skypeassets.com/i/tracking/js/s_code_20121127.js$domain=skype.com
-||skypeassets.com/static/skype.skypeloginstatic/js/s_code.js$domain=skype.com
-||sltrib.com/csp/mediapool/sites/Shared/assets/csp/includes/omniture/SiteCatalystCode_H_17.js
-||ssl-images-amazon.com^*/wcs-help-omniture-$script
-||ticketmaster.eu^*/omniture_tracker.js
-||timeinc.net/tii/omniture/h/config/timesi.js$domain=si.com
-||vitacost.com/Javascripts/s_code.js
-||vmware.com/files/templates/inc/s_code_my.js
-||wp.com/wp-content/themes/vip/metrouk/js/site-catalyst.js$domain=metro.co.uk
-||yell.com/js/omniture-H.25.js
-! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
-||radio-canada.ca/omniture/omni_stats_base.js?
-! Specific filters necessary for sites allowlisting with $genericblock filter option
-/__utm.gif$domain=autobild.de|quoka.de|tellows.de|transfermarkt.de
-/analytics/track?$domain=widgets.azureedge.net
-/csi?v=*&action=$domain=tellows.de
-/nm_trck.gif?$domain=spiegel.de
-/pic.gif?m=$domain=autobild.de
-||3gl.net^$domain=stern.de
-||babator.com^$domain=focus.de
-||bluekai.com^$domain=disqus.com|widgets.outbrain.com
-||chartbeat.com^$domain=stern.de
-||contentexchange.me^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||contentspread.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||cpx.to^$domain=quoka.de
-||crwdcntrl.net^$domain=disqus.com
-||cxense.com^$domain=focus.de
-||disqus.com/api/ping?$domain=autobild.de
-||dnn506yrbagrg.cloudfront.net^$domain=quoka.de
-||ds-aksb-a.akamaihd.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||emetriq.de^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de|stern.de|transfermarkt.de
-||exactag.com^$domain=quoka.de
-||exelator.com^$domain=disqus.com
-||facebook.com*/impression.php$domain=autobild.de|focus.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|tellows.de|transfermarkt.de
-||facebook.com/common/scribe_endpoint.php$domain=transfermarkt.de
-||facebook.com/tr/?$domain=metal-hammer.de|musikexpress.de|rollingstone.de
-||google-analytics.com/analytics.js$domain=kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|rollingstone.de|sat1.de|sixx.de|spiegel.de|stern.de
-||google-analytics.com/collect$domain=stern.de
-||googleapis.com^*/gen_204?$domain=tellows.de
-||googletagmanager.com/gtm.js?$domain=autobild.de|transfermarkt.de
-||hotjar.com^$domain=quoka.de
-||hpr.outbrain.com^$domain=focus.de
-||imrworldwide.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||ioam.de/?$domain=autobild.de|focus.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
-||ioam.de/tx.io?$domain=autobild.de|focus.de|kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|rollingstone.de|sat1.de|sixx.de|spiegel.de|stern.de|tellows.de|transfermarkt.de
-||irqs.ioam.de^$domain=metal-hammer.de|musikexpress.de|rollingstone.de
-||log.outbrain.com^$domain=autobild.de|focus.de|metal-hammer.de|musikexpress.de|rollingstone.de|widgets.outbrain.com
-||meetrics.net^$domain=spiegel.de|stern.de
-||metrics.brightcove.com^$domain=stern.de
-||mxcdn.net^$domain=spiegel.de|stern.de
-||nuggad.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de|transfermarkt.de
-||optimizely.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||pingdom.net^$domain=musikexpress.de
-||pippio.com^$domain=disqus.com
-||referrer.disqus.com^$domain=autobild.de
-||rlcdn.com^$domain=autobild.de|widgets.outbrain.com
-||rqtrk.eu^$domain=stern.de
-||semasio.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
-||static.parsely.com^$domain=spiegel.de
-||tealiumiq.com^$domain=autobild.de|metal-hammer.de|musikexpress.de|transfermarkt.de
-||theadex.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|quoka.de|ran.de|sat1.de|sixx.de
-||tisoomi-services.com^$domain=metal-hammer.de|musikexpress.de
-||twitter.com/i/jot$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|rollingstone.de|sat1.de|sixx.de
-||visualrevenue.com^$domain=autobild.de|kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de|spiegel.de
-||watchseries.to/piwik.js
-||webtrekk.net^$domain=kabeleins.de|metal-hammer.de|musikexpress.de|prosieben.de|prosiebenmaxx.de|ran.de|rollingstone.de|sat1.de|sixx.de
-||wt-eu02.net^$domain=stern.de
-||wt-safetag.com^$domain=stern.de
-||xplosion.de^$domain=spiegel.de|stern.de
-! -----------------Individual cname tracking systems-----------------!
-! *** easylist:easyprivacy/easyprivacy_specific_cname.txt ***
-! CNAME Specific filters
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
 ! German
