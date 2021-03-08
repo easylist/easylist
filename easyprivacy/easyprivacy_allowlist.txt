@@ -5,7 +5,13 @@
 @@||1001trackstats.com/api/$xmlhttprequest,domain=songstats.com
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
 @@||9cdn.net^*/js/tracking/$script,domain=nine.com.au
+! Can break playback or knowldge base articles
+@@||api*.fox.com
+! Breaks content loading on some nyt blogs
+@@||a.nytimes.com
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
+! Used to login to google on third party websites
+@@||accounts.google.com$~third-party
 @@||ad.crwdcntrl.net^$script,domain=investopedia.com
 @@||adblockanalytics.com/ads.js|
 @@||addgene.org/headers/blat/js/analyze.js
@@ -39,6 +45,8 @@
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
 @@||analytics.snidigital.com^$script,domain=hgtv.com
 @@||analytics.twitter.com^$domain=analytics.twitter.com
+! Used to decrease loading time, breaks features on dozens of popular websites
+@@||analysis.genstin.com
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
 @@||api-track.delhivery.com/track?waybillId=$~third-party,xmlhttprequest
 @@||api.academia.edu^*/stats?callback$script,~third-party
@@ -188,6 +196,10 @@
 @@||geoplugin.net/json.gp?jsoncallback=$script,domain=worldc.am
 @@||geostag.cardinalcommerce.com/DeviceFingerprintWeb/includes/js/fingerprint2.min.js$script
 @@||ghstatic.com/images/site/zylom/scripts/google-analytics.js?$domain=zylom.com
+! Disney/Go : Breaks disney.com
+@@||global.go.com/stat/dolWebAnalytics.js
+! Reddit Internal API : Could Break reddit.com
+@@||gateway.reddit.com/desktopapi
 @@||google-analytics.com/analytics.js$domain=afternic.com|allmusic.com|amctv.com|anchor.fm|bebo.com|beinsports.com|bennysva.com|blastingnews.com|ch10.co.il|cliphunter.com|daemon-tools.cc|desigual.com|easyjet.com|firehousesubs.com|gamepix.com|greentoe.com|health2000.co.nz|housing.wisc.edu|infogr.am|jackbox.tv|jobs.net|keygames.com|m.timesofindia.com|manowthaimordialloc.com.au|maxiclimber.com|orbitum.com|pluto.tv|pure.com|readyrefresh.com|rebtel.com|sbnation.com|sci2.tv|seatgeek.com|stitcher.com|support.amd.com|tagheuer.com.au|tracking.narvar.com|tv10play.se|tv3play.se|tv6play.se|tv8play.se|video.pbs.org|vox.com|vpnster.com|weather.gov|westernunion.at|westernunion.be|westernunion.ca|westernunion.ch|westernunion.cl|westernunion.co.jp|westernunion.co.nz|westernunion.co.uk|westernunion.co.za|westernunion.com|westernunion.com.au|westernunion.com.co|westernunion.com.hk|westernunion.com.my|westernunion.com.pe|westernunion.de|westernunion.fr|westernunion.ie|westernunion.it|westernunion.nl|westernunion.ph|westernunion.pl|westernunion.se|westernunion.sg|www.google.com
 @@||google-analytics.com/ga.js$domain=7digital.com|account.hirezstudios.com|aebn.net|aftonbladet.se|alatest.com|americanapparel.net|apps.facebook.com|asus.com|avast.com|babylon.com|bangbros.com|banshee.fm|billabong.com|billboard.com|bolha.com|bookadumpster.com|boostmobile.com|break.com|brobible.com|cinemassacre.com|comingsoon.net|dailyfreegames.com|donanimhaber.com|ehow.com|eonline.com|everydayhealth.com|expensify.com|filmweb.pl|fora.tv|fossil.com|foxsports.com.au|frequency.com|g4tv.com|gasbuddy.com|globaltv.com|google.com|gumtree.com.au|hoerzu.de|imageshack.us|intellicast.com|jetbrains.com|jobsite.co.uk|justjared.com|juxtapoz.com|kleinanzeigen.ebay.de|latimes.com|lemonfree.com|liptonicetea.com|logitech.com|lucasarts.com|mashable.com|maxcdn.com|medonet.pl|meetme.com|mevio.com|mommyish.com|newyorker.com|nme.com|nuts.co.uk|opendns.com|oyster.com|philips.com|photobucket.com|priceme.co.nz|priestville.org|salon.com|search.diy.com|seekingalpha.com|sundance.org|techbargains.com|tempe12.com|theblaze.com|thegrindstone.com|theweek.com|threatfire.com|timberland.com|tomshardware.com|tube8.com|tvunetworks.com|tweetgrid.com|umbro.com|weeworld.com|wonka.com|xda-developers.com|yellow.co.nz|youtube.com|zoo.org.au
 @@||google-analytics.com/gtm/js$script,domain=curbed.com|eater.com|funnyordie.com|gumtree.com|mmafighting.com|mmamania.com|nflgamepass.com|polygon.com|racked.com|readyrefresh.com|reuters.com|riftherald.com|sbnation.com|theringer.com|theta.tv|toysrus.ca|vox.com
@@ -305,6 +317,8 @@
 @@||paypalobjects.com/*/pageView.js$script,domain=paypal.com
 @@||paypalobjects.com/web/*/gAnalytics.js$script,domain=paypal.com
 @@||pbskids.org/js/ga-current.js
+! Makes NYTimes.com slow by not loading cache
+@@||purr.nytimes.com/v1
 @@||petsathome.com^*/Analytics.js
 @@||pixel.condenastdigital.com/sparrow.min.js$domain=video.epicurious.com|video.gq.com|video.wired.com
 @@||pixel.quantserve.com/api/segments.json?$domain=newsinc.com
@@ -348,6 +362,8 @@
 @@||rfksrv.com^$script,domain=riteaid.com
 @@||rules.atgsvcs.com/EERules/view/$domain=lenovo.com
 @@||rum.perfops.net/rum.min.js$script,domain=cdnperf.com
+! Breaks Some Parts of NYTimes.com
+@@||rumcdn.geoedge.be/*.js
 @@||s-microsoft.com/mscc/statics/$script,domain=microsoft.com
 @@||s.yimg.com^*/advertisement/sponsor/promo/ad.png$image,domain=news.yahoo.com
 @@||sahibinden.com/assets/analytics*.js$script
@@ -445,6 +461,9 @@
 @@||yottaa.net^*/scripts/eventtracking/$script,domain=containerstore.com
 @@||youbora.com/*/js/adapters/jwplayer$script
 @@||youtube.com/api/analytics/$~third-party
+! Yahoo Mail Beacon : Checks If Is Wifi To Reload Inbox (Non-Malicious) : Could break yahoo.com or mail.yahoo.com
+@@||www.yahoo.com/px.gif
+@@||yahoo.net/pixel.gif
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
@@ -513,6 +532,8 @@
 @@||metrics.nissanusa.com/b/ss/$image
 @@||metrics.target.com/b/ss/$image
 @@||metrics.thetrainline.com/b/ss/$image
+! Unmalicious Attack Detection : Produces error on bcc.com
+@@||me-ssl.effectivemeasure.net/em.js
 @@||metrics.ticketmaster.com/b/ss/$image
 @@||mlb.com/b/ss/$image
 @@||nokia.com/b/ss/$image,domain=here.com
@@ -535,6 +556,9 @@
 @@||som.aeroplan.com/b/ss/$image
 @@||stat.safeway.com/b/ss/$image
 @@||sw88.disney.co.jp^$image
+! Plays Media : Detected on cloudflare.com
+@@||videodelivery.net
+@@||embed.videodelivery.net
 @@||walmart.com/b/ss/$image
 ! Allowlists to fix broken pages of tracking companies
 ! Heatmap
