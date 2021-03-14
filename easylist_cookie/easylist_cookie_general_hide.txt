@@ -2768,6 +2768,7 @@
 ###cookie_popup_container
 ###cookie_popup_overlay
 ###cookie_popup_wrapper
+###cookie_preferences_banner_root
 ###cookie_prefs_bumper
 ###cookie_priv_div
 ###cookie_privacy
@@ -3670,6 +3671,7 @@
 ###cookiexndo
 ###cookiezeile
 ###cookii-message
+###cookii-overlay
 ###cookinfo
 ###cookinfoDIV
 ###cookinfo_container
@@ -3775,6 +3777,7 @@
 ###ctn_cookies
 ###ctrlHeader_divCookieText
 ###ctrl_barra_cookies
+###ctw-implied-consent
 ###cu-cookie-alert
 ###cu-privacy-notice
 ###cuConsent
@@ -4414,6 +4417,7 @@
 ###gdpr-cookie-accept
 ###gdpr-cookie-banner
 ###gdpr-cookie-banner-container
+###gdpr-cookie-bar
 ###gdpr-cookie-block
 ###gdpr-cookie-consent
 ###gdpr-cookie-consent-popup
@@ -5071,6 +5075,7 @@
 ###m31CookieInfo
 ###mCookies
 ###m_cookie_popup
+###m_wctrlFICookieConsent
 ###ma-cmp-container
 ###maCookieInfo
 ###mab-cookie-notice-wrap
@@ -5154,6 +5159,7 @@
 ###mixcookies
 ###mj-cookie-consent
 ###mk-cookie
+###mkCookieBar-bar
 ###mktg_Cookie
 ###mktg_Cookie_Wrap
 ###mktzr_cookie_policy
@@ -5260,6 +5266,7 @@
 ###mw-cookie-policy
 ###my-cookie__consent
 ###my-cookies-alert
+###myCookieConsent
 ###myCustomCookieLayer
 ###myModalCookieConsent
 ###myModalCookies
@@ -5724,8 +5731,8 @@
 ###privacy-popup
 ###privacy-popup-container
 ###privacy-shield
-###privacy-statement
 ###privacy-statement-wrapper
+###privacy-statement:not(.checkbox)
 ###privacy-toast
 ###privacy-update
 ###privacyAndCookieNoticePanel
@@ -5777,7 +5784,7 @@
 ###privacy_law
 ###privacy_modal
 ###privacy_notice
-###privacy_policy
+###privacy_policy:not(input)
 ###privacy_policy_banner
 ###privacy_policy_bar
 ###privacy_policy_link_window
@@ -5793,7 +5800,7 @@
 ###privacymanager
 ###privacymessage
 ###privacynotice
-###privacypolicy
+###privacypolicy:not(input)
 ###privacypolicycontainer
 ###privacypopup
 ###privatBanner
@@ -5895,7 +5902,6 @@
 ###root div[aria-label="cookieconsent"]
 ###root div[class*="cookieMonster-wrapper"]
 ###root div[class*="cookies-policy"]
-###root div[data-dmid*="cookiebar"]
 ###root div[data-test*="Cookie-Banner"]
 ###root ~ div[class*="consent-banner"]
 ###root-cookie-notice
@@ -7718,6 +7724,7 @@
 ##.coockiesPolicy
 ##.coockiesfixed
 ##.cook-accept
+##.cook-popup
 ##.cook-window
 ##.cook_plcy
 ##.cookacceptor
@@ -8179,6 +8186,7 @@
 ##.cookie-permission
 ##.cookie-permission--backdrop
 ##.cookie-permission-banner
+##.cookie-permission-container
 ##.cookie-permission-container-big
 ##.cookie-permission-prompt
 ##.cookie-plugin
@@ -8795,6 +8803,7 @@
 ##.cookie_politics
 ##.cookie_popup
 ##.cookie_popup_wrapper
+##.cookie_preferences_banner
 ##.cookie_privacy_alert
 ##.cookie_privacy_block
 ##.cookie_privacy_info_bar
@@ -9472,6 +9481,7 @@
 ##.cp1CookieBanner
 ##.cpOverlay[data-cookie-consent-overlay]
 ##.cpb-privacy-policy-widget
+##.cpck-banner
 ##.cpg_message_info
 ##.cph-ccpa_banner
 ##.cpnb-inner
@@ -9501,6 +9511,7 @@
 ##.custom-cookie-msg
 ##.customCookie
 ##.customCookieBackdrop
+##.customer-info-block__coockie
 ##.cv2-wrapper
 ##.cwcookielaw
 ##.cwcookielawbg
@@ -9692,6 +9703,7 @@
 ##.emp-cookies-policy
 ##.encart_cookie
 ##.ensNotifyBanner
+##.ensNotifyBannerWrapper
 ##.ensureCookie
 ##.eocookie
 ##.ep-cookies-bar
@@ -10455,6 +10467,7 @@
 ##.js-gdpr-info
 ##.js-gdpr-notice
 ##.js-gdpr-notice-dialog-overlay
+##.js-gdpr-popup
 ##.js-gdpr-tooltip
 ##.js-gdprAlert
 ##.js-global-cookie-message
@@ -11413,6 +11426,7 @@
 ##.react-cookie-banner
 ##.react-cookie-gdpr-blocker
 ##.react-cookie-gdpr-dialog
+##.react-navi-ea-cookie-disclaimer
 ##.react-reveal[class*="cookie-banner"]
 ##.readcookie
 ##.recurly-gdpr
@@ -11452,6 +11466,7 @@
 ##.rm-cookies-belt
 ##.rm-cookies-ol
 ##.rmgCookieAlert
+##.rnk-CookiesPolicy
 ##.rnt_cookie
 ##.rodo-accept
 ##.rodo-alert
@@ -12082,6 +12097,7 @@
 ##[data-cookie-validity-days]
 ##[data-cookie="uso-accept-cookies"]
 ##[data-cookie^="cookie.disclaimer"]
+##[data-dmid*="cookiebar-"]
 ##[data-key="cookies-warning"]
 ##[data-module="cookies"]
 ##[data-name="cookieNotice"]
@@ -12117,6 +12133,7 @@
 ##app-cookie-policy
 ##app-cookie-rules
 ##app-cookie-warning
+##app-cookies-banner
 ##app-cookies-consent
 ##app-cookies-policy-updated
 ##app-root app-cookie-acceptance
@@ -12182,6 +12199,7 @@
 ##div[class*="cookieBarContainer"]
 ##div[class*="cookieDisclaimer"]
 ##div[class*="cookiesBarVisible"]
+##div[class*="footer__CookieBar"]
 ##div[class^="ConsentBar_"]
 ##div[class^="CookieBanner_"]
 ##div[class^="CookieBarWrapper"]
@@ -12317,6 +12335,7 @@
 ##rtk-cookies-notice
 ##sd-cookies-widget
 ##section[class*="_CookieNotice"]
+##section[data-component="Com3Cookie"]
 ##section[data-test-id="cookie-notice"]
 ##section[data-view="cookiePolicy"]
 ##sell-cookie-banner
