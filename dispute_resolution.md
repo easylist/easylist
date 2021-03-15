@@ -5,9 +5,9 @@
      Removal / Change of filter will be up to the filter list author.
      There will be no guarantee that any filter will be removed, but it'll be stated in comments.
 
-     Ticket maybe closed/locked if:
-        (a) Abusive chat (GH / Twitter /FB etc)
-        (b) Disagreements leading to an impass. 
+     Ticket may be closed/locked in case of:
+        (a) Abusive chat (GitHub / Twitter / facebook, etc.)
+        (b) Disagreements leading to an impasse. 
         
      Timeframe of any fix will depend on each ticket.   
      
@@ -17,19 +17,19 @@
 ### Filter affected:
 
 
-<!-- Example of Broken site -->
+<!-- Example of broken site -->
 ### 1st/3rd-party sites affected:
 
 
 
-<!-- How is broken? If we visit the site directly whats broken? --> 
+<!-- How is it broken? If we visit the site directly, what's broken? --> 
 ### How is it broken?
 
 
 
 
 <!-- Why should we remove this filter? -->
-### Description why it should be removed:
+### Description of why it should be removed:
 
 
 
