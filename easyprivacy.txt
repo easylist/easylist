@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202103180307
+! Version: 202103180324
 ! Title: EasyPrivacy
-! Last modified: 18 Mar 2021 03:07 UTC
+! Last modified: 18 Mar 2021 03:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -21678,26 +21678,25 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
-@@||api.github.com^*/log?ref=$xmlhttprequest
 @@||api.ipify.org^$xmlhttprequest,domain=account.pennytel.com.au
 @@||api.ipstack.com/check$domain=blockfi.com|withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
-@@||aramex.co.nz/Umbraco/Api/Tracking/
+@@||aramex.co.nz/Umbraco/Api/Tracking/$~third-party
 @@||atl-paas.net/analytics/event
-@@||atptour.com/assets/atpwt/scripts/util/googleAnalytics.js
-@@||att.com/scripts/adobe/prod/$script
-@@||att.com/scripts/adobe/virtual/detm-container-hdr.js
+@@||atptour.com/assets/atpwt/scripts/util/googleAnalytics.js$~third-party
+@@||att.com/scripts/adobe/prod/$script,~third-party
+@@||att.com/scripts/adobe/virtual/detm-container-hdr.js$~third-party
 @@||att.tv^*/VisitorAPI.js$script,~third-party
 @@||azureedge.net/prod/smi/loader-config.json$domain=pressdemocrat.com
 @@||bam.nr-data.net^$script,domain=kapwing.com
 @@||banned.video/videojs-event-tracking/dist/videojs-event-tracking.js$script,domain=banned.video|infowars.com
-@@||bgp.he.net/images/flags/*.gif?$image
-@@||bjjhq.com/HttpCombiner.ashx?$script
+@@||bgp.he.net/images/flags/*.gif?$image,~third-party
+@@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
 @@||blackcircles.ca^*/gtm.js$~third-party
 @@||bluecare.express/js/tracking/$script,~third-party
 @@||bobbibrowncosmetics.com^*/analytics.min.js$~third-party
-@@||bookmate.com^*/impressions?$xmlhttprequest
+@@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
 @@||cleverpush.com/channel/$script,domain=bsdex.de
 ! @@||browser.sentry-cdn.com^$domain=cardiffmedia.co.uk|connect.shore.com|crrowd.com|eco-clobber.co.uk|gina-phillips.com|gracevanberkum.com|imperial.ac.uk|loveotv.com|onginnovations.com|simonparkes.org|stockforecasttoday.com|tekku.co.za|theangryviking1776.com|thegivingblock.com|thepittsburghoratory.org|truenews4u.com|washingtonpost.com|wix.com
 @@||brsrvr.com/api/$xmlhttprequest,domain=dollargeneral.com
@@ -21733,7 +21732,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||coremetrics.com*/eluminate.js
 @@||cp.rackspace.com/javascript/services/analytics.js?$script,~third-party
 @@||cqcounter.com^$domain=cqcounter.com
-@@||cvs.com/shop-assets/js/VisitorAPI.js
+@@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
 @@||d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js$script,domain=einthusan.tv
 @@||datadoghq-browser-agent.com/datadog-rum-us.js$script,domain=usa.experian.com
 @@||ddmcdn.com^*/adobe.visitor-$script,domain=ahctv.com|animalplanet.com|cookingchanneltv.com|destinationamerica.com|discovery.com|discoverylife.com|diynetwork.com|foodnetwork.com|hgtv.com|investigationdiscovery.com|motortrend.com|sciencechannel.com|tlc.com|travelchannel.com
@@ -21813,10 +21812,10 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||jsrdn.com/s/$script,domain=distro.tv
 @@||jwpcdn.com/player/plugins/googima/*/googima.js$script,domain=ladbible.com
 @@||kaxsdc.com/collect/sdk$xmlhttprequest,domain=vanillaereward.com
-@@||kentucky.com/mistats/finalizestats.js
+@@||kentucky.com/mistats/finalizestats.js$~third-party
 @@||kohls.com/ecustservice/js/sitecatalyst.js$script,~third-party
 @@||lacoste.com/on/demandware.static/*/click-analytics.js$~third-party
-@@||legendstracking.com/js/legends-tracking.js
+@@||legendstracking.com/js/legends-tracking.js$~third-party
 @@||lenovo.com/_ui/desktop/common/js/AdobeAnalyticsEvent.js$script,~third-party
 @@||listrakbi.com^$image,script,stylesheet,domain=sks-bottle.com
 @@||live.bbc.co.uk^*/comscore.js$script,~third-party
@@ -21839,15 +21838,15 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||mywebar.com/js/tracking_worker.js$~third-party
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de|surveymonkey.ru
 @@||newrelic.com/public/charts/$subdocument,xmlhttprequest
-@@||nhl.com/components/shared/omniture-tracking-scripts/newRelic.js
+@@||nhl.com/components/shared/omniture-tracking-scripts/newRelic.js$~third-party
 @@||nike.com/assets/measure/data-capture/analytics-client.min.js$script,~third-party
-@@||nintendo.com/apps/noa/scripts/analytics.js
+@@||nintendo.com/apps/noa/scripts/analytics.js$~third-party
 @@||noaa.gov/maps/resources/scripts/ga.js$script,~third-party
 @@||noodid.ee/chordQuiz/$~third-party
 @@||nyt.com/analytics/json-$script,domain=nytimes.com
 @@||nyt.com/bi/js/tagx/tagx.js$domain=nytimes.com
-@@||nytimes.com^*/EventTracker.js
-@@||oakley.com^*/tealium.js
+@@||nytimes.com^*/EventTracker.js$~third-party
+@@||oakley.com^*/tealium.js$~third-party
 @@||oceanstatejoblot.com^*/widget/osjl-google-analytics/$script,~third-party
 @@||omtrdc.net^*/mbox/ajax?$script,domain=swisscom.ch
 @@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=absa.co.za|argos.co.uk|att.com|homedepot.com|swisscom.ch|t-mobile.com
