@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202103210002
+! Version: 202103210009
 ! Title: EasyList
-! Last modified: 21 Mar 2021 00:02 UTC
+! Last modified: 21 Mar 2021 00:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30869,6 +30869,12 @@ _popunder+$popup
 ##.grid > .container > #aside-promotion
 ! google
 ##div#main > div.D1fz0e
+! fake buttons https://github.com/uBlockOrigin/uAssets/pull/8749
+##[href^="/admdownload.php"]
+##[href^="/ucdownload.php"]
+##[href^="/ucdownloader.php"]
+##[href^="/ucmini.php"]
+##[href^="https://bulletprofitsmartlink.com/"]
 ! revcontent
 ##.default_rc_theme
 ##.inf-onclickvideo-adbox
