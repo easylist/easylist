@@ -9,24 +9,20 @@ The goal of this repository is block ads, popups and hiding
  - Cosmetic (Generic and domain specific)
  - Ad servers
 
-Issues:
-
-Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
- - Allow direct link fixes
- - Web page rendering issues
-
 **Easyprivacy**
 
-The goal of this repository is block tracking.
+The goal of this repository is block tracking, improve end user privacy.
  - Analytics
  - Telemetry
  - Pixels
  - Referrers
  - Beacons
  - Fingerprinting
- - Event/perf logging
+ - Impressions/Event/Perf/Pageview logging
  - User agent monitoring
- - Cnames
+ - Resource Miners
+ - Hit Counters
+ - Cname trackers
  - Some unnessary third-party scripts
  
 When a site is attempting to track, it'll be put into one of 4 categories.
@@ -35,8 +31,10 @@ When a site is attempting to track, it'll be put into one of 4 categories.
  - Third-party tracking. Hosted by another provider, which hosts a tracking script, but not actually a tracking company.
  - Tracking-servers. Where the server has only one purpose is to tracking/analytics the user, will be blocked the url level.
 
-Issues:
+**List Issues**
 
 Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
  - Allow direct link fixes
  - Web page rendering issues
+
+Open a ticket: https://github.com/easylist/easylist/issues (or create a PR)
