@@ -34,6 +34,8 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 ## List Issues
 
+Filter issues can be raised via [email](mailto:easylist@protonmail.com) or via [github](https://github.com/easylist). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
+
 Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
  - Allow direct link fixes
  - Web page rendering issues
@@ -41,5 +43,6 @@ Fix any false-positives that will remove legitimate content (within reason), if 
 For any issues, creating a ticket: https://github.com/easylist/easylist/issues (and/or create a PR)
 
 ## Support
+
 Easylist, Easprivacy and Fanboy lists are used in a number of extensions, browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
 
