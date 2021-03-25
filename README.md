@@ -1,8 +1,8 @@
-# Easylist / Easyprivacy / Fanboy Lists
+# EasyList / EasyPrivacy / Fanboy Lists
 
-This Adblock list is maintained by Fanboy, Monzta, Khrin.
+This Adblock list is maintained by Fanboy, MonztA and Khrin.
 
-## Easylist
+## EasyList
 
 The goal of this repository is to block ads on English sites. By blocking the following:
  - Ad Scripts (Generic and site-specific)
@@ -10,7 +10,7 @@ The goal of this repository is to block ads on English sites. By blocking the fo
  - Ad servers
  - Prevent popups
 
-## Easyprivacy
+## EasyPrivacy
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
  - Analytics
@@ -23,7 +23,7 @@ The goal of this repository is to block tracking and improve end user privacy. B
  - User agent monitoring
  - Resource Miners
  - Hit Counters
- - Cname trackers
+ - CNAME trackers
  - Linking to other third-party tracking servers
  - Some unnessary third-party scripts/images
  
@@ -35,7 +35,7 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 ## List Issues
 
-Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
+Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist/easylist/issues). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
 
 Attempt fix website false-positives where applicable such as:
  - Website Breakages
@@ -46,5 +46,5 @@ For any issues or questions, create a ticket: [Github](https://github.com/easyli
 
 ## Support
 
-Easylist, Easprivacy and Fanboy lists are used in a number of extensions, browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
+EasyList, EasyPrivacy and Fanboy lists are used in a number of extensions, browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
 
