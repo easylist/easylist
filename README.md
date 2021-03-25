@@ -11,7 +11,7 @@ The goal of this repository is block ads, popups and hiding
 
 **Easyprivacy**
 
-The goal of this repository is block tracking, improve end user privacy.
+The goal of this repository is block tracking and improve end user privacy, by blocking the following:
  - Analytics
  - Telemetry
  - Pixels
@@ -23,7 +23,8 @@ The goal of this repository is block tracking, improve end user privacy.
  - Resource Miners
  - Hit Counters
  - Cname trackers
- - Some unnessary third-party scripts
+ - Linking to other third-party tracking servers
+ - Some unnessary third-party scripts/images
  
 When a site is attempting to track, it'll be put into one of 4 categories.
  - Generic blocks (common url/tracking filter patterns) used by 1st/3rd-partys.
@@ -37,4 +38,4 @@ Fix any false-positives that will remove legitimate content (within reason), if 
  - Allow direct link fixes
  - Web page rendering issues
 
-Open a ticket: https://github.com/easylist/easylist/issues (or create a PR)
+For any issues, creating a ticket: https://github.com/easylist/easylist/issues (and/or create a PR)
