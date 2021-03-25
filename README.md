@@ -34,13 +34,14 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 ## List Issues
 
-Filter issues can be raised via [email](mailto:easylist@protonmail.com) or via [github](https://github.com/easylist). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
+Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
 
-Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
- - Allow direct link fixes
- - Web page rendering issues
+Attempt fix website false-positives where applicable such as:
+ - Website Breakages
+ - Allow direct link fixes.
+ - Web page rendering issues.
 
-For any issues, creating a ticket: https://github.com/easylist/easylist/issues (and/or create a PR)
+For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues).
 
 ## Support
 
