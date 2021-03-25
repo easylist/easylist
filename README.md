@@ -39,3 +39,7 @@ Fix any false-positives that will remove legitimate content (within reason), if 
  - Web page rendering issues
 
 For any issues, creating a ticket: https://github.com/easylist/easylist/issues (and/or create a PR)
+
+## Support
+Easylist, Easprivacy and Fanboy lists are used in a number of extensions, browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
+
