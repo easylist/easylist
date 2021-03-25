@@ -11,7 +11,7 @@ The goal of this repository is block ads, popups and hiding
 
 **Easyprivacy**
 
-The goal of this repository is block tracking and improve end user privacy, by blocking the following:
+The goal of this repository is to block tracking and improve end user privacy. Blocking the following:
  - Analytics
  - Telemetry
  - Pixels
