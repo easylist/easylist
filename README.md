@@ -4,14 +4,15 @@ This Adblock list is maintained by Fanboy, Monzta, Khrin.
 
 ## Easylist
 
-The goal of this repository is block ads, popups and hiding 
- - Scripts (Generic and site-specific)
- - Cosmetic (Generic and domain specific)
+The goal of this repository is to block ads on English sites. By blocking the following:
+ - Ad Scripts (Generic and site-specific)
+ - Cosmetic filtering (Generic and site-specific)
  - Ad servers
+ - Prevent popups
 
 ## Easyprivacy
 
-The goal of this repository is to block tracking and improve end user privacy. Blocking the following:
+The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
  - Analytics
  - Telemetry
  - Pixels
