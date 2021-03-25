@@ -2,14 +2,14 @@
 
 This Adblock list is maintained by Fanboy, Monzta, Khrin.
 
-**Easylist**
+## Easylist
 
 The goal of this repository is block ads, popups and hiding 
  - Scripts (Generic and site-specific)
  - Cosmetic (Generic and domain specific)
  - Ad servers
 
-**Easyprivacy**
+## Easyprivacy
 
 The goal of this repository is to block tracking and improve end user privacy. Blocking the following:
  - Analytics
@@ -32,7 +32,7 @@ When a site is attempting to track, it'll be put into one of 4 categories.
  - Third-party tracking. Hosted by another provider, which hosts a tracking script, but not actually a tracking company.
  - Tracking-servers. Where the server has only one purpose is to tracking/analytics the user, will be blocked the url level.
 
-**List Issues**
+## List Issues
 
 Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
  - Allow direct link fixes
