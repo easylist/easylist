@@ -11,7 +11,7 @@ The goal of this repository is block ads, popups and hiding
 
 Issues:
 
-Fix any false-positives that will remove legitimate content (within reason). If it prevent legitimate content from working correctly.
+Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
  - Allow direct link fixes
  - Web page rendering issues
 
@@ -37,6 +37,6 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 Issues:
 
-Fix any false-positives that will remove legitimate content (within reason). If it prevent legitimate content from working correctly.
+Fix any false-positives that will remove legitimate content (within reason), if it prevents legitimate content from working correctly on a website.
  - Allow direct link fixes
  - Web page rendering issues
