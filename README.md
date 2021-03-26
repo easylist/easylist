@@ -6,9 +6,9 @@ This Adblock list is maintained by Fanboy, MonztA and Khrin.
 
 The goal of this repository is to block ads on English sites. By blocking the following:
  - Ad Scripts (Generic and site-specific)
- - Cosmetic filtering (Generic and site-specific)
- - Ad servers
- - Prevent popups
+ - Cosmetic filtering (Generic and site-specific css)
+ - Ad servers (Block servers that host ads/ad-related content)
+ - Prevent popups (Block scripts or domains that cause popups/ad notifications)
 
 ## EasyPrivacy
 
@@ -35,7 +35,7 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 ## List Issues
 
-Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist/easylist/issues). Accountability & responsibility remain with the list authors and not with extentions and/or web browsers. 
+Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist/easylist/issues). Accountability & responsibility remain with the list authors and not with extensions and/or web browsers. 
 
 Attempt fix website false-positives where applicable such as:
  - Website Breakages
