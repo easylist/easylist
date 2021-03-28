@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202103281053
+! Version: 202103281148
 ! Title: EasyList
-! Last modified: 28 Mar 2021 10:53 UTC
+! Last modified: 28 Mar 2021 11:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51494,17 +51494,6 @@ $websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.ne
 @@||img.powvideo.net/scap/$image,domain=povvideo.net|powv1deo.net|powvldeo.co|powvldeo.net
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
 |https://$image,script,subdocument,third-party,xmlhttprequest,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.net
-! mcloud
-@@||ajax.googleapis.com^$script,domain=mcloud.to
-@@||akacdn.ru/f/subtitle/$xmlhttprequest,domain=mcloud.to
-@@||fonts.googleapis.com^$stylesheet,domain=mcloud.to
-@@||gstatic.com^$script,domain=mcloud.to
-@@||jwpcdn.com^$script,stylesheet,domain=mcloud.to
-@@||mcloud.to/key$script
-@@||mcloud.to/resources/$stylesheet,domain=mcloud.to
-@@||mcloud.to/resources/js/player.js$script,domain=mcloud.to
-|http://$image,script,stylesheet,subdocument,third-party,domain=mcloud.to
-|https://$image,script,stylesheet,subdocument,third-party,domain=mcloud.to
 ! uptobox.com
 @@||ajax.googleapis.com^$script,domain=uptobox.com|uptostream.com
 @@||googleapis.com/js/sdkloader/ima3.js$script,domain=uptobox.com|uptostream.com
@@ -51514,45 +51503,9 @@ $websocket,domain=povvideo.net|powv1deo.net|powvideo.net|powvldeo.co|powvldeo.ne
 @@||uptostream.com^$generichide
 |http://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
 |https://$script,third-party,xmlhttprequest,domain=uptobox.com|uptostream.com
-! userscloud.com
-@@||cdnjs.cloudflare.com^$script,domain=userscloud.com
-@@||d3edizycpjjo07.cloudfront.net/assets/library/jquery/jquery.min.js$script,domain=userscloud.com
-@@||d3edizycpjjo07.cloudfront.net/xupload.js$script,domain=userscloud.com
-@@||usercdn.com/cgi-bin/upload.cgi?$subdocument,domain=userscloud.com
-@@||usercdn.com/i/$image,domain=userscloud.com
-@@||usercdn.com/tmp/status.html?$subdocument,domain=userscloud.com
-@@||vjs.zencdn.net^$script,domain=userscloud.com
-@@||widget.uservoice.com^$script,domain=userscloud.com
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com
-||userscloud.com/js/vendor/core/bootstrap.js
-! sendit.cloud
-@@||code.jquery.com^$script,domain=sendit.cloud
-@@||sendit.download/i/$image,domain=sendit.cloud
-@@||vjs.zencdn.net^$script,domain=sendit.cloud
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=sendit.cloud
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=sendit.cloud
-||sendit.cloud/images/banner/
-! gounlimited.to
-@@||cdnjs.cloudflare.com/ajax/libs/$script,domain=gounlimited.to
-@@||code.jquery.com^$script,domain=gounlimited.to
-|http://$script,third-party,xmlhttprequest,domain=gounlimited.to
-|https://$script,third-party,xmlhttprequest,domain=gounlimited.to
-||gounlimited.to/olehkwmxtnhn.js
-! fastpic
-|http://$script,stylesheet,third-party,xmlhttprequest,domain=fastpic.ru
-|https://$script,stylesheet,third-party,xmlhttprequest,domain=fastpic.ru
-|ws://$other,third-party,domain=fastpic.ru
-! monova
-@@||gstatic.com^$script,third-party,domain=monova.org
-|http*://$image,other,script,subdocument,third-party,xmlhttprequest,domain=monova.org
 ! Fembed
 $script,third-party,xmlhttprequest,domain=clickopen.club|core1player.com|exvcon.com|fembed.com|feurl.com|fsimg.info|gaobook.review|mavplay.com|mavplayer.xyz|novelplanet.me|secfilm.xyz|sonline.pro|svpri.xyz|vaplayer.xyz|vidplayer.cz|xstreamcdn.com|youtubedownloader.cx
 ||fembed.com/revenue
-! Fastplay
-@@||ssl.p.jwpcdn.com/player/$script,domain=fastplay.to
-|http://$script,stylesheet,third-party,domain=fastplay.to
-|https://$script,stylesheet,third-party,domain=fastplay.to
 ! flashx
 $image,script,subdocument,third-party,xmlhttprequest,domain=flashx.cc|flashx.to|flashx.tv
 $websocket,domain=flashx.cc|flashx.to|flashx.tv
@@ -51574,9 +51527,6 @@ $websocket,domain=flashx.cc|flashx.to|flashx.tv
 ! Washington Times
 @@||twt-assets.washtimes.com/v4/js/twig.js
 ||twt-assets.washtimes.com^$script,domain=washingtontimes.com
-! linkshrink.net
-|http://$image,script,subdocument,third-party,xmlhttprequest,domain=linkshrink.net
-|https://$image,script,subdocument,third-party,xmlhttprequest,domain=linkshrink.net
 ! Filenuke/sharesix
 /\.filenuke\.com/.*[a-zA-Z0-9]{4}/$script
 /\.sharesix\.com/.*[a-zA-Z0-9]{4}/$script
@@ -51784,11 +51734,6 @@ spiegel.de##div[id*="/spon_dt/"]:not(#google_ads_iframe_\/6032\/spon_dt\/homepag
 ||vix.*.criteo.net^$domain=spiegel.de
 ||widgets.outbrain.com/nativeVideoPlayer/NVPInjector.min.js$domain=spiegel.de
 ||yieldlab.net^$domain=spiegel.de
-! bento.de
-bento.de,playbuzz.com##.pbads_after-question_wrapper
-bento.de##.plistaList > .itemLinkPET
-@@||bento.de^$generichide
-bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"]
 ! jetzt.de
 @@||jetzt.de^$generichide
 ! Rewrite to internal resources rules for Adblock Plus
@@ -54609,7 +54554,6 @@ whatleaks.com##[href*="doublevpn.com"]
 elitepvpers.com##[href*="https://bitly.com/"]
 elitepvpers.com##[href*="https://oddeven.net"]
 steroid.com##[href*="https://www.anabolics.com"]
-bittools.net##[href="//www.bittools.net/binance"]
 winaero.com##[href="/classic-optimizer-tweaker/"]
 audiobookbay.net##[href="/dl-14-days-trial"]
 1movies.is##[href="/user/premiummembership"]
