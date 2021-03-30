@@ -9,7 +9,6 @@
 &ad_keyword=
 &ad_network_
 &ad_number=
-&ad_revenue=
 &ad_slot=
 &ad_sub=
 &ad_time=
@@ -90,16 +89,19 @@
 -ad-300x250.
 -ad-300x450.
 -ad-300x600-
+-ad-300x600px.
 -ad-303x481-
 -ad-313x232.
 -ad-336x280-
 -ad-340x400-
+-ad-360x600.
+-ad-360x72.
 -ad-400.
+-ad-458x80.
 -ad-472x365.
 -ad-640x480.
 -ad-970-
 -ad-banner-
--ad-banner.
 -ad-big.
 -ad-bottom-
 -ad-button-
@@ -380,6 +382,7 @@
 -image/Ads/
 -images/ad-
 -img/ads/
+-inject-ads.
 -inspire-ad.
 -intern-ads/
 -js-advertising-
@@ -506,7 +509,7 @@
 .adnetwork.$domain=~adnetwork.ie|~adnetwork.sk
 .adnigma.
 .adnwif.
-.adpartner.$domain=~adpartner.cz
+.adpartner.$domain=~adpartner.cz|~adpartner.de
 .adpIds=
 .adplacement=
 .adproviders.
@@ -707,7 +710,6 @@
 .net/adgallery
 .net/adj;
 .net/ads-
-.net/ads/
 .net/ads?
 .net/ads_
 .net/adt?
@@ -735,7 +737,6 @@
 .org/ad-
 .org/ad.$~script
 .org/ad/
-.org/ad_
 .org/adgallery1
 .org/ads-
 .org/ads/
@@ -881,7 +882,7 @@
 /_/ads/*
 /_30/ads/*
 /__adstop.
-/_ads/*
+/_adslot/*
 /_affiliatebanners/*
 /_global/ads/*
 /_img/ad_
@@ -1152,9 +1153,11 @@
 /ad/common_
 /ad/commons/*
 /ad/content/*
+/ad/count.
 /ad/cpmstar/*
 /ad/cross-
 /ad/css/*$domain=~cspace.com
+/ad/dfp/*
 /ad/directcall/*
 /ad/empty.
 /ad/extra/*
@@ -1229,6 +1232,7 @@
 /ad/serve.
 /ad/show.
 /ad/side_
+/ad/skin-
 /ad/skin_
 /ad/skyscraper.
 /ad/skyscrapper.
@@ -1395,6 +1399,7 @@
 /ad_box?
 /ad_box_
 /ad_boxes/*
+/ad_break?
 /ad_bsb.
 /ad_button.
 /ad_cache/*
@@ -1541,7 +1546,6 @@
 /ad_peel/*$script
 /ad_pics/*
 /ad_pir.
-/ad_pop.
 /ad_pop1.
 /ad_popup_
 /ad_pos=
@@ -1783,7 +1787,6 @@
 /adclixad.
 /adClosefeedbackUpgrade.
 /adclutter.
-/adcode.
 /adcode/*
 /adcode_
 /adcodes/*
@@ -1903,7 +1906,7 @@
 /adfox/*
 /adfoxLoader_
 /adfr.
-/adframe.$~script,~xmlhttprequest
+/adframe.$~script,~xmlhttprequest,domain=~adframe.com
 /adframe/*
 /adframe120.
 /adframe120x240.
@@ -1954,7 +1957,6 @@
 /adGpt.
 /adgraphics/*
 /adgroupdetailv2.
-/adguard.$~document,domain=~adguard-com.cdn.ampproject.org|~adguard.com|~adguard.mobi|~adguard.oneskyapp.com|~greinr.com|~marketplace.visualstudio.com
 /adguru.
 /adhads.
 /adhalfbanner.
@@ -2062,7 +2064,7 @@
 /adlib.$domain=~adlib.info|~adlib.mu|~catharijneconvent.nl|~rws.nl
 /adlift4.
 /adlift4_
-/adline.$domain=~adline.co.il
+/adline.$domain=~adline.co.il|~adline.com|~adline.si
 /adlink-$domain=~adlinktech.com
 /adlink.$domain=~adlink.guru|~adlinktech.com
 /adlink/*$domain=~adlinktech.com
@@ -2087,12 +2089,12 @@
 /admain.
 /admain|
 /adman-$domain=~adman-industries.com
-/adman.$domain=~adman.com|~adman.ee|~adman.studio
+/adman.$domain=~adman.com|~adman.ee|~adman.press.pl|~adman.studio
 /adman/*
 /adman_
 /admanagement/*
 /admanagementadvanced.
-/admanager.$~object,domain=~admanager.google.com
+/admanager.$~object,domain=~admanager.alzura.com|~admanager.google.com
 /admanager/*$~object,domain=~konograma.com
 /admanager3.
 /admanager_$domain=~konograma.com
@@ -2115,7 +2117,7 @@
 /admatcherclient.
 /admatik.
 /admaven.
-/admax.$domain=~admax.cn|~admax.co|~admax.eu|~admax.fi|~admax.info|~admax.net|~admax.nu|~admax.org|~admax.se|~admax.us
+/admax.$domain=~admax.cn|~admax.co|~admax.eu|~admax.fi|~admax.hu|~admax.info|~admax.net|~admax.nu|~admax.org|~admax.se|~admax.us
 /admax/*
 /admaxads.
 /admcoreext.
@@ -2163,7 +2165,7 @@
 /adnetwork468.
 /adnetwork_
 /adnew2.
-/adnews.$domain=~adnews.pl
+/adnews.$domain=~adnews.com.br|~adnews.pl
 /AdNewsclip14.
 /AdNewsclip15.
 /adnex.
@@ -2243,7 +2245,7 @@
 /adpoint.
 /adpolestar/*
 /adpool/*
-/adpop.$domain=~adpop.io|~adpop.me|~adpop.ro
+/adpop.$domain=~adpop.io|~adpop.me|~adpop.media|~adpop.ro
 /adpop32.
 /adpopup.
 /adPos?
@@ -2289,7 +2291,7 @@
 /adright.$domain=~adright.com
 /adright/*
 /adrightcol.
-/adriver.$~object,domain=~adriver.co|~adriver.io|~adriver.tech
+/adriver.$~script,domain=~adriver.co|~adriver.io|~adriver.tech
 /adriver/*$domain=~adriver.co|~adriver.io|~adriver.tech
 /adriver_$~object
 /adrobot.$domain=~adrobot.com.au
@@ -2389,10 +2391,10 @@
 /ads.compat.
 /ads.css
 /ads.dll/*
+/ads.entry_
 /ads.gif
-/ads.htm
+/ads.htm$domain=~games.wkb.jp
 /ads.jplayer.
-/ads.js/*
 /ads.json?
 /ads.jsp
 /ads.load.
@@ -2528,6 +2530,7 @@
 /ads/generator/*
 /ads/get/*
 /ads/getall
+/ads/getPositions?
 /ads/google1.
 /ads/google2.
 /ads/google_
@@ -2547,6 +2550,7 @@
 /ads/house_
 /ads/html/*
 /ads/htmlparser.
+/ads/ias_
 /ads/iframe
 /ads/im2.
 /ads/image/*
@@ -3065,7 +3069,6 @@
 /adsinteractive-
 /adsite/*
 /adsites/*
-/adsjs.
 /adsjs/*
 /adsjson.
 /adskin/*
@@ -3078,6 +3081,7 @@
 /adslides.
 /adsline.
 /AdsLoad.
+/adslot-
 /adslots.
 /adslug-
 /adslug_
@@ -3144,7 +3148,7 @@
 /adsreporting/*
 /adsresources/*
 /adsrich.
-/adsright.
+/adsright.$domain=~adsright.pl
 /adsrot.
 /adsrot2.
 /adsrotate.
@@ -3182,6 +3186,7 @@
 /adstemplate/*
 /adsterra.$domain=~adsterra.com
 /adsterra/*
+/adsterra_
 /adstitle.
 /adstop.
 /adstop728.
@@ -3202,7 +3207,7 @@
 /adstube/*
 /adstubs/*
 /adstx.
-/adstyle.$~stylesheet
+/adstyle.$~stylesheet,domain=~adstyle.com
 /adsummos.
 /adsummos2.
 /adsunauth?
@@ -3288,7 +3293,7 @@
 /adtopmidsky.
 /adtopright.
 /adtopsky.
-/adtrack.$domain=~adtrack.ca
+/adtrack.$domain=~adtrack.ca|~adtrack.yacast.fr
 /adtrack/*
 /adtracker.
 /adtracker/*
@@ -3497,15 +3502,14 @@
 /advertisements_
 /AdvertisementShare.
 /advertisementview/*
-/advertiser.$domain=~advertiser.adverbid.com|~advertiser.autorepairconnect.com|~advertiser.flossbank.com|~advertiser.growmobile.com|~advertiser.leadcalls.ru|~advertiser.livthecity.com|~advertiser.vungle.com|~linkpizza.com|~panel.rightflow.com|~trialpay.com|~unity3d.com
-/advertiser/*$domain=~ads.microsoft.com|~ads.tiktok.com|~advertiser.flossbank.com|~affili.net|~affiliprint.com|~bingads.microsoft.com|~linkpizza.com|~mediance.com|~mobileapptracking.com|~trialpay.com
+/advertiser/*$domain=~admin.exoclick.com|~ads.microsoft.com|~ads.tiktok.com|~advertiser.flossbank.com|~affili.net|~affiliprint.com|~bingads.microsoft.com|~linkpizza.com|~mediance.com|~mobileapptracking.com|~trialpay.com
 /advertisers.$image,script,subdocument,domain=~advertisers.adgoal.de|~advertisers.adversense.com|~advertisers.careerone.com.au|~advertisers.dk|~advertisers.easyweddings.com.au|~advertisers.io|~advertisers.leadia.ru|~advertisers.ypfboost.ph|~panel.rightflow.com
 /advertisers/*$domain=~datalift360.com|~home.tapjoy.com|~panel.rightflow.com|~propelmedia.com|~publisuites.com|~qubeslate.com
 /advertiserwidget.
 /advertises/*
 /advertisewithus_
-/advertising-$image,script,domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~advertising.amazon.com|~deals-italy.com|~microsoft.com|~outbrain.com|~yellowimages.com
-/advertising.$~script,~xmlhttprequest,domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.greunenberg.com|~advertising.hulu.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr|~advision.co
+/advertising-$image,script,domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~advertising-stands.com.ua|~advertising.amazon.com|~deals-italy.com|~microsoft.com|~outbrain.com|~yellowimages.com
+/advertising.$~script,~xmlhttprequest,domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.boardgamegeek.com|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.greunenberg.com|~advertising.hulu.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr|~advision.co
 /advertising/banner_
 /advertising/traffic-
 /advertising02.
@@ -3601,7 +3605,7 @@
 /advtemplate/*
 /advtemplate_
 /advts/*
-/advweb.
+/advweb.$domain=~advweb.com.br
 /AdvWindow/*
 /advzones/*
 /adw.$domain=~adw.be|~adw.olsztyn.pl|~adw.org|~adw.org.pl
@@ -3782,6 +3786,7 @@
 /amazon-async-
 /amazon/iframeproxy-
 /amazon/widget/*
+/amazon_widget.cms
 /ame-dfp/*
 /amp-ad-
 /amp4ads-
@@ -3828,10 +3833,9 @@
 /assets/ad-
 /assets/ad/*
 /assets/ads-
-/assets/ads/*
+/assets/ads/*$domain=~outlook.live.com
 /assets/ads3-
 /assets/ads_
-/assets/adv/*
 /assets/doubleclick/*
 /assets/sponsored/*
 /ast/ads/*
@@ -3843,6 +3847,7 @@
 /atcode-bannerize/*
 /athena/tag/?
 /atlads/*
+/atlads1/*
 /atnads/*
 /AtomikAd/*
 /atrads.
@@ -3920,6 +3925,7 @@
 /banner/rtads/*
 /banner/show.php
 /banner/sponsor_
+/banner/sponsors.
 /banner/url/zone?
 /banner/virtuagirl
 /banner160x600-
@@ -3992,6 +3998,8 @@
 /bannerrotation.
 /bannerrotation/*
 /banners.*&iframe=
+/banners.*/go/page/
+/banners.*/piclist?
 /banners.cgi?
 /banners.php?id
 /banners/300
@@ -4213,6 +4221,7 @@
 /cgi-exe/ad.
 /cgi/ad_
 /channelblockads.
+/chaturbate.php
 /chaturbatebest.js
 /checkm8footer_
 /checkm8header_
@@ -4365,7 +4374,6 @@
 /css/ad-
 /css/ad.
 /css/ads-
-/css/ads.
 /css/ads300_
 /css/adsense
 /css/adv.
@@ -4382,6 +4390,7 @@
 /custom/ads
 /custom/doubleclick/*
 /custom11x5ad.
+/custom_ads.
 /custom_ads/*
 /customad.
 /customadmode.
@@ -4513,7 +4522,7 @@
 /display/ads?
 /display?ad_
 /display_ad
-/displayad.$~script
+/displayad.$~script,domain=~displayad.naver.com
 /displayad/*
 /displayad?
 /displayadbanner_
@@ -4663,7 +4672,7 @@
 /exo_bck_
 /exoads/*
 /exobanner.
-/exoclick.$domain=~exoclick.bamboohr.co.uk|~exoclick.com|~exoclick.kayako.com
+/exoclick.$~script,domain=~exoclick.bamboohr.co.uk|~exoclick.com|~exoclick.kayako.com
 /exoclick/*$domain=~exoclick.com
 /exoclickright.
 /exoclickright1.
@@ -4751,7 +4760,6 @@
 /floatingad.
 /FloatingAd_
 /floatingads.
-/floaty_rotator
 /flowplayer.ads.
 /flv-ad-
 /flvad_
@@ -4817,7 +4825,6 @@
 /fwadmanager.
 /gadgets/ad/*
 /gads.html
-/gads.js
 /gadv-right.
 /gadv-top.
 /gafc.js
@@ -5403,6 +5410,7 @@
 /js_adv-
 /js_adv_
 /js_exit_popup.
+/js_interstitial.
 /jsad.php
 /jsad/*
 /jsads-
@@ -5888,10 +5896,8 @@
 /pagead/conversion/*
 /pagead/gen_
 /pagead/html/*
-/pagead/js/*
 /pagead/lvz?
 /pagead/osd.
-/pagead2.
 /pagead46.
 /pagead?
 /pageadimg/*
@@ -5980,6 +5986,7 @@
 /phpadserver/*
 /phpadsnew/*
 /phpbanner/banner_
+/phpbb_ads/*
 /pic/ads/*
 /pic_adv/*
 /picAd.
@@ -6013,14 +6020,17 @@
 /plugins/ad.
 /plugins/ads-
 /plugins/ads/*
+/plugins/adsanity-
 /plugins/mts-wp-in-post-ads/*
 /plugins/page-cornr-
+/plugins/thirstyaffiliates/*
 /plugins/ultimate-popunder/*$~stylesheet
 /plugins/wp-moreads/*$~stylesheet
 /plugins/wp125/*$~stylesheet
 /plugins/wp_actionpop/*
 /plugins_ads_
 /plus/ad_
+/pm_ads/*
 /poker-ad.
 /poki-ads.
 /poll-ad-
@@ -6037,7 +6047,6 @@
 /pop_under/*
 /popad-
 /popad.$domain=~popad.co
-/popads.
 /popads/*
 /popads_
 /popadscpm.
@@ -6178,6 +6187,7 @@
 /pubs_aff.asp?
 /puff_ad?
 /pullads.
+/punder-rotate.
 /punder.js
 /punder.php
 /purch-ad-
@@ -6249,7 +6259,7 @@
 /reklam-ads2.
 /reklam.$domain=~reklam.com.tr
 /reklam/*$domain=~reklam.com.tr
-/reklama.$~stylesheet,domain=~pracuj.pl|~reklama.mariafm.ru|~reklama.ringieraxelspringer.pl
+/reklama.$~stylesheet,domain=~pracuj.pl|~reklama.cinema.sk|~reklama.grajewo.net.pl|~reklama.mariafm.ru|~reklama.ringieraxelspringer.pl
 /reklama/*
 /reklama1.
 /reklama2.
@@ -6261,6 +6271,7 @@
 /relatedads.
 /releases/ads/*
 /relevance_ad.
+/remaven.
 /remove-ads.
 /remove_ads.
 /render-ad/*
@@ -6398,7 +6409,7 @@
 /search/ads?
 /search/ads_
 /search_ads.
-/searchad.
+/searchad.$domain=~searchad.naver.com
 /searchad_
 /searchads/*
 /searchAdsIframe.
@@ -6425,12 +6436,12 @@
 /services/ads/*
 /services/getbanner?
 /servlet/view/*
+/set_adcode?
 /settings/ad.
 /sevenads.
 /sevenl_ad.
 /share/ads/*
 /shared/ad_
-/shared/ads.
 /shared/ads/*
 /shortmediads/*
 /show-ad.
@@ -6578,7 +6589,7 @@
 /smartad/*
 /smartAd?
 /smartad_
-/smartads.$domain=~smartads.cz|~smartads.io|~smartads.lt
+/smartads.$domain=~smartads.com.sg|~smartads.cz|~smartads.io|~smartads.lt
 /smartadserver.$domain=~smartadserver.com|~smartadserver.com.br|~smartadserver.de|~smartadserver.es|~smartadserver.fr|~smartadserver.it|~smartadserver.pl|~smartadserver.ru
 /smartadserver/*
 /smartlinks.epl?
@@ -6633,7 +6644,6 @@
 /sponsorad.
 /sponsorad2.
 /sponsoradds/*
-/sponsorads.
 /sponsorads/*
 /sponsorbanners/*
 /sponsorbg/*
@@ -6763,7 +6773,6 @@
 /switchadbanner.
 /SWMAdPlayer.
 /syads.
-/synacor.js
 /synad2.
 /synad3.
 /sync2ad.
@@ -6984,7 +6993,6 @@
 /utep/ad/*
 /utep_ad.js
 /utils~ads~
-/v1/ads.
 /v1/ads/*
 /v2/ads.
 /v2/ads/*
@@ -7108,7 +7116,7 @@
 /webads/*
 /webads_
 /webadserver.
-/webadvert.
+/webadvert.$domain=~webadvert.ru
 /webadvert/*
 /webadvert3/*
 /webadverts/*
@@ -7233,7 +7241,7 @@
 /yesbaby.
 /yhs/ads?
 /yieldads.
-/yieldlab.
+/yieldlab.$domain=~yieldlab.science
 /yieldmanager/*
 /yieldmo-
 /yin-ad/*
@@ -7268,8 +7276,8 @@
 ://ad.*/jstag^
 ://adcl.$domain=~adcl.com|~adcl.screenconnect.com
 ://adn.*/zone/$subdocument
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
-://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.neosystem.co.uk|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.magalu.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.nipr.ac.jp|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
+://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.neosystem.co.uk|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.ua|~adv.vg|~adv.vn.ua|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
 ://affiliate.$third-party
 ://affiliates.$third-party
 ://affiliates2.$third-party
@@ -7285,7 +7293,7 @@
 ://oas.*@
 ://ox-*/jstag^
 ://pop-over.
-://promo.$third-party,domain=~myshopify.com|~promo.com|~shopifycloud.com
+://promo.$third-party,domain=~myshopify.com|~promo.com|~shopifycloud.com|~slidely.com
 ://rss.*/~a/
 ://synad.
 ://wrapper.*/a?
@@ -7348,6 +7356,7 @@
 =oas_tag.
 =PAGE_AD_
 =partnerad&
+=pm_ads&
 =pmd-advertising-
 =rightAds_
 =searchadslider|
@@ -7381,7 +7390,6 @@
 ?adpage=
 ?adPageCd=
 ?adpartner=
-?ads=$domain=~booking.loganair.co.uk|~webtoolhub.com
 ?ads_params=
 ?adsdata=
 ?adsite=
@@ -7487,6 +7495,7 @@ _ad234x90-
 _ad3.
 _ad300.
 _ad300x250.
+_Ad300x250_
 _ad4.
 _ad5.
 _ad6.$domain=~facebook.com|~facebookcorewwwi.onion|~messenger.com
@@ -7928,6 +7937,7 @@ _layerad.
 _lazy_ads/
 _leaderboard_ad_
 _left_ad.
+_link-ad.
 _link_ads-
 _live/ad/
 _load_ad?
@@ -7995,7 +8005,6 @@ _rightad1.
 _rightad_
 _rightmn_ads.
 _sectionfront_ad.
-_show_ads.
 _show_ads=
 _show_ads_
 _side-ad_
@@ -8066,10 +8075,13 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! shorten urls
+/2market.php?
 ! https://github.com/easylist/easylist/commit/6295313
 ://rs-stripe.wsj.com/stripe/image?
 ! Dodgy sites
 /?wmi=*lp=$document
+/search/tsc.php?
 ! https://github.com/easylist/easylist/issues/5054
 /full-page-script.js$script
 ! bc.vc (https://github.com/NanoMeow/QuickReports/issues/198)
@@ -8158,6 +8170,7 @@ _prx/ba_$script
 .prebid&
 .prebid-bundle.
 .prebid.$domain=~prebid.org
+/ad/postbid_
 /adn-hb/*
 /adn.ano.
 /ads/prebid_
@@ -8188,14 +8201,15 @@ _prx/ba_$script
 /prebid4.
 /prebid?
 /prebid_$script
+/prebidAdcall.
 /prebidlink/*
 /prebidtest.
 /prodprebidheader-
 /pubfig.js
 /pubfig.min.js
-/st_prebid.js
 /tagman/*
 _prebid-$script
+_prebid.js
 _prebid8.
 _prebid_
 ~Prebid.js
@@ -8290,7 +8304,6 @@ _prebid_
 /adBlockDetector/*
 /adblockdetectorwithga.
 /adblocker-leader.
-/adblocker.js
 /adBlockerTrack_
 /adblockkiller.
 /adblockpopup.
