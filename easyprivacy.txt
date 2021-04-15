@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202104150151
+! Version: 202104150152
 ! Title: EasyPrivacy
-! Last modified: 15 Apr 2021 01:51 UTC
+! Last modified: 15 Apr 2021 01:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3825,6 +3825,7 @@
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
 /sentry.*/?sentry_key=
+/sentry/*/?sentry_key=
 /seo-track.
 /seo.googleAnalytics-
 /seo.googleAnalytics.
@@ -12713,7 +12714,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mlm.de/pagerank-ranking/
 ||movad.de/c.ount?
 ||myv-img.de/m2/e?
-||nct.ui-portal.de/gmx/gmx/s?$image
+||nct.ui-portal.de/gmx/gmx/s?$image,ping
 ||newelements.de/tracker/
 ||ntmb.de/count.html?
 ||oe-static.de^*/wws.js
@@ -15888,7 +15889,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vs4food.com/ERA/era_rl.aspx
 ||vstats.digitaltrends.com^
 ||vzaar.com/libs/stats/
-||wa.gmx.net/gmx/gmx/s?$image
+||wa.gmx.net/gmx/gmx/s?$image,ping
 ||wa.ui-portal.de^
 ||wachovia.com^*/stats.js
 ||wal.co/cdn-perf.min.js
@@ -20859,6 +20860,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|sky
 ||ts.rtl.de^
 ||tweakimg.net/x/vendor/wt/
 ||ui-portal.de/brbtpixel/
+||ui-portal.de/pos-cdn/tracklib/
+||ui-portal.de/prompt/permission/latest/tracking.min.js
 ||unser-star-fuer-oslo.de^*/stats.php
 ||vfd2dyn.vodafone.de^
 ||videovalis.tv/tracking/
