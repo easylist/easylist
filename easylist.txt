@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202104180619
+! Version: 202104180701
 ! Title: EasyList
-! Last modified: 18 Apr 2021 06:19 UTC
+! Last modified: 18 Apr 2021 07:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30213,7 +30213,6 @@ _popunder+$popup
 ##[href^="http://raboninco.com/"]
 ##[href^="https://affect3dnetwork.com/track/"]
 ##[href^="https://go.affiliatexe.com/"]
-##[href^="https://go.nordvpn.net/aff"] > img
 ##[href^="https://join3.bannedsextapes.com"]
 ##[href^="https://refpahrwzjlv.top/"]
 ##[href^="https://secure.bmtmicro.com/servlets/"]
@@ -30786,7 +30785,6 @@ _popunder+$popup
 ##a[href^="https://t.mobtya.com/"]
 ##a[href^="https://tc.tradetracker.net/"] > img
 ##a[href^="https://topoffers.com/"][href*="/?pid="]
-##a[href^="https://torguard.net/aff.php"] > img
 ##a[href^="https://tour.mrskin.com/"]
 ##a[href^="https://track.52zxzh.com/"]
 ##a[href^="https://track.afcpatrk.com/"]
@@ -30992,6 +30990,10 @@ _popunder+$popup
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##span[data-component-type="s-ads-metrics"]
 ##topadblock
+! VPN Affiliate Banners
+##a[href^="https://go.nordvpn.net/aff"] > img
+##a[href^="https://torguard.net/aff.php"] > img
+##a[href^="https://www.privateinternetaccess.com/"] > img
 ! areanews.com.au,armidaleexpress.com.au,avonadvocate.com.au,batemansbaypost.com.au
 ##.grid > .container > #aside-promotion
 ! google
@@ -52502,7 +52504,7 @@ searchenginejournal.com###sspcat_ifr
 bizarrepedia.com###stack > .ln-thr
 saharareporters.com###stage-header
 geekwire.com###startup-resources-sidebar
-coincodex.com###sticky-footer
+coincodex.com###sticky-footerCCx4
 mashable.com###sticky-spacer
 fool.com###sticky-wrapper
 afr.com###stickyLeaderboard
@@ -53189,6 +53191,8 @@ randomarchive.com##.desktop[style="text-align:center"]
 scpr.org,theonion.com##.dfp
 govevents.com,protipster.com##.display
 israelnationalnews.com##.div300
+riverbender.com##.divClickLeft
+riverbender.com##.divClickRight
 alternativeto.net##.divLeaderboardLove
 ebaumsworld.com##.divider
 thelist.com##.divider-heading-container
@@ -53352,7 +53356,7 @@ pcgamer.com##.hawk-widget-insert
 screenbinge.com##.hb-strip
 zeefood.in##.hbanner2
 trendhunter.com##.hcamp
-cricfree.sc,cricfree.tv##.hd-head-button
+cricfree.sc##.hd-head-button
 pbnation.com##.hdrLb
 pbnation.com##.hdrSq
 caymannewsservice.com##.head-banner468
@@ -53547,7 +53551,6 @@ techrepublic.com##.medusa_right-rail
 2ip.me##.menu_banner
 flysat.com##.menualtireklam
 eawaz.com##.metaslider
-searchenginejournal.com##.mh-90
 krebsonsecurity.com##.mid-banner
 investing.com##.midHeader
 newsday.com##.midPg
@@ -53588,7 +53591,6 @@ ebay.com,geo.tv,jozifm.co.za,nwherald.com,runt-of-the-web.com,thewest.com.au,top
 businessinsider.in##.mrec-scrollable-cont
 motorsport.com##.ms-ap
 motorsport.com##.ms-apb-dmpu
-motortrend.com##.mt-spotlight
 zerolives.com##.munder-fn5udnsn
 standardmedia.co.ke##.my-2
 transfermarkt.com##.nENxsZD
@@ -54105,6 +54107,7 @@ swarajyamag.com##[class*="page-top-adv-wrapper"]
 zerohedge.com##[class^="Advert_"]
 uploader.link##[class^="ads"]
 swarajyamag.com##[class^="banner-ad-"]
+coinmarketcap.com##[class^="sponsoredMark_"]
 torlock.com##[class^="wrn"]
 gadgetsnow.com##[data-type="mtf"]
 naturalnews.com##[href*="/WBA-"]
@@ -54156,6 +54159,7 @@ majorgeeks.com##[href^="https://www.restoro.com/"]
 bikeroar.com##[href^="https://www.roaradventures.com/"]
 upload.ee##[href^="https://www.upload.ee/click.php"]
 noypigeeks.com##[href^="https://www.vivo.com/"]
+searchenginejournal.com##[id^="SEJ_300x250_"]
 geeksforgeeks.org##[id^="bsa-zone"]
 audioz.download##[src*="/promo/"]
 manganelo.com##[src^="/ads/"]
@@ -54165,7 +54169,6 @@ porngames.club##[src^="https://wheelwheel.space/"]
 wahm.com##[style="min-height:250px;"]
 guru99.com##[style^="float"]
 torrentresource.com##[width="150"]:last-child
-winaero.com##[width="300"]
 4chan.org##[width="728"]
 mobiforge.com##a > img[alt="Ad"]
 freshplaza.com##a.banner
@@ -54216,16 +54219,13 @@ sociologyguide.com##a[href^="https://www.baghvillas.com/"]
 indusladies.com##a[href^="https://www.codewizardshq.com/?utm_"]
 futbin.com##a[href^="https://www.eneba.com/"][href*="?af_id="]
 domaintyper.com##a[href^="https://www.kqzyfj.com/"]
-torrentfreak.com##a[href^="https://www.privateinternetaccess.com/"]
 provideocoalition.com##a[href^="https://www.provideocoalition.com/ghost/"]
 ynetnews.com##a[href^="https://www.xplorer.co.il/"]
 krapps.com##a[href^="index.php?adclick="]
 kitguru.net##a[id^="href-ad-"]
-coincodex.com,home-barista.com,shtfplan.com,washingtontimes.com##a[onclick]
-searchenginejournal.com##aside[id^="SEJ_300x250_"]
+home-barista.com,shtfplan.com,washingtontimes.com##a[onclick]
 just-dice.com##body > .wrapper > .container:first-child
 psychnewsdaily.com##center
-coincodex.com#a[href*="window.open"]
 python-graph-gallery.com##div > [href^="https://www.datacamp.com"]
 python-graph-gallery.com##div > [href^="https://www.dataquest.io/course/"]
 healthline.com##div.css-0 > div[class]:not([id])
@@ -54243,8 +54243,6 @@ apnews.com##div[class^="Component-placeholderWrapper-"]
 apnews.com##div[class^="Component-rectanglePlaceholderWrapper-"]
 issuu.com##div[class^="ExploreShelf__ad"]
 versus.com##div[class^="LegendSingle__show"]
-keybr.com##div[class^="Supporter"]
-amazon.ca,amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.fr##div[class^="_multi-card-creative-desktop_Container_container"]
 barandbench.com##div[class^="ad-service-"]
 barandbench.com##div[class^="ad-slot"]
 kijiji.ca##div[class^="adChoices-"]
@@ -54255,21 +54253,17 @@ technical.city##div[class^="banner_"]
 keengamer.com##div[class^="gameon-mpu-"]
 pcgamer.com,techradar.com,tomsguide.com,tomshardware.com##div[class^="slot-"]
 kijiji.ca##div[class^="sponsored-"]
-coinmarketcap.com##div[class^="sponsoredMark_"]
 whatsondisneyplus.com##div[class^="whats-"]
 amazon.com##div[data-ad-id]
 motortrend.com##div[data-ad-targeting]
 reddit.com##div[data-before-content="advertisement"]
-engadget.com##div[data-component="GeminiAdItem"]
 pushsquare.com##div[data-dfp-id]
 livejournal.com##div[data-google-query-id]
 windowsreport.com##div[data-insertion]
-engadget.com##div[data-nav-drawer-slide-panel] > aside[role="banner"]
 techspot.com##div[data-type="zadbl_downloads_single"]
 quora.com##div[id$="content_box"]
 buzzfeednews.com##div[id^="BF_ADX_"]
 sockshare.net##div[id^="MGWrap"]
-searchenginejournal.com##div[id^="SEJ_300x250_"]
 weather.com##div[id^="Taboola-main-"]
 kisshentai.net##div[id^="ad"]
 azcentral.com,detroitnews.com,freep.com##div[id^="ad-slot-"]
@@ -54277,26 +54271,20 @@ ucoz.com,ucoz.net,ucoz.org##div[id^="adBar"]
 talk.collegeconfidential.com##div[id^="adPlaceholder-"]
 govtech.com##div[id^="ad_id_"]
 amgreatness.com##div[id^="ag-front-"]
-engadget.com##div[id^="atwAdFrame"]
 gadgetsnow.com##div[id^="div-u-id-"]
 thewrap.com##div[id^="dsk-box-ad"]
 whatsondisneyplus.com##div[id^="extra_mpu_"]
-cricfree.tv,micast.tv##div[id^="floatLayer"]
+micast.tv##div[id^="floatLayer"]
 yahoo.com##div[id^="gemini-item-"]
-tunebat.com##div[id^="nm-sticky-container"]
 yopmail.com,yopmail.fr,yopmail.net##div[id^="pub"]
 howtogeek.com,sciencealert.com##div[id^="purch_"]
-reddit.com##div[id^="sidebar-atf-"]
-reddit.com##div[id^="sidebar-btf-"]
+riverbender.com##div[id^="ros-"]
 sltrib.com##div[id^="sltrib-promo-"]
 amazon.ca,amazon.co.uk,amazon.com,amazon.com.au,amazon.fr##div[id^="sp_detail"]
-riverbender.com##div[id^=ros-]
 opensubtitles.org##div[itemscope=""][itemtype="http://schema.org/Movie"] > fieldset
 9gag.com##div[style*="width: 500px; height: 281px;"]
 fansshare.com,iconarchive.com,unexplained-mysteries.com##div[style*="width:300px"]
-winaero.com##div[style*="width:400px;"]
 rlslog.net##div[style*="z-index:"]:first-child
-coincodex.com##div[style="background-color"]
 filesharingtalk.com##div[style="background-color: white; border-width: 2px; border-style: dashed; border-color: white;"]
 fansshare.com##div[style="background-image:url(http://img23.fansshare.com/media/img/advertisement.png);width:335px;height:282px;"]
 hints.macworld.com##div[style="border-bottom: 2px solid #7B7B7B; padding-bottom:8px; margin-bottom:5px;"]
