@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202104200637
+! Version: 202104200939
 ! Title: EasyList
-! Last modified: 20 Apr 2021 06:37 UTC
+! Last modified: 20 Apr 2021 09:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56239,13 +56239,11 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||msn.com^$popup,~third-party
 ! *** easylist:easylist_adult/adult_allowlist.txt ***
 ! temp comment to fix python-abp issue
-@@||anyporn.com^*/?video_id=$domain=anyporn.com
 @@||gaynetwork.co.uk/Images/ads/bg/$image,~third-party
 @@||iafd.com/graphics/headshots/thumbs/th_iafd_ad.gif$~third-party
 @@||pornhubpremium.com/user/login_status?$~third-party
 @@||pornhubpremiumcdn.com^$image,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||sundaysportclassifieds.co.uk/ads/$image,~third-party
-@@||xxxporntalk.com/images/xxxpt-chrome.jpg
 ! pornhub.com/shakedown
 @@||bitmovin.com^$script,domain=pornhub.com
 @@||chatwee-api.com^$domain=pornhub.com
@@ -56260,32 +56258,16 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||zopim.com^$script,websocket,domain=help.pornhub.com
 ! Pornhub network
 @@||ajax.googleapis.com^$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||algolia.net^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
-@@||algolianet.com^*/indexes/$xmlhttprequest,domain=tube8.com|tube8.es|tube8.fr
 @@||amazonaws.com/uploads.uservoice.com/$image,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|tube8.com|youporn.com
 @@||api.feel-app.com^$xmlhttprequest,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||api.recaptcha.net^$script
-@@||apis.google.com^$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||blog.tube8.com/wp-content/$image,script
-@@||cdn-*.pornhub.com^$image,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br
-@@||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$script,domain=tube8.com|tube8.es|tube8.fr
-@@||cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js$script,domain=tube8.com|tube8.es|tube8.fr
-@@||cdne-st.redtubefiles.com^$script,domain=redtube.com|redtube.com.br
-@@||connect.facebook.net^$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||disqus.com/count.js$domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||disqus.com/embed.js$domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||disquscdn.com/count.js$domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||feedback.pornhub.com^$xmlhttprequest,domain=feedback.pornhub.com|feedback.pornhubthbh7ap3u.onion
 @@||google.com/recaptcha/$image,script
 @@||gstatic.com/recaptcha/$image,script
-@@||icfcdn.com^*/player.js$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com
-@@||img.pornhub.com/gif/*.gif|$image,~third-party
-@@||img.youtube.com/vi/*/sddefault.jpg$domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||maps.googleapis.com^$domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||maps.gstatic.com^$domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||media.trafficjunky.net/__js2/test.js$script,domain=pornhub.com|pornhubthbh7ap3u.onion
 @@||naiadmmm.com^$image,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||naiadsystems.com^$script,websocket,xmlhttprequest,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com
 @@||nsimg.net^$image,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com
 @@||phncdn.com/*/js/likeDislike/$script
 @@||phncdn.com/*/js/t8.util-min.js?$script
@@ -56409,7 +56391,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||phncdn.com/js/votingSystem/$script
 @@||phncdn.com/js/xp_bubble/$script
 @@||phncdn.com/mg_utils-$script
-@@||phncdn.com/modernizr-$script
 @@||phncdn.com/networkbar-$script
 @@||phncdn.com/pagespeed.js$script
 @@||phncdn.com/pics/albums/$media
@@ -56420,8 +56401,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||phncdn.com/tubes.infopages-$script
 @@||phncdn.com/underscore-$script
 @@||phncdn.com/videos/$image,media,other,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|tube8.com|youporn.com|youporngay.com
-@@||phncdn.com/vortex-simple-*.js$script
-@@||phncdn.com/vortex.modern-*.js$script
 @@||phncdn.com/www-static/$image
 @@||phncdn.com/www-static/*/autocomplete.$script
 @@||phncdn.com/www-static/*/gif-view-functions.js$script
@@ -56551,9 +56530,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||phncdn.com^*/userfavorites.js$script
 @@||phncdn.com^*/xp_bubble-$script
 @@||phncdn.com^*/xp_bubble_$script
-@@||phprcdn.com^$image,domain=pornhub.com|pornhubthbh7ap3u.onion
-@@||platform.tumblr.com^$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
-@@||platform.twitter.com^$script,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 @@||pornhub.com/_Incapsula_Resource?$image,subdocument,xmlhttprequest
 @@||pornhub.com/album/$xmlhttprequest
 @@||pornhub.com/album_upload$xmlhttprequest
@@ -56734,73 +56710,11 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||ypncdn.com/cb/assets/js/$script,domain=youporn.com|youporngay.com|youpornru.com
 @@||ypncdn.com^$image,media,other,domain=redtube.com|redtube.com.br|youporn.com|youporngay.com|youpornru.com
 ! Anti-Adblock
-@@.jpg#$domain=palaotog.net
-@@.png#$domain=indiangilma.com|javcen.me|javpub.me|lfporn.com|pornbraze.com|thisav.com|you-fap.com|youfreeporntube.com|youngmodelsclub.net
-@@||209.58.131.22^*/advertisement.js
-@@||25643e662a2.com/ad*.js
-@@||ad.thisav.com/player/swfobject.js
-@@||ad8k.com^$script,domain=urlgalleries.net|xxxstreams.eu
-@@||ads.exoclick.com^$script,domain=8muses.com|imagefap.com
-@@||adultadworld.com/adhandler/$subdocument
-@@||bemywife.cc^$script,~third-party,domain=bemywife.cc
-@@||cntrafficpro.com/scripts/advertisement.js
-@@||crazyshit.com^$generichide
-@@||desihoes.com/advertisement.js
-@@||ero-advertising.com/banads/$subdocument,domain=palimas.com
-@@||exoclick.com/invideo.js
-@@||exoclick.com/splash.php$script,domain=gaybeeg.info
-@@||freeomovie.com^$generichide
-@@||fuqer.com^*/advertisement.js
-@@||fux.com/assets/ads-$script
-@@||gaybeeg.info/wp-content/plugins/blockalyzer-adblock-counter/$image,domain=gaybeeg.info
 @@||gaybeeg.info^$generichide
-@@||google.com/ads/$domain=hinduladies.com
-@@||hclips.com/js/advertising.js
-@@||hentaimoe.com/js/advertisement.js
-@@||imgadult.com/js/advertisement.js
-@@||indiangilma.com^$generichide
-@@||jadult.net^$generichide
-@@||jamo.tv^$script,domain=jamo.tv
-@@||javcen.me^$generichide
-@@||javfee.com^$script,domain=javfee.com
-@@||javhub.net^$generichide
-@@||javhub.net^$script,~third-party
-@@||javpee.com/eroex.js
-@@||javpub.me^$generichide
-@@||jkhentai.tv^$script,domain=jkhentai.tv
-@@||jporn4u.com/js/ads.js
-@@||lfporn.com^$generichide
 @@||milfzr.com^$generichide
-@@||n4mo.org/advertisement.js
-@@||n4mo.org/wp-content/*/ads/
-@@||n4mo.org^$generichide
-@@||noracam.com/js/ads.js
-@@||notonlyporn.net^$script,~third-party
-@@||ooporn.com/ads.js
-@@||palimas.com^$generichide
-@@||phncdn.com/v2/js/adblockdetect.js$domain=keezmovies.com
-@@||phncdn.com^*/ads.js
 @@||pornbraze.com^$generichide
-@@||pornomovies.com/js/1/ads-1.js$domain=submityourflicks.com
-@@||pornscum.com^$generichide
-@@||pornve.com^$generichide
-@@||pornve.com^$script
 @@||rule34hentai.net^$generichide
-@@||sexvidx.tv/js/eroex.js
-@@||sexwebvideo.com/js/ads.js
-@@||syndication.exoclick.com/ads.php?type=728x90&$script,domain=dirtstyle.tv
-@@||t8cdn.com/assets/pc/js/$script,domain=tube8.com|tube8.es|tube8.fr
-@@||t8cdn.com/assets_dev/js/algolia/$script,domain=tube8.com|tube8.es|tube8.fr
-@@||tmoncdn.com/scripts/advertisement.js$domain=tubemonsoon.com
-@@||trafficshop.com/show.php$script,domain=palimas.com
-@@||trafficshop.com/show_std_auction.php$script,domain=palimas.com
 @@||urlgalleries.net^$generichide
-@@||x18.eu/ads/$~third-party,xmlhttprequest
-@@||xhcdn.com^*/ads.js$domain=xhamster.com
-@@||xonline.tv^$generichide
-@@||xxxstreams.eu^$generichide
-@@||youfreeporntube.com^$generichide
-@@||youngmodelsclub.net^$generichide
 ! Non-English
 @@||ads.b10f.jp/flv/$~third-party
 ! *** easylist:easylist_adult/adult_allowlist_popup.txt ***
