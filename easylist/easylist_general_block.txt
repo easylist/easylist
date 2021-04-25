@@ -70,7 +70,6 @@
 &smallad=
 &smart_ad_
 &strategy=adsense&
-&type=ad&
 &UrlAdParam=
 &video_ads_
 &videoadid=
@@ -257,7 +256,7 @@
 -adscript.
 -adsense2.
 -adserver-
--adserver.
+-adserver.$domain=~aqua-adserver.com
 -adserver/
 -adskin.
 -adslots.
@@ -615,7 +614,7 @@
 .com/adpicture
 .com/ads-
 .com/ads.$~script,~xmlhttprequest
-.com/ads/$image,object,subdocument,domain=~sabotage-films.com
+.com/ads/$image,object,subdocument,domain=~developers.google.com|~sabotage-films.com
 .com/ads?
 .com/ads_
 .com/adv/$domain=~advantabankcorp.com|~archiproducts.com|~tritondigital.com
@@ -773,8 +772,6 @@
 .ro/ads/
 .rolloverad.
 .ru/ads/
-.se/*placement=$script,subdocument,third-party
-.se/*redirect&$script,subdocument,third-party
 .se/ads/
 .sh/ads/
 .shortcuts.search.
@@ -812,6 +809,7 @@
 .us/ads/
 .utils.ads.
 .vert.ad.
+.video.ads.
 .videoad3.
 .videoad4.
 .weborama.js
@@ -890,6 +888,8 @@
 /_js2/oas.
 /_scripts/_oas/*
 /_svc/ad/*
+/_xa/ads?
+/_xa/ads_
 /a-ads.$third-party
 /a/?ad=
 /a/ads/*
@@ -2118,7 +2118,7 @@
 /admatcherclient.
 /admatik.
 /admaven.
-/admax.$domain=~admax.cn|~admax.co|~admax.eu|~admax.fi|~admax.hu|~admax.info|~admax.net|~admax.nu|~admax.org|~admax.se|~admax.us
+/admax.$domain=~admax.cn|~admax.co|~admax.co.jp|~admax.eu|~admax.fi|~admax.hu|~admax.info|~admax.jp|~admax.net|~admax.nu|~admax.org|~admax.se|~admax.shinobi.jp|~admax.us
 /admax/*
 /admaxads.
 /admcoreext.
@@ -3726,6 +3726,7 @@
 /affiliate/promo/*
 /affiliate/script.php?
 /affiliate/small_banner/*
+/affiliate_amazon.
 /affiliate_banner/*
 /affiliate_banners/*
 /affiliate_base/banners/*
@@ -3780,7 +3781,6 @@
 /alternativeads/*
 /alternet.ad?
 /alwebad_
-/am/ads.
 /amazon-ad-
 /amazon-apstag.
 /amazon-associates-link-$~stylesheet
@@ -3815,6 +3815,7 @@
 /app/ads/*
 /apstag.js
 /aptads/*
+/apu.php?*&zoneid=
 /arcAdsJS/*
 /Article-Ad-
 /article-advert-
@@ -4522,7 +4523,7 @@
 /display/ads?
 /display?ad_
 /display_ad
-/displayad.$~script,domain=~displayad.naver.com
+/displayad.$~script
 /displayad/*
 /displayad?
 /displayadbanner_
@@ -6383,6 +6384,7 @@
 /savvyads.
 /sb-relevance.js
 /sbnr.ads?
+/sc-tagmanager/*
 /scanscout.
 /scanscoutoverlayadrenderer.
 /scanscoutplugin.
@@ -6411,7 +6413,7 @@
 /search/ads?
 /search/ads_
 /search_ads.
-/searchad.$domain=~searchad.naver.com
+/searchad.
 /searchad_
 /searchads/*
 /searchAdsIframe.
@@ -7044,7 +7046,7 @@
 /video_ad_
 /video_ads.
 /video_ads/*
-/videoad.
+/videoad.$domain=~videoad.in
 /VideoAd/*
 /videoad_new.
 /VideoAdContent?
@@ -8203,6 +8205,7 @@ _prx/ba_$script
 /prebid?
 /prebid_$script
 /prebidAdcall.
+/prebidjs/*
 /prebidlink/*
 /prebidtest.
 /prodprebidheader-

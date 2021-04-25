@@ -1,20 +1,21 @@
 # EasyList / EasyPrivacy / Fanboy Lists
 
-This Adblock list is maintained by Fanboy, MonztA and Khrin.
+These lists are maintained by Fanboy, MonztA, and Khrin.
 
 ## EasyList
 
-The goal of this repository is to block ads on English sites. By blocking the following:
- - Ad Scripts (Generic and site-specific)
+The goal of this repository is to block ads on English and International sites. By blocking the following:
+ - Ad scripts (Generic and site-specific)
  - Cosmetic filtering (Generic and site-specific css)
- - Ad servers (Block servers that host ads/ad-related content)
- - Prevent popups (Block scripts or domains that cause popups/ad notifications)
+ - Ad servers (Block servers that host ads/ad-related contents)
+ - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
 
 ## EasyPrivacy
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
  - Analytics
  - Telemetry
+ - Tracking cookies
  - Pixels
  - Referrers
  - Beacons
@@ -24,27 +25,27 @@ The goal of this repository is to block tracking and improve end user privacy. B
  - Resource Miners
  - Hit Counters
  - CNAME trackers
- - Linking to other third-party tracking servers
- - Some unnessary third-party scripts/images
+ - Linking to other 3rd-party tracking servers
+ - Some unnecessary 3rd-party scripts/images
  
 When a site is attempting to track, it'll be put into one of 4 categories.
- - Generic blocks (common url/tracking filter patterns) used by 1st/3rd-partys.
- - 1st-party tracking. Self hosted trackers and cnames.
- - Third-party tracking. Hosted by another provider, which hosts a tracking script, but not actually a tracking company.
- - Tracking-servers. Where the server has only one purpose is to tracking/analytics the user, will be blocked the url level.
+ - Generic blocks (common url/tracking filter patterns) used by 1st/3rd-parties.
+ - 1st-party tracking. Self hosted trackers and CNAME trackers.
+ - 3rd-party tracking. Hosted by another provider, which hosts a tracking script, but not actually a tracking company.
+ - Tracking-servers. Where the server has only one purpose to track/analyze user, will be blocked at the url level.
 
 ## List Issues
 
-Filter issues can be raised via [Email](mailto:easylist@protonmail.com) or via [Github](https://github.com/easylist/easylist/issues). Accountability & responsibility remain with the list authors and not with extensions and/or web browsers. 
+Filter issues can be raised via [Email](mailto:easylist@protonmail.com), via [Forum](https://forums.lanik.us/), or via [Github](https://github.com/easylist/easylist/issues). Accountability & responsibility remain with the list authors and not with extensions and/or web browsers. 
 
 Attempt fix website false-positives where applicable such as:
  - Website Breakages
  - Allow direct link fixes.
- - Web page rendering issues.
+ - Web page rendering issues
 
 For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues).
 
 ## Support
 
-EasyList, EasyPrivacy and Fanboy lists are used in a number of extensions, browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
+EasyList, EasyPrivacy, and Fanboy lists are used in a number of extensions and browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [Adblock](https://getadblock.com/), [Adguard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), [Vivaldi](https://vivaldi.com/).
 
