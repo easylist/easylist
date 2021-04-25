@@ -344,6 +344,7 @@
 /?livehit=
 /?mob.ct=
 /?record&key=
+/?sentry_key=
 /?swift-performance-tracking
 /_/lite/performance/*
 /__analytics/*
@@ -1837,6 +1838,7 @@
 /events/counter?
 /Events/Impression?
 /events/pixel/*$image
+/events/pixelEvent
 /events?*&referrer=
 /events?_trigger=
 /events?data=
@@ -3691,6 +3693,7 @@
 /roitracker.
 /roitracker2.
 /roiTrax.
+/rollbar-snippet.
 /rollbar.js
 /rollbar.min.js
 /rolluptracker_
@@ -3813,8 +3816,6 @@
 /sensor/statistic?
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
-/sentry.*/?sentry_key=
-/sentry/*/?sentry_key=
 /seo-track.
 /seo.googleAnalytics-
 /seo.googleAnalytics.
@@ -3854,13 +3855,13 @@
 /SETCOOKAFF.
 /setcooki.
 /setcookie.php?
-/setcookie?
 /setcookieADV.js
 /SetSabreAnalyticsCookie.
 /setTDUID.do?
 /sfCounter/*
 /share/analytics?
 /shareCounts.
+/shared/sentry/*
 /shareTrackClient.
 /sherlock.gif?
 /shinystat.
@@ -4193,6 +4194,7 @@
 /surphace_track.
 /surveyoverlay/*
 /svc/comscore/*
+/sw/analytics.js
 /swa_t.gif?
 /swatag.js
 /swfaddress.js?tracker=
@@ -5562,12 +5564,14 @@ cgi-bin/counter
 /pixel-prod.
 /pixel?cid=
 /pqt.email/o/*$image
+/rdir.inxmail.com^*/d.gif?
 /sendmail.backerupdate.com/t/*
 /sptracking.
 /ss/o/*.gif
 /track/open.php?
 /track/open?
 /tracking.fanbridge.com/*
+/tracking.srv2.de/op/*$image
 /trcksp.
 /wf/open?upn=$image
 ://email.*/e/o/
