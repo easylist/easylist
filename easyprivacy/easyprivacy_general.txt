@@ -344,6 +344,7 @@
 /?livehit=
 /?mob.ct=
 /?record&key=
+/?sentry_key=
 /?swift-performance-tracking
 /_/lite/performance/*
 /__analytics/*
@@ -509,6 +510,7 @@
 /adtoniq-
 /adtrk/*
 /adv/tracking.
+/adv?pixel_
 /adviewtrack.
 /advstats/*
 /adwords-conversion-tracking.
@@ -975,6 +977,8 @@
 /basicMetricsTracking.
 /basilic.php
 /batch.gif?
+/batch/1/OE/*
+/batch/1/OP/*
 /baynote-$script
 /baynote.
 /baynote/*
@@ -1303,6 +1307,7 @@
 /clicktracking-global.
 /clicktracking.
 /clicktracking/*
+/clickTrackingAjaxController?
 /ClickTracks_
 /ClickTracksCookies.
 /clicktrends/*
@@ -1402,7 +1407,9 @@
 /common/tracker.js
 /competeTracking_test.html?
 /compile/AppMeasurement.
+/comscore-js-
 /comscore-min.js
+/comscore-pageview-
 /comscore.
 /comscore/pageview_
 /comscore/streamsense.
@@ -1577,6 +1584,7 @@
 /d_tracking.ashx?
 /dart_wrapper.html?
 /data.do?session_
+/data.mistat.
 /data/collect/*$xmlhttprequest
 /data_collect.js
 /datacapture/track
@@ -1833,6 +1841,7 @@
 /events/counter?
 /Events/Impression?
 /events/pixel/*$image
+/events/pixelEvent
 /events?*&referrer=
 /events?_trigger=
 /events?data=
@@ -2446,6 +2455,7 @@
 /informb_stat.
 /informerStat?
 /init_cookie.php?
+/inline-pixel.js
 /inpl.measure.
 /insales_counter.
 /insert_impressions.
@@ -2638,6 +2648,7 @@
 /librato-collector.
 /libs/tracker.js
 /liferay-analytics-
+/lightspeed_tracker.
 /lingabot.
 /link-tracker-
 /link_track.
@@ -2772,6 +2783,7 @@
 /logging-code.
 /logging/log-
 /logging/log.do
+/logging/logjs
 /logging/pixel?
 /logging/React-
 /logging/v1/log|
@@ -2860,6 +2872,7 @@
 /measurement/access/contents?
 /measurementBeacon.
 /media-analytics.min.
+/media-analytics/*
 /media_viewed_tracking.
 /medialaanUniversalTracker.
 /mediametrie.js
@@ -2885,13 +2898,16 @@
 /metrics/init?
 /metrics/metrics$domain=~spatineo.com
 /metrics/onload
+/metrics/ping?
 /metrics/rum
 /metrics/stat.
 /metrics/statsd/*
 /metrics/survey/*
+/metrics/tpi?
 /metrics/track/*
 /metrics/v1/frontend/*
 /metrics/vanity/?
+/MetricsAjax^
 /metricsISCS.
 /metrika/*&ident=
 /metrika/*?ident=
@@ -3245,7 +3261,7 @@
 /pageview?user_guid=
 /pageviews-counter-
 /pageviews.gif?
-/pageviews/*$domain=~pageviews.toolforge.org|~stats.wikimedia.org|~tools.wmflabs.org
+/pageviews/*$domain=~pageviews.toolforge.org|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
 /pageviews?token=
 /pageviews_counter.
 /PageviewsTracker.
@@ -3414,7 +3430,8 @@
 /pladtrack.
 /planetstat.
 /platform-analytics-
-/plausible.js
+/plausible.js$domain=~plausible.io
+/player/stats.php?
 /player_counter.ashx?
 /PlayerDashboardLoggingService.svc/json/StartSession?
 /playerlogger.
@@ -3679,6 +3696,7 @@
 /roitracker.
 /roitracker2.
 /roiTrax.
+/rollbar-snippet.
 /rollbar.js
 /rollbar.min.js
 /rolluptracker_
@@ -3801,7 +3819,6 @@
 /sensor/statistic?
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
-/sentry.*/?sentry_key=
 /seo-track.
 /seo.googleAnalytics-
 /seo.googleAnalytics.
@@ -3841,13 +3858,13 @@
 /SETCOOKAFF.
 /setcooki.
 /setcookie.php?
-/setcookie?
 /setcookieADV.js
 /SetSabreAnalyticsCookie.
 /setTDUID.do?
 /sfCounter/*
 /share/analytics?
 /shareCounts.
+/shared/sentry/*
 /shareTrackClient.
 /sherlock.gif?
 /shinystat.
@@ -3905,6 +3922,7 @@
 /skype-analytics.
 /sl.gif?1=
 /slimstat/*
+/sluurpy_track.js
 /small.gif?type
 /smartpixel-1.js
 /smartpixel.$domain=~smartpixel.com|~smartpixel.tv
@@ -4149,6 +4167,7 @@
 /statspider?
 /statspixel.
 /StatsRadioAnalyticsHub.htm
+/statsservice.recordstats?
 /statstracker.
 /statstracker/*
 /statstracker?
@@ -4178,6 +4197,7 @@
 /surphace_track.
 /surveyoverlay/*
 /svc/comscore/*
+/sw/analytics.js
 /swa_t.gif?
 /swatag.js
 /swfaddress.js?tracker=
@@ -4382,6 +4402,7 @@
 /track/track.php?
 /track/usage.
 /track/view/*
+/track/view?
 /track/view|
 /track/visitors/?
 /track/visits/?
@@ -4798,6 +4819,7 @@
 /universal-tracking-
 /universalPixelStatic.
 /uo-stat?
+/update_hits3/*
 /updateBotStatus.do?
 /updateStats.
 /urchin.gif?
@@ -5229,6 +5251,7 @@
 ://b.*/click?
 ://b.*/ping?
 ://b.*/vanity/?
+://beacon.*/track
 ://c.*/c.gif?
 ://c1.*/c.gif?
 ://cmpv2.
@@ -5523,6 +5546,7 @@ cgi-bin/counter
 /1x1_usermatch.gif?
 /ap.lijit.com/*
 /beacon.krxd.net/*
+/beaconimages.netflix.net/*$image
 /click.email.$image
 /clicks.email.$image
 /cmail2.com/t/
@@ -5543,12 +5567,15 @@ cgi-bin/counter
 /page.bsigroup.com/*
 /pixel-prod.
 /pixel?cid=
+/pqt.email/o/*$image
+/rdir.inxmail.com^*/d.gif?
 /sendmail.backerupdate.com/t/*
 /sptracking.
 /ss/o/*.gif
 /track/open.php?
 /track/open?
 /tracking.fanbridge.com/*
+/tracking.srv2.de/op/*$image
 /trcksp.
 /wf/open?upn=$image
 ://email.*/e/o/
