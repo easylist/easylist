@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202105021705
+! Version: 202105030158
 ! Title: Fanboy's Annoyance List
-! Last modified: 02 May 2021 17:05 UTC
+! Last modified: 03 May 2021 01:58 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -40425,6 +40425,9 @@ stereogum.com##.zergnet-holder
 ! Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
 newyorker.com##div[class^="NewsletterSubscribe_"]
 buzzfeed.com##div[id^="mod-newsletter-signup-"]
+! Include ubO specific
+! #include easylist_cookie/easylist_cookie_specific_uBO.txt
+! #include fanboy_annoyance_specific_uBO.txt
 ! *** easylist:fanboy-addon/fanboy_notifications_specific_hide.txt ***
 kizi.com###kizi-popover-dialog
 livejapan.com###ptcd_modal_dialog
@@ -41919,6 +41922,8 @@ google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,
 ndtv.com##a[href^="https://twitter.com/intent/tweet?"]
 ndtv.com##a[href^="https://www.facebook.com/sharer.php?u="]
 bbc.com##div[class*="TagShareWrapper"]
+! Include ubO specific
+! #include fanboy_social_specific_uBO.txt
 ! *** easylist:easylist_cookie/easylist_cookie_specific_hide.txt ***
 jman.tv###ActionBar
 sausageandciderfestival.co.uk###CC_Bar
@@ -42871,6 +42876,8 @@ walmart.ca##.privacy-open > div > [class] > div[class^="css"]
 bing.com##div[data-cookie]
 ! Multi-national sites
 spot-a-shop.at,spot-a-shop.de,spot-a-shop.fi,spot-a-shop.fr,spot-a-shop.pl,spot-a-shop.se###__next > div > div > div[class^="css"]
+! Include ubO specific
+! #include easylist_cookie_specific_uBO.txt
 ! *** easylist:easylist_cookie/easylist_cookie_specific_ABP.txt ***
 ! ABP Sepecific fixes
 ! ------------------------Rules for international sites------------------------!
