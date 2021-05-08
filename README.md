@@ -10,6 +10,16 @@ The goal of this repository is to block ads on English and International sites. 
  - Ad servers (Block servers that host ads/ad-related contents)
  - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
 
+Anti-adblock in Easylist will cover cosmetic and generic blocks checks:
+ - Prevent adblock users showing a website
+ - Create elements to disrupt viewing a website
+
+For legal reasons, Anti-adblock this will only cover:
+ - Adult websites
+ - File or Link hosting/sharing
+ - Streaming/Torrent/Comic sites
+ - Any historical anti-adblock rules
+
 ## EasyPrivacy
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
