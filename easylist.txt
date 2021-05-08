@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202105080103
+! Version: 202105080117
 ! Title: EasyList
-! Last modified: 08 May 2021 01:03 UTC
+! Last modified: 08 May 2021 01:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -31076,6 +31076,8 @@ _popunder+$popup
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##span[data-component-type="s-ads-metrics"]
 ##topadblock
+! ultimedia (invideo advertising)
+##.vid-present > .van_vid_carousel__padding
 ! VPN Affiliate Banners
 ##a[href*="get-express-vpn.xyz"]
 ##a[href^="http://get.slickvpn.com/"]
