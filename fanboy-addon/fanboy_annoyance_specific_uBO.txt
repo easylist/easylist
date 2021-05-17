@@ -1,7 +1,11 @@
 ! uBO Sepecific fixes
 theconversation.com##body:style(overflow: auto !important;)
 theconversation.com##.MuiDialog-root
-! youtube test
-youtube.com,youtube-nocookie.com##+js(json-prune, *.playerResponse.adPlacements)
-youtube.com,youtube-nocookie.com##+js(json-prune, *.playerResponse.playerAds)
+! youtube ads mitigation testing
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds) 
+youtube.com##+js(json-prune, *.playerResponse.adPlacements)
+youtube.com##+js(json-prune, *.playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
