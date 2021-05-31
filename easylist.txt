@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202105310205
+! Version: 202105310226
 ! Title: EasyList
-! Last modified: 31 May 2021 02:05 UTC
+! Last modified: 31 May 2021 02:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -31065,7 +31065,8 @@ _popunder+$popup
 ##script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content
 ##span[data-component-type="s-ads-metrics"]
 ##topadblock
-! ultimedia (invideo advertising)
+! (invideo advertising)
+###mplayer-embed
 ##.pbs__player
 ##.van_vid_carousel
 ##.vid-present > .van_vid_carousel__padding
@@ -50986,7 +50987,7 @@ menstennisforums.com#@#.top_ads
 ||connatix.com/connatix.playspace.js$script,third-party
 ||connatix.com^*/connatix.player.js$script,third-party
 ||jwpcdn.com^$script,domain=dexerto.com
-||minutemediaservices.com/mplayer_embed.html$third-party
+||minutemediaservices.com^$third-party
 ||playbuzz.com/embed/$script,third-party
 ||playbuzz.com/player/$script,third-party
 ||player.anyclip.com/anyclip-widget/$script,third-party
