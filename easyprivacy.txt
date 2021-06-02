@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202106020418
+! Version: 202106020447
 ! Title: EasyPrivacy
-! Last modified: 02 Jun 2021 04:18 UTC
+! Last modified: 02 Jun 2021 04:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12738,6 +12738,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||fastly.net/i?
 ||fastly.net/plw.js
 ||fastly.net/sp.js
+! CPU abuse
+! https://publicwww.com/websites/%22cloudfront.net%2Fscript.js%22/
+||cloudfront.net./script.js$script,third-party
+||cloudfront.net/script.js$script,third-party
 ! Seals, Websecurity, Protection etc. Unnecessary third-party scripts
 ||beyondsecurity.com^$third-party
 ||cyveillance.com^$third-party
