@@ -94,6 +94,7 @@
 ||amazonaws.com/initialize/$third-party
 ||amazonaws.com/js/reach.js
 ||amazonaws.com/ki.js/
+||amazonaws.com/lp/js/tag.js?
 ||amazonaws.com/new.cetrk.com/
 ||amazonaws.com/prod/entities
 ||amazonaws.com/prod/main?ref=$image,third-party
@@ -255,7 +256,6 @@
 ||appspot.com/api/track/
 ||appspot.com/collect
 ||appspot.com/stats?
-||arc.io/widget.min.js
 ||arclk.net/trax?
 ||areyouahuman.com/kitten?
 ||argos.citruserve.com^
@@ -354,6 +354,7 @@
 ||bitdash-reporting.appspot.com^
 ||bitgravity.com/b.gif$third-party
 ||bitgravity.com^*/tracking/
+||bitmovin.com/impression
 ||bitrix.info/ba.js
 ||bizrate-images.co.uk^*/tracker.js
 ||bizrate-images.com^*/tracker.js
@@ -397,7 +398,6 @@
 ||bzgint.com/CUNCollector/
 ||bzpics.com/jslib/st.js?
 ||c-date.com/pixel/
-||c.cloudwp.io^
 ||c.imedia.cz^
 ||c.live.com^
 ||c.mgid.com^
@@ -780,6 +780,7 @@
 ||doug1izaerwt3.cloudfront.net^
 ||dreamhost.com/*.cgi?$image,third-party
 ||drift.com/impressions/
+||drift.com/targeting/
 ||drift.com/track
 ||drlimmode9ddd.cloudfront.net^
 ||dt1pxsve3tgas.cloudfront.net^
@@ -884,6 +885,7 @@
 ||facebook.com/method/links.getstats?
 ||facebook.com/tr/
 ||facebook.com/tr?
+||factors.ai/sdk/event/
 ||fairfax.com.au/js/track/
 ||faphouse.com/api/collector/
 ||fastcdn.co/js/sptw.js
@@ -1170,7 +1172,6 @@
 ||letv.com/env/
 ||levelaccess.net/analytics/
 ||licdn.com/*.gif?rnd=
-||licensing.bitmovin.com^
 ||lift.acquia.com^
 ||ligatus.com/push/url.gif?
 ||ligatus.com/rms/rend?
@@ -1458,6 +1459,7 @@
 ||pegasus.unifygroup.com^
 ||pendo.io/data/ptm.gif
 ||penton.com/analytics/
+||perf-events.cloud.unity3d.com^
 ||perf.dugout.com^
 ||perfect-privacy.com^*/?a_aid=$third-party
 ||performgroup.com/metrics/
@@ -1701,6 +1703,7 @@
 ||sendibm4.com^*/op/$third-party
 ||sendtonews.com/player/loggingajax.php?
 ||sendtonews.com^*/data_logging.php
+||sentry.arc.io^
 ||session.timecommerce.net^
 ||sftrack.searchforce.net^
 ||share-online.biz/affiliate/$third-party
@@ -1778,7 +1781,6 @@
 ||stats.bitgravity.com^
 ||stats.bluebillywig.com^
 ||stats.clickability.com^
-||stats.cloudwp.io^
 ||stats.cmcigroup.com^
 ||stats.datahjaelp.net^
 ||stats.edicy.com^
@@ -2391,6 +2393,10 @@
 ||fastly.net/i?
 ||fastly.net/plw.js
 ||fastly.net/sp.js
+! CPU abuse
+! https://publicwww.com/websites/%22cloudfront.net%2Fscript.js%22/
+||cloudfront.net./script.js$script,third-party
+||cloudfront.net/script.js$script,third-party
 ! Seals, Websecurity, Protection etc. Unnecessary third-party scripts
 ||beyondsecurity.com^$third-party
 ||cyveillance.com^$third-party

@@ -320,7 +320,7 @@
 -banner-ad.
 -banner-ad/
 -banner-ad_
--banner-ads-
+-banner-ads-$~script
 -banner-ads/
 -Banner-Advert-
 -banner.swf?
@@ -935,7 +935,7 @@
 /ad-assets/*
 /ad-audit.
 /ad-background.
-/ad-banner-
+/ad-banner-$~script
 /ad-banner.
 /ad-bckg.
 /ad-bin/*
@@ -4248,7 +4248,7 @@
 /click?adv=
 /clickads/*
 /clickboothad.
-/clicksor.
+/clicksor.$domain=~clicksor.com
 /clickunder.
 /client/ads.
 /clients/ads/*
@@ -4893,6 +4893,7 @@
 /getAd;
 /getad?
 /getAdAjax/*
+/getAdBlockModal?
 /getadcontent.
 /getadds.
 /GetAdForCallBack?
@@ -5327,7 +5328,7 @@
 /intelliad.
 /intellitext.$domain=~intellitext.com|~intellitext.hu|~intellitext.us
 /interad.$domain=~interad.gr
-/interads.
+/interads.$domain=~interads.pl
 /interadv/*
 /interface/ads/*
 /intermediate-ad-
@@ -5942,6 +5943,7 @@
 /partners/ads/*
 /partners/get-banner.
 /partnersadbutler/*
+/partnerships-ads-
 /parts/ad/*
 /pauseadextension.
 /payperpost.
@@ -7461,8 +7463,8 @@
 ?wpproads-
 ?wpproadszoneid=
 ?zoneid=*&ext=$script
-?ZoneID=*&PageID=*&SiteID=
-?ZoneID=*&SiteID=*&PageID=
+?ZoneID=*&PageID=*&SiteID=$~image
+?ZoneID=*&SiteID=*&PageID=$~image
 ^fp=*&prvtof=
 ^mod=wms&do=view_*&zone=
 ^pid=Ads^

@@ -690,6 +690,7 @@
 /analytics/beacons/*
 /analytics/call-
 /analytics/capture/*
+/analytics/click?
 /analytics/cms/*
 /analytics/cnnvan/*
 /analytics/collect?
@@ -698,6 +699,7 @@
 /analytics/collector/*
 /analytics/content?
 /analytics/core.
+/analytics/custom
 /analytics/data-
 /analytics/dealerfire/*
 /analytics/dfa.
@@ -743,6 +745,7 @@
 /analytics/report/*
 /analytics/rt?
 /analytics/script/*
+/analytics/searches
 /analytics/smarttag-
 /analytics/sockjs.
 /analytics/tags
@@ -1011,6 +1014,7 @@
 /beacon.html?
 /beacon.js
 /beacon.min.js
+/beacon/*?appKey=
 /beacon/affiliates
 /beacon/b.ashx?
 /beacon/baminsights.
@@ -1538,7 +1542,6 @@
 /countubn.
 /countus.php
 /coveo.analytics.js/*
-/CoveoForSitecore.
 /cpeEvent.
 /cpeEventTracking.
 /cqcounter.
@@ -1853,6 +1856,7 @@
 /Events/Impression?
 /events/pixel/*$image
 /events/pixelEvent
+/events/track/*
 /events?*&referrer=
 /events?_trigger=
 /events?data=
@@ -2203,11 +2207,11 @@
 /google_analytics.$~image
 /google_analytics/*
 /google_analytics3_
-/google_analytics_$domain=~github.com
+/google_analytics_$script,domain=~github.com
 /google_page_track
 /google_tag.
 /google_tag/*
-/google_tag_
+/google_tag_$script
 /google_tracker.
 /GoogleAdnalyticsJs?
 /googleana.
@@ -5123,6 +5127,7 @@
 /whoson_*_trackingonly.js
 /wi?spot=
 /widget/s.gif?
+/widget/track_event
 /wijitTrack.gif?
 /WikiaStats/*
 /wildfire/i/CIMP.gif?
@@ -5537,6 +5542,7 @@ cgi-bin/counter
 .ct.sendgrid.net/$image
 .delivery-status.com/open?
 .demdex.net/event?
+.doubleclick.net/$image
 .duolingo.com/open/
 .efeedbacktrk.com/$third-party
 .emltrk.com/
@@ -5580,7 +5586,7 @@ cgi-bin/counter
 /click.*/q/*$image
 /click.email.$image
 /clicks.email.$image
-/cmail2.com/t/
+/cmail2.com/t/*
 /email-pixel?
 /email/open?
 /emimp/*$image
@@ -5589,7 +5595,7 @@ cgi-bin/counter
 /gate.amnesty-international.*/open.php?
 /gp/r.html?$image
 /link.coindesk.com/img/*
-/link.e-mail.*/mo/$image
+/link.e-mail.*/mo/*$image
 /lzdmailer.letter.open?
 /mail-tracking/*$image
 /mail.sparksport.co.nz/forms/read/*
@@ -5637,7 +5643,6 @@ _ad_impression.
 ! Admiral
 /admiral.js
 /js/admiral-
-_admiral.
 ! eventbrite tracking
 /search/log_requests/*
 ! Consent/GDPR tracking
