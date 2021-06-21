@@ -434,7 +434,12 @@
 /^https?:\/\/[0-9a-z]{8,29}\.com\/.*/$third-party,domain=9xmovies.app|9xupload.xyz|cloudvideo.tv|dood.watch|mixdrop.co|mixdrop.sx|mixdrop.to|mystream.to|ovagames.com|playtube.ws|strcloud.in|strtape.cloud|strtape.tech|supervideo.tv|uproxy.to|upstream.to|vidlox.me|vivo.sx|voe.sx|vupload.com|wowlive.info
 !
 ! Buff sites
-/^https?:\/\/[a-z0-9]{4,}\.(dotabuff|trackdota|speedrun|overbuff|dotabuff)\.com\/[a-z0-9]{1,6}.*/$script,~third-party,xmlhttprequest
+||dotabuff.com/a.js
+||elder-dragon.tracklol.com^
+||magic-stick.trackdota.com^
+||overbuff.com/a.js
+||speedrun.com/a.js
+||tethered-realms.valorbuff.com^
 ! coincodex.com
 |https://$script,subdocument,third-party,domain=coincodex.com
 ! prebid specific
