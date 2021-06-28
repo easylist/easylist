@@ -4,25 +4,24 @@ To improve webcompat among the various Banking and Financial websites when using
 
 Check various Banking and Financial Webcompatibilty among Adblockers ABP, uBO and Brave.
 
-## Barclays (Checked 28/06/2021)
+## [Barclays](https://www.barclays.co.uk) (Checked 28/06/2021)
 - [x] uBo
 - [x] AdBlock Plus
 - [ ] Brave
 
-**Notes:**
+## [Bov](https://www.bov.com)  (Checked 28/06/2021)
+- [x] uBo
+- [ ] AdBlock Plus
+- [ ] Brave
 
-## BNZ (Checked 28/06/2021)
+## [BNZ](https://www.bnz.co.nz) (Checked 28/06/2021)
 - [x] uBo
 - [x] AdBlock Plus
 - [x] Brave
 
-**Notes:**
-No issues with login, and general browsing
-
-## Santander (Checked 28/06/2021)
+## [Santander](http://www.santander.co.uk/) (Checked 28/06/2021)
 - [x] uBo
 - [x] AdBlock Plus
 - [ ] Brave
 
-**Notes:**
 
