@@ -28,3 +28,8 @@ Check various banking and financial web compatibilty among the adblockers ABP, u
 - [x] uBO
 - [ ] Adblock Plus
 - [ ] Brave
+
+## [American Express](https://www.americanexpress.com/) (Checked 28/06/2021)
+- [x] uBO
+- [x] Adblock Plus
+- [x] Brave
