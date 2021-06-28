@@ -1,5 +1,7 @@
 # Banking and Finance Sites
 
+To improve webcompat among the various Banking and Financial websites when using a Adblocking software. 
+
 Check various Banking and Financial Webcompatibilty among Adblockers ABP, uBO and Brave.
 
 ## Barclays (Checked 28/06/2021)
