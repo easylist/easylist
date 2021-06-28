@@ -19,7 +19,7 @@ Check various Banking and Financial Webcompatibilty among Adblockers ABP, uBO an
 - [x] AdBlock Plus
 - [x] Brave
 
-## [Santander](http://www.santander.co.uk/) (Checked 28/06/2021)
+## [Santander](https://www.santander.co.uk/) (Checked 28/06/2021)
 - [x] uBo
 - [x] AdBlock Plus
 - [ ] Brave
