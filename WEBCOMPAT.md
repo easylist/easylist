@@ -22,10 +22,10 @@ Check various banking and financial web compatibilty among the adblockers ABP, u
 - [x] Adblock Plus
 - [ ] Brave
 
-## [Bov](https://www.bov.com)  (Checked 28/06/2021)
+## [BNZ](https://www.bnz.co.nz) (Checked 28/06/2021)
 - [x] uBO
-- [ ] Adblock Plus
-- [ ] Brave
+- [x] Adblock Plus
+- [x] Brave
 
 ## [BNZ](https://www.bnz.co.nz) (Checked 28/06/2021)
 - [x] uBO
