@@ -32,6 +32,11 @@ Check various banking and financial web compatibilty among the adblockers ABP, u
 - [x] Adblock Plus
 - [ ] Brave
 
+## [TD Canada](https://www.td.com/ca/en/personal-banking/)  (Checked 02/07/2021)
+- [x] uBO
+- [x] Adblock Plus
+- [x] Brave
+
 ## [Melhusbanken](https://melhusbanken.no/) and by all accounts other Norwegian [Eika](https://eika.no/) banks (Checked 28/06/2021 by DandelionSprout)
 - [x] uBO
 - [ ] Adblock Plus
