@@ -27,10 +27,10 @@ Check various banking and financial web compatibilty among the adblockers ABP, u
 - [x] Adblock Plus
 - [x] Brave
 
-## [BNZ](https://www.bnz.co.nz) (Checked 28/06/2021)
+## [Bov](https://www.bov.com)  (Checked 28/06/2021)
 - [x] uBO
-- [x] Adblock Plus
-- [x] Brave
+- [ ] Adblock Plus
+- [ ] Brave
 
 ## [Melhusbanken](https://melhusbanken.no/) and by all accounts other Norwegian [Eika](https://eika.no/) banks (Checked 28/06/2021 by DandelionSprout)
 - [x] uBO
