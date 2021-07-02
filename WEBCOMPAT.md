@@ -4,8 +4,8 @@ To improve web compatibility among various Banking and Financial websites when u
 
 Check various banking and financial web compatibilty among the adblockers ABP, uBO and Brave.
 
-- [x] Checked with browser/extension
-- [ ] Unchecked, probably works but not confirmed.
+- [x] Login and browsing site works, checked with browser/extension.
+- [ ] Unchecked browser/extension, probably works but not confirmed.
 
 ## [ANZ](https://www.anz.co.nz)  (Checked 02/07/2021)
 - [x] uBO
