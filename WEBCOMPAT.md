@@ -4,6 +4,14 @@ To improve web compatibility among various Banking and Financial websites when u
 
 Check various banking and financial web compatibilty among the adblockers ABP, uBO and Brave.
 
+- [x] Checked with browser/extension
+- [ ] Unchecked (not confirmed)
+
+## [ANZ](https://www.anz.co.nz)  (Checked 02/07/2021)
+- [x] uBO
+- [x] Adblock Plus
+- [x] Brave
+
 ## [Barclays](https://www.barclays.co.uk) (Checked 28/06/2021)
 - [x] uBO
 - [x] Adblock Plus
