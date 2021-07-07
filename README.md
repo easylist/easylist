@@ -24,6 +24,7 @@ For legal reasons, Anti-adblock this will only cover:
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
  - Analytics
+ - Bot checks
  - Telemetry
  - Tracking cookies
  - Pixels
