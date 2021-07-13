@@ -4,8 +4,12 @@ These lists are maintained by Fanboy, MonztA, and Khrin.
 
 ## EasyList
 
-The goal of this repository is to block ads on English and International sites. By blocking the following:
+The goal of this repository is to block ads on English and International sites. First-party ads (that don't link, or passthrough to 3rd-party sites) won't be targeted directly. By blocking the following:
  - Ad scripts (Generic and site-specific)
+ - Ad images 
+ - Text/CSS Ads
+ - Pre,mid,end video ads.
+ - Affitlate links, Affitlate images.
  - Cosmetic filtering (Generic and site-specific css)
  - Ad servers (Block servers that host ads/ad-related contents)
  - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
