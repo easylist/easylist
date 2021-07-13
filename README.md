@@ -58,7 +58,14 @@ Attempt fix website false-positives where applicable such as:
  - Allow direct link fixes.
  - Web page rendering issues
 
-For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues).
+## Complaints
+
+If your site was added to Easylist or Easyprivacy:
+ - Outline why it shouldn't be added.
+ - The specific commit in question, or specific filter.
+ - Is it covered by any of the Easylist/Easyprivacy requirements?
+ 
+For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues) or [Email](mailto:easylist@protonmail.com), via [Forum](https://forums.lanik.us/).
 
 ## Support
 
