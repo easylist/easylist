@@ -1,0 +1,25 @@
+! uBO Sepecific fixes
+protocol.com,theconversation.com##body:style(overflow: auto !important;)
+socialitelife.com##html:style(overflow:auto !important)
+socialitelife.com##.mfp-ready
+protocol.com###form_out
+theconversation.com##.MuiDialog-root
+! 9gag.com (mobile)
+9gag.com##.open-in-app
+9gag.com##.overlay-layer
+9gag.com##body:style(overflow: auto !important;)
+9gag.com##.shade
+! reddit.com (mobile)
+reddit.com##.XPromoPopup
+reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+reddit.com##.XPromoInFeed
+amp.reddit.com##.AppSelectorModal__body
+amp.reddit.com##.upsell_banner
+! youtube ads mitigation testing
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds) 
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+! Counter generichide
+metro.co.uk##.metro-email-signup
