@@ -8,8 +8,8 @@ The goal of this repository is to block ads on English and International sites. 
  - Ad scripts (Generic and site-specific)
  - Ad images 
  - Text/CSS Ads
- - Pre,mid,end video ads.
- - Affitlate links, Affitlate images.
+ - Pre,mid,end video ads
+ - Affiliate links/images/widgets
  - Cosmetic filtering (Generic and site-specific css)
  - Ad servers (Block servers that host ads/ad-related contents)
  - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
