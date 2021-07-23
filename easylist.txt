@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202107230402
+! Version: 202107231256
 ! Title: EasyList
-! Last modified: 23 Jul 2021 04:02 UTC
+! Last modified: 23 Jul 2021 12:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -27494,6 +27494,7 @@ _popunder+$popup
 ##.nomobilead
 ##.non-empty-ad
 ##.nonsponserIABAdBottom
+##.nordvpn-popup
 ##.normalAds
 ##.normal_ads
 ##.normalad
@@ -30672,7 +30673,7 @@ _popunder+$popup
 ##[href^="https://shiftnetwork.infusionsoft.com/go/"]
 ##[href^="https://shrugartisticelder.com"]
 ##[href^="https://stvkr.com/"]
-##[href^="https://track.fiverr.com/visit/"]
+##[href^="https://track.fiverr.com/visit/"] > img
 ##[href^="https://traffserve.com/"]
 ##[href^="https://veepn.g2afse.com/"]
 ##[href^="https://wct.link/"]
@@ -32151,7 +32152,6 @@ etonline.com,interscope.com#@#.ad-unit
 billboard.com#@#.ad-unit-300-wrapper
 speedtest.net#@#.ad-vertical-container
 tvlistings.aol.com#@#.ad-wide
-idolator.com#@#.ad-widget-wrapper
 howtopriest.com,nydailynews.com#@#.ad-wrap
 citylab.com,dealsonwheels.com,fastcodesign.com,happypancake.com,lifeinvader.com,makers.com,spanishdict.com,tasteofhome.com#@#.ad-wrapper
 harpers.org#@#.ad300
@@ -32382,6 +32382,7 @@ songlyrics.com#@#.footer-ad
 employmentguide.com#@#.footer-ads
 gotoeat.maff.go.jp,selectparkhomes.com#@#.footer_ad
 koopik.com#@#.footerad
+freenet.de#@#.frn_contAdHead
 ebayclassifieds.com,guloggratis.dk#@#.gallery-ad
 time.com#@#.google-sponsored
 gumtree.co.za#@#.googleAdSense
@@ -42727,6 +42728,7 @@ menstennisforums.com#@#.top_ads
 ||vi-serve.com^
 ||viamariller.com^
 ||viatepigan.com^
+||vid.me^
 ||vid4vip.com^
 ||vidalak.com^
 ||vidcpm.com^
@@ -54273,7 +54275,7 @@ naturalnewsblogs.com##[href*="/WBA/"]
 complaintsingapore.com##[href*="/adv.php"]
 libtorrent.org,mailgen.biz,speedcheck.org,torrentfreak.com,tubeoffline.com##[href*="://go.nordvpn.net/"]
 gamecopyworld.com,gamecopyworld.eu##[href*="@"]
-9jaflaver.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,carmag.co.za,cnx-software.com,coingolive.com,digitallydownloaded.net,downturk.net,fresherslive.com,gizmochina.com,guidedhacking.com,hackernoon.com,hlstester.com,indishare.org,linkhub.icu,litecoin-faucet.com,mbauniverse.com,mediaite.com,myreadingmanga.info,owaahh.com,parkablogs.com,premiumtimesng.com,resultuniraj.co.in,retail.org.nz,rtvonline.com,totemtattoo.com,trancentral.tv,ultshare.com,vumafm.co.za,yeyeboyz.net,yugatech.com,zmescience.com##[href*="bit.ly/"]
+9jaflaver.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,carmag.co.za,cnx-software.com,coingolive.com,digitallydownloaded.net,downturk.net,elitepvpers.com,fresherslive.com,gizmochina.com,guidedhacking.com,hackernoon.com,hlstester.com,indishare.org,linkhub.icu,litecoin-faucet.com,mbauniverse.com,mediaite.com,myreadingmanga.info,owaahh.com,parkablogs.com,premiumtimesng.com,resultuniraj.co.in,retail.org.nz,rtvonline.com,totemtattoo.com,trancentral.tv,ultshare.com,vumafm.co.za,yeyeboyz.net,yugatech.com,zmescience.com##[href*="bit.ly/"]
 whatleaks.com##[href*="doublevpn.com"]
 steroid.com##[href*="https://www.anabolics.com"]
 winaero##[href="/fix-windows-issues-performance/"]
@@ -54376,10 +54378,7 @@ twitter.com##a[href*="src=promoted_trend_click"] + div
 unitconversion.org##a[href="../noads.html"]
 himovies.to##a[href="https://sflix.to/"]
 apkpure.com##a[href="https://www.macblurayplayer.com/spyhunter-malware-removal-windows.htm"]
-elitepvpers.com##a[href] > img[src][height]
-elitepvpers.com##a[href] > img[src][width]
 techporn.ph##a[href][target*="blank"]
-elitepvpers.com##a[href][target*="blank"] > img[src]
 rarbg.to,rarbgaccess.org,rarbgmirror.com,rarbgmirror.org,rarbgproxy.com,rarbgproxy.org,rarbgunblock.com,rarbgunblocked.org##a[href][target="_blank"] > button
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
 tehrantimes.com##a[href^="/redirect/ads/"]
@@ -54576,7 +54575,7 @@ britishexpat.com##img[style="width: 468px; height: 60px;"]
 bcmagazine.net##img[style^="width:300px;"]
 abpclub.co.uk##img[width="118"]
 howtogermany.com##img[width="120"]
-lyngsat-logo.com,lyngsat-maps.com,lyngsat-stream.com,lyngsat.com,newswireni.com,webhostingtalk.com##img[width="160"]
+elitepvpers.com,lyngsat-logo.com,lyngsat-maps.com,lyngsat-stream.com,lyngsat.com,newswireni.com,webhostingtalk.com##img[width="160"]
 fashionpulis.com##img[width="250"]
 afrivibes.net,airplaydirect.com,bigeye.ug,breakingbelizenews.com,cryptomining-blog.com,cryptoreporter.info,dotsauce.com,espnrichmond.com,freedomhacker.net,gameplayinside.com,goodcarbadcar.net,mkvcage.com,movin100.com,mycolumbuspower.com,naijaloaded.com.ng,onislandtimes.com,portugaldailyview.com,punchng.com,radiobiz.co.za,robhasawebsite.com,sacobserver.com,seguintoday.com,themediaonline.co.za,thenationonlineng.net,theolivepress.es,therep.co.za,thewillnigeria.com,wantedinafrica.com,wantedinrome.com##img[width="300"]
 boxthislap.org##img[width="300px"]
@@ -55883,7 +55882,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||minigame.aeriagames.jp/*/ae-tpgs-$~third-party
 @@||minigame.aeriagames.jp/css/videoad.css
 @@||mjhobbymassan.se/r/annonser/$image,~third-party
-@@||mysmth.net/nForum/board/ADAgent_$~third-party
+@@||mysmth.net/nForum/*/ADAgent_$~third-party
 @@||netmile.co.jp/ad/images/$image
 @@||news24.jp/ad-navi/$domain=search.news24.jp
 @@||nintendo.co.jp/ring/*/adv$~third-party
