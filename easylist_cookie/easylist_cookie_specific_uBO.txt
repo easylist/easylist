@@ -1,9 +1,11 @@
 ! uBO Sepecific fixes
 ! :style fixes
 wetter.at##.full.blured:style(filter: none !important;)
+taloon.com##.header__top:style(position: unset !important)
 bosch-easycontrol.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 danskebank.fi##.nav:style(position: unset !important)
 danskebank.fi##.section-container:style(padding-top: 0px !important; z-index: -1 !important)
+taloon.com##.page-header:style(padding-top: 0 !important)
 html5games.com##div[class="app-container"]:style(filter:none !important;opacity:1 !important)
 gesund24.at,oe24.at,wirkochen.at,xn--sterreich-ppa80c.at##.wrapper.blured:style(filter: none !important;)
 germany.travel##body.consent-overlay:style(overflow:auto !important)
@@ -49,6 +51,7 @@ hrkgame.com##.dimmer
 imoradar24.ro##.show.modal-cookies
 uniroyal.pl##.js-cookie-banner > div
 wtk.pl###GDPR-modal
+taloon.com###gdprpopup, important
 craftserve.pl###rodo
 ogloszenia.plock.pl###dialog-rodo
 lego.com##.fICElI
@@ -74,6 +77,7 @@ esbo.fi,espoo.fi##+js(aeld, /^(?:DOMContentLoaded|load)$/, function I())
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
 al.com,allkpop.com,cinemablend.com,windows101tricks.com,foxvalleyfoodie.com,toledoblade.com,foxvalleyfoodie.com,merriam-webster.com,playstationlifestyle.net,calendarpedia.co.uk,ccn.com,sportsnaut.com,cleveland.com,comicsands.com,duffelblog.com,gamepur.com,gamerevolution.com,interestingengineering.com,keengamer.com,listenonrepeat.com,mandatory.com,mlive.com,musicfeeds.com.au,newatlas.com,pgatour.com,readlightnovel.org,secondnexus.com,sevenforums.com,sport24.co.za,superherohype.com,thefashionspot.com,theodysseyonline.com,totalbeauty.com,westernjournal.com##+js(aopr, __cmpGdprAppliesGlobally)
+taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
 ! Generichide fixes
 dogemate.com###cconsent-bar
 analog.com###cookie-consent-container.modal
