@@ -1,9 +1,11 @@
 ! uBO Sepecific fixes
 ! :style fixes
 wetter.at##.full.blured:style(filter: none !important;)
+taloon.com##.header__top:style(position: unset !important)
 bosch-easycontrol.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 danskebank.fi##.nav:style(position: unset !important)
 danskebank.fi##.section-container:style(padding-top: 0px !important; z-index: -1 !important)
+taloon.com##.page-header:style(padding-top: 0 !important)
 html5games.com##div[class="app-container"]:style(filter:none !important;opacity:1 !important)
 gesund24.at,oe24.at,wirkochen.at,xn--sterreich-ppa80c.at##.wrapper.blured:style(filter: none !important;)
 germany.travel##body.consent-overlay:style(overflow:auto !important)
@@ -13,14 +15,17 @@ noriel.ro,sufilog.com,iracing.com,reuters.com,okazik.pl,pamiatki.pl,asseco.com,c
 terveyskirjasto.fi##body:style(overflow: scroll !important)
 e-wie-einfach.de,nerim.com,markets.com,researchaffiliates.com,nmhh.hu,imobiliare.ro,zsgarwolin.pl,pelix-media.de##body,html:style(height: auto !important; overflow: auto !important)
 hotelsbarriere.com,modellbau-metz.com,cancercentrum.se,d-power-modellbau.com,steinmetz-baldauf.de,myrobotcenter.co.uk,myrobotcenter.at,myrobotcenter.de,metro.de##body:style(overflow: auto !important; position: initial !important;)
+airam.fi##body:style(position: unset !important)
 mega.io,mega.nz##.cookie-dialog.mega-dialog
 mega.io,mega.nz##.fm-dialog-overlay
 mega.io,mega.nz##.overlayed .bottom-page.scroll-block:style(filter: none !important; -webkit-filter: none !important)
+aixfoam.*##.wrapper:style(filter: none !important)
 schulze-immobilien.de##*:style(filter: none !important)
 gov.lv##body:style(overflow: auto !important;)
 !
 backmarket.de##._3NAusrrr
 elisaviihde.fi##.ea-cookie-disclaimer
+varusteleka.com,varusteleka.fi##.cookie_settings_container
 iracing.com##.modal-background
 noriel.ro##.agreementOverlay
 noriel.ro##.agreementMessage
@@ -28,6 +33,7 @@ myrobotcenter.co.uk,myrobotcenter.at,myrobotcenter.de##.modals-wrapper
 lulus.com##.c-sg--disclaimer
 lulus.com##.c-site-overlay
 reuters.com###onetrust-consent-sdk
+veikkaus.fi###privacyCookieDisclaimer
 researchaffiliates.com##.ra-cookie-disclaimer-modal
 e-wie-einfach.de,podleze-piekielko.pl,coseleurope.eu,schroders.com,modellbau-metz.com,telecomitalia.it,steinmetz-baldauf.de,razer.com,d-power-modellbau.com,pelix-media.de,cancercentrum.se##.modal-backdrop
 schroders.com###disclaimerModal
@@ -46,6 +52,7 @@ swatch.com##.b-modal
 litebit.eu##.modal
 tme.eu##.o-modal-wrapper
 html5games.com##.consent-box-holder
+airam.fi##.cookie-consent
 danskebank.fi##.cookie-consent-banner-modal
 hrkgame.com##.dimmer
 imoradar24.ro##.show.modal-cookies
@@ -70,12 +77,14 @@ what3words.com,masmovil.es##.MuiDialog-root
 bundesanzeiger.de###cc
 interestingengineering.com##.modal-backdrop
 bundesanzeiger.de###cc > #cc_banner
+aixfoam.*##[id="cc-notification"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
 ! scripts
 esbo.fi,espoo.fi##+js(aeld, /^(?:DOMContentLoaded|load)$/, function I())
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
 al.com,allkpop.com,cinemablend.com,windows101tricks.com,foxvalleyfoodie.com,toledoblade.com,foxvalleyfoodie.com,merriam-webster.com,playstationlifestyle.net,calendarpedia.co.uk,ccn.com,sportsnaut.com,cleveland.com,comicsands.com,duffelblog.com,gamepur.com,gamerevolution.com,interestingengineering.com,keengamer.com,listenonrepeat.com,mandatory.com,mlive.com,musicfeeds.com.au,newatlas.com,pgatour.com,readlightnovel.org,secondnexus.com,sevenforums.com,sport24.co.za,superherohype.com,thefashionspot.com,theodysseyonline.com,totalbeauty.com,westernjournal.com##+js(aopr, __cmpGdprAppliesGlobally)
+taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
 ! Generichide fixes
 dogemate.com###cconsent-bar
 analog.com###cookie-consent-container.modal
@@ -108,5 +117,6 @@ games.dailymail.co.uk##[class^="CookieBanner"]
 arkadium.com##[class^="CookieMessage"]
 viget.com##[class^="gpdr-banner__"]
 fandom.com##[data-tracking-opt-in-overlay="true"]
+taloon.com##[id="gdprpopup"]
 macdrop.net,dropgalaxy.*###gdpr-cookie-notice
 stfly.*###cookie-pop
