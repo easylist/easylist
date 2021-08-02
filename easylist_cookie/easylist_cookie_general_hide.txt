@@ -2356,6 +2356,7 @@
 ###cookieOpacity
 ###cookieOptIn
 ###cookieOptInBarWrapper
+###cookieOptionsFooter
 ###cookieOut
 ###cookieOuter
 ###cookieOuterContainer
@@ -5800,6 +5801,7 @@
 ###privacyBar
 ###privacyBox
 ###privacyCookie
+###privacyCookieDisclaimer
 ###privacyCookieLayer
 ###privacyCookiesPolicyMessageContainer
 ###privacyDisclaimer
@@ -6526,6 +6528,7 @@
 ###wp_cookie_policy
 ###wpca-bar
 ###wpca-box
+###wpca-popup-modal
 ###wpcui_cookie_bar_main_body
 ###wpf_cookie-alert
 ###wpnb-bar
@@ -6752,6 +6755,7 @@
 ##.CookiesUsage
 ##.CookiesWarning
 ##.Cookies_alert
+##.CoreCookie
 ##.DVWebNode-cookie-compliance-notification-wrapper
 ##.EU-cookie
 ##.EUChoice[id*="GDPR"]
@@ -7512,6 +7516,7 @@
 ##.cart_cookie
 ##.case-cookie-alert
 ##.cb-cookie-bar
+##.cb-cookieConsentBanner
 ##.cbannercontainer-sq_cp
 ##.cbar-wrapper
 ##.cbar_banner
@@ -7728,6 +7733,7 @@
 ##.connect-cookie-bar
 ##.consent-at-bottom
 ##.consent-banner
+##.consent-banner-container:not(body):not(html)
 ##.consent-bar
 ##.consent-bg:not(html):not(body)
 ##.consent-confirmation-banner
@@ -7747,7 +7753,7 @@
 ##.consent-panel
 ##.consent-popover
 ##.consent-popup
-##.consent-summary-shown
+##.consent-summary-shown:not(body)
 ##.consent-toast
 ##.consent-toolbar
 ##.consent-ui--banner
@@ -7772,6 +7778,7 @@
 ##.consentr-notification
 ##.consents-bar
 ##.console-head-cookies
+##.consumer-privacy-banner
 ##.cont-cookie
 ##.cont_avis_galetes
 ##.container ~ div[data-react-class="CookieAgree"]
@@ -8480,6 +8487,7 @@
 ##.cookie-wrap
 ##.cookie-wrap-content
 ##.cookie-wrap-tip
+##.cookie-wrapp
 ##.cookie-wrapper
 ##.cookie-wrapper ~ div[class*="overlay-cookie"]
 ##.cookie-wrn-wrapper
@@ -9348,6 +9356,7 @@
 ##.cookies.info
 ##.cookies.is-open
 ##.cookies.is-shown
+##.cookies.pb-0
 ##.cookies.print-hidden
 ##.cookies.privacyLaw
 ##.cookies.row
@@ -9623,6 +9632,7 @@
 ##.cp-slider-popup
 ##.cp1CookieBanner
 ##.cpOverlay[data-cookie-consent-overlay]
+##.cp_cookie-dialog
 ##.cpb-privacy-policy-widget
 ##.cpck-banner
 ##.cpg_message_info
@@ -9886,7 +9896,7 @@
 ##.eu-cookie-bar-notification
 ##.eu-cookie-compliance-banner-info
 ##.eu-cookie-compliance-banner:not(body):not(html)
-##.eu-cookie-compliance-popup-open
+##.eu-cookie-compliance-popup-open:not(body):not(html)
 ##.eu-cookie-info
 ##.eu-cookie-law
 ##.eu-cookie-law-wrapper
@@ -10657,7 +10667,9 @@
 ##.js-main-cookie-banner
 ##.js-message-cookies
 ##.js-nanobar-first-login
+##.js-nn-cookie
 ##.js-notify-cookie
+##.js-np-cookie-notice
 ##.js-page-cookies
 ##.js-page__gdpr
 ##.js-panel-cookie
@@ -10736,6 +10748,7 @@
 ##.kth-toast--bottom
 ##.kue-cookie-notification
 ##.kuki-js
+##.l-consent_banner
 ##.l-cookie
 ##.l-cookie-law
 ##.l-cookie-notice-container
@@ -11044,6 +11057,7 @@
 ##.mui-cookie-banner
 ##.mui-js-cookie-banner
 ##.must_show_cookie
+##.mvh-gdpr-banner
 ##.mw-cookiewarning-container
 ##.mw-dsgvo-cookie-slidebar-fixed-bg_01
 ##.mw-dsgvo-cookie-slidebar_01
@@ -11115,6 +11129,7 @@
 ##.njt-gdpr-full_width
 ##.njt-gdpr-popup
 ##.nk-cookie-alert
+##.nk-cookie-banner
 ##.nkmcookiealert
 ##.nl-cookie-bar
 ##.nl-cookiepolicy
@@ -11195,9 +11210,11 @@
 ##.notifyjs-cookiebar-base
 ##.notifyjs-notify-cookies-info
 ##.noty_cookie
+##.np-cookie-notice
 ##.np_DialogConsent
 ##.npo_cc_regular
 ##.nq-c-rgpdBar
+##.nr-cookie-accept
 ##.nr-cookie-notification
 ##.nr-cookie-notification-component
 ##.nr-cookie-notification__wall
@@ -12041,6 +12058,7 @@
 ##.ucgCookieBar
 ##.ucn-block
 ##.ud-component--eu-cookie-message--app
+##.ud-component--footer--eu-cookie-message
 ##.ue-c-site-message--cookies
 ##.ueltje-cookie-accept
 ##.ug3-cookie-info-container
@@ -12353,6 +12371,7 @@
 ##app-cookies-banner
 ##app-cookies-consent
 ##app-cookies-policy-updated
+##app-rodo
 ##app-root app-cookie-acceptance
 ##ark-cookiebar
 ##aside[class^="cookie-banner__Wrapper-"]
@@ -12435,6 +12454,7 @@
 ##div[class^="GDPR-module"]
 ##div[class^="GDPRBanner_"]
 ##div[class^="GdprBanner_"]
+##div[class^="ModalCookiestyle"]
 ##div[class^="_CookieNotice_"]
 ##div[class^="__alertCookie"]
 ##div[class^="__cookie-banner"]
