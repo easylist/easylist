@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202108030402
+! Version: 202108030409
 ! Title: EasyList
-! Last modified: 03 Aug 2021 04:02 UTC
+! Last modified: 03 Aug 2021 04:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -51568,8 +51568,6 @@ menstennisforums.com#@#.top_ads
 /^https?:\/\/.*techpowerup\.com\/[a-z0-9\d\D].{1,3}\/.{3,7}/$image,domain=techpowerup.com
 /^https?:\/\/.*tpucdn\.com\/[a-z0-9\d\D]{1,2}\/[a-z0-9\d\D]{2,9}\./$image,domain=techpowerup.com
 /^https?:\/\/.*tpucdn\.com\/[a-z0-9\d\D]{4,}\/[a-z0-9\d\D]{4,9}\./$image,domain=techpowerup.com
-! coincodex.com
-|https://$script,subdocument,third-party,domain=coincodex.com
 ! prebid specific
 ||bustle.com^*/prebid-
 ||dw.com/js/advertisement/
@@ -51623,26 +51621,6 @@ $image,script,subdocument,third-party,xmlhttprequest,domain=heapfiles.com|vidoza
 ! govid.co
 $script,third-party,xmlhttprequest,domain=govid.co
 @@||ajax.googleapis.com/ajax/libs/$script,domain=govid.co
-! Imagetwist/Imagenpic/Imageshimage
-@@||imagenpic.com/jquery-*.js
-@@||imagenpic.com/jquery.*.js
-@@||imagenpic.com/xupload.js
-@@||imageshimage.com/jquery-*.js
-@@||imageshimage.com/jquery.*.js
-@@||imageshimage.com/xupload.js
-@@||imagetwist.com/bootstrap.min.js
-@@||imagetwist.com/clipboard.min.js
-@@||imagetwist.com/jquery-*.js
-@@||imagetwist.com/jquery.*.js
-@@||imagetwist.com/swfobject.js
-@@||imagetwist.com/xupload.js
-@@||imagetwist.com/ZeroClipboard.js
-||imagenpic.com^$script,~third-party
-||imagenpic.com^$~third-party,xmlhttprequest
-||imageshimage.com^$script,~third-party
-||imageshimage.com^$~third-party,xmlhttprequest
-||imagetwist.com^$script,~third-party
-||imagetwist.com^$~third-party,xmlhttprequest
 ! canyoublockit.com
 @@||akamaiedge.net^$domain=canyoublockit.com
 @@||cloudflare.com^$script,stylesheet,domain=canyoublockit.com
