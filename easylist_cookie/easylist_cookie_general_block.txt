@@ -105,7 +105,6 @@
 /amgdpr/*
 /amp-consent-
 /analytics_cookie.
-/api/gdpr^
 /app.dsgvo.
 /approvazione-gdpr/*
 /asesor-cookies-$~image
@@ -134,6 +133,7 @@
 /borlabs_cookie/*$~script
 /bt.cookies.
 /bundle-gdpr.min.js
+/c4s_cookie_
 /calls/cookie.
 /cc-cookie-consent/*
 /cc_cookie.
@@ -182,12 +182,15 @@
 /component-CookieConsent.
 /consent-banner-
 /consent-dialog.
+/consent-layer-loader.
 /consent-management.js
+/consent-management/*
 /consent-manager.
 /consent-tracking-
 /consent.min.js?
 /consent/manager/*$script
 /consent/message.
+/consent_banner-
 /consent_non-eu.
 /consentcookie.js
 /consentcookie.min.js
@@ -210,11 +213,6 @@
 /cookie-choices.
 /cookie-compliance.
 /cookie-consent-
-/cookie-consent-filter-
-/cookie-consent-manager.
-/cookie-consent-modals.
-/cookie-consent-overlay.
-/cookie-consent-settings-
 /cookie-consent.
 /cookie-consent/*
 /cookie-consent?
@@ -264,7 +262,7 @@
 /cookie-prompt.
 /cookie-reglement.
 /cookie-richtlinie.
-/cookie-script.
+/cookie-script.$domain=~cookie-script.com
 /cookie-service/*
 /cookie-terms.
 /cookie-warning.
@@ -347,7 +345,7 @@
 /cookieBanner/*
 /cookiebar-
 /cookiebar.js
-/cookiebar_
+/cookiebar_$~stylesheet
 /cookiebox.
 /cookiec.json
 /cookieCallout.
@@ -384,6 +382,7 @@
 /cookieGatekeeper.$~script
 /CookieGDPR.
 /cookiehint.
+/cookiehinweis.
 /CookieInfo.
 /CookieInfo/*$~script
 /cookieInfofr.
@@ -392,13 +391,14 @@
 /cookiejs/*
 /cookielab/*
 /cookieLaw-vanilla.js
-/cookielaw.$~stylesheet
-/cookielaw/*
+/cookielaw.$~stylesheet,domain=~cookielaw.org
+/cookielaw/*$domain=~cookielaw.org
 /cookielaw_mip.
 /cookielawinfo.$~script
 /CookieLawProduct/*
 /cookielayer/*
 /cookielegal.
+/cookieloi.
 /cookiemanagement.js
 /cookieMention.
 /cookiemessage.
@@ -497,6 +497,7 @@
 /cookies_tlo.
 /CookiesAcception.
 /CookiesAgreement/*
+/cookiesApproval.js
 /cookiesbanner/*
 /CookiesBanner_
 /cookiesConsent.
@@ -585,6 +586,7 @@
 /EUCookieDirective.
 /EUCookieDirective/*
 /eucookielaw.
+/eucookielaw3.
 /eucookienotice.
 /eucookienotice_
 /eucookies.
@@ -599,6 +601,7 @@
 /ext/kmacookies
 /eznovacookieconsent.
 /Flurrybox_EnhancedPrivacy/*
+/fnGdpr.
 /fp_cookie.
 /fxCookiesV3.
 /g361-cookies-
@@ -698,6 +701,7 @@
 /impresacookiepolicy/*
 /in2cookiemodal/*
 /info_cookie.
+/infobar-cookies.
 /InfoCookies.
 /informativa-cookie/*
 /informativa_cookie.
@@ -707,6 +711,7 @@
 /iticonseil-rgpd/*
 /iubenda/iubenda.
 /iubenda_cs.
+/iuscookie.
 /javascript-cookieconsent.
 /jbcookies.
 /jcookie.js
@@ -717,7 +722,7 @@
 /jppol-consent/*
 /jquery.coo-kie.js
 /jquery.cookieaccept.
-/jquery.cookieBar.$~script
+/jquery.cookiebargenial.js
 /jqueryCookieGuard.
 /js-cookie-$script
 /js/cookie-popup
@@ -744,6 +749,7 @@
 /MarkupCookieConsent/*
 /mb_cookies.
 /mediamus-cookie.
+/messagingNoTcfApi.
 /meta/cookie-
 /meWantCookies*.js
 /miocookie_
@@ -769,12 +775,14 @@
 /oil.*-RELEASE.min.js
 /oil/*-RELEASE.chunk.js
 /oiljs/*-RELEASE.min.js
+/oneTrust-
 /oneTrust.
 /onetrust/consent/*
 /onetrustConsent.js
 /opendotcom-cookie/*
 /opt-in-select/cookie/*
 /optInCookieGdprSSR.
+/otBannerSdk.
 /oupcookiepolicy_
 /pgdpr.min.js
 /plugin_cookie/*
@@ -838,6 +846,7 @@
 /rodoinfo/*/remodal.js
 /roularta-gdpr.js
 /rtiCookieLaw.
+/s4s-privacy-module/*$script
 /script-rodo.
 /script_cookie.
 /script_cookies.js
@@ -923,6 +932,7 @@
 /wp-gdpr-
 /wp-tarteaucitron-
 /wpmaster-cookie/*
+/wrapperMessagingWithoutDetection.js
 /wx-cookie-
 /x_cookie_
 /XCookieConsent.
@@ -935,6 +945,7 @@
 =cookie-overlay/
 ?getCookieConsent=
 _alert_cookie/
+_cookie_alert/
 _cookie_banner.
 _cookie_bar.
 _cookie_bar/
