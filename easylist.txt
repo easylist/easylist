@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202108140257
+! Version: 202108140317
 ! Title: EasyList
-! Last modified: 14 Aug 2021 02:57 UTC
+! Last modified: 14 Aug 2021 03:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -55602,21 +55602,18 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||publisher.adservice.com^$domain=publisher.adservice.com
 @@||publisher.adservice.com^$generichide
 ! *** easylist:easylist/easylist_allowlist_dimensions.txt ***
-@@_300x250.$image,domain=crystalmark.info|lockd.co.uk
-@@||amazonaws.com/content-images/article/*_120x60$domain=vice.com
-@@||anitasrecipes.com/Content/Images/*160x500$image
-@@||arnhemland-safaris.com/images/*_480_80_
+@@||anitasrecipes.com/Content/Images/Recipes/$image,~third-party
+@@||arnhemland-safaris.com/images/made/$image,~third-party
 @@||cloud.mail.ru^$image,~third-party
-@@||findafranchise.com/_img/*_120x60.$image
+@@||crystalmark.info/wp-content/uploads/*-300x250.$image,~third-party
 @@||glbimg.com^*/300x250/$image,domain=globo.com
-@@||government-and-constitution.org/images/presidential-seal-300-250.gif$image
-@@||leffatykki.com/media/banners/tykkibanneri-728x90.png
-@@||nc-myus.com/images/pub/www/uploads/merchant-logos/
+@@||government-and-constitution.org/images/presidential-seal-300-250.gif$image,~third-party
+@@||leffatykki.com/media/banners/tykkibanneri-728x90.png$image,~third-party
+@@||nc-myus.com/images/pub/www/uploads/merchant-logos/$image,~third-party
 @@||przegladpiaseczynski.pl/wp-content/uploads/*-300x250-$image,~third-party
 @@||reastatic.net/150x200-$domain=realestate.com.au
-@@||resize.blogsys.jp^*/300x250/$image
-@@||static9.net.au^*_120x60$image,domain=yourtv.com.au
-@@||wavepc.pl/wp-content/*-500x100.png$image
+@@||resize.blogsys.jp^*/300x250/$image,domain=blog.livedoor.jp
+@@||wavepc.pl/wp-content/*-500x100.png$image,~third-party
 ! *** easylist:easylist/easylist_allowlist_popup.txt ***
 @@/clickthrgh.asp?btag=*&aid=$popup,domain=casinobonus24.se
 @@/promoRedirect?*&zone=$popup,domain=casinobonus24.se|top5casinosites.co.uk
