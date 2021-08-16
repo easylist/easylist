@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108160135
+! Version: 202108160145
 ! Title: EasyPrivacy
-! Last modified: 16 Aug 2021 01:35 UTC
+! Last modified: 16 Aug 2021 01:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5508,10 +5508,10 @@ _sdcTrackingCode.
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
 ! google tracking
-/client_204?$image,other,ping,script
-/csi_204?$image,other,ping,script
-/gen_204?$image,other,ping,script
-/generate_204$image,other,ping,script
+/client_204?
+/csi_204?
+/gen_204?
+/generate_204
 ! Adblock tracking
 ,adb=*&referer=
 -logabpstatus.
@@ -11017,7 +11017,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||googleapis.com/aam.js
 ||googleapis.com/gadasource/gada.js
 ||googleapis.com/ivc.js
-||googleapis.com^*/gen_204?
 ||googlecode.com^*/tracker.js
 ||googleusercontent.com/tracker/
 ||gotdns.com/track/blank.aspx?
@@ -11032,7 +11031,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gsn.chameleon.ad^$~script
 ||gsp1.baidu.com^
 ||gstatic.com/gadf/ga_dyn.js
-||gstatic.com/gen_204?
 ||gstatic.com/wcm/impl-
 ||gstatic.com/wcm/loader.js
 ||gtrk.s3.amazonaws.com^
