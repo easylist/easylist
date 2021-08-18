@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108181321
+! Version: 202108181327
 ! Title: EasyPrivacy
-! Last modified: 18 Aug 2021 13:21 UTC
+! Last modified: 18 Aug 2021 13:27 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14451,6 +14451,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! *** easylist:easyprivacy/easyprivacy_specific_cname.txt ***
 ! ||cart.matsuzaka-steak.com^
 ! ||form.ict-toshiba.jp^
+! Used as a clickthrough
+! ||clickmail.stubhub.com^
+||clickmail.stubhub.com^$image,script
 ! a8.net (https://github.com/AdguardTeam/cname-trackers/blob/master/trackers/a8_net.md)
 ||a8.01cloud.jp^
 ||a8.cyclemarket.jp^
@@ -23314,7 +23317,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||click1.e.thechive.com^
 ||click1.mail.paltalkpeople.com^
 ||click2.email.ticketmaster.com^
-||clickmail.stubhub.com^
 ||clicks-test.info.theiconic.com.au^
 ||clicks.6thstreet.com^
 ||clicks.burgerking.co.uk^
