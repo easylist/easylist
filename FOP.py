@@ -216,6 +216,9 @@ def fopsort (filename):
                         filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
+                    # Skip filters containing less than three characters
+                    if len(line) < 3:
+                        continue
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
