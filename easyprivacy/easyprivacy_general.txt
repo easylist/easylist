@@ -1298,6 +1298,7 @@
 /collect?k=
 /collect?r=
 /collect?tid=
+/collect?type=
 /collect_data.php?
 /collect_stat.
 /collect_v3.
@@ -2993,7 +2994,6 @@
 /nx_stat.
 /o.gif?
 /o.jpg?*&ref=
-/o.svg?
 /o_code.js
 /o_tealium.
 /oas_analytics.
@@ -4856,6 +4856,7 @@
 /wadsAdsLoaded/*
 /wanalytics/*
 /watchonline_cookies.
+/wbstats/index/*
 /wcount.php?
 /wdg/tracking-
 /wdg_tracking-
@@ -4916,7 +4917,7 @@
 /webtrack.$domain=~webtrack.ballcolegrave.co.uk|~webtrack.ballseed.com|~webtrack.dhlecs.com|~webtrack.dhlglobalmail.com
 /webtracker.
 /webTracking.$domain=~webtracking.girard-agediss.com
-/webtracking/*$~subdocument
+/webtracking/*$~subdocument,domain=~wwwapps.ups.com
 /WebTrackingHandler.
 /WebTrackingService.
 /webtraffic.js
@@ -5096,6 +5097,8 @@
 ://tracking.*/event
 ://tracking.*/tr.js
 ://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.md|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
+;type=eligibleimpression;
+;type=pixel;
 =comscoreAdobeDpvCall&
 =getSideStats&
 =googleanalytics_
