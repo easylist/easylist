@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202108310829
+! Version: 202108310856
 ! Title: EasyList
-! Last modified: 31 Aug 2021 08:29 UTC
+! Last modified: 31 Aug 2021 08:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53909,6 +53909,35 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js?
 @@||recaptcha.net/recaptcha/$script
+! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
+@@||apple.com^$generichide
+@@||bitbucket.org^$generichide
+@@||curiositystream.com^$generichide
+@@||discord.com^$generichide
+@@||disneyplus.com^$generichide
+@@||fastmail.com^$generichide
+@@||github.com^$generichide
+@@||gitlab.com^$generichide
+@@||hbomax.com^$generichide
+@@||mail.protonmail.com^$generichide
+@@||netflix.com^$generichide
+@@||open.spotify.com^$generichide
+@@||pandora.com^$generichide
+@@||paramountplus.com^$generichide
+@@||peacocktv.com^$generichide
+@@||slack.com^$generichide
+@@||teams.microsoft.com^$generichide
+@@||tidal.com^$generichide
+@@||tv.youtube.com^$generichide
+@@||web.archive.org^$generichide
+@@||web.telegram.org^$generichide
+@@||wikibooks.org^$generichide
+@@||wikidata.org^$generichide
+@@||wikinews.org^$generichide
+@@||wikipedia.org^$generichide
+@@||wikiquote.org^$generichide
+@@||wikiversity.org^$generichide
+@@||wiktionary.org^$generichide
 ! wordpress.org https://wordpress.org/plugins/woocommerce-google-adwords-conversion-tracking-tag/
 @@||ps.w.org^$image,domain=wordpress.org
 @@||s.w.org/wp-content/$stylesheet,domain=wordpress.org
@@ -53938,34 +53967,19 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ! Generichide
 @@||adblockplus.org^$generichide
 @@||aetv.com^$generichide
-@@||apple.com^$generichide
 @@||arstechnica.com^$generichide
 @@||bing.com/shop$generichide
 @@||brighteon.com^$generichide
 @@||cwtv.com^$generichide
 @@||dailymail.co.uk^$generichide
 @@||destinationamerica.com^$generichide
-@@||discord.com^$generichide
-@@||fastmail.com^$generichide
 @@||history.com^$generichide
-@@||mail.protonmail.com^$generichide
 @@||sciencechannel.com^$generichide
-@@||slack.com^$generichide
 @@||smallseotools.com^$generichide
 @@||sonichits.com^$generichide
 @@||soranews24.com^$generichide
-@@||teams.microsoft.com^$generichide
 @@||thefreedictionary.com^$generichide
 @@||tlc.com^$generichide
-@@||web.archive.org^$generichide
-@@||web.telegram.org^$generichide
-@@||wikibooks.org^$generichide
-@@||wikidata.org^$generichide
-@@||wikinews.org^$generichide
-@@||wikipedia.org^$generichide
-@@||wikiquote.org^$generichide
-@@||wikiversity.org^$generichide
-@@||wiktionary.org^$generichide
 @@||yibada.com^$generichide
 ! Search engine generichide (allowing searching of ad items)
 @@||bing.com/search?$generichide
