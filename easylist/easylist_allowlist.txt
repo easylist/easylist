@@ -72,8 +72,9 @@
 @@||connatix.com^*/connatix.player.js$script,domain=ebaumsworld.com|funker530.com|washingtonexaminer.com
 @@||crackle.com/vendor/AdManager.js$script,~third-party
 @@||cvs.com/webcontent/images/weeklyad/adcontent/$~third-party
-@@||dailymotion.com/embed/$subdocument
-@@||dailymotion.com/*.html$subdocument
+@@||dailymotion.com/embed$subdocument
+@@||dailymotion.com/player.html$subdocument
+@@||dailymotion.com/player/*.html$subdocument
 @@||dashboard.adskeeper.co.uk^$domain=dashboard.adskeeper.co.uk
 @@||davidsilverspares.co.uk/graphics/*_ad.gif$~third-party
 @@||digiads.com.au/images/shared/misc/ad-disclaimer.gif
@@ -203,6 +204,7 @@
 @@||sportsnet.ca/wp-content/plugins/bwp-minify/$domain=sportsnet.ca
 @@||static.ziffdavis.com/sitenotice/*/settings.js$domain=allestoringen.be|allestoringen.nl|downdetector.ae|downdetector.c|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de
 @@||static.ziffdavis.com/sitenotice/evidon-sitenotice-bundle.js$domain=allestoringen.be|allestoringen.nl|downdetector.ae|downdetector.c|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de
+@@||stives.co.uk/cms/advert_search_thumb.php$image,domain=chycor.co.uk
 @@||summitracing.com/global/images/bannerads/
 @@||sundaysportclassifieds.com/ads/$image,~third-party
 @@||survey.g.doubleclick.net^$script,domain=sporcle.com
@@ -240,21 +242,27 @@
 @@||hcaptcha.com^*/api.js?
 @@||recaptcha.net/recaptcha/$script
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
+@@||accounts.google.com^$generichide
 @@||apple.com^$generichide
 @@||bitbucket.org^$generichide
+@@||calendar.google.com^$generichide
+@@||contacts.google.com^$generichide
 @@||curiositystream.com^$generichide
 @@||discord.com^$generichide
 @@||disneyplus.com^$generichide
+@@||drive.google.com^$generichide
 @@||fastmail.com^$generichide
 @@||github.com^$generichide
 @@||gitlab.com^$generichide
 @@||hbomax.com^$generichide
 @@||mail.protonmail.com^$generichide
+@@||myaccount.google.com^$generichide
 @@||netflix.com^$generichide
 @@||open.spotify.com^$generichide
 @@||pandora.com^$generichide
 @@||paramountplus.com^$generichide
 @@||peacocktv.com^$generichide
+@@||photos.google.com^$generichide
 @@||slack.com^$generichide
 @@||teams.microsoft.com^$generichide
 @@||tidal.com^$generichide
