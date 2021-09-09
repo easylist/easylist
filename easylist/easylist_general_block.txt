@@ -26,6 +26,7 @@
 &adstype=
 &AdType=
 &adurl=
+&cbrandom=
 &clicktag=http
 &displayads=
 -ad-300x250.
@@ -714,6 +715,7 @@
 /ad-bucket.
 /ad-builder.
 /ad-button1.
+/ad-cache.
 /ad-callback.
 /ad-catalogue-
 /ad-cdn.$domain=~ad-cdn.getro.com
@@ -1896,10 +1898,10 @@
 /adpic.
 /adpic/*
 /adpicture.
-/adpictures/*$~image
+/adpictures/*
 /adping.
 /adpix/*
-/adplace/*$~image
+/adplace/*
 /adplace5_
 /adPlaceholder.
 /adplacement.
@@ -1907,7 +1909,7 @@
 /adplay.
 /adplayer-
 /adplayer.$domain=~adplayer.media|~adplayer.pro
-/adplayer/*
+/adplayer/*$~image
 /adplugin.
 /adplugin/*
 /adplugin_
@@ -2319,6 +2321,7 @@
 /ads/square2.
 /ads/square3.
 /ads/src/*
+/ads/stickyLb.
 /ads/storysponsors/*
 /ads/sub/*
 /ads/syndicated/*
@@ -3449,6 +3452,7 @@
 /banner-adv-
 /banner-affiliate-
 /banner-sponsor/*
+/banner-sponsors.
 /banner.asp?$third-party
 /banner.ca?
 /banner.cgi?
@@ -6681,6 +6685,7 @@
 ?wppaszoneid=
 ?wpproads-
 ?wpproadszoneid=
+?wpstealthadsjs=
 ?zoneid=*&ext=$script
 ?ZoneID=*&PageID=*&SiteID=$~image
 ?ZoneID=*&SiteID=*&PageID=$~image
@@ -7291,6 +7296,9 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! ezoic
+/cmbdv2.js
+/cmbv2.js
 ! (NSFW) watchmygf.me/smutr.com/fpo.xxx pre-rollad
 /contents/other/player/*
 ! shorten urls
@@ -7441,47 +7449,6 @@ _prebid_
 /g00/*/clientprofiler/adb
 ! linkbucks.com script
 /webservices/jsparselinks.aspx?$script
-! CDN-based filters
-/cdn-cgi/pe/bag2?*.speednetwork1.com
-/cdn-cgi/pe/bag2?*adsrvmedia
-/cdn-cgi/pe/bag2?*ajs.php
-/cdn-cgi/pe/bag2?r*.adglare.org
-/cdn-cgi/pe/bag2?r*.adroll.com
-/cdn-cgi/pe/bag2?r*.amazonaws.com*secure.js
-/cdn-cgi/pe/bag2?r*.codeonclick.com
-/cdn-cgi/pe/bag2?r*.content-ad.net
-/cdn-cgi/pe/bag2?r*.qualitypublishers.com
-/cdn-cgi/pe/bag2?r*.worldoffersdaily.com
-/cdn-cgi/pe/bag2?r*.zergnet.com
-/cdn-cgi/pe/bag2?r*adblade.com
-/cdn-cgi/pe/bag2?r*adk2.co
-/cdn-cgi/pe/bag2?r*ads.exoclick.com
-/cdn-cgi/pe/bag2?r*adsnative.com
-/cdn-cgi/pe/bag2?r*advertserve.com
-/cdn-cgi/pe/bag2?r*az708531.vo.msecnd.net
-/cdn-cgi/pe/bag2?r*bnserving.com
-/cdn-cgi/pe/bag2?r*clkrev.com
-/cdn-cgi/pe/bag2?r*content.ad
-/cdn-cgi/pe/bag2?r*contextual.media.net
-/cdn-cgi/pe/bag2?r*cpx.to
-/cdn-cgi/pe/bag2?r*eclkmpbn.com
-/cdn-cgi/pe/bag2?r*eclkspsa.com
-/cdn-cgi/pe/bag2?r*ero-advertising.com
-/cdn-cgi/pe/bag2?r*googleadservices.com
-/cdn-cgi/pe/bag2?r*intellitxt.com
-/cdn-cgi/pe/bag2?r*juicyads.com
-/cdn-cgi/pe/bag2?r*linksmart.com
-/cdn-cgi/pe/bag2?r*mellowads.com
-/cdn-cgi/pe/bag2?r*pipsol.net
-/cdn-cgi/pe/bag2?r*popads.net
-/cdn-cgi/pe/bag2?r*popcash.net
-/cdn-cgi/pe/bag2?r*puserving.com
-/cdn-cgi/pe/bag2?r*revcontent.com
-/cdn-cgi/pe/bag2?r*revdepo.com
-/cdn-cgi/pe/bag2?r*srvpub.com
-/cdn-cgi/pe/bag2?r*zwaar.org
-/cdn-cgi/pe/bag?r*cpalead.com
-/cdn-cgi/pe/bag?r*pubads.g.doubleclick.net
 ! adinsertion used on gizmodo.in lifehacker.co.in
 /datomata.widget.js
 ! domain parking redirection
@@ -7500,6 +7467,7 @@ _prebid_
 /abDetector.js
 /abp_detection/*
 /abtest_ab.js
+/ad-blocking-advisor/*
 /ad-blocking-alert/*
 /adb.min.js
 /adb_detector.
