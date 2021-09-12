@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109120505
+! Version: 202109120921
 ! Title: EasyPrivacy
-! Last modified: 12 Sep 2021 05:05 UTC
+! Last modified: 12 Sep 2021 09:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -12222,7 +12222,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xp.apple.com^$~ping
 ||yandexadexchange.net^
 ! Appcues
-/^https?:\/\/fast\.appcues\.com\/[0-9]{4,6}\.js/
+||fast.appcues.com^$script,third-party
 ! taboola
 ||am-vid-events.taboola.com^
 ||convsgmp.taboola.com^
@@ -24999,6 +24999,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
 @@||docodoco.jp^*/docodoco?key=$script,domain=jrtours.co.jp
 @@||e-stat.go.jp/modules/custom/retrieve/src/js/stat.js?$script,~third-party
+@@||fast.appcues.com^$script,domain=initial.inc
 @@||flipdesk.jp/wp/wp-content/themes/flipdesk/images/analytics3.png$image
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
