@@ -4,6 +4,7 @@
 &callback=hitStats_
 &event=view&
 &EventType=Impression&
+&hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com
 &mf_referrer=
 &pageReferrer=
@@ -1289,6 +1290,7 @@
 /collect/stats?
 /collect/tracking.
 /collect/view?
+/collect/view_count?
 /collect?appName
 /collect?callback=
 /collect?d=
@@ -2177,7 +2179,7 @@
 /headupstats.gif?
 /healthanalytics.js
 /heatmap_log.js
-/HeatmapSessionRecording/*
+/HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
 /hg?hc=&hb=*&vjs=
 /hgct?hc=&hb=*&vjs=
 /hints.netflame.cc/*
@@ -2646,6 +2648,7 @@
 /logAdv.
 /logaholictracker.
 /logAjaxErr_
+/LogAmpHit?
 /LogAnalysisTracker/*
 /logAutoMicroConversion?
 /logclick.
@@ -3261,11 +3264,13 @@
 /pixel/email/*$image
 /pixel/ga-
 /pixel/gtm-
+/pixel/host/?
 /pixel/img/*
 /pixel/impression/*
 /pixel/js/*$third-party
 /pixel/sbs?
 /Pixel/Script/Behavior?
+/pixel/stats/?
 /pixel/stream/*
 /pixel/view?
 /pixel/visit?
@@ -3606,6 +3611,7 @@
 /rum.min.
 /rum/events
 /rum/id?
+/rum/performance
 /rum_cmp?
 /rumstat.
 /rumtag.
@@ -3739,6 +3745,7 @@
 /SetSabreAnalyticsCookie.
 /setTDUID.do?
 /sfCounter/*
+/sfsites/auraAnalytics
 /sgtracker.js
 /share/analytics?
 /shareCounts.
@@ -4268,6 +4275,7 @@
 /track?cb=
 /track?data=
 /track?event=
+/track?event_id=
 /track?eventKey=
 /track?events=
 /track?name=
@@ -4997,6 +5005,7 @@
 /WTFarmersSite.
 /wtid.js
 /wtinit.js
+/wtrack?event=
 /wtstats/*
 /ww-analytics-
 /ww-performance-
@@ -5532,28 +5541,6 @@ _sdcTrackingCode.
 /wutime-adblocktracker/*
 _adblock_stat.
 _mongo_stats/
-! CDN-based filters
-/cdn-cgi/pe/bag2?*bluekai.com
-/cdn-cgi/pe/bag2?*bounceexchange.com
-/cdn-cgi/pe/bag2?*cdn.onthe.io%2Fio.js
-/cdn-cgi/pe/bag2?*chartbeat.js
-/cdn-cgi/pe/bag2?*dnn506yrbagrg.cloudfront.net
-/cdn-cgi/pe/bag2?*geoiplookup
-/cdn-cgi/pe/bag2?*getblueshift.com
-/cdn-cgi/pe/bag2?*histats.com
-/cdn-cgi/pe/bag2?*hs-analytics.net
-/cdn-cgi/pe/bag2?*log.outbrain.com
-/cdn-cgi/pe/bag2?*mc.yandex.ru
-/cdn-cgi/pe/bag2?*newrelic.com
-/cdn-cgi/pe/bag2?*nr-data.net
-/cdn-cgi/pe/bag2?*optimizely.com
-/cdn-cgi/pe/bag2?*piwik.js
-/cdn-cgi/pe/bag2?*quantserve.com
-/cdn-cgi/pe/bag2?*radarurl.com
-/cdn-cgi/pe/bag2?*scorecardresearch.com
-/cdn-cgi/pe/bag2?*static.getclicky.com%2Fjs
-/cdn-cgi/pe/bag2?*viglink.com
-/cdn-cgi/pe/bag2?*yieldbot.intent.js
 ! Russian rating sites
 /img.php?id=*&page=
 ://ivw.*/get?referrer=
