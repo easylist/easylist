@@ -4,6 +4,7 @@
 &callback=hitStats_
 &event=view&
 &EventType=Impression&
+&hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com
 &mf_referrer=
 &pageReferrer=
@@ -248,6 +249,7 @@
 /?sentry_key=
 /?sentry_version=
 /?swift-performance-tracking
+/@adshield/*
 /_/lite/performance/*
 /__analytics/*
 /__dam.gif?
@@ -398,6 +400,7 @@
 /ads_tracker.
 /ads_tracking.
 /adsct?
+/adshield-
 /adstat.
 /adstatistics/*
 /adstats.
@@ -1236,6 +1239,7 @@
 /clientstat?
 /clip-started.gif?
 /clk?utmwv=
+/cloudfrontvideotracker.
 /cls_report?
 /cls_rpt.gif?
 /cm-xtgreat?
@@ -1288,6 +1292,7 @@
 /collect/stats?
 /collect/tracking.
 /collect/view?
+/collect/view_count?
 /collect?appName
 /collect?callback=
 /collect?d=
@@ -1298,6 +1303,7 @@
 /collect?k=
 /collect?r=
 /collect?tid=
+/collect?type=
 /collect_data.php?
 /collect_stat.
 /collect_v3.
@@ -1419,6 +1425,7 @@
 /counter/stat.
 /counter/views/*
 /counter1.gif?
+/counter5.min.js
 /counter?id=
 /counter_1.php
 /counter_2.php?
@@ -1719,6 +1726,7 @@
 /event/pageviewgeodevice/*
 /event/rumdata?
 /event/track?
+/event/tracking
 /event/v3?
 /event/visit?
 /event?&event=
@@ -2173,7 +2181,7 @@
 /headupstats.gif?
 /healthanalytics.js
 /heatmap_log.js
-/HeatmapSessionRecording/*
+/HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
 /hg?hc=&hb=*&vjs=
 /hgct?hc=&hb=*&vjs=
 /hints.netflame.cc/*
@@ -2614,6 +2622,7 @@
 /log?format=
 /log?id=
 /log?kc=
+/log?method=
 /log?ref=
 /log?sLog=
 /log?tag=
@@ -2641,6 +2650,7 @@
 /logAdv.
 /logaholictracker.
 /logAjaxErr_
+/LogAmpHit?
 /LogAnalysisTracker/*
 /logAutoMicroConversion?
 /logclick.
@@ -2992,7 +3002,6 @@
 /nx_stat.
 /o.gif?
 /o.jpg?*&ref=
-/o.svg?
 /o_code.js
 /o_tealium.
 /oas_analytics.
@@ -3257,11 +3266,13 @@
 /pixel/email/*$image
 /pixel/ga-
 /pixel/gtm-
+/pixel/host/?
 /pixel/img/*
 /pixel/impression/*
 /pixel/js/*$third-party
 /pixel/sbs?
 /Pixel/Script/Behavior?
+/pixel/stats/?
 /pixel/stream/*
 /pixel/view?
 /pixel/visit?
@@ -3602,6 +3613,7 @@
 /rum.min.
 /rum/events
 /rum/id?
+/rum/performance
 /rum_cmp?
 /rumstat.
 /rumtag.
@@ -3735,6 +3747,7 @@
 /SetSabreAnalyticsCookie.
 /setTDUID.do?
 /sfCounter/*
+/sfsites/auraAnalytics
 /sgtracker.js
 /share/analytics?
 /shareCounts.
@@ -4264,6 +4277,7 @@
 /track?cb=
 /track?data=
 /track?event=
+/track?event_id=
 /track?eventKey=
 /track?events=
 /track?name=
@@ -4855,6 +4869,7 @@
 /wadsAdsLoaded/*
 /wanalytics/*
 /watchonline_cookies.
+/wbstats/index/*
 /wcount.php?
 /wdg/tracking-
 /wdg_tracking-
@@ -4915,7 +4930,7 @@
 /webtrack.$domain=~webtrack.ballcolegrave.co.uk|~webtrack.ballseed.com|~webtrack.dhlecs.com|~webtrack.dhlglobalmail.com
 /webtracker.
 /webTracking.$domain=~webtracking.girard-agediss.com
-/webtracking/*$~subdocument
+/webtracking/*$~subdocument,domain=~wwwapps.ups.com
 /WebTrackingHandler.
 /WebTrackingService.
 /webtraffic.js
@@ -4992,6 +5007,7 @@
 /WTFarmersSite.
 /wtid.js
 /wtinit.js
+/wtrack?event=
 /wtstats/*
 /ww-analytics-
 /ww-performance-
@@ -5095,6 +5111,8 @@
 ://tracking.*/event
 ://tracking.*/tr.js
 ://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.md|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
+;type=eligibleimpression;
+;type=pixel;
 =comscoreAdobeDpvCall&
 =getSideStats&
 =googleanalytics_
@@ -5116,6 +5134,7 @@
 ?event=tracking:ajax
 ?eventtype=impression&pid=
 ?eventtype=request&pid=
+?log=stats-
 ?logType=impression&
 ?logType=trackEvent&
 ?pageviews=$third-party
@@ -5231,6 +5250,7 @@ cgi-bin/counter
 .klclick.com/$image
 .list-manage.com/track/
 .mailbutler.io/tracking/
+.mailing.*/oo/$image
 .maillist-manage.com/clicks/$image
 .members.babbel.com/mo/
 .mightyape.co.nz/mo?
@@ -5502,10 +5522,12 @@ _sdcTrackingCode.
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
 ! google tracking
-/client_204?
-/csi_204?
-/gen_204?
-/generate_204
+/client_204?$image,other,ping,script
+/csi_204?$image,other,ping,script
+/gen_204?$image,other,ping,script
+/generate_204$image,other,ping,script
+||googleapis.com^*/gen_204?
+||gstatic.com/gen_204?
 ! Adblock tracking
 ,adb=*&referer=
 -logabpstatus.
@@ -5522,28 +5544,6 @@ _sdcTrackingCode.
 /wutime-adblocktracker/*
 _adblock_stat.
 _mongo_stats/
-! CDN-based filters
-/cdn-cgi/pe/bag2?*bluekai.com
-/cdn-cgi/pe/bag2?*bounceexchange.com
-/cdn-cgi/pe/bag2?*cdn.onthe.io%2Fio.js
-/cdn-cgi/pe/bag2?*chartbeat.js
-/cdn-cgi/pe/bag2?*dnn506yrbagrg.cloudfront.net
-/cdn-cgi/pe/bag2?*geoiplookup
-/cdn-cgi/pe/bag2?*getblueshift.com
-/cdn-cgi/pe/bag2?*histats.com
-/cdn-cgi/pe/bag2?*hs-analytics.net
-/cdn-cgi/pe/bag2?*log.outbrain.com
-/cdn-cgi/pe/bag2?*mc.yandex.ru
-/cdn-cgi/pe/bag2?*newrelic.com
-/cdn-cgi/pe/bag2?*nr-data.net
-/cdn-cgi/pe/bag2?*optimizely.com
-/cdn-cgi/pe/bag2?*piwik.js
-/cdn-cgi/pe/bag2?*quantserve.com
-/cdn-cgi/pe/bag2?*radarurl.com
-/cdn-cgi/pe/bag2?*scorecardresearch.com
-/cdn-cgi/pe/bag2?*static.getclicky.com%2Fjs
-/cdn-cgi/pe/bag2?*viglink.com
-/cdn-cgi/pe/bag2?*yieldbot.intent.js
 ! Russian rating sites
 /img.php?id=*&page=
 ://ivw.*/get?referrer=
