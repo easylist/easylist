@@ -26,6 +26,7 @@
 &adstype=
 &AdType=
 &adurl=
+&cbrandom=
 &clicktag=http
 &displayads=
 -ad-300x250.
@@ -714,6 +715,7 @@
 /ad-bucket.
 /ad-builder.
 /ad-button1.
+/ad-cache.
 /ad-callback.
 /ad-catalogue-
 /ad-cdn.$domain=~ad-cdn.getro.com
@@ -1749,12 +1751,10 @@
 /adlink/*$domain=~adlinktech.com
 /adLink728.
 /adlink?
-/adlink_
 /adlinks.$domain=~adlinks.to
 /adlinks2.
 /adlinks_
 /adload.
-/adloader.
 /adloader/*
 /adloaderplus?
 /Adlocal/*
@@ -1896,10 +1896,10 @@
 /adpic.
 /adpic/*
 /adpicture.
-/adpictures/*$~image
+/adpictures/*
 /adping.
 /adpix/*
-/adplace/*$~image
+/adplace/*
 /adplace5_
 /adPlaceholder.
 /adplacement.
@@ -1907,7 +1907,7 @@
 /adplay.
 /adplayer-
 /adplayer.$domain=~adplayer.media|~adplayer.pro
-/adplayer/*
+/adplayer/*$~image
 /adplugin.
 /adplugin/*
 /adplugin_
@@ -2319,6 +2319,7 @@
 /ads/square2.
 /ads/square3.
 /ads/src/*
+/ads/stickyLb.
 /ads/storysponsors/*
 /ads/sub/*
 /ads/syndicated/*
@@ -2532,6 +2533,7 @@
 /adscontent.
 /adscontent2.
 /adscontrol.
+/adscontroller.
 /adscot/*
 /adscpv/*
 /adscript1.
@@ -3081,12 +3083,10 @@
 /advertisebanners/*
 /advertisehere.
 /advertisement-$~script,domain=~berlin-airport.de
-/advertisement/*
 /advertisement160.
 /advertisement?zoneid=
 /advertisement_$~script
 /advertisements-
-/advertisements.
 /advertisements/*$domain=~ellefanningfan.net
 /advertisements?
 /advertisements_
@@ -3098,6 +3098,7 @@
 /advertising-$image,domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~advertising-stands.com.ua|~advertising.amazon.com|~deals-italy.com|~microsoft.com|~outbrain.com|~yellowimages.com
 /advertising.$~script,~xmlhttprequest,domain=~advertising.amazon.ae|~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.amazon.sa|~advertising.berlin-airport.de|~advertising.boardgamegeek.com|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.greunenberg.com|~advertising.hulu.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.nzme.co.nz|~advertising.org.il|~advertising.racingpost.com|~advertising.roku.com|~advertising.scoop.co.nz|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com|~advertising.utexas.edu|~advertising.vrisko.gr|~advision.co
 /advertising/banner_
+/advertising/banners/*
 /advertising/traffic-
 /advertising2.
 /advertising?
@@ -3449,6 +3450,7 @@
 /banner-adv-
 /banner-affiliate-
 /banner-sponsor/*
+/banner-sponsors.
 /banner.asp?$third-party
 /banner.ca?
 /banner.cgi?
@@ -4868,6 +4870,7 @@
 /lazy-ads@
 /lazyad-
 /lazyad.
+/lazyload.ads?
 /lbl_ad.
 /leadads/*
 /leader_ad.
@@ -5732,6 +5735,7 @@
 /scripts/ads/*
 /scripts/AdService_
 /scripts/afc/*
+/scripts/chatur.js
 /scripts/zanox-
 /scrollAd-
 /scrollads/*
@@ -6086,6 +6090,7 @@
 /superads-$script
 /superads_
 /supernorthroomad.
+/suv4.js
 /svnad/*
 /switchadbanner.
 /SWMAdPlayer.
@@ -6144,6 +6149,7 @@
 /textads-
 /textads.
 /textads/*
+/textads?
 /textads_
 /textadspromo_
 /tfs-ad.
@@ -7292,6 +7298,11 @@ takeover_banner_
 ||online.*/promoredirect?key=
 ||ox-d.*^auid=
 ||serve.*/promoload?
+! Amazon
+/e/cm?$subdocument
+/e/ir?$image,script
+! ezoic
+/cmbdv2.js
 ! (NSFW) watchmygf.me/smutr.com/fpo.xxx pre-rollad
 /contents/other/player/*
 ! shorten urls
@@ -7411,6 +7422,7 @@ _prx/ba_$script
 /pbjsandwich-
 /pbjsandwich.
 /porpoiseant/*
+/prebid-min-
 /prebid-worker/*
 /prebid.$domain=~prebid.org
 /prebid/*
@@ -7460,6 +7472,7 @@ _prebid_
 /abDetector.js
 /abp_detection/*
 /abtest_ab.js
+/ad-blocking-advisor/*
 /ad-blocking-alert/*
 /adb.min.js
 /adb_detector.
