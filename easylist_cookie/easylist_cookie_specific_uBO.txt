@@ -92,6 +92,7 @@ vr.fi##div[data-testid="modal"]
 aixfoam.*##[id="cc-notification"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
 ! scripts
+kiuruvesilehti.fi,urjalansanomat.fi##+js(acs, cm_limit)
 esbo.fi,espoo.fi##+js(aeld, /^(?:DOMContentLoaded|load)$/, function I())
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
