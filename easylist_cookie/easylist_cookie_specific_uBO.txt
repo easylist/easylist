@@ -20,6 +20,7 @@ mega.io,mega.nz##.overlayed .bottom-page.scroll-block:style(filter: none !import
 aixfoam.*##.wrapper:style(filter: none !important)
 schulze-immobilien.de##*:style(filter: none !important)
 gov.lv##body:style(overflow: auto !important;)
+vr.fi##div[data-testid="modal"]:not(:has(div[data-testid="cookie-consent-modal"])):style(display: block !important)
 !
 backmarket.de##._3NAusrrr
 bing.com##.bnp_cookie_banner
@@ -87,8 +88,8 @@ bundesanzeiger.de###cc
 interestingengineering.com##.modal-backdrop
 bundesanzeiger.de###cc > #cc_banner
 paihdelinkki.fi###sliding-popup.sliding-popup-bottom
+vr.fi##div[data-testid="modal"]
 aixfoam.*##[id="cc-notification"]
-vr.fi##body > script[src] + div[data-testid="modal"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
 ! scripts
 esbo.fi,espoo.fi##+js(aeld, /^(?:DOMContentLoaded|load)$/, function I())
