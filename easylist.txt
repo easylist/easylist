@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202110042358
+! Version: 202110050236
 ! Title: EasyList
-! Last modified: 04 Oct 2021 23:58 UTC
+! Last modified: 05 Oct 2021 02:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -50531,38 +50531,33 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 ||thepiratebay.*/static/$subdocument
 ||thepiratebay10.org/static/js/UYaf3EPOVwZS3PP.js
 ! Yavli.com
-/^https?:\/\/(.+?\.)?allthingsvegas\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?aupetitparieur\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?allthingsvegas\.com[\/]{1,9}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?aupetitparieur\.com[\/]{1,}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?canadafreepress\.com\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?canadafreepress\.com\/images\/uploads\/[a-zA-Z]{6,15}\-.*/
-/^https?:\/\/(.+?\.)?concomber\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?conservativefiringline\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?dailyheadlines\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?dailyheadlines\.net\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?dailylol\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?dailylol\.com\/wp-content\/uploads\/.*[a-zA-Z]{4,9}\-/
-/^https?:\/\/(.+?\.)?dcdirtylaundry\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?gamersheroes\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?grammarist\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?ipatriot\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?concomber\.com[\/]{1,}.*[a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/$image
+/^https?:\/\/(.+?\.)?conservativefiringline\.com[\/]{1,}.*[a-zA-Z0-9]{7,9}\/[a-zA-Z0-9]{10,}\/.*/
+/^https?:\/\/(.+?\.)?dailylol\.com[\/]{1,}.*[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?dailylol\.com\/wp-content\/uploads\/.*[a-zA-Z]{7,}\-[a-z0-9]{8,}\-/
+/^https?:\/\/(.+?\.)?dcdirtylaundry\.com[\/]{1,}.*[a-zA-Z0-9]{9,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?grammarist\.com[\/]{1,}.*[a-zA-Z0-9]{9,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?ipatriot\.com[\/]{1,}.*[a-zA-Z0-9]{9,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?letocard\.fr[\/]{1,}.*[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?letocard\.fr\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?lovezin\.fr\/[a-zA-Z]{7,18}\//
-/^https?:\/\/(.+?\.)?mamieastuce\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?meilleurpronostic.fr\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?menrec\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?naturalblaze\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?newser\.com\/[a-zA-Z0-9]{2,4}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?patriotnationpress\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?lovezin\.fr[\/]{1,}.*[a-zA-Z0-9]{7,9}\/[a-zA-Z0-9]{10,}\/.*/
+/^https?:\/\/(.+?\.)?mamieastuce\.com[\/]{1,}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?meilleurpronostic\.fr\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?menrec\.com\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?naturalblaze\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{14,}\.*/
+/^https?:\/\/(.+?\.)?newser\.com[\/]{1,}.*[a-zA-Z0-9]{5,}\/[a-zA-Z0-9]{5,}\/.*/
+/^https?:\/\/(.+?\.)?patriotnationpress\.com[\/][\/a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{4,}\/.*/
 /^https?:\/\/(.+?\.)?reviveusa\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?rightwingnews\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?survivalnation\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?thinkamericana\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?topminceur\.fr\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?rightwingnews\.com[\/]{1,9}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/$image
+/^https?:\/\/(.+?\.)?topminceur\.fr\/[a-zA-Z0-9]{6,}\/[a-zA-Z0-9]{3,}\/.*/
 /^https?:\/\/(.+?\.)?toptenz\.net\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?tosavealife\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?videogamesblogger\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?vitamiiin\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
-/^https?:\/\/(.+?\.)?writerscafe\.org\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?videogamesblogger\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{8,}\.*/
+/^https?:\/\/(.+?\.)?vitamiiin\.com\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/(.+?\.)?writerscafe\.org[\/]{1,}.*[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
 ! webrtc-ads
 $webrtc,domain=ack.net|allthetests.com|azvideo.net|champion.gg|clicknupload.link|colourlovers.com|convertcase.net|csgolounge.com|dispatch.com|fastplay.to|go4up.com|gounlimited.to|janjua.pw|janjua.tv|jpost.com|megaup.net|merriam-webster.com|netdna-storage.com|ouo.io|ouo.press|rlslog.net|sourceforge.net|spanishdict.com|telegram.com|torlock.icu|torlock2.com|uptobox.com|videowood.tv|vidtodo.com|yts.gs|yts.mx
 ! websocket-ads
