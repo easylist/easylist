@@ -1,5 +1,8 @@
 ! uBO Sepecific fixes
 ! :style fixes
+mtvuutiset.fi###onetrust-consent-sdk:style(display: none)
+mtvuutiset.fi##.container:has(.iframe-video) ~ #onetrust-consent-sdk:style(display: block !important)
+mtvuutiset.fi##.container:has(a[href^="https://twitter.com/"]) ~ #onetrust-consent-sdk:style(display: block !important)
 wetter.at##.full.blured:style(filter: none !important;)
 taloon.com##.header__top:style(position: unset !important)
 bosch-easycontrol.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
