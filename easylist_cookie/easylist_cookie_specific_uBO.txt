@@ -1,5 +1,8 @@
 ! uBO Sepecific fixes
 ! :style fixes
+arvopaperi.fi,kauppalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi###alma-cmpv2-container:style(display: none)
+arvopaperi.fi,kauppalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi###root:has(.article-body div[color^="#"]) ~ #alma-cmpv2-container:style(display: block !important)
+arvopaperi.fi,kauppalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi###root:has(.article-body p:has-text(Sisältöä ei voitu ladata.)) ~ #alma-cmpv2-container:style(display: block !important)
 yle.fi###yle-consent-sdk-container:style(display: none)
 yle.fi###yle-consent-sdk-container:has(~ .yle__app h2:has-text(Sisältöä ei voida näyttää)):style(display: block !important)
 wetter.at##.full.blured:style(filter: none !important;)
