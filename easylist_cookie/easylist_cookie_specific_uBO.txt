@@ -1,5 +1,7 @@
 ! uBO Sepecific fixes
 ! :style fixes
+mtvuutiset.fi###onetrust-consent-sdk:style(display: none)
+mtvuutiset.fi##.container:has(.consent-blocking-embed-message) ~ #onetrust-consent-sdk:style(display: block !important)
 yle.fi###yle-consent-sdk-container:style(display: none)
 yle.fi###yle-consent-sdk-container:has(~ .yle__app h2:has-text(Sisältöä ei voida näyttää)):style(display: block !important)
 wetter.at##.full.blured:style(filter: none !important;)
