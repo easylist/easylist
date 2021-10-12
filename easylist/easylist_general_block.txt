@@ -74,7 +74,6 @@
 -ad-marker.
 -ad-master/
 -ad-pixel-
--ad-plugin-
 -ad-random/
 -ad-refresh.
 -ad-refresh/
@@ -261,11 +260,9 @@
 -games/ads/
 -gif-advert.
 -google-ad.
--google-ads-
 -google-ads.
 -google-ads/
 -google-adsense.
--google2-ad-
 -gpt-ad-$~xmlhttprequest
 -header_ads/
 -housead-
@@ -678,6 +675,7 @@
 /aa/www/*
 /aaddright.
 /aamsz=
+/ab_fl.js
 /abm.asp?
 /abm.aspx
 /abmw.asp
@@ -1533,6 +1531,7 @@
 /adcreatives/*
 /adcss/*
 /adctrl/*
+/adCustom-
 /adcxtnew_
 /adcycle.
 /adcycle/*
@@ -1983,7 +1982,6 @@
 /adrun.
 /adrunner.
 /adruptive.
-/ads-01.
 /ads-03.
 /ads-04.
 /ads-05.
@@ -2869,7 +2867,6 @@
 /adtaily_
 /adtaobao.
 /adTargeting.$domain=~adtargeting.com
-/adtech-
 /adtech.$domain=~adtech.co.uk|~adtech.md
 /adtech/*
 /adtech;
@@ -3231,6 +3228,7 @@
 /adx_exo_
 /adx_flash.
 /adx_iframe_
+/AdxAdmin/Ads/*
 /adxads.
 /adxcm_
 /adxrotate/*
@@ -4153,6 +4151,7 @@
 /feature/ads/*
 /featuredadshome.
 /feedads.
+/fel456.js
 /fetchJsAd.
 /fif.html?s=
 /fifligatus.
@@ -4187,6 +4186,7 @@
 /flexads?
 /fliionosadcapture-
 /flirt4free.
+/fload.js
 /float-ads/*
 /float_ad.
 /floatad_
@@ -4248,10 +4248,12 @@
 /friendfinder_
 /frnads.
 /frndlduck-usnt-
+/fro_lo.js
 /front/ad/*
 /front/ads-
 /frontads/*
 /frontend/ads/*
+/frontend_loader.js
 /frontpagead/*
 /ftp/adv/*
 /full/ads/*
@@ -5121,6 +5123,7 @@
 /netspiderads3.
 /network_ad.
 /neudesicad.
+/neverblock/*
 /new-ads/*
 /new-client/ads.
 /new/ad/*
@@ -7244,7 +7247,6 @@ _skyscraper160x600.
 _slider_ad.
 _Slot_Adv_
 _small_ad.
-_smartads_
 _sponsor/css/
 _sponsor_banners/
 _sponsor_logic.
@@ -7319,10 +7321,7 @@ takeover_banner_
 /earn.php?z=$popup,subdocument
 ! https://github.com/uBlockOrigin/uAssets/issues/2364
 /pop2.js
-! Native advert
-/\:\/\/data.*\.com\/[a-zA-Z0-9]{30,}/$third-party,xmlhttprequest
 ! Ad-insertion script (see on: celebrityweightloss.com, myfirstclasslife.com, cultofmac.com)
-.webp?*&cb=$script,~third-party
 /banger.js
 /detroitchicago/anaheim.js
 /detroitchicago/boise.js
@@ -7339,61 +7338,6 @@ takeover_banner_
 /ezo/*$script,~third-party,domain=~yandex.by|~yandex.com|~yandex.kz|~yandex.ru|~yandex.ua
 /ezoic/*$script,~third-party
 /jellyfish.webp$script
-! Self hosted Ad scripts (seen on: ibtimes.co.uk/newsweek.com)
-/ima3.js
-/imasdk/*
-! https://github.com/sanosay/exads-adblock
-.php?mg=$image
-/_b*.php?img=$image
-/_p*.php?img=$image
-/_p4.php$script
-/_ra_lib*.js$script
-/ab_fl.js$script
-/ac/rep.php$script
-/b3.php?*=$script
-/b3.php?img=$image
-/ba_*/?fel=$script
-/backend_loader.php$script,~third-party
-/baha.php
-/be568.js
-/bl.php?*=$image,script
-/dg.php?wr=
-/ebldr.php
-/ebloader.
-/ex/b.php
-/exads-
-/exbl.js?
-/exbl.min.js?
-/exbl.php?
-/exbls1.js?
-/exblss1.js?
-/exo-force-
-/exo-loader/*
-/exo/ExoNative
-/exo_frnd_
-/exo_na/*$script,subdocument
-/fel456.js
-/fload.js
-/floader.js$script
-/fro_lo.js$script
-/frontend_loader.js$script
-/frontend_loador.js$script
-/iamback.php$script
-/lib/?img=$image
-/misc/ex_loader.
-/nb-back-sol?
-/nb/avanti.
-/nb/b_lo.php
-/nb/frontale.
-/nb/frontend.js
-/nb_front.js$script
-/netblock/netblock.js$script
-/neverblock/*
-/nvr_bcknd.
-/nvrblck.
-/scripts/sweet/*$script
-_nb_sys.$script,~third-party
-_prx/ba_$script
 ! prebid scripts
 -prebid-
 -prebid.$script
@@ -7499,6 +7443,7 @@ _prebid_
 /adblockkiller.
 /adblockpopup.
 /adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
+/ads-blocking-detector.
 /adsblocker.
 /anti-adblock/*$~stylesheet
 /anti_ab.
