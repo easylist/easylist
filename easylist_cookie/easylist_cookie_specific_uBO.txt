@@ -1,5 +1,7 @@
 ! uBO Sepecific fixes
 ! :style fixes
+mtvuutiset.fi###onetrust-consent-sdk:style(display: none)
+mtvuutiset.fi##.container:has(.consent-blocking-embed-message) ~ #onetrust-consent-sdk:style(display: block !important)
 yle.fi###yle-consent-sdk-container:style(display: none)
 yle.fi###yle-consent-sdk-container:has(~ .yle__app h2:has-text(Sisältöä ei voida näyttää)):style(display: block !important)
 wetter.at##.full.blured:style(filter: none !important;)
@@ -29,12 +31,11 @@ backmarket.de##._3NAusrrr
 ylasatakunta.fi##.ag_cookie_banner
 uusisuomi.fi,vuokraovi.com##.alma-data-policy-banner
 bing.com##.bnp_cookie_banner
-luhta.com##.cookie-consent
 elisaviihde.fi##.ea-cookie-disclaimer
 bbc.com##.fc-consent-root
 pringles.com##.truste_box_overlay
 pringles.com##.truste_overlay
-luhta.com###cookie-consent
+maxgaming.fi###cookie_consent
 acea.it###cookieModal
 varusteleka.com,varusteleka.fi##.cookie_settings_container
 mundodeportivo.com,lavanguardia.com###didomi-host
@@ -92,6 +93,7 @@ thw.de##.mfp-container
 thw.de##.mfp-bg
 thw.de##.mfp-wrap
 varma.fi##.vfm--inset
+verkkokauppa.com##.vk-cookie-notification
 schulze-immobilien.de##.wrap__cookie
 imoradar24.ro##.modal-backdrop
 yoigo.com##thor-cookies
@@ -100,12 +102,13 @@ bundesanzeiger.de###cc
 interestingengineering.com##.modal-backdrop
 bundesanzeiger.de###cc > #cc_banner
 paihdelinkki.fi###sliding-popup.sliding-popup-bottom
+luhta.com##[class~="cookie-consent"]
 vr.fi##div[data-testid="modal"]
 aixfoam.*##[id="cc-notification"]
+luhta.com##[id="cookie-consent"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
 ! scripts
 kiuruvesilehti.fi,urjalansanomat.fi##+js(aeld, scroll, innerHeight)
-esbo.fi,espoo.fi##+js(aeld, /^(?:DOMContentLoaded|load)$/, function I())
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
 vr.fi##+js(aeld, wheel, preventDefault)
