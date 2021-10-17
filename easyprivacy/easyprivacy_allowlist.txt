@@ -29,7 +29,7 @@
 @@||analytics.tercept.com/js/ga.js$script,~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
-@@||api.cxense.com/public/widget/data?$domain=marketwatch.com|wsj.com
+@@||api.cxense.com/public/widget/data?$domain=bizjournals.com|marketwatch.com|wsj.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=right-on.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=account.pennytel.com.au|speedcheck.ky
@@ -56,7 +56,7 @@
 @@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
 @@||boots.com/wcsstore/ebootsstorefrontassetstore/javascript/analytics.js$~third-party
 @@||catalogue.jbhifi.com.au^*/static/analytics.js$script,~third-party
-@@||cdn.cxense.com^$script,domain=marketwatch.com
+@@||cdn.cxense.com^$script,domain=bizjournals.com|marketwatch.com
 @@||cleverpush.com/channel/$script,domain=bsdex.de
 @@||community.brave.com/t/$xmlhttprequest
 @@||d2wy8f7a9ursnm.cloudfront.net^$script,domain=staples.ca
@@ -70,6 +70,7 @@
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||humaninterest.com/api/analytics/$script,~third-party
+@@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
@@ -357,7 +358,7 @@
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||weightwatchers.com/optimizelyjs/$script,~third-party
 @@||where2getit.com/traderjoes/rest/clicktrack?$domain=traderjoes.com
-@@||widget.trustpilot.com/bootstrap/$script,domain=exodus.co.uk
+@@||widget.trustpilot.com/bootstrap/$script,domain=exodus.co.uk|imyfone.com
 @@||wix.com/_api/*count?type$~third-party
 @@||wp.com^*/google-analytics-for-wordpress/$domain=wordpress.org
 @@||wplogout.com/wp-content/uploads/*Google$image,~third-party
@@ -386,6 +387,7 @@
 ! CNAME (Specific allowlists)
 @@||alkosto.cdn.adglare.net^$image,xmlhttprequest,domain=alkosto.com|ktronix.com
 @@||alkosto.engine.adglare.net^$script,xmlhttprequest,domain=alkosto.com|ktronix.com
+@@||app.clarity.so^$~third-party
 @@||calo.extole.io^$script,xmlhttprequest,domain=refer.calo.app
 @@||mycleverpush.com/iframe?$domain=bsdex.de
 @@||n8s.jp^$script,domain=nikkei.com

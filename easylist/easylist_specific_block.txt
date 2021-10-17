@@ -402,8 +402,7 @@
 !
 /^https?:\/\/[0-9a-z]{8,29}\.com\/.*/$third-party,domain=9xmovies.app|9xupload.xyz|cloudvideo.tv|dood.watch|flashx.net|mixdrop.co|mixdrop.sx|mixdrop.to|mystream.to|ovagames.com|playtube.ws|strcloud.in|strtape.cloud|strtape.tech|strtapeadblock.club|supervideo.tv|uproxy.to|upstream.to|vidlox.me|vivo.sx|voe.sx|vupload.com|wowlive.info
 !
-/^https?:\/\/.*\.[0-9a-z]{3,6}\.xyz\/_.*/$script,third-party
-/^https?:\/\/[0-9a-z]{3,6}\.xyz\/_.*/$script,third-party
+/^https?:\/\/cdn\.[0-9a-z]{3,6}\.xyz\/[a-z0-9]{8,}\.js$/$script,third-party
 !
 ! Buff sites
 ||dotabuff.com/a.js
@@ -420,9 +419,8 @@
 ! In-page video advertising.
 ||avantisvideo.com/avm/js/video-loader.js$script,third-party
 ||channelexco.com/player/$third-party
-||connatix.com/connatix.player.js$script,third-party
-||connatix.com/connatix.playspace.js$script,third-party
-||connatix.com^*/connatix.player.js$script,third-party
+||connatix.com^$third-party
+||embed.sendtonews.com^$script,third-party
 ||jwpcdn.com^$script,domain=dexerto.com
 ||live.primis.tech^$third-party
 ||play.anyclip.com^$script,third-party
@@ -560,7 +558,6 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 /^https?:\/\/(.+?\.)?meilleurpronostic\.fr\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?menrec\.com\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?naturalblaze\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{14,}\.*/
-/^https?:\/\/(.+?\.)?newser\.com[\/]{1,}.*[a-zA-Z0-9]{5,}\/[a-zA-Z0-9]{5,}\/.*/$xmlhttprequest
 /^https?:\/\/(.+?\.)?patriotnationpress\.com[\/][\/a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{4,}\/.*/
 /^https?:\/\/(.+?\.)?reviveusa\.com\/[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?rightwingnews\.com[\/]{1,9}.*[a-zA-Z0-9]{8,}\/[a-zA-Z0-9]{6,}\/.*/$image
@@ -569,6 +566,7 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 /^https?:\/\/(.+?\.)?videogamesblogger\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{8,}\.*/
 /^https?:\/\/(.+?\.)?vitamiiin\.com\/[\/][\/a-zA-Z0-9]{3,}\/[a-zA-Z0-9]{6,}\/.*/
 /^https?:\/\/(.+?\.)?writerscafe\.org[\/]{1,}.*[a-zA-Z0-9]{3,7}\/[a-zA-Z0-9]{6,}\/.*/
+/^https?:\/\/www\.newser\.com[\/]{1,}.*[a-zA-Z0-9]{5,}\/[a-zA-Z0-9]{5,}\/.*js/$xmlhttprequest
 ! webrtc-ads
 $webrtc,domain=ack.net|allthetests.com|azvideo.net|champion.gg|clicknupload.link|colourlovers.com|convertcase.net|csgolounge.com|dispatch.com|fastplay.to|go4up.com|gounlimited.to|janjua.pw|janjua.tv|jpost.com|megaup.net|merriam-webster.com|netdna-storage.com|ouo.io|ouo.press|rlslog.net|sourceforge.net|spanishdict.com|telegram.com|torlock.icu|torlock2.com|uptobox.com|videowood.tv|vidtodo.com|yts.gs|yts.mx
 ! websocket-ads
