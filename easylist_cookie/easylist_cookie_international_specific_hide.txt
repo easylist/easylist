@@ -6,7 +6,7 @@ oeffnungszeitenbuch.de###CCcont
 e-formel.de###CKC
 singles-in-stuttgart.de,wander-community.de###DC
 vdk.de###DSE
-galaxus.de###__next > div[aria-hidden]
+galaxus.de###__next > div[aria-hidden]:not([data-layout-container])
 gira.de###ac_frame
 spielfilm.de###alert
 weltwoche.ch###alteAusgabenCovers
@@ -108,6 +108,7 @@ sightseeing-kontor.de###sk-info
 mydealz.de,preisjaeger.at###softMessages-list
 soldesign.de###solbox
 amazon.de###sp-cc
+jetztlive.com###splash-consent
 urteile-gesetze.de###stickyFooter
 camp-firefox.de,soeren-hentzschel.at###storage-notice
 sozialleistungen.info,tiershop.de###toast-container
@@ -163,6 +164,7 @@ schmidtnorm.at##.col-12 > div > div > .container
 diebayerische.de,fanbike.de,speicherguide.de##.consent
 usz.ch##.consentManagement
 dbna.com##.consentbar
+andinet.de##.coo
 borgware.de,buffalo.de,daparto.de,del.org,donaukurier.de,matratzen-concord.de,model-kartei.de,pyur.com,signal-iduna.de,spartanien.de,starcar.de,thegap.at,unumotors.com##.cookie
 capcom-germany.de,dtstudyclub.de,insel-sylt.de,medela.de,parfumsclub.de,reifenlehmann.de,selfhost.de,spie.de,svww.de##.cookies
 stadtwerke-luebz.de##.data-consent
@@ -172,6 +174,7 @@ spaetzlesuche.de##.dialog-no-close
 die-linke.de,dielinke.berlin,lexus.at,lexus.de##.disclaimer
 jobscout24.ch##.disclaimer-message
 efinancialcareers.de##.dismissable-notifications
+meinwomo.net##.divb
 doctolib.de##.dl-drawer-bottom
 rtl-living.de,rtl.de,vox.de##.dnt__container
 i-dex.de,i-love-tec.de,moebel-und-garten.de##.dsgvo
@@ -182,6 +185,7 @@ speisebaron.de##.fixed-bottom.navbar
 bss-sichelstiel.de,smimea.info##.fixed-note
 sg-weber.de##.flash-info
 dws.de##.flash-message__wrapper
+wort.lu##.footer-legal
 unifilm.de##.form-dsgvo
 frankonia.de##.fr-c-message
 jesus.de##.gaoop
@@ -417,6 +421,7 @@ tupperware.fr##.topRibbon
 le-dictionnaire.com##.topdisclaimer
 ugc.fr##.ui-dialog[aria-describedby*="gdpr"] ~ .ui-widget-overlay
 cafpi.fr##.warning
+quellecompagnie.com##.whatever
 businessinsider.fr,voici.fr##div[class^="sp_message_container"]
 sportetstyle.fr##div[id^="cookie"]
 tf1.fr##div[id^="msgctrw"]
@@ -554,7 +559,7 @@ gocards.nl,radioluisteren.fm###cbar
 iens.nl###cboxOverlay
 forum.snsbank.nl###clcback
 forum.snsbank.nl###consentdiv
-groningenwoontslim.nl,legebatterijen.nl###cookie
+autozine.nl,groningenwoontslim.nl,legebatterijen.nl###cookie
 freemeteo.nl,mariniersmuseum.nl,nmm.nl###cookies
 molecaten.nl###cookies_modal
 recepten100.nl###cxcx
@@ -591,7 +596,7 @@ vergelijk.nl##.cg-82
 vergelijk.nl##.cg-97
 wehkamp.nl##.color-invert.font-size-small
 allradio.nl##.consent-overlay
-avans.nl,dirk.nl,dutchcarparts.nl,greve.nl,schiphol.nl,t-mobile.nl,utilities.nl##.cookie
+avans.nl,dirk.nl,dutchcarparts.nl,gigantfm.nl,greve.nl,schiphol.nl,t-mobile.nl,utilities.nl##.cookie
 museum.nl##.cookie-overlay
 nederlandsebrouwers.nl,omaweetraad.nl,omdenken.nl,perfumesclub.nl,picnic.app,salusi.nl,universiteitleiden.nl##.cookies
 anwb.nl##.critical-dialog
@@ -620,6 +625,7 @@ wehkamp.nl##.position-fixed
 kcprofessional.nl##.reveal-modal-bg
 visdeal.nl##.site-message-overlay
 omroepbrabant.nl##.sticky-footer
+eredivisie.eu,eredivisie.nl##.tdecc-content
 maxict.nl##.wallpop-overlay
 aboutyou.nl##div[class^="styles__container-"]
 waarmaarraar.nl##div[style="margin: 20px; padding-left:20px; padding-right:20px;border: 1px dotted #999999"]
@@ -631,6 +637,7 @@ linnaleht.ee,ohtuleht.ee##.ntf-container
 !
 ! ---------- Finnish ----------
 !
+sportamore.com###__next > div.MuiBox-root:last-of-type
 inmicsnebula.fi###alert-message-7
 atea.fi###cookie
 dna.fi###dna-gdpr-info
@@ -640,7 +647,7 @@ napsu.fi###napsu_cc
 sentraali.fi###popmake-4055
 paakallo.fi###privacy
 pihlajalinna.fi###root > div[aria-live="polite"][role="alert"]
-alppimatkat.fi###toast-container
+alppimatkat.fi,kuntarekry.fi###toast-container
 yhteiso.telia.fi###yhteiso-evasteet
 satakunnanautotalo.fi##.AVS-evasteseloste-container
 kulttuurivihkot.fi##.activebar-container
@@ -656,13 +663,16 @@ blogit.fi,ilmainensanakirja.fi,telsu.fi##.cookies
 matkahuolto.fi##.css-jlvvqa
 ifolor.fi##.dialogBanner--align-bottom
 timma.fi##.modal-backdrop.in
+lauttakyla.fi##.modalElement
 lidl.fi,pelit.fi,telia.fi##.notification
+kotipizza.fi##.notification-warning
 helmet.fi##.notifier_warning
 suomi24.fi##.s24_cc_banner-wrapper
 terveystalo.com##.st-consent-banner
 lehtodigital.fi##[class^="__ld_cookie_"]
 sttinfo.fi##[class^="styledBarNotification__BarNotificationWrapper"]
 dplay.fi##div[class^="notification"]
+alasatakunta.fi,lapuansanomat.fi##div[style="position: fixed; bottom: 0px; left: 0px; right: 0px; display: flex; justify-content: center; z-index: 100000; transition: transform 200ms ease 0s;"]
 scandinavianphoto.fi##div[style^="opacity: 1; height: "][style$="px;"]
 linnunrata.org##div[style^="position:fixed;right:0;top:0;"]
 !
@@ -765,7 +775,7 @@ volaparkingorio.it###AeroparkVerona_cookie_advice
 oraridiapertura24.it###CCcont
 controcampus.it###Controcampus_cookie_advice
 culturagay.it###GPP
-amicidicasa.it###G_info
+amicidicasa.it,orchideaviaggi.it###G_info
 vistaprint.it###MarketingText
 ludomedia.it###UIAvvisiUtente
 corriere.it,gazzetta.it###\5f evh-ric
@@ -773,7 +783,7 @@ ubuntu-it.org###\5f ubuntu-it_cookie_policy
 sudnews.it###absolute
 affaronissimo.it###af-cw-box
 centromedicobeb.it###alert
-operasanfrancesco.it###avviso
+operasanfrancesco.it,tuttostoria.net###avviso
 regione.toscana.it###banner-overlay-top-page
 agenziademanio.it,finanze.it###bannerInfo
 quotidianodiragusa.it,ragusanews.com###barra
@@ -791,17 +801,19 @@ radiozammu.it###ccM
 centrometeolombardo.com###cc_div
 minihotel.it###ck_banner
 emanuelaursino.it###cke_plc
+vita-a-timisoara.it###ckn
 howrse.it###cmp-overlay
 eismoinfo.lt###consent
 ecodallecitta.it###contenuto_consenso
 spesasicura.com###cook
-aeo.it,archimagazine.com,bookingaltoadige.com,camionsupermarket.it,cattoliciogginotizie.it,chiesi.com,citroen-club.it,confidisystema.com,enistation.com,esselunga.it,esselungajob.it,exprivia.it,extramagazine.eu,famila.it,giornaledicalabria.it,ildolomiti.it,kolping.it,messinaline.it,miabolzano.it,miamerano.it,mtonauticastore.it,mymercato.it,negozi.fastweb.it,pallacanestrovarese.it,primocanale.it,radiociao.com,rimini.com,sace.it,sanfrancescopatronoditalia.it,spesati.it,storiadeifilm.it,tecnocasa.it,wd40.it###cookie
-angolotesti.it,armietiro.it,automobilismo.it,automobilismodepoca.it,chateau-dax.it,ciclismo.it,cyclistmagazine.it,evomagazine.it,lupopornohd.it,menshealth.it,motociclismo.it,musictory.it,ordineavvocati.bari.it,pardini.it,pcase.it,runnersworld.it,tennisitaliano.it,testimania.com,thefilmclub.it,unipv.it,velaemotore.it###cookies
+aeo.it,archimagazine.com,bookingaltoadige.com,camionsupermarket.it,cattoliciogginotizie.it,chiesi.com,citroen-club.it,confidisystema.com,enistation.com,esselunga.it,esselungajob.it,exprivia.it,extramagazine.eu,famila.it,giornaledicalabria.it,ildolomiti.it,kolping.it,messinaline.it,miabolzano.it,miamerano.it,mtonauticastore.it,mymercato.it,negozi.fastweb.it,orologi4you.it,pallacanestrovarese.it,primocanale.it,radiociao.com,rimini.com,sace.it,sanfrancescopatronoditalia.it,spesati.it,storiadeifilm.it,tecnocasa.it,wd40.it###cookie
+angolotesti.it,armietiro.it,automobilismo.it,automobilismodepoca.it,chateau-dax.it,ciclismo.it,cyclistmagazine.it,evomagazine.it,lupopornohd.it,mediasetitalia.com,menshealth.it,motociclismo.it,musictory.it,ordineavvocati.bari.it,pardini.it,pcase.it,runnersworld.it,tennisitaliano.it,testimania.com,thefilmclub.it,unipv.it,velaemotore.it###cookies
 telea1.it###cooky_content
 majani.it###cs-banner
 netflixlovers.it###cs_container
 staffettaonline.com###ctl00_CtrlLogAbbonato1_cookiealert
 ricette100.it###cxcx
+aaannunci.it###dTcf
 sardegna1.tv###dcb-black-screen
 ilfruttarolo.it###decretopr
 chicucina.it,inartek.it###discl
@@ -811,6 +823,7 @@ xtrawine.com###div-confirm-privacy
 amref.it###divCk
 elevensports.it###elevensports-privacy
 solopornoitaliani.xxx###first-visit
+wikihow.it###gdpr
 mercateo.it###header-popup-info
 trovanumeri.com###hid
 gustosaricerca.it###holdon-overlay
@@ -840,10 +853,10 @@ fastalp.biz###policy
 aeroporto.catania.it,bapr.it,saverioriotto.it###policy_id
 informacatania.it,tuodi.it###popup
 voloweb.it###popupDivC
-alceosalentino.it,chemistresearch.it,cinquantamila.it,compitoinclasse.org,metroservices.it,tastoeffeuno.it###privacy
+alceosalentino.it,chemistresearch.it,cinquantamila.it,compitoinclasse.org,libro.cafe,metroservices.it,tastoeffeuno.it###privacy
 testisemplificati.com###privacy-modal
 jusan.it###privacy-popup
-comitatoparalimpico.it,coni.it,federnuoto.it,fise.it###privacy-wrapper
+comitatoparalimpico.it,coni.it,federnuoto.it,federscherma.it,fise.it###privacy-wrapper
 pagomeno.it###privacyBanner
 cinquantamila.corriere.it,cinquantamila.it###privacy_advisor
 samaritansonlus.org###sB_injected
@@ -852,6 +865,7 @@ sky.it###soundbox_cookie
 amazon.it###sp-cc
 digimobil.it###sticky-popup
 beniculturali.it,nlite.it,sigmastudio.it###system-message
+tuttoandroid.net###ta-cc-modal
 agronline.it,cataniaoggi.it###thepriv
 sia.eu###toast
 cippy.it###toast-container
@@ -859,7 +873,7 @@ luxuryzone.it###top-notification-container
 isweb.it###trace-form
 scuolerimini.it###upper_div
 puglialive.net###visitor_info
-farmacieaperte.it###warning-popup
+farmacieaperte.it,sexedchat.com###warning-popup
 ativa.it###widget-privacy
 gamershqitalia.it###wrapDisclaimer
 perungiorno.it###x1d_choise
@@ -889,6 +903,7 @@ dbplanet.net##.cc-banner
 regione.lombardia.it##.cdk-overlay-backdrop
 mivoq.it##.check-policy
 iosi.nexi.it##.cl-banner-body
+puglia.com##.cli-modal-backdrop
 frateindovino.eu##.cn-wrapper
 leroymerlin.it##.consent-section
 unirc.it##.content
@@ -897,6 +912,7 @@ angolodelregalo.it,bottegaverde.it,cerutti.it,dehoniane.it,e-glossa.it,ebayextra
 e-coop.it##.coop-privacy
 liujo.com##.cp-banner
 bancobpm.it##.css-avnphc
+sevensalerno.it##.cw_container
 dentisti-italia.it##.di-banner
 migliori-siti-di-incontri.it##.disclaimer
 spindox.it##.disclaimer-box
@@ -913,7 +929,7 @@ centauria.it##.header-welcome
 lavorar.it##.headerline2
 supernordicskipass.it##.infPr
 vienormali.it##.info
-altroconsumo.it##.info-banner
+altroconsumo.it,ilmanifesto.it##.info-banner
 lsdlibri.it##.inibisci_sfondo
 orgoglionerd.it##.irpclw
 bofrost.it##.iziModal-overlay
@@ -943,7 +959,7 @@ coopvoce.it##.only-scroll
 flashscore.it##.otPlaceholder
 rubner.com##.page__notification
 nh-hotels.it##.politicaRewards
-ecoage.it,edilvetta.it,naegele.it,nigiara.it,okpedia.it##.privacy
+andreaminini.com,ecoage.it,edilvetta.it,naegele.it,nigiara.it,okpedia.it##.privacy
 oggi-in-tv.it##.privacy-msg
 smtvsanmarino.sm##.privacy-top
 italradio.org##.privacyStatement
@@ -962,6 +978,7 @@ boxannunci.com##.terms
 itineraricamper.it##.toast
 regalideidesideri.it##.topBanner__content
 ingdirect.it##.topalertbanner
+ecommerce.it##.twcc__notice
 emma-materasso.it##.ucn-block
 cattolica.it##.vgg
 prime.widiba.it##.wd-primepublic__cookie__content
@@ -1285,16 +1302,20 @@ telecine.com.br##div[data-testid="banner"]
 viatransilvanica.com###accept-popup
 hotnews.ro###avert
 cursbnr.ro###avert_all_page
-revistablogurilor.ro###cookie
+revistablogurilor.ro,vandpieseauto.com###cookie
+autopitonline.ro,piese-auto-oradea.ro,vest-auto.ro###cookies
 portalinvatamant.ro###terms
 mobilier-mirjan24.ro###window_overlay
 basilica.ro##.alert
 bancatransilvania.ro##.bannerWrapper
-samsonite.ro##.cookies
+promenada.ro##.cookie
+madalinliviu.ro,samsonite.ro##.cookies
 lexus.ro##.disclaimer
+bestkids.ro##.gdprPolicy
 imobiliare.ro##.modal-backdrop
 idea-bank.ro,lidl.ro##.notification
 epantofi.ro##.popup
+promenada.ro##.popup-container
 phytech.ro##.sh-page-notice
 !
 ! ---------- Russian ----------
@@ -1313,6 +1334,7 @@ aliexpress.ru##.PrivacyPolicyBanner-styles_wrapper__1qbIl
 drweb.ru##.SHOWIT-msg_showed
 ngnovoros.ru##._1TNYbgH
 sberbank.ru##._3KWyaRBN-Zc2EeT_YjLEUV
+2gis.ru##._nlniiu
 oreluniver.ru##.accept
 volia.com##.agreeCookie\.component__cookieWrapper
 bancaintesa.ru##.agreement-substrate
@@ -1330,6 +1352,7 @@ lisa.ru##.disclamer
 ozon.ru##.i4
 friday.ru##.information
 patee.ru##.informer2
+5ka.ru##.message
 iblitzmods.ru,kinoby.ru##.message-alert
 shophair.ru##.modal_popup_sessid_box
 landrover.ru##.notificationBars
@@ -1347,6 +1370,10 @@ shop.philips.ru##.test-mode
 pfr.gov.ru##.user-data-processing-wrapper
 yoomoney.ru##div[class^="Gdpr__StyledGdpr-"]
 pik-broker.ru##div[class^="cookie_cookie_"]
+!
+! ---------- Belarus ----------
+!
+abw.by###accept_terms
 !
 ! ---------- Serbian ----------
 !
@@ -1397,7 +1424,7 @@ masvision.es###lycok
 paginasamarillas.es###m-notification--bottom
 mountain.es###messagebar
 electan.com###notification
-aquienvoto.org###overbox3
+aquienvoto.org,fundazintegra.com###overbox3
 lifemiles.com###privacidad
 emezeta.com,lolesp.com###privacy
 acega.es,ildesertofiorira.org###system-message
@@ -1412,7 +1439,7 @@ infiniti.com.do,infiniti.com.pa,infiniti.mx,infinitimotors.cl,infinitipr.com##.c
 psicologia-online.com,uncomo.com##.consent
 alcampo.es,gestoriaverdugo.es##.cookie
 autosolar.es##.cookie-configuration
-conforama.es,ebayextra.es,flooxer.com,ing.es,loteriasyapuestas.es,moldurashergon.es,mountainbike.es,nintenderos.com,o2online.es,panamaamerica.com.pa,puntodepartida.com,tuenti.es##.cookies
+conforama.es,ebayextra.es,flooxer.com,ing.es,loteriasyapuestas.es,moldurashergon.es,mountainbike.es,nintenderos.com,o2online.es,panamaamerica.com.pa,puntodepartida.com,tdsexport.com,tuenti.es##.cookies
 eltiempo.es##.curtain_lightbox
 ingemecanica.com##.encabez
 bandaancha.eu##.euCk
@@ -1465,6 +1492,7 @@ gp.se##.gpsecGRCookieContainer
 asedo.se##.infobanner
 filminstitutet.se##.js-info-banner
 hemglass.se##.message-popup
+motala.se##.notice.notice-message
 lidl.se,proff.se##.notification
 osterbottenstidning.fi,sydin.fi,vasabladet.fi##.online-notifications
 expressen.se##.pa-dialog
@@ -1506,12 +1534,14 @@ fikriyat.com,sabah.com.tr,turkuvazradyolar.com,yeniasir.com.tr##.veriAltBar
 !
 gloss.ua###disclaimer
 res.ua###oct-policy
+strana.ua###openModal
 facenews.ua###pblock
 fdu.org.ua###pd_popup
 i.ua##.Disclaimer
 tsn.ua##.c-notification__box
 alfa-tv.ua##.cook
-compendium.com.ua,dybok.com.ua,unian.ua##.cookies
+kaktus.ua,svitroslyn.ua##.cookie
+auto24.org,compendium.com.ua,dybok.com.ua,unian.ua##.cookies
 nk.org.ua##.fuXXIn
 landrover.ua##.notificationBars
 sport.ua##.policy-accept
@@ -1520,6 +1550,7 @@ today.ua##.politic_confidel
 rbc.ua##.privacy
 kinoafisha.ua##.privacy-modal
 hyser.ua,politeka.net,ukrainci.com.ua,znaj.ua##.privacy-policy
+yaizakon.com.ua##.spu-bg
 papadon.com.ua##.t886
 forklog.com##.terms_popup
 !
