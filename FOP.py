@@ -43,6 +43,8 @@ REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+# Remove any bad lines less the 3 chars, starting with.. |*~@$%
+BADLINE = re.compile(r"^([|*~@$%].{1,3}$)")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -52,7 +54,8 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
-          "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
+          "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other",
+          "easylist_cookie_specific_uBO.txt", "fanboy_annoyance_specific_uBO.txt", "fanboy_notifications_specific_uBO.txt", "fanboy_social_specific_uBO.txt")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("collapse", "csp", "document", "elemhide",
@@ -213,6 +216,9 @@ def fopsort (filename):
                         filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
+                    # Skip filters containing less than three characters
+                    if len(line) < 3:
+                        continue
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
@@ -269,7 +275,7 @@ def filtertidy (filterin):
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: (option[1:] + "~") if option[0] == "~" else option)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
-            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
+            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key = lambda domain: domain.strip("~")))))
 
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
