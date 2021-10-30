@@ -22,6 +22,11 @@ Check various banking and financial web compatibilty among the adblockers ABP, u
 - [x] Adblock Plus
 - [ ] Brave
 
+## [BBVA (Italy)](https://www.bbva.it/) (Checked 30/10/2021)
+- [x] uBO
+- [x] Adblock Plus
+- [x] Brave
+
 ## [BNZ](https://www.bnz.co.nz) (Checked 28/06/2021)
 - [x] uBO
 - [x] Adblock Plus
