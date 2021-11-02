@@ -216,6 +216,9 @@ def fopsort (filename):
                         filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
+                    # Skip filters containing less than three characters
+                    if len(line) < 3:
+                        continue
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
@@ -272,7 +275,7 @@ def filtertidy (filterin):
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: (option[1:] + "~") if option[0] == "~" else option)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
-            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
+            optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key = lambda domain: domain.strip("~")))))
 
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
