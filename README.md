@@ -14,7 +14,11 @@ The goal of this repository is to block ads on English and International sites. 
  - Ad servers (Block servers that host ads/ad-related contents)
  - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
  - Placeholders of non-trivial size (Usually ≥50px tall and ≥50px wide)
- - Invideo Ads (1st/3rd-party content, videos/slideshows that aren't directly related to the webpage being shown. May autoplay and/or follows user on scroll.). Not the same as a embedded youtube video.
+ - Invideo/InSlideshow Ads (This is *NOT* the same as a site using embedded youtube videos).
+   - 1st or 3rd-party content.
+   - Videos/slideshows that aren't directly related to the specific webpage being shown. 
+   - May autoplay and/or follows user on scroll. 
+   
 
 Anti-adblock in Easylist will cover cosmetic and generic blocks checks:
  - Prevent adblock users showing a website
