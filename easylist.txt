@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202111150752
+! Version: 202111150815
 ! Title: EasyList
-! Last modified: 15 Nov 2021 07:52 UTC
+! Last modified: 15 Nov 2021 08:15 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -52812,6 +52812,7 @@ cricwaves.com##.btm728
 helensburghadvertiser.co.uk,the-gazette.co.uk##.btn
 sbenny.com##.btnDownload5
 whosampled.com##.btnRingtoneTrack
+pollunit.com##.btn[href$="?feature=ads"]
 boredomtherapy.com##.btparel1
 politico.com##.bump-in.story-enhancement
 switchboard.com##.business_premium_results
@@ -54503,6 +54504,7 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
 ! Advanced element hiding rules for Adblock Plus
+pollunit.com##.owl-carousel:-abp-has(.carousel-ad)
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
 outlook.live.com#?##OwaContainer:-abp-has(div.fbAdLink)
 china.ahk.de#?#.b-main__section:-abp-has(h2.b-section__header:-abp-contains(Advertisement))
