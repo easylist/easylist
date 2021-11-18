@@ -11,7 +11,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 <!-- Just include the website URL in the Title line of this issue report -->
 
-### List the website(s) you're having issues:
+### List the website(s) whit issue(s):
 
 <!-- URL(s) for issue on a specific site are **mandatory** -->
 <!-- To prevent tracking, wrap the website URL in a Code tag please. **mandatory** -->
@@ -24,7 +24,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 <!-- Which adblock lists are you're using? -->
 
-### Your settings
+### basis OS and browser informaations
 
 <!-- Just to ensure there is no issues or conflicts with other webbrowser extensions. 
      Disable Noscript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger before reporting (and re-test with them disabled).
