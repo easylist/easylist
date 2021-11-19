@@ -16,6 +16,10 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 <!-- URL(s) for issue on a specific site are **mandatory** -->
 <!-- To prevent tracking, wrap the website URL in a Code tag please. **mandatory** -->
 
+```
+Replace this line with URL(s) for issue
+```
+
 ### What happens?
 
 <!-- Just a description of the issue when you visit the site. Or steps on reproducing this  -->
@@ -24,7 +28,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 <!-- Which adblock lists are you're using? -->
 
-### basis OS and browser informaations
+### Basic OS and browser informaations
 
 <!-- Just to ensure there is no issues or conflicts with other webbrowser extensions. 
      Disable Noscript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger before reporting (and re-test with them disabled).
