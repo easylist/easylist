@@ -5,7 +5,7 @@
 &event=view&
 &EventType=Impression&
 &hitType=pageview&
-&http_referer=$script,xmlhttprequest,domain=~facebook.com
+&http_referer=$script,xmlhttprequest,domain=~facebook.com|~jobscore.com
 &mf_referrer=
 &pageReferrer=
 &ref=*&tag=
@@ -54,6 +54,7 @@
 -imppix/
 -inview-tracker.
 -krux-tag/
+-landing-tracking-
 -log?referUrl=
 -logging/log?
 -lp-tracking.
@@ -408,6 +409,7 @@
 /adstrack.
 /adtctr.
 /adtoniq-
+/adtrack-
 /adtrk/*
 /adv/tracking.
 /adv?pixel_
@@ -2022,6 +2024,7 @@
 /gatrackwww.
 /gb-tracker-
 /gc?id=*&refurl=
+/gc?refurl=
 /gciAnalytics.
 /gClickTracking.
 /gcount.pl?
@@ -3416,6 +3419,7 @@
 /pubfooter/js/tracking-
 /pubimppixel/*
 /public/analytics.js
+/public/statsd
 /public/visitor.json?
 /public/visitor/create?
 /publisher:getClientId?key=
@@ -4042,6 +4046,7 @@
 /stats/metrics/*
 /stats/mixpanel-
 /stats/page_view_
+/stats/pageview
 /stats/pgview.
 /stats/ping?
 /stats/pv.
@@ -5128,6 +5133,7 @@
 ://analytics.*/pageview/
 ://analytics.*/tracker.
 ://beacon.*/track
+://blue.*/script.js
 ://collect.*/pageview
 ://collector.*/event
 ://d.*/track.js
@@ -5182,6 +5188,7 @@
 ?eventtype=request&pid=
 ?local_ga_js=
 ?log=stats-
+?log_performance_metrics
 ?logType=impression&
 ?logType=trackEvent&
 ?pageviews=$third-party
@@ -5408,7 +5415,6 @@ _ad_impression.
 ! eventbrite tracking
 /search/log_requests/*
 ! Consent/GDPR tracking
-/ccpa.js
 /cmp-hello.
 /cmp/messaging.js
 /cmp3.js
