@@ -11,7 +11,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 <!-- Just include the website URL in the Title line of this issue report -->
 
-### List the website(s) wiht issue(s):
+### List the website(s) with issue(s):
 
 <!-- URL(s) for issue on a specific site are **mandatory** -->
 <!-- To prevent tracking, wrap the website URL in a Code tag please. **mandatory** -->
