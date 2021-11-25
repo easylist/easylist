@@ -9,6 +9,7 @@ taloon.com##.header__top:style(position: unset !important)
 bbc.com##body:has(div[class*="Styled"][class*="Container"] [data-testid="bbc-logo-wrapper"]) > .fc-consent-root:style(display: flex !important)
 bosch-easycontrol.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 taloon.com##.page-header:style(padding-top: 0 !important)
+bloomberg.com##.sp-message-open:style(overflow: unset !important; position: unset !important)
 html5games.com##div[class="app-container"]:style(filter:none !important;opacity:1 !important)
 gesund24.at,oe24.at,wirkochen.at,xn--sterreich-ppa80c.at##.wrapper.blured:style(filter: none !important;)
 germany.travel##body.consent-overlay:style(overflow:auto !important)
@@ -130,6 +131,7 @@ podleze-piekielko.pl##+js(aopr, cookieman)
 danskebank.*##+js(rc, cookie-consent-banner-open, html)
 luhta.com##+js(rc, body-fixed, body, stay)
 taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
+bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"])) > div[id^="sp_message_container"]
 ! Generichide fixes
 dogemate.com###cconsent-bar
 analog.com###cookie-consent-container.modal
