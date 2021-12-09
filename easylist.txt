@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112091454
+! Version: 202112091457
 ! Title: EasyList
-! Last modified: 09 Dec 2021 14:54 UTC
+! Last modified: 09 Dec 2021 14:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -23870,6 +23870,7 @@ _800x80_
 ##.ct-ad-article
 ##.ct-ad-article-wrapper
 ##.ct-ads
+##.ct-advertising-footer
 ##.ct-bottom-ads
 ##.ct_ad
 ##.cta-ad
@@ -55496,7 +55497,6 @@ hqasianporn.org##.coverup
 3movs.com,fapality.com##.cs
 mylust.com##.cs-bnr
 watchmygf.me##.cs_text_link
-crocotube.com##.ct-advertising-footer
 crocotube.com##.ct-video-ntvs
 worldsex.com##.currently-blokje-block-inner
 sexygirlspics.com##.custom-spot
@@ -55852,12 +55852,6 @@ redtube.com,youporn.com,youporngay.com##img[src^="bLob:" i]
 pornhub.com,pornhubthbh7ap3u.onion##img[width="300"]
 adultwork.com,babepicture.co.uk,sexmummy.com,tvgirlsgallery.co.uk##img[width="468"]
 babeshows.co.uk,jessie-rogers.com##img[width="728"]
-crocotube.com#?#.ct-related-videos-title:-abp-contains(Advertisement)
-crocotube.com#?#.ct-related-videos-title:-abp-contains(You may also like)
-pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(*data:image*)
-pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(base64)
-pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(data:)
-pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(image/)
 koreanstreamer.xyz##section.korea-widget
 porngifs2u.com##section[class*="elementor-hidden-"]
 redtube.com##svg
@@ -55867,8 +55861,14 @@ motherless.com##table[style*="max-width:"]
 exoav.com##td > a[href]
 foxhq.com##video
 redtube.com,youporn.com,youporngay.com##video[loop][src^="bLob:" i]
-! CSS property filters
+! Advanced element hiding rules for Adblock Plus
+crocotube.com#?#.ct-related-videos-title:-abp-contains(Advertisement)
+crocotube.com#?#.ct-related-videos-title:-abp-contains(You may also like)
 pornhub.com,pornhubthbh7ap3u.onion#?#:-abp-properties(height: 300px; width: 315px;)
+pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(*data:image*)
+pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(base64)
+pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(data:)
+pornhub.com,pornhubthbh7ap3u.onion,redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youporngay.com#?#:-abp-properties(image/)
 pornhub.com,pornhubthbh7ap3u.onion,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width: 50%;)
 youporn.com#?#aside:-abp-has(a.ad-remove)
 ! -----------------------Allowlists to fix broken sites------------------------!
