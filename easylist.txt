@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112151013
+! Version: 202112151018
 ! Title: EasyList
-! Last modified: 15 Dec 2021 10:13 UTC
+! Last modified: 15 Dec 2021 10:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -30939,6 +30939,7 @@ _800x80_
 ##div[id^="yandex_ad"]
 ##div[itemtype="http://schema.org/WPAdBlock"]
 ##div[itemtype="http://www.schema.org/WPAdBlock"]
+##hl-adsense
 ##iframe[id^="google_ads_frame"]
 ##iframe[src*="mellowads.com"]
 ##iframe[src^="http://ad.yieldmanager.com/"]
@@ -54855,7 +54856,7 @@ jobstreet.com.sg##[data-automation="homepage-banner-ads"]
 jobstreet.com.sg##[data-automation="homepage-marketing-banner-ads"]
 theblaze.com##[data-category="SPONSORED"]
 medicalnewstoday.com##[data-empty="true"]
-greatist.com##[data-empty]
+greatist.com,psychcentral.com##[data-empty]
 phoneia.com##[data-index]
 namepros.com##[data-np-ga-event="ad"]
 washingtonpost.com##[data-qa="article-body-ad"]
@@ -55413,6 +55414,7 @@ testpages.adblockplus.org###abptest
 ! Advanced element hiding rules for Adblock Plus
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
 outlook.live.com#?##OwaContainer:-abp-has(div.fbAdLink)
+psychcentral.com##aside:-abp-has([data-empty])
 china.ahk.de#?#.b-main__section:-abp-has(h2.b-section__header:-abp-contains(Advertisement))
 cleantechnica.com#?#.zox-side-widget:-abp-contains(/^Advertis/)
 coinlisting.info#?#.panel:-abp-has(h3:-abp-contains(Sponsored Ad))
