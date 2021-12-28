@@ -2693,6 +2693,8 @@ adblock-tester.com##object[width="240"]
 bitref.com##picture > img[src]
 healthgrades.com##ps-action-intercept
 mashable.com##section.mt-4 > div
+thefreedictionary.com##section:nth-of-type(1)
+thefreedictionary.com##section:nth-of-type(5)
 bbc.com##section[data-e2e="advertisement"]
 reddit.com##shreddit-comments-page-ad
 tempostorm.com##side-banners
@@ -2890,6 +2892,8 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
 ! Advanced element hiding rules for Adblock Plus
+1337x.to#?#a:-abp-contains(An‌on‌ymous Download)
+1337x.to#?#a:-abp-contains(Your ip Address is)
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
 outlook.live.com#?##OwaContainer:-abp-has(div.fbAdLink)
 psychcentral.com##aside:-abp-has([data-empty])
