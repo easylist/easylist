@@ -1,10 +1,4 @@
 ! uBO Sepecific fixes
-protocol.com,theconversation.com,audioholics.com##body:style(overflow: auto !important;)
-otisoatmilk.co.nz,socialitelife.com##html:style(overflow:auto !important)
-socialitelife.com##.mfp-ready
-otisoatmilk.co.nz###shopify-section-newsletter-popup
-protocol.com###form_out
-theconversation.com##.MuiDialog-root
 ! 9gag.com (mobile)
 9gag.com##.open-in-app
 9gag.com##.overlay-layer
@@ -24,17 +18,9 @@ youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds) 
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
-! Counter generichide
-metro.co.uk##.metro-email-signup
-! Newspaper newsletter
-monroenews.com,poconorecord.com##.tp-modal
-monroenews.com,poconorecord.com##.tp-backdrop
-monroenews.com,poconorecord.com##body,html:style(height: auto !important; overflow: auto !important)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
-! nationalgeographic.com
-nationalgeographic.com##+js(aeld, scroll)
 ! zorbabooks.com
 zorbabooks.com##body:style(overflow: auto !important;)
 zorbabooks.com##.modal-backdrop
@@ -55,9 +41,6 @@ rebelnews.com##.remodal-overlay
 huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
 huckberry.com##.modal-content
 huckberry.com##.fade
-! nationalgeographic.com
-nationalgeographic.com##.EmailStickyFooter__Modal
-nationalgeographic.com##body:style(overflow: auto !important; position: initial !important;)
 ! bestrecipes.com.au (forced login)
 bestrecipes.com.au##+js(cookie-remover.js, br_mc)
 ! ftm.eu (newsletter)
@@ -71,6 +54,3 @@ revolver.news##body:style(overflow: auto !important;)
 revolver.news##.blocker
 ! 4399.com
 4399.com##+js(aopr, defaultbackgroundimg)
-! thewrap.com
-thewrap.com##.wk-site-overlay
-thewrap.com##body:style(overflow: auto !important;)
