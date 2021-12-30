@@ -30,6 +30,7 @@ script:
   - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
   - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
   - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt 
-  - flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt 
+  - flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt
+  - flrender -i easylist=. fanboy-sounds.template output/fanboy-sounds.txt 
   - cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages
 
