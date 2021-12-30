@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112300158
+! Version: 202112300215
 ! Title: Fanboy's Anti-Newsletter List
-! Last modified: 30 Dec 2021 01:58 UTC
+! Last modified: 30 Dec 2021 02:15 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -332,12 +332,16 @@ _subscribers_newsletters/
 ###block-fusion-newsletters-fusion-newsletter-signup
 ###block-ifls-strongmail-newsletter
 ###block-mailchimp-signup-newsletter
+###block-mailchimpsubscriptionformmailsignup
 ###block-modalnewslettersignup
+###block-ncr-api-emailmarketing-article-signup
 ###block-newsletter:not(html):not(body)
 ###block-newsletterregistrationquick
+###block-quick-subscribe-footer
 ###block-sailthru-basic-newsletter
 ###block-sailthru-newsletters
 ###block-sendinbluesubscriptionformsub-form
+###block-shape_newsletters-newsletters
 ###block-simple-subscription-subscribe
 ###block-simplenews-custom-sc-newsletter
 ###block-tektitegenericnewsletterblock
@@ -399,11 +403,15 @@ _subscribers_newsletters/
 ###email-pop:not(html):not(body)
 ###email-popup-back
 ###email-popup:not(html):not(body)
+###email-posts-to-subscribers-2
+###email-rotator-wrapper
 ###email-sign-up:not(html):not(body)
 ###email-signup-bar:not(html):not(body)
 ###email-signup-sidebar
 ###email-slide-up
 ###email-subscribe:not(html):not(body)
+###email-subscribers-2
+###email-subscribers-3
 ###email-subscription-modal
 ###email-widget-wrapper
 ###emailAcqPopupContainer
@@ -518,6 +526,8 @@ _subscribers_newsletters/
 ###mc-signup-in-post
 ###mc-signup:not(html):not(body)
 ###mc4wp-form-1
+###mc_embed_signup_nojs
+###mc_embed_signup_scroll
 ###mini-panel-sn_newsletter
 ###miniEmailSignup
 ###ml-newsletterform
@@ -772,6 +782,7 @@ _subscribers_newsletters/
 ###obog_signup_widget
 ###offer-research-center-newsletter
 ###ols-email-popup
+###onesignal-popover-container
 ###openNewsletter
 ###opinion-newsletter-promo
 ###optinform-container
@@ -940,6 +951,7 @@ _subscribers_newsletters/
 ###sw-noty-email
 ###ta_newsletter
 ###tc_newsletter
+m###teaser-newsletter
 ###teq-newsletter-footer-form
 ###theEmailBlastSignup
 ###thehill-blocks-signup-form
@@ -1063,6 +1075,8 @@ _subscribers_newsletters/
 ##.b-email-subscribe-drawer
 ##.b-email-subscribe-form
 ##.b-footer-subscribe
+##.b-new-subscribe
+##.b-post-subscription
 ##.b-subscribe
 ##.banner-newsletter
 ##.banner_newsletter
@@ -1097,6 +1111,7 @@ _subscribers_newsletters/
 ##.block-email-alerts-footer
 ##.block-et-newsletter
 ##.block-fp-sailthru
+##.block-mailchimp-signup
 ##.block-mailchimp-signup-subscribe-blocknewsletter-sign-up
 ##.block-marketo-multi-form-block
 ##.block-newsletter-signup
@@ -1385,6 +1400,7 @@ _subscribers_newsletters/
 ##.footer_form_newsletter
 ##.footer_newsletter
 ##.footer_subscribe
+##.footer_subscription_block
 ##.footeremail
 ##.form-newsletter:not(html):not(body)
 ##.form-signup-articlebottom
@@ -1426,6 +1442,8 @@ _subscribers_newsletters/
 ##.ha-c-newsletter-promo__content
 ##.ha-js-newsletter-promo
 ##.hasNewsletter
+##.hdSubscribeFooter
+##.head-email-signup
 ##.header-newsletter-box
 ##.headerNewsletterCtaOverlay
 ##.header__link--subscribe
@@ -1437,6 +1455,7 @@ _subscribers_newsletters/
 ##.home-newsletter
 ##.home-newsletter-widget
 ##.home-subscribe-col
+##.home-subscribe__signup-form
 ##.homepage-bottom-email-signup
 ##.homepage-newsletter
 ##.homepage__top-grid__newsletter
@@ -2585,10 +2604,6 @@ outandaboutnashville.com###block-blocks-oanda-connect
 sciencenews.org###block-boxes-call-to-action
 itpro.co.uk###block-boxes-subscription-promo-content
 infoworld.com###block-infoworld-newsletter_subscribe
-forces.net###block-mailchimpsubscriptionformmailsignup
-ncronline.org###block-ncr-api-emailmarketing-article-signup
-crosscut.com###block-quick-subscribe-footer
-shape.com###block-shape_newsletters-newsletters
 mi-3.com.au###block-subscribe
 thehill.com###block-thehill-blocks-footer-signup
 thehill.com###block-thehill-blocks-right-rail-signup
@@ -2611,11 +2626,6 @@ telesurenglish.net###bulletin
 euractiv.com###capitals_banner
 geekwire.com###category-heading-subscribe
 ibtimes.com.au,lafourchette.com,sciencenews.org,sinya.com.tw,westhawaiitoday.com###cboxOverlay
-breitbart.com###cin_footer
-breitbart.com###cin_header
-breitbart.com###cin_ps_in_article
-breitbart.com###cin_sidebar
-breitbart.com###cin_slideup_w
 cpr.org###coWondersWrapper
 sciencenews.org,sinya.com.tw,westhawaiitoday.com###colorbox
 monthlyreview.org###connect
@@ -2650,11 +2660,7 @@ jewishpress.com###ema_signup_form
 priceonomics.com###email-island
 thehackernews.com###email-outer
 gearjunkie.com###email-pop
-thebridgehead.ca###email-posts-to-subscribers-2
-cityam.com###email-rotator-wrapper
 dictionary.com###email-signup
-sa-news.com,warmvanillasugar.com###email-subscribers-2
-nintendosoup.com###email-subscribers-3
 techbargains.com###email-widget
 osu.edu###emailSignup
 save.ca###emailSignupWrapper
@@ -2704,9 +2710,6 @@ cloudways.com###inrblog_btm_scrbBar
 trailrunnermag.com###inside-dirt
 motherjones.com###interior-rhc-membership
 digiday.com###ipu-article-wrap
-breitbart.com###iscbbsocialconnect
-breitbart.com###iscembox
-breitbart.com###iscscon
 pressgazette.co.uk###itro_opaco
 pressgazette.co.uk###itro_popup
 ivn.us###ivnnewsletter_widget
@@ -2731,8 +2734,6 @@ bcheights.com,cargofacts.com,cnn.com,dailyhive.com,egyptianstreets.com,etv.co.za
 99fm.com.na,activistmommy.com,ahtribune.com,alreporter.com,androidauthority.com,apriorit.com,artafricamagazine.org,bcheights.com,benwajdi.com,bhekisisa.org,bitguru.co.uk,biznews.com,blog.cloudflare.com,bowenislandundercurrent.com,breakingisraelnews.com,breakingnews.ie,burnabynow.com,californiasunday.com,capitolhillseattle.com,caribjournal.com,chinafile.com,churchmilitant.com,circuitdigest.com,cjr.org,cointelegraph.com,current.org,dailyfreepress.com,dailytimes.com.pk,dailytrust.com.ng,delta-optimist.com,exstreamist.com,firstpost.com,fusion.net,gaystarnews.com,ghafla.com,groovekorea.com,howlermagazine.com,ikeahackers.net,indiaclimatedialogue.net,iowapublicradio.org,iphoneincanada.ca,jewishinsider.com,justrunlah.com,majorgeeks.com,maoritelevision.com,monetarywatch.com,national-justice.com,nbc.na,newsthump.com,newtimes.co.rw,newzimbabwe.com,nextbigfuture.com,nodez.co,nsnews.com,ny1.com,nyc.gov,politifact.com,premiumtimesng.com,providr.com,punchng.com,rawstory.com,registerguard.com,richmond-news.com,rightwingtribune.com,rnw.org,russia-insider.com,sciencealert.com,sciencebulletin.org,seattletimes.com,secretflying.com,spokesman.com,sporttechie.com,stellar.ie,swissinfo.ch,techjuice.pk,technobuffalo.com,theartnewspaper.com,thegrayzone.com,theloadout.com,thenationalnews.com,thenewsflasher.com,thequint.com,thestar.com.my,thestranger.com,thethaiger.com,theyeshivaworld.com,trancentral.tv,tricitynews.com,truthuncensored.net,wayfm.com,worldhistory.org,wpr.org,wttw.com###mc_embed_signup
 activistmommy.com###mc_embed_signup-footer
 moneyweb.co.za###mc_embed_signup1
-priceonomics.com###mc_embed_signup_nojs
-sonder.news,timescolonist.com,wegotthiscovered.com###mc_embed_signup_scroll
 guidedoc.com###modal-overlay
 linux.com###modalBackdrop
 linux.com###modalContent
@@ -2760,7 +2761,6 @@ silicon.co.uk###nl-overlay
 indianexpress.com###non_subscribed_banner
 ramblinwreck.com###olark-wrapper
 carsalesbase.com###omnisend-dynamic-container
-regated.com###onesignal-popover-container
 cnbc.com###optIn-embedded
 phoneradar.com###optin
 draxe.com###optin-footer
@@ -2859,7 +2859,6 @@ livemint.com###subscriptionBox
 autointhenews.com###subscriptions
 yourtango.com###tango-newsletter-form
 techonomy.com###tcnmy-newsletter-modal
-greece-is.com###teaser-newsletter
 m.economictimes.com###testimonialsBanner
 theplaylist.net###text-10
 powerlineblog.com###text-12
@@ -2968,8 +2967,6 @@ classicalite.com##.at-subsc
 atavist.com##.atavist-mailchimp
 bloombergquint.com##.authoritative__section
 dexerto.com##.b--charlie.ba
-cointelegraph.com##.b-new-subscribe
-cointelegraph.com##.b-post-subscription
 oilprice.com##.background_lozad
 hopesandfears.com,osu.edu##.banner
 bloombergquint.com##.banner-link
@@ -2987,7 +2984,6 @@ reason.com##.blackout
 radio.com,theticketmiami.com##.block--second-street--ss-block-signup
 etonline.com##.block-ctd-mapp
 ibtimes.com##.block-ibtimes-newsletters
-americamagazine.org##.block-mailchimp-signup
 ncronline.org##.block-ncr-api-emailmarketing
 thehill.com##.block-thehill-signup
 asiaone.com##.block-webform
@@ -3061,7 +3057,6 @@ pbs.org##.footer__follow
 bellingcat.com##.footer__mailing__right
 newsroom.co.nz##.footer_btn-lg
 nutritioninsight.com##.footer_form_section
-troyhunt.com##.footer_subscription_block
 onlymyhealth.com##.footer_top
 ftleavenworthlamp.com##.footerdeal
 cnbctv18.com##.footerlinks-rhs
@@ -3102,8 +3097,6 @@ globalvoices.org##.gv-mailchimp-form-container
 garyvaynerchuk.com##.gv-widget-mailinglist
 baltimoremagazine.com##.hbspt-form
 architectmagazine.com,jlconline.com##.hd-promo
-ucsd.edu##.hdSubscribeFooter
-njtvonline.org##.head-email-signup
 twitch.tv##.header-announcement__wrapper
 tasteofhome.com##.header-banner-container
 theprovince.com,torontosun.com##.header-breaking__secondary
@@ -3115,10 +3108,8 @@ pulselive.co.ke,pulselive.ug##.header_subscribe
 readingthepictures.org##.hear-ye
 allure.com##.hedNewsWrap
 scientificamerican.com##.home-banner
-stylelist.com##.home-newsletter
 publishersweekly.com##.home-promo-center-right-bottom
 factmag.com##.home-social-area
-theskimm.com##.home-subscribe__signup-form
 opencv.org##.homepage-email-icon
 politico.com##.homepage-section-blast-sign-up
 foreignaffairs.com##.homepage-sign-up--b
