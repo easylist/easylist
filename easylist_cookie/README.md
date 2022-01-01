@@ -9,3 +9,4 @@ If there appropiate workaround for a website, we'll let the message show to pres
 [theverge](https://www.theverge.com/) | Cookie message shows | No | https://github.com/ryanbr/fanboy-adblock/issues/863 |
 [youtube](https://www.youube.com/) | Consent overlay shows | No | Hiding overlay will break comments |
 [google](https://www.google.com) | Cookie message shows | No | May affect other parts of google services |
+[rainews.it](https://www.rainews.it/tgr/lombardia/notiziari/index.html?/tgr/rainews.html) | Cookie message shows | No | Needs to accept message to play video |
