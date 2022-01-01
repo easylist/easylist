@@ -4,6 +4,8 @@ If there appropiate workaround for a website, we'll let the message show to pres
 
 ## The following sites have no current workaround
 
-| Website | Description | Any way around it? | Github Report |
+| Website | Description | Any way around it? | Details |
 | --- | --- | --- | --- |
 [theverge](https://www.theverge.com/) | Cookie message shows | No | https://github.com/ryanbr/fanboy-adblock/issues/863 |
+[youtube](https://www.youube.com/) | Consent overlay shows | No | Hiding overlay will break comments |
+[google](https://www.google.com) | Cookie message shows | No | May affect other parts of google services |
