@@ -10,3 +10,4 @@ If there appropiate workaround for a website, we'll let the message show to pres
 [youtube](https://www.youube.com/) | Consent overlay shows | No | Hiding overlay will break comments |
 [google](https://www.google.com) | Cookie message shows | No | May affect other parts of google services |
 [rainews.it](https://www.rainews.it/tgr/lombardia/notiziari/index.html?/tgr/rainews.html) | Cookie message shows | No | Needs to accept message to play video |
+[standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | No | Breaks video playback |
