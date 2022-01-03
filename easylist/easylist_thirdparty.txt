@@ -7,6 +7,7 @@
 ||ad.bitmedia.io^
 ||ad.edugram.com^
 ||ad.jamba.net^
+||ad.mail.ru^$domain=~mail.ru|~sportmail.ru
 ||ad.netmedia.hu^
 ||ad.outsidehub.com^
 ||ad.reklamport.com^
@@ -15,6 +16,7 @@
 ||adaptv.advertising.com^
 ||adf.ly/funcript
 ||adf.ly/js/display.js
+||adf.ly/js/entry.js
 ||adf.ly/js/link-converter.js
 ||adfoc.us^$script,third-party
 ||adform.net/banners/$third-party
@@ -34,7 +36,7 @@
 ||ak.imgaft.com^
 ||alpsat.com/banner/
 ||amazonaws.com/mailcache.appinthestore.com/
-||amazonaws.com^$script,subdocument,xmlhttprequest,domain=downloadpirate.com|s2dfree.cc|s2dfree.de|s2dfree.is|s2dfree.nl|s2dfree.to|soap2day.ac|soap2day.cx|soap2day.sh|soap2day.to|vshare.eu|yify-movies.net
+||amazonaws.com^$domain=1337x.to|1337xx.to|daddylive.click|downloadpirate.com|hexupload.net|igg-games.com|krunkercentral.com|s2dfree.cc|s2dfree.de|s2dfree.is|s2dfree.nl|s2dfree.to|soap2day.ac|soap2day.cc|soap2day.cx|soap2day.sh|soap2day.to|torrentgalaxy.to|torrentmac.net|vshare.eu|yify-movies.net
 ||an.yandex.ru^$domain=~e.mail.ru
 ||any.gs/visitScript/
 ||api.140proof.com^
@@ -43,6 +45,7 @@
 ||apkmaza.net/wp-content/uploads/$third-party
 ||appdevsecrets.com/images/nuts/
 ||appnext-a.akamaihd.net^
+||apps.media-lab.ai^
 ||assets.sheetmusicplus.com^$third-party
 ||autodealer.co.za/inc/widget/
 ||autotrader.ca/result/AutosAvailableListings.aspx?
@@ -93,6 +96,7 @@
 ||cas.*.criteo.com^
 ||cas.clickability.com^
 ||casalemedia.com/cygnus?
+||cdn.neighbourly.co.nz/widget/$subdocument
 ||cdnpub.info^$subdocument,third-party,domain=~iqbroker.co|~iqbroker.com|~iqoption.co.th|~iqoption.com|~tr-iqoption.com
 ||cdnservices.net/megatag.js
 ||cex.io/img/b/
@@ -103,6 +107,7 @@
 ||clickfunnels.com/assets/cfpop.js
 ||cloud.setupad.com^
 ||cloudbet.com/ad/
+||cloudfront.net^$domain=igg-games.com
 ||coinmama.com/assets/img/banners/
 ||commercial.daznservices.com^
 ||content.livesportmedia.eu^
@@ -189,6 +194,7 @@
 ||google.com/dp/ads
 ||google.com/pagead/
 ||googleadapis.l.google.com^$third-party
+||googleads.github.io^
 ||googlesyndication.com/ddm/
 ||googlesyndication.com/pagead/
 ||googlesyndication.com/safeframe/
@@ -264,6 +270,7 @@
 ||media.librabet.com/renderimage.aspx?$third-party
 ||media.netrefer.com^
 ||mediaplex.com/ad/
+||memesng.com/ads
 ||metroland.com/wagjag/
 ||missnowmrs.com/images/banners/
 ||mmosale.com/baner_images/
@@ -282,13 +289,13 @@
 ||obox-design.com/affiliate-banners/
 ||oilofasia.com/images/banners/
 ||orangebuddies.nl/image/banners/
+||outbrain.com^$domain=bgr.com|tvline.com
 ||p.d.1emn.com^
 ||p.jwpcdn.com/player/plugins/vast/
 ||p.smartertravel.com^
 ||pacontainer.s3.amazonaws.com^
 ||pagead2.googlesyndication.com^
 ||partner.e-conomic.com^
-||partner.linkfire.com^
 ||partners.autotrader.co.uk^
 ||partners.betus.com^
 ||partners.dogtime.com^
@@ -338,6 +345,7 @@
 ||s1.wp.com^$subdocument,third-party
 ||saambaa.com^$third-party
 ||safarinow.com/affiliate-zone/
+||safelinku.com/js/web-script.js
 ||sailthru.com^*/horizon.js
 ||sascdn.com/config.js
 ||sascdn.com/diff/$image,script
@@ -357,6 +365,7 @@
 ||slysoft.com/img/banner/
 ||smartdestinations.com/ai/
 ||smbulk.com/assets/images/banner-
+||snacklink.co/js/web-script.js
 ||snacktools.net/bannersnack/$domain=~bannersnack.dev
 ||socialmonkee.com/images/
 ||squirrels.getsquirrel.co^
@@ -384,8 +393,9 @@
 ||tillertag-a.akamaihd.net^
 ||torrindex.net/images/epv/
 ||torrindex.net/static/tinysort.min.js
-||track.effiliation.com^
+||track.effiliation.com^$image,script
 ||travel.mediaalpha.com/js/serve.js
+||trendads.reactivebetting.com^
 ||trvl-px.com/trvl-px/
 ||uploaded.net/img/public/$third-party
 ||utility.rogersmedia.com/wrapper.js
@@ -430,10 +440,8 @@
 ||samsungadhub.com^$third-party
 ! Pi hole
 ||ads.yahoo.com^
-! https://github.com/easylist/easylist/pull/6720
-/^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,third-party
 ! amazonaws (ad-fix)
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
 ||s3.amazonaws.com^*/f10ac63cd7
 ||s3.amazonaws.com^*/secure.js
 ! charlotteobserver.com (audio advert)
@@ -457,6 +465,7 @@
 ||d15kdpgjg3unno.cloudfront.net^
 ||d15nyyrvgr35tv.cloudfront.net^
 ||d162nnmwf9bggr.cloudfront.net^
+||d175dtblugd1dn.cloudfront.net^
 ||d188elxamt3utn.cloudfront.net^
 ||d188m5xxcpvuue.cloudfront.net^
 ||d18g6t7whf8ejf.cloudfront.net^
@@ -468,6 +477,7 @@
 ||d1aezk8tun0dhm.cloudfront.net^
 ||d1aqvw7cn4ydzo.cloudfront.net^
 ||d1b240xv9h0q8y.cloudfront.net^
+||d1betjlqogdr97.cloudfront.net^
 ||d1bi6hxlc51jjw.cloudfront.net^
 ||d1bxkgbbc428vi.cloudfront.net^
 ||d1crt12zco2cvf.cloudfront.net^
@@ -481,6 +491,7 @@
 ||d1il9t8pu4dsoj.cloudfront.net^
 ||d1ilwohzbe4ao6.cloudfront.net^
 ||d1izuvv2qy7hel.cloudfront.net^
+||d1jcj9gy98l90g.cloudfront.net^
 ||d1jnvfp2m6fzvq.cloudfront.net^
 ||d1jow6p6g37b9u.cloudfront.net^
 ||d1ks8roequxbwa.cloudfront.net^
@@ -502,6 +513,7 @@
 ||d1rguclfwp7nc8.cloudfront.net^
 ||d1rkf0bq85yx06.cloudfront.net^
 ||d1rsh847opos9y.cloudfront.net^
+||d1u1byonn4po0b.cloudfront.net^
 ||d1ukp4rdr0i4nl.cloudfront.net^
 ||d1upt0rqzff34l.cloudfront.net^
 ||d1v99qnc7usc0g.cloudfront.net^
@@ -530,6 +542,7 @@
 ||d26adrx9c3n0mq.cloudfront.net^
 ||d26c6kzavi5zwd.cloudfront.net^
 ||d27gtglsu4f4y2.cloudfront.net^
+||d27qffx6rqb3qm.cloudfront.net^
 ||d28s7kbgrs6h2f.cloudfront.net^
 ||d29dbajta0the9.cloudfront.net^
 ||d29i6o40xcgdai.cloudfront.net^
@@ -539,15 +552,19 @@
 ||d2d8qsxiai9qwj.cloudfront.net^
 ||d2e30rravz97d4.cloudfront.net^
 ||d2edfzx4ay42og.cloudfront.net^
+||d2enprlhqqv4jf.cloudfront.net^
 ||d2fbkzyicji7c4.cloudfront.net^
 ||d2fbvay81k4ji3.cloudfront.net^
 ||d2focgxak1cn74.cloudfront.net^
 ||d2g9nmtuil60cb.cloudfront.net^
+||d2ga0x5nt7ml6e.cloudfront.net^
 ||d2ghscazvn398x.cloudfront.net^
 ||d2glav2919q4cw.cloudfront.net^
 ||d2hvwfg7vv4mhf.cloudfront.net^
+||d2i4wzwe8j1np9.cloudfront.net^
 ||d2i55s0cnk529c.cloudfront.net^
 ||d2j042cj1421wi.cloudfront.net^
+||d2k487jakgs1mb.cloudfront.net^
 ||d2k7b1tjy36ro0.cloudfront.net^
 ||d2kadvyeq051an.cloudfront.net^
 ||d2kk0o3fr7ed01.cloudfront.net^
@@ -564,6 +581,8 @@
 ||d2ojfulajn60p5.cloudfront.net^
 ||d2pxbld8wrqyrk.cloudfront.net^
 ||d2q52i8yx3j68p.cloudfront.net^
+||d2q9y3krdwohfj.cloudfront.net^
+||d2qhg50jab93jy.cloudfront.net^
 ||d2qz7ofajpstv5.cloudfront.net^
 ||d2r3rw91i5z1w9.cloudfront.net^
 ||d2sbzwmcg5amr3.cloudfront.net^
@@ -578,6 +597,7 @@
 ||d2uy8iq3fi50kh.cloudfront.net^
 ||d2v02itv0y9u9t.cloudfront.net^
 ||d2va1d0hpla18n.cloudfront.net^
+||d2werg7o2mztut.cloudfront.net^
 ||d2x19ia47o8gwm.cloudfront.net^
 ||d2ykons4g8jre6.cloudfront.net^
 ||d2z51a9spn09cw.cloudfront.net^
@@ -593,8 +613,11 @@
 ||d359wjs9dpy12d.cloudfront.net^
 ||d36zfztxfflmqo.cloudfront.net^
 ||d37abonb6ucrhx.cloudfront.net^
+||d38goz54x5g9rw.cloudfront.net^
 ||d38itq6vdv6gr9.cloudfront.net^
+||d38rrxgee6j9l3.cloudfront.net^
 ||d39hdzmeufnl50.cloudfront.net^
+||d39ion77s0ucuz.cloudfront.net^
 ||d39xxywi4dmut5.cloudfront.net^
 ||d3a42c7xs4vn3.cloudfront.net^
 ||d3a49eam5ump99.cloudfront.net^
@@ -613,6 +636,7 @@
 ||d3hitamb7drqut.cloudfront.net^
 ||d3hj4iyx6t1waz.cloudfront.net^
 ||d3hs51abvkuanv.cloudfront.net^
+||d3hyoy1d16gfg0.cloudfront.net^
 ||d3ithbwcmjcxl7.cloudfront.net^
 ||d3j3yrurxcqogk.cloudfront.net^
 ||d3j7esvm4tntxq.cloudfront.net^
@@ -630,6 +654,7 @@
 ||d3nel6rcmq5lzw.cloudfront.net^
 ||d3nvrqlo8rj1kw.cloudfront.net^
 ||d3ou4areduq72f.cloudfront.net^
+||d3p8w7to4066sy.cloudfront.net^
 ||d3pe8wzpurrzss.cloudfront.net^
 ||d3pk579obpqv7b.cloudfront.net^
 ||d3pvcolmug0tz6.cloudfront.net^
@@ -649,6 +674,7 @@
 ||d5pb47xzjz3fc.cloudfront.net^
 ||d63a3au5lqmtu.cloudfront.net^
 ||d6sav80kktzcx.cloudfront.net^
+||d6wzv57amlrv3.cloudfront.net^
 ||d7016uqa4s0lw.cloudfront.net^
 ||d7dza8s7j2am6.cloudfront.net^
 ||da3uf5ucdz00u.cloudfront.net^
@@ -661,6 +687,7 @@
 ||ddvfoj5yrl2oi.cloudfront.net^
 ||dew9ckzjyt2gn.cloudfront.net^
 ||dgw7ae5vrovs7.cloudfront.net^
+||dhrhzii89gpwo.cloudfront.net^
 ||dihutyaiafuhr.cloudfront.net^
 ||dita6jhhqwoiz.cloudfront.net^
 ||djm080u34wfc5.cloudfront.net^
@@ -668,6 +695,7 @@
 ||djr4k68f8n55o.cloudfront.net^
 ||djv99sxoqpv11.cloudfront.net^
 ||djz9es32qen64.cloudfront.net^
+||dk57sacpbi4by.cloudfront.net^
 ||dkm6b5q0h53z4.cloudfront.net^
 ||dkre4lyk6a9bt.cloudfront.net^
 ||dkus30wj6f84p.cloudfront.net^
@@ -678,6 +706,8 @@
 ||dlvds9i67c60j.cloudfront.net^
 ||dm0acvguygm9h.cloudfront.net^
 ||dm7gsepi27zsx.cloudfront.net^
+||dmeq7blex6x1u.cloudfront.net^
+||dmg0877nfcvqj.cloudfront.net^
 ||dmkdtkad2jyb9.cloudfront.net^
 ||dmmzkfd82wayn.cloudfront.net^
 ||dn3uy6cx65ujf.cloudfront.net^
@@ -703,6 +733,7 @@
 ||du01z5hhojprz.cloudfront.net^
 ||du2uh7rq0r0d3.cloudfront.net^
 ||due5a6x777z0x.cloudfront.net^
+||dufai4b1ap33z.cloudfront.net^
 ||duzt6rhr7wo8p.cloudfront.net^
 ||dv7t7qyvgyrt5.cloudfront.net^
 ||dvc8653ec6uyk.cloudfront.net^
@@ -714,12 +745,15 @@
 ||dxprljqoay4rt.cloudfront.net^
 ||dxz454z33ibrc.cloudfront.net^
 ||dybxezbel1g44.cloudfront.net^
+||dyh1wzegu1j6z.cloudfront.net^
 ||dzupi9b81okew.cloudfront.net^
+||dzv1ekshu2vbs.cloudfront.net^
 ! Google Hosted scripts
 ||googleapis.com/qmftp/$script
 ! Used for VPN Warning ads
 ||trust.zone^$third-party
 ! Anti-Adblock
+||anti-adblock.herokuapp.com^
 ||noadblock.net^$third-party
 ||onfocus.io^$third-party
 ||secretmedia.com^$third-party
