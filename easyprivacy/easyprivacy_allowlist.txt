@@ -31,6 +31,7 @@
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=right-on.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=247sports.com|account.pennytel.com.au|speedcheck.ky
+@@||api.ipinfodb.com^$xmlhttprequest,domain=management30.com
 @@||api.ipstack.com/check$domain=blockfi.com|withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
@@ -91,8 +92,8 @@
 @@||sammobile.com/wp-content/themes/sammobile-6/assets/js/newrelic.js$~third-party
 @@||shop.bmw.com.au/assets/analytics-setup.js$~third-party
 @@||songstats.com/api/v1/analytics/track_data$~third-party,xmlhttprequest
-@@||starbucks.ca/weblx/static/optimizely.$script
-@@||starbucks.com/weblx/static/optimizely.$script
+@@||starbucks.ca^*/optimizely.$script,~third-party
+@@||starbucks.com^*/optimizely.$script,~third-party
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
 @@||static.wikia.nocookie.net^*/tracking-opt-in.min.js$script,domain=fandom.com
 @@||tapinfluence.com/tap.js$script,domain=titus2homemaker.com
@@ -158,7 +159,6 @@
 @@||dropboxstatic.com/static/js/modules/clean/ux_analytics/$script,domain=dropbox.com
 @@||dw.cbsi.com/anonc.js$domain=giantbomb.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|tv.com
-@@||dynamicyield.com/api/$script,domain=adlibris.com|croma.com|fendi.com|flytap.com|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
 @@||dynamicyield.com/st?$script,domain=computeruniverse.net|croma.com|fendi.com|zalora.com.my|zalora.com.ph|zalora.sg
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
 @@||easyship.com/api/v1/track/$xmlhttprequest,domain=trackmyshipment.co
