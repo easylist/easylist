@@ -1,0 +1,46 @@
+! fanboy_newsletter_specific_uBO.txt
+! uBO Sepecific fixes
+protocol.com###form_out
+otisoatmilk.co.nz###shopify-section-newsletter-popup
+theconversation.com##.MuiDialog-root
+socialitelife.com##.mfp-ready
+audioholics.com,protocol.com,theconversation.com##body:style(overflow: auto !important;)
+otisoatmilk.co.nz,socialitelife.com##html:style(overflow:auto !important)
+! Counter generichide
+metro.co.uk##.metro-email-signup
+! nationalgeographic.com
+nationalgeographic.com## + js(aeld, scroll)
+nationalgeographic.com##.EmailStickyFooter__Modal
+nationalgeographic.com##body:style(overflow: auto !important; position: initial !important;)
+! Newspaper newsletter
+monroenews.com,poconorecord.com##.tp-backdrop
+monroenews.com,poconorecord.com##.tp-modal
+monroenews.com,poconorecord.com##body,html:style(height: auto !important; overflow: auto !important)
+! thewrap.com
+thewrap.com##.wk-site-overlay
+thewrap.com##body:style(overflow: auto !important;)
+! newrepublic.com
+newrepublic.com##.blink-sdk-widget-container
+newrepublic.com##html:style(overflow: auto !important)
+! ftm.eu (newsletter)
+ftm.eu##.blockingOverlay
+ftm.eu##html:style(overflow: auto !important)
+! zorbabooks.com (newsletter)
+zorbabooks.com##.modal
+zorbabooks.com##.modal-backdrop
+zorbabooks.com##body:style(overflow: auto !important;)
+! curiocity.com (newsletter)
+curiocity.com##.fancybox-is-open
+curiocity.com##body:style(overflow: auto !important;)
+! thethaiger.com (newsletter overlay, fix scrollbar)
+thethaiger.com##html:style(overflow: auto !important;)
+! ba-bamail.com (newsletter overlay, fix scrollbar)
+ba-bamail.com##body:style(overflow: auto !important;)
+! babylonbee.com (newsletter overlay)
+babylonbee.com##.modal-backdrop
+babylonbee.com##body:style(overflow: auto !important;)
+! informatykzakladowy.pl (newsletter overlay)
+informatykzakladowy.pl##body:style(overflow: auto !important;)
+! prowritingaid.com (newsletter overlay)
+prowritingaid.com##.exit-popup
+prowritingaid.com##body:style(overflow: auto !important;)
