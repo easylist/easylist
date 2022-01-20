@@ -1187,9 +1187,15 @@
 ###ccp-overlay
 ###ccpa-alert
 ###ccpa-banner
+###ccpa-block
 ###ccpa-consent-banner
 ###ccpa-cookie
+###ccpa-cookie-message
+###ccpa-footer
+###ccpa-notice
 ###ccpa-prompt-wrapper
+###ccpa.container
+###ccpaBanner
 ###ccpaCookieBanner
 ###ccs-notification
 ###ccservice-cookiesinfo
@@ -5278,6 +5284,7 @@
 ###mktzr_cookie_policy
 ###mlUsingCookies
 ###mla-gdpr-light
+###mm-ccpa-notice
 ###mm-content-cookies
 ###mmMS--bottom-notification
 ###mmMS--notification
@@ -7664,6 +7671,7 @@
 ##.cc_gccp-wrapper
 ##.cc_overlay_lock
 ##.ccbar.ccpane
+##.ccbar.ccpane:not(body):not(html)
 ##.ccbar_pos_bottom
 ##.ccbarbody .ccpane
 ##.ccc-widget
@@ -7674,17 +7682,21 @@
 ##.cck-msg
 ##.cckBannerInner
 ##.cclist.ccpane
+##.cclist.ccpane:not(body):not(html)
 ##.ccm-banner-small
 ##.ccm-bottom-slide
 ##.ccm-widget.ccm-modal
 ##.ccmcss_oic
 ##.ccp-overlay-fullscreen
 ##.ccpa-alert
+##.ccpa-banner
 ##.ccpa-banner-container
 ##.ccpa-consent-bar
 ##.ccpa-notice-wrapper
 ##.ccpa-notification
 ##.ccpa-popup
+##.ccpa[ng-controller*="CcpaBanner"]
+##.ccpabar
 ##.ccwrap
 ##.cczcook_banner-wrapper
 ##.cd__cookie
