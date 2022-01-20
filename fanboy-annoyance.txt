@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202201200326
+! Version: 202201200336
 ! Title: Fanboy's Annoyance List
-! Last modified: 20 Jan 2022 03:26 UTC
+! Last modified: 20 Jan 2022 03:36 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -23246,9 +23246,15 @@ m###teaser-newsletter
 ###ccp-overlay
 ###ccpa-alert
 ###ccpa-banner
+###ccpa-block
 ###ccpa-consent-banner
 ###ccpa-cookie
+###ccpa-cookie-message
+###ccpa-footer
+###ccpa-notice
 ###ccpa-prompt-wrapper
+###ccpa.container
+###ccpaBanner
 ###ccpaCookieBanner
 ###ccs-notification
 ###ccservice-cookiesinfo
@@ -27337,6 +27343,7 @@ m###teaser-newsletter
 ###mktzr_cookie_policy
 ###mlUsingCookies
 ###mla-gdpr-light
+###mm-ccpa-notice
 ###mm-content-cookies
 ###mmMS--bottom-notification
 ###mmMS--notification
@@ -29723,6 +29730,7 @@ m###teaser-newsletter
 ##.cc_gccp-wrapper
 ##.cc_overlay_lock
 ##.ccbar.ccpane
+##.ccbar.ccpane:not(body):not(html)
 ##.ccbar_pos_bottom
 ##.ccbarbody .ccpane
 ##.ccc-widget
@@ -29733,17 +29741,21 @@ m###teaser-newsletter
 ##.cck-msg
 ##.cckBannerInner
 ##.cclist.ccpane
+##.cclist.ccpane:not(body):not(html)
 ##.ccm-banner-small
 ##.ccm-bottom-slide
 ##.ccm-widget.ccm-modal
 ##.ccmcss_oic
 ##.ccp-overlay-fullscreen
 ##.ccpa-alert
+##.ccpa-banner
 ##.ccpa-banner-container
 ##.ccpa-consent-bar
 ##.ccpa-notice-wrapper
 ##.ccpa-notification
 ##.ccpa-popup
+##.ccpa[ng-controller*="CcpaBanner"]
+##.ccpabar
 ##.ccwrap
 ##.cczcook_banner-wrapper
 ##.cd__cookie
