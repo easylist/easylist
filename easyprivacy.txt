@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202201200759
+! Version: 202201241257
 ! Title: EasyPrivacy
-! Last modified: 20 Jan 2022 07:59 UTC
+! Last modified: 24 Jan 2022 12:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -282,6 +282,7 @@
 /__utm.js
 /__varnish_geoip
 /__wsm.gif
+/_gz/counter.php?
 /_hcms/perf
 /_lib/ga.js
 /_log?ocid=
@@ -964,6 +965,7 @@
 /beacon/timing?
 /beacon/track/*
 /beacon/user-data
+/beacon/v1/batch?
 /beacon/vtn_loader.gif?
 /beacon?
 /beacon_async.
@@ -1114,6 +1116,7 @@
 /cdn-cgi/bm/cv/*
 /cdn-cgi/ping?$image
 /cdn-cgi/rum?
+/cdn-cgi/zaraz/*
 /cdn-monitoring-pixel.
 /cdn.stats2?
 /cdn5.js?
@@ -1452,6 +1455,7 @@
 /counter.js.php
 /counter.lt?
 /counter.php?chcounter_mode=
+/counter.php?width=
 /counter.pl?
 /counter.visit?
 /Counter.woa/*
@@ -2775,6 +2779,7 @@
 /logpstatus.
 /logpv.aspx?
 /LogRecorder.
+/logrecordservice/*
 /logreferrer.php?
 /Logs/ad?
 /Logs/discovery?
@@ -5215,7 +5220,7 @@
 ://d.*/track.js
 ://email.*/blankpixel.gif
 ://ensighten.
-://fathom.$domain=~fathom.info|~fathom.video|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.info|~fathom.io|~fathom.video|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://geoip.*/country.json
 ://ivwextern.
 ://lightning.*/launch/
@@ -5456,6 +5461,7 @@ cgi-bin/counter
 /notifications/beacon/*
 /open.aspx?
 /open.html?$image
+/p1x1.gif
 /page.bsigroup.com/*
 /pixel-prod.
 /pixel?cid=
@@ -5826,6 +5832,7 @@ _mongo_stats/
 ||seadform.net^
 ||seoab.io^
 ||site24x7rum.eu^
+||sixtrk.com^
 ||sjpf.io^
 ||solutionshindsight.net^
 ||speedyfox.io^
@@ -6058,6 +6065,7 @@ _mongo_stats/
 ||angorch-cdr7.com^$third-party
 ||angsrvr.com^$third-party
 ||anrdoezrs.net^$third-party
+||answerbook.com^$third-party
 ||answerscloud.com^$third-party
 ||anti-cheat.info^$third-party
 ||antiblock.info^$third-party
@@ -7769,7 +7777,7 @@ _mongo_stats/
 ||rqtrk.eu^$third-party
 ||rrimpl.com^$third-party
 ||rs0.co.uk^$third-party
-||rs6.net^$script,third-party
+||rs6.net^$image,script,third-party
 ||rstg.io^$third-party
 ||rsvpgenius.com^$third-party
 ||rtb123.com^$third-party
@@ -8589,6 +8597,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pushex.io^$third-party
 ||pushible.com^$third-party
 ||pushify.com^$third-party
+||pushmaster-cdn.xyz^
 ||pushnami.com^$third-party
 ||pushwoosh.com^$third-party
 ||reconditerespect.com^$third-party
@@ -14587,6 +14596,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||fresnel-events.vimeocdn.com^
 ||ft.com/ingest?
 ||fujifilm.com/js/shared/analyzer.js
+||fullscreen.nz/v1/tracking/$domain=threenow.co.nz
 ||g.ign.com^
 ||g.mashable.com^
 ||g.pcmag.com^
@@ -25999,11 +26009,13 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satellite-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=absa.co.za|americanexpress.com|argos.co.uk|auspost.com.au|backcountry.com|bmw.com.au|collegeboard.org|costco.com|crackle.com|crimewatchdaily.com|directline.com|eonline.com|fcbarcelona.com|firststatesuper.com.au|godigit.com|hgtv.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|malaysiaairlines.com|mastercard.us|mathworks.com|monoprice.com|nbcnews.com|nfl.com|nflgamepass.com|nofrills.ca|oprah.com|oracle.com|pnc.com|realtor.com|redbull.tv|repco.co.nz|searspartsdirect.com|shoppersdrugmart.ca|smooth.com.au|stuff.co.nz|subaru.com|telegraph.co.uk|timewarnercable.com|usanetwork.com|vanityfair.com|wired.com|wowway.net
+@@||aeries.net/aeries/scripts/require/analytics/views/$script,~third-party
 @@||ajio.com/static/assets/vendors~static/chunk/common/libraries/fingerprintjs2.$script,~third-party
 @@||akamaihd.net/worldwide_analytics/$script,domain=ubi.com|ubisoft.com
 @@||akamaihd.net^*/analyticssdk.js$script,domain=ubisoft.com
 @@||akamaized.net^*/resource/assets/$xmlhttprequest,domain=funplusgame.com
 @@||amazonaws.com/production$xmlhttprequest,domain=ipa-reader.xyz
+@@||analytics-static.ugc.bazaarvoice.com/prod/$script,domain=hisense.co.uk
 @@||analytics.amplitude.com^$~third-party
 @@||analytics.edgekey.net/ma_library/html5/html5_malibrary.js$script,domain=mxplayer.in
 @@||analytics.itunes.apple.com^$~third-party
@@ -26041,6 +26053,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||boots.com/wcsstore/ebootsstorefrontassetstore/javascript/analytics.js$~third-party
 @@||catalogue.jbhifi.com.au^*/static/analytics.js$script,~third-party
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
+@@||cdn.jsdelivr.net^*/fp.min.js$script,domain=cuevana2.io
 @@||chat.conveyhs.com/chatadapter/clickstream/clickstream.js$script
 @@||cleverpush.com/channel/$script,domain=bsdex.de
 @@||cloudmaestro.com^$script,domain=overtone.co
@@ -26053,6 +26066,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||daan.dev/wp-content/*/caos-supports-google-analytics-$image,~third-party
 @@||dashboard.unity3d.com/services/analytics/$~third-party
+@@||docs.google.com/document/
 @@||etsy.com/api/v3/ajax/bespoke/*log_performance_metrics=$~third-party
 @@||geo.gorillanation.com/geo.php$script,domain=sherdog.com
 @@||gettingpersonal.co.uk^*/scripts/app/shared/googleanalytics.js$script,~third-party
@@ -26066,6 +26080,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
+@@||kaptcha.com/collect/sdk?$domain=wyze.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||live.house.gov/js/analytics.$script,~third-party
@@ -26113,7 +26128,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdn.optimizely.com/js/*.js$domain=compassion.com|creditsesame.com|freeshipping.com|heroku.com
 @@||cdn.segment.com/analytics-next/$domain=app.cryptotrader.tax|givingassistant.org
-@@||cdn.segment.com/analytics.js/$script,domain=app.cryptotrader.tax|fender.com|givingassistant.org
+@@||cdn.segment.com/analytics.js/$script,domain=app.cryptotrader.tax|fender.com|givingassistant.org|my.foxnews.com
 @@||cdn.segment.com/next-integrations/integrations/intercom/*/intercom.dynamic.js.gz$script,domain=app.cryptotrader.tax
 @@||cdn.segment.com/next-integrations/integrations/vendor/commons.$script,domain=app.cryptotrader.tax
 @@||cdn.segment.com/v1/projects/$domain=app.cryptotrader.tax|benchling.com|givingassistant.org
@@ -26850,6 +26865,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.ru
 @@||afisha.ru/proxy/videonetworkproxy.ashx?$xmlhttprequest
 @@||alfadirect.ru/api/analytics/latest?$~third-party,xmlhttprequest
+@@||avito.st/s/a/i/0.gif$image,domain=avito.ru
 @@||boxberry.ru/bitrix/templates/main.adaptive/js/tracking.js
 @@||boxberry.ru/tracking.service/
 @@||coronavirus-monitor.ru/scripts/statistics/statistics.$script,~third-party
