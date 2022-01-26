@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202201262339
+! Version: 202201262340
 ! Title: EasyList
-! Last modified: 26 Jan 2022 23:39 UTC
+! Last modified: 26 Jan 2022 23:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56731,6 +56731,32 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##div[role="navigation"] + c-wiz > div > .kxhcC
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
+! msn.com
+msn.com##.bing-native-ad
+msn.com##.dynamicRRWrapper
+msn.com##.intra-article-ad
+msn.com##.medianetintraarticlenativead
+msn.com##.nativeadserversidecontentmodule
+msn.com##.sameoab_ad_container
+msn.com##.serversidenativead.secondary
+msn.com##[class^="nativeAd"]
+msn.com##a.nativead[target="_blank"]
+msn.com##div[class^="articlePage_topBannerAdContainer_"]
+msn.com##div[data-section-id="sponsored.stripe.shopping"]
+! Bing
+bing.com##.ad_sc
+bing.com##.adsMvC
+bing.com##.b_ad
+bing.com##.b_adBottom
+bing.com##.b_adLastChild
+bing.com##.mapsTextAds
+bing.com##.pa_carousel_mlo
+bing.com##.pa_sb
+bing.com##.productAd
+bing.com##[id$="adsMvCarousel"]
+bing.com##a[h$=",Ads"]
+bing.com##a[href*="/aclick?ld="]
+! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
 1337x.to#?#a:-abp-contains(An‌on‌ymous Download)
 1337x.to#?#a:-abp-contains(Your ip Address is)
@@ -56804,31 +56830,6 @@ windowsbulletin.com#?#.code-block:-abp-has(a[href^="http://www.reimageplus.com/"
 windowsbulletin.com#?#strong:-abp-has(a[href^="http://www.reimageplus.com/"])
 xing.com#?#div[class^="styles-grid-col-"]:-abp-has(span[class^="MediaObject-MediaObject-meta-"]:-abp-contains(/Gesponsert|Sponsored|Patrocinado|Sponsorisé|Sponsorizzato/))
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se#?#div[class^=" container_"]:-abp-has(a[href^="/adredir?"])
-! msn.com
-msn.com##.bing-native-ad
-msn.com##.dynamicRRWrapper
-msn.com##.intra-article-ad
-msn.com##.medianetintraarticlenativead
-msn.com##.nativeadserversidecontentmodule
-msn.com##.sameoab_ad_container
-msn.com##.serversidenativead.secondary
-msn.com##[class^="nativeAd"]
-msn.com##a.nativead[target="_blank"]
-msn.com##div[class^="articlePage_topBannerAdContainer_"]
-msn.com##div[data-section-id="sponsored.stripe.shopping"]
-! Bing
-bing.com##.ad_sc
-bing.com##.adsMvC
-bing.com##.b_ad
-bing.com##.b_adBottom
-bing.com##.b_adLastChild
-bing.com##.mapsTextAds
-bing.com##.pa_carousel_mlo
-bing.com##.pa_sb
-bing.com##.productAd
-bing.com##[id$="adsMvCarousel"]
-bing.com##a[h$=",Ads"]
-bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 porndr.com###PD-Under-player
 deviants.com###_iframe_content
