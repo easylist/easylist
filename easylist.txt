@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202201280308
+! Version: 202201280329
 ! Title: EasyList
-! Last modified: 28 Jan 2022 03:08 UTC
+! Last modified: 28 Jan 2022 03:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -31052,6 +31052,7 @@ _800x80_
 ##div[class^="proadszone-"]
 ##div[class^="sp-adslot-"]
 ##div[data-ad-placeholder]
+##div[data-ad-targeting]
 ##div[data-ad-underplayer]
 ##div[data-ad-wrapper]
 ##div[data-adname]
@@ -31059,10 +31060,16 @@ _800x80_
 ##div[data-adunit-path]
 ##div[data-adunit]
 ##div[data-adzone]
+##div[data-before-content="advertisement"]
 ##div[data-content="Advertisement"]
 ##div[data-contentexchange-widget]
+##div[data-dfp-id]
+##div[data-google-query-id]
 ##div[data-id-advertdfpconf]
+##div[data-insertion]
 ##div[data-mediatype="advertising"]
+##div[data-mpu1]
+##div[data-native-ad]
 ##div[data-native_ad]
 ##div[data-role="sidebarAd"]
 ##div[data-spotim-slot]
@@ -55049,19 +55056,15 @@ digitaltrends.com##.dtads-slot
 googleping.com##.dtext
 yts.mx##.durs-bordered
 daniweb.com##.dw-inject-bsa
-mygaming.co.za##.dw_focus_videos
 nomadlist.com##.dynamic-fill
 nytimes.com##.e12j3pa50
-arabtimesonline.com,chtupdate.net##.e3lan
+arabtimesonline.com##.e3lan
 presskitaquat.com##.e3lan-top
 tiresandparts.net##.e3lanat-layout-rotator
 euractiv.com##.ea-gat-slot-wrapper
 expats.cz##.eas
 nativenewsonline.net##.eb-visible
-carandclassic.co.uk##.ebayRSS
-livemint.com##.eclt-rsttble
 gumtree.com##.ecn-display-block
-ecosia.org##.ecolink-search-result
 teenvogue.com##.ecom-placement
 gfinityesports.com##.ecommerceUnit
 newagebd.net##.editorialMid
@@ -55361,7 +55364,6 @@ republicbroadcasting.org##.left-sidebar-padder > #text-8
 gogetaroomie.com##.left-space
 10minutemail.net##.leftXL
 latestly.com##.lhs_adv_970x90_div
-gumtree.com.au##.liberty-container-1001
 op.gg##.life-owner
 mobygames.com##.lifesupport-header
 iheartradio.ca##.lightbox-wrapper
@@ -55883,7 +55885,6 @@ u.today##.something--fixed
 songfacts.com##.songfacts-song-inline-ads
 freeonlineapps.net##.sp
 ndtv.com##.sp_ad-t
-gumtree.com##.space-pbs.space-pts
 informer.com##.spnsd
 sundayworld.co.za##.spnsorhome
 mydramalist.com##.spnsr
@@ -56094,7 +56095,6 @@ extremetech.com##.widget_gptwidget
 faroutmagazine.co.uk##.widget_grv_mpu_widget
 theiphoneappreview.com##.widget_links
 appleworld.today,deshdoaba.com,foreverconscious.com,patriotfetch.com,pctechmag.com,washingtonmonthly.com##.widget_media_image
-chtupdate.net##.widget_media_image.widget
 nypost.com##.widget_nypost_dfp_ad_widget
 dailynewsegypt.com##.widget_rotatingbanners
 twistedsifter.com##.widget_sifter_ad_bigbox_widget
@@ -56406,13 +56406,6 @@ mydramalist.com##div[class^="spnsr"]
 kijiji.ca##div[class^="sponsored-"]
 whatsondisneyplus.com##div[class^="whats-"]
 genius.com##div[class|="InreadAddesktop__Container"]
-motortrend.com##div[data-ad-targeting]
-reddit.com##div[data-before-content="advertisement"]
-pushsquare.com##div[data-dfp-id]
-livejournal.com##div[data-google-query-id]
-windowsreport.com##div[data-insertion]
-independent.co.uk##div[data-mpu1]
-gamezop.com##div[data-native-ad]
 google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.nz,google.co.th,google.co.uk,google.co.ve,google.co.za,google.com,google.com.ar,google.com.au,google.com.br,google.com.co,google.com.ec,google.com.eg,google.com.hk,google.com.mx,google.com.my,google.com.pe,google.com.ph,google.com.pk,google.com.py,google.com.sa,google.com.sg,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vn,google.cz,google.de,google.dk,google.dz,google.ee,google.es,google.fi,google.fr,google.gr,google.hr,google.hu,google.ie,google.it,google.lt,google.lv,google.nl,google.no,google.pl,google.pt,google.ro,google.rs,google.ru,google.se,google.sk##div[data-section-id$="__adb"]
 ecosia.org##div[data-test-id="mainline-result-ad"]
 qwant.com##div[data-testid="productAdsMicrosoft.container"]
