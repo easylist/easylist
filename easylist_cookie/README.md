@@ -2,6 +2,15 @@ Easylist Cookie list covers various cookie, GDPR warnings and notices.
 
 If there appropiate workaround for a website, we'll let the message show to preserve compatibility. 
 
+## Why Easylist Cookie List?
+
+* uBO Compatible (:style and js snippets)
+* Unblocking of blurred content 
+* Unblocking of disabled scrollbar & overlays
+* Better community support on [Github](https://github.com/easylist/easylist/issues) (open to PR's and Issue Reports)
+* Less complex div elements, target divs are more specific and optimised.
+* [Updated regularly](https://github.com/easylist/easylist/commits/master/easylist_cookie)
+
 ## The following sites have no current workaround
 
 | Website | Description | Any way around it? | Details |
