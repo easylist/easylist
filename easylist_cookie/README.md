@@ -28,3 +28,4 @@ If there appropiate workaround for a website, we'll let the message show to pres
 | Consent company | Description | Any way around it? | Details |
 | --- | --- | --- | --- |
 trustarc.com/truste.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [usa.philips.com](https://www.usa.philips.com/) |
+cookiepro.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [was removed](https://github.com/easylist/easylist/commit/6714a84e2dde673f5bb70264c61800183ac1dcb5) |
