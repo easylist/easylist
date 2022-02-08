@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202202080749
+! Version: 202202080753
 ! Title: EasyPrivacy
-! Last modified: 08 Feb 2022 07:49 UTC
+! Last modified: 08 Feb 2022 07:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -26291,6 +26291,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! ping exceptions
+@@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
 ! https://github.com/easylist/easylist/issues/10565
 @@||googletagmanager.com/gtm.js$domain=blaklader.at|blaklader.be|blaklader.ca|blaklader.com|blaklader.cz|blaklader.de|blaklader.dk|blaklader.ee|blaklader.es|blaklader.fi|blaklader.fr|blaklader.ie|blaklader.it|blaklader.nl|blaklader.no|blaklader.pl|blaklader.se|blaklader.uk
 ! https://github.com/easylist/easylist/issues/8662
