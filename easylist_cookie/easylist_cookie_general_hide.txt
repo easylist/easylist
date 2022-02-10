@@ -7807,6 +7807,8 @@
 ##.cc-stop-overlay
 ##.cc-window-banner
 ##.cc-window.cookie
+##.cc-window[aria-describedby*="consent"]
+##.cc-window[aria-label*="consent"]
 ##.cc-wrapper > .cc-inner
 ##.cc[data-notice="cookies"]
 ##.cc__bg
@@ -10148,6 +10150,7 @@
 ##.dot-cc-wrapper
 ##.dot-cookie-prompt
 ##.doyoulikecookies
+##.dp--cookie-consent
 ##.dp-cookie-legal
 ##.dr-cookie-info-box
 ##.dr-message-cookie
@@ -12508,7 +12511,8 @@
 ##.trox-consent-manager
 ##.truste-sf-banner
 ##.truste_box_overlay
-##.truste_overlay
+##.truste_cm_outerdiv:not(body):not(html)
+##.truste_overlay:not(body):not(html)
 ##.ts_privacy_adv
 ##.tsccb-banner-container
 ##.tsl-cookiebanner

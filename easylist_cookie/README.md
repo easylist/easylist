@@ -23,3 +23,9 @@ If there appropiate workaround for a website, we'll let the message show to pres
 [standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | No | Breaks video playback |
 [express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | No | Breaks video playback |
 [developer.ing.com](https://developer.ing.com/) | Consent overlay shows | No | Breaks menus |
+
+## Consent companys
+| Consent company | Description | Any way around it? | Details |
+| --- | --- | --- | --- |
+trustarc.com/truste.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [usa.philips.com](https://www.usa.philips.com/) |
+cookiepro.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [was removed](https://github.com/easylist/easylist/commit/6714a84e2dde673f5bb70264c61800183ac1dcb5) |
