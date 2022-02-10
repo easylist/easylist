@@ -12,8 +12,16 @@ The goal of this repository is to block ads on English and International sites. 
  - Affiliate links/images/widgets
  - Cosmetic filtering (Generic and site-specific CSS)
  - Ad servers (Block servers that host ads/ad-related contents)
+ - Linking, loading or initialising to known Adservers, or ad scripts.
+ - Ad servers used as clickthrough servers also blocked outright.
+ - Inserting ad elements (cosmetic, servers or scripts) into a page
  - Prevent popups/popunders (Block scripts or domains that cause popups/popunders/ad notifications)
  - Placeholders of non-trivial size (Usually ≥50px tall and ≥50px wide)
+ - Invideo/InSlideshow Ads (This is *NOT* the same as a site using embedded youtube videos).
+   - 1st or 3rd-party content.
+   - Videos/slideshows that aren't directly related to the specific webpage being shown. 
+   - May autoplay and/or follows user on scroll. 
+ - "Consent messages" using any of these techniques. 
 
 Anti-adblock in Easylist will cover cosmetic and generic blocks checks:
  - Prevent adblock users showing a website
@@ -29,20 +37,22 @@ For legal reasons, Anti-adblock this will only cover:
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
  - Analytics
- - Bot checks
+ - AntiBot or Bot checks
  - Telemetry
- - Tracking cookies
- - Pixels
+ - Tracking Pixels or cookies (being set, checked or get)
  - Referrers
  - Beacons
  - Fingerprinting
- - Impressions/Event/Perf/Pageview logging
- - User agent monitoring
+ - Email tracking
+ - Impressions / Event / Perf / Pageview logging
+ - User agent checks or monitoring
  - Resource miners
  - Hit counters
  - CNAME trackers
- - Linking to other 3rd-party tracking servers
+ - Notification servers / popups including any tracking covered by Easyprivacy policy
+ - Linking, loading or initialising to known tracking servers, or scripts
  - Some unnecessary 3rd-party scripts/images
+ - "Consent messages" using any of these tracking techniques, covered by Easyprivacy policy
  
 When a site is attempting to track, it'll be put into one of 4 categories.
  - Generic blocks (common URL/tracking filter patterns) used by 1st/3rd-parties.
@@ -67,8 +77,11 @@ It is preferable to submit issues instead of pull requests, because the EasyList
 
 ## Complaints
 
+If your service is blocked, check the Easylist or Easyprivacy coverage above before submitting any request (and why its blocked).
+
 If your site was added to EasyList or EasyPrivacy:
  - Outline why it shouldn't be added.
+ - Filters will not be removed on your word or policy (both can change).
  - The specific commit in question, or specific filter.
  - Is it covered by any of the EasyList/EasyPrivacy requirements?
  
