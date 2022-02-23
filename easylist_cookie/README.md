@@ -11,6 +11,18 @@ If there appropiate workaround for a website, we'll let the message show to pres
 * Less complex div elements, target divs are more specific and optimised.
 * [Updated regularly](https://github.com/easylist/easylist/commits/master/easylist_cookie)
 
+## What is not covered in Easylist Cookie List?
+
+The following nags or warnings that won't be targeted.
+
+* Age checks
+* Regional/Country Checks
+* Health or Covid warnings
+* Tax warning/checks
+* Gambling warnings/checks
+
+Note: The only exception if a site combined a cookie consent message with another dialog box then the consent message blocking will take precedence.
+
 ## The following sites have no current workaround
 
 | Website | Description | Any way around it? | Details |
