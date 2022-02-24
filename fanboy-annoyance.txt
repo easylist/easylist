@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202240737
+! Version: 202202240946
 ! Title: Fanboy's Annoyance List
-! Last modified: 24 Feb 2022 07:37 UTC
+! Last modified: 24 Feb 2022 09:46 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -29114,6 +29114,7 @@ m###teaser-newsletter
 ##.CookieWarningComponent
 ##.CookieWarning__wrapper
 ##.CookieWindow
+##.CookieWrapper:not(body):not(html)
 ##.Cookie_Banner
 ##.Cookie__Banner
 ##.Cookie__banner
@@ -29135,6 +29136,7 @@ m###teaser-newsletter
 ##.CookiesBar
 ##.CookiesConsent
 ##.CookiesConsent_root
+##.CookiesFooter
 ##.CookiesHinweisOuter
 ##.CookiesInfo
 ##.CookiesInfoMain
@@ -31166,7 +31168,12 @@ m###teaser-newsletter
 ##.cookieDirWrap
 ##.cookieDirective
 ##.cookieDiscl
+##.cookieDisclaimer
+##.cookieDisclaimerBox
+##.cookieDisclaimerContainer
+##.cookieDisclaimerContainerWrapper
 ##.cookieDisclaimerV2
+##.cookieDisclaimerWrapper
 ##.cookieDiv
 ##.cookieDrawer
 ##.cookieEN
@@ -31243,7 +31250,9 @@ m###teaser-newsletter
 ##.cookieNoticeBar
 ##.cookieNoticeBox
 ##.cookieNoticePopUp
+##.cookieNoticeTextContainer
 ##.cookieNoticeType1
+##.cookieNoticeWrapper
 ##.cookieNotice__container
 ##.cookieNotif
 ##.cookieNotification
@@ -32908,6 +32917,7 @@ m###teaser-newsletter
 ##.gdpr__wrapper
 ##.gdpr_accept_cookie
 ##.gdpr_banner
+##.gdpr_banner_top
 ##.gdpr_bar
 ##.gdpr_compliance
 ##.gdpr_consent_popup
@@ -33123,6 +33133,7 @@ m###teaser-newsletter
 ##.in2-modal__blackbox
 ##.inbentaCookie
 ##.index__cookie__body
+##.index_cookieNotification__1-VLN
 ##.index_cookies
 ##.inerCookie
 ##.info-banner__cookie-policy
@@ -33177,6 +33188,7 @@ m###teaser-newsletter
 ##.j-cookie-message
 ##.j-cookieConsentPanel
 ##.j-cookieContainer
+##.j-cookieDisclaimer
 ##.j-cookieLaw
 ##.j-cookieModal
 ##.j-gdpr-message
@@ -35182,7 +35194,6 @@ m###teaser-newsletter
 ##[class^="CookieLayer_"]
 ##[class^="CookieMessage_"]
 ##[class^="FooterGDPR"]
-##[class^="GlobalCookieBanner_"]
 ##[class^="cookieConsent__WrapperContainer"]
 ##[cnn-cookie-policy]
 ##[cookie-unique-name]
@@ -35293,29 +35304,6 @@ m###teaser-newsletter
 ##cru-cookie-policy
 ##cts-disclaimer-cookies
 ##dile-cookies-consent
-##div[class$="BandeauCookies"]
-##div[class$="UpdatePanelCookie"]
-##div[class*="-CookiesBar-"]
-##div[class*="CookieBanner-"]
-##div[class*="CookieBannerContainer"]
-##div[class*="CookieBarStyled"]
-##div[class*="CookieDisclaimer-"]
-##div[class*="CookieWrapper"]
-##div[class*="CookiesBanner_"]
-##div[class*="CookiesFooter"]
-##div[class*="GDPRConsentForm"]
-##div[class*="Warnings__cookieBar"]
-##div[class*="_CookieBanner_"]
-##div[class*="_cookiesPolicy_"]
-##div[class*="cookie-consent-modal_"]
-##div[class*="cookieBarContainer"]
-##div[class*="cookieDisclaimer"]
-##div[class*="cookieNoticeTextContainer"]
-##div[class*="cookiesBarVisible"]
-##div[class*="footer__CookieBar"]
-##div[class^="ConsentBar_"]
-##div[class^="CookieAcceptBanner_"]
-##div[class^="CookieBanner_"]
 ##div[class^="CookieBannerstyles_"]
 ##div[class^="CookieBarWrapper"]
 ##div[class^="CookieBar_"]
@@ -35358,12 +35346,6 @@ m###teaser-newsletter
 ##div[class^="cookiesAgreement"]
 ##div[class^="cookiesAlert_"]
 ##div[class^="cookiesPopup-"]
-##div[class^="cookies_cookieValidations"]
-##div[class^="gdpr_banner_"]
-##div[class^="index_cookieNotification"]
-##div[class^="popupConsentBanner"]
-##div[class^="src-ui-Cookie"]
-##div[class^="styles__Cookie"]
 ##div[class^="termly-consent-"]
 ##div[data-automation="cookies-banner"]
 ##div[data-automation="privacy-banner-wrapper"]
@@ -43797,6 +43779,7 @@ lareviewofbooks.org##.Toastify
 6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.Tooltip
 hotcleaner.com##.V9
 hotcleaner.com##.XNKr
+depop.com##.XnNdW
 msg.com##._1HoCd
 hiberworld.com##._1u7AkTjy
 studocu.com##._21b991318444
@@ -43806,6 +43789,7 @@ dreamhack.com##._2IIiex-CsxtuW7QGZ_oO5z
 cnn.com##._2dc7d020
 steambackgrounds.com##._3FMjZWrktfnucZvMMGToOx
 reddit.com##._3q-XSJ2vokDQrvdG6mR__k
+osf.io##._CookieBanner_1k6aw9
 tango.me##._De3j
 wolframalpha.com##._Sjp9
 instagram.com##._he402
@@ -44472,6 +44456,7 @@ sportinglife.com##div[class^="Article__FlashTalkingWrapper-"]
 cbtnuggets.com##div[class^="BannerContainer-sc-"]
 bloomberglaw.com##div[class^="CookieNotice_"]
 engen.co.za##div[class^="CookieNotification_"]
+whatsonstage.com##div[class^="Cookie__CookieBannerContainer-"]
 lucidmotors.com##div[class^="Cookies-module-"]
 steller.co##div[class^="Disclaimer_"]
 similarsites.com##div[class^="PrivacyNotification"]
@@ -44481,12 +44466,15 @@ mvagusta.com##div[class^="bannerContainer"]
 patreon.com##div[class^="bottomLeft__"]
 vodafone.co.uk##div[class^="cookie-policy"]
 truewealth.ch##div[class^="cookieConsent"]
+scinapse.io##div[class^="cookieConsentBanner_"]
+stamped.io##div[class^="cookies_cookieValidations"]
 udemy.com##div[class^="eu-cookie-message-"]
 giphy.com##div[class^="flash-message"]
 brain.fm##div[class^="modules-core-css-CookiePopup"]
 voxi.co.uk##div[class^="notification-container"]
 cheddar.com##div[class^="notificationBanner"]
 listen.tidal.com##div[class^="notificationWrapper--"]
+disk-o.cloud##div[class^="src-ui-Cookie"]
 buffer.com##div[class^="style__Banner-"]
 pfister.ch##div[class^="style__CookieModal"]
 berlitz.com##div[class^="style__StickyAlertWrapper-"]
@@ -47252,6 +47240,7 @@ assuropoil.fr,magasinsdeco.fr,recreatisse.com##.spu-bg
 vinted.fr##.sticky-footer
 oceole.fr##.usn-notification
 order.fiveguys.fr##.v-overlay
+wizbii.com##div[class^="gdpr_consent_"]
 sportetstyle.fr##div[id^="cookie"]
 ! Site Specific filters (used with $generichide)
 onvasortir.com###infocookies
@@ -48258,6 +48247,7 @@ vega-protect.ru##.t886
 shop.philips.ru##.test-mode
 pfr.gov.ru##.user-data-processing-wrapper
 warthunder.ru##.wt-cb
+skoda-avto.ru##div[class^="CookieAcceptBanner_"]
 yoomoney.ru##div[class^="Gdpr__StyledGdpr-"]
 pik-broker.ru##div[class^="cookie_cookie_"]
 ! 
