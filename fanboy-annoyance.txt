@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202250150
+! Version: 202202250252
 ! Title: Fanboy's Annoyance List
-! Last modified: 25 Feb 2022 01:50 UTC
+! Last modified: 25 Feb 2022 02:52 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -23367,6 +23367,7 @@ m###teaser-newsletter
 ###cg_cookie_bar
 ###checkCookie
 ###checkCookieBox
+###checkUPcookies
 ###checkmkCookieNotice
 ###chellocookies-bar
 ###cherry-cookie-banner
@@ -26142,6 +26143,7 @@ m###teaser-newsletter
 ###dialog-cookies
 ###dialog-euCookie
 ###dialog-modal-cookieadv
+###dialogAcceptCookiePolicy
 ###dialogConfirmCookies
 ###dialog_cookies
 ###dialogoCookies
@@ -27812,6 +27814,7 @@ m###teaser-newsletter
 ###obt_ga_banner
 ###oc_cb_wrapper
 ###ocn-cookie-wrap
+###oct-policy.fixed-bottom
 ###ocw_conteneur
 ###oddcookie
 ###ode-cookie-popup
@@ -30298,6 +30301,7 @@ m###teaser-newsletter
 ##.container-fluid.cookies
 ##.containerCookie
 ##.containerCookieDisclaimer
+##.containerCookies:not(html):not(body)
 ##.containerOuterCookie
 ##.container[data-js*="cookie-message"]
 ##.container__cookiesPolicy
@@ -30332,7 +30336,9 @@ m###teaser-newsletter
 ##.coockiebar
 ##.coockiehinweis
 ##.coockies
+##.coockies-block
 ##.coockies-message
+##.coockies-popup
 ##.coockiesPolicy
 ##.coockies_alert
 ##.coockiesfixed
@@ -31157,6 +31163,7 @@ m###teaser-newsletter
 ##.cookieBarX
 ##.cookieBar__container
 ##.cookieBlock
+##.cookieBlog
 ##.cookieBnrWrp
 ##.cookieBox
 ##.cookieBox-wrapper
@@ -31781,6 +31788,7 @@ m###teaser-newsletter
 ##.cookies--visible
 ##.cookies-1
 ##.cookies-accept
+##.cookies-accept-block
 ##.cookies-accept-container
 ##.cookies-accept-form
 ##.cookies-accept-message
@@ -31940,6 +31948,7 @@ m###teaser-newsletter
 ##.cookies-policy:not(body):not(html)
 ##.cookies-politic
 ##.cookies-pop-up
+##.cookies-popap
 ##.cookies-popin
 ##.cookies-popup
 ##.cookies-popupbox
@@ -32449,6 +32458,7 @@ m###teaser-newsletter
 ##.dnvgl-cookie-container
 ##.dom-content--eu-banner
 ##.done-gdpr-alert-box-bg
+##.done-gdpr-alert-box-modal
 ##.done-gdpr-alert-box-wrapper
 ##.dot-cc-wrapper
 ##.dot-cookie-prompt
@@ -32960,6 +32970,7 @@ m###teaser-newsletter
 ##.gdpr_banner
 ##.gdpr_banner_top
 ##.gdpr_bar
+##.gdpr_cn-bottom
 ##.gdpr_compliance
 ##.gdpr_consent_popup
 ##.gdpr_cookie
@@ -32968,6 +32979,7 @@ m###teaser-newsletter
 ##.gdpr_cookie_bar_cont
 ##.gdpr_cookie_notice
 ##.gdpr_discplaimer
+##.gdpr_div
 ##.gdpr_gdpr-composer-panel__toolbar
 ##.gdpr_hdr
 ##.gdpr_infobar_postion_bottom
@@ -33173,6 +33185,7 @@ m###teaser-newsletter
 ##.in2-modal
 ##.in2-modal__blackbox
 ##.inbentaCookie
+##.incrypted-cookie-bar
 ##.index__cookie__body
 ##.index_cookieNotification__1-VLN
 ##.index_cookies
@@ -34087,6 +34100,7 @@ m###teaser-newsletter
 ##.oo-cookie-notice
 ##.oon-ds-banner
 ##.opacity_layer_consent
+##.open.cookies
 ##.opl-cookie-control
 ##.optanon-alert-box-wrapper
 ##.optanon-show-settings
@@ -34326,6 +34340,7 @@ m###teaser-newsletter
 ##.privacy-cookies
 ##.privacy-disclaimer
 ##.privacy-disclaimer-banner
+##.privacy-footer-block
 ##.privacy-hint
 ##.privacy-info
 ##.privacy-info-container
@@ -34411,6 +34426,7 @@ m###teaser-newsletter
 ##.privacyhint
 ##.privacyinfo
 ##.privacyouterwrapper
+##.privacypolicies-com---nb
 ##.privacypolicy-accept
 ##.privacypolicymessagebox_header
 ##.privacypolicystripe
@@ -34609,6 +34625,7 @@ m###teaser-newsletter
 ##.section--cookie-policy
 ##.section--cookieBar
 ##.section-cookie
+##.section-cookieNotification
 ##.section-cookies
 ##.section-popup-gdpr
 ##.section__cookies
@@ -34638,6 +34655,7 @@ m###teaser-newsletter
 ##.shadow-cookie
 ##.shareaholic-cookie-consent
 ##.shared-alert__cookie
+##.shared-components-cookies
 ##.shared-cookie-consent
 ##.shark-cookie
 ##.shb-accept-cookies-box
@@ -34774,6 +34792,7 @@ m###teaser-newsletter
 ##.stupidCookieConsent
 ##.styleCookies
 ##.su-cookiebar
+##.subscribe-cookie
 ##.suchen-cookie-privacy-toast
 ##.sui-CmpBanner
 ##.sui-CookieBanner
@@ -48246,7 +48265,6 @@ grilloagrigarden.ru,inscience.news,proglib.io###cookie
 gocpa.ru###gdpr
 printn1.ru###info-bott-message
 forum-windows.net###ntf
-cmoto.ru,kolibry-rotang.com###oct-policy
 rosbank.ru###personal-data-processing
 alter-science.info,alterexit.info,viziya.info###pop
 calltouch.ru###poppup-food
@@ -48513,33 +48531,33 @@ fikriyat.com,sabah.com.tr,turkuvazradyolar.com,yeniasir.com.tr##.veriAltBar
 ! ---------- Ukrainian ----------
 ! 
 gloss.ua###disclaimer
-res.ua###oct-policy
 strana.digital,strana.ua###openModal
-facenews.ua###pblock
-fdu.org.ua###pd_popup
-kurs.com.ua###popupConsent
+mullerol.com.ua###parent_popup
+klingspor.ua###vinegar-bottle
 i.ua##.Disclaimer
 kurs.com.ua##.background-popup
+ire.com.ua##.block
 tsn.ua##.c-notification__box
-dom.ria.com##.c-notifier
+ria.com##.c-notifier
 alfa-tv.ua##.cook
 agroportal.ua,kaktus.ua,svitroslyn.ua##.cookie
-auto24.org,compendium.com.ua,dybok.com.ua,unian.ua##.cookies
-shotam.info##.elementor-popup-modal
-nk.org.ua##.fuXXIn
+auto24.org,binomo.com,compendium.com.ua,darnitsa.ua,unian.ua##.cookies
+gigatrans.ua##.coook
+squad.ua##.footerPolicy_style_2j8xK
 my.ua##.gLfiyr
-incrypted.net##.incrypted-cookie-bar
-landrover.ua##.notificationBars
+nk.org.ua##.kyjJCH
+glavcom.ua##.kyk_menu
 sport.ua##.policy-accept
 ua-football.com##.policy-mes
 today.ua##.politic_confidel
 rbc.ua##.privacy
-kinoafisha.ua##.privacy-modal
 hyser.ua,politeka.net,ukrainci.com.ua,znaj.ua##.privacy-policy
 yaizakon.com.ua##.spu-bg
 papadon.com.ua##.t886
 forklog.com##.terms_popup
+luggas.com.ua##.uc-container
 changeua.com##.warning
+kernel.ua##.wrapper-small-footer
 ! 
 ! ---------- Vietnamese ----------
 ! 
