@@ -36,6 +36,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | No | Breaks video playback |
 [developer.ing.com](https://developer.ing.com/) | Consent overlay shows | No | Breaks menus |
 [rockpapershotgun.com](https://www.rockpapershotgun.com/final-fantasy-vi-pixel-remaster-is-out-now-finally-giving-us-a-better-version) | Consent overlay shows | No | Denys access to some site functions |
+[dailymotion](https://www.dailymotion.com/) | Consent overlay shows | No | Denys video playback |
 
 ## Consent companys
 | Consent company | Description | Any way around it? | Details |
