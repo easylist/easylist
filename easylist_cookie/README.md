@@ -25,19 +25,20 @@ Note: The only exception if a site combined a cookie consent message with anothe
 
 ## The following sites have no current workaround
 
-| Website | Description | Any way around it? | Details |
+| Website | Description | Details |
 | --- | --- | --- | --- |
-[theverge](https://www.theverge.com/) | Cookie message shows | No | https://github.com/ryanbr/fanboy-adblock/issues/863 |
-[youtube](https://www.youtube.com/) | Consent overlay shows | No | Hiding overlay will break comments |
-[google](https://www.google.com) | Cookie message shows | No | May affect other parts of google services |
-[rainews.it](https://www.rainews.it/tgr/lombardia/notiziari/index.html?/tgr/rainews.html) | Cookie message shows | No | Needs to accept message to play video |
-[independent.co.uk](https://www.independent.co.uk/news/world/americas/jeopardy-champ-robbed-amy-schneider-trans-b1987179.html) | Consent overlay shows | No | Breaks video playback |
-[standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | No | Breaks video playback |
-[express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | No | Breaks video playback |
-[developer.ing.com](https://developer.ing.com/) | Consent overlay shows | No | Breaks menus |
-[rockpapershotgun.com](https://www.rockpapershotgun.com/final-fantasy-vi-pixel-remaster-is-out-now-finally-giving-us-a-better-version) | Consent overlay shows | No | Denys access to some site functions |
-[dailymotion](https://www.dailymotion.com/) | Consent overlay shows | No | Denys video playback |
-[dogedash.com](https://portal.dogedash.com/) | Consent overlay shows | No | Denys user from connecting to wallet |
+[theverge](https://www.theverge.com/) | Cookie message shows | https://github.com/ryanbr/fanboy-adblock/issues/863 |
+[youtube](https://www.youtube.com/) | Consent overlay shows | Hiding overlay will break comments |
+[google](https://www.google.com) | Cookie message shows | May affect other parts of google services |
+[rainews.it](https://www.rainews.it/tgr/lombardia/notiziari/index.html?/tgr/rainews.html) | Cookie message shows | Needs to accept message to play video |
+[independent.co.uk](https://www.independent.co.uk/news/world/americas/jeopardy-champ-robbed-amy-schneider-trans-b1987179.html) | Consent overlay shows | Breaks video playback |
+[standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | Breaks video playback |
+[express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | Breaks video playback |
+[developer.ing.com](https://developer.ing.com/) | Consent overlay shows | Breaks menus |
+[rockpapershotgun.com](https://www.rockpapershotgun.com/final-fantasy-vi-pixel-remaster-is-out-now-finally-giving-us-a-better-version) | Consent overlay shows | Denys access to some site functions |
+[dailymotion](https://www.dailymotion.com/) | Consent overlay shows | Denys video playback |
+[dogedash.com](https://portal.dogedash.com/) | Consent overlay shows | Denys user from connecting to wallet |
+[teacheconomy.de](https://www.teacheconomy.de/) | Consent overlay shows | Stop user clicking on links if not consent message accepted |
 
 ## Consent companys
 | Consent company | Description | Any way around it? | Details |
