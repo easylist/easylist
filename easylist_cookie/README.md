@@ -37,6 +37,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [developer.ing.com](https://developer.ing.com/) | Consent overlay shows | No | Breaks menus |
 [rockpapershotgun.com](https://www.rockpapershotgun.com/final-fantasy-vi-pixel-remaster-is-out-now-finally-giving-us-a-better-version) | Consent overlay shows | No | Denys access to some site functions |
 [dailymotion](https://www.dailymotion.com/) | Consent overlay shows | No | Denys video playback |
+[dogedash.com](https://portal.dogedash.com/) | Consent overlay shows | No | Denys user from connecting to wallet |
 
 ## Consent companys
 | Consent company | Description | Any way around it? | Details |
