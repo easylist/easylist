@@ -26,7 +26,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 ## The following sites have no current workaround
 
 | Website | Description | Details |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 [theverge](https://www.theverge.com/) | Cookie message shows | https://github.com/ryanbr/fanboy-adblock/issues/863 |
 [youtube](https://www.youtube.com/) | Consent overlay shows | Hiding overlay will break comments |
 [google](https://www.google.com) | Cookie message shows | May affect other parts of google services |
