@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202260140
+! Version: 202202260205
 ! Title: Fanboy's Annoyance List
-! Last modified: 26 Feb 2022 01:40 UTC
+! Last modified: 26 Feb 2022 02:05 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -26429,6 +26429,7 @@ m###teaser-newsletter
 ###ensBannerBG
 ###ensConsentWidget
 ###ensModalWrapper[aria-labelledby*="Consent"]
+###ensModalWrapper[role]
 ###ensNotifyBanner
 ###ens_pr_mini.ens_pr_mini
 ###entryCookie:not(body)
@@ -34506,6 +34507,7 @@ m###teaser-newsletter
 ##.qp-cookies-alert
 ##.r-cookie-bar
 ##.r-cookies
+##.r-gdpr-cookies
 ##.r-gdpr-popup
 ##.radioplayer-anno
 ##.radioplayer-cookie-consent
@@ -34681,6 +34683,7 @@ m###teaser-newsletter
 ##.sgs-cookies-consent
 ##.sgsCookies
 ##.sh-cookie
+##.sh-cookie-banner
 ##.sh-cookie-confirmation
 ##.sh-cookie-dialog
 ##.shadow-cookie
@@ -35547,6 +35550,9 @@ m###teaser-newsletter
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
+! vsl.dk/vsl.dk/tandteknikerforeningen.dk/serviceforbundet.dk
+##.main_container > .consent_site_cover
+##.main_container > .consent_window
 ! vinted.co.uk / vinted regional
 ##.sticky-footer > div > div > .c-cell
 ! pubpub.org (https://forums.lanik.us/viewtopic.php?p=153103)
@@ -47450,12 +47456,13 @@ udlodningsmidler.dk###lbmodal-overlay
 medarbejdernet.dk###modalLayer
 teogkaffespecialisten.dk##.alert
 royaldanishacademy.com##.b14cc
+sygeforsikring.dk##.bg-sd-blue-secondary
 netbridge.dk##.blockbkg
 ah-finmekanik.dk##.border-body--bottom
 dustin.dk,dustinhome.dk##.c-overlay
 pendix.dk##.cc-dialog
 casino.dk,nordicbet.dk##.cdk-overlay-container
-intellishore.dk,kitchentime.dk##.cookie
+intellishore.dk,kitchentime.dk,novaindex.com##.cookie
 schouw.dk##.cookie-policy
 webdock.dk##.cookies
 indkast.dk##.hp_cc
@@ -47463,6 +47470,7 @@ hortiadvice.dk##.infobar-wrapper
 globase.dk##.mtsnb
 lidl.dk,proff.dk,zaplo.dk##.notification
 invita.dk,unoform.dk##.notificationbar
+wunderwear.dk##.pop-overlay
 bestiloghent.dk##.popup-container
 get-digital.dk##.privacy-wrapper
 saltogpeber.dk##.push-up
