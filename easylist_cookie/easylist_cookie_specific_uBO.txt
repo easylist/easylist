@@ -18,7 +18,7 @@ mega.io,mega.nz##.overlayed .bottom-page.scroll-block:style(filter: none !import
 taloon.com##.page-header:style(padding-top: 0 !important)
 bloomberg.com##.sp-message-open:style(overflow: unset !important; position: unset !important)
 gesund24.at,oe24.at,wirkochen.at,xn--sterreich-ppa80c.at##.wrapper.blured:style(filter: none !important;)
-heinz.st,tweakers.net,lsi-bochum.de,truphone.com,rule34.paheal.net,albeco.com.pl,bol.com,fneumann.org,g-star.com,gamersgate.com,gsk-gebro.at,harry-gerlach.de,hetwkz.nl,random-group.olafneumann.org,schulze-immobilien.de,taschenhirn.de,umcutrecht.nl,umicore.com,voltadol.at##*:style(filter: none !important)
+deineapotheke.at,heinz.st,tweakers.net,lsi-bochum.de,truphone.com,rule34.paheal.net,albeco.com.pl,bol.com,fneumann.org,g-star.com,gamersgate.com,gsk-gebro.at,harry-gerlach.de,hetwkz.nl,random-group.olafneumann.org,schulze-immobilien.de,taschenhirn.de,umcutrecht.nl,umicore.com,voltadol.at##*:style(filter: none !important)
 kosta.at##*:style(opacity: 1 !important;)
 aixfoam.*##.wrapper:style(filter: none !important)
 hsbc.it,hsbc.fr,deichmann.com,vanharen.nl,grueneerde.com,cdu-fraktion.berlin.de,czyodebrac.pl,e-wie-einfach.de,earthsky.org,hl.co.uk,kupplung.de,markets.com,mulders-opel.nl,nerim.com,nmhh.hu,pelix-media.de,researchaffiliates.com,sparkasse.at,tf1.fr,vsninfo.de,wgv.de,zdf.de,zsgarwolin.pl##body,html:style(height: auto !important; overflow: auto !important)
@@ -245,14 +245,17 @@ danskebank.*##+js(rc, cookie-consent-banner-open, html)
 ! Generichide fixes
 blackwot.ru,terravision.eu###catapult-cookie-bar
 enen.eu##.popup-display
+aa.com.tr###cookiepolicy
+koswhitepearls.gr##.cookieslaw
+piadinalumbro.gr##.cookie-message
 ft.com##.o-cookie-message
 github.io###cookie-bar
 dogemate.com###cconsent-bar
 europa.eu###cookie-consent-banner
 analog.com###cookie-consent-container
 iseic.cz,epag.de###cookie-law-info-bar
-uefa.com,coca-cola.se,coca-cola.be,coca-cola.no,cocacolanederland.nl,cocacolaep.com,pocketbook.de,cnn.com,blaklader.se,klimatechniker.net,eternit.co.uk,autocar.co.uk,cbre.fi###onetrust-banner-sdk
-uefa.com,coca-cola.se,coca-cola.be,coca-cola.no,cocacolanederland.nl,cocacolaep.com,pocketbook.de,cnn.com,blaklader.se,klimatechniker.net,eternit.co.uk,autocar.co.uk,cbre.fi###onetrust-consent-sdk
+discord.com,attica-group.gr,uefa.com,coca-cola.se,coca-cola.be,coca-cola.no,cocacolanederland.nl,cocacolaep.com,pocketbook.de,cnn.com,blaklader.se,klimatechniker.net,eternit.co.uk,autocar.co.uk,cbre.fi###onetrust-banner-sdk
+discord.com,attica-group.gr,uefa.com,coca-cola.se,coca-cola.be,coca-cola.no,cocacolanederland.nl,cocacolaep.com,pocketbook.de,cnn.com,blaklader.se,klimatechniker.net,eternit.co.uk,autocar.co.uk,cbre.fi###onetrust-consent-sdk
 patient.info###cookie-policy
 patient.info###cookie-policy-overlay
 7r6.com,coinlyhub.com,fox-url.com,jwearn.com,linksly.co,mitly.us,ouofly.com###cookie-pop
@@ -287,6 +290,157 @@ fandom.com##[data-tracking-opt-in-overlay="true"]
 taloon.com##[id="gdprpopup"]
 macdrop.net,dropgalaxy.*###gdpr-cookie-notice
 stfly.*###cookie-pop
+! movetex.com (Fixes unclickable overlay)
+movetex.com##.blur:style(opacity:1 !important;pointer-events:auto !important)
+movetex.com##html:style(overflow:auto !important)
+! erkanlitatilkoyu.com
+erkanlitatilkoyu.com##.mfp-wrap
+erkanlitatilkoyu.com##.mfp-bg
+erkanlitatilkoyu.com##body,html:style(overflow: auto !important; position: initial !important;)
+! kubikum.com
+kubikum.com##.absol_cookie
+kubikum.com###full_win
+kubikum.com##body:style(overflow: scroll !important)
+! danline.dk
+danline.dk##body,html:style(overflow: auto !important; position: initial !important;)
+! fortuluz.es
+fortuluz.es###legal-modal
+fortuluz.es##.modal-backdrop
+fortuluz.es##body,html:style(overflow: auto !important; position: initial !important;)
+! exakta.se
+exakta.se##*:style(filter: none !important)
+exakta.se##body,html:style(overflow: auto !important; position: initial !important;)
+! ingeborggaarden.dk
+tphotel.dk,ingeborggaarden.dk,gmf.dk##.lbOuterWrapper
+tphotel.dk,ingeborggaarden.dk,gmf.dk##.lbOverlay
+tphotel.dk,ingeborggaarden.dk,gmf.dk##body,html:style(height: auto !important; overflow: auto !important)
+! onderwijsvacaturebank.nl
+onderwijsvacaturebank.nl###CookieModal
+onderwijsvacaturebank.nl##.modal-backdrop
+onderwijsvacaturebank.nl##body,html:style(height: auto !important; overflow: auto !important)
+! haifachem.co.il
+haifachem.co.il###boxcustomover
+haifachem.co.il##body,html:style(overflow: auto !important; position: initial !important;)
+! cyberweek.tau.ac.il
+cyberweek.tau.ac.il###policy-modal
+cyberweek.tau.ac.il##.modal-backdrop
+cyberweek.tau.ac.il##body,html:style(overflow: auto !important; position: initial !important;)
+! mikrocop.com
+mikrocop.com,delo.si##*:style(filter: none !important)
+! demokracija.si
+demokracija.si##.cli-modal-backdrop
+demokracija.si##body,html:style(overflow: auto !important; position: initial !important;)
+! liv.si
+liv.si##.modal-backdrop
+liv.si##.offcanvas
+liv.si##body,html:style(overflow: auto !important; position: initial !important;)
+! np-brijuni.hr
+np-brijuni.hr###ctaModalPopup
+np-brijuni.hr##.modal-backdrop
+np-brijuni.hr##body,html:style(overflow: auto !important; position: initial !important;)
+! donlow.gr
+donlow.gr###ccc
+donlow.gr##body,html:style(overflow: auto !important; position: initial !important;)
+! asimakopoulou.gr
+asimakopoulou.gr##.cli-modal-backdrop
+asimakopoulou.gr##body,html:style(overflow: auto !important; position: initial !important;)
+! huaweistore.gr
+huaweistore.gr##.fancybox-container
+huaweistore.gr##body,html:style(overflow: auto !important; position: initial !important;)
+! beko.com
+beko.com##body,html:style(overflow: auto !important; position: initial !important;)
+! patreon.com
+patreon.com###lanyard_root
+patreon.com##body,html:style(overflow: auto !important; position: initial !important;)
+! jll.
+jll.de,jll.fr,jll.fi,jll.cz,jll.be,jll.it,jll.lu,jll-mena.com,jll.co.uk,jll.nl,jll.pl,jll.co.il,jll.ro,jll.ru,jll.pt,jll.sk,jll.co.za,jll.es,jll.ch,jll.com.tr,jll.com.au,joneslanglasalle.com.cn,jllsweden.se,jll.com.tw,jll.co.id,joneslanglasalle.co.jp,jll.co.kr,jll.com.mo,jll.com.my,jll.nz,jll.com.ph,jll.com.sg,jll.com.lk,jll.co.th,joneslanglasalle.com.vn,jll.com.mx,jll.com,jll.com.co,jll.pe,jll.com.ar,jll.cl,jll.com.br,jll.ca##.ensNotifyBannerWrapper
+jll.de,jll.fr,jll.fi,jll.cz,jll.be,jll.it,jll.lu,jll-mena.com,jll.co.uk,jll.nl,jll.pl,jll.co.il,jll.ro,jll.ru,jll.pt,jll.sk,jll.co.za,jll.es,jll.ch,jll.com.tr,jll.com.au,joneslanglasalle.com.cn,jllsweden.se,jll.com.tw,jll.co.id,joneslanglasalle.co.jp,jll.co.kr,jll.com.mo,jll.com.my,jll.nz,jll.com.ph,jll.com.sg,jll.com.lk,jll.co.th,joneslanglasalle.com.vn,jll.com.mx,jll.com,jll.com.co,jll.pe,jll.com.ar,jll.cl,jll.com.br,jll.ca##body,html:style(height: auto !important; overflow: auto !important)
+! migros.com.tr
+migros.com.tr##.cdk-overlay-container
+migros.com.tr##.ng-trigger-presenceAnimation
+migros.com.tr##body,html:style(overflow: auto !important; position: initial !important;)
+! ak-asya.com.tr
+ak-asya.com.tr##body,html:style(overflow: auto !important; position: initial !important;)
+! defence.hu
+defence.hu##.modal-backdrop
+defence.hu##body,html:style(overflow: auto !important; position: initial !important;)
+! daruk-emelok.hu
+daruk-emelok.hu##.basicLightbox
+daruk-emelok.hu##body,html:style(height: auto !important; overflow: auto !important)
+! roli.com
+roli.com##body,html:style(height: auto !important; overflow: auto !important)
+! hooray-heroes.ca
+hooray-heroes.ca###cookies
+hooray-heroes.ca##body,html:style(overflow: auto !important; position: initial !important;)
+! toysrus
+toysrus.ca,babiesrus.ca,riselittleearthling.ca##body,html:style(overflow: auto !important; position: initial !important;)
+! kyoceradocumentsolutions
+kyoceradocumentsolutions.ca,kyoceradocumentsolutions.mx,kyoceradocumentsolutions.cl,kyoceradocumentsolutions.com.br##.l-overlay
+kyoceradocumentsolutions.ca,kyoceradocumentsolutions.mx,kyoceradocumentsolutions.cl,kyoceradocumentsolutions.com.br##body,html:style(overflow: auto !important; position: initial !important;)
+! drinkaware.co.uk
+drinkaware.co.uk##+js(rc, darkOverlay, body)
+! pulpe.eu (wordpress)
+pulpe.eu##[data-bg]
+pulpe.eu##body,html:style(overflow: auto !important; position: initial !important;)
+! archiwumalle.pl
+archiwumalle.pl##body,html:style(height: auto !important; overflow: auto !important)
+archiwumalle.pl##.blocker
+! patronite.pl
+patronite.pl##.modal--overlay
+patronite.pl##*:style(filter: none !important)
+! samsonite.pl
+samsonite.pl##.overlay-wrapper
+samsonite.pl##body,html:style(height: auto !important; overflow: auto !important)
+! trucksbook.eu
+trucksbook.eu##.modal-backdrop
+trucksbook.eu##body,html:style(height: auto !important; overflow: auto !important)
+! 4dd.pl
+4dd.pl###rodoPopup
+4dd.pl##body,html:style(height: auto !important; overflow: auto !important)
+! tylko.com
+tylko.com##.ty-settings
+tylko.com##body,html:style(height: auto !important; overflow: auto !important)
+! fagorcommercial
+fagorprofessional.pl,fagorcommercial.com##.modal-backdrop
+fagorprofessional.pl,fagorcommercial.com##body,html:style(height: auto !important; overflow: auto !important)
+! conotoxia.com
+conotoxia.com##body,html:style(height: auto !important; overflow: auto !important)
+conotoxia.com##.modal-backdrop
+! dare2tri.com
+dare2tri.com##.modals-overlay
+dare2tri.com##body,html:style(height: auto !important; overflow: auto !important)
+! t3micro
+t3micro.fr,t3micro.de,t3micro.it,t3micro.dk,t3micro.pl,t3micro.es,t3micro.pt,t3micro.se,t3micro.co.uk,t3micro.nl,t3micro.at,t3micro.be##.modals-overlay
+t3micro.fr,t3micro.de,t3micro.it,t3micro.dk,t3micro.pl,t3micro.es,t3micro.pt,t3micro.se,t3micro.co.uk,t3micro.nl,t3micro.at,t3micro.be##body,html:style(height: auto !important; overflow: auto !important)
+! telenor.se
+telenor.se##.modal-container
+telenor.se##.modal-backdrop
+telenor.se##body,html:style(height: auto !important; overflow: auto !important)
+! dabbolig.dk
+dabbolig.dk##cookie-widget
+dabbolig.dk##body,html:style(overflow: auto !important; position: initial !important;)
+! skforsyning.dk
+skforsyning.dk##.lbOuterWrapper
+skforsyning.dk##.lbOverlay
+skforsyning.dk##body,html:style(height: auto !important; overflow: auto !important)
+! rodovrefjernvarme.dk
+rodovrefjernvarme.dk,skjernfjernvarme.dk##.cdk-overlay-container
+rodovrefjernvarme.dk,skjernfjernvarme.dk##body,html:style(overflow: auto !important; position: initial !important;)
+! nordania.dk
+nordania.dk##.cookie-consent-banner-modal
+nordania.dk##body,html:style(height: auto !important; overflow: auto !important)
+! tilmeld.dk
+tilmeld.dk##.overlay
+tilmeld.dk##body,html:style(height: auto !important; overflow: auto !important)
+! dr.dk
+dr.dk###drcc-overlay
+dr.dk##body,html:style(height: auto !important; overflow: auto !important)
+! schoeck.com
+schoeck.com##.cc-window-blocker
+schoeck.com##body,html:style(height: auto !important; overflow: auto !important)
+! skousen
+skousen.no,skousen.dk###cookie-information-template-wrapper
+skousen.no,skousen.dk##body,html:style(height: auto !important; overflow: auto !important)
 ! 2move.dk
 2move.dk##body,html:style(height: auto !important; overflow: auto !important)
 ! pasteleria.com
@@ -608,8 +762,8 @@ elring.ae,elring.cn,elring.com,elring.com.tr,elring.de,elring.fr,elring.it,elrin
 n26.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! bild.de 
 politico.eu##+js(aopr, window._sp_)
-kraloyun.com,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##body,html:style(overflow: auto !important; position: initial !important;)
-kraloyun.com,gentside.co.uk,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##div[id^="sp_message_container_"]
+fitforfun.de,t-online.de,tidende.dk,kraloyun.com,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##body,html:style(overflow: auto !important; position: initial !important;)
+fitforfun.de,t-online.de,tidende.dk,kraloyun.com,gentside.co.uk,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##div[id^="sp_message_container_"]
 ! liberdade.bessahotel.com
 bessahotel.com##.cli-modal-backdrop
 bessahotel.com##body,html:style(overflow: auto !important; position: initial !important;)
