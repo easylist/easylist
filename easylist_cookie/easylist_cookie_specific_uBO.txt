@@ -226,6 +226,7 @@ backmarket.fi##div[data-testid="overlay"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
 minhaconexao.com.br##section[id][class]:has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
 yoigo.com##thor-cookies
+!
 ! scripts
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
 kiuruvesilehti.fi,urjalansanomat.fi##+js(aeld, scroll, innerHeight)
@@ -291,6 +292,49 @@ fandom.com##[data-tracking-opt-in-overlay="true"]
 taloon.com##[id="gdprpopup"]
 macdrop.net,dropgalaxy.*###gdpr-cookie-notice
 stfly.*###cookie-pop
+! kupzidle.cz
+kupzidle.cz##.modal-backdrop
+kupzidle.cz##body,html:style(overflow: auto !important; position: initial !important;)
+! schroder.cz
+schroder.cz###disclaimerModal
+schroder.cz##.modal-backdrop
+schroder.cz##body,html:style(overflow: auto !important; position: initial !important;)
+! prague-catering.cz
+prague-catering.cz###euc
+prague-catering.cz##body,html:style(overflow: auto !important; position: initial !important;)
+! acara.cz
+acara.cz##.bs-dialog-overlay
+acara.cz##body,html:style(overflow: auto !important; position: initial !important;)
+! cvut.cz
+cvut.cz###ctu-cm
+cvut.cz##body,html:style(overflow: auto !important; position: initial !important;)
+! taf.ba
+taf.ba##.modals-overlay
+taf.ba##body,html:style(overflow: auto !important; position: initial !important;)
+! realCookieBanner
+accace.com##+js(acis, realCookieBanner)
+! martclinic.hu
+smartclinic.hu##.mfp-wrap
+smartclinic.hu##.mfp-bg
+smartclinic.hu##html:style(overflow: auto !important)
+! hsbc.com
+hsbc.com##.popups
+hsbc.com##body,html:style(overflow: auto !important; position: initial !important;)
+! amway
+amway.no,amway.nl,amway.co.uk,amway.com.tr,amway.pt,amway.be,amway.sk,amway.de,amway.ch,amway.gr,amway.ie,amway.se,amway.pl,amway.bg,amway.hr,amway.dk,amway.cz,amway.si,amway.ro,amway.fr,amway.fi##.amw-dialog-wrapper
+amway.no,amway.nl,amway.co.uk,amway.com.tr,amway.pt,amway.be,amway.sk,amway.de,amway.ch,amway.gr,amway.ie,amway.se,amway.pl,amway.bg,amway.hr,amway.dk,amway.cz,amway.si,amway.ro,amway.fr,amway.fi##body,html:style(overflow: auto !important; position: initial !important;)
+! bluebird
+bluebird-europe.com,bluebird.hu##.cli-modal-backdrop
+bluebird-europe.com,bluebird.hu##body,html:style(overflow: auto !important; position: initial !important;)
+! 60k.com
+60k.com##.modal-backdrop
+60k.com##body,html:style(overflow: auto !important; position: initial !important;)
+! automarket.bg
+automarket.bg###cookies_policy_bottom_right
+automarket.bg##body,html:style(overflow: auto !important; position: initial !important;)
+! clubcode.bg
+clubcode.bg##.modal-backdrop
+clubcode.bg##body,html:style(overflow: auto !important; position: initial !important;)
 ! capaneoinvestments.com
 capaneoinvestments.com##.popup-disclaimer
 capaneoinvestments.com##.cookies-tooltip
@@ -770,8 +814,8 @@ elring.ae,elring.cn,elring.com,elring.com.tr,elring.de,elring.fr,elring.it,elrin
 n26.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! bild.de 
 politico.eu##+js(aopr, window._sp_)
-fitforfun.de,t-online.de,tidende.dk,kraloyun.com,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##body,html:style(overflow: auto !important; position: initial !important;)
-fitforfun.de,t-online.de,tidende.dk,kraloyun.com,gentside.co.uk,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##div[id^="sp_message_container_"]
+snow-forecast.com,fitforfun.de,t-online.de,tidende.dk,kraloyun.com,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##body,html:style(overflow: auto !important; position: initial !important;)
+snow-forecast.com,fitforfun.de,t-online.de,tidende.dk,kraloyun.com,gentside.co.uk,arnnet.com.au,bunte.de,handelsblatt.com,techbook.de,metal-hammer.de,macworld.co.uk,maxisciences.com,ohmymag.com,voici.fr,geo.de,businessinsider.de,computerbild.de,heise.de,meinestadt.de,politico.eu,spieletipps.de,schwarzwaelder-bote.de,bild.de##div[id^="sp_message_container_"]
 ! liberdade.bessahotel.com
 bessahotel.com##.cli-modal-backdrop
 bessahotel.com##body,html:style(overflow: auto !important; position: initial !important;)
