@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203041901
+! Version: 202203042000
 ! Title: EasyList
-! Last modified: 04 Mar 2022 19:01 UTC
+! Last modified: 04 Mar 2022 20:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56463,6 +56463,7 @@ filefleck.com,sadeempc.com,upload4earn.org##a[href*="javascript:"]
 twitter.com##a[href*="src=promoted_trend_click"]
 twitter.com##a[href*="src=promoted_trend_click"] + div
 unitconversion.org##a[href="../noads.html"]
+1337x.to##a[href="/v-pn2dl-hideip"]
 techporn.ph##a[href][target*="blank"]
 rarbg.to,rarbgaccess.org,rarbgmirror.com,rarbgmirror.org,rarbgproxy.com,rarbgproxy.org,rarbgunblock.com,rarbgunblocked.org##a[href][target="_blank"] > button
 linkhub.icu##a[href^="/downloadnow.php?"]
@@ -56980,8 +56981,8 @@ bing.com##a[h$=",Ads"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
-1337x.to#?#a:-abp-contains(Your IP Address is)
-1337x.to#?#a:-abp-contains(An‌on‌ymous Download)
+1337x.to#?#a:-abp-contains(/Your IP Address is|Your IP Addres‌s is/)
+1337x.to#?#a:-abp-contains(/An‌on‌ymous Download|A‌non‌ymous Download/)
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
 outlook.live.com#?##OwaContainer:-abp-has(div.fbAdLink)
 mylivewallpapers.com#?#.posts > div.posts:-abp-has(.adsbygoogle)
