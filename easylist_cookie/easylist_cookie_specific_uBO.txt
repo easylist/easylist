@@ -209,7 +209,6 @@ voas.fi##[class="modal-coockie"]
 voas.fi##[id="coockie-modal"]
 luhta.com##[id="cookie-consent"]
 datakauppa.fi##[id="cookie-law-info-bar"]
-danskebank.*##.cookie-consent-banner-modal
 festo.com##div[class^="overlay--"]
 vr.fi##div[data-testid="modal"]
 terveyskirjasto.fi##div[id^="general-cookies-modal"]
@@ -231,7 +230,6 @@ luhta.com##+js(rc, body-fixed, body, stay)
 taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
 bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"])) > div[id^="sp_message_container"]
-danskebank.*##+js(rc, cookie-consent-banner-open, html)
 ! Generichide fixes
 blackwot.ru,terravision.eu###catapult-cookie-bar
 enen.eu##.popup-display
@@ -282,6 +280,9 @@ fandom.com##[data-tracking-opt-in-overlay="true"]
 taloon.com##[id="gdprpopup"]
 macdrop.net,dropgalaxy.*###gdpr-cookie-notice
 stfly.*###cookie-pop
+! danskebank
+danskebank.no,danskebank.fi,danskebank.dk,danskebank.com,danskebank.se,danskebank.co.uk,danskeci.com##.cookie-consent-banner-modal
+danskebank.no,danskebank.fi,danskebank.dk,danskebank.com,danskebank.se,danskebank.co.uk,danskeci.com##+js(rc, cookie-consent-banner-open, html)
 ! calvinklein.*
 calvinklein.se,calvinklein.fi,calvinklein.sk,calvinklein.si,calvinklein.ch,calvinklein.ru,calvinklein.com,calvinklein.pt,calvinklein.pl,calvinklein.at,calvinklein.nl,calvinklein.hu,calvinklein.lu,calvinklein.lt,calvinklein.lv,calvinklein.it,calvinklein.ie,calvinklein.hr,calvinklein.fr,calvinklein.es,calvinklein.ee,calvinklein.de,calvinklein.dk,calvinklein.cz,calvinklein.bg,calvinklein.be,calvinklein.co.uk##.ck-modal--cookieModalMain
 calvinklein.se,calvinklein.fi,calvinklein.sk,calvinklein.si,calvinklein.ch,calvinklein.ru,calvinklein.com,calvinklein.pt,calvinklein.pl,calvinklein.at,calvinklein.nl,calvinklein.hu,calvinklein.lu,calvinklein.lt,calvinklein.lv,calvinklein.it,calvinklein.ie,calvinklein.hr,calvinklein.fr,calvinklein.es,calvinklein.ee,calvinklein.de,calvinklein.dk,calvinklein.cz,calvinklein.bg,calvinklein.be,calvinklein.co.uk##body:style(overflow: auto !important;)
