@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203102231
+! Version: 202203102245
 ! Title: EasyList
-! Last modified: 10 Mar 2022 22:31 UTC
+! Last modified: 10 Mar 2022 22:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56176,7 +56176,6 @@ panarmenian.net##.side_panner
 tutorialrepublic.com##.sidebar
 computing.co.uk##.sidebar-block
 radiotoday.co.uk##.sidebar-column-secondary > .sidebar
-troyhunt.com##.sidebar-featured
 mediaite.com##.sidebar-hook
 freshbusinessthinking.com##.sidebar-mpu
 spearswms.com##.sidebar-mpu-1
@@ -57223,6 +57222,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+troyhunt.com#?#.sidebar-featured:-abp-has(a[href^="https://pluralsight.pxf.io/"])
 1337x.to#?#a:-abp-contains(/Your IP Address is|Your IP Addres‌s is/)
 1337x.to#?#a:-abp-contains(/An‌on‌ymous Download|A‌non‌ymous Download/)
 3dmodelshare.org#?#.homeadv > span:-abp-contains(Advertisement)
