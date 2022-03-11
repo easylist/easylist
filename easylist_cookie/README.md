@@ -31,6 +31,9 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [youtube](https://www.youtube.com/) | Consent overlay shows | Hiding overlay will break comments |
 [google](https://www.google.com) | Cookie message shows | May affect other parts of google services |
 [rainews.it](https://www.rainews.it/tgr/lombardia/notiziari/index.html?/tgr/rainews.html) | Cookie message shows | Needs to accept message to play video |
+[Instagram](https://www.instagram.com/) | Consent overlay shows | Breaks loading/posts |
+[Facebook](https://www.facebook.com/) | Consent overlay shows | Breaks loading/posts |
+[Twitter](https://www.twitter.com/) | Cookie message shows | Consent div id's keep changing, breaks site |
 [independent.co.uk](https://www.independent.co.uk/news/world/americas/jeopardy-champ-robbed-amy-schneider-trans-b1987179.html) | Consent overlay shows | Breaks video playback |
 [standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | Breaks video playback |
 [express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | Breaks video playback |
