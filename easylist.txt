@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203131332
+! Version: 202203131340
 ! Title: EasyList
-! Last modified: 13 Mar 2022 13:32 UTC
+! Last modified: 13 Mar 2022 13:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56869,6 +56869,7 @@ issuu.com##div[class*="adSkyscraper"]
 keengamer.com##div[class*="gameon-above-"]
 ladbible.com,unilad.co.uk##div[class*="margin-Advert"]
 informer.com##div[class="a2"]
+walmart.com##div[class="mv3 ml3 mv4-xl mh0-xl"][data-testid="sp-item"]
 dailymotion.com##div[class^="AdBanner"]
 topgear.com##div[class^="AdContainer-"]
 tunefind.com##div[class^="AdSlot_inner_"]
@@ -57328,6 +57329,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+walmart.com#?#li.items-center:-abp-has(div[data-ad-component-type="wpa-tile"])
 walmart.com#?#div[class="mb1 ph1 pa0-xl bb b--near-white w-25"]:-abp-has(div[data-ad-component-type="wpa-tile"])
 yts.mx#?#.hidden-xs.hidden-sm:-abp-contains(Warning! Download only with VPN...)
 troyhunt.com#?#.sidebar-featured:-abp-has(a[href^="https://pluralsight.pxf.io/"])
