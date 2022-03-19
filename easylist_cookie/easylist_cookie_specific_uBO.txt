@@ -223,9 +223,6 @@ al.com,allkpop.com,calendarpedia.co.uk,ccn.com,cinemablend.com,cleveland.com,com
 claritin.ca##+js(aopr, cookieconsent.Popup)
 podleze-piekielko.pl##+js(aopr, cookieman)
 northernpowergrid.com##+js(remove-class, blur, html)
-foxracingshox.de##+js(rc, cookie--not-set, , stay)
-luhta.com##+js(rc, body-fixed, body, stay)
-taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
 sss.fi##+js(aeld, load, function(){if(s.readyState==XMLHttpRequest.DONE)
 bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"])) > div[id^="sp_message_container"]
 ! Generichide fixes
@@ -279,8 +276,18 @@ viget.com##[class^="gpdr-banner__"]
 seatgeek.com##[class^="withGDPRBanner__Wrapper-"]
 fandom.com##[data-tracking-opt-in-overlay="true"]
 taloon.com##[id="gdprpopup"]
-! momentive.com
+! removeclass
+foxracingshox.de##+js(rc, cookie--not-set, , stay)
+luhta.com##+js(rc, body-fixed, body, stay)
+taloon.com##+js(rc, cookie_popup_exists, div.page-wrapper, stay)
 momentive.com##+js(rc, cookie-enabled, , stay)
+kennedyslaw.com##+js(rc, cookie-overlay--open, , stay)
+stratasysdirect.com##+js(rc, overlay-content, , stay)
+elekta.com##+js(rc, cookie-banner-open, , stay)
+stratasys.com##+js(rc, overlay-content, body, stay)
+werkenbijkruidvat.nl##+js(rc, is-active-cookiebar, body, stay)
+cutoff.es##+js(rc, idxrcookies-block-user-nav, body, stay)
+drinkaware.co.uk##+js(rc, darkOverlay, body)
 ! century21-harmony-rouen.com
 century21-harmony-rouen.com##.c-the-cookie-base
 century21-harmony-rouen.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -305,12 +312,6 @@ uni-mozarteum.at##body,html:style(overflow: auto !important; position: initial !
 ! idoctors.it
 idoctors.it##.modal-backdrop
 idoctors.it##body,html:style(overflow: auto !important; position: initial !important;)
-! kennedyslaw.com
-kennedyslaw.com##+js(rc, cookie-overlay--open, , stay) 
-! stratasysdirect.com
-stratasysdirect.com##+js(rc, overlay-content, , stay)
-! elekta.com
-elekta.com##+js(rc, cookie-banner-open, , stay) 
 ! biolib.cz
 biolib.cz##.consent-box__wrapper
 biolib.cz##body,html:style(overflow: auto !important; position: initial !important;)
@@ -322,8 +323,6 @@ df.eu##body,html:style(overflow: auto !important; position: initial !important;)
 ! studio3t.com
 studio3t.com##.overlay-bg
 studio3t.com##body,html:style(overflow: auto !important; position: initial !important;)
-! stratasys.com
-stratasys.com##+js(rc, overlay-content, body, stay)
 ! motoblouz.com
 motoblouz.es,motoblouz.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! umea.se
@@ -629,8 +628,6 @@ pathe.nl##+js(remove-class, cookiewall-active, body, stay)
 pathe.nl##body,html:style(overflow: auto !important; position: initial !important;)
 ! etos.nl
 shopbuilder.co.nl,esportsclub.nl,etos.nl##body,html:style(overflow: auto !important; position: initial !important;)
-! werkenbijkruidvat.nl
-werkenbijkruidvat.nl##+js(rc, is-active-cookiebar, body, stay)
 ! allekringloopwinkels.nl
 allekringloopwinkels.nl##.cbar-overlay
 allekringloopwinkels.nl##.cbar-modal1
@@ -651,8 +648,6 @@ arlafoodsingredients.com,lurpak.com,arla.be,arlafoods.com.bd,arlafoods.ca,arla.c
 candriam.de,candriam.at,candriam.com,candriam.cl,candriam.ch,candriam.se,candriam.pt,candriam.no,candriam.lu,candriam.nl,candriam.it,candriam.ie,candriam.co.uk,candriam.fr,candriam.fi,candriam.sk,candriam.dk,candriam.es###cookie_disclaimer
 candriam.de,candriam.at,candriam.com,candriam.cl,candriam.ch,candriam.se,candriam.pt,candriam.no,candriam.lu,candriam.nl,candriam.it,candriam.ie,candriam.co.uk,candriam.fr,candriam.fi,candriam.sk,candriam.dk,candriam.es##.modal-backdrop
 candriam.de,candriam.at,candriam.com,candriam.cl,candriam.ch,candriam.se,candriam.pt,candriam.no,candriam.lu,candriam.nl,candriam.it,candriam.ie,candriam.co.uk,candriam.fr,candriam.fi,candriam.sk,candriam.dk,candriam.es##body,html:style(overflow: auto !important; position: initial !important;)
-! cutoff.es
-cutoff.es##+js(rc, idxrcookies-block-user-nav, body, stay)
 ! psiconsultants.es
 psiconsultants.es###pdcc-modal-bg
 psiconsultants.es##body,html:style(overflow: auto !important; position: initial !important;)
@@ -931,8 +926,6 @@ toysrus.ca,babiesrus.ca,riselittleearthling.ca##body,html:style(overflow: auto !
 ! kyoceradocumentsolutions
 kyoceradocumentsolutions.ca,kyoceradocumentsolutions.mx,kyoceradocumentsolutions.cl,kyoceradocumentsolutions.com.br##.l-overlay
 kyoceradocumentsolutions.ca,kyoceradocumentsolutions.mx,kyoceradocumentsolutions.cl,kyoceradocumentsolutions.com.br##body,html:style(overflow: auto !important; position: initial !important;)
-! drinkaware.co.uk
-drinkaware.co.uk##+js(rc, darkOverlay, body)
 ! pulpe.eu (wordpress)
 pulpe.eu##[data-bg]
 pulpe.eu##body,html:style(overflow: auto !important; position: initial !important;)
