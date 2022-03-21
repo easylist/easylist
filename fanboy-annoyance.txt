@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203202342
+! Version: 202203210106
 ! Title: Fanboy's Annoyance List
-! Last modified: 20 Mar 2022 23:42 UTC
+! Last modified: 21 Mar 2022 01:06 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -23040,6 +23040,7 @@ m###teaser-newsletter
 ###aviso-ck
 ###aviso-cookie
 ###aviso-cookies
+###aviso-lgpd
 ###aviso-navegadores
 ###aviso-politica-privacidade
 ###aviso-privacidade
@@ -23651,6 +23652,7 @@ m###teaser-newsletter
 ###complianceBanner
 ###complianceCookie
 ###compliancecookie
+###component-cookie-banner
 ###comspace-usercentrics
 ###confermaCookie
 ###confidentialite_cookie
@@ -23858,7 +23860,9 @@ m###teaser-newsletter
 ###cookie-banner--popup-wrapper
 ###cookie-banner-backdrop
 ###cookie-banner-bespoke
+###cookie-banner-center
 ###cookie-banner-container:not(html):not(body)
+###cookie-banner-first-page
 ###cookie-banner-host
 ###cookie-banner-lgpd
 ###cookie-banner-link
@@ -25296,6 +25300,7 @@ m###teaser-newsletter
 ###cookiebanner-wrapper
 ###cookiebannerAH
 ###cookiebannerOverlay
+###cookiebanner_con
 ###cookiebanner_wrapper
 ###cookiebannercontainer
 ###cookiebannerdiv
@@ -26919,6 +26924,7 @@ m###teaser-newsletter
 ###fucking-eu-cookie
 ###full-content-cookies
 ###future-cookie-bar
+###fv-cookie
 ###fwCookieBanner
 ###fw_cookie
 ###fw_cookies_optout
@@ -29142,6 +29148,7 @@ m###teaser-newsletter
 ###ventana-cookies
 ###ventanaCookies
 ###veravisocookie
+###verificar-cookies
 ###vesti-GDPR-frame
 ###vh-cookie-terms
 ###vhb-consentlayer
@@ -29267,6 +29274,7 @@ m###teaser-newsletter
 ###wrapperCookieBar
 ###wrapperMensajeCookie
 ###wrapper_cookies
+###ws-cookie-banner
 ###ws-cookie-consent-msg
 ###ws-cookie-notifier-bar
 ###ws-cookie-notifier-modal
@@ -29359,6 +29367,7 @@ m###teaser-newsletter
 ##.BannerPrivacyInformation
 ##.BlogHeader__cookies-banner
 ##.BorlabsCookie
+##.C21-cookie-banner
 ##.CCcookiewarning
 ##.CInfo[data-cookie-info]
 ##.CLawBanner
@@ -30173,6 +30182,7 @@ m###teaser-newsletter
 ##.block-por-cookies
 ##.block-rgpd
 ##.block.cookies
+##.blockCookieBanner
 ##.blockCookieNotice
 ##.blockCookieNotification
 ##.blockCookies
@@ -30235,6 +30245,7 @@ m###teaser-newsletter
 ##.box_Cookie
 ##.box_cookie
 ##.box_cookies
+##.bp-cookie-banner
 ##.bp-cookie-notice-wrapper
 ##.bpa-cookie-banner
 ##.bpx-rgpd-cookie-bottomPanel
@@ -30262,6 +30273,7 @@ m###teaser-newsletter
 ##.bxst-main-cookie-policy
 ##.by_cookie_policy
 ##.bycookies-container
+##.c--anim > #cc_div
 ##.c--anim > .cc_div
 ##.c-CookieBanner
 ##.c-CookieDisclaimer
@@ -30698,6 +30710,7 @@ m###teaser-newsletter
 ##.consent-container
 ##.consent-container--banner
 ##.consent-content
+##.consent-cookie-banner
 ##.consent-cookie-wrapper
 ##.consent-cookies
 ##.consent-cookies-dialog
@@ -30936,6 +30949,7 @@ m###teaser-newsletter
 ##.cookie-banner-lgpd_text-box
 ##.cookie-banner-modal-backdrop
 ##.cookie-banner-msg
+##.cookie-banner-old
 ##.cookie-banner-outer
 ##.cookie-banner-overlay
 ##.cookie-banner-section
@@ -33457,6 +33471,7 @@ m###teaser-newsletter
 ##.freeprivacypolicy-com---nb-simple
 ##.frontendPrivacy__consentBanner
 ##.fs-cc-banner_component
+##.fs-cc-cookie-symbol
 ##.fs-cookie-bar
 ##.ft-cookie-disclaimer
 ##.ft__cookies
@@ -34281,6 +34296,7 @@ m###teaser-newsletter
 ##.layer-cookies-wrapper:not(html):not(body)
 ##.layerCookie
 ##.layer_cookie
+##.layout-cookie-banner
 ##.layoutFloating[is="basis-cookie"]
 ##.layout__cookies-policy-notification
 ##.layout__disclaimer
@@ -36021,6 +36037,7 @@ m###teaser-newsletter
 ##.widget-consent
 ##.widget-consent-dialog
 ##.widget-cookie
+##.widget-cookie-banner
 ##.widget-cookie-notification
 ##.widget-gdpr-banner
 ##.widget-gdpr-cookie-banner
@@ -36061,6 +36078,7 @@ m###teaser-newsletter
 ##.wphack-cookie-wrapper
 ##.wpmaster-cookie-content
 ##.wpmaster-cookie-wrapper
+##.wprcb-cookie-bar
 ##.wrap-cookie-info
 ##.wrap-cookie-info-ext
 ##.wrap-cookie-placeholder
@@ -36336,6 +36354,7 @@ m###teaser-newsletter
 ##epaas-consent-drawer-shell
 ##esn-cookie-disclaimer
 ##eu-cookie-compliance
+##fdp-widget-cookie-consent
 ##footer > .cookie
 ##form[name="FormLeggeCookies"]
 ##g-cookie-policy
@@ -36386,6 +36405,7 @@ m###teaser-newsletter
 ##shb-cookie-accept
 ##shb-cookie-consent
 ##sibbo-cmp-layout
+##sj-cookie-banner
 ##staedtler-cookie-banner
 ##suchen-cookie-privacy-toast
 ##tag-cookie-banner
@@ -44614,7 +44634,7 @@ puigusa.com###lycok
 sky.com###mast-notifications
 mbc.net###mbc-policy
 logicconcept.eu###mc_top_bar
-comrex.com###mcb-wrap
+comrex.com,pbsinternational.org###mcb-wrap
 iplogger.org,psyonix.com,rocketleague.com,rocketleagueesports.com,wts.com###message
 cyclemiles.co.uk###messages-cont
 global.jcb,jcbeurope.eu,picnic.app###modal
@@ -44705,6 +44725,7 @@ keil.com###privacymodule
 zoomin.tv###privacyoverlay
 rocketleague.com###privmessage
 scalemates.com###prv
+spiking.com###prvcypop
 elanco.com###ribbon
 ricochet.com###ricochet-cookie-bar
 honeygain.com###root > div + div + div:last-child
@@ -44968,7 +44989,7 @@ burgerking.co.nz,burgerking.co.uk##.cgtFSo
 fromsmash.com##.cgu-container
 kbs.co.kr##.chrome_pick
 stayinwales.co.uk##.ckinfo-panel
-kettlewellcolours.co.uk##.cky-modal-backdrop
+kettlewellcolours.co.uk,popsa.com##.cky-modal-backdrop
 salmonsoftware.ie,wemabank.com##.cli-modal-backdrop
 oipc.bc.ca##.clsPopupContainer
 singular.com.cy##.cm-notification-container
@@ -45472,7 +45493,7 @@ iloveimg.com##.toast-bottom-left
 ikea.com##.toast-container
 twitch.tv##.toast-manager__container
 mobilbahis49.com##.toast-wrapper
-matchpint.com.au##.top-0.fixed
+beepbeep.ie,matchpint.com.au##.top-0.fixed
 tv5.ca##.top-alertes
 flyscoot.com##.top-bar
 skystore.com##.top-notification-container
@@ -45544,6 +45565,7 @@ trustnet.com##USER-TYPE-POPUP
 tiktok.com##[class*="-DivCookieBannerContainer"]
 pri.org##[class^="CtaMessage_"]
 vivid.money##[class^="cookieNotification_"]
+fischer-technology.com##[data-ajax-loading="false"]
 shutterstock.com##[data-automation="Eu_banner_container"]
 uber.com##[data-baseweb="toaster"]
 mobile.twitter.com##[data-reactroot] > [class] + [class]:last-child
@@ -48372,6 +48394,7 @@ auto-motor-und-sport.de##.p40
 avl-ludwigsburg.de,packster.de##.page-overlay
 recordsale.de##.personalization-request
 woche-der-meinungsfreiheit.de,wolkenweit.de##.pixelmate-banner-bottom
+bluemonty.de##.pixelmate-big-wrapper
 nh-hotels.de##.politicaRewards
 mellerud.de##.popup
 airleben.de,datafox.de##.popup-banner
@@ -48759,6 +48782,7 @@ alex-soze.nl,almar-products.nl,leyuzu.nl,vanbeekkappers.nl##._2mmyb
 smullers.nl##.alert
 rotaserve.com##.avg
 twentemilieu.nl##.balloon_notification
+subaru.be##.banner
 trecnutrition.nl##.bar-display.container
 zeelandnet.nl##.bnr-notice-curtain
 autovandaag.nl##.bo-cb-bar
@@ -49538,7 +49562,7 @@ kaida-fish.ru##.custom_message
 rosatomflot.ru##.disclaimer
 ichip.ru,ivd.ru,lisa.ru##.disclamer
 bbcrussian.com##.e1nbsi9l0
-7d.ru,friend4travel.ru,mamba.ru##.fTqTJk
+7d.ru,bisexual.ru,datingspace.ru,friend4travel.ru,idating.ru,lovegio.ru,mamba.ru,missingheart.ru,vsebudetzae.biz,znakomstvagood.ru##.fTqTJk
 4game.com##.fcw-wrap
 amway.ru##.footer-disclimer
 multibonus.ru##.gAHLXB
@@ -49685,6 +49709,7 @@ autosolar.es##.cookie-configuration
 cashconverters.es,gdplegal.es,myinvestor.es,panamaamerica.com.pa,puntodepartida.com,renaultretailgroup.es,spth.gob.es,summa.es,tdsexport.com##.cookies
 eltiempo.es##.curtain_lightbox
 arsys.es##.drop
+icexalumni.com##.eHsNWB
 ingemecanica.com##.encabez
 bandaancha.eu##.euCk
 birchbox.es##.fkOdSY
@@ -49694,6 +49719,7 @@ elperiodicodeaqui.com##.info_priv
 bankio.es##.jss1
 fincaraiz.com.co##.jss268
 plataformaarquitectura.cl##.kth-toast
+elsalopez.es##.mceRow--relative
 solarventi.es##.mfp-bg
 solarventi.es##.mfp-wrap
 higcapital.es,plusultra.es##.modal-backdrop
