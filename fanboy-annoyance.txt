@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203212304
+! Version: 202203212315
 ! Title: Fanboy's Annoyance List
-! Last modified: 21 Mar 2022 23:04 UTC
+! Last modified: 21 Mar 2022 23:15 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -23321,6 +23321,7 @@ m###teaser-newsletter
 ###browser-cookie-warnin
 ###browser-cookie-warning
 ###brunelcookies
+###bry-consent
 ###bsCookiesBanner
 ###bscookie
 ###bt-privacy-header
@@ -23451,6 +23452,7 @@ m###teaser-newsletter
 ###ccp-overlay
 ###ccpa-alert
 ###ccpa-banner
+###ccpa-bar
 ###ccpa-block
 ###ccpa-consent-banner
 ###ccpa-cookie
@@ -23461,8 +23463,11 @@ m###teaser-newsletter
 ###ccpa-notification-banner_1-0
 ###ccpa-prompt-wrapper
 ###ccpa.container
+###ccpa.show
 ###ccpaBanner
+###ccpaContainer
 ###ccpaCookieBanner
+###ccpa_banner
 ###ccs-notification
 ###ccservice-cookiesinfo
 ###cct-box
@@ -23652,6 +23657,7 @@ m###teaser-newsletter
 ###cokiesinfo
 ###com_cookie_policy
 ###comavoo-ga-cookie-banner
+###common-CookieNotice
 ###common-cookielaw-container
 ###compliAcceptCookies
 ###complianceBanner
@@ -26529,6 +26535,7 @@ m###teaser-newsletter
 ###doc-banner-cookie
 ###docookiecookie
 ###documentCookieInfo
+###dog-sp-privacy-button
 ###dogmacookiehint
 ###domCookieWarning:not(html):not(body)
 ###donut-law
@@ -27478,6 +27485,7 @@ m###teaser-newsletter
 ###js-band-cookies
 ###js-banner-cookies
 ###js-c-cookie-consent-banner
+###js-ccpa
 ###js-cnil--alert
 ###js-cookie-02-popup
 ###js-cookie-03-popup
@@ -28149,6 +28157,7 @@ m###teaser-newsletter
 ###os_app_cookiewarn
 ###osomcookie
 ###ost-cookiewall-container
+###ot-ccpa-banner
 ###ot-sdk-btn:not(button)
 ###otp-privacy
 ###otrcookiecompliancediv
@@ -28847,6 +28856,7 @@ m###teaser-newsletter
 ###sputnik_cookie_policy_banner
 ###sr-cookie-policy
 ###sraCookieBanner
+###sst-footer-ccpa-note
 ###st-cookie-policy-popup
 ###stCookiebox
 ###st_cookie
@@ -30518,10 +30528,14 @@ m###teaser-newsletter
 ##.ccpa-banner-root
 ##.ccpa-consent-bar
 ##.ccpa-notice-wrapper
+##.ccpa-notice:not(body):not(html)
 ##.ccpa-notification
 ##.ccpa-notification-banner
 ##.ccpa-notification-banner_1-0
 ##.ccpa-popup
+##.ccpa-slideup
+##.ccpa-slideup--row
+##.ccpaBanner
 ##.ccpa[ng-controller*="CcpaBanner"]
 ##.ccpabar
 ##.ccwrap
@@ -34911,6 +34925,8 @@ m###teaser-newsletter
 ##.oddcookie
 ##.oe-cookies-law
 ##.oh_cookie_notice_wrapper
+##.oi-ccpa-notice
+##.oi-ccpa-toggle
 ##.ojc_consent
 ##.okCookiePanel
 ##.okookie
@@ -36251,6 +36267,7 @@ m###teaser-newsletter
 ##app-accept-cookie
 ##app-aviso-cookie
 ##app-banner[arialabel*="Cookies"]
+##app-ccpa-banner
 ##app-cookie
 ##app-cookie-banner
 ##app-cookie-consent
@@ -37986,6 +38003,9 @@ m###teaser-newsletter
 ||vinted.*/api/*/banners
 ||windguru.cz/forms/consent.php
 ||yimg.com^*/guce.js
+! cookielaw specifics
+||cookielaw.org/opt-out/otCCPAiab.js$domain=rollingstone.com
+||cookielaw.org/scripttemplates/otsdkstub.js$domain=rollingstone.com
 ! fundingchoicesmessages (consents)
 ||fundingchoicesmessages.google.com^
 ! ------------------------Specific element hiding rules------------------------!
@@ -44440,6 +44460,7 @@ atom8.com###LandingPopUp
 uk.yahoo.com###Main > .windowshade:first-child
 yahoo.com###Overlay-1-Nagbar
 pdfcoffee.com###PDFCOFFEECOM_cookie_box
+project7armor.com###POPUPS_ROOT
 provantage.com###PP
 brookes.ac.uk###PopUp
 telkom.co.za###PrivacyNotice
@@ -44786,6 +44807,7 @@ hotukdeals.com###softMessages-list
 eumostwanted.eu###sortingPreference
 openweather.co.uk###stick-footer-panel
 yow.ca###sticky
+gotoparts.com###sticky-bar
 tesco.com###sticky-bar-wrapper
 ffonts.net,whatfontis.com###sticky-popup
 firefoxosdevices.org###storage-notice
@@ -45025,6 +45047,7 @@ salmonsoftware.ie,wemabank.com##.cli-modal-backdrop
 oipc.bc.ca##.clsPopupContainer
 singular.com.cy##.cm-notification-container
 cnn.com##.cnn-toast--tos
+soundcu.com##.co-row
 scnat.ch##.command-bar
 vivo.com##.common_prompt-privacy-bg
 browardpalmbeach.com,dallasobserver.com,houstonpress.com,miaminewtimes.com,phoenixnewtimes.com,westword.com##.compliance
@@ -45172,6 +45195,7 @@ joom.com##.fullWidth___156Mh
 ratemyprofessors.com##.fyxlwo__overlay
 cgtn.com##.g-dialog
 scaleway.com##.gLLeaT
+calm.com##.gQidzA
 stemi.education##.gSJGWN
 themeflood.com##.gatewayContainer
 gallup.com##.gcb_35556
@@ -45395,7 +45419,7 @@ likeyouth.org##.policy-popup
 nh-collection.com,nh-hotels.com##.politicaRewards
 process.st##.pookie
 aboardtheworld.com##.popmake
-beiersdorf.com,efootwear.eu,topographic-map.com##.popup
+agcopartsbooks.com,beiersdorf.com,efootwear.eu,topographic-map.com##.popup
 replicon.com##.popup-container
 haiermedical.com##.popup-window
 celticfc.com,fulhamfc.com##.popup-wrapper
@@ -45423,7 +45447,7 @@ aw-lab.com##.privacy-data
 genesis.com##.privacy-dialog
 araviscapital.com##.privacy-holder
 uniprot.org##.privacy-panel
-gigaom.com,gq.com.au,mta.tv,vocativ.com,zumba.com##.privacy-policy
+alfred.com,gigaom.com,gq.com.au,mta.tv,vocativ.com,zumba.com##.privacy-policy
 thenewdaily.com.au##.privacy-policy-slideup
 data.worldbank.org##.privacy-widget
 zmags.com##.privacyPrompt
@@ -45451,6 +45475,7 @@ islamicfinder.org##.reveal-overlay
 ricola.com##.ricola-cookie-info
 itinari.com##.root-8abb4
 totalserversolutions.com##.rplm-alert
+seamless.ai##.rs-message-info
 birramenabrea.com,limaeasy.com##.rstbox
 jeffs.com,scandinaviansoul.com##.rstboxes
 welcometothejungle.co##.s1u7oiza-0
@@ -50858,6 +50883,7 @@ rete.toscana.it#@#.cc-revoke
 cyberforum.de#@#.cc-window[aria-describedby*="consent"]
 cyberforum.de#@#.cc-window[aria-label*="consent"]
 morningstar.ca,mysoapbox.com,tangerine.ca#@#.cc_container
+hellomtg.com,mbanc.com,primejumbo.com#@#.ccpa-banner
 cooleffect.org#@#.ce-banner
 onet.pl#@#.cmp-app_gdpr
 consent.yahoo.com,lawrievetgroup.co.uk,oath.com#@#.consent-container
