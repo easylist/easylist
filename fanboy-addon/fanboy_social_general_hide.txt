@@ -158,7 +158,9 @@
 ###article-headline-social-list
 ###article-left-side-share-panel
 ###article-reveal-share
+###article-share-email
 ###article-share-floating
+###article-share-twitter
 ###article-sharebar
 ###article-sharebox
 ###article-sharer
@@ -268,6 +270,7 @@
 ###block-minisocialsharingblock
 ###block-neweurope-vertical-social
 ###block-pi_social-links
+###block-ridiculouslyresponsivesocialsharebuttons
 ###block-rww_twitter-on_twitter
 ###block-scmedia-social-share-buttons-social-share-buttons
 ###block-sharetext-custom-share-block
@@ -670,6 +673,7 @@
 ###fb-scroll-popup
 ###fb-share-count
 ###fb-share-counter-link
+###fb-side-like
 ###fb-social-callout-div
 ###fb-social-top-buttonOFF
 ###fb-timeline-btn
@@ -1229,6 +1233,7 @@
 ###md_follow
 ###mediacontentsharebuttons
 ###mediasocialfollow
+###mega-footer-social-media
 ###menu--social-channels
 ###menu-cuckoo-social-menu
 ###menu-footer-social-icons
@@ -1283,6 +1288,7 @@
 ###mn_facebook_like_box_container
 ###mn_social_share_bar_2
 ###mn_social_sidebar
+###mobile-share-bar
 ###mobile-share-boxbottom
 ###mobile-share-button
 ###mobile-social
@@ -1315,6 +1321,7 @@
 ###mvp-post-soc-wrap
 ###mvp-top-nav-soc
 ###nSocial
+###native-addthis
 ###nav-fb-link
 ###nav-fbook
 ###nav-gplus
@@ -2425,9 +2432,6 @@
 ###socialbox
 ###socialbox-container
 ###socialbox-float
-###socialbtn
-###socialbtn_gplus
-###socialbtn_twitter
 ###socialbtns
 ###socialbugs
 ###socialbutterfly
@@ -2877,6 +2881,7 @@
 ##.Footer-share
 ##.Footer-socialButtons
 ##.FooterSocial
+##.FooterSocialMedia
 ##.Footer__Facebook
 ##.Footer__Twitter
 ##.Footer__Upper--Social
@@ -3026,6 +3031,7 @@
 ##.Sharer_inner
 ##.Sharer_link
 ##.Shariff
+##.Sharing-list
 ##.SharingContainer
 ##.SidebarBox--facebook
 ##.SidebarBox--social
@@ -3137,6 +3143,7 @@
 ##._rmSocial
 ##._socialF
 ##._socialsScr
+##._wf-social
 ##._wrapShares
 ##.a-btn-facebook
 ##.a-footer-share
@@ -3441,6 +3448,8 @@
 ##.article-rail__social
 ##.article-selection-shares
 ##.article-share
+##.article-share-cnt
+##.article-share-social
 ##.article-share__item
 ##.article-share__link
 ##.article-share_badges
@@ -3506,6 +3515,7 @@
 ##.articleShare
 ##.articleShare-buttons
 ##.articleShareBar
+##.articleShareBox
 ##.articleShareLinks
 ##.articleSharing
 ##.articleSharingBlock
@@ -3559,7 +3569,9 @@
 ##.article_detail_share
 ##.article_facebook
 ##.article_footer_pinterest
+##.article_footer_share
 ##.article_header_share
+##.article_left_share
 ##.article_pageshare_add
 ##.article_pinterest
 ##.article_share
@@ -3575,6 +3587,7 @@
 ##.article_top_social
 ##.articlebottomsharinglinks
 ##.articlek_share_wrap
+##.articleshare-new
 ##.articlesharebox
 ##.articleshares
 ##.artlsocl
@@ -3759,17 +3772,6 @@
 ##.bestwp-share-buttons
 ##.better-social-counter
 ##.bg-button-twitter
-##.bg-facebook
-##.bg-facebook-blue
-##.bg-googleplus
-##.bg-icon-linkedin
-##.bg-icon-twitter
-##.bg-linkedin
-##.bg-pinterest
-##.bg-tumblr-blue
-##.bg-twitter
-##.bg-twitter-blue
-##.bg-whatsapp
 ##.bg_popup-social__wrap
 ##.big-pinterest-icon
 ##.big-red-socialmediabar
@@ -3829,6 +3831,7 @@
 ##.block-block-footersocialmedia
 ##.block-block-socialmedia
 ##.block-click-twitter
+##.block-cta__socials
 ##.block-ec_facebook
 ##.block-ec_social
 ##.block-facebook
@@ -4158,6 +4161,7 @@
 ##.c-articlenav__socialsharing
 ##.c-aside--subscribe
 ##.c-author__social-media
+##.c-block__share
 ##.c-blog-social
 ##.c-bolt-share
 ##.c-bottom-player__share-btn
@@ -4173,7 +4177,9 @@
 ##.c-footer__social-links
 ##.c-footer__social-list
 ##.c-footer__social-list-item
+##.c-footer__social-media
 ##.c-footer__socials-list
+##.c-gallery-vertical-featured-image__share-icons
 ##.c-global-header__social
 ##.c-header-title__button-containers--social
 ##.c-header__social
@@ -4184,6 +4190,7 @@
 ##.c-link-list--sharing-list
 ##.c-list--social
 ##.c-main-footer__social
+##.c-mainheader__share
 ##.c-movie__socials
 ##.c-nav-social
 ##.c-navbar-primary__social
@@ -4195,6 +4202,7 @@
 ##.c-post-share__links
 ##.c-redes-sociais
 ##.c-share
+##.c-share-article
 ##.c-share-box-social-item
 ##.c-share-social
 ##.c-share-social--sticky
@@ -4223,6 +4231,7 @@
 ##.c-social-menu
 ##.c-social-navigation
 ##.c-social-share
+##.c-social-shares
 ##.c-social-sharetool
 ##.c-social-sharing
 ##.c-social-wrap
@@ -4230,8 +4239,10 @@
 ##.c-socialSharebar_container
 ##.c-social__list
 ##.c-social__networks
+##.c-socialbar
 ##.c-socialchannels
 ##.c-socials
+##.c-socials-aside
 ##.c-socialshare
 ##.c-tab-bar__social
 ##.c-teaser_share
@@ -4275,8 +4286,11 @@
 ##.catalog-generation__share
 ##.category-share
 ##.catfish--social
+##.cb-btn-share
 ##.cb-google-follow-widget
 ##.cb-in-article-social-button
+##.cb-pinterent-save-btn
+##.cb-post-share-toolbar-top
 ##.cb-social-fb
 ##.cb-social-gplus
 ##.cb-social-icons-extra
@@ -4582,6 +4596,7 @@
 ##.det-media-fb-btn
 ##.det-media-tw-btn
 ##.detShare
+##.detail-article__share-button
 ##.detail-page-share
 ##.detail-share
 ##.detail-share-btIco
@@ -4643,6 +4658,7 @@
 ##.dmg-social-icon
 ##.dn-sns
 ##.dni-social-feed
+##.doc-menu-social
 ##.doc-videoshare
 ##.docked-sharebar
 ##.docked-sharebar-docking-container
@@ -4712,6 +4728,7 @@
 ##.easy-social-share-fans-counter
 ##.easylikeandshare
 ##.easyshareit
+##.ebm-share-item
 ##.ed__news__footer__share
 ##.edgtf-portfolio-social
 ##.edgtf-social-icon-widget
@@ -4731,6 +4748,7 @@
 ##.eight8_social_media_footer
 ##.eins-facebook
 ##.eins-twitter
+##.ekit_social_media
 ##.el-icon-facebook
 ##.el-icon-twitter
 ##.el33t_social_container
@@ -4808,6 +4826,7 @@
 ##.essb-fans-youtube
 ##.essb-flyin
 ##.essb-mobile-sharepoint
+##.essb-social-followers-variables
 ##.essb_bottombar
 ##.essb_item
 ##.essb_link_pinterest
@@ -4918,6 +4937,7 @@
 ##.facebook-like
 ##.facebook-like-bottom
 ##.facebook-like-box
+##.facebook-like-box-holder
 ##.facebook-like-button-head
 ##.facebook-like-button__caption
 ##.facebook-like-large
@@ -5660,6 +5680,7 @@
 ##.footer-social
 ##.footer-social-block
 ##.footer-social-heading
+##.footer-social-icons-container
 ##.footer-social-ul
 ##.footer-socialIcons
 ##.footer-social__components
@@ -5704,6 +5725,7 @@
 ##.footer__link--social
 ##.footer__links__social
 ##.footer__list--social
+##.footer__nav--social
 ##.footer__nav-social
 ##.footer__navbar__socials-container
 ##.footer__navigationSocial
@@ -5747,6 +5769,7 @@
 ##.footer_social_facebook
 ##.footer_social_gplus
 ##.footer_social_icons
+##.footer_social_social-networks
 ##.footer_social_twitter
 ##.footer_socialblock
 ##.footer_socialnav
@@ -5854,6 +5877,7 @@
 ##.g-share
 ##.g-social
 ##.g1-drop-the-socials
+##.g1-social
 ##.g1-social-icons
 ##.g1-socials-item
 ##.g1-socials-section
@@ -5908,6 +5932,7 @@
 ##.genericon-youtube
 ##.genesis-simple-share-juice
 ##.gensharelinks
+##.gesso-social-selection-area
 ##.get-social
 ##.getfaceBook
 ##.getshare-button
@@ -7027,6 +7052,7 @@
 ##.js-selection-twitter
 ##.js-share
 ##.js-share-body
+##.js-share-btn
 ##.js-share-button
 ##.js-share-button-container
 ##.js-share-button-twitter
@@ -7118,6 +7144,7 @@
 ##.l-header-share
 ##.l-highlight__social
 ##.l-home-instagram-wrapper
+##.l-news-article-social
 ##.l-social
 ##.labelsocial
 ##.lafo-social
@@ -7442,6 +7469,7 @@
 ##.main-article-share-count
 ##.main-article-share-counts
 ##.main-content__share
+##.main-footer__bottom__social
 ##.main-footer__menu_bottom__social
 ##.main-footer__redes-sociais
 ##.main-footer__social
@@ -7537,6 +7565,7 @@
 ##.menu-header-social-container
 ##.menu-item-follow
 ##.menu-item-type-social
+##.menu-latest-footer-social-menu-container
 ##.menu-link-facebook
 ##.menu-link-instagram
 ##.menu-link-twitter
@@ -7554,6 +7583,7 @@
 ##.menu-social-icons
 ##.menu-social-instagram
 ##.menu-social-links
+##.menu-social-links-container
 ##.menu-social-media-menu-container
 ##.menu-social-menu-container
 ##.menu-social-navigation-container
@@ -7643,9 +7673,11 @@
 ##.mobile-sharing-tools
 ##.mobile-social
 ##.mobile-social-tray
+##.mobile-social-wrapper
 ##.mobile-socialshare-top
 ##.mobileShare
 ##.mobile_footer_follow_btn
+##.mobilesocial
 ##.mobilesocials
 ##.mod-facebook
 ##.mod-facebook-fanbox
@@ -7756,6 +7788,7 @@
 ##.naked-social-share
 ##.nano-share
 ##.nationalsocialshare
+##.native-share
 ##.native-share-wrapper
 ##.nativeShareCount
 ##.nativeShareCountContainer
@@ -7871,6 +7904,7 @@
 ##.newarticle__social
 ##.newdetailsocialwrapper
 ##.newheader__old-social
+##.news-article-social-icons-wrapper
 ##.news-article__share-content
 ##.news-content-share
 ##.news-detail-share
@@ -8006,6 +8040,7 @@
 ##.p-button-social
 ##.p-footer-c-section--social
 ##.p-footer-global-block-item02-other-social
+##.p-footer-social
 ##.p-post-shareItem
 ##.p-post-shareList
 ##.p-share
@@ -8084,6 +8119,8 @@
 ##.par-sharepad
 ##.parent-shareBox
 ##.parent_share
+##.parler-bttn
+##.parler-icon
 ##.partage-twitter
 ##.partage_contenu
 ##.pathSocialIcons
@@ -8112,6 +8149,7 @@
 ##.penci-social__content
 ##.penci-social__item
 ##.penci_facebook_widget
+##.penci_social_widget
 ##.persistent-menu_share-links
 ##.personal-social-btns
 ##.pfooter__content__social
@@ -8274,6 +8312,7 @@
 ##.post-share-element
 ##.post-share-email
 ##.post-share-facebook
+##.post-share-float
 ##.post-share-icons
 ##.post-share-item
 ##.post-share-links
@@ -8350,6 +8389,7 @@
 ##.postshare
 ##.postsw-share
 ##.powa-share
+##.powerbarBoxDiv
 ##.powerkit_social_links_widget
 ##.pp-share-grid-item
 ##.pp-social-block
@@ -8441,6 +8481,7 @@
 ##.quickshare-stumbleupon
 ##.qw-sharepage-large
 ##.qw_social
+##.r-footer--social
 ##.r-likes-wrapper
 ##.r1-share
 ##.r105_container_social_box_text_edit
@@ -8747,6 +8788,7 @@
 ##.share-b
 ##.share-badges
 ##.share-bar
+##.share-bar--bottom
 ##.share-bar--detail
 ##.share-bar--side
 ##.share-bar-container
@@ -8911,6 +8953,7 @@
 ##.share-info-twitter
 ##.share-inline-footer-reddit
 ##.share-inner
+##.share-inner-wrp
 ##.share-instagram
 ##.share-interaction
 ##.share-it
@@ -8973,6 +9016,7 @@
 ##.share-or
 ##.share-page
 ##.share-panel
+##.share-pannel
 ##.share-pictures-overlay
 ##.share-pin
 ##.share-pinterest
@@ -9013,7 +9057,6 @@
 ##.share-sidenav-box
 ##.share-signature
 ##.share-signup
-##.share-simple
 ##.share-single
 ##.share-sites-thumbs
 ##.share-sm-icons
@@ -9088,6 +9131,7 @@
 ##.share-viber
 ##.share-video
 ##.share-video-link
+##.share-wa
 ##.share-wb
 ##.share-weather-fb
 ##.share-weibo
@@ -9249,6 +9293,7 @@
 ##.shareToSocial
 ##.shareTool
 ##.shareToolBar
+##.shareToolbar
 ##.shareTools
 ##.shareToolsItem
 ##.shareToolsItemEmail
@@ -9473,6 +9518,7 @@
 ##.shared-counts-button
 ##.shared-counts-icon-label
 ##.shared-counts-label
+##.shared-counts-wrap
 ##.shared-text-social
 ##.shared_block
 ##.shared_menu
@@ -9712,6 +9758,8 @@
 ##.sharrre
 ##.sharrre-container
 ##.sharrre_widget
+##.shars__socials
+##.shars__visible
 ##.show-all-sharetool
 ##.show-share
 ##.show-share-count
@@ -9833,7 +9881,6 @@
 ##.single-share-logo
 ##.single-share-pinterest
 ##.single-sharing-btns
-##.single-social
 ##.single-social-button
 ##.single-social-button-email
 ##.single-social-button-whatsapp
@@ -9976,6 +10023,7 @@
 ##.sns-share-area
 ##.sns-share-icon
 ##.sns-share02
+##.sns-sharing
 ##.sns-tw
 ##.sns-wrapper
 ##.sns-yt
@@ -10064,6 +10112,7 @@
 ##.socail-area
 ##.socail-icons
 ##.socail-share
+##.socailMediaLinks
 ##.socail_media
 ##.socailmain
 ##.socblock
@@ -10111,6 +10160,7 @@
 ##.social-Twitter
 ##.social-action
 ##.social-actions__button--twitter
+##.social-align-default
 ##.social-apps
 ##.social-area
 ##.social-area-syncer
@@ -10124,7 +10174,6 @@
 ##.social-bar
 ##.social-bar-bottom
 ##.social-bar-button-share
-##.social-bar-container
 ##.social-bar-facebook
 ##.social-bar-h
 ##.social-bar-inline
@@ -10157,10 +10206,8 @@
 ##.social-bookmark--wrapper
 ##.social-bookmark-links
 ##.social-bookmarks
-##.social-bottom
 ##.social-botton
 ##.social-bottons
-##.social-box
 ##.social-box-facebook
 ##.social-box-float
 ##.social-box-footer
@@ -10308,7 +10355,6 @@
 ##.social-foursquare
 ##.social-full
 ##.social-glyphs
-##.social-google
 ##.social-google-link
 ##.social-google-plus
 ##.social-googleplus
@@ -10391,23 +10437,13 @@
 ##.social-icons-wrapper
 ##.social-icons_1
 ##.social-icons__icons
-##.social-image
 ##.social-img-btn
-##.social-info
 ##.social-inline
 ##.social-inline-list
 ##.social-inner
 ##.social-insta
 ##.social-instagram
-##.social-item
-##.social-item-link
-##.social-item__link
-##.social-items
-##.social-items-list
 ##.social-kit__item
-##.social-label
-##.social-large
-##.social-large-button
 ##.social-layer-link
 ##.social-layzing
 ##.social-left
@@ -10446,7 +10482,6 @@
 ##.social-link-twitter
 ##.social-link-wrapper
 ##.social-linkedin
-##.social-links
 ##.social-links--wrapper
 ##.social-links-block
 ##.social-links-horiz
@@ -10520,10 +10555,12 @@
 ##.social-media-service-module
 ##.social-media-share
 ##.social-media-share-buttons
+##.social-media-share-links
 ##.social-media-sharer
 ##.social-media-sharing
 ##.social-media-twitter
 ##.social-media-widget
+##.social-media-widget-container
 ##.social-media-widget-icon-bar
 ##.social-media-wrapper
 ##.social-media2
@@ -10633,6 +10670,7 @@
 ##.social-shadow
 ##.social-shar-bar
 ##.social-share
+##.social-share--desktop
 ##.social-share--linkedin
 ##.social-share--sticky
 ##.social-share-area
@@ -11163,6 +11201,7 @@
 ##.social_link
 ##.social_link_logo
 ##.social_link_mobile
+##.social_link_wrapper
 ##.social_linkedin
 ##.social_links
 ##.social_links_con
@@ -11293,10 +11332,7 @@
 ##.socialbox2
 ##.socialboxp
 ##.socialboxsingle
-##.socialbtn
-##.socialbtn-wrap
 ##.socialbtns
-##.socialbutn
 ##.socialbutton
 ##.socialbutton--facebook
 ##.socialbutton--twitter
@@ -11325,6 +11361,7 @@
 ##.socialfollowercounter
 ##.socialfooter
 ##.socialfooter--fb
+##.socialfooter_links
 ##.socialh
 ##.socialheader
 ##.socialicns
@@ -11425,6 +11462,7 @@
 ##.socialsbox
 ##.socialscroll
 ##.socialshare
+##.socialshare--floating
 ##.socialshare-icons2
 ##.socialshare-wrapper
 ##.socialshare2
@@ -11698,6 +11736,7 @@
 ##.story-social-bar
 ##.story-social-media
 ##.story-social-share
+##.story-social-share-fix
 ##.story-social-widget
 ##.story-taboola-related-module
 ##.story-tool-share
@@ -11780,6 +11819,7 @@
 ##.sumome-image-sharer
 ##.sumome-share-client-wrapper
 ##.superads-social-icons
+##.sv-social
 ##.svg-facebook
 ##.svg-googleplus
 ##.svg-icon-facebook
@@ -11812,6 +11852,7 @@
 ##.tafSocialButton
 ##.tag-line-social
 ##.tags-share
+##.tags-share-box
 ##.talk-sharing__facebook
 ##.talk-sharing__other
 ##.talk-sharing__twitter
@@ -11865,6 +11906,8 @@
 ##.text-m-join-us-on-facebook
 ##.text_list_inline
 ##.tf-share
+##.tg-followus
+##.tg-socialicons
 ##.tg-tlc-storymeta_sharing-wrapper
 ##.tg-tweet-this
 ##.tgc-footer_social
@@ -12041,6 +12084,7 @@
 ##.tru_twitter
 ##.tru_youtube
 ##.ts-facebook_like
+##.ts-share-bar
 ##.ts-socials
 ##.tsocial
 ##.tsso_likeshare_box
@@ -12494,6 +12538,8 @@
 ##.vs-twitter
 ##.vsac-social-email
 ##.vshare
+##.vuukle-powerbar
+##.vuukle-powerbar-vertical
 ##.vxp-share__channel-link
 ##.w-button-social
 ##.w-content-details-article-extra-sharing
@@ -12547,6 +12593,7 @@
 ##.widget-ahsocial
 ##.widget-altervista-social
 ##.widget-article-follow
+##.widget-author__socials
 ##.widget-cardoza-fb-like
 ##.widget-easy-twitter-feed-widget-container
 ##.widget-facebook
@@ -12867,6 +12914,7 @@
 ##.zocial-twitter
 ##.zocial-vimeo
 ##.zocial-youtube
+##.zone-reseaux-sociaux
 ##.zoom-social-icons-widget
 ##.zox-post-soc-list
 ##.zox-post-soc-stat-list
@@ -12897,15 +12945,10 @@
 ##[aria-label="Social bar"]
 ##[aria-label^="Follow on Facebook"]
 ##[card-share-open]
-##[class*="socialLink"]
-##[class*="socialSection"]
 ##[class^="share-module_"]
 ##[class^="social_button_"]
-##[class^="styles__Socials-sc"]
-##[class^="toggleBt__player_icon_share"]
 ##[data-bvo-type="share"]
 ##[data-ffx-event-category="Share content"]
-##[data-gtm-trigger*="share"]
 ##[data-link^="https://twitter.com/share?"]
 ##[data-link^="https://www.facebook.com/sharer.php?"]
 ##[data-original-title="Share or embed this video!"]
@@ -13027,9 +13070,6 @@
 ##a[data-share="popup"]
 ##a[data-tm-ref-type-id="Follow-on-Facebook"]
 ##a[data-tm-ref-type-id="Follow-on-YouTube"]
-##a[href*="facebook.com/sharer/sharer.php?"]
-##a[href*="facebook.com/sharer?u="]
-##a[href*="pinterest.com/js/pinmarklet.js?"]
 ##a[href="#share-social"]
 ##a[href="//www.reddit.com/submit"]
 ##a[href="https://twitter.com/share"]
@@ -13111,7 +13151,6 @@
 ##a[href^="https://facebook.com/share.php?u="]
 ##a[href^="https://facebook.com/sharer.php?"]
 ##a[href^="https://getpocket.com/save?url="]
-##a[href^="https://line.naver.jp/R/msg/text/?"][href*="website_share"]
 ##a[href^="https://lineit.line.me/share/"]
 ##a[href^="https://linkedin.com/shareArticle?"]
 ##a[href^="https://open.sns.ymcart.com/mgr?"]
@@ -13290,7 +13329,6 @@
 ##div[button="shareBox"]
 ##div[class$="_share_this"]
 ##div[class$="_social_icons_widget"]
-##div[class*="_share_tools_"]
 ##div[class^="ArticleHeader__share_"]
 ##div[class^="ArticleShareLinks_"]
 ##div[class^="Component-followAp-"]

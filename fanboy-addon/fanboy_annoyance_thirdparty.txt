@@ -143,11 +143,9 @@
 ||google.com/uds/?file=orkut&
 ||goroost.com^$third-party
 ||govdelivery.com^$third-party
-||gravity.com^$third-party
 ||gravityrd-services.com^$third-party
 ||grazeit.com^$third-party
 ||groupon.com^*/affiliate_widget/$third-party
-||grvmedia.com^$third-party
 ||healthgrades.com^$third-party
 ||hellobar.com^$third-party
 ||hnbutton.appspot.com^$third-party
@@ -183,7 +181,6 @@
 ||letsgetsocialnow.com^$third-party
 ||licensebuttons.net^$image,third-party
 ||ligatus.com^$third-party
-||lightboxcdn.com/vendor/$script,third-party
 ||linkwithin.com^$third-party
 ||list-manage.com/subscribe/
 ||list-manage1.com/subscriber-count?$third-party
@@ -279,7 +276,6 @@
 ||sail-personalize.com^$third-party
 ||sailthru.com^$third-party
 ||sales-pop-dot-autoketing-production-sdk.appspot.com^$third-party
-||sample.dragonforms.com^$subdocument,third-party
 ||savvysource.com^$third-party
 ||scorespro.com^$third-party
 ||scoutle.com^$third-party
@@ -290,7 +286,6 @@
 ||secretrune.com^$third-party
 ||sendsay.ru^$third-party
 ||senzari.com^$third-party
-||service.signalr.net^$third-party
 ||services.webklipper.com/geoip/$third-party
 ||sg-autorepondeur.com^$third-party
 ||sharenice.org^$third-party
@@ -363,9 +358,10 @@
 ||weebly.com/*_signup.php$third-party
 ||weworkremotely.com^$third-party
 ||widget.adviceiq.com^$third-party
+||widget.beop.io^
 ||widget.breakingburner.com^$third-party
 ||widget.clipix.com^$third-party
-||widget.gleamjs.io^$script,third-party
+||widget.gleamjs.io^$script,third-party,domain=~gleam.io
 ||widget.justwatch.com^
 ||widget.pico.tools^$third-party
 ||widget.trustpilot.com^$third-party
@@ -397,13 +393,16 @@
 ||ziprecruiter.com/jobs-widget/$third-party
 ||zoomanalytics.co^$third-party
 ||zotabox.com^*/widgets.js$third-party
-! Newsletter
-||secondstreetapp.com/embed/$subdocument
-! Youtube testing
-||music.youtube.com^$csp=worker-src 'none'
-||www.youtube.com^$csp=worker-src 'none'
+! Youtube testing (Disabled https://forums.lanik.us/viewtopic.php?t=46671&start=30)
+! ||music.youtube.com^$csp=worker-src 'none'
+! ||www.youtube.com^$csp=worker-src 'none'
 ! 3rd-party sounds
+||acquire.io/assets/sound/
+||app.chaport.com/sounds/
+||app.onlim.com/app/assets/audios/
 ||appspot.com/sounds/chatmsg.mp3
+||carrotquest.app/sounds/
+||cdn-widget.callpage.io/build/sounds/
 ||chatango.com/pcache/sounds/
 ||cleversite.ru/client/default/sound/
 ||cliengo.com^$media
@@ -417,14 +416,21 @@
 ||js.driftt.com/deploy/assets/static/audio/
 ||js.intercomcdn.com/audio/
 ||livechatinc.com/widget/static/media/
+||me-talk.ru/support/sounds/
 ||purechatcdn.com/Content/Audio/
+||qualified.com/packs/$media
+||raychat.io/assets/widget/audio/
 ||reamaze.com/audio/
+||smartsuppcdn.com/assets/sounds/
 ||snapengage.com/sounds/
+||static.olark.com/jsclient/sounds/
 ||static.widget.trengo.eu/assets/$media
 ||tawk.to/*/audio/
 ||tidiochat.com^$media
+||userbot.ai/widget-chat/dist/audio/
 ||userway.org/widgetapp/sounds/
 ||zdassets.com/web_widget/$media
+||zopim.com/widget/sounds/
 ! Taboola
 ||taboola.com^$third-party
 ||taboolasyndication.com^$third-party
