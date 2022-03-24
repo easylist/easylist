@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203242203
+! Version: 202203242258
 ! Title: Fanboy's Annoyance List
-! Last modified: 24 Mar 2022 22:03 UTC
+! Last modified: 24 Mar 2022 22:58 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -36546,8 +36546,14 @@ m###teaser-newsletter
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
-! cookie-law-info-bar
+! cookie-law-info-bar (not made generic to avoid overlays/disabled scrollbars)
+! https://publicwww.com/websites/%22.cli-modal-backdrop%22/
 ###cookie-law-info-bar ~ .cli-modal-backdrop
+###cookie-law-info-bar[style*="border-box; display:"]
+###cookie-law-info-bar[style*="border-box; padding:"]
+###cookie-law-info-bar[style*="bottom:"]
+###cookie-law-info-bar[style*="top: 0px"]
+###cookie-law-info-bar[style*="top:0px"]
 ###footer > #cookie-law-info-bar
 ###footercontent > #cookie-law-info-bar
 ##.container > #cookie-law-info-bar
@@ -45864,7 +45870,7 @@ foolproof.com.sg##.notification-banner
 steadfast.com.sg##.notification-bar
 banjaran.com.sg##.overlay-mobile-styles-enabled
 ! cookie-law-info-bar
-afterbuy.de,divx.com,egotastic.com,endnote.com,ezfacility.com,financedigest.com,fon.com,fondometasalute.it,freeupscmaterials.org,geopostcodes.com,hasitleaked.com,iqformat.me,mathletics.com,maurizioblondet.it,medhub.com,mobalytics.gg,ngpvan.com,opensubtitles.website,osdownloader.org,peopleadmin.com,pivigames.blog,portal.ciee.org.br,revcontent.com,sansan.com,swoca.net,vendini.com,winaero.com,wpthemedetector.com###cookie-law-info-bar
+whatsup.es###cookie-law-info-bar
 ! elementor-popup-modal
 caldigit.com##.elementor-element-31e18001
 whatson.is##.elementor-location-popup
