@@ -14358,8 +14358,14 @@
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
-! cookie-law-info-bar
+! cookie-law-info-bar (not made generic to avoid overlays/disabled scrollbars)
+! https://publicwww.com/websites/%22.cli-modal-backdrop%22/
 ###cookie-law-info-bar ~ .cli-modal-backdrop
+###cookie-law-info-bar[style*="border-box; display:"]
+###cookie-law-info-bar[style*="border-box; padding:"]
+###cookie-law-info-bar[style*="bottom:"]
+###cookie-law-info-bar[style*="top: 0px"]
+###cookie-law-info-bar[style*="top:0px"]
 ###footer > #cookie-law-info-bar
 ###footercontent > #cookie-law-info-bar
 ##.container > #cookie-law-info-bar
