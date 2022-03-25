@@ -510,11 +510,6 @@
 ###_DIV_COOK
 ###_EAPM.TC
 ###__CookieContainer
-###___gatsby div[class*="CookieBox"]
-###___gatsby div[class*="cookieBox"]
-###___gatsby div[class*="cookies-alert"]
-###___gatsby div[class*="cookies-module--cookieprompt"]
-###___gatsby ~ div[class*="consent-banner"]
 ###__agreementBar
 ###__cookie-consent-wrapper
 ###__cookieMessage
@@ -530,16 +525,6 @@
 ###__next div[aria-labelledby*="cookie-dialog"]
 ###__next div[class*="CookieConsent"]
 ###__next div[class*="CookieMesage"]
-###__next div[class*="CookieNotice"]
-###__next div[class*="CookiePolicy"]
-###__next div[class*="CookieWidget"]
-###__next div[class*="GdprBanner"]
-###__next div[class*="GdprParentWrapper"]
-###__next div[class*="PrivacyNotification"]
-###__next div[class*="PrivacyPolicy"]
-###__next div[class*="StyledCookieLayer"]
-###__next div[class*="cookie-message"]
-###__next div[class*="cookies-notice"]
 ###__next div[class*="privacy-notification"]
 ###__next div[data-selector="container@cookiebar"]
 ###__ntk_banner_cookie
@@ -594,6 +579,7 @@
 ###aboutcookies
 ###abw_consentbanner
 ###ac_cookie_bar
+###ac_cookiebanner
 ###ac_cookiesvalidation
 ###acb-banner
 ###accept-cookie
@@ -1529,6 +1515,7 @@
 ###consent-toolbar
 ###consent-tracking
 ###consent.alert
+###consent.backdrop
 ###consent.consent
 ###consent.navbar-fixed-bottom
 ###consentAccepted
@@ -1624,6 +1611,7 @@
 ###cook_aff
 ###cook_info
 ###cookalert-holder
+###cookboxback
 ###cookcon
 ###cookcont
 ###cookdiv
@@ -4725,6 +4713,7 @@
 ###footer-cookie-policy
 ###footer-cookie-popup
 ###footer-cookies
+###footer-cookieuse-block
 ###footer-gdpr
 ###footer-lgpd
 ###footerCk
@@ -5428,6 +5417,7 @@
 ###jwsdw-cookieHint
 ###jwsdw-cookieHint-container
 ###k_cookieNotification
+###kaCookieBar
 ###kaio-cookie-ban
 ###kakeboks
 ###kaleva-cookie-consent
@@ -6117,6 +6107,7 @@
 ###pnlCookieNotice
 ###pnlCookieStatus
 ###pnlCookies
+###pnlCookiesNotification
 ###pnlEUCookieBanner
 ###pnlPrivacy
 ###pnn-cookie
@@ -7470,6 +7461,7 @@
 ##.RV_cookiedir
 ##.RodoNotyfication
 ##.RootContainerClassName div[class*="CookieNotificationPopup"]
+##.Root_cookieConsentBanner
 ##.S01M97-CookieAlert--overlay
 ##.SCK_Banner
 ##.SLNotificationBar
@@ -7525,6 +7517,7 @@
 ##.aard-cookie-container
 ##.ab-cookie-disclaimer
 ##.abbr__cookiebanner
+##.abc-cookies-wrapper
 ##.abcookielaw
 ##.abcookielawbg
 ##.abnormMediaCookieConsent
@@ -8173,6 +8166,7 @@
 ##.c-cookie-bar
 ##.c-cookie-block
 ##.c-cookie-consent
+##.c-cookie-consent--default
 ##.c-cookie-consent-banner
 ##.c-cookie-consent-modal
 ##.c-cookie-disclaimer
@@ -8437,6 +8431,7 @@
 ##.civic_cookie__banner
 ##.civic_cookie__overlay
 ##.ciyashop-cookies-info
+##.ck-Banner
 ##.ck-modal
 ##.ck-notiz
 ##.ck-user-cookie-consent-modal
@@ -8950,6 +8945,7 @@
 ##.cookie-consent-holder
 ##.cookie-consent-jolt
 ##.cookie-consent-layer
+##.cookie-consent-local
 ##.cookie-consent-manager
 ##.cookie-consent-modal
 ##.cookie-consent-notice
@@ -9226,6 +9222,7 @@
 ##.cookie-not-confirm-banner
 ##.cookie-note
 ##.cookie-note--wrap
+##.cookie-note-container
 ##.cookie-note-popup
 ##.cookie-note-wrapper
 ##.cookie-note__wrapper
@@ -10944,6 +10941,7 @@
 ##.dg-cookies__wrapper
 ##.dgp-consent
 ##.dgpr-drop-down
+##.dgtl-consent
 ##.dhl-cgk
 ##.dialog-cookie-settings
 ##.dialogBanner__inner[data-qa="cookie-banner"]
@@ -11637,6 +11635,7 @@
 ##.gdrp__overlay
 ##.gds-cookie
 ##.gebaeck-notice
+##.gecko-cookies-popup
 ##.gem-c-cookie-banner
 ##.general-cookie-notification
 ##.general_data_protection_regulation
@@ -12159,6 +12158,7 @@
 ##.keksbox-overlay-layer
 ##.keksikyselyModalElement
 ##.kia-cookie
+##.kick-kcm-settings
 ##.kitt-cookie-warning
 ##.kitt-cookie-warning_show
 ##.kjfCookieInfoBox
@@ -12215,7 +12215,6 @@
 ##.layout__cookies-policy-notification
 ##.layout__disclaimer
 ##.layout__overlays__cookieNotice
-##.lb-eucl
 ##.lc-gdpr
 ##.lcc-modal[data-cookie-key*="cookie_consent"]
 ##.ld-cookie-notice
@@ -12515,6 +12514,7 @@
 ##.mola-cookie-notice
 ##.moneseCookies
 ##.monk-cookies
+##.moon2-statisticsOptBox
 ##.moove-gdpr-align-center
 ##.moove-gdpr-dark-scheme
 ##.moove-gdpr-light-scheme
@@ -12560,6 +12560,8 @@
 ##.mw-cookiewarning-container
 ##.mw-dsgvo-cookie-slidebar-fixed-bg_01
 ##.mw-dsgvo-cookie-slidebar_01
+##.mw-dsgvo-overlay
+##.mw-dsgvo-overlay-background
 ##.mw-notification-tag-cookiePolicy
 ##.mw_cookie_bar
 ##.mw_cookie_info_bar
@@ -13042,6 +13044,7 @@
 ##.popup_cookies_wrap
 ##.popup_policies
 ##.popupcoockie
+##.popupcookie
 ##.portlet_cookie_policy
 ##.postel-cookies
 ##.poswp-databar
@@ -13758,6 +13761,7 @@
 ##.tx-it24cookies-pi1
 ##.tx-om-cookie-consent
 ##.tx-panda-cookie
+##.tx-pascoe-consent-manager
 ##.tx-pnfcnil
 ##.tx-tandncookie
 ##.tx_cookiemonster_dataprotection_overlay
@@ -14358,8 +14362,14 @@
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
-! cookie-law-info-bar
+! cookie-law-info-bar (not made generic to avoid overlays/disabled scrollbars)
+! https://publicwww.com/websites/%22.cli-modal-backdrop%22/
 ###cookie-law-info-bar ~ .cli-modal-backdrop
+###cookie-law-info-bar[style*="border-box; display:"]
+###cookie-law-info-bar[style*="border-box; padding:"]
+###cookie-law-info-bar[style*="bottom:"]
+###cookie-law-info-bar[style*="top: 0px"]
+###cookie-law-info-bar[style*="top:0px"]
 ###footer > #cookie-law-info-bar
 ###footercontent > #cookie-law-info-bar
 ##.container > #cookie-law-info-bar
