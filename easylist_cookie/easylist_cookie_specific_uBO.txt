@@ -330,6 +330,9 @@ thracegroup.com,donlow.gr###ccc
 thracegroup.com,donlow.gr##body,html:style(overflow: auto !important; position: initial !important;)
 !! pointerevents (only)
 northernpowergrid.com,borgomontecedrone.it##*:style(pointer-events:auto !important; filter: none !important)
+! computerbase.de https://www.reddit.com/r/uBlockOrigin/comments/thrxes/is_it_not_possible_to_block_a_dialog_element/
+computerbase.de##dialog:remove()
+computerbase.de##+js(rc, consent-dialog-open, body)
 ! lekarna-bella.cz
 lekarna-bella.cz##.modal-backdrop
 lekarna-bella.cz##*:style(filter: none !important)
