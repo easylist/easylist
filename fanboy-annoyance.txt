@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203280207
+! Version: 202203280224
 ! Title: Fanboy's Annoyance List
-! Last modified: 28 Mar 2022 02:07 UTC
+! Last modified: 28 Mar 2022 02:24 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -22929,6 +22929,7 @@ m###teaser-newsletter
 ###alerta-cookies
 ###alerta_cookies
 ###alertcookies
+###alerte-cookie
 ###alerte-cookies
 ###alerte_cnil
 ###alerte_cookie
@@ -23089,6 +23090,7 @@ m###teaser-newsletter
 ###background-cookies
 ###ban-cookie
 ###ban-mentions-legales
+###ban_rgpd
 ###band-cookies
 ###banda_cookie
 ###bandacookie
@@ -27029,6 +27031,7 @@ m###teaser-newsletter
 ###gdpr-cookie-block
 ###gdpr-cookie-blocked-layer
 ###gdpr-cookie-consent
+###gdpr-cookie-consent-bar
 ###gdpr-cookie-consent-popup
 ###gdpr-cookie-footer
 ###gdpr-cookie-info
@@ -28661,6 +28664,7 @@ m###teaser-newsletter
 ###rgpd-cookies-modal-wrapper
 ###rgpd-modal
 ###rgpd:not(body):not(html)
+###rgpdAlert
 ###rgpdModal
 ###rgpdXooit
 ###rgpd_backdrop
@@ -30266,6 +30270,7 @@ m###teaser-newsletter
 ##.block-por-cookies
 ##.block-rgpd
 ##.block.cookies
+##.blockCookieAgreementWrapper
 ##.blockCookieBanner
 ##.blockCookieNotice
 ##.blockCookieNotification
@@ -32611,6 +32616,7 @@ m###teaser-newsletter
 ##.cookies-footer-i
 ##.cookies-gdpr
 ##.cookies-gioodo-require
+##.cookies-global
 ##.cookies-gradient
 ##.cookies-handshake-wrapper
 ##.cookies-header
@@ -33815,6 +33821,8 @@ m###teaser-newsletter
 ##.gdpr__container
 ##.gdpr__cookie
 ##.gdpr__cookie_consent
+##.gdpr__overlay
+##.gdpr__popup
 ##.gdpr__wrapper
 ##.gdpr_accept_cookie
 ##.gdpr_approve
@@ -35029,6 +35037,7 @@ m###teaser-newsletter
 ##.o2x-cookiebar-wrapper
 ##.o7cookie-info-prompt-wrap
 ##.oCookie
+##.o_cookies_discrete
 ##.oaveacookieconsent
 ##.oax-cookie-msg
 ##.ob-cookies
@@ -35305,6 +35314,7 @@ m###teaser-newsletter
 ##.pr-cookie-overlay
 ##.pre-head__cookie-info
 ##.pre-header-cookie-notice
+##.preModalCookie
 ##.precokieinner
 ##.preventAcceptance
 ##.primo-cookie-compliance-placeholder
@@ -35511,6 +35521,7 @@ m###teaser-newsletter
 ##.rgpd-bar
 ##.rgpd-blockage
 ##.rgpd-cookies-banner
+##.rgpd-cookies-toolbox
 ##.rgpd-fixed-bar
 ##.rgpd-popup
 ##.rgpd.view.show
@@ -35983,6 +35994,7 @@ m###teaser-newsletter
 ##.truste_cm_outerdiv:not(body):not(html)
 ##.truste_overlay:not(body):not(html)
 ##.ts_privacy_adv
+##.tscUiNotificationMiddleWrapper
 ##.tsccb-banner-container
 ##.tsl-cookiebanner
 ##.tt-bsh-cookiebar
@@ -48569,6 +48581,7 @@ sunrise.ch##.cookieBanner_cookie-container__2h6CD
 ! 
 ! ---------- French ----------
 ! 
+chaft.fr###Cookieslaw
 domaine-du-montmarin.com###\#cookie-banner
 decrypterlenergie.org###alert-mention
 allisonpr.fr###alert-slide-down
@@ -48579,8 +48592,10 @@ markem-imaje.fr###cd_wrapper
 infojobs.net###cmpContainer
 assurland.com###consentManagementPlatform
 grillofrance.fr###cookie
+castlebrook.fr,francemuseums.fr,pierregignoux.fr,sigfox.fr,spinbreak.fr###cookie-law-info-bar
 izmopics.com,smart-mulhouse.fr###cookieConcernPanel
 123comparer.fr,arlestourisme.com,auberge-maison-rouge.com,enmark2.com,hotel-baud.com,my-meteo.com,retraitesdeletat.gouv.fr,solutions-numeriques.com,station-orange.com,veremasolidaria.org###cookies
+oddo.fr###cookiesModal
 cliffordchance.com###div_cc_cc
 lactease.com###doria_banner_content
 calendrier-lunaire.net###ezcc
@@ -48589,17 +48604,23 @@ illicopharma.com###fancybox-wrap
 adp-enseignes.com,knoema.com###gdpr
 maidenfrance.fr###headband
 fromagesuisse.ch###legalnotice
+hertz.fr###light-box-1
 ma-calculatrice.fr###manger-des-minis-gateaux
 cuevana3.io###mdl-ads
 maxifoot.fr###mfcok1
 giappo.com###normativa
 altaprofits.com###notification
 store-opart.fr###ocw_conteneur
+afd.fr,coleparmer.fr###onetrust-consent-sdk
+hertz247.fr###overlayBox_1
 pharmasimple.com###pharmabiscuit-popin
 ortc.fr###pm-overlay
 darricau.com###popup
 lebouquetespagnol.com,lebouquetoceanindien.com,lebouquetportugais.com,lebouquetrusse.com,lepackrusse.com,ortc.fr,studiocanal.tv###privacy-manager
+canalplus.com###privacy-manager-popin
+planetsurfcamps.com###ps-consent
 clinique-veterinaire.fr###userConsentPolicy
+dopper.com##.CookieNotice_container__1XhNJ
 bmgproductionmusic.fr##.Notification
 talixo.fr##.TrackingInfoBox
 maprocuration.gouv.fr##.VoteDisclaimer_voteDisclaimerContainer__27qgl
@@ -48609,12 +48630,13 @@ camara.net##.activebar-container
 ants.gouv.fr##.ants-208
 jumia.ci,jumia.co.ke,jumia.com.eg,jumia.com.gh,jumia.com.ng,jumia.com.tn,jumia.dz,jumia.ma,jumia.sn,jumia.ug##.banner
 cv.fr##.bg-gray-900.p-5
-medpets.fr##.bottom-0
+egis-group.com,medpets.fr##.bottom-0
 wimotic.fr##.bottom-6
 shopee.fr##.bpGouG
 moncompteformation.gouv.fr##.cdk-overlay-container
 gecina.fr##.cky-modal-backdrop
 utilemploi.fr##.cognito2
+inc-conso.fr##.consent-modal-content
 lirelactu.fr##.container-0-5
 ffr.fr,kora.fr,narbutas.fr,quelpneu.com,weareplaystation.fr##.cookie
 terrasana.fr##.cookie-policy-component_cookieContainer__2Zc7b
@@ -48624,6 +48646,7 @@ tv5unis.ca##.css-wydzoi.e1v9p9hw0
 vanguardinvestments.fr##.disclaimer_box
 lelivrescolaire.fr##.dzBQEB
 aeg-powertools.eu##.exarIq
+poool-staging.fr##.fade-in-enter-done
 alp-isolation.fr##.fancybox-container
 radiosetv.com##.fck
 terredactu.com##.floating-bottom
@@ -48636,6 +48659,7 @@ apec.fr##.info-sanitaire
 tanrevel.fr##.jUFdFM
 bricomarche.com##.js-GlobalPopin
 inshallah.com##.jss125
+dncafinance.fr##.klaro
 antwerpen.be##.m-overlay
 latendresseencuisine.com##.mdc-snackbar
 rueducommerce.fr##.micromodal-slide.modal
