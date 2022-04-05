@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202204050555
+! Version: 202204050626
 ! Title: EasyList
-! Last modified: 05 Apr 2022 05:55 UTC
+! Last modified: 05 Apr 2022 06:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -58873,8 +58873,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||zergnet.com^$image,script,stylesheet,domain=ci.craveonline.com|ci.gamerevolution.com|ci.momtastic.com|ci.thefashionspot.com|ci.totallyher.com
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
 ! Webcompat fixes (Avoid any potential filters being applied to non-ad domains)
-@@||google.com/recaptcha/$csp,subdocument
-@@||google.com/recaptcha/api.js
+@@||google.com/recaptcha/$csp,script,subdocument
 @@||gstatic.com/recaptcha/
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js
