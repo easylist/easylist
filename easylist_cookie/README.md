@@ -43,6 +43,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [dailymotion](https://www.dailymotion.com/) | Consent overlay shows | Denys video playback |
 [dogedash.com](https://portal.dogedash.com/) | Consent overlay shows | Denys user from connecting to wallet |
 [teacheconomy.de](https://www.teacheconomy.de/) | Consent overlay shows | Stop user clicking on links if not consent message accepted |
+[Etsy.com](https://www.etsy.com) | Consent dialogbox shows | Breaks image zooming of products |
 
 ## Consent companys
 | Consent company | Description | Any way around it? | Details |
