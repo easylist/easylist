@@ -51,3 +51,35 @@ Note: The only exception if a site combined a cookie consent message with anothe
 yahoo consent | popup overlay | Used by some sites like [Engadget](https://engadget.com/) creates a redirect which cannot be blocked. |
 trustarc.com/truste.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [usa.philips.com](https://www.usa.philips.com/) |
 cookiepro.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [was removed](https://github.com/easylist/easylist/commit/6714a84e2dde673f5bb70264c61800183ac1dcb5) |
+
+## Removed filters
+
+Some sites will show a cookie consent message while disabling the scroll bar, we can work around this easily. If it's affecting too many sites using the similar template we'll remove the affected generic filters. Future filters specific to each site to avoid breakages. 
+
+Not a complete list, the following filters were removed due to historic issues:
+
+| Filters | What it breaks | 
+| --- | --- |
+| ###cookie-law-info-bar | Breaks scroll in some implementations |
+| ##.wt-cli-cookie-bar-container | Similar to cookie-law-info-bar |
+| ###cookieModal | Breaks scroll in some implementations |
+| .modal-cacsp-position | Breaks scroll in some implementations |
+| ###cookieConsentModal | Breaks scroll in some implementations |
+| ##.cookiewall | Breaks scroll when cookiewall used |
+| ##div[data-cookie] | Breaks scroll in some implementations |
+| ##div[data-nconvert-cookie] | Breaks scroll in some implementations |
+| ###orejime/.orejime-Notice | Breaks scroll in some implementations |
+| ###consentModal | Breaks scroll in some implementations |
+| ##.sqs-announcement-bar | Used for other non-cookie items |
+| ##.cc-window[aria-describedby*="consent"] | Breaks scroll in some implementations |
+| ##.cc-window[aria-label*="consent"] | Breaks scroll in some implementations |
+| ##.cc-grower/##.cc-floating | Breaks scroll in some implementations |
+| ###coiOverlay[role="banner"] | Breaks scroll in some implementations |
+| ##[data-cookie-id] | Breaks scroll in some implementations |
+| ###gdpr-consent/.gdprModal--visible/.gdprModal__placeholder | Breaks scroll in some implementations |
+| ##.gdpr-container | Breaks scroll in some implementations |
+| ##.gdpr-modal/###gdpr-modal | Breaks scroll in some implementations |
+| ###cookiesModal/##.cookiesModal | Breaks scroll in some implementations |
+| ##.amgdprcookie-modal-template | Breaks scroll in some implementations |
+| ##[aria-label="cookieconsent"] | Breaks scroll in some implementations |
+
