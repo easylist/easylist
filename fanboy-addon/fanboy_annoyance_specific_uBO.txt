@@ -16,11 +16,12 @@ reddit.com##.XPromoInFeed
 amp.reddit.com##.AppSelectorModal__body
 amp.reddit.com##.upsell_banner
 ! youtube ads mitigation testing
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.playerAds) 
-youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
