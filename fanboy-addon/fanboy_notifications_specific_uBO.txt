@@ -1,6 +1,16 @@
-! uBO Sepecific fixes
+! uBO-specific fixes
 downace.com##+js(acis, requestPermission)
 news18.com##+js(acis, serviceworker.register)
 shrinkzzy.link##+js(acis, firebase.initializeApp)
 ! International
 rd.fi##.nivoSlider:remove()
+! autoevolution.com
+autoevolution.com###notif_asker_div
+autoevolution.com##body,html:style(height: auto !important; overflow: auto !important)
+! nu.nl https://github.com/easylist/easylist/issues/10468
+nu.nl##.webpush-popup
+nu.nl##body,html:style(height: auto !important; overflow: auto !important)
+! phonearena.com
+phonearena.com###pa-survey-modal
+phonearena.com##.pa-modal-backdrop
+phonearena.com##body:style(overflow: auto !important; position: initial !important;)
