@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202205170932
+! Version: 202205170934
 ! Title: EasyList
-! Last modified: 17 May 2022 09:32 UTC
+! Last modified: 17 May 2022 09:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3080,7 +3080,7 @@
 /advertisements?
 /advertisements_
 /advertisers.$image,script,subdocument,domain=~advertisers.adgoal.de|~advertisers.adversense.com|~advertisers.careerone.com.au|~advertisers.ch|~advertisers.dk|~advertisers.easyweddings.com.au|~advertisers.io|~advertisers.leadia.ru|~advertisers.ypfboost.ph|~panel.rightflow.com
-/advertisers/*$domain=~ads.pinterest.com|~datalift360.com|~home.tapjoy.com|~panel.rightflow.com|~propelmedia.com|~publisuites.com|~qubeslate.com
+/advertisers/*$domain=~ads.pinterest.com|~datalift360.com|~home.tapjoy.com|~panel.rightflow.com|~propelmedia.com|~publisuites.com|~qubeslate.com|~ad-maven.com
 /advertiserwidget.
 /advertises/*
 /advertising-$image,domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~advertising-stands.com.ua|~advertising.amazon.com|~deals-italy.com|~microsoft.com|~outbrain.com|~yellowimages.com
@@ -60207,6 +60207,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||recaptcha.net/recaptcha/$script
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
 @@||accounts.google.com^$generichide
+@@||ad-maven.com^$generichide
 @@||apple.com^$generichide
 @@||bitbucket.org^$generichide
 @@||calendar.google.com^$generichide
