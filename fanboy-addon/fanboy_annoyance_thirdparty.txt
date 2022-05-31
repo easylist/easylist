@@ -143,11 +143,9 @@
 ||google.com/uds/?file=orkut&
 ||goroost.com^$third-party
 ||govdelivery.com^$third-party
-||gravity.com^$third-party
 ||gravityrd-services.com^$third-party
 ||grazeit.com^$third-party
 ||groupon.com^*/affiliate_widget/$third-party
-||grvmedia.com^$third-party
 ||healthgrades.com^$third-party
 ||hellobar.com^$third-party
 ||hnbutton.appspot.com^$third-party
@@ -254,7 +252,7 @@
 ||pushnotifications.click^$third-party
 ||qeryz.com^$third-party
 ||qrius.me^$third-party
-||qualtrics.com^$third-party
+||qualtrics.com^$~subdocument,third-party
 ||quote.fm/services/button/$third-party
 ||r42tag.com^$third-party
 ||rankdirectory.org^$third-party
@@ -312,7 +310,6 @@
 ||storystack.com^$third-party
 ||streamspread.com^$third-party
 ||styld-by.com^$third-party
-||subs.youmaker.com^$third-party
 ||substack.com/embed$third-party
 ||superwidget-assets.gowatchit.com^$third-party
 ||surfingbird.ru^$third-party
@@ -363,7 +360,7 @@
 ||widget.beop.io^
 ||widget.breakingburner.com^$third-party
 ||widget.clipix.com^$third-party
-||widget.gleamjs.io^$script,third-party
+||widget.gleamjs.io^$script,third-party,domain=~gleam.io
 ||widget.justwatch.com^
 ||widget.pico.tools^$third-party
 ||widget.trustpilot.com^$third-party
@@ -395,12 +392,15 @@
 ||ziprecruiter.com/jobs-widget/$third-party
 ||zoomanalytics.co^$third-party
 ||zotabox.com^*/widgets.js$third-party
-! Youtube testing (Disabled https://forums.lanik.us/viewtopic.php?t=46671&start=30)
-! ||music.youtube.com^$csp=worker-src 'none'
-! ||www.youtube.com^$csp=worker-src 'none'
 ! 3rd-party sounds
 ||acquire.io/assets/sound/
+||app.chaport.com/sounds/
+||app.onlim.com/app/assets/audios/
 ||appspot.com/sounds/chatmsg.mp3
+||carrotquest.app/sounds/
+||cdn-widget.callpage.io/build/sounds/
+||channel.io/plugin/$media
+||chat.octadesk.services/embed/static/media/$media
 ||chatango.com/pcache/sounds/
 ||cleversite.ru/client/default/sound/
 ||cliengo.com^$media
@@ -408,16 +408,25 @@
 ||collectcdn.com^$media
 ||driftqa.com/conductor/assets/media/
 ||echatsys.com/sounds/
+||fxcity.pl/images/mp4/$media
+||gubagoo.io/v4/media/
 ||helpscout.net/static/ui-sounds/
+||jivo.ru/sounds/
 ||jivosite.com/sounds/
 ||js.driftt.com/conductor/assets/media/
 ||js.driftt.com/deploy/assets/static/audio/
 ||js.intercomcdn.com/audio/
+||leadgenic.ru/production/$media
+||livebeep.com/visitor/events/$media
 ||livechatinc.com/widget/static/media/
+||me-talk.ru/support/sounds/
 ||purechatcdn.com/Content/Audio/
 ||qualified.com/packs/$media
 ||raychat.io/assets/widget/audio/
 ||reamaze.com/audio/
+||revechat.com/client/sound/
+||shopify.com/s/files/$media
+||smartsuppcdn.com/assets/sounds/
 ||snapengage.com/sounds/
 ||static.olark.com/jsclient/sounds/
 ||static.widget.trengo.eu/assets/$media
@@ -425,7 +434,12 @@
 ||tidiochat.com^$media
 ||userbot.ai/widget-chat/dist/audio/
 ||userway.org/widgetapp/sounds/
+||widget.awhy.it/chat/img/$media
+||widget.insent.ai/static/media/
+||wpengine.com/wp-content/mu-plugins/wpengine-dotcom/audio/
 ||zdassets.com/web_widget/$media
+||zohocdn.com/salesiq/*/sound/
+||zopim.com/widget/sounds/
 ! Taboola
 ||taboola.com^$third-party
 ||taboolasyndication.com^$third-party

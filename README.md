@@ -84,6 +84,12 @@ If your site was added to EasyList or EasyPrivacy:
  - Filters will not be removed on your word or policy (both can change).
  - The specific commit in question, or specific filter.
  - Is it covered by any of the EasyList/EasyPrivacy requirements?
+ - No, we don't want talk.
+ - If specific filter(s) won't be removed, continuing arguing will be ignored. Email will be flagged and ignored.
+ - We won't rush any decision. 
+ - Arguing, harassment or abuse of any kind won't be tollerated, Email will be flagged and ignored. 
+ - If the site is covered by policy in this [README.md](https://github.com/easylist/easylist/blob/master/README.md). The filter will be very unlikely to be removed. Making exception to the rules, could or would allow everyone else. So strict enforcement.
+ - If already decided that a filter won't be removed or changed, emailing again won't change the decision. Email will be flagged and ignored.
  
 For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues) [E-mail](mailto:easylist@protonmail.com), or via [Forum](https://forums.lanik.us/).
 

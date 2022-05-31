@@ -1,23 +1,27 @@
-! uBO Sepecific fixes
+! uBO-specific fixes
 ! 9gag.com (mobile)
 9gag.com##.open-in-app
 9gag.com##.overlay-layer
 9gag.com##body:style(overflow: auto !important;)
 9gag.com##.shade
 ! reddit.com (mobile)
+reddit.com##.XPromoBlockingModal
+reddit.com##.XPromoPopup__overlay
+reddit.com##.PreviewDrawer
 reddit.com##.XPromoPopup
 reddit.com##.XPromoPill
-reddit.com##body:style(overflow: auto !important;)
+reddit.com##body.scroll-is-blocked:style(overflow: auto !important;)
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
 reddit.com##.XPromoInFeed
 amp.reddit.com##.AppSelectorModal__body
 amp.reddit.com##.upsell_banner
 ! youtube ads mitigation testing
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.playerAds) 
-youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
@@ -43,3 +47,20 @@ revolver.news##.blocker
 onegreenplanet.org##body:style(display: block !important)
 ! whathifi.com (ghide)
 whathifi.com##.newsletter-signup
+! valuewalk.com 
+valuewalk.com##.mfp-ready
+valuewalk.com##body,html:style(overflow: auto !important; position: initial !important;)
+! themoscowtimes.com
+themoscowtimes.com##.contribute-modal
+themoscowtimes.com##.contribute-bar
+themoscowtimes.com##body:style(overflow: auto !important;)
+! gmarket (right click) https://github.com/easylist/easylist/issues/11894
+gmarket.co.kr##+js(set, document.oncontextmenu, noopFunc)
+gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
+! newrepublic.com (popup) 
+newrepublic.com##.blink-sdk-widget-container
+newrepublic.com##body,html:style(overflow: auto !important; position: initial !important;)
+! thepostmillennial.com (popup)
+thepostmillennial.com###popup-donation
+thepostmillennial.com##.v-modal
+thepostmillennial.com##body,html:style(overflow: auto !important; position: initial !important;)
