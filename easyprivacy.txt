@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202206011228
+! Version: 202206011622
 ! Title: EasyPrivacy
-! Last modified: 01 Jun 2022 12:28 UTC
+! Last modified: 01 Jun 2022 16:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5430,7 +5430,8 @@ cgi-bin/counter
 ! Email tracking pixels
 &mi_ecmp=
 -track-email-open?
-.acemlna.com/Prod/link-tracker?
+.acemlna.com/Prod/link-tracker?$image
+.acemlnb.com/Prod/link-tracker?$image
 .alcmpn.com/
 .app.returnpath.net/
 .aveda.com/t/$image
@@ -5541,6 +5542,7 @@ cgi-bin/counter
 /gridinbound.blob.core.
 /impression?mkevt=
 /is-tracking-pixel-
+/link-tracker?*&l=open&
 /link.coindesk.com/img/*
 /link.divenewsletter.com/img/*$image
 /link.e-mail.*/mo/*$image
