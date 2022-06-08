@@ -51,6 +51,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 yahoo consent | popup overlay | Used by some sites like [Engadget](https://engadget.com/) creates a redirect which cannot be blocked. |
 trustarc.com/truste.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [usa.philips.com](https://www.usa.philips.com/) |
 cookiepro.com | popup overlay | No, may depend on the site. Breaks functionality if not accepted | [was removed](https://github.com/easylist/easylist/commit/6714a84e2dde673f5bb70264c61800183ac1dcb5) |
+eagerly-tools-cookie | popup icon | Breaks functionality if not accepted | [was removed](https://github.com/easylist/easylist/commit/26a0a76) |
 
 ## Removed filters
 
