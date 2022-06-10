@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202206100446
+! Version: 202206100522
 ! Title: Fanboy's Annoyance List
-! Last modified: 10 Jun 2022 04:46 UTC
+! Last modified: 10 Jun 2022 05:22 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -24126,6 +24126,7 @@ _vpcookieconsent/
 ###cookie-bar__wrapper
 ###cookie-barbody
 ###cookie-bg-cover
+###cookie-binding
 ###cookie-block
 ###cookie-body
 ###cookie-bottom
@@ -25683,7 +25684,6 @@ _vpcookieconsent/
 ###cookieheader
 ###cookiehint
 ###cookiehinw
-###cookiehinweis
 ###cookiehinweisbox_wrapper
 ###cookiehinweisboxback
 ###cookiehinweisdiv
@@ -30608,6 +30608,7 @@ _vpcookieconsent/
 ##.bau100_cookie-bar
 ##.bayer-cookie-disclaimer
 ##.bb-accept-cookies
+##.bb-consentbanner
 ##.bb-cookie-notice
 ##.bb-header__accept-cookies
 ##.bba-popup-cookies
@@ -30701,6 +30702,7 @@ _vpcookieconsent/
 ##.block-por-cookies
 ##.block-rgpd
 ##.block-wax-cookie-consen
+##.block-wax-cookie-consent
 ##.block.cookies
 ##.blockCookieAgreementWrapper
 ##.blockCookieBanner
@@ -31485,6 +31487,7 @@ _vpcookieconsent/
 ##.cookie-alert-strip-container
 ##.cookie-alert-wrap
 ##.cookie-alert-wrapper
+##.cookie-all
 ##.cookie-allcontent
 ##.cookie-allow-block
 ##.cookie-and-privacy-container
@@ -31493,6 +31496,7 @@ _vpcookieconsent/
 ##.cookie-approval__wrapper
 ##.cookie-approvement
 ##.cookie-area
+##.cookie-arksigner
 ##.cookie-assistant
 ##.cookie-assistant-wrapper
 ##.cookie-attention
@@ -31752,6 +31756,7 @@ _vpcookieconsent/
 ##.cookie-fixed-footer
 ##.cookie-fixed-hint
 ##.cookie-flash
+##.cookie-float
 ##.cookie-fn
 ##.cookie-footer
 ##.cookie-footer--wrapper
@@ -33235,6 +33240,7 @@ _vpcookieconsent/
 ##.cookies-popupbox
 ##.cookies-portlet
 ##.cookies-privacy
+##.cookies-privacy-sticky
 ##.cookies-prompt
 ##.cookies-question
 ##.cookies-region
@@ -34035,6 +34041,7 @@ _vpcookieconsent/
 ##.evaste-container
 ##.evasteseloste
 ##.evidon-banner
+##.evil-cookie-bar
 ##.evo-gdpr-box
 ##.evt-cookie-element
 ##.ew-cookie-note
@@ -35186,6 +35193,7 @@ _vpcookieconsent/
 ##.mac-header-cookie-banner-section
 ##.magenio_alertcookie
 ##.magnus-cookie
+##.main-cookie-alert
 ##.main-cookie-title
 ##.main-cookie-warning
 ##.main-cookies
@@ -35627,6 +35635,7 @@ _vpcookieconsent/
 ##.nr-cookie-notification__wall
 ##.nr-cookie-notification__wrapper
 ##.nr-privacy-modal-box-v2
+##.nrcookie
 ##.nrf-disclaimer
 ##.nrg-cookie-popup
 ##.ns-cookie-consent
@@ -36266,6 +36275,7 @@ _vpcookieconsent/
 ##.s--message[class*="cookie-notice"]
 ##.s-10-cookie-consent
 ##.s-app-cookies
+##.s-cookie
 ##.s-cookie-disclaimer
 ##.s-cookie-hint
 ##.s-cookie-notification-bar
@@ -36377,7 +36387,6 @@ _vpcookieconsent/
 ##.show-cookie-notifyer
 ##.show-cookie-policy
 ##.show-cookie-popup:not(body):not(html)
-##.show-cookie:not(body)
 ##.show-cookies
 ##.show-eu-cookie
 ##.show-gdpr:not(body)
@@ -36690,6 +36699,7 @@ _vpcookieconsent/
 ##.trackingNoticeOverlay
 ##.tracking_cookie_header
 ##.tracking_cookie_hideable
+##.trd-cookie-backdrop
 ##.tre-cookie-disclaimer
 ##.trillian-cookie-consent-banner
 ##.trox-consent-manager
@@ -45665,6 +45675,7 @@ bit-tech.net,memorycard.guru,pratt.edu###GDPR
 pdfcoffee.com###PDFCOFFEECOM_cookie_box
 project7armor.com###POPUPS_ROOT
 provantage.com###PP
+phonevalidator.com,skipsmasher.com,spydialer.com###PopupMessage
 theregister.com###RegCTBWF
 digit-photo.com###TwGi0pOnXb-page
 warnerbros.com###WB-floating-notice
@@ -46337,6 +46348,7 @@ theatlantic.com##.cookie-disclaimer
 parliament.uk##.cookie-manager
 silmid.com##.cookie-policy
 outfit7.com##.cookie-settings
+kartelluk.com,sarsilmaz.com##.cookie-text
 joinhoney.com##.cookieConsentBannerContainer-0-2-86
 scinapse.io##.cookieConsentBanner_bannerWrapper__njrjf
 truewealth.ch##.cookieConsent_cookieConsentContainer__v_g6F
@@ -46499,6 +46511,7 @@ leapyear.io##.gdpr--modal
 alicecooper.com,econt.com##.gdpr-modal
 atlasstoked.com,franc-music-shop.com,papirbolt.com##.gdprModal
 downloadcrew.com##.ginger_banner
+brake-eng.com##.gl-cm
 pagespeed.web.dev##.glAfi
 linkedin.com##.global-alert
 houseoffraser.co.uk##.global-messages
@@ -46640,8 +46653,8 @@ spotify.com##.mh-message-bar
 mitele.es##.mitele-consent
 transparency.org##.mk-c-modal
 amazon.com##.mo-wp
-airnewzealand.eu,digiwallet.com,epiphone.com,fabricadepremios.com,gibson.com,maestroelectronics.com,mapquest.co.uk,przekroj.pl,qv.co.nz,rentacarmaramures.com,spectranet.com.ng,thelittleboxoffice.com,toshiba-tv.com,vaillant-group.com,vinaralia.com##.modal
-airnewzealand.eu,aluminiosbrinas.com,arlingtoncemetery.mil,arthrex.com,axminster.co.uk,cfdbetting.com,ctbrand.store,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,digiwallet.com,easy-menu.io,epiphone.com,ferratum.co.uk,fiveguys.co.uk,flaine.com,flipsnack.com,gibson.com,globalfamilydoctor.com,hyperoptic.com,interactivebrokers.co.uk,interactivebrokers.com.au,interactivebrokers.ie,kon-boot.com,lam.co.mz,maestroelectronics.com,mapquest.co.uk,medtronic.com,missprint.co.uk,myshopi.com,primaresearch.org,pristupy.com,promptamcs.com,qv.co.nz,riddle.com,spectranet.com.ng,toshiba-tv.com,whatismymovie.com##.modal-backdrop
+agrpartners.com,airnewzealand.eu,digiwallet.com,epiphone.com,fabricadepremios.com,gibson.com,maestroelectronics.com,mapquest.co.uk,przekroj.pl,qv.co.nz,rentacarmaramures.com,spectranet.com.ng,thefoodmaker.com,thelittleboxoffice.com,toshiba-tv.com,vaillant-group.com,vinaralia.com##.modal
+airnewzealand.eu,aluminiosbrinas.com,arlingtoncemetery.mil,arthrex.com,axminster.co.uk,cfdbetting.com,ctbrand.store,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,digiwallet.com,easy-menu.io,epiphone.com,ferratum.co.uk,fiveguys.co.uk,flaine.com,flipsnack.com,gibson.com,globalfamilydoctor.com,hyperoptic.com,interactivebrokers.co.uk,interactivebrokers.com.au,interactivebrokers.ie,kon-boot.com,lam.co.mz,maestroelectronics.com,mapquest.co.uk,medtronic.com,missprint.co.uk,myshopi.com,primaresearch.org,pristupy.com,promptamcs.com,qv.co.nz,riddle.com,spectranet.com.ng,thefoodmaker.com,toshiba-tv.com,whatismymovie.com##.modal-backdrop
 myanimelist.net##.modal-container
 myanimelist.net##.modal-content
 myanimelist.net##.modal-content-overlay
@@ -46764,7 +46777,7 @@ process.st##.pookie
 floydsbarbershop.com##.pop-content
 arrowheadcu.org##.popbox
 aboardtheworld.com##.popmake
-agcopartsbooks.com,beiersdorf.com,efootwear.eu,topographic-map.com##.popup
+agcopartsbooks.com,beiersdorf.com,efootwear.eu,swayhotels.com,topographic-map.com##.popup
 andrewmarc.com,donnakaran.com,ghbass.com,replicon.com##.popup-container
 cancerresearch.org##.popup-inner
 raygun.com##.popup-overlay
@@ -49735,7 +49748,7 @@ fotofilter.de##.consent-overlay
 dbna.com##.consentbar
 andinet.de##.coo
 planet-beruf.de##.coo-con
-bestofshirt.de,daparto.de,ebz-bildung.de,fuchswacker.de,massanzug-online.at,massanzug-online.ch,massanzug-online.de,matratzen-concord.de,model-kartei.de,sgt-oelsnitz.de,spartanien.de,specialdeal.at,starcar.de,syntrabrussel.be,thegap.at,wgmarienehe.de##.cookie
+bestofshirt.de,daparto.de,ebz-bildung.de,fuchswacker.de,hafnertraktoren.com,massanzug-online.at,massanzug-online.ch,massanzug-online.de,matratzen-concord.de,model-kartei.de,opc.de,sgt-oelsnitz.de,spartanien.de,specialdeal.at,starcar.de,syntrabrussel.be,thegap.at,wgmarienehe.de##.cookie
 teacheconomy.de##.cookie-banner
 verwaltung.bund.de##.cookie-consent__inner
 crimetime.com##.cookie-text
@@ -50066,6 +50079,7 @@ infiniti.com.tw##.c_128
 converge.cn##.compliance
 hinet.net,unimax.com.tw##.cookie
 ansell.com.cn##.cookie-bar
+hozonauto.com##.cookie-tips
 lincoln.com.cn##.footer-floating-tab
 linkedin.cn##.global-alert-banner
 deco.jotun.cn##.hXZzBP
@@ -51169,7 +51183,7 @@ cardsmobile.ru##.cm-m_c-w
 web-axioma.ru##.confform
 2x2tv.ru##.cook-web
 mnogo.ru##.cook_LFPnK
-everpharma.ru,hashrating.com,key-test.ru,narbutas.ru,onlinesim.ru,rostec.ru,rutoken.ru,tw1.ru,yavitrina.ru,zettains.ru##.cookie
+everpharma.ru,hashrating.com,key-test.ru,narbutas.ru,onlinesim.ru,petrovax.ru,rostec.ru,rutoken.ru,tw1.ru,yavitrina.ru,zettains.ru##.cookie
 2x2.su,advstreet.ru,calltouch.ru,glavred.info,kituramirus.com,orona.ru,skillbox.ru,sprinter-avto.com,stanumamoy.com,unian.net##.cookies
 bml.ru##.cookiesModal
 kaida-fish.ru##.custom_message
@@ -51258,6 +51272,7 @@ poistenievyhodne.sk##.cb
 pss.sk##.cb-overlay
 candylipz.sk##.cc_div
 winnersgroup.sk##.cks-m
+elba.sk##.cookie-text
 lvsas.sk,sbsjager.sk##.cookies
 daffer.sk##.csXMIs
 lexus.sk##.disclaimer
@@ -51315,7 +51330,7 @@ trajesdenovioporta.com###c-notice
 cdecomunicacion.es###ca_banner
 parquesnacionales.cnig.es###capa_galleta
 ilebara.es,maslife.es,piensoluegoactuo.com###container_opacity
-politikon.es,tomasexpediciones.es###cookie
+politikon.es,sedecal.com,tomasexpediciones.es###cookie
 griffon.es###cookiebar
 agenttravel.es,bimyou.es,bnext.es,climaprecios.com,clublablanca.com,complia.es,coreixample.com,espais360.com,estiber.com,factoriadeproyectos.com,mediamaratonvitoriagasteiz.com,monaditas.com,moviles.com,movistarriders.gg,santmartieix.com,schuller.es,supermolon.com,trasteroselpato.com,verema.com###cookies
 innovaiberica.com###cookiesModal
@@ -51358,7 +51373,7 @@ lasestrellas.tv##.cTWBhP
 infiniti.com.do,infiniti.com.pa,infiniti.mx,infinitipr.com##.c_128
 reproduccionasistida.org##.cli-bar-popup
 reproduccionasistida.org##.cli-modal-backdrop
-gestoriaverdugo.es##.cookie
+ehecatl.com.mx,gestoriaverdugo.es##.cookie
 autosolar.es##.cookie-configuration
 4-72.com.co,aislamientostrapaga.com,apcloud.es,ascensorescaas.com,asgi.es,astondoapiroteknia.com,bayfer.es,cashconverters.es,centromaiez.com,conquistainternet.com,depintxopote.com,diher.es,doctoralilianamarrero.com,electra-vitoria.com,estudiotextilcolor.com,etymon-solutions.com,eudita.es,fotomatonia.com,fuegodevida.com,ga-lo.com,garajecentrobilbao.com,gdplegal.es,gurutzekogurasoak.eus,idiomaster-arrasate.com,inmogestionretail.com,laskort.com,myinvestor.es,neumaticoszorroza.com,panamaamerica.com.pa,pecres.es,puntodepartida.com,renaultretailgroup.es,sikera.com,spth.gob.es,summa.es,tdsexport.com,ver-tv.online,vestaconsultores.com,vips.com.mx,vocesmexico.com##.cookies
 eltiempo.es##.curtain_lightbox
@@ -51522,7 +51537,7 @@ ikonambalaj.com.tr##.bottom-center
 gazetevatan.com,haberimizvar.net,mhrs.gov.tr##.cerez
 iys.org.tr##.cerezall
 folkart.com.tr,kayseriseker.com,kayseriseker.com.tr,repertuarim.com,sekom.com.tr,wome.com.tr##.cookie
-pmkariyer.com,superfb.com,webaslan.com##.cookie-text
+karakartal.com,pmkariyer.com,superfb.com,webaslan.com##.cookie-text
 beinsports.com.tr##.cookie_cookie__3NG06
 emea.com.tr##.cookies
 ak-asya.com.tr##.dialog-lightbox-message
