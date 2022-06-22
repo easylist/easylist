@@ -642,6 +642,9 @@ amzs.si##*:style(filter: none !important)
 jobs.at##.c-cookie-modal
 jobs.at##.c-cookie-modal-overlay
 jobs.at##body,html:style(height: auto !important; overflow: auto !important)
+! computerbase.de https://www.reddit.com/r/uBlockOrigin/comments/thrxes/is_it_not_possible_to_block_a_dialog_element/
+computerbase.de##dialog:remove()
+computerbase.de##+js(rc, consent-dialog-open, body)
 ! uhb.nhs.uk
 uhb.nhs.uk##.uhb-c-cookie-notice
 uhb.nhs.uk##body,html:style(overflow: auto !important; position: initial !important;)
