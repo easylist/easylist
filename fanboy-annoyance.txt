@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202206260430
+! Version: 202206260513
 ! Title: Fanboy's Annoyance List
-! Last modified: 26 Jun 2022 04:30 UTC
+! Last modified: 26 Jun 2022 05:13 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -22561,6 +22561,7 @@ _vpcookieconsent/
 ###CookieT2Bar
 ###CookieTPC
 ###CookieTool
+###CookieTopDiv
 ###CookieTr
 ###CookieUseApproval
 ###CookieWall
@@ -22843,6 +22844,7 @@ _vpcookieconsent/
 ###UKCookieWarning
 ###VP_cookie
 ###VbsFooter_CookiePanel1
+###ViatoCookieConsent
 ###VineCookieConsentParent
 ###WCPcookieBannerId
 ###WP-cookie-info
@@ -23070,7 +23072,9 @@ _vpcookieconsent/
 ###alert-biscotti
 ###alert-cnil
 ###alert-cookie
+###alert-cookie-hint
 ###alert-cookie-info-bar
+###alert-cookie-lgpd
 ###alert-cookie-policy
 ###alert-cookie-prof
 ###alert-cookies
@@ -23078,6 +23082,7 @@ _vpcookieconsent/
 ###alert-eu-cookies
 ###alert-privacy-update
 ###alertCookie
+###alertCookiePolicy
 ###alertCookies
 ###alertMentionCookiesMessage
 ###alertTop
@@ -23337,6 +23342,7 @@ _vpcookieconsent/
 ###barraAceptacionCookies
 ###barraCOOKIE
 ###barraCookies
+###barra_aviso_cookies
 ###barra_cookie
 ###barra_cookies
 ###barra_dei_cookie
@@ -27167,6 +27173,7 @@ _vpcookieconsent/
 ###eut_cookie_notice
 ###ev-cookieText
 ###evance-cookie-consent
+###event-alert-cookie
 ###eventmag-pro-cookie-ify
 ###evideCookiesNotify
 ###ew-cookieinfo-container
@@ -27875,6 +27882,7 @@ _vpcookieconsent/
 ###js--flash-message-cookies
 ###js-TosPrivacy
 ###js-accept-cookie
+###js-alert-cookie-window
 ###js-band-cookies
 ###js-banner-cookies
 ###js-c-cookie-consent-banner
@@ -28792,6 +28800,7 @@ _vpcookieconsent/
 ###popInCookieContainer
 ###popUpInfosLegal
 ###pop_cookies
+###pop_rgpd
 ###pop_site_cookie
 ###popcc12
 ###popcook
@@ -29118,6 +29127,7 @@ _vpcookieconsent/
 ###rk-accept-cookies
 ###rm-cookieconsent
 ###rm-cookies-wrapper
+###rnCookieConsent_popup
 ###rndcookie_banner
 ###rnw_cookies_banner
 ###rodo-bar
@@ -30350,7 +30360,9 @@ _vpcookieconsent/
 ##.ag-cookie-policy
 ##.ag-cookie-policy-wrapper
 ##.ag-cookie-policy__wrapper
+##.ag_cookie_alert_window
 ##.ag_cookie_banner
+##.ag_user_alert_window_content
 ##.agegate-cookie
 ##.agenda-cookie-consent
 ##.agg-warning-banner-cookie-policy
@@ -30387,9 +30399,12 @@ _vpcookieconsent/
 ##.alert-coocies
 ##.alert-coockie
 ##.alert-cookie-banner
+##.alert-cookie-consent
 ##.alert-cookie-message
 ##.alert-cookie-notice
 ##.alert-cookie-notice-container
+##.alert-cookie-policy
+##.alert-cookie-usage
 ##.alert-cookies
 ##.alert-cookies-backdrop
 ##.alert-cookies-banner
@@ -31382,6 +31397,7 @@ _vpcookieconsent/
 ##.component-cookie-info-bar
 ##.component-cookie-notification
 ##.component-cookie-policy
+##.component-cookie-popup
 ##.component-cookiealert
 ##.component-cookies
 ##.component-cookies-message
@@ -36904,6 +36920,7 @@ _vpcookieconsent/
 ##.top-cookie-notification
 ##.top-cookie-wrapper
 ##.top-cookies
+##.top-cookies-container
 ##.top-header-gdpr
 ##.top-info-cookie
 ##.top-info-cookies
@@ -46058,6 +46075,7 @@ downdetector.com###_evidon-barrier-wrapper
 coloradocollege.edu###_pc
 presta-module.com###acbModal
 mod.io###achtung-overlay
+calpacifichomes.com###acknowledgeCookiesAndPrivacyModal
 javlibrary.com###adultwarningmask
 aecom.com###aecomCookieNotificationBar
 spbtv.online###agreeC
@@ -46436,6 +46454,7 @@ bbb.org##.MuiDrawer-root
 sweetcombecottages.co.uk##.MuiPaper-elevation0.MuiAlert-standardInfo
 skrapp.io,thelowdown.com##.MuiSnackbar-anchorOriginBottomCenter
 coingate.com##.MuiSnackbar-root
+gpic.com##.MyConsent_Outer
 freewebsitetemplates.com,wilderssecurity.com##.Notices
 leti.com##.NoticesBox
 jaguar.co.uk,landrover.co.uk##.NotificationBar
@@ -46443,6 +46462,7 @@ userstyles.org##.NotificationLine
 rows.com##.PnyGo
 cjbayliss.co.uk,hcdltd.com##.PopupOverall
 powercolor.com##.Privacy
+holidayinnclub.com##.PrivacyBanner_container__BhbD7
 fashionmodeldirectory.com##.PrivacyNotice
 accobrands.com##.Promotional-corner
 eneba.com##.R05cUo
@@ -46488,13 +46508,14 @@ mymuesli.com##.active.mask
 akeebabackup.com,displays.agneovo.com,imunify360.com,luxos.com,v-tac.eu##.activebar-container
 svitla.com##.agree-popup
 festival-fabula.org##.agreetop
-adata.com,ahlulbayt.tv,allsmo.com,altervista.org,armpension.com,askdifference.com,asklion.co.uk,bankid.com,cfainstitute.org,communitycouncils.scot,convert-my-image.com,costaclub.com,efinancialcareers.com,fecareers.co.uk,fredlist.com,gambling-affiliation.com,gamesjobsdirect.com,graco.com,gtalfh.com,hattrick.org,jobflurry.com,jobsinwales.com,kenweego.com,lawyersonline.co.uk,lifescience.net,linuxcompatible.org,localcouncillor.scot,lonelyplanet.com,m-a.org.uk,nature.com,netweather.tv,norwegian.com,openuserjs.org,poolandspacentre.co.uk,pozyx.io,stocktoninformationdirectory.org,streema.com,supercell.com,theonlinesurgery.co.uk,tinyurl.com,ukpressonline.co.uk,vernemq.com,viewsonic.com,viewsoniceurope.com,warp2search.net,youngsseafood.co.uk##.alert
+adata.com,ahlulbayt.tv,allsmo.com,altervista.org,armpension.com,askdifference.com,asklion.co.uk,bankid.com,calamos.com,cfainstitute.org,communitycouncils.scot,convert-my-image.com,costaclub.com,efinancialcareers.com,fecareers.co.uk,fredlist.com,gambling-affiliation.com,gamesjobsdirect.com,graco.com,gtalfh.com,hattrick.org,jobflurry.com,jobsinwales.com,kenweego.com,lawyersonline.co.uk,lifescience.net,linuxcompatible.org,localcouncillor.scot,lonelyplanet.com,m-a.org.uk,nature.com,netweather.tv,norwegian.com,openuserjs.org,poolandspacentre.co.uk,pozyx.io,stocktoninformationdirectory.org,streema.com,supercell.com,theonlinesurgery.co.uk,tinyurl.com,ukpressonline.co.uk,vernemq.com,viewsonic.com,viewsoniceurope.com,warp2search.net,youngsseafood.co.uk##.alert
 itvmedia.co.uk##.alert--active
 espn.com##.alert--fixed
 goodmorningamerica.com,historicengland.org.uk##.alert-banner
 labour.org.uk##.alert-bar-footer
 evaair.com,orthomol.com,zombiearmy.com##.alert-box
 shredit.co.uk##.alert-container
+fixstars.com##.alert-cookie
 norwegianreward.com##.alert-danger
 penseurope.com##.alert-dismissible
 hashflare.io##.alert-dismissible:not(.alert-success)
@@ -46851,6 +46872,7 @@ istockphoto.com##.global-notification-container
 telenor.com##.global-overlay-background
 matrixgames.com,slitherine.com##.globalAnnouncement
 cookiebot.com##.granify-widget-container
+milwaukeecylinder.com##.guTily
 guggenheim.org##.guggen-consent
 iol.co.za##.hAHTfY
 tango.me##.hFYIN
@@ -47331,7 +47353,7 @@ capterra.com##.welcome-banner
 wizards.com##.wiz-block-sticky-inline
 theweathernetwork.com##.woahbar
 ghresources.com##.wpt-modal
-fubo.tv,hirezstudios.com##.wrapper
+byoplanet.com,fubo.tv,hirezstudios.com##.wrapper
 applehousetravel.co.uk,e-sportsbetting.nl,flysharp.com,iddoberger.com,mandrarossatour.com,o-nine.co.uk,onetime.bet,onetimecasino.com,onetimecasinos.com,southalltravel.co.uk,stashdesign.dk,stfly.com,stsports.com,studio-eastwood.nl,theholidayteam.co.uk,thkarayannis.gr,toysupermarket.ie,utelindenberg.com,xn--studenterrdet-yfb.dk##.wrapperbtm
 warthunder.com##.wt-cb
 spoonflower.com##.x-global-dialog
@@ -47401,7 +47423,7 @@ cbc.ca###alert_modal
 yow.ca###sticky
 fashionunited.ca,tvtv.ca##.MuiSnackbar-anchorOriginBottomCenter
 ticketmaster.ca##.agree-terms
-nshpca.ca##.bottom-alert
+cala.ca,nshpca.ca##.bottom-alert
 oipc.bc.ca##.clsPopupContainer
 hari.ca##.disclaimer-container
 noovo.ca##.ebDWCH
@@ -49987,6 +50009,7 @@ trendaward.de###cc-box
 mixable.de###ccDialog
 prostata-hilfe-deutschland.de###ccModal
 stacherhof-zillertal.at###ccmodal-container
+hfg-gmuend.de###cconsent-modal
 waldorf-expertenservice.de###cknt
 meteoradar.ch,metradar.ch###closeonaction
 beianrufsex.com,toolbrothers.com###cm
@@ -50088,7 +50111,7 @@ tempton.de##.ConsentBanner_locationFixture__vP_a4
 medizinfuchs.de##.ConsentHint
 a-hausverwaltungen.de,ec-planegg-geisenbrunn.de,fdp-mh.de,hausmeister-service-augsburg.de,konzog-immobilien.de,mcg-org.com,metatag.de,rechtsanwalt-bultmann.de,ristorante-la-dolce-vita.com,tennis-kempten.de##.DSbox
 centrotherm.de##.H_s
-aqualip.de##.HrSys-Gips-DivIBox
+aqualip.de,stadtwerke-ahrensburg.de##.HrSys-Gips-DivIBox
 aqualip.de##.HrSys-Gips-iBoxDivOverlay
 jaguar.at,landrover.at##.Modal
 landrover.de##.NotificationBar
@@ -50542,7 +50565,7 @@ cd.cz###c22overlay
 mevatec.cz###c_law
 czc.cz###ccp-popup
 ssls.cz###ckb
-koupelny-sen.cz###cookie
+koupelny-sen.cz,photogirl.cz,pilarohy.cz,sach-mat.cz,studiobio.cz,subarufanclub.cz###cookie
 awilux.cz,bmsnetexpo.com,boardstar.cz,luxury-spa.cz,vypocitejto.cz###cookies
 solarenvi.cz,zahradnikrby.cz###cs_bx
 zahradnikrby.cz###cs_bx_envl
@@ -50737,6 +50760,7 @@ ketnet.be##.kRXOyz
 t-mobile.nl##.koekje-content
 werkenbijaldautomotive.nl##.krdknf
 fikkieshop.com,madiosport.nl,portugeseproducten.nl##.lightbox-backdrop
+leoprinting.nl##.mainstick
 ingeschrier.nl##.mention
 ingsprinters.nl##.modal
 edriefonteinen.be,facadepartners.be,hepatitiscgids.nl,houthandelonline.nl,labofun.be,targetsupport.nl,woonfonds.mijnleninginzicht.nl##.modal-backdrop
@@ -50996,6 +51020,7 @@ sudnews.it###absolute
 arearenting.it,athenaresort.com###acconsento-click
 affaronissimo.it###af-cw-box
 centromedicobeb.it###alert
+webinforiv.it###banner
 agenziademanio.it###bannerInfo
 lattealberti.it###barra-policy
 ondarock.it###bottom-banner
@@ -51036,7 +51061,7 @@ mato.muoversiatorino.it###messageBar
 molgroupitaly.it###mgit_notification
 e-tv.it,excelacademy.it###my-agile-privacy-notification-area
 meteomonopoli.it###my_privacy_widget
-demaiogroup.it###normativa
+demaiogroup.it,gramscicafe.com###normativa
 castroniaviacatania.com###overlay
 tecnolatte.it###page_hider
 pusc.it###pixelfabrica-cs-banner
@@ -51259,6 +51284,7 @@ toysrus.com.ph##.popup-modal
 vistaland.com.ph##.privacy_modal
 axa.com.ph##.top-content-bar
 gnc.com.ph##.veil
+cablelink.com.ph##.wrapper
 ! 
 ! ---------- Polish ----------
 ! 
@@ -51456,6 +51482,7 @@ rede-expressos.pt##.jss4
 revigres.pt##.llSNvP
 pbs.up.pt##.notificationBar
 jaguarportugal.pt,landrover.pt##.notificationBars
+ctcp.pt##.notifino
 timing.pt##.policy
 jeitto.com.br##.popup-overlay
 horizonconsulting.pt##.spu-bg
@@ -51551,6 +51578,7 @@ idea-bank.ro,lidl.ro##.notification
 promenada.ro##.popup-container
 phytech.ro##.sh-page-notice
 transportsitransfer.ro##.spu-bg
+verasys.ro##.sticky-alert
 altex.ro##.z-1050
 ! 
 ! ---------- Russian ----------
@@ -51777,7 +51805,7 @@ mountain.es###messagebar
 plusultra.es###modal-cookies-2021-horizontal
 deutsche-bank.es###modalCookie
 electan.com###notification
-btp.es,fundazintegra.com,grdar.com,mainzu.com,mueblesrustiko.com,murallamotor.com,nachovivancos.es,nemotec.com,privacytest.org###overbox3
+btp.es,consorciocaucho.es,fundazintegra.com,grdar.com,mainzu.com,mueblesrustiko.com,murallamotor.com,nachovivancos.es,nemotec.com,privacytest.org###overbox3
 aramon.com,cerler.com,formigal-panticosa.com,javalambre-valdelinares.com###overlay
 lacentral.com###page-overlay
 hirealestate.es###pdcc-message-container
