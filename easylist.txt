@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202206280133
+! Version: 202206280140
 ! Title: EasyList
-! Last modified: 28 Jun 2022 01:33 UTC
+! Last modified: 28 Jun 2022 01:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -60907,11 +60907,13 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js
 @@||recaptcha.net/recaptcha/$script
+@@||ui.ads.microsoft.com^$~third-party
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
 @@://192.168.0.1$generichide
 @@://192.168.1.1$generichide
 @@||accounts.google.com^$generichide
 @@||ad-maven.com^$generichide
+@@||ads.microsoft.com^$generichide
 @@||apple.com^$generichide
 @@||bitbucket.org^$generichide
 @@||calendar.google.com^$generichide
