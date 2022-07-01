@@ -35,6 +35,7 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [Medium](https://www.medium.com/) | Cookie message shows | (medium/related medium sites) Consent div id's keep changing, breaks site |
 [Facebook](https://www.facebook.com/) | Consent overlay shows | Breaks loading/posts |
 [Twitter](https://www.twitter.com/) | Cookie message shows | Consent div id's keep changing, breaks site |
+[theguardian](https://theguardian.com/culture/video/2016/apr/25/patrick-stewart-sketch-what-has-the-echr-ever-done-for-us-video) | Consent overlay shows | Breaks comments, and loading of rest of page |
 [independent.co.uk](https://www.independent.co.uk/news/world/americas/jeopardy-champ-robbed-amy-schneider-trans-b1987179.html) | Consent overlay shows | Breaks video playback |
 [standard](https://www.standard.co.uk/news/uk/brext-passport-rules-uk-woman-hauled-off-flight-tenerife-jet2-b974403.html) | Consent overlay shows | Breaks video playback |
 [express.co.uk](https://www.express.co.uk/celebrity-news/1553859/meat-loaf-how-did-he-die-covid-death-cause-age-health-bat-out-of-hell-news-latest-update) | Consent overlay shows | Breaks video playback |
