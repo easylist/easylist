@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202207160140
+! Version: 202207160225
 ! Title: Fanboy's Annoyance List
-! Last modified: 16 Jul 2022 01:40 UTC
+! Last modified: 16 Jul 2022 02:25 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -22566,7 +22566,6 @@ _vpcookieconsent/
 ###CookisBanner
 ###CookisWarning
 ###CpHTMLCookieBar_bar
-###CybotCookiebotDialog
 ###CybotCookiebotDialogBodyUnderlay
 ###DCCookieLaw
 ###DCINFO_COOKIE_AGB
@@ -23960,15 +23959,20 @@ _vpcookieconsent/
 ###coocie
 ###coocies_warning
 ###coockie
+###coockie-bar
 ###coockie-message
 ###coockie-mex
 ###coockie-modal
+###coockie-notification
+###coockie-warning
 ###coockieAPContainer
 ###coockieAlert
 ###coockieAlertBox
 ###coockieBar
 ###coockieInfo
+###coockieMessage
 ###coockie_agree
+###coockie_notice
 ###coockie_pas
 ###coockie_txt
 ###coockieagree
@@ -25453,6 +25457,7 @@ _vpcookieconsent/
 ###cookie_opt_in_container
 ###cookie_optin
 ###cookie_optin_back
+###cookie_optin_layer
 ###cookie_overlay
 ###cookie_panel
 ###cookie_panel_2018
@@ -26333,6 +26338,7 @@ _vpcookieconsent/
 ###cookies_msg_subwrapper
 ###cookies_msg_wrapper
 ###cookies_notice
+###cookies_notice_banner
 ###cookies_notice_widget_root
 ###cookies_notif
 ###cookies_notification
@@ -29066,6 +29072,7 @@ _vpcookieconsent/
 ###pro_euclp_cookies_box
 ###prompt-cookies
 ###pronamic_cookie_holder
+###prosite_cookie_advarsel
 ###psCookieDisclaimer
 ###psCookieSliderConBot
 ###ps_cookiebar_cookies
@@ -31029,6 +31036,7 @@ _vpcookieconsent/
 ##.c-bannercookies
 ##.c-bannercookies--opened
 ##.c-banners__wrapper
+##.c-barra_cookies
 ##.c-bg-secondary.cc-bottom-bar
 ##.c-block-cookie-disclaimer
 ##.c-cnil-wrapper
@@ -31612,7 +31620,10 @@ _vpcookieconsent/
 ##.cooces__wrap
 ##.coockie
 ##.coockie-bar
+##.coockie-block
 ##.coockie-line
+##.coockie-popup
+##.coockie-warning
 ##.coockieBar
 ##.coockieLaw
 ##.coockiePolicy
@@ -32230,6 +32241,7 @@ _vpcookieconsent/
 ##.cookie-notification__bar
 ##.cookie-notification__wrap
 ##.cookie-notification__wrapper
+##.cookie-notification_wr
 ##.cookie-notifications
 ##.cookie-notifier
 ##.cookie-notifier-content
@@ -34545,6 +34557,7 @@ _vpcookieconsent/
 ##.gbi-cookiebar
 ##.gbp-cookieinfo
 ##.gc-window[aria-label*="gdpr"]
+##.gc_message_bar_bottom
 ##.gcc-cookies
 ##.gcprivacy-hint
 ##.gcusescookies_banner_block
@@ -34739,6 +34752,7 @@ _vpcookieconsent/
 ##.gdpr_consent_dialog
 ##.gdpr_consent_popup
 ##.gdpr_cookie
+##.gdpr_cookie_alert_box
 ##.gdpr_cookie_banner
 ##.gdpr_cookie_bar
 ##.gdpr_cookie_bar_cont
@@ -36320,6 +36334,7 @@ _vpcookieconsent/
 ##.popup-message-cookies-is-visible
 ##.popup-message.cookie
 ##.popup-overlay-cookies
+##.popup-politica
 ##.popup-rodo
 ##.popup.cookie-consent
 ##.popupBannerWrapper
@@ -51975,7 +51990,7 @@ classicline.com.br,cobasi.com.br,licitanet.com.br,miess.com.br,mprs.mp.br##.lgpd
 bydy.com.br,carimboartes.com.br,dalui.com.br,fiorestore.com.br,foodpass.com.br,fsacessorios.com.br,guymy.com.br,mprj.mp.br,paposertanejo.com,renasca.com.br,varomajoias.com.br##.modal
 bydy.com.br,carimboartes.com.br,dalui.com.br,fiorestore.com.br,foodpass.com.br,fsacessorios.com.br,guymy.com.br,mprj.mp.br,renasca.com.br,varomajoias.com.br##.modal-backdrop
 contabilizei.com.br##.modal-cookie
-institutopioxi.org.br,redebeneditina.org.br##.modal-dialog
+institutopioxi.org.br,profiltro.com.br,redebeneditina.org.br##.modal-dialog
 paposertanejo.com##.modal-overlay
 vetnil.com.br##.modalCookies
 terra.com.br##.navbar-disclaimer
@@ -53420,7 +53435,6 @@ upim.com#@#[data-target="#newsletter-modal"]
 ! *** easylist:easylist_cookie/easylist_cookie_allowlist_general_hide.txt ***
 elkjop.no,skousen.dk,skousen.no,whiteaway.com,whiteaway.no,whiteaway.se#@##CookieConsent
 smooth-on.com#@##CookieNotice
-dr.dk,ekstrabladet.dk,finanzmarktwelt.de,formule1.nl,sportdiver.com#@##CybotCookiebotDialog
 finanzmarktwelt.de#@##CybotCookiebotDialogBodyUnderlay
 online.no,telenor.no#@##__tealiumGDPRcpPrefs
 mediamarkt.de,online.no,telenor.no#@##__tealiumGDPRecModal
@@ -53832,10 +53846,10 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||computerbase.de^*/consent/$script,xmlhttprequest
 @@||computerbase.de^*/scripttemplates/$script,xmlhttprequest
 @@||consent.cmp.oath.com^$script,domain=cyclingnews.com|express.co.uk
-@@||consent.cookiebot.com^$script,domain=asambeauty.com|bankia.es|bergbauernmilch.de|berlingske.dk|biomarkt.de|bt.dk|cajamar.es|cineplex.de|danbolig.dk|dasinvestment.com|derivate.bnpparibas.com|digimon.kochfilms.de|digitaltrends.com|dr.dk|egmont.com|ekstrabladet.dk|fidelityhouse.eu|finanzmarktwelt.de|fof.se|formule1.nl|harzwasserwerke.de|hoyavision.com|kino.dk|login.nos.pt|mein-grundeinkommen.de|nngroup.com|refinery29.com|scubadiving.com|sportdiver.com|stern.de|storyhouseegmont.dk|storyhouseegmont.no|storyhouseegmont.se|swspremberg.de|warscrap.io|werder.de|werkenbijlidl.nl|wwf.fi
 @@||consent.trustarc.com/notice$script,domain=concursolutions.com|forbes.com|formula1.com|fortune.com|tripit.com
 @@||consentmanager.mgr.consensu.org/delivery/$stylesheet,xmlhttprequest,domain=sourceforge.net
 @@||cookie-consent.ingatlancdn.com^$script,domain=immobilienungarn.net|ingatlan.com|realestatehungary.hu
+@@||cookiebot.com^$domain=apetro.pt|asambeauty.com|bankia.es|bergbauernmilch.de|berlingske.dk|biomarkt.de|bt.dk|cajamar.es|cineplex.de|danbolig.dk|dasinvestment.com|derivate.bnpparibas.com|digimon.kochfilms.de|digitaltrends.com|dr.dk|egmont.com|ekstrabladet.dk|euroatla.pt|fidelityhouse.eu|finanzmarktwelt.de|fof.se|formule1.nl|harzwasserwerke.de|hoyavision.com|kino.dk|login.nos.pt|mein-grundeinkommen.de|nngroup.com|refinery29.com|scubadiving.com|sportdiver.com|stern.de|storyhouseegmont.dk|storyhouseegmont.no|storyhouseegmont.se|swspremberg.de|warscrap.io|werder.de|werkenbijlidl.nl|wwf.fi
 @@||cookielawinfo.com^$~third-party
 @@||cookist.com^*/remote-gdpr.min.js$~third-party
 @@||crazy-factory.com/ajax_box_cookie_banner.php$~third-party
