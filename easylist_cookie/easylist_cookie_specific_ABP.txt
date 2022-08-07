@@ -1,4 +1,5 @@
 ! ABP-specific fixes
+!#if ext_abp
 minhaconexao.com.br#?#section[id][class]:-abp-has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
 ! Scripts
 eduface.ru,edumsko.ru#@#.cookies_popup
@@ -46,3 +47,4 @@ pathe.nl#@#.notification--cookie
 wentronic.com,wentronic.pl#@#cookie-modal
 d-power-modellbau.com,enesco.co.uk,modellbau-metz.com,steinmetz-baldauf.de#@#div#cookie-modal:not(html):not(body)
 win2day.at#@#div.cookie-notification
+!#endif
