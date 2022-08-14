@@ -14,7 +14,6 @@ taloon.com##.header__top:style(position: unset !important)
 bosch-easycontrol.com##.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
 mega.io,mega.nz##.overlayed .bottom-page.scroll-block:style(filter: none !important; -webkit-filter: none !important)
 taloon.com##.page-header:style(padding-top: 0 !important)
-bloomberg.com##.sp-message-open:style(overflow: unset !important; position: unset !important)
 gesund24.at,oe24.at,wirkochen.at,xn--sterreich-ppa80c.at##.wrapper.blured:style(filter: none !important;)
 mesto.de,frankenbrunnen.de,worldcard.nl,icscards.nl,kiron.ngo,cellardoor.co,vorteile.net,share-your-photo.com,uhrzeit123.de,carefully.be,magdeleyns.be,jobs2work.nl,jobs2work.be,dansaccent.be,omniwood.be,sandboxservices.be,sr-ramenendeuren.be,lekarna-oaza.cz,internetlekarna.cz,lekarnasvjosefa.cz,slimbee.cz,qinetiq.com,deineapotheke.at,heinz.st,tweakers.net,lsi-bochum.de,truphone.com,rule34.paheal.net,albeco.com.pl,fneumann.org,g-star.com,gamersgate.com,gsk-gebro.at,harry-gerlach.de,hetwkz.nl,random-group.olafneumann.org,schulze-immobilien.de,taschenhirn.de,umcutrecht.nl,voltadol.at##*:style(filter: none !important)
 forosupercontable.com,kosta.at,qinetiq.com##*:style(opacity: 1 !important;)
@@ -2055,3 +2054,7 @@ aamulehti.fi,etlehti.fi,gloria.fi,hs.fi,hyvaterveys.fi,is.fi,jamsanseutu.fi,jana
 aamulehti.fi,hs.fi,is.fi,jamsanseutu.fi,janakkalansanomat.fi,kankaanpaanseutu.fi,kmvlehti.fi,merikarvialehti.fi,nokianuutiset.fi,rannikkoseutu.fi,satakunnankansa.fi,suurkeuruu.fi,sydansatakunta.fi,tyrvaansanomat.fi,valkeakoskensanomat.fi##body:not(:has(.embed-cookie-consent-icon)) > div[id^="sp_message_container"]
 etlehti.fi,gloria.fi,hyvaterveys.fi,kodinkuvalehti.fi,soppa365.fi,tiede.fi,vauva.fi##body:not(:has(.consent_required_iframe)) > div[id^="sp_message_container"]
 ||cdn.privacy-mgmt.com^*supersaa$xhr,domain=is.fi
+! bloomberg.com
+bloomberg.com##html.sp-message-open:style(width: initial !important)
+bloomberg.com##html.sp-message-open > body:style(position: unset !important; overflow: unset !important; margin-top: 0 !important)
+bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"], #root .datastrip)) > div[id^="sp_message_container"]
