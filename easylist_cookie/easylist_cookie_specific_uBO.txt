@@ -2169,3 +2169,8 @@ etlehti.fi,gloria.fi,hyvaterveys.fi,kodinkuvalehti.fi,soppa365.fi,tiede.fi,vauva
 bloomberg.com##html.sp-message-open:style(width: initial !important)
 bloomberg.com##html.sp-message-open > body:style(position: unset !important; overflow: unset !important; margin-top: 0 !important)
 bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"], #root .datastrip)) > div[id^="sp_message_container"]
+! Alma Media
+arvopaperi.fi,iltalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi###alma-cmpv2-container:style(display: none)
+arvopaperi.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi##body:has(.article-body p:has-text(Sisältöä ei voitu ladata.Tämä voi johtua selainlaajennuksesta.)) > .alma-cmpv2-container:style(display: block !important)
+iltalehti.fi##body:has(.consents-checker) > .alma-cmpv2-container:style(display: block !important)
+iltalehti.fi##+js(set, jwAlmaCMPLoaded, true)
