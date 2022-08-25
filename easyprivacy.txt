@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202208251221
+! Version: 202208251225
 ! Title: EasyPrivacy
-! Last modified: 25 Aug 2022 12:21 UTC
+! Last modified: 25 Aug 2022 12:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -8814,6 +8814,9 @@ _mongo_stats/
 $ping,third-party
 ! https://www.opensubtitles.org/
 $third-party,xmlhttprequest,domain=opensubtitles.org
+! Oracle
+||addthis.com^$third-party
+||addthiscdn.com^$domain=~addthis.com
 ! revprotect
 ||pphwrevr.com^$third-party
 ||protectcrev.com^$third-party
