@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202208262256
+! Version: 202208262303
 ! Title: EasyPrivacy
-! Last modified: 26 Aug 2022 22:56 UTC
+! Last modified: 26 Aug 2022 23:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -550,6 +550,7 @@
 /analyticReporting.
 /analyticReportingAS3.$domain=~miniclip.com
 /analytics-2.
+/analytics-amplitude-
 /analytics-assets/*
 /analytics-beacon-
 /analytics-cdn.
@@ -801,6 +802,8 @@
 /api/v1/track/*
 /api/v2/collector
 /api/v2/jsonlogger
+/api/v3/getPageVisits
+/api/v3/trackSegmentEvent
 /api/video/stats/*$xmlhttprequest
 /api_ip_info.
 /apilog?
@@ -13065,6 +13068,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sparklit.com/counter/
 ||speedtest.dailymotion.com/latencies.js
 ||speedtrap.shopdirect.com^
+||splunkcloud.com/services/collector/
 ||spotpass.com/api/log
 ||spread.ly^*/statistics.php
 ||squarespace.com/universal/scripts-compressed/performance-$script,third-party
