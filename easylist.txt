@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202209082148
+! Version: 202209082150
 ! Title: EasyList
-! Last modified: 08 Sep 2022 21:48 UTC
+! Last modified: 08 Sep 2022 21:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -25964,10 +25964,8 @@ _800x80_
 ! brave browser overlay ad
 ##.brave-overlay
 ! Mgid
-##.mgline
-##[id*="MGWrap"]
-##[id*="MarketGid"]
-##[id*="ScriptRoot"]
+##div[id*="MarketGid"]
+##div[id*="ScriptRoot"]
 ! ezoic
 ###ezmob_footer
 ! Trust zone
