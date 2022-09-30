@@ -96,4 +96,3 @@ For any issues or questions, create a ticket: [Github](https://github.com/easyli
 ## Support
 
 EasyList, EasyPrivacy, and Fanboy lists are used in a number of extensions and browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [AdBlock](https://getadblock.com/), [AdGuard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), and [Vivaldi](https://vivaldi.com/).
-
