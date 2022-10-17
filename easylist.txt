@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202210171658
+! Version: 202210171740
 ! Title: EasyList
-! Last modified: 17 Oct 2022 16:58 UTC
+! Last modified: 17 Oct 2022 17:40 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -15,18 +15,7 @@
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
 &action=getads&
-&ad_sub=
 &ad_system=
-&ad_type=
-&ad_url=
-&ad_zones=
-&adbannerid=
-&adclient=
-&adgroupid=
-&adlist=
-&adsafe=
-&adserver=
-&adslots=
 &adstrade=
 &adstype=
 &AdType=
@@ -106,7 +95,6 @@
 -ads.php?
 -ads/assets/
 -adsense2.
--adserver-
 -adserver.$domain=~aqua-adserver.com|~revive-adserver.com
 -adserver/
 -adskin.
@@ -142,7 +130,6 @@
 -display-ads.
 -footerads-
 -footerads.
--google-ad.
 -gpt-ad-$~xmlhttprequest
 -housead-
 -iframe-ad.
@@ -3961,7 +3948,6 @@
 /wppas/*
 /wppas_
 /wpproadds.
-/wpsafelink.js
 /wrapper/ads/*
 /www/ad/*
 /www/ad_
@@ -21901,6 +21887,7 @@ _800x80_
 ##div[data-native_ad]
 ##div[data-role="sidebarAd"]
 ##div[data-spotim-slot]
+##div[id^="_vdo_ads_player_ai_"]
 ##div[id^="ad-div-"]
 ##div[id^="ad-gpt-"]
 ##div[id^="ad-inserter-"]
