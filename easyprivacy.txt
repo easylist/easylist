@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202210212147
+! Version: 202210212150
 ! Title: EasyPrivacy
-! Last modified: 21 Oct 2022 21:47 UTC
+! Last modified: 21 Oct 2022 21:50 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1163,7 +1163,6 @@
 /cct?
 /cdcVanity?
 /cdn-cgi/beacon/*
-/cdn-cgi/bm/cv/*
 /cdn-cgi/ping?$image
 /cdn-cgi/rum?
 /cdn-cgi/zaraz/*
@@ -5740,8 +5739,6 @@ _track_pixel.gif?
 ! Akamai fingerprinting
 ! https://publicwww.com/websites/%22_cf.push%22/
 ! /^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
-! Cloudflare fingerprinting
-/cgi-bin/bm/cv/*$script
 ! Admiral
 /admiral.js
 /js/admiral-
@@ -30717,8 +30714,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
 @@||sourcepointcmp.bloomberg.*/ccpa.js$script,domain=bloomberg.co.jp|bloomberg.com
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?$domain=bloomberg.co.jp|bloomberg.com
-! Cloudflare hcaptcha test
-@@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
 ! CNAME (Specific allowlists)
 @@||alkosto.cdn.adglare.net^$image,xmlhttprequest,domain=alkosto.com|ktronix.com
 @@||alkosto.engine.adglare.net^$script,xmlhttprequest,domain=alkosto.com|ktronix.com
