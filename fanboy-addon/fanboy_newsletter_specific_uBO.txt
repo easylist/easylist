@@ -7,7 +7,7 @@ socialitelife.com##.mfp-ready
 audioholics.com,protocol.com,theconversation.com##body:style(overflow: auto !important;)
 otisoatmilk.co.nz,socialitelife.com##html:style(overflow:auto !important)
 ! nationalgeographic.com
-nationalgeographic.com## + js(aeld, scroll)
+nationalgeographic.com##+js(aeld, scroll)
 nationalgeographic.com##.EmailStickyFooter__Modal
 nationalgeographic.com##body:style(overflow: auto !important; position: initial !important;)
 ! Newspaper newsletter
@@ -20,6 +20,9 @@ thewrap.com##body:style(overflow: auto !important;)
 ! newrepublic.com
 newrepublic.com##.blink-sdk-widget-container
 newrepublic.com##html:style(overflow: auto !important)
+! brighteon.com (newsletter)
+brighteon.com##.overlay
+brighteon.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! ftm.eu (newsletter)
 ftm.eu##.blockingOverlay
 ftm.eu##html:style(overflow: auto !important)
@@ -42,22 +45,19 @@ informatykzakladowy.pl##body:style(overflow: auto !important;)
 ! prowritingaid.com (newsletter overlay)
 prowritingaid.com##.exit-popup
 prowritingaid.com##body:style(overflow: auto !important;)
-! thewrap.com (newsletter overlay)
-thewrap.com##.wk-site-overlay
-thewrap.com##html:style(overflow: auto !important)
 ! kitchentime (newsletter overlay)
 kitchentime.com,kitchentime.de,kitchentime.dk,kitchentime.fi,kitchentime.no,kitchentime.se##.popup-overlay
 kitchentime.com,kitchentime.de,kitchentime.dk,kitchentime.fi,kitchentime.no,kitchentime.se##body,html:style(height: auto !important; overflow: auto !important)
 ! axios.com
 axios.com##.Modal_ctaContainer__kHYHl
 axios.com##body,html:style(overflow: auto !important; position: initial !important;)
-! theblockcrypto.com (newsletter overlay)
-theblockcrypto.com##.modal-container
-theblockcrypto.com##body:style(overflow: auto !important;)
 ! megacatstudios.com (newsletter overlay)
 megacatstudios.com##.mfp-bg
 megacatstudios.com##.mfp-wrap
 megacatstudios.com##html:style(overflow:auto !important)
+! syfy.com (newsletter overlay)
+syfy.com##.blog-post__gated__wrapper
+syfy.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! nieuwsblad.be (newsletter overlay)
 nieuwsblad.be##.cj-root
 nieuwsblad.be##body:style(overflow: auto !important;)
@@ -87,5 +87,70 @@ numero.com##body,html:style(overflow: auto !important; position: initial !import
 ! newsnow.co.uk (newsletter)
 newsnow.co.uk##.js-popup-active
 newsnow.co.uk##body,html:style(overflow: auto !important; position: initial !important;)
+! theblock.co (newsletter overlay)
+theblock.co##.modal-container
+theblock.co##body:style(overflow: auto !important;)
 ! cryptobriefing.com (newsletter scroll fix)
 cryptobriefing.com##body,html:style(overflow: auto !important; position: initial !important;)
+! https://www.microsoft.com/en-gb/d/surface-laptop-4/946627fb12t1?activetab=pivot:overviewtab (popup)
+! https://github.com/easylist/easylist/pull/12673 (don't remove www.)
+www.microsoft.com###modalsRenderedAfterPageLoad
+www.microsoft.com##.modal-backdrop
+www.microsoft.com##body,html:style(overflow: auto !important; position: initial !important;)
+! readtangle.com (newsletter intro)
+readtangle.com##.intro
+readtangle.com##body,html:style(overflow: auto !important; position: initial !important;)
+! thedispatch.com
+thedispatch.com##.intro-popup
+thedispatch.com##body,html:style(overflow: auto !important; position: initial !important;)
+! fxstreet.com (scroll fix)
+fxstreet.com##body,html:style(overflow: auto !important; position: initial !important;)
+! thepetslife.online
+thepetslife.online##.g1-popup-newsletter
+thepetslife.online##body,html:style(overflow: auto !important; position: initial !important;)
+! decrypt.co (newsletter)
+decrypt.co##.left-0.top-0.fixed
+decrypt.co##body:style(overflow: auto !important; position: initial !important;)
+! yesmagazine.org (newsletter)
+yesmagazine.org##.fajardo-campaign
+yesmagazine.org##body:style(overflow: auto !important; position: initial !important;)
+! thebfd.co.nz (newsletter)
+thebfd.co.nz##body:style(overflow: auto !important; position: initial !important;)
+! tietoevry.com
+tietoevry.com##body:style(overflow: auto !important)
+! beckershospitalreview.com
+beckershospitalreview.com##.becker_doubleclick
+beckershospitalreview.com##body:style(overflow: auto !important)
+! berkeleyearth.org
+berkeleyearth.org##.fancybox-container
+berkeleyearth.org##body:style(overflow: auto !important; position: initial !important;)
+! upworthy.com
+upworthy.com##.mailchimp-popup-overlay-upworthy
+upworthy.com##.mailchimp-popup-upworthy
+upworthy.com##body:style(overflow: auto !important; position: initial !important;)
+! sportskeeda.com
+sportskeeda.com##.newsletter-ui
+sportskeeda.com##body:style(overflow: auto !important; position: initial !important;)
+! staygenerator.com 
+staygenerator.com##.reveal-overlay
+staygenerator.com##body,html:style(overflow: auto !important; position: initial !important;)
+! www.dgb.de
+dgb.de##.js-newsletter-popup-inner
+dgb.de##.js-newsletter-popup
+dgb.de##+js(rc, js-show-newsletter-popup, , stay)
+! nimsdai.com (newsletter overlay)
+nimsdai.com##.newsletter-popup
+nimsdai.com##body,html:style(overflow: auto !important; position: initial !important;)
+! taloon.com (newsletter overlay)
+taloon.com##.modals-wrapper
+taloon.com##body._has-modal:style(overflow: auto !important)
+! cjr.org
+cjr.org###interContainer
+cjr.org###interVeil
+cjr.org##html:style(overflow: auto !important; position: initial !important;)
+! cnn.com
+cnn.com##.bx-impress
+cnn.com##html:style(overflow: auto !important; position: initial !important;)
+! zyro.com
+zyro.com##.ebook-before-leave-modal
+zyro.com##body:style(overflow: auto !important; position: initial !important;)
