@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202210290840
+! Version: 202210290949
 ! Title: EasyList
-! Last modified: 29 Oct 2022 08:40 UTC
+! Last modified: 29 Oct 2022 09:49 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -53587,6 +53587,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+aliexpress.com#?#a:-abp-has(> div img + span:-abp-contains(/AD|Ann.|Annonce|Anuncio|Anúncio|Anzeige|Reklama|Reklam|מודעה|광고|إعلان/))
 u.gg#?#.video-guide:-abp-has(.content-section_header:-abp-contains(Sponsored Content))
 engadget.com#?#[class^="Py"]:-abp-has([data-ylk]:-abp-contains(Sponsored))
 imgur.com#?#a.Post-item:-abp-has(div.Post-item-external-ad)
