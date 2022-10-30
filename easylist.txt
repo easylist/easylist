@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202210300711
+! Version: 202210300716
 ! Title: EasyList
-! Last modified: 30 Oct 2022 07:11 UTC
+! Last modified: 30 Oct 2022 07:16 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -14,8 +14,6 @@
 ! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
-&action=getads&
-&ad_system=
 &adstrade=
 &adstype=
 &AdType=
@@ -404,9 +402,7 @@
 /a/ads/*
 /a/display.php?$script
 /aaddright.
-/aamsz=
 /ab_fl.js$script
-/acc_random=
 /active-ad-
 /ad--unit.
 /ad-125.
@@ -675,7 +671,6 @@
 /ad_overlay.
 /ad_page_
 /ad_paper_
-/ad_parts.
 /ad_peel/*$script
 /ad_popup_
 /ad_pos=
@@ -1034,7 +1029,7 @@
 /adpicture.
 /adPlaceholder.
 /adplacement.
-/adplayer.$domain=~adplayer.media|~adplayer.pro
+/adplayer.$script,domain=~adplayer.media|~adplayer.pro
 /adplayer/*
 /adplugin.
 /adplugin_
@@ -1521,7 +1516,6 @@
 /adsense4.
 /adsense5.
 /adsense?
-/adsense_$domain=~adsense.googleblog.com|~support.google.com
 /adsenseClient-
 /adsensegoogle.
 /adsensets.
@@ -1583,7 +1577,6 @@
 /adshow?
 /adshow_
 /adsicon/*
-/adsidebar.
 /adsiframe.
 /adsiframe/*
 /adsign.$domain=~adsign-admin.apps.asu.edu|~adsign.com.au|~adsign.no|~adsign.slack.com
@@ -2674,7 +2667,6 @@
 /googlead/*
 /googlead_
 /googleads-$domain=~github.com|~github.io
-/googleads.$~script,domain=~github.com|~github.io
 /googleads/*$domain=~github.com|~github.io
 /googleads_
 /googleadsafc_
@@ -3758,7 +3750,6 @@
 /text_ads_
 /textad.$domain=~textad.hu
 /textad/*
-/textad1.
 /textad?
 /textad_
 /textadrotate.
@@ -4025,7 +4016,6 @@
 =oas_tag.
 =PAGE_AD_
 =partnerad&
-=PencilAd&
 =pm_ads&
 =showsearchgoogleads&
 =textads&
