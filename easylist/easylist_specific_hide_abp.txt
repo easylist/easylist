@@ -1,4 +1,5 @@
 ! Advanced element hiding rules for Adblock Plus
+agoda.com#?#.PropertyCardItem:-abp-has(div:-abp-contains(Promoted))
 aliexpress.com#?#a:-abp-has(> div img + span:-abp-contains(/AD|Ann.|Annonce|Anuncio|Anúncio|Anzeige|Reklama|Reklam|מודעה|광고|إعلان/))
 u.gg#?#.video-guide:-abp-has(.content-section_header:-abp-contains(Sponsored Content))
 engadget.com#?#[class^="Py"]:-abp-has([data-ylk]:-abp-contains(Sponsored))
@@ -41,6 +42,7 @@ bbc.com#?##sticky-mpu:-abp-has(.dotcom-ad-inner)
 cults3d.com#?#div.grid-cell:-abp-contains(/AD •/i)
 doordash.com#?#[data-testid="card.store"] > div:-abp-has(div[data-anchor-id="SponsoredBadge"])
 bleepingcomputer.com#?##bc-home-news-main-wrap > li:-abp-contains(Sponsored Content)
+priceline.com#?#div[data-testid^="HTL_NEW_LISTING_CARD_"]:-abp-has(div:-abp-contains(Promoted))
 psychcentral.com#?#aside:-abp-has([data-empty])
 china.ahk.de#?#.b-main__section:-abp-has(h2.b-section__header:-abp-contains(Advertisement))
 cleantechnica.com#?#.zox-side-widget:-abp-contains(/^Advertis/)
