@@ -2446,3 +2446,7 @@ whatsapp.com##+js(rc, hasCookieBanner, body, stay)
 seurakuntavaalit.fi##body:style(overflow: auto !important)
 seurakuntavaalit.fi##.is-active.site-overlay
 seurakuntavaalit.fi###cookie-modal
+! fandom.com
+fandom.com##[data-tracking-opt-in-overlay="true"]:style(display: none)
+fandom.com##body:has(.fandom-video__container) [data-tracking-opt-in-overlay="true"]:style(display: block !important)
+fandom.com##body:has(main[class] [class^="CanonicalVideoPlayer"]) [data-tracking-opt-in-overlay="true"]:style(display: block !important)
