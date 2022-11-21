@@ -2448,8 +2448,8 @@ arvopaperi.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tiv
 iltalehti.fi##body:has(.consents-checker) > .alma-cmpv2-container:style(display: block !important)
 iltalehti.fi##+js(set, jwAlmaCMPLoaded, true)
 ! whatsapp.com
-whatsapp.com##._wauiCookiesBanner__cookiesBannerDialog
-whatsapp.com##+js(rc, hasCookieBanner, body, stay)
+www.whatsapp.com##[data-testid="wa_cookies_banner_modal"]
+www.whatsapp.com##+js(rc, hasCookieBanner, body, stay)
 ! seurakuntavaalit.fi
 seurakuntavaalit.fi##body:style(overflow: auto !important)
 seurakuntavaalit.fi##.is-active.site-overlay
