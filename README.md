@@ -33,7 +33,7 @@ For legal reasons, Anti-adblock this will only cover:
  - Streaming/Torrent/Comic sites
  - Any historical anti-adblock rules
 
-Abusive adservers are classed as ad or tracking providers that continously deploys new revolving domains to evade Easylist or Easyprivacy. 
+## Abusive adservers are classed as ad or tracking providers that continously deploys new revolving domains to evade Easylist or Easyprivacy. 
  - Using "Revolving domains" with harmful javascript and popups.
  - We are are an adblock and privacy list.
  - Adcompanies websites have no useful purporse for Easylist/Easyprivacy users except trying to create more counters and more spam domains.
