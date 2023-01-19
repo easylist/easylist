@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202301191329
+! Version: 202301191331
 ! Title: EasyPrivacy
-! Last modified: 19 Jan 2023 13:29 UTC
+! Last modified: 19 Jan 2023 13:31 UTC
 ! Expires: 6 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15340,6 +15340,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gamedistribution.com/collect?
 ||gamivo.com/tcllc?
 ||gc.newsweek.com/front/js/counter.js
+||gct.americanexpress.com^
 ||gekko.spiceworks.com^
 ||geo.brobible.com^
 ||geo.gfycat.com^
@@ -30754,7 +30755,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||store.usps.com/media/js/metrics/metrics.js$~third-party
 @@||supertaxi.com/webclient/scripts/tracking/tracking.js$script,~third-party
 @@||support.brother.com^*/js/analytics.js$script,~third-party
-@@||switchfly.com/static/108f088/resources/shopping/.build/scripts/analytics-$script,domain=reise-services.americanexpress.de|travel.americanexpress.co.uk|viaggi.americanexpress.it
+@@||switchfly.com/static/*/resources/shopping/.build/scripts/analytics-$script,domain=reise-services.americanexpress.de|travel.americanexpress.co.uk|viaggi.americanexpress.it
 @@||t.st/video/js/kGoogleAnalytics.js?$domain=thestreet.com
 @@||taboola.com/libtrc/impl.$script,domain=businessinsider.com|insider.com
 @@||tag.aticdn.net^*/smarttag.js$domain=rte.ie|uktvplay.co.uk
