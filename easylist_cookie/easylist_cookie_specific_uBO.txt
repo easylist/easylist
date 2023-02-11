@@ -34,7 +34,6 @@ idg.se##body:style(height: auto !important; overflow: auto !important)
 !
 ##.js-consent.consent
 !
-lempaala.ideapark.fi,olutposti.fi###cookie_disclaimer.cm_ui
 wtk.pl###GDPR-modal
 mediamarkt.de,saturn.de###__tealiumGDPRecModal > #privacy-layer__wrapper
 techopital.com,ticsante.com###coLab
@@ -146,7 +145,6 @@ yoigo.com##thor-cookies
 !
 ! scripts
 ubuntu.com##+js(aeld, DOMContentLoaded, js-revoke-cookie-manager)
-alueviesti.fi,kiuruvesilehti.fi,lempaala.ideapark.fi,olutposti.fi,urjalansanomat.fi##+js(aeld, scroll, innerHeight)
 spotify.com##div > div[aria-live="polite"]:not([data-testid="top-result-card"])
 al.com,allkpop.com,calendarpedia.co.uk,ccn.com,cinemablend.com,cleveland.com,comicsands.com,duffelblog.com,foxvalleyfoodie.com,gamepur.com,gamerevolution.com,interestingengineering.com,keengamer.com,listenonrepeat.com,mandatory.com,merriam-webster.com,mlive.com,musicfeeds.com.au,newatlas.com,pgatour.com,playstationlifestyle.net,readlightnovel.org,secondnexus.com,sevenforums.com,sport24.co.za,sportsnaut.com,superherohype.com,thefashionspot.com,theodysseyonline.com,toledoblade.com,totalbeauty.com,westernjournal.com,windows101tricks.com##+js(aopr, __cmpGdprAppliesGlobally)
 claritin.ca##+js(aopr, cookieconsent.Popup)
@@ -2702,3 +2700,6 @@ vr.fi##div[data-testid="modal"]
 vr.fi##+js(aeld, wheel, preventDefault)
 ! For mobile
 vr.fi##+js(aeld, touchmove, preventDefault)
+! #cookie_disclaimer + (aeld, scroll, innerHeight)
+alueviesti.fi,kiuruvesilehti.fi,lempaala.ideapark.fi,lvs.fi,olutposti.fi,orivedensanomat.fi,pirkkalainen.fi,pirmediat.fi,radiosun.fi,urjalansanomat.fi,ylojarvenuutiset.fi###cookie_disclaimer.cm_ui
+alueviesti.fi,kiuruvesilehti.fi,lempaala.ideapark.fi,lvs.fi,olutposti.fi,orivedensanomat.fi,pirkkalainen.fi,pirmediat.fi,radiosun.fi,urjalansanomat.fi,ylojarvenuutiset.fi##+js(aeld, scroll, innerHeight)
