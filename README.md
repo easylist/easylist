@@ -33,6 +33,16 @@ For legal reasons, Anti-adblock this will only cover:
  - Streaming/Torrent/Comic sites
  - Any historical anti-adblock rules
 
+## Abusive adservers are classed as ad or tracking providers that continously deploys new revolving domains to evade Easylist or Easyprivacy. 
+ - Using "Revolving domains" with harmful javascript and popups.
+ - We are are an adblock and privacy list.
+ - Montoring Easylist Github commits to then circumvent adblock filters with changing/revolving domains or scripts.
+ - Adcompanies websites have no useful purporse for Easylist/Easyprivacy users except trying to create more counters and more spam domains.
+ - It doesn't matter if the source domain is a different domain. We don't care.
+ - Will be blocked without warning.
+ - If you're an Abusive Ad company, disable Easylist. 
+ - If the domain changes we will update the filters.
+
 ## EasyPrivacy
 
 The goal of this repository is to block tracking and improve end user privacy. By blocking the following:
