@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202302161212
+! Version: 202302161222
 ! Title: EasyList
-! Last modified: 16 Feb 2023 12:12 UTC
+! Last modified: 16 Feb 2023 12:22 UTC
 ! Expires: 6 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -52890,6 +52890,7 @@ bing.com##a[href*="/aclick?ld="]
 ! Advanced element hiding rules for Adblock Plus
 sbs.com.au#?#.MuiBox-root:-abp-has(>.desktop-ads)
 slashdot.org#?#article:-abp-has(.ntv-sponsored-question)
+imgur.com#?#div[style^="height:"]:-abp-has(.Ad)
 9gag.com#?#article:-abp-has(.promoted)
 newsweek.com#?#.block.block-ibtmedia-special-item:-abp-has(.sponsor:-abp-contains(Sponsored))
 newsweek.com#?#.block.block-ibtmedia-special-item:-abp-has(.sponsor:-abp-contains(SPONSORED))
