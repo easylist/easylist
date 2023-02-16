@@ -22,12 +22,16 @@ ask.fm##body:style(overflow: auto !important)
 ! reddit.com (mobile)
 reddit.com##.XPromoBlockingModal
 reddit.com##.XPromoPopup__overlay
+reddit.com##.XPromoBlockingModalRpl
 reddit.com##.PreviewDrawer
 reddit.com##.XPromoPopup
 reddit.com##.XPromoPill
 reddit.com##shreddit-experience-tree
+reddit.com##+js(aeld, block-body-scrolling)
 reddit.com##body,html.scroll-is-blocked:style(overflow: auto !important;)
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
+reddit.com##.XPromoPopupRpl
+reddit.com##body:style(pointer-events:auto !important;)
 reddit.com##.XPromoInFeed
 amp.reddit.com##.AppSelectorModal__body
 amp.reddit.com##.upsell_banner
@@ -53,7 +57,7 @@ player.fm##body,html:style(overflow: auto !important; position: initial !importa
 m.economictimes.com###prominentOverlay
 m.economictimes.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! m.yelp.com
-m.yelp.com##.overlay__09f24__ApBaK
+m.yelp.com##div[class^="overlay__09f24"]
 m.yelp.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! linkedin.com
 linkedin.com##.promo-bottom-sheet
@@ -65,10 +69,26 @@ coinpaprika.com##body:style(overflow: auto !important; position: initial !import
 slickdeals.net##.sdModalOverlay
 slickdeals.net##.bottomBarContainer
 slickdeals.net##body:style(overflow: auto !important; position: initial !important;)
-! canva.com
-canva.com##.nEyXsQ
-canva.com##.S_i1pg
+! canva.com (mobile app, and scroll fix)
+canva.com##.BB_TDQ[style="height: auto; max-height: 66vh;"]
 canva.com##body:style(overflow: auto !important; position: initial !important;)
 ! ebay (scanner app on load)
 ebay.com##.pc-dweb
 ebay.com##html:style(overflow: auto !important; position: initial !important;)
+! audius.co
+audius.co##[class*="AppRedirectPopover_container_"]
+audius.co##+js(rc, scrollLock, , stay)
+audius.co##body:style(overflow: scroll !important)
+! simpleswap.io (mobile UA)
+simpleswap.io##.iRXLZi
+simpleswap.io##body,html:style(overflow: auto !important; position: initial !important;)
+! insider.com,businessinsider.com
+insider.com,businessinsider.com##.in-app-banner
+insider.com,businessinsider.com##body:style(overflow: auto !important; position: initial !important;)
+insider.com,businessinsider.com##.app-button
+! emailnator.com
+emailnator.com##.modal
+emailnator.com##.modal-backdrop
+emailnator.com##+js(rc, modal-open, , stay)
+emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
+emailnator.com##.top-banner

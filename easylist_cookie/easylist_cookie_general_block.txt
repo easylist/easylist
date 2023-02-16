@@ -3,7 +3,7 @@
 -cnil-popup-
 -consent-banner-
 -consent-banner.
--cookie-banner-
+-cookie-banner-$~image
 -cookie-banner.
 -cookie-bar.
 -cookie-cnil.
@@ -59,6 +59,7 @@
 .cookie-law.$script
 .cookie-madeincima.
 .cookie-policy.
+.cookie.notice.
 .cookie.policy.
 .cookie_law.
 .cookieconsent.
@@ -143,6 +144,7 @@
 /bb-cookies.
 /bc-cookie-consent
 /bCookiesMessage.
+/becookiebar.js
 /bgmp-gdpr.
 /bgon-cookies-
 /bica-cookie-alert/*
@@ -216,17 +218,19 @@
 /consent_banner-
 /consent_non-eu.
 /consentbanner-fragment/*
+/consentbar/consent-bar.min.js
 /consentcookie.js
 /consentcookie.min.js
 /ConsentTracking-
 /consentUI/*
 /coobann/*
 /coockiealert.
+/coockieconsent.js
 /cookie-accept.js
 /cookie-alert.
 /cookie-approval.
 /cookie-bandeau.
-/cookie-banner
+/cookie-banner$domain=~github.com
 /cookie-bar-
 /cookie-bar.
 /cookie-bar/*
@@ -235,7 +239,7 @@
 /cookie-choices.
 /cookie-cnil/*
 /cookie-compliance.
-/cookie-consent-$domain=~cookielaw.org|~github.com|~gitlab.com
+/cookie-consent-$script,domain=~cookielaw.org|~github.com|~gitlab.com
 /cookie-consent.
 /cookie-consent/*
 /cookie-consent?
@@ -437,6 +441,8 @@
 /cookielaw_mip.
 /cookielawinfo.$~script
 /CookieLawProduct/*
+/cookielay.js
+/cookielayer.js
 /cookielayer/*
 /cookielayover.
 /cookielegal.
@@ -464,6 +470,7 @@
 /cookieNSCconsent.
 /cookieok.js
 /cookieopt-min.
+/cookieOverlay.
 /cookieparty.
 /cookieplugin/cookie.
 /cookiepolicy-
@@ -574,7 +581,9 @@
 /cookiewarning?
 /cookiewet.
 /cookieWidget.
+/cookiewookie.js
 /cookpop.min.js
+/Cream_Cookiewall/*
 /css/gdpr.$~stylesheet
 /cui-cookie-
 /cuk_core.js
@@ -582,13 +591,16 @@
 /custom/cookies.
 /data-consent.
 /dc-cookie-
+/designil-pdpa/*
 /dg-cookie.
 /didomi.js
+/didomi/ui-gdpr-fr.
 /disagreeCookie.
 /dist/gdpr-$domain=~express.co.uk
 /divascookies_
 /diyscmp.min.js
 /dkmb_gdpr.
+/dl.cmp.min.js
 /dock-privacy-settings.
 /DonCookie.min.js
 /donotviewcookiemsg.
@@ -616,6 +628,7 @@
 /ercookiebar.
 /esb-privacy.
 /et_gdpr_
+/etagen_cookie/*
 /eu-cookie-$~script,~stylesheet
 /eu-cookie-law-
 /eu-cookie.
@@ -771,6 +784,7 @@
 /InformativaCookies/*
 /initCookiebanner.
 /intser_cookies.js
+/ionic_consent/*
 /ip-consent.
 /iticonseil-rgpd/*
 /iubenda/iubenda.
@@ -805,6 +819,7 @@
 /kameleoon.js
 /kaspersky-cookies-notification/*
 /keksikysely.min.js
+/kixsimpletrack/*
 /klaro-cookieconsent/*
 /klaro-no-css.
 /klaro-styles.min.
@@ -829,6 +844,7 @@
 /MarkupCookieConsent.
 /MarkupCookieConsent/*
 /mb_cookies.
+/mco-consent.js
 /mdv.cookie.
 /mea-legal-consent.
 /mediamus-cookie.
@@ -839,6 +855,7 @@
 /miocookie_
 /mod_cookie/*
 /mod_cookiesaccept/*$~stylesheet
+/mod_ebstickycookienotice/*
 /mod_eu_cookies/*
 /mod_jbcookies/*
 /modal-gdpr.
@@ -892,6 +909,7 @@
 /policyaccept.
 /PoliticaCookies.
 /pop_up_cookie.
+/popupConsent.
 /PopupCookie.
 /popupcookieinit.
 /popupcookies.
@@ -925,6 +943,7 @@
 /pxpcookies.
 /qc-consent.js
 /quantastCmp.js
+/quantcast-choice.
 /rb/cookie/*
 /rbicookiepolicy.
 /rdm-daac-notice-
@@ -954,7 +973,6 @@
 /script_cookie.
 /script_cookies.js
 /scripts/cookiebar
-/Scripts/cookies.js
 /sdk-gdpr.
 /seopress-cookies.
 /SetConsentCookie.
@@ -962,6 +980,7 @@
 /setPrivacyCookie.
 /sf-tagomo-privacy.js$script
 /shapepress-dsgvo/*
+/sibbo-cmp-core.js
 /simpler-cookie-consent.
 /simplyflex_cookies.
 /site-privacy-notification/*
@@ -1030,6 +1049,7 @@
 /wa_consentUI.
 /wa_iframeCmp.
 /wa_lib.js
+/Wamoco_CookieConsentUi/*
 /warnCookies.
 /we_use_cookies?
 /webflow-consent-manager
@@ -1046,7 +1066,10 @@
 /wp-cookie-allow/*$script,stylesheet
 /wp-gdpr-
 /wp-tarteaucitron-
+/wpjslib-ecom.js
+/wpjslib-stat.js
 /wpmaster-cookie/*
+/ws5_eucookie/*
 /wx-cookie-
 /x_cookie_
 /XCookieConsent.
@@ -1112,5 +1135,28 @@ _js_privacy_cmp_
 _logikamentecookielaw/
 _site_cookie_
 _vpcookieconsent/
+! autoscout24
+/as24-cmp/*
+! Ezoic
+/cmbdv2.js
+/detroitchicago/houston.js
+/ezcl.webp?
+/greenoaks.gif?
+/imp.gif?
+/porpoiseant/*
+/tardisrocinante/austin.js
+! geze.pl,geze.de,geze.bg,geze.ee,geze.co.uk..
+/Static/it-cc.js
+! TM
+/fp/check.js
+/fp/clear.png
+/fp/clear1.png
+/fp/clear2.png
+/fp/clear3.png
+/fp/es.js
+/fp/fp.swf
+/fp/HP?session_id
+/fp/tags.js
+/fp/top_fp.
 ! https://github.com/AdguardTeam/AdguardFilters/blob/master/AnnoyancesFilter/sections/cookies_specific.txt#L53
 /pp-t-a-c.js$script

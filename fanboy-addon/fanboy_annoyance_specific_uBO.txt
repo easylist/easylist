@@ -48,10 +48,6 @@ gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
 ! newrepublic.com (popup) 
 newrepublic.com##.blink-sdk-widget-container
 newrepublic.com##body,html:style(overflow: auto !important; position: initial !important;)
-! thepostmillennial.com (popup)
-thepostmillennial.com###popup-donation
-thepostmillennial.com##.v-modal
-thepostmillennial.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/13976
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##.interstitial
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##body:style(overflow-x: auto !important; overflow-y: scroll !important; margin-right: 0 !important;)
@@ -63,3 +59,12 @@ commondreams.org##body,html:style(overflow: auto !important; position: initial !
 cnet.com##.c-shoppingExtModal
 cnet.com##.modal-backdrop
 cnet.com##body:style(height: auto !important; overflow: auto !important)
+! walletinvestor.com
+walletinvestor.com###bio_ep
+walletinvestor.com###bio_ep_bg
+walletinvestor.com##body:style(overflow: scroll !important)
+! t-nation.com 
+t-nation.com##.toggle_lb_scrolling_mobile
+t-nation.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+! Disabling copy/paste
+banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
