@@ -1,8 +1,4 @@
 ! uBO-specific fixes
-! 9gag.com (mobile)
-9gag.com##.open-in-app
-9gag.com##body:style(overflow: auto !important;)
-9gag.com##.shade
 ! youtube ads mitigation testing
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
@@ -16,10 +12,6 @@ audioholics.com##.modal-backdrop
 ! linuxbabe.com
 linuxbabe.com##.pum-active
 linuxbabe.com##html:style(overflow: auto !important)
-! rebelnews.com
-rebelnews.com##html:style(overflow: auto !important)
-rebelnews.com##.remodal-wrapper
-rebelnews.com##.remodal-overlay
 ! huckberry.com
 huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
 huckberry.com##.modal-content
@@ -33,8 +25,6 @@ revolver.news##.blocker
 4399.com##+js(aopr, defaultbackgroundimg)
 ! onegreenplanet.org (Fix page, when attempting to print)
 onegreenplanet.org##body:style(display: block !important)
-! whathifi.com (ghide)
-whathifi.com##.newsletter-signup
 ! valuewalk.com 
 valuewalk.com##.mfp-ready
 valuewalk.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -55,10 +45,6 @@ defenseone.com,govexec.com,nextgov.com,route-fifty.com##body:style(overflow-x: a
 commondreams.org##.block--mayrecurringmodal
 commondreams.org##.modal-backdrop
 commondreams.org##body,html:style(overflow: auto !important; position: initial !important;)
-! cnet.com (shopping popup)
-cnet.com##.c-shoppingExtModal
-cnet.com##.modal-backdrop
-cnet.com##body:style(height: auto !important; overflow: auto !important)
 ! walletinvestor.com
 walletinvestor.com###bio_ep
 walletinvestor.com###bio_ep_bg
