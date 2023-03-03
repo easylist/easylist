@@ -4,7 +4,8 @@ These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, and Khrin.
 
 ## EasyList
 
-The goal of this repository is to block ads on English and International sites. First-party ads (that don't link, or passthrough to 3rd-party sites) won't be targeted directly. By blocking the following:
+The goal of this repository is to block ads on English and International sites. [Self-promotion](## "Self-promotion is any type of advertising that promotes goods or services that are owned or operated by the domain owner and doesn’t get commercially compensated for by third parties (examples can include new features, new posts, newsletters, subscriptions to printed media products, merchandise etc.)") [^1] won't be targeted directly. By blocking the following:
+
  - Ad scripts (Generic and site-specific)
  - Ad images 
  - Text/CSS ads
@@ -106,3 +107,5 @@ For any issues or questions, create a ticket: [Github](https://github.com/easyli
 ## Support
 
 EasyList, EasyPrivacy, and Fanboy lists are used in a number of extensions and browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [AdBlock](https://getadblock.com/), [AdGuard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), and [Vivaldi](https://vivaldi.com/).
+
+[^1]: Self-promotion is any type of advertising that promotes goods or services that are owned or operated by the domain owner and doesn’t get commercially compensated for by third parties (examples can include new features, new posts, newsletters, subscriptions to printed media products, merchandise etc.)
