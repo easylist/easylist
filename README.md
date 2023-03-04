@@ -4,7 +4,7 @@ These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, and Khrin.
 
 ## EasyList
 
-The goal of this repository is to block ads on English and International sites. [Self-promotion](## "Self-promotion is any type of advertising that promotes goods or services that are owned or operated by the domain owner and doesn’t get commercially compensated for by third parties (examples can include new features, new posts, newsletters, subscriptions to printed media products, merchandise etc.)") [^1] won't be targeted directly. By blocking the following:
+The goal of this repository is to block [ads](https://easylist.to/2011/07/11/the-definition-of-advert-and-link-exchange-policy.html) on English and International sites. [Self-promotion](## "Self-promotion is any type of advertising that promotes goods or services that are owned or operated by the domain owner and doesn’t get commercially compensated for by third parties (examples can include new features, new posts, newsletters, subscriptions to printed media products, merchandise etc.)") [^1] won't be targeted directly. By blocking the following:
 
  - Ad scripts (Generic and site-specific)
  - Ad images 
