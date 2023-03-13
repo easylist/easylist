@@ -10,7 +10,7 @@
 ||ad.doubleclick.net/ddm/clk/$domain=ad.doubleclick.net
 ||ad.edugram.com^
 ||ad.kubiccomps.icu^
-||ad.mail.ru^$domain=~mail.ru|~sportmail.ru
+||ad.mail.ru^$~image,domain=~mail.ru|~sportmail.ru
 ||ad.netmedia.hu^
 ||ad.outsidehub.com^
 ||ad.reklamport.com^
@@ -27,6 +27,7 @@
 ||ads.linkedin.com^$third-party
 ||ads.servebom.com^
 ||ads.sportradar.com^
+||ads.yahoo.com^$~image
 ||adsales.snidigital.com^
 ||adserving.unibet.com^
 ||advast.sibnet.ru^
@@ -298,7 +299,7 @@
 ||privateinternetaccess.com^$script,third-party,xmlhttprequest
 ||privatejetfinder.com/skins/partners/$third-party
 ||promos.fling.com^
-||promote.pair.com^
+||promote.pair.com/88x31.pl
 ||proxysolutions.net/affiliates/
 ||pubfeed.linkby.com^
 ||public.porn.fr^$third-party
@@ -436,8 +437,6 @@
 ||ad.samsungadhub.com^
 ||ad.xiaomi.com^
 ||samsungadhub.com^$third-party
-! Pi hole
-||ads.yahoo.com^
 ! amazonaws (ad-fix)
 /^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
 ||s3.amazonaws.com^*/f10ac63cd7
