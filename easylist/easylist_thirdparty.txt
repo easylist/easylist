@@ -10,7 +10,7 @@
 ||ad.doubleclick.net/ddm/clk/$domain=ad.doubleclick.net
 ||ad.edugram.com^
 ||ad.kubiccomps.icu^
-||ad.mail.ru^$domain=~mail.ru|~sportmail.ru
+||ad.mail.ru^$~image,domain=~mail.ru|~sportmail.ru
 ||ad.netmedia.hu^
 ||ad.outsidehub.com^
 ||ad.reklamport.com^
@@ -27,6 +27,7 @@
 ||ads.linkedin.com^$third-party
 ||ads.servebom.com^
 ||ads.sportradar.com^
+||ads.yahoo.com^$~image
 ||adsales.snidigital.com^
 ||adserving.unibet.com^
 ||advast.sibnet.ru^
@@ -298,7 +299,7 @@
 ||privateinternetaccess.com^$script,third-party,xmlhttprequest
 ||privatejetfinder.com/skins/partners/$third-party
 ||promos.fling.com^
-||promote.pair.com^
+||promote.pair.com/88x31.pl
 ||proxysolutions.net/affiliates/
 ||pubfeed.linkby.com^
 ||public.porn.fr^$third-party
@@ -436,8 +437,6 @@
 ||ad.samsungadhub.com^
 ||ad.xiaomi.com^
 ||samsungadhub.com^$third-party
-! Pi hole
-||ads.yahoo.com^
 ! amazonaws (ad-fix)
 /^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
 ||s3.amazonaws.com^*/f10ac63cd7
@@ -632,6 +631,7 @@
 ||d29dbajta0the9.cloudfront.net^
 ||d29dzo8owxlzou.cloudfront.net^
 ||d29i6o40xcgdai.cloudfront.net^
+||d29mxewlidfjg1.cloudfront.net^
 ||d2bbq3twedfo2f.cloudfront.net^
 ||d2bxxk33t58v29.cloudfront.net^
 ||d2byenqwec055q.cloudfront.net^
@@ -647,6 +647,7 @@
 ||d2enprlhqqv4jf.cloudfront.net^
 ||d2er1uyk6qcknh.cloudfront.net^
 ||d2ers4gi7coxau.cloudfront.net^
+||d2eyuq8th0eqll.cloudfront.net^
 ||d2fbkzyicji7c4.cloudfront.net^
 ||d2fbvay81k4ji3.cloudfront.net^
 ||d2focgxak1cn74.cloudfront.net^
@@ -736,6 +737,7 @@
 ||d2zbpgxs57sg1k.cloudfront.net^
 ||d2zcblk8m9mzq5.cloudfront.net^
 ||d2zh7okxrw0ix.cloudfront.net^
+||d2zi8ra5rb7m89.cloudfront.net^
 ||d2zzazjvlpgmgi.cloudfront.net^
 ||d301cxwfymy227.cloudfront.net^
 ||d30sxnvlkawtwa.cloudfront.net^
@@ -778,6 +780,7 @@
 ||d3akmxskpi6zai.cloudfront.net^
 ||d3asksgk2foh5m.cloudfront.net^
 ||d3b2hhehkqd158.cloudfront.net^
+||d3b4u8mwtkp9dd.cloudfront.net^
 ||d3bbyfw7v2aifi.cloudfront.net^
 ||d3beefy8kd1pr7.cloudfront.net^
 ||d3c3uihon9kmp.cloudfront.net^
@@ -789,6 +792,7 @@
 ||d3d54j7si4woql.cloudfront.net^
 ||d3d9pt4go32tk8.cloudfront.net^
 ||d3dq1nh1l1pzqy.cloudfront.net^
+||d3ejxyz09ctey7.cloudfront.net^
 ||d3ep3jwb1mgn3k.cloudfront.net^
 ||d3evio1yid77jr.cloudfront.net^
 ||d3f1m03rbb66gy.cloudfront.net^
