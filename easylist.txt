@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202303161456
+! Version: 202303161732
 ! Title: EasyList
-! Last modified: 16 Mar 2023 14:56 UTC
+! Last modified: 16 Mar 2023 17:32 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -54808,6 +54808,8 @@ google.ac,google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,
 ! Filter for testpages.adblockplus.org
 testpages.adblockplus.org###abptest
 ! MSN
+msn.com###promotions
+msn.com##.bannerAdContainer-DS-EntryPoint1-1
 msn.com##.bing-native-ad
 msn.com##.dynamicRRWrapper
 msn.com##.galleryPage_eoabNativeAd-DS-EntryPoint1-1
@@ -54835,6 +54837,9 @@ msn.com##div[class^="articlePage_topBannerAdContainer_"]
 msn.com##div[class^="galleryPage_bannerAd"]
 msn.com##div[data-section-id="sponsored.stripe.shopping"]
 msn.com##div[data-section-id="stripe.bannernativead"]
+msn.com##div[data-t*="sponsored."]
+msn.com##msft-content-card[id^="contentcard_nativead-"]
+msn.com##msn-info-pane-panel[id^="tab_panel_nativead-"]
 ! Bing
 bing.com###bepfo.popup[style^="visibility: visible"]
 bing.com##.ad_sc
