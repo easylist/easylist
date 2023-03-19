@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202303190314
+! Version: 202303190315
 ! Title: EasyList
-! Last modified: 19 Mar 2023 03:14 UTC
+! Last modified: 19 Mar 2023 03:15 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -54088,6 +54088,7 @@ alternativeto.net##[class^="AdsenseAd"]
 thesouthafrican.com##[class^="Advertisement_"]
 games.washingtonpost.com##[class^="DisplayAd_"]
 thesouthafrican.com##[class^="SiteHeader__AdvertisementWrapper-"]
+petco.com##[class^="StaticBannerAd"]
 economist.com##[class^="adComponent"]
 uploader.link##[class^="ads"]
 romhustler.org##[class^="leaderboard_ad"]
@@ -54129,6 +54130,8 @@ goal.com##[data-type="AdComponent"]
 search.brave.com##[data-type="ad"]
 gadgetsnow.com##[data-type="mtf"]
 axios.com##[data-vars-category="sidebar_promo"]
+petco.com##[data-widget-type="citrus-ad"]
+petco.com##[data-widget-type="citrus-banner"]
 cnn.com##[data-zone-label="Paid Partner Content"]
 faroutmagazine.co.uk,hitc.com##[dock="#primis-dock-slot"]
 complaintsingapore.com##[href*="/adv.php"]
@@ -55136,6 +55139,8 @@ nex-software.com#?#.toolinfo:-abp-has(a[href$="/reimage"])
 nex-software.com#?#h4:-abp-has(a[href$="/reimage"])
 onepagerules.com#?#strong:-abp-contains(PAID CONTENT)
 petco.com#?#li:-abp-contains(Sponsored)
+petco.com#?#[class^="CitrusCatapult-styled__LeftContent"]:-abp-has(div:-abp-contains(Sponsored))
+petco.com#?#[class^="HorizontalWidget"]:-abp-has(div:-abp-contains(Sponsored))
 pinterest.ca,pinterest.at,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt#?#div[data-test-id="pin"]> *:-abp-contains(Anzeige von)
 pinterest.ca,pinterest.at,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt#?#div[data-test-id="pin"]> *:-abp-contains(Gesponsord door)
 pinterest.ca,pinterest.at,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt#?#div[data-test-id="pin"]> *:-abp-contains(Promocionado por)
