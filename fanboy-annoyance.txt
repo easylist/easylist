@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202303220035
+! Version: 202303220058
 ! Title: Fanboy's Annoyance List
-! Last modified: 22 Mar 2023 00:35 UTC
+! Last modified: 22 Mar 2023 00:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -47362,6 +47362,7 @@ play.google.com#?#.gb_g:-abp-contains(cookie)
 ##div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "]
 ! medium blogs
 blog.discord.com,codeburst.io,eand.co,infosecwriteups.com,medium.com,medium.engineering,netflixtechblog.com,plainenglish.io,primegaming.blog,towardsdatascience.com,uxdesign.cc,windscribe.com#?#body > div:not([class]):not([id]) > div[class*=" "]:-abp-has(> div > div > div[class] > a[href^="https://policy.medium.com/medium-privacy-policy-"])
+blog.discord.com,codeburst.io,eand.co,infosecwriteups.com,medium.com,medium.engineering,netflixtechblog.com,plainenglish.io,primegaming.blog,towardsdatascience.com,uxdesign.cc,windscribe.com#?#div:-abp-has(div[role='alert'] > a[href^="https://policy.medium.com/medium-privacy-policy-"])
 ! Used with generichide
 guicheweb.com.br,mercadolibre.com###alert_cookie
 msi.com###ccc
