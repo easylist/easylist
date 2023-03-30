@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202303300023
+! Version: 202303300058
 ! Title: EasyList
-! Last modified: 30 Mar 2023 00:23 UTC
+! Last modified: 30 Mar 2023 00:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -52190,6 +52190,7 @@ arrivealive.co.za###partners_container
 binaries4all.com###payserver
 flicksmore.com###pc_show
 demap.info###pcad
+petco.com###pencil-banner
 investopedia.com###performance-marketing_1-0
 premierguitar.com###pg_leaderboard
 radiocaroline.co.uk###photographsforeverDiv
@@ -55318,6 +55319,7 @@ psycom.net##center > .vh-quiz-qborder
 mangas-raw.com##center > div[style]
 greekreporter.com##center > p > [href]
 builtbybit.com##center[style="margin-top: 20px"]
+smartandfinal.com##citrus-ad-wrapper
 readonepiece.com##div > b
 coffeeordie.com##div.HtmlModule > [href]
 baking-forums.com,windows10forums.com##div.message--post.message
@@ -55877,6 +55879,8 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+pigglywigglystores.com#?#.fp-item:-abp-has(.fp-tag-ad)
+wowcher.co.uk#?#.two-by-two-deal:-abp-has(a[href*="src=sponsored_search_"])
 sainsburys.co.uk#?#.productESpot:-abp-has(.strapline:-abp-contains(Sponsored))
 independent.co.uk,standard.co.uk#?#article > div[class^="sc-"]:-abp-has(> div[class^="sc-"] > div[data-ad-unit-path])
 sbs.com.au#?#.MuiBox-root:-abp-has(>.desktop-ads)
