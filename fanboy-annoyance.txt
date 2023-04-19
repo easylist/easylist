@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202304191001
+! Version: 202304191051
 ! Title: Fanboy's Annoyance List
-! Last modified: 19 Apr 2023 10:01 UTC
+! Last modified: 19 Apr 2023 10:51 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -38755,7 +38755,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||myip.ms/css/red/images/nav_
 ! *** easylist:fanboy-addon/fanboy_notifications_specific_block.txt ***
 /firebase-messaging.js$script,domain=tribunnews.com
-/push.js$script,~third-party,domain=armeniasputnik.am|gamasexual.com|sputnik-abkhazia.info|sputnik-abkhazia.ru|sputnik-georgia.com|sputnik-georgia.ru|sputnik-ossetia.com|sputnik-ossetia.ru|sputnik-tj.com|sputnik.az|sputnik.by|sputnik.kg|sputniknews-uz.com|sputniknews.cn|sputniknews.gr|sputniknews.kz|sputniknews.lt|sputniknewslv.com
 ||9to5terminal.com/push.js
 ||alerts.ndtv.com^
 ||alerts.thedailystar.net^
@@ -38772,6 +38771,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||ndtv.com/js/breaking_pushalert_revised.js
 ||ndtv.com/sw.js
 ||notify.hindustantimes.com^
+||push.cnnindonesia.com^
 ||renaultsport.com/spip.php?page=sw.js
 ||rottentomatoes.com/service-worker/sw.js
 ||seattletimes.com/wp-content/plugins/st-user-messaging/$script
@@ -45526,65 +45526,29 @@ flyuia.com,roxy-denmark.dk,roxy-ireland.ie,roxy-store.se,roxy-uk.co.uk,roxy.fi,r
 ! 
 ##.odkl-klass-stat
 ||pichak.net/blogcod/$third-party
-||push.cnnindonesia.com^
 ! 
 ! ---------- Non-english Site Specific Hiding Rules ----------
 ! 
-sme.sk###js-top-info-bar
-egmont.cz###nrlskswidget
 thscore.mobi###returnTop
 kapook.com###totop
-armeniasputnik.am,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt##.arrowup
-thscore.co##.backTop
-cazin.net##.btn-btt
-avaz.ba##.float-top
-seznam.cz##.ogm-banner-promo
-beritaharian.sg##.subscribe
-||djelfainfo.dz/ar/files/app.jpg
-||thscore.co^*/backTop.
-||thscore.mobi^*/top.
 ! 
 ! ---------- German Site Specific Hiding Rules ----------
 ! 
 baguette.at###TopBtn
 valentins.de###arrow-up
-nzz.ch###articleMore
-testberichte.de###bck-t-tp
 unsertirol24.com###beginn-arrow
-oeffnungszeitenbuch.de###btnUpMb
-androidnext.de###c4a_box
 reifenpresse.de###custom_html-2
 focus.de###flying_mbox
 foerderland.de###footerFlyout
-valentins.de###myModal
 nw.de###nl-box
-###nutzungs_einverstaendnis
-voelkner.de###push
-androidnext.de###scrollbarbox
-computerwissen.de###simpleCatfish
-web.de###slide-module
-duden.de###sliding-popup
 mydealz.de###softMessages-list
 groupon.de###spotlight
 soeren-hentzschel.at###storage-notice
-thegap.at###thegapnewsletter
-ing-diba.at###top-message__wrapper
 noen.at###topButton
-daenischesbettenlager.de###totop
-suedtirolermilch.com###up
-helpster.de###videoFlyin
 mathe24.net###wrapperdiv
 finanzfrage.net,gutefrage.net##.Bigfoot-navigationUp
-computerbase.de##.app-install
-drwindows.de##.arrowNav
-suedtirol-it.com##.btn-top
-comparis.ch##.button-go-up
 phoenix.de##.c-toplink
 motorsportpics.de##.cc-FloatingButtonBarContainer-button-scroll
-alpine-gehoerschutz.de,fraunhofer.de##.cd-top
-blm.de##.clickTop
-rnd.de##.con-nwl
-stuttgarter-nachrichten.de##.container-stn-popup
 vonovia.de##.content-module.controller.partial
 kress.de##.cta
 seniorenportal.de##.custom-topbutton
@@ -45595,7 +45559,6 @@ focus.de##.fixed_home_link
 spektrum.de##.footer__nl
 rewe.de##.fragment
 luxor.co.at##.info
-stuttgarter-nachrichten.de##.js-to-top
 kicker.de##.kick__scroll-top-ic
 kontextwochenzeitung.de##.kontextpermail
 ifun.de,iphone-ticker.de##.mail
@@ -45604,7 +45567,6 @@ geo.de##.nlAnmeldg
 therese-moelk.at##.pageup
 matratzen.info##.postNavigation
 strato.de##.scrollBtn
-swz.it##.scroll__top
 woxikon.de##.secondary-footer
 kostenlose-urteile.de##.simplemodal-container
 kostenlose-urteile.de##.simplemodal-overlay
@@ -45622,8 +45584,6 @@ motorsport-total.com##a[data-target="top"]
 wdr.de##a[href="#goToHead"]
 antennebrandenburg.de,vodafone.de##a[href="#top"]
 ||focus.de/fol/pics/special/informiert.gif
-||gluecksdetektiv.de/wp-content/plugins/easy-fancybox-pro/
-||google.com/search?$popup,domain=lolmt2.com
 ||mdsngpush.finanzen.net^
 ||stncdn.it^*/smartbanner.
 ||trustedshops.com/bewertung/widget/$third-party
@@ -45635,13 +45595,9 @@ antennebrandenburg.de,vodafone.de##a[href="#top"]
 ||auto-moto.com^*/iframe-box-article.html
 ||avis-verifies.com^$third-party
 ||boosterblog.com/ban/$third-party
-||free-debride.id.st^$third-party
-||maison-travaux.fr/wp-content/themes/*/iframe-box-article.html
 ||manga-sanctuary.com/include/ajax/popup_actu.php
 ||onaregarde-pourvous.com/api/$third-party
 ||out.be/widgets/$third-party
-||pourquoidocteur.fr/img2/face.png
-||pourquoidocteur.fr/img2/in.png
 ||sibforms.com^$domain=logiciels.pro
 ||societe-des-avis-garantis.fr/wp-content/*/widgets/$third-party
 ||tout-sur-le-web.com^$third-party
@@ -46521,7 +46477,6 @@ olx.ua###btn-top
 ! 
 ! ---------- Non-English Social Media Elements ----------
 ! 
-armeniasputnik.am,blic.rs,rtvslo.si,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt###share
 delfi.ee##.article__info > .article-utility
 delfi.ee##.article__social
 360.cymru##.buttons
@@ -47327,6 +47282,7 @@ deraktionaer.de###boersen-briefing
 kfz-betrieb.vogel.de###nl_block
 skylineatlas.de###ouibounce-modal
 skylineatlas.de###persoblock
+thegap.at###thegapnewsletter
 rtde.tech##.Subscription-isReact
 sn.at##.box-emarsys
 bluray-disc.de##.daily-newsletter-anmeldung_r
@@ -50302,7 +50258,7 @@ facebook.com#@#.connect_widget
 youtube.com#@#.feed-icon
 ixbt.com#@#.glyphicon-arrow-up
 stackcommerce.com,zalando.com#@#.grecaptcha-badge
-seznam.cz,startpagina.nl#@#.rss-feed
+startpagina.nl#@#.rss-feed
 wired.com#@#.rss-widget
 kosmonautix.cz#@#.widget_rss
 ! *** easylist:fanboy-addon/fanboy_notifications_allowlist_general_hide.txt ***
@@ -51126,7 +51082,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||zensus2022.de/SiteGlobals/Modules/CookieBanner/*/CookieBanner.json?$~third-party,xmlhttprequest
 ! *** easylist:fanboy-addon/fanboy_social_allowlist.txt ***
 @@/angular-facebook.js
-@@/social-likes.min.js$script,~third-party,domain=armeniasputnik.am|sputnik-abkhazia.info|sputnik-abkhazia.ru|sputnik-georgia.com|sputnik-georgia.ru|sputnik-ossetia.com|sputnik-ossetia.ru|sputnik-tj.com|sputnik.az|sputnik.by|sputnik.kg|sputniknews-uz.com|sputniknews.cn|sputniknews.gr|sputniknews.kz|sputniknews.lt|sputniknewslv.com
 @@/wp-content/plugins/bwp-minify/min/?*,wp-content$script,stylesheet,~third-party
 @@/wp-content/plugins/share-this-image/*$~third-party
 @@/wp-content/plugins/socialauth-wp/*$~third-party
