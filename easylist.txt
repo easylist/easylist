@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202304221759
+! Version: 202304221943
 ! Title: EasyList
-! Last modified: 22 Apr 2023 17:59 UTC
+! Last modified: 22 Apr 2023 19:43 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -56330,6 +56330,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+cargurus.com#?#div[data-cg-ft="car-blade"]:-abp-has(div[data-cg-ft="sponsored-listing-badge"])
 booking.com#?#div[data-testid="property-card"]:-abp-has(div[data-testid="new-ad-design-badge"])
 booking.com#?#div[data-testid="property-card"]:-abp-has(span[data-testid="new-ad-design-badge"])
 countdown.co.nz#?#cdx-card:-abp-has(product-badge-list)
