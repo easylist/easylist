@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202304252055
+! Version: 202304252100
 ! Title: EasyList
-! Last modified: 25 Apr 2023 20:55 UTC
+! Last modified: 25 Apr 2023 21:00 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -56581,6 +56581,8 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+chewy.com#?#[class^="kib-"]:-abp-has(.kib-product-sponsor)
+tesco.com#?#.product-list--list-item:-abp-contains(Sponsored)
 cargurus.com#?#div[data-cg-ft="car-blade"]:-abp-has(div[data-cg-ft="sponsored-listing-badge"])
 sephora.com#?#div[class^="css-"]:-abp-has(>a:-abp-has(span:-abp-contains(Sponsored)))
 sephora.com#?#div[data-comp^="RmnBanner"]:-abp-has(p:-abp-contains(Sponsored))
