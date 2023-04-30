@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202304292335
+! Version: 202304300002
 ! Title: EasyPrivacy
-! Last modified: 29 Apr 2023 23:35 UTC
+! Last modified: 30 Apr 2023 00:02 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -34538,7 +34538,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api.amplitude.com^$xmlhttprequest,domain=insiderintelligence.com
-@@||api.cxense.com/public/widget/data?$domain=bizjournals.com|cxpublic.com|marketwatch.com|wsj.com
 @@||api.enthusiastgaming.net^$xmlhttprequest,domain=diep.io
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=medexpress.com|right-on.co.jp
@@ -34581,7 +34580,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||cdn-ds.com/analytics/dfa.js$script,domain=tuttleclickgenesis.com
 @@||cdn-ds.com/analytics/sockjs.js$script,domain=tuttleclickgenesis.com
 @@||cdn-net.com/cc.js
-@@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
 @@||cdn.heapanalytics.com^$script,domain=libertymutual.com
 @@||cdn.jsdelivr.net^*/fp.min.js$script,domain=cuevana2.io
 @@||cdn.optimizely.com/js/*.js$domain=compassion.com|creditsesame.com|fedex.com|freeshipping.com|heroku.com|tcgplayer.com
@@ -34842,7 +34840,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||s.yimg.com^*/advertisement/sponsor/promo/ad.png$image,domain=news.yahoo.com
 @@||sahibinden.com/assets/analytics*.js$~third-party
-@@||scdn.cxense.com/cx.cce.js$domain=cxpublic.com
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_html5.js
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_theplatform.js
 @@||scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js
@@ -34971,6 +34968,12 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||adobedtm.com^*/mbox-contents-$script,domain=absa.co.za|ally.com|americanexpress.com|backcountry.com|ceair.com|conad.it|costco.com|dhl.de|fcbarcelona.cat|fcbarcelona.cn|fcbarcelona.com|fcbarcelona.es|fcbarcelona.fr|fcbarcelona.jp|firststatesuper.com.au|hgtv.com|lenovo.com|lowes.com|nfl.com|oprah.com|pnc.com|shoppersdrugmart.ca|sony.jp|usanetwork.com|vanityfair.com|wired.com|wowway.net
 ! ! adobedtm.com/extensions/
 @@||adobedtm.com/extensions/$domain=antena3.com|apple.com|atresmedia.com|atresplayer.com|automobiles.honda.com|bravotv.com|cadenaser.com|crave.ca|foodnetwork.com|lasexta.com|telus.com|verizon.com
+! ! cxense.com/public/widget/
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|computerbild.de|cxpublic.com|cyclestyle.net|friday.gold|friday.kodansha.co.jp|handelsblatt.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|savonsanomat.fi|shueisha.co.jp|tn.com.ar|wsj.com
+! ! cxense.com/cx.cce.js
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|handelsblatt.com|mainichi.jp|marketwatch.com|tarzanweb.jp|tn.com.ar|wpb.shueisha.co.jp
+! ! cxense.com/cx.js
+@@||cxense.com/cx.js$domain=bizjournals.com|businessinsider.de|computerbild.de|cyclestyle.net|handelsblatt.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|savonsanomat.fi|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp
 ! statcounter.com charts https://github.com/uBlockOrigin/uAssets/issues/11321
 @@||gs.statcounter.com/chart.php$script,third-party
 @@||statcounter.com/js//fusioncharts.charts.js
@@ -35027,16 +35030,12 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||adnz.co/header.js?adTagId=$domain=finanzen.ch
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
-@@||api.cxense.com/public/widget/data$script,xmlhttprequest,domain=businessinsider.de|computerbild.de|handelsblatt.com
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
 @@||asadcdn.com/adlib/$domain=computerbild.de
 @@||asadcdn.com/assets/video/$domain=computerbild.de
 @@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$domain=n-tv.de|rtl.de|toggo.de|vip.de
 @@||businessclick.ch/index.js$domain=finanzen.ch
 @@||classic.comunio.de/clubImg.phtml/$image,~third-party
-@@||cxense.com/cx.cce.js$domain=businessinsider.de
-@@||cxense.com/cx.cce.js$script,domain=handelsblatt.com
-@@||cxense.com/cx.js$domain=businessinsider.de|computerbild.de|handelsblatt.com
 @@||dynamicyield.com/st$script,domain=gigasport.at|gigasport.ch|gigasport.de
 @@||energy.de^*/ivw.js?$domain=energy.de
 @@||ens.nzz.ch^$~third-party
@@ -35166,7 +35165,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 ! 
 ! ---------- Finnish ----------
 ! 
-@@||api.cxense.com/public/widget/data?json=$script,domain=ksml.fi|savonsanomat.fi
 @@||assets.strossle.com/strossle-widget-sdk/$script,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||certona.net^*/resonance.js$domain=zooplus.fi
 @@||clickdimensions.com^$subdocument,domain=fingrid.fi
@@ -35175,7 +35173,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||frosmo.com/recoApi/$xmlhttprequest,domain=apu.fi|eeva.fi|hobbyhall.fi|lily.fi|meillakotona.fi|terve.fi
 @@||mpsnare.iesnare.com/snare.js$script,domain=power.fi|verkkokauppa.com
 @@||nelonenmedia.fi/logger/logger-ini.json$xmlhttprequest,domain=embed.sanoma-sndp.fi|supla.fi
-@@||scdn.cxense.com/cx.js$script,domain=ksml.fi|savonsanomat.fi
 @@||widgets.sprinklecontent.com/v2/$script,xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 ! 
 ! ---------- Hebrew ----------
@@ -35222,9 +35219,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||analytics.edgekey.net/config/$xmlhttprequest,domain=nhk.or.jp
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=nhk.or.jp
 @@||analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$script,domain=nhk.or.jp
-@@||api.cxense.com/document/search?$script,xmlhttprequest,domain=friday.kodansha.co.jp|tv-tokyo.co.jp
-@@||api.cxense.com/persisted/execute$script,domain=nippon.com
-@@||api.cxense.com/public/widget/data$script,xmlhttprequest,domain=cyclestyle.net|friday.gold|friday.kodansha.co.jp|mainichi.jp|nippon.com|shueisha.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=offering-flower.com
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
 @@||b-cloud.templatebank.com/js/gtag.js$~third-party
@@ -35239,8 +35233,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||cm-widget.nakanohito.jp/img/$image
 @@||cmn.gyro-n.com/js/gyr.min.js$domain=benesse-style-care.co.jp
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
-@@||cxense.com/cx.cce.js$domain=mainichi.jp|tarzanweb.jp|wpb.shueisha.co.jp
-@@||cxense.com/cx.js$domain=cyclestyle.net|mainichi.jp|nippon.com|shueisha.co.jp|tarzanweb.jp|tv-tokyo.co.jp
 @@||delivery.satr.jp^$script,domain=mieru-ca.com
 @@||deteql.net/recommend/provision?$xmlhttprequest,domain=t-fashion.jp
 @@||dev.visualwebsiteoptimizer.com^$script,domain=internetorder.dominos.jp
@@ -35410,9 +35402,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||amplitude.com/libs/$script,domain=elconfidencial.com
 @@||ampproject.org/v0/amp-analytics-$script,domain=cnnespanol.cnn.com
 @@||api.apolomedia.com/static/libs/event-tracking.min.js$script
-@@||api.cxense.com/public/widget/$domain=tn.com.ar
 @@||ara.cat/static/BB3Core/images/pixel.gif?hash=$image,domain=ara.cat
-@@||cdn.cxense.com/cx.js$domain=tn.com.ar
 @@||cdn.smartclip-services.com^$script,domain=cerebriti.com
 @@||cloudfront.net/libs/amplitude-$script,domain=elconfidencial.com
 @@||ecestaticos.com/build/js/common/statistics/engines/deepbieventadapter.$domain=elconfidencial.com
@@ -35427,7 +35417,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||mat.socy.es^$script,xmlhttprequest,domain=3djuegosguias.com|3djuegospc.com|applesfera.com|compradiccion.com|directoalpaladar.com|espinof.com|genbeta.com|poprosa.com|trendencias.com|trendenciashombre.com|vidaextra.com|vitonica.com|xatakamovil.com
 @@||metrics.el-mundo.net/b/ss/$image,domain=expansion.com
 @@||mi.tigo.com.co/plugins/cordova-plugin-fingerprint-aio/$script,~third-party
-@@||scdn.cxense.com/cx.cce.js$domain=tn.com.ar
 @@||spxl.socy.es^$script,xmlhttprequest,domain=3djuegosguias.com|3djuegospc.com|applesfera.com|compradiccion.com|directoalpaladar.com|espinof.com|genbeta.com|poprosa.com|trendencias.com|trendenciashombre.com|vidaextra.com|vitonica.com|xatakamovil.com
 @@||tag.search.sensefuel.live/tag/$script,domain=bricomart.es
 @@||tccrestify-dot-tcc-cloud.appspot.com/tracking/$domain=tcc.com.co
