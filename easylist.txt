@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202305010910
+! Version: 202305011004
 ! Title: EasyList
-! Last modified: 01 May 2023 09:10 UTC
+! Last modified: 01 May 2023 10:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -58505,7 +58505,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ! ! pagead2.googlesyndication.com/pagead/managed/js/*/show_ads_impl_
 @@||pagead2.googlesyndication.com/pagead/managed/js/*/show_ads_impl_$script,domain=battlecats-db.com|games.wkb.jp
 ! ! g.doubleclick.net/pagead/ads
-@@||g.doubleclick.net/pagead/ads$frame,domain=game.anymanager.io
+@@||g.doubleclick.net/pagead/ads$subdocument,domain=game.anymanager.io
 ! Non-English
 @@/banner/ad/*$image,domain=achaloto.com
 @@||90-60-90.in.ua/images/moda/advt/$image,~third-party
@@ -58552,7 +58552,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||gakushuin.ac.jp/ad/common/$~third-party
 @@||ganma.jp/view/magazine/viewer/pages/advertisement/googleAdSense.html|$~third-party,xmlhttprequest
 @@||getjad.io/library/$script,domain=allocine.fr
-@@||googleapis.com/js/sdkloader/ima3.js$domain=udn.com
 @@||googletagmanager.com/gtag/js$script,domain=factory.pixiv.net
 @@||googletagservices.com/tag/js/gpt.js$domain=farfeshplus.com|tv-asahi.co.jp|vlive.tv|voici.fr
 @@||gunosy.co.jp/img/ad/$image,~third-party
@@ -58566,12 +58565,8 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||kanalfrederikshavn.dk^*/jquery.openx.js?
 @@||kincho.co.jp/cm/img/bnr_ad_$image,~third-party
 @@||kmsv.jp/images/ad/$image,~third-party
-@@||koshien-live.net/99/adtag.xml$domain=sportsbull.jp
-@@||labymod.net/affiliate/$~third-party
 @@||live.lequipe.fr/thirdparty/prebid.js$~third-party
 @@||mail.bg/mail/index/getads/$xmlhttprequest
-@@||mbank.cz/Adv/Scripts/$~third-party
-@@||mbank.sk/Adv/Scripts/$~third-party
 @@||meduza.io/static/ads/$media,~third-party
 @@||microapp.bytedance.com/docs/page-data/$~third-party
 @@||minigame.aeriagames.jp/*/ae-tpgs-$~third-party
@@ -58611,17 +58606,12 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||suntory.co.jp/beer/kinmugi/img/ad/$image,~third-party
 @@||supabase.co/rest/v1/advert$domain=matchers.fr
 @@||tabiat.gov.tr/KACMS/Files/ad-$image,~third-party
-@@||tcm-koko.ed.jp/images/ad.jpg
 @@||tra.scds.pmdstatic.net/advertising-core/$domain=voici.fr
 @@||trj.valuecommerce.com/vcushion.js
 @@||uze-ads.com/ads/$~third-party
 @@||valuecommerce.com^$image,domain=pointtown.com
-@@||velet.jp/images/adv/$image,~third-party
-@@||wikiwiki.jp^*/plus/adv.png$~third-party
-@@||wp.com/www.datahjelperne.no^*/annonser.png$image,domain=datahjelperne.no
 @@||yads.c.yimg.jp/js/yads-async.js$domain=kobe-np.co.jp|yahoo.co.jp
 @@||yuru-mbti.com/static/css/adsense.css$~third-party
-@@||zinro.net/m/end.php?$~third-party
 ! Allowlists to fix broken pages of advertisers
 ! Google
 @@||ads.google.com^$domain=ads.google.com|analytics.google.com
@@ -58630,16 +58620,8 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||support.google.com^$domain=support.google.com
 ! https://github.com/easylist/easylist/issues/12681
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com
-! Marketgid/MGID
-@@||dashboard.mgid.com^$~third-party
 ! Healthy Advertising (Spanish)
 @@||healthyadvertising.es^$~third-party
-! Openx.com
-@@||netdna-cdn.com^*/OpenX/$domain=openx.com
-@@||openx.com^$domain=openx.com
-! Skimlinks
-@@||api-merchants.skimlinks.com^
-@@||authentication-api.skimlinks.com^
 ! VK.ru/.com
 @@||api.vigo.ru^*/network_status?$object,xmlhttprequest,domain=vk.com
 @@||paymentgate.ru/payment/*_Advert/
@@ -58654,15 +58636,12 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||vk.com^*/ads.css$domain=vk.com
 @@||vk.me/css/al/ads.css$domain=vk.com
 @@||vk.me/images/ads_$domain=vk.com
-! AdRoll
-@@||adroll.com^$xmlhttprequest,domain=adroll.com
-@@||app.adroll.com^$generichide
 ! Yahoo
 @@||gemini.yahoo.com/advertiser/$domain=gemini.yahoo.com
 @@||yimg.com/av/gemini-ui/*/advertiser/$domain=gemini.yahoo.com
 ! Twitter
+@@||ads-api.twitter.com^$domain=ads.twitter.com|analytics.twitter.com
 @@||ads.twitter.com^$domain=ads.twitter.com|analytics.twitter.com
-@@||ton.twimg.com^$domain=ads.twitter.com|analytics.twitter.com
 ! *** easylist:easylist/easylist_allowlist_dimensions.txt ***
 @@||anitasrecipes.com/Content/Images/Recipes/$image,~third-party
 @@||arnhemland-safaris.com/images/made/$image,~third-party
