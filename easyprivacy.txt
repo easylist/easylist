@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202305010318
+! Version: 202305010323
 ! Title: EasyPrivacy
-! Last modified: 01 May 2023 03:18 UTC
+! Last modified: 01 May 2023 03:23 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1744,7 +1744,6 @@
 /front-metrics/*
 /frontend-gtag.
 /frontend-sentry-
-/frosmo.easy.js
 /frtrack.
 /fsrscripts/*
 /FTTrack2.js
@@ -10358,7 +10357,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Estonian
 ||counter.ok.ee^$third-party
 ! Finnish
-||frosmo.com^$third-party
 ||inpref.com^$third-party
 ||kavijaseuranta.fi^$third-party
 ||leiki.com^$third-party
@@ -13835,7 +13833,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dnt-userreport.com^
 ||er.sanoma-sndp.fi/stats/
 ||er.sanoma-sndp.fi/v2/stats/
-||inpref.s3.amazonaws.com^$third-party
 ||insight.fonecta.fi^
 ||nelonenmedia.fi/logger/
 ||tags.op-palvelut.fi^
@@ -35130,9 +35127,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||assets.strossle.com/strossle-widget-sdk/$script,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||certona.net^*/resonance.js$domain=zooplus.fi
 @@||clickdimensions.com^$subdocument,domain=fingrid.fi
-@@||cloudfront.net/frosmo.easy.js$domain=hobbyhall.fi|lippu.fi
-@@||frosmo.com/messageApi$xmlhttprequest,domain=hobbyhall.fi
-@@||frosmo.com/recoApi/$xmlhttprequest,domain=apu.fi|eeva.fi|hobbyhall.fi|lily.fi|meillakotona.fi|terve.fi
 @@||mpsnare.iesnare.com/snare.js$script,domain=power.fi|verkkokauppa.com
 @@||nelonenmedia.fi/logger/logger-ini.json$xmlhttprequest,domain=embed.sanoma-sndp.fi|supla.fi
 @@||widgets.sprinklecontent.com/v2/$script,xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
@@ -35266,7 +35260,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 ! 
 ! ---------- Polish ----------
 ! 
-@@/frosmo.easy.js$domain=sklep.pl.canalplus.com
 @@||gemius.pl/gstream.js
 @@||hit.gemius.pl/__/redataredir?$domain=ing.pl
 @@||hit.interia.pl/iwa_core$script,~third-party
