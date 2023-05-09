@@ -1,10 +1,10 @@
 ! uBO-specific fixes
-downace.com##+js(acis, requestPermission)
-news18.com##+js(acis, serviceworker.register)
-shrinkzzy.link##+js(acis, firebase.initializeApp)
+shrinkzzy.link## + js(acis, firebase.initializeApp)
+downace.com## + js(acis, requestPermission)
+news18.com## + js(acis, serviceworker.register)
 ! International
-rd.fi##.nivoSlider:remove()
 puuilo.fi##.cf-container-wrapper
+rd.fi##.nivoSlider:remove()
 puuilo.fi##body:style(overflow: auto !important)
 ! autoevolution.com
 autoevolution.com###notif_asker_div
@@ -20,36 +20,36 @@ phonearena.com##body:style(overflow: auto !important; position: initial !importa
 ask.fm##.lightbox_overlay
 ask.fm##body:style(overflow: auto !important)
 ! reddit.com (mobile)
-reddit.com##.XPromoBlockingModal
-reddit.com##.XPromoPopup__overlay
-reddit.com##.XPromoBlockingModalRpl
+reddit.com## + js(aeld, block-body-scrolling)
+amp.reddit.com##.AppSelectorModal__body
 reddit.com##.PreviewDrawer
-reddit.com##.XPromoPopup
+reddit.com##.XPromoBlockingModal
+reddit.com##.XPromoBlockingModalRpl
+reddit.com##.XPromoInFeed
 reddit.com##.XPromoPill
-reddit.com##shreddit-experience-tree
-reddit.com##+js(aeld, block-body-scrolling)
+reddit.com##.XPromoPopup
+reddit.com##.XPromoPopupRpl
+reddit.com##.XPromoPopup__overlay
+amp.reddit.com##.upsell_banner
 reddit.com##body,html.scroll-is-blocked:style(overflow: auto !important;)
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
-reddit.com##.XPromoPopupRpl
 reddit.com##body:style(pointer-events:auto !important;)
-reddit.com##.XPromoInFeed
-amp.reddit.com##.AppSelectorModal__body
-amp.reddit.com##.upsell_banner
+reddit.com##shreddit-experience-tree
 ! .bottom-0.fixed
 newsbreak.com##.bottom-0.fixed
 newsbreak.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! rappler.com
-rappler.com##.tp-modal
 rappler.com##.tp-backdrop
+rappler.com##.tp-modal
 rappler.com##body:style(height: auto !important; overflow: auto !important)
 ! flipboard.com (in-app overlay)
 !flipboard.com##.modal-overlay
 !flipboard.com##body:style(overflow: visible!important; position: static!important;)
 !flipboard.com##.outbound-link.button--primary
 ! behance.net (in-app overlay)
+behance.net##.PrimaryNav-appLinkContainer-bhx
 behance.net##.js-vue-mobile-app-upsell
 behance.net##body,html:style(overflow: auto !important; position: initial !important;)
-behance.net##.PrimaryNav-appLinkContainer-bhx
 ! ifunny (in-app overlay)
 ifunny.co##.aq4y._0sJI
 ifunny.co##body,html:style(overflow: auto !important; position: initial !important;)
@@ -62,15 +62,15 @@ trip.com##body:style(overflow: auto !important; position: initial !important;)
 ! dailymail.co.uk (popup notification)
 ! dailymail.co.uk##+js(aopr, DM.later)
 ! player.fm
-player.fm##.bottom-promo-overlay
 player.fm##.bottom-promo
+player.fm##.bottom-promo-overlay
 player.fm##body,html:style(overflow: auto !important; position: initial !important;)
 ! m.economictimes.com
 m.economictimes.com###prominentOverlay
 m.economictimes.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! m.yelp.com
-m.yelp.com##div[class^="overlay__09f24"]
 m.yelp.com##body,html:style(overflow: auto !important; position: initial !important;)
+m.yelp.com##div[class^="overlay__09f24"]
 ! thedesignlove.com
 thedesignlove.com##.cp-overlay
 thedesignlove.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -78,15 +78,15 @@ thedesignlove.com##body,html:style(overflow: auto !important; position: initial 
 linkedin.com##.promo-bottom-sheet
 linkedin.com##body:style(overflow: auto !important; position: initial !important;)
 ! imgur.io
-imgur.io##.SeeImgurOIA-overlay
 imgur.io##.SeeImgurOIA-container
+imgur.io##.SeeImgurOIA-overlay
 imgur.io##body:style(overflow: auto !important; position: initial !important;)
 ! coinpaprika.com (app)
 coinpaprika.com##.coins-promo
 coinpaprika.com##body:style(overflow: auto !important; position: initial !important;)
 ! slickdeals.net (app)
-slickdeals.net##.sdModalOverlay
 slickdeals.net##.bottomBarContainer
+slickdeals.net##.sdModalOverlay
 slickdeals.net##body:style(overflow: auto !important; position: initial !important;)
 ! canva.com (mobile app, and scroll fix)
 canva.com##.BB_TDQ[style="height: auto; max-height: 66vh;"]
@@ -95,8 +95,8 @@ canva.com##body:style(overflow: auto !important; position: initial !important;)
 ebay.com##.pc-dweb
 ebay.com##html:style(overflow: auto !important; position: initial !important;)
 ! audius.co
+audius.co## + js(rc, scrollLock, , stay)
 audius.co##[class*="AppRedirectPopover_container_"]
-audius.co##+js(rc, scrollLock, , stay)
 audius.co##body:style(overflow: scroll !important)
 ! cnet.com (shopping popup)
 cnet.com##.c-shoppingExtModal
@@ -106,29 +106,29 @@ cnet.com##body:style(height: auto !important; overflow: auto !important)
 simpleswap.io##.iRXLZi
 simpleswap.io##body,html:style(overflow: auto !important; position: initial !important;)
 ! m.webtoons.com
-m.webtoons.com##.pop_download_home
 m.webtoons.com##.dim
+m.webtoons.com##.pop_download_home
 m.webtoons.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! 9gag
 9gag.com##.open-in-app
 9gag.com##body:style(overflow: auto !important;)
 ! insider.com,businessinsider.com
-insider.com,businessinsider.com##.in-app-banner
-insider.com,businessinsider.com##body:style(overflow: auto !important; position: initial !important;)
-insider.com,businessinsider.com##.app-button
+businessinsider.com,insider.com##.app-button
+businessinsider.com,insider.com##.in-app-banner
+businessinsider.com,insider.com##body:style(overflow: auto !important; position: initial !important;)
 ! thestar.com
+thestar.com## + js(rc, kumulos-background-mask-blur, , stay)
 thestar.com##.kumulos-background-mask
 thestar.com##.kumulos-prompt
 thestar.com##body,html:style(overflow: auto !important; position: initial !important;)
-thestar.com##+js(rc, kumulos-background-mask-blur, , stay)
 ! inews.hket.com
-inews.hket.com##.app-redirect-panel
-inews.hket.com##+js(rc, no-scroll, html, stay)
+inews.hket.com## + js(rc, no-scroll, html, stay)
 inews.hket.com###app-floating-button
+inews.hket.com##.app-redirect-panel
 ! rc, bottom-0
-walmart.com##+js(rc, bottom-0, , stay)
+walmart.com## + js(rc, bottom-0, , stay)
 ! jp-m.banggood.com (remove top empty space on mobile)
-jp-m.banggood.com##+js(rc,  show-app-bar, , stay)
+jp-m.banggood.com## + js(rc, show-app-bar, , stay)
 ! realestate.co.nz
 realestate.co.nz##.z-overlay
 realestate.co.nz##body:style(height: auto !important; overflow: auto !important)
@@ -139,13 +139,13 @@ miravia.es##html:style(--g-header-top-pos: 0vw !important;)
 instacart.com###native-app-upsell-interstitial
 instacart.com##body:style(height: auto !important; overflow: auto !important)
 ! emailnator.com
+emailnator.com## + js(rc, modal-open, , stay)
 emailnator.com##.modal
 emailnator.com##.modal-backdrop
-emailnator.com##+js(rc, modal-open, , stay)
-emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 emailnator.com##.top-banner
+emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! m.investing.com (Collapse top)
 m.investing.com##.withAppBanner:style(top:0 !important)
 ! similarweb.com (Collapse top)
-similarweb.com##+js(rc, app-banner-parent, body, stay)
+similarweb.com## + js(rc, app-banner-parent, body, stay)
 similarweb.com##.app-header:style(top:0 !important)

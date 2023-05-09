@@ -1,11 +1,11 @@
 ! uBO-specific fixes
 ! youtube ads mitigation testing
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(json-prune, 2.playerResponse.adPlacements)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(json-prune, 2.playerresponse.adPlacements playerresponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(json-prune, playerresponse.adPlacements)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(json-prune, playerresponse.playerAds)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(set, playerresponse.adPlacements, undefined)
+youtube-nocookie.com,youtube.com,youtubekids.com## + js(set, ytinitialplayerresponse.adPlacements, null)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
@@ -13,32 +13,32 @@ audioholics.com##.modal-backdrop
 linuxbabe.com##.pum-active
 linuxbabe.com##html:style(overflow: auto !important)
 ! huckberry.com
-huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
-huckberry.com##.modal-content
 huckberry.com##.fade
+huckberry.com##.modal-content
+huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
 ! bestrecipes.com.au (forced login)
-bestrecipes.com.au##+js(cookie-remover.js, br_mc)
+bestrecipes.com.au## + js(cookie-remover.js, br_mc)
 ! revolver.news
-revolver.news##body:style(overflow: auto !important;)
 revolver.news##.blocker
+revolver.news##body:style(overflow: auto !important;)
 ! 4399.com
-4399.com##+js(aopr, defaultbackgroundimg)
+4399.com## + js(aopr, defaultbackgroundimg)
 ! onegreenplanet.org (Fix page, when attempting to print)
 onegreenplanet.org##body:style(display: block !important)
-! valuewalk.com 
+! valuewalk.com
 valuewalk.com##.mfp-ready
 valuewalk.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! themoscowtimes.com
-themoscowtimes.com##.contribute-modal
 themoscowtimes.com##.contribute-bar
+themoscowtimes.com##.contribute-modal
 themoscowtimes.com##body:style(overflow: auto !important;)
 ! inquinte.ca (intro)
+inquinte.ca## + js(rc, blocked, body, stay)
 inquinte.ca##.redirect-background
-inquinte.ca##+js(rc, blocked, body, stay)
 ! gmarket (right click) https://github.com/easylist/easylist/issues/11894
-gmarket.co.kr##+js(set, document.oncontextmenu, noopFunc)
-gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
-! newrepublic.com (popup) 
+gmarket.co.kr## + js(set, document.oncontextmenu, noopFunc)
+gmarket.co.kr## + js(set, document.onmousedown, noopFunc)
+! newrepublic.com (popup)
 newrepublic.com##.blink-sdk-widget-container
 newrepublic.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/13976
@@ -50,38 +50,37 @@ walletinvestor.com###bio_ep_bg
 walletinvestor.com##body:style(overflow: scroll !important)
 ! 4kdownload.com (fix top empty space)
 4kdownload.com##.page-header:style(top:0 !important)
-! t-nation.com 
+! t-nation.com
 t-nation.com##.toggle_lb_scrolling_mobile
 t-nation.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! Disabling copy/paste
-banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
+banistmo.com## + js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
 ! watchsomuchproxy.com
 watchsomuchproxy.com###ModalWindow
-watchsomuchproxy.com##.modal-backdrop
 watchsomuchproxy.com###btnStopAds
+watchsomuchproxy.com##.modal-backdrop
 watchsomuchproxy.com##body:style(overflow: scroll !important)
 ! Floating video
-texasmonthly.com##.float-player
-texasmonthly.com##+js(rc, float-player, , stay)
-yahoo.com##+js(rc, vp-docked, , stay)
-yahoo.com##+js(rc, vp-docked-mode, , stay)
-msnbc.com,today.com,nbcnews.com##.styles_stuck__gtILi
-msnbc.com,today.com,nbcnews.com##+js(rc, styles_stuck__gtILi, , stay)
-thehill.com##+js(rc, desktop-floating-player, , stay)
-independent.co.uk##+js(rc, sticky, , stay)
-independent.co.uk##+js(rc, jw-flag-floating, , stay)
-foxnews.com,foxbusiness.com##.sticky-video
-foxnews.com,foxbusiness.com##+js(rc, sticky-video, , stay)
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-video-title-bar
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-floating-player
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##+js(rc, desktop-floating-player, , stay)
-telemundopr.com,nbcchicago.com,nbcdfw.com,nbcboston.com,nbcconnecticut.com,nbcphiladelphia.com,nbcsandiego.com,nbclosangeles.com,nbcnewyork.com,nbcbayarea.com##+js(rc,  video-flyout--fixed, , stay)
-kbtx.com,kptv.com##.powa-sticky
-kbtx.com,kptv.com##+js(rc, powa-sticky, , stay)
-wusa9.com,wkyc.com,9news.com,11alive.com##.video__docker_state_docked
-wfaa.com,wkyc.com,9news.com,11alive.com##+js(rc,  video__docker_state_docked, , stay)
+kark.com,ktla.com,ktsm.com,myarklamiss.com,mytwintiers.com,nbc4i.com,news10.com,nwahomepage.com,thehill.com,wavy.com## + js(rc, desktop-floating-player, , stay)
+6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com## + js(rc, dock, , stay)
+texasmonthly.com## + js(rc, float-player, , stay)
+independent.co.uk## + js(rc, jw-flag-floating, , stay)
+kbtx.com,kptv.com## + js(rc, powa-sticky, , stay)
+independent.co.uk## + js(rc, sticky, , stay)
+foxbusiness.com,foxnews.com## + js(rc, sticky-video, , stay)
+msnbc.com,nbcnews.com,today.com## + js(rc, styles_stuck__gtILi, , stay)
+nbcbayarea.com,nbcboston.com,nbcchicago.com,nbcconnecticut.com,nbcdfw.com,nbclosangeles.com,nbcnewyork.com,nbcphiladelphia.com,nbcsandiego.com,telemundopr.com## + js(rc, video-flyout--fixed, , stay)
+11alive.com,9news.com,wfaa.com,wkyc.com## + js(rc, video__docker_state_docked, , stay)
+yahoo.com## + js(rc, vp-docked, , stay)
+yahoo.com## + js(rc, vp-docked-mode, , stay)
+kark.com,ktla.com,ktsm.com,myarklamiss.com,mytwintiers.com,nbc4i.com,news10.com,nwahomepage.com,wavy.com##.desktop-floating-player
+kark.com,ktla.com,ktsm.com,myarklamiss.com,mytwintiers.com,nbc4i.com,news10.com,nwahomepage.com,wavy.com##.desktop-video-title-bar
 6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.dock
-6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##+js(rc, dock, , stay)
+texasmonthly.com##.float-player
+kbtx.com,kptv.com##.powa-sticky
+foxbusiness.com,foxnews.com##.sticky-video
+msnbc.com,nbcnews.com,today.com##.styles_stuck__gtILi
+11alive.com,9news.com,wkyc.com,wusa9.com##.video__docker_state_docked
 ! cbsnews.com (Floating video)
-cbsnews.com##+js(rc, floating, , stay)
+cbsnews.com## + js(rc, floating, , stay)
 cbsnews.com##.floating
