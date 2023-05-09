@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202305092128
+! Version: 202305092145
 ! Title: EasyList
-! Last modified: 09 May 2023 21:28 UTC
+! Last modified: 09 May 2023 21:45 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -57682,6 +57682,8 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+metager.org#?#.result:-abp-has(.advertisement-mark)
+metager.org#?#.result:-abp-has(span:-abp-contains(partnershop))
 rakuten.com#?#div[data-productid]:-abp-has(div.productList_sponsoredAds_RUS)
 alibaba.com#?#.J-offer-wrapper:-abp-contains(Top sponsor listing)
 officedepot.com#?#.od-col:-abp-has(.od-product-card-region-colors-sponsored)
