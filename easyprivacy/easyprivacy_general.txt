@@ -7,9 +7,7 @@
 &EventType=Impression&
 &hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com|~jobscore.com
-&pageReferrer=
 &refer=http$script
-&stats_tkn=
 &t=pageview&
 &tag=IMPRESSION&
 &visitorUuid=
@@ -30,8 +28,6 @@
 -didomi.js
 -dspcookiematching.
 -event-tracking.
--fb-pixel-
--ga-track.
 -ga-tracker.
 -ga-tracking/
 -gatracker.
@@ -48,7 +44,6 @@
 -realtime-logging-
 -rttracking.
 -sa-tracker-
--sc-analytics.
 -scroll-tracker.js
 -track-inview.
 -tracker-geoip.
@@ -221,7 +216,6 @@
 /acecounter/*
 /acecounter_
 /acounter.php?
-/act_pagetrack.
 /action/analytics
 /ActionLogger?
 /activity-track/?
@@ -252,8 +246,6 @@
 /addrtlog/*
 /adds/counter.js
 /addstats?callback=
-/adform_sync.
-/adinfo?
 /adlogger.
 /adm_tracking.js
 /AdmitadTagTag.js
@@ -381,6 +373,7 @@
 /analytics-collector
 /analytics-core-bundle-
 /analytics-corp.js
+/analytics-data-collector.
 /analytics-dotcom/*
 /analytics-efukt.
 /analytics-endpoint.
@@ -446,11 +439,6 @@
 /analytics/gallup/*
 /analytics/geoip/*
 /analytics/google/*
-/analytics/gw.
-/analytics/hit
-/analytics/hmac-
-/analytics/idg_
-/analytics/init.
 /analytics/initSession
 /analytics/klaviyo_
 /analytics/layer
@@ -466,9 +454,7 @@
 /analytics/script/*
 /analytics/searches
 /analytics/smarttag-
-/analytics/tags
 /analytics/tagx-
-/analytics/timeme.
 /analytics/timing
 /analytics/track-
 /analytics/track?
@@ -521,12 +507,10 @@
 /analyzer2.
 /anametrix/*
 /anapixel.
-/ancAdTrack.js
 /angular-tag.
 /angular-tag_
 /angularlytics.
 /anonymous_user_guid.gif?
-/anycent_tracker_
 /api-analytics.
 /api-insights/log?
 /api/0/stats
@@ -596,8 +580,6 @@
 /ASPixel.js
 /aspstats/index.asp?
 /assets/analytics-
-/assets/analytics.
-/assets/analytics:
 /assets/beacons.js
 /assets/smarttag-$script
 /assignments/impressions
@@ -1996,7 +1978,6 @@
 /gtm_monitor?
 /gtmProd.
 /gtmTracking.
-/gtrack.
 /gujTracker.
 /gv-analytics/*
 /gweb/analytics/*
@@ -4762,6 +4743,7 @@
 ://collector.*/event
 ://email.*/blankpixel.gif
 ://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://gtrack.*/dye
 ://lightning.*/launch/
 ://matomo.$domain=~matomo.org
 ://mint.*/?js
@@ -4769,11 +4751,12 @@
 ://segment-api.
 ://segment-cdn.
 ://track.*/collect
+://track.*/dye
 ://track.*/visitor/
 ://tracker.*/pageview
 ://tracking.*/beacon/
 ://tracking.*/event
-://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.md|~utm.openskies.sh|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
+://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.lol|~utm.md|~utm.openskies.sh|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
 ;type=eligibleimpression;
 ;type=pixel;
 =comscoreAdobeDpvCall&
