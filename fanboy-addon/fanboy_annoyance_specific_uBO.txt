@@ -6,6 +6,11 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
+! youtube anti-adblock mitigation testing
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
