@@ -1,15 +1,13 @@
 ! uBO-specific fixes
 ! youtube ads mitigation testing
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
 ! youtube anti-adblock mitigation testing
-youtube.com#@##YtKevlarVisibilityIdentifier
-youtube.com#@##YtSparklesVisibilityIdentifier
-youtube.com##+js(set, __google_lidar_, 0)
+youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+youtube.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
