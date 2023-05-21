@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202305211102
+! Version: 202305211107
 ! Title: EasyList
-! Last modified: 21 May 2023 11:02 UTC
+! Last modified: 21 May 2023 11:07 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -59574,8 +59574,10 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||search.brave.com/search$xmlhttprequest
 @@||ui.ads.microsoft.com^$~third-party
 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
+@@://127.0.0.1$generichide
 @@://192.168.0.1$generichide
 @@://192.168.1.1$generichide
+@@://localhost:$generichide
 @@||ad-maven.com^$generichide
 @@||ads.microsoft.com^$generichide
 @@||apple.com^$generichide
