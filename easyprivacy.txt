@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202306060109
+! Version: 202306060323
 ! Title: EasyPrivacy
-! Last modified: 06 Jun 2023 01:09 UTC
+! Last modified: 06 Jun 2023 03:23 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -28,7 +28,6 @@
 &refer=http$script
 &t=pageview&
 &visitorUuid=
--ad-targeting?
 -adobe-analytics.
 -adobe-analytics/
 -adobeDatalayer_
@@ -43,11 +42,9 @@
 -ga-tracking/
 -gatracker.
 -geoIP.js
--heatmaps-analytics/
 -inview-tracker.
 -optimization-metrics.
 -page-analytics.
--pixelfront-analytics.
 -quantcast-measurement.
 -rttracking.
 -sa-tracker-
@@ -59,7 +56,6 @@
 -universal-analytics/
 .analytics.min.
 .beacon.min.js
-.cdn-tracking.js
 .click/track?
 .cn/jc.gif?
 .cn/sl.gif?
@@ -141,7 +137,6 @@
 /3.gif?
 /500b-bench.jpg?
 /?dm=*&blogid=$script
-/?dsp_uid=
 /?essb_counter_
 /?livehit=
 /?log=experiment&
@@ -193,14 +188,12 @@
 /activity.gif?
 /AD/PageHits.
 /ad/statistic
-/ad_tracking.
 /adb-analytics
 /adb1.gif?
 /adblock_logging.
 /AdCount/*
 /add_page_view?
 /add_stats
-/add_utm_links.
 /addEvent?action=
 /addLinker.js
 /addLinkerEvents-ga.
@@ -242,7 +235,6 @@
 /adsct?
 /adshield-
 /adstat.
-/adstatistics/*
 /adstats.
 /adstrack.
 /adtctr.
@@ -284,7 +276,6 @@
 /ajax/track.php?
 /ajax_video_counter.php?
 /ajaxlog?
-/ajaxLogger_tracking_
 /ajaxstat/*
 /ajaxtracker.
 /ajx/ptrack/*
@@ -666,7 +657,6 @@
 /browserinfo?f.sid=
 /bsp-analytics.
 /bstat.js
-/bstats.gif
 /btrack.php?
 /buffermetrics/*
 /bugcounter.php?
@@ -888,7 +878,6 @@
 /confiant.js
 /config/analytics.js
 /configuration-stat.js
-/containerTag.js
 /containertag?
 /contentanalytics/*
 /contentiq.js
@@ -897,7 +886,6 @@
 /convertro.js
 /cookie.crumb
 /cookie.gif?
-/cookie.html?sid=
 /cookie/visitor/*
 /cookie?affiliate
 /Cookie?merchant=
@@ -1084,7 +1072,6 @@
 /dtagent_
 /dtm_cm.js
 /dtrack.js
-/dtstats.
 /duel-analytics.
 /dw-tracking-
 /dwanalytics-
@@ -1097,7 +1084,6 @@
 /dynatrace.$~third-party,domain=~dynatrace.com|~dynatrace.jbhunt.com|~dynatrace.udemy.com|~dynatrace.zoom.us|~dynatracelabs.com|~github.com|~github.io
 /dynatrace/*$domain=~dynatrace-managed.com|~dynatrace.com|~dynatracelabs.com|~github.com|~github.io
 /dynaTraceMonitor^
-/dynimpression?rkey=
 /e.gif?
 /e_stat?g_id=
 /eatms.js
@@ -1188,7 +1174,6 @@
 /event?&event=
 /event?adblk=
 /event?auditLinkReceived=
-/event?client=$websocket
 /event?eventType=
 /event?pmo=
 /event?ref=
@@ -1202,7 +1187,6 @@
 /event_logging/*
 /event_tracker?_
 /eventcnt.php?
-/EventhubStats.js
 /EventLog.axd?
 /eventlog.js
 /eventLogServlet?
@@ -1215,7 +1199,6 @@
 /events/counter?
 /Events/Impression?
 /events/page-viewed
-/events/pixel/*$image
 /events/pixelEvent
 /events/track/*
 /events/view-form-open
@@ -1274,7 +1257,7 @@
 /fbevents.js
 /fbevents.min.js
 /fbo-collect.
-/fbpix-
+/fbpix-events-
 /fbpixel.
 /fbpixel/*
 /fdlogger.
@@ -1433,10 +1416,8 @@
 /galinks-
 /gallerystats.
 /galtracklib.
-/gamepageomniture.
 /ganalytics.
 /ganalytics/*
-/gannettomniture.
 /gapagetracker.
 /gapro.js
 /GARecord^
@@ -1457,7 +1438,6 @@
 /gb-tracker-
 /gc?id=*&refurl=
 /gc?refurl=
-/gciAnalytics.
 /gClickTracking.
 /gcount.pl?
 /gcui_vidtracker/*
@@ -1503,11 +1483,9 @@
 /getIbleStats?
 /getlog.gif?
 /getnortonsealimaget.js
-/getPixelSso
 /getstats.js.php
 /getThirdPartyTracking?
 /getTotalHits.
-/GetWebTrekkRecoElement?
 /gifbanner?
 /gifstats.
 /gigyaGAIntegration.
@@ -1573,7 +1551,6 @@
 /googletracker/*
 /googleTracking.js
 /googlytics-
-/gootics.js
 /gosquared-livestats/*
 /gov-tracking.min.js
 /gPageTracking.
@@ -1669,7 +1646,6 @@
 /hpmetrics.
 /hs_track.
 /hsc/trk/*
-/hubspot_tracking.
 /i.gif?
 /i.php?i=
 /i.png?id=
@@ -2127,7 +2103,6 @@
 /mediateGA.js
 /megacounter/*
 /mendelstats.
-/merise.gif?
 /meta-analytics/*
 /meta-tracker/*
 /metatraffic/track.asp?
@@ -2198,7 +2173,6 @@
 /mmpww-tracking.
 /mms.*/pv?
 /mms/get_loaders?
-/mmt.gif?
 /mn-collector.
 /mngi/tracking/*
 /mnppixellibrary.
@@ -2221,7 +2195,6 @@
 /monitor_analytic.
 /monitus.js
 /monsido.js
-/moose-track.
 /morega.js
 /mormont.js
 /mouseover-tracker.
@@ -2238,13 +2211,11 @@
 /mstartracking/*
 /mstat/*
 /mstats.
-/mstr?phpsessid=
 /mstrack/*
 /mt.gif?
 /mtc.js
 /mtc/pageview
 /mtiFontTrackingCode.
-/mtp.*.gif?ref=
 /mtrack.nl/js/*
 /mtracking.
 /mttag/*
@@ -2286,7 +2257,6 @@
 /netresults.js
 /netrum.
 /netstat.
-/netstorage/tealeaf/*
 /nettracker.js
 /nettracker/*
 /netupdate/live.php?
@@ -2326,7 +2296,6 @@
 /nielson_stats.
 /nikioWSJCallback.
 /ninemsn.tracking.
-/ninja-panamera.js
 /NitroCookies.js
 /njs.gif?
 /nlogger.js
@@ -2342,8 +2311,6 @@
 /NNAnalytics/*
 /NNAnalyticsWPSites.
 /no-impression.gif?
-/nofastat.
-/notifications/analytics
 /np?log=
 /npm/perfops-rom
 /npssurvey.
@@ -2379,9 +2346,7 @@
 /omega?ad_
 /omega?tceRow_
 /omni-tracking.
-/omniture-app-measurement.
 /omniture-scode-prod.
-/omniture-visitorapi.
 /omniture.do;
 /omniture/script.
 /omniture/sphere
@@ -2448,7 +2413,6 @@
 /oxAnalytics.
 /oxtracker.
 /p.gif?
-/pa?type=ping&
 /packaged-js/trackers.
 /packed.analytics.
 /page-addviews?
@@ -2558,7 +2522,6 @@
 /piNctTracking.js
 /ping.gif?$domain=~mega689.com
 /ping.php?sid=
-/ping.png?session=
 /ping/?p=
 /ping/?url=
 /ping/pageload?
@@ -2720,7 +2683,6 @@
 /pro-ping.php?
 /probance_tracker.
 /prod-analytics.
-/prod-client-js-logger/*
 /prod-dataroid.
 /prod/log_preprocess
 /prod/ncg/*
@@ -2797,7 +2759,6 @@
 /pxrc.php
 /pxre.php
 /pxtrack.
-/qa-tracker.
 /qlitics.js
 /qtracker-
 /QualtricsSurvey.
@@ -2936,7 +2897,6 @@
 /rtd.js
 /rtkbeacon.gif?
 /rtm-tracking.
-/rtm_etag.
 /rtoaster.js
 /rtracker.
 /rubics_trk
@@ -3252,7 +3212,6 @@
 /statistics.html?url=
 /statistics.js?$third-party
 /statistics.php?data=
-/statistics.php?nid=
 /statistics/get?
 /statistics/getcook.php?
 /statistics/imr.
@@ -3281,7 +3240,6 @@
 /stats.gif?
 /stats.hitbox.com/*
 /stats.php?*http
-/stats.php?format=
 /stats.php?type=
 /stats.php?uri=
 /stats.wawacity.
@@ -3297,14 +3255,12 @@
 /stats/collector.js
 /stats/CounterPage.
 /stats/dlcount_
-/stats/enc-
 /stats/et_track.asp?
 /stats/etag.
 /stats/event.js?
 /stats/footer.
 /stats/ga.
 /stats/header.
-/stats/hmac-
 /stats/ida_
 /stats/impression
 /stats/imr.
@@ -3330,7 +3286,6 @@
 /stats/v2/visit?
 /stats/visitors
 /stats/welcome.php?
-/stats/xmsg_
 /stats/xtcore.
 /stats?aid=
 /stats?blog_
@@ -3465,8 +3420,6 @@
 /testImpressions/*
 /textlink.php?text
 /thbeacon/*
-/thcn_code.
-/thcn_code_
 /thd-new-relic/*
 /thermostat.js
 /thetracker.js
@@ -4145,8 +4098,6 @@
 /wjcountercore.
 /wlexpert_tracker.
 /wlexpert_tracker/*
-/wmgbeaconcode.
-/wmps_tracker.
 /wmxtracker.js
 /woopra.js
 /worldwide_analytics/*
