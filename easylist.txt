@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202306071229
+! Version: 202306071230
 ! Title: EasyList
-! Last modified: 07 Jun 2023 12:29 UTC
+! Last modified: 07 Jun 2023 12:30 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -58837,6 +58837,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+groupon.com##figure[data-clickurl^="https://api.groupon.com/sponsored/"]
 nordstrom.com#?#.ivm_G:-abp-contains(Sponsored)
 noon.com#?#span[class*="productContaine"]:-abp-has(div:-abp-contains(Sponsored))
 mg.co.za#?#article:-abp-has(.sponsored-single)
