@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202306172328
+! Version: 202306172342
 ! Title: EasyPrivacy
-! Last modified: 17 Jun 2023 23:28 UTC
+! Last modified: 17 Jun 2023 23:42 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -566,8 +566,6 @@
 /basesdc.js
 /basicMetricsTracking.
 /batch.gif?
-/batch/1/OE/*
-/batch/1/OP/*
 /batch/action/_:
 /baynote-$script
 /baynote.
@@ -2023,7 +2021,6 @@
 /logViewImpression/*
 /logwebhit.
 /logwriter.php
-/loi/imp?
 /lotame_audiences.
 /loyalty-tracking-
 /ls.gif?
@@ -3519,7 +3516,6 @@
 /udctrack.
 /uds/stats?
 /uecomscore_
-/uedata?
 /uem-ep.js
 /ui/analytics/*
 /uim.html/*
@@ -3530,7 +3526,6 @@
 /umami.js
 /umg-analytics/*
 /umt.gif?
-/unagi.amazon.
 /unbxdAnalytics.
 /unbxdAnalyticsConfig.
 /unica.gif?
@@ -3937,6 +3932,18 @@ _trackWebtrekkEvents.
 _view_pixel&$image
 _webanalytics.
 _WebVitalsReporter_
+! Amazon
+/action-impressions/*
+/ajax/counter?ctr=
+/batch/1/OE/*
+/batch/1/OP/*
+/insights/reportEvent/*
+/loi/imp?
+/remote-weblab-triggers/*
+/uedata?
+/unagi.amazon.
+/usage/Clickstream?
+/usage/ReportEvent?
 ! Email tracking pixels
 &mi_ecmp=
 -track-email-open?
@@ -13485,14 +13492,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||alljapanesepass.com/rstat
 ||als-svc.nytimes.com^
 ||altruja.de/js/micro/integration-ga.js
-||amazon.*/ajax/counter?
-||amazon.*/cdp/usage/Clickstream
-||amazon.*/ReportEvent
 ||amazon.com/1/aiv-web-player/1/OE^
 ||amazon.com/1/events/$domain=~aws.amazon.com
-||amazon.com/1/remote-weblab-triggers/
 ||amazon.com/empty.gif?$image
-||amazon.com^*/impress.html
 ||americanexpress.com/beacon
 ||amethyst.zappos.com^
 ||amnesty.org/collect/
