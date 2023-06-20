@@ -1023,6 +1023,9 @@ swrng.de##.modal-backdrop
 ! dermapharm.de
 dermapharm.de###layer-wrapper
 dermapharm.de##+js(rc, layerActive, , stay)
+! Accept targeting cookies, reject else. (For in-article content & search function of the page)
+rockpapershotgun.com##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A1%2CSTACK42%3A0, 1year)
+rockpapershotgun.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 ! oper.koeln
 oper.koeln##.modal-mask
 oper.koeln##body,html:style(overflow: auto !important; position: initial !important;)
