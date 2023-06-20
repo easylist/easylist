@@ -885,7 +885,9 @@ arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mediuutiset.fi,mikrobitti.fi,talousela
 arvopaperi.fi,iltalehti.fi,kauppalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,uusisuomi.fi##+js(trusted-set-cookie, gravitoData, {"NonTCFVendors":[{"id":1\,"name":"Facebook"\,"consent":true}\,{"id":3\,"name":"Google"\,"consent":true}\,{"id":9\,"name":"Twitter"\,"consent":true}]}, 1year)
 ! Reject optional cookies
 instagram.com##+js(trusted-set-cookie, ig_did, 0C826C21-17C3-444A-ABB7-EBABD37214D7, 1year, , reload, 1)
-instagram.com##+js(trusted-set-cookie, ig_did, 0C826C21-17C3-444A-ABB7-EBABD37214D7, 1year, , reload, 1)
+! Accept targeting cookies, reject else. (For in-article content & search function of the page)
+rockpapershotgun.com##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A1%2CSTACK42%3A0, 1year)
+rockpapershotgun.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 ! zawszepomorze.pl
 zawszepomorze.pl##+js(rc, zp-gtm-scripts--blur, , stay)
 zawszepomorze.pl##.zp-gtm-scripts-modal-wrapper
@@ -1043,9 +1045,6 @@ swrng.de##.modal-backdrop
 ! dermapharm.de
 dermapharm.de###layer-wrapper
 dermapharm.de##+js(rc, layerActive, , stay)
-! Accept targeting cookies, reject else. (For in-article content & search function of the page)
-rockpapershotgun.com##+js(trusted-set-cookie, OptanonConsent, groups=1%3A1%2C2%3A0%2C3%3A0%2C4%3A1%2CSTACK42%3A0, 1year)
-rockpapershotgun.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, 1year)
 ! oper.koeln
 oper.koeln##.modal-mask
 oper.koeln##body,html:style(overflow: auto !important; position: initial !important;)
