@@ -24,10 +24,7 @@
 -geoIP.js
 -inview-tracker.
 -optimization-metrics.
--page-analytics.
 -quantcast-measurement.
--rttracking.
--sa-tracker-
 -scroll-tracker.js
 -track-inview.
 -tracking-pixel.
@@ -48,8 +45,6 @@
 .com/hitlog?
 .com/log/?
 .com/log?event
-.com/log?srvc
-.com/log?type
 .com/mm.gif?
 .com/pvlog?
 .com/s/at?site
@@ -78,14 +73,11 @@
 .ntpagetag.
 .php?action=browse&
 .php?action_name=
-.php?hey_stat=
 .php?logRefer=
 .php?logType=
 .php?notrack=
 .php?p=stats&
 .php?ping=
-.php?refcode=
-.php?self=
 .php?stats=
 .php?tracking=
 .sharecounter.$third-party
@@ -93,12 +85,11 @@
 .siteclarity.
 .sitetracking.
 .skimlinks.js
-.snowplowanalytics.$domain=~snowplowanalytics.com
+.snowplowanalytics.
 .stats?action=
 .svc/?tracking_id=
 .tv/log?event
 .v4.analytics.
-.vsTracking.
 .web-vitals-reporting.
 /.well-known/shopify/monorail
 /0.gif?
@@ -152,7 +143,7 @@
 /a8c-analytics.
 /a8c-analytics/*
 /aap/stats
-/ac.fcgi?
+/access.php?referrer=
 /accessanalyzer/tracker?
 /AccessCounter/*
 /accesstracking/*
@@ -182,7 +173,6 @@
 /addon/analytics/*
 /addpageview/*
 /adds/counter.js
-/addstats?callback=
 /adlogger.
 /adm_tracking.js
 /AdmitadTagTag.js
@@ -208,20 +198,17 @@
 /adpixel.
 /adplogger/*
 /ads/track/*
-/ads?cookie_
 /adsct?
 /adshield-
 /adstat.
 /adstats.
 /adstrack.
-/adtctr.
 /adtoniq-
 /adtrack-
 /adtrk/*
 /adv?pixel_
 /adviewtrack.
 /advstats/*
-/adwords-conversion-tracking.
 /adwords-tracker.
 /adx_remote.
 /aff_i?offer_id=
@@ -234,7 +221,6 @@
 /affiliateTracking.
 /affiliatetracking/*
 /affilinetRetargeting.
-/affl.cgi?
 /afftrack.
 /afftracking.
 /aftrack.
@@ -367,10 +353,8 @@
 /analytics/initSession
 /analytics/klaviyo_
 /analytics/layer
-/analytics/mbox.js
 /analytics/mbox_
 /analytics/metric/*
-/analytics/mouse_
 /analytics/newrelic_
 /analytics/page_view.
 /analytics/pageview
@@ -1610,9 +1594,6 @@
 /homePixelTracking.
 /honeybadger.js$third-party
 /honeybadger.min.js$third-party
-/horizon-pageview?
-/horizon-track.
-/horizon/track?
 /host-analyticsjs-local/*
 /hotmobtag_
 /hpmetrics.
@@ -1853,7 +1834,6 @@
 /log-view.
 /Log.ashx?
 /log.aspx?
-/log.bi?
 /log.cfm?
 /log.collect.
 /log.gif?
@@ -2373,7 +2353,6 @@
 /pageview_candidate.
 /pageviews-counter-
 /pageviews.gif?
-/pageviews/*$domain=~mediawiki.org|~pageviews.wmcloud.org|~quiz.mkpo.li|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
 /pageviews?token=
 /pageviews_counter.
 /PageviewsTracker.
@@ -3164,6 +3143,7 @@
 /tagcommander_
 /tagmanager/event?
 /tagmanager/pptm.
+/tags.js?org_id=
 /tailtarget.js
 /talpa-analytics-
 /TargetAnalyticsAPI-
@@ -3345,6 +3325,7 @@
 /tracking/jitney/*
 /tracking/log.php?
 /tracking/log?
+/tracking/networktrackingservlet
 /tracking/open?
 /tracking/pageview.
 /tracking/pixel.
@@ -3635,7 +3616,6 @@
 /vtrack.aspx
 /vtrack.php?
 /vtrack?vid=
-/vtracker.$domain=~vtracker.org
 /vTracker_
 /vwFiles/analytics/*
 /w.gif?
@@ -3686,7 +3666,6 @@
 /webstats/track.php?
 /webstats_counter/*
 /webtag.js
-/webtrack.$domain=~webtrack.ballcolegrave.co.uk|~webtrack.ballseed.com|~webtrack.dhlecs.com|~webtrack.dhlglobalmail.com
 /webtracker.
 /webtracking/*$~subdocument,domain=~wwwapps.ups.com
 /webtraffic.js
@@ -3713,6 +3692,7 @@
 /wlexpert_tracker.
 /wlexpert_tracker/*
 /wmxtracker.js
+/woocommerce-google-adwords-conversion-tracking-tag/*
 /woopra.js
 /worldwide_analytics/*
 /wp-click-track/*
