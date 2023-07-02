@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202307020117
+! Version: 202307020118
 ! Title: EasyList
-! Last modified: 02 Jul 2023 01:17 UTC
+! Last modified: 02 Jul 2023 01:18 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -59454,6 +59454,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+boots.com#?#li.estore_product_container:-abp-has(.sponsored)
 ulta.com#?#li.ProductListingResults__productCard:-abp-has(.ProductCard__badge>p:-abp-contains(Sponsored))
 kroger.com#?#.AutoGrid-cell:-abp-has(.ProductCard-tags>div>svg.kds-Icon)
 kroger.com#?#.KDSProductCarouselView--default:-abp-has(>.kds-Card>.ProductCard-tags>div>svg.kds-Icon)
