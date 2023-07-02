@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202307020118
+! Version: 202307020119
 ! Title: EasyList
-! Last modified: 02 Jul 2023 01:18 UTC
+! Last modified: 02 Jul 2023 01:19 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -58961,6 +58961,7 @@ unmineablesbest.com##div[class^="uk-visible@"]
 whatsondisneyplus.com##div[class^="whats-"]
 unsplash.com##div[data-ad="true"]
 999thehawk.com##div[data-alias="Sweetjack"]
+walmart.ca##div[data-automation^="HookLogicCarousel"]
 reddit.com##div[data-before-content="advertisement"]
 theverge.com##div[data-concert]
 bedbathandbeyond.com##div[data-cta="plpSponsoredProductClick"]
@@ -59454,6 +59455,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+walmart.ca#?#div[data-automation="product"]:-abp-has(div[data-automation="sponsored-indicator-wrapper"])
 boots.com#?#li.estore_product_container:-abp-has(.sponsored)
 ulta.com#?#li.ProductListingResults__productCard:-abp-has(.ProductCard__badge>p:-abp-contains(Sponsored))
 kroger.com#?#.AutoGrid-cell:-abp-has(.ProductCard-tags>div>svg.kds-Icon)
