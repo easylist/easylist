@@ -1,4 +1,5 @@
 ! Advanced element hiding rules for Adblock Plus
+walmart.ca#?#div[data-automation="product"]:-abp-has(div[data-automation="sponsored-indicator-wrapper"])
 boots.com#?#li.estore_product_container:-abp-has(.sponsored)
 ulta.com#?#li.ProductListingResults__productCard:-abp-has(.ProductCard__badge>p:-abp-contains(Sponsored))
 kroger.com#?#.AutoGrid-cell:-abp-has(.ProductCard-tags>div>svg.kds-Icon)
