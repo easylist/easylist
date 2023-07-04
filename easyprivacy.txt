@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202307040453
+! Version: 202307040517
 ! Title: EasyPrivacy
-! Last modified: 04 Jul 2023 04:53 UTC
+! Last modified: 04 Jul 2023 05:17 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -3220,6 +3220,7 @@
 /track/imp?
 /track/impression/*
 /track/impression?
+/track/pageview?
 /track/pixel.
 /track/pixel/*
 /track/site/*
@@ -4178,8 +4179,6 @@ _track_pixel.gif?
 /metric/gauge
 /mine/bitcoincore/*
 /miner-ui.js
-/miner.*/crypto-
-/miner.*/loader.
 /miner.full.js
 /miner.js
 /miner.min.js
@@ -4203,32 +4202,12 @@ _track_pixel.gif?
 /rum_analytics/*
 /safelinkconverter.js
 /scroll-track.js
-/simple-miner-tweaks/*
 /simple-monero-$script
-/sparechange.js
-/streambeam-jw.js
-/streambeam-video.js
-/tenant.min.js
-/track/pageview?
-/web_miner/*
 /webcoin.js
 /webcoin.min.js
 /webmnr.min.js
 /webmr.js
 /webxmr.js
-/xminer.js
-/xminer.min.js
-/xmr-monero.js
-/xmr.js
-/xmr.min.js
-=ws://*?pool=
-=ws://*?pools=
-=wss://*?pool=
-=wss://*?pools=
-?proxy=*?pool=
-?proxy=*?pools=
-?proxy=ws://$script,websocket
-?proxy=wss://$script,websocket
 ! google tracking
 /client_204?$image,other,ping,script
 /csi_204?$image,other,ping,script
@@ -7467,7 +7446,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||smartoffer.site^$third-party
 ||sourcecode.pro^$third-party
 ||spacepools.org^$third-party
-||sparechange.io^$third-party
 ||srcip.com^$third-party
 ||statdynamic.com^
 ||static-sb.com^$third-party
