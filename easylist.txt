@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202307040309
+! Version: 202307040453
 ! Title: EasyList
-! Last modified: 04 Jul 2023 03:09 UTC
+! Last modified: 04 Jul 2023 04:53 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -60934,8 +60934,6 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||g.doubleclick.net/gampad/ads*%20Web%20Player$domain=imasdk.googleapis.com
 @@||g.doubleclick.net/gampad/ads?*RakutenShowtime$xmlhttprequest,domain=imasdk.googleapis.com
 @@||g.doubleclick.net/pagead/ads?*&description_url=https%3A%2F%2Fgames.wkb.jp$xmlhttprequest,domain=imasdk.googleapis.com
-@@||g.doubleclick.net/pagead/managed/js/gpt/$script,domain=adamtheautomator.com|mediaite.com
-@@||g.doubleclick.net/tag/js/gpt.js$script,xmlhttprequest,domain=accuweather.com|adamtheautomator.com|blastingnews.com|bloomberg.com|chromatographyonline.com|devclass.com|digitaltrends.com|edy.rakuten.co.jp|epaper.timesgroup.com|formularywatch.com|games.coolgames.com|indy100.com|managedhealthcareexecutive.com|mediaite.com|medicaleconomics.com|nycgo.com|physicianspractice.com|standard.co.uk|theta.tv|weather.com
 @@||g2crowd.com/uploads/product/image/$image,domain=g2.com
 @@||gbf.wiki/images/$image,~third-party
 @@||givingassistant.org/Advertisers/$~third-party
@@ -61224,8 +61222,12 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ! ! https://github.com/uBlockOrigin/uAssets/issues/18541
 ! ! cbssports.com|newson.us|worldsurfleague.com
 @@||pubads.g.doubleclick.net/ssai/
+! ! g.doubleclick.net/tag/js/gpt.js
+@@||g.doubleclick.net/tag/js/gpt.js$script,xmlhttprequest,domain=accuweather.com|adamtheautomator.com|blastingnews.com|bloomberg.com|chromatographyonline.com|devclass.com|digitaltrends.com|edy.rakuten.co.jp|epaper.timesgroup.com|filmweb.pl|formularywatch.com|games.coolgames.com|indy100.com|managedhealthcareexecutive.com|mediaite.com|medicaleconomics.com|nycgo.com|olx.pl|physicianspractice.com|standard.co.uk|telsu.fi|theta.tv|weather.com
 ! ! g.doubleclick.net/gpt/pubads_impl_
 @@||g.doubleclick.net/gpt/pubads_impl_$domain=accuweather.com|blastingnews.com|bloomberg.com|chelseafc.com|chromatographyonline.com|digitaltrends.com|downdetector.com|edy.rakuten.co.jp|epaper.timesgroup.com|formularywatch.com|game.anymanager.io|games.coolgames.com|managedhealthcareexecutive.com|mediaite.com|medicaleconomics.com|nationalreview.com|nationalworld.com|nbcsports.com|nycgo.com|physicianspractice.com|scotsman.com|telsu.fi|voici.fr|weather.com
+! ! g.doubleclick.net/pagead/managed/js/gpt/
+@@||g.doubleclick.net/pagead/managed/js/gpt/$script,domain=adamtheautomator.com|filmweb.pl|mediaite.com
 ! ! pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=battlecats-db.com|cpu-world.com|game.anymanager.io|games.wkb.jp|knowfacts.info|lacoste.com|megagames.com|megaleech.us|newson.us|real-sports.jp|slideplayer.com|tampermonkey.net|teemo.gg|thefreedictionary.com
 ! ! pagead2.googlesyndication.com/pagead/managed/js/*/show_ads_impl_
@@ -61317,8 +61319,8 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||scan-manga.eu/*pageID=$~third-party
 @@||search.spotxchange.com/vmap/*&content_page_url=www.bsfuji.tv$xmlhttprequest,domain=imasdk.googleapis.com
 @@||searchad.naver.com^$~third-party
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=olx.pl|telsu.fi
 @@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
+@@||smartadserver.com/genericpost$domain=filmweb.pl
 @@||so-net.ne.jp/access/hikari/minico/ad/images/$~third-party
 @@||stats.g.doubleclick.net/dc.js$script,domain=chintaistyle.jp
 @@||suntory.co.jp/beer/kinmugi/css2020/ad.css?
