@@ -27,6 +27,7 @@
 ###lwp-popover-container
 ###modalCognitoPush
 ###my_web_push_app_box_confirm
+###nlSubscriptionCookie
 ###noti_msg
 ###noti_subscribe_dialog
 ###notification-permission
@@ -41,7 +42,6 @@
 ###pa-push-notification-subscription
 ###popUpNotification
 ###push-alert-block
-###push-container:not(body):not(html)
 ###push-notification
 ###push-notification-box
 ###push-notification-pop-up
@@ -68,6 +68,7 @@
 ###smart_push_smio_overlay
 ###smart_push_smio_window
 ###spm_msg_push_notification
+###subscribeToPush
 ###visilabs_web_push_perm_box
 ###web-alerts-modal
 ###web-push-prompt
@@ -127,16 +128,15 @@
 ##.notificacao.registerPush
 ##.notification-prompt-wrapper
 ##.notification-upsell-push
-##.notification_popup
 ##.notify-optin-wrap
 ##.ns-notification-popup
 ##.ntfc_overlay
 ##.ntfc_popup
 ##.oi-notify
 ##.page__notifications
+##.perfecty-push-dialog-container
 ##.push-area-btn
 ##.push-bx
-##.push-container:not(body):not(html)
 ##.push-message
 ##.push-modal-wrapper
 ##.push-notice
@@ -165,6 +165,7 @@
 ##.pushowl-optin
 ##.pwa-modal-prompt
 ##.rdmapps-push-dialog
+##.setrow-push-popup-container
 ##.showtvPushOverlay
 ##.simple-subscription-form
 ##.softPush_notification
@@ -178,6 +179,8 @@
 ##.window-push
 ##.wordpress-fire-push-popup
 ##.ys-push
+##[data-cypress="soft-push-notification-modal"]
+##[soft-push-notification-modal]
 ##amp-web-push-widget
 ##div[class^="container_NotificationsBanner_"]
 ! Mobile Notifications
@@ -193,6 +196,7 @@
 ###floatingAppButton
 ###head-app-download
 ###inlineBannerForApp
+###iossmartbanner
 ###js-getAppHeader
 ###mn-app-banner
 ###smart-bnr-rbcapp
@@ -212,6 +216,7 @@
 ##.c-app-banner-header-wrap
 ##.c-app-install
 ##.c-install-banner
+##.c-notification-link-app
 ##.cept-banner-link
 ##.footer-app-download
 ##.footer__download-app-container
@@ -242,9 +247,12 @@
 ##.smartbnr-ios
 ##.tmblr-iframe--app-cta-button
 ##.z-bit-smartbanner
+##[class^="adjust-smart-banner"]
 ##a[href^="http://www.mobi24.net/"]
 ##a[href^="https://www.mobi24.net/"]
 ##amp-app-banner
+! substack
+##.subscription-widget-wrap > .show-subscribe
 ! spot.im Notifications
 ##[class*="NotificationsBell__notificationsWrapper-"]
 ! International

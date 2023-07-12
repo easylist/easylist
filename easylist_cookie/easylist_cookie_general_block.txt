@@ -8,9 +8,9 @@
 -cookie-bar.
 -cookie-cnil.
 -cookie-consent-$~script
--cookie-consent.$~script
+-cookie-consent.$~script,domain=~django-cookie-consent.readthedocs.io
 -cookie-consent.js
--cookie-consent/$~script
+-cookie-consent/$~script,domain=~django-cookie-consent.readthedocs.io
 -cookie-dialog.
 -cookie-filter/$script
 -cookie-form.lib.
@@ -114,7 +114,9 @@
 /amds-cookies.
 /amgdpr/*
 /amp-consent-
+/analytics-trackoutbound.js
 /analytics_cookie.
+/anclytic-ajax.
 /app.dsgvo.
 /approvazione-gdpr/*
 /asesor-cookies-$~image
@@ -163,6 +165,7 @@
 /ccm19.js
 /ccm19/*
 /cCookiesH.
+/ccpa/getPrivacyFlag?
 /ccpa/prod/*
 /cdcookie/*
 /cdn/consent_
@@ -225,6 +228,7 @@
 /consentUI/*
 /coobann/*
 /coockiealert.
+/coockieconsent.js
 /cookie-accept.js
 /cookie-alert.
 /cookie-approval.
@@ -258,8 +262,6 @@
 /cookie-layer-
 /cookie-layer.
 /cookie-line.
-/cookie-madeincima.
-/cookie-madeincima/*
 /cookie-manager.
 /cookie-manager/*$domain=~github.com
 /cookie-master.js
@@ -306,6 +308,7 @@
 /cookie.policy.
 /cookie.privacy.
 /cookie.response.
+/cookie.umd.min.
 /cookie.umdaac.
 /cookie/cookie-bar
 /cookie/cookie2.
@@ -367,6 +370,7 @@
 /CookieAccept/*
 /cookieacceptance.
 /cookieAgree.
+/cookieAgreement.js
 /cookieajx.php
 /cookiealert.$script
 /cookiealert/*
@@ -469,6 +473,7 @@
 /cookieNSCconsent.
 /cookieok.js
 /cookieopt-min.
+/cookieOverlay.
 /cookieparty.
 /cookieplugin/cookie.
 /cookiepolicy-
@@ -588,7 +593,9 @@
 /cuk_core.min.js
 /custom/cookies.
 /data-consent.
+/datenschutzV3.min.js
 /dc-cookie-
+/designil-pdpa/*
 /dg-cookie.
 /didomi.js
 /didomi/ui-gdpr-fr.
@@ -597,6 +604,7 @@
 /divascookies_
 /diyscmp.min.js
 /dkmb_gdpr.
+/dl.cmp.min.js
 /dock-privacy-settings.
 /DonCookie.min.js
 /donotviewcookiemsg.
@@ -679,7 +687,6 @@
 /gdpr-consent-
 /gdpr-consent.
 /gdpr-consent/*
-/gdpr-cookie-
 /gdpr-cookie.
 /gdpr-desc
 /gdpr-lfc.
@@ -780,6 +787,7 @@
 /InformativaCookies/*
 /initCookiebanner.
 /intser_cookies.js
+/ionic_consent/*
 /ip-consent.
 /iticonseil-rgpd/*
 /iubenda/iubenda.
@@ -816,7 +824,7 @@
 /keksikysely.min.js
 /kixsimpletrack/*
 /klaro-cookieconsent/*
-/klaro-no-css.
+/klaro-no-css.$~script
 /klaro-styles.min.
 /layer-cookienotice.
 /lbox_cookie.
@@ -886,7 +894,7 @@
 /opnWidget.js
 /opt-in-select/cookie/*
 /optInCookieGdprSSR.
-/otBannerSdk.js$domain=avast.com|avg.com|coca-cola-deutschland.de|coca-cola.co.uk|coca-cola.dk|coca-cola.pl|dhl.com|elmundo.es|gusto.at|mendeley.com|mintos.com|pons.com|thetrainline.com|washingtonpost.com
+/otBannerSdk.js
 /oupcookiepolicy_
 /PDCookieConsent_
 /pescookies.
@@ -942,6 +950,8 @@
 /rb/cookie/*
 /rbicookiepolicy.
 /rdm-daac-notice-
+/real-cookie-banner/*
+/redandblue-cookies/*
 /remote-gdpr.
 /rg-cookies/*
 /rg-gdpr.
@@ -969,6 +979,7 @@
 /script_cookies.js
 /scripts/cookiebar
 /sdk-gdpr.
+/sdk.privacy-center.
 /seopress-cookies.
 /SetConsentCookie.
 /SetCookieBanner.
@@ -1048,6 +1059,7 @@
 /warnCookies.
 /we_use_cookies?
 /webflow-consent-manager
+/webtoffee-gdpr-cookie-consent/*
 /webtrekk_gdpr.
 /wecoma-lite.js
 /widget_privacy/*
@@ -1062,6 +1074,7 @@
 /wp-gdpr-
 /wp-tarteaucitron-
 /wpjslib-ecom.js
+/wpjslib-sgap.js
 /wpjslib-stat.js
 /wpmaster-cookie/*
 /ws5_eucookie/*
@@ -1074,6 +1087,7 @@
 /zdconsent.
 /zdprivacy.
 /zebra_cookie.
+/zgdpr.min.js
 ://ccm.*/app.js?
 =cookie-overlay/
 ?getCookieConsent=
@@ -1130,6 +1144,8 @@ _js_privacy_cmp_
 _logikamentecookielaw/
 _site_cookie_
 _vpcookieconsent/
+! autoscout24
+/as24-cmp/*
 ! Ezoic
 /cmbdv2.js
 /detroitchicago/houston.js
