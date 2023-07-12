@@ -1,25 +1,22 @@
 ! uBO-specific fixes
-! 9gag.com (mobile)
-9gag.com##.open-in-app
-9gag.com##body:style(overflow: auto !important;)
-9gag.com##.shade
 ! youtube ads mitigation testing
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds) 
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
+! youtube anti-adblock mitigation testing
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
 ! linuxbabe.com
 linuxbabe.com##.pum-active
 linuxbabe.com##html:style(overflow: auto !important)
-! rebelnews.com
-rebelnews.com##html:style(overflow: auto !important)
-rebelnews.com##.remodal-wrapper
-rebelnews.com##.remodal-overlay
+! fastcompany.com
+fastcompany.com##.fancybox-overlay
+fastcompany.com##body,html:style(height: auto !important; overflow: auto !important)
 ! huckberry.com
 huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
 huckberry.com##.modal-content
@@ -33,36 +30,91 @@ revolver.news##.blocker
 4399.com##+js(aopr, defaultbackgroundimg)
 ! onegreenplanet.org (Fix page, when attempting to print)
 onegreenplanet.org##body:style(display: block !important)
-! whathifi.com (ghide)
-whathifi.com##.newsletter-signup
+! .swal2-container
+e360.yale.edu##.swal2-container
+e360.yale.edu##body,html:style(overflow: auto !important; position: initial !important;)
 ! valuewalk.com 
 valuewalk.com##.mfp-ready
 valuewalk.com##body,html:style(overflow: auto !important; position: initial !important;)
+! insidethegames.biz
+insidethegames.biz###contribute-modal
+insidethegames.biz##.modal-backdrop
+insidethegames.biz##body,html:style(overflow: auto !important; position: initial !important;)
 ! themoscowtimes.com
 themoscowtimes.com##.contribute-modal
 themoscowtimes.com##.contribute-bar
 themoscowtimes.com##body:style(overflow: auto !important;)
+! inquinte.ca (intro)
+inquinte.ca##.redirect-background
+inquinte.ca##+js(rc, blocked, body, stay)
 ! gmarket (right click) https://github.com/easylist/easylist/issues/11894
 gmarket.co.kr##+js(set, document.oncontextmenu, noopFunc)
 gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
+! neilpatel.com 
+neilpatel.com##.mfp-ready
+neilpatel.com##+js(rc, mfp-popup-exit-quiz-v2, , stay)
+neilpatel.com##body,html:style(overflow: auto !important; position: initial !important;)
+! levernews.com
+levernews.com##.lp-popup__iframe-wrapper
+levernews.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! newrepublic.com (popup) 
 newrepublic.com##.blink-sdk-widget-container
 newrepublic.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/13976
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##.interstitial
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##body:style(overflow-x: auto !important; overflow-y: scroll !important; margin-right: 0 !important;)
-! commondreams.org
-commondreams.org##.block--mayrecurringmodal
-commondreams.org##.modal-backdrop
-commondreams.org##body,html:style(overflow: auto !important; position: initial !important;)
-! cnet.com (shopping popup)
-cnet.com##.c-shoppingExtModal
-cnet.com##.modal-backdrop
-cnet.com##body:style(height: auto !important; overflow: auto !important)
+! imagecolorpicker.com
+imagecolorpicker.com###geist-ui-modal
+imagecolorpicker.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! walletinvestor.com
 walletinvestor.com###bio_ep
 walletinvestor.com###bio_ep_bg
 walletinvestor.com##body:style(overflow: scroll !important)
+! 4kdownload.com (fix top empty space)
+4kdownload.com##.page-header:style(top:0 !important)
 ! t-nation.com 
 t-nation.com##.toggle_lb_scrolling_mobile
 t-nation.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+! Disabling copy/paste
+banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
+! democracynow.org
+democracynow.org###overlay
+democracynow.org###campaign_modal
+democracynow.org##body,html:style(overflow: auto !important; position: initial !important;)
+! brainly.co.id
+brainly.co.id##.js-react-registration-toplayer
+brainly.co.id##body.sg-dialog-no-scroll:style(overflow: auto !important; position: static !important;)
+! https://www.analyticsvidhya.com (login nag)
+analyticsvidhya.com##+js(nostif, loginModal)
+! watchsomuchproxy.com
+watchsomuchproxy.com###ModalWindow
+watchsomuchproxy.com##.modal-backdrop
+watchsomuchproxy.com###btnStopAds
+watchsomuchproxy.com##body:style(overflow: scroll !important)
+! Exit overlay
+firstcoastnews.com,wtsp.com,ajc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com##+js(ra, data-name="exitInterstitial", , stay)
+! Floating video
+texasmonthly.com##.float-player
+texasmonthly.com##+js(rc, float-player, , stay)
+yahoo.com##+js(rc, vp-docked, , stay)
+yahoo.com##+js(rc, vp-docked-mode, , stay)
+msnbc.com,today.com,nbcnews.com##.styles_stuck__gtILi
+msnbc.com,today.com,nbcnews.com##+js(rc, styles_stuck__gtILi, , stay)
+thehill.com##+js(rc, desktop-floating-player, , stay)
+independent.co.uk##+js(rc, sticky, , stay)
+independent.co.uk##+js(rc, jw-flag-floating, , stay)
+foxnews.com,foxbusiness.com##.sticky-video
+foxnews.com,foxbusiness.com##+js(rc, sticky-video, , stay)
+nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-video-title-bar
+nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-floating-player
+nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##+js(rc, desktop-floating-player, , stay)
+telemundopr.com,nbcchicago.com,nbcdfw.com,nbcboston.com,nbcconnecticut.com,nbcphiladelphia.com,nbcsandiego.com,nbclosangeles.com,nbcnewyork.com,nbcbayarea.com##+js(rc,  video-flyout--fixed, , stay)
+kbtx.com,kptv.com##.powa-sticky
+kbtx.com,kptv.com##+js(rc, powa-sticky, , stay)
+wusa9.com,wkyc.com,9news.com,11alive.com##.video__docker_state_docked
+wfaa.com,wkyc.com,9news.com,11alive.com##+js(rc,  video__docker_state_docked, , stay)
+6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.dock
+6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##+js(rc, dock, , stay)
+! cbsnews.com (Floating video)
+cbsnews.com##+js(rc, floating, , stay)
+cbsnews.com##.floating

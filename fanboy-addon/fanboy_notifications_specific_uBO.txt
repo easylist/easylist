@@ -1,7 +1,6 @@
 ! uBO-specific fixes
 downace.com##+js(acis, requestPermission)
 news18.com##+js(acis, serviceworker.register)
-shrinkzzy.link##+js(acis, firebase.initializeApp)
 ! International
 rd.fi##.nivoSlider:remove()
 puuilo.fi##.cf-container-wrapper
@@ -35,6 +34,16 @@ reddit.com##body:style(pointer-events:auto !important;)
 reddit.com##.XPromoInFeed
 amp.reddit.com##.AppSelectorModal__body
 amp.reddit.com##.upsell_banner
+! .bottom-0.fixed
+newsbreak.com##.bottom-0.fixed
+newsbreak.com##body,html:style(overflow: auto !important; position: initial !important;)
+! expedia.com
+:expedia.at,expedia.co.id,expedia.co.in,expedia.co.jp,expedia.co.kr,expedia.co.nz,expedia.co.th,expedia.co.uk,expedia.com.ar,expedia.com.au,expedia.com.hk,expedia.com.sg,expedia.de,expedia.dk,expedia.es,expedia.fi,expedia.fr,expedia.it,expedia.no,expedia.se,hotels.com,expedia.nl,expedia.com###app-layer-customer-notification-centered-sheet-dialog
+:expedia.at,expedia.co.id,expedia.co.in,expedia.co.jp,expedia.co.kr,expedia.co.nz,expedia.co.th,expedia.co.uk,expedia.com.ar,expedia.com.au,expedia.com.hk,expedia.com.sg,expedia.de,expedia.dk,expedia.es,expedia.fi,expedia.fr,expedia.it,expedia.no,expedia.se,hotels.com,expedia.nl,expedia.com##body,html:style(overflow: auto !important; position: initial !important;)
+! rappler.com
+asia.nikkei.com,businesspost.ie,rappler.com##.tp-modal
+asia.nikkei.com,businesspost.ie,rappler.com##.tp-backdrop
+asia.nikkei.com,businesspost.ie,rappler.com##body:style(height: auto !important; overflow: auto !important)
 ! flipboard.com (in-app overlay)
 !flipboard.com##.modal-overlay
 !flipboard.com##body:style(overflow: visible!important; position: static!important;)
@@ -46,22 +55,36 @@ behance.net##.PrimaryNav-appLinkContainer-bhx
 ! ifunny (in-app overlay)
 ifunny.co##.aq4y._0sJI
 ifunny.co##body,html:style(overflow: auto !important; position: initial !important;)
+! sprintmedical.in
+sprintmedical.in##.react-responsive-modal-root
+sprintmedical.in##body:style(height: auto !important; overflow: auto !important)
 ! trip.com (app download overlay)
 trip.com##.tcp-h5-install-pop
-trip.com##body,html:style(overflow: auto !important; position: initial !important;)
+trip.com##body:style(overflow: auto !important; position: initial !important;)
+! dailymail.co.uk (popup notification)
+! dailymail.co.uk##+js(aopr, DM.later)
 ! player.fm
 player.fm##.bottom-promo-overlay
 player.fm##.bottom-promo
 player.fm##body,html:style(overflow: auto !important; position: initial !important;)
+! wunderground.com
+wunderground.com##+js(rc, enable-sda, body, stay)
 ! m.economictimes.com
 m.economictimes.com###prominentOverlay
 m.economictimes.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! m.yelp.com
-m.yelp.com##.overlay__09f24__ApBaK
+m.yelp.com##div[class^="overlay__09f24"]
 m.yelp.com##body,html:style(overflow: auto !important; position: initial !important;)
+! thedesignlove.com
+thedesignlove.com##.cp-overlay
+thedesignlove.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! linkedin.com
 linkedin.com##.promo-bottom-sheet
 linkedin.com##body:style(overflow: auto !important; position: initial !important;)
+! imgur.io
+imgur.io##.SeeImgurOIA-overlay
+imgur.io##.SeeImgurOIA-container
+imgur.io##body:style(overflow: auto !important; position: initial !important;)
 ! coinpaprika.com (app)
 coinpaprika.com##.coins-promo
 coinpaprika.com##body:style(overflow: auto !important; position: initial !important;)
@@ -79,16 +102,58 @@ ebay.com##html:style(overflow: auto !important; position: initial !important;)
 audius.co##[class*="AppRedirectPopover_container_"]
 audius.co##+js(rc, scrollLock, , stay)
 audius.co##body:style(overflow: scroll !important)
+! cnet.com (shopping popup)
+cnet.com##.c-shoppingExtModal
+cnet.com##.modal-backdrop
+cnet.com##.modalSelector
+cnet.com##body:style(height: auto !important; overflow: auto !important)
 ! simpleswap.io (mobile UA)
 simpleswap.io##.iRXLZi
 simpleswap.io##body,html:style(overflow: auto !important; position: initial !important;)
+! m.webtoons.com
+m.webtoons.com##.pop_download_home
+m.webtoons.com##.dim
+m.webtoons.com##body,html:style(overflow: auto !important; position: initial !important;)
+! 9gag
+9gag.com##.open-in-app
+9gag.com##body:style(overflow: auto !important;)
 ! insider.com,businessinsider.com
 insider.com,businessinsider.com##.in-app-banner
 insider.com,businessinsider.com##body:style(overflow: auto !important; position: initial !important;)
 insider.com,businessinsider.com##.app-button
+! thestar.com
+thestar.com##.kumulos-background-mask
+thestar.com##.kumulos-prompt
+thestar.com##body,html:style(overflow: auto !important; position: initial !important;)
+thestar.com##+js(rc, kumulos-background-mask-blur, , stay)
+! inews.hket.com
+inews.hket.com##.app-redirect-panel
+inews.hket.com##+js(rc, no-scroll, html, stay)
+inews.hket.com###app-floating-button
+! rc, bottom-0
+walmart.com##+js(rc, bottom-0, , stay)
+! jp-m.banggood.com (remove top empty space on mobile)
+jp-m.banggood.com##+js(rc,  show-app-bar, , stay)
+! realestate.co.nz
+realestate.co.nz##.z-overlay
+realestate.co.nz##body:style(height: auto !important; overflow: auto !important)
+! miravia.es
+miravia.es###g_download_bar
+miravia.es##html:style(--g-header-top-pos: 0vw !important;)
+! instacart.com
+instacart.com###native-app-upsell-interstitial
+instacart.com##body:style(height: auto !important; overflow: auto !important)
 ! emailnator.com
 emailnator.com##.modal
 emailnator.com##.modal-backdrop
 emailnator.com##+js(rc, modal-open, , stay)
 emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 emailnator.com##.top-banner
+! m.investing.com (Collapse top)
+m.investing.com##.withAppBanner:style(top:0 !important)
+! similarweb.com (Collapse top)
+similarweb.com##+js(rc, app-banner-parent, body, stay)
+similarweb.com##.app-header:style(top:0 !important)
+! eksisozluk1923.com
+eksisozluk1923.com###app-suggestion-container
+eksisozluk1923.com##body,html:style(overflow: auto !important; position: initial !important;)
