@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202307122237
+! Version: 202307122243
 ! Title: EasyList
-! Last modified: 12 Jul 2023 22:37 UTC
+! Last modified: 12 Jul 2023 22:43 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -59478,6 +59478,7 @@ geoguessr.com##aside[class^="ad_"]
 psycom.net##center > .vh-quiz-qborder
 mangas-raw.com##center > div[style]
 greekreporter.com##center > p > [href]
+pricehistoryapp.com##center[class^="min-h-"]
 builtbybit.com##center[style="margin-top: 20px"]
 weatherbug.com##display-ad-widget
 readonepiece.com##div > b
@@ -60080,10 +60081,9 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
-acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.product-card-col:-abp-contains(Sponsored)
-acmemarkets.com,albertsons.com,andronicos.com,Carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.master-product-carousel:-abp-has([data-carousel-driven="sponsored-products"])
+acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.product-card-col:-abp-contains(Sponsored)
+acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.master-product-carousel:-abp-has([data-carousel-driven="sponsored-products"])
 asda.com#?#.co-item:-abp-has(.co-item__sponsored-label)
-albertsons.com,jewelosco.com#?#div.product-card-col:-abp-has(div[data-qa="prd-itm-spnsrd"])
 fanatics.com#?#.product-card:-abp-has(.sponsored-badge)
 walmart.ca#?#div[data-automation="product"]:-abp-has(div[data-automation="sponsored-indicator-wrapper"])
 boots.com#?#li.estore_product_container:-abp-has(.sponsored)
@@ -60091,7 +60091,6 @@ ulta.com#?#li.ProductListingResults__productCard:-abp-has(.ProductCard__badge>p:
 kroger.com#?#.AutoGrid-cell:-abp-has(.ProductCard-tags>div>svg.kds-Icon)
 kroger.com#?#.KDSProductCarouselView--default:-abp-has(>.kds-Card>.ProductCard-tags>div>svg.kds-Icon)
 corvetteblogger.com#?#aside.td_block_template_1.widget.widget_text:-abp-has(>h4.block-title>span:-abp-contains(Visit Our Sponsors))
-safeway.com#?#div.product-card-col:-abp-has(div.product-title__right-text)
 templateshub.net#?#.col-lg-4.col-md-6:-abp-has(>div.singel-course)
 thebay.com#?#div.product:-abp-has(div.citrus-sponsored)
 autotrader.co.uk#?#li:-abp-has(section[data-testid="trader-seller-listing"]>span[data-testid="FEATURED_LISTING"])
@@ -60148,10 +60147,7 @@ bolnews.com#?#[style*="center"]:-abp-contains(Ad)
 timesnownews.com#?#div:-abp-has(> .bggrayAd)
 goodreturns.in,gizbot.com,filmibeat.com,oneindia.com#?#ul>li:-abp-has(> div[id^="taboola-mid-home-stream"])
 oneindia.com#?#ul>li:-abp-has(> div[class^="adg_"])
-jewelosco.com,randalls.com,safeway.com,tomthumb.com#?#.slick-product-carousel:-abp-has([data-carousel-driven="sponsored-products"])
-randalls.com#?#.product-card-col:-abp-has(.product-title__right-text)
 dollargeneral.com#?#li:-abp-has(.dg-product-card__sponsored[style="display: block;"])
-albertsons.com#?#.master-product-carousel:-abp-has([data-carousel-driven="sponsored-products"])
 bleachernation.com#?#.code-block:-abp-has(span:-abp-contains(A D V E R T I S E M E N T))
 deadspin.com#?#section:-abp-has(a[href^="https://theinventory.com"])
 digg.com#?#article.fp-vertical-story:-abp-has(a[href="/channel/digg-pick"])
