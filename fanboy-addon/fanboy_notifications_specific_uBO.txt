@@ -1,7 +1,6 @@
 ! uBO-specific fixes
 downace.com##+js(acis, requestPermission)
 news18.com##+js(acis, serviceworker.register)
-shrinkzzy.link##+js(acis, firebase.initializeApp)
 ! International
 rd.fi##.nivoSlider:remove()
 puuilo.fi##.cf-container-wrapper
@@ -38,6 +37,9 @@ amp.reddit.com##.upsell_banner
 ! .bottom-0.fixed
 newsbreak.com##.bottom-0.fixed
 newsbreak.com##body,html:style(overflow: auto !important; position: initial !important;)
+! expedia.com
+:expedia.at,expedia.co.id,expedia.co.in,expedia.co.jp,expedia.co.kr,expedia.co.nz,expedia.co.th,expedia.co.uk,expedia.com.ar,expedia.com.au,expedia.com.hk,expedia.com.sg,expedia.de,expedia.dk,expedia.es,expedia.fi,expedia.fr,expedia.it,expedia.no,expedia.se,hotels.com,expedia.nl,expedia.com###app-layer-customer-notification-centered-sheet-dialog
+:expedia.at,expedia.co.id,expedia.co.in,expedia.co.jp,expedia.co.kr,expedia.co.nz,expedia.co.th,expedia.co.uk,expedia.com.ar,expedia.com.au,expedia.com.hk,expedia.com.sg,expedia.de,expedia.dk,expedia.es,expedia.fi,expedia.fr,expedia.it,expedia.no,expedia.se,hotels.com,expedia.nl,expedia.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! rappler.com
 asia.nikkei.com,businesspost.ie,rappler.com##.tp-modal
 asia.nikkei.com,businesspost.ie,rappler.com##.tp-backdrop
@@ -65,6 +67,8 @@ trip.com##body:style(overflow: auto !important; position: initial !important;)
 player.fm##.bottom-promo-overlay
 player.fm##.bottom-promo
 player.fm##body,html:style(overflow: auto !important; position: initial !important;)
+! wunderground.com
+wunderground.com##+js(rc, enable-sda, body, stay)
 ! m.economictimes.com
 m.economictimes.com###prominentOverlay
 m.economictimes.com##body,html:style(overflow: auto !important; position: initial !important;)

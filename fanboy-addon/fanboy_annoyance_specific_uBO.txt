@@ -1,13 +1,4 @@
 ! uBO-specific fixes
-! youtube ads mitigation testing
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set, playerResponse.adPlacements, undefined)
-! youtube anti-adblock mitigation testing
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 ! audioholics
 audioholics.com##.modal
 audioholics.com##.modal-backdrop
@@ -23,6 +14,9 @@ huckberry.com##.modal-content
 huckberry.com##.fade
 ! bestrecipes.com.au (forced login)
 bestrecipes.com.au##+js(cookie-remover.js, br_mc)
+! abhiandroid.com
+abhiandroid.com##.cp-modal-popup-container
+abhiandroid.com##body,html:style(height: auto !important; overflow: auto !important)
 ! revolver.news
 revolver.news##body:style(overflow: auto !important;)
 revolver.news##.blocker
@@ -30,6 +24,9 @@ revolver.news##.blocker
 4399.com##+js(aopr, defaultbackgroundimg)
 ! onegreenplanet.org (Fix page, when attempting to print)
 onegreenplanet.org##body:style(display: block !important)
+! .swal2-container
+e360.yale.edu##.swal2-container
+e360.yale.edu##body,html:style(overflow: auto !important; position: initial !important;)
 ! valuewalk.com 
 valuewalk.com##.mfp-ready
 valuewalk.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -47,6 +44,13 @@ inquinte.ca##+js(rc, blocked, body, stay)
 ! gmarket (right click) https://github.com/easylist/easylist/issues/11894
 gmarket.co.kr##+js(set, document.oncontextmenu, noopFunc)
 gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
+! neilpatel.com 
+neilpatel.com##.mfp-ready
+neilpatel.com##+js(rc, mfp-popup-exit-quiz-v2, , stay)
+neilpatel.com##body,html:style(overflow: auto !important; position: initial !important;)
+! levernews.com
+levernews.com##.lp-popup__iframe-wrapper
+levernews.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! newrepublic.com (popup) 
 newrepublic.com##.blink-sdk-widget-container
 newrepublic.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -71,9 +75,15 @@ banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpas
 democracynow.org###overlay
 democracynow.org###campaign_modal
 democracynow.org##body,html:style(overflow: auto !important; position: initial !important;)
+! truthout.org
+truthout.org###XABNJHEY
+truthout.org##.fun-widget-backdrop-holder
+truthout.org##body:style(overflow: auto !important; position: initial !important;)
 ! brainly.co.id
 brainly.co.id##.js-react-registration-toplayer
 brainly.co.id##body.sg-dialog-no-scroll:style(overflow: auto !important; position: static !important;)
+! https://www.analyticsvidhya.com (login nag)
+analyticsvidhya.com##+js(nostif, loginModal)
 ! watchsomuchproxy.com
 watchsomuchproxy.com###ModalWindow
 watchsomuchproxy.com##.modal-backdrop
