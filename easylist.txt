@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202308091958
+! Version: 202308092359
 ! Title: EasyList
-! Last modified: 09 Aug 2023 19:58 UTC
+! Last modified: 09 Aug 2023 23:59 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -85,8 +85,6 @@
 -images/ad-
 -layer-ad.
 -layer-ads/
--leaderboard-ad-
--load-ads.
 -native-ad.
 -page-ad.
 -page-ad?
@@ -163,8 +161,6 @@
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com
 .com/ad?
 .com/adds/
-.com/adinf/
-.com/adlib/
 .com/ads.$~script,~xmlhttprequest
 .com/ads/$image,object,subdocument,domain=~developers.google.com|~sabotage-films.com
 .com/ads?
@@ -356,10 +352,7 @@
 /ad/banner_
 /ad/banners/*
 /ad/bin/*
-/ad/blank.
 /ad/bottom.
-/ad/card-
-/ad/clients/*
 /ad/common/*
 /ad/common_
 /ad/dfp/*
@@ -391,7 +384,6 @@
 /ad/skin-
 /ad/skin_
 /ad/skyscraper.
-/ad/skyscrapper.
 /ad/sponsored-
 /ad/sponsors/*
 /ad/thumbs/*
@@ -585,7 +577,6 @@
 /ad_vertical.
 /ad_view_
 /ad_wide_
-/ad_width/*
 /ad_wrapper.
 /adanalytics.
 /adaptvadplayer.
@@ -685,11 +676,8 @@
 /adfetch?
 /adfetcher?
 /adflash.
-/adflow.$domain=~adflow.adstandards.ca|~adflow.com.au|~adflow.genoudsa.ch|~adflow.io|~adflow.marketing|~adflow.pl
 /adfooter.
 /adfox.$domain=~adfox.de|~adfox.group|~adfox.hu
-/adframe.$~script,~xmlhttprequest,domain=~adframe.com
-/adframe/*$~image
 /adframe2.
 /adframe?
 /adframe_
@@ -1052,7 +1040,6 @@
 /ads_images/*
 /ads_leaderboard_
 /ads_left_
-/ads_load/*
 /ads_loader.
 /ads_manager.
 /ads_medrec_
@@ -1067,7 +1054,6 @@
 /ads_text_
 /ads_top_
 /ads_ui.
-/ads_videos/*
 /ads_view.
 /adsadview.
 /AdsAjaxRefresh.
@@ -1085,43 +1071,20 @@
 /adscontent2.
 /adscontrol.
 /adscontroller.
-/adscript1.
 /adscript?
 /adscript_
-/adscripts/*
-/adscripts1.
-/adscripts2.
-/adscripts3.
 /adscroll.
 /adsdaq_
-/adsdaqbanner_
-/adsdaqbox_
-/adsdaqsky_
 /adsdelivery.
 /adsdelivery/*
 /adsDesktop.
-/adsdm.
 /adsearch.$domain=~adsearch.fr
 /adSearch?
 /adsecondary.
-/adsense-$domain=~www.google.com
-/adsense1.
-/adsense2.
-/adsense3.
-/adsense4.
-/adsense5.
 /adsense?
-/adsenseClient-
 /adsensegoogle.
-/adsensev2.
-/adseo/*
-/adseperator_
 /adser/*
 /adserv.
-/adserv/*
-/adserv1.
-/adserv2.
-/adserv3.
 /adserve-
 /adserve/*
 /adserve_
@@ -1145,18 +1108,12 @@
 /AdServlet?
 /adserv|*|adtech;
 /adsession.$domain=~adsession.com
-/adsession_
 /adsetup.
 /adsetup_
 /adsfac.
 /adsfetch.
-/adsfile.
-/adsfiles.
-/adsfloat.
 /adsforwp-
-/adsfuse-
 /adshandler.
-/adshandler/*
 /adsheader.
 /adshider.
 /adshow-
@@ -1164,17 +1121,14 @@
 /adshow/*
 /adshow?
 /adshow_
-/adsicon/*
 /adsiframe.
 /adsiframe/*
 /adsimage/*
 /adsimages/*
 /adsImg/*
 /adsinclude.
-/adsindie/*
 /adsinsert.
 /adsinteractive-
-/adskin/*
 /adsky.
 /adskyright.
 /adskyscraper.
@@ -2635,8 +2589,6 @@
 /post-ad-
 /post_ads_
 /postad.
-/postprocad.
-/posts_ad.
 /pounder-$~image
 /pp-ad.
 /ppd_ads.
@@ -2647,7 +2599,6 @@
 /premiumads/*
 /prerollad.
 /prerollads.
-/previews/ad/*
 /printad.
 /printad/*
 /prism_ad/*
@@ -2657,7 +2608,6 @@
 /processad.
 /processads.
 /processing/impressions.asp?
-/prod/ads-
 /product-ad/*
 /product-ads/*
 /product_ad_widget/*
@@ -2670,14 +2620,9 @@
 /promo/ads/*
 /promo/affiframe.
 /PromosAds/*
-/promotions/ads.
-/promotions/ads/*
-/promotions/ads?
 /promotools.
 /propellerad.
 /propellerads.$domain=~propellerads.com
-/propellerAdsPush/*
-/protection/ad/*
 /proto2ad.
 /provideadcode.
 /provider_ads/*
@@ -3056,7 +3001,6 @@
 /theologicalpresentation.com/*
 /third-party/dfp/*
 /thirdparty/ad/*
-/thumb-ads.
 /tikilink?
 /tinlads.
 /tinyad.
@@ -3329,13 +3273,10 @@ _ad_handler.
 _ad_head.
 _ad_header.
 _ad_heading.
-_ad_homepage.
-_ad_ids=
 _ad_iframe.
 _ad_image_
 _ad_images/
 _ad_init/
-_ad_integration.
 _ad_label.
 _ad_layer_
 _ad_leaderboard.
@@ -3349,11 +3290,9 @@ _ad_renderer_
 _ad_right.
 _ad_right_
 _ad_rolling.
-_ad_run.
 _ad_server.
 _ad_service.
 _ad_serving.
-_ad_show&
 _ad_side.
 _ad_sidebar_
 _ad_size.
@@ -3381,12 +3320,9 @@ _adcall.
 _adcall_
 _adchoice.
 _adchoices.
-_adcode_
-_adcom.
 _adcount=
 _adengage.
 _adengage_
-_adengine_
 _adframe.$domain=~adsystem.pl
 _adframe/
 _adframe_
@@ -3395,37 +3331,21 @@ _adhesion.
 _adhoc?
 _adhome.
 _adhome_
-_adhoriz.
-_adhub_
-_adify.
-_adjug.
 _adlabel_
 _adlog.
 _admanager/
 _admarking_
-_admin/ads/
-_adminka/
 _adnetwork.
-_adoverride.
-_adpage=
 _adpartner.
 _adplugin.
 _adright.
 _adright2.
 _adrotate-
 _adrotator.
-_ads-rtk.
 _ads.cgi
 _ads.cms?
 _ads.js.
 _ads.php?
-_ads/horiz/
-_ads/horiz_
-_ads/iframe.
-_ads/inhouse/
-_ads/square/
-_ads_iframe.
-_ads_iframe_
 _ads_index_
 _ads_partner.
 _ads_profile.
@@ -3440,14 +3360,11 @@ _adserve.
 _adserve/
 _adserver.
 _adsetup.
-_adsetup_
 _adsframe.
-_adshare.
 _adshow.
 _adsjs.
 _adskin.
 _adskin_
-_adslist.
 _adtech-
 _adtech.
 _adtech/$~stylesheet
@@ -3459,9 +3376,7 @@ _adunits/
 _adv_open_x/
 _advert.
 _advert/
-_advert1.
 _advert_label.
-_advert_sliders/
 _advert_vert
 _advertise-$domain=~linkedin.com
 _advertise.
@@ -3539,11 +3454,8 @@ _popunder_
 _popupunder.
 _post_ads.
 _preorderad.
-_promo_ad/
 _pushads.
-_radio_ad_
 _railads.
-_rebid.js
 _rectangle_ads.
 _reklama_$domain=~youtube.com
 _reporting_ads.
@@ -3567,7 +3479,6 @@ _sidebarad_
 _site_sponsor
 _skinad.
 _small_ad.
-_sponsor_banners/
 _sponsoredlinks_
 _square_ad-
 _square_ad.
