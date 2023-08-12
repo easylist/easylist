@@ -1,10 +1,10 @@
 <!-- 
 EasyPrivacy requests:
 
-** If a site implements any tracking or monitoring, UA/IP/Geo checks, browser detection, analytics, telemetry, linking to third-partys, pixels, referrers, fingerprinting, event/perf logging etc. Regardless how helpful or needed the script(s) are, it will be blocked in EasyPrivacy. Privacy comes first and the block on these scripts will remain in place.
+** If a site implements any tracking or monitoring, UA/IP/Geo checks, browser detection, analytics, telemetry, linking to third-parties, pixels, referrers, fingerprinting, event/perf logging etc. Regardless how helpful or needed the script(s) are, it will be blocked in EasyPrivacy. Privacy comes first, and the block on these scripts will remain in place.
 
-Any additions, changes or removals is at the authors discretion. 
-You're free to counterargue (to a certain point) if you disagree with the decision. 
+Any additions, changes, or removals is at the authors' discretion. 
+You're free to counter-argue (to a certain point) if you disagree with the decision. 
 To avoid being banned, don't constantly re-open or create new (related) issue reports.
 -->
 
@@ -33,14 +33,14 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 #### Your settings:
 
-<!-- Just to ensure there is no issues or conflicts with other webbrowser extensions.
-     - Ensure you're running just one adblock extension only.
-     - Disable Noscript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, 
+<!-- Just to ensure there are no issues or conflicts with other web browser extensions.
+     - Ensure you're running just one ad block extension only.
+     - Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, 
        AntiBanner, VPN extension before reporting (and re-test with them disabled). -->
 
 - OS/version: 
 - Browser/version: 
-- Adblock extension/version: 
+- Ad block extension/version: 
 
 #### Other details:
 

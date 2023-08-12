@@ -1,4 +1,6 @@
 ! Advanced element hiding rules for Adblock Plus
+skyscanner.com,skyscanner.net#?#div:-abp-has(>a[data-testid="inline-brand-banner"])
+aliexpress.com,aliexpress.us#?#a[class*="manhattan--container"]:-abp-has(span[class^="manhattan--ad"])
 skyscanner.com,skyscanner.net#?#div>a:-abp-has(div[class^="DefaultBanner_sponsorshipRow"])
 meijer.com#?#.product-grid__product:-abp-has(.product-tile__sponsored)
 loblaws.ca,provigo.ca,valumart.ca,yourindependentgrocer.ca,zehrs.ca#?#.chakra-container:-abp-contains(Featured Items)
@@ -204,6 +206,6 @@ xing.com#?#div[class^="styles-grid-col-"]:-abp-has(span[class^="MediaObject-Medi
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se#?#div[class^=" container_"]:-abp-has(a[href^="/adredir?"])
 1001tracklists.com#?#a[onclick^='gaLnkTr']
 bestbuy.com#?#[id^="atwb-ninja-carousel"]
-filecrypt.co#?#div:-abp-properties(max-width: 900px;)
+filecrypt.co,filecrypt.cc#?#div:-abp-properties(max-width: 900px;)
 metager.org#?#.result:-abp-has(a[href^="https://r.search.yahoo.com/"])
 metager.org#?#.result:-abp-has(a[href^="https://metager.org"][href*="/partner/r?"])
