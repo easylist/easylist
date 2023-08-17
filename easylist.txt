@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202308171224
+! Version: 202308171230
 ! Title: EasyList
-! Last modified: 17 Aug 2023 12:24 UTC
+! Last modified: 17 Aug 2023 12:30 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -61648,6 +61648,7 @@ rakuten.com#?#div[data-productid]:-abp-has(div.productList_sponsoredAds_RUS)
 alibaba.com#?#.J-offer-wrapper:-abp-contains(Top sponsor listing)
 officedepot.com#?#.od-col:-abp-has(.od-product-card-region-colors-sponsored)
 cargurus.com#?#div[data-cg-ft="car-blade"]:-abp-has(div[data-cg-ft="sponsored-listing-badge"])
+radio.net#?#header ~ div[class]:-abp-has(> div[class] > div[id^="RAD_NET_"])
 sephora.com#?#div[class^="css-"]:-abp-has(>a:-abp-has(span:-abp-contains(Sponsored)))
 sephora.com#?#div[data-comp^="RmnBanner"]:-abp-has(p:-abp-contains(Sponsored))
 booking.com#?#div[data-testid="property-card"]:-abp-has(div[data-testid="new-ad-design-badge"])
