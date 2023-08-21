@@ -1,5 +1,5 @@
 ! Advanced element hiding rules for Adblock Plus
-dictionary.com#?#main div[class]:-abp-has(> [data-type="ad-vertical"])
+dictionary.com,thesaurus.com#?#main div[class]:-abp-has(> [data-type="ad-vertical"])
 skyscanner.com,skyscanner.net#?#div:-abp-has(>a[data-testid="inline-brand-banner"])
 aliexpress.com,aliexpress.us#?#a[class*="manhattan--container"]:-abp-has(span[class^="manhattan--ad"])
 skyscanner.com,skyscanner.net#?#div>a:-abp-has(div[class^="DefaultBanner_sponsorshipRow"])
