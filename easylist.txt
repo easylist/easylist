@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202308211634
+! Version: 202308211647
 ! Title: EasyList
-! Last modified: 21 Aug 2023 16:34 UTC
+! Last modified: 21 Aug 2023 16:47 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -19030,6 +19030,7 @@ _800x80_
 ##[data-role="tile-ads-module"]
 ##[data-template-type="nativead"]
 ##[data-testid="ad_testID"]
+##[data-type="ad-vertical"]
 ##[href="//jjgirls.com/sex/ChaturbateCams"]
 ##[href="//sexcams.plus/"]
 ##[href="https://jdrucker.com/gold"] > img
@@ -61593,6 +61594,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+dictionary.com#?#main div[class]:-abp-has(> [data-type="ad-vertical"])
 skyscanner.com,skyscanner.net#?#div:-abp-has(>a[data-testid="inline-brand-banner"])
 aliexpress.com,aliexpress.us#?#a[class*="manhattan--container"]:-abp-has(span[class^="manhattan--ad"])
 skyscanner.com,skyscanner.net#?#div>a:-abp-has(div[class^="DefaultBanner_sponsorshipRow"])
