@@ -198,6 +198,7 @@
 /adstrack.
 /adtoniq-
 /adtrack-
+/adtracking.asmx
 /adtrk/*
 /adv?pixel_
 /adviewtrack.
@@ -323,6 +324,7 @@
 /analytics/collect?
 /analytics/collector.
 /analytics/collector/*
+/analytics/comscore.js
 /analytics/dist/*
 /analytics/embed/*
 /analytics/engine/*
@@ -598,6 +600,7 @@
 /bundle/analytics.
 /bundles/metrics.
 /bunsen/events/*
+/bv-analytics.js
 /byside_webcare.
 /bytro/logs/*
 /c.gif?
@@ -620,6 +623,7 @@
 /cdn-cgi/beacon/*
 /cdn-cgi/ping?$image
 /cdn-cgi/rum?
+/cdn-cgi/trace|$xmlhttprequest
 /cdn-cgi/zaraz/*
 /cdn_cookie_service.$image
 /cdnperf-rum.
@@ -1424,7 +1428,6 @@
 /hash_stat_bulk/*
 /hc/activity
 /hc_pixel.gif?
-/headerpixel.gif?
 /headupstats.gif?
 /healthanalytics.js
 /heatmap_log.js
@@ -1831,14 +1834,9 @@
 /logviewedpage?
 /logViewImpression/*
 /logwebhit.
-/logwriter.php
-/lotame_audiences.
 /ls.gif?
 /lunametrics-
-/lycostrack.js
 /m.gif?
-/m1x1.jpg
-/m360lib.js
 /madAnalytics.js
 /magento/page-visit?
 /magento2.js
@@ -1850,16 +1848,10 @@
 /matomo/*$domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
 /maxymiser.
 /Maxymiser/*
-/mbcom.tracking.
-/mbox/at/*
 /mcookie.aspx
 /mcount.cgi?
 /mcounter/*
-/md.js?country=
-/mdwtc/click_thru/*
-/measure/data-capture/*
 /measure/pixel/*
-/measure/spring.
 /measure/visit/*
 /media-analytics.min.
 /media-analytics/*
@@ -1879,8 +1871,6 @@
 /metrics-backend/*
 /metrics-ga.
 /metrics/event?
-/metrics/ga.html?
-/metrics/image.gif?
 /metrics/init?
 /metrics/metrics$domain=~docs.datadoghq.com|~spatineo.com
 /metrics/onload
@@ -1889,18 +1879,14 @@
 /metrics/stat.
 /metrics/statsd/*
 /metrics/survey/*
-/metrics/tpi?
 /metrics/track/*
 /metrics/v1/frontend/*
 /metrics/vanity/?
-/metricsISCS.
 /metrika/tag.js
 /mi/insite/*
 /mianalytics.
-/micro.php?action=view&
 /microsoft.cognitiveservices.speech.sdk.bundle.js
 /min/gtm/*
-/minder-tracker.
 /mint/?js
 /mint/?record
 /mintstats/?js
@@ -2224,6 +2210,7 @@
 /perf-vitals.
 /perf-vitals_
 /perflog/*
+/perfmatters/js/analytics.js
 /perfmetrics.js
 /perfops-cc.
 /performance-logger.
@@ -3695,6 +3682,7 @@ _social_tracking.js
 _stat.php?referer=
 _stat_counter.php?
 _trackWebtrekkEvents.
+_vercel/insights/
 _view_pixel&$image
 _webanalytics.
 _WebVitalsReporter_
@@ -3732,6 +3720,7 @@ _WebVitalsReporter_
 .backcountry.com/o/$image
 .bahn.de/op/$image
 .bhphotovideo.com/mo/
+.birdsend.net/o/$image
 .bluekai.com/*?e_id_
 .bmetrack.com/c/$image
 .cmail19.com/t/$image
@@ -3817,6 +3806,7 @@ _WebVitalsReporter_
 .spreadshirt.net/mo/$image
 .starbucks.com/a/
 .substack.com/o/$image
+.substackcdn.com/open?$image
 .theatlantic.com/email.gif?
 .titus.de/oo/$image
 .travis-ci.com/r/$image
@@ -3912,12 +3902,14 @@ _WebVitalsReporter_
 /trcksp.
 /wf/open?upn=$image
 /wizrocketmail.net/r?$image
+://2ip.*/member_photo/$third-party
 ://email.*/e/o/
-://img.promio-connect.com/
 ://parcel-api.delivery-status.*/open/$image
 ://t.order.*/r/?id=$image
 _ad_impression.
 _track_pixel.gif?
+img.promio-connect.com$image
+omni.soundestlink.com$image
 ! hellofresh / greenchef / everyplate
 /otlp/traces
 ! Pinterest
