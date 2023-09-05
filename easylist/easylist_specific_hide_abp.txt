@@ -1,4 +1,6 @@
 ! Advanced element hiding rules for Adblock Plus
+heb.com#?#div:-abp-has(>div[id^="hrm-banner-shotgun"])
+heb.com#?#div[class^="sc-"]:-abp-has(>div[data-qe-id="productCard"]:-abp-contains(Promoted))
 lowes.com#?#.tile_group:-abp-has(.sponsored-badge)
 4wank.com#?#.video-holder > center > :-abp-contains(/^Advertisement$/)
 hannaford.com#?#.header-2:-abp-contains(Sponsored Suggestions)
