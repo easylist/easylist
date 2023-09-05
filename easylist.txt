@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202309051036
+! Version: 202309051039
 ! Title: EasyList
-! Last modified: 05 Sep 2023 10:36 UTC
+! Last modified: 05 Sep 2023 10:39 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -61643,6 +61643,8 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
 ! Advanced element hiding rules for Adblock Plus
+heb.com#?#div:-abp-has(>div[id^="hrm-banner-shotgun"])
+heb.com#?#div[class^="sc-"]:-abp-has(>div[data-qe-id="productCard"]:-abp-contains(Promoted))
 lowes.com#?#.tile_group:-abp-has(.sponsored-badge)
 4wank.com#?#.video-holder > center > :-abp-contains(/^Advertisement$/)
 hannaford.com#?#.header-2:-abp-contains(Sponsored Suggestions)
