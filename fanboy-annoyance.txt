@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202309100013
+! Version: 202309100246
 ! Title: Fanboy's Annoyance List
-! Last modified: 10 Sep 2023 00:13 UTC
+! Last modified: 10 Sep 2023 02:46 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1385,7 +1385,6 @@ _twitter_follow.
 ! https://www.wpvideolock.com/
 /wp-content/plugins/videolock/*$script
 ! *** easylist:easylist_cookie/easylist_cookie_general_block.txt ***
-&accept_cookies=
 -agree-cookies/
 -cnil-popup-
 -consent-banner-
@@ -1415,7 +1414,6 @@ _twitter_follow.
 -CookieDisclaimer-
 -CookieInfo.
 -cookiePolicy.
--cookies-bar/
 -cookies-disclaimer.
 -cookies-notice/
 -cookies-policy.
@@ -1423,7 +1421,6 @@ _twitter_follow.
 -dsgvo-cookies/
 -eu-cookie/$script
 -eu-cookies/$script
--eucookie.
 -gdpr-compliance/
 -gdpr-consents/
 -gdpr-cookie-$~script
@@ -1432,23 +1429,18 @@ _twitter_follow.
 -gdpr-popup.
 -gdpr-public.
 -informativa-cookie.
--legalconcerns_cookies.
 -popups-cookieplus/
 -privacy-cookie-
 -quantcast-cmp/
 -rodo.min.js
--tracking-consent.
--webcom-cookie-
 -wordpress-cookie-
 .advertisingCookie.
-.bpcookies.
 .consent-cookie.
 .cookie-law.$script
 .cookie-madeincima.
 .cookie-policy.
 .cookie.notice.
 .cookie.policy.
-.cookie_law.
 .cookieconsent.
 .cookiecuttr.
 .cookieinfo2.
@@ -1460,46 +1452,37 @@ _twitter_follow.
 .cookiesdirective_
 .cookiesmessage.
 .cookiesPolicy.
-.divascookies-
-.EuCookieCompliance.
-.fscookieconsent.
+.EuCookieCompliance.min.js
 .gdpr-banner.
 .gdpr.js
 .gdpr.min
 .GdprCookieBanner.
-.javascript.gdpr.
 .notificationCookies.
 .PrivacyDataNotice.
-/1_cookie.
-/2018-gdpr.
-/24cookiebar.
-/24cookiebarutils.
+/1_cookie.js
+/24cookiebar.js
 /?spu_action=*spu_load&
-/?tx_z7cookiemanager
 /__cookie_js.php
 /__enzuzo-cookiebar.
+/_cookie_consentement.js
+/_cookielaw_mip.js
 /_gz/_privacy.
-/ac_cookiesvalidation/*
+/_js__cookie_functions.js
 /acc.cookienotification.
-/accept-cookie.
-/accept-cookies.
-/acceptCookies.
 /adk-iubenda.js
-/adsconsent.
+/adsconsent.min.js
 /adscookies.js
 /adtoniq-messenger-$script,~third-party
-/agreeCookie.
 /agreements/cookie?
 /ajax/dataconsentcookies
-/AjaxStyleJamHeaderCookiesMessage?
 /ajw/gdpr/*
 /ajw_gdpr.
 /alertcookie.
 /alertcookies.
 /am-cookie-ban/*
+/amasty/amgdpr/*
 /amCookieApproval.
 /amds-cookies.
-/amgdpr/*
 /amp-consent-
 /analytics-trackoutbound.js
 /analytics_cookie.
@@ -1509,10 +1492,9 @@ _twitter_follow.
 /asesor-cookies-$~image
 /assets/cookies_
 /assets/gdpr/*
-/ato-cookiebanner.
 /avada-privacy.js
-/avg-cookie.
-/avia-snippet-cookieconsent.
+/avg-cookie.js
+/avia-snippet-cookieconsent.js
 /avisCookies.
 /aviso_cookies.
 /avisopcgdpr.
@@ -1541,7 +1523,6 @@ _twitter_follow.
 /borlabs-cookie/*$~script
 /borlabs_cookie/*$~script
 /branding/cb-scripts-
-/bt.cookies.
 /build/js/it-cc.js
 /bundle-gdpr.min.js
 /c4s_cookie_
@@ -1666,7 +1647,6 @@ _twitter_follow.
 /cookie-overlay-
 /cookie-overlay-pl.
 /cookie-partner-list.
-/cookie-policy-
 /cookie-policy.css
 /cookie-policy.js
 /cookie-policy.min.
@@ -2187,14 +2167,17 @@ _twitter_follow.
 /jcookie/*
 /jcookielaw.
 /jEuCookieLaw.
-/jjp_eucookie_
-/jppol-consent/*
+/jquery.bpcookies.min.js
 /jquery.coo-kie.js
-/jquery.cookie-alert.
-/jquery.cookieaccept.
-/jquery.cookieBar.
+/jquery.cookie-alert.js
+/jquery.cookieaccept.js
+/jquery.cookieaccept.min.js
+/jquery.cookiebar.js
+/jquery.cookiebar.min.js
 /jquery.cookiebargenial.js
-/jquery.eu-cookie-consent.
+/jquery.divascookies-
+/jquery.eu-cookie-consent.js
+/jquery.fscookieconsent.js
 /jquery.tipsy.cookie.
 /jqueryCookieGuard.
 /js/cookie-popup
@@ -2248,6 +2231,7 @@ _twitter_follow.
 /mod_ebstickycookienotice/*
 /mod_eu_cookies/*
 /mod_jbcookies/*
+/mod_logikamentecookielaw/*
 /modal-gdpr.
 /module-rgpd.
 /mp_acookie.
@@ -2320,27 +2304,23 @@ _twitter_follow.
 /privacy_popup?
 /privacychoices.js
 /privacycookie/*
-/privacyframe.
 /privacyopt.js
 /privacypolicy.js
 /privacyPopup/*
-/pro-cp-dialog.
-/protocalCookie.
+/pro-cp-dialog.js
+/protocalCookie.js
 /protv_cookies.
 /pum-site-scripts-
 /pum-site-scripts.
 /pwcookielaw.js
-/pxpcookies.
+/pxpcookies.js
 /qc-consent.js
 /qciol.min.js
 /quantastCmp.js
-/quantcast-choice.
-/rb/cookie/*
-/rbicookiepolicy.
+/quantcast-choice.js
 /rdm-daac-notice-
 /real-cookie-banner/*
 /redandblue-cookies/*
-/remote-gdpr.
 /rg-cookies/*
 /rg-gdpr.
 /rgpd.js
@@ -2441,7 +2421,6 @@ _twitter_follow.
 /w034CookieDirective.js
 /w4.cookiebar.
 /wa_consentUI.
-/wa_iframeCmp.
 /wa_lib.js
 /Wamoco_CookieConsentUi/*
 /warnCookies.
@@ -2450,6 +2429,7 @@ _twitter_follow.
 /webtoffee-gdpr-cookie-consent/*
 /webtrekk_gdpr.
 /wecoma-lite.js
+/widget_cookieschecker.js
 /widget_privacy/*
 /widgets/cookies-
 /wkp_cookies.js
@@ -2478,8 +2458,6 @@ _twitter_follow.
 /zebra_cookie.
 /zgdpr.min.js
 ://ccm.*/app.js?
-=cookie-overlay/
-?getCookieConsent=
 _alert_cookie/
 _cookie_alert/
 _cookie_banner.
@@ -2489,9 +2467,7 @@ _cookie_cnil.
 _cookie_compliance.
 _cookie_consent.
 _cookie_consent/
-_cookie_consentement.
 _Cookie_Directive-
-_cookie_head.
 _cookie_hint.
 _cookie_info.
 _cookie_law.js
@@ -2506,17 +2482,11 @@ _cookie_utf8.
 _cookie_widget.
 _cookiebar.
 _cookiebar_
-_cookieCgu.
 _CookieConsent.js
-_cookielaw_mip.
 _CookieLegalNotice.
-_cookieMsgBox/
 _cookieNotice.
 _CookiePolicy.$~stylesheet
-_cookies_disclosure/
-_cookies_policy/
 _cookiesbar.
-_cookieschecker.
 _cookiewarn.
 _eu_cookie.
 _eu_cookie_
@@ -2525,13 +2495,6 @@ _europecookielaw.
 _gdpr_callback_
 _gdpr_consent.
 _gdpr_cookie_
-_gravito_cmp.
-_hw_cookie_dialog.
-_js__cookie_functions.
-_js_privacy_cmp_
-_logikamentecookielaw/
-_site_cookie_
-_vpcookieconsent/
 ! autoscout24
 /as24-cmp/*
 ! Ezoic
@@ -48368,7 +48331,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||cookiebot.com/uc.js$domain=bakingmad.com|flughafen-zuerich.ch|stock3.com
 @@||cookiebot.com^$domain=apetro.pt|asambeauty.com|bankia.es|bergbauernmilch.de|berlingske.dk|biomarkt.de|bt.dk|caisse-epargne.fr|cajamar.es|cineplex.de|danbolig.dk|dasinvestment.com|derivate.bnpparibas.com|digimon.kochfilms.de|digitaltrends.com|dr.dk|egmont.com|ekstrabladet.dk|elmzell.se|euroatla.pt|fidelityhouse.eu|finanzmarktwelt.de|fof.se|formule1.nl|harzwasserwerke.de|hoyavision.com|kino.dk|login.nos.pt|mein-grundeinkommen.de|neue.at|nngroup.com|nordiskfilm.com|plaion.com|quandoo.it|refinery29.com|rhein-ruhr.stadtmobil.de|scubadiving.com|sportdiver.com|stern.de|storyhouseegmont.dk|storyhouseegmont.no|storyhouseegmont.se|swspremberg.de|toyota-forklifts.se|vn.at|warscrap.io|werder.de|werkenbijlidl.nl|wwf.fi|xn--myeblttle-z2a.de
 @@||cookielawinfo.com^$~third-party
-@@||cookist.com^*/remote-gdpr.min.js$~third-party
 @@||crazy-factory.com/ajax_box_cookie_banner.php$~third-party
 @@||d3skrbn3b616hn.cloudfront.net/b/mw/lib.f-cookie-banner.$script,domain=menulog.com.au
 @@||dayforcehcm.com/CandidatePortal/Scripts/CandidatePortal/Cookie/CookieBanner.js$~third-party
@@ -48541,7 +48503,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||cdn.rp.pl/cmp/cmp.min.js
 @@||cdn.transcend.io/cm/$script,domain=visible.com
 @@||cdp.pl/skin/*/cookies.js
-@@||ciaopeople.it^*/remote-gdpr.$script,domain=cookist.com|cookist.it|fanpage.it|ohga.it
 @@||ciaopeople.it^*/sdk-gdpr.$script,domain=cookist.com|cookist.it|fanpage.it|ohga.it
 @@||cloudflare.com^*/cookieconsent.min.js$domain=bab.la|firkloveren.no|satkurier.pl
 @@||cmp.pubtech.ai/124/pubtech-cmp-v2.js$script,domain=quotidiano.net
@@ -48552,10 +48513,8 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||content.unicredit.it/etc/designs/ucpublic/it/*/informativa_cookie.js$script,stylesheet,~third-party
 @@||content.unicredit.it/etc/designs/ucpublic/it/css/cookie/main.css
 @@||cookiefirst.com^$domain=hemmersbach.com|proaurum.de
-@@||cookist.it^*/remote-gdpr.min.js
 @@||cyrk-zalewski.com.pl^*/CookieInfo.js$script
 @@||ebok.vectra.pl/components/layout/cookie-bar/
-@@||fanpage.it^*/remote-gdpr.min.js
 @@||firkloveren.no/skin/$script,stylesheet
 @@||footroll.pl/js/vendor/cookiebox.min.js
 @@||fundacjapsom.pl/wp-content/plugins/uk-cookie-consent/js/uk-cookie-consent-js.js$script
@@ -48572,7 +48531,6 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||my.sevdesk.de/shared/components/CookieConsent/CookieConsentModal.html$xmlhttprequest
 @@||mymuesli.com/assets/js/cookiespopup.js$script
 @@||nowegumy.pl/cookiecuttr.js
-@@||ohga.it^*/remote-gdpr.min.js
 @@||orangeclickmedia.com/tech/libs/js.cookie.min.js$domain=protothema.gr
 @@||otter.finance/assets/js/cookieconsent.js
 @@||polenka.pl/wp-content/plugins/cookie-law-info/js/cookielawinfo.js$script
