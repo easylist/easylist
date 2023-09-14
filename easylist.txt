@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202309140047
+! Version: 202309140114
 ! Title: EasyList
-! Last modified: 14 Sep 2023 00:47 UTC
+! Last modified: 14 Sep 2023 01:14 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -24,11 +24,9 @@
 -ad-column-
 -ad-horizontal.
 -ad-manager/$~stylesheet
--ad-reload.
 -ad-right.
 -ad-sidebar-
 -ad-sidebar.
--ad-top.
 -ad-unit.
 -ad-util.
 -ad-vertical-
@@ -41,9 +39,7 @@
 -ads-bottom.
 -ads-management/
 -ads-manager/$domain=~wordpress.org
--ads-plugin/
 -ads-right.
--ads.php?
 -ads/assets/$domain=~web-ads.org
 -adserver/
 -adskin.
@@ -145,7 +141,6 @@
 .nu/ads/
 .openad.$domain=~openad.lv
 .openx.$domain=~openx.com|~openx.solar
-.openxtag.
 .org/ad/$domain=~ylilauta.org
 .org/ads/
 .org/pops.js
@@ -179,8 +174,6 @@
 /ad-600-
 /ad-bottom.
 /ad-box-
-/ad-boxes-
-/ad-cache.
 /ad-choices-
 /ad-choices.
 /ad-controller.
@@ -192,7 +185,6 @@
 /ad-label-
 /ad-label.
 /ad-left.
-/ad-loading.
 /ad-maven-
 /ad-overlay-
 /ad-overlay.
@@ -297,12 +289,8 @@
 /ad_lazyload.
 /ad_left.
 /ad_left_
-/ad_link.
-/ad_loader.
 /ad_manager/*
-/ad_notice.
 /ad_overlay.
-/ad_page_
 /ad_peel/*$script
 /ad_popup_
 /ad_pos=
@@ -341,12 +329,9 @@
 /adasync.
 /AdBackground.
 /adbanner2.
-/adBanner?
-/adbanner_
 /adbanners/*
 /adbottom.
 /adbox.
-/adbucket.
 /adbutler.
 /adcall?
 /adcalloverride.
@@ -360,10 +345,6 @@
 /adchoiceslogo.
 /adcircle.
 /adclick-
-/adClick?
-/adclient-
-/adclient.
-/adclix.$~image
 /adcommon?
 /adconfig.
 /adconfigproxy.
@@ -631,12 +612,7 @@
 /adservices/*
 /adserving.
 /adserving/*
-/adserving_
-/AdServlet?
 /adserv|*|adtech;
-/adsession.$domain=~adsession.com
-/adsetup.
-/adsfetch.
 /adsheader.
 /adshow-
 /adshow.
@@ -1292,6 +1268,7 @@
 /jquery.adi.js
 /jquery.adx.js
 /jquery.dfp.js
+/jquery.openxtag.js
 /jquery.php/?uid=
 /js.ad/size=
 /js.ng/cat=
