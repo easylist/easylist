@@ -27,7 +27,7 @@ reddit.com##.XPromoPopup
 reddit.com##.XPromoPill
 reddit.com##shreddit-experience-tree
 reddit.com##+js(aeld, block-body-scrolling)
-reddit.com##body,html.scroll-is-blocked:style(overflow: auto !important;)
+reddit.com##body:style(overflow: auto !important;)
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
 reddit.com##.XPromoPopupRpl
 reddit.com##body:style(pointer-events:auto !important;)
@@ -127,6 +127,9 @@ thestar.com##.kumulos-background-mask
 thestar.com##.kumulos-prompt
 thestar.com##body,html:style(overflow: auto !important; position: initial !important;)
 thestar.com##+js(rc, kumulos-background-mask-blur, , stay)
+! tunein.com
+tunein.com##.common-dialog-module__content___VMF7d
+tunein.com##div[style^="position: fixed; height: 100%; width: 100%; top: 0px;"]
 ! sports.ndtv.com
 sports.ndtv.com###__cricketsubscribe
 sports.ndtv.com###overlaybtn
@@ -164,3 +167,5 @@ eksisozluk1923.com###app-suggestion-container
 eksisozluk1923.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! mydramalist.com
 mydramalist.com##+js(rc, smartbanner-active, body)
+! smocca.jp
+smocca.jp##+js(set, history.state, undefined)
