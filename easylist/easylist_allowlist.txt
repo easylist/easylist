@@ -260,6 +260,7 @@
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
 ! Webcompat fixes (Avoid any potential filters being applied to non-ad domains)
 @@||challenges.cloudflare.com/turnstile/$script
+@@||gmail.com^$generichide
 @@||google.com/recaptcha/$csp,subdocument
 @@||google.com/recaptcha/api.js
 @@||google.com/recaptcha/enterprise.js
@@ -267,7 +268,6 @@
 @@||gstatic.com/recaptcha/
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js
-@@||mail.google.com^$generichide
 @@||recaptcha.net/recaptcha/$script
 @@||search.brave.com/search$xmlhttprequest
 @@||ui.ads.microsoft.com^$~third-party
