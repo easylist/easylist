@@ -1032,6 +1032,7 @@ porndoe.com,tube8.es,tube8.fr,youporngay.com##video[autoplay]
 porndoe.com,redtube.com##video[autoplay][src*="blob:" i]
 porndoe.com,redtube.com##video[autoplay][src*="data:" i]
 !! Advanced element hiding rules for Adblock Plus
+4wank.com#?#.video-holder > center > :-abp-contains(/^Advertisement$/)
 crocotube.com#?#.ct-related-videos-title:-abp-contains(Advertisement)
 crocotube.com#?#.ct-related-videos-title:-abp-contains(You may also like)
 darknessporn.com,familyporner.com,freepublicporn.com,pisshamster.com,punishworld.com,xanimu.com#?#.order-1:-abp-has(> div[class^="inside-list-boxes"])
@@ -1043,6 +1044,8 @@ jav4tv.com#?#aside:-abp-has(.ads_300_250)
 javtiful.com#?#.related-videos > .row > .pb-3:-abp-has(> .card > .video-tmb[href*="bit.ly"])
 kbjfree.com#?#.relative.w-full:-abp-has(> .video-card[target="_blank"])
 picsporn.net#?#.box:-abp-has(> .dip-exms)
+porn-w.org#?#.align-items-center.list-row:-abp-has(.col:empty)
+porn-w.org#?#.row:-abp-contains(Promotion Bot)
 porngames.com#?#.contentbox:-abp-has(a[href="javascript:void(0);"])
 porngames.com#?#.contentbox:-abp-has(iframe[src^="//"])
 pornhub.com#?#.sectionWrapper:-abp-has(> #bottomVideos > .wrapVideoBlock)
