@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202310270918
+! Version: 202310270958
 ! Title: EasyPrivacy
-! Last modified: 27 Oct 2023 09:18 UTC
+! Last modified: 27 Oct 2023 09:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -30,11 +30,10 @@
 &t=pageview&
 -adobe-analytics.
 -adobe-analytics/
--adobeDatalayer_
+-adobeDatalayer_bridge.js
 -amp-error-reporting.
 -click-tracker.
 -didomi.js
--gatracker.
 -geoIP.js
 -inview-tracker.
 -scroll-tracker.js
@@ -43,7 +42,6 @@
 -universal-analytics/
 .beacon.min.js
 .com/_.gif?
-.com/analytics?
 .com/clk?
 .com/count?
 .com/counter?
@@ -53,30 +51,23 @@
 .com/log/?
 .com/log?event
 .com/pvlog?
-.com/ss/*sessionId=
 .com/stats.ashx?
 .com/stats.aspx?
 .com/track?$~object
 .com/tracking?
 .com/vtrack|
-.content_tracking.
+.content_tracking.js
 .de/h.gif?
 .de/l.gif?
 .eloqua.js
 .EventTracking.
-.gatracker.
 .gatracking.js
 .gif?Log=
 .Google.Tracker.js
-.googleanalytics.js
-.googleanalytics.prod.
-.GoogleAnalytics/
-.iframetracker/
 .jp/pv?
 .lms-analytics/
 .net/l.gif?
 .no/app/aas/a
-.ntpagetag.
 .php?action=browse&
 .php?action_name=
 .php?logRefer=
@@ -357,8 +348,6 @@
 /api-insights/log?
 /api/0/stats
 /api/adplogger/*
-/api/cmp_tracker
-/api/ComScorePageView
 /api/drpStats
 /api/event-rfkj/*
 /api/ipv4check?
@@ -1259,9 +1248,11 @@
 /ivw/SP/*$image,script
 /j.gif?
 /jgs_portal_log_bildschirm.php?
+/jquery-gatracker.js
 /jquery.analytics.js
 /jquery.audiencetarget.js
 /jquery.browser-fingerprint-
+/jquery.gatracker.js
 /jquery.google-analytics.js
 /jquery.iframetracker-
 /jquery.trackstar.js
@@ -2784,6 +2775,7 @@
 /yandex-metrica-watch/*
 /yandex-metrika.js
 /yastat.js
+/ye-gatracker.js
 /yell-analytics-app.js
 /yell-analytics-min.js
 /yell-analytics.js
