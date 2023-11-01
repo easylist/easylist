@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202310312311
+! Version: 202311010101
 ! Title: EasyPrivacy
-! Last modified: 31 Oct 2023 23:11 UTC
+! Last modified: 01 Nov 2023 01:01 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -176,7 +176,7 @@
 /adobe/visitor-
 /adobe/VisitorAPI-
 /adobeAnalytics/*
-/AdobeAnalyticsAndTargetOverwrites.
+/adobeanalyticsandtargetoverwrites.min.
 /adsct?
 /adstat.js
 /adstats.php
@@ -186,22 +186,14 @@
 /advstats.js
 /aff_i?offer_id=
 /aff_land?referrer
-/affiliate-track.
-/affiliate-tracker.
-/affiliate.track?
-/affiliate/track?
-/AffiliateClick.
-/affiliateTracking.
-/affiliatetracking/*
-/affilinetRetargeting.
-/afftrack.
-/afftracking.
+/affiliate-tracker.js
+/affiliatetracking.js
 /aftrack.asp
 /aggbug.aspx?
 /ahoy/events
 /ahoy/visits
 /AIT_Analytics.js
-/ajax-hits-counter/*
+/ajax-hits-counter/increment-hits/index.php
 /ajax-track-page-view/*
 /ajax/analytics/*
 /ajax/log?
@@ -268,7 +260,6 @@
 /analytics.ad.
 /analytics.analytics/*
 /analytics.bundled.js
-/analytics.collect.
 /analytics.config.js
 /analytics.do
 /analytics.gif?
@@ -277,48 +268,28 @@
 /analytics.prod.$domain=~fifteen.eu
 /analytics.sitecatalyst.js
 /analytics.v1.js
-/analytics/?event
+/analytics/?event=
 /analytics/abtest/*
 /analytics/adtags?
 /analytics/amp/*
 /analytics/analytics.$~xmlhttprequest
 /analytics/beacons/*
-/analytics/call-
+/analytics/call-tracking.js
 /analytics/capture/*
 /analytics/click?
 /analytics/collect?
-/analytics/collector.
-/analytics/collector/*
 /analytics/comscore.js
-/analytics/dist/*
+/analytics/dist/analytics.min.js
 /analytics/embed/*
-/analytics/engine/*
 /analytics/event
-/analytics/ga.
-/analytics/ga/*
-/analytics/ga?
-/analytics/geoip/*
-/analytics/inboundAnalytics.
-/analytics/initSession
+/analytics/ga.js
 /analytics/layer
-/analytics/mbox_
 /analytics/metric/*
-/analytics/page_view.
 /analytics/pageview
-/analytics/rt?
-/analytics/script/*
-/analytics/searches
-/analytics/smarttag-
-/analytics/tagx-
-/analytics/timing
-/analytics/track-
-/analytics/track?
-/analytics/track_
-/analytics/tracker.
+/analytics/searches?
+/analytics/track_event/*
+/analytics/tracker.js
 /analytics/trackers?
-/analytics/trackevent
-/analytics/visit/*
-/Analytics/Visitor.
 /analytics?http_referer
 /analytics?token=
 /analytics_events.js
@@ -329,7 +300,7 @@
 /analytics_v2.js
 /analytics_wbc.min.js
 /analytics_www.js
-/AnalyticsDataLayer.
+/AnalyticsDataLayer.min.
 /AnalyticsEvent.js
 /analyticsFooter.js
 /analyticsjs.js
@@ -1226,6 +1197,7 @@
 /in.getclicky.com/*
 /in.gif?url=
 /in.php?referer=
+/inboundAnalytics.min.js
 /include/js/ga-
 /increment_page_counter.jsp
 /index.track?
@@ -1240,6 +1212,7 @@
 /instart.js
 /interaction/beacon
 /intercept/intercept.js
+/IOL.Analytics.Tracking.min.js
 /IPbeacon.min.js
 /ipdvdc.min.js
 /ips-invite.iperceptions.com/*
@@ -1507,6 +1480,7 @@
 /mixpanel-init.
 /mixpanel.$domain=~mixpanel.com
 /mixpanel_tracker.
+/mlb-ml-analytics.min.js
 /mlopen_track.
 /mm_track/*
 /mmclient.js
