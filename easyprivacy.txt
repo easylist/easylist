@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202311032354
+! Version: 202311040002
 ! Title: EasyPrivacy
-! Last modified: 03 Nov 2023 23:54 UTC
+! Last modified: 04 Nov 2023 00:02 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -435,12 +435,10 @@
 /beacon/user-data
 /beacon/v1/batch?
 /beacon?cust=
-/beaconconfigs/*
-/beacons-external.
 /beacons?data=
 /behavior/web/pv?
-/benchmarketingsmarttag/*
-/better-analytics/*
+/benchmarketingsmarttag/get?
+/better-analytics/js/loader.php
 /bf.gif?ac=
 /bineos.min.js
 /bing-bat.js
@@ -453,20 +451,12 @@
 /blank.gif?*%
 /blank.gif?*&
 /blogcounter.js
-/bluekai.
-/bluekai/*
-/blueKaiAnalytics.
-/bluekaicookieinfo.
-/BlueKaiPixel/*
-/bluetracker/*
-/bm-bam-trk.
+/bluekai.js
 /bom/analytics/*
 /boomerang-latest.js
 /boomerang-latest.min.js
-/boomerang-minified-
 /boomerang.js
 /boomerang/beacon
-/boomLogger.
 /boomr.js
 /boost-sd-analytic.js
 /boost_stats.php
@@ -474,17 +464,15 @@
 /botd.gif?
 /bower_components/fp/fp.js
 /bpsma.js
-/branchMetrics.
+/branchMetrics.js
 /brandAnalytics.js
-/brightcove/tracking/*
 /brightedge.js
 /brightspot/analytics/*
 /brightTag-min.js
 /browserinfo?f.sid=
-/bsp-analytics.
+/bsp-analytics.min.
 /bstat.js
 /btrack.php?
-/buffermetrics/*
 /bugcounter.php?
 /bundle-analytics.js
 /bundle.tracking.js
@@ -514,7 +502,7 @@
 /cdn-cgi/zaraz/*
 /cdn_cookie_service.html
 /cedexis.js
-/cedexis/*
+/cedexis.radar.js
 /census/RecordHit
 /certifica-js14.js
 /certifica.js
@@ -572,30 +560,23 @@
 /clickrecord.php?
 /clicks/servlet/*
 /clickscript.js
-/clickstats.
+/clickstats.php
 /clickstream.aspx?
 /clickstream.js
 /clickstream/visit?
-/clicktag.
-/ClickTail.
-/clicktale-
-/clicktale.
-/clicktale/*
-/clicktale_
-/clicktalecdn.
-/ClickTrack.
+/clicktag.js
+/ClickTail.js
+/clicktale.js
+/ClickTrack.js
 /clicktrack?
-/clicktracker.
-/clicktracking.
-/clicktracking/*
+/clicktracker.js
+/clicktracker.php
+/clicktracking.js
 /clicky.js
 /client-metrics/?target
-/client.rum.
 /client_pathlog.asp?
 /clientele/reports/*
-/clientEventLog/*
-/clientlib-analytics-
-/clientPageLog/*
+/clientlib-analytics-core.
 /clientstat?
 /cls_report?
 /cms.gif?
@@ -603,7 +584,7 @@
 /cmslog.dll?
 /cn-fe-stats/*
 /cn-track?
-/cnstats.
+/cnstats.js
 /cnstats/*
 /cnt-combined.php?
 /cnt.aspx?
@@ -612,11 +593,10 @@
 /cnt/cnt.php?
 /cnt/start.php?
 /cnt_js.php?
-/cntpixel.
 /cnvtr.js
 /cocoon-master/lib/analytics/access.
-/CofinaHits.
-/cohesion-latest.
+/CofinaHits.js
+/cohesion-latest.min.js
 /coinhive.min.js
 /coinimp-cache/*
 /collect.gif?
@@ -2558,6 +2538,7 @@
 /vecapture.js
 /vendor/analytics.js
 /vendor/analytics/*
+/vendor/cedexis/*
 /vendor/xtcore.js
 /vestigo/v1/measure
 /vglnk.js
@@ -2751,6 +2732,7 @@
 ://analytics.*/pageview/
 ://beacon.*/track
 ://blue.*/script.js
+://client.rum.
 ://collect.*/pageview
 ://collector.*/event
 ://elqtrk.
@@ -9437,6 +9419,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||clickiocdn.com/utr/
 ||clicks.dealer.com^
 ||clicks.tyuwq.com^
+||clicktalecdn.sslcs.cdngc.net^
 ||clickthru.lefbc.com^$third-party
 ||clicktime.symantec.com^$script,third-party
 ||clicktracker.iscan.nl^
