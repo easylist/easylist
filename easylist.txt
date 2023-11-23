@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202311231208
+! Version: 202311231215
 ! Title: EasyList
-! Last modified: 23 Nov 2023 12:08 UTC
+! Last modified: 23 Nov 2023 12:15 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -18373,8 +18373,6 @@ _800x80_
 ##.resultsList > div > div > div > div.G-5c[role="tab"][tabindex="0"] > .yuAt-pres-rounded
 ##.resultsList > div > div > div > div[data-resultid$="-sponsored"]
 ! *** easylist:easylist/easylist_allowlist_general_hide.txt ***
-questaseratv.it#@#.channelBoxAds
-questaseratv.it#@#.gptslot
 dez.ro#@##ad-carousel
 so-net.ne.jp#@##ad-p3
 53.com#@##ad-rotator
@@ -18538,6 +18536,7 @@ stuff.tv#@#.c-ad
 thedigestweb.com#@#.c-ad-banner
 deployhappiness.com,dmitrysotnikov.wordpress.com,faravirusi.com,freedom-shift.net,lovepanky.com,markekaizen.jp,netafull.net,photopoint.com.ua,posh-samples.com#@#.category-ad:not(html):not(body)
 business-hack.net,clip.m-boso.net,iine-tachikawa.net,meihong.work#@#.category-ads:not(html):not(body)
+questaseratv.it#@#.channelBoxAds
 studio55.fi#@#.column-ad
 huffpost.com#@#.connatix-wrapper
 fontspace.com,skyrimcommands.com#@#.container-ads
@@ -18550,6 +18549,7 @@ anime-japan.jp#@#.display_ad
 thestudentroom.co.uk#@#.fixed_ad
 songlyrics.com#@#.footer-ad
 guloggratis.dk#@#.gallery-ad
+questaseratv.it#@#.gptslot
 davidsilverspares.co.uk#@#.greyAd
 forums.digitalspy.com,marketwatch.com#@#.has-ad
 si.com#@#.has-fixed-bottom-ad
@@ -63864,7 +63864,6 @@ truthsocial.com#?#div[item="[object Object]"]:-abp-has(path[d="M9.83333 1.83398H
 truthsocial.com#?#div[item="[object Object]"]:-abp-has(path[d="M17 7l-10 10"])
 tumblr.com#?#.ge_yK:-abp-has(.hM19_)
 twitter.com#?#.tweet:-abp-has(.promo)
-twitter.com#?#[data-testid="primaryColumn"] [data-testid="cellInnerDiv"]:-abp-has([data-testid="top-impression-pixel"])
 twitter.com#?#article[data-testid="tweet"]:-abp-has(path[d$="10H8.996V8h7v7z"])
 twitter.com#?#div[data-testid="eventHero"]:-abp-has(path[d$="10H8.996V8h7v7z"])
 twitter.com#?#div[data-testid="trend"]:-abp-has(path[d$="10H8.996V8h7v7z"])
@@ -64979,8 +64978,6 @@ tokyomotion.com#?#.is-gapless > .has-text-centered:-abp-has(> div > .adv)
 youporn.com#?#aside:-abp-has(a.ad-remove)
 ! -----------------------Allowlists to fix broken sites------------------------!
 ! *** easylist:easylist/easylist_allowlist.txt ***
-@@||delivery-cdn-cf.adswizz.com/adswizz/js/SynchroClient*.js$script,domain=tunein.com
-@@||synchrobox.adswizz.com/register2.php$script,domain=tunein.com
 @@||2mdn.net/instream/html5/ima3.js$script,domain=earthtv.com|techrepublic.com|zdnet.com
 @@||4cdn.org/adv/$image,xmlhttprequest,domain=4channel.org
 @@||4channel.org/adv/$image,xmlhttprequest,domain=4channel.org
@@ -65072,6 +65069,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||crackle.com/vendor/AdManager.js$script,~third-party
 @@||cvs.com/webcontent/images/weeklyad/adcontent/$~third-party
 @@||dcdirtylaundry.com/cdn-cgi/challenge-platform/$~third-party
+@@||delivery-cdn-cf.adswizz.com/adswizz/js/SynchroClient*.js$script,domain=tunein.com
 @@||discretemath.org/ads/
 @@||discretemath.org^$image,stylesheet
 @@||disqus.com/embed/comments/$subdocument
@@ -65213,6 +65211,7 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 @@||summitracing.com/global/images/bannerads/
 @@||sundaysportclassifieds.com/ads/$image,~third-party
 @@||survey.g.doubleclick.net^$script,domain=sporcle.com
+@@||synchrobox.adswizz.com/register2.php$script,domain=tunein.com
 @@||tcbk.com/application/files/4316/7521/1922/Q1-23-CD-Promo-Banner-Ad.png^$~third-party
 @@||thdstatic.com/experiences/local-ad/$domain=homedepot.com
 @@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
