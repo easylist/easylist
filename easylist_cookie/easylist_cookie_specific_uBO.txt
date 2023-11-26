@@ -660,6 +660,7 @@ calvinklein.se,calvinklein.fi,calvinklein.sk,calvinklein.si,calvinklein.ch,calvi
 calvinklein.se,calvinklein.fi,calvinklein.sk,calvinklein.si,calvinklein.ch,calvinklein.ru,calvinklein.com,calvinklein.pt,calvinklein.pl,calvinklein.at,calvinklein.nl,calvinklein.hu,calvinklein.lu,calvinklein.lt,calvinklein.lv,calvinklein.it,calvinklein.ie,calvinklein.hr,calvinklein.fr,calvinklein.es,calvinklein.ee,calvinklein.de,calvinklein.dk,calvinklein.cz,calvinklein.bg,calvinklein.be,calvinklein.co.uk##+js(set-cookie, PVH_COOKIES_GDPR_ANALYTICS, Reject)
 ofdb.de##+js(set-cookie, ofdb_werbung, Y, , reload, 1)
 dtksoft.com##+js(set-cookie, user_cookie_consent, 1)
+serverstoplist.com##+js(set-cookie, STAgreement, 1)
 ! set-local-storage-item
 omroepbrabant.nl##+js(set-local-storage-item, psh:cookies-other, false)
 omroepbrabant.nl##+js(set-local-storage-item, psh:cookies-seen, true)
@@ -3201,17 +3202,6 @@ tallink.com##.cws-modal-open:style(overflow: auto !important; pointer-events: au
 supla.fi##div[id^="sp_message_container_"]
 supla.fi##html.sp-message-open > body:not([style="overflow: hidden;"]):style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
 !#endif
-! bloomberg.com
-!#if !adguard
-bloomberg.com##html.sp-message-open:style(width: initial !important)
-bloomberg.com##html.sp-message-open > body:style(position: unset !important; overflow: unset !important; margin-top: 0 !important)
-bloomberg.com##body:not(:has(div[class*="player" i][class*="_container"], #root .datastrip)) > div[id^="sp_message_container"]
-!#endif
-! Alma Media
-arvopaperi.fi,iltalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi###alma-cmpv2-container:style(display: none)
-arvopaperi.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi##body:has(.article-body p:has-text(Sisältöä ei voitu ladata.Tämä voi johtua selainlaajennuksesta.)) > .alma-cmpv2-container:style(display: block !important)
-iltalehti.fi##body:has(.consents-checker) > .alma-cmpv2-container:style(display: block !important)
-iltalehti.fi##+js(set, jwAlmaCMPLoaded, true)
 ! whatsapp.com
 faq.whatsapp.com,blog.whatsapp.com,www.whatsapp.com##[data-testid="wa_cookies_banner_modal"]
 faq.whatsapp.com,blog.whatsapp.com,www.whatsapp.com##+js(rc, hasCookieBanner, body, stay)
