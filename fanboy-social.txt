@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202311261001
+! Version: 202311261003
 ! Title: Fanboy's Social Blocking List
-! Last modified: 26 Nov 2023 10:01 UTC
+! Last modified: 26 Nov 2023 10:03 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -13435,6 +13435,7 @@ politico.com##.social-tools__list
 mmorpg.com##.social-web
 gnttv.com##.social-widget
 dailymail.co.uk##.socialContainer-1Yly1
+relationshiphero.com##.socialIcons
 macrumors.com##.socialMedia--3i9tSnAb
 tech.hindustantimes.com##.socialWidgets
 faithwire.com##.social__buttons
@@ -13704,6 +13705,8 @@ bbc.com##div[class*="TagShareWrapper"]
 ! #include fanboy_social_specific_uBO.txt
 ! *** easylist:fanboy-addon/fanboy_social_specific_ABP.txt ***
 ! ABP-specific fixes
+! Sorted alphabetically by the domain
+relationshiphero.com#?#div:-abp-has(+ .socialIcons)
 ! ------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_international.txt ***
 ! 
