@@ -3201,11 +3201,6 @@ tallink.com##.cws-modal-open:style(overflow: auto !important; pointer-events: au
 supla.fi##div[id^="sp_message_container_"]
 supla.fi##html.sp-message-open > body:not([style="overflow: hidden;"]):style(position: unset !important; margin-top: 0 !important; overflow: visible !important)
 !#endif
-! Alma Media
-arvopaperi.fi,iltalehti.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi###alma-cmpv2-container:style(display: none)
-arvopaperi.fi,mediuutiset.fi,mikrobitti.fi,talouselama.fi,tekniikkatalous.fi,tivi.fi,www.kauppalehti.fi,www.uusisuomi.fi##body:has(.article-body p:has-text(Sisältöä ei voitu ladata.Tämä voi johtua selainlaajennuksesta.)) > .alma-cmpv2-container:style(display: block !important)
-iltalehti.fi##body:has(.consents-checker) > .alma-cmpv2-container:style(display: block !important)
-iltalehti.fi##+js(set, jwAlmaCMPLoaded, true)
 ! whatsapp.com
 faq.whatsapp.com,blog.whatsapp.com,www.whatsapp.com##[data-testid="wa_cookies_banner_modal"]
 faq.whatsapp.com,blog.whatsapp.com,www.whatsapp.com##+js(rc, hasCookieBanner, body, stay)
