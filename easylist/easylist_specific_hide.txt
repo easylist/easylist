@@ -5418,3 +5418,6 @@ presearch.com##.sx-carousel-items
 
 ! 2023-11-20 https://presearch.com force turn off autosuggestions that contain ads
 ||presearch.com/api/suggest$xhr,~third-party
+
+! 2023-11-26 "Sponsored" ads that will "privately" track you
+presearch.com##div[x-data="searchResults(true)"] > div > div > div > .relative:has(.tpd-ad-container)
