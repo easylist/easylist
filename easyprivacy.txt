@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202312040352
+! Version: 202312040442
 ! Title: EasyPrivacy
-! Last modified: 04 Dec 2023 03:52 UTC
+! Last modified: 04 Dec 2023 04:42 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -216,11 +216,9 @@
 /analyse.js
 /analysis-logger/*
 /analysisTag.js
-/analytic-client.
 /analytic/pageview
 /analytics-amplitude-
 /analytics-async-loader.js
-/analytics-cdn.
 /analytics-client-identification/*
 /analytics-collector
 /analytics-data-collector.js
@@ -249,8 +247,7 @@
 /analytics.*/event?
 /analytics.*/ping/?
 /analytics.*/track
-/analytics.ad.
-/analytics.analytics/*
+/analytics.analytics/analytics.min.js
 /analytics.bundled.js
 /analytics.config.js
 /analytics.do
@@ -1716,18 +1713,15 @@
 /plugins/vdz-google-analytics/*
 /plugins/visitors-traffic-
 /plugins/wordfence/visitor.php?
-/pm/pixel.
 /pmc-cxense.js
 /pointeur.gif?
 /pomegranate.js
-/post-tracking/*
 /postcounter.php?
 /postlog?
 /postview.gif?
-/powercount.
-/powr-counter.
 /pp/micro.tag.min.js
-/pphlogger.
+/pphlogger.js
+/pphlogger.php
 /ppms.js
 /pr.php?
 /preparecookies?callback=$domain=~mirapodo.de|~mytoys.de|~yomonda.de
@@ -1776,7 +1770,6 @@
 /pvcount.php
 /pvcounter.cgi
 /pvcounter.js
-/pvcounter/*
 /PvCountUp.action
 /pvevents.gif?
 /pvlog.js
@@ -1799,9 +1792,7 @@
 /qtracker-v3-min.js
 /quant.js
 /quantcast.js
-/quantcast/*
-/quantcast_
-/quantcastjs/*
+/Quantcast/cmp_v2.js
 /quantserve.com/*
 /QuotaService.RecordEvent?
 /r.gif?
@@ -1847,22 +1838,21 @@
 /revinit.js
 /revtracking/*
 /rgea.min.js
-/rich-relevance.
-/RioTracking2.
 /risk_fp_log?
 /riveted.js
 /riveted.min.js
 /rivraddon.js
-/rkrt_tracker-
-/rlvt-track/*
+/rkrt_tracker-viajs.php
 /rm-gtm-google-analytics-for-wordpress/js/gtm-player.js
 /rm.gif?
 /rmntracking.js
 /rntracking.js
-/roi_tracker.
-/roiengine.
-/roitrack.
-/roitracker.
+/roi_tracker.js
+/roi_tracker.min.js
+/roiengine.js
+/roitrack.cgi
+/roitrack.js
+/roitrack.php
 /roitracker2.js
 /rollbar.js
 /rollbar.min.js
@@ -1877,7 +1867,8 @@
 /rpc/preccount?
 /rpFingerprint?
 /rr/t?step=
-/rrweb-record-
+/rrweb-record-pack.js
+/rrweb-record.min.js
 /rt_tag.js
 /rt_tag.ofs.js
 /rt_track.js
@@ -1885,7 +1876,6 @@
 /rtac/gif?
 /rtd.js
 /rtkbeacon.gif?
-/rtm-tracking.
 /rtoaster.js
 /rtracker.min.js
 /rtracker/ofs.rtt.js
@@ -1911,11 +1901,9 @@
 /s.gif?
 /s_code_global_context.js
 /s_trans.gif?
-/s_trans_nc.
 /sa-tracker-
 /sa.gif?
 /safelinkconverter.js
-/sage_tracker.
 /salog.js
 /SAPOWebAnalytics/*
 /satismeter.js
@@ -1933,27 +1921,23 @@
 /scroll-analytics-
 /scroll-track.js
 /scroll-tracker.
-/scroll-tracking.
 /SdaAnalytics.js
 /sdc.js
 /sdc1.js
 /sdc2.js
 /sdctag1.js
 /sdctag2.js
-/sdcTrackingCode.
+/sdcTrackingCode.js
 /sdk/impressions
-/sdp-tagcollector.
 /search-cookie.aspx?$image
-/second-scroll~trackers.
-/secure-stats.
-/securetracker.
+/securetracker.js
 /seed.gif?
 /segment/api/*
 /segment/js/*
 /segmentify.js
 /segmentio.js
 /sendLogs?cid
-/sensor.modern.ncl.
+/sensor.modern.ncl.min.js
 /sensor/statistic?
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
@@ -1961,9 +1945,8 @@
 /sentry-logger.js
 /sentry/bundle.min.js
 /seo.taCo.min.js
-/seostats/*
-/seotracker/*
-/SEOTracking.
+/seostats.php
+/seotracking-v3.js
 /server.php?request=track&output=
 /server/detect.php?
 /service/track?
@@ -2719,6 +2702,7 @@
 /zhugeio.js
 /ztracker.js
 ://a869.
+://analytics-cdn.
 ://analytics.*/collect
 ://analytics.*/event
 ://analytics.*/hits/
