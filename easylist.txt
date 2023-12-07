@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202312072200
+! Version: 202312072220
 ! Title: EasyList
-! Last modified: 07 Dec 2023 22:00 UTC
+! Last modified: 07 Dec 2023 22:20 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -65600,7 +65600,9 @@ youporn.com#?#aside:-abp-has(a.ad-remove)
 ! ! g.doubleclick.net/pagead/ppub_config
 @@||g.doubleclick.net/pagead/ppub_config$domain=bloomberg.com|independent.co.uk|repretel.com|telsu.fi|weather.com
 ! ! anyclip.com (non-invideo ads only)
-@@||anyclip.com/anyclip-widget/$script,domain=dictionary.com|heute.at|video.timeout.com|video.venturebeat.com
+@@||anyclip.com/anyclip-widget/$script,domain=dictionary.com|heute.at|video.timeout.com
+@@||anyclip.com/main.js$script,domain=video.timeout.com
+@@||anyclip.com/static/$script,domain=video.timeout.com
 ! Non-English
 @@/banner/ad/*$image,domain=achaloto.com
 @@||about.smartnews.com/ja/wp-content/assets/img/advertisers/ad_$~third-party
