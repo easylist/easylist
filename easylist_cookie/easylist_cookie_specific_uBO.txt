@@ -1651,10 +1651,9 @@ vesely-drak.cz,consordini.com,fitzmuseum.cam.ac.uk,hotdk2023.kre.hu,panwybierak.
 conversion-rate-experts.com##+js(set-cookie, user_experience_cookie_consent, false)
 conversion-rate-experts.com##+js(set-cookie, marketing_cookie_consent, false)
 ! merkur.si 
-merkur.si##.cookie-notice-content
-merkur.si##.cookie-notice-wrapper
-merkur.si##div.cookie-notice
-merkur.si##body,html:style(overflow: auto !important; position: initial !important;)
+merkur.si##+js(set-cookie, cookie_notice_dismissed, yes)
+merkur.si##+js(set-cookie, cookie_analytics_allow, no)
+merkur.si##+js(set-cookie, mer_cc_dim_rem_allow, no)
 ! pricewise.nl
 pricewise.nl###cookieBar
 pricewise.nl##body,html:style(overflow: auto !important; position: initial !important;)
