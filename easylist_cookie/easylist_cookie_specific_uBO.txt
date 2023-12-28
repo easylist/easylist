@@ -644,8 +644,6 @@ hot.si##+js(set-cookie, permission_marketing_cookies, 0)
 hot.si##+js(set-cookie, permission_statistic_cookies, 0)
 hot.si##+js(set-cookie, permission_funktional_cookies, 1)
 hot.si##+js(set-cookie, cookieconsent, 1)
-petice.com##+js(set-cookie, num_times_cookie_consent_banner_shown, 1)
-petice.com##+js(set-cookie, cookie_consent_banner_shown_last_time, 1)
 dopt.com##+js(set-cookie, dopt_consent, false)
 oxfordonlineenglish.com##+js(set-cookie, ooe_cookie_policy_accepted, no)
 pccomponentes.fr,pccomponentes.com,pccomponentes.pt##+js(set-cookie, accept_cookie, 1)
@@ -1773,6 +1771,12 @@ texthelp.com##body:style(overflow: auto !important; position: initial !important
 ! athletic-club.eus
 athletic-club.eus##+js(rc, body--cookies-panel-opened, , stay)
 athletic-club.eus##.cookies-panel-wrapper
+! petice.com
+petice.com###cookie_consent_modal
+petice.com##.modal-backdrop
+petice.com##body,html:style(overflow: auto !important; position: initial !important;)
+petice.com##+js(set-cookie, num_times_cookie_consent_banner_shown, 1)
+petice.com##+js(set-cookie, cookie_consent_banner_shown_last_time, 1)
 ! bimedis.com
 bimedis.com##.v-dialog__content
 bimedis.com##.v-overlay
