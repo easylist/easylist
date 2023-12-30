@@ -292,6 +292,10 @@ premierinn.com,whitbreadinns.co.uk,barandblock.co.uk,tabletable.co.uk,brewersfay
 rt.com##+js(set-cookie, rt-cb-approve, true)
 debenhams.com##+js(set-cookie, dw_is_new_consent, true)
 konicaminolta.ca,konicaminolta.us##+js(set-cookie, konicaminolta.us, 1)
+deutschebank-dbdirect.com,dbonline.deutsche-bank.es,deutsche-bank.es##+js(set-cookie, cookiesAnalyticsApproved, 0)
+deutschebank-dbdirect.com,dbonline.deutsche-bank.es,deutsche-bank.es##+js(set-cookie, hasConfiguredCookies, 1)
+deutschebank-dbdirect.com,dbonline.deutsche-bank.es,deutsche-bank.es##+js(set-cookie, cookiesPubliApproved, 0)
+hipotecaonline.db.com##+js(set-cookie, cookieAuth, 1)
 kangasalansanomat.fi##+js(set-cookie, kscookies, true)
 eif.org##+js(set-cookie, cookie-policy, true)
 press.princeton.edu##+js(set-cookie, cookie-agreed, 0)
@@ -1321,10 +1325,6 @@ bulk.com##body,html:style(overflow: auto !important; position: initial !importan
 ! #cookieModal
 argos-tradein.co.uk,maandag.be,flixable.com,nmsu.edu,higcapital.es###cookieModal
 argos-tradein.co.uk,maandag.be,flixable.com,nmsu.edu,higcapital.es##body,html:style(overflow: auto !important; position: initial !important;)
-! deutsche-bank.es
-deutsche-bank.es##.modal-db
-deutsche-bank.es##.modal-db-backdrop
-deutsche-bank.es##html:style(position: static !important; overflow: auto !important; width: auto !important;)
 !! .sgpb-popup-overlay
 ematic.co.za##.sgpb-popup-overlay
 ematic.co.za##.sgpb-popup-dialog-main-div-wrapper
@@ -3082,12 +3082,7 @@ greatplacetowork.ie##body,html:style(height: auto !important; overflow: auto !im
 one4all.ie##body,html:style(height: auto !important; overflow: auto !important)
 ! harveynorman (scroll fix)
 harveynorman.co.nz,harveynorman.com.sg,harveynorman.com.my##body,html:style(height: auto !important; overflow: auto !important)
-! deutschebank
-||deutschebank-dbdirect.com/modal-cookies.html$subdocument
-deutschebank-dbdirect.com,dbonline.deutsche-bank.es##.b-core-styleCookies
-deutschebank-dbdirect.com,dbonline.deutsche-bank.es##.b-core-styleOverlay
 hipotecaonline.db.com##.modal-backdrop
-deutsche-bank.es##+js(aopr, tancarModal)
 ! pentagon-group.co.uk
 pentagon-group.co.uk###cookie
 pentagon-group.co.uk###cookies-dull-out
