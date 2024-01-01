@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401010258
+! Version: 202401010714
 ! Title: Fanboy's Annoyance List
-! Last modified: 01 Jan 2024 02:58 UTC
+! Last modified: 01 Jan 2024 07:14 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -2148,6 +2148,7 @@ _twitter_follow.
 ###message-purchased.wn-background-template-type-2
 ###message-purchased.wn-extended
 ##.cbSalesPopContainer
+##.fomo-notification-container
 ##.noti-container-main
 ##.wpcsn-notification-inner
 ##.yo-notification
@@ -34437,10 +34438,11 @@ dashboard.razorpay.com#@##credential_picker_container
 ||ziprecruiter.com/jobs-widget/$third-party
 ||zoomanalytics.co^$third-party
 ||zotabox.com^*/widgets.js$third-party
-! Someone also bought popups
+! Someone also bought fomo popups
 /wp-content/plugins/woocommerce-notification/*
 ||api.postscript.io/v2/public/popups/
 ||goldendev.win/shopify/show-recent-orders/
+||load.fomo.com^$third-party
 ! 3rd-party sounds
 ||acquire.io/assets/sound/
 ||amazonaws.com/alive5cdn/$media
