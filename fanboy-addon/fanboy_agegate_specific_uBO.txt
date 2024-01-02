@@ -23,6 +23,7 @@ getfizzy.co##+js(set-cookie, age_verified, true)
 superliquor.co.nz##+js(set-cookie, superliquor, 1)
 blackbullliquor.co.nz##+js(set-cookie, visited, yes)
 saltairebrewery.com##+js(set-cookie, sb-over-18, true)
+marketwinestore.com.au##+js(set-session-storage-item, notification, false)
 kenastonwine.com##+js(set-local-storage-item, agecheck, yes)
 drizly.com##+js(set-local-storage-item, ageCheckConfirmed, true)
 ! Tabacco/Vapes
@@ -44,3 +45,6 @@ blunthaven.com##body,html:style(overflow: auto !important; position: initial !im
 ! theloosedozen.com.au
 theloosedozen.com.au###shopify-section-popup-age-verification
 theloosedozen.com.au##body,html:style(overflow: auto !important; position: initial !important;)
+! fogarty.wine
+fogarty.wine##.age-confirm-overlay
+fogarty.wine##body,html:style(overflow: auto !important; position: initial !important;)
