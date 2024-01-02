@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401021708
+! Version: 202401021716
 ! Title: EasyList
-! Last modified: 02 Jan 2024 17:08 UTC
+! Last modified: 02 Jan 2024 17:16 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -64426,6 +64426,8 @@ youtube.com###ytd-player button.ytp-suggested-action-badge
 youtube.com##.ytp-chrome-top-buttons > .ytp-cards-teaser
 m.youtube.com##lazy-list > ad-slot-renderer
 youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
+youtube.com##ytd-rich-item-renderer:has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer)
+youtube.com##ytd-rich-item-renderer:has(ytd-display-ad-renderer)
 ! Site Specific filters (used with $generichide)
 thefreedictionary.com###Content_CA_AD_0_BC
 thefreedictionary.com###Content_CA_AD_1_BC
@@ -64739,8 +64741,6 @@ windowsreport.com#?#section.hide-mbl:-abp-has(a[href^="https://out.reflectormedi
 wish.com#?#div[class^="WishExpressProductsRow__FeedTileColumnWrapper-"]:-abp-has(div[class^="FeedTile__ProductBoostLabelWrapper-"])
 wish.com#?#div[class^="ProductGrid__FeedTileWidthWrapper-"]:-abp-has(div[class^="FeedTile__ProductBoostLabelWrapper-"])
 wowcher.co.uk#?#.two-by-two-deal:-abp-has(a[href*="src=sponsored_search_"])
-youtube.com#?#ytd-rich-item-renderer:-abp-has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer)
-youtube.com#?#ytd-rich-item-renderer:-abp-has(ytd-display-ad-renderer)
 youtube.com#?#ytd-watch-info-text > #info-container > #info > span:-abp-contains(/\d+\s[pP]rod/)
 yovizag.com#?#.jeg_column:-abp-has(>.jeg_wrapper > .jeg_ad)
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
