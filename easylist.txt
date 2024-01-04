@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401042134
+! Version: 202401042158
 ! Title: EasyList
-! Last modified: 04 Jan 2024 21:34 UTC
+! Last modified: 04 Jan 2024 21:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -64445,6 +64445,8 @@ twitter.com##article[data-testid="tweet"]:has(path[d$="10H8.996V8h7v7z"])
 aliexpress.com,aliexpress.us##div[class*="search-item-card-wrapper-"]:has(span[class^="multi--ad-"])
 qwant.com##div[class="_2NDle"]:has(div[data-testid="advertiserAdsDisplayUrl"])
 wish.com##div[class^="ProductGrid__FeedTileWidthWrapper-"]:has(div[class^="DesignSpec__TextSpecWrapper-"] + div[class^="DesignSpec__TextSpecWrapper-"])
+wish.com##div[class^="ProductGrid__FeedTileWidthWrapper-"]:has(div[class^="FeedTile__ProductBoostLabelWrapper-"])
+wish.com##div[class^="WishExpressProductsRow__FeedTileColumnWrapper-"]:has(div[class^="FeedTile__ProductBoostLabelWrapper-"])
 flickr.com##div[class^="main view"]:has(a[href$="&ref=sponsored"])
 pinterest.at,pinterest.ca,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt##div[data-test-id="pin"]:has(div[title^="Promoted"])
 twitter.com##div[data-testid="UserCell"]:has(path[d$="10H8.996V8h7v7z"])
