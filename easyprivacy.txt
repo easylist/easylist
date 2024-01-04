@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202401042309
+! Version: 202401042347
 ! Title: EasyPrivacy
-! Last modified: 04 Jan 2024 23:09 UTC
+! Last modified: 04 Jan 2024 23:47 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -14575,6 +14575,86 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||wt-eu02.net^$domain=stern.de
 ||wt-safetag.com^$domain=stern.de
 ||xplosion.de^$domain=spiegel.de|stern.de
+! 
+! easyprivacy_specific_international.txt
+! Specific blocking filters necessary for sites allowlisting with $genericblock filter option
+! Gamestar.de
+/ping.gif?$domain=gamestar.de
+||gamestar.de/_misc/tracking/$domain=gamestar.de
+||google-analytics.com/analytics.js$domain=gamestar.de
+||googletagmanager.com/gtm.js?$third-party,domain=gamestar.de
+||ioam.de/tx.io?$domain=gamestar.de
+||scorecardresearch.com^$domain=gamestar.de
+! Focus.de
+/pagedot.gif?$domain=focus.de
+||clicktale.net^$domain=focus.de
+||cloudfront.net/track?$domain=focus.de
+||emetriq.de^$domain=focus.de
+||googletagmanager.com^$domain=focus.de
+||ioam.de/tx.io?$domain=focus.de
+||krxd.net^$domain=focus.de
+||log.outbrain.com^$domain=focus.de
+||lp4.io^$domain=focus.de
+||optimizely.com^$domain=focus.de
+||scorecardresearch.com^$domain=outbrain.com
+||visualrevenue.com^$domain=focus.de
+||xplosion.de^$domain=focus.de
+! tvspielfilm.de
+||facebook.com/tr?$domain=tvspielfilm.de
+||googletagmanager.com/gtm.js?$domain=tvspielfilm.de
+||intelliad.de^$domain=tvspielfilm.de
+||ioam.de/?$domain=tvspielfilm.de
+||ioam.de/tx.io?$domain=tvspielfilm.de
+||vinsight.de^$domain=tvspielfilm.de
+! Prosieben
+||chartbeat.com^$domain=prosieben.at|prosieben.ch|prosieben.de
+||contentspread.net^$domain=prosieben.at|prosieben.ch|prosieben.de
+||google-analytics.com/analytics.js$domain=prosieben.at|prosieben.ch|prosieben.de
+||imrworldwide.com^$domain=prosieben.at|prosieben.ch|prosieben.de
+||movad.de/c.ount?$domain=prosieben.at|prosieben.ch|prosieben.de
+||nuggad.net^$domain=prosieben.at|prosieben.ch|prosieben.de
+||semasio.net^$domain=prosieben.at|prosieben.ch|prosieben.de
+||theadex.com^$domain=prosieben.at|prosieben.ch|prosieben.de
+||visualrevenue.com^$domain=prosieben.at|prosieben.ch|prosieben.de
+||webtrekk.net^$domain=prosieben.at|prosieben.ch|prosieben.de
+||xplosion.de^$domain=prosieben.at|prosieben.ch|prosieben.de
+! Wetter.com
+/__utm.gif?$domain=wetter.com
+/chartbeat.js$domain=wetter.com
+/piwik.$domain=wetter.com
+||ioam.de/tx.io?$domain=wetter.com
+||mouseflow.com^$domain=wetter.com
+||theadex.com^$domain=wetter.com
+||visualwebsiteoptimizer.com^$domain=wetter.com
+! Woxikon.de
+/__utm.gif$domain=woxikon.de
+||ioam.de/?$domain=woxikon.de
+||ioam.de/tx.io?$domain=woxikon.de
+! Fanfiktion.de
+||criteo.com^$domain=fanfiktion.de
+||google-analytics.com/analytics.js$domain=fanfiktion.de
+! boote-forum.de
+||google-analytics.com/analytics.js$domain=boote-forum.de
+! comunio.de
+||analytics.comunio.de^$domain=comunio.de
+||analytics.comunio.net^$domain=comunio.de
+||criteo.com^$domain=comunio.de
+||ioam.de/?$domain=comunio.de
+||ioam.de/tx.io?$domain=comunio.de
+||xplosion.de^$domain=comunio.de
+! planetsnow.de
+||google-analytics.com/analytics.js$domain=planetsnow.de
+||ioam.de/?$domain=planetsnow.de
+||ioam.de/tx.io?$domain=planetsnow.de
+||plista.com/iframeShowItem.php$domain=planetsnow.de
+||stroeerdigitalmedia.de^$domain=planetsnow.de
+! Notebookcheck.com
+||google-analytics.com/analytics.js$domain=notebookcheck.com
+||ioam.de/?$domain=notebookcheck.com
+||ioam.de/tx.io?$domain=notebookcheck.com
+! Gofeminin.de
+/__utm.gif?$domain=gofeminin.de
+||digidip.net^$domain=gofeminin.de
 ! #endif
 ! *** easylist:easyprivacy/easyprivacy_specific_uBO.txt ***
 ! easyprivacy_specific_uBO.txt
@@ -31370,84 +31450,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||tka.tiki.vn/pixel/
 ||track-srv.vietnamnet.vn^
 ||w-api.baomoi.com^$image
-! Specific blocking filters necessary for sites allowlisting with $genericblock filter option
-! Gamestar.de
-/ping.gif?$domain=gamestar.de
-||gamestar.de/_misc/tracking/$domain=gamestar.de
-||google-analytics.com/analytics.js$domain=gamestar.de
-||googletagmanager.com/gtm.js?$third-party,domain=gamestar.de
-||ioam.de/tx.io?$domain=gamestar.de
-||scorecardresearch.com^$domain=gamestar.de
-! Focus.de
-/pagedot.gif?$domain=focus.de
-||clicktale.net^$domain=focus.de
-||cloudfront.net/track?$domain=focus.de
-||emetriq.de^$domain=focus.de
-||googletagmanager.com^$domain=focus.de
-||ioam.de/tx.io?$domain=focus.de
-||krxd.net^$domain=focus.de
-||log.outbrain.com^$domain=focus.de
-||lp4.io^$domain=focus.de
-||optimizely.com^$domain=focus.de
-||scorecardresearch.com^$domain=outbrain.com
-||visualrevenue.com^$domain=focus.de
-||xplosion.de^$domain=focus.de
-! tvspielfilm.de
-||facebook.com/tr?$domain=tvspielfilm.de
-||googletagmanager.com/gtm.js?$domain=tvspielfilm.de
-||intelliad.de^$domain=tvspielfilm.de
-||ioam.de/?$domain=tvspielfilm.de
-||ioam.de/tx.io?$domain=tvspielfilm.de
-||vinsight.de^$domain=tvspielfilm.de
-! Prosieben
-||chartbeat.com^$domain=prosieben.at|prosieben.ch|prosieben.de
-||contentspread.net^$domain=prosieben.at|prosieben.ch|prosieben.de
-||google-analytics.com/analytics.js$domain=prosieben.at|prosieben.ch|prosieben.de
-||imrworldwide.com^$domain=prosieben.at|prosieben.ch|prosieben.de
-||movad.de/c.ount?$domain=prosieben.at|prosieben.ch|prosieben.de
-||nuggad.net^$domain=prosieben.at|prosieben.ch|prosieben.de
-||semasio.net^$domain=prosieben.at|prosieben.ch|prosieben.de
-||theadex.com^$domain=prosieben.at|prosieben.ch|prosieben.de
-||visualrevenue.com^$domain=prosieben.at|prosieben.ch|prosieben.de
-||webtrekk.net^$domain=prosieben.at|prosieben.ch|prosieben.de
-||xplosion.de^$domain=prosieben.at|prosieben.ch|prosieben.de
-! Wetter.com
-/__utm.gif?$domain=wetter.com
-/chartbeat.js$domain=wetter.com
-/piwik.$domain=wetter.com
-||ioam.de/tx.io?$domain=wetter.com
-||mouseflow.com^$domain=wetter.com
-||theadex.com^$domain=wetter.com
-||visualwebsiteoptimizer.com^$domain=wetter.com
-! Woxikon.de
-/__utm.gif$domain=woxikon.de
-||ioam.de/?$domain=woxikon.de
-||ioam.de/tx.io?$domain=woxikon.de
-! Fanfiktion.de
-||criteo.com^$domain=fanfiktion.de
-||google-analytics.com/analytics.js$domain=fanfiktion.de
-! boote-forum.de
-||google-analytics.com/analytics.js$domain=boote-forum.de
-! comunio.de
-||analytics.comunio.de^$domain=comunio.de
-||analytics.comunio.net^$domain=comunio.de
-||criteo.com^$domain=comunio.de
-||ioam.de/?$domain=comunio.de
-||ioam.de/tx.io?$domain=comunio.de
-||xplosion.de^$domain=comunio.de
-! planetsnow.de
-||google-analytics.com/analytics.js$domain=planetsnow.de
-||ioam.de/?$domain=planetsnow.de
-||ioam.de/tx.io?$domain=planetsnow.de
-||plista.com/iframeShowItem.php$domain=planetsnow.de
-||stroeerdigitalmedia.de^$domain=planetsnow.de
-! Notebookcheck.com
-||google-analytics.com/analytics.js$domain=notebookcheck.com
-||ioam.de/?$domain=notebookcheck.com
-||ioam.de/tx.io?$domain=notebookcheck.com
-! Gofeminin.de
-/__utm.gif?$domain=gofeminin.de
-||digidip.net^$domain=gofeminin.de
 ! -----------------------Allowlists to fix broken sites------------------------!
 ! *** easylist:easyprivacy/easyprivacy_allowlist.txt ***
 @@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
