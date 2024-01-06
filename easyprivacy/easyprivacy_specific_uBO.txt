@@ -1,5 +1,8 @@
 ! easyprivacy_specific_uBO.txt
 !#if ext_ublock
-
-
+!#if cap_html_filtering
+abema.tv##^script:has-text(NREUM)
+!#else
+abema.tv##+js(rmnt, script, NREUM)
+!#endif
 !#endif
