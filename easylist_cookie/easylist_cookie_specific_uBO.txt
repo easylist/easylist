@@ -2003,8 +2003,8 @@ nadeta.cz,zonerpress.cz##body,html:style(overflow: auto !important; position: in
 nuvucameras.com##.px-banner-cookies
 nuvucameras.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! computerbase.de https://www.reddit.com/r/uBlockOrigin/comments/thrxes/is_it_not_possible_to_block_a_dialog_element/
-computerbase.de##dialog:remove()
-computerbase.de##+js(rc, consent-dialog-open, body)
+computerbase.de##+js(set-cookie, consent, 1)
+computerbase.de##+js(set-cookie, OptanonAlertBoxClosed, 1)
 ! unifique.com.br
 unifique.com.br###lgpd
 unifique.com.br##body,html:style(overflow: auto !important; position: initial !important;)
