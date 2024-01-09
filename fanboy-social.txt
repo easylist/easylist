@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401092028
+! Version: 202401092104
 ! Title: Fanboy's Social Blocking List
-! Last modified: 09 Jan 2024 20:28 UTC
+! Last modified: 09 Jan 2024 21:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -16,6 +16,7 @@
 ! 
 ! --------------------------General blocking rules-----------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_general_block.txt ***
+! fanboy_social_general_block.txt
 -buttons-facebook.
 -buttons-twitter.
 -facebook-likeButton-
@@ -733,6 +734,7 @@ _twitter_follow.
 /wp-content/plugins/videolock/*$script
 ! ------------------------General element hiding rules-------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_general_hide.txt ***
+! fanboy_social_general_hide.txt
 ###BottomSocialLinks
 ###FBslideout
 ###FaceBookStayInTouch
@@ -12357,6 +12359,7 @@ _twitter_follow.
 ##.feature > #tell-a-friend
 ! -------------------------Third-party blocking rules--------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_thirdparty.txt ***
+! fanboy_social_thirdparty.txt
 ||addnow.com^$third-party
 ||addthis.com^$third-party
 ||addthiscdn.com^$domain=~addthis.com
@@ -13507,12 +13510,13 @@ bbc.com##div[class*="TagShareWrapper"]
 ! Include ubO specific
 ! #include fanboy_social_specific_uBO.txt
 ! *** easylist:fanboy-addon/fanboy_social_specific_ABP.txt ***
-! ABP-specific fixes
+! fanboy_social_specific_ABP.txt
 ! Sorted alphabetically by the domain
 relationshiphero.com#?#div:-abp-has(+ .socialIcons)
 viranomaisuutiset.fi#?#.wpb_wrapper.td_block_wrap:-abp-has(a[href^="https://whatsapp.com"])
 ! ------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_international.txt ***
+! fanboy_social_international.txt
 ! 
 ! ---------- Non-English Social Media Elements ----------
 ! 
@@ -14371,6 +14375,7 @@ haberinadresi.com,minika.com.tr##.sosyal
 diyanet.tv##.sosyal-alt-ust
 ! ---------------------------------Allowlists----------------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_allowlist_general_hide.txt ***
+! fanboy_social_allowlist_general_hide.txt
 gifyagusi.pl#@##fan-exit
 gifyagusi.pl#@##fanback
 facebook.com#@##fb_header
@@ -14475,6 +14480,7 @@ ixbt.com#@#.social_links
 nothiefsallowed.com#@#.twitter-timeline
 petsmart.com#@#a[href^="https://www.facebook.com/sharer/sharer.php"]
 ! *** easylist:fanboy-addon/fanboy_social_allowlist.txt ***
+! fanboy_social_allowlist.txt
 @@/angular-facebook.js
 @@/wp-content/plugins/bwp-minify/min/?*,wp-content$script,stylesheet,~third-party
 @@/wp-content/plugins/share-this-image/*$~third-party
