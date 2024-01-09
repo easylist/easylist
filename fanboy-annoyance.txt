@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401092104
+! Version: 202401092133
 ! Title: Fanboy's Annoyance List
-! Last modified: 09 Jan 2024 21:04 UTC
+! Last modified: 09 Jan 2024 21:33 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1102,6 +1102,7 @@ _twitter_follow.
 ! https://www.wpvideolock.com/
 /wp-content/plugins/videolock/*$script
 ! *** easylist:easylist_cookie/easylist_cookie_general_block.txt ***
+! easylist_cookie_general_block.txt
 -consent-banner-
 -consent-banner.
 -cookie-banner-$~image
@@ -16733,6 +16734,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ! Amazon sites
 ##.feature > #tell-a-friend
 ! *** easylist:easylist_cookie/easylist_cookie_general_hide.txt ***
+! easylist_cookie_general_hide.txt
 ###-CookieConsentContainer
 ###ACCETTA_COOKIES
 ###AF_GDPR
@@ -34996,6 +34998,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||zopim.com/widget/sounds/
 ||zyratalk.com/contractorschatbot/$media
 ! *** easylist:easylist_cookie/easylist_cookie_thirdparty.txt ***
+! easylist_cookie_thirdparty.txt
 ||acconsento.click^$third-party
 ||admiral.mgr.consensu.org^$third-party
 ||akamaihd.net/cpmt/
@@ -35316,10 +35319,12 @@ dashboard.razorpay.com#@##credential_picker_container
 ||tinypass.com/api/tinypass.min.js$script,domain=thedailybeast.com
 ||waterfordwhispersnews.com/wp-content/themes/therex-child/js/_newsletter-article-signup.js
 ! *** easylist:fanboy-addon/fanboy_social_specific_block.txt ***
+! fanboy_social_specific_block.txt
 ||ipaddress.com/shariff/
 ||naturalnews.com/getviews2.
 ||people.com.cn/img/2020fenxiang/
 ! *** easylist:easylist_cookie/easylist_cookie_specific_block.txt ***
+! easylist_cookie_specific_block.txt
 /otSDKStub.js$script,domain=dhl.de
 /ppp/js/permission-client$domain=hilfe.gmx.net|mein.web.de|meinaccount.gmx.net
 /wp-content/blog-plugins/wordads-classes/js/notice.bundle.js$script
@@ -39017,6 +39022,7 @@ engadget.com#?#.rwd-outer-container:-abp-has(.newsletter-footer)
 headphonesty.com#?#div:-abp-has(> form[action*="subscribe"])
 relationshiphero.com#?#div:-abp-has(> .EmailSubscriber)
 ! *** easylist:fanboy-addon/fanboy_social_specific_hide.txt ***
+! fanboy_social_specific_hide.txt
 artistdirect.com###FollowBut
 iflscience.com###FollowOnGoogleNewsBtn
 c-sharpcorner.com###IconContainer
@@ -40016,6 +40022,7 @@ bbc.com##div[class*="TagShareWrapper"]
 ! Include ubO specific
 ! #include fanboy_social_specific_uBO.txt
 ! *** easylist:easylist_cookie/easylist_cookie_specific_hide.txt ***
+! easylist_cookie_specific_hide.txt
 lyrath.com###ACClayerBackground
 adoc.pub###ADOCPUB_cookie_boxx
 jman.tv###ActionBar
@@ -43062,7 +43069,7 @@ globalblue.com,globalblue.ru##.gbnew-cookie-bar
 ! Include ubO specific
 ! #include easylist_cookie_specific_uBO.txt
 ! *** easylist:easylist_cookie/easylist_cookie_specific_ABP.txt ***
-! ABP-specific fixes
+! easylist_cookie_specific_ABP.txt
 ! #if ext_abp
 minhaconexao.com.br#?#section[id][class]:-abp-has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
 ! Scripts
@@ -44889,7 +44896,7 @@ elplural.com##.btn-subscribe
 minfin.com.ua##.mail-subscribe-user
 donpatriot.news##.news__subscribe
 ! *** easylist:easylist_cookie/easylist_cookie_international_specific_hide.txt ***
-! 
+! easylist_cookie_international_specific_hide.txt
 ! ---------- German ----------
 ! 
 flvw.de###ConsentMsg
@@ -47741,7 +47748,7 @@ ants.vn##.sg-popup-content
 ! 
 360.cymru###negesCaniatad
 ! *** easylist:easylist_cookie/easylist_cookie_international_specific_block.txt ***
-! 
+! easylist_cookie_international_specific_hide.txt
 ! ---------- German ----------
 ! 
 ||9jdq2a.poco.de^
@@ -48171,6 +48178,7 @@ sourceforge.net#@#.psp_newsletter_subscribe
 doctorofcredit.com#@#.wpdiscuz-subscribe-bar
 novojornal.co.ao#@#div.box-newsletter
 ! *** easylist:easylist_cookie/easylist_cookie_allowlist_general_hide.txt ***
+! easylist_cookie_allowlist_general_hide.txt
 cera.coop#@##CookieBanner
 fdm-travel.dk,power.no,skousen.dk,skousen.no,whiteaway.com,whiteaway.no,whiteaway.se#@##CookieConsent
 smooth-on.com#@##CookieNotice
@@ -48573,6 +48581,7 @@ concursolutions.com,forbes.com,formula1.com,fortune.com,proximus.be,proximustv.b
 @@||mafia.ua/js/jquery.smartbanner.js$script,~third-party
 @@||mirage.ru/js/jquery.smartbanner.js$script,~third-party
 ! *** easylist:easylist_cookie/easylist_cookie_allowlist.txt ***
+! easylist_cookie_allowlist.txt
 @@/assets/cookiebanner.$domain=homify.ae|homify.ca|homify.cl|homify.co.id|homify.co.kr|homify.co.th|homify.co.uk|homify.co.za|homify.com|homify.com.ar|homify.com.br|homify.com.co|homify.com.eg|homify.com.mx|homify.com.my|homify.com.tr|homify.com.ve|homify.de|homify.es|homify.fr|homify.hk|homify.in|homify.it|homify.jp|homify.nl|homify.pe|homify.pk|homify.pl|homify.pt|homify.ru|homify.sa|homify.sg|homify.tw|homify.ua|homify.vn
 @@/complianz-gdpr-premium/cookiebanner/$script,~third-party
 @@/cookie_law/plugin.js$script,~third-party
