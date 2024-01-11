@@ -20,3 +20,10 @@
 !---------------------------------Allowlists----------------------------------!
 %include easylist:easylist_cookie/easylist_cookie_allowlist_general_hide.txt%
 %include easylist:easylist_cookie/easylist_cookie_allowlist.txt%
+!
+!--------------------------Custom Rules for whyopencomputing.com------------------------!
+! 2024-01-11 https://whyopencomputing.com
+whyopencomputing.com###idxrcookies
+whyopencomputing.com##body.idxrcookies-block-user-nav:style(overflow: unset !important;)
+whyopencomputing.com##body.idxrcookies-block-user-nav::before
+whyopencomputing.com##.contenido
