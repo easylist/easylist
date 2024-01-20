@@ -6,7 +6,8 @@
 gbatemp.net##+js(set, admiral, noopFunc)
 thegamer.com##+js(abort-current-script, document.createElement, admiral)
 androidpolice.com,makeuseof.com,cbr.com,collider.com,thegamer.com,simpleflying.com,stealthoptional.com,xda-developers.com,howtogeek.com,screenrant.com##+js(abort-on-property-read, googletag)
-
+! fedex.com
+fedex.com##+js(set-local-storage-item, fdx_enable_new_detail_page, true)
 !#if cap_html_filtering
 abema.tv##^script:has-text(NREUM)
 !#else
