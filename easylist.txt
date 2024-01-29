@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202401292243
+! Version: 202401292301
 ! Title: EasyList
-! Last modified: 29 Jan 2024 22:43 UTC
+! Last modified: 29 Jan 2024 23:01 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -67074,7 +67074,6 @@ wish.com##div[class^="ProductGrid__FeedTileWidthWrapper-"]:has(div[class^="FeedT
 wish.com##div[class^="WishExpressProductsRow__FeedTileColumnWrapper-"]:has(div[class^="FeedTile__ProductBoostLabelWrapper-"])
 flickr.com##div[class^="main view"]:has(a[href$="&ref=sponsored"])
 goal.com##div[class^="open-web-ad_"]
-walmart.ca##div[data-automation="product"]:has(div[data-automation="sponsored-indicator-wrapper"])
 cargurus.com##div[data-cg-ft="car-blade"]:has(div[data-cg-ft="sponsored-listing-badge"])
 rakuten.com##div[data-productid]:has(div.productList_sponsoredAds_RUS)
 pinterest.at,pinterest.ca,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt##div[data-test-id="pin"]:has(div[title^="Promoted"])
@@ -67504,9 +67503,11 @@ trends.gab.com#?#li.list-group-item:-abp-contains(Sponsored content)
 tripadvisor.com#?#.cAWGu:-abp-has(a:-abp-contains(Similar Sponsored Properties))
 twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Promotert|Promoveret|Sponsrad|Mainostettu|Sponzorováno|Promovat|Ajánlott|Προωθημένο|Dipromosikan|Được quảng bá|推廣|推广|推薦|推荐|プロモーション|프로모션|ประชาสมพนธ|परचरत|বজঞপত|تشہیر شدہ|مروج|تبلیغی|מקודם/)
 vofomovies.info#?#a13:-abp-contains( Ad)
+walmart.ca#?#div > div[io-id]:-abp-contains(Sponsored)
 wayfair.com,wayfair.co.uk#?#div[data-hb-id="Grid.Item"]:-abp-has(div.FeaturedProductFlag:-abp-contains(Sponsored))
 winaero.com#?#p:-abp-contains(Advertisement)
 ! top-level domain wildcard
+walmart.*#?#div > div[io-id]:-abp-contains(Sponsored)
 wayfair.*#?#div[data-hb-id="Grid.Item"]:-abp-has(div.FeaturedProductFlag:-abp-contains(Sponsored))
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 virtuagirlgirls.com###DynamicBackgroundWrapper
