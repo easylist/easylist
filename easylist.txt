@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202402031258
+! Version: 202402031333
 ! Title: EasyList
-! Last modified: 03 Feb 2024 12:58 UTC
+! Last modified: 03 Feb 2024 13:33 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -60991,6 +60991,8 @@ $script,stylesheet,third-party,xmlhttprequest,domain=up-4ever.net
 @@||up4ever.download^$domain=up-4ever.net
 ! hitomi.la/rule34hentai.net
 $script,third-party,domain=hitomi.la|rule34hentai.net
+@@||ajax.googleapis.com^$script,domain=rule34hentai.net
+@@||cloudflare.com^$script,domain=rule34hentai.net
 ! urlcash.net
 |http://$script,xmlhttprequest,domain=urlcash.net
 |https://$script,xmlhttprequest,domain=urlcash.net
