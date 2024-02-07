@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202402071256
+! Version: 202402071258
 ! Title: EasyList
-! Last modified: 07 Feb 2024 12:56 UTC
+! Last modified: 07 Feb 2024 12:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -60716,6 +60716,7 @@ browsershots.org#@#.advert_area
 ||prebid-server.newsbreak.com^
 ||presearch.com/affiliates|$xmlhttprequest
 ||presearch.com/coupons|$xmlhttprequest
+||presearch.com/tiles^
 ||pressablecdn.com/wp-content/uploads/Site-Skin_update.gif$domain=bikebiz.com
 ||prewarcar.com/*-banners/
 ||prod-sponsoredads.mkt.zappos.com^
@@ -66669,6 +66670,7 @@ tld-list.com##div.row > .text-center > .ib
 forward.com##div.sticky-container:first-child
 newegg.com##div.swiper-slide[data-sponsored-catalyst]
 inverse.com##div.zz
+presearch.com##div[\:class*="AdClass"]
 boxing-social.com##div[ad-slot]
 liverpoolway.co.uk##div[align="center"] > a[href]
 informer.com##div[align="center"][style="margin:10px"]
@@ -66935,6 +66937,7 @@ imgbabes.com##div[style^="width:604px;"]
 interglot.com,sodapdf.com,stopmalvertising.com##div[style^="width:728px;"]
 tvtv.us##div[style^="z-index: 1100; position: fixed;"]
 ebay.com##div[title="ADVERTISEMENT"]
+presearch.com##div[x-show*="_ad_click"]
 adblock-tester.com##embed[width="240"]
 teslaoracle.com##figure.aligncenter
 groupon.com##figure[data-clickurl^="https://api.groupon.com/sponsored/"]
