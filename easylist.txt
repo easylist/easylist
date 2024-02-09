@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202402091447
+! Version: 202402091500
 ! Title: EasyList
-! Last modified: 09 Feb 2024 14:47 UTC
+! Last modified: 09 Feb 2024 15:00 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -61242,7 +61242,9 @@ $webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepir
 @@||thepiratebay.*/static/js/scriptaculous.js$domain=thepiratebay.org
 @@||thepiratebay.org/*.php$csp,~third-party
 @@||thepiratebay.org/static/main.js$script,~third-party
-@@||torrindex.net^$image,script,stylesheet,domain=thepiratebay.org
+@@||torrindex.net/images/*.gif$domain=thepiratebay.org
+@@||torrindex.net/images/*.jpg$domain=thepiratebay.org
+@@||torrindex.net^$script,stylesheet,domain=thepiratebay.org
 ||thepirate-bay3.org/banner_
 ||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org
 ||thepiratebay.*/static/$subdocument
