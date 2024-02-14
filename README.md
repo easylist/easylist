@@ -1,6 +1,6 @@
 # EasyList / EasyPrivacy / Fanboy Lists
 
-These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, Khrin, and Yuki2718.
+These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, Khrin, Yuki2718, and piquark6046.
 
 ## EasyList
 
