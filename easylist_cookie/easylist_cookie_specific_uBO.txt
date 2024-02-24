@@ -2230,7 +2230,7 @@ canalplus.com##.Overlayer
 canalplus.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! weather.com privacy popup
 weather.com##div[class*="PrivacyConsentModal"]
-weather.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
+weather.com##+js(rc, modalOpen, body, stay)
 ! clasohlson.com
 clasohlson.com##.cookie-bar-overlay
 clasohlson.com##body,html:style(overflow: auto !important; position: initial !important;)
