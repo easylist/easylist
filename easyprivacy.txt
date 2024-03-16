@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202403162304
+! Version: 202403162317
 ! Title: EasyPrivacy
-! Last modified: 16 Mar 2024 23:04 UTC
+! Last modified: 16 Mar 2024 23:17 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -11627,6 +11627,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||urc.taboolasyndication.com^
 ||vidstat.taboola.com^
 ||wf.taboola.com^
+! Ad-Shield
+! https://github.com/uBlockOrigin/uAssets/issues/9717
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,third-party
 ! wix
 ||frog.wix.com/da-client?
 ||frog.wix.com/fed?
