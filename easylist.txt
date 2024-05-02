@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405022239
+! Version: 202405022240
 ! Title: EasyList
-! Last modified: 02 May 2024 22:39 UTC
+! Last modified: 02 May 2024 22:40 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -16,6 +16,7 @@
 ! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
+&pcid=*&rid=
 &sadbl=1$third-party
 -ad-300x600-
 -ad-458x80.
@@ -871,6 +872,7 @@
 /page-links-to/dist/new-tab.js
 /page-peel
 /page/ad/*
+/page/bouncy.php?
 /pagead/1p-user-list/*
 /pagead/ads?
 /pagead/conversion.js
@@ -1288,6 +1290,7 @@
 ?bannerid=
 ?cs=*&abt=0&red=1&sm=$third-party
 ?service=ad&
+?usid=*&utid=
 ?whichAd=freestar&
 ?wppaszoneid=
 ?wpstealthadsjs=
@@ -63407,6 +63410,7 @@ browsershots.org#@#.advert_area
 ||bids.concert.io^
 ||bigrock.in/affiliate/
 ||bit.ly^$image,domain=tooxclusive.com
+||bit.ly^$script,domain=dailyuploads.net
 ||bitbond.com/affiliate-program/
 ||bl.wavecdn.de^
 ||blacklistednews.com/contentrotator/
@@ -71792,6 +71796,7 @@ twitter.com##a[href*="src=promoted_trend_click"] + div
 coolors.co##a[href*="srv.Buysellads.com"]
 unitconversion.org##a[href="../noads.html"]
 osradar.com##a[href="http://insiderapps.com/"]
+dailyuploads.net##a[href="https://aptoze.com/"]
 tpb.party##a[href="https://mysurferprotector.com/"]
 igg-games.com,pcgamestorrents.com##a[href][aria-label=""], [width="300"][height^="25"], [width="660"][height^="8"], [width="660"][height^="7"]
 techporn.ph##a[href][target*="blank"]
