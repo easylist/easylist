@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405022347
+! Version: 202405030036
 ! Title: EasyList
-! Last modified: 02 May 2024 23:47 UTC
+! Last modified: 03 May 2024 00:36 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -171,7 +171,6 @@
 /ad.min.
 /ad/a.aspx?
 /ad/banners/*
-/ad/common_
 /ad/dfp/*
 /ad/err?
 /ad/getban?
@@ -209,7 +208,7 @@
 /ad_header.js
 /ad_home.js
 /ad_images/*
-/ad_img/*
+/ad_img/*$image
 /ad_label_
 /ad_left.
 /ad_manager/*
@@ -301,7 +300,7 @@
 /ads/300.
 /ads/acctid=
 /ads/banner-
-/ads/banners/*
+/ads/banners/*$image
 /ads/bottom.
 /ads/bottom/*
 /ads/cbr.
@@ -351,7 +350,6 @@
 /ads/v2/*
 /ads/video/*
 /ads/view.php
-/ads/view/*
 /ads/www/*
 /ads/xtcore.
 /ads/yahoo/*
@@ -454,7 +452,7 @@
 /adv_2.
 /adv_468.
 /adv_468_
-/adv_ads_
+/adv_ads_v3/relatedAds/*
 /adv_banner_
 /adv_box_
 /adv_out.js
@@ -562,12 +560,10 @@
 /banner.asp?$third-party
 /banner.cgi?
 /banner.php
-/banner/ad/*
 /banner/ad_
 /banner/ads/*
 /banner/affiliate/*
 /banner/html/zone?zid=
-/banner/sponsor_
 /banner/sponsors.
 /banner_468.
 /banner_ad_
@@ -844,7 +840,6 @@
 /mydirtyhobby.$domain=~mydirtyhobby.com|~mydirtyhobby.de|~mydirtyhobby.to
 /mysimpleads/mysa_output.php
 /nativead.
-/nativead/*
 /nativeads-v2.js
 /nativeads.js
 /nativeads/*
@@ -889,7 +884,6 @@
 /partner-ad-
 /Partner_Ad/*
 /partner_ads/*
-/partner_ads_
 /partnerad.
 /partnerads/*
 /partnerads_
@@ -1188,14 +1182,13 @@
 /videoads/*
 /videojs.ads-
 /videojs.sda.js
-/view/ad/*
+/view/ad/*$subdocument
 /view/ads/*
 /view_banner.php
 /viewad.asp
 /viewad.php
 /virtuagirl/*
 /virtuagirlhd.
-/virtualgirl/*
 /web/ads/*
 /web_ads/*
 /webads.htm
@@ -1258,7 +1251,6 @@
 /xpopup.js
 /yhs/ads?
 /yume_ad_library_
-/zanox/banner/*
 /zcredirect?
 /zcvisitor/*
 /zergnet_ad/*
@@ -1573,7 +1565,7 @@ _prebid8.
 /adblock_logger.
 /adblockdetect.
 /adblockdetection.
-/adBlockDetector/*
+/adBlockDetector/*$script
 /adblocker-leader.
 /adBlockerTrack_
 /adblockkiller.
