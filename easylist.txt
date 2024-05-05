@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405052143
+! Version: 202405052222
 ! Title: EasyList
-! Last modified: 05 May 2024 21:43 UTC
+! Last modified: 05 May 2024 22:22 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -166,7 +166,7 @@
 /ad-server.$~script
 /ad-third-party?
 /ad.cgi?
-/ad.css?
+/ad.css?$stylesheet
 /ad.html?
 /ad.min.
 /ad/a.aspx?
@@ -177,7 +177,7 @@
 /ad/html/*
 /ad/image/*
 /ad/images/*$domain=~studiocalling.it
-/ad/img/*
+/ad/img/*$image,domain=~jiji.com
 /ad/imp?
 /ad/load_ad?
 /ad/popup.
@@ -210,7 +210,7 @@
 /ad_img/*$image
 /ad_label_
 /ad_left.
-/ad_manager/*
+/ad_manager/*$image,script
 /ad_overlay.js
 /ad_pos=
 /ad_position=
@@ -376,7 +376,6 @@
 /ads_728_
 /ads_and_amp/*
 /ads_assets/*
-/ads_banner_
 /ads_banners/*
 /ads_bg.
 /ads_bottom.js
@@ -752,7 +751,7 @@
 /images/adv/*
 /images/adz/*
 /images2/Ads/*$image
-/img/ad/*
+/img/ad/*$image
 /img/aff/*
 /img_ad/*
 /in/show/?mid=$third-party
@@ -811,7 +810,7 @@
 /maven/am.js
 /mbads?
 /mcad.php
-/media/ads/*
+/media/ads/*$image
 /media_ads/*
 /mgid.html
 /microad.js
@@ -821,14 +820,12 @@
 /mobile_ad.
 /mobile_ad/*
 /mobileads.
-/mod_ad/*
 /mod_ijoomla_adagency_zone/*
 /mod_pagepeel_banner/*
 /module-ads-html-$script
 /module-ads/*
 /module/ads/*
 /modules/ad/*
-/modules/ad_
 /modules/ads/*
 /moneyball/ads/*
 /MPUAdHelper.js
@@ -894,7 +891,7 @@
 /phpadsnew/*
 /phpbb_ads/*
 /pioneersuspectedjury.com/*
-/pix/ads/*
+/pix/ads/*$image
 /pixel/puclc?
 /pixel/pure
 /pixel/purs?
@@ -969,7 +966,7 @@
 /publicidad_$~stylesheet
 /publicidade.
 /publicidade/*
-/publicidades/*
+/publicidades/*$~xmlhttprequest
 /puff_ad?
 /punder.php
 /push/p.js?
@@ -1164,7 +1161,7 @@
 /video_ads/*
 /video_slider3.js
 /videoad.$domain=~videoad.in
-/VideoAd/*
+/videoad/*$script
 /videoads/*
 /videojs.ads-
 /videojs.sda.js
@@ -1237,7 +1234,6 @@
 /yhs/ads?
 /yume_ad_library_
 /zcredirect?
-/zcvisitor/*
 /zergnet_ad/*
 /~cdn/ads/*
 ://a.*/ad-provider.js$third-party
@@ -1389,18 +1385,18 @@ _widget_ad.
 /ntfc.php?
 ! Clickadu servers
 .com/src/ppu/
-/aas/r45d/vki/*
-/bultykh/ipp24/7/*
-/ceef/gdt3g0/tbt/*
-/fyckld0t/ckp/fd3w4/*
+/aas/r45d/vki/*$third-party
+/bultykh/ipp24/7/*$script
+/ceef/gdt3g0/tbt/*$third-party
+/fyckld0t/ckp/fd3w4/*$third-party
 /i/npage/*$script,third-party
 /lv/esnk/*$script,third-party
-/pn07uscr/f/tr/zavbn/*
-/q/tdl/95/dnt/*
-/sc4fr/rwff/f9ef/*
+/pn07uscr/f/tr/zavbn/*$third-party
+/q/tdl/95/dnt/*$third-party
+/sc4fr/rwff/f9ef/*$third-party
 /script/awesome.js
-/ssp/req/*/?pb=
-/t/9/heis/svewg/*
+/ssp/req/*/?pb=$third-party
+/t/9/heis/svewg/*$third-party
 ! streamhub.gg/qehyheswr3i8 / uploadhub.to/842q2djqdfub
 /tabu/display.js
 ! ezoic
