@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405060345
+! Version: 202405060358
 ! Title: EasyList
-! Last modified: 06 May 2024 03:45 UTC
+! Last modified: 06 May 2024 03:58 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -174,7 +174,6 @@
 /ad/dfp/*
 /ad/err?
 /ad/getban?
-/ad/html/*
 /ad/image/*
 /ad/images/*$domain=~studiocalling.it
 /ad/img/*$image,domain=~jiji.com
@@ -183,7 +182,6 @@
 /ad/popup.
 /ad/skin-
 /ad/skin_
-/ad/sponsors/*
 /ad/view/*
 /ad300.jpg
 /ad300.js
@@ -737,7 +735,6 @@
 /hserver/channel=
 /hserver/site=
 /ht.js?site_
-/html/ad/*
 /html/ads/*
 /image/ad/*
 /image/ads/*
@@ -751,7 +748,7 @@
 /images/adv/*
 /images/adz/*
 /images2/Ads/*$image
-/img/ad/*$image
+/img/ad/*$~xmlhttprequest
 /img/aff/*
 /img_ad/*
 /in/show/?mid=$third-party
@@ -762,7 +759,7 @@
 /index-ad.jpg
 /index-ad.js
 /index-ad.png
-/index_ad/*
+/index_ad/*$image
 /index_ads.js
 /infinity.js.aspx?
 /inhouse_ads/*$image
@@ -849,7 +846,6 @@
 /oncc-ad.js
 /openads.js
 /owa.MessageAdList.
-/p2/ads/*
 /p8network.js
 /p?zoneId=
 /page-ads-
@@ -937,7 +933,6 @@
 /popunder7.min.js
 /popunder?
 /popunderjs/*
-/popunders/*
 /popup-domination/*$~stylesheet
 /popup2.js
 /popup3.js
@@ -946,6 +941,7 @@
 /popup_code.php
 /popupads.js
 /popupunder.js
+/prbt/v1/ads/?
 /prebid-video.js
 /prehead/ads_detect.js
 /prerollad.
@@ -959,8 +955,8 @@
 /PromosAds/*
 /promotools.
 /proxyadcall?
-/public/ad/*
-/public/ads/*
+/public/ad/*$image
+/public/ads/*$image
 /publicidad.$~object,~stylesheet
 /publicidad/*
 /publicidad_$~stylesheet
@@ -994,7 +990,7 @@
 /ren.gif?
 /report_ad.js
 /resources/ads/*
-/responsive/ad_
+/responsive/ad_$subdocument
 /responsive_ads.js
 /right-ad-
 /right_ad.
@@ -1070,7 +1066,7 @@
 /skyadright.
 /skyscraper_ad_
 /skyscraperad.
-/slide_in_ads_
+/slide_in_ads_close.gif
 /slider_ad.js
 /sliderad.js
 /small_ad.
@@ -1134,7 +1130,6 @@
 /ttj?id=
 /ut.js?cb=
 /utx?cb=$third-party
-/v1/ads/*
 /v2/a/pop/*
 /v2/a/push/js/*
 /v3/ads/*
