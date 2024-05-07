@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405071001
+! Version: 202405071005
 ! Title: EasyList
-! Last modified: 07 May 2024 10:01 UTC
+! Last modified: 07 May 2024 10:05 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -174,7 +174,7 @@
 /ad/dfp/*
 /ad/err?
 /ad/getban?
-/ad/image/*
+/ad/image/*$image
 /ad/images/*$domain=~studiocalling.it
 /ad/img/*$image,domain=~jiji.com
 /ad/imp?
@@ -473,7 +473,6 @@
 /advertisingWebRenderer.min.js
 /advertisment-
 /advertisment/*$~image
-/advertisment_
 /adverts.$~script,domain=~0xacab.org|~adverts.ie|~adverts.org.ua|~github.com|~gitlab.com
 /adverts/*$~xmlhttprequest
 /adverts_
@@ -489,7 +488,7 @@
 /aff-ads.
 /aff/ads_
 /aff/banners/*
-/aff/images/*
+/aff/images/*$image
 /aff_ad?$script
 /aff_banner/*
 /aff_banners/*
@@ -562,7 +561,6 @@
 /banner/html/zone?zid=
 /banner/sponsors.
 /banner_468.
-/banner_ad_
 /banner_ads/*
 /banner_ads_
 /bannerad.
@@ -671,7 +669,6 @@
 /exports/tour_20/*
 /extban/*/creatives/*
 /external/ad.
-/external/ad/*
 /external/ads/*
 /external_ad?
 /external_ads.
@@ -686,7 +683,6 @@
 /fload.js
 /float-ads/*
 /float_ad.js
-/floatad_
 /floatads.
 /floating-ad-
 /floatingad.js
@@ -707,7 +703,6 @@
 /forum/ads_
 /fro_lo.js
 /froloa.js
-/frontend/ads/*
 /frontend_loader.js
 /ftt2/js.php
 /funcript*.php?pub=
@@ -737,9 +732,8 @@
 /hserver/site=
 /ht.js?site_
 /html/ads/*
-/image/ad/*
+/image/ad/*$image
 /image/ads/*
-/image/ads_
 /image/affiliate/*
 /image_ads/*
 /imageads/*
@@ -885,7 +879,7 @@
 /pfe/current/*
 /php/ad/*
 /phpads/*
-/phpadsnew/*
+/phpadsnew/*$image,script
 /phpbb_ads/*
 /pioneersuspectedjury.com/*
 /pix/ads/*$image
@@ -1149,7 +1143,6 @@
 /video-ads-player.
 /video-js-ads.
 /video.ads.
-/video/ad/*
 /video/ads/*
 /video_ad.
 /video_ad_
@@ -65471,6 +65464,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||eevblog.com/images/comm/$image
 ||elil.cc/pdev/
 ||elil.cc/reqe.js
+||elpais.com.co/js/frontend/ads/
 ||emoneyspace.com/b.php
 ||engagesrvr.filefactory.com^
 ||engine.fxempire.com^
@@ -65635,6 +65629,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||kta.etherscan.com^
 ||lagacetanewspaper.com/wp-content/uploads/banners/
 ||lasentinel.net/static/img/promos/
+||latestlaws.com/frontend/ads/
 ||lespagesjaunesafrique.com/bandeaux/
 ||lifehack.org/Tm73FWA1STxF.js
 ||linkedin.com/tscp-serving/
@@ -69053,6 +69048,7 @@ thefastmode.com##.channel_small
 cheknews.ca##.chek-advertisement-placeholder
 sevenforums.com,tenforums.com##.chill
 hannaford.com##.citrus_ad_banner
+apps.jeurissen.co##.cja-landing__content > .cja-sqrimage
 gunsamerica.com##.cl_ga
 businessinsider.in##.clmb_eoa
 kissanime.com.ru##.close_ad_button
