@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405111640
+! Version: 202405111712
 ! Title: EasyList
-! Last modified: 11 May 2024 16:40 UTC
+! Last modified: 11 May 2024 17:12 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -211,7 +211,7 @@
 /ad_request.js
 /ad_request.php
 /ad_right.
-/ad_rotator/*
+/ad_rotator/*$image,script,domain=~spokane.exchange
 /ad_server.
 /ad_side.
 /ad_skyscraper.gif
@@ -425,11 +425,11 @@
 /adv/mjx.js
 /adv_2.
 /adv_468.
-/adv_ads_v3/relatedAds/*
 /adv_banner_
 /adv_out.js
 /adv_teasers.js
 /adv_vert.js
+/AdvAdsV3/*$script,stylesheet
 /advanced-ads-$domain=~wordpress.org
 /advbanner/*$~image
 /advbanners/*$~image
@@ -548,7 +548,6 @@
 /banners/aff.
 /banners/affil/*$image
 /banners/affiliate/*$image
-/bannersAds_
 /bottom-ads.jpg
 /bottom-ads.png
 /bottom_ad.jpg
@@ -706,7 +705,7 @@
 /img/aff/*
 /img_ad/*$image,domain=~daily.co.jp|~ehonnavi.net
 /in/show/?mid=$third-party
-/include/ad/*
+/include/ad/*$script
 /include/ad_
 /includes/ads/*$script
 /index-ad-
@@ -817,7 +816,6 @@
 /pagepeel.
 /pagepeelpro.js
 /partner-ad-
-/partner_ads/*
 /partnerad.
 /partnerads/*
 /partneradwidget.
@@ -912,7 +910,7 @@
 /railad.jpg
 /RdmAdFeed.js
 /rdrr/renderer.js
-/RealMedia/ads/adstream_
+/RealMedia/ads/*$~xmlhttprequest
 /redirect/?spot_id=
 /redirect?tid=
 /reklam.$domain=~github.com|~reklam.com.tr
@@ -925,7 +923,7 @@
 /reklama3.png
 /reklama4.jpg
 /reklama4.png
-/reklame/*
+/reklame/*$~xmlhttprequest
 /ren.gif?
 /report_ad.js
 /resources/ads/*
@@ -979,7 +977,7 @@
 /showbanner.js
 /side-ads-
 /side-ads/*
-/side_ads/*
+/side_ads/*$~xmlhttprequest
 /sidead.
 /sidead1.js
 /sideads.js
@@ -1138,7 +1136,6 @@
 /wppas.min.js
 /wpxbz-theme.js
 /wrapper/ads/*
-/www/deliver/*
 /www/deliverx/*
 /www/delivery/*$script,subdocument
 /www/js/ad/*
