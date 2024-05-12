@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405121354
+! Version: 202405121530
 ! Title: EasyList
-! Last modified: 12 May 2024 13:54 UTC
+! Last modified: 12 May 2024 15:30 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -193,7 +193,6 @@
 /ad_bottom.js
 /ad_break?
 /ad_campaign?
-/ad_choices_
 /ad_code.js
 /ad_common.js
 /ad_counter.aspx
@@ -303,7 +302,6 @@
 /ads/header.
 /ads/image/*$image
 /ads/images/*$image,domain=~eoffcn.com
-/ads/img/*
 /ads/index-
 /ads/index.
 /ads/index/*
@@ -356,7 +354,6 @@
 /ads?zone_id=
 /ads_160_
 /ads_300.
-/ads_300_
 /ads_assets/*
 /ads_banners/*$image
 /ads_bg.
@@ -388,7 +385,7 @@
 /adserving.
 /adsforwp-front.min.css
 /adsheader.
-/adsimage/*
+/adsimage/*$image,domain=~kamaz-service.kz|~theatreticketsdirect.co.uk
 /adsimages/*$image,domain=~bdjobstoday.com
 /adsimg/*$image
 /adsinclude.
@@ -496,7 +493,6 @@
 /api.ads.$domain=~ads.instacart.com|~www.ads.com
 /Api/Ad.
 /api/ads?
-/api/v1/ad/*
 /apopwin.js
 /app/manga/themes/*/ads/pop.js
 /apu.php?
@@ -558,7 +554,6 @@
 /bsa-pro-scripteo/frontend/js/script.js
 /btag.min.js$third-party
 /buysellads.js
-/call/pubj/*
 /callAdserver?
 /cgi-bin/ad/*
 /cgi-bin/ads.cgi
@@ -698,7 +693,6 @@
 /image_ads/*
 /imageads/*$image
 /images-ad/*
-/images/ad2/*
 /images/ads-$domain=~ads.com
 /images2/Ads/*$image
 /img/ad/*$~xmlhttprequest
@@ -837,7 +831,7 @@
 /pixel/purst?
 /pixel/sbe?
 /placeholder-ad-
-/player/ads/*
+/player/ads/*$~xmlhttprequest
 /plugin/ad/*
 /plugins/ad-invalid-click-protector/*$script
 /plugins/adrotate-pro/*
@@ -990,7 +984,7 @@
 /site=*/viewid=*/size=
 /size=*/random=*/viewid=
 /skin-ad_
-/skin/ad/*
+/skin/ad/*$image,script
 /skin/adv/*
 /skin_ad-
 /skinad.
@@ -1382,7 +1376,6 @@ _widget_ad.
 /AudienceNetworkPrebid.
 /ext/prebid
 /gpt-prebid.js
-/gpt_and_prebid/*
 /pbjsandwich-
 /pbjsandwich.
 /plugins/prebidjs/*$script
@@ -65640,6 +65633,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||ownedcore.com/forums/ocpbanners/
 ||pafvertizing.crazygames.com^
 ||pahaplayers.click/ch/adcashdirect.php
+||pandora.com/api/v1/ad/
 ||paste.fo/*jpeg$image
 ||pasteheaven.com/assets/images/banners/
 ||pastemagazine.com/common/js/ads-
@@ -74733,7 +74727,6 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 @@||point.rakuten.co.jp/img/crossuse/top_ad/$~third-party
 @@||politiken.dk/static/$script
 @@||popin.cc/popin_discovery/recommend?$~third-party
-@@||pro-foto.jp/ads/img/$~third-party
 @@||przegladpiaseczynski.pl/wp-content/plugins/wppas/$~third-party
 @@||r10s.jp/share/themes/ds/js/show_ads_randomly.js$domain=travel.rakuten.co.jp
 @@||rakuten-bank.co.jp/rb/ams/img/ad/$~third-party
