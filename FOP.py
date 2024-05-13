@@ -214,10 +214,6 @@ def fopsort (filename):
                         section = []
                         lineschecked = 1
                         filterlines = elementlines = 0
-                    # Check for uBO specific lines and write them as is
-                    elif line.startswith("! Include ubO specific") and (line + "\n").startswith("!#include"):
-                        outputfile.write(line + "\n")  # Write both lines
-                    else:                        
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Skip filters containing less than three characters
@@ -336,6 +332,13 @@ def elementtidy (domains, separator, selector):
         selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
     # Remove the markers from the beginning and end of the selector and return the complete rule
     return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector[1:-1])
+
+def fix_uBO_directive(line):
+    """This function checks for specific lines related to uBO inclusions and corrects the format of the !#include line."."""
+    if line.startswith("! Include ubO specific"):
+        return line  # Keep the first line as-is
+    elif line.startswith("! #include"):
+        return line.replace("! #include", "!#include")  # Fix the format of the second line
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
