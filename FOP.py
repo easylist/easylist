@@ -214,6 +214,10 @@ def fopsort (filename):
                         section = []
                         lineschecked = 1
                         filterlines = elementlines = 0
+                    # Check for uBO specific lines and write them as is
+                    elif line.startswith("! Include ubO specific") and (line + "\n").startswith("!#include"):
+                        outputfile.write(line + "\n")  # Write both lines
+                    else:                        
                     outputfile.write("{line}\n".format(line = line))
                 else:
                     # Skip filters containing less than three characters
