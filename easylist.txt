@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405151336
+! Version: 202405151416
 ! Title: EasyList
-! Last modified: 15 May 2024 13:36 UTC
+! Last modified: 15 May 2024 14:16 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -311,7 +311,7 @@
 /ads/popup.
 /ads/preroll-
 /ads/proxy-
-/ads/rectangle_
+/ads/rectangle_$subdocument
 /ads/revgen.
 /ads/serve?
 /ads/show.
@@ -357,7 +357,7 @@
 /adsAPI.js
 /adsbanner-
 /adsbanner.
-/adsbanner/*
+/adsbanner/*$image
 /adsbox.$~script,domain=~adsbox.com.sg
 /adscontrol.js
 /adscontroller.js
@@ -855,7 +855,7 @@
 /processing/impressions.asp?
 /production/ad-
 /production/ads/*$script
-/promo/ads/*
+/promo/ads/*$~xmlhttprequest
 /promo/affiframe.
 /promotools.
 /proxyadcall?
@@ -1021,7 +1021,6 @@
 /utx?cb=$third-party
 /v2/a/push/js/*$third-party
 /v3/ads?
-/v7/ads/*
 /valnet-header-ads.
 /vast/?zid=
 /velvet_stack_cmp.js
@@ -1094,7 +1093,6 @@
 /wppas.min.js
 /wpxbz-theme.js
 /www/delivery/*$script,subdocument
-/www/js/ad/*
 /xads.php
 /xpopunder.js
 /xpopup.js
