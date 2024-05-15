@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405151629
+! Version: 202405151638
 ! Title: EasyList
-! Last modified: 15 May 2024 16:29 UTC
+! Last modified: 15 May 2024 16:38 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -301,7 +301,7 @@
 /ads/images/*$image,domain=~eoffcn.com
 /ads/index-
 /ads/index.
-/ads/index/*
+/ads/index/*$~xmlhttprequest,domain=~kuchechina.com
 /ads/leaderboard-
 /ads/leaderboard.
 /ads/native.js
@@ -674,7 +674,6 @@
 /img_ad/*$image,domain=~daily.co.jp|~ehonnavi.net
 /in/show/?mid=$third-party
 /include/ad/*$script
-/include/ad_
 /includes/ads/*$script
 /index-ad-
 /index-ad.jpg
@@ -730,7 +729,6 @@
 /mbads?
 /mcad.php
 /media/ads/*$image
-/media/plg_adbutlerads/*
 /media_ads/*$image
 /mgid.html
 /microad.js
@@ -805,6 +803,7 @@
 /pixel/sbe?
 /placeholder-ad-
 /player/ads/*$~xmlhttprequest
+/plg_adbutlerads/*$script,stylesheet
 /plugin/ad/*$script
 /plugins/ad-invalid-click-protector/*$script
 /plugins/adrotate-pro/*
