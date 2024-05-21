@@ -154,6 +154,9 @@ perplexity.ai##+js(set-session-storage-item, shouldShowAuthBannerAfterQuery, fal
 seekingalpha.com##+js(set-local-storage-item, __tp-gaAccount, disabled)
 ! https://github.com/uBlockOrigin/uAssets/issues/23722
 nisanyansozluk.com##+js(set-local-storage-item, newYeradlariWebsiteHidden, true)
+! apnews.com
+apnews.com##.fancybox-overlay-fixed
+apnews.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! 4kdownload.com (fix top empty space)
 4kdownload.com##.page-header:style(top:0 !important)
 ! redfin.com (mobile app white space)
