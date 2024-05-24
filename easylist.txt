@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405240619
+! Version: 202405240628
 ! Title: EasyList
-! Last modified: 24 May 2024 06:19 UTC
+! Last modified: 24 May 2024 06:28 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -71880,7 +71880,7 @@ bestbuy.ca##.x-productListItem:has([data-automation="sponsoredProductLabel"])
 freshdirect.com##[class*="ProductsGrid_grid_item_"]:has([data-qa="tile_marketing_tag"])
 popularmechanics.com##[class] > :has(> #article-marketplace-horizontal)
 popularmechanics.com##[class] > :has(> #gpt-ad-vertical-bottom)
-brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##[class] > :has(> .adWrapper)
+brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##[class*=" "] > [class*=" "]:has(.adWrapper)
 fortune.com##[class]:has(> #Leaderboard0)
 petco.com##[class^="citrus-carousel-"]:has([class^="carousel__Sponsored"])
 svgrepo.com##[class^="style_native"]:has([href*="buysellads.com"])
