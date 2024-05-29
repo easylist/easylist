@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202405290938
+! Version: 202405290942
 ! Title: EasyList
-! Last modified: 29 May 2024 09:38 UTC
+! Last modified: 29 May 2024 09:42 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -68421,6 +68421,8 @@ fandomwire.com##.customad
 total-croatia-news.com##.custombanner
 the-sun.com,thescottishsun.co.uk,thesun.co.uk,thesun.ie##.customiser-v2-layout-1-billboard
 the-sun.com,thescottishsun.co.uk,thesun.co.uk,thesun.ie##.customiser-v2-layout-three-native-ad-container
+thesun.co.uk###article-footer div[id*="-ads-"]
+thesun.co.uk##[data-aspc="newBILL"]
 f150lightningforum.com##.customizedBox
 coincarp.com##.customspon
 citywire.com##.cw-top-advert
@@ -71845,6 +71847,8 @@ homedepot.com##section[id^="browse-search-pods-"] > div.browse-search__pod:has(d
 titantv.com##tr:has(> td[align="center"][valign="middle"][colspan="2"][class="gC"])
 opensubtitles.org##tr[style]:has([src*="php"])
 oneindia.com##ul > li:has(> div[class^="adg_"])
+thesun.co.uk##.sun-grid-container:has([class*="ad_widget"])
+thesun.co.uk##.article-sidebar .widget-sticky:has([class*="ad_widget"])
 ! taboola
 nme.com###taboola-below-article
 oneindia.com###taboola-mid-article-thumbnails
