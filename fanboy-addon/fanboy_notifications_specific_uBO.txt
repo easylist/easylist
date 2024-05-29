@@ -175,18 +175,28 @@ instacart.com##body:style(height: auto !important; overflow: auto !important)
 ! crealitycloud.com
 crealitycloud.com##+js(set-local-storage-item, permission_open_push, 1)
 crealitycloud.com##+js(set-local-storage-item, closeGuideRegisterTime, 1)
+! thedp.com
+thedp.com##.modal
+thedp.com##.modal-backdrop
+thedp.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! emailnator.com
 emailnator.com##.modal
 emailnator.com##.modal-backdrop
 emailnator.com##+js(rc, modal-open, , stay)
 emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 emailnator.com##.top-banner
+! foundit.com.ph app download
+foundit.com.ph##+js(set-session-storage-item, isDownloadAppBannerClosed, true)
 ! flightradar24.com  https://github.com/uBlockOrigin/uAssets/issues/23150
 flightradar24.com##+js(set-cookie, map_new_features_new_flightradar24_com_label_options, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/23164
 shop-apotheke.com##+js(set-session-storage-item, ErxModal, true)
 ! food.ndtv.com
 food.ndtv.com##+js(set-cookie, ndtvfood_isSubscribed_elex_v1, no)
+! LaraPush
+daadscholarship.com##+js(abort-on-property-write, LaraPush)
+! sammobile.com
+sammobile.com##+js(set-local-storage-item, request-permission-modal, 1)
 ! feedback popup belstad.com
 belstad.com##+js(set-local-storage-item, is_announcement_closed, true)
 ! m.investing.com (Collapse top)
