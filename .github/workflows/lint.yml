@@ -22,7 +22,7 @@ jobs:
       - name: Run FOP.py
         run: true || echo "" | python3 FOP.py
         shell: bash
-      - name: Run git diff
+      - name: Run git diff to detect the ordering issue
         run: |
           ! git diff --stat | grep -E "[A-Za-z0-9-]+\.txt"
         shell: bash
