@@ -1,6 +1,9 @@
 ! easyprivacy_specific_uBO.txt
 !#if ext_ublock
 
+! https://github.com/AdguardTeam/AdguardFilters/issues/180750
+||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$script,redirect=noop.js,important
+||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$script,redirect=noop.js,important
 ! GPC
 weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
 weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
