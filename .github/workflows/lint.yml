@@ -24,7 +24,7 @@ jobs:
       - name: Check out to repository
         uses: actions/checkout@v4
       - name: Run FOP.py
-        run: true || echo "" | python3 FOP.py
+        run: echo "" | python3 FOP.py || true
         shell: bash
       - name: Run git diff to detect the ordering issue
         run: |
