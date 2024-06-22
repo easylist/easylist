@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202406221240
+! Version: 202406221254
 ! Title: EasyList
-! Last modified: 22 Jun 2024 12:40 UTC
+! Last modified: 22 Jun 2024 12:54 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -292,14 +292,14 @@
 /ads/delivery.
 /ads/footer.
 /ads/ga-audiences?
-/ads/gam_prebid-
+/ads/gam_prebid-$script
 /ads/header.
 /ads/image/*$image
 /ads/images/*$image,domain=~eoffcn.com
 /ads/index-
 /ads/index.
 /ads/index/*$~xmlhttprequest,domain=~kuchechina.com
-/ads/leaderboard-
+/ads/leaderboard-$~xmlhttprequest
 /ads/leaderboard.
 /ads/native.js
 /ads/outbrain?
@@ -495,7 +495,7 @@
 /banner-ad_
 /banner-ads-rotator/*$script,stylesheet
 /banner-ads/*
-/banner-affiliate-
+/banner-affiliate-$image
 /banner.asp?$third-party
 /banner.cgi?
 /banner.php$domain=~research.hchs.hc.edu.tw
@@ -1044,8 +1044,8 @@
 /wordpress-ads-plug-in/*
 /wp-ad.min.
 /wp-auto-affiliate-links/*
-/wp-bannerize-
-/wp-bannerize.
+/wp-bannerize-$script,stylesheet
+/wp-bannerize.$script,stylesheet
 /wp-bannerize/*
 /wp-content/ads/*
 /wp-content/mbp-banner/*
