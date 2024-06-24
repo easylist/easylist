@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202406241049
+! Version: 202406241137
 ! Title: EasyList
-! Last modified: 24 Jun 2024 10:49 UTC
+! Last modified: 24 Jun 2024 11:37 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -293,6 +293,7 @@
 /ads/footer.
 /ads/ga-audiences?
 /ads/gam_prebid-$script
+/ads/get-ads-by-zones/?zones%
 /ads/header.
 /ads/image/*$image
 /ads/images/*$image,domain=~eoffcn.com
@@ -455,7 +456,7 @@
 /ak-ads-ns.
 /amazon-ad-link-$stylesheet
 /amazon-associates-link-$~stylesheet
-/amp-ad-
+/amp-ad-$script
 /amp-connatix-
 /amp4ads-host-v0.js
 /ane-popup-banner.js
@@ -491,7 +492,7 @@
 /banner-ad.$~script
 /banner-ad_
 /banner-ads-rotator/*$script,stylesheet
-/banner-ads/*
+/banner-ads/*$image,domain=~1agosto.com
 /banner-affiliate-$image
 /banner.asp?$third-party
 /banner.cgi?
@@ -510,7 +511,7 @@
 /banners.cgi?
 /banners/468$image
 /banners/728$image
-/banners/ads-
+/banners/ads-$~xmlhttprequest
 /banners/ads.
 /banners/adv/*$~xmlhttprequest
 /banners/aff.
@@ -605,7 +606,7 @@
 /fload.js
 /float_ad.js
 /floatads.
-/floating-ad-
+/floating-ad-rotator-$script,stylesheet
 /floatingad.js
 /floatingads.js
 /flyad.js
@@ -622,7 +623,6 @@
 /ftt2/js.php
 /funcript*.php?pub=
 /gdpr-ad-script.js
-/get-ads-by-zones/*
 /get/?go=1&data=
 /get?go=1&data=
 /getad?
@@ -650,7 +650,6 @@
 /image/ads/*$image,domain=~edatop.com
 /image/affiliate/*$image
 /imageads/*$image
-/images-ad/*
 /images/ads-$domain=~ads.com
 /images2/Ads/*$image
 /img/ad/*$~xmlhttprequest,domain=~weblio.jp
@@ -786,7 +785,7 @@
 /plg_adbutlerads/*$script,stylesheet
 /plugin/ad/*$script
 /plugins/ad-invalid-click-protector/*$script
-/plugins/adrotate-pro/*
+/plugins/adrotate-pro/*$script
 /plugins/adrotate/*$script
 /plugins/ads-
 /plugins/ads/*$~xmlhttprequest
@@ -919,7 +918,7 @@
 /showban.asp?
 /showbanner.js
 /side-ads-$~xmlhttprequest
-/side-ads/*
+/side-ads/*$~xmlhttprequest
 /side_ads/*$~xmlhttprequest
 /sidead.
 /sidead1.js
@@ -954,7 +953,6 @@
 /sponsorad.jpg
 /sponsorad.png
 /sponsored-links.
-/sponsored-links/*
 /sponsored_ad.
 /sponsored_link.
 /sponsored_text.
@@ -1057,7 +1055,6 @@
 /wp-content/plugins/wp-super-popup/*$~stylesheet
 /wp-content/uploads/useful_banner_manager_banners/*
 /wp-popup-scheduler/*$script,stylesheet
-/wp-srv/ad/*
 /wp_pro_ad_system/templates/*$script,stylesheet
 /wpadgu-adblock.js
 /wpadgu-clicks.js
