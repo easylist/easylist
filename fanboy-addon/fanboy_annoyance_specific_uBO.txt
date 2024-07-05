@@ -34,6 +34,9 @@ tradingview.com##+js(nostif, window.loginStateChange.subscribe)
 ! reg nag
 nerdwallet.com##._1y2JXo
 nerdwallet.com##body,html:style(overflow: auto !important; position: initial !important;)
+! vox.com
+vox.com##+js(set-local-storage-item, vox_article_readcount, $remove$)
+vox.com##+js(set-local-storage-item, vox_article_readcount_count, $remove$)
 ! thejournal.ie nag
 thejournal.ie##+js(set-local-storage-item, total_page_views, 2)
 ! tekinvestor.no reg nag https://github.com/uBlockOrigin/uAssets/issues/22985
@@ -195,15 +198,6 @@ t-nation.com##.toggle_lb_scrolling_mobile
 t-nation.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! Disabling copy/paste
 banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
-! democracynow.org
-democracynow.org###overlay
-democracynow.org###campaign_modal
-democracynow.org##+js(rc, not_scroll, , stay)
-democracynow.org##body,html:style(overflow: auto !important; position: initial !important;)
-! truthout.org
-truthout.org###XABNJHEY
-truthout.org##.fun-widget-backdrop-holder
-truthout.org##body:style(overflow: auto !important; position: initial !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/20636
 fantasyfootballhub.co.uk##+js(set-session-storage-item, modalViewed, true)
 ! brainly.co.id
