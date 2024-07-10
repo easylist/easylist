@@ -24,6 +24,9 @@ zippia.com##+js(set-local-storage-item, gatedSignupTimerCounter, $remove$)
 zippia.com##+js(cookie-remover, _zippia-popup-s_t)
 ! https://old.reddit.com/r/uBlockOrigin/comments/1d71x79/how_to_remove_this_blur_effect_showed_up_when_i/
 lawinsider.com##+js(cookie-remover, tce, when, scroll)
+! theguardian.com (forced login)
+theguardian.com##+js(set-local-storage-item, gu.history.weeklyArticleCount, $remove$)
+theguardian.com##+js(set-local-storage-item, gu.history.dailyArticleCount, $remove$)
 ! thebump.com rego popup
 thebump.com##+js(set-cookie, registration_modal_dismissed, true)
 ! tradingview.com https://github.com/uBlockOrigin/uAssets/issues/23236
@@ -31,6 +34,9 @@ tradingview.com##+js(nostif, window.loginStateChange.subscribe)
 ! reg nag
 nerdwallet.com##._1y2JXo
 nerdwallet.com##body,html:style(overflow: auto !important; position: initial !important;)
+! vox.com
+vox.com##+js(set-local-storage-item, vox_article_readcount, $remove$)
+vox.com##+js(set-local-storage-item, vox_article_readcount_count, $remove$)
 ! thejournal.ie nag
 thejournal.ie##+js(set-local-storage-item, total_page_views, 2)
 ! tekinvestor.no reg nag https://github.com/uBlockOrigin/uAssets/issues/22985
@@ -40,6 +46,10 @@ tekinvestor.no##+js(nostif, custom-modal-create-account-link)
 bloomberg.com##+js(set-local-storage-item, history, $remove$)
 bloomberg.com##figure:style(opacity: 1 !important;)
 bloomberg.com##.banner
+! timeslive.co.za
+timeslive.co.za###register-popup-backdrop
+timeslive.co.za##.register-modal-popup-wrapper
+timeslive.co.za##body,html:style(overflow: auto !important; position: initial !important;)
 ! thecradle.co support nag
 thecradle.co##.support-popup
 thecradle.co##body,html:style(height: auto !important; overflow: auto !important)
@@ -160,29 +170,38 @@ perplexity.ai##+js(set-session-storage-item, shouldShowAuthBannerAfterQuery, fal
 seekingalpha.com##+js(set-local-storage-item, __tp-gaAccount, disabled)
 ! https://github.com/uBlockOrigin/uAssets/issues/23722
 nisanyansozluk.com##+js(set-local-storage-item, newYeradlariWebsiteHidden, true)
+! sportsbusinessjournal.com
+sportsbusinessjournal.com##+js(cookie-remover, sbj_archiveStatus)
+sportsbusinessjournal.com##.paywall-footer-container
 ! apnews.com
 apnews.com##.fancybox-overlay-fixed
 apnews.com##body,html:style(overflow: auto !important; position: initial !important;)
+! reuters.com (top banner)
+reuters.com##.site-header__inner__ZJDlb:style(top:0 !important)
+! pawread.com (forced login, https://github.com/uBlockOrigin/uAssets/issues/24198)
+pawread.com##+js(set-local-storage-item, countChapterNum, $remove$)
 ! 4kdownload.com (fix top empty space)
 4kdownload.com##.page-header:style(top:0 !important)
 ! redfin.com (mobile app white space)
 redfin.com##+js(rc, stickyBanner, , stay)
+! theolivepress.es
+theolivepress.es##+js(remove-cookie, issuem_lp)
+! plough.com
+plough.com##.article-paywall 
+plough.com##+js(remove-cookie, ArticlePaywallList)
+! startribune.com (login/reg check)
+startribune.com##+js(remove-cookie, client_id)
+! Mouse out nags
+abc10.com,12news.com,ksdk.com,whas11.com,wfmynews2.com,wbir.com,wzzm13.com,wltx.com,wqad.com,wnep.com,wgrz.com,cbs8.com,firstcoastnews.com,kare11.com,wtsp.com,ajc.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,king5.com,11alive.com##+js(aeld, /^(mouseout|mouseleave)$/)
 ! t-nation.com 
 t-nation.com##.toggle_lb_scrolling_mobile
 t-nation.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! Disabling copy/paste
 banistmo.com##+js(ra, oncontextmenu|onselectstart|ondragstart|oncopy|oncut|onpaste|onbeforecopy)
-! democracynow.org
-democracynow.org###overlay
-democracynow.org###campaign_modal
-democracynow.org##+js(rc, not_scroll, , stay)
-democracynow.org##body,html:style(overflow: auto !important; position: initial !important;)
-! truthout.org
-truthout.org###XABNJHEY
-truthout.org##.fun-widget-backdrop-holder
-truthout.org##body:style(overflow: auto !important; position: initial !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/20636
 fantasyfootballhub.co.uk##+js(set-session-storage-item, modalViewed, true)
+! https://github.com/uBlockOrigin/uAssets/issues/24400 Donate spam
+gadgetizedpanda.com##+js(nostif, isOpen)
 ! brainly.co.id
 brainly.co.id##.js-react-registration-toplayer
 brainly.co.id##body.sg-dialog-no-scroll:style(overflow: auto !important; position: static !important;)
@@ -203,8 +222,6 @@ watchsomuchproxy.com###ModalWindow
 watchsomuchproxy.com##.modal-backdrop
 watchsomuchproxy.com###btnStopAds
 watchsomuchproxy.com##body:style(overflow: scroll !important)
-! Exit overlay
-firstcoastnews.com,wtsp.com,ajc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,king5.com,11alive.com##+js(ra, data-name="exitInterstitial", , stay)
 ! Floating video
 texasmonthly.com##.float-player
 texasmonthly.com##+js(rc, float-player, , stay)

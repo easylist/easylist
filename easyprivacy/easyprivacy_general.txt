@@ -258,7 +258,7 @@
 /analytics/comscore.js
 /analytics/dist/analytics.min.js
 /analytics/embed/*
-/analytics/event
+/analytics/event$domain=~app.diagrams.net
 /analytics/ga.js
 /analytics/google.js
 /analytics/layer
@@ -314,6 +314,7 @@
 /api/stat?
 /api/track?guid
 /api/trk?
+/api/v1/activity|$xmlhttprequest
 /api/v1/firehose?_
 /api/v1/metrics
 /api/v1/stat?
@@ -618,6 +619,7 @@
 /common/analytics.js
 /common/ga.js
 /common/tracker.js
+/complianz/v1/track$xmlhttprequest
 /comscore-min.js
 /comscore?
 /comscore_beacon/*
@@ -843,6 +845,7 @@
 /expcount/additional.php
 /extendedanalytics.js
 /external-tracking.min.js
+/ezais/analytics?
 /ezytrack.js
 /f.gif?
 /facebook/pixel.js
@@ -909,7 +912,7 @@
 /friendbuy.min.js
 /frontend-gtag.js
 /frontend-gtag.min.js
-/frontend-metrics/*
+/frontend-metrics^
 /frontend-sentry-
 /fsrscripts/triggerParams.js
 /fusion/lucid/data/*
@@ -1576,6 +1579,7 @@
 /pageview?t=
 /pageview?user_guid=
 /pageviews.gif?
+/pageviews.php?type=
 /pageviews?token=
 /parsely.js
 /particles/analytics.js
@@ -1886,6 +1890,7 @@
 /screencount?vcid=
 /scribd_events?
 /script.tagged-events.outbound-links.js
+/script.tagged-events.pageview-props.js
 /script/pixel.js
 /scriptAnalytics.js
 /scripts.kissmetrics.com/*
@@ -1977,7 +1982,6 @@
 /smart-pixel.min.js
 /smartpixel-1.js
 /smartpixel.$domain=~smartpixel.com|~smartpixel.tv
-/smartserve-
 /smartTag.bundle.js
 /smarttag/smarttag-
 /smetrics.*/b/ss/*
@@ -2135,12 +2139,14 @@
 /submission/pageview
 /supercookie.asp
 /supercookie.js
+/svs.gif?
 /sw/analytics.js
 /swa_t.gif?
 /swatag.js
 /swell-ct-ad-data
 /swell-ct-pv^
 /swlapi/stats|
+/symplr-analytics-
 /sync.gif?partner_
 /sync?visitor_id=
 /synd.aspx
@@ -2359,6 +2365,7 @@
 /trackvisit?
 /TrackVisitors/*
 /TrackWebPage?
+/trade/in.php?*&ref=
 /traffic-source-cookie.min.js
 /traffic/status.gif?
 /traffic_record.php?
@@ -2522,7 +2529,6 @@
 /web-pixel-shopify-app-pixel@
 /web-pixel-shopify-custom-pixel@
 /web-vitals.
-/web-vitals/*
 /web/push?
 /web_analytics/*
 /web_answertip.js
@@ -2548,7 +2554,7 @@
 /webtag.js
 /webtrack.js
 /webtracker.dll
-/webtracking/*$~subdocument,domain=~wwwapps.ups.com
+/webtracking/*$~document,~subdocument,domain=~wwwapps.ups.com
 /webtraffic.js
 /webtraxs.js
 /webtrekk_mediaTracking.min.js
@@ -2572,6 +2578,7 @@
 /wp-content/plugins/wp-clickmap/clickmap.js
 /wp-content/tracker.js
 /wp-js/analytics.js
+/wp-json/iawp/*
 /wp-monero-miner-class.js
 /wp-monero-miner-util.min.js
 /wp-monero-miner.js
