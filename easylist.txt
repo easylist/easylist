@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202407171803
+! Version: 202407171821
 ! Title: EasyList
-! Last modified: 17 Jul 2024 18:03 UTC
+! Last modified: 17 Jul 2024 18:21 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -70895,6 +70895,7 @@ bbc.com###sticky-mpu:has(.dotcom-ad-inner)
 kroger.com##.AutoGrid-cell:has(.ProductCard-tags > div > span[data-qa="featured-product-tag"])
 nationalgeographic.com##.FrameBackgroundFull--grey:has(.ad-wrapper)
 luxa.org##.MuiContainer-root:has(> ins.adsbygoogle)
+yandex.com##.ProductGallery
 manomano.co.uk,manomano.de,manomano.es,manomano.fr,manomano.it##.Ssfiu-:has([data-testid="popoverTriggersponsoredLabel"])
 outlook.live.com##.VdboX[tabindex="0"]:has(img[src="https://res.cdn.office.net/assets/ads/adbarmetrochoice.svg"])
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##._6y8t:has(a[href="/ads/about/?entry_product=ad_preferences"])
@@ -70969,8 +70970,10 @@ metager.org##.result:has(a[href^="https://r.search.yahoo.com/"])
 qwant.com##.result__ext > div:has([data-testid="adResult"])
 petco.com##.rmn-container:has([class*="SponsoredText"])
 ebay.com##.s-item:has(a[href*="&amdata="])
+yandex.com##.search-list-view__advert-offer-banner
 playpilot.com##.search-preview .side:has(> .provider)
 tempest.com##.search-result-item:has(.search-result-item__title--ad)
+yandex.com##.search-snippet-view:has(span.search-advert-badge__advert)
 troyhunt.com##.sidebar-featured:has(a[href^="https://pluralsight.pxf.io/"])
 bing.com##.slide:has(.rtb_ad_caritem_mvtr)
 fastcompany.com##.sticky:has(.ad-container)
@@ -71098,7 +71101,10 @@ homedepot.com##section[id^="browse-search-pods-"] > div.browse-search__pod:has(d
 titantv.com##tr:has(> td[align="center"][valign="middle"][colspan="2"][class="gC"])
 opensubtitles.org##tr[style]:has([src*="php"])
 oneindia.com##ul > li:has(> div[class^="adg_"])
+yandex.*##.ProductGallery
 yandex.*##.mini-suggest__item[data-suggest-counter*="/yandex.ru/clck/safeclick/"]
+yandex.*##.search-list-view__advert-offer-banner
+yandex.*##.search-snippet-view:has(span.search-advert-badge__advert)
 yandex.*##li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 yandex.*##li[class*="_card"]:has(a[href^="https://yandex.com/search/_crpd/"])
 ! curseforge/modrinth
