@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202407171221
+! Version: 202407171347
 ! Title: EasyPrivacy
-! Last modified: 17 Jul 2024 12:21 UTC
+! Last modified: 17 Jul 2024 13:47 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15023,6 +15023,8 @@ abema.tv##+js(rmnt, script, NREUM)
 ! phileweb.com
 ||clarity.ms/tag/$script,domain=phileweb.com,important
 phileweb.com##+js(set-attr, span[class] img.lazyload[width], src, [data-src])
+! e-begin.jp
+e-begin.jp##.inviewSection:not(.is-show):style(transform: translateY(0) !important; opacity: 1 !important;)
 
 ! EOF
 ! #endif
