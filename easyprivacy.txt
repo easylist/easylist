@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202407170051
+! Version: 202407170148
 ! Title: EasyPrivacy
-! Last modified: 17 Jul 2024 00:51 UTC
+! Last modified: 17 Jul 2024 01:48 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -2001,14 +2001,13 @@
 /sluurpy_track.js
 /smart-pixel.min.js
 /smartpixel-1.js
-/taboola-header.js
-/taboola.js
-/taboola/loader.js
-/taboolaHead.js
 /smartpixel.$domain=~smartpixel.com|~smartpixel.tv
 /smartTag.bundle.js
 /smarttag/smarttag-
 /smetrics.*/b/ss/*
+/outbrainAd.
+/outbrain.js
+/obtp.js
 /smetrics.*/id?
 /smg_tracking/js/onthe.io.js
 /smmch-mine.js
@@ -2180,6 +2179,10 @@
 /t/event?
 /t?referer=
 /t?tcid=
+/taboola-header.js
+/taboola.js
+/taboola/loader.js
+/taboolaHead.js
 /taevents-c.js
 /tag/tag.jsp?
 /tag?tags=
@@ -10415,9 +10418,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||l.ooyala.com^
 ||l.player.ooyala.com^
 ||l.sharethis.com^
-||taboola.com^$third-party
-||taboolasyndication.com^$third-party
 ||l.typesquare.com^
+||outbrain.com^$third-party
 ||lambda-url.us-east-1.on.aws/chug/event
 ||laurel.macrovision.com^
 ||laurel.rovicorp.com^
@@ -11245,6 +11247,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||t.splicky.com^
 ||t.spot.im^
 ||t2.t2b.click^
+||taboola.com^$third-party
+||taboolasyndication.com^$third-party
 ||tag-manager.playbuzz.com^
 ||tag.aticdn.net^
 ||tag.atom.gamedistribution.com^
@@ -14683,6 +14687,51 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Site specific elements (due to EP)
 ###cxense-recs-in-article
 ##.embed-responsive-trendmd
+! Outbrain
+###around-the-web
+###g-outbrain
+###js-outbrain-module
+###js-outbrain-relateds
+###outbrain
+###outbrain-id
+###outbrain-section
+###outbrain1
+###outbrainWidget
+###outbrain_widget_0
+##.ArticleFooter-outbrain
+##.ArticleOutbrainLocal
+##.OUTBRAIN
+##.Outbrain
+##.article_OutbrainContent
+##.box-outbrain
+##.c2_outbrain
+##.component-outbrain
+##.ob-smartfeed-wrapper
+##.outbrain
+##.outbrain-ads
+##.outbrain-bloc
+##.outbrain-content
+##.outbrain-group
+##.outbrain-module
+##.outbrain-placeholder
+##.outbrain-recommended
+##.outbrain-reserved-space
+##.outbrain-single-bottom
+##.outbrain-widget
+##.outbrain-wrap
+##.outbrain-wrapper
+##.outbrain-wrapper-container
+##.outbrain-wrapper-outer
+##.outbrainWidget
+##.outbrain__main
+##.outbrain_container
+##.outbrain_skybox
+##.outbrainbox
+##.sics-component__outbrain
+##.sidebar-outbrain
+##.voc-ob-wrapper
+##.widget_outbrain
+##.widget_outbrain_widget
 ! Taboola
 ###block-taboolablock
 ###js-Taboola-Container-0
@@ -14719,6 +14768,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ##.divider-taboola
 ##.js-taboola
 ##.m-article-taboola
+##.mc-column-Taboola
 ##.slottaboola
 ##.taboola
 ##.taboola-banner
@@ -14737,7 +14787,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ##.taboola-wrapper
 ##.taboolaDiv
 ##.taboola_module
-##.mc-column-Taboola
 ##.taboolaloader
 ##.trc-first-recommendation
 ##.trc-spotlight-first-recommendation
@@ -14746,6 +14795,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ##[data-taboola-options]
 ! Site specific
 atlasobscura.com##.ProgrammaticMembershipCallout--taboola-member-article-container
+cnn.com#@##outbrain_widget_0
 ! Aliexpress
 ||aliyuncs.com/r.png
 ||gj.mmstat.com^
@@ -52359,7 +52409,6 @@ phileweb.com##+js(set-attr, span[class] img.lazyload[width], src, [data-src])
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satellite-$script
-@@||taboola.com/libtrc/*/loader.js$domain=dailymail.co.uk|foxsports.com
 @@||aeries.net^*/require/analytics/views/$script,~third-party
 @@||ajio.com/static/assets/vendors~static/chunk/common/libraries/fingerprintjs2.$script,~third-party
 @@||akamaihd.net/nbad/player/*/appmeasurement.js$domain=watch.nba.com
@@ -52372,6 +52421,8 @@ phileweb.com##+js(set-attr, span[class] img.lazyload[width], src, [data-src])
 @@||analytics.casper.com/gtm.js$~third-party
 @@||analytics.edgekey.net/ma_library/html5/html5_malibrary.js$script,domain=mxplayer.in
 @@||analytics.itunes.apple.com^$~third-party
+@@||odb.outbrain.com/utils/get?url=$script,domain=cnn.com
+@@||outbrain.com/outbrain.js$domain=cnn.com
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api-mg2.db-ip.com^$xmlhttprequest,domain=journal-news.com
@@ -52649,6 +52700,7 @@ phileweb.com##+js(set-attr, span[class] img.lazyload[width], src, [data-src])
 @@||stats.statbroadcast.com/interface/webservice/event/$~third-party
 @@||stats.wnba.com/templates/angular/tables/events/$~third-party
 @@||steamstatic.com/steam/apps/$image,domain=store.steampowered.com
+@@||taboola.com/libtrc/*/loader.js$domain=dailymail.co.uk|foxsports.com
 @@||tagcommander.com^*/tc_$script
 @@||tags.news.com.au/prod/heartbeat/$script
 @@||taplytics.com^$domain=royalbank.com
