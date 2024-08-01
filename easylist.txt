@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202408011103
+! Version: 202408011204
 ! Title: EasyList
-! Last modified: 01 Aug 2024 11:03 UTC
+! Last modified: 01 Aug 2024 12:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15493,7 +15493,7 @@ _800x80_
 ###mgb-container > #mgb
 ! https://github.com/easylist/easylist/pull/11962
 ###kt_player > a[target="_blank"]
-###kt_player > div[style="position: absolute; inset: 0px; z-index: 170;"]
+###kt_player > div[style$="display: block;"][style*="inset: 0px;"]
 ! Slashdot "Deals" (covers web/ipfs/onion)
 ###slashboxes > .deals-rail
 ##.scroll-fixable.rail-right > .deals-rail
