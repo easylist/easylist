@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202408082141
+! Version: 202408082146
 ! Title: EasyPrivacy
-! Last modified: 08 Aug 2024 21:41 UTC
+! Last modified: 08 Aug 2024 21:46 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -14943,6 +14943,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! (naiadsystems.com/icfcdn.com)
 /api/events|$ping,~third-party
 /api/statsd|$~third-party,xmlhttprequest
+/api/v1/activity|$~third-party,xmlhttprequest
 /api/v2/jsonlogger
 ||naiadsystems.com/api/v1/xment/
 ! Port scanning Fingerprinting Trackers (Privacy and CPU abuse)
@@ -52594,6 +52595,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api-mg2.db-ip.com^$xmlhttprequest,domain=journal-news.com
+@@||api.aliagents.ai/api/v1/activity$~third-party,xmlhttprequest
 @@||api.amplitude.com^$xmlhttprequest,domain=insiderintelligence.com
 @@||api.ipinfodb.com^$xmlhttprequest,domain=management30.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
