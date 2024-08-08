@@ -243,8 +243,6 @@
 ||c.wort-suche.com^
 ||c.xbox.com^
 ||c.ypcdn.com^$domain=yellowpages.com
-||cambash.com/api/events
-||cambash.com/api/metrics
 ||camgirls.casa/p.php
 ||campsaver.com/nelmio-js-logger/
 ||canstockphoto.com/server.php?rqst=track
@@ -792,8 +790,6 @@
 ||linris.xyz/cdn-cgi/trace
 ||lists.ccmbg.com^
 ||littlebigsnake.com/event?
-||livehdcams.com/api/events
-||livehdcams.com/api/metrics
 ||livejournal.com/ljcounter/
 ||livejournal.com/log?
 ||liveperson.net/hc/*/?visitor=
@@ -839,10 +835,6 @@
 ||mapquest.com/logger
 ||marketing.alibaba.com^
 ||marketing.dropbox.com^
-||massivecams.com/api/events
-||massivecams.com/api/metrics
-||massivecams.com/api/statsd
-||massivecams.com/api/v1/activity
 ||mat6tube.com/api/stats?
 ||mcc-tags.cisco.com^
 ||mcs-ie.tiktokw.eu^
@@ -1041,8 +1033,6 @@
 ||poptropica.com/brain/track.php?
 ||pornbox.com/event/
 ||pornbox.com/stats/
-||pornhublive.com/api/events
-||pornhublive.com/api/metrics
 ||porzo.com/js/analytics
 ||prairiedog.hashnode.com^
 ||pravda.com.ua/counter/
@@ -1689,6 +1679,11 @@
 ||oneid.mmstat.com^
 !
 /rest/high/api/cogitoergosum
+! (naiadsystems.com/icfcdn.com)
+/api/events|$ping,~third-party
+/api/statsd|$~third-party,xmlhttprequest
+/api/v2/jsonlogger
+||naiadsystems.com/api/v1/xment/
 ! Port scanning Fingerprinting Trackers (Privacy and CPU abuse)
 ! https://nullsweep.com/why-is-this-website-port-scanning-me/
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=kleinanzeigen.de
