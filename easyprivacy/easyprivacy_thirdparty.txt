@@ -2810,7 +2810,7 @@
 ||widgets.trustedshops.com^$third-party
 ! https://www.oligo.security/blog/0-0-0-0-day-exploiting-localhost-apis-from-the-browser
 ||0.0.0.0^$third-party,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
-||[::1]^$third-party,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
+||[::]^$third-party,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~local|~localhost
 ! Suspect trackers (from privacy badger)
 ||jsrdn.com/s/cs.js
 ! Rewrite to internal resources filters for Adblock Plus
