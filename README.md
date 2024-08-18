@@ -43,6 +43,8 @@ For legal reasons, Anti-adblock this will only cover:
  - Will be blocked without warning.
  - If you're an Abusive Ad company, disable Easylist. 
  - If the domain changes we will update the filters.
+ - Sites caught scamming, redirects through known abusive adservers will be blocked.
+ - In some cases evidence will be provided via: https://github.com/easylist/easylist/tree/master/disputes
 
 ## EasyPrivacy
 
