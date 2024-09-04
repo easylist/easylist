@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409041136
+! Version: 202409041140
 ! Title: EasyList
-! Last modified: 04 Sep 2024 11:36 UTC
+! Last modified: 04 Sep 2024 11:40 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -205,7 +205,7 @@
 /ad_request.php
 /ad_right.
 /ad_rotator/*$image,script,domain=~spokane.exchange
-/ad_server.
+/ad_server.cgi$subdocument
 /ad_side.
 /ad_skyscraper.gif
 /ad_sticky.js
@@ -223,7 +223,7 @@
 /adcgi?
 /adchoice.
 /adcommon?
-/adconfig.js
+/adconfig.js$script
 /adcount.js
 /adcount.php
 /addons/ads.
@@ -282,7 +282,6 @@
 /ads/300.
 /ads/acctid=
 /ads/banners/*$image
-/ads/bottom.
 /ads/cbr.
 /ads/custom_ads.js
 /ads/delivery.
@@ -599,7 +598,6 @@
 /footer_ad.js
 /footer_ad.php
 /footer_ads.php
-/footer_ads.png
 /footerad.
 /footerads.
 /fro_lo.js
@@ -668,7 +666,6 @@
 /js3caf.js
 /jsad.php
 /jsAds-1.4.min.js
-/jsads.js
 /jshexi.hj?lb=
 /jspopunder.js
 /jspopunder.min.js
@@ -741,7 +738,7 @@
 /pagead/conversion.js
 /pagead/lvz?
 /pagead/osd.
-/pageear.js
+/pageear.js$script
 /pageear/*$script
 /pagepeel.
 /pagepeelpro.js
@@ -847,7 +844,7 @@
 /reklama2.png
 /reklama3.jpg
 /reklama3.png
-/reklama4.jpg
+/reklama4.jpg$image
 /reklama4.png
 /reklame/*$~xmlhttprequest
 /ren.gif?
@@ -881,7 +878,7 @@
 /script/native_render.js
 /script/native_server.js
 /script/npa2.min.js
-/script/nwsu.js
+/script/nwsu.js$third-party
 /script/suv4r.js
 /script/thankYou.js
 /script/uBlock.js
@@ -932,7 +929,7 @@
 /sponsor-banner.jpg
 /sponsor-banner.png
 /sponsor-links.html
-/sponsorad.jpg
+/sponsorad.jpg$image
 /sponsorad.png
 /sponsored-links.
 /sponsored_ad.
@@ -1251,7 +1248,7 @@ _widget_ad.
 /detroitchicago/raleigh.js
 /detroitchicago/reportads.js
 /detroitchicago/rochester.js
-/detroitchicago/sidebarwall.js
+/detroitchicago/sidebarwall.js$script
 /detroitchicago/springfield.js
 /detroitchicago/stickyfix.js
 /detroitchicago/tampa.js
