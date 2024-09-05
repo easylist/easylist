@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409051200
+! Version: 202409051333
 ! Title: EasyList
-! Last modified: 05 Sep 2024 12:00 UTC
+! Last modified: 05 Sep 2024 13:33 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -225,7 +225,6 @@
 /adcount.js
 /adcount.php
 /addons/ads.
-/addyn/3.0/*
 /addyn|*;adtech;
 /addyn|*|adtech;
 /adengine.js
@@ -329,7 +328,7 @@
 /ads?zone_id=
 /ads_300.
 /ads_banners/*$image
-/ads_bg.
+/ads_bg.$image
 /ads_bottom.js
 /ads_controller.js
 /ads_footer.
@@ -337,7 +336,7 @@
 /ads_iframe.
 /ads_image/*$image
 /ads_images/*$image,domain=~wildlifeauctions.co.za
-/adsAPI.js
+/adsAPI.js$script
 /adsbanner-$image
 /adsbanner.
 /adsbanner/*$image
@@ -655,7 +654,7 @@
 /jsAds-1.4.min.js
 /jshexi.hj?lb=
 /jspopunder.js
-/jspopunder.min.js
+/jspopunder.min.js$script
 /keyade.js
 /layerad.js
 /lazyad-loader.js
@@ -773,7 +772,6 @@
 /pop_ads.js
 /popin-min.js
 /popu.js
-/popunder.min.js
 /popunder1.js$script
 /popunder2.js
 /popunder5.js
@@ -848,7 +846,7 @@
 /sbar.json?key=
 /sc-tagmanager/*$script
 /script/aclib.js
-/script/antd.js
+/script/antd.js$third-party
 /script/app_settings.js$third-party
 /script/atg.js
 /script/atga.js
@@ -976,7 +974,7 @@
 /videoad/*$script
 /videoads/*$~xmlhttprequest
 /videojs.ads-
-/videojs.sda.js
+/videojs.sda.js$script
 /view/ad/*$subdocument
 /view_banner.php
 /viewad.asp
@@ -989,7 +987,6 @@
 /webads.js
 /webads/*$image,domain=~cccc.edu|~meatingplace.com
 /webadverts/ads.pl?
-/weborama.js
 /welcome_ad.js
 /widget-advert?
 /wordpress-ads-plug-in/*$script,stylesheet
@@ -1165,10 +1162,10 @@ _widget_ad.
 /plugins/ad-ace/assets/js/slot-slideup.js
 /plugins/ad-ace/includes/shoppable-images/*
 ! readcomiconline.li
-/Ads/bid300a.aspx
-/Ads/bid300b.aspx
-/Ads/bid300c.aspx
-/Ads/bid728.aspx
+/Ads/bid300a.aspx$subdocument
+/Ads/bid300b.aspx$subdocument
+/Ads/bid300c.aspx$subdocument
+/Ads/bid728.aspx$subdocument
 ! Amazon
 /e/cm?$subdocument
 /e/ir?$image,script
@@ -61459,6 +61456,7 @@ browsershots.org#@#.advert_area
 ||sleepgalleries.com/recips/$third-party
 ||smartmovies.net/promo_$third-party
 ||smpop.icfcdn.com^$third-party
+||smyw.org/popunder.min.js
 ||smyw.org/smyw_anima_1.gif
 ||snrcash.com/profilerotator/$third-party
 ||st.ipornia.com^$third-party
