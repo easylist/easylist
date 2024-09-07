@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409071058
+! Version: 202409071137
 ! Title: EasyList
-! Last modified: 07 Sep 2024 10:58 UTC
+! Last modified: 07 Sep 2024 11:37 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -300,7 +300,7 @@
 /ads/ta_wppas/*$third-party
 /ads/targeted|
 /ads/top.
-/ads/video/controller.php
+/ads/video/*$script
 /ads/view.php
 /ads/xtcore.
 /ads1.
@@ -342,7 +342,6 @@
 /adserver?
 /adserving.
 /adsforwp-front.min.css
-/adsheader.
 /adsimage/*$image,domain=~kamaz-service.kz|~theatreticketsdirect.co.uk
 /adsimages/*$image,domain=~bdjobstoday.com
 /adsimg/*$image
@@ -357,7 +356,7 @@
 /adsserv.
 /adsserver.
 /adsservice.
-/adstracking.
+/adsTracking.$script
 /adstream.
 /adswrapper.
 /ads~adsize~
@@ -446,9 +445,7 @@
 /awaps-ad-sdk-$script
 /awe2.js
 /ban.php?
-/ban300.html
 /ban300.php
-/ban728.html
 /ban728.php
 /ban728x90.$image
 /banman/ad.aspx
@@ -634,8 +631,8 @@
 /jspopunder.min.js$script
 /keyade.js
 /layerad.js
-/lazyad-loader.js
-/lazyad-loader.min.js
+/lazyad-loader.js$script
+/lazyad-loader.min.js$script
 /lazyload.ads?
 /left_ads.js
 /leftad.js$script
@@ -894,7 +891,7 @@
 /static/js/4728ba74bc.js$~third-party
 /sticky_ads.js
 /stickyad.js
-/stickyads.js
+/stickyads.js$script
 /style_ad.css$stylesheet
 /suurl4.php?
 /suurl5.php
@@ -903,7 +900,7 @@
 /sync2ad.js
 /taboola-footer.js
 /taboola-header.js
-/taboola_7.4.1.js
+/taboola_8.9.1.js$script
 /taboola_header.js
 /taboolaarticle.min.js
 /targetingAd.js
@@ -1217,7 +1214,6 @@ _widget_ad.
 -prebid/
 .prebid-bundle.
 .prebid.$domain=~prebid.org
-/_js/prbd_6.19.0.js
 /ad/postbid_handler1.0.9.js
 /gpt-prebid.js
 /pbjsandwich.
@@ -64777,6 +64773,7 @@ downloads.digitaltrends.com##.ad-kargo
 kenyans.co.ke##.ad-kenyans
 kenyans.co.ke##.ad-kenyans-wrapper
 heise.de##.ad-ldb-container
+revolvermag.com##.ad-leaderboard-head
 apksum.com##.ad-left
 radiopaedia.org##.ad-link-grey
 citynews.ca##.ad-load
@@ -67039,6 +67036,7 @@ firstpost.com##.newadd
 farminguk.com##.news-advert-button-click
 hurriyetdailynews.com##.news-detail-adv
 myflixer.to##.news-iframe
+blabbermouth.net##.news-single-ads
 dailysocial.id##.news__detail-ads-subs
 firstpost.com##.newtopadd
 moddb.com##.nextmediaboxtop
