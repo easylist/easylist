@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409071143
+! Version: 202409071404
 ! Title: EasyList
-! Last modified: 07 Sep 2024 11:43 UTC
+! Last modified: 07 Sep 2024 14:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -247,7 +247,6 @@
 /adplayer.$script,domain=~adplayer.pro
 /adplugin.
 /adpopup.js
-/adpopup.php
 /adrecover.js
 /adright.$domain=~adright.com
 /adriver.$~script,domain=~adriver.co
@@ -346,7 +345,7 @@
 /adsimages/*$image,domain=~bdjobstoday.com
 /adsimg/*$image
 /adsinclude.
-/adslide.js
+/adslide.js$script
 /AdsLoad.js
 /adsmanager.nsf/*$image
 /adsmanager/*$domain=~adsmanager.facebook.com|~github.com
@@ -372,7 +371,6 @@
 /adv-scroll.
 /adv-socialbar-scroll.js
 /adv.css?
-/adv/mjx.js
 /adv_468.
 /adv_out.js$third-party
 /adv_teasers.js$script
@@ -666,12 +664,12 @@
 /mysimpleads/mysa_output.php$script
 /nativead.
 /nativeads-v2.js
-/nativeads.js
+/nativeads.js$script
 /nativeads/script/*$script
 /nativebanner/ane-native-banner.js$script
 /nb/frot_lod.js
 /neverblock/*$script
-/new/floatadv.js
+/new/floatadv.js$script
 /ntv.json?key=
 /Nuggad?
 /nwm-fcn.min.js
@@ -864,7 +862,7 @@
 /slide_in_ads_close.gif$image
 /slider_ad.js$script
 /sliderad.js$script
-/small_ad.
+/small_ad.$image,domain=~eh-ic.com
 /smartlinks.epl?
 /sp/delivery/js.php
 /spacedesc=
@@ -1266,7 +1264,6 @@ _prebid8.
 /adblock-detector.
 /adblock-notify-by-bweb/*$script,stylesheet
 /adblock.gif?
-/adblock_detect.
 /adblock_detector.
 /adblock_detector2.
 /adblock_logger.$script
@@ -1274,7 +1271,6 @@ _prebid8.
 /adblockdetection.
 /adBlockDetector/*$script
 /adblocker-leader.
-/adblockkiller.
 /adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
 /ads-blocking-detector.
 /anti-adblock/*$~stylesheet
