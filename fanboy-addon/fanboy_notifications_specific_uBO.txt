@@ -200,10 +200,10 @@ flightradar24.com##+js(set-cookie, map_new_features_new_flightradar24_com_label_
 ! https://github.com/uBlockOrigin/uAssets/issues/23164
 shop-apotheke.com##+js(set-session-storage-item, ErxModal, true)
 ! m.youtube.com 
-m.youtube.com##.ytm-bottom-sheet-overlay-renderer-container[style="transform: translateY(0px);"]
-m.youtube.com##.YtWebScrimDialogContainer
-m.youtube.com##.YtWebScrimHostModernOverlay
-m.youtube.com##body:style(overflow: auto !important; position: initial !important;)
+!m.youtube.com##.ytm-bottom-sheet-overlay-renderer-container[style="transform: translateY(0px);"]
+!m.youtube.com##.YtWebScrimDialogContainer
+!m.youtube.com##.YtWebScrimHostModernOverlay
+!m.youtube.com##body:style(overflow: auto !important; position: initial !important;)
 ! zillow.com
 zillow.com##.app-upsell-banner
 zillow.com###pfs-upsell:remove()
@@ -249,4 +249,4 @@ copilot.microsoft.com##body,html:style(overflow: auto !important; position: init
 izumi.jp###s_header[style="top: 84px;"]:style(top: 0 !important;)
 izumi.jp##html[data-smartbanner-original-margin-top="0"][style="margin-top: 84px;"]:style(margin-top: 0 !important;)
 ! cecile.co.jp (mobile app)
-cecile.co.jp##.smartbanner-show:style(margin-top: 0 !important;)
+cecile.co.jp,nola-novel.com##.smartbanner-show:style(margin-top: 0 !important;)
