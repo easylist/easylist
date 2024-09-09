@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409092006
+! Version: 202409092301
 ! Title: EasyList
-! Last modified: 09 Sep 2024 20:06 UTC
+! Last modified: 09 Sep 2024 23:01 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -68570,7 +68570,7 @@ coles.com.au##[data-testid="ad"]
 kijiji.ca##[data-testid="adsense-container"]
 gozofinder.com##[data-testid="advert"]
 coles.com.au##[data-testid="banner-container-desktop"]
-walmart.com##[data-testid="carousel-ad"]
+walmart.ca,walmart.com##[data-testid="carousel-ad"]
 petco.com##[data-testid="citrus-widget"]
 argos.co.uk##[data-testid="citrus_products-carousel"]
 theweathernetwork.com##[data-testid="content-feed-ad-slot"]
@@ -69408,6 +69408,7 @@ pricespy.*##.AdPlacementMarginTop-sc-15ga2eg-3
 pricespy.*##.AdPlacementWrapper-sc-0-3
 pricespy.*##.StyledAdPlacementWrapper-sc-0-5
 pricespy.*##.StyledAdWrapper-sc-0-1
+walmart.*##[data-testid="carousel-ad"]
 yandex.*##._view_advertisement
 yandex.*##.business-card-title-view__advert
 yandex.*##.mini-suggest__item[data-suggest-counter*="/yandex.ru/clck/safeclick/"]
@@ -69544,6 +69545,7 @@ petco.com##[class^="citrus-carousel-"]:has([class^="carousel__Sponsored"])
 svgrepo.com##[class^="style_native"]:has([href*="buysellads.com"])
 tesco.com##[class^="styled__StyledLIProductItem"]:has([class^="styled__StyledOffers"])
 argos.co.uk##[class^="styles__LazyHydrateCard"]:has([class*="ProductCardstyles__FlyoutBadge"])
+argos.co.uk##[class^="styles__LazyHydrateCard-sc"]:has([class*="SponsoredBadge"])
 cargurus.com##[data-cg-ft="car-blade"]:has([data-eyebrow^="FEATURED"])
 cargurus.com##[data-cg-ft="car-blade-link"]:has([data-cg-ft="srp-listing-blade-sponsored"])
 wayfair.com##[data-hb-id="Card"]:has([data-node-id^="ListingCardSponsored"])
