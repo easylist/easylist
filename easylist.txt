@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409102106
+! Version: 202409102242
 ! Title: EasyList
-! Last modified: 10 Sep 2024 21:06 UTC
+! Last modified: 10 Sep 2024 22:42 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -329,7 +329,6 @@
 /adserv.$script
 /adserve/*$script
 /adserver.$~stylesheet,~xmlhttprequest
-/adserver2.
 /adserver3.$image,script
 /adserver?
 /adsforwp-front.min.css
@@ -407,7 +406,6 @@
 /amp4ads-host-v0.js$script
 /ane-popup-1/ane-popup.js$script
 /ane-popup-banner.js$script
-/annonse.
 /annonser.
 /api.ads.$domain=~ads.instacart.com|~www.ads.com
 /api/ad.$script
@@ -444,7 +442,7 @@
 /banners/468$image
 /banners/728$image
 /banners/ads-$~xmlhttprequest
-/banners/ads.
+/banners/ads.$~xmlhttprequest
 /banners/adv/*$~xmlhttprequest
 /banners/aff.
 /banners/affil/*$image
@@ -516,7 +514,7 @@
 /external_ad?
 /external_ads.
 /fel456.js$script
-/fgh1ijKl.js
+/fgh1ijKl.js$script
 /flashad.asp$subdocument
 /flashad.js
 /flashads.$domain=~flashads.co.id
@@ -595,7 +593,6 @@
 /js.ng/channel_
 /js.ng/pagepos=
 /js3caf.js
-/jsad.php
 /jsAds-1.4.min.js$script
 /jshexi.hj?lb=
 /jspopunder.js$script
@@ -629,7 +626,7 @@
 /module/ads/*$~xmlhttprequest
 /modules/ad/*$~xmlhttprequest
 /modules/ads/*$~xmlhttprequest
-/MPUAdHelper.js
+/MPUAdHelper.js$script
 /mysimpleads/mysa_output.php$script
 /native/ts-master.$subdocument
 /nativeads-v2.js
@@ -702,7 +699,7 @@
 /plugins/wp125/*$~stylesheet
 /pop_8_2.js
 /pop_ads.js
-/popin-min.js
+/popin-min.js$script
 /popu.js
 /popunder1.js$script
 /popunder2.js
@@ -817,14 +814,13 @@
 /size=*/random=*/viewid=
 /skin/ad/*$image,script
 /skin/adv/*$~xmlhttprequest
-/skyadright.
 /skyscraperad.
 /slide_in_ads_close.gif$image
 /slider_ad.js$script
 /sliderad.js$script
 /small_ad.$image,domain=~eh-ic.com
 /smartlinks.epl?
-/sp/delivery/js.php
+/sp/delivery/*$script
 /spacedesc=
 /spc.php?$script
 /spcjs.php$script
@@ -1166,7 +1162,7 @@ _widget_ad.
 .prebid-bundle.
 .prebid.$domain=~prebid.org
 /ad/postbid_handler1.0.9.js
-/gpt-prebid.js
+/gpt-prebid.js$script
 /pbjsandwichdirecta9-$script
 /plugins/prebidjs/*$script
 /porpoiseant/*$script
