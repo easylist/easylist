@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409102342
+! Version: 202409110450
 ! Title: EasyList
-! Last modified: 10 Sep 2024 23:42 UTC
+! Last modified: 11 Sep 2024 04:50 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -169,7 +169,6 @@
 /ad/img/*$image,domain=~eki-net.com|~jiji.com
 /ad/imp?
 /ad/load_ad?
-/ad/popup.
 /ad300.jpg$image
 /ad300.png$image
 /ad728.png$image
@@ -180,7 +179,7 @@
 /ad_728.js
 /ad_banner/*$image,domain=~ccf.com.cn
 /ad_bottom.jpg$image
-/ad_bottom.js
+/ad_bottom.js$script
 /ad_break?
 /ad_campaign?
 /ad_common.js
@@ -201,15 +200,14 @@
 /ad_server.cgi$subdocument
 /ad_side.$~xmlhttprequest
 /ad_skyscraper.gif$image
-/ad_sticky.js
 /ad_top.jpg$image
 /ad_top.js$script
 /ad_vert.gif
 /adanalytics.js
 /adaptive_components.ashx?type=ads&
 /adaptvadplayer.js$script
-/adasync.js
-/adasync.min.js
+/adasync.js$script
+/adasync.min.js$script
 /adbanners/*$image
 /adcall?
 /adcgi?
@@ -231,13 +229,12 @@
 /adimages.$script
 /adj.php?
 /adjs.php$script
-/adlayer.php
-/adlib.min.js
+/adlayer.php$script
 /adlog.php$image
 /admanager.js$script
 /admanager.min.js$script
 /admanager/*$~object,domain=~admanager.line.biz|~blog.google|~sevio.com
-/admgr.js
+/admgr.js$script
 /admitad.js$script
 /adocean.js$script
 /adpartner.min.js$script
@@ -270,7 +267,7 @@
 /ads/cbr.
 /ads/custom_ads.js
 /ads/delivery.
-/ads/footer.
+/ads/footer.$~xmlhttprequest
 /ads/ga-audiences?
 /ads/gam_prebid-$script
 /ads/get-ads-by-zones/?zones%
@@ -323,8 +320,8 @@
 /adsbanner-$image
 /adsbanner/*$image
 /adsbox.$~script,domain=~adsbox.com.sg
-/adscontroller.js
-/adscroll.js
+/adscontroller.js$script
+/adscroll.js$script
 /adsdelivery/*$subdocument
 /adserv.$script
 /adserve/*$script
@@ -344,7 +341,6 @@
 /adsscript.$script
 /adsservice.
 /adsTracking.$script
-/adstream.
 /adsWrapper.js$script
 /ads~adsize~
 /adtech;
@@ -359,10 +355,9 @@
 /adv-scroll.$script
 /adv-socialbar-scroll.js$script
 /adv.css?
-/adv_468.
 /adv_out.js$third-party
 /adv_teasers.js$script
-/adv_vert.js
+/adv_vert.js$script
 /AdvAdsV3/*$script,stylesheet
 /advanced-ads-$domain=~wordpress.org
 /advbanner/*$~image
@@ -377,7 +372,6 @@
 /adverts/*$~xmlhttprequest
 /advrotator.js
 /advrotator_banner_largo.htm$subdocument
-/advtBanner.
 /adx2.
 /adz/js/adz.$script
 /aff/banners/*$image
@@ -433,7 +427,7 @@
 /banner.php$domain=~research.hchs.hc.edu.tw
 /banner/affiliate/*$image,subdocument
 /banner/html/zone?zid=
-/banner_468.
+/banner_468.$image
 /banner_ads/*$~xmlhttprequest,domain=~clickbd.com
 /bannerad3.js$script
 /bannerads/*$~xmlhttprequest,domain=~coldwellbankerhomes.com
@@ -476,7 +470,7 @@
 /content/ads/*$~xmlhttprequest
 /cpmbanners.js
 /css/ads-$stylesheet
-/css/adsense.
+/css/adsense.$stylesheet
 /css/adv.$stylesheet
 /curveball/ads/*$image
 /data-file_123.js
@@ -509,7 +503,7 @@
 /expads-blocked.js
 /exports/tour/*$third-party
 /exports/tour_20/*$subdocument
-/external/ad.
+/external/ad.$script
 /external/ads/*$image
 /external_ad?
 /external_ads.
@@ -527,17 +521,16 @@
 /flyad.js
 /footer-ad.$~script
 /footer_ad.js$script
-/footer_ad.php
-/footer_ads.php
-/footerads.
+/footer_ads.php$subdocument
+/footerads.php$script
 /fro_lo.js
 /froloa.js
 /frontend_loader.js$script
 /ftt2/js.php$script
 /funcript*.php?pub=
-/gdpr-ad-script.js
-/get/?go=1&data=
-/get?go=1&data=
+/gdpr-ad-script.js$script
+/get/?go=1&data=$subdocument
+/get?go=1&data=$subdocument
 /getad?
 /getads?
 /getAdsysCode?
@@ -552,7 +545,6 @@
 /gpt.js$script,xmlhttprequest
 /gpt_ads-public.js$script
 /GunosyAdsSDKv2.js
-/headerads1.php
 /homepage_ads/*$domain=~swedishbeauty.com
 /house-ads/*$image
 /hoverad.js
@@ -600,7 +592,7 @@
 /lazyad-loader.js$script
 /lazyad-loader.min.js$script
 /lazyload.ads?
-/left_ads.js
+/left_ads.js$script
 /leftad.js$script
 /leftad.png
 /legion-advertising-atlasastro/*$script
@@ -629,11 +621,11 @@
 /MPUAdHelper.js$script
 /mysimpleads/mysa_output.php$script
 /native/ts-master.$subdocument
-/nativeads-v2.js
+/nativeads-v2.js$script
 /nativeads.js$script
 /nativeads/script/*$script
 /nativebanner/ane-native-banner.js$script
-/nb/frot_lod.js
+/nb/frot_lud.js$script
 /neverblock/*$script
 /new/floatadv.js$script
 /ntv.json?key=
@@ -711,7 +703,7 @@
 /popup3.js$script
 /popup_ad.js$script
 /popup_ad.php
-/popup_code.php
+/popup_code.php$script
 /popupads.js$script
 /popupunder.js
 /prbt/v1/ads/?
@@ -758,7 +750,7 @@
 /responsive/ad_$subdocument
 /responsive_ads.js$script
 /right_ad.
-/right_ads.
+/right_ads.$~xmlhttprequest
 /rightad.js$script
 /s.ashx?btag
 /SBA-WP-13.js
@@ -919,11 +911,10 @@
 /wpadgu-clicks.js$script
 /wpadgu-frontend.js$script
 /wpbanners_show.php$script
-/wppas.min.css
-/wppas.min.js
+/wppas.min.css$stylesheet
+/wppas.min.js$script
 /wpxbz-theme.js$script
 /www/delivery/*$script,subdocument
-/xads.php
 /xpopup.js$script
 /yhs/ads?
 /zcredirect?
@@ -1208,7 +1199,6 @@ _prebid8.
 -detect-adblock.
 /ad-blocking-advisor/*$script,stylesheet
 /ad-blocking-alert/*$stylesheet
-/adb_detector.
 /adblock-detect.
 /adblock-detector.
 /adblock-notify-by-bweb/*$script,stylesheet
@@ -66036,6 +66026,7 @@ yts.mx##.durs-bordered
 bloomberg.com##.dvz-v0-ad
 daniweb.com##.dw-inject-bsa
 ubereats.com##.dw.ec
+dmarge.com##.dx-ad-wrapper
 coinpaprika.com##.dynamic-ad
 dailydot.com##.dynamic-block
 nomadlist.com##.dynamic-fill
@@ -67328,6 +67319,7 @@ wtop.com##.post--sponsored
 engadget.com##.post-article-ad
 samehadaku.email##.post-body.site-main > [href]
 kiplinger.com##.post-gallery-item-ad
+dmarge.com##.post-infinite-ads
 hackread.com##.post-review-li
 hellocare.com.au##.post-wrapper__portrait-ads
 newagebd.net##.postPageRightInTop
@@ -68411,6 +68403,7 @@ thechainsaw.com##.wp-block-create-block-pedestrian-gam-ad-block
 gamepur.com##.wp-block-dotesports-affiliate-button
 dotesports.com,primagames.com##.wp-block-gamurs-ad
 gearpatrol.com##.wp-block-gearpatrol-ad-slot
+gearpatrol.com##.wp-block-gearpatrol-from-our-partners
 gamingskool.com##.wp-block-group-is-layout-constrained
 samehadaku.email##.wp-block-group-is-layout-constrained > [href] > img
 cryptofeeds.news,defence-industry.eu,gamenguides.com,houstonherald.com,millennial-grind.com,survivopedia.com,teslaoracle.com##.wp-block-image
@@ -68692,6 +68685,7 @@ spys.one##[href="https://fineproxy.org/ru/"]
 freedomfirstnetwork.com##[href="https://freedomfirstcoffee.com"]
 summit.news##[href="https://infowarsstore.com/"]
 americafirstreport.com##[href="https://jdrucker.com/ira"]
+julieroys.com##[href="https://julieroys.com/restore"]
 hightimes.com##[href="https://leafwell.com"]
 conservativeplaybook.com##[href="https://ourgoldguy.com/contact/"]
 davidwalsh.name##[href="https://requestmetrics.com/"]
