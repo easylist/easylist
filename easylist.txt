@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409140255
+! Version: 202409140918
 ! Title: EasyList
-! Last modified: 14 Sep 2024 02:55 UTC
+! Last modified: 14 Sep 2024 09:18 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -182,7 +182,6 @@
 /ad_campaign?
 /ad_common.js
 /ad_counter.aspx
-/ad_display.js
 /ad_header.js$script
 /ad_home.js$script
 /ad_images/*$image,domain=~5nd.com|~dietnavi.com
@@ -197,7 +196,6 @@
 /ad_skyscraper.gif$image
 /ad_top.jpg$image
 /ad_top.js$script
-/ad_vert.gif
 /adanalytics.js
 /adaptive_components.ashx?type=ads&
 /adaptvadplayer.js$script
@@ -209,14 +207,14 @@
 /adchoice.png$image
 /adcommon?
 /adconfig.js$script
-/adcount.js
+/adcount.js$script
 /addyn|*;adtech;
 /addyn|*|adtech;
 /adengine.js
 /adfox/loader.js
 /adfshow?
 /adfurikun/*$~image
-/adfx.loader.bind.js
+/adfx.loader.bind.js$script
 /adhandler/*$~subdocument
 /adiframe|*|adtech;
 /adimage.$image,script,stylesheet
@@ -239,12 +237,10 @@
 /adriver.$~script,domain=~adriver.co
 /adriver_$~object
 /ads-250.$image
-/ads-async.
+/ads-async.$script
 /ads-common.$image,script
 /ads-front.min.js$script
 /ads-frontend.min.js$script
-/ads-rectangle.
-/ads-right.
 /ads-templateslist.$script
 /ads-vast-vpaid.js?$script
 /ads.bundle.js$script
@@ -387,7 +383,7 @@
 /api.ads.$domain=~ads.instacart.com|~www.ads.com
 /api/ad.$script
 /api/ads?
-/apopwin.js
+/apopwin.js$script
 /apstag.js$script
 /apu.php?
 /arcads.js$script
@@ -400,7 +396,7 @@
 /ban300.php
 /ban728.php
 /ban728x90.$image
-/banman/ad.aspx
+/banman/ad.aspx$image
 /banner-ad.$~script
 /banner-ads-rotator/*$script,stylesheet
 /banner-ads/*$image,domain=~1agosto.com
@@ -426,7 +422,6 @@
 /banners/affiliate/*$image
 /bottom-ads.jpg$image,domain=~saltwaterisland.com
 /bottom-ads.png$image
-/bottom_ad.jpg
 /bottomad.png$image
 /bottomads.js$script
 /bsa-plugin-pro-scripteo/frontend/js/script.js
@@ -451,7 +446,7 @@
 /concert_ads-$script
 /content-ads.js$script
 /content/ads/*$~xmlhttprequest
-/cpmbanners.js
+/cpmbanners.js$script
 /css/ads-$stylesheet
 /css/adsense.$stylesheet
 /css/adv.$stylesheet
@@ -465,7 +460,7 @@
 /delivery/lg.php$script,subdocument
 /dfp.min.js$third-party
 /dfp_async.js$script
-/dfpNew.min.js
+/dfpNew.min.js$script
 /didna_config.js
 /direct.hd?n=
 /discourse-adplugin-$script
@@ -494,11 +489,11 @@
 /flashads.$domain=~flashads.co.id
 /fleshlight.$domain=~fleshlight.com|~fleshlight.zendesk.com
 /float_ad.js
-/floatads.
+/floatads.$script
 /floating-ad-rotator-$script,stylesheet
 /floatingad.js$script
 /floatingads.js
-/flyad.js
+/flyad.js$script
 /footer-ad.$~script
 /footer_ad.js$script
 /footer_ads.php$subdocument
@@ -519,8 +514,6 @@
 /google-adsense.js
 /google_adsense-$script
 /google_caf.js?
-/googleafc.js
-/googleafs.js
 /gospel2Truth.js
 /gpt.js$script,xmlhttprequest
 /gpt_ads-public.js$script
@@ -551,7 +544,7 @@
 /inhouse_ads/*$image
 /inlineads.aspx
 /insertads.js$script
-/internAds.css
+/internAds.css$stylesheet
 /istripper.gif$image
 /jquery.ad.js$script
 /jquery.adi.js$script
@@ -614,7 +607,6 @@
 /oiopub-direct/js.php$script
 /oncc-ad.js$script
 /oncc-adbanner.js$script
-/owa.MessageAdList.
 /p?zoneId=
 /page-links-to/dist/new-tab.js$script
 /page-peel$~xmlhttprequest
@@ -667,14 +659,11 @@
 /plugins/wp-moreads/*$~stylesheet
 /plugins/wp125/*$~stylesheet
 /pop_8/pop_8_$script
-/pop_ads.js
 /popin-min.js$script
 /popu.js
 /popunder1.js$script
 /popunder1000.js$script
-/popunder2.js
-/popunder5.js
-/popunder7.min.js
+/popunder2.js$script
 /popunder?
 /popup-domination/*$~stylesheet
 /popup2.js$script
@@ -683,7 +672,6 @@
 /popup_ad.php
 /popup_code.php$script
 /popupads.js$script
-/popupunder.js
 /prbt/v1/ads/?
 /prerollad.
 /prism_ad/*$script
@@ -773,7 +761,7 @@
 /side-ads-$~xmlhttprequest
 /side-ads/*$~xmlhttprequest
 /side_ads/*$~xmlhttprequest
-/sidead.
+/sidead.js$script
 /sidead1.js$script
 /sideads.js$script
 /sidebar_ad.jpg$image
@@ -796,16 +784,14 @@
 /spcjs.php$script
 /special/specialCtrl.js$script
 /sponsor-ad$image
-/sponsor-links.html
 /sponsorad.jpg$image
 /sponsorad.png
 /sponsored-links.
-/sponsored_ad.
 /sponsored_link.gif$image
 /sponsored_text.
 /sponsoredlinks?
 /sponsors/ads/*$image
-/squaread.jpg
+/squaread.jpg$image
 /static/js/4728ba74bc.js$~third-party
 /sticky_ads.js
 /stickyad.js$script
@@ -825,7 +811,7 @@
 /tnt.ads.$script
 /top-ad.
 /top_ad.$~xmlhttprequest,domain=~sunco.co.jp
-/top_ads.
+/top_ads.$~xmlhttprequest
 /topad.html$subdocument
 /triadshow.asp$script,subdocument
 /ttj?id=
@@ -834,13 +820,12 @@
 /v2/a/push/js/*$third-party
 /v3/ads?
 /vast/?zid=
-/velvet_stack_cmp.js
+/velvet_stack_cmp.js$script
 /vendors~ads.
 /vghd.gif
 /vghd2.gif
 /video-js-ads.
 /video_ads.$script
-/video_slider3.js
 /videoad.$domain=~videoad.in
 /videoad/*$script
 /videoads/*$~xmlhttprequest
@@ -17598,7 +17583,6 @@ browsershots.org#@#.advert_area
 ||adqit.com^
 ||adqongwuxvav.com^
 ||adquery.io^
-||adquet.com^
 ||adrcdn.com^
 ||adreadytractions.com^
 ||adrealclick.com^
@@ -61820,6 +61804,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||cyberscoop.com/advertising/
 ||d1lxz4vuik53pc.cloudfront.net^$domain=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.com.br|amazon.com.mx|amazon.com.tr|amazon.de|amazon.eg|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.nl|amazon.pl|amazon.sa|amazon.se|amazon.sg
 ||daily-sun.com/assets/images/banner/
+||dailylook.com/modules/header/top_ads.jsp
 ||dailymail.co.uk^*/linkListItem-$domain=thisismoney.co.uk
 ||dailymirror.lk/youmaylike
 ||dailynews.lk/wp-content/uploads/2024/02/D-E
@@ -65234,6 +65219,7 @@ rok.guide##.ancr-sticky
 rok.guide##.ancr-top-spacer
 eprinkside.com##.annons
 phonearena.com##.announcements
+tokyoweekender.com##.anymind-ad-banner
 yts.mx##.aoiwjs
 motor1.com##.ap
 chargedretail.co.uk,foodstuffsa.co.za,thinkcomputers.org##.apPluginContainer
@@ -66794,7 +66780,6 @@ weatherpro.com##.large-leaderboard
 dispatchtribunal.com,thelincolnianonline.com##.large-show
 fantasygames.nascar.com##.larger-banner-wrapper
 golfworkoutprogram.com##.lasso-container
-axios.com##.latestStoriesAd
 business-standard.com##.latstadvbg
 laweekly.com##.law_center_ad
 apkpac.com##.layout-beyond-ads
@@ -66863,6 +66848,7 @@ gogetaroomie.com##.left-space
 livemint.com##.leftblockAd
 thehansindia.com##.level-after-1-2
 websitedown.info##.lftleft
+axios.com##.lg\:min-h-\[200px\]
 dexerto.com##.lg\:min-h-\[290px\]
 gizmodo.com##.lg\:min-h-\[300px\]
 mumsnet.com##.lg\:w-billboard
@@ -67009,6 +66995,7 @@ fruitnet.com##.midpageAdvert
 extremetech.com##.min-h-24
 copyprogramming.com,imagecolorpicker.com##.min-h-250
 gizmodo.com##.min-h-\[1000px\]
+axios.com##.min-h-\[200px\]
 gizmodo.com,radio.net##.min-h-\[250px\]
 radiome.ar,radiome.at,radiome.bo,radiome.ch,radiome.cl,radiome.com.do,radiome.com.ec,radiome.com.gr,radiome.com.ni,radiome.com.pa,radiome.com.py,radiome.com.sv,radiome.com.ua,radiome.com.uy,radiome.cz,radiome.de,radiome.fr,radiome.gt,radiome.hn,radiome.ht,radiome.lu,radiome.ml,radiome.org,radiome.pe,radiome.si,radiome.sk,radiome.sn,radyome.com##.min-h-\[250px\].mx-auto.w-full.hidden.my-1.lg\:flex.center-children
 uwufufu.com##.min-h-\[253px\]
@@ -67838,6 +67825,7 @@ lgbtqnation.com##.single-bottom-ad
 kolompc.com##.single-post-content > center
 abovethelaw.com##.single-post__sponsored-post--desktop
 policyoptions.irpp.org##.single__ad
+mixonline.com##.site-ad
 deshdoaba.com##.site-branding
 archaeology.org##.site-header__iykyk
 emulatorgames.net##.site-label
@@ -68617,7 +68605,6 @@ curbed.com##[data-concert="prelude"]
 vox.com##[data-concert="tablet_leaderboard"]
 timesofindia.indiatimes.com##[data-contentprimestatus]
 coingecko.com##[data-controller="button-ads"]
-axios.com##[data-cy="injected-promo"]
 hedgefollow.com##[data-dee_type^="large_banner"]
 greatist.com,healthline.com,medicalnewstoday.com,psychcentral.com##[data-empty]
 badgerandblade.com,ginx.tv##[data-ez-ph-id]
