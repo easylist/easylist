@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409162220
+! Version: 202409171221
 ! Title: EasyList
-! Last modified: 16 Sep 2024 22:20 UTC
+! Last modified: 17 Sep 2024 12:21 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -180,7 +180,7 @@
 /ad_bottom.js$script
 /ad_break?
 /ad_campaign?
-/ad_common.js
+/ad_common.js$script
 /ad_counter.aspx$ping
 /ad_header.js$script
 /ad_home.js$script
@@ -211,7 +211,7 @@
 /addyn|*;adtech;
 /addyn|*|adtech;
 /adengine.js
-/adfox/loader.js
+/adfox/loader.js$script
 /adfshow?
 /adfurikun/*$~image
 /adfx.loader.bind.js$script
@@ -232,7 +232,7 @@
 /adpartner.min.js$script
 /adplayer.$script,domain=~adplayer.pro
 /adpopup.js$script
-/adrecover.js
+/adrecover.js$script
 /adright.$domain=~adright.com
 /adriver.$~script,domain=~adriver.co
 /adriver_$~object
@@ -254,7 +254,7 @@
 /ads/acctid=
 /ads/banners/*$image
 /ads/cbr.
-/ads/custom_ads.js
+/ads/custom_ads.js$script
 /ads/footer.$~xmlhttprequest
 /ads/ga-audiences?
 /ads/gam_prebid-$script
@@ -412,8 +412,8 @@
 /bottom-ads.png$image
 /bottomad.png$image
 /bottomads.js$script
-/bsa-plugin-pro-scripteo/frontend/js/script.js
-/bsa-pro-scripteo/frontend/js/script.js
+/bsa-plugin-pro-scripteo/frontend/js/script.js$script
+/bsa-pro-scripteo/frontend/js/script.js$script
 /btag.min.js$third-party
 /buysellads.js$script
 /callAdserver?
@@ -499,13 +499,13 @@
 /google-adsense.js$script
 /google_adsense-$script
 /google_caf.js?
-/gospel2Truth.js
+/gospel2Truth.js$third-party
 /gpt.js$script,xmlhttprequest
 /gpt_ads-public.js$script
 /GunosyAdsSDKv2.js$script
 /homepage_ads/*$domain=~swedishbeauty.com
 /house-ads/*$image
-/hoverad.js
+/hoverad.js$script
 /hserver/channel=
 /hserver/site=
 /ht.js?site_
@@ -537,11 +537,6 @@
 /jquery.dfp.js?$script
 /jquery.dfp.min.js?$script
 /jquery.openxtag.js$script
-/jquery.php/?uid=
-/js.ad/size=
-/js.ng/cat=
-/js.ng/channel_
-/js.ng/pagepos=
 /js/advRotator.js$script
 /jsAds-1.4.min.js$script
 /jshexi.hj?lb=
@@ -561,12 +556,10 @@
 /mads.php?
 /maven/am.js$script
 /mbads?
-/mcad.php
 /media/ads/*$image
 /media_ads/*$image
 /microad.js$script
 /mnpw3.js$script
-/mobile_ad.
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 /mod_pagepeel_banner/*$image,script
 /module-ads-html-$script
@@ -607,7 +600,7 @@
 /partners/ads/*$image
 /pcad.js?
 /peel.php?
-/peel_ads.js
+/peel_ads.js$script
 /peelads/*$script
 /pfe/current/*$third-party
 /phpads/*$script
@@ -643,7 +636,6 @@
 /plugins/wp125/*$~stylesheet
 /pop_8/pop_8_$script
 /popin-min.js$script
-/popu.js
 /popunder1.js$script
 /popunder1000.js$script
 /popunder2.js$script
@@ -696,7 +688,7 @@
 /right_ads.$~xmlhttprequest
 /rightad.js$script
 /s.ashx?btag
-/SBA-WP-13.js
+/SBA-WP-13.js$script
 /sbar.json?key=
 /sc-tagmanager/*$script
 /script/aclib.js$third-party
@@ -764,7 +756,6 @@
 /sponsorad.jpg$image
 /sponsorad.png$image,domain=~hmassoc.org
 /sponsored_link.gif$image
-/sponsored_text.
 /sponsoredlinks?
 /sponsors/ads/*$image
 /squaread.jpg$image
@@ -799,7 +790,6 @@
 /vast/?zid=
 /velvet_stack_cmp.js$script
 /vendors~ads.
-/video-js-ads.
 /video_ads.$script
 /videoad.$domain=~videoad.in
 /videoad/*$script
@@ -1136,7 +1126,6 @@ _prebid8.
 /adblock_detector2.$script
 /adblock_logger.$script
 /adblockdetect.js$script
-/adblockdetection.
 /adBlockDetector/*$script
 /adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
 /ads-blocking-detector.$script
@@ -60980,6 +60969,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||ads-api.stuff.co.nz^
 ||ads.audio.thisisdax.com^
 ||adsbb.depositfiles.com^
+||adsmg.fanfox.net^
 ||adultswim.com/ad/
 ||adw.heraldm.com^
 ||afloat.ie/images/banners/
@@ -64174,6 +64164,7 @@ constructionenquirer.com##.ad-page-takeover
 mirror.co.uk,themirror.com##.ad-placeholder
 bbcgoodfood.com,olivemagazine.com,radiotimes.com##.ad-placement-inline--2
 comedy.com##.ad-placement-wrapper
+fanfox.net##.ad-reader
 atlasobscura.com##.ad-site-top-full-width
 nationalreview.com##.ad-skeleton
 accesswdun.com##.ad-slider-block
@@ -67737,6 +67728,7 @@ theiphoneappreview.com##.widget_links
 247media.com.ng,appleworld.today,athleticsillustrated.com,businessaccountingbasics.co.uk,circuitbasics.com,closerweekly.com,coincodecap.com,cozyberries.com,crickhabari.com,dbknews.com,deshdoaba.com,developer-tech.com,foreverconscious.com,glitched.online,globalgovernancenews.com,granitegrok.com,intouchweekly.com,jharkhandmirror.net,kashmirreader.com,kkfm.com,levittownnow.com,lifeandstylemag.com,londonnewsonline.co.uk,marqueesportsnetwork.com,mensjournal.com,nikonrumors.com,ognsc.com,patriotfetch.com,pctechmag.com,prajwaldesai.com,pstribune.com,raspians.com,robinhoodnews.com,rok.guide,rsbnetwork.com,showbiz411.com,spokesman-recorder.com,sportsspectrum.com,stacyknows.com,supertotobet90.com,thecatholictravelguide.com,thedefensepost.com,theoverclocker.com,therainbowtimesmass.com,thethaiger.com,ubuntu101.co.za,wakingtimes.com,washingtonmonthly.com,webscrypto.com,wgow.com,wgowam.com,wlevradio.com##.widget_media_image
 palestinechronicle.com##.widget_media_image > a[href^="https://www.amazon.com/"]
 cracked-games.org##.widget_metaslider_widget
+washingtoncitypaper.com##.widget_newspack-ads-widget
 nypost.com##.widget_nypost_dfp_ad_widget
 nypost.com##.widget_nypost_vivid_concerts_widget
 newsbtc.com##.widget_premium_partners
