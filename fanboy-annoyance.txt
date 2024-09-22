@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409221240
+! Version: 202409221521
 ! Title: Fanboy's Annoyance List
-! Last modified: 22 Sep 2024 12:40 UTC
+! Last modified: 22 Sep 2024 15:21 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -34759,6 +34759,10 @@ denvergazette.com,fauquier.com,galvnews.com,herald-zeitung.com,lmtribune.com,nas
 courier-journal.com,courierpress.com,detroitnews.com,freep.com,greenbaypressgazette.com,jsonline.com,lohud.com,northjersey.com,sheboyganpress.com,tallahassee.com,theadvertiser.com##promo-up-next
 ! theprovince.com/winnipegsun.com/canoe.com/o.canada.com/financialpost.com/nationalpost.com
 ##.promotional.header--offset.header-breaking__wrapper
+! bilibili.com ad text
+bilibili.com##.feed-card:has(a[href*="cm.bilibili.com"][data-target-url*="gaoneng.bilibili.com"])
+bilibili.com##.is-rcmd:has(a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"]))
+bilibili.com#@#a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"])
 ! Aliexpress 1p popup spam
 aliexpress.com,aliexpress.us##.image-poplayer-modal
 ! dhgate.com 1p popup spam
