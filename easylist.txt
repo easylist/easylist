@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202409241357
+! Version: 202409241425
 ! Title: EasyList
-! Last modified: 24 Sep 2024 13:57 UTC
+! Last modified: 24 Sep 2024 14:25 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -17,7 +17,6 @@
 ! -----------------------General advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_general_block.txt ***
 &pcid=*&rid=
-&sadbl=1$third-party
 -ad-300x600-
 -ad-458x80.
 -ad-bottom-
@@ -1100,7 +1099,8 @@ _widget_ad.
 _prebid.js
 _prebid8.
 ! 
-&sadbl=1&chu=
+&sadbl=1&abtg=$third-party
+&sadbl=1&chu=$third-party
 ?zoneid=*&ab=1
 ! linkbucks.com script
 /webservices/jsparselinks.aspx?$script
