@@ -2,7 +2,6 @@
 downace.com##+js(acis, requestPermission)
 news18.com##+js(acis, serviceworker.register)
 ! International
-rd.fi##.nivoSlider:remove()
 puuilo.fi##.cf-container-wrapper
 puuilo.fi##body:style(overflow: auto !important)
 ! autoevolution.com
@@ -16,6 +15,10 @@ phonearena.com##body:style(overflow: auto !important; position: initial !importa
 ask.fm##.lightbox_overlay
 ask.fm##body:style(overflow: auto !important)
 ! reddit.com (mobile)
+reddit.com##.v2 > shreddit-async-loader
+reddit.com##shreddit-async-loader[bundlename="app_selector"]
+reddit.com##shreddit-async-loader[bundlename="app_selector"]:remove()
+reddit.com###xpromo-small-header.mr-xs
 reddit.com##.XPromoBlockingModal
 reddit.com##.XPromoPopup__overlay
 reddit.com##.XPromoBlockingModalRpl
@@ -39,6 +42,10 @@ reddit.com##body:style(overflow: auto !important;)
 tiktok.com##+js(set-session-storage-item,webapp_first_open_cta, 1)
 tiktok.com##.e1pecv674.css-99ed1t-DivFooterGuide
 tiktok.com##.e1x4pa920.css-18fyv6p-DivFloatButtonWrapper
+! twitch
+m.twitch.tv##+js(set-session-storage-item, twilight.custom-smart-banner-dismissed, true)
+! perplexity.ai (mobile app)
+perplexity.ai##+js(set-session-storage-item, appDownloadBannerDismissed, true)
 ! lightnovelworld.com
 lightnovelworld.com###lnwappmsg
 lightnovelworld.com##html:style(overflow: auto !important;)
@@ -57,10 +64,14 @@ asia.nikkei.com,businesspost.ie,rappler.com##body:style(height: auto !important;
 !flipboard.com##.modal-overlay
 !flipboard.com##body:style(overflow: visible!important; position: static!important;)
 !flipboard.com##.outbound-link.button--primary
+! google.com/maps
+google.com##+js(set-local-storage-item, mapslitepromosdismissed, 1)
 ! behance.net (in-app overlay)
 behance.net##.js-vue-mobile-app-upsell
 behance.net##body,html:style(overflow: auto !important; position: initial !important;)
 behance.net##.PrimaryNav-appLinkContainer-bhx
+! m.economictimes.com app
+m.economictimes.com##+js(set-session-storage-item, nudgeStickyBannerHide, true)
 ! mypenndentist.org
 mypenndentist.org##+js(set-cookie, undefinedpopup-pdfpcouponoffer, 1)
 ! ifunny (in-app overlay)
@@ -136,7 +147,9 @@ simpleswap.io##body,html:style(overflow: auto !important; position: initial !imp
 ! m.webtoons.com
 m.webtoons.com##.pop_download_home
 m.webtoons.com##.dim
-m.webtoons.com##body,html:style(overflow: auto !important; position: initial !important;)
+! nextdoor.com
+nextdoor.com##.blocks-2rwum1
+nextdoor.com##body:style(overflow: auto !important; position: initial !important;)
 ! 9gag
 9gag.com##.open-in-app
 9gag.com##body:style(overflow: auto !important;)
@@ -182,8 +195,6 @@ thedp.com##body,html:style(overflow: auto !important; position: initial !importa
 ! emailnator.com
 emailnator.com##.modal
 emailnator.com##.modal-backdrop
-emailnator.com##+js(rc, modal-open, , stay)
-emailnator.com##html,body:style(position: static !important; overflow: auto !important; width: auto !important;)
 emailnator.com##.top-banner
 ! foundit.com.ph app download
 foundit.com.ph##+js(set-session-storage-item, isDownloadAppBannerClosed, true)
@@ -191,6 +202,17 @@ foundit.com.ph##+js(set-session-storage-item, isDownloadAppBannerClosed, true)
 flightradar24.com##+js(set-cookie, map_new_features_new_flightradar24_com_label_options, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/23164
 shop-apotheke.com##+js(set-session-storage-item, ErxModal, true)
+! m.youtube.com 
+!m.youtube.com##.ytm-bottom-sheet-overlay-renderer-container[style="transform: translateY(0px);"]
+!m.youtube.com##.YtWebScrimDialogContainer
+!m.youtube.com##.YtWebScrimHostModernOverlay
+!m.youtube.com##body:style(overflow: auto !important; position: initial !important;)
+! fogaonet.com
+fogaonet.com##+js(set-cookie, fn_cookie_whatsapp_alert, 1)
+! zillow.com
+zillow.com##.app-upsell-banner
+zillow.com###pfs-upsell:remove()
+zillow.com##.exposed-filters:style(top:0 !important)
 ! food.ndtv.com
 food.ndtv.com##+js(set-cookie, ndtvfood_isSubscribed_elex_v1, no)
 ! LaraPush
@@ -199,11 +221,15 @@ daadscholarship.com##+js(abort-on-property-write, LaraPush)
 sammobile.com##+js(set-local-storage-item, request-permission-modal, 1)
 ! feedback popup belstad.com
 belstad.com##+js(set-local-storage-item, is_announcement_closed, true)
+! temu.com (Collapse in-app)
+temu.com##.sticky-2vWAY:style(top: 0px; transform: translate(-50%, 0rem) !important)
 ! m.investing.com (Collapse top)
 m.investing.com##.withAppBanner:style(top:0 !important)
 ! newsbreak.com
 newsbreak.com##.bottom-0.fixed
 newsbreak.com##body:style(height: auto !important; overflow: auto !important)
+! hide language popup
+s.tabelog.com##+js(set-cookie, ignore_language_guide, true)
 ! deribit.com
 deribit.com##+js(set-local-storage-item, appCardSeen, true)
 ! vrbo.com
@@ -223,8 +249,15 @@ smocca.jp##+js(set, history.state, undefined)
 patreon.com##+js(aeld, touchmove, preventDefault)
 ! onedio.com https://github.com/uBlockOrigin/uAssets/issues/22914
 onedio.com##+js(set-cookie, o-push-alert, 1)
+! copilot.microsoft.com (mobile)
+copilot.microsoft.com##.sac3p_popup_overlay
+copilot.microsoft.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! izumi.jp (mobile app)
 izumi.jp###s_header[style="top: 84px;"]:style(top: 0 !important;)
 izumi.jp##html[data-smartbanner-original-margin-top="0"][style="margin-top: 84px;"]:style(margin-top: 0 !important;)
 ! cecile.co.jp (mobile app)
-cecile.co.jp##.smartbanner-show:style(margin-top: 0 !important;)
+cecile.co.jp,nola-novel.com##.smartbanner-show:style(margin-top: 0 !important;)
+! tabelog.com (mobile app)
+s.tabelog.com##body,html:style(overflow-y: auto !important;)
+s.tabelog.com###js-webtoapp-floating-banner
+s.tabelog.com###js-webtoapp-floating-banner-overlay
