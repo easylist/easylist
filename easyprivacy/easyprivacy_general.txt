@@ -2692,6 +2692,7 @@
 ://collect.*/pageview
 ://collector.*/event
 ://elqtrk.
+://fallback.*/collector
 ://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtrack.*/dye
 ://insights-collector.
@@ -2724,7 +2725,11 @@
 ?event=performance&
 ?event=performancelogger:
 ?local_ga_js=
+?log=player-*&stats_tkn=
+?log=player_*&stats_tkn=
 ?log=stats-
+?log=united-impression&
+?log=xhl-widgets-events&
 ?log_performance_metrics
 ?logType=impression&
 ?logType=trackEvent&
