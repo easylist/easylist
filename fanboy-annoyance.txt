@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202411231214
+! Version: 202411231220
 ! Title: Fanboy's Annoyance List
-! Last modified: 23 Nov 2024 12:14 UTC
+! Last modified: 23 Nov 2024 12:20 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -34016,8 +34016,9 @@ google.com##div[jsname="wA2P2b"]:has-text(How helpful were the results)
 ! youtube playables
 www.youtube.com###content > .ytd-rich-section-renderer:has-text(YouTube Playables)
 ! youtube popups
-music.youtube.com#?#tp-yt-paper-dialog.ytmusic-popup-container:-abp-contains(/family plan|Premium|ad-free|background play|kept playing/)
-www.youtube.com#?#tp-yt-paper-dialog.ytd-popup-container:-abp-contains(/Become a member|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature/)
+www.youtube.com##.YtdTalkToRecsFlowRendererHost:has-text(What hobbies are you interested in developing?)
+www.youtube.com##tp-yt-paper-dialog.ytd-popup-container:has-text(/Become a member|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature/)
+music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(/family plan|Premium|ad-free|background play|kept playing/)
 ! Login popups
 aajtak.in,gnttv.com,indiatodayne.in##.tapBoxCls
 ! Paging overlays (previous/next page)
