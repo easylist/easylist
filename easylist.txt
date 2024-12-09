@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202412090952
+! Version: 202412091009
 ! Title: EasyList
-! Last modified: 09 Dec 2024 09:52 UTC
+! Last modified: 09 Dec 2024 10:09 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -297,7 +297,6 @@
 /adsAPI.js$script
 /adsbanner-$image
 /adsbanner/*$image
-/adsbox.$~script,domain=~adsbox.com.sg
 /adscontroller.js$script
 /adscroll.js$script
 /adsdelivery/*$subdocument
@@ -321,7 +320,7 @@
 /adtech;
 /adtools.js$script
 /adtrack.$domain=~adtrack.ca|~adtrack.yacast.fr
-/adultdvdparadisecompopinsecound.js
+/adultdvdparadisecompopinsecound.js$script
 /adunit/track-view|
 /adunits/bcid?
 /adutil.js$script
@@ -781,7 +780,7 @@
 /velvet_stack_cmp.js$script
 /vendors~ads.
 /video_ads.$script
-/videoad.$domain=~videoad.in
+/videoad.$~xmlhttprequest,domain=~videoad.in
 /videoad/*$script
 /videoads/*$~xmlhttprequest
 /videojs.ads-$script,stylesheet
