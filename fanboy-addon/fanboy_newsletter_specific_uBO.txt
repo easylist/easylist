@@ -351,7 +351,8 @@ nobroker.in##body.overflow-hidden:style(overflow: auto !important;)
 ! huckmag.com
 huckmag.com##+js(set-cookie, huck-newsletter-popup, true)
 ! greencarreports.com https://github.com/uBlockOrigin/uAssets/issues/26767
-greencarreports.com##.newsletter-signup:style(max-height:0px;visibility: hidden; important;)
+greencarreports.com##.sign-up-overlay
+greencarreports.com##.newsletter-signup:style(max-height:0px;visibility: hidden !important;)
 ! explorersweb.com
 explorersweb.com###newsletterModal
 explorersweb.com##.modal-backdrop
