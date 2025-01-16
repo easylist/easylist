@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501161038
+! Version: 202501161255
 ! Title: EasyList
-! Last modified: 16 Jan 2025 10:38 UTC
+! Last modified: 16 Jan 2025 12:55 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -42,7 +42,6 @@
 .adriver.$~object,domain=~adriver.co
 .ads-lazy.
 .ads.controller.
-.adsbox.
 .advert.$domain=~advert.ae|~advert.ge|~advert.io|~advert.ly|~advert.media|~advert.org.pl
 .ar/ads/$~xmlhttprequest
 .ashx?AdID=
@@ -80,7 +79,6 @@
 .com/script/script.js$third-party
 .com/script/utils.js$third-party
 .com/script/xbox.js$third-party
-.com/ss/ad/
 .com/watch.*.js?key=
 .cz/adv/
 .cz/affil/$image
@@ -89,11 +87,9 @@
 .html?clicktag=
 .info/tsv
 .jp/ads/$third-party,domain=~hs-exp.jp
-.lazyload-ad-
 .lazyload-ad.
 .lol/js/pub.min.js$third-party
 .lol/sw.js$third-party
-.nativeads.
 .net/ad2/$~xmlhttprequest
 .net/ads?
 .ng/ads/
@@ -507,6 +503,7 @@
 /jquery.adx.js?$script
 /jquery.dfp.js?$script
 /jquery.dfp.min.js?$script
+/jquery.lazyload-ad-$script
 /jquery.openxtag.js$script
 /jquery.popunder.js$script
 /js/ad_common.js$script
@@ -853,32 +850,25 @@ _ad_image_
 _ad_layer_
 _ad_right.
 _ad_side.
-_ad_skyscraper.
 _adchoice.
 _adchoices.
-_adlabel_
 _adplugin.
 _adright.
 _ads.cgi
 _ads.cms?
 _ads.php?
-_ads_updater-
 _adserve.
 _adskin.
-_adv_open_x/
 _advertise-$domain=~linkedin.com
 _advertise.
 _advertisment.$~xmlhttprequest
 _assets/ads/
 _asyncspc.
-_Banner_Ads_
 _BannerAd_
 _bottom_ads_
 _footer_ad_
 _headerad.
 _images/ad.$image
-_images/ads/
-_layerad.
 _panel_ads.
 _popunder_
 _pushads.
@@ -886,10 +876,8 @@ _rectangle_ads.
 _reklama_$domain=~youtube.com
 _reporting_ads.
 _rightad.
-_rightad_
 _sidebar_ad.
 _sidebar_ad_
-_StickyAd.
 _top_ad.
 _web-advert.
 ||cacheserve.*/promodisplay/
@@ -917,7 +905,7 @@ _web-advert.
 ! propu.sh variants
 /ntfc.php?
 ! Clickadu servers
-.com/src/ppu/
+.com/src/ppu/$third-party
 /aas/r45d/vki/*$third-party
 /bultykh/ipp24/7/*$third-party
 /ceef/gdt3g0/tbt/*$third-party
@@ -998,8 +986,7 @@ _web-advert.
 /tardisrocinante/vitals.js$script
 ! prebid scripts
 -dfp-prebid-
--prebid/
-.prebid-bundle.
+.prebid-bundle.js$script
 .prebid.$domain=~prebid.org
 /ad/postbid_handler1.$script
 /ads_prebid_async.js$script
@@ -53306,6 +53293,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||funeraltimes.com/databaseimages/adv_
 ||funeraltimes.com/images/Banner-ad
 ||funnyjunk.com/site/js/extra/pre
+||futbol24.com/kscms_asyncspc.php
 ||futbollatam.com/ads.js
 ||fwcdn3.com^$domain=eonline.com
 ||fwpub1.com^$domain=ndtv.com|ndtv.in
