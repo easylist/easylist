@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501171502
+! Version: 202501171511
 ! Title: EasyList
-! Last modified: 17 Jan 2025 15:02 UTC
+! Last modified: 17 Jan 2025 15:11 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -28,12 +28,10 @@
 -banner-ads-$~script
 -contrib-ads.$~stylesheet
 -footerads.
--PcmModule-Taboola-
 -right-ad.
 -sponsor-ad.
 -web-advert-$image
 .adriver.$~object,domain=~adriver.co
-.ads-lazy.
 .ads.controller.
 .advert.$domain=~advert.ae|~advert.ge|~advert.io|~advert.ly|~advert.media|~advert.org.pl
 .ar/ads/$~xmlhttprequest
@@ -830,7 +828,6 @@
 _ad_250.$image
 _ad_300.$image
 _ad_bottom.
-_ad_header.
 _ad_image_
 _ad_layer_
 _ads.cgi
@@ -840,16 +837,12 @@ _adskin.
 _advertise-$domain=~linkedin.com
 _advertisment.$~xmlhttprequest
 _assets/ads/
-_bottom_ads_
-_footer_ad_
-_headerad.
 _images/ad.$image
 _panel_ads.
 _popunder_
 _pushads.
 _rectangle_ads.
 _reklama_$domain=~youtube.com
-_rightad.
 _sidebar_ad_
 _top_ad.
 ||cacheserve.*/promodisplay/
@@ -53156,6 +53149,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||cloudfront.net/transcode/storyTeller/$media,domain=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.com.br|amazon.com.mx|amazon.com.tr|amazon.de|amazon.eg|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.nl|amazon.pl|amazon.sa|amazon.se|amazon.sg
 ||cloudfront.net^$domain=rexdlbox.com|titantv.com
 ||cloudfront.net^*/sponsors/$domain=pbs.org
+||cnbcfm.com/dist/components-PcmModule-Taboola-
 ||cnx-software.com/wp-content/uploads/*/cexpress-asl-COM-Express-Amston-Lake-module.webp
 ||cnx-software.com/wp-content/uploads/*/EmbeddedTS-TS-7180-embedded-SBC.webp
 ||cnx-software.com/wp-content/uploads/*/Forlinx-NXP-System-on-Modules.webp
