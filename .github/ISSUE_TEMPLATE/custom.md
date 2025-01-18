@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Report filter issues
 about: Issue template to report filter issues
 title: ''
 labels: ''
