@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501211658
+! Version: 202501211713
 ! Title: EasyList
-! Last modified: 21 Jan 2025 16:58 UTC
+! Last modified: 21 Jan 2025 17:13 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15361,6 +15361,8 @@ _800x80_
 ##.van_taboola
 ##.widget_taboola
 ##[data-taboola-options]
+##[data-testid="commercial-label-taboola"]
+##[data-testid^="taboola-"]
 ##amp-embed[type="taboola"]
 ##div[id^="taboola-stream-"]
 ! Zergnet
@@ -57363,6 +57365,7 @@ googlesightseeing.com##.comm-square
 slickdeals.net##.commentsAd
 businessinsider.com,insider.com##.commerce-coupons-module
 goal.com,thisislondon.co.uk##.commercial
+dailystar.co.uk##.commercial-box-style
 telegraph.co.uk##.commercial-unit
 mega.nz##.commercial-wrapper
 hiphopdx.com##.compact
@@ -62207,6 +62210,7 @@ bing.com#?#li.b_algo:has(.rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB7
 walmart.*#?#div > div[io-id]:-abp-contains(Sponsored)
 ! ABP CSS injection filters
 euronews.com###o-site-hr__leaderboard-wallpaper.u-show-for-xlarge {remove:true;}
+dailystar.co.uk##[data-testid="commercial-above-header-box-1"] {remove:true;}
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 virtuagirlgirls.com###DynamicBackgroundWrapper
 porndr.com###PD-Under-player
