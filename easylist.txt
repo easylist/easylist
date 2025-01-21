@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501212248
+! Version: 202501212304
 ! Title: EasyList
-! Last modified: 21 Jan 2025 22:48 UTC
+! Last modified: 21 Jan 2025 23:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -71,7 +71,6 @@
 .lol/js/pub.min.js$third-party
 .lol/sw.js$third-party
 .net/ad2/$~xmlhttprequest
-.net/ads?
 .org/ad/$domain=~ylilauta.org
 .org/ads/$~xmlhttprequest
 .org/script/compatibility.js$third-party
@@ -285,7 +284,6 @@
 /aff_ad?$script
 /aff_banner/*$image
 /aff_banners/*$image
-/affad?
 /affbanners/*$image
 /affiliate/ad/*$image
 /affiliate/ads/*$image
@@ -293,7 +291,7 @@
 /affiliate/banners/*$image
 /affiliateads/*$image
 /affiliates/banner$image
-/afr.php?
+/afr.php?$~xmlhttprequest
 /afx_prid/*$script
 /ajaxAd?
 /ajs.php?$script
@@ -313,7 +311,7 @@
 /api/users?token=$subdocument,third-party
 /apopwin.js$script
 /apstag.js$script
-/apu.php?
+/apu.php?$script
 /arcads.js$script
 /asset/ad/*$image
 /assets/ads/*$~image,domain=~outlook.live.com
@@ -401,7 +399,6 @@
 /exports/tour_20/*$subdocument
 /external/ad.$script
 /external/ads/*$image
-/external_ad?
 /fel456.js$script
 /fgh1ijKl.js$script
 /flashad.asp$subdocument
@@ -481,7 +478,7 @@
 /leftad.js$script
 /leftad.png$image
 /legion-advertising-atlasastro/*$script
-/li.blogtrottr.com/imp?
+/li.blogtrottr.com/imp?$image
 /link?z=$subdocument
 /livejasmin.$~xmlhttprequest,domain=~livejasmin.com
 /log_ad?
@@ -51440,6 +51437,7 @@ browsershots.org#@#.advert_area
 ||srx.com.sg/srx/media/
 ||ssl-images-amazon.com/images/*/DAsf-
 ||ssl-images-amazon.com/images/*/MAsf-
+||ssp.qc.coccoc.com^
 ||static.ifruplink.net/static_src/mc-banner/
 ||static.prd.datawars.io/static/promo/
 ||static.sunmedia.tv/integrations/
