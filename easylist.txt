@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501231133
+! Version: 202501231153
 ! Title: EasyList
-! Last modified: 23 Jan 2025 11:33 UTC
+! Last modified: 23 Jan 2025 11:53 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -107,11 +107,10 @@
 /ad/ad_common.js$script
 /ad/dfp/*$script
 /ad/err?
-/ad/getban?
+/ad/getban?$script
 /ad/image/*$image
 /ad/images/*$image,domain=~studiocalling.it
 /ad/img/*$image,domain=~eki-net.com|~jiji.com
-/ad/imp?
 /ad300.jpg$image
 /ad300.png$image
 /ad728.png$image
@@ -123,7 +122,6 @@
 /ad_banner/*$image,domain=~ccf.com.cn
 /ad_bottom.jpg$image
 /ad_bottom.js$script
-/ad_campaign?
 /ad_counter.aspx$ping
 /ad_header.js$script
 /ad_home.js$script
@@ -148,13 +146,11 @@
 /adcall?
 /adcgi?
 /adchoice.png$image
-/adcommon?
 /adcount.js$script
 /addyn|*;adtech;
 /addyn|*|adtech;
 /adengine.js$script
 /adfox/loader.js$script
-/adfshow?
 /adfx.loader.bind.js$script
 /adhandler/*$~subdocument
 /adiframe|*|adtech;
@@ -186,9 +182,9 @@
 /ads-vast-vpaid.js?$script
 /ads.bundle.js$script
 /ads.bundle.min.js$script
-/ads.cfm?
+/ads.cfm?$subdocument
 /ads.jplayer.$stylesheet
-/ads.pl?
+/ads.pl?$~xmlhttprequest
 /ads/!rotator/*
 /ads/300.$subdocument
 /ads/acctid=
@@ -196,7 +192,6 @@
 /ads/cbr.js$script
 /ads/custom_ads.js$script
 /ads/footer.$~xmlhttprequest
-/ads/ga-audiences?
 /ads/gam_prebid-$script
 /ads/get-ads-by-zones/?zones%
 /ads/image/*$image
@@ -204,10 +199,9 @@
 /ads/index.$~xmlhttprequest
 /ads/index/*$~xmlhttprequest,domain=~kuchechina.com
 /ads/leaderboard-$~xmlhttprequest
-/ads/outbrain?
 /ads/rectangle_$subdocument
 /ads/revgen.$script
-/ads/serve?
+/ads/serve?$script
 /ads/show.$script
 /ads/slideup.$script
 /ads/spacer.$image
@@ -224,7 +218,7 @@
 /ads?apid
 /ads?client=
 /ads?id=
-/ads?object_
+/ads?object_$script
 /ads?param=
 /ads?zone=
 /ads?zone_id=
@@ -244,7 +238,6 @@
 /adserve/*$script
 /adserver.$~stylesheet,~xmlhttprequest
 /adserver3.$image,script
-/adserver?
 /adsforwp-front.min.css$stylesheet
 /adsimage/*$image,domain=~kamaz-service.kz|~theatreticketsdirect.co.uk
 /adsimages/*$image,domain=~bdjobstoday.com
@@ -262,7 +255,6 @@
 /adtrack.$domain=~adtrack.ca|~adtrack.yacast.fr
 /adultdvdparadisecompopinsecound.js$script
 /adunit/track-view|
-/adunits/bcid?
 /adutil.js$script
 /adv-banner-$image
 /adv-scroll-sidebar.js$script
@@ -292,7 +284,6 @@
 /affiliates/banner$image
 /afr.php?$~xmlhttprequest
 /afx_prid/*$script
-/ajaxAd?
 /ajs.php?$script
 /ajs?zoneid=
 /amazon-ad-link-$stylesheet
@@ -317,7 +308,7 @@
 /asyncjs.php$script
 /asyncspc.php$third-party
 /awaps-ad-sdk-$script
-/ban.php?
+/ban.php?$~xmlhttprequest
 /ban728x90.$image
 /banman/ad.aspx$image
 /banner-ad.$~script,~xmlhttprequest
@@ -325,14 +316,14 @@
 /banner-ads/*$image,domain=~1agosto.com
 /banner-affiliate-$image
 /banner.asp?$third-party
-/banner.cgi?
+/banner.cgi?$image
 /banner.php$~xmlhttprequest,domain=~research.hchs.hc.edu.tw
 /banner/affiliate/*$image,subdocument
 /banner/html/zone?zid=
 /banner_468.$image
 /banner_ads/*$~xmlhttprequest,domain=~clickbd.com
 /bannerads/*$~xmlhttprequest,domain=~coldwellbankerhomes.com
-/banners.cgi?
+/banners.cgi?$~xmlhttprequest
 /banners/468$image
 /banners/728$image
 /banners/ads-$~xmlhttprequest
@@ -357,7 +348,6 @@
 /code/native.js?h=$script
 /code/pops.js?h=$script
 /code/silent.js?h=$script
-/combo?darla/*
 /common/ad.js$script
 /common_ad.js$script
 /concert_ads-$script
@@ -382,7 +372,6 @@
 /didna_config.js$script
 /direct.hd?n=
 /discourse-adplugin-$script
-/displayad?
 /dmcads_$script
 /doubleclick.min$script
 /drsup-admanager-ajax.js$script
@@ -418,8 +407,6 @@
 /gdpr-ad-script.js$script
 /get/?go=1&data=$subdocument
 /get?go=1&data=$subdocument
-/getad?
-/getads?
 /GetAdvertisingLeft?
 /globals_ps_afc.js$script
 /google-adsense.js$script
@@ -449,7 +436,7 @@
 /index-ad.js$script
 /index_ad/*$image
 /index_ads.js$script
-/infinity.js.aspx?
+/infinity.js.aspx?$script
 /inhouse_ads/*$image
 /inlineads.aspx$subdocument
 /insertads.js$script
@@ -504,7 +491,6 @@
 /neverblock/*$script
 /new/floatadv.js$script
 /ntv.json?key=
-/Nuggad?
 /nwm-pw2.min.js$script
 /nxst-advertising/dist/htlbid-advertising.min.js
 /oiopub-direct/js.php$script
@@ -570,7 +556,7 @@
 /popup_ad.js$script
 /popup_code.php$script
 /popupads.js$script
-/prbt/v1/ads/?
+/prbt/v1/ads/?_=
 /prism_ad/*$script
 /processing/impressions.asp?
 /production/ad-$script
@@ -584,7 +570,6 @@
 /publicidade.$~xmlhttprequest
 /publicidade/*$~xmlhttprequest
 /publicidades/*$~xmlhttprequest
-/puff_ad?
 /push/p.js?$third-party
 /rad_singlepageapp.js$script
 /RdmAdFeed.js$script
@@ -599,7 +584,7 @@
 /reklama4.jpg$image
 /reklama4.png$image
 /reklame/*$~xmlhttprequest
-/ren.gif?
+/ren.gif?$image
 /resources/ads/*$~xmlhttprequest
 /responsive/ad_$subdocument
 /responsive_ads.js$script
@@ -633,15 +618,13 @@
 /script/xxAG1.js$third-party
 /scripts/js3caf.js$script
 /sdk/push_web/?zid=$third-party
-/select_adv?
 /servead/request/*$script,subdocument
 /serveads.php$script
 /servlet/view/*$script
-/set_adcode?
+/set_adcode?$image
 /sft-prebid.js$script
 /show-ad.js$script
 /show_ad.js$script
-/show_ad?
 /showban.asp?$image
 /showbanner.js$script
 /side-ads-$~xmlhttprequest
@@ -702,7 +685,6 @@
 /utx?cb=$third-party
 /v2/a/push/js/*$third-party
 /v2/a/skm/*$third-party
-/v3/ads?
 /vast/?zid=
 /velvet_stack_cmp.js$script
 /vendors~ads.
@@ -793,7 +775,6 @@
 ?wpstealthadsjs=
 _ad_250.$image
 _ad_300.$image
-_ads.cms?
 _advertise-$domain=~linkedin.com
 _advertisment.$~xmlhttprequest
 _images/ad.$image
@@ -821,7 +802,7 @@ _reklama_$domain=~youtube.com
 /senddata?site=banner
 /senddata?site=inpage
 ! propu.sh variants
-/ntfc.php?
+/ntfc.php?$script
 ! Clickadu servers
 .com/src/ppu/$third-party
 /aas/r45d/vki/*$third-party
@@ -885,7 +866,7 @@ _reklama_$domain=~youtube.com
 /detroitchicago/tulsa.js$script
 /detroitchicago/tuscon.js$script
 /detroitchicago/vista.js$script
-/detroitchicago/vpp.gif?
+/detroitchicago/vpp.gif?$image
 /detroitchicago/wichita.js$script
 /edmonton.webp$script
 /ezcl.webp?$script
@@ -941,7 +922,6 @@ _prebid.js$script
 /adblock-detect.$script
 /adblock-detector.min.js$script
 /adblock-notify-by-bweb/*$script,stylesheet
-/adblock.gif?
 /adblock_detector2.$script
 /adblock_logger.$script
 /adblockdetect.js$script
