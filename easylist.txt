@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202501241404
+! Version: 202501241422
 ! Title: EasyList
-! Last modified: 24 Jan 2025 14:04 UTC
+! Last modified: 24 Jan 2025 14:22 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -209,7 +209,6 @@
 /ads468x60.$image
 /ads728.$image
 /ads728x90.$image
-/ads?apid
 /ads?client=
 /ads?id=
 /ads?object_$script
@@ -545,7 +544,7 @@
 /popupads.js$script
 /prbt/v1/ads/?_=
 /prism_ad/*$script
-/processing/impressions.asp?
+/processing/impressions.asp?$image
 /production/ad-$script
 /production/ads/*$script
 /promo.php?c=$third-party
@@ -589,7 +588,7 @@
 /script/g0dL0vesads.js$third-party
 /script/intrf.js$third-party
 /script/ippg.js$third-party
-/script/java.php?$xmlhttprequest
+/script/java.php?$third-party,xmlhttprequest
 /script/jeSus.js$third-party
 /script/liB1.js$third-party
 /script/liB2.js$third-party
@@ -723,7 +722,6 @@
 /wpxbz-theme.js$script
 /www/delivery/*$script,subdocument
 /xpopup.js$script
-/zcredirect?
 /~cdn/ads/*
 ://a.*/ad-provider.js$third-party
 ://a.ads.
@@ -815,7 +813,7 @@ _reklama_$domain=~youtube.com
 ! Dodgy sites
 /?l=*&s=*&mprtr=$~third-party,xmlhttprequest
 /push-skin/skin.min.js$script
-/search/tsc.php?
+/search/tsc.php?ses=
 ! https://github.com/easylist/easylist/issues/5054
 /full-page-script.js$script
 ! bc.vc (https://github.com/NanoMeow/QuickReports/issues/198)
@@ -899,6 +897,7 @@ _prebid.js$script
 /webservices/jsparselinks.aspx?$script
 ! domain parking redirection
 /page/bouncy.php?$document
+/zcredirect?$document
 ! Peel script
 /jquery.peelback.$script
 ! Anti-Adblock
