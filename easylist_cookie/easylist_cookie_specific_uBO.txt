@@ -423,7 +423,7 @@ czapek.com##+js(set-cookie, website_cookies_bar, true)
 encord.com##+js(set-cookie, myAwesomeCookieName2, true) 
 streamily.com##+js(set-cookie, cookie-notice, true)
 reise.ruter.no##+js(set-cookie, r_hasConsent, true)
-sneltoner.nl##+js(trusted-set-cookie, cookieType, 255, , , reload, 1)
+sneltoner.nl##+js(set-cookie, cookieType, 255, , , reload, 1)
 bulder.no##+js(set-cookie, necessary, true)
 bulder.no##+js(set-cookie, statistics, false)
 bulder.no##+js(set-cookie, marketing, false)
@@ -3617,6 +3617,23 @@ yle.fi##+js(set, yleConsentSdk._consentSdk._embedded_social_media, true)
 yle.fi##+js(set, yleConsentSdk.show, noopFunc)
 ! philips-hue.com
 philips-hue.com##+js(set, cockieConsentManagement, noopFunc)
+! https://www.trading212.com/
+trading212.com##+js(set-cookie, COOKIES_CONSENT, essential)
+! https://www.sixt-neuwagen.de/
+sixt-neuwagen.de##+js(set-cookie, user_cookie_consent, essential)
+sixt-neuwagen.de##+js(set-cookie, user_accepted_cookies, 1)
+! https://flynorse.com/en-US
+flynorse.com##+js(set-cookie, N0_CONSENT, essential)
+! autodude & valostore
+autodude.dk,autodude.fi,autodude.no,autodude.se,valostore.fi,valostore.no,valostore.se##+js(set-local-storage-item, cookieConsent, necessary)
+! https://www.fruugonorge.com/
+fruugonorge.com##+js(set-cookie, consents, essential)
+! https://www.hyperoptic.com/
+hyperoptic.com##+js(set-cookie, ho_cookie_consent, essential)
+! https://github.com/uBlockOrigin/uAssets/issues/22885
+fruugo.de##+js(set-cookie, consents, essential)
+! https://www.boogschietshop.nl/
+boogschietshop.nl##+js(set-cookie, cookie_preference, functional)
 ! podimo.com
 podimo.com##.cookie
 podimo.com##+js(set, window.scrollTo, noopFunc)
