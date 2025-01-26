@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202501261408
+! Version: 202501261416
 ! Title: EasyPrivacy
-! Last modified: 26 Jan 2025 14:08 UTC
+! Last modified: 26 Jan 2025 14:16 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -13742,6 +13742,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||consumer.org.nz/session/ping/
 ||containers.appdomain.cloud/api/send-log$domain=ibm.com
 ||cookpad.com/*/activity_logs
+||coomer.su/api/v1/creators
 ||copilot-telemetry.githubusercontent.com^
 ||count.darkreader.app^
 ||count.rin.ru^
@@ -14188,6 +14189,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||kayak.*/vestigo/measure
 ||kbb.com/pixall/
 ||kck.st/web/track
+||kemono.su/api/v1/creators
 ||kgoma.com/v1/stat/
 ||khanacademy.org/api/internal/_analytics/
 ||kinesis.us-east-1.analytics.edmentum.com^
@@ -15527,6 +15529,8 @@ e-begin.jp##.inviewSection:not(.is-show):style(transform: translateY(0) !importa
 ! mustar.meitetsu.co.jp
 ||googletagmanager.com/gtm.js$domain=mustar.meitetsu.co.jp,important
 mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
+! coomer.su,kemono.su
+coomer.su,kemono.su##+js(aost, XMLHttpRequest, global-)
 ! EOF
 ! #endif
 ! -----------------Individual cname tracking systems-----------------!
