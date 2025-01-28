@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202501280823
+! Version: 202501281004
 ! Title: EasyPrivacy
-! Last modified: 28 Jan 2025 08:23 UTC
+! Last modified: 28 Jan 2025 10:04 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -13741,7 +13741,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||consumer.org.nz/session/ping/
 ||containers.appdomain.cloud/api/send-log$domain=ibm.com
 ||cookpad.com/*/activity_logs
-||coomer.su/api/v1/creators
 ||copilot-telemetry.githubusercontent.com^
 ||count.darkreader.app^
 ||count.rin.ru^
@@ -14188,7 +14187,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||kayak.*/vestigo/measure
 ||kbb.com/pixall/
 ||kck.st/web/track
-||kemono.su/api/v1/creators
 ||kgoma.com/v1/stat/
 ||khanacademy.org/api/internal/_analytics/
 ||kinesis.us-east-1.analytics.edmentum.com^
@@ -15530,6 +15528,8 @@ e-begin.jp##.inviewSection:not(.is-show):style(transform: translateY(0) !importa
 mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ! coomer.su,kemono.su
 coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
+/^https:\/\/(?:coomer|kemono)\.su\/api\/v1\/\w+\/?$/$xhr,1p,method=get,domain=coomer.su|kemono.su
+@@/^https:\/\/(?:coomer|kemono)\.su\/api\/v1\/(?:dms|posts)$/$xhr,1p,method=get,domain=coomer.su|kemono.su
 ! EOF
 ! #endif
 ! -----------------Individual cname tracking systems-----------------!
