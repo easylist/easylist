@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202502101519
+! Version: 202502101520
 ! Title: EasyList
-! Last modified: 10 Feb 2025 15:19 UTC
+! Last modified: 10 Feb 2025 15:20 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -276,6 +276,9 @@
 /affiliates/banner$image
 /afr.php?$~xmlhttprequest
 /afx_prid/*$script
+/ajax/banner/vpn|$~third-party,xmlhttprequest
+/ajax/banners?page=$~third-party,xmlhttprequest
+/ajax/embed-4/banners|$~third-party,xmlhttprequest
 /ajs.php?$script
 /ajs?zoneid=
 /amazon-ad-link-$stylesheet
