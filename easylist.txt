@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202502181308
+! Version: 202502181314
 ! Title: EasyList
-! Last modified: 18 Feb 2025 13:08 UTC
+! Last modified: 18 Feb 2025 13:14 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -51432,7 +51432,6 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||manga18.me/usd2023/usd_frontend.js
 ||manga18fx.com/js/main-v001.js
 ||mangadistrict.com/super-boat-
-||mangagun.net/uploads/jap/
 ||mangahub.io/iframe/
 ||manhwascan.net/my2023/my2023
 ||manytoon.com/script/$script
@@ -51481,7 +51480,6 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||news.itsfoss.com/assets/images/pikapods.jpg
 ||newsnow.co.uk/pharos.js
 ||nexvelar.b-cdn.net/videoplayback_.mp4
-||nicomanga.com/uploads/jap/
 ||northsidesun.com/init-2.min.js
 ||norwaypost.no/images/banners/
 ||notebrains.com^$image,domain=businessworld.in
@@ -51558,7 +51556,6 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||raenonx.cc/scripts
 ||rafvertizing.crazygames.com^
 ||randalls.com/abs/pub/xapi/search/sponsored-carousel?
-||rawinu.com/uploads/jap/
 ||rd.com/wp-content/plugins/pup-ad-stack/
 ||realitytvworld.com/includes/loadsticky.html
 ||realpython.net/tag.js
@@ -51722,9 +51719,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||webcamtests.com/MyShowroom/view.php?
 ||webstick.blog/images/images-ads/
 ||weloma.art/uploads/aichattings.webp
-||weloma.art/uploads/jap/
 ||welovemanga.one/uploads/bannerv.gif
-||welovemanga.one/uploads/jap/
 ||widenetworks.net^$domain=flysat.com
 ||wikihow.com/x/zscsucgm?
 ||windows.net/banners/$domain=hortidaily.com
@@ -51994,6 +51989,8 @@ $third-party,xmlhttprequest,domain=kinos.to|kinox.am|kinox.click|kinox.cloud|kin
 @@||jetzt.de^$generichide
 ! dood.pm
 /^https?:\/\/www\.[0-9a-z]{8,}\.com\/[0-9a-z]{1,4}\.js$/$script,third-party,domain=dood.la|dood.pm|dood.sh|dood.so|dood.to|dood.watch|dood.ws
+! welovemanga
+/\/uploads\/[a-z]{3}\/\d\.gif$/$image,domain=mangagun.net|nicomanga.com|rawinu.com|weloma.art|welovemanga.one
 ! Internal use of EL
 ||raw.githubusercontent.com/easylist/easylist/master/docs/1x1.gif
 ||raw.githubusercontent.com/easylist/easylist/master/docs/2x2.png$third-party
