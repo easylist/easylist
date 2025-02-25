@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202502252243
+! Version: 202502252244
 ! Title: EasyList
-! Last modified: 25 Feb 2025 22:43 UTC
+! Last modified: 25 Feb 2025 22:44 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -60751,6 +60751,9 @@ checkfelix.com,kayak.*,swoodoo.com##div[class*="-adInner"]
 checkfelix.com,kayak.*,swoodoo.com##div[data-resultid]:has(a.IZSg-adlink)
 checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
+shopee.sg#?#div[class="N_YeYe"]:has(> .shopee_ic:-abp-contains(Ad))
+shopee.sg#?#div[class="oMSmr0"]:has(> .shopee_ic:-abp-contains(Ad))
+perplexity.ai#?#.py-sm.group:-abp-contains(Sponsored)
 autotrader.co.uk#?#[data-testid="desktop-search"] li:-abp-contains(Ad)
 dev.to#?#div[data-display-unit]:-abp-has(span:-abp-contains(Promoted))
 tripadvisor.com#?#[aria-label="Map marker"]:-abp-contains(Sponsored)
