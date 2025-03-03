@@ -1,3 +1,12 @@
+---
+name: Report filter issues
+about: Issue template to report filter issues
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 <!-- 
 EasyPrivacy requests:
 
@@ -21,7 +30,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 <!-- Just a description of the issue when you visit the site. Or steps on reproducing this  -->
 <!-- If necessary, post the link of an Adblock Plus issue report. -->
 
-#### Screenshot(s) 
+#### Screenshot(s):
 
 <!-- Screenshot(s) to describe visual issues. -->
 <!-- Post **links** instead of inline images for screenshots containing adult material. -->
