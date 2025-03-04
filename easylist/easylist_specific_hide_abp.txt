@@ -110,7 +110,7 @@ modivo.*#?#.banner:-abp-contains(/Sponsorizzato|Sponsorowane|Sponsorizat|Sponzor
 modivo.*#?#.product:-abp-contains(/Sponsorizzato|Sponsorowane|Sponsorizat|Sponzorováno|Szponzorált|Спонсорирани|Sponsored|Gesponsert/)
 yelp.*#?#main[class^="searchResultsContainer"] li h2:-abp-contains(Sponsored)
 walmart.*#?#div > div[io-id]:-abp-contains(Sponsored)
-walmart.*#?#div > div[io-id]:-abp-contains(Sponsored)
+walmart.*#?#div[role="group"]:-abp-has(div:-abp-contains(/Sponsored|Commandité/))
 ! ABP CSS injection filters
 euronews.com###o-site-hr__leaderboard-wallpaper.u-show-for-xlarge {remove:true;}
 dailystar.co.uk##[data-testid="commercial-above-header-box-1"] {remove:true;}
