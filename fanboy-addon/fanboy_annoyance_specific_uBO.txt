@@ -36,6 +36,8 @@ tradingview.com##+js(nostif, window.loginStateChange.subscribe)
 ! reg nag
 nerdwallet.com##._1y2JXo
 nerdwallet.com##body,html:style(overflow: auto !important; position: initial !important;)
+! r34.app
+r34.app##+js(set-local-storage-item, statistics-appOpenedCount, 1)
 ! vox.com
 vox.com##+js(set-local-storage-item, vox_article_readcount, $remove$)
 vox.com##+js(set-local-storage-item, vox_article_readcount_count, $remove$)
@@ -78,12 +80,12 @@ reason.com##.widget-placed:style(top:0 !important)
 ! nautil.us
 nautil.us##+js(cookie-remover, arc)
 ! commondreams.org
-commondreams.org##iframe[title="Popup"][src="about:blank"]
+commondreams.org,truthout.org##iframe[title="Popup"][src="about:blank"]
 commondreams.org##.popup--backdrop
 commondreams.org##.breaking-news-top-wrapper
 commondreams.org##.sticky__blackbar:style(top:0 !important)
-commondreams.org##.fun-widget-backdrop-holder
-commondreams.org##body,html:style(overflow: auto !important; position: initial !important;)
+commondreams.org,truthout.org##.fun-widget-backdrop-holder
+commondreams.org,truthout.org##body,html:style(overflow: auto !important; position: initial !important;)
 ! reuters.com (page view counter)
 reuters.com##+js(set-local-storage-item, ArcP, $remove$)
 ! theweek.com
@@ -102,6 +104,8 @@ opensecrets.org##+js(rc, js-no-scroll, html, stay)
 ! kartable.fr
 kartable.fr##push-more-content
 kartable.fr##body,html:style(overflow: auto !important; position: initial !important;)
+! gmap-pedometer.com
+gmap-pedometer.com##+js(set-cookie, patreonAnnouncementShown, true)
 ! scribd.com
 scribd.com##._2kkM6y:style(padding-top: unset !important;)
 scribd.com##.exit_modal
@@ -147,6 +151,8 @@ gmarket.co.kr##+js(set, document.onmousedown, noopFunc)
 ! For the overlay
 !www.youtube.com###ytd-watch-flexy[player-unavailable] #player-container-outer.ytd-watch-flexy:style(visibility: visible !important;)
 !www.youtube.com###yt-playability-error-supported-renderers:style(display: none !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/20586#issuecomment-2695739357
+m.youtube.com##+js(json-prune, overlay.bottomSheetOverlayRenderer, overlay.bottomSheetOverlayRenderer.displayImmediately)
 ! https://github.com/uBlockOrigin/uAssets/issues/21076
 grammarly.com##.ReactModalPortal:has-text(confidence)
 grammarly.com##body:style(overflow: auto !important;)
@@ -191,7 +197,7 @@ currentaffairs.org,news.mongabay.com##body,html:style(overflow: auto !important;
 ! democracynow.org
 democracynow.org##+js(set-cookie, campaign_seen_today, true)
 ! reuters.com (top banner)
-reuters.com##.site-header__inner__ZJDlb:style(top:0 !important)
+reuters.com##.site-header__inner__3w4vv:style(top:0 !important)
 ! pawread.com (forced login, https://github.com/uBlockOrigin/uAssets/issues/24198)
 pawread.com##+js(set-local-storage-item, countChapterNum, $remove$)
 ! 4kdownload.com (fix top empty space)
@@ -203,16 +209,45 @@ theolivepress.es##+js(remove-cookie, issuem_lp)
 ! plough.com
 plough.com##.article-paywall 
 plough.com##+js(remove-cookie, ArticlePaywallList)
+! inscribed.app popup
+inscribed.app##+js(set-local-storage-item, hasVisitedBefore, true)
+! demo popup
+salary.com###sal-demoform-container
+salary.com##.modal-backdrop
+salary.com##body:style(overflow: auto !important; position: initial !important;)
+! article counter
+firstthings.com##+js(set-cookie, pum_popup_14631_page_views, 1)
+!  politico.com login wall
+politico.com,politico.eu,bbc.com,themonthly.com.au,thesaturdaypaper.com.au,nypost.com,triathlete.com##+js(cookie-remover, xbc)
+! tncms login wall
+niagarafallsreview.ca,stcatharinesstandard.ca,therecord.com,thespec.com,thestar.com,wellandtribune.ca##+js(remove-cookie, /^tncms:meter:/)
+! mutualart.com login wall 
+||mutualart.com/Ajax/AjaxLoader/Popup
+mutualart.com##.modal-backdrop
+! hartfordbusiness.com login wall
+hartfordbusiness.com##.paywallMsgTypeTwo
+hartfordbusiness.com##.payWallOverlay
+hartfordbusiness.com##+js(remove-cookie, meter_haystack)
+! commonwealmagazine.org login wall
+commonwealmagazine.org###paywall-message
+commonwealmagazine.org##+js(remove-cookie, Drupal_visitor_paywall)
+! medscape.com login wall
+medscape.com##.fpf-footer-container
+medscape.com##body:style(overflow: auto !important;)
 ! startribune.com (login/reg check)
 startribune.com##+js(remove-cookie, client_id)
+! https://github.com/uBlockOrigin/uAssets/issues/27421
+theverge.com##+js(aeld, scroll)
 ! accuradio.com (login nag)
 accuradio.com##.ReactModal__Overlay--after-open.ReactModal__Overlay
 ! Mouse out nags
-facebook.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,temu.com,newscentermaine.com,5newsonline.com,fox61.com,newscentermaine.com,wtol.com,wiz.io,winnipegfreepress.com,khou.com,abc10.com,12news.com,ksdk.com,whas11.com,wfmynews2.com,wbir.com,wzzm13.com,wltx.com,wqad.com,wnep.com,wgrz.com,cbs8.com,firstcoastnews.com,kare11.com,wtsp.com,ajc.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,king5.com,11alive.com##+js(aeld, /^(mouseout|mouseleave)$/)
+10tv.com,kens5.com,newscentermaine.com,5newsonline.com,fox61.com,newscentermaine.com,wtol.com,wiz.io,winnipegfreepress.com,khou.com,abc10.com,12news.com,ksdk.com,whas11.com,wfmynews2.com,wbir.com,wzzm13.com,wltx.com,wqad.com,wnep.com,wgrz.com,cbs8.com,firstcoastnews.com,kare11.com,wtsp.com,ajc.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,king5.com,11alive.com##+js(aeld, /^(mouseout|mouseleave)$/)
 ! mouseout causes issues with hover-video
-x.com##+js(aeld, mouseleave)
+x.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,temu.com##+js(aeld, mouseleave)
 ! rumble.com nag
 rumble.com##+js(set-cookie, premium_popup, 1)
+! novafork
+novafork.com##+js(set-local-storage-item, donationPopupShown, true)
 ! americanaffairsjournal.org
 americanaffairsjournal.org##.paywall-notification-bar-wrapper
 americanaffairsjournal.org##+js(cookie-remover, AAJPaywall)
@@ -257,25 +292,15 @@ watchsomuchproxy.com##.modal-backdrop
 watchsomuchproxy.com###btnStopAds
 watchsomuchproxy.com##body:style(overflow: scroll !important)
 ! Floating video
-texasmonthly.com##.float-player
-texasmonthly.com##+js(rc, float-player, , stay)
-yahoo.com##+js(rc, vp-docked, , stay)
-yahoo.com##+js(rc, vp-docked-mode, , stay)
+9news.com,11alive.com,thehill.com,abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com,telemundopr.com,nbcchicago.com,nbcdfw.com,nbcboston.com,nbcconnecticut.com,nbcphiladelphia.com,nbcsandiego.com,nbclosangeles.com,nbcnewyork.com,nbcbayarea.com,nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com,finance.yahoo.com,www.yahoo.com##+js(aeld, scroll)
 msnbc.com,today.com,nbcnews.com##.styles_stuck__gtILi
 msnbc.com,today.com,nbcnews.com##+js(rc, styles_stuck__gtILi, , stay)
-thehill.com##+js(rc, desktop-floating-player, , stay)
 independent.co.uk##+js(rc, sticky, , stay)
 independent.co.uk,allrecipes.com##+js(rc, jw-flag-floating, , stay)
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-video-title-bar
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##.desktop-floating-player
-nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com##+js(rc, desktop-floating-player, , stay)
-telemundopr.com,nbcchicago.com,nbcdfw.com,nbcboston.com,nbcconnecticut.com,nbcphiladelphia.com,nbcsandiego.com,nbclosangeles.com,nbcnewyork.com,nbcbayarea.com##+js(rc,  video-flyout--fixed, , stay)
 kbtx.com,kptv.com##.powa-sticky
 kbtx.com,kptv.com##+js(rc, powa-sticky, , stay)
-wusa9.com,wkyc.com,9news.com,11alive.com##.video__docker_state_docked
-wfaa.com,wkyc.com,9news.com,11alive.com##+js(rc,  video__docker_state_docked, , stay)
-6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.dock
-6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##+js(rc, dock, , stay)
+wusa9.com,wkyc.com##.video__docker_state_docked
+wfaa.com,wkyc.com##+js(rc,  video__docker_state_docked, , stay)
 ! cbsnews.com (Floating video)
 cbsnews.com##+js(rc, floating, , stay)
 cbsnews.com##.floating
