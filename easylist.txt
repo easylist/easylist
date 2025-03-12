@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202503112044
+! Version: 202503120008
 ! Title: EasyList
-! Last modified: 11 Mar 2025 20:44 UTC
+! Last modified: 12 Mar 2025 00:08 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -59972,6 +59972,7 @@ walmart.*##a[href*=".criteo.com/"]
 walmart.*##div[class="mv3 ml3 mv4-xl mh0-xl"][data-testid="sp-item"]
 walmart.*##div[data-automation^="HookLogicCarouses"]
 walmart.*##div[data-testid^="sba-container"]
+walmart.*##div[id*="SponsoredProductCarousel"]
 wayfair.*##.CompareSimilarItemsCarousel-item:has(a[href*="&sponsoredid="])
 wayfair.*##.MediaNativePlacement-wrapper-link
 wayfair.*##[data-hb-id="Card"]:has([data-node-id^="ListingCardSponsored"])
@@ -60855,6 +60856,8 @@ checkfelix.com,kayak.*,swoodoo.com##div[class*="-adInner"]
 checkfelix.com,kayak.*,swoodoo.com##div[data-resultid]:has(a.IZSg-adlink)
 checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
+sainsburys.co.uk#?#section[class="ln-o-section ln-u-hard-bottom ln-u-margin-top*2"]:-abp-contains(Sponsored) + section[class="ln-o-section ln-u-hard-bottom ln-u-margin-top*2"]
+sainsburys.co.uk#?#section header[data-test="c006-container-wrapper"]:-abp-contains(Sponsored)
 fiverr.com#?#.gig-card-layout:-abp-contains(Ad by)
 temu.com#?#.EKDT7a3v:-abp-contains(AD)
 property24.com#?#.p24_tileContainer:-abp-contains(Sponsored)
