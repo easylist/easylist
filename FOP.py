@@ -31,7 +31,10 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+# previously:
+# ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+# cover wildcards.*
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\|\@\"\!]*?)#\@?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[\@\?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
