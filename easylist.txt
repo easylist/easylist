@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202503180945
+! Version: 202503181010
 ! Title: EasyList
-! Last modified: 18 Mar 2025 09:45 UTC
+! Last modified: 18 Mar 2025 10:10 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1235,6 +1235,7 @@ _800x100.
 _800x80_
 ! *** easylist:easylist/easylist_general_block_popup.txt ***
 &adb=y&adb=y^$popup
+&cbiframe=$popup
 &fp_sid=pop$popup,third-party
 &popunder=$popup
 &popundersPerIP=$popup
@@ -1294,6 +1295,7 @@ _800x80_
 ://adn.*/zone/$popup
 ://ads.$popup,domain=~smartnews.com
 ://adv.$popup,domain=~adv.kompas.id|~adv.lack-girl.com
+=ppd&bdm=$popup
 =ppd&r=$popup
 ! Commonly used popup scripts on movie/tv streaming sites
 |javascript:*setTimeout$popup
