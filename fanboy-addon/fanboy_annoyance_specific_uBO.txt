@@ -310,3 +310,6 @@ www.nicovideo.jp##:matches-path(/tag/).nicodicNicoadVideoList
 ! ufret.jp (mobile)
 ufret.jp###full-screen-ad
 ufret.jp##.no-scroll:style(overflow: auto !important;)
+! https://github.com/AdguardTeam/AdguardFilters/issues/201521
+paircare.jp##.suppress-scroll:style(overflow: auto !important;)
+paircare.jp##main > div.lg\:hidden:has(> div.fixed.z-30.inset-0.overflow-y-auto)
