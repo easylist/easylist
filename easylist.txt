@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202503252346
+! Version: 202503252350
 ! Title: EasyList
-! Last modified: 25 Mar 2025 23:46 UTC
+! Last modified: 25 Mar 2025 23:50 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -44182,7 +44182,6 @@ browsershots.org#@#.advert_area
 ||capacitygrid.com^$third-party
 ||caroda.io^$third-party
 ||casino-zilla.com^$third-party
-||cazamba.com^$third-party
 ||cb-content.com^$third-party
 ||cdn.mcnn.pl^$third-party
 ||cdn.perfdrive.com^$third-party
@@ -61406,6 +61405,8 @@ checkfelix.com,kayak.*,swoodoo.com##div[class*="-adInner"]
 checkfelix.com,kayak.*,swoodoo.com##div[data-resultid]:has(a.IZSg-adlink)
 checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
+heb.com#?#div:has(> div > div[class^="Carousel_wrapper"]:-abp-contains(Promoted))
+heb.com#?#div:has(> div > div[class^="ModuleSet_moduleSetContainer"]:-abp-contains(Promoted))
 tripadvisor.com#?#[data-test="SL_list_item"]:-abp-contains(Sponsored)
 sainsburys.co.uk#?#section[class="ln-o-section ln-u-hard-bottom ln-u-margin-top*2"]:-abp-contains(Sponsored) + section[class="ln-o-section ln-u-hard-bottom ln-u-margin-top*2"]
 sainsburys.co.uk#?#section header[data-test="c006-container-wrapper"]:-abp-contains(Sponsored)
