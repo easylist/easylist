@@ -345,7 +345,7 @@ def commit (repository, basecommand, userchanges):
     try:
         print(difference.decode("utf-8"))
     except UnicodeEncodeError:
-        print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n");
+        print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n")
         print(difference)
 
     try:
