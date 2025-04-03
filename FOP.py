@@ -343,7 +343,14 @@ def commit (repository, basecommand, userchanges):
         return
     print("\nThe following changes have been recorded by the repository:")
     try:
-        print(difference.decode("utf-8"))
+        diff_lines = difference.decode("utf-8").splitlines()
+        for line in diff_lines:
+            if line.startswith('+'):
+                print("\033[92m{}\033[0m".format(line))  # Green for added lines
+            elif line.startswith('-'):
+                print("\033[91m{}\033[0m".format(line))  # Red for removed lines
+            else:
+                print(line)
     except UnicodeEncodeError:
         print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n");
         print(difference)
