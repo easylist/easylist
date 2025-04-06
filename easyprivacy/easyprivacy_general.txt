@@ -1,4 +1,4 @@
-&action=js_stats&
+&action=js_stats
 &ev=PageView&
 &EventType=DataDealImpression&
 &EventType=Impression&
@@ -36,6 +36,7 @@
 .jp/static/js/track.js
 .net/l.gif?
 .no/app/aas/a
+.pageview-props.js
 .php?action=browse&
 .php?action_name=
 .php?logRefer=
@@ -229,15 +230,14 @@
 /analytics-secure.js
 /analytics-tracker/*
 /analytics-tracking.js
+/analytics-worker.iife.js
 /analytics.*/event?
 /analytics.*/ping/?
 /analytics.*/track
 /analytics.analytics/analytics.min.js
 /analytics.bundled.js
 /analytics.config.js
-/analytics.do
 /analytics.gif?
-/analytics.html?
 /analytics.js/v1/*
 /analytics.plausible.js
 /analytics.prod.$domain=~fifteen.eu
@@ -301,6 +301,7 @@
 /api/adplogger/*
 /api/async.php?t=user&m=pagehits&
 /api/bfb_write_log
+/api/click/*?c=
 /api/cmp_tracker|
 /api/drpStats
 /api/event-rfkj/*
@@ -311,6 +312,7 @@
 /api/metrics/collect
 /api/metrics/event
 /api/pageactivity
+/api/pageview/*$ping
 /api/pageview?
 /api/pagevisits
 /api/ping?$~xmlhttprequest
@@ -387,6 +389,7 @@
 /aztracker.js
 /b.banners.impress.
 /b.gif?
+/b.rnc?
 /b/s/beacon
 /b/ss/*&aqe=
 /b/ss/*&events=
@@ -622,7 +625,7 @@
 /collector/v1/event
 /collector?report=
 /collectsysteminfo?
-/com.snowplowanalytics.snowplow/*
+/com.snowplowanalytics.snowplow/*$domain=~7plus.com.au
 /com_joomlawatch/img.php
 /common/analytics.js
 /common/ga.js
@@ -647,7 +650,7 @@
 /core-tracking.js
 /coretracking.php?
 /count.cfm?
-/count.do?
+/count.do?$domain=~its.busan.go.kr
 /count.exe?
 /count.fcg?
 /count.fcgi?
@@ -735,7 +738,6 @@
 /dla_tracker.js
 /dlpageping?
 /dm.gif?
-/dm.tlo?id=
 /dmp/pixel.js
 /dmu2panalytics/ajax_call.php?
 /dnx-event-collector/*
@@ -761,7 +763,6 @@
 /e.gif?
 /e_stat?g_id=
 /eatms.js
-/ebonetag.js
 /ecanalytics.js
 /ecap.min.js
 /ecblank.gif?
@@ -1090,7 +1091,7 @@
 /hit.asp?
 /Hit.aspx?
 /hit.c?
-/hit.php?
+/hit.php?$domain=~etoland.co.kr
 /hit.t?
 /hit.xiti?
 /hit/?r=
@@ -1167,7 +1168,7 @@
 /impression.track?
 /impression/inline?
 /impression/track?
-/impressions?
+/impressions?$~xmlhttprequest
 /ImpressionsEvent.js
 /in.getclicky.com/*
 /in.gif?url=
@@ -1260,6 +1261,7 @@
 /kontera.js
 /krux-sass-helper.js
 /krux.js
+/kukulufinger2.js
 /LandingPageHitLog.aspx?
 /lasso-ga.js
 /lead-tracking.min.js
@@ -1289,6 +1291,7 @@
 /loader/counter.js
 /localga.js
 /locotrack.js
+/log-moltron-interaction?
 /log-nt/*
 /log-reporter.js
 /log-view.js
@@ -1333,7 +1336,7 @@
 /log?documentUrl=
 /Log?entry=
 /log?event=
-/log?format=
+/log?format=$domain=~meet.google.com
 /log?id=
 /log?kc=
 /log?method=
@@ -1408,6 +1411,7 @@
 /matomo.js$domain=~github.com
 /matomo.php
 /matomo/*$domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
+/matomo_video_tracking.js
 /mcookie.aspx
 /mcount.cgi?
 /measure/pixel/*
@@ -1435,6 +1439,7 @@
 /metrics/track/*
 /metrics/v1/frontend/*
 /metrics/vanity/?
+/metrika.js?=
 /metrika/tag.js
 /mi/insite/*
 /microsoft.cognitiveservices.speech.sdk.bundle.js
@@ -1504,7 +1509,6 @@
 /njs.gif?
 /nlogger.js
 /nLoggerJB_
-/nlRUM.js
 /nm/itracking?
 /NNAnalyticsWPSites.js
 /no-impression.gif?
@@ -1558,6 +1562,7 @@
 /outbrainAd.
 /outLoging.js
 /outLoging2.js
+/oval_web_analytics_latest.js
 /owa.Analytics.m.js
 /owa.tracker-combined-min.js
 /oxAnalytics.js
@@ -1762,7 +1767,7 @@
 /publisher:getClientId?key=
 /publishertag.js
 /publitas-stats.js
-/pubstats.$domain=~pubstats.dev
+/pubstats.$domain=~pub.dev|~pubstats.dev
 /pubtag.js
 /pulsario.js
 /push-analytics.js
@@ -1836,6 +1841,7 @@
 /referrer_tracking.js
 /reftracker.js
 /renderTimingPixel.
+/report_ga_events/*
 /report_visit.php
 /reportData/nm.gif?
 /reporting/metrics
@@ -1897,6 +1903,7 @@
 /rum.gif?
 /rum.min.js
 /rum/events
+/rum?ddsource=
 /run/perf
 /ruxitagentjs_
 /rwtag.gif?
@@ -1915,9 +1922,7 @@
 /scmetrics.*/b/ss/*
 /screencount?vcid=
 /scribd_events?
-/script.pageview-props.js
 /script.tagged-events.outbound-links.js
-/script.tagged-events.pageview-props.js
 /script/pixel.js
 /scriptAnalytics.js
 /scripts.kissmetrics.com/*
@@ -1952,6 +1957,7 @@
 /sentry-browser.min.js
 /sentry-browser.tracing.es5.min.js
 /sentry-logger.js
+/sentry-tracing.min.js
 /sentry/bundle.min.js
 /seo.taCo.min.js
 /seo/pageStat/*
@@ -2186,7 +2192,6 @@
 /t/event?
 /t?referer=
 /t?tcid=
-/taboola-header.js
 /taboola.js
 /taboola/loader.js
 /taboolaHead.js
@@ -2504,6 +2509,7 @@
 /view-tracking/*$image
 /view.gif?
 /view_stats.js.php
+/viewcount/record-page-view?
 /ViewCounter/*
 /viewerimpressions?
 /views_tracking/*
@@ -2562,7 +2568,6 @@
 /web-data-ingress?
 /web-pixel-shopify-app-pixel@
 /web-pixel-shopify-custom-pixel@
-/web-vitals.
 /web/push?
 /web_analytics/*
 /web_answertip.js
@@ -2624,7 +2629,7 @@
 /wp-slimstat.min.js
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
-/wp-statistics/v2/hit?
+/wp-statistics/v2/hit
 /wp-stats-manager/js/wsm_new.js
 /wp-useronline/useronline.js
 /wp_stat.php?
@@ -2634,7 +2639,7 @@
 /wps-visitor-counter/styles/js/custom.js
 /wpstatistics/v1/hit?
 /wrapper/metrics/v1/custom-metrics?
-/WRb.js
+/WRb.js^
 /wreport.js
 /writelog.js
 /wstat.pl
@@ -2645,6 +2650,7 @@
 /wtid.js
 /wtinit.js
 /wtrack?event=
+/wup?cid=
 /wwwcount.cgi?
 /wxhawkeye.js
 /wysistat.js
@@ -2697,14 +2703,18 @@
 ://collector.*/event
 ://elqtrk.
 ://fallback.*/collector
-://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtrack.*/dye
 ://insights-collector.
 ://internal-matomo.
+://l.*/counter.php?id=$script,~third-party
+://l.*/script.php?i=$script,~third-party
 ://lightning.*/launch/
 ://matomo.$domain=~matomo.org
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
+://plausible.*/api/event|
+://plausible.*/js/script.
 ://posthog.$script,domain=~posthog.com
 ://segment-api.
 ://segment-cdn.
@@ -2823,6 +2833,7 @@ _WebVitalsReporter_
 ! Server-side GTM
 &l=dataLayer&cx=c
 .js?id=GTM-
+/ns.html?id=GTM-
 ://gtm.*.js?st=
 ://load.*.js?st=$~third-party
 ||adservice.google.
