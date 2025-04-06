@@ -17,7 +17,7 @@ git:
 
 # https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
 install:
-  - pip install git+https://github.com/adblockplus/python-abp
+  - pip install git+https://github.com/adblockplus/python-abp.git@4b0aec2
 before_script:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "TravisCI"

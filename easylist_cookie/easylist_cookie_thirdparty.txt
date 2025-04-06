@@ -48,7 +48,8 @@
 ||consent.nitrocnct.com^
 ||consent.prointernet.com^
 ||consent.trustarc.com/get?name=$subdocument,domain=avantiwestcoast.co.uk|oracle.com
-||consent.truste.com/get?name=notice.js$script
+||consent.trustarc.com^$domain=authy.com|pedialyte.com|twilio.com
+||consent.truste.com^$third-party
 ||consentag.eu^$third-party
 ||consentframework.com^$third-party
 ||consentmanager.net^$third-party
@@ -70,9 +71,8 @@
 ||cookiecode.nl/dist/latest.js
 ||cookieconsent.com^$third-party
 ||cookieconsent.dfikir.com^$third-party
-||cookiefirst.com^$third-party
 ||cookieform.pl^$third-party
-||cookiehub.net^$third-party
+||cookiehub.net^$~stylesheet,third-party
 ||cookieinformation.com^$third-party
 ||cookieinfoscript.com^$third-party
 ||cookielab.dk^$third-party
@@ -101,6 +101,7 @@
 ||d3macwxrvlvlf8.cloudfront.net/cookie-service/
 ||dmgmediaprivacy.co.uk^$third-party
 ||donkeymob.com^$third-party
+||easycookie.io^$third-party
 ||ecookie.nl^$third-party
 ||efilli.com/efl.js
 ||efilli.com^$third-party
@@ -120,6 +121,8 @@
 ||gdpr-settings.s3.amazonaws.com^
 ||gdpr.es^$third-party
 ||gdpr.studybreakmedia.com^
+||gedk-consent-manager.de/public/app.js
+||geolocation.onetrust.com^$third-party
 ||getcomplied.com^$third-party
 ||getsitecontrol.com^$third-party
 ||getterms.io^$third-party
@@ -136,7 +139,7 @@
 ||jimstatic.com/ckies.js
 ||jsdelivr.net/gh/accept-all/cdn/banner-2024.js
 ||jsdelivr.net/gh/accept-all/cdn/banner.js
-||ketchcdn.com^$third-party
+||ketchcdn.com^$third-party,domain=~forbes.com
 ||ketchjs.com/lanyard/
 ||kiprotect.com/v1/privacy-managers/
 ||kookiecheck.cz/static/script/
@@ -149,7 +152,7 @@
 ||messaging.sourcepoint.com^
 ||mgr.consensu.org/iframe.html
 ||modeto.com^$third-party
-||monsido-consent.com^$third-party
+||monsido-consent.com^$third-party,domain=~vejdirektoratet.dk
 ||network-n.com^$third-party
 ||nojazz.eu/consent/
 ||ocdn.eu/blikk_static/blikk/consent_v2/
@@ -202,7 +205,6 @@
 ||uniconsent.mgr.consensu.org^*.cmp.js$third-party
 ||unpkg.com/cookie-though
 ||usercentrics.eu^$third-party
-||webcache-eu.datareporter.eu^
 ||webcache.datareporter.eu^
 ||websitepolicies.io^$third-party
 ||widget.clym-sdk.net^$third-party
@@ -210,6 +212,6 @@
 ||wpcc.io^$third-party
 ||x-c.eu^$third-party
 ! privacy-mgmt.com
-||cdn.privacy-mgmt.com^$domain=anisearch.com|anisearch.de|anisearch.es|anisearch.fr|anisearch.it|anisearch.jp|consent-manager.ft.com|idealo.co.uk|marketwatch.com|popsci.com|startsiden.no|sussexexpress.co.uk|taz.de|wsj.com
+||privacy-mgmt.com^$domain=anisearch.com|anisearch.de|anisearch.es|anisearch.fr|anisearch.it|anisearch.jp|consent-manager.ft.com|economist.com|idealo.co.uk|marketwatch.com|popsci.com|startsiden.no|sussexexpress.co.uk|taz.de|wsj.com
 ! Consent Trackers
 ||opencmp.net^$script,third-party
