@@ -1,4 +1,5 @@
 /agent.php?spot=$domain=justthegays.com
+/nozomi4.js$domain=nozomi.la
 ://*.justthegays.com/$script,~third-party
 ||037jav.com/wp-content/uploads/2021/04/*.gif
 ||1069jp.com/js/script_
@@ -23,6 +24,7 @@
 ||777av.cc/og/
 ||8boobs.com/flr.js
 ||8muses.com/banner/
+||a.crazyporn.xxx^
 ||a.seksohub.com^
 ||aa.fapnado.xxx^
 ||ab.fapnado.xxx^
@@ -79,6 +81,7 @@
 ||boyfriend.show/widgets/Spot
 ||boyfriendtv.com/ads/
 ||boyfriendtv.com/bftv/b/
+||boyfriendtv.com/bftv/paysite/
 ||boyfriendtv.com/bftv/www/js/*.min.js?url=
 ||boysfood.com/d5.html
 ||bravoteens.com/ta/
@@ -119,6 +122,7 @@
 ||creative.thefaplive.com^
 ||creative.upskirtlive.com^
 ||creatives.cliphunter.com^
+||crossdresserhub.com/*.php$script
 ||cumlouder.com/nnubb.js
 ||cuntlick.net/banner/
 ||cutegurlz.com/promos-royal-slider/aff/
@@ -200,6 +204,7 @@
 ||galleries-pornstar.com/thumb_top/
 ||gamcore.com/ajax/abc?
 ||gamcore.com/js/ipp.js
+||gamcore.com/z0mb24.js
 ||gay.bingo/agent.php
 ||gay4porn.com/ai/
 ||gayforfans.com^*.php|$script
@@ -290,9 +295,11 @@
 ||javhub.net/ps/UJXTsc.js
 ||javideo.net/js/popup
 ||javlibrary.com/js/bnr_
+||javmost.com/src/jpm.js
 ||javpornclub.com/images/banners/takefile72890.gif
 ||javslon.com/clacunder.js
 ||javxnxx.pro/pscript.js
+||javynow.com/images/caribian.jpg
 ||jennylist.xyz/t63fd79f7055.js
 ||jizzberry.com/65
 ||justthegays.com/agent.php
@@ -334,14 +341,13 @@
 ||mylistcrawler.com/wp-content/plugins/elfsight-popup-cc/
 ||mylust.com/092-
 ||mylust.com/assets/script.js
-||myreadingmanga.info/*.php$script,xmlhttprequest
+||myreadingmanga.info/wp-admin/*.php$script,xmlhttprequest
 ||mysexgames.com/pix/best-sex-games/
 ||mysexgames.com/plop.js
 ||myvideos.club/api/
 ||n.hnntube.com^
 ||naughtyblog.org/wp-content/images/k2s/
 ||nigged.com/tools/get_banner.php
-||nozomi.la/nozomi4.js
 ||nsfwalbum.com/efds435m432.js
 ||nudepatch.net/dynbak.min.js
 ||nudepatch.net/edaea0fd3b2c.j
@@ -370,9 +376,7 @@
 ||pornerbros.com/lolaso/
 ||pornforrelax.com/kiadtgyzi/
 ||porngals4.com/img/b/
-||porngames.tv/images/skyscrapers/
-||porngames.tv/js/banner.js
-||porngames.tv/js/banner2.js
+||porngames.tv/js/hs43jgM.js
 ||porngo.tube/tdkfiololwb/
 ||pornhat.com/banner/
 ||pornhub.*/_xa/ads
@@ -540,7 +544,6 @@
 ||x0r.urlgalleries.net^
 ||x1hub.com/alexia_anders_jm.gif
 ||xanimu.com/prerolls/
-||xbooru.com/script/application.js
 ||xcity.org/tc2ca02c24c5.js
 ||xfree.com/api/banner/
 ||xgirls.agency/pg/c/
@@ -557,6 +560,7 @@
 ||xis.vipergirls.to^
 ||xjav.tube/ps/Hij2yp.js
 ||xmilf.com/0eckuwtxfr/
+||xnxx.tv/zoneload/
 ||xnxxporn.video/nb39.12/
 ||xozilla.com/player/html.php$subdocument
 ||xpics.me/everyone.
@@ -611,5 +615,6 @@
 ! websocket ads
 $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
 ! csp
-$csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval',domain=gayforfans.com,~third-party
+$csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval',domain=thumbs.pro
+$csp=script-src 'self' data: blob: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval',domain=gayforfans.com,~third-party
 ||thegay.com^$csp=default-src 'self' *.ahcdn.com fonts.gstatic.com fonts.googleapis.com https://thegay.com https://tn.thegay.com 'unsafe-inline' 'unsafe-eval' data: blob:

@@ -15,6 +15,7 @@
 .ashx?AdID=
 .aspx?adid=
 .az/adv/$~xmlhttprequest
+.biz/?te=$third-party
 .br/ads/$~xmlhttprequest
 .ca/ads/$~xmlhttprequest
 .cfm?ad=
@@ -71,6 +72,7 @@
 /?abt_opts=1&
 /?fp=*&poru=$subdocument
 /?view=ad
+/_fd?subid1=$xmlhttprequest
 /a-ads.$third-party
 /a/?ad=
 /a/display.php?$script
@@ -91,7 +93,6 @@
 /ad/images/*$image,domain=~studiocalling.it
 /ad/img/*$image,domain=~eki-net.com|~jiji.com
 /ad300.jpg$image
-/ad300.png$image
 /ad728.png$image
 /ad?count=
 /ad_728.jpg$image
@@ -264,6 +265,7 @@
 /ajs?zoneid=
 /amazon-ad-link-$stylesheet
 /amazon-associates-link-$~stylesheet
+/amazonjs.css?
 /amp-ad-$script
 /amp-auto-ads-$script
 /amp-connatix-$script
@@ -274,7 +276,9 @@
 /ane-popup-banner.js$script
 /api.ads.$script,domain=~ads.instacart.com|~www.ads.com
 /api/ad.$script
+/api/direct/*?s1=$script
 /api/users?token=$subdocument,third-party
+/api/v2/items/*?ev=
 /apopwin.js$script
 /apstag.js$script
 /apu.php?$script
@@ -315,6 +319,7 @@
 /bsa-plugin-pro-scripteo/frontend/js/script.js$script
 /bsa-pro-scripteo/frontend/js/script.js$script
 /btag.min.js$third-party
+/bundle/trafee/prelands/*
 /buysellads.js$script
 /calcalist_gpt_ads.js$script
 /cgi-bin/ad/*$~xmlhttprequest
@@ -341,7 +346,7 @@
 /delivery/apu.php$script,subdocument
 /delivery/avw.php$script,subdocument
 /delivery/fc.php$script,subdocument
-/delivery/lg.php$script,subdocument
+/delivery/lg.php$image,script,subdocument
 /dfp.min.js$third-party
 /dfp_async.js$script
 /dfpNew.min.js$script
@@ -373,7 +378,6 @@
 /floating-ad-rotator-$script,stylesheet
 /floatingad.js$script
 /floatingads.js$script
-/flyad.js$script
 /footer_ad.js$script,domain=~streamruby.com
 /footer_ads.php$subdocument
 /footerads.php$script
@@ -404,6 +408,7 @@
 /img/ad/*$~xmlhttprequest,domain=~novelgame.jp|~weblio.jp
 /img/aff/*$image
 /img_ad/*$image,domain=~daily.co.jp|~ehonnavi.net
+/in/?tour=$third-party
 /in/show/?mid=$third-party
 /include/ad/*$script
 /includes/ads/*$script
@@ -417,19 +422,21 @@
 /insertads.js$script
 /internAds.css$stylesheet
 /istripper.gif$image
-/jquery.ad.js$script
-/jquery.adi.js$script
-/jquery.adx.js?$script
-/jquery.dfp.js?$script
-/jquery.dfp.min.js?$script
+/jquery.ad.js
+/jquery.adi.js
+/jquery.adx.js?
+/jquery.dfp.js?
+/jquery.dfp.min.js?
 /jquery.lazyload-ad-$script
-/jquery.lazyload-ad.js$script
-/jquery.openxtag.js$script
-/jquery.popunder.js$script
+/jquery.lazyload-ad.js
+/jquery.openxtag.js
+/jquery.overlayad.js
+/jquery.popunder.js
 /js/ad_common.js$script
 /js/adpopup.js$script
 /js/advRotator.js$script
 /js/dfp.js$script
+/js/flyad.js
 /jsAds-1.4.min.js$script
 /jshexi.hj?lb=
 /jspopunder.js$script
@@ -457,6 +464,7 @@
 /modules/ad/*$~xmlhttprequest
 /modules/ads/*$~xmlhttprequest
 /MPUAdHelper.js$script
+/mw.min.js?z=$third-party
 /mysimpleads/mysa_output.php$script
 /native/ts-master.$subdocument
 /nativeads-v2.js$script
@@ -485,7 +493,6 @@
 /partnerbanner.$~xmlhttprequest,domain=~toltech.cn
 /partners/ads/*$image
 /peel.php?$script
-/peel_ads.js$script
 /peelads/*$script
 /pfe/current/*$third-party
 /phpads/*$script
@@ -520,6 +527,7 @@
 /plugins/ultimate-popunder/*$~stylesheet
 /pop_8/pop_8_$script
 /popin-min.js$script
+/popunder/in/click/*
 /popunder1.js$script
 /popunder1000.js$script
 /popunder2.js$script
@@ -545,6 +553,7 @@
 /publicidades/*$~xmlhttprequest
 /push/p.js?$third-party
 /rad_singlepageapp.js$script
+/rb/agent2.php?spot=
 /RdmAdFeed.js$script
 /rdrr/renderer.js$third-party
 /RealMedia/ads/*$~xmlhttprequest
@@ -561,10 +570,11 @@
 /resources/ads/*$~xmlhttprequest
 /responsive/ad_$subdocument
 /responsive_ads.js$script
+/revopush_v2.js
 /right_ads.$~xmlhttprequest
 /rightad.js$script
 /s.ashx?btag$script
-/sbar.json?key=
+/sbar.json?key=$script
 /sc-tagmanager/*$script
 /script/aclib.js$third-party
 /script/antd.js$third-party
@@ -589,13 +599,13 @@
 /script/uBlock.js$third-party
 /script/wait.php?*=$xmlhttprequest
 /script/xxAG1.js$third-party
+/scripts/FlyAd.js
 /scripts/js3caf.js$script
 /sdk/push_web/?zid=$third-party
 /servead/request/*$script,subdocument
 /serveads.php$script
 /servlet/view/*$script
 /set_adcode?$image
-/sft-prebid.js$script
 /show-ad.js$script
 /show_ad.js$script
 /showban.asp?$image
@@ -671,6 +681,7 @@
 /view/ad/*$subdocument
 /view_banner.php$image
 /virtuagirlhd.$image
+/waWQiOjE*=eyJ.js^$third-party
 /web/ads/*$image
 /web_ads/*$image
 /webads/*$image,domain=~cccc.edu|~meatingplace.com
@@ -716,7 +727,7 @@
 ://ad-api-
 ://ad1.
 ://adn.*/zone/$subdocument
-://ads.$~image,~xmlhttprequest,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~reempresa.org
+://ads.$~image,~xmlhttprequest,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.axon.ai|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.vk.ru|~ads.watson.ch|~ads.x.com|~ads.yandex|~reempresa.org
 ://ads2.
 ://adsbb.
 ://adserving.
@@ -739,7 +750,6 @@
 ?ab=1&zoneid=
 ?adspot_$domain=~sponichi.co.jp
 ?advertiser_id=$domain=~ads.pinterest.com
-?bannerid=
 ?cs=*&abt=0&red=1&sm=$third-party
 ?service=ad&
 ?usid=*&utid=
@@ -755,8 +765,18 @@ _reklama_$domain=~youtube.com
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
 ||online.*/promoredirect?key=
+! strat-talk.com forum and others
+/render-ad.php?ad_id=
+/render-sidebar-ad.php?ad_id=
+! Filemoon
+?bd=ppd&r=$document
 ! Ad-Shield
 /ad-shield/e/*$script,third-party
+://www.*.xyz/content/*/-1/$script,subdocument,third-party,xmlhttprequest
+://www.*.xyz/content/*/a/$subdocument,third-party
+://www.*.xyz/content/*?h=$script,third-party
+://www.*.xyz/script/*.com.js|$script,third-party
+wss://www.*.xyz/ws^$third-party
 ! https://github.com/easylist/easylist/issues/11123
 .com/ed/java.js$script
 /ed/fol457.$script
@@ -893,6 +913,7 @@ _prebid.js$script
 /webservices/jsparselinks.aspx?$script
 ! domain parking redirection
 /page/bouncy.php?$document
+/r.php?u=https$document
 /zcredirect?$document
 ! Peel script
 /jquery.peelback.$script

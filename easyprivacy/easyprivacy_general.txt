@@ -1,5 +1,7 @@
+&&sub19=undefined&sub20=undefined
 &action=js_stats
 &ev=PageView&
+&event_name=view_item_list&
 &EventType=DataDealImpression&
 &EventType=Impression&
 &hitType=pageview&
@@ -36,6 +38,7 @@
 .jp/static/js/track.js
 .net/l.gif?
 .no/app/aas/a
+.outbound-links.pageview-props.revenue.tagged-events.js
 .pageview-props.js
 .php?action=browse&
 .php?action_name=
@@ -88,6 +91,7 @@
 /__utm.gif
 /__utm.js
 /__wsm.gif
+/_assets/oply/public/*
 /_blazor/*$ping
 /_ga?send&
 /_ga?sponsor_pixel=
@@ -230,13 +234,13 @@
 /analytics-secure.js
 /analytics-tracker/*
 /analytics-tracking.js
+/analytics-worker.iife.js
 /analytics.*/event?
 /analytics.*/ping/?
 /analytics.*/track
 /analytics.analytics/analytics.min.js
 /analytics.bundled.js
 /analytics.config.js
-/analytics.do
 /analytics.gif?
 /analytics.js/v1/*
 /analytics.plausible.js
@@ -261,6 +265,7 @@
 /analytics/ga.js
 /analytics/google.js
 /analytics/layer
+/analytics/loggly.js
 /analytics/metric/*
 /analytics/pagestats
 /analytics/pageview
@@ -312,6 +317,7 @@
 /api/metrics/collect
 /api/metrics/event
 /api/pageactivity
+/api/pageview/*$ping
 /api/pageview?
 /api/pagevisits
 /api/ping?$~xmlhttprequest
@@ -624,7 +630,7 @@
 /collector/v1/event
 /collector?report=
 /collectsysteminfo?
-/com.snowplowanalytics.snowplow/*
+/com.snowplowanalytics.snowplow/*$domain=~7plus.com.au
 /com_joomlawatch/img.php
 /common/analytics.js
 /common/ga.js
@@ -649,7 +655,7 @@
 /core-tracking.js
 /coretracking.php?
 /count.cfm?
-/count.do?
+/count.do?$domain=~its.busan.go.kr
 /count.exe?
 /count.fcg?
 /count.fcgi?
@@ -852,6 +858,7 @@
 /exactag.js
 /exittracker.js
 /expcount/additional.php
+/exponea.min.js
 /extendedanalytics.js
 /external-tracking.min.js
 /ezais/analytics?
@@ -877,6 +884,7 @@
 /fbpix-events-
 /fbpixel.js
 /fe_logger?
+/feature/metrics$xmlhttprequest
 /figanalytics-short-ttl.js
 /fingerprint.js
 /fingerprint.min.js
@@ -1008,7 +1016,6 @@
 /geocc.js
 /geocompteur.php
 /geoip/detect?
-/geoip?
 /geoip_cc
 /geoLocationData/v1/*
 /geov2.js
@@ -1074,6 +1081,7 @@
 /gtm.js
 /gtm.min.js
 /gtm/gtm-
+/gtmDataLayer.js
 /gtmTracking.js
 /gv-analytics/riveted.js
 /h.gif?
@@ -1335,7 +1343,7 @@
 /log?documentUrl=
 /Log?entry=
 /log?event=
-/log?format=
+/log?format=$domain=~meet.google.com
 /log?id=
 /log?kc=
 /log?method=
@@ -1438,6 +1446,7 @@
 /metrics/track/*
 /metrics/v1/frontend/*
 /metrics/vanity/?
+/metrika.js?=
 /metrika/tag.js
 /mi/insite/*
 /microsoft.cognitiveservices.speech.sdk.bundle.js
@@ -1475,6 +1484,7 @@
 /ms-widgets/tracking-cookies/*
 /ms.analytics-web-3.min.js
 /mtc.js
+/mtifonttracker.js
 /mtiFontTrackingCode.js
 /mtracking.gif?
 /mtvi_reporting.js
@@ -1553,6 +1563,7 @@
 /opinionlab.js
 /optiextension.dll?$script
 /optimizelyjs/*
+/orichipixel.min.js
 /ot_e404.gif?
 /OtAutoBlock.js
 /ouibounce.min.js
@@ -2019,6 +2030,7 @@
 /smetrics.*/b/ss/*
 /smetrics.*/id?
 /smg_tracking/js/onthe.io.js
+/Smile_ElasticsuiteTracker/*$script
 /smmch-mine.js
 /smmch-own.js
 /snowman.gif?p=
@@ -2124,10 +2136,12 @@
 /stats/pv.php?
 /stats/record.php?
 /stats/record/*
+/stats/record_visit/*
 /stats/search-log
 /stats/transp.bmp
 /stats/v2/visit?
 /stats/visitors
+/stats/web_vitals/*$ping
 /stats/welcome.php?
 /stats?aid=
 /stats?blog_
@@ -2200,6 +2214,7 @@
 /tagAnalyticscnil.php
 /tagCNIL.js
 /tagcommander/prd/*
+/tagging?env=
 /tagmanager/event?
 /tagmanager/pptm.js
 /tags.js?org_id=
@@ -2319,6 +2334,7 @@
 /tracker.ga.
 /tracker.gif?
 /tracker/?key=
+/tracker/base_wp/*
 /tracker/event?
 /tracker/imp?
 /tracker_async.js
@@ -2447,6 +2463,7 @@
 /umg-analytics/umgaal.min.js
 /umt.gif?
 /unbxdAnalytics.js
+/uniclick.js?attribution=
 /UniqueUserVisit?
 /updatestats.js
 /urchin.gif?
@@ -2507,6 +2524,7 @@
 /view-tracking/*$image
 /view.gif?
 /view_stats.js.php
+/viewcount/record-page-view?
 /ViewCounter/*
 /viewerimpressions?
 /views_tracking/*
@@ -2636,7 +2654,7 @@
 /wps-visitor-counter/styles/js/custom.js
 /wpstatistics/v1/hit?
 /wrapper/metrics/v1/custom-metrics?
-/WRb.js
+/WRb.js^
 /wreport.js
 /writelog.js
 /wstat.pl
@@ -2700,7 +2718,7 @@
 ://collector.*/event
 ://elqtrk.
 ://fallback.*/collector
-://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtrack.*/dye
 ://insights-collector.
 ://internal-matomo.
@@ -2828,11 +2846,13 @@ _WebVitalsReporter_
 /gen_204?$image,other,ping,script
 /generate_204?$image
 ! Server-side GTM
+&event_name=page_view&
 &l=dataLayer&cx=c
 .js?id=GTM-
 /ns.html?id=GTM-
 ://gtm.*.js?st=
 ://load.*.js?st=$~third-party
+://sgtm.*.js?
 ||adservice.google.
 ||google.*/url?$ping
 ||google.com/gen_204?
