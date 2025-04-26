@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202504261144
+! Version: 202504261733
 ! Title: EasyPrivacy
-! Last modified: 26 Apr 2025 11:44 UTC
+! Last modified: 26 Apr 2025 17:33 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -325,6 +325,7 @@
 /api-insights/log?
 /api/0/stats
 /api/adplogger/*
+/api/adtracking$xmlhttprequest
 /api/async.php?t=user&m=pagehits&
 /api/bfb_write_log
 /api/click/*?c=
@@ -874,6 +875,7 @@
 /eventtracking/*
 /evercookie.js
 /evercookie/swfobject-2.2.min.js
+/evercookie_get.js
 /evergage.js
 /evergage.min.js
 /evt.gif?
@@ -1954,6 +1956,7 @@
 /scmetrics.*/b/ss/*
 /screencount?vcid=
 /scribd_events?
+/script.tagged-events.js
 /script.tagged-events.outbound-links.js
 /script/pixel.js
 /scriptAnalytics.js
@@ -2147,6 +2150,7 @@
 /stats/events$xmlhttprequest
 /stats/footer.js
 /stats/ga.js
+/stats/header.js
 /stats/impression
 /stats/log.pl
 /stats/Logger?
@@ -2621,6 +2625,7 @@
 /webmnr.min.js
 /webmonitor/collect/badjs.json
 /webmr.js
+/webruntime/log/metrics$ping
 /webstat.js
 /WebStat2.asmx
 /webstatistics.php?
@@ -3205,6 +3210,7 @@ omni.soundestlink.com$image
 ||apxl.io^
 ||as3.io^
 ||aseads.com^
+||astarsbuilding.com^
 ||australiarevival.com^
 ||avads.net^
 ||awmonitor.com^
@@ -3552,6 +3558,7 @@ omni.soundestlink.com$image
 ||tw.cx^
 ||ugdturner.com^
 ||uidapi.com^
+||uimarketpro.com^
 ||uqd.io^
 ||ustat.info^
 ||venture-365-inspired.com^
@@ -12180,6 +12187,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||yarpp.org/pixels/
 ||yellow.ai/api/plugin/analytics?
 ||yellow.ai/integrations/analytics/
+||yepnews.eu/event.html
 ||yext.com/plpixel?
 ||yimg.com/aaq/vzm/$script,domain=news.yahoo.com
 ||yimg.com/cx/vzm/cs.js
@@ -12934,6 +12942,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||contentreveal.net/event/events.js
 ||ct.beslist.nl^
 ||dmtgo.upc.biz^
+||falco.studio/api/track
 ||go.planetnine.com^
 ||hottraffic.nl^$third-party
 ||marktplaats.net/cnt/
@@ -14786,6 +14795,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ranker.com/api/tracking/comscore
 ||rankhit.china.com^
 ||ras.yahoo.com^
+||raw.vidyard.com^
 ||rbc.ua/enghits/
 ||react-admin-telemetry.marmelab.com^
 ||read.amazon.*/uploadMetrics/
@@ -15216,6 +15226,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||twitter.com/i/csp_report?
 ||twitter.com/i/jot
 ||twitter.com^*/log.json
+||two.cm.com^
 ||tyler-brown.com/api/stats?
 ||typepad.com/t/stats?
 ||ua.financialexpress.com/api/capture
@@ -15260,6 +15271,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vanityfair.com/user-context?referrer
 ||vf.startpage.com^
 ||video.mobile.yahoo.com/log|$xmlhttprequest
+||vidyard.com/api/metrics
 ||views.arabnews.com^
 ||views.asurascans.com^
 ||vimeo.com/ablincoln/
@@ -52735,6 +52747,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ! Dutch
 ||2dehands.be/px/
 ||analytics.rambla.be^
+||api.beleggersbelangen.nl//api/statistics/
 ||api.rtl.nl/monitoring/
 ||azerty.nl/ambannerslider/analytic/
 ||bc34.wijnvoordeel.nl^
@@ -52749,9 +52762,11 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||filmvandaag.nl/pl/js/script.js
 ||folderz.nl/clickstream/
 ||infonu.nl/t.php?
+||inzicht.cz.nl^
 ||kieskeurig.nl/collect
 ||kieskeurig.nl/track-
 ||klik.nrc.nl/ping?
+||localfocuswidgets.net/stats/
 ||log.rabobank.nl^
 ||marktplaats.nl/add_counter_image.
 ||marktplaats.nl/metrics/
@@ -53211,6 +53226,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 |http://x.o2.pl^
 ||analytics.gazeta.pl^
 ||collect.state.centrum24.pl^
+||cs.bankmillennium.pl^
 ||dot.wp.pl^$script
 ||entryhit.wp.pl^
 ||euro.com.pl/log-customer-visit
@@ -53239,6 +53255,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||click.afiliados.uol.com.br^
 ||click.uol.com.br^
 ||csplog.kwai-pro.com^
+||data-events.uniplaces.com^
 ||dejavu.mercadolivre.com.br^
 ||dn.pt/tag/
 ||dna.uol.com.br^
@@ -53268,6 +53285,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||sdk-analytics-web.cloud.itau.com.br^
 ||sinonimos.com.br/hits.php
 ||standvirtual.com^$ping
+||stats.uniplaces.com^
 ||strapi.clickjogos.com.br^
 ||sympla.com.br/api/event-bff/tracking/
 ||tags.globo.com^
@@ -53279,6 +53297,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||tracker.publico.pt^
 ||uai.com.br^*/analytics.js
 ||udr.uol.com.br^
+||uni7.uniplaces.com^
 ||unleash.livepix.gg^
 ||uol.com.br/stats?
 ! Romanian
