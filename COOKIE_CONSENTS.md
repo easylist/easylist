@@ -37,6 +37,7 @@ How should a cookie consent be addressed?
 
 - Check 2-3 pages to ensure rule doesn't cause issues, anything usable.
 - Check scroll and mouse click works.
+- When adding a "new" consent script, check that current rules/and previously (via git log/blame).
 - Check embedded items like social media and videos work.
 - Check other adblock extensions [like uBO](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-cookies.txt) and/or Brave to ensure the site isn't already fixed.
 - Banks, Financial, Travel websites should mostly/always be used using set- or trusted-set- rules, given the importance.
