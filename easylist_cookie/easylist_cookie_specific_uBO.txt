@@ -3,7 +3,7 @@
 ! :style fixes
 bbc.com##body:has(div[class*="Styled"][class*="Container"] [data-testid="bbc-logo-wrapper"]) > .fc-consent-root:style(display: flex !important)
 ! ##body:style(overflow: auto !important;)
-tedbaker.com,leroymerlin.ro,fortune.com,remarkable.com,anwb.nl,comune.palermo.it,abconcerts.be,allegro.sk,allegro.hu,allegro.cz,allegro.pl,allegrolokalnie.pl,animail.se,arkenzoo.se,batterie-boutique.fr,bbc.com,bimedis.com,boohoo.com,cgi.com,congresoaep.org,czc.cz,damsgaardscaravancenter.dk,dunelm.com,educhel.ru,eduface.ru,edumsko.ru,endgamegear-shop.co.uk,endgamegear.be,endgamegear.ch,endgamegear.com,endgamegear.de,endgamegear.es,endgamegear.fr,endgamegear.lu,endgamegear.nl,endgamegear.pt,fanipogody.pl,finnkino.fi,fitx.de,freixenet-onlineshop.de,fussballgucken.info,get-in-engineering.de,gov.lv,hellenicbank.com,hscollective.org,imu.nl,komerso.pl,kupbilecik.com,kupbilecik.de,kupbilecik.pl,kurierzamojski.pl,liberbank.es,maxi-pet.ro,musti.no,mustijamirri.fi,myfabrics.co.uk,mystats.nl,noblechairs.de,nokia.com,oekolandbau.de,omviajesyrelatos.com,otpportalok.hu,palladiumboots.de,paruvendu.fr,petenkoiratarvike.com,pickup.de,planeo.de,pyroweb.de,readly.com,realgap.co.uk,renewal.ru,neplp.lv,riga.lv,runningheroes.com,schuurman-schoenen.nl,senec.com,sevdesk.at,sevdesk.de,shopilya.com,smartphonehoesjes.nl,snp.nl,socialpress.pl,stoffe.de,stwbs.de,successinsights.nl,swedbank.com,t-mobile.com,techbone.net,terc.hu,thebackmarket.nl,thebureauinvestigates.com,thematchahouse.com,topannonces.fr,toyota.astra.co.id,tyg.se,ufz.de,uktv.co.uk,understandingsociety.ac.uk,vetzoo.no,vetzoo.se,volkswagen-newsroom.com,waitrose.com,wentronic.com,wentronic.pl,wikifolio.com,wwz.ch,zapatos.es,zwic.nl,kavosdraugas.lt##body:style(overflow: auto !important;)
+tedbaker.com,leroymerlin.ro,fortune.com,bbc.com,boohoo.com,cgi.com,dunelm.com,educhel.ru,eduface.ru,edumsko.ru,fanipogody.pl,finnkino.fi,fitx.de,freixenet-onlineshop.de,fussballgucken.info,gov.lv,imu.nl,kupbilecik.com,kupbilecik.de,kupbilecik.pl,kurierzamojski.pl,liberbank.es,maxi-pet.ro,musti.no,mustijamirri.fi,myfabrics.co.uk,mystats.nl,nokia.com,omviajesyrelatos.com,pickup.de,planeo.de,pyroweb.de,readly.com,realgap.co.uk,renewal.ru,neplp.lv,riga.lv,schuurman-schoenen.nl,senec.com,sevdesk.at,sevdesk.de,shopilya.com,snp.nl,stoffe.de,stwbs.de,successinsights.nl,swedbank.com,t-mobile.com,techbone.net,terc.hu,thebackmarket.nl,thebureauinvestigates.com,thematchahouse.com,topannonces.fr,toyota.astra.co.id,tyg.se,ufz.de,uktv.co.uk,understandingsociety.ac.uk,vetzoo.no,vetzoo.se,volkswagen-newsroom.com,waitrose.com,wentronic.com,wentronic.pl,wikifolio.com,wwz.ch,zapatos.es,zwic.nl,kavosdraugas.lt##body:style(overflow: auto !important;)
 !
 ##.js-consent.consent
 !
@@ -13,9 +13,6 @@ bbc.com##.fc-consent-root
 egmont.com##.jOSWZa
 stackapps.com,askubuntu.com,mathoverflow.net,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##.js-consent-banner
 t-mobile.com,techbone.net##.modal-backdrop
-otpportalok.hu##.pop_up_bg
-pringles.com##.truste_box_overlay
-pringles.com##.truste_overlay
 eduface.ru,edumsko.ru##.wrap_cookies_popup
 !
 ! scripts
@@ -53,6 +50,9 @@ codex.online##+js(set-cookie, _func, true)
 amcoustics.com##+js(set-cookie, amc-cookies-accepted, true, , reload, 1)
 scidoo.com##+js(set-cookie, consent, accepted)
 ubuntu.com##+js(set-cookie,  _cookies_accepted, essential)
+petenkoiratarvike.com##+js(set-cookie, pfi_consent_necessary, granted, , reload, 1)
+vetzoo.se##+js(set-cookie, vzs_consent_necessary, granted, , reload, 1)
+arkenzoo.se##+js(set-cookie, mse_consent_necessary, granted, , reload, 1)
 assets4godot.com##+js(set-cookie, ga_consent, false)
 sportvision.rs##+js(set-cookie, site_cookie_info, 0)
 mash.ru##+js(set-cookie, _mash_privacy_accepted, true)
@@ -278,7 +278,7 @@ we-worldwide.com##+js(set-cookie, allowCookies, YES)
 bremerhaven.de##+js(set-cookie, GDPRp, no)
 openreach.com##+js(set-cookie, EssentialCookie, true)
 salzer.at##+js(set-cookie, cookiesAllowRequired, true)
-strmix.com##+js(set-cookie, CookieConsent, Necessary)
+strmix.com,hscollective.org##+js(set-cookie, CookieConsent, Necessary, , reload, 1)
 asko.com##+js(set-cookie, cookieconsent_status_ESSENTIAL, ALLOW)
 qioz.fr##+js(set-cookie, accept_cookies, 0)
 ul.se##+js(set-cookie, ulse_atc, no, , reload, 1)
@@ -1463,7 +1463,7 @@ withings.com##+js(set-cookie, withings_cookieconsent_dismissed, 1)
 withings.com##+js(set-cookie, cookieconsent_advertising, false)
 withings.com##+js(set-cookie, cookieconsent_statistics, false)
 randivonal.hu##+js(set-cookie, cookieconsent_dismissed, yes)
-kontextwochenzeitung.de##+js(set-cookie, CookieConsent, mandatory)
+kontextwochenzeitung.de,oekolandbau.de##+js(set-cookie, CookieConsent, mandatory)
 blista.de##+js(set-cookie, cookieconsent_statistics,  no)
 blista.de##+js(set-cookie, cookieconsent_essential, yes)
 hashop.nl##+js(set-cookie, cookie_preference, 1)
@@ -2089,8 +2089,6 @@ savonnerie-lesessentiels.com,savonsdusud.com,design-only.com,insecticide-spray.c
 !! .dwa-cms-ui-cookie
 dasweltauto.com.mx,dasweltauto.se##.dwa-cms-ui-cookie
 dasweltauto.com.mx,dasweltauto.se##body,html:style(overflow: auto !important; position: initial !important;)
-!! #rodoScreenBg
-komerso.pl,socialpress.pl###rodoScreenBg
 !! .c-cookie-preferences
 unitedutilities.com##.c-cookie-preferences
 unitedutilities.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -2385,10 +2383,6 @@ billabong.fr,billabong.dk,billabong.co.uk,billabong-store.ie,billabong-store.pl,
 billabong.fr,billabong.dk,billabong.co.uk,billabong-store.ie,billabong-store.pl,billabong.fi,roxy.fi,roxy.fr,roxy-denmark.dk,roxy-ireland.ie,roxy-store.se,roxy-uk.co.uk,glenair.it##body,html:style(height: auto !important; overflow: auto !important)
 ! core77.com (top space left over from cookie)
 core77.com###header_head:style(top: 0 !important)
-! smartphonehoesjes.nl (5/2/2025)
-smartphonehoesjes.nl###consent
-smartphonehoesjes.nl###consent__overlay
-smartphonehoesjes.nl##body:style(overflow: auto !important;)
 ! strazmiejska.gda.pl (30/3/2025)
 strazmiejska.gda.pl###cookies
 strazmiejska.gda.pl##.modal-backdrop
