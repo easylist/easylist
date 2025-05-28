@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.9.1
+VERSION = 3.9
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
