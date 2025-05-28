@@ -233,7 +233,7 @@ def fopsort (filename):
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
-                        # Skip network domain rules 8 chars or less starting with "|", "||", "|||" etc. or directly with a-z or 0-9 to prevent false positives
+                        # Skip network domain rules 7 chars or less starting with "|", "||", "|||" etc. or directly with a-z or 0-9 to prevent false positives
                         # unless the domain is in the IGNORE_DOMAINS list
                         if len(line) <= 7 and re.match(r'^\|*[a-zA-Z0-9]', line):
                             # Extract the domain part to check against IGNORE_DOMAINS
