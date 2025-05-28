@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.9
+VERSION = 3.9.1
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -59,6 +59,9 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
           "easylist_specific_hide_abp.txt", "easyprivacy_specific_uBO.txt", "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other",
           "easylist_cookie_specific_uBO.txt", "fanboy_annoyance_specific_uBO.txt", "fanboy_newsletter_specific_uBO.txt", "fanboy_notifications_specific_uBO.txt", "fanboy_social_specific_uBO.txt", "fanboy_newsletter_shopping_specific_uBO.txt", "fanboy_agegate_specific_uBO.txt")
+
+# List of domains that should ignore the 7 character size restriction
+IGNORE_DOMAINS = {"a.sampl"}
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("collapse", "csp", "csp=frame-src", "csp=img-src", "csp=media-src", "csp=script-src", "csp=worker-src", "document", "elemhide", "font",
@@ -230,6 +233,16 @@ def fopsort (filename):
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
+                        # Skip network domain rules 8 chars or less starting with "|", "||", "|||" etc. or directly with a-z or 0-9 to prevent false positives
+                        # unless the domain is in the IGNORE_DOMAINS list
+                        if len(line) <= 7 and re.match(r'^\|*[a-zA-Z0-9]', line):
+                            # Extract the domain part to check against IGNORE_DOMAINS
+                            domain_match = re.match(r'^\|*([^\/\^\$\*]+)', line)
+                            if domain_match:
+                                domain = domain_match.group(1)
+                                if domain not in IGNORE_DOMAINS:
+                                    print("Skipped short domain rule: {line} (domain: {domain})".format(line=line, domain=domain))
+                                    continue
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
                             lineschecked += 1
