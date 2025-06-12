@@ -1,0 +1,44 @@
+! easylist_cookie_specific_ABP.txt
+!#if ext_abp
+revolut.com##div[role="dialog"]:has-text(/Cookies|cookies/)
+minhaconexao.com.br#?#section[id][class]:-abp-has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
+! Scripts
+eduface.ru,edumsko.ru#@#.cookies_popup
+podleze-piekielko.pl#$#abort-on-property-read cookieman
+! ABP Specific Exemptions
+epolisbari.com#@##COOKIEmodal
+garten-reiter.de#@##CookieMessage
+epolisbari.com#@##accept_cookie
+born2be.pl#@##content-cookie
+homify.ae,homify.ca,homify.cl,homify.co.id,homify.co.kr,homify.co.th,homify.co.uk,homify.co.za,homify.com,homify.com.ar,homify.com.br,homify.com.co,homify.com.eg,homify.com.mx,homify.com.my,homify.com.tr,homify.com.ve,homify.de,homify.es,homify.fr,homify.hk,homify.in,homify.it,homify.jp,homify.nl,homify.pe,homify.pk,homify.pl,homify.pt,homify.ru,homify.sa,homify.sg,homify.tw,homify.ua,homify.vn#@##cookie-banner
+clever-zoeger.de,datakauppa.fi,ddz24.eu,fantasyfootballgeek.co.uk,management30.com#@##cookie-law-info-bar
+pricewise.nl#@##cookieBar
+220.lv#@##cookieBlock
+akaanseutu.fi,alueviesti.fi,kiuruvesilehti.fi,lempaala.ideapark.fi,lvs.fi,olutposti.fi,orivedensanomat.fi,pirkkalainen.fi,pirmediat.fi,radiosun.fi,shl.fi,urjalansanomat.fi,ylojarvenuutiset.fi#@##cookie_disclaimer
+bafin.de#@##cookiebanner
+e-newspaperarchives.ch#@##cookieconfirm
+cdenv.be#@##cookieconsent-banner
+sacyr.com#@##cookies-bar
+groshyk.by#@##cookiesAgreementNotice
+n26.com#@##gdpr-notice
+pathe.nl#@##js-cookie-popup
+beko.com,thetrainline.com#@##onetrust-banner-sdk
+beko.com,thetrainline.com#@##onetrust-consent-sdk
+keychronpoland.com#@##pandectes-banner
+reguluseshop.cz#@#.CookiePolicyBar
+hscollective.org#@#.cookie-consent-background
+ibercuba.com#@#.cookies-warning
+groshyk.by#@#.cookies_agreement
+jpralves.net#@#.cookiewarning:not(body):not(html)
+lg.com#@#.eprivacy-cookie
+diffusioneshop.com#@#.gdpr-consent-tabs
+diffusioneshop.com#@#.gdpr-consent-tabs-v2
+monolithdesign.it#@#.gdprModal--visible
+pathe.nl#@#.notification--cookie
+thetrainline.com#@#.onetrust-pc-dark-filter
+yourstorebox.com#@#.react-cookie-law-dialog
+lg.com#@#div.cookie-eu
+d-power-modellbau.com,kreuzfahrten.de,modellbau-metz.com,zorgzaam010.nl#@#div.cookie-notice
+zorgzaam010.nl#@#div.cookie-notice-wrapper
+cdenv.be#@#div.cookieconsent
+!#endif
