@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202506260854
+! Version: 202506260921
 ! Title: EasyList
-! Last modified: 26 Jun 2025 08:54 UTC
+! Last modified: 26 Jun 2025 09:21 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -800,7 +800,10 @@ _reklama_$domain=~youtube.com
 ?bd=ppd&r=$document
 ! Ad-Shield
 /ad-shield/e/*$script,third-party
+/anymanagerrecover.js
+://loader.*.com/loader.min.js|$script,~third-party
 ://www.*.com/content/*/-1/$script,subdocument,third-party,xmlhttprequest
+://www.*.com/content/*/a/$subdocument,third-party,domain=~com|~edu|~gov|~net|~org
 ://www.*.com/script/*.com.js|$script,third-party
 ://www.*.com/script/*.org.js|$script,third-party
 ://www.*.xyz/content/*/-1/$script,subdocument,third-party,xmlhttprequest
@@ -54433,6 +54436,8 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||linuxtracker.org/images/dw.png
 ||livescore.az/images/banners
 ||loader.crosswordsolver.com^
+||loader.the-crossword-solver.com^
+||loader.word-grabber.com^
 ||loader.worldhistory.org^
 ||lordchannel.com/adcash/
 ||lowfuelmotorsport.com/assets/img/partners/$image
