@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202506270033
+! Version: 202506270036
 ! Title: EasyList
-! Last modified: 27 Jun 2025 00:33 UTC
+! Last modified: 27 Jun 2025 00:36 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -791,6 +791,10 @@ _reklama_$domain=~youtube.com
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
 ||online.*/promoredirect?key=
+! https://github.com/AdguardTeam/AdguardFilters/commit/934912b3e760e068a91cd6cb502096a55ab1ca16
+! Block parked domains. Sometimes it is not immediately obvious that it is dead
+! https://ww7.linkviet.xyz/?usid=23&utid=10895304252
+/?usid=*&utid=$document
 ! strat-talk.com forum and others
 /render-ad.php?ad_id=
 /render-sidebar-ad.php?ad_id=
@@ -14985,6 +14989,10 @@ _800x80_
 ##.newspack_global_ad_new
 ##.widget_newspack-ads-widget
 ##broadstreet-zone-container
+! https://github.com/AdguardTeam/AdguardFilters/commit/934912b3e760e068a91cd6cb502096a55ab1ca16
+! Block parked domains. Sometimes it is not immediately obvious that it is dead
+! https://rawasiansex.com/
+###fallbackTerms.fallback-term-holder
 ! baits
 ##.Ad-Container:not(.adsbygoogle)
 ##.ad-area:not(.text-ad)
