@@ -1,6 +1,6 @@
 # EasyList / EasyPrivacy / Fanboy Lists
 
-These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, Khrin, Yuki2718, and piquark6046.
+These lists are maintained by Fanboy (a.k.a. ryanbr), MonztA, Khrin and Yuki2718.
 
 ## EasyList
 
@@ -106,6 +106,12 @@ If your site was added to EasyList or EasyPrivacy:
  
 For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues) [E-mail](mailto:easylist@protonmail.com), or via [Forum](https://forums.lanik.us/).
 
+## Commit Policy
+EasyList commmit messages use three prefixes to indicate the type of change:
+- **A:** *Added* a new website
+- **M:** *Modified* the existing filter for a website, either to match a website's update or to clean up the lists
+- **P:** *Problem* fix for a website, such as removing existing filters or making them more specific
+  
 ## Support
 
 EasyList, EasyPrivacy, and Fanboy lists are used in a number of extensions and browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [AdBlock](https://getadblock.com/), [AdGuard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), and [Vivaldi](https://vivaldi.com/).

@@ -1,5 +1,6 @@
 ! easylist_cookie_specific_ABP.txt
 !#if ext_abp
+revolut.com##div[role="dialog"]:has-text(/Cookies|cookies/)
 minhaconexao.com.br#?#section[id][class]:-abp-has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
 ! Scripts
 eduface.ru,edumsko.ru#@#.cookies_popup
@@ -15,7 +16,9 @@ pricewise.nl#@##cookieBar
 220.lv#@##cookieBlock
 akaanseutu.fi,alueviesti.fi,kiuruvesilehti.fi,lempaala.ideapark.fi,lvs.fi,olutposti.fi,orivedensanomat.fi,pirkkalainen.fi,pirmediat.fi,radiosun.fi,shl.fi,urjalansanomat.fi,ylojarvenuutiset.fi#@##cookie_disclaimer
 bafin.de#@##cookiebanner
+e-newspaperarchives.ch#@##cookieconfirm
 cdenv.be#@##cookieconsent-banner
+sacyr.com#@##cookies-bar
 groshyk.by#@##cookiesAgreementNotice
 n26.com#@##gdpr-notice
 pathe.nl#@##js-cookie-popup
@@ -26,6 +29,7 @@ reguluseshop.cz#@#.CookiePolicyBar
 hscollective.org#@#.cookie-consent-background
 ibercuba.com#@#.cookies-warning
 groshyk.by#@#.cookies_agreement
+jpralves.net#@#.cookiewarning:not(body):not(html)
 lg.com#@#.eprivacy-cookie
 diffusioneshop.com#@#.gdpr-consent-tabs
 diffusioneshop.com#@#.gdpr-consent-tabs-v2

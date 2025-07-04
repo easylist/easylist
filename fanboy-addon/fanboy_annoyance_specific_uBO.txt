@@ -79,6 +79,10 @@ irishnews.com##+js(set-local-storage-item, ArcP, $remove$)
 reason.com##.widget-placed:style(top:0 !important)
 ! nautil.us
 nautil.us##+js(cookie-remover, arc)
+! rtings
+rtings.com##.insider_notice
+rtings.com##+js(cookie-remover, current-pageviews)
+rtings.com##+js(cookie-remover, product-previews)
 ! commondreams.org
 commondreams.org,truthout.org##iframe[title="Popup"][src="about:blank"]
 commondreams.org##.popup--backdrop
@@ -188,6 +192,8 @@ nisanyansozluk.com##+js(set-local-storage-item, newYeradlariWebsiteHidden, true)
 ! sportsbusinessjournal.com
 sportsbusinessjournal.com##+js(cookie-remover, sbj_archiveStatus)
 sportsbusinessjournal.com##.paywall-footer-container
+! techinasia.com nag
+techinasia.com##+js(cookie-remover, arts)
 ! apnews.com
 apnews.com##.fancybox-overlay-fixed
 apnews.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -289,6 +295,8 @@ csmonitor.com##+js(set-local-storage-item, csm_unique_stories, $remove$)
 ! deepl.com (login nag and app popup)
 deepl.com##+js(set-local-storage-item, LMT_freeUserUsageBlock, $remove$)
 deepl.com##+js(set-local-storage-item, onboardingData, $remove$)
+! Hide lightbox
+oceana.org##+js(set-cookie, HideDonationLightbox, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/24709
 yoreparo.com##.cta-bajo-pregunta + div[class^="div-block"]
 yoreparo.com##.post.blur:style(filter: none !important;)
@@ -312,6 +320,7 @@ wfaa.com,wkyc.com##+js(rc,  video__docker_state_docked, , stay)
 ! cbsnews.com (Floating video)
 cbsnews.com##+js(rc, floating, , stay)
 cbsnews.com##.floating
+! Non-English
 ! https://github.com/uBlockOrigin/uAssets/issues/23310
 www.nicovideo.jp##:matches-path(/\/(search|tag)\//) .nicoadVideoItem
 www.nicovideo.jp##:matches-path(/tag/).nicodicNicoadVideoList
@@ -324,3 +333,6 @@ paircare.jp##main > div.lg\:hidden:has(> div.fixed.z-30.inset-0.overflow-y-auto)
 ! https://www.saisoncard.co.jp/credictionary/marketing/article_ads_behavioral_economics.html
 saisoncard.co.jp###modal-overlay:has(.form-area-content__img > [src$="/marketing01.jpg"])
 saisoncard.co.jp##body[style="overflow-y: hidden;"]:style(overflow-y: auto !important;)
+! rocket-boys.co.jp
+rocket-boys.co.jp###timeModal
+rocket-boys.co.jp##body[style^="position:"]:style(position: static !important; top: unset !important; width: unset !important;)
