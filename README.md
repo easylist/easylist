@@ -107,7 +107,8 @@ If your site was added to EasyList or EasyPrivacy:
 For any issues or questions, create a ticket: [Github](https://github.com/easylist/easylist/issues) [E-mail](mailto:easylist@protonmail.com), or via [Forum](https://forums.lanik.us/).
 
 ## Commit Policy
-EasyList commmit messages use three prefixes to indicate the type of change:
+
+EasyList commit messages use three prefixes to indicate the type of change:
 - **A:** *Added* a new website
 - **M:** *Modified* the existing filter for a website, either to match a website's update or to clean up the lists
 - **P:** *Problem* fix for a website, such as removing existing filters or making them more specific
