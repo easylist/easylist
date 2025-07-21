@@ -6365,6 +6365,7 @@ dallasnews.com##div[class*="features-ads"]
 gamingbible.com,ladbible.com,unilad.com##div[class*="margin-Advert"]
 thefiscaltimes.com##div[class*="pane-dfp-"]
 emojipedia.org##div[class="flex flex-col items-center md:order-1"]
+qz.com##div[class="hidden md:block"]
 timesofindia.com##div[class^="ATF_container_"]
 arkadium.com##div[class^="Ad-adContainer"]
 dailymotion.com##div[class^="AdBanner"]
@@ -7150,6 +7151,8 @@ tripadvisor.*##div:has(> div[class="ui_columns is-multiline "])
 heb.com##div:has(> div[id^="hrm-banner-shotgun"])
 news12.com##div[alignitems="normal"]:has(> div[sizes*="object"])
 webtools.fineaty.com##div[class*=" hidden-"]:has(.adsbygoogle)
+qz.com##div[class*=":block"]:has(> .ay-ad-slot)
+qz.com##div[class*="my-"]:has(> .ay-ad-slot)
 aliexpress.com,aliexpress.us##div[class*="search-item-card-wrapper-"]:has(span[class^="multi--ad-"])
 qwant.com##div[class="_2NDle"]:has(div[data-testid="advertiserAdsDisplayUrl"])
 walmart.*##div[class="mb1 ph1 pa0-xl bb b--near-white w-25"]:has(div[data-ad-component-type="wpa-tile"])
