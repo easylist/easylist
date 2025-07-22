@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202507221632
+! Version: 202507221642
 ! Title: EasyPrivacy
-! Last modified: 22 Jul 2025 16:32 UTC
+! Last modified: 22 Jul 2025 16:42 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15894,6 +15894,9 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||ncbi.nlm.nih.gov/core/pinger/pinger.js
 ncbi.nlm.nih.gov##+js(set, ncbi.sg, {})
 ncbi.nlm.nih.gov##+js(set, ncbi.sg.ping, noopFunc)
+! https://github.com/AdguardTeam/AdguardFilters/issues/209795
+bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
+||sstats.bitdefender.com^$xhr,redirect=noop.txt,important
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
