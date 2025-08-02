@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202508021231
+! Version: 202508021237
 ! Title: EasyList
-! Last modified: 02 Aug 2025 12:31 UTC
+! Last modified: 02 Aug 2025 12:37 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -812,13 +812,13 @@ _reklama_$domain=~youtube.com
 /ad-shield/e/*$script,third-party
 /anymanagerrecover.js
 ://loader.*.com/loader.min.js|$script,~third-party
-://www.*.com/content/*/-1/$script,subdocument,third-party,xmlhttprequest
-://www.*.com/content/*/a/$subdocument,third-party,domain=~edu|~gov
+://www.*.com/article/*/-1/$script,subdocument,third-party,xmlhttprequest
+://www.*.com/article/*/a/$subdocument,third-party,domain=~edu|~gov
 ://www.*.com/script/*.com.js|$script,third-party
 ://www.*.com/script/*.org.js|$script,third-party
-://www.*.xyz/content/*/-1/$script,subdocument,third-party,xmlhttprequest
-://www.*.xyz/content/*/a/$subdocument,third-party
-://www.*.xyz/content/*?h=$script,third-party
+://www.*.xyz/article/*/-1/$script,subdocument,third-party,xmlhttprequest
+://www.*.xyz/article/*/a/$subdocument,third-party
+://www.*.xyz/article/*?h=$script,third-party
 ://www.*.xyz/script/*.com.js|$script,third-party
 wss://www.*.xyz/ws^$third-party
 ! https://github.com/easylist/easylist/issues/11123
