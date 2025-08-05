@@ -108,8 +108,8 @@ For any issues or questions, create a ticket: [Github](https://github.com/easyli
 
 ## Commit Policy
 
-EasyList commit messages use three prefixes to indicate the type of change:
-- **A:** *Added* a new website
+EasyList commit messages use three prefixes to indicate the type of a change:
+- **A:** *Added* a new filter
 - **M:** *Modified* the existing filter for a website, either to match a website's update or to clean up the lists
 - **P:** *Problem* fix for a website, such as removing existing filters or making them more specific
   
