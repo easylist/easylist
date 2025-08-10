@@ -1,0 +1,29 @@
+! easyprivacy_specific_abp.txt
+!#if ext_abp
+! Specific filters necessary for sites allowlisting with $genericblock filter option
+/__utm.gif$domain=autobild.de|gofeminin.de
+/nm_trck.gif?$domain=spiegel.de
+||criteo.com^$domain=spiegel.de
+||digidip.net^$domain=gofeminin.de
+||disqus.com/api/ping?$domain=autobild.de
+||emetriq.de^$domain=spiegel.de
+||exelator.com^$domain=disqus.com
+||facebook.com*/impression.php$domain=autobild.de
+||google-analytics.com/analytics.js$domain=spiegel.de
+||googletagmanager.com/gtm.js?$domain=autobild.de
+||ioam.de^$domain=autobild.de|spiegel.de
+||log.outbrain.com^$domain=autobild.de|widgets.outbrain.com
+||meetrics.net^$domain=spiegel.de
+||mxcdn.net^$domain=spiegel.de
+||pippio.com^$domain=disqus.com
+||referrer.disqus.com^$domain=autobild.de
+||rlcdn.com^$domain=autobild.de|widgets.outbrain.com
+||static.parsely.com^$domain=spiegel.de
+||tealiumiq.com^$domain=autobild.de
+||visualrevenue.com^$domain=autobild.de|spiegel.de
+||xplosion.de^$domain=spiegel.de
+!
+! https://github.com/easylist/easylist/issues/18198
+@@||bam.nr-data.net^$xmlhttprequest,domain=abema.tv
+@@||js-agent.newrelic.com^$script,domain=abema.tv
+!#endif

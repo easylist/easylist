@@ -1,0 +1,45 @@
+[Adblock Plus 2.0]
+! Title: EasyTest (breaks websites)
+! Testing unsafe rules for EasyList that will break certain websites
+! Last modified: %timestamp%
+! Expires: 1 day (update frequency)
+! Homepage: https://forums.lanik.us/viewtopic.php?t=8505
+!
+! The only legitimate reason to use this list is to provide
+! feedback in the forum topic above - now go do that! :P
+! Test comment2
+! Test 1: Doubtful filters
+!
+/160600/*
+/46860/*
+/72890-
+/120600.
+_120600.
+/72890.
+/72890/*
+_72890.
+_46860.
+_46860_
+! Following dimension filters added on 11 April 2013
+/300250.
+/72890_
+!
+/upload/ad/*
+@@||yenicarsim.com/images/upload/ad/$image
+!
+##.adcontent
+kijiji.at,kijiji.ca,kijiji.ch,gumtree.ie,gumtree.pl#@#.adcontent
+!
+/promo.php?$popup,third-party
+!
+! https://forums.lanik.us/viewtopic.php?f=93&t=7692&start=720#p49817
+&utm_campaign=*-pop|$popup
+!
+##a[href^="http://ox."][href*="/www/delivery/"]
+!
+/banners/random-
+!
+! I recall issues for this filter, but I cannot find them anymore.
+! https://forums.lanik.us/viewtopic.php?f=100&t=19821
+! Related to the videostrip.com ads
+###vs_preroll_holder

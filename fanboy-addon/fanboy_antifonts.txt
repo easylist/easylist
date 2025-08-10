@@ -1,0 +1,74 @@
+[Adblock Plus 2.0]
+! Title: Fanboy's Anti-thirdparty Fonts
+! Expires: 9 days
+! License: http://creativecommons.org/licenses/by/3.0/
+! Please report any unblocked content or problems by email or in our forums
+! Email: easylist@protonmail.com
+! Homepage: https://easylist.to/
+! Forums: https://forums.lanik.us/
+!
+/fontawesome-$font,third-party
+/fonts/*.ttf$font,third-party
+!
+! Specific
+||kinja-static.com/assets/fonts/$font,third-party
+!
+||amazonaws.com^$font,third-party
+||assets.website-files.com^$font,third-party
+||bootstrapcdn.com/bootstrap/$font,third-party
+||cdn.shortpixel.ai^$font,third-party
+||cdnjs.cloudflare.com/ajax/libs/font-awesome/$font
+||cloud.typography.com^$third-party
+||cloud.webtype.com^$font,third-party
+||cloudfront.net^$font,third-party
+||coral-styles.conde.io^$font
+||disquscdn.com/next/assets/font/$third-party
+||edgefonts.net^$third-party
+||fast.fonts.com^$third-party
+||fast.fonts.net^$third-party
+||fastly.net^$font,third-party
+||fontawesome.com^$third-party
+||fontdeck.com^$third-party
+||fonts.advance.net^$third-party
+||fonts.condenast.com^$script,third-party
+||fonts.googleapis.com/css?
+||fonts.gstatic.com^$third-party
+||fonts.nymag.com^$script,third-party
+||google.com/swg/$font,third-party
+||googleapis.com/ajax/libs/webfont/$third-party
+||googleusercontent.com/static/fonts/$third-party
+||gotraffic.net^$font
+||maxcdn.bootstrapcdn.com/font-awesome/$third-party
+||myfontastic.com^$third-party
+||myfonts.net^$third-party
+||netdna-cdn.com^*/webfonts/
+||netdna.bootstrapcdn.com^*/fonts/$third-party
+||onlinewebfonts.com^$third-party
+||rackcdn.com/fonts/$font,third-party
+||static.zdassets.com^$font,third-party
+||typefront.com^$third-party
+||typekit.com^$third-party
+||typekit.net^$third-party
+||typesquare.com^$font,third-party
+||use.fonticons.com^$third-party
+||vidible.tv/prod/fonts/$font
+||webfonts.sakura.ne.jp^$font
+||wp.com^*/fonts/$third-party
+!
+! Cloudflare CDN
+!
+/cdn-cgi/pe/bag2?*googleapis.com*webfont.js
+!
+! Causes too much false positives
+! ||maxcdn.bootstrapcdn.com^*/fonts/
+! ||fonts.googleapis.com/css2?
+! ||fonts.googleapis.com/icon?
+!
+@@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=codedosa.com|help.typepad.com|jumpcharging.co.nz|novotelbkk.com|regexpal.com
+@@||fast.fonts.net/jsapi/$script
+@@||fonts.googleapis.com/css?$domain=android.com|app.formative.com|brave.com|fastcup.net|google.com|onlyfans.com|tensorflow.org|translate.google.cn|translate.google.co.id|translate.google.co.jp|translate.google.co.kr|translate.google.com.bd|translate.google.com.hk|translate.google.de|translate.google.es|translate.google.fr|translate.google.it|translate.google.pl
+@@||fonts.gstatic.com^$domain=android.com|bloble.io|brave.com|floatplane.com|flutter.dev|google.com|grow.google|material.io|regexpal.com|tensorflow.org|translate.google.cn|translate.google.co.id|translate.google.co.jp|translate.google.co.kr|translate.google.com.br|translate.google.com.hk|translate.google.com.ua|translate.google.de|translate.google.es|translate.google.fr|translate.google.it|translate.google.pl|translate.google.ru|web.dev|wunderground.com|youtube.com
+@@||fonts.typekit.net^$domain=mpora.com
+@@||googleusercontent.com/static/fonts/$domain=tudocelular.com
+@@||maxcdn.bootstrapcdn.com/font-awesome/$domain=climatemirror.org|spine-equip.ru
+@@||use.typekit.net^$domain=celyad.com|triumphtechnicalinformation.com|wellandgood.com

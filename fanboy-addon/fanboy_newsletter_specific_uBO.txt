@@ -1,0 +1,665 @@
+! fanboy_newsletter_specific_uBO.txt
+! uBO Sepecific fixes
+theconversation.com##.MuiDialog-root
+socialitelife.com##.mfp-ready
+audioholics.com,theconversation.com##body:style(overflow: auto !important;)
+otisoatmilk.co.nz,socialitelife.com##html:style(overflow:auto !important)
+! #shopify-section-newsletter-popup
+chillamo.com,zerobreeze.com,otisoatmilk.co.nz###shopify-section-newsletter-popup
+chillamo.com,zerobreeze.com,otisoatmilk.co.nz##html:style(overflow:auto !important)
+! nationalgeographic.com
+nationalgeographic.com##+js(aeld, scroll)
+nationalgeographic.com##.EmailStickyFooter__Modal
+nationalgeographic.com##body:style(overflow: auto !important; position: initial !important;)
+! medium scroll detection
+medium.com##+js(aeld, scroll)
+! Newspaper newsletter
+thebulletin.org,npr.org,vice.com,forward.com,nationalobserver.com,washingtontimes.com,monroenews.com,poconorecord.com##.tp-backdrop
+thebulletin.org,npr.org,vice.com,forward.com,nationalobserver.com,washingtontimes.com,monroenews.com,poconorecord.com##.tp-modal
+thebulletin.org,npr.org,vice.com,forward.com,nationalobserver.com,washingtontimes.com,monroenews.com,poconorecord.com##body:style(height: auto !important; overflow: auto !important)
+! 404media.co
+broadbandbreakfast.com,404media.co##.outpost-cta
+broadbandbreakfast.com,404media.co##body,html:style(overflow: auto !important; position: initial !important;)
+! sub popup
+press.princeton.edu##+js(set-cookie, block-popuproadblock, true)
+! gwr.com
+gwr.com##.chakra-modal__overlay
+gwr.com##.chakra-modal__content-container
+gwr.com##body,html:style(overflow: auto !important; position: initial !important;)
+! newsletter popup
+timesnownews.com##+js(set-local-storage-item, useExitIntent, true)
+! monarchmoney.com
+monarchmoney.com##+js(set-cookie, exit-intent, true)
+! hollywoodunlocked.com
+hollywoodunlocked.com##.featherlight
+hollywoodunlocked.com##body,html:style(overflow: auto !important; position: initial !important;)
+! americastestkitchen.com
+americastestkitchen.com##.tp-container-inner
+americastestkitchen.com###piano-modal-backdrop
+americastestkitchen.com##body,html:style(overflow: auto !important; position: initial !important;)
+! wellandtribune.ca
+stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therecord.com,thespec.com,wellandtribune.ca##.promo-designer-modal
+stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therecord.com,thespec.com,wellandtribune.ca##.modal-backdrop
+stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therecord.com,thespec.com,wellandtribune.ca##body,html:style(overflow: auto !important; position: initial !important;)
+! Mouse out news/sub nags
+todaysparent.com,straitstimes.com,dlnews.com,zaui.com,worldpopulationreview.com##+js(aeld, /^(mouseout|mouseleave)$/)
+! the-tls.co.uk
+the-tls.co.uk##+js(set-local-storage-item, tls_newsletter_visibility, true)
+! breachmedia.ca
+breachmedia.ca##+js(set-cookie, cp_style_3841, true)
+! breakingenergy.com
+breakingenergy.com###simplemodal-overlay
+breakingenergy.com##body,html:style(overflow: auto !important; position: initial !important;)
+! jewishinsider.com
+jewishinsider.com##.subscribeModalOuter
+jewishinsider.com##body,html:style(overflow: auto !important; position: initial !important;)
+! artribune.com
+artribune.com##+js(set-cookie, m6e-newsletter, 1)
+! pbs.org
+pbs.org##+js(set-cookie, popupIsClosed, 1)
+! natlawreview.com newsletter popup
+natlawreview.com###spb-block-popup-newsletter
+natlawreview.com##body,html:style(overflow: auto !important; position: initial !important;)
+! duluthtrading.com
+duluthtrading.com##+js(set-local-storage-item, emailLightBox, true)
+! globoshoes.com
+globoshoes.com##.main-overlay-container
+globoshoes.com##body:style(overflow: auto !important; position: initial !important;)
+! thefp.com
+thefp.com###myEmailModal
+thefp.com##body:style(overflow: scroll !important)
+! modalnewsletter___BV_modal_outer_
+kftv.com###modalnewsletter___BV_modal_outer_
+kftv.com##body:style(overflow: auto !important; position: initial !important;)
+! health.harvard.edu
+health.harvard.edu##.sticky-popup
+health.harvard.edu##body:style(overflow: auto !important; position: initial !important;)
+! .dialog-lightbox-widget
+jessicabryson.com##.dialog-lightbox-widget
+jessicabryson.com##body:style(overflow: auto !important; position: initial !important;)
+! dailyvoice.com
+dailyvoice.com##.b-modal.b-dialog
+dailyvoice.com##body:style(overflow: auto !important; position: initial !important;)
+! cityam.com
+cityam.com##.subscription-modal
+cityam.com##+js(rc, js-page-scroll-lock, body, stay)
+! fine-day.com
+fine-day.com##.chakra-portal
+fine-day.com##html,body:style(overflow: auto !important; position: initial !important;)
+! spotlightpa.org
+spotlightpa.org##.inset-0.fixed
+spotlightpa.org##body,html:style(overflow: auto !important; position: initial !important;)
+! securityweek.com
+securityweek.com##.pum-overlay
+securityweek.com##body,html:style(overflow: auto !important; position: initial !important;)
+securityweek.com##+js(rc, pum-open-overlay, body, stay)
+! expatexplore.com
+expatexplore.com,vadimkravcenko.com##.swal2-container
+expatexplore.com,vadimkravcenko.com##html,body:style(overflow: auto !important; position: initial !important;)
+! bankbazaar.com
+bankbazaar.com##.oneTapLoginModal
+bankbazaar.com##.modal-backdrop
+bankbazaar.com##.dimmer
+bankbazaar.com##body:style(overflow: auto !important; position: initial !important;)
+! dallasnews.com
+dallasnews.com##.dmnc_features-cta-newsletter-cta-newsletter-module__eQOmx
+dallasnews.com##.dmn-newsletter-overlay
+dallasnews.com###courier-body-wrapper:style(overflow: auto !important; position: initial !important;)
+! ohsweetbasil.com
+ohsweetbasil.com##.tl-states-root
+ohsweetbasil.com##body,html:style(overflow: auto !important; position: initial !important;)
+! .mntl-dialog--campaign
+investopedia.com##.mntl-dialog--campaign
+investopedia.com##html,body:style(overflow: auto !important; position: initial !important;)
+! all3dp.com
+all3dp.com##.modal-container
+all3dp.com##+js(rc, root-modal-container-open, body, stay)
+! idsnews.com
+idsnews.com###ids-newsletter-modal
+idsnews.com##.modal-backdrop
+idsnews.com##body,html:style(overflow: auto !important; position: initial !important;)
+! mashable.com
+mashable.com##.bx-impress
+mashable.com##body:style(overflow: auto !important; position: initial !important;)
+! .mntl-dialog--campaign
+simplyrecipes.com,shape.com,verywellhealth.com,southernliving.com,thespruceeats.com,seriouseats.com,allrecipes.com,tripsavvy.com,travelandleisure.com,verywellmind.com,foodandwine.com##.mntl-dialog--campaign
+simplyrecipes.com,shape.com,verywellhealth.com,southernliving.com,thespruceeats.com,seriouseats.com,allrecipes.com,tripsavvy.com,travelandleisure.com,verywellmind.com,foodandwine.com##html,body:style(overflow: auto !important; position: initial !important;)
+! tastemade.com popup
+tastemade.com##+js(set-local-storage-item, hide-cookbook-modal-0, true)
+! .brazen-modal
+matadornetwork.com##.brazen-modal
+matadornetwork.com##body:style(height: auto !important; overflow: auto !important)
+! milwaukeetool.com
+milwaukeetool.com###modal-darkener
+milwaukeetool.com##.lead-gen-pop-up
+milwaukeetool.com##body,html:style(overflow: auto !important; position: initial !important;)
+! sainsburysmagazine.co.uk
+sainsburysmagazine.co.uk##.subscription-popup
+sainsburysmagazine.co.uk##body:style(overflow: auto !important; position: initial !important;)
+! cityandstateny.com
+cityandstateny.com##.conversion-module
+cityandstateny.com##body:style(overflow: auto !important;)
+cityandstateny.com##+js(rc, interstitial, aside, stay)
+! swissinfo.ch
+swissinfo.ch###newsletter-flyin
+swissinfo.ch##body,html:style(overflow: auto !important; position: initial !important;)
+! oneesports.gg
+oneesports.gg###onePassportOverlay
+oneesports.gg###onePassportModal
+oneesports.gg##html,body:style(overflow: auto !important; position: initial !important;)
+! shoppingsouthparkmall.com
+shoppingsouthparkmall.com##.gooble-omodal
+shoppingsouthparkmall.com##body:style(height: auto !important; overflow: auto !important)
+! ello.co
+ello.co##.asDecapitated
+ello.co##body,html:style(overflow: auto !important; position: initial !important;)
+! cube-magazin.de
+cube-magazin.de##.cs-newsletter-registration-overlay
+cube-magazin.de##.js--overlay
+cube-magazin.de##body,html:style(overflow: auto !important; position: initial !important;)
+! frontofficesports.com
+frontofficesports.com##.newsletter-popup
+frontofficesports.com##.body-overlay
+frontofficesports.com##html,body:style(overflow: auto !important; position: initial !important;)
+! vallejosun.com
+vallejosun.com##div[id^="popup-smart-root-"]
+vallejosun.com##body,html:style(overflow: auto !important; position: initial !important;)
+! forbestravelguide.com
+forbestravelguide.com###cboxOverlay
+forbestravelguide.com###colorbox
+forbestravelguide.com##html,body:style(overflow: auto !important; position: initial !important;)
+! forbes.com
+forbes.com##.zephr-editorial-newsletter-modal
+forbes.com##.zephr-editorial-newsletter-backdrop
+forbes.com##html:style(position: static !important; overflow: auto !important; width: auto !important;)
+forbes.com##+js(rc, zephr-modal-open, body, stay)
+! .boxzilla-overlay
+thebaffler.com##.boxzilla-overlay
+thebaffler.com##.boxzilla-container
+thebaffler.com##html,body:style(overflow: auto !important; position: initial !important;)
+! travelcaffeine.com
+travelcaffeine.com##.featherlight
+travelcaffeine.com##body,html:style(overflow: auto !important; position: initial !important;)
+! sfstandard.com
+sfstandard.com##body:style(height: auto !important; overflow: auto !important)
+! https://github.com/uBlockOrigin/uAssets/issues/26337
+action.com##+js(set-local-storage-item, newsletterPopupCount, 1)
+! theverge.com
+theverge.com##+js(cookie-remover.js, blaize_session)
+theverge.com##+js(cookie-remover.js, blaize_tracking_id)
+! newbalance.co.id
+newbalance.co.id###popup-newsletter
+newbalance.co.id##.modals-wrapper
+newbalance.co.id##body:style(height: auto !important; overflow: auto !important)
+! freshbooks.com
+freshbooks.com##.trackingSection-modal
+freshbooks.com##.modal-backdrop
+freshbooks.com##body,html:style(overflow: auto !important; position: initial !important;)
+! verybestbaking.com
+verybestbaking.com##.gdn-popup-modal
+verybestbaking.com##html,body:style(overflow: auto !important; position: initial !important;)
+! contiki.com
+contiki.com##.lcw-modal__parent
+contiki.com##body,html:style(overflow: auto !important; position: initial !important;)
+! foreignaffairs.com
+foreignaffairs.com##.newsletter-backdrop
+foreignaffairs.com##body,html:style(overflow: auto !important; position: initial !important;)
+! newrepublic.com
+newrepublic.com##.blink-sdk-widget-container
+newrepublic.com##html:style(overflow: auto !important)
+! publish0x.com (newsletter)
+publish0x.com###registerPopup
+publish0x.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+! brighteon.com (newsletter)
+brighteon.com##.overlay
+brighteon.com##body,html:style(overflow: auto !important; position: initial !important;)
+! elimento.com
+elimento.com##.popup-modal-mask
+elimento.com##.has-newsletter
+elimento.com##body,html:style(overflow: auto !important; position: initial !important;)
+! tsunagujapan.com
+tsunagujapan.com##.js-modal_wrap
+tsunagujapan.com##html,body:style(overflow: auto !important; position: initial !important;)
+! carsalesbase.com
+bitcoinke.io,carsalesbase.com##.modal-wrap
+bitcoinke.io,carsalesbase.com##body,html:style(overflow: auto !important; position: initial !important;)
+! ftm.eu (newsletter)
+ftm.eu##.blockingOverlay
+ftm.eu##html:style(overflow: auto !important)
+! .subscribe/.conversion-module
+gcn.com,washingtontechnology.com,fcw.com##.subscribe
+gcn.com,washingtontechnology.com,fcw.com##.conversion-module
+gcn.com,washingtontechnology.com,fcw.com##html,body:style(overflow: auto !important; position: initial !important;)
+! .modal/.modal-backdrop
+bibleportal.com,uinterview.com,moneycontrol.com,fermatslibrary.com,worlddogfinder.com,insauga.com,moroccoworldnews.com,thecradle.co,vegnews.com,bandt.com.au,pbsamerica.co.uk,wateronline.com,boredpanda.com,artnet.com,bongino.com,lensculture.com,patch.com,projectcbd.org,media4growth.com,nycgo.com,thepostmillennial.com,zorbabooks.com,bellhelmets.com,humanevents.com##.modal
+bibleportal.com,uinterview.com,moneycontrol.com,fermatslibrary.com,worlddogfinder.com,insauga.com,moroccoworldnews.com,thecradle.co,vegnews.com,bandt.com.au,pbsamerica.co.uk,wateronline.com,boredpanda.com,artnet.com,bongino.com,lensculture.com,patch.com,projectcbd.org,media4growth.com,nycgo.com,thepostmillennial.com,zorbabooks.com,bellhelmets.com,humanevents.com##.modal-backdrop
+bibleportal.com,uinterview.com,moneycontrol.com,fermatslibrary.com,worlddogfinder.com,insauga.com,moroccoworldnews.com,thecradle.co,vegnews.com,bandt.com.au,pbsamerica.co.uk,wateronline.com,boredpanda.com,artnet.com,bongino.com,lensculture.com,patch.com,projectcbd.org,media4growth.com,nycgo.com,thepostmillennial.com,zorbabooks.com,bellhelmets.com,humanevents.com##body:style(overflow: auto !important;)
+! .avada-footer-scripts
+envol-vert.org,latina.com##.avada-footer-scripts
+envol-vert.org,latina.com##body,html:style(overflow: auto !important; position: initial !important;)
+envol-vert.org##.cp-modal-popup-container
+! geopoliticalmonitor.com
+geopoliticalmonitor.com###maillist-modal
+geopoliticalmonitor.com##.modal-backdrop
+geopoliticalmonitor.com##body:style(height: auto !important; overflow: auto !important)
+! lonelyplanet.com
+lonelyplanet.com##.jsx-3f4fe83626c3275
+lonelyplanet.com##html,body:style(overflow: auto !important; position: initial !important;)
+! glassblocktint.com
+glassblocktint.com##.cp-modal-popup-container
+glassblocktint.com##body:style(height: auto !important; overflow: auto !important)
+! forsvaretsforum.no
+forsvaretsforum.no##.mm-popup-wrapper
+forsvaretsforum.no##body:style(height: auto !important; overflow: auto !important)
+! curiocity.com (newsletter)
+curiocity.com##.fancybox-is-open
+curiocity.com##body:style(overflow: auto !important;)
+! thethaiger.com (newsletter overlay, fix scrollbar)
+thethaiger.com##html:style(overflow: auto !important;)
+! ba-bamail.com (newsletter overlay, fix scrollbar)
+ba-bamail.com##body:style(overflow: auto !important;)
+! petri.com
+petri.com###bww-advertising-popup-overlay
+petri.com##body,html:style(overflow: auto !important; position: initial !important;)
+! babylonbee.com (newsletter overlay)
+babylonbee.com##.modal-backdrop
+babylonbee.com##body:style(overflow: auto !important;)
+! informatykzakladowy.pl (newsletter overlay)
+informatykzakladowy.pl##body:style(overflow: auto !important;)
+! prowritingaid.com (newsletter overlay)
+prowritingaid.com##.exit-popup
+prowritingaid.com##body:style(overflow: auto !important;)
+! kitchentime (newsletter overlay)
+kitchentime.com,kitchentime.de,kitchentime.dk,kitchentime.fi,kitchentime.no,kitchentime.se##.popup-overlay
+kitchentime.com,kitchentime.de,kitchentime.dk,kitchentime.fi,kitchentime.no,kitchentime.se##body,html:style(height: auto !important; overflow: auto !important)
+! .mfp-wrap (newsletter overlay)
+datacenterwires.com,eletric-vehicles.com,ubitennis.com,dailynewsegypt.com,hdwalle.com,megacatstudios.com,scholarlykitchen.sspnet.org,daphneoz.com,christianstandard.com##.mfp-bg
+datacenterwires.com,eletric-vehicles.com,ubitennis.com,dailynewsegypt.com,hdwalle.com,megacatstudios.com,scholarlykitchen.sspnet.org,daphneoz.com,christianstandard.com##.mfp-wrap
+datacenterwires.com,eletric-vehicles.com,ubitennis.com,dailynewsegypt.com,hdwalle.com,megacatstudios.com,scholarlykitchen.sspnet.org,daphneoz.com,christianstandard.com##html:style(overflow:auto !important)
+! syfy.com (newsletter overlay)
+syfy.com##.blog-post__gated__wrapper
+syfy.com##body,html:style(overflow: auto !important; position: initial !important;)
+! nieuwsblad.be (newsletter overlay)
+nieuwsblad.be##.cj-root
+nieuwsblad.be##body:style(overflow: auto !important;)
+! money.com (signup nag
+money.com##+js(rc, open-pw, body, stay)
+! plantpowercouple.com
+plantpowercouple.com##+js(set-cookie, awpopup_450030403, 1)
+! commondreams.org newsletter pop
+commondreams.org##+js(set-cookie, popupShown, true)
+! pagamentidigitali.it
+pagamentidigitali.it###hs-interactives-modal-overlay
+pagamentidigitali.it###hs-web-interactives-top-anchor
+pagamentidigitali.it##body,html:style(overflow: auto !important; position: initial !important;)
+! oled-info.com
+oled-info.com##+js(set-cookie, awpopup_501941328, 1)
+! .pum
+childrenshealthdefense.org,alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##.pum
+childrenshealthdefense.org,alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##html:style(overflow:auto !important)
+! pum + overlay
+capx.co##.pum
+capx.co##div#wrapper:style(filter: none !important)
+! newsletter popup
+lowpass.cc,readergrev.com,objectivebayesian.com,monopoly.marketecture.tv,jointhefollowup.com##+js(set-cookie, popup_closed, true)
+! streamily.com
+streamily.com##+js(set-cookie, email_modal, true)
+! revolvermag.com
+revolvermag.com##.emma-show
+revolvermag.com##body,html:style(height: auto !important; overflow: auto !important)
+! scottishlegal.com
+scottishlegal.com###subscribeModal
+scottishlegal.com##.modal-backdrop
+scottishlegal.com##body,html:style(overflow: auto !important; position: initial !important;)
+! dailytarheel.com
+dailytarheel.com###dth-borderless-modal
+dailytarheel.com##.modal-backdrop
+dailytarheel.com##body,html:style(overflow: auto !important; position: initial !important;)
+! insider.fitt.co
+insider.fitt.co##.fitt-subscribe-pop-up-window
+insider.fitt.co##+js(rc, subscribe-pop-active, body, stay)
+! bucketlistly.blog
+bucketlistly.blog##.footer-newsletter-wrapper
+bucketlistly.blog##.modal-overlay
+bucketlistly.blog##body,html:style(overflow: auto !important; position: initial !important;)
+! restofworld.org
+restofworld.org##.newsletter-signup
+restofworld.org##+js(rc, blocking-signup, html, stay)
+! .jetpack-subscribe-modal
+historiccity.com,skepchick.org,liamodell.com,snackstack.net##.jetpack-subscribe-modal
+historiccity.com,skepchick.org,liamodell.com,snackstack.net##body,html:style(overflow: auto !important; position: initial !important;)
+! tapinto.net
+tapinto.net##.exit_intent_pop_up-0-2-2
+tapinto.net##body,html:style(overflow: auto !important; position: initial !important;)
+! .newsletterwrapper
+vernyx.com,simmiwoman.co.uk##.newsletterwrapper
+vernyx.com,simmiwoman.co.uk##body,html:style(overflow: auto !important; position: initial !important;)
+! clubhouseforchefs.ca
+clubhouseforchefs.ca##.current.blocker
+clubhouseforchefs.ca##body:style(overflow: auto !important; position: initial !important;)
+! statnews.com
+statnews.com###stat-modal-base
+statnews.com##body,html:style(overflow: auto !important; position: initial !important;)
+! prompthero.com
+prompthero.com##.sign-up-modal
+prompthero.com##.modal-backdrop
+prompthero.com##body:style(overflow:initial!important)
+! history
+history.com##.modal
+history.com##body,html:style(overflow: auto !important; position: initial !important;)
+! mbt-store.com
+mbt-store.com###newsletterModal
+mbt-store.com##.modal-backdrop
+mbt-store.com##.index-wrap:style(overflow: auto !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/26631
+filhub.gr##+js(abort-on-property-read, pum_popups)
+! https://github.com/uBlockOrigin/uAssets/issues/26734
+nobroker.in###login-signup-modal:not(:has(.login-signup__modal-close-icon))
+nobroker.in##body.overflow-hidden:style(overflow: auto !important;)
+! huckmag.com
+huckmag.com##+js(set-cookie, huck-newsletter-popup, true)
+! greencarreports.com https://github.com/uBlockOrigin/uAssets/issues/26767
+greencarreports.com##.sign-up-overlay
+greencarreports.com##.newsletter-signup:style(max-height:0px;visibility: hidden !important;)
+! egopowerplus.com
+egopowerplus.com##+js(set-cookie, newsletterModal, true)
+! vokey.com
+vokey.com##+js(set-cookie, enewsOptin, 1)
+! explorersweb.com
+explorersweb.com###newsletterModal
+explorersweb.com##.modal-backdrop
+explorersweb.com##body:style(overflow: auto !important; position: initial !important;)
+! knowablemagazine.org
+knowablemagazine.org###newsModel
+knowablemagazine.org##.modal-backdrop
+knowablemagazine.org##body,html:style(overflow: auto !important; position: initial !important;)
+! hiddenvalley.com
+hiddenvalley.com###sms-opt-in-modal
+hiddenvalley.com##body,html:style(overflow: auto !important; position: initial !important;)
+! rakentaja.fi
+rakentaja.fi###ctl00_verkkolehdenmainos
+rakentaja.fi##.in.fade.modal-backdrop
+rakentaja.fi##body:style(overflow: auto !important)
+! theepochtimes.com (newsletter)
+theepochtimes.com##.showTopNav
+theepochtimes.com##body,html:style(overflow: auto !important; position: initial !important;)
+! milenio.com
+milenio.com##html:style(overflow: auto !important; position: initial !important;)
+! staradvertiser.com (newsletter popup)
+staradvertiser.com##.breakingPopUp
+staradvertiser.com##.modal-backdrop
+staradvertiser.com##body,html:style(overflow: auto !important; position: initial !important;)
+! numero.com (newsletter popup)
+numero.com##.type-newsletter_subscription
+numero.com##body,html:style(overflow: auto !important; position: initial !important;)
+! theblock.co (newsletter overlay)
+theblock.co##.modal-container
+theblock.co##.newsletterModal
+theblock.co##body:style(overflow: auto !important;)
+! cryptobriefing.com (newsletter scroll fix)
+cryptobriefing.com##body,html:style(overflow: auto !important; position: initial !important;)
+! https://www.microsoft.com/en-gb/d/surface-laptop-4/946627fb12t1?activetab=pivot:overviewtab (popup)
+! https://github.com/easylist/easylist/pull/12673 (don't remove www.)
+www.microsoft.com###modalsRenderedAfterPageLoad
+www.microsoft.com##.modal-backdrop
+www.microsoft.com##body,html:style(overflow: auto !important; position: initial !important;)
+! readtangle.com (newsletter intro)
+readtangle.com##.js-intro
+readtangle.com##body,html:style(overflow: auto !important; position: initial !important;)
+! fxstreet.com (scroll fix)
+fxstreet.com##body,html:style(overflow: auto !important; position: initial !important;)
+! .g1-newsletter
+mediadump.com##.g1-newsletter
+mediadump.com##body,html:style(overflow: auto !important; position: initial !important;)
+! .g1-popup-newsletter
+impulkits.com,bygonely.com,musclecarsandtrucks.com,thepetslife.online##.g1-popup-newsletter
+impulkits.com,bygonely.com,musclecarsandtrucks.com,thepetslife.online##body,html:style(overflow: auto !important; position: initial !important;)
+! decrypt.co (newsletter)
+decrypt.co##.left-0.top-0.fixed
+decrypt.co##body:style(overflow: auto !important; position: initial !important;)
+! yesmagazine.org (newsletter)
+yesmagazine.org##.fajardo-campaign
+yesmagazine.org##body:style(overflow: auto !important; position: initial !important;)
+! thebfd.co.nz (newsletter)
+thebfd.co.nz##body:style(overflow: auto !important; position: initial !important;)
+! tietoevry.com
+tietoevry.com##body:style(overflow: auto !important)
+! gourmetfoodstore.com
+gourmetfoodstore.com##+js(set-cookie, SuppressInterstitial, true, , reload, 1)
+! railsnotes.xyz
+railsnotes.xyz##+js(set-cookie, exit-intent, true)
+! scientificamerican.com
+scientificamerican.com###emailCollectorModalOverlay
+scientificamerican.com##body,html:style(overflow: auto !important; position: initial !important;)
+! beckershospitalreview.com
+beckershospitalreview.com##.becker_doubleclick
+beckershospitalreview.com##body:style(overflow: auto !important)
+! theinformation.com (newsletter popup)
+theinformation.com##+js(set-cookie, marketing-modal-closed-1, 2)
+! 6sqft.com
+6sqft.com,sunrisegeek.com##.exit-intent-popup
+6sqft.com,sunrisegeek.com##body:style(overflow: auto !important; position: initial !important;)
+! in.investing.com (forced signin)
+in.investing.com##+js(set-cookie, r_p_s_n, 1)
+! investors.com
+investors.com##.exit-intent-modal
+investors.com##body:style(overflow: auto !important; position: initial !important;)
+! intellinews.com
+intellinews.com##+js(set-cookie, viewedOuibounceModal, true)
+! justthenews.com
+justthenews.com###bio_ep_bg
+justthenews.com###bio_ep
+justthenews.com##body,html:style(overflow: auto !important; position: initial !important;)
+! kermitlynch.com
+kermitlynch.com##+js(set-cookie, hidePopUp, true)
+! .fancybox-overlay
+njbiz.com,apnews.com,inquirer.com,heraldnet.com,thehill.com,newsnationnow,therecord.com,parent.com##.fancybox-overlay
+njbiz.com,apnews.com,inquirer.com,heraldnet.com,thehill.com,newsnationnow,therecord.com,parent.com##body,html:style(overflow: auto !important; position: initial !important;)
+! .fancybox-container
+scetv.org,berkeleyearth.org##.fancybox-container
+scetv.org,berkeleyearth.org##body:style(overflow: auto !important; position: initial !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/24572
+telecom.economictimes.indiatimes.com##+js(nostif, show-login-layer-article)
+! chicagotribune.com (newsletter overlay)
+chicagotribune.com##+js(rc, modal-open, , stay)
+chicagotribune.com##.modal-scrollable
+chicagotribune.com##.connext-modal-backdrop
+! businesstraveller.com
+businesstraveller.com###newsletter-signup-popup
+businesstraveller.com##body:style(overflow: auto !important; position: initial !important;)
+! posylka.de
+posylka.de##.modal-custom--overlay
+posylka.de##html,body:style(overflow: auto !important; position: initial !important;)
+! jingdaily.com
+jingdaily.com##+js(set-cookie, newsletter, true)
+! upworthy.com
+upworthy.com##.mailchimp-popup-overlay-upworthy
+upworthy.com##.mailchimp-popup-upworthy
+upworthy.com##body:style(overflow: auto !important; position: initial !important;)
+! sportskeeda.com
+sportskeeda.com##.newsletter-ui
+sportskeeda.com##body:style(overflow: auto !important; position: initial !important;)
+! digital4.biz
+digital4.biz###hs-web-interactives-top-anchor
+digital4.biz###hs-web-interactives-bottom-anchor
+digital4.biz##body,html:style(overflow: auto !important; position: initial !important;)
+! jns.org
+jns.org###hs-web-interactives-top-anchor
+jns.org##body,html:style(overflow: auto !important; position: initial !important;)
+! .reveal-overlay
+brandingmag.com,staygenerator.com##.reveal-overlay
+brandingmag.com,staygenerator.com##body,html:style(overflow: auto !important; position: initial !important;)
+! www.dgb.de
+dgb.de##.js-newsletter-popup-inner
+dgb.de##.js-newsletter-popup
+dgb.de##+js(rc, js-show-newsletter-popup, , stay)
+! nimsdai.com (newsletter overlay)
+nimsdai.com##.newsletter-popup
+nimsdai.com##body,html:style(overflow: auto !important; position: initial !important;)
+! cjr.org
+cjr.org###interContainer
+cjr.org###interVeil
+cjr.org##html:style(overflow: auto !important; position: initial !important;)
+! coinbase.com
+coinbase.com##+js(set-cookie, bytes_signup_modal_viewed, 1)
+! cnn.com
+cnn.com##.bx-impress
+cnn.com##html:style(overflow: auto !important; position: initial !important;)
+! worldcrunch.com
+worldcrunch.com##div[id*="snewsletter-popup-MailChimp_"]
+worldcrunch.com##*:style(filter: none !important)
+worldcrunch.com##body,html:style(height: auto !important; overflow: auto !important)
+! bonappetit.com
+bonappetit.com##.journey-unit__container
+bonappetit.com##+js(cookie-remover.js, pay_ent_pass)
+bonappetit.com##+js(cookie-remover.js, pay_ent_msmp)
+! ghostinternational.com newsletter
+ghostinternational.com##+js(trusted-set-cookie, pum-9137, true)
+! outsports.com
+outsports.com##.arlington-campaign
+outsports.com##body,html:style(overflow: auto !important; position: initial !important;)
+! toysrus.ca/babiesrus.ca
+babiesrus.ca,toysrus.ca##+js(set-cookie, isNewsletterPopupShown, false, , reload, 1)
+! clutchpoints.com (newsletter popup)
+clutchpoints.com##+js(set-local-storage-item, nbaSIBWidgetSeen, true)
+!  clevercreations.org (mailerrite dim)
+clevercreations.org##.ml-embedded
+clevercreations.org##+js(set-cookie, mailerlite:forms:shown:109925949413262377, 1)
+! hcn.org
+hcn.org###pelcro-app
+hcn.org##body,html:style(overflow: auto !important; position: initial !important;)
+! everyday-reading.com
+everyday-reading.com##.tve-leads-lightbox
+everyday-reading.com##body,html:style(overflow: auto !important; position: initial !important;)
+! semafor.com
+semafor.com##+js(set-session-storage-item, floating-sign-up-dismissed, true)
+! arcade1up.com
+arcade1up.com##.tingle-modal
+arcade1up.com##body:style(overflow: scroll !important; position: unset !important)
+! esquire.com
+goodhousekeeping.com,delish.com,esquire.com##journey-modal-newsletter
+goodhousekeeping.com,delish.com,esquire.com##body:style(overflow: auto !important; position: initial !important;)
+! treblezine.com
+treblezine.com##.newsletter-popup
+treblezine.com###newsletter-popup
+treblezine.com##body,html:style(height: auto !important; overflow: auto !important)
+! pv-magazine
+pv-magazine.*,pv-magazine-australia.com,pv-magazine-brasil.com,pv-magazine-latam.com,pv-magazine-mexico.com,pv-magazine-usa.com###newsletter-modal
+pv-magazine.*,pv-magazine-australia.com,pv-magazine-brasil.com,pv-magazine-latam.com,pv-magazine-mexico.com,pv-magazine-usa.com##.modal-backdrop
+pv-magazine.*,pv-magazine-australia.com,pv-magazine-brasil.com,pv-magazine-latam.com,pv-magazine-mexico.com,pv-magazine-usa.com##body,html:style(height: auto !important; overflow: auto !important)
+! substack.com
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##.intro-popup
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##+js(rc, show-intro-popup, html, stay)
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##+js(rc, has-intro-popup, html, stay)
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##+js(rc, modal-in, html, stay)
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##div[class^="background-"]
+webworm.co,goto10retro.com,strangeloopcanon.com,michaelmoore.com,persuasion.community,thebulwark.com,theclimatebrink.com,forkingpaths.co,gamefile.news,publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news,kunstler.com,wonkette.com,americafirstreport.com##div[class*="subscribeDialog-"]
+! thefederalist.com
+thefederalist.com##+js(set-cookie, pum-276000, true)
+! tweaktown.com
+tweaktown.com###newsletterModal
+tweaktown.com##+js(rc, modal-open, body, stay)
+! 30seconds.com
+30seconds.com##+js(set-cookie, uf_signup_bar, 1)
+! macleans.ca
+macleans.ca##.__show__pMA1C.__wrap__jEIal:has-text(to your inbox)
+macleans.ca##body,html:style(overflow: auto !important; position: initial !important;)
+! carboncredits.com
+carboncredits.com##.tl-states-root
+carboncredits.com##body,html:style(overflow: auto !important; position: initial !important;)
+! magnolia.com
+magnolia.com##+js(set-local-storage-item, BRANCH_BANNER_PAGE_LOAD, 1)
+magnolia.com##+js(set-local-storage-item, EMAIL_CAPTURE_MODAL_STOP, 1)
+! core.app (newsletter)
+core.app##+js(set-local-storage-item, show-email-intake-form, false)
+! lazycatkitchen.com
+lazycatkitchen.com##.wppopups-whole
+lazycatkitchen.com##body:style(overflow: auto !important; position: initial !important;)
+! campaignlive.co.uk popup https://github.com/uBlockOrigin/uAssets/issues/29102
+campaignlive.co.uk##+js(set-session-storage-item, articleModalShown, true)
+! similarweb.com login wall
+similarweb.com##+js(remove-cookie, sgID)
+! newsletter splash
+seattletimes.com##+js(set-cookie, st_newsletter_splash_desktop_seen, true)
+! snopes.com
+snopes.com##+js(set-cookie, newsletter_signup_promo, true)
+snopes.com##+js(set-cookie, newsletter_signup_views, 1)
+! interestingengineering.com
+interestingengineering.com##+js(set-local-storage-item, hasShownPopup, true)
+! https://github.com/easylist/easylist/issues/19438
+iconduck.com##+js(set-cookie, client-mailingListModalShown, true)
+!  jetpack_post_subscribe_modal_dismissed
+shojiwax.com,skepticalraptor.com##+js(set-cookie, jetpack_post_subscribe_modal_dismissed, true)
+! apotekfordeg.no
+apotekfordeg.no##.newsletter-modal
+apotekfordeg.no##.modal-backdrop
+apotekfordeg.no##body:style(overflow: auto !important; position: initial !important;)
+! spring.org.uk
+spring.org.uk##.hustle-popup
+spring.org.uk##body,html:style(overflow: auto !important; position: initial !important;)
+! homehacks.co
+relieved.co,sweetandsavory.co,animalchannel.co,seeitlive.co,parentingisnteasy.co,spotlightstories.co,homehacks.co###email-modal-overlay
+relieved.co,sweetandsavory.co,animalchannel.co,seeitlive.co,parentingisnteasy.co,spotlightstories.co,homehacks.co###email-modal-container
+relieved.co,sweetandsavory.co,animalchannel.co,seeitlive.co,parentingisnteasy.co,spotlightstories.co,homehacks.co##body:style(overflow: auto !important; position: initial !important;)
+! lilysilk.com
+lilysilk.com##.subscribe-maskLayer
+lilysilk.com##.subscribe-popup
+lilysilk.com##body:style(overflow: auto !important; position: initial !important;)
+! dgmlive.com
+dgmlive.com##.modal
+dgmlive.com##.modal-backdrop
+dgmlive.com##body:style(overflow: auto !important; position: initial !important;)
+! reclaimthenet.org
+pcipolicyportal.com,reclaimthenet.org##.elementor-popup-modal
+pcipolicyportal.com,reclaimthenet.org##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+! thetruthaboutcars.com
+thetruthaboutcars.com###cms-popup
+thetruthaboutcars.com##body:style(position: static !important; overflow: auto !important; width: auto !important;)
+! mofi.com
+mofi.com###shopify-section-popup
+mofi.com##body,html:style(position: static !important; overflow: auto !important; width: auto !important;)
+! jumia
+jumia.ci,jumia.co.ke,jumia.com.eg,jumia.com.gh,jumia.com.ng,jumia.com.tn,jumia.dz,jumia.ma,jumia.sn,jumia.ug##.popup
+jumia.ci,jumia.co.ke,jumia.com.eg,jumia.com.gh,jumia.com.ng,jumia.com.tn,jumia.dz,jumia.ma,jumia.sn,jumia.ug##body,html:style(position: static !important; overflow: auto !important; width: auto !important;)
+! atlasobscura.com
+atlasobscura.com##.modal-backdrop
+atlasobscura.com##.modal-sm-fullscreen
+atlasobscura.com##body:style(overflow: auto !important; position: initial !important;)
+! #newsLetterSignup
+abeka.com###newsLetterSignup
+abeka.com##.modal-backdrop
+abeka.com##body,html:style(overflow: auto !important; position: initial !important;)
+! psychcentral.com
+psychcentral.com###modal-host
+psychcentral.com##body,html:style(overflow: auto !important; position: initial !important;)
+! heraldlive.co.za,dispatchlive.co.za
+heraldlive.co.za,dispatchlive.co.za###register-popup-backdrop
+heraldlive.co.za,dispatchlive.co.za##.register-modal-popup-wrapper
+heraldlive.co.za,dispatchlive.co.za##body,html:style(overflow: auto !important; position: initial !important;)
+! recyclingproductnews.com
+recyclingproductnews.com##[style*="opacity:"]
+recyclingproductnews.com##.card-newsletter-modal
+recyclingproductnews.com##body,html:style(overflow: auto !important; position: initial !important;)
+! #newsletterPopupOverlay
+statista.com###newsletterPopupOverlay
+statista.com##body,html:style(overflow: auto !important; position: initial !important;)
+! ##.email-subscription-modal
+logicool.co.jp##.email-subscription-modal
+logicool.co.jp##body[style="overflow: hidden;"]:style(overflow: auto !important;)
+! https://launer.com/c/women
+launer.com##.modal:has([style^='background-image: url("/assets/newsletter-'])
+launer.com##html:style(overflow: auto !important)
+! soundproofcow.com
+soundproofcow.com##.sgpb-popup-overlay
+soundproofcow.com##.sgpb-popup-dialog-main-div-wrapper
+soundproofcow.com##body,html:style(overflow: auto !important; position: initial !important;)
+! monarchmoney.com
+monarchmoney.com##.modal__overlay
+monarchmoney.com##body:style(overflow: auto !important; position: initial !important;)
+! aulart.com
+aulart.com##.elementor-popup-modal
+aulart.com##body:style(overflow: auto !important; max-height: unset !important;)
+! .jquery-modal
+palestinechronicle.com###newsletter_subscribition_box
+palestinechronicle.com##.jquery-modal
+palestinechronicle.com##body,html:style(overflow: auto !important; position: initial !important;)

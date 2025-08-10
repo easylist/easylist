@@ -1,0 +1,16 @@
+[Adblock Plus 2.0]
+! Title: Youtube Shorts
+!
+! Please report any unblocked adverts or problems
+! in the forums (https://forums.lanik.us/)
+! or via e-mail (easylist@protonmail.com).
+! Imported from: https://github.com/brave/adblock-lists/blob/master/brave-lists/yt-shorts.txt
+!
+! Main page
+youtube.com##ytd-rich-section-renderer:has(a[href^="/shorts/"])
+! Trending page
+youtube.com##ytd-reel-shelf-renderer:has(a[href^="/shorts/"])
+! Search/Trending page (Android)
+youtube.com##.media-item-thumbnail-container[aria-hidden][href^="/shorts/"]
+youtube.com##ytm-media-item:has(a[href^="/shorts/"])
+youtube.com##ytm-reel-shelf-renderer

@@ -1,0 +1,37 @@
+# https://docs.travis-ci.com/user/languages/python/
+language: python
+python:
+    - '3.6.9'
+# https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches
+branches:
+  only:
+    - master
+
+# https://docs.travis-ci.com/user/encryption-keys/
+env:
+  global:
+    - secure: "uJAbo2FhIeiQJKy/XDbb5bjXsNz72tt9zbUuiWtLCuYq8Ypi29Nob+bALIyrT9jIik49tvu8XKhnCihkCJZFzI8JtPZFlTmjiSp58iGSXFusLUNOw87R3eqKP/C4DanFvLhTpT1E46JKSaEAPRyry/Et5U+po9Z0LNi9w2t6R3obsO+EeVq1qvpmiQJ9tI1/m7MDyY6PPR4lb2gYS5z3OhKkbIVwaHNlS6nEBr1aKeSI5Ux/Uk0Bq7I/ky4REt3eDxbRCGF9c+2nFDwSz+Zs5fDGX2zQGUEHNr78SJ3CkVAkBOInkgH9WYEqjHVguA+JU1hRumvBvUP5X3sOovTKBuMt8Z5P8zahd0LC/7X7RRzwZ0RoLnTg8g/uyHzpd93c6lifFCwsNbe5b4Tb6h+Q37DOt/hAKa3tFUd4MMYDIusVOOU1QBCQtjQx4+MqVu54m8EX6vzvtPJ9/2L/1fHcLBo7cVk/y9EMS+NXc6hgoTmWuuaPQ+x+M9l0WpID7uDgdQZG89NakoP7jn6Yu5XKjr5t/9JuwPN3GcGdE33a8T7NvtLxgfW6usdwgdPIzxCnsIwc9SMOxEXlGgoGQ0sYfCx08yHFV6PCpIbpG+/vTqeTxcZw///rJQk1n4gXJxg2EEnnGE124Om5sa8QAzj1urr9n2ckvNPh4dckVhvmYLg="
+
+# https://docs.travis-ci.com/user/customizing-the-build/#git-clone-depth
+git:
+  depth: 3
+
+# https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
+install:
+  - pip install git+https://github.com/adblockplus/python-abp.git@4b0aec2
+before_script:
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "TravisCI"
+  - git config --global push.default "matching"
+
+# https://docs.travis-ci.com/user/customizing-the-build/#Customizing-the-Build-Step
+script:
+  - git clone --depth=3 -b gh-pages "https://$GITHUB_TOKEN@github.com/easylist/easylist" output
+  - flrender -i easylist=. easylist.template output/easylist.txt
+  - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
+  - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
+  - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt 
+  - flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt
+  - flrender -i easylist=. fanboy-sounds.template output/fanboy-sounds.txt 
+  - cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages
+
