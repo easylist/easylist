@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202508111335
+! Version: 202508111347
 ! Title: EasyPrivacy
-! Last modified: 11 Aug 2025 13:35 UTC
+! Last modified: 11 Aug 2025 13:47 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -15965,6 +15965,8 @@ ncbi.nlm.nih.gov##+js(set, ncbi.sg.ping, noopFunc)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/209795
 bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||sstats.bitdefender.com^$xhr,redirect=noop.txt,important
+! https://github.com/AdguardTeam/AdguardFilters/issues/117006
+||r.r10s.jp/com/img/home/t.gif?$image,redirect=1x1.gif,domain=24.rakuten.co.jp,important
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
@@ -54611,6 +54613,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||play.dlsite.com/csr/viewer/lib/newrelic.js
 @@||pvtag.yahoo.co.jp^$script,domain=paypaymall.yahoo.co.jp
 @@||query.petametrics.com^$image,xmlhttprequest,domain=mechacomic.jp
+@@||r10s.jp/com/img/home/t.gif?$domain=24.rakuten.co.jp
 @@||realestate.yahoo.co.jp/buy/assets/pages/shared/services/LoggingService.js$~third-party
 @@||rt.rtoaster.jp^$image,domain=ec-store.net
 @@||rtoaster.jp/Rtoaster.js$domain=peachjohn.co.jp|satofull.jp
