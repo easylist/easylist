@@ -35,6 +35,10 @@ UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
+# Compile regular expression for easylist_adservers.txt domain validation 
+# Starts with either | or /
+EASYLIST_ADSERVERS_PATTERN = re.compile(r"^(\|+|\/)")
+
 # List the files that should not be sorted
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
           "easylist_specific_hide_abp.txt", "easyprivacy_specific_uBO.txt", "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other",
@@ -107,6 +111,16 @@ def fopsort(filename):
     lineschecked = 1
     filterlines = elementlines = 0
 
+    # Check if this is the easylist_adservers.txt file
+    is_easylist_adservers = os.path.basename(filename) == "easylist_adservers.txt"
+
+    def is_valid_easylist_adservers_rule(line):
+        """Check if a line is valid for easylist_adservers.txt (must start with | or /)"""
+        # Remove filter options to check the base rule
+        base_rule = re.sub(r'\$.*$', '', line)
+        return bool(re.match(EASYLIST_ADSERVERS_PATTERN, base_rule))
+
+
     # Read in the input and output files concurrently
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
 
@@ -167,6 +181,12 @@ def fopsort(filename):
                     # Skip filters containing less than three characters
                     if len(line) < 3:
                         continue
+
+                    # Special check for easylist_adservers.txt
+                    if is_easylist_adservers and not is_valid_easylist_adservers_rule(line):
+                        print("Removed invalid easylist_adservers rule (doesn't start with | or /): {line}".format(line=line))
+                        continue
+
                     # Process filters and check their type for the sorting algorithm
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
