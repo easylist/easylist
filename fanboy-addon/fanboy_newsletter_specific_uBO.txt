@@ -509,12 +509,18 @@ cnn.com##html:style(overflow: auto !important; position: initial !important;)
 worldcrunch.com##div[id*="snewsletter-popup-MailChimp_"]
 worldcrunch.com##*:style(filter: none !important)
 worldcrunch.com##body,html:style(height: auto !important; overflow: auto !important)
+! thedriftmag.com forced sign up
+thedriftmag.com##.dpp-popup-wrapper
+thedriftmag.com##+js(cookie-remover.js, dpp_paywall)
 ! bonappetit.com
 bonappetit.com##.journey-unit__container
 bonappetit.com##+js(cookie-remover.js, pay_ent_pass)
 bonappetit.com##+js(cookie-remover.js, pay_ent_msmp)
 ! ghostinternational.com newsletter
 ghostinternational.com##+js(trusted-set-cookie, pum-9137, true)
+! addapinch.com
+addapinch.com##.cohoes-campaign
+addapinch.com##html:style(overflow: auto !important; position: initial !important;)
 ! outsports.com
 outsports.com##.arlington-campaign
 outsports.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -665,3 +671,5 @@ palestinechronicle.com##.jquery-modal
 palestinechronicle.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! tldr.tech
 tldr.tech##article:has(:is(h1,h2,h3,h4,h5,h6):has-text((Sponsor)))
+! cnn.co.jp
+cnn.co.jp##+js(set-cookie, CNN_MAIL_MAGAZIN, 1)

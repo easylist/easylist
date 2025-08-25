@@ -324,7 +324,6 @@
 /api/event-rfkj/*
 /api/front/v2/observability$ping
 /api/internal/pixel?
-/api/ipv4check?
 /api/log-visit
 /api/metrics/collect
 /api/metrics/event
@@ -762,6 +761,7 @@
 /dmp/pixel.js
 /dmu2panalytics/ajax_call.php?
 /dnx-event-collector/*
+/dnxcheck/fing.js
 /doctracking.js
 /dolWebAnalytics.js
 /dom-event-tracker.min.js
@@ -773,6 +773,7 @@
 /drwebstat.js
 /dspixel.js
 /dtm_cm.js
+/dtr/count.php
 /dtrack.js
 /duel-analytics.js
 /dwanalytics-
@@ -910,6 +911,7 @@
 /figanalytics-short-ttl.js
 /fingerprint.js$domain=~github.com
 /fingerprint.min.js
+/fingerprint/iife.min.js
 /fingerprint2.js
 /fingerprint2.min.js
 /fingerprint3.js
@@ -1259,6 +1261,7 @@
 /js/hbx.js
 /js/logger?
 /js/quantcast-
+/js/script.pageview-props.
 /js_ibeat_ext.cms
 /js_log_error.js
 /js_logger.php
@@ -1294,6 +1297,7 @@
 /KenticoActivityLogger/Logger.js
 /keypress.js$script
 /keywee.js
+/kimonix_analytics.js
 /kissmetrics.js
 /klaviyo_analytics.js
 /koko-analytics-collect.php
@@ -1306,6 +1310,7 @@
 /LandingPageHitLog.aspx?
 /LandingPageInteractionLog.aspx?
 /lasso-ga.js
+/ldc.js?pid=
 /lead-tracking.min.js
 /leadgen/ga.js
 /leadtag.js
@@ -1617,6 +1622,7 @@
 /owa.tracker-combined-min.js
 /oxAnalytics.js
 /p.gif?
+/p/tm.js?
 /page-addviews?
 /page-analytics.js
 /page-events/trackclick/*
@@ -2181,7 +2187,7 @@
 /stats/collect?
 /stats/collector.js
 /stats/event.js?
-/stats/events$xmlhttprequest
+/stats/events$xmlhttprequest,domain=~wbsc.org
 /stats/footer.js
 /stats/ga.js
 /stats/header.js
@@ -2652,6 +2658,7 @@
 /web-data-ingress?
 /web-pixel-shopify-app-pixel@
 /web-pixel-shopify-custom-pixel@
+/web-vitals-analytics.js
 /web/push?
 /web_analytics/*
 /web_answertip.js
@@ -2778,6 +2785,7 @@
 ://analytics-cdn.
 ://analytics.*/collect
 ://analytics.*/event
+://analytics.*/hardal
 ://analytics.*/hits/
 ://analytics.*/impression
 ://analytics.*/page_entry
@@ -2808,8 +2816,11 @@
 ://plausible.*/api/event|
 ://plausible.*/js/script.
 ://posthog.$script,domain=~posthog.com
+://rum.collector.
 ://segment-api.
 ://segment-cdn.
+://signal.*/hardal
+://signals.*/hardal
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
 ://t.targito.
@@ -2822,6 +2833,7 @@
 ?[AQB]&ndh=1&t=
 ?action=event&
 ?action=impression&
+?action=koko_analytics_collect
 ?action=log_promo_impression
 ?action=saveViewStat&
 ?action=statsjs&

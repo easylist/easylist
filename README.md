@@ -37,7 +37,7 @@ For legal reasons, Anti-adblock will only cover:
 ## Abusive adservers are classed as ad or tracking providers that continuously deploy new revolving domains to evade Easylist or Easyprivacy. 
  - Using "Revolving domains" with harmful javascript and popups.
  - We are an adblock and privacy list.
- - Montoring Easylist Github commits to then circumvent adblock filters with changing/revolving domains or scripts.
+ - Monitoring Easylist Github commits to then circumvent adblock filters with changing/revolving domains or scripts.
  - Adcompanies websites have no useful purpose for Easylist/Easyprivacy users except trying to create more counters and more spam domains.
  - It doesn't matter if the source domain is a different domain. We don't care.
  - Will be blocked without warning.
@@ -108,11 +108,15 @@ For any issues or questions, create a ticket: [Github](https://github.com/easyli
 
 ## Commit Policy
 
-EasyList commit messages use three prefixes to indicate the type of change:
-- **A:** *Added* a new website
+EasyList commit messages use three prefixes to indicate the type of a change:
+- **A:** *Added* a new filter
 - **M:** *Modified* the existing filter for a website, either to match a website's update or to clean up the lists
 - **P:** *Problem* fix for a website, such as removing existing filters or making them more specific
-  
+
+## Licence
+
+Visit [easylist.to/pages/licence.html](https://easylist.to/pages/licence.html).
+
 ## Support
 
 EasyList, EasyPrivacy, and Fanboy lists are used in a number of extensions and browsers such as [Adblock Plus](https://adblockplus.org/), [uBlock Origin](https://github.com/gorhill/uBlock), [AdBlock](https://getadblock.com/), [AdGuard](https://adguard.com/), [Brave](https://brave.com/), [Opera](https://www.opera.com/), and [Vivaldi](https://vivaldi.com/).

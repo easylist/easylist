@@ -1,0 +1,36 @@
+! Title: Fanboy's Anti-Chat List
+! Expires: 9 days (update frequency)
+! Homepage: https://easylist.to/
+! License: http://creativecommons.org/licenses/by/3.0/
+!
+! Credit: https://jonathansampson.github.io/filter/ai.txt
+!
+! baidu.com
+baidu.com###con-ar > [tpl="ai_accompanies"]
+baidu.com###content_left > .c-group-wrapper:has([tpl="ai_ask"])
+baidu.com###csaitab
+baidu.com###s_tab_inner > a[href*="chat.baidu.com"]
+! bing.com
+bing.com###b-scopeListItem-conv > [href^="https://www.bing.com/ck/a"]
+bing.com###chat_upsell_bubble_icon
+bing.com##.b_insights
+bing.com##.cdxCopilotIconBg
+bing.com##.copans_container[data-k="5733"]
+bing.com##a[href="/chat?FORM=hpcodx"]
+! brave.com
+search.brave.com###llm-snippet
+search.brave.com##button.suggestion.llm
+search.brave.com##div.ai-digest
+search.brave.com##div.subutton-wrapper:has(button#submit-llm-button)
+! duckduckgo.com
+duckduckgo.com###react-duckbar li:has-text(Search Assist)
+duckduckgo.com##li:first-child:has([data-testid="duckassist-answer-content"])
+! google.com
+google.com##[data-mcpr]
+google.com##[role="listitem"]:has(a[href*="aep=1&ntc=1"])
+google.com##button:has(path[d^="M17.5 12c0-3.04 2.46-5.5"])
+google.com##li[data-attrid$="Prediction"]:has([aria-description="AI Mode"])
+! mail.google.com
+mail.google.com###google-hats-survey
+! msn.com
+msn.com##codex-bing-chat[instance-id="CodexBingChat"]
