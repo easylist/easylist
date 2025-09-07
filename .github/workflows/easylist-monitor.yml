@@ -48,6 +48,8 @@ jobs:
             const currentTime = new Date().toISOString();
             
             // Check for existing open infrastructure issues
+            console.log(`Searching for issues created by: ${context.actor}`);
+
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: 'easylist',
               repo: 'easylist',
@@ -55,12 +57,19 @@ jobs:
               labels: 'infrastructure',
             });
             
+            console.log(`Found ${issues.length} total infrastructure issues`);
+            console.log(`Issue creators: ${issues.map(i => i.user.login).join(', ')}`);
+            console.log(`Issue titles: ${issues.map(i => i.title).join(' | ')}`);
+    
+
             const existingIssue = issues.find(issue => 
              (issue.title.includes('EasyList Files Not Updating') || 
               issue.title.includes('Stale Files') ||
               issue.body.includes('automated monitoring')) &&
              issue.user.login === context.actor
             );
+
+            console.log(`Found existing issue: ${existingIssue ? existingIssue.number : 'None'}`);
             
             const issueTitle = 'EasyList Files Not Updating - Infrastructure Issue';
             const issueBody = `## Issue Description
