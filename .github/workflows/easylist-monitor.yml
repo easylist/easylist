@@ -1,0 +1,169 @@
+name: EasyList Monitor
+
+on:
+  schedule:
+    # Run every hour, but script will enforce 90-minute intervals
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    paths:
+      - '.github/workflows/easylist-monitor.yml'
+      - 'scripts/easylist-monitor.js'
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install @actions/core
+
+      - name: Run EasyList monitor
+        id: monitor
+        run: |
+          cd scripts
+          node easylist-monitor.js
+        continue-on-error: false
+
+      - name: Debug monitor outputs
+        run: |
+          echo "=== DEBUG: Monitor Outputs ==="
+          echo "has_updates: ${{ steps.monitor.outputs.has_updates }}"
+          echo "is_stale_commit: ${{ steps.monitor.outputs.is_stale_commit }}"
+          echo "updated_count: ${{ steps.monitor.outputs.updated_count }}"
+          echo "commit_message: ${{ steps.monitor.outputs.commit_message }}"
+
+      - name: Configure Git
+        if: steps.monitor.outputs.has_updates == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Commit and push changes
+        if: steps.monitor.outputs.has_updates == 'true'
+        run: |
+          # Pull latest changes first to avoid conflicts
+          git pull origin main
+          
+          if [ "${{ steps.monitor.outputs.is_stale_commit }}" == "true" ]; then
+            echo "Committing stale file report..."
+            git add scripts/stale-files-report.json
+            if [ -f scripts/metadata.json ]; then
+              git add scripts/metadata.json
+            fi
+          else
+            echo "Committing regular updates..."
+            git add scripts/lists/ scripts/hashes.json scripts/metadata.json scripts/update-summary.json
+          fi
+          git commit -m "${{ steps.monitor.outputs.commit_message }}"
+          git push
+
+      - name: Create or update EasyList infrastructure issue
+        if: steps.monitor.outputs.has_updates == 'true' && steps.monitor.outputs.is_stale_commit == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const staleData = JSON.parse(require('fs').readFileSync('scripts/stale-files-report.json', 'utf8'));
+            const currentTime = new Date().toISOString();
+            
+            // Check for existing open infrastructure issues
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: 'easylist',
+              repo: 'easylist',
+              state: 'open',
+              labels: 'infrastructure',
+              creator: context.actor
+            });
+            
+            // Look for existing stale file issues
+            const existingIssue = issues.find(issue => 
+              issue.title.includes('EasyList Files Not Updating') || 
+              issue.title.includes('Stale Files') ||
+              issue.body.includes('automated monitoring')
+            );
+            
+            const issueTitle = 'EasyList Files Not Updating - Infrastructure Issue';
+            const issueBody = `## Issue Description
+            
+            Our automated monitoring system has detected that EasyList files have not been updated for more than 24 hours, which is unusual for the typical update frequency.
+            
+            **Files Affected:**
+            ${staleData.staleFiles.map(file => `- ${file.filename} (last modified: ${file.contentLastModified})`).join('\n')}
+            
+            **Expected Behavior:**
+            EasyList files typically update multiple times per day or at least within 24 hours.
+            
+            **Current Status:**
+            - Last detected update: ${staleData.staleFiles[0]?.contentLastModified || 'Unknown'}
+            - Files have been stale for approximately ${Math.floor((new Date() - new Date(staleData.staleFiles[0]?.contentLastModified)) / (1000 * 60 * 60))} hours
+            - Detection time: ${currentTime}
+            
+            **Possible Causes:**
+            - Server infrastructure issues
+            - Update pipeline failures
+            - Publishing system problems
+            - DNS or CDN issues
+            
+            **Monitoring Repository:**
+            This issue was created by automated monitoring from: https://github.com/${context.repo.owner}/${context.repo.repo}
+            
+            Please investigate the update infrastructure and publishing pipeline.`;
+            
+            if (existingIssue) {
+              // Add comment to existing issue
+              await github.rest.issues.createComment({
+                owner: 'easylist',
+                repo: 'easylist',
+                issue_number: existingIssue.number,
+                body: `**Update ${currentTime}**
+                
+                EasyList files are still stale and have not been updated.
+                
+                **Current Status:**
+                ${staleData.staleFiles.map(file => `- ${file.filename}: ${file.contentLastModified} (${file.ageAnalysis})`).join('\n')}
+                
+                Total stale duration: ~${Math.floor((new Date() - new Date(staleData.staleFiles[0]?.contentLastModified)) / (1000 * 60 * 60))} hours
+                
+                Infrastructure issues appear to be ongoing. Please continue investigating.`
+              });
+              
+              console.log(`Added comment to existing issue #${existingIssue.number}`);
+            } else {
+              // Create new issue
+              const newIssue = await github.rest.issues.create({
+                owner: 'easylist',
+                repo: 'easylist',
+                title: issueTitle,
+                body: issueBody,
+                labels: ['infrastructure', 'bug']
+              });
+              
+              console.log(`Created new issue #${newIssue.data.number}`);
+            }
+
+      - name: Summary
+        run: |
+          echo "## EasyList Monitor Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Has updates:** ${{ steps.monitor.outputs.has_updates }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Updated lists:** ${{ steps.monitor.outputs.updated_count }}" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.monitor.outputs.has_updates }}" == "true" ]; then
+            echo "- **Commit message:** ${{ steps.monitor.outputs.commit_message }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Is stale commit:** ${{ steps.monitor.outputs.is_stale_commit }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "- **Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY
