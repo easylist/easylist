@@ -57,7 +57,7 @@ jobs:
         if: steps.monitor.outputs.has_updates == 'true'
         run: |
           # Pull latest changes first to avoid conflicts
-          git pull origin main
+          git pull
           
           if [ "${{ steps.monitor.outputs.is_stale_commit }}" == "true" ]; then
             echo "Committing stale file report..."
