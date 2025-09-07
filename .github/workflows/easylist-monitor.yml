@@ -37,7 +37,6 @@ jobs:
           echo "=== Staleness Check Results ==="
           echo "Files are stale: ${{ steps.monitor.outputs.files_stale }}"
           echo "Stale file count: ${{ steps.monitor.outputs.stale_count }}"
-          echo "Stale details found: $(echo '${{ steps.monitor.outputs.stale_details }}' | jq length)"
 
       - name: Create or update EasyList infrastructure issue
         if: steps.monitor.outputs.files_stale == 'true'
