@@ -102,13 +102,13 @@ jobs:
                 repo: 'easylist',
                 issue_number: existingIssue.number,
                 body: `**Update ${currentTime}**
-                
-                EasyList files are still stale and have not been updated.
-                
-                **Current Status:**
-                ${staleDetails.map(file => `- ${file.filename}: ${file.lastModified} (${file.ageHours} hours old)`).join('\n')}
-                
-                Infrastructure issues appear to be ongoing. Please continue investigating.`
+
+EasyList files are still stale and have not been updated.
+
+**Current Status:**
+${staleDetails.map(file => `- ${file.filename}: ${file.lastModified} (${file.ageHours} hours old)`).join('\n')}
+
+Infrastructure issues appear to be ongoing. Please continue investigating.`
               });
               
               console.log(`Added comment to existing issue #${existingIssue.number}`);
