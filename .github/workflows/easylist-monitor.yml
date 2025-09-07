@@ -65,7 +65,7 @@ jobs:
             const issueTitle = 'EasyList Files Not Updating - Infrastructure Issue';
             const issueBody = `## Issue Description
             
-            Our automated monitoring system has detected that EasyList files have not been updated for more than 24 hours.
+            Our automated monitoring system has detected that easylist.to files have not been updated for more than 24 hours.
             
             **Files Affected:**
             ${staleDetails.map(file => `- ${file.filename} (last modified: ${file.lastModified})`).join('\n')}
@@ -85,6 +85,8 @@ jobs:
             
             **Monitoring Repository:**
             This issue was created by automated monitoring from: https://github.com/${context.repo.owner}/${context.repo.repo}
+            
+            **Safe to close Github ticket when resolved.** (Check list file dates on easylist.to website to confirm)
             
             Please investigate the update infrastructure and publishing pipeline.`;
             
