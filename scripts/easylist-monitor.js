@@ -1,10 +1,10 @@
-// Simple EasyList staleness checker - no file storage needed
+// EasyList staleness monitor - notification only
 const EASYLIST_URLS = {
   'easylist.txt': 'https://easylist.to/easylist/easylist.txt',
   'easyprivacy.txt': 'https://easylist.to/easylist/easyprivacy.txt'
 };
 
-class EasyListStaleChecker {
+class EasyListMonitor {
   async fetchList(url) {
     try {
       const response = await fetch(url);
@@ -58,7 +58,7 @@ class EasyListStaleChecker {
     }
   }
 
-  async checkStaleness() {
+  async checkForUpdates() {
     console.log(`Checking ${Object.keys(EASYLIST_URLS).length} EasyList files for staleness...`);
     
     const staleFiles = [];
@@ -116,10 +116,10 @@ class EasyListStaleChecker {
 
 // Main execution
 async function main() {
-  const checker = new EasyListStaleChecker();
+  const monitor = new EasyListMonitor();
   
   try {
-    const result = await checker.checkStaleness();
+    const result = await monitor.checkForUpdates();
     
     // Set GitHub Actions outputs
     if (process.env.GITHUB_ACTIONS) {
@@ -146,4 +146,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { EasyListStaleChecker };
+module.exports = { EasyListMonitor };

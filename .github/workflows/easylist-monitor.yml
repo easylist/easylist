@@ -25,8 +25,8 @@ jobs:
         run: |
           npm install @actions/core
 
-      - name: Check EasyList staleness
-        id: check
+      - name: Run EasyList monitor
+        id: monitor
         run: |
           cd scripts
           node easylist-monitor.js
@@ -35,17 +35,17 @@ jobs:
       - name: Debug staleness results
         run: |
           echo "=== Staleness Check Results ==="
-          echo "Files are stale: ${{ steps.check.outputs.files_stale }}"
-          echo "Stale file count: ${{ steps.check.outputs.stale_count }}"
-          echo "Stale details: ${{ steps.check.outputs.stale_details }}"
+          echo "Files are stale: ${{ steps.monitor.outputs.files_stale }}"
+          echo "Stale file count: ${{ steps.monitor.outputs.stale_count }}"
+          echo "Stale details: ${{ steps.monitor.outputs.stale_details }}"
 
       - name: Create or update EasyList infrastructure issue
-        if: steps.check.outputs.files_stale == 'true'
+        if: steps.monitor.outputs.files_stale == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const staleDetails = JSON.parse('${{ steps.check.outputs.stale_details }}');
+            const staleDetails = JSON.parse('${{ steps.monitor.outputs.stale_details }}');
             const currentTime = new Date().toISOString();
             
             // Check for existing open infrastructure issues
@@ -122,6 +122,6 @@ jobs:
       - name: Summary
         run: |
           echo "## EasyList Monitor Results" >> $GITHUB_STEP_SUMMARY
-          echo "- **Files stale:** ${{ steps.check.outputs.files_stale }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Stale count:** ${{ steps.check.outputs.stale_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Files stale:** ${{ steps.monitor.outputs.files_stale }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Stale count:** ${{ steps.monitor.outputs.stale_count }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY
