@@ -53,13 +53,12 @@ jobs:
               repo: 'easylist',
               state: 'open',
               labels: 'infrastructure',
-              creator: context.actor
             });
             
             const existingIssue = issues.find(issue => 
               issue.title.includes('EasyList Files Not Updating') || 
               issue.title.includes('Stale Files') ||
-              issue.body.includes('automated monitoring')
+              (issue.body.includes('automated monitoring') && issue.user.login === context.actor)
             );
             
             const issueTitle = 'EasyList Files Not Updating - Infrastructure Issue';
