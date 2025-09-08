@@ -35,7 +35,7 @@ jobs:
     
     - name: Clone output repository
       run: |
-        git clone --depth=3 -b gh-pages "https://${{ secrets.GITHUB_TOKEN }}@github.com/easylist/easylist" output
+        git clone --depth=3 -b gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/easylist/easylist" output
     
     - name: Generate filter lists
       run: |
@@ -49,6 +49,13 @@ jobs:
     - name: Commit and push changes
       run: |
         cd output
+        echo "Current directory: $(pwd)"
+        echo "Git status before add:"
+        git status
         git add --all .
+        echo "Git status after add:"
+        git status
         git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)"
+        echo "Attempting to push to remote..."
+        git remote -v
         git push --force origin gh-pages
