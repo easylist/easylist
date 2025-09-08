@@ -46,6 +46,19 @@ jobs:
         flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt
         flrender -i easylist=. fanboy-sounds.template output/fanboy-sounds.txt
     
+    - name: Add verification metadata
+      run: |
+        for file in output/*.txt; do
+          temp_file=$(mktemp)
+          echo "! Repository: ${{ github.repository }}" > "$temp_file"
+          echo "! Commit: ${{ github.sha }}" >> "$temp_file"
+          echo "! Built: $(date -u)" >> "$temp_file"
+          echo "! Official: https://github.com/easylist/easylist" >> "$temp_file"
+          echo "!" >> "$temp_file"
+          cat "$file" >> "$temp_file"
+          mv "$temp_file" "$file"
+        done
+    
     - name: Commit and push changes
       run: |
         cd output
