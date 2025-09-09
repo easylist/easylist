@@ -1,0 +1,198 @@
+name: Workflow Security Check
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+  pull_request_target:
+    paths:
+      - '.github/workflows/**'
+  issue_comment:
+    types: [created]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check if actor is admin
+      id: admin-check
+      run: |
+        # Only allow admins to modify workflows
+        if [[ "${{ github.actor }}" == "ryanbr" || "${{ github.actor }}" == "Khrin" || "${{ github.actor }}" == "Yuki2718" || "${{ github.actor }}" == "monzta" ]]; then
+          echo "is_admin=true" >> $GITHUB_OUTPUT
+        else
+          echo "is_admin=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Close PR if not admin
+      if: steps.admin-check.outputs.is_admin == 'false'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // Close the PR
+          await github.rest.pulls.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: context.issue.number,
+            state: 'closed'
+          });
+          
+          // Add a comment explaining why
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: `🔒 **Workflow Security Policy**
+            
+This PR has been automatically closed because it modifies workflow files.
+
+**Policy**: Only repository administrators can modify workflows in \`.github/workflows/\`
+
+**Reason**: Workflow modifications can affect repository security and deployment processes.
+
+**Authorized Admins**: @ryanbr @Khrin @Yuki2718 @monzta
+
+**To request workflow changes**:
+1. Create an issue describing the desired changes
+2. Tag one of the authorized admins for review
+3. Admin will implement approved changes
+
+**For admins**: Comment \`/unlock\` to unlock and reopen this PR if the changes are valid.
+
+This PR cannot be reopened by non-administrators.`
+          });
+          
+          // Lock the conversation to prevent reopening
+          await github.rest.issues.lock({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            lock_reason: 'resolved'
+          });
+
+    - name: Scan workflows if admin
+      if: steps.admin-check.outputs.is_admin == 'true'
+      uses: actions/checkout@v4
+      
+    - name: Security scan for admin PRs
+      if: steps.admin-check.outputs.is_admin == 'true'
+      run: |
+        echo "🔍 Scanning workflow changes by admin..."
+        
+        # Check for suspicious patterns even in admin PRs
+        if grep -r "curl.*http" .github/workflows/ 2>/dev/null; then
+          echo "⚠️ WARNING: External HTTP calls detected"
+        fi
+        
+        if grep -r "\${{.*secrets\." .github/workflows/ | grep -v "GITHUB_TOKEN" 2>/dev/null; then
+          echo "⚠️ WARNING: Non-standard secrets usage detected"
+        fi
+        
+        if grep -r "eval\|sh.*-c\|bash.*-c" .github/workflows/ 2>/dev/null; then
+          echo "⚠️ WARNING: Dynamic code execution detected"
+        fi
+        
+        # Verify security checks are present
+        for file in .github/workflows/*.yml .github/workflows/*.yaml; do
+          if [ -f "$file" ]; then
+            if ! grep -q "github.repository == 'easylist/easylist'" "$file"; then
+              echo "❌ MISSING: Repository verification 'easylist/easylist' in $file"
+              exit 1
+            fi
+          fi
+        done
+        
+        echo "✅ Security scan completed"
+
+    - name: Approve admin PR
+      if: steps.admin-check.outputs.is_admin == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: `✅ **Admin Workflow Modification**
+            
+Security scan completed. This PR is from an authorized administrator.
+
+**Scan Results**: No blocking security issues detected.
+**Actor**: @${{ github.actor }}
+**Modified Files**: Workflow files in \`.github/workflows/\`
+
+Please review changes carefully before merging.`
+          });
+
+  admin-unlock:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issue_comment' && contains(github.event.comment.body, '/unlock') && github.event.issue.pull_request
+    steps:
+    - name: Check if commenter is admin
+      id: admin-check
+      run: |
+        if [[ "${{ github.actor }}" == "ryanbr" || "${{ github.actor }}" == "Khrin" || "${{ github.actor }}" == "Yuki2718" || "${{ github.actor }}" == "monzta" ]]; then
+          echo "is_admin=true" >> $GITHUB_OUTPUT
+        else
+          echo "is_admin=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Unlock and reopen PR
+      if: steps.admin-check.outputs.is_admin == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const prNumber = context.issue.number;
+          
+          // Unlock the conversation
+          await github.rest.issues.unlock({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber
+          });
+          
+          // Reopen the PR
+          await github.rest.pulls.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: prNumber,
+            state: 'open'
+          });
+          
+          // Add comment confirming the action
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            body: `🔓 **PR Unlocked by Admin**
+            
+@${{ github.actor }} has unlocked and reopened this PR.
+
+**Next Steps**:
+- Review the workflow changes carefully
+- Ensure security checks are present
+- Test in a fork if needed
+- Merge only if changes are safe and necessary`
+          });
+    
+    - name: Deny unlock for non-admins
+      if: steps.admin-check.outputs.is_admin == 'false'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: `❌ **Unlock Denied**
+            
+Only repository administrators can unlock workflow-related PRs.
+
+**Authorized Admins**: @ryanbr @Khrin @Yuki2718 @monzta
+
+@${{ github.actor }} does not have sufficient permissions to unlock this PR.`
+          });
