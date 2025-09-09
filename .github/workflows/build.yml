@@ -55,6 +55,13 @@ jobs:
         flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt 
         flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt
         flrender -i easylist=. fanboy-sounds.template output/fanboy-sounds.txt
+
+    - name: Add commit hash to filter lists
+      run: |
+        for file in output/*.txt; do
+          # Insert commit hash after the "Expires" line
+          sed -i "/^! Expires:/a ! Commit: ${{ github.sha }}" "$file"
+        done
     
     - name: Commit and push changes
       run: |
