@@ -46,7 +46,7 @@ jobs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `🔒 **Workflow Security Policy**
+            body: `?? **Workflow Security Policy**
             
 This PR has been automatically closed because it modifies workflow files.
 
@@ -81,32 +81,32 @@ This PR cannot be reopened by non-administrators.`
     - name: Security scan for admin PRs
       if: steps.admin-check.outputs.is_admin == 'true'
       run: |
-        echo "🔍 Scanning workflow changes by admin..."
+        echo "?? Scanning workflow changes by admin..."
         
         # Check for suspicious patterns even in admin PRs
         if grep -r "curl.*http" .github/workflows/ 2>/dev/null; then
-          echo "⚠️ WARNING: External HTTP calls detected"
+          echo "?? WARNING: External HTTP calls detected"
         fi
         
         if grep -r "\${{.*secrets\." .github/workflows/ | grep -v "GITHUB_TOKEN" 2>/dev/null; then
-          echo "⚠️ WARNING: Non-standard secrets usage detected"
+          echo "?? WARNING: Non-standard secrets usage detected"
         fi
         
         if grep -r "eval\|sh.*-c\|bash.*-c" .github/workflows/ 2>/dev/null; then
-          echo "⚠️ WARNING: Dynamic code execution detected"
+          echo "?? WARNING: Dynamic code execution detected"
         fi
         
         # Verify security checks are present
         for file in .github/workflows/*.yml .github/workflows/*.yaml; do
           if [ -f "$file" ]; then
             if ! grep -q "github.repository == 'easylist/easylist'" "$file"; then
-              echo "❌ MISSING: Repository verification 'easylist/easylist' in $file"
+              echo "? MISSING: Repository verification 'easylist/easylist' in $file"
               exit 1
             fi
           fi
         done
         
-        echo "✅ Security scan completed"
+        echo "? Security scan completed"
 
     - name: Approve admin PR
       if: steps.admin-check.outputs.is_admin == 'true'
@@ -117,7 +117,7 @@ This PR cannot be reopened by non-administrators.`
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `✅ **Admin Workflow Modification**
+            body: `? **Admin Workflow Modification**
             
 Security scan completed. This PR is from an authorized administrator.
 
@@ -168,7 +168,7 @@ Please review changes carefully before merging.`
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: prNumber,
-            body: `🔓 **PR Unlocked by Admin**
+            body: `?? **PR Unlocked by Admin**
             
 @${{ github.actor }} has unlocked and reopened this PR.
 
@@ -188,7 +188,7 @@ Please review changes carefully before merging.`
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `❌ **Unlock Denied**
+            body: `? **Unlock Denied**
             
 Only repository administrators can unlock workflow-related PRs.
 
