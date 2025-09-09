@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202509091105
+! Version: 202509091106
 ! Title: EasyPrivacy
-! Last modified: 09 Sep 2025 11:05 UTC
+! Last modified: 09 Sep 2025 11:06 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d1ce3d58bc1a41918faf07b130c42676636f79e4
+! Commit: 5b889d4eb3ad61b305348fc0015d33d980a5ad6a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12693,8 +12693,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zs.dhl.de^
 ! Arabic
 ||shofonline.org/javashofnet/ti.js
-||wsimg.com/signals/$third-party,script
-||wsimg.com/traffic-assets/$third-party,script
+||wsimg.com/signals/$script,third-party
+||wsimg.com/traffic-assets/$script,third-party
 ! French
 ||01net.com/track/
 ||abs.proxistore.com^
@@ -53565,6 +53565,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||stat.tiara.kakao.com^
 ||stat.tiara.tistory.com^
 ||stat.wanted.jobs^
+||static.cloud.sbs.co.kr/common/js/*/sbs_log_module.min.js
 ||tivan.naver.com^
 ||track.tiara.daum.net^
 ||track.tiara.kakao.com^
