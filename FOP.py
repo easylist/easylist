@@ -89,7 +89,15 @@ def convert_ubo_options(optionlist):
         "ghide": "generichide"
     }
     
-    return [ubo_conversions.get(option, option) for option in optionlist]
+    converted_options = []
+    for option in optionlist:
+        # Handle uBO $from= option conversion to $domain=
+        if option.startswith("from="):
+            converted_options.append(option.replace("from=", "domain=", 1))
+        else:
+            converted_options.append(ubo_conversions.get(option, option))
+    
+    return converted_options
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
@@ -296,6 +304,8 @@ def filtertidy (filterin):
         # If applicable, separate and sort the filter options in addition to the filter text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
+        # Apply uBO conversions early so they go through proper sorting
+        optionlist = convert_ubo_options(optionlist)
 
         domainlist = []
         removeentries = []
@@ -309,8 +319,6 @@ def filtertidy (filterin):
         # Sort all options other than domain alphabetically
         # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: (option[1:] + "~") if option[0] == "~" else option)
-        # Apply uBO conversions only to network blocking filters (not element hiding rules)
-        optionlist = convert_ubo_options(optionlist)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key = lambda domain: domain.strip("~")))))
