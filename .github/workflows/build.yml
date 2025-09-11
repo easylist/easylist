@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+  schedule:
+    - cron: '*/30 * * * *'
+
 permissions:
   contents: write
 
