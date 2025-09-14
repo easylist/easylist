@@ -86,7 +86,12 @@ def convert_ubo_options(optionlist):
         "frame": "subdocument",
         "~frame": "~subdocument",
         "doc": "document",
-        "ghide": "generichide"
+        "ghide": "generichide",
+        # Just shorthand
+        "xml": "xmlhttprequest",
+        "~xml": "~xmlhttprequest",
+        "iframe": "subdocument",
+        "~iframe": "~subdocument"
     }
     
     converted_options = []
