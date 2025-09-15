@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202509150538
+! Version: 202509150555
 ! Title: EasyList
-! Last modified: 15 Sep 2025 05:38 UTC
+! Last modified: 15 Sep 2025 05:55 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 47bdeea81e0467f71e920b4e531af12b5cc48085
+! Commit: 096764c7de6c8af2f58f70ed43fd0383a930e47b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -62187,9 +62187,6 @@ browsershots.org#@#.advert_area
 ||wowroms.com/images/iptvsmarters.app.jpg
 ||www-idm.com/wp-content/uploads/2022/02/bitcoin.png
 ||zype.com^$third-party,domain=bossip.com|hiphopwired.com|madamenoire.com
-! streamplay
-||centent.streamp1ay.
-||cintent.streanplay.
 ! Test (Webkit Mobile/Desktop for Youtube)
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
 ||m.youtube.com/get_midroll_$domain=youtube.com
@@ -62203,58 +62200,6 @@ browsershots.org#@#.advert_area
 /^https?:\/\/.*\/sw\.js\?[a-zA-Z0-9%]{50,}/$script,~third-party
 ! sw.js
 /sw.js$script,domain=filechan.org|hotfile.io|lolabits.se|megaupload.nz|rapidshare.nu
-! https://ww1.123watchmovies.co/episode/euphoria-season-2-episode-6/
-! canyoublockit.com
-@@||akamaiedge.net^$domain=canyoublockit.com
-@@||cloudflare.com^$script,stylesheet,domain=canyoublockit.com
-@@||fluidplayer.com^$script,stylesheet,domain=canyoublockit.com
-@@||googleapis.com^$script,stylesheet,domain=canyoublockit.com
-@@||hwcdn.net^$domain=canyoublockit.com
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=canyoublockit.com
-! rule34hentai.net
-$script,third-party,domain=rule34hentai.net
-@@||ajax.googleapis.com^$script,domain=rule34hentai.net
-@@||cloudflare.com^$script,domain=rule34hentai.net
-@@||fluidplayer.com^$script,domain=rule34hentai.net
-! urlcash.net
-|http://$script,xmlhttprequest,domain=urlcash.net
-|https://$script,xmlhttprequest,domain=urlcash.net
-! gelbooru.com
-@@||gelbooru.com^$generichide
-||gelbooru.com*/license.$script
-||gelbooru.com*/tryt.$script
-||gelbooru.com/halloween/
-! bc.vc
-|http://$script,third-party,xmlhttprequest,domain=bc.vc
-|https://$script,third-party,xmlhttprequest,domain=bc.vc
-! abcvideo.cc
-$script,third-party,xmlhttprequest,domain=abcvideo.cc
-! ouo
-$script,third-party,domain=ouo.io|ouo.press
-||ouo.io/js/*.js?
-||ouo.io/js/pop.
-||ouo.press/js/pop.
-! Imgbox
-$script,third-party,domain=imgbox.com
-@@||ajax.googleapis.com^$script,domain=imgbox.com
-! TPB
-$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay10.org
-$webrtc,websocket,xmlhttprequest,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org|thepiratebay10.org
-@@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
-@@||jsdelivr.net^$script,domain=thepiratebay.org
-@@||thepiratebay.*/static/js/details.js$domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org
-@@||thepiratebay.*/static/js/prototype.js$domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org
-@@||thepiratebay.*/static/js/scriptaculous.js$domain=thepiratebay.org
-@@||thepiratebay.org/*.php$csp,~third-party
-@@||thepiratebay.org/static/main.js$script,~third-party
-@@||torrindex.net/images/*.gif$domain=thepiratebay.org
-@@||torrindex.net/images/*.jpg$domain=thepiratebay.org
-@@||torrindex.net^$script,stylesheet,domain=thepiratebay.org
-||thepirate-bay3.org/banner_
-||thepiratebay.$script,domain=pirateproxy.live|thehiddenbay.com|thepiratebay.org
-||thepiratebay.*/static/$subdocument
-||thepiratebay10.org/static/js/UYaf3EPOVwZS3PP.js
 ! webrtc-ads
 $webrtc,domain=ack.net|allthetests.com|champion.gg|clicknupload.link|colourlovers.com|csgolounge.com|dispatch.com|go4up.com|janjua.tv|jpost.com|megaup.net|netdna-storage.com|ouo.io|ouo.press|sourceforge.net|spanishdict.com|telegram.com|torlock2.com|uptobox.com|uptobox.eu|uptobox.fr|uptobox.link|vidtodo.com|yts.gs|yts.mx
 ! websocket-ads
