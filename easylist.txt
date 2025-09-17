@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202509172215
+! Version: 202509172225
 ! Title: EasyList
-! Last modified: 17 Sep 2025 22:15 UTC
+! Last modified: 17 Sep 2025 22:25 UTC
 ! Expires: 4 days (update frequency)
-! Commit: efc9c62a86545b7a0b7f95fd6cc44415ab2816f8
+! Commit: ee0026e131ec64d3bdf280a61310911f8a37b8b2
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -69691,6 +69691,10 @@ vrbo.com##[data-stid="meso-ad"]
 si.com##[data-target="ad"]
 coingecko.com##[data-target="ads.banner"]
 the-express.com##[data-tb-non-consent]
+woot.com##[data-test-ui="advertisement-cdm-zone-01"]
+woot.com##[data-test-ui="advertisement-cdm-zone-02"]
+woot.com##[data-test-ui="advertisement-cdm-zone-03"]
+woot.com##[data-test-ui="advertisement-cdm-zone-06"]
 drivencarguide.co.nz##[data-test-ui="outbrain-suggestions"]
 woot.com##[data-test-ui^="advertisementLeaderboard"]
 target.com##[data-test="featuredProducts"]
@@ -71047,6 +71051,7 @@ noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
 engadget.com##[data-test="top-ad"]
 farfetch.com##[data-testid="featured"]:has([data-ffref*="sponsoredBy"])
 petco.com##[data-testid="product-buy-box"]:has([class*="SponsoredText"])
+woot.com##[dir="auto"]:has-text(ADVERTISEMENT)
 linuxcommandlibrary.com##[href^="/"]:has([src*=".webp"])
 kayak.com##[role="button"]:has([class*="ad-marking"])
 kayak.com##[role="tab"]:has([class*="sponsored"])
