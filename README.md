@@ -60,7 +60,7 @@ The goal of this repository is to block tracking and improve end user privacy by
  - Impressions / Event / Perf / Pageview logging
  - User agent checks or monitoring
  - Resource miners
- - Hit counters
+ - Third-party Hit counters
  - CNAME trackers
  - Notification servers / popups including any tracking covered by Easyprivacy policy
  - Linking, loading or initialising to known tracking servers or scripts
