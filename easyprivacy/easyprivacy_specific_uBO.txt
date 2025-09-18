@@ -5,8 +5,8 @@
 ||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$script,redirect=noop.js,important
 ||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$script,redirect=noop.js,important
 ! GPC
-geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
-geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
+delta.com,geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
+delta.com,geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
 ! Clear GPC storage item
 visible.com##+js(set-local-storage-item, browser-ids, $remove$)
 ! Showing "Enable Cookies Please enable cookies in your browser to access USAA."
@@ -64,3 +64,9 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||sstats.bitdefender.com^$xhr,redirect=noop.txt,important
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117006
 ||r10s.jp/com/img/home/t.gif?$image,redirect=1x1.gif,domain=24.rakuten.co.jp,important
+! https://github.com/easylist/easylist/commit/885ef7a64a7c872b99cf9e8f81de9ca28d877be8
+! https://github.com/uBlockOrigin/uBOL-home/issues/476#issuecomment-3306448980
+!#if !env_safari
+||googletagmanager.com/gtm.js$domain=nexon.com,important
+||nakanohito.jp^*/bi.js$domain=nexon.com,important
+!#endif
