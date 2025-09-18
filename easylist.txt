@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202509182046
+! Version: 202509182102
 ! Title: EasyList
-! Last modified: 18 Sep 2025 20:46 UTC
+! Last modified: 18 Sep 2025 21:02 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d220f6680efb9746e05c141296da5251cb1fa195
+! Commit: af94ace2ebe694cd420f178e86430e765add70c7
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -68301,6 +68301,7 @@ woot.com##[data-test-ui="advertisement-cdm-zone-06"]
 drivencarguide.co.nz##[data-test-ui="outbrain-suggestions"]
 woot.com##[data-test-ui^="advertisementLeaderboard"]
 target.com##[data-test="featuredProducts"]
+target.com##[data-test="recommended_products_placement_adaptpdp_sponsored_items"]
 zillow.com##[data-test="search-list-first-ad"]
 target.com##[data-test="sponsored-text"]
 reuters.com##[data-testid="CnxPlayer"]
@@ -70427,6 +70428,7 @@ checkfelix.com,kayak.*,swoodoo.com##div[class*="-adInner"]
 checkfelix.com,kayak.*,swoodoo.com##div[data-resultid]:has(a.IZSg-adlink)
 checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
 ! *** easylist:easylist/easylist_specific_hide_abp.txt ***
+target.com#?#[data-test="ProductCardVariantRecommendation"]:-abp-contains(Sponsored)
 samsclub.com#?#li[data-slide]:-abp-contains(Sponsored)
 coles.com.au#?#[role="presentation"]:has([data-testid="product-tile"]:-abp-contains(Sponsored))
 bjs.com#?#[data-cnstrc-recommendations]:-abp-contains(Sponsored Products)
