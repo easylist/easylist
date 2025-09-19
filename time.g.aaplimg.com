@@ -1,0 +1,1 @@
+time.g.aaplimg.com
