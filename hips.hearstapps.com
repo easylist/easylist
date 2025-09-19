@@ -1,0 +1,1 @@
+hips.hearstapps.com
