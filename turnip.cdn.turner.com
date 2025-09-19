@@ -1,0 +1,1 @@
+turnip.cdn.turner.com
