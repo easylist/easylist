@@ -1,0 +1,1 @@
+transient.amazon.com
