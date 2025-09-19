@@ -1,0 +1,1 @@
+registry.api.cnn.io
