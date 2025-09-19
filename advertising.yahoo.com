@@ -1,0 +1,1 @@
+advertising.yahoo.com
