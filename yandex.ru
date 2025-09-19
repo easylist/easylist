@@ -1,0 +1,1 @@
+yandex.ru
