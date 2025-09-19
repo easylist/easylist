@@ -1,0 +1,1 @@
+news.iadsdk.apple.com
