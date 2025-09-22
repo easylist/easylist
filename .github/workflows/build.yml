@@ -37,7 +37,6 @@ jobs:
       continue-on-error: true
       with:
         python-version: '3.11'
-        cache: 'pip'
     
     - name: Set up Python (Attempt 2)
       if: steps.setup-python-attempt1.outcome == 'failure'
@@ -46,14 +45,12 @@ jobs:
       continue-on-error: true
       with:
         python-version: '3.11'
-        cache: 'pip'
     
     - name: Set up Python (Attempt 3)
       if: steps.setup-python-attempt2.outcome == 'failure'
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip'
     
     - name: Install dependencies
       run: |
