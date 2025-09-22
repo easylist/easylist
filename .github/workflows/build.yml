@@ -19,10 +19,10 @@ jobs:
     steps:
     - name: Security Check
       run: |
-        echo "? Repository: ${{ github.repository }}"
-        echo "? Actor: ${{ github.actor }}"
+        echo "🔒 Repository: ${{ github.repository }}"
+        echo "👤 Actor: ${{ github.actor }}"
         if [ "${{ github.repository_owner }}" != "easylist" ]; then
-          echo "? Unauthorized repository owner: ${{ github.repository_owner }}"
+          echo "❌ Unauthorized repository owner: ${{ github.repository_owner }}"
           exit 1
         fi
         
@@ -31,10 +31,29 @@ jobs:
       with:
         fetch-depth: 3
     
-    - name: Set up Python
-      uses: actions/setup-python@v4
+    - name: Set up Python (Attempt 1)
+      uses: actions/setup-python@v5
+      id: setup-python-attempt1
+      continue-on-error: true
       with:
-        python-version: '3.8'
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Set up Python (Attempt 2)
+      if: steps.setup-python-attempt1.outcome == 'failure'
+      uses: actions/setup-python@v5
+      id: setup-python-attempt2
+      continue-on-error: true
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Set up Python (Attempt 3)
+      if: steps.setup-python-attempt2.outcome == 'failure'
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
     
     - name: Install dependencies
       run: |
