@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202509300926
+! Version: 202509300934
 ! Title: EasyList
-! Last modified: 30 Sep 2025 09:26 UTC
+! Last modified: 30 Sep 2025 09:34 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 8cd1a8f3e579de91dc4acaf24b8649c2b624ae21
+! Commit: e3a993514d1608b5bad8ae1f3b850e9d06aaf5ee
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -61062,6 +61062,7 @@ browsershots.org#@#.advert_area
 ||ientent.stre4mplay.one^
 ||igg-games.*/maven/
 ||igg-games.co/sw.js
+||igg-games.com/sw.js
 ||ih1.fileforums.com^
 ||illicium.web.money^$subdocument
 ||illicium.wmtransfer.com^$subdocument
@@ -61521,15 +61522,6 @@ browsershots.org#@#.advert_area
 ||url.rw/*&a=
 ||url.rw/*&mid=
 ! 
-! Fixes
-@@||freeplayervideo.com^$subdocument
-@@||gogoplay5.com^$subdocument
-@@||gomoplayer.com^$subdocument
-@@||lshstream.xyz/hls/$xmlhttprequest
-! 
-! /^https?:\/\/.*(com|net|top|xyz)\/(bundle|warning|style|bootstrap|brand|reset|jquery-ui|styles|error|logo|index|favicon|star|header)\.(png|css)\?[A-Za-z0-9]{30,}.*/$third-party
-! /^https?:\/\/[0-9a-z]{5,}\.(digital|website|life|guru|uno|cfd)\/[a-z0-9]{6,}\//$script,third-party,xmlhttprequest,domain=~127.0.0.1|~bitrix24.life|~ccc.ac|~embedcanaistv.com|~jacksonchen666.com|~lemmy.world|~localhost|~scribble.ninja|~scribble.website|~traineast.co.uk
-/^https?:\/\/cdn\.[0-9a-z]{3,6}\.xyz\/[a-z0-9]{8,}\.js$/$script,third-party
 ! https://github.com/easylist/easylist/commit/7a86afd
 /rest/carbon/api/scripts.js?
 ! 
@@ -61607,34 +61599,10 @@ browsershots.org#@#.advert_area
 ! temp disabled, affecting some extensions/browsers
 ||www.youtube.com/get_midroll_$domain=youtube.com
 ||youtube.com/get_video_info?*adunit$~third-party
-! bit.ly
-/^https?:\/\/.*bit(ly)?\.(com|ly)\//$domain=1337x.to|cryptobriefing.com|eztv.tf|eztv.yt|fmovies.taxi|fmovies.world|limetorrents.info|megaup.net|newser.com|sendit.cloud|tapelovesads.org|uiz.io|userscloud.com|vev.red|vidup.io|yourbittorrent2.com
-! Torrent/Pirate sites /sw.js
-/^https?:\/\/.*\/.*(sw[0-9a-z._-]{1,6}|\.notify\.).*/$script,domain=1337x.to|clickndownload.click|clicknupload.click|cloudvideo.tv|downloadpirate.com|fmovies.taxi|fmovies.world|igg-games.com|indishare.org|linksly.co|megaup.net|mixdrop.ag|mp3-convert.org|nutritioninsight.com|ouo.press|pcgamestorrents.com|pcgamestorrents.org|powvideo.net|powvldeo.cc|primewire.sc|proxyer.org|sendit.cloud|sendspace.com|shrinke.me|shrinkhere.xyz|theproxy.ws|uiz.io|up-load.io|uploadever.com|uploadrar.com|uploadrive.com|uplovd.com|upstream.to|userscloud.com|vidoza.co|vidoza.net|vidup.io|vumoo.life|xtits.com|yourbittorrent2.com|ziperto.com
-/^https?:\/\/.*\/sw\.js\?[a-zA-Z0-9%]{50,}/$script,~third-party
-! sw.js
-/sw.js$script,domain=filechan.org|hotfile.io|lolabits.se|megaupload.nz|rapidshare.nu
-! webrtc-ads
-$webrtc,domain=ack.net|allthetests.com|champion.gg|clicknupload.link|colourlovers.com|csgolounge.com|dispatch.com|go4up.com|janjua.tv|jpost.com|megaup.net|netdna-storage.com|ouo.io|ouo.press|sourceforge.net|spanishdict.com|telegram.com|torlock2.com|uptobox.com|uptobox.eu|uptobox.fr|uptobox.link|vidtodo.com|yts.gs|yts.mx
-! websocket-ads
-$websocket,domain=4archive.org|allthetests.com|boards2go.com|colourlovers.com|fastpic.ru|fileone.tv|filmlinks4u.is|imagefap.com|keepvid.com|megaup.net|olympicstreams.me|pocketnow.com|pornhub.com|pornhubthbh7ap3u.onion|powvideo.net|roadracerunner.com|shorte.st|tribune.com.pk|tune.pk|vcpost.com|vidmax.com|vidoza.net|vidtodo.com
-! 
-! IP address
-! CSP filters
-$csp=worker-src 'none',domain=centrum-dramy.pl|coinfaucet.eu|crictime.com|crictime.is|doodcdn.com|gomo.to|hdvid.fun|hdvid.tv|hitomi.la|lewd.ninja|plytv.me|powvideo.cc|powvideo.net|putlocker.to|reactor.cc|streamtape.com|thehiddenbay.com|thepiratebay.org|uptomega.me|ustream.to|vidoza.co|vidoza.net
-! CSP Yavli
-||activistpost.com^$csp=script-src *.leadpages.net *.gstatic.com *.google.com *.googleapis.com *.playwire.com *.facebook.com *.bootstrapcdn.com
-! kinox
-$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.google.com *.addthis.com *.addthisedge.com *.facebook.net *.twitter.com *.jquery.com *.x.com,domain=kinox.lat|kinos.to|kinox.am|kinox.click|kinox.cloud|kinox.club|kinox.digital|kinox.direct|kinox.express|kinox.fyi|kinox.gratis|kinox.io|kinox.lol|kinox.me|kinox.mobi|kinox.pub|kinox.sh|kinox.to|kinox.tube|kinox.tv|kinox.wtf|kinoz.to,~third-party
-$popup,third-party,domain=kinos.to|kinox.am|kinox.click|kinox.cloud|kinox.club|kinox.digital|kinox.direct|kinox.express|kinox.fyi|kinox.gratis|kinox.io|kinox.lat|kinox.lol|kinox.me|kinox.mobi|kinox.pub|kinox.sh|kinox.to|kinox.tube|kinox.tv|kinox.wtf|kinoz.to
-$third-party,xmlhttprequest,domain=kinos.to|kinox.am|kinox.click|kinox.cloud|kinox.club|kinox.digital|kinox.direct|kinox.express|kinox.fyi|kinox.gratis|kinox.io|kinox.lat|kinox.lol|kinox.me|kinox.mobi|kinox.pub|kinox.sh|kinox.to|kinox.tube|kinox.tv|kinox.wtf|kinoz.to
-! Specific filters necessary for sites allowlisted with $genericblock filter option
 ! jetzt.de
 @@||jetzt.de^$generichide
 ! dood.pm
 /^https?:\/\/www\.[0-9a-z]{8,}\.com\/[0-9a-z]{1,4}\.js$/$script,third-party,domain=dood.la|dood.pm|dood.sh|dood.so|dood.to|dood.watch|dood.ws
-! welovemanga
-/\/uploads\/[a-z]+\/\d\.gif$/$image,~third-party,domain=mangagun.net|nicomanga.com|rawinu.com|weloma.art|welovemanga.one
 ! Internal use of EL
 ||raw.githubusercontent.com/easylist/easylist/master/docs/1x1.gif
 ||raw.githubusercontent.com/easylist/easylist/master/docs/2x2.png$third-party
