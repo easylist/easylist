@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202510042333
+! Version: 202510042336
 ! Title: EasyList
-! Last modified: 04 Oct 2025 23:33 UTC
+! Last modified: 04 Oct 2025 23:36 UTC
 ! Expires: 4 days (update frequency)
-! Commit: f86f03d03f1e731b896fecfe0d0d2d6acb44ce90
+! Commit: 8cc1e02614a0f687d7b85e25852355de2348720e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -70104,6 +70104,7 @@ farfetch.com##[data-testid="featured"]:has([data-ffref*="sponsoredBy"])
 petco.com##[data-testid="product-buy-box"]:has([class*="SponsoredText"])
 woot.com##[dir="auto"]:has-text(ADVERTISEMENT)
 linuxcommandlibrary.com##[href^="/"]:has([src*=".webp"])
+mangadex.org##[id] > .w-full:has([href$="?tab=recommendations"])
 kayak.com##[role="button"]:has([class*="ad-marking"])
 kayak.com##[role="tab"]:has([class*="sponsored"])
 unknowncheats.me##[style*="justify-content"]:has([rel^="sponsored"]) + [style]
