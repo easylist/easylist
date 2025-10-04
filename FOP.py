@@ -415,8 +415,8 @@ def commit (repository, basecommand, userchanges):
         
         return changed_lines > LARGE_LINES_THRESHOLD
 
-    # Check for large changes and require confirmation
-    if is_large_change(diff_text):
+    # Check for large changes and require confirmation (only for new changes from this FOP run)
+    if not userchanges and is_large_change(diff_text):
         print("\nThis is a large change. Are you sure you want to proceed?")
         confirmation = input("Please type 'YES' to continue: ")
         if confirmation != "YES":
