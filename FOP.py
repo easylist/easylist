@@ -392,10 +392,36 @@ def commit (repository, basecommand, userchanges):
         return
     print("\nThe following changes have been recorded by the repository:")
     try:
-        print(difference.decode("utf-8"))
+        diff_text = difference.decode("utf-8")
+        print(diff_text)
     except UnicodeEncodeError:
         print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n");
         print(difference)
+        diff_text = str(difference)
+
+    # Check if this is a large change
+    def is_large_change(diff_content):
+        """Determine if the change is considered 'large' based on various metrics"""
+        lines = diff_content.split('\n')
+        
+        # Count changed lines (lines starting with + or -)
+        changed_lines = sum(1 for line in lines if line.startswith(('+', '-')) and not line.startswith(('+++', '---')))
+        
+        # Count affected files
+        affected_files = len([line for line in lines if line.startswith('diff --git') or line.startswith('--- a/') or line.startswith('+++ b/')])
+        
+        # Define thresholds for "large" changes
+        LARGE_LINES_THRESHOLD = 25
+        
+        return changed_lines > LARGE_LINES_THRESHOLD
+
+    # Check for large changes and require confirmation
+    if is_large_change(diff_text):
+        print("\nThis is a large change. Are you sure you want to proceed?")
+        confirmation = input("Please type 'YES' to continue: ")
+        if confirmation != "YES":
+            print("Commit aborted.")
+            return
 
     try:
         # Persistently request a suitable comment
