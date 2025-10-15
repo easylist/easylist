@@ -91,7 +91,17 @@ jobs:
         git add --all .
         echo "Git status after add:"
         git status
-        git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)"
+        git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" || exit 0
         echo "Attempting to push to remote..."
         git remote -v
-        git push --force origin gh-pages
+        
+        # Try to push, retry once if it fails
+        if ! git push origin gh-pages; then
+          echo "Push failed, attempting retry after rebase..."
+          git pull --rebase origin gh-pages
+          if ! git push origin gh-pages; then
+            echo "Push failed after retry"
+            exit 1
+          fi
+        fi
+        echo "Push successful"
