@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202510171233
+! Version: 202510171240
 ! Title: EasyList
-! Last modified: 17 Oct 2025 12:33 UTC
+! Last modified: 17 Oct 2025 12:40 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 0d072becd95bd539eb7fdbe9f17a82efbc28136a
+! Commit: d8acb81b01517810293dd11cdb3f053264850b7c
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -72919,6 +72919,7 @@ pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle
 pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle-wrap-2
 pv-magazine.*,pv-magazine-usa.com,pv-magazine-australia.com###home-top-rectangle-wrap-3
 sameday.costco.*##li:has([aria-label="Product"]):has([data-fp-eligible]):not(:has(h2))
+skyscanner.*##[data-testid="inline-ad-panel-desktop-layout"]:has([data-testid="adInfoBtn"])
 tripadvisor.*##.rSJod
 tripadvisor.*##[data-automation="nova-ad-InlineNova"]
 tripadvisor.*##[data-sponsored="sponsored"]:has(.txxUo)
@@ -73223,7 +73224,6 @@ etsy.com##[data-page-type="similar-listing-page"]:has([id^="ad-listing-title-"])
 noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
 engadget.com##[data-test="top-ad"]
 farfetch.com##[data-testid="featured"]:has([data-ffref*="sponsoredBy"])
-skyscanner.com##[data-testid="inline-ad-panel-desktop-layout"]:has([data-testid="adInfoBtn"])
 petco.com##[data-testid="product-buy-box"]:has([class*="SponsoredText"])
 woot.com##[dir="auto"]:has-text(ADVERTISEMENT)
 linuxcommandlibrary.com##[href^="/"]:has([src*=".webp"])
