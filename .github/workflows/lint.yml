@@ -38,7 +38,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'npm'
       - name: Check out to repository
         uses: actions/checkout@v4
       - name: Install npm dependencies
