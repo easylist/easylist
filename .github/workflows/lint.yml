@@ -38,10 +38,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          cache: 'npm'
       - name: Check out to repository
         uses: actions/checkout@v4
       - name: Install npm dependencies
-        run: npm i
+        run: npm i || sleep 8 && npm i
         shell: bash
       - name: Run AGLint
         run: npm run aglint
