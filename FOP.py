@@ -277,6 +277,23 @@ def fopsort (filename):
                                 if domain not in IGNORE_DOMAINS:
                                     print("Skipped short domain rule: {line} (domain: {domain})".format(line=line, domain=domain))
                                     continue
+                        # Skip network rules where the domain doesn't contain a dot (likely invalid)
+                        # Check for rules starting with || or | (domain-based network rules)
+                        # But ignore special URL schemes that don't use domains and IP addresses
+                        if (line.startswith('||') or line.startswith('|')) and not any(line.startswith(scheme) for scheme in ['|javascript', '|data:', '|dddata:', '|about:', '|blob:', '|http', '||edge-client']):
+                            # Extract the domain part (everything after || or | until /, ^, or $)
+                            # Allow * in the domain as it's a valid wildcard character
+                            domain_match = re.match(r'^\|*([^\/\^\$]+)', line)
+                            if domain_match:
+                                domain = domain_match.group(1)
+                                # Skip validation for IP addresses (IPv4 like 0.0.0.0 or IPv6 like [::] or [::1])
+                                is_ip = domain.startswith('[') or re.match(r'^\d+\.\d+\.\d+\.\d+', domain)
+                                # Skip validation if domain contains wildcard (wildcards can expand to include dots)
+                                has_wildcard = '*' in domain
+                                # Skip if domain doesn't contain a dot (but allow exceptions with ~, IP addresses, and wildcards)
+                                if not is_ip and not has_wildcard and '.' not in domain and not domain.startswith('~'):
+                                    print("Skipped network rule without dot in domain: {line} (domain: {domain})".format(line=line, domain=domain))
+                                    continue
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
                             lineschecked += 1
