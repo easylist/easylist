@@ -336,7 +336,16 @@ def elementtidy (domains, separator, selector):
     tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
+        # Filter out domains less than 3 characters (excluding the ~ prefix for exceptions)
+        domain_list = domains.split(",")
+        invalid_domains = [d for d in domain_list if len(d.strip("~")) < 3]
+        valid_domains = [d for d in domain_list if len(d.strip("~")) >= 3]
+        
+        # Print warning if any domains were filtered out
+        if invalid_domains:
+            print("Removed short domain(s) from cosmetic rule: {domains}".format(domains=", ".join(invalid_domains)))
+        
+        domains = ",".join(sorted(set(valid_domains), key = lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
     selector = "@{selector}@".format(selector = selector)
     each = re.finditer
