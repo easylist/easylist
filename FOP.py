@@ -336,14 +336,22 @@ def elementtidy (domains, separator, selector):
     tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        # Filter out domains less than 3 characters (excluding the ~ prefix for exceptions)
+        # Filter out domains less than 3 characters or without a dot (excluding the ~ prefix for exceptions)
         domain_list = domains.split(",")
-        invalid_domains = [d for d in domain_list if len(d.strip("~")) < 3]
-        valid_domains = [d for d in domain_list if len(d.strip("~")) >= 3]
+        invalid_domains = []
+        valid_domains = []
+        
+        for d in domain_list:
+            stripped = d.strip("~")
+            # Check if domain is too short or doesn't contain a dot
+            if len(stripped) < 3 or "." not in stripped:
+                invalid_domains.append(d)
+            else:
+                valid_domains.append(d)
         
         # Print warning if any domains were filtered out
         if invalid_domains:
-            print("Removed short domain(s) from cosmetic rule: {domains}".format(domains=", ".join(invalid_domains)))
+            print("Removed invalid domain(s) from cosmetic rule: {domains}".format(domains=", ".join(invalid_domains)))
         
         domains = ",".join(sorted(set(valid_domains), key = lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
