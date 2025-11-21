@@ -22,14 +22,25 @@ broadbandbreakfast.com,404media.co##.outpost-cta
 broadbandbreakfast.com,404media.co##body,html:style(overflow: auto !important; position: initial !important;)
 ! sub popup
 press.princeton.edu##+js(set-cookie, block-popuproadblock, true)
+! newsletter popup
+sweet-shop.si##+js(set-cookie, aonehidepopupnewsletter1727208240, 1)
 ! gwr.com
 gwr.com##.chakra-modal__overlay
 gwr.com##.chakra-modal__content-container
 gwr.com##body,html:style(overflow: auto !important; position: initial !important;)
+! inverse popup
+inverse.com##.Hsp
+inverse.com##body:style(overflow: auto !important; position: initial !important;)
 ! newsletter popup
 timesnownews.com##+js(set-local-storage-item, useExitIntent, true)
 ! monarchmoney.com
 monarchmoney.com##+js(set-cookie, exit-intent, true)
+! login popup on a few clicks on download
+! printables.com##.svelte-smd8em.show
+! printables.com##.show.modal-backdrop
+! printables.com##+js(rc, disable-scroll, body, stay) 
+! freesmsgateway.com
+freesmsgateway.com##+js(acs, $, modal_newsletter)
 ! hollywoodunlocked.com
 hollywoodunlocked.com##.featherlight
 hollywoodunlocked.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -42,7 +53,7 @@ stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therec
 stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therecord.com,thespec.com,wellandtribune.ca##.modal-backdrop
 stcatharinesstandard.ca,thepeterboroughexaminer.com,niagarafallsreview.ca,therecord.com,thespec.com,wellandtribune.ca##body,html:style(overflow: auto !important; position: initial !important;)
 ! Mouse out news/sub nags
-todaysparent.com,straitstimes.com,dlnews.com,zaui.com,worldpopulationreview.com##+js(aeld, /^(mouseout|mouseleave)$/)
+inverse.com,todaysparent.com,straitstimes.com,dlnews.com,zaui.com,worldpopulationreview.com,interestingengineering.com##+js(aeld, /^(mouseout|mouseleave)$/)
 ! the-tls.co.uk
 the-tls.co.uk##+js(set-local-storage-item, tls_newsletter_visibility, true)
 ! breachmedia.ca
@@ -80,9 +91,6 @@ jessicabryson.com##body:style(overflow: auto !important; position: initial !impo
 ! dailyvoice.com
 dailyvoice.com##.b-modal.b-dialog
 dailyvoice.com##body:style(overflow: auto !important; position: initial !important;)
-! cityam.com
-cityam.com##.subscription-modal
-cityam.com##+js(rc, js-page-scroll-lock, body, stay)
 ! fine-day.com
 fine-day.com##.chakra-portal
 fine-day.com##html,body:style(overflow: auto !important; position: initial !important;)
@@ -101,10 +109,6 @@ bankbazaar.com##.oneTapLoginModal
 bankbazaar.com##.modal-backdrop
 bankbazaar.com##.dimmer
 bankbazaar.com##body:style(overflow: auto !important; position: initial !important;)
-! dallasnews.com
-dallasnews.com##.dmnc_features-cta-newsletter-cta-newsletter-module__eQOmx
-dallasnews.com##.dmn-newsletter-overlay
-dallasnews.com###courier-body-wrapper:style(overflow: auto !important; position: initial !important;)
 ! ohsweetbasil.com
 ohsweetbasil.com##.tl-states-root
 ohsweetbasil.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -326,8 +330,8 @@ bucketlistly.blog##body,html:style(overflow: auto !important; position: initial 
 restofworld.org##.newsletter-signup
 restofworld.org##+js(rc, blocking-signup, html, stay)
 ! .jetpack-subscribe-modal
-historiccity.com,skepchick.org,liamodell.com,snackstack.net##.jetpack-subscribe-modal
-historiccity.com,skepchick.org,liamodell.com,snackstack.net##body,html:style(overflow: auto !important; position: initial !important;)
+crazystupidtech.com,historiccity.com,skepchick.org,liamodell.com,snackstack.net##.jetpack-subscribe-modal
+crazystupidtech.com,historiccity.com,skepchick.org,liamodell.com,snackstack.net##body,html:style(overflow: auto !important; position: initial !important;)
 ! tapinto.net
 tapinto.net##.exit_intent_pop_up-0-2-2
 tapinto.net##body,html:style(overflow: auto !important; position: initial !important;)
@@ -483,6 +487,9 @@ sportskeeda.com##body:style(overflow: auto !important; position: initial !import
 digital4.biz###hs-web-interactives-top-anchor
 digital4.biz###hs-web-interactives-bottom-anchor
 digital4.biz##body,html:style(overflow: auto !important; position: initial !important;)
+! jns.org
+jns.org###hs-web-interactives-top-anchor
+jns.org##body,html:style(overflow: auto !important; position: initial !important;)
 ! .reveal-overlay
 brandingmag.com,staygenerator.com##.reveal-overlay
 brandingmag.com,staygenerator.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -498,8 +505,7 @@ cjr.org###interContainer
 cjr.org###interVeil
 cjr.org##html:style(overflow: auto !important; position: initial !important;)
 ! coinbase.com
-coinbase.com##.ReactModal__Overlay
-coinbase.com##body:style(overflow: auto !important; position: initial !important;)
+coinbase.com##+js(set-cookie, bytes_signup_modal_viewed, 1)
 ! cnn.com
 cnn.com##.bx-impress
 cnn.com##html:style(overflow: auto !important; position: initial !important;)
@@ -507,12 +513,25 @@ cnn.com##html:style(overflow: auto !important; position: initial !important;)
 worldcrunch.com##div[id*="snewsletter-popup-MailChimp_"]
 worldcrunch.com##*:style(filter: none !important)
 worldcrunch.com##body,html:style(height: auto !important; overflow: auto !important)
+! thedriftmag.com forced sign up
+thedriftmag.com##.dpp-popup-wrapper
+thedriftmag.com##+js(cookie-remover.js, dpp_paywall)
 ! bonappetit.com
 bonappetit.com##.journey-unit__container
 bonappetit.com##+js(cookie-remover.js, pay_ent_pass)
 bonappetit.com##+js(cookie-remover.js, pay_ent_msmp)
 ! ghostinternational.com newsletter
 ghostinternational.com##+js(trusted-set-cookie, pum-9137, true)
+! webpronews.com
+webpronews.com###sub-pop
+webpronews.com##.modal-backdrop
+webpronews.com##html:style(overflow: auto !important)
+! klaviyo-prevent-body-scrolling
+psychiatrist.com,windupwatchshop.com,europesnus.com##.kl-private-reset-css-Xuajs1.needsclick
+psychiatrist.com,windupwatchshop.com,europesnus.com##body:style(overflow: auto !important)
+! addapinch.com
+addapinch.com##.cohoes-campaign
+addapinch.com##html:style(overflow: auto !important; position: initial !important;)
 ! outsports.com
 outsports.com##.arlington-campaign
 outsports.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -630,10 +649,10 @@ abeka.com##body,html:style(overflow: auto !important; position: initial !importa
 ! psychcentral.com
 psychcentral.com###modal-host
 psychcentral.com##body,html:style(overflow: auto !important; position: initial !important;)
-! heraldlive.co.za,dispatchlive.co.za
-heraldlive.co.za,dispatchlive.co.za###register-popup-backdrop
-heraldlive.co.za,dispatchlive.co.za##.register-modal-popup-wrapper
-heraldlive.co.za,dispatchlive.co.za##body,html:style(overflow: auto !important; position: initial !important;)
+! dispatchlive.co.za
+dispatchlive.co.za###register-popup-backdrop
+dispatchlive.co.za##.register-modal-popup-wrapper
+dispatchlive.co.za##body,html:style(overflow: auto !important; position: initial !important;)
 ! recyclingproductnews.com
 recyclingproductnews.com##[style*="opacity:"]
 recyclingproductnews.com##.card-newsletter-modal
@@ -661,3 +680,5 @@ aulart.com##body:style(overflow: auto !important; max-height: unset !important;)
 palestinechronicle.com###newsletter_subscribition_box
 palestinechronicle.com##.jquery-modal
 palestinechronicle.com##body,html:style(overflow: auto !important; position: initial !important;)
+! cnn.co.jp
+cnn.co.jp##+js(set-cookie, CNN_MAIL_MAGAZIN, 1)

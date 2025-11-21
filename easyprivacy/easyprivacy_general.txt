@@ -102,6 +102,7 @@
 /_i?referral_url=
 /_i?type=event&
 /_lib/ga.js
+/_mzblank.gif?
 /_owa.gif?
 /_servix/webid.aspx?$script
 /_sess/script.js
@@ -320,11 +321,12 @@
 /api/bfb_write_log
 /api/click/*?c=
 /api/cmp_tracker|
+/api/collect|$ping,xmlhttprequest
+/api/datafast/*
 /api/drpStats
 /api/event-rfkj/*
 /api/front/v2/observability$ping
 /api/internal/pixel?
-/api/ipv4check?
 /api/log-visit
 /api/metrics/collect
 /api/metrics/event
@@ -488,6 +490,7 @@
 /brightedge.js
 /brightspot/analytics/*
 /brightTag-min.js
+/bsf-bing-scripts/custom-pixels/*
 /bsp-analytics.min.
 /bstat.js
 /btrack.php?
@@ -611,6 +614,7 @@
 /cocoon-master/lib/analytics/access.
 /codesters-analytics.
 /CofinaHits.js
+/cogi-etracker.js
 /cohesion-latest.min.js
 /coinhive.min.js
 /coinimp-cache/*
@@ -735,6 +739,7 @@
 /cxense/cx.js
 /cxf-tracking@
 /d.gif?
+/data/stat.php?*&referer_host=
 /data_collect.js
 /datacollectionapi-client/index.js
 /dataunlocker-prod.js
@@ -744,6 +749,7 @@
 /dcs.gif?
 /dcs_tag.js
 /default/pAnalytics
+/detectIncognito.min.js
 /detm-container-ftr.js
 /detm-container-hdr.js
 /DG/DEFAULT/rest/*
@@ -762,6 +768,7 @@
 /dmp/pixel.js
 /dmu2panalytics/ajax_call.php?
 /dnx-event-collector/*
+/dnxcheck/fing.js
 /doctracking.js
 /dolWebAnalytics.js
 /dom-event-tracker.min.js
@@ -773,6 +780,7 @@
 /drwebstat.js
 /dspixel.js
 /dtm_cm.js
+/dtr/count.php
 /dtrack.js
 /duel-analytics.js
 /dwanalytics-
@@ -907,13 +915,17 @@
 /fbpixel.js
 /fe_logger?
 /feature/metrics$xmlhttprequest
+/federated-analytics.all.min.js
 /figanalytics-short-ttl.js
-/fingerprint.js
+/fingerprint-3.4.1.js
+/fingerprint.js$domain=~github.com
 /fingerprint.min.js
+/fingerprint/iife.min.js
 /fingerprint2.js
 /fingerprint2.min.js
 /fingerprint3.js
 /fingerprint3.min.js
+/Fingerprintjs2/fpt2.js
 /firebase-performance-compat.js
 /firebase-performance-standalone.js
 /firestats/js/fs.js.php
@@ -1248,6 +1260,7 @@
 /jquery.google-analytics.js
 /jquery.iframetracker-
 /jquery.trackstar.js
+/js-responsive/minimal-analytics-$script
 /js-sdk-event.min.js
 /js/_analytics.js
 /js/analitics.js
@@ -1255,9 +1268,11 @@
 /js/counter.js?
 /js/dart.js
 /js/ga_event_
+/js/generateStats-min.js
 /js/hbx.js
 /js/logger?
 /js/quantcast-
+/js/script.pageview-props.
 /js_ibeat_ext.cms
 /js_log_error.js
 /js_logger.php
@@ -1293,6 +1308,7 @@
 /KenticoActivityLogger/Logger.js
 /keypress.js$script
 /keywee.js
+/kimonix_analytics.js
 /kissmetrics.js
 /klaviyo_analytics.js
 /koko-analytics-collect.php
@@ -1305,6 +1321,7 @@
 /LandingPageHitLog.aspx?
 /LandingPageInteractionLog.aspx?
 /lasso-ga.js
+/ldc.js?pid=
 /lead-tracking.min.js
 /leadgen/ga.js
 /leadtag.js
@@ -1332,6 +1349,7 @@
 /loader/counter.js
 /localga.js
 /locotrack.js
+/log-adblock.php?
 /log-moltron-interaction?
 /log-nt/*
 /log-reporter.js
@@ -1438,6 +1456,7 @@
 /logview_new.js
 /logviewedpage?
 /ls.gif?
+/lst/universal-script?ph=
 /lunametrics-
 /m.gif?
 /madAnalytics.js
@@ -1590,9 +1609,10 @@
 /onl/track.php?
 /onlinecount.php
 /oo/*/l.js
-/oo/*/lsync.js
+/oo/*/lsync.
 /oo/cl*.js?rd=
 /oo/cl.js|$~third-party
+/op/analytics.js?domain=
 /opdc.js
 /ope-adalliance.js
 /open/log/*
@@ -1603,6 +1623,7 @@
 /opinionlab.js
 /optiextension.dll?$script
 /optimizelyjs/*
+/optimizerApi?event=
 /orichipixel.min.js
 /ot_e404.gif?
 /OtAutoBlock.js
@@ -1616,6 +1637,7 @@
 /owa.tracker-combined-min.js
 /oxAnalytics.js
 /p.gif?
+/p/tm.js?
 /page-addviews?
 /page-analytics.js
 /page-events/trackclick/*
@@ -1660,6 +1682,7 @@
 /partner-analytics/*
 /partner/transparent_pixel-$image
 /partnermetrics.js
+/pay/collect|$xmlhttprequest
 /pbasitetracker.min.js
 /pcount.asp
 /pdp.gif?
@@ -1684,7 +1707,9 @@
 /php-stats.phpjs.php?
 /php-stats.recjs.php?
 /phpmyvisites.js
+/piano-analytics-$script
 /piano-analytics.js
+/piano-analytics/pa.js
 /piNctTracking.js
 /ping.gif?
 /ping/?url=
@@ -1759,6 +1784,7 @@
 /player/stats.php?
 /plog?id
 /plow.lite.js
+/plugins/affiliate-wp/assets/js/tracking.min.js
 /plugins/catman/*
 /plugins/civic-science/js/pixel.js
 /plugins/duracelltomi-google-tag-manager/*
@@ -1857,6 +1883,7 @@
 /pxtrack.js
 /qapcore.js
 /qlitics.js
+/qlog/add?userId=
 /qtracker-v3-min.js
 /quant.js
 /quantcast.js
@@ -1894,12 +1921,12 @@
 /referrer_tracking.js
 /reftracker.js
 /renderTimingPixel.
+/replay?ddsource=
 /report_ga_events/*
 /report_visit.php
 /reportData/nm.gif?
 /reporting/metrics
 /ResonateAnalytics.min.js
-/resource?zones=
 /rest/analytics/*
 /resxclsa.js
 /resxclsx.js
@@ -1985,6 +2012,7 @@
 /scripts/click.js.php
 /scripts/clickjs.php
 /scripts/hbx.js
+/scripts/sdk/everflow.js
 /scripts/statistics/*
 /scripts/track_visit.php?
 /scripts/xiti/*
@@ -2020,6 +2048,7 @@
 /sentry/bundle.min.js
 /seo.taCo.min.js
 /seo/pageStat/*
+/seon/agent.js
 /seostats.php
 /seotracking-v3.js
 /server.php?request=track&output=
@@ -2084,7 +2113,7 @@
 /smetrics.*/b/ss/*
 /smetrics.*/id?
 /smg_tracking/js/onthe.io.js
-/Smile_ElasticsuiteTracker/*$script
+/Smile_ElasticsuiteTracker/js/tracking.min.js
 /smmch-mine.js
 /smmch-own.js
 /snowman.gif?p=
@@ -2178,7 +2207,7 @@
 /stats/collect?
 /stats/collector.js
 /stats/event.js?
-/stats/events$xmlhttprequest
+/stats/events$xmlhttprequest,domain=~wbsc.org
 /stats/footer.js
 /stats/ga.js
 /stats/header.js
@@ -2282,7 +2311,6 @@
 /tatari-shopify/tracker-snippet-latest.min.js
 /tc_analytics.js
 /tc_analytics.min.js
-/tc_imp.gif?
 /tccl.min.js
 /tck/gif/*
 /teal-comscore-
@@ -2323,6 +2351,7 @@
 /trace/record?
 /trace?sessionid=
 /traces.php?
+/tracifyv2.js
 /track-event.js
 /track-focus.min.js
 /track-imp?
@@ -2545,6 +2574,7 @@
 /utag.sync.js
 /utag_data.js
 /utiqloader.js
+/utm-tags.min.js
 /utm-tracking.js
 /utm.gif?
 /utm_cookie.js
@@ -2558,6 +2588,7 @@
 /v1/log/web-vitals$xmlhttprequest
 /v1/pixel.js
 /v1/pixel?
+/v1/rgstr^
 /v1/stats/track
 /v1/tracker.js
 /v1/viewport_events
@@ -2619,6 +2650,7 @@
 /visitorCookie.js
 /visitorcountry.svc/*
 /VisitorIdentification.js
+/visitors/collect_data|$xmlhttprequest
 /visitors/screencount?
 /visitortrack?
 /visitortracker.pl?
@@ -2649,6 +2681,7 @@
 /web-data-ingress?
 /web-pixel-shopify-app-pixel@
 /web-pixel-shopify-custom-pixel@
+/web-vitals-analytics.js
 /web/push?
 /web_analytics/*
 /web_answertip.js
@@ -2770,11 +2803,14 @@
 /zdcc.min.js
 /zhugeio.js
 /ztracker.js
+/~shared/do/api/plausible/?id=$xmlhttprequest
+/~shared/do/~/click/?$image
 ://a869.$~image
 ://analytics-beacon.
 ://analytics-cdn.
 ://analytics.*/collect
 ://analytics.*/event
+://analytics.*/hardal
 ://analytics.*/hits/
 ://analytics.*/impression
 ://analytics.*/page_entry
@@ -2790,23 +2826,27 @@
 ://datacollector.*/event
 ://dwh-prod.*/de.npg/
 ://elqtrk.
+://estats.*/code/e.js
 ://fallback.*/collector
-://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtrack.*/dye
 ://insights-collector.
 ://internal-matomo.
 ://l.*/counter.php?id=$script,~third-party
 ://l.*/script.php?i=$script,~third-party
 ://lightning.*/launch/
-://matomo.$domain=~matomo.org
+://matomo.$domain=~matomo.dhjensen.dk|~matomo.org
 ://metrics-collector.
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
 ://plausible.*/api/event|
 ://plausible.*/js/script.
 ://posthog.$script,domain=~posthog.com
+://rum.collector.
 ://segment-api.
 ://segment-cdn.
+://signal.*/hardal
+://signals.*/hardal
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
 ://t.targito.
@@ -2814,11 +2854,13 @@
 ://track.*/dye
 ://track.*/visitor/
 ://tracker.*/pageview
+://tracker.*/track/event
 ://tracking.*/beacon/
 ://tracking.*/event
 ?[AQB]&ndh=1&t=
 ?action=event&
 ?action=impression&
+?action=koko_analytics_collect
 ?action=log_promo_impression
 ?action=saveViewStat&
 ?action=statsjs&
@@ -2829,6 +2871,7 @@
 ?event=pageview&
 ?event=performance&
 ?event=performancelogger:
+?groupType=engagement&eventType=CLICK&
 ?local_ga_js=
 ?log=player-*&stats_tkn=
 ?log=player_*&stats_tkn=
@@ -2844,6 +2887,7 @@
 ?type=page&event=
 ?type=pageview&
 ?v=2&tid=G-$~third-party
+?wmcAction=wmcTrack&
 _beacon?
 _c.gif?c=
 _chartbeat.js

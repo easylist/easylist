@@ -1,0 +1,126 @@
+name: EasyList Monitor
+
+on:
+  schedule:
+    # Run every hour to check for stale files
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  check-stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install @actions/core
+
+      - name: Run EasyList monitor
+        id: monitor
+        run: |
+          cd scripts
+          node easylist-monitor.js
+        continue-on-error: false
+
+      - name: Debug staleness results
+        run: |
+          echo "=== Staleness Check Results ==="
+          echo "Files are stale: ${{ steps.monitor.outputs.files_stale }}"
+          echo "Stale file count: ${{ steps.monitor.outputs.stale_count }}"
+
+      - name: Create or update EasyList infrastructure issue
+        if: steps.monitor.outputs.files_stale == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const staleDetails = JSON.parse('${{ steps.monitor.outputs.stale_details }}');
+            const currentTime = new Date().toISOString();
+            
+            // Check for existing open infrastructure issues
+            console.log(`Searching for issues created by: ${context.actor}`);
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: 'easylist',
+              repo: 'easylist',
+              state: 'open',
+            });
+            
+            console.log(`Found ${issues.length} total infrastructure issues`);
+            console.log(`Issue creators: ${issues.map(i => i.user.login).join(', ')}`);
+            console.log(`Issue titles: ${issues.map(i => i.title).join(' | ')}`);
+    
+
+            const existingIssue = issues.find(issue => 
+             issue.title.includes('EasyList Files Not Updating') 
+            );
+
+            console.log(`Found existing issue: ${existingIssue ? existingIssue.number : 'None'}`);
+            
+            const issueTitle = 'EasyList Files Not Updating - Infrastructure Issue';
+            const issueBody = `## Issue Description
+            
+            Our automated monitoring system has detected that easylist.to files have not been updated for more than 24 hours.
+            
+            **Files Affected:**
+            ${staleDetails.map(file => `- ${file.filename} (last modified: ${file.lastModified})`).join('\n')}
+            
+            **Expected Behavior:**
+            EasyList files typically update multiple times per day or at least within 24 hours.
+            
+            **Current Status:**
+            - Detection time: ${currentTime}
+            - Files have been stale for: ${staleDetails[0]?.ageHours || 'unknown'} hours
+            
+            **Possible Causes:**
+            - Server infrastructure issues
+            - Update pipeline failures
+            - Publishing system problems
+            - DNS or CDN issues
+            
+            **Monitoring Repository:**
+            This issue was created by automated monitoring from: https://github.com/${context.repo.owner}/${context.repo.repo}
+            
+            **Safe to close Github ticket when resolved.** (Check list file dates on easylist.to website to confirm)
+            
+            Please investigate the update infrastructure and publishing pipeline.`;
+            
+            if (existingIssue) {
+              // Add comment to existing issue
+              await github.rest.issues.createComment({
+                owner: 'easylist',
+                repo: 'easylist',
+                issue_number: existingIssue.number,
+                body: `**Update ${currentTime}**\n\nEasyList files are still stale and have not been updated.\n\n**Current Status:**\n${staleDetails.map(file => `- ${file.filename}: ${file.lastModified} (${file.ageHours} hours old)`).join('\n')}\n\nInfrastructure issues appear to be ongoing. Please continue investigating.`
+              });
+              
+              console.log(`Added comment to existing issue #${existingIssue.number}`);
+            } else {
+              // Create new issue
+              const newIssue = await github.rest.issues.create({
+                owner: 'easylist',
+                repo: 'easylist',
+                title: issueTitle,
+                body: issueBody,
+                labels: ['infrastructure', 'bug']
+              });
+              
+              console.log(`Created new issue #${newIssue.data.number}`);
+            }
+
+      - name: Summary
+        run: |
+          echo "## EasyList Monitor Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Files stale:** ${{ steps.monitor.outputs.files_stale }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Stale count:** ${{ steps.monitor.outputs.stale_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY

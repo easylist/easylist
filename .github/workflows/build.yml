@@ -1,0 +1,111 @@
+name: Build and Deploy
+
+concurrency:
+  group: build-and-deploy
+  cancel-in-progress: false
+
+on:
+  push:
+    branches:
+      - master
+
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    if: github.repository == 'easylist/easylist'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Security Check
+      run: |
+        echo "🔒 Repository: ${{ github.repository }}"
+        echo "👤 Actor: ${{ github.actor }}"
+        if [ "${{ github.repository_owner }}" != "easylist" ]; then
+          echo "❌ Unauthorized repository owner: ${{ github.repository_owner }}"
+          exit 1
+        fi
+        
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 3
+    
+    - name: Set up Python (Attempt 1)
+      uses: actions/setup-python@v5
+      id: setup-python-attempt1
+      continue-on-error: true
+      with:
+        python-version: '3.11'
+    
+    - name: Set up Python (Attempt 2)
+      if: steps.setup-python-attempt1.outcome == 'failure'
+      uses: actions/setup-python@v5
+      id: setup-python-attempt2
+      continue-on-error: true
+      with:
+        python-version: '3.11'
+    
+    - name: Set up Python (Attempt 3)
+      if: steps.setup-python-attempt2.outcome == 'failure'
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install git+https://github.com/adblockplus/python-abp.git@4b0aec2
+    
+    - name: Configure Git
+      run: |
+        git config --global user.email "github-actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git config --global push.default "matching"
+    
+    - name: Clone output repository
+      run: |
+        git clone --depth=3 -b gh-pages "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/easylist/easylist" output
+    
+    - name: Generate filter lists
+      run: |
+        flrender -i easylist=. easylist.template output/easylist.txt
+        flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
+        flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
+        flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt 
+        flrender -i easylist=. fanboy-newsletter.template output/fanboy-newsletter.txt
+        flrender -i easylist=. fanboy-sounds.template output/fanboy-sounds.txt
+
+    - name: Add commit hash to filter lists
+      run: |
+        for file in output/*.txt; do
+          # Insert commit hash after the "Expires" line
+          sed -i "/^! Expires:/a ! Commit: ${{ github.sha }}" "$file"
+        done
+    
+    - name: Commit and push changes
+      run: |
+        cd output
+        echo "Current directory: $(pwd)"
+        echo "Git status before add:"
+        git status
+        git add --all .
+        echo "Git status after add:"
+        git status
+        git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" || exit 0
+        echo "Attempting to push to remote..."
+        git remote -v
+        
+        # Try to push, retry once if it fails
+        if ! git push origin gh-pages; then
+          echo "Push failed, attempting retry after rebase..."
+          git pull --rebase origin gh-pages
+          if ! git push origin gh-pages; then
+            echo "Push failed after retry"
+            exit 1
+          fi
+        fi
+        echo "Push successful"

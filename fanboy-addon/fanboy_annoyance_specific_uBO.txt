@@ -38,6 +38,9 @@ nerdwallet.com##._1y2JXo
 nerdwallet.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! r34.app
 r34.app##+js(set-local-storage-item, statistics-appOpenedCount, 1)
+! marketplace.org
+marketplace.org##.CampaignType--popup
+marketplace.org##html:style(overflow: auto !important; position: initial !important;)
 ! vox.com
 vox.com##+js(set-local-storage-item, vox_article_readcount, $remove$)
 vox.com##+js(set-local-storage-item, vox_article_readcount_count, $remove$)
@@ -185,10 +188,17 @@ mathway.com##.ch-bubble-border.clickable .ch-bubble-action:style(pointer-events:
 ! perplexity.ai (login popup) 
 perplexity.ai##+js(set-session-storage-item, signUpBannerDismissed, true)
 perplexity.ai##+js(set-session-storage-item, shouldShowAuthBannerAfterQuery, false)
+! uploadvr.com (login popup)
+uploadvr.com##+js(set-local-storage-item, dismissedUpgradePrompt, true)
 ! seekingalpha.com (login popup)
 seekingalpha.com##+js(set-local-storage-item, __tp-gaAccount, disabled)
 ! https://github.com/uBlockOrigin/uAssets/issues/23722
 nisanyansozluk.com##+js(set-local-storage-item, newYeradlariWebsiteHidden, true)
+! https://github.com/uBlockOrigin/uAssets/issues/30117
+infowars.com##+js(set-session-storage-item, stream, true)
+! dutchnews.nl nag
+dutchnews.nl##+js(set-cookie, dn_alert_homescreen_closed, 1)
+dutchnews.nl##+js(set-cookie, dn_donation_count, 1)
 ! sportsbusinessjournal.com
 sportsbusinessjournal.com##+js(cookie-remover, sbj_archiveStatus)
 sportsbusinessjournal.com##.paywall-footer-container
@@ -257,7 +267,7 @@ accuradio.com##.ReactModal__Overlay--after-open.ReactModal__Overlay
 ! Mouse out nags
 10tv.com,kens5.com,newscentermaine.com,5newsonline.com,fox61.com,newscentermaine.com,wtol.com,wiz.io,winnipegfreepress.com,khou.com,abc10.com,12news.com,ksdk.com,whas11.com,wfmynews2.com,wbir.com,wzzm13.com,wltx.com,wqad.com,wnep.com,wgrz.com,cbs8.com,firstcoastnews.com,kare11.com,wtsp.com,ajc.com,wfaa.com,9news.com,fox2now.com,wcnc.com,13newsnow.com,wsvn.com,abc15.com,wwltv.com,wkyc.com,wthr.com,11alive.com,wcnc.com,wusa9.com,wfaa.com,9news.com,fox2now.com,abc15.com,wwltv.com,wkyc.com,king5.com,11alive.com##+js(aeld, /^(mouseout|mouseleave)$/)
 ! mouseout causes issues with hover-video
-x.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,temu.com##+js(aeld, mouseleave)
+x.com,instagram.com,alibaba.com,dhgate.com,aliexpress.com,aliexpress.us,temu.com##+js(aeld, mouseleave)
 ! rumble.com nag
 rumble.com##+js(set-cookie, premium_popup, 1)
 ! novafork
@@ -309,8 +319,8 @@ watchsomuchproxy.com###btnStopAds
 watchsomuchproxy.com##body:style(overflow: scroll !important)
 ! Floating video
 9news.com,11alive.com,thehill.com,abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com,telemundopr.com,nbcchicago.com,nbcdfw.com,nbcboston.com,nbcconnecticut.com,nbcphiladelphia.com,nbcsandiego.com,nbclosangeles.com,nbcnewyork.com,nbcbayarea.com,nbc4i.com,ktla.com,ktsm.com,kark.com,myarklamiss.com,nwahomepage.com,mytwintiers.com,news10.com,wavy.com,finance.yahoo.com##+js(aeld, scroll)
-msnbc.com,today.com,nbcnews.com##.styles_stuck__gtILi
-msnbc.com,today.com,nbcnews.com##+js(rc, styles_stuck__gtILi, , stay)
+today.com,nbcnews.com##.styles_stuck__gtILi
+today.com,nbcnews.com##+js(rc, styles_stuck__gtILi, , stay)
 independent.co.uk##+js(rc, sticky, , stay)
 independent.co.uk,allrecipes.com##+js(rc, jw-flag-floating, , stay)
 kbtx.com,kptv.com##.powa-sticky
@@ -340,3 +350,13 @@ rocket-boys.co.jp##body[style^="position:"]:style(position: static !important; t
 truthsocial.com##body:style(overflow:auto !important)
 truthsocial.com##[id="modal-overlay"]
 truthsocial.com##[data-testid="modal"]
+! https://github.com/uBlockOrigin/uAssets/issues/23150
+flightradar24.com##[data-testid="sidebar__container"]
+flightradar24.com##.right-sidebar:style(right: 0 !important)
+! pbs.org
+pbs.org##.popup-type__large_funding
+pbs.org##body,html:style(overflow: auto !important; position: initial !important;)
+! Misskey
+buttersc.one,gp.tsukimi.club,invillage-outvillage.com,misskey.gamelore.fun,misskey.neos.love,misskey.systems,mivatter.com,mk.yopo.work,msk.kitazawa.me,nijimiss.moe,novelskey.tarbin.net,oekakiskey.com,side.misskey.productions,sushi.ski,voskey.icalo.net##+js(json-prune, ads.[].imageUrl)
+! brank.jp
+branc.jp##+js(set-cookie, inc_optin_never_see_again-popup-1, 1)
