@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202511230438
+! Version: 202511230445
 ! Title: Fanboy's Social Blocking List
-! Last modified: 23 Nov 2025 04:38 UTC
+! Last modified: 23 Nov 2025 04:45 UTC
 ! Expires: 4 days (update frequency)
-! Commit: fd9044a6ea4b891a1180ae07138cc71139eb1a83
+! Commit: e7e38093b835c88013628e06c91b77f63a352288
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -12815,12 +12815,15 @@ play.radionorba.it##share-view
 ! 
 ! ---------- Japanese Specific Media Elements ----------
 ! 
+qiita.com##.ac-MdContent + div[class^="style-"]:has(> button[class^="style-"][aria-label][title])
 blog.esuteru.com##.article-button-simple
 bizgate.nikkei.com##.c-single-sns
 seikatsusha-ddm.com##.p-under-sns
 univ-journal.jp##.snsSpace
 anglers.jp##.socials
 news.yahoo.co.jp##[class^="ArticleShare"]
+qiita.com##[class^="style-"] > [class^="style-"] > div[class^="style-"]:has(> button[aria-label][title][aria-describedby] + p[id][role="tooltip"])
+qiita.com##[href^="https://b.hatena.ne.jp/entry/"]
 ||imyfone.com/assets/js/media_share/
 ||taishurx.jp/js/web/sns_header.js
 ! 
