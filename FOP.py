@@ -47,7 +47,9 @@ ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 # Remove any bad lines less the 3 chars, starting with.. |*~@$%
-BADLINE = re.compile(r"^([|*~@$%].{1,3}$)")
+BADLINE = re.compile(r"^([|*~@$%].{1,4}$)")
+# Detect overly broad TLD-only patterns (e.g., ||.org^, ||.org, .org^, .org)
+TLDONLY_PATTERN = re.compile(r'^(\|\||\|)?\.([a-z]{2,})\^?$')
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -294,6 +296,10 @@ def fopsort (filename):
                                 if not is_ip and not has_wildcard and '.' not in domain and not domain.startswith('~'):
                                     print("Skipped network rule without dot in domain: {line} (domain: {domain})".format(line=line, domain=domain))
                                     continue
+                       # Remove TLD-only patterns that are too broad (e.g., ||.org^, .org^)
+                        if re.match(TLDONLY_PATTERN, line):
+                            print("Removed overly broad TLD-only rule: {line}".format(line=line))
+                            continue
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
                             lineschecked += 1
