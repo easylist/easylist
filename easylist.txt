@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202512032355
+! Version: 202512032357
 ! Title: EasyList
-! Last modified: 03 Dec 2025 23:55 UTC
+! Last modified: 03 Dec 2025 23:57 UTC
 ! Expires: 4 days (update frequency)
-! Commit: b4cdc86f95bd4288c7952de430c30ab7fbf35eae
+! Commit: 029fd7159b1c450139d690123216a7ef45b9aa92
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -74235,6 +74235,7 @@ chewy.com##.kib-carousel-item:has(.kib-product-sponsor)
 bjs.com##.lazyload-wrapper:has(> #promoteIqContent)
 stocktwits.com##.leading-\[16px\]:has-text(Advertisement)
 motortrend.com##.lg\:min-h-\[90px\]
+trip.com##.list-item:has(span.ad-info)
 pixiv.net##.list-none:has(> div > [id^="adsdk"])
 pcgamer.com##.listingResult:has(> .sponsored-post)
 euronews.com##.m-object:has(.m-object__spons-quote)
@@ -74320,6 +74321,7 @@ neonheightsservers.com##.well:has(ins.adsbygoogle)
 evreporter.com##.widget_media_image:not(:has(a[href^="https://evreporter.com/"]))
 cnx-software.com##.widget_text.widget:has([href*="?utm"])
 navyamedia.com##.widget_text:has(> .textwidget .adsbygoogle)
+trip.com##.with-decorator-wrap-v8:has(span.ad_tag)
 navyamedia.com##.wpb_text_column:has(> .wpb_wrapper > p >ins.adsbygoogle)
 bestbuy.ca##.x-productListItem:has([data-automation="sponsoredProductLabel"])
 priceline.com##[class*="ListingCardWrapper"]:has([class*="PromoText"])
