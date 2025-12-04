@@ -21,7 +21,7 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 # Compile regular expressions to match important filter parts
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\|\@\"\!]*?)#\@?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[\@\?]?#)([^{}]+)$")
+ELEMENTPATTERN = re.compile(r"^([^\/\|\@\"\!]*?)(#[\@\?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions for element tag and selector processing
