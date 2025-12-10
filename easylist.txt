@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202512100113
+! Version: 202512100138
 ! Title: EasyList
-! Last modified: 10 Dec 2025 01:13 UTC
+! Last modified: 10 Dec 2025 01:38 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d9408648329b9fac48b3f3a76f85054dc8609a4c
+! Commit: 59fb12eef7764d3c30062df240d85648e40fb1e2
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -72961,6 +72961,7 @@ checkfelix.com,kayak.*,momondo.*,swoodoo.*##div[data-resultid$="-sponsored"]
 costco.*##div[data-testid="AdSet-all-sponsored_products"]
 walmart.*##div[data-testid="sp-item"]
 manomano.*##div[data-testid="sprbrd-banner"]
+walmart.*##div[data-testid="tile-take-over"]:has(#sponsored-label)
 walmart.*##div[data-testid^="sba-container"]
 lidl.*##div[data-type="sponsored"]
 zoohit.*,zooplus.*##div[data-zta="product-card"]:has(.z-sponsored-tag)
@@ -73214,6 +73215,7 @@ etsy.com##[data-page-type="market"]:has([id^="ad-listing-title-"])
 etsy.com##[data-page-type="similar-listing-page"]:has([id^="ad-listing-title-"])
 noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
 farfetch.com##[data-testid="featured"]:has([data-ffref*="sponsoredBy"])
+samsclub.com##[data-testid="item-stack"] > .mb0:has(a[href^="https://www.samsclub.com/midas/sams-crs/track?"])
 petco.com##[data-testid="product-buy-box"]:has([class*="SponsoredText"])
 linuxcommandlibrary.com##[href^="/"]:has([src*=".webp"])
 kayak.com##[role="button"]:has([class*="ad-marking"])
