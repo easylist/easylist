@@ -1,0 +1,32 @@
+# FOP Configuration File
+# Place in current directory or ~/.fopconfig
+
+# Skip commit prompt
+no-commit = false
+
+# Skip uBO to ABP option conversion
+no-ubo-convert = false
+
+# Skip commit message format validation (M:/A:/P:)
+no-msg-check = false
+
+# Process all files (ignore IGNORE_FILES/IGNORE_DIRS)
+disable-ignored = false
+
+# Skip sorting (only tidy and combine rules)
+no-sort = false
+
+# Alternative sorting (by selector for all rule types)
+alt-sort = false
+
+# Sort hosts file entries (0.0.0.0/127.0.0.1 domain)
+localhost = false
+
+# Disable colored output
+no-color = false
+
+# Additional directories to ignore (comma-separated, partial names supported)
+ignoredirs = scripts,docs,disputes
+
+# Additional files to ignore (comma-separated, partial names supported)
+ignorefiles = template_header.txt,easytest.txt,easylist_specific_hide_abp.txt,easyprivacy_specific_uBO.txt,easylist_cookie_specific_uBO.txt,fanboy_annoyance_specific_uBO.txt,fanboy_newsletter_specific_uBO.txt,fanboy_notifications_specific_uBO.txt,fanboy_social_specific_uBO.txt,fanboy_newsletter_shopping_specific_uBO.txt,fanboy_agegate_specific_uBO.txt
