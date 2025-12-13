@@ -75,6 +75,8 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217897
 @@||google-analytics.com/analytics.js$script,redirect-rule,domain=mond.how
+! https://github.com/AdguardTeam/AdguardFilters/issues/210109
+||curos.ca/res/*/resources/scripts/lib/fingerprint.js$script,redirect=fingerprint2.js,important
 ! Youtube
 !||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$badfilter
 ||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$badfilter
