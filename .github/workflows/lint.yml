@@ -14,22 +14,24 @@ on:
 
 jobs:
   fop:
-    name: Run FOP.py to check ordering
+    name: Run FOP to check ordering
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
+          node-version: 'lts/*'
       - name: Check out to repository
         uses: actions/checkout@v4
-      - name: Run FOP.py
-        run: echo "" | python3 FOP.py || true
-        shell: bash
-      - name: Run git diff to detect the ordering issue
+      - name: Install FOP
+        run: npm install -g fop-cli
+      - name: Run FOP
+        run: fop --no-commit .
+      - name: Check for changes
         run: |
           ! git diff --stat | grep -E "[A-Za-z0-9-]+\.txt"
         shell: bash
+
   aglint:
     name: Run AGLint
     runs-on: ubuntu-latest
