@@ -17,16 +17,12 @@ jobs:
     name: Run FOP to check ordering
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
       - name: Check out to repository
         uses: actions/checkout@v4
-      - name: Install FOP
-        run: npm install -g fop-cli
       - name: Run FOP
-        run: fop --no-commit .
+        run: |
+          chmod +x fop-linux
+          ./fop-linux --no-commit .
       - name: Check for changes
         run: |
           ! git diff --stat | grep -E "[A-Za-z0-9-]+\.txt"
