@@ -58,7 +58,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install git+https://github.com/adblockplus/python-abp.git@4b0aec2
+        pip install --retries 3 --timeout 25 git+https://github.com/adblockplus/python-abp.git@4b0aec2
     
     - name: Configure Git
       run: |
