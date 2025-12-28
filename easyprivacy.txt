@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202512281108
+! Version: 202512281112
 ! Title: EasyPrivacy
-! Last modified: 28 Dec 2025 11:08 UTC
+! Last modified: 28 Dec 2025 11:12 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e7be713790e025de8b293e7978ebc672830ddcd2
+! Commit: 11bbf8e298871961dd672d6d0922cf411fe242e9
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -13619,7 +13619,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||logs.chatboost-cv.algoage.co.jp^
 ||macromill.com/imp/
 ||mail-count.matsui.co.jp^
-||metrics.streaks.jp^
 ||mofa.go.jp^*/count.cgi?
 ||monipla.com/launch.js
 ||moshimo.com^*/impression?
@@ -16565,6 +16564,8 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||google-analytics.com/analytics.js$redirect-rule,script,domain=mond.how
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210109
 ||curos.ca/res/*/resources/scripts/lib/fingerprint.js$important,redirect=fingerprint2.js,script
+! https://github.com/uBlockOrigin/uAssets/issues/31330
+||metrics.streaks.jp^$xhr,redirect=noop.txt
 ! Youtube
 ! ||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$badfilter
 ||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$badfilter
