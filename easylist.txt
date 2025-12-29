@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202512291155
+! Version: 202512291158
 ! Title: EasyList
-! Last modified: 29 Dec 2025 11:55 UTC
+! Last modified: 29 Dec 2025 11:58 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 45e4b8c34eaf7eaed8a67d3e60a1bb647b4d8155
+! Commit: 27d635107ae7aeb4baab8baa3d322a5ed2ead4c3
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -78092,6 +78092,7 @@ diskingdom.com##div[id="diski-"]
 en.namu.wiki,ja.namu.wiki##div[id][class]:empty
 thewire.in##div[id^="ATD_"]
 geeksforgeeks.org##div[id^="GFG_AD_"]
+rule34.us##div[id^="__clb-spot_"]
 kisshentai.net,onworks.net##div[id^="ad"]
 newsner.com##div[id^="ad-"]
 songlyrics.com##div[id^="ad-absolute-160"]
@@ -78480,6 +78481,7 @@ gsmarena.com###subHeader3:has([href="deals.php3"])
 gsmarena.com###subHeader:has(> #topAdv)
 gamereactor.*###videoContainer:has(> [id^="videoContent-videoad-"])
 ping0.cc###websites-wrap:has([rel$="sponsored"])
+rule34.us##*:has(> [target="_blank"][rel="nofollow"])
 kroger.com##.AutoGrid-cell:has(.ProductCard-tags > div > span[data-qa="featured-product-tag"])
 kayak.com,momondo.*##.CGMG:has(.CGMG-logo-ad-wrapper)
 nationalgeographic.com##.FrameBackgroundFull--grey:has(.ad-wrapper)
@@ -78727,6 +78729,7 @@ kohls.com##astro-island[component-export="KmnMarqueeBannerWrapper"]:has(img[alt=
 vidplay.lol##body > div > div[class][style]:has(> div > div > a[target="_blank"])
 creepypasta.com##center:has(+ #ad-container-1)
 hashrate.no##center:has(.sevioads)
+rule34.us##center:has(> div[style*="overflow"] > [data-cl-spot])
 manomano.co.uk,manomano.de,manomano.es,manomano.fr,manomano.it##div > div:has([data-testid="banner-spr-label"])
 inverse.com##div > p + div:has(amp-ad)
 outlook.live.com##div.customScrollBar > div > div[id][class]:has(img[src$="/images/ads-olk-icon.png"])
