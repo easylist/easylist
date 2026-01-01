@@ -391,6 +391,9 @@ def elementtidy (domains, separator, selector):
     # Clean up tree selectors
     for tree in each(TREESELECTOR, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
+        # Skip CSS attribute selector operator ~= (e.g., [rel~="sponsored"])
+        if tree.group(2) == "~" and tree.group(3) == "=":
+            continue
         if tree.group(1) == "(":
             replaceby = "{g2} ".format(g2 = tree.group(2))
         else:
