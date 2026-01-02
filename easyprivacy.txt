@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202601020008
+! Version: 202601020010
 ! Title: EasyPrivacy
-! Last modified: 02 Jan 2026 00:08 UTC
+! Last modified: 02 Jan 2026 00:10 UTC
 ! Expires: 4 days (update frequency)
-! Commit: c65db7bcc32594cf823ca7ac5096a92f50492499
+! Commit: eef8d268978ba9815cda48c52ed4a5bf131dfe35
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -16588,11 +16588,6 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||curos.ca/res/*/resources/scripts/lib/fingerprint.js$important,redirect=fingerprint2.js,script
 ! https://github.com/uBlockOrigin/uAssets/issues/31330
 ||metrics.streaks.jp^$redirect=noop.txt,xmlhttprequest
-! Youtube
-||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$badfilter
-||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content$badfilter
-||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$method=post,xmlhttprequest
-||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content$method=get,xmlhttprequest
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
