@@ -4,13 +4,12 @@ After confirming that the rule you want to add works correctly and matches the c
 [README](README.md), then make sure to do the following:<br>
 
 **Match the rule to the correct folder/file:**<br>
-Find the appropriate folder `easylist`, `easylist_cookie`, `easylist_adult`, or `easyprivacy`, and choose the correct file fitting the rule.<br>
+Find the appropriate folder `easylist`, `easylist_cookie`, `easylist_adult`, `easyprivacy`, or `fanboy-addon` and choose the correct file fitting the rule.<br>
 For example, an ad that is hidden by the rule `example.com##.ad-12345` would be placed in: `easylist/easylist_specific_hide.txt`<br>
 
 **Order the rule in the file:**<br>
 Rules may be categorized using comments: `! <comment>`. If so, place the rule under the correct category. 
-Then, sort the rules by ASCII using the `fop` script in the root directory.
-
+Then, insert the rule in the correct position following ASCII ascending sorting. You can use the `fop` script in the root directory to sort by ASCII.
 
 ## Commit Policy
 
