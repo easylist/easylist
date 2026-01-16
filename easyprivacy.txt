@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202601161427
+! Version: 202601161430
 ! Title: EasyPrivacy
-! Last modified: 16 Jan 2026 14:27 UTC
+! Last modified: 16 Jan 2026 14:30 UTC
 ! Expires: 4 days (update frequency)
-! Commit: c0235f5fd2cfebcdb08f6efe300d925f338122b1
+! Commit: 103b8102dd710a6a5bd5c66bb80ea5002be7dc5b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -16395,6 +16395,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vidoza.net
+! Other resource abuse
+||gyrovague.com^$domain=archive.is|archive.ph|archive.today
 ! *** easylist:easyprivacy/easyprivacy_specific_perimeterx.txt ***
 ! easyprivacy_specific_perimeterx.txt
 ||alaskaair.com/AlXMT4Ma/init.js
