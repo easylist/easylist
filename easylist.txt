@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202601181242
+! Version: 202601181255
 ! Title: EasyList
-! Last modified: 18 Jan 2026 12:42 UTC
+! Last modified: 18 Jan 2026 12:55 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a0dcc135370f5c4346cbabab75213f22310bd64e
+! Commit: 40159810cb479bc5a8a05e11cd13f777deb2c7e0
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -70713,6 +70713,8 @@ browsershots.org#@#.advert_area
 @@||jetzt.de^$generichide
 ! dood.pm
 /^https?:\/\/www\.[0-9a-z]{8,}\.com\/[0-9a-z]{1,4}\.js$/$script,third-party,domain=dood.la|dood.pm|dood.sh|dood.so|dood.to|dood.watch|dood.ws
+! gsmarena.com
+/\.gsmarena\.com\/[0-9]+\.[a-z]+\?s?Search=/$xmlhttprequest,domain=gsmarena.com
 ! Internal use of EL
 ||raw.githubusercontent.com/easylist/easylist/master/docs/1x1.gif
 ||raw.githubusercontent.com/easylist/easylist/master/docs/2x2.png$third-party
@@ -77755,7 +77757,6 @@ cars.com##[id$="-sponsored"]
 lolalytics.com##[id$=":inline"]
 bridgebase.com##[id*="_ad"]
 homedepot.com##[id*="sponsored"]
-gsmarena.com##[id][style="display: block;"]
 80.lv##[id^="Image_bner_"]
 ldoceonline.com##[id^="ad_contentslot"]
 bestbuy.ca,bestbuy.com##[id^="atwb-ninja-carousel"]
