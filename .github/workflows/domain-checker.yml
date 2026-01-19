@@ -1,0 +1,19 @@
+name: Check Banned Domains
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "**/*.txt"
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      
+      - name: Check for banned domains
+        run: |
+          chmod +x fop-linux
+          ./fop-linux --no-commit --check-banned-list=cleaned-domains.txt --ci .
