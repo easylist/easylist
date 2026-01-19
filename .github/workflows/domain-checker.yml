@@ -16,4 +16,4 @@ jobs:
       - name: Check for banned domains
         run: |
           chmod +x fop-linux
-          ./fop-linux --no-commit --check-banned-list=cleaned-domains.txt --ci .
+          ./fop-linux --no-commit --check-banned-list=cleaned-domains.txt .
