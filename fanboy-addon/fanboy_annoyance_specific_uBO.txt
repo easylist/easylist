@@ -358,3 +358,6 @@ branc.jp##+js(set-cookie, inc_optin_never_see_again-popup-1, 1)
 ! Amazon Prime
 amazon.*##.fable-portal-container:has(a#cross-benefit-modal-call_to_action-btn-0[href^="https://www.amazon."][href*="/gp/video/signup?benefitId=primeaddon"])
 amazon.*##html.fable-no-scroll:style(overflow: auto !important; touch-action: auto !important;)
+! ACM Digital Library (premium popup modal)
+dl.acm.org###modalOverlay
+dl.acm.org##body:remove-class(modal-open)
