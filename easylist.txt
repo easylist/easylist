@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202601280421
+! Version: 202601280424
 ! Title: EasyList
-! Last modified: 28 Jan 2026 04:21 UTC
+! Last modified: 28 Jan 2026 04:24 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9dcefb77b4d49fb12977427a186dd9acc92e32bc
+! Commit: 80cd8d345ccbe9b396d7bde550afd5dd4f927743
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -552,6 +552,7 @@
 /pixel/purst?$third-party
 /pixel/sbe?$third-party
 /player/ads/*$~xmlhttprequest
+/player/video.js/videojs-vast-vpaid/*
 /plg_adbutlerads/*$script,stylesheet
 /plugin/ad/*$script
 /plugins/ad-invalid-click-protector/*$script
@@ -73468,6 +73469,7 @@ $popup,domain=07c225f3.online|content-loader.com|css-load.com|html-load.cc|html-
 ||cams.imgtaxi.com^
 ||camvideos.tv/tpd.png
 ||camvideos.tv^$subdocument
+||cdn.sinparty.com/site/banner.html
 ||cdn3x.com/xxxdan/js/xxxdan.vast.
 ||celeb.gate.cc/assets/bilder/bann
 ||cfgr3.com/videos/*.mp4$rewrite=abp-resource:blank-mp4,domain=hitbdsm.com
