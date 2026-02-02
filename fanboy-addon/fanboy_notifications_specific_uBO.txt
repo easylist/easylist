@@ -56,7 +56,7 @@ reddit.com##shreddit-experience-tree
 reddit.com##body:style(overflow: auto !important;)
 !#endif
 ! tiktok
-tiktok.com##+js(set-session-storage-item,webapp_first_open_cta, 1)
+tiktok.com##+js(set-session-storage-item, webapp_first_open_cta, 1)
 tiktok.com##.e1pecv674.css-99ed1t-DivFooterGuide
 tiktok.com##.e1x4pa920.css-18fyv6p-DivFloatButtonWrapper
 ! twitch
@@ -208,7 +208,7 @@ inews.hket.com###app-floating-button
 inews.hket.com##+js(rc, no-scroll, html, stay)
 inews.hket.com##.app-redirect-panel
 ! jp-m.banggood.com (remove top empty space on mobile)
-jp-m.banggood.com##+js(rc,  show-app-bar, , stay)
+jp-m.banggood.com##+js(rc, show-app-bar, , stay)
 ! realestate.co.nz
 realestate.co.nz##.z-overlay
 realestate.co.nz##body:style(height: auto !important; overflow: auto !important)
@@ -307,3 +307,6 @@ cecile.co.jp,nola-novel.com##.smartbanner-show:style(margin-top: 0 !important;)
 s.tabelog.com###js-webtoapp-floating-banner
 s.tabelog.com###js-webtoapp-floating-banner-overlay
 s.tabelog.com##body,html:style(overflow-y: auto !important;)
+! trial-net.co.jp (mobile app)
+trial-net.co.jp##.app-remind
+trial-net.co.jp##.header-app-remind:remove-class(header-app-remind)
