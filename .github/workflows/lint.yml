@@ -33,7 +33,7 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git fetch origin master --depth=2
-            FILES=$(git diff --name-only origin/master...HEAD -- '*.txt' | tr '\n' ' ')
+            FILES=$(git diff --name-only origin/master HEAD -- '*.txt' | tr '\n' ' ')
           else
             FILES=$(git diff --name-only HEAD~1 -- '*.txt' | tr '\n' ' ')
           fi
