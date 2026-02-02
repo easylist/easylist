@@ -12,21 +12,67 @@ on:
     paths:
       - "**/*.txt"
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   fop:
-    name: Run FOP to check ordering
+    name: Run FOP to check and fix ordering
     runs-on: ubuntu-latest
     steps:
-      - name: Check out to repository
+      - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin master --depth=1
+            FILES=$(git diff --name-only origin/master...HEAD -- '*.txt' | tr '\n' ' ')
+          else
+            FILES=$(git diff --name-only HEAD~1 -- '*.txt' | tr '\n' ' ')
+          fi
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+          echo "Changed files: $FILES"
+
       - name: Run FOP
+        if: steps.changed.outputs.files != ''
         run: |
           chmod +x fop-linux
-          ./fop-linux --no-commit .
-      - name: Check for changes
+          for file in ${{ steps.changed.outputs.files }}; do
+            if [ -f "$file" ]; then
+              echo "Sorting: $file"
+              ./fop-linux --no-commit --check-file="$file"
+            fi
+          done
+
+      - name: Commit fixes if PR
+        if: github.event_name == 'pull_request'
         run: |
-          ! git diff --stat | grep -E "[A-Za-z0-9-]+\.txt"
-        shell: bash
+          if git diff --quiet; then
+            echo "No changes needed"
+          else
+            echo "Committing sorted files..."
+            git config --global user.email "github-actions@github.com"
+            git config --global user.name "GitHub Actions"
+            git add -A
+            git commit -m "M: Auto-sort filter lists"
+            git push
+          fi
+
+      - name: Fail on push if unsorted
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --quiet; then
+            echo "Files are not sorted!"
+            git diff --stat
+            exit 1
+          fi
 
   aglint:
     name: Run AGLint
