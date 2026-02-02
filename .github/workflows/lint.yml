@@ -24,9 +24,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref || github.ref }}
           fetch-depth: 2
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get changed files
         id: changed
@@ -62,7 +62,9 @@ jobs:
             git config --global user.name "GitHub Actions"
             git add -A
             git commit -m "M: Auto-sort filter lists"
-            git push
+            # Pull latest changes and rebase before pushing
+            git pull --rebase origin ${{ github.head_ref }} || true
+            git push || git push --force-with-lease
           fi
 
       - name: Fail on push if unsorted
