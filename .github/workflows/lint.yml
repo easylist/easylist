@@ -24,9 +24,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref || github.ref }}
           fetch-depth: 2
-          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch PR branch
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin pull/${{ github.event.pull_request.number }}/head:pr-branch
+          git checkout pr-branch
 
       - name: Get changed files
         id: changed
