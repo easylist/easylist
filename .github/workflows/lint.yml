@@ -66,9 +66,11 @@ jobs:
             git config --global user.name "GitHub Actions"
             git add -A
             git commit -m "M: Auto-sort filter lists"
-            # Pull latest changes and rebase before pushing
-            git pull --rebase origin ${{ github.head_ref }} || true
-            git push || git push --force-with-lease
+            # Push to the actual PR branch
+            git push origin pr-branch:${{ github.head_ref }} || {
+              echo "::error::Cannot push to fork PR. Please run FOP locally and commit."
+              exit 1
+            }
           fi
 
       - name: Fail on push if unsorted
