@@ -21,10 +21,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: |
-          npm install @actions/core
-
       - name: Run EasyList monitor
         id: monitor
         run: |

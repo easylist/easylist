@@ -9,8 +9,11 @@
 ###kapa-widget-container
 ! Specific Cosmetics
 www.google.com###Odp5De:has-text(AI Overview)
+agoda.com###QuickAnswersContainer
 develop.sentry.dev###ai-list-entry
+forums.redflagdeals.com###ai_summary
 reddit.com###answers-suggested-queries-m3
+collinsdictionary.com###assistant-link
 bing.com###b-scopeListItem-conv > [href^="https://www.bing.com/ck/a"]
 docs.kits.ai###chat-assistant-textarea
 bing.com###chat_upsell_bubble_icon
@@ -25,13 +28,16 @@ consumerreports.org###gnav__mt-alert-wrapper
 mail.google.com###google-hats-survey
 www.youtube.com###header > .ytd-expandable-metadata-renderer:has-text("Summary")
 langfuse.com###inkeep-shadowradix-\:r2\:
+studio.youtube.com###inspiration-tab
 airlinegeeks.com,avweb.com,flyingmag.com,planeandpilotmag.com###key-take-aways
 mojeek.com###llm-link:has-text(Summarise these results)
 search.brave.com###llm-snippet
+homedepot.com###magic-apron-loader
 www.google.com###main > [data-ved]:has-text(AI Overview)
 amazon.com###nile-inline_feature_div
 dl.acm.org###plain-language-summary
 dl.acm.org###plain-language-summary-label
+homedepot.com###product-section-magic-apron-qa-bot
 duckduckgo.com###react-duckbar li:has-text(Search Assist)
 baidu.com###s_tab_inner > a[href*="chat.baidu.com"]
 time.com###scale-agent-overlay-container
@@ -45,12 +51,15 @@ androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers
 dictionary.cambridge.org##.ai-header-button
 nutraingredients.com##.ask-ia-widget
 dictionary.cambridge.org##.assistant-pwa-bar
+collinsdictionary.com##.assistantIcon
 app.slack.com##.autoSummaryCard__UEStF:has-text(AI thread summaries)
 bing.com##.b_insights
 digg.com##.bg-background-ai-tertiary
 britannica.com##.category-link-CHATBOT
 bing.com##.cdxCopilotIconBg
 docs.kits.ai##.chat-assistant-floating-input
+duckduckgo.com##.chip-select_isSelected__RpaRr:has-text(Duck.ai)
+duckduckgo.com##.chip-select_option__Gh6br:has(> span[title="Duck.ai"])
 bing.com##.copans_container
 github.com##.copilotPreview__container
 republicworld.com##.desktop\:my-4:has-text(Show Quick Read)
@@ -66,25 +75,35 @@ olivela.com##.oli_popup_button
 ecosia.org##.omnibox-search-form__ai-search
 op.gg##.rounded.size-\[40px\]
 amazon.com##.rufus-panel-container
+amazon.com##.s-ask-rufus-mshop-suggestion-container
+amazon.com##.s-suggestion-nile-desktop-container
 www.reddit.com##.search-answers-preview-section:has-text(Answers)
 docs.sentry.io##.search_sgs-ai-button__sUsjD
 search.brave.com##.subutton-tooltip-wrapper[aria-label="Answer with AI"]
 ecosia.org##.tab--icon:has-text(AI Search)
 britannica.com##.toc-sticky-header-ai-container
 pcmag.com##.w-\[110vw\]:has-text(Hello!)
+duckduckgo.com##[data-hide-untill-css-vars-polyfilled="true"][data-react-module-id="wikinlp"]
 www.google.com##[data-hveid="CAIQAQ"]:has-text(Gemini, an AI assistant)
 duckduckgo.com##[data-react-module-id="duckDuckGoHelp"]
+duckduckgo.com##[data-ssg-id="ask-duck-ai-submit"]
 ecosia.org##[data-test-id="search-form-ai-suggestion"]
+duckduckgo.com##[data-testid="aichat-button"]
 www.google.com##[role="listitem"]:has(a[href*="aep=1&ntc=1"])
+duckduckgo.com##a[class][href*="ia=chat"]
 bing.com##a[href="/chat?FORM=hpcodx"]
+duckduckgo.com##a[href^="/?ia=chat&"]
 search.brave.com##a[href^="/ask?q="]
+duckduckgo.com##a[href^="https://duckduckgo.com/?ia=chat"]
 kagi.com##button.quick-answer-trigger-link
 search.brave.com##button.suggestion.llm
 www.google.com##button:has(path[d^="M17.5 12c0-3.04 2.46-5.5"])
+duckduckgo.com##button[title="Ask Duck.ai"][data-ssg-id="ai-searchbox-chat-submit"]
 msn.com##codex-bing-chat[instance-id="CodexBingChat"]
 outlook.office.com##div#CopilotCommandCenterButton
 search.brave.com##div.ai-digest
 search.brave.com##div.subutton-wrapper:has(button#submit-llm-button)
+mail.google.com##div[data-rp-placement-id="gemkick-pep-icon-callout-id"]
 duckduckgo.com##li:first-child:has([data-testid="duckassist-answer-content"])
 www.google.com##li[data-attrid$="Prediction"]:has([aria-description="AI Mode"])
 op.gg##section:has-text("AI Chatbot")

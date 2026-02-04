@@ -1,8 +1,18 @@
 // EasyList staleness monitor - notification only
+const fs = require('fs');
+
 const EASYLIST_URLS = {
   'easylist.txt': 'https://easylist.to/easylist/easylist.txt',
   'easyprivacy.txt': 'https://easylist.to/easylist/easyprivacy.txt'
 };
+
+// Helper to set GitHub Actions output
+function setOutput(name, value) {
+  const output = process.env.GITHUB_OUTPUT;
+  if (output) {
+    fs.appendFileSync(output, `${name}=${value}\n`);
+  }
+}
 
 class EasyListMonitor {
   async fetchList(url) {
@@ -123,10 +133,9 @@ async function main() {
     
     // Set GitHub Actions outputs
     if (process.env.GITHUB_ACTIONS) {
-      const core = require('@actions/core');
-      core.setOutput('files_stale', result.hasStaleFiles ? 'true' : 'false');
-      core.setOutput('stale_count', result.staleCount.toString());
-      core.setOutput('stale_details', JSON.stringify(result.staleFiles));
+      setOutput('files_stale', result.hasStaleFiles ? 'true' : 'false');
+      setOutput('stale_count', result.staleCount.toString());
+      setOutput('stale_details', JSON.stringify(result.staleFiles));
     }
     
     if (result.hasStaleFiles) {
