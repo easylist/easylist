@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202602110952
+! Version: 202602110959
 ! Title: EasyList
-! Last modified: 11 Feb 2026 09:52 UTC
+! Last modified: 11 Feb 2026 09:59 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 5411eecbc4e65761d92194ab529b221eee90178b
+! Commit: 0c233001c11afafc12f3ef615f323d664f85db5e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -851,12 +851,14 @@ _reklama_$domain=~youtube.com
 ://0.www.*/player/*/m/$script,third-party
 ://0.www.*/players/*/-1/$script,third-party,xmlhttprequest
 ://loader.*.com/loader.min.js|$script,~third-party
+://loader.*.com/script/$script,third-party
 ://www.*.com/*/-1/327/$script,subdocument,third-party,xmlhttprequest
 ://www.*.com/*/-1/70/$script,subdocument,third-party,xmlhttprequest
 ://www.*.com/players/*/-1/$script,subdocument,third-party,xmlhttprequest
 ://www.*.com/players/*/a/$subdocument,third-party,domain=~edu|~gov
 ://www.*/player/*/a/$third-party,xmlhttprequest
 ://www.*/player/*/m/$script,third-party
+wss://loader.*.com/ws^$third-party
 wss://www.*.xyz/ws^$third-party
 ! https://github.com/easylist/easylist/issues/11123
 .com/ed/java.js$script
@@ -66904,6 +66906,7 @@ browsershots.org#@#.advert_area
 ||98853171.xyz^
 ||9m-mlvrsosov-qmrl4.xyz^
 ||admonishdecisiveyetnow.com^
+||agreementdaily.com^
 ||amongstbirdbath.com^
 ||aroundveinfixed.com^
 ||battleickhope.com^
