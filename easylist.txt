@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202602130948
+! Version: 202602130951
 ! Title: EasyList
-! Last modified: 13 Feb 2026 09:48 UTC
+! Last modified: 13 Feb 2026 09:51 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 2a45ca467444d5ff22b0921083f8a3ec780c5ba5
+! Commit: f7ec5cfba7201990532985072b8234eaea19a6b0
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -82883,6 +82883,7 @@ trip.com##.with-decorator-wrap-v8:has(span.ad_tag)
 celebmafia.com##.wp-caption > [class]:has([width="300"])
 navyamedia.com##.wpb_text_column:has(> .wpb_wrapper > p >ins.adsbygoogle)
 bestbuy.ca##.x-productListItem:has([data-automation="sponsoredProductLabel"])
+cars.com##[aria-label="Listings"] li:has(card-gallery[card-link*="?attribution_type"])
 priceline.com##[class*="ListingCardWrapper"]:has([class*="PromoText"])
 freshdirect.com##[class*="ProductsGrid_grid_item"]:has([data-testid="marketing tag"])
 petco.com##[class*="atapult-styled"]:has([data-ad-source])
