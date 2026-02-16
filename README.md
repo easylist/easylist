@@ -75,7 +75,7 @@ When a site is attempting to track, it'll be put into one of 4 categories.
 
 ## Fanboy Lists
 
-This repo also hosts the files for Fanboy's Annoyances List, EasyList Cookie List, Fanboy's Social Blocking List, and Fanboy's Notifications Blocking List.
+This repo also hosts the files for Fanboy's Annoyances List, [EasyList Cookie List](https://github.com/easylist/easylist/tree/master/easylist_cookie), Fanboy's Social Blocking List, and Fanboy's Notifications Blocking List.
 
 ## List issues
 
