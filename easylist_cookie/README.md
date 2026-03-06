@@ -42,7 +42,6 @@ Note: The only exception if a site combined a cookie consent message with anothe
 [developer.ing.com](https://developer.ing.com/) | Consent overlay shows | Breaks menus |
 [rockpapershotgun.com](https://www.rockpapershotgun.com/final-fantasy-vi-pixel-remaster-is-out-now-finally-giving-us-a-better-version) | Consent overlay shows | Denys access to some site functions |
 [dailymotion](https://www.dailymotion.com/) | Consent overlay shows | Denys video playback |
-[dogedash.com](https://portal.dogedash.com/) | Consent overlay shows | Denys user from connecting to wallet |
 [teacheconomy.de](https://www.teacheconomy.de/) | Consent overlay shows | Stop user clicking on links if not consent message accepted |
 [Etsy.com](https://www.etsy.com) | Consent dialogbox shows | Breaks image zooming of products |
 

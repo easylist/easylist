@@ -1,0 +1,99 @@
+name: Check Banned Domains
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "**/*.txt"
+  push:
+    branches:
+      - master
+    paths:
+      - "**/*.txt"
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      
+      - name: Fetch base for comparison
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin master --depth=1
+          fi
+
+      - name: Debug info
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "FOP version:"
+          chmod +x fop-linux
+          ./fop-linux --version
+          echo ""
+          echo "Checking base ref..."
+          if git diff --quiet HEAD origin/master 2>/dev/null; then
+            echo "Base: HEAD~1 (push)"
+            echo "Diff:"
+            git diff HEAD~1 --unified=0 -- "*.txt" | head -50
+          else
+            echo "Base: origin/master (PR)"
+            echo "Diff:"
+            git diff origin/master --unified=0 -- "*.txt" | head -50
+          fi
+
+      - name: Check for open banned domain issue
+        uses: actions/github-script@v7
+        with:
+          retries: 3
+          script: |
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'banned-domain-violation',
+              state: 'open'
+            });
+            if (issues.data.length > 0) {
+              core.setFailed(`Blocked: Open banned domain issue #${issues.data[0].number} must be resolved first`);
+            }
+      
+      - name: Check for banned domains
+        id: scan
+        run: |
+          ./fop-linux --no-commit --check-banned-list=cleaned-domains.txt --ci . 2>&1 | tee result.txt || true
+          if grep -q "banned domain(s) found" result.txt; then
+            echo "found=true" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+      - name: Create or update issue on failure
+        if: failure() && steps.scan.outputs.found == 'true' && github.event_name == 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const result = fs.readFileSync('result.txt', 'utf8');
+            
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'banned-domain-violation',
+              state: 'open'
+            });
+            
+            if (issues.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: '**Additional violation detected:**\n```\n' + result + '\n```'
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '🚫 Banned domain added',
+                body: '```\n' + result + '\n```\n\nClose this issue after removing the banned domain.',
+                labels: ['banned-domain-violation']
+              });
+            }

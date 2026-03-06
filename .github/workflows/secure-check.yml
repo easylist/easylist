@@ -1,0 +1,52 @@
+name: Workflow Security Check
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+
+permissions:
+  pull-requests: write
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Block non-admin workflow changes
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const admins = ['ryanbr', 'Khrin', 'Yuki2718', 'monzta'];
+          const actor = context.actor;
+          
+          if (!admins.includes(actor)) {
+            // Close and lock PR
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              state: 'closed'
+            });
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Workflow changes are restricted to: ${admins.map(u => '@' + u).join(', ')}\n\nContact an admin to request workflow modifications.`
+            });
+            
+            await github.rest.issues.lock({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              lock_reason: 'resolved'
+            });
+          } else {
+            // Admin PR - just add a comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Admin workflow change by @${actor}. Please review carefully before merging.`
+            });
+          }

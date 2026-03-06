@@ -1,0 +1,19 @@
+[Adblock Plus 2.0]
+! Title: Youtube No Thumbnail images
+!
+! Please report any unblocked adverts or problems
+! in the forums (https://forums.lanik.us/)
+! or via e-mail (easylist@protonmail.com).
+! Imported from: https://github.com/brave/adblock-lists/blob/master/brave-lists/yt-shorts.txt
+!
+! Main videos
+www.youtube.com##.ytThumbnailViewModelHost
+youtube.com##ytd-thumbnail.ytd-video-renderer
+! Shorts
+www.youtube.com##.shortsLockupViewModelHostThumbnailParentContainer
+! Mobile
+m.youtube.com##.video-thumbnail-container-large
+! remove autoplay
+youtube.com###video-preview-container
+! remove autoplay (ios)
+m.youtube.com##ytm-video-preview:remove-attr(class)

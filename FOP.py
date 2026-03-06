@@ -31,20 +31,25 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+# previously:
+# ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+# cover wildcards.*
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\|\@\"\!]*?)#\@?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[\@\?]?#)([^{}]+)$")
+ELEMENTPATTERN = re.compile(r"^([^\/\|\@\"\!]*?)(#[\@\?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
-REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=(?:[#\.\[]|\:(?!-abp-)))")
+REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)((?=[#\.\[]|\:(?!-abp-contains)))")
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 # Remove any bad lines less the 3 chars, starting with.. |*~@$%
-BADLINE = re.compile(r"^([|*~@$%].{1,3}$)")
+BADLINE = re.compile(r"^([|*~@$%].{1,4}$)")
+# Detect overly broad TLD-only patterns (e.g., ||.org^, ||.org, .org^, .org)
+TLDONLY_PATTERN = re.compile(r'^(\|\||\|)?\.([a-z]{2,})\^?$')
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -54,16 +59,52 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt",
-          "easylist_specific_hide_abp.txt", "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other",
-          "easylist_cookie_specific_uBO.txt", "fanboy_annoyance_specific_uBO.txt", "fanboy_newsletter_specific_uBO.txt", "fanboy_notifications_specific_uBO.txt", "fanboy_social_specific_uBO.txt")
+          "easylist_specific_hide_abp.txt", "easyprivacy_specific_uBO.txt", "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other",
+          "easylist_cookie_specific_uBO.txt", "fanboy_annoyance_specific_uBO.txt", "fanboy_newsletter_specific_uBO.txt", "fanboy_notifications_specific_uBO.txt", "fanboy_social_specific_uBO.txt", "fanboy_newsletter_shopping_specific_uBO.txt", "fanboy_agegate_specific_uBO.txt", "config-clean2.json", "config-clean.json", "config-clean.json.txt", "config-clean2.json.txt", "config-clean2.txt", "config-clean.txt", "cleaned-domains.txt")
+
+# List of domains that should ignore the 7 character size restriction
+IGNORE_DOMAINS = {"a.sampl"}
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "csp", "document", "elemhide",
-                "font", "genericblock", "generichide", "image", "match-case",
-                "object", "media", "object-subrequest", "other", "ping", "popup",
-                "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text",
-                "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
-                "script", "stylesheet", "subdocument", "third-party", "websocket", "webrtc", "xmlhttprequest")
+KNOWNOPTIONS = ("collapse", "csp", "csp=frame-src", "csp=img-src", "csp=media-src", "csp=script-src", "csp=worker-src", "document", "elemhide", "font",
+                "genericblock", "generichide", "image", "match-case", "media", "object-subrequest", "object", "other", "ping", "popup", "rewrite=abp-resource:1x1-transparent-gif",
+                "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:blank-css",
+                "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-mp4", "rewrite=abp-resource:blank-text",
+                "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xhr", "xmlhttprequest", "css", "1p", "3p", "frame", "doc", "ghide")
+
+# convert any ubo rules into standard rules
+def convert_ubo_options(optionlist):
+    """ Convert uBO-specific options for compatibility. """
+    # Mapping of uBO options to standard options
+    ubo_conversions = {
+        "xhr": "xmlhttprequest",
+        "~xhr": "~xmlhttprequest",
+        "css": "stylesheet", 
+        "~css": "~stylesheet",
+        "1p": "~third-party",
+        "~1p": "third-party",
+        "3p": "third-party",
+        "~3p": "~third-party",
+        "frame": "subdocument",
+        "~frame": "~subdocument",
+        "doc": "document",
+        "ghide": "generichide",
+        # Just shorthand
+        "xml": "xmlhttprequest",
+        "~xml": "~xmlhttprequest",
+        "iframe": "subdocument",
+        "~iframe": "~subdocument"
+    }
+    
+    converted_options = []
+    for option in optionlist:
+        # Handle uBO $from= option conversion to $domain=
+        if option.startswith("from="):
+            converted_options.append(option.replace("from=", "domain=", 1))
+        else:
+            converted_options.append(ubo_conversions.get(option, option))
+    
+    return converted_options
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
@@ -228,6 +269,37 @@ def fopsort (filename):
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                     else:
+                        # Skip network domain rules 7 chars or less starting with "|", "||", "|||" etc. or directly with a-z or 0-9 to prevent false positives
+                        # unless the domain is in the IGNORE_DOMAINS list
+                        if len(line) <= 7 and re.match(r'^\|*[a-zA-Z0-9]', line):
+                            # Extract the domain part to check against IGNORE_DOMAINS
+                            domain_match = re.match(r'^\|*([^\/\^\$\*]+)', line)
+                            if domain_match:
+                                domain = domain_match.group(1)
+                                if domain not in IGNORE_DOMAINS:
+                                    print("Skipped short domain rule: {line} (domain: {domain})".format(line=line, domain=domain))
+                                    continue
+                        # Skip network rules where the domain doesn't contain a dot (likely invalid)
+                        # Check for rules starting with || or | (domain-based network rules)
+                        # But ignore special URL schemes that don't use domains and IP addresses
+                        if (line.startswith('||') or line.startswith('|')) and not any(line.startswith(scheme) for scheme in ['|javascript', '|data:', '|dddata:', '|about:', '|blob:', '|http', '||edge-client']):
+                            # Extract the domain part (everything after || or | until /, ^, or $)
+                            # Allow * in the domain as it's a valid wildcard character
+                            domain_match = re.match(r'^\|*([^\/\^\$]+)', line)
+                            if domain_match:
+                                domain = domain_match.group(1)
+                                # Skip validation for IP addresses (IPv4 like 0.0.0.0 or IPv6 like [::] or [::1])
+                                is_ip = domain.startswith('[') or re.match(r'^\d+\.\d+\.\d+\.\d+', domain)
+                                # Skip validation if domain contains wildcard (wildcards can expand to include dots)
+                                has_wildcard = '*' in domain
+                                # Skip if domain doesn't contain a dot (but allow exceptions with ~, IP addresses, and wildcards)
+                                if not is_ip and not has_wildcard and '.' not in domain and not domain.startswith('~'):
+                                    print("Skipped network rule without dot in domain: {line} (domain: {domain})".format(line=line, domain=domain))
+                                    continue
+                       # Remove TLD-only patterns that are too broad (e.g., ||.org^, .org^)
+                        if re.match(TLDONLY_PATTERN, line):
+                            print("Removed overly broad TLD-only rule: {line}".format(line=line))
+                            continue
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
                             lineschecked += 1
@@ -260,6 +332,8 @@ def filtertidy (filterin):
         # If applicable, separate and sort the filter options in addition to the filter text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
+        # Apply uBO conversions early so they go through proper sorting
+        optionlist = convert_ubo_options(optionlist)
 
         domainlist = []
         removeentries = []
@@ -285,7 +359,24 @@ def elementtidy (domains, separator, selector):
     tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
+        # Filter out domains less than 3 characters or without a dot (excluding the ~ prefix for exceptions)
+        domain_list = domains.split(",")
+        invalid_domains = []
+        valid_domains = []
+        
+        for d in domain_list:
+            stripped = d.strip("~")
+            # Check if domain is too short or doesn't contain a dot
+            if len(stripped) < 3 or "." not in stripped:
+                invalid_domains.append(d)
+            else:
+                valid_domains.append(d)
+        
+        # Print warning if any domains were filtered out
+        if invalid_domains:
+            print("Removed invalid domain(s) from cosmetic rule: {domains}".format(domains=", ".join(invalid_domains)))
+        
+        domains = ",".join(sorted(set(valid_domains), key = lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
     selector = "@{selector}@".format(selector = selector)
     each = re.finditer
@@ -300,6 +391,9 @@ def elementtidy (domains, separator, selector):
     # Clean up tree selectors
     for tree in each(TREESELECTOR, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
+        # Skip CSS attribute selector operator ~= (e.g., [rel~="sponsored"])
+        if tree.group(2) == "~" and tree.group(3) == "=":
+            continue
         if tree.group(1) == "(":
             replaceby = "{g2} ".format(g2 = tree.group(2))
         else:
@@ -341,10 +435,36 @@ def commit (repository, basecommand, userchanges):
         return
     print("\nThe following changes have been recorded by the repository:")
     try:
-        print(difference.decode("utf-8"))
+        diff_text = difference.decode("utf-8")
+        print(diff_text)
     except UnicodeEncodeError:
         print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n");
         print(difference)
+        diff_text = str(difference)
+
+    # Check if this is a large change
+    def is_large_change(diff_content):
+        """Determine if the change is considered 'large' based on various metrics"""
+        lines = diff_content.split('\n')
+        
+        # Count changed lines (lines starting with + or -)
+        changed_lines = sum(1 for line in lines if line.startswith(('+', '-')) and not line.startswith(('+++', '---')))
+        
+        # Count affected files
+        affected_files = len([line for line in lines if line.startswith('diff --git') or line.startswith('--- a/') or line.startswith('+++ b/')])
+        
+        # Define thresholds for "large" changes
+        LARGE_LINES_THRESHOLD = 25
+        
+        return changed_lines > LARGE_LINES_THRESHOLD
+
+    # Check for large changes and require confirmation (only for new changes from this FOP run)
+    if not userchanges and is_large_change(diff_text):
+        print("\nThis is a large change. Are you sure you want to proceed?")
+        confirmation = input("Please type 'YES' to continue: ")
+        if confirmation != "YES":
+            print("Commit aborted.")
+            return
 
     try:
         # Persistently request a suitable comment

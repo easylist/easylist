@@ -1,0 +1,41 @@
+# FOP Configuration File
+# Place in current directory or ~/.fopconfig
+
+# Skip commit prompt
+no-commit = false
+
+# Skip uBO to ABP option conversion
+no-ubo-convert = false
+
+# Skip commit message format validation (M:/A:/P:)
+no-msg-check = false
+
+# Process all files (ignore IGNORE_FILES/IGNORE_DIRS)
+disable-ignored = false
+
+# Skip sorting (only tidy and combine rules)
+no-sort = false
+
+# Alternative sorting (by selector for all rule types)
+alt-sort = false
+
+# Sort hosts file entries (0.0.0.0/127.0.0.1 domain)
+localhost = false
+
+# Disable colored output
+no-color = false
+
+# Additional directories to ignore (comma-separated, partial names supported)
+ignoredirs = scripts,docs,disputes
+
+# comment history tempplates, "," split
+history ="A: ","P: ","M: ","M: Fixes ","M: Update","M: Cleanup","M: Sort","M: Adjust","M: No longer needed"
+
+# limited echo of Current directory:
+limited-quiet = true
+
+# Review domains
+check-banned-list = cleaned-domains.txt
+
+# Additional files to ignore (comma-separated, partial names supported)
+ignorefiles = .json,.backup,.bak,.swp,.gz,template_header.txt,cleaned-domains.txt,easytest.txt
