@@ -1,1 +1,7 @@
-python FOP-nocommit.py
+#!/bin/sh
+
+case "$(uname -s)" in
+  Linux)   ./fop-linux ;;
+  Darwin)  ./fop-mac ;;
+  *)       ./fop-win.exe ;;
+esac
