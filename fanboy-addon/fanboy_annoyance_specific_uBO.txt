@@ -35,6 +35,10 @@ flightconnections.com##+js(prevent-setTimeout, premiumShown)
 thebump.com##+js(set-cookie, registration_modal_dismissed, true)
 ! tradingview.com https://github.com/uBlockOrigin/uAssets/issues/23236
 tradingview.com##+js(nostif, window.loginStateChange.subscribe)
+! spiked-online.com
+spiked-online.com##+js(set-local-storage-item, nudges, $remove$)
+spiked-online.com##.fxd-box.type-simple.nudge-sell
+spiked-online.com##body:style(height: auto !important; overflow: auto !important)
 ! reg nag
 nerdwallet.com##._1y2JXo
 nerdwallet.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -232,7 +236,7 @@ salary.com##body:style(overflow: auto !important; position: initial !important;)
 ! article counter
 firstthings.com##+js(set-cookie, pum_popup_14631_page_views, 1)
 !  politico.com login wall
-bbc.com,climbing.com,nypost.com,politico.com,politico.eu,themonthly.com.au,thesaturdaypaper.com.au,triathlete.com##+js(cookie-remover, xbc)
+bbc.com,climbing.com,nypost.com,politico.com,politico.eu,statnews.com,themonthly.com.au,thesaturdaypaper.com.au,triathlete.com##+js(cookie-remover, xbc)
 ! tncms login wall
 niagarafallsreview.ca,stcatharinesstandard.ca,therecord.com,thespec.com,thestar.com,wellandtribune.ca##+js(remove-cookie, /^tncms:meter:/)
 ! mutualart.com login wall
