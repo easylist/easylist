@@ -1256,6 +1256,10 @@ music.youtube.com#?#tp-yt-paper-dialog.ytmusic-popup-container:has-text(/We’re
 www.youtube.com##tp-yt-paper-dialog.ytd-popup-container:has(> .ytd-popup-container > #options[class$="survey-renderer"])
 www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:has-text(What hobbies are you interested in developing?)
 www.youtube.com#?#tp-yt-paper-dialog.ytd-popup-container:has-text(/How do you feel|Which of the following|following Premium|Get background play|Choose all that apply|Become a member of this channel|Free trial|How are your|How interested|Live TV|Wish videos|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature|Terms apply|View live scores|YouTube experience/)
+! YT anti-adblock enforcement
+www.youtube.com##tp-yt-paper-dialog:has(ytd-enforcement-message-view-model)
+www.youtube.com##ytd-enforcement-message-view-model
+www.youtube.com##ytd-popup-container:has(ytd-enforcement-message-view-model)
 ! https://github.com/easylist/easylist/issues/22334 YT suggestion div
 www.youtube.com#?#.YtdTalkToRecsFlowRendererHost:has-text(/Ask for videos|What do you like|Help us improve/)
 ! Login popups
