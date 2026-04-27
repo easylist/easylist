@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202604271228
+! Version: 202604271230
 ! Title: EasyList
-! Last modified: 27 Apr 2026 12:28 UTC
+! Last modified: 27 Apr 2026 12:30 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9e2fbc9fccff26c53067d60a733d640f8cc108ef
+! Commit: 3cfe9dc84518520a8e74825a481303481588bc00
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -14484,6 +14484,7 @@ _800x80_
 ##a[href^="https://s.cant3am.com/"]
 ##a[href^="https://s.eunow4u.com/"]
 ##a[href^="https://s.gentlefieldpattern.com/"]
+##a[href^="https://s.happyleafmotion.com/"]
 ##a[href^="https://s.ma3ion.com/"]
 ##a[href^="https://s.zlink3.com/"]
 ##a[href^="https://s.zlink7.com/"]
@@ -87480,6 +87481,7 @@ gelbooru.com,xozilla.com##[style^="height: 250px !important; overflow: hidden;"]
 missav.*,missav123.com,missav888.com,njavtv.com##[style^="width: 300px; height: 250px;"]
 123av.com,123av.ws,1av.to##[style^="width:300px;"]
 missav.*,missav123.com,missav888.com##[x-show$="video_details'"] > div > .list-disc
+freeuseporn.com##a:has(svg[class*="lucide-chevron-right"]):not([href^="/"])
 redtube.com,tube8.com,youporn.com##a[class*="gtm-event-header-paidtabs"]
 pornone.com##a[class^="listing"]
 pornhub.com##a[data-event="header_paid_tabs"]
@@ -87673,6 +87675,7 @@ jav4tv.com##aside:has(.ads_300_250)
 pornohans.net##aside:has(.adsbyexoclick)
 youporn.com##aside:has(a.ad-remove)
 rule34.us##center:has(> div[style*="overflow"] > [data-cl-spot])
+freeuseporn.com##div:has(> iframe)
 pornhub.com##div[class="video-wrapper"] > .clear.hd:has(.adsbytrafficjunky)
 reddxxx.com##div[role="gridcell"]:has(img[src="https://cdn3.reddxxx.com/f_cm5eeic910000mrywxfe0wa1c_p5ov94asrzmby3n7ppmomnay.jpeg"])
 rule34.us##div[style*='height: 490px']:has(center > div[style*="overflow"] > [data-cl-spot])
@@ -87687,6 +87690,8 @@ pornhub.com##:-abp-properties(height: 300px; width: 315px;)
 redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com##:-abp-properties(image/)
 crocotube.com#?#.ct-related-videos-title:has-text(Advertisement)
 crocotube.com#?#.ct-related-videos-title:has-text(You may also like)
+freeuseporn.com#?#section > div > div:has(h2:has-text(Friends))
+freeuseporn.com#?#section:has-text(Sponsor)
 hdpornpics.net#?#.money:has(.century:has-text(ADS))
 hotmovs.com#?#.block_label--last:has-text(Advertisement)
 okxxx1.com#?#.bn-title:has-text(Advertising)
