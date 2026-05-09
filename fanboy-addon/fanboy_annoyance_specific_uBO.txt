@@ -372,3 +372,7 @@ branc.jp##+js(set-cookie, inc_optin_never_see_again-popup-1, 1)
 ! Amazon Prime
 amazon.*##.fable-portal-container:has(a#cross-benefit-modal-call_to_action-btn-0[href^="https://www.amazon."][href*="/gp/video/signup?benefitId=primeaddon"])
 amazon.*##html.fable-no-scroll:style(overflow: auto !important; touch-action: auto !important;)
+! pinterest.com (signup wall on sent/shared pin pages)
+pinterest.*##div[style*="z-index: 10001"]
+pinterest.*##div[data-test-id="giftWrap"]
+pinterest.*##body[style*="overflow: hidden"]:style(overflow: auto !important;)
