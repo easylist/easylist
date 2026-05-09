@@ -3,7 +3,7 @@
 Trying to ensure the best user experience and limit any webcompat issues. Just because we can hide a cookie messgae with a CSS element, doesn't mean it should be the best solution. We have many tools to counter these GDPR/CPPA Cookie consents, as list authors we need to check which option is the best.
 
 * Generic cosmetics (generally avoided to avoid more widespread false positives)
-* Specific cosmetics  (better
+* Specific cosmetics  (better)
 * set-cookie, set-local-storage-item
 * trusted-set- (for more complex additions) 
 
