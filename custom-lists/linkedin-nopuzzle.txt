@@ -5,5 +5,8 @@
 ! in the forums (https://forums.lanik.us/)
 ! or via e-mail (easylist@protonmail.com).
 !
+! Network page (/mynetwork)
 linkedin.com#?#a[href="https://www.linkedin.com/games/patches/"]:upward(section)
-linkedin.com#?#p:has-text(Today’s puzzles):upward(div)
+! Homepage (/feed)
+linkedin.com#?#p:has-text(Today’s puzzles)
+linkedin.com#?#p:has-text(Today’s puzzles) ~ div
