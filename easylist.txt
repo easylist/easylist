@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202605291412
+! Version: 202605291419
 ! Title: EasyList
-! Last modified: 29 May 2026 14:12 UTC
+! Last modified: 29 May 2026 14:19 UTC
 ! Expires: 4 days (update frequency)
-! Commit: df4bd95ed9baa69473c1f484310689b02a51e174
+! Commit: 85a898697f751fd66ae17bc0672880afcbe8c09f
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -85721,6 +85721,7 @@ tripadvisor.*##div[class="ui_container dSjaD _S"]
 skyscanner.*##div[class^="InlineAd_container_"]
 zoohit.*,zooplus.*##div[class^="SearchSuggestion-module_suggestionItem_"]:has(.z-sponsored-tag)
 walmart.*##div[data-automation^="HookLogicCarouses"]
+skyscanner.*##div[data-backpack-ds-component]:has(#inline-ad-button)
 tripadvisor.*##div[data-curated-shelf-id]:has(a[rel="sponsored"])
 wayfair.*##div[data-enzyme-id="WssBannerContainer"]
 pinterest.com##div[data-grid-item]:has([data-test-pin-id] [data-test-id^="one-tap-desktop"] > a[href^="http"][rel="nofollow"]):not(body > div)
