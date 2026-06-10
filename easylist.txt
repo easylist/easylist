@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202606101711
+! Version: 202606101713
 ! Title: EasyList
-! Last modified: 10 Jun 2026 17:11 UTC
+! Last modified: 10 Jun 2026 17:13 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d66df4dd1c4ac065a5b545796517513822210c4a
+! Commit: 86e38796d30dd9e04cc8d4d6b1b551d8b07ce07a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -78604,6 +78604,7 @@ walgreens.com##li.owned-brands:has(figure.sponsored)
 macys.com##li.productThumbnailItem:has(.sponsored-items-label)
 kohls.com##li.products_grid:has(p.piq-sponsored)
 streeteasy.com##li.searchCardList--listItem:has(.jsSponsoredListingCard)
+cars.com##li:has(> fuse-card[data-listing-id] .spr)
 aboutyou.de##li:has([data-testid="spons"])
 classcentral.com##li:has(iframe[src^="/catalog-iframe?"])
 autotrader.co.uk##li:has(section[data-testid="trader-seller-listing"] > span[data-testid="FEATURED_LISTING"])
