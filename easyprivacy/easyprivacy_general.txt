@@ -7,6 +7,7 @@
 &hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~biletomat.pl|~facebook.com|~jobscore.com
 &refer=http$script
+&sst.gcsub=
 &t=pageview&
 -adobe-analytics/
 -adobeDatalayer_bridge.js
@@ -249,6 +250,7 @@
 /analytics-library.js
 /analytics-minimal-v4.js
 /analytics-minimal.js
+/analytics-module-api/v1/analytics?
 /analytics-ping.js
 /analytics-prod.js
 /analytics-reporter/*
@@ -320,6 +322,7 @@
 /analyticstrack.js
 /analyticstracking.js
 /analyticstrain.min.js
+/analytify-events-tracking.js
 /anametrix/cas.js
 /anclytic-ajax.html
 /anclytic.htm
@@ -367,6 +370,7 @@
 /api/v3/getPageVisits
 /api/v3/trackSegmentEvent
 /api/video/stats/*$xmlhttprequest
+/api/web/v1/tracker$ping
 /api_adlog.php?
 /api_ip_info.php
 /apilog?
@@ -1101,6 +1105,7 @@
 /global_analytics/s_code.js
 /global_tracking.js
 /goAnalytics.js
+/google-listings-and-ads/js/build/gtag-events.js
 /google-nielsen-analytics.js
 /google/analytics.js
 /google_analitycs.js
@@ -2787,6 +2792,8 @@
 /wmxtracker.js
 /woocommerce-google-adwords-conversion-tracking-tag/*
 /woopra.js
+/wp-analytify-forms/assets/js/tracking.js
+/wp-analytify/assets/js/scrolldepth.js
 /wp-coin-hive-util.js
 /wp-coin-hive.js
 /wp-content/plugins/confection/bridge.php
@@ -3015,8 +3022,8 @@ _WebVitalsReporter_
 /rrweb.js
 /rrweb.min.js
 ! DNS checks
-/DNSCheck.js
-/DNSChecker.js
+/DNSCheck.js$domain=~github.com
+/DNSChecker.js$domain=~github.com
 ! hawkeye
 /hawk.js
 /hawkeye.js
@@ -3056,7 +3063,6 @@ _WebVitalsReporter_
 &sst.sw_exp=
 .js?id=GTM-
 /*JmVu.js?sp=
-/*JmVu.js?tg=
 /.netlify/scripts/rum
 /.rum/@adobe/helix-
 /ns.html?id=GTM-
@@ -3067,6 +3073,8 @@ _WebVitalsReporter_
 ://sgtm.*.js?
 ://tagging.*.js?aw=
 ://tagging.*/settings.js
+! Taggrs.io
+.js?tg=$~third-party
 ! Stape
 =aWQ9R1RNL*apiKey=$script,~third-party
 =aWQ9R1RNL*page=$script,~third-party
