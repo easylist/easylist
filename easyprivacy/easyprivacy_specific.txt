@@ -54,6 +54,7 @@
 ||adc-js.nine.com.au^
 ||adguard.com/-/event/
 ||adl.bankofthewest.com^
+||admin.microsoft.com/api/instrument/logclient
 ||adobe.io/system/log
 ||adobe.io/web/v1/metrics
 ||adtech-events.bookmyshow.com^
@@ -94,6 +95,7 @@
 ||amazon.com/1/events/$domain=~aws.amazon.com
 ||amazon.com/e/xsp/imp?
 ||amazon.com/empty.gif?$image
+||amboss.com/analytics/
 ||americanexpress.com/beacon
 ||amethyst.6pm.com^
 ||amethyst.zappos.com^
@@ -117,6 +119,7 @@
 ||analytics.academy.com^
 ||analytics.ahrefs.dev^
 ||analytics.archive.org^
+||analytics.atom.com^
 ||analytics.bitchute.com^
 ||analytics.brave.com^
 ||analytics.chase.com^
@@ -192,9 +195,11 @@
 ||api.thefantazy.com/web-vitals
 ||api.tsc.ca/Tracking/v1/events/
 ||api.vk.com/method/statEvents.
+||api.x.com/live_pipeline/events?
 ||apigw.scmp.com/metrics/monitoring
 ||apigw.scmp.com/pwa-v2-unleash-proxy/proxy/client/metrics
 ||aplus.qwen.ai/aplus.monitor.log_arrival_rate
+||apm.qwant.com^
 ||app-bnkr.b-cdn.net/js/lv.js
 ||app.box.com/app-api/split-proxy/api/metrics
 ||app.box.com/gen204
@@ -202,6 +207,8 @@
 ||appanalysis.banggood.com^
 ||apple-mapkit.com/mw/v1/reportAnalytics
 ||aptoide-mmp.aptoide.com^
+||arena.ai/rpc/e/
+||arena.ai/rpc/i/v0/e/
 ||argtesa.com/cdn-cgi/trace
 ||armedangels.com/javascript/script.js
 ||arttrk.com/pixel/
@@ -219,7 +226,6 @@
 ||aulart.com/wp-admin/admin-ajax.php?data_send=pageView
 ||aurum.tirto.id^
 ||auth.services.adobe.com/signin/v1/audit
-||autoblog.com/.api/admiral
 ||autotrader.com/*/pep?pixallId
 ||autotrader.com/pixall/
 ||aviasales.*-analytics.
@@ -241,6 +247,7 @@
 ||barry-callebaut.com/pd.js
 ||bat.maydream.com^
 ||bats.video.yahoo.com^
+||bc.nejm.org/script.js
 ||bcbits.com/bundle/bundle/1/analytics-$domain=bandcamp.com
 ||bcbits.com/bundle/bundle/1/impl-$domain=bandcamp.com
 ||beacon.dropbox.com^
@@ -333,7 +340,10 @@
 ||cdapi.collegedunia.com^
 ||cdn.eaec.fpfis.tech.ec.europa.eu^
 ||cdn.gov.cfigroup.com/webmon/s/source/webmon/$domain=weather.gov
+||cdn.jsdelivr.net/gh/bmhtech07/adTorch/js/collect.min.js$script,domain=propanefitness.com
 ||cdn.jsdelivr.net/npm/@adshield/
+||cdn.reverso.net/rumjs/
+||cdp.howtotrade.com^
 ||cdp.vercel.com/rs/
 ||centerblog.net/stats.js
 ||cgtn.com/api/collect/
@@ -368,8 +378,10 @@
 ||clickins.slixa.com^
 ||client-errors.rebble.io/log-client-error
 ||client-log.box.com^
+||client-logs-a.wbx2.com^
 ||client-metrics.chess.com^
 ||clk-m.joybuy.com^
+||cloudconvert.com/build/assets/plausible-CoqwX5KR.js
 ||cloudflare.com/_cf/analytics.js
 ||cloudfront.net/tracker-latest.min.js
 ||cloudfront.net/vis_opt.js
@@ -478,6 +490,7 @@
 ||dap.digitalgov.gov/Universal-Federated-Analytics-Min.js
 ||darkreader.org/elements/statistics.js
 ||data.allstate.com^
+||data.api.canalplus.com/event
 ||data.barry-callebaut.com^
 ||data.cheatography.com/banana.js
 ||data.debugbear.com^
@@ -487,6 +500,7 @@
 ||data.ublock-browser.com^
 ||data.vevor.com^
 ||data.younow.com^
+||datadoghq.com/api/v2/rum
 ||datadoghq.com/assets/dd-browser-logs-rum.js
 ||datadome.maisonsdumonde.com^
 ||datafa.st/js/script.js
@@ -497,6 +511,7 @@
 ||dd.auspost.com.au^
 ||dd.g2.com^
 ||dd.nytimes.com^
+||dd.qwant.com^
 ||dd.viator.com^
 ||ddome-tag.blablacar.com^
 ||dealdash.com/tracker-json
@@ -561,7 +576,6 @@
 ||dynatrace.att.com^
 ||e.quizlet.com^
 ||e.used.ca/event
-||e.zg-api.com/event$domain=zillow.com
 ||e2ma.net/track/
 ||ea.epochbase.com^
 ||ebay.com/delstats/
@@ -608,6 +622,8 @@
 ||et.nytimes.com^
 ||et.tidal.com^
 ||eta.animenewsnetwork.com^
+||etfstream.com/api/analytics/
+||etfstream.com/api/proxy/get-search-sponsor
 ||etracker.noon.com^
 ||etsy.com/bcn/beacon
 ||etsy.com/clientlog
@@ -657,6 +673,7 @@
 ||exr-mms.expertreviews.co.uk^
 ||extendoffice.com/analytics.js
 ||extremetech.com/js/ga.js
+||ezoicanalytics.com/analytics.js
 ||f.cdngeek.com^$domain=edugeek.net
 ||f.pie.org^
 ||f362.nola.com^
@@ -668,6 +685,7 @@
 ||facebook.com/ajax/weblite_load_logging/
 ||facebook.com/sem_mpixel/
 ||facebook.com/sw/log/init/
+||fairprice.com.sg/VZl2n4/
 ||fanatics.com/api/track
 ||fancentro.com/lapi/statisticWriter/
 ||fancentro.com/trck-
@@ -709,6 +727,7 @@
 ||flirt4free.com/pixel/
 ||flow.1passwordservices.com/api/v1/event
 ||flya.me/eventtrack
+||fomo.azurewebsites.net/activity/batchTrack
 ||foodcouture.net/public_html/ra/script.php
 ||forgood.co.za/api/tracking/
 ||formula1.com/api/track
@@ -744,6 +763,7 @@
 ||gadgets360.com/analytics.js
 ||gaiaonline.com/internal/mkt_t.php?
 ||gak.webtoons.com^
+||galaxus.ch/api/public/sbm/v1/fp
 ||gamedistribution.com/collect?
 ||gamejolt.com/tick/
 ||gamemonetize.com/account/event.php?
@@ -883,6 +903,7 @@
 ||imdb.com/api/_ajax/metrics/
 ||imf.org/Assets/IMF/js/SocialScript.js
 ||img.konami.com/games/s/common/js/analytics.js
+||img.medscapestatic.com/pi/scripts/omniture/bi_medscape.js$domain=medscape.com
 ||imgur.com/albumview.gif?
 ||imgur.com/imageview.gif?
 ||immoweb.be/*/track/
@@ -976,6 +997,8 @@
 ||klm.us/CWZUvc/
 ||kloth.net/images/pixel.gif
 ||knewz.com/api/event
+||knowunity.com/events^
+||knowunity.com/pixels/
 ||kobo.com/TrackClicks
 ||kohls.com/mtFndb/
 ||kohls.com/test_rum_nv?
@@ -1055,6 +1078,7 @@
 ||lyft.com/api/track
 ||lyngsat.com/system/loadclick.js
 ||m.facebook.com/ajax/weblite_resources_timing_logging/
+||m365.cloud.microsoft/events
 ||ma.redhat.com^
 ||macys.com/tag_path/
 ||mail.proton.me/api/data/v1/stats
@@ -1063,6 +1087,7 @@
 ||mangadex.org/p.js
 ||mangakoma.net/ajax/manga/view
 ||manomano.*/api/v1/sp-tracking/
+||manscaped.com/rud-dataplane/
 ||manua.ls/g/collect?
 ||manua.ls/gtag
 ||mapcarta.com/logs
@@ -1086,6 +1111,8 @@
 ||mcs.us.tiktokv.com^
 ||mdn.allizom.net/pong/
 ||mdt.crateandbarrel.com^
+||me-qr.com/metrics/
+||me-qr.com/statistic/collect/
 ||medal.tv^$ping
 ||media.io/trk
 ||medium.com/_/batch
@@ -1101,6 +1128,7 @@
 ||messenger.com/ajax/bnzai?
 ||metacrawler.com/pingback
 ||metis.truecaller.com^
+||metrics-a.wbx2.com^
 ||metrics.audius.co^
 ||metrics.bangbros.com^
 ||metrics.camsoda.com^
@@ -1110,6 +1138,7 @@
 ||metrics.hyperliquid.xyz^
 ||metrics.imdb.com^
 ||metrics.morethings.digital^
+||metrics.mtcgame.com^
 ||metrics.onewegg.com^
 ||metrics.roblox.com^
 ||metrics.spkt.io^
@@ -1119,6 +1148,7 @@
 ||metricsishare.rediff.com^
 ||metro.co.uk/base/rta/
 ||metro.co.uk/cvx/client/sync/fpc?
+||metro.co.uk/wp-content/client-mu-plugins/dist/metro-analytics/
 ||metrobyt-mobile.com/self-service-metro/v1/logging
 ||metroweekly.com/tools/blog_add_visitor/
 ||meucdn.vip/cdn-cgi/trace
@@ -1157,6 +1187,7 @@
 ||mstm.motorsport.com^
 ||mtg.macpaw.com^
 ||mtm.bondagevalley.cc^
+||mtrics.cdc.gov^
 ||musescore.com/components/data?
 ||musescore.com/components/log/$ping
 ||musescore.com/score/stats/
@@ -1175,6 +1206,7 @@
 ||navan.com/api/analytics
 ||nbarizona.com/metrics/
 ||nbc.com/webevents/
+||ncregister.com/_swp_analytics?
 ||neatorama.com/story/view/
 ||neeva.com/logql/log
 ||neighbourly.co.nz/event-tracking
@@ -1224,6 +1256,7 @@
 ||nr.noelleeming.co.nz^
 ||nslookup.io/pl.js
 ||ntvid.online/cdn-cgi/trace
+||nvrmd.novaramedia.com^
 ||nyt.com/ads/tpc-check.html$domain=nytimes.com
 ||nytimes.com/v1/purr-cache
 ||nzherald.co.nz/pf/resources/scripts/tracking/data-ref.js
@@ -1235,6 +1268,7 @@
 ||ohm-dot-hackster-io.appspot.com^
 ||oklink.com/jsstat/
 ||okx.com/jsstat/sb?
+||onboarding-ui.frontiersin.org/api/onboarding-ui/v1/session/logged
 ||oneroof.co.nz/*/record-log/
 ||online-umwandeln.de/analytics.js
 ||online.marketing/a.js
@@ -1272,6 +1306,7 @@
 ||pappagallu.onefootball.com^
 ||pardot.com/pd.js
 ||partsgeek.com/sspgt/
+||patient.info/a31h/
 ||pay4fans.com/api/analytics
 ||paypal.com/credit-presentment/log
 ||paypal.com/platform/tealeaftarget
@@ -1342,6 +1377,7 @@
 ||pluto.smallpdf.com^
 ||pm.dailykos.com^
 ||pm.geniusmonkey.com^
+||pmnbh.dedcool.com^
 ||pog.com^$ping
 ||poki.com/observer/
 ||politico.com/resource/assets/js.min/video-tracking.
@@ -1363,16 +1399,20 @@
 ||prisma.io/gastats.js
 ||priv.gc.ca/m/m.js
 ||privacy-api.9gag.com^
+||privacy.reverso.net^
 ||privacyfriendly.netlify.app^
 ||privacypolicies.com/track/
 ||private.wccftech.com^
 ||prod-events.nykaa.com^
 ||progressive.com/Log/
+||projectmultatuli.org/analytics/
 ||promos.investing.com/*/digibox.gif?
 ||prop.astonvillanews.co.uk^
 ||proporn.com/ajax/log/
 ||proxima.midjourney.com^
 ||pt.blubrry.com^
+||public.tableau.com/inst?v=
+||public.tableau.com/public/apis/audit-event
 ||publicwww.com/mtm/mtm.js
 ||pulpulyy.club/cdn-cgi/trace
 ||pulsar.ebay.com^
@@ -1410,6 +1450,7 @@
 ||rainbet.com/api/ping
 ||raindrop.io/pb/api/event
 ||rakuten.com/rmsgjs/soj2.js
+||ralf.curvo.eu^
 ||ranker.com/api/px
 ||ranker.com/api/tr?
 ||ranker.com/api/tracking/comscore
@@ -1481,6 +1522,7 @@
 ||s.smallpdf.com/static/track-js-
 ||s.sofoot.com/script.js
 ||s.wayfair.com^
+||s.yimg.com/rx/ev/*/pframe.html$domain=aol.com
 ||s.yimg.com/ss/analytics-$script,domain=yahoo.com
 ||sa.uswitch.com^
 ||saa.insideedition.com^
@@ -1551,11 +1593,11 @@
 ||slashdot.org/images/js.gif
 ||slc.cbssports.com/events
 ||slickdeals.net/ajax/stats/
-||slideshare.net/frontend_tracking/
 ||slipstream.skyscanner.net^
 ||smartlink-api.amuse.io/api/analytics/
 ||smassets.net/assets/anonweb/anonweb-click-
 ||smetrics.couponcabin.com^
+||smetrics.inova.org^
 ||smetrics.ralphlauren.com^
 ||smetrics.vanguard.com^
 ||smutty.com/ajax/trcking/
@@ -1591,11 +1633,13 @@
 ||srtb.msn.com^
 ||srv.plesk.com^
 ||ss.esade.edu^
+||ss.hellotushy.com^
 ||ss.photospecialist.co.uk^
 ||ssl-images-amazon.com/images/I/21auWwkMYgL.js$domain=imdb.com
 ||sst.brodo.com^
 ||sst.bwt.com^
 ||sst.carwow.
+||sst.fdiintelligence.com^
 ||sst.shopware.com^
 ||st.sawlive.tv^
 ||stackoverflow.com/_/client-timings
@@ -1698,6 +1742,7 @@
 ||stubhub.com/a/icph
 ||stytch.com/sdk/v1/events
 ||suaurl.com/adblock/js/smarttag.js
+||substrate.office.com/search/api/v1/events
 ||sudokupad.app/api/event
 ||sumsub.com/api/tunnel/
 ||sumsub.com/resources/fevents
@@ -1747,6 +1792,7 @@
 ||t3.chat/api/event
 ||t3.chat/js/xt/script.js
 ||t810.ctpost.com^
+||tagdelivery.mayoclinic.org^
 ||tagger.ope.scmp.com^
 ||tagging.steelseries.com^
 ||tags-event.woolworths.co.nz^
@@ -1798,6 +1844,7 @@
 ||terabox.app/issue/terabox/ts_ad/
 ||terabox.com/abdr?
 ||terabox.com/nodeapi/reporterror?
+||terminaltrove.com/_t/
 ||termsfeed.com/track/
 ||tgt.maep.ibm.com^
 ||theblock.co/api/analytics
@@ -1805,7 +1852,9 @@
 ||theconversation.com/javascripts/lib/content_tracker_hook.js
 ||thedailybeast.com/static/js/thirdparty.
 ||thefreedictionary.com/_/tr.ashx?
-||thehackernews.com/zscripts/
+||thehackernews.com/ga/c
+||thehackernews.com/ga4/c
+||thehealthsite.com/apstag.js
 ||theladders.com/api/user-tracking/
 ||thesun.co.uk/assets/client/analyticsListeners~
 ||thesun.co.uk/assets/client/newrelicExperimentTracking~
@@ -1926,6 +1975,7 @@
 ||trx3.famousfix.com^
 ||try.elevenlabs.io/pr/js
 ||ts.delfi.lt^
+||tsa.webex.com^
 ||tsmate.com/api/metrics
 ||tubepornstars.com/js/analytics
 ||tubi.io/datascience/logging?
@@ -1960,6 +2010,7 @@
 ||ubuyanalytics.ubuy.com^
 ||ucoz.com/stat/
 ||ucweb.com/collect/
+||ud.galaxus.ch^
 ||udc.yahoo.com/v2/public/yql?
 ||udemy.com/api-2.0/ecl
 ||ugprod.geeksforgeeks.org/post/api/usertracking/
@@ -2033,6 +2084,7 @@
 ||wa.gmx.co.uk^
 ||wa.gymboree.com^
 ||wa.pjplace.com^
+||wa.slideshare.net^
 ||wa.sugarandjade.com^
 ||waaw.ac/cdn-cgi/trace
 ||waaw.to/cdn-cgi/trace
@@ -2061,6 +2113,7 @@
 ||webd-assets.cdn4dd.com/s.js$domain=doordash.com
 ||weblog.flyasiana.com^
 ||webmd.com/static/v/c?
+||website-api.omni.fairprice.com.sg/api/tracking/
 ||weedmaps.com/pixel?
 ||wellsfargo.com/as/jsLog
 ||wellsfargo.com/dti_apg/
@@ -2089,12 +2142,17 @@
 ||www-backend.strinova.com/api/common/uid
 ||www.ebay.*/gh/dfpsvc?
 ||x.com/1.1/attribution
+||x.com/1.1/graphql/error_log.json
+||x.com/1.1/graphql/user_flow.json
 ||x.com/1.1/jot
 ||x.com/9/measurement/
+||x.com/i/api/1.1/graphql/error_log.json
+||x.com/i/api/1.1/graphql/user_flow.json
 ||x.com/i/api/1.1/jot
 ||x.com/i/csp_report
 ||x.com/i/jot
 ||x.com^*/log.json
+||x.designboom.com^
 ||xero.com/api/events/
 ||xfinity.com/event/
 ||xhamster.com/api/$ping
@@ -2141,13 +2199,14 @@
 ||youtube-nocookie.com/youtubei/v1/log_event?
 ||youtube.com/api/stats/ads?
 ||zed.dev/docs/theme/analytics.js
+||zoom.us/*/telemetry
 !||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=
 ||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&
 ||youtube.com/get_video?
 ||youtube.com/pcs/activeview?
 ||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content
 ||youtube.com/set_awesome?
-||youtube.com/youtubei/v1/log_event?
+! ||youtube.com/youtubei/v1/log_event?
 ||youtube.googleapis.com/youtubei/v1/log_event?
 ||youtubekids.com/api/stats/ads?
 ||youtubekids.com/api/stats/qoe?
@@ -2174,6 +2233,10 @@
 ||googleusercontent.com/*/wf/open?upn=$image
 ! OpenTable
 ://track.opentable.
+! https://github.com/uBlockOrigin/uAssets/issues/33186
+://tralut.*/collect/value?
+://tralut.*/js/script-dynamic.js
+://tralut.*/js/tracking.js
 ! Vinted
 ://www.vinted.*/relay/events
 ! akamaihd.net
