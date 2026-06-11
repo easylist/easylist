@@ -11,6 +11,7 @@
 ! Specific Cosmetics
 outlook.office.com###BottomBar > div:has(> div > #copilot-dab-main-button)
 agoda.com###QuickAnswersContainer
+medscape.com###ai-content-wrapper
 develop.sentry.dev###ai-list-entry
 forums.redflagdeals.com###ai_summary
 www.yahoo.co.jp###aichat
@@ -24,6 +25,7 @@ bing.com###b_copilot_search
 cloud.boldbi.com###bold-ai
 docs.kits.ai###chat-assistant-textarea
 bing.com###chat_upsell_bubble_icon
+ttlc.intuit.com###chip-wrapper
 geneticliteracyproject.org###chtl-open-chat-icon
 baidu.com###con-ar > [tpl="ai_accompanies"]
 baidu.com###content_left > .c-group-wrapper:has([tpl="ai_ask"])
@@ -38,13 +40,17 @@ langfuse.com###inkeep-shadowradix-\:r2\:
 studio.youtube.com###inspiration-tab
 airlinegeeks.com,avweb.com,flyingmag.com,planeandpilotmag.com###key-take-aways
 homedepot.com###magic-apron-loader
+microsoft.com###msChatContainer
 amazon.com###nile-inline_feature_div
+indianstartupnews.com###nudgeai-widget
+pbtech.co.nz###pai-widget
 homedepot.com###product-section-magic-apron-qa-bot
 rekono.si###rekono-chatbot-root
 baidu.com###s_tab_inner > a[href*="chat.baidu.com"]
 time.com###scale-agent-overlay-container
+autonocion.com###us-box-btn
 trip.com##.A9zea:has([aria-label*="Hi! TripGenie"])
-ndtv.com##.ASum_wr
+ndtv.com,ndtv.in##.ASum_wr
 search.yahoo.co.jp##.AiAssistant
 search.yahoo.co.jp##.AnswerAiNavigation
 github.blog##.Button[href="https://github.com/features/copilot"]
@@ -56,6 +62,7 @@ baidu.com##.ai-create-wrapper_2oI56
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hotcars.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.ai-features
 dictionary.cambridge.org##.ai-header-button
 healio.com##.ai-link-desktop
+medscape.com##.ai-mode-button
 gitlab.com##.ai-nav-icon
 ecosia.org##.ai-search-button
 straitstimes.com##.ai-summary
@@ -66,6 +73,7 @@ baidu.com##.aisearch-btn_1yI-K
 blog.google##.article-summary__content
 nutraingredients.com##.ask-ia-widget
 docs.redhat.com##.ask-red-hat-button-container
+investopedia.com##.askmiso-ask-query
 dictionary.cambridge.org##.assistant-pwa-bar
 collinsdictionary.com##.assistantIcon
 bing.com##.b_insights
@@ -79,9 +87,9 @@ britannica.com##.category-link-CHATBOT
 bing.com##.cdxCopilotIconBg
 docs.kits.ai##.chat-assistant-floating-input
 duckduckgo.com##.chip-select_option__Gh6br:has(> span[title="Duck.ai"])
-bing.com##.copans_container
 github.com##.copilotPreview__container
 nutraingredients.com##.explore-more-widget
+priceline.com##.fixed.right-4
 flyscoot.com##.flight-recommender-container
 singaporeair.com##.flr-link
 trip.com##.gotop.mod-back-top-item
@@ -96,17 +104,21 @@ www.notion.so##.notion-assistant-corner-origin-container
 olivela.com##.oli-chat-bubble-popup
 olivela.com##.oli_popup_button
 ecosia.org##.omnibox-search-form__ai-search
+deepwiki.com##.pointer-events-none.fixed.bottom-2:has(form)
 vercel.com##.right-section-module__J7WNxW__nonPrimaryContent > button[data-cdp-track*="\"header_ask_ai_clicked\""]
 op.gg##.rounded.size-\[40px\]
 amazon.com##.rufus-panel-container
+amazon.com##.rufus-pill
 amazon.com##.s-ask-rufus-mshop-suggestion-container
 amazon.com##.s-suggestion-nile-desktop-container
 docs.sentry.io##.search_sgs-ai-button__sUsjD
+skywork.ai##.skywork-chat-widget
 www.ebay.com##.srp-river-answer--FAQ_KW_SRP_MODULE
 economictimes.indiatimes.com##.styles_podcast-widget__LKtPP
 mathrubhumi.com##.summary-wrapper
 techedt.com##.teqr-quick-read
 britannica.com##.toc-sticky-header-ai-container
+autonocion.com##.us-box-resumen
 www.google.com#?##Odp5De:has-text(/AI Overview|Übersicht mit KI/)
 vercel.com##[aria-label="Ask AI"]
 meyka.com##[aria-label="Get AI Summary"]
@@ -118,9 +130,12 @@ duckduckgo.com##[data-react-module-id="duckDuckGoHelp"]
 baidu.com##[data-spy-count="panel-btn-click"]
 duckduckgo.com##[data-ssg-id="ask-duck-ai-submit"]
 ecosia.org##[data-test-id="search-form-ai-suggestion"]
+investing.com##[data-test="contextual-subscription-hook-button"]
 duckduckgo.com##[data-testid="aichat-button"]
 mail.google.com##[data-tooltip*="Help me write"]
 www.notion.so##[href="/ai"] > div
+priceline.com##[id=":r1b:"]
+priceline.com##[id=":r1i:"]
 www.google.com##[role="listitem"]:has(a[href*="aep=1&ntc=1"])
 yandex.com##a.HeaderNav-Tab[href$="&promo=force_neuro"]
 www.yahoo.co.jp##a.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt:has(svg[aria-label="AIアシスタント"])
@@ -137,9 +152,9 @@ search.brave.com##button#submit-llm-button
 kagi.com##button.quick-answer-trigger-link
 www.google.com##button:has(path[d^="M17.5 12c0-3.04 2.46-5.5"])
 bunnings.com.au##button[aria-label="Ask Bunnings AI"]
-search.brave.com##button[aria-label="Ask"]
 duckduckgo.com##button[title="Ask Duck.ai"][data-ssg-id="ai-searchbox-chat-submit"]
 msn.com##codex-bing-chat[instance-id="CodexBingChat"]
+community.ui.com#?#button[type="button"]:has-text(Ask UniFi Assistant)
 copycatcafe.com#?#.from-emerald-500:has-text(Ask ChatGPT)
 outlook.office.com##div#CopilotCommandCenterButton
 search.yahoo.co.jp##div.AiAssistant
@@ -186,7 +201,9 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ! Network items
 ||askmiso.com^$third-party
 ||asus-brand-assistant.asus.com/brand-assistant.js
+||azurefd.net/cdns/copilot_v3.min.js$script,domain=nus.edu.sg
 ||cdn.gist.ai^$third-party
+||chat.g4media.org^
 ||embed.chatnode.ai^
 ||gotolstoy.com^$third-party
 ||mfgpt.milanofinanza.it/widget/widget.js
