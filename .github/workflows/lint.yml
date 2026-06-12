@@ -46,9 +46,11 @@ jobs:
 
       - name: Run FOP
         if: steps.changed.outputs.files != ''
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
         run: |
           chmod +x fop-linux
-          for file in ${{ steps.changed.outputs.files }}; do
+          for file in $CHANGED_FILES; do
             if [ -f "$file" ]; then
               echo "Sorting: $file"
               ./fop-linux --no-commit --check-file="$file"
@@ -64,7 +66,7 @@ jobs:
             echo "Committing sorted files..."
             git config --global user.email "github-actions@github.com"
             git config --global user.name "GitHub Actions"
-            git add -A
+            git add -- '*.txt'
             git commit -m "M: Auto-sort filter lists"
             # Push to the actual PR branch
             git push origin pr-branch:${{ github.head_ref }} || {
