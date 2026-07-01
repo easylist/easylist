@@ -3,7 +3,7 @@
 ! Title: EasyList
 ! Last modified: 01 Jul 2026 15:31 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e6eea05f077e7cea5fa1aac4694665f1170598b6
+! Commit: b105596fad10d3eee62358b08af6a75367ca5898
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -73704,6 +73704,7 @@ manomano.*##a[href^="/"][href*="?product_id="][title]:has(span > .svg_tamagoshi)
 yandex.*##a[href^="https://yabs.yandex.ru/count/"]
 yandex.*##a[href^="https://yandex.ru/an/count/"]
 leroymerlin.*##aside[data-st-name="sponsored"]
+deliveroo.*#?#div[class^="HomeFeedScrollTracker-"]:has(span[class^="HomeFeedUILines-"]:has-text(Sponsored))
 hookerhillstudios.com##div.items-center:has(> #articlead)
 douglas.*##div.product-grid-column:has(button[data-testid="sponsored-button"])
 checkfelix.com,kayak.*,momondo.*,swoodoo.*##div[class$="-result-item-container"]:has(a[href*="/s/clickthrough.jsp?"])
