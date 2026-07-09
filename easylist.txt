@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607091037
+! Version: 202607091049
 ! Title: EasyList
-! Last modified: 09 Jul 2026 10:37 UTC
+! Last modified: 09 Jul 2026 10:49 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e98356086e08629a39ed73d6eb0032076e3bde79
+! Commit: ae9cc9aa602f7a2d367d9065e8f2567a7e230e12
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -75718,6 +75718,7 @@ aads.com,ad-maven.com,adcash.com,admitad.com,adskeeper.com,adspyglass.com,adsupp
 ##.ad.reform-top
 ##.reform-top-container
 ! Amazon
+amazon.*###desktop-ad-btf
 amazon.*###faceoutContainer:has(> [class$="sponsored-label"])
 amazon.*###nav-swmslot
 amazon.*###sc-rec-bottom
@@ -75729,7 +75730,9 @@ amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
 amazon.*##.AdsCard_container__K6vmo
 amazon.*##.a-cardui[class*="_new-detail-faceout-box_"]:has(.dynamicSponsoredLabelClass)
+amazon.*##.ad-center
 amazon.*##.amzn-safe-frame-container
+amazon.*##.celwidget[data-ref_$="displayAds"]
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-result-item:has(.puis-sponsored-label-text)
 amazon.*##.s-result-item:has([data-ad-feedback-label-id])
