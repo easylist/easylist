@@ -54,7 +54,7 @@ KNOWNOPTIONS = ("collapse", "csp", "csp=frame-src", "csp=img-src", "csp=media-sr
                 "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-mp4", "rewrite=abp-resource:blank-text",
                 "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest")
 
-def start():
+def start() -> None:
     """ Print a greeting message and run FOP in the directories
     specified via the command line, or the current working directory if
     no arguments have been passed."""
