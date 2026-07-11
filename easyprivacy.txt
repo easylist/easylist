@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202607111453
+! Version: 202607111454
 ! Title: EasyPrivacy
-! Last modified: 11 Jul 2026 14:53 UTC
+! Last modified: 11 Jul 2026 14:54 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 850f3967db05eb24157382901b47239eecdde30b
+! Commit: f75b5114e77352f2035ad3093b8198c3f721f3ef
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -16772,7 +16772,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||x.com/1.1/graphql/user_flow.json
 ||x.com/1.1/jot
 ||x.com/9/measurement/
-! ||x.com/i/api/1.1/flow/viewer.json
+||x.com/i/api/1.1/flow/viewer.json
 ||x.com/i/api/1.1/graphql/app_context.json
 ||x.com/i/api/1.1/graphql/error_log.json
 ||x.com/i/api/1.1/graphql/user_flow.json
@@ -17298,7 +17298,8 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/31330
 ||metrics.streaks.jp^$redirect=noop.txt,xmlhttprequest
 ! https://github.com/uBlockOrigin/uAssets/issues/33072
-! x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.defaultConfig.rweb_home_jot_context_enabled.value, false)
+x.com##+js(set, __INITIAL_STATE__.featureSwitch.user.config.rweb_home_jot_context_enabled.value, false)
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
