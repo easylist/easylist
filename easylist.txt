@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607152150
+! Version: 202607152226
 ! Title: EasyList
-! Last modified: 15 Jul 2026 21:50 UTC
+! Last modified: 15 Jul 2026 22:26 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 67446a75eb13e786f8d9f68f531d1defed6b855a
+! Commit: 22c8a98f3599ee0c3c1f0bcb3683755852f408bf
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -76179,6 +76179,7 @@ cars.com##[id$="-sponsored"]
 lolalytics.com##[id$=":inline"]
 news18.com##[id*="_Ad_Mid"]
 bridgebase.com##[id*="_ad"]
+noon.com##[id*="adMultiProductsBanner"]
 slashdot.org,sourceforge.net##[id*="mongo-"]
 homedepot.com##[id*="sponsored"]
 80.lv##[id^="Image_bner_"]
@@ -77386,6 +77387,7 @@ petco.com##[class*="atapult-styled"]:has([data-ad-source])
 livejournal.com##[class*="categories"] + div[class]:has(> [class*="-commercial"])
 petco.com##[class*="rmn-banner"]:has([class*="SponsoredText"])
 cargurus.com##[class*="tileFrame"]:has([data-testid="sponsored-text"])
+noon.com##[class*="topSection"]:has([class*="adText"])
 popularmechanics.com##[class] > :has(> #article-marketplace-horizontal)
 popularmechanics.com##[class] > :has(> #gpt-ad-vertical-bottom)
 independent.co.uk,standard.co.uk,the-independent.com##[class] > :has(> [data-mpu])
@@ -77415,7 +77417,9 @@ etsy.com##[data-page-type="listing_page_similar_listings_grid"]:has([id^="ad-lis
 etsy.com##[data-page-type="listing_page_similar_listings_row"]:has([id^="ad-listing-title-"])
 etsy.com##[data-page-type="market"]:has([id^="ad-listing-title-"])
 etsy.com##[data-page-type="similar-listing-page"]:has([id^="ad-listing-title-"])
+noon.com##[data-qa="plp-grid"] [data-qa="plp-product-box"]:has(svg[width="20"] > path[d])
 noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
+noon.com##[data-qa="widget_recommendedProducts"]:has(svg[width="20"] > path[d])
 chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-ad-card-root="true"])
 pexels.com##[data-testid="column"] [data-testid="item"]:has([class*="AIGCAdShared"])
 pexels.com##[data-testid="column"] [data-testid="item"]:has([data-heading*="Sponsored"])
