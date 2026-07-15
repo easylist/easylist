@@ -3,7 +3,7 @@
 ! Title: EasyList
 ! Last modified: 15 Jul 2026 22:26 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 22c8a98f3599ee0c3c1f0bcb3683755852f408bf
+! Commit: b8696192add98652e5d24a1087e31b74728cfaba
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -77094,6 +77094,7 @@ flashscore.*,livescore.*,soccer24.com##.zone
 momondo.*##[class$="-result-item-container"]:has([aria-label="Ad disclaimer"])
 momondo.*##[class$="result-item-container"]:has([class$="provider-ad-badge"])
 momondo.*##[class*="mod-pres-default"]:has(div[class*="ad-badge"])
+deliveroo.*##[class^="Carousel"] li[class^="Slide-"]:has(div[style*="d815008c-8a59-40e3-9c64-79b841bf482c"])
 walmart.*##[data-automation="flipkartDisplayAds"]
 tripadvisor.*##[data-automation="nova-ad-InlineNova"]
 wayfair.*##[data-enzyme-id="Display-Ad-Container"]
