@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607180905
+! Version: 202607180911
 ! Title: EasyList
-! Last modified: 18 Jul 2026 09:05 UTC
+! Last modified: 18 Jul 2026 09:11 UTC
 ! Expires: 4 days (update frequency)
-! Commit: eb1585a81e4e35e63899b52397b33e32f8fc8b1a
+! Commit: 82cc5881fe56aa946e2d123c41805c6aebee04f9
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -77979,9 +77979,11 @@ slickdeals.net##.frontpageGrid__feedItem:has(.dealCardBadge--promoted)
 alibaba.com##.gallery-card:has(.searchx-card-e-ad)
 detectiveconanworld.com##.generated-sidebar[style="background: #ffffff;"]
 bestbuy.com##.generic-morpher:has(.spns-label)
+pixiv.net##.grid-flow-dense > div:has(> [style="display: block; width: 184px; height: 232px;"] > iframe)
 sainsburys.co.uk##.gridItem:has(.citrusAdproduct)
 pstream.org##.group > .border-buttons-purple:has(> button[aria-label="Dismiss ad"])
-pixiv.net##.gtm-toppage-thumbnail-illustration-recommend-works-zone > ul > li:has(> div > [id^="adsdk-"])
+pixiv.net##.gtm-toppage-thumbnail-illustration-recommend-works-zone > ul > li:has(> div > [style="display: block; width: 300px; height: 250px;"])
+pixiv.net##.gtm-toppage-thumbnail-manga-recommend-works-zone li:has(> [style="display: block; width: 184px; height: 232px;"])
 manomano.co.uk,manomano.de,manomano.es,manomano.fr,manomano.it##.hrHZYT:has([data-testid="popoverTriggersponsoredLabel"])
 dollargeneral.com##.image__desktop-container:has([data-track-image*="|P&G|Gain|"])
 1tamilmv.tax##.ipsWidget:has([href*="RajbetImage"])
@@ -77995,7 +77997,6 @@ bjs.com##.lazyload-wrapper:has(> #promoteIqContent)
 motortrend.com##.lg\:min-h-\[90px\]
 alibaba.com##.list-card:has([data-role="ad-area"])
 trip.com##.list-item:has(span.ad-info)
-pixiv.net##.list-none:has(> div > [id^="adsdk"])
 hotukdeals.com##.listLayout-box:has(> .bRad--a)
 pcgamer.com##.listingResult:has(> .sponsored-post)
 euronews.com##.m-object:has(.m-object__spons-quote)
@@ -78309,6 +78310,7 @@ windowsreport.com##section.hide-mbl:has(a[href^="https://out.reflectormedia.com/
 hwbusters.com##section.widget:has(> div[data-hwbus-trackbid])
 thehansindia.com##section:has(> .to-be-async-loaded-ad)
 thehansindia.com##section:has(> [class*="level_ad"])
+pixiv.net##section:has(> div > div > iframe[name="illusttop_appeal"])
 tripadvisor.*##section[data-automation$="_AdPlaceholder"]:has(.txxUo)
 homedepot.com##section[id^="browse-search-pods-"] > div.browse-search__pod:has(div.product-sponsored)
 mirrored.to##tbody > tr:has(> td[data-label="Host"] > img[src="https://www.mirrored.to/templates/mirrored/images/hosts/FilesDL.png"])
