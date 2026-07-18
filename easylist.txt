@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202607181412
+! Version: 202607181421
 ! Title: EasyList
-! Last modified: 18 Jul 2026 14:12 UTC
+! Last modified: 18 Jul 2026 14:21 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 10ccd51343ebe31c32216dc2517310da43622f0a
+! Commit: 6995fac81dc6b4c9b5b4d07faaebca35ae77fe3a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -77962,6 +77962,8 @@ staples.com###searchResultsContainer [data-id^="tile"]:has(.standard-tile__spons
 scribd.com###sidebar > div:has(> div > [data-e2e^="dismissible-ad-header"])
 bbc.com###sticky-mpu:has(.dotcom-ad-inner)
 gsmarena.com###subHeader:has(> #topAdv)
+amazon.*###typ-recommendations-stripe-1:has(div[data-is-sponsored-label-active="true"])
+amazon.*###typ-recommendations-stripe-2:has(div[data-is-sponsored-label-active="true"])
 gamereactor.*###videoContainer:has(> [id^="videoContent-videoad-"])
 ping0.cc###websites-wrap:has([rel$="sponsored"])
 kroger.com##.AutoGrid-cell:has(.ProductCard-tags > div > span[data-qa="featured-product-tag"])
