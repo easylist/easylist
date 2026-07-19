@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202607190801
+! Version: 202607190807
 ! Title: EasyPrivacy
-! Last modified: 19 Jul 2026 08:01 UTC
+! Last modified: 19 Jul 2026 08:07 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e4aba706abef5ff7ff84ccc7ac43708cf540803f
+! Commit: e39b999f328baa9905c499dc66612ad645aae7e2
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -17333,6 +17333,10 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||curos.ca/res/*/resources/scripts/lib/fingerprint.js$important,redirect=fingerprint2.js,script
 ! https://github.com/uBlockOrigin/uAssets/issues/31330
 ||metrics.streaks.jp^$redirect=noop.txt,xmlhttprequest
+! https://github.com/uBlockOrigin/uAssets/issues/33072
+! #if env_firefox
+x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
+! #endif
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
