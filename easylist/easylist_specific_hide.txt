@@ -8726,3 +8726,17 @@ checkfelix.com,kayak.*,swoodoo.com##div[class*="-ad-card"]
 checkfelix.com,kayak.*,swoodoo.com##div[class*="-adInner"]
 checkfelix.com,kayak.*,swoodoo.com##div[data-resultid]:has(a.IZSg-adlink)
 checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
+! discord
+! quests tab in DMs:
+discord.com##nav[class$='-privateChannels'] li:has(a[href='/quest-home'])
+discord.com##nav[class^='privateChannels_'] li:has(a[href='/quest-home'])
+! quests tab in Discover section:
+discord.com##nav>div:has-text(/^Quests$/)
+! quests on user profiles:
+discord.com##div[id^='popout_']:has(h2:has-text(/^Quest Available!/))
+! promoted games in Discover section:
+discord.com##section[class$='-contentSection'] div:has(>h3:has-text(/^Promoted Games$/))
+discord.com##section[class^='contentSection_'] div:has(>h3:has-text(/^Promoted Games$/))
+! promoted activities:
+discord.com##div[class$='-drawerSizingWrapper'] div:has(>div:has-text(/^Promoted$/))
+discord.com##div[class^='drawerSizingWrapper_'] div:has(>div:has-text(/^Promoted$/))
