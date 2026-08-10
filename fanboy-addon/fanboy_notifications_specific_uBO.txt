@@ -31,6 +31,8 @@ ask.fm##.lightbox_overlay
 ask.fm##body:style(overflow: auto !important)
 ! https://github.com/uBlockOrigin/uAssets/issues/30428
 cosmos.so##+js(set, Object.prototype.disablePaginationLimitForLoggedOut, true)
+! goodreads.com
+goodreads.com##+js(set-cookie, blocking_sign_in_interstitial, true)
 ! reddit.com (mobile)
 reddit.com###app-upsell-blocking-bottom-sheet-seo
 reddit.com###xpromo-small-header.mr-xs
