@@ -3,7 +3,7 @@
 ! Title: EasyList
 ! Last modified: 14 Aug 2026 16:31 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 757736c68cdcbb813701e8fdcbc8b2d623c4e059
+! Commit: 1f48f9973325f912afbdf6d2e84367c9590e5c11
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -76123,6 +76123,8 @@ checkfelix.com,kayak.*,swoodoo.com##div[id^="inline-"]
 acmemarkets.com,albertsons.com,andronicos.com,carrsqc.com,haggen.com,jewelosco.com,kingsfoodmarkets.com,pavilions.com,randalls.com,safeway.com,shaws.com,starmarket.com,tomthumb.com,vons.com#?#.product-card-col:has-text(Sponsored)
 agoda.com#?#.PropertyCardItem:has(div:has-text(Promoted))
 alibaba.com#?#.J-offer-wrapper:has-text(Top sponsor listing)
+alibaba.com#?#.no-divider[style*="margin-bottom"]:has([data-state="closed"]:has-text(Ad))
+alibaba.com#?#div[data-search-floor] [data-supplier-card]:has-text(Ad)
 amusingplanet.com#?#.blockTitle:has-text(Advertisement)
 androidauthority.com#?#div[class="e_Qi"]:has-text(Trending Tech Deals)
 androidauthority.com#?#div[class="e_Rc e_d"]:has-text(Affiliate links on Android Authority may earn us a commission)
