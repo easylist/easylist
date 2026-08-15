@@ -10,3 +10,5 @@ linkedin.com#?#div:has(> a[href="https://www.linkedin.com/games/patches/"])
 ! Homepage (/feed)
 linkedin.com#?#p:has-text(Today’s puzzles)
 linkedin.com#?#p:has-text(Today’s puzzles) ~ div
+! News (/news/story/*)
+linkedin.com#?#div:has(> div.news-module__subheader > h3#todays-games-entrypoint-title)
