@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202608201511
+! Version: 202608201516
 ! Title: EasyPrivacy
-! Last modified: 20 Aug 2026 15:11 UTC
+! Last modified: 20 Aug 2026 15:16 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 53a224d7c4c90427b884fab70c9c937c71b3ea80
+! Commit: 157f10bfd947b1ccc4120b2a60b74567d6524a92
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -14204,8 +14204,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Hebrew
 ||api.whtvr.ai/api/sdk/analytics/
 ||callindex.co.il/campaign/send_analytics.js
+||colbass.com/Service/Analytics.asmx/
+||dxmcdn.com/dta/content-targeting.js
+||radar.wizzo.media^
 ||selectika.com/selectika-pixel.min.js
 ||tag.weezmo.com^
+||vi-serve.com/tagLoader.js
 ||walla.co.il/stats/
 ! Hungarian
 ||gpr.hu/pr.pr?
@@ -54847,9 +54851,11 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 ||skroutza.skroutz.gr/skroutza.min.js
 ||vidads.gr/imp/
 ! Hebrew
+||bhol.co.il/system/js/analytics.js
 ||bravo.israelweather.co.il^
 ||cellstats.mako.co.il^
 ||ds.haaretz.co.il^
+||ext.bhol.co.il^$ping
 ||inn.co.il/Controls/HPJS.ashx?act=log
 ||services.haaretz.co.il^$ping
 ||stats.mako.co.il^
