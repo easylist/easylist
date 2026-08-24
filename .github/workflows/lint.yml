@@ -91,7 +91,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: '.nvmrc'
       - name: Check out to repository
         uses: actions/checkout@v4
       - name: Install npm dependencies
