@@ -34,6 +34,7 @@ nzherald.co.nz##.action-bar
 olivepos.com##.add-to-home-banner
 fanblogs.jp##.aff-notice
 dexerto.com##.animate-fadeOut
+pakistantoday.com.pk##.animate-slide-up
 informationweek.com##.announcement
 bing.com##.b_bnp_bopc
 startpage.com,startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion##.banner-top
@@ -57,6 +58,7 @@ aljazeera.com##.notification-pre-permission
 winnipegfreepress.com##.notifications-banner
 wowhead.com##.notifications-dialog
 aljazeera.com,aljazeera.net##.nudge
+nrwz.de##.perfecty-push-settings-container
 post-gazette.com##.pg-notifybox
 pnas.org##.pop-notification
 investing.com##.preloaded_lightbox
@@ -74,6 +76,8 @@ waze.com##.wz-downloadbar
 reddit.com##.xPromoAppStoreFooter
 youtube.com##.ytmPaidContentOverlayHost
 dexerto.com##.z-\[1101\]
+meet.google.com##[aria-label="Receive desktop notifications from Meet"]
+jpost.com##div[class^="PushNotificationPrompt_"]
 wallapop.com##div[class^="app-smart-banner_"]
 !! International
 ! aerzteblatt.de###pushy
@@ -113,6 +117,7 @@ elconsolto.com,masrawy.com##.notification
 cmmedia.es##.notification-modal
 publimetro.cl##.notification-subs
 almanar.com.lb##.notification-wrap
+we-news.com##.optin
 relax-job.com##.p-top-app-appeal
 mail.ru##.ph-balloo
 business-gazeta.ru##.popupAcceptNotify
@@ -221,8 +226,7 @@ analyticsinsight.net,newsgram.com,outlooktraveller.com###sw-wrapper
 mlbtraderumors.com###text-17
 observer-reporter.com###tncms-block-689490
 m.economictimes.com###wapFooter
-reddit.com###xpromo-bottom-sheet[aria-label*="See Reddit in..."]
-reddit.com###xpromo-bottom-sheet[aria-label*="See this post in..."]
+reddit.com###xpromo-bottom-sheet
 nhl.com##.-promo
 imgur.io##.Ad
 redfin.com##.AppInstallBannerWrapper
@@ -235,6 +239,8 @@ yandex.com##.Distribution-Popup
 metservice.com##.Footer-section-image
 thescore.com##.GetTheAppModal__getTheAppButton--1tOrV
 minne.com##.MinneAppBanner_root__di0Qk
+imgur.com##.PopUpDownloadApp
+imgur.com##.PopUpMobile-backdrop
 bing.com##.PopinAnimation
 behance.net##.PrimaryNav-appLinkContainer-bhx
 airasia.com##.QRPopUp__QRPopUpWrapper-sc-8gx7le-0
@@ -260,6 +266,7 @@ timesofindia.indiatimes.com##._PA8f
 instagram.com##._acc8
 m.webtoons.com##._appDownloadPopup
 smartfren.com##.alert-download
+livescore.com##.android
 skysports.com##.android-banner
 genius.com##.android_banner
 coincodex.com##.app
@@ -419,6 +426,7 @@ ecaytrade.com##.install-button
 news18.com##.install_app_float
 news18.com##.instlsapp_fxd
 terabox.com##.introduce-sticky-btn
+livescore.com##.ios
 lensdirect.com##.ios-app-install
 ticketmaster.com##.jBEXsA
 ticketmaster.com##.jDQUfz
@@ -453,7 +461,7 @@ google.*##.ml-promotion-container
 uinterview.com,usbair.com##.mobile-app
 kariyer.net##.mobile-app-download
 fortnitetracker.com##.mobile-app-preview
-discogs.com##.mobile-apps
+almayadeen.net,discogs.com##.mobile-apps
 millenniumhotels.com##.mobile-components-wrapper
 speedtest.net##.mobile-pretest
 speedtest.net##.mobile-pretest-2
@@ -502,6 +510,7 @@ shazam.com##.phones
 onlineradiobox.com##.playmarket
 pocketnet.app##.popup
 muragon.com##.popup-app
+alekhbariya.net##.popup_apps
 teller.jp##.pos_sticky.z_header.backface_hidden > div.lgDown\:d_flex.bg_surface_secondary.h_44px
 ufd.es##.pre-footer-wrap
 gbnews.com##.promo-app-container
@@ -538,6 +547,7 @@ amazon.com##.sparkle-container
 m.moovitapp.com##.splash-footer
 northernrailway.co.uk##.spotlight__cta-app
 radios.com.br##.store-badge
+alekhbariya.net##.store_logos
 ticketswap.com##.styles_container_U6otX
 www.google.com##.tCroyc
 m.tribunnews.com##.tapp-banner
@@ -571,6 +581,7 @@ san.com##.wp-block-san-app-download
 tumblr.com##.y8Hml
 duck.ai##[aria-label="Duck.ai works best in our private and free DuckDuckGo app!"]
 spacedaily.com##[aria-label="Keep up with Space Daily"]
+onxmaps.com##[aria-label="See More"]
 startpage.com,startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion##[aria-label^="app"]
 i.redd.it,reddit.com##[bundlename="bottom_bar_xpromo"]
 travala.com##[class*="BannerApp_container"]
@@ -584,6 +595,7 @@ m.yelp.com##[data-testid="OpenAppButton"]
 dailymotion.com##[data-testid="app-promotion-test-id"]
 reddit.com##[data-testid="bottom-cell-wrapper"]
 reddit.com##[data-testid="bottom-sheet-upsell-wrapper"]
+theatlantic.com##[data-testid="games-newsletters"]
 duckduckgo.com##[data-testid="serp-popover-promotion"]
 m.yelp.com##[data-testid="smart-banner-pitch"]
 myhome.nifty.com##[data-tracking-selfmade-smart-app-banner]
@@ -635,9 +647,11 @@ reddit.com##xpromo-app-selector
 reddit.com##xpromo-top-button
 ! :has
 gemini.google.com##.cdk-overlay-container:has(.get-app-mobile-dialog)
+404media.co##.col-xs-12.col-md-3:has(> .subscribe-form)
 m.iyf.tv##.container:has(> div.download-title)
 analyticsindiamag.com##.elementor-section-content-middle[data-settings="{\"background_background\":\"classic\"}"]:has(a[href^="https://play.google.com/store/apps"])
 mixch.tv##.modal.show:has(.move-app-title)
+sp.nicovideo.jp##div[style="height: 56px;"]:has(> a[href^="https://nicovideo.applink.nicovideo.jp/?link"])
 anglers.jp##nav.navbar-expand-sm:has(> a[href^="https://anglers.go.link?deep_link="][style="width: 100%;"])
 ! Advanced element hiding rules for Adblock Plus
 7news.com.au#?#.e1s06mna1:has-text(Know the news)

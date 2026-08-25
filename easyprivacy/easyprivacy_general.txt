@@ -333,6 +333,7 @@
 /api-analytics.
 /api-insights/log?
 /api/0/stats
+/api/ad-track$ping
 /api/adplogger/*
 /api/ads-bff-client/*
 /api/adtracking$xmlhttprequest
@@ -349,6 +350,7 @@
 /api/log-visit
 /api/metrics/collect
 /api/metrics/event
+/api/notify-track$ping
 /api/pageactivity
 /api/pageview/*$ping
 /api/pageview?
@@ -357,6 +359,7 @@
 /api/reqAnalytic/*
 /api/sentry/tunnel$xmlhttprequest
 /api/stat?
+/api/stn/audience|$xmlhttprequest
 /api/track?guid
 /api/trk?
 /api/v1/EndpointTracker
@@ -365,6 +368,7 @@
 /api/v1/impressions|
 /api/v1/metrics
 /api/v1/reportData/*
+/api/v1/reporting/flows
 /api/v1/stat?
 /api/v1/streamtelemetry
 /api/v2/collector
@@ -519,6 +523,7 @@
 /btrack.php?
 /bugcounter.php?
 /bundle-analytics.js
+/bundle.tracing.min.js
 /bundle.tracking.js
 /bundle/analytics.
 /bunsen/events/*
@@ -675,6 +680,8 @@
 /collectsysteminfo?
 /com.snowplowanalytics.snowplow/*$domain=~7plus.com.au
 /com_joomlawatch/img.php
+/com_jrealtimeanalytics/js/heatmap.js
+/com_jrealtimeanalytics/js/stream.js
 /commerce-events-listener.js
 /common/analytics.js
 /common/ga.js
@@ -881,7 +888,6 @@
 /event?s=$ping
 /event_log/*
 /event_logger
-/event_logging/*
 /eventLog.ajax
 /EventLoggerV3.min.js
 /eventLogServlet?
@@ -1141,6 +1147,8 @@
 /googleTracker.js
 /googleTracking.js
 /gosquared.js$script
+/gosstat_gokw.gif?
+/gosstat_gomp.gif?
 /graphql/track-pageview$xmlhttprequest
 /grumi-ip.js
 /gs-analytics-init.js
@@ -1245,6 +1253,7 @@
 /imp_check.php
 /imp_cnt.gif?
 /imp_img.php?
+/impb?b=
 /impr.gif?
 /impresion/zona/*
 /impress.php?
@@ -1300,6 +1309,7 @@
 /jquery.google-analytics.js
 /jquery.iframetracker-
 /jquery.trackstar.js
+/js-cdn/scstats.js
 /js-responsive/minimal-analytics-$script
 /js-sdk-event.min.js
 /js/_analytics.js
@@ -1314,6 +1324,7 @@
 /js/quantcast-
 /js/script.pageview-props.
 /js_ibeat_ext.cms
+/js_includes_ux_metrics.js
 /js_log_error.js
 /js_logger.php
 /js_tracker.js
@@ -1678,7 +1689,7 @@
 /ot_e404.gif?
 /OtAutoBlock.js
 /ouibounce.min.js
-/outbrain.js
+/outbrain.js$~xmlhttprequest
 /outbrainAd.
 /outLoging.js
 /outLoging2.js
@@ -1809,6 +1820,7 @@
 /pixel?tag=
 /pixel_identifier.js
 /pixel_iframe.php
+/pixel_taboola_events.js
 /pixel_tracking.js
 /pixel_tracking?
 /pixel_V2.js
@@ -2081,6 +2093,7 @@
 /scroll-analytics-
 /scroll-track.js
 /scroll-tracker.js
+/scstats/api/stat/*
 /SdaAnalytics.js
 /sdc.js|
 /sdc1.js
@@ -2103,6 +2116,7 @@
 /sensor/statistic?
 /sensorsdata-
 /sensorsdata.$domain=~sensorsdata.cn
+/sentinel-events-tracker.
 /sentry-browser.min.js
 /sentry-browser.tracing.es5.min.js
 /sentry-logger.js
@@ -2358,7 +2372,7 @@
 /t/event?
 /t?referer=
 /t?tcid=
-/taboola.js
+/taboola.js$~xmlhttprequest
 /taboola/loader.js
 /taboolaHead.js
 /taevents-c.js
@@ -2507,6 +2521,7 @@
 /tracking-links.js
 /tracking.asmx/AddTrack?
 /tracking.jsp?sid=
+/tracking/affiliate|$image
 /tracking/airdog
 /tracking/common.html
 /tracking/cookies?
@@ -2837,6 +2852,7 @@
 /ws-tracking.js
 /wstat.pl
 /wstats.php?
+/wt-connect-pixel/carts/init?
 /wt_capi.js
 /wtbase.js
 /wtd.gif?
@@ -2904,7 +2920,7 @@
 ://dwh-prod.*/de.npg/
 ://elqtrk.
 ://fallback.*/collector
-://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://fathom.$domain=~fathom.care|~fathom.co.za|~fathom.fm|~fathom.info|~fathom.io|~fathom.lib.uchicago.edu|~fathom.news|~fathom.org|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
 ://gtrack.*/dye
 ://insights-collector.
 ://internal-matomo.
@@ -3065,6 +3081,7 @@ _WebVitalsReporter_
 &ga_blocked=$image
 &l=dataLayer&cx=c
 &sst.sw_exp=
+&tag_exp=*&e=gtm.
 .js?id=GTM-
 /*JmVu.js?sp=
 /.netlify/scripts/rum

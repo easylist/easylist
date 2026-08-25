@@ -8,17 +8,22 @@
 ! Generic Cosmetics
 ###gist-answers-widget
 ###kapa-widget-container
+###molin-chat-custom-button
+##molin-shop-ai
 ! Specific Cosmetics
+mydrivers.com###AiSummaryLink
 outlook.office.com###BottomBar > div:has(> div > #copilot-dab-main-button)
 agoda.com###QuickAnswersContainer
+alz-journals.onlinelibrary.wiley.com###ai-chat-button-control
 medscape.com###ai-content-wrapper
 develop.sentry.dev###ai-list-entry
 forums.redflagdeals.com###ai_summary
 www.yahoo.co.jp###aichat
 reddit.com###answers-nav-button
-reddit.com###answers-suggested-queries-m3
+reddit.com###answers-suggested-queries
 docs.github.com###ask-ai-result-container
 learn.microsoft.com###ask-learn-flyout
+drive.google.com###askGemini
 collinsdictionary.com###assistant-link
 bing.com###b-scopeListItem-conv > [href^="https://www.bing.com/ck/a"]
 bing.com###b_copilot_search
@@ -36,27 +41,34 @@ acrobat.adobe.com###genai-assistant-button
 consumerreports.org###gnav__mt-alert-wrapper
 mail.google.com###google-hats-survey
 healio.com###healio-ai-banner
+firstpost.com###ia-search-popup
 langfuse.com###inkeep-shadowradix-\:r2\:
 studio.youtube.com###inspiration-tab
 airlinegeeks.com,avweb.com,flyingmag.com,planeandpilotmag.com###key-take-aways
 homedepot.com###magic-apron-loader
 aws.amazon.com###mrc-sunrise-chat
+learn.microsoft.com###ms--ai-summary-cta
 microsoft.com###msChatContainer
 amazon.com###nile-inline_feature_div
 indianstartupnews.com###nudgeai-widget
 pbtech.co.nz###pai-widget
 homedepot.com###product-section-magic-apron-qa-bot
+g2a.com###promo-banner
 rekono.si###rekono-chatbot-root
+chaletnursery.com###repWebClientContainer
 news18.com###rpdred
 baidu.com###s_tab_inner > a[href*="chat.baidu.com"]
 time.com###scale-agent-overlay-container
 ibm.com###ucx-symphony-webchat-host
 autonocion.com###us-box-btn
 trip.com##.A9zea:has([aria-label*="Hi! TripGenie"])
+bonappetit.com##.AIChatBotTickerWrapper-kWIqhl
 ndtv.com,ndtv.in##.ASum_wr
 search.yahoo.co.jp##.AiAssistant
 search.yahoo.co.jp##.AnswerAiNavigation
 github.blog##.Button[href^="https://github.com/features/copilot"]
+lowes.com##.ChatInviteButton
+coinmarketcap.com##.ChatItemWithChevronRight_chatItemWithChevronRight__5fxY_
 coinmarketcap.com##.FloatingAiChat_floatingAiChatContainer__YJK16
 search.yahoo.co.jp##.Unit__naturalText
 sciencedirect.com##._pendo-guide-walkthrough_
@@ -72,8 +84,11 @@ ecosia.org##.ai-search-button
 straitstimes.com##.ai-summary
 businessinsider.com##.ai-summary-questions
 fresnobee.com##.ai-summary-wrapper
+flyscoot.com##.ai-trip-section
 economictimes.indiatimes.com##.ai_podcast_030825
 baidu.com##.aisearch-btn_1yI-K
+docs.google.com##.appsElementsSidekickAuroraEntryPointRoot
+docs.google.com##.appsElementsSidekickBarkickMinimizedButton
 blog.google##.article-summary__content
 nutraingredients.com##.ask-ia-widget
 docs.redhat.com##.ask-red-hat-button-container
@@ -85,6 +100,7 @@ cloud.boldbi.com##.bbi-dbrd-dashboard-banner-summary
 cloud.boldbi.com##.bbi-dbrd-designer-chat-icon
 digg.com##.bg-background-ai-tertiary
 news.yahoo.co.jp##.bjevXT.sc-c89yjt-3
+singaporeair.com##.book-trips-flight-recommender
 learn.microsoft.com##.border-color-ask-learn
 rule34video.com##.button_fav.ai
 democrata.es##.c-article__header-share__button-fren
@@ -93,18 +109,24 @@ britannica.com##.category-link-CHATBOT
 bing.com##.cdxCopilotIconBg
 docs.kits.ai##.chat-assistant-floating-input
 duckduckgo.com##.chip-select_option__Gh6br:has(> span[title="Duck.ai"])
+hevodata.com##.code-example-wrapper
 github.com##.copilotPreview__container
 swissinfo.ch##.ebu-neo-box
+m.youtube.com##.engagement-panel-section-list-footer-wrapper
 nutraingredients.com##.explore-more-widget
+lowes.com##.fabrik_select_agent_ai
 priceline.com##.fixed.right-4
 flyscoot.com##.flight-recommender-container
 singaporeair.com##.flr-link
 democrata.es##.fren-inline
 democrata.es##.fren-widget
 trip.com##.gotop.mod-back-top-item
+ilsole24ore.com##.gpt24-suggest
 britannica.com##.header-topic-britannica-ai-module
 healio.com##.healio-ai-component
 healio.com##.healio-ai-component-inline
+ilsole24ore.com##.hpill--gpt24
+hwbusters.com##.hwb-ai-root
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hotcars.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.i-sensa
 develop.sentry.dev,docs.sentry.io##.kapa-ai-class
 cybernews.com##.key-takeaway
@@ -120,19 +142,26 @@ op.gg##.rounded.size-\[40px\]
 amazon.com##.rufus-panel-container
 amazon.com##.rufus-pill
 amazon.com##.s-ask-rufus-mshop-suggestion-container
+ilsole24ore.com##.s-gpt24-cta
+ilsole24ore.com##.s-gpt24-form-wrapper
 amazon.com##.s-suggestion-nile-desktop-container
 docs.sentry.io##.search_sgs-ai-button__sUsjD
 skywork.ai##.skywork-chat-widget
+moneycontrol.com##.snapShotAiSummery
 www.ebay.com##.srp-river-answer--FAQ_KW_SRP_MODULE
 economictimes.indiatimes.com##.styles_podcast-widget__LKtPP
+huntress.com##.summarize-ai
 mathrubhumi.com##.summary-wrapper
+tecnoblog.net##.tb-single-tecnochat
 techedt.com##.teqr-quick-read
 britannica.com##.toc-sticky-header-ai-container
 walmart.com##.unified-chat-component
 autonocion.com##.us-box-resumen
 www.google.com#?##Odp5De:has-text(/AI Overview|Übersicht mit KI/)
 vercel.com##[aria-label="Ask AI"]
+www.youtube.com##[aria-label="Ask YouTube"]
 meyka.com##[aria-label="Get AI Summary"]
+lloydsbank.co.uk##[aria-label="Open AI Assistant"]
 support.spotify.com##[data-encore-id="box"]
 support.github.com##[data-fs="copilot_chat_nav"]
 duckduckgo.com##[data-hide-untill-css-vars-polyfilled="true"][data-react-module-id="wikinlp"]
@@ -142,9 +171,11 @@ duckduckgo.com##[data-react-module-id="duckDuckGoHelp"]
 mail.google.com##[data-rp-placement-id="gemkick-pep-icon-callout-id"]
 baidu.com##[data-spy-count="panel-btn-click"]
 duckduckgo.com##[data-ssg-id="ask-duck-ai-submit"]
+drive.google.com##[data-test-id="help-me-organize-chip-container"]
 ecosia.org##[data-test-id="search-form-ai-suggestion"]
 investing.com##[data-test="contextual-subscription-hook-button"]
 duckduckgo.com##[data-testid="aichat-button"]
+g2a.com##[data-testid="buddy-ribbon"]
 mail.google.com##[data-tooltip*="Help me write"]
 www.notion.so##[href="/ai"] > div
 priceline.com##[id=":r1b:"]
@@ -155,9 +186,10 @@ www.yahoo.co.jp##a.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt:has(svg[aria-la
 www.yahoo.co.jp##a.ygDfdPUPK5OPiqKG4UtuU[aria-label="AIアシスタントで検索"]
 duckduckgo.com##a[class][href*="ia=chat"]
 truthsocial.com##a[href="/ai-search"]
-bing.com##a[href="/chat?FORM=hpcodx"]
 duckduckgo.com##a[href^="/?ia=chat&"]
 search.brave.com##a[href^="/ask?q="]
+bing.com##a[href^="/chat?FORM=hpcodx"]
+www.google.com##a[href^="https://ai.google/helpful-tools/?"]
 duckduckgo.com##a[href^="https://duckduckgo.com/?ia=chat"]
 app.slack.com#?#.autoSummaryCard__UEStF:has-text(AI thread summaries)
 businesstimes.com.sg#?#.tracking-\[0\.02em\].\!text-gray-850:has-text(Summarise)
@@ -179,6 +211,7 @@ studio.youtube.com##div.screen-banners-container.yta-screen:has(button[aria-labe
 studio.youtube.com##div.suggestion-chips-container:has(> ytcp-creator-chat-entrypoint-chips)
 bloomberg.com##div[class^="SummaryOnlyTakeaways_takeaways__"]
 google.com##div[data-rp-placement-id="gemkick-pep-icon-callout-id"]
+glassdoor.com##div[data-test=copilot-search-input]
 docs.github.com#?#.prc-ActionList-GroupHeadingWrap-pfbd9:has-text(Ask Copilot)
 docs.posit.co#?#.nav-item:has-text(Ask AI)
 duckduckgo.com#?#.chip-select_isSelected__RpaRr:has-text(Duck.ai)
@@ -190,12 +223,15 @@ search.yahoo.co.jp##li.VerticalTab__aiAssistButton
 duckduckgo.com##li:first-child:has([data-testid="duckassist-answer-content"])
 www.google.com##li[data-attrid$="Prediction"]:has([aria-description="AI Mode"])
 yandex.com##li[data-fast-name="neuro_answer"]
+lowes.com#?#.nav-diy-icons:has-text(Mylow)
 homedepot.ca##magic-apron-bot-wrapper-component
 www.google.com#?##main > [data-ved]:has-text(AI Overview)
 www.reddit.com##main > div:has(conversation-snapshot-text-clamp)
 op.gg#?#section:has-text("AI Chatbot")
 pcmag.com#?#.w-\[110vw\]:has-text(Hello!)
 duckduckgo.com#?##react-duckbar li:has-text(Search Assist)
+www.reddit.com##reddit-search-large[expanded-composer-enabled]:remove-attr(expanded-composer-enabled)
+www.reddit.com##reddit-search-small[expanded-composer-enabled]:remove-attr(expanded-composer-enabled)
 republicworld.com#?#.desktop\:my-4:has-text(Show Quick Read)
 search.yahoo.com#?#.disclaimerBadge:has-text(Summaries)
 stackoverflow.com#?#.as-start.fd-column:has-text(Get instant answers)
@@ -210,10 +246,14 @@ www.google.com#?#.X8zPMb:has-text(flight deals with AI)
 www.google.com#?#[data-hveid="CAIQAQ"]:has-text(Gemini, an AI assistant)
 www.reddit.com#?#.search-answers-preview-section:has-text(Answers)
 www.yahoo.com#?#.dark\:bg-\[\#1d2228\].leading-5:has-text(See a mistake?)
+www.youtube.com#?#.ytd-video-renderer.style-scope > .ytd-expandable-metadata-renderer.style-scope:has-text(Summary)
 www.youtube.com##yt-video-description-youchat-section-view-model
 studio.youtube.com##ytcp-creator-chat-trigger
 www.youtube.com##ytd-talk-to-recs-flow-renderer
+! Generic blocks
+/CxRobotSdkJs.js
 ! Network items
+||api.coinmarketcap.com/chatbot/
 ||askmiso.com^$third-party
 ||asus-brand-assistant.asus.com/brand-assistant.js
 ||azurefd.net/cdns/copilot_v3.min.js$script,domain=nus.edu.sg
@@ -224,7 +264,11 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||embed.chatnode.ai^
 ||gotolstoy.com^$third-party
 ||mfgpt.milanofinanza.it/widget/widget.js
+||mydrivers.com//V2/pc/AISummaryHandler.ashx?
+||sdk.whtvr.ai^$third-party
 ||srv.divee.ai^$third-party
+||urbandictionary.ai^
+||widget.brambles.ai^$third-party
 ||widget.indexfox.ai^
 ||widget.kapa.ai^$third-party
 ||widget.prod.equally.ai^$third-party
