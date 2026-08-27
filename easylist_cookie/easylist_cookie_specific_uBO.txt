@@ -1372,6 +1372,7 @@ businessclass.com##+js(set-cookie, ibe.acceptedCookie, true)
 uniqueshop.gr##+js(set-cookie, iccb_init, 1)
 inderes.fi##+js(set-cookie, inderes_consent, necessary)
 citilink.ru##+js(set-cookie, infoCookieUses, true)
+korona.by##+js(set-cookie, infoPopupClosed, 1)
 antpool.com##+js(set-cookie, informedConsent, 1)
 verdis.se##+js(set-cookie, initial-cookie-setting-done, 1, , reload, 1)
 kancelarskepotreby.net,zonerpress.cz##+js(set-cookie, inshopCookiesSet, true)
@@ -2651,6 +2652,8 @@ netkom.de,refinery29.com##body:style(overflow: auto !important; position: initia
 !! #framework-cookies
 alphatronmarine.com,amrecycling.nl,bassant.nl,bploodsen.nl,cilgro.nl,compair-airco.nl,desatel.nl,dewaagnederland.nl,diasta.com,digitalimpact.nl,dutchlightpro.nl,ecm.nl,elinex.nl,foundationforauditingresearch.org,golfclub-kleiburg.nl,golfschoolhitland.nl,hgrgevelrenovatie.nl,hitland.nl,horecadisposables.nl,iberdeli.nl,in2waste.eu,johntoy.nl,joueco.nl,kwissle.com,landuwasco.nl,mfiv.nl,mgfruit.com,nbkbv.com,piguillet.nl,plan-bee.nl,rhoongolfcenter.nl,romaro.nl,sport-people.nl,treijtel.nl,upinternational.nl,vandoornbv.nl,vanrooy.nl,vebecon.com,werkenbijdfzs.nl,werkenindetechniek.nl###framework-cookies
 alphatronmarine.com,amrecycling.nl,bassant.nl,bploodsen.nl,cilgro.nl,compair-airco.nl,desatel.nl,dewaagnederland.nl,diasta.com,digitalimpact.nl,dutchlightpro.nl,ecm.nl,elinex.nl,foundationforauditingresearch.org,golfclub-kleiburg.nl,golfschoolhitland.nl,hgrgevelrenovatie.nl,hitland.nl,horecadisposables.nl,iberdeli.nl,in2waste.eu,johntoy.nl,joueco.nl,kwissle.com,landuwasco.nl,mfiv.nl,mgfruit.com,nbkbv.com,piguillet.nl,plan-bee.nl,rhoongolfcenter.nl,romaro.nl,sport-people.nl,treijtel.nl,upinternational.nl,vandoornbv.nl,vanrooy.nl,vebecon.com,werkenbijdfzs.nl,werkenindetechniek.nl##body,html:style(overflow: auto !important; position: initial !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/34258
+evroopt.by##+js(aeld, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookie.get)
 ! pubg.com
 pubg.com##.has-dimmed-bg
 pubg.com##body,html:style(overflow: auto !important; position: initial !important;)
