@@ -9,8 +9,10 @@
 ! Main page
 youtube.com#?#.ytGridShelfViewModelHost:has-text(Shorts)
 youtube.com#?#.ytd-rich-shelf-renderer:has-text(Shorts)
+youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"])
 youtube.com##ytd-rich-section-renderer:has(a[href^="/shorts/"])
 ! Trending page
+youtube.com##.ytLockupViewModelWrapper:has(a[href^="/shorts/"])
 youtube.com##ytd-reel-shelf-renderer:has(a[href^="/shorts/"])
 ! Search/Trending page (Android)
 youtube.com##.media-item-thumbnail-container[aria-hidden][href^="/shorts/"]
