@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609152306
+! Version: 202609152308
 ! Title: EasyList
-! Last modified: 15 Sep 2026 23:06 UTC
+! Last modified: 15 Sep 2026 23:08 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 43b5871cb31c06e5fba94fa646a0926e3ebcb2ba
+! Commit: b66700404b44ce7fe8de7e9ad9c886e8930a746b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -78603,7 +78603,7 @@ bing.com##div[class="ins_exp vsp"]
 ! bing.com##li.b_ans[data-partnertag][role="presentation"]
 bing.com##li[data-idx]:has(#mm-ebad)
 ! chatgpt
-chatgpt.com##[data-message-role="assistant"] > section[class]:has(> aside[aria-label] > div[role="list"] a[rel][target="_blank"] + [class] > button[aria-haspopup])
+chatgpt.com##[data-message-role="assistant"] > section[class]:has(> aside[aria-label] > div[role="list"] a[rel][target="_blank"][href*="&oppref="])
 ! kayak
 checkfelix.com,kayak.*,swoodoo.com###resultWrapper > div > div > [role="button"][tabindex="0"] > .yuAt-pres-rounded
 checkfelix.com,kayak.*,swoodoo.com##.Dp1L
