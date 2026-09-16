@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609161126
+! Version: 202609161127
 ! Title: EasyList
-! Last modified: 16 Sep 2026 11:26 UTC
+! Last modified: 16 Sep 2026 11:27 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 4990a725ba405ca803b7c8c5f01ae1e6eb9d88d3
+! Commit: 408b9bb4e12aeb0a1ca8b4b66b06c9884819d070
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -78160,6 +78160,7 @@ opensubtitles.org##tr[style]:has([src*="php"])
 oneindia.com##ul > li:has(> div[class^="adg_"])
 etsy.com##ul[data-results-grid-container] li:has([id^="ad-listing-title-"])
 wolt.com##ul[data-test-id="VenueVerticalListGrid"] > li > div.cb-elevated:has(button[data-test-id="AdvertisingLabel"])
+wolt.com#?#div:has(> div > div > div > div > div > div > p:has-text(Sponsored))
 ! taboola
 nme.com###taboola-below-article
 oneindia.com###taboola-mid-article-thumbnails
