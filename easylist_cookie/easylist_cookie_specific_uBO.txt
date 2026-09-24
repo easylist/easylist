@@ -560,10 +560,14 @@ fossil.com##+js(set-cookie, banner_interaction, 1)
 diebayerische.de##+js(set-cookie, bay_required, true)
 polizei.bayern.de##+js(set-cookie, baypol_banner, true)
 polizei.bayern.de##+js(set-cookie, baypol_functional, true)
+blackbit.sh##+js(set-cookie, bb_consent, rejected)
 sportboerse-shop.de##+js(set-cookie, biloba-open-ai-dsgvo-consent, , declined)
 bitso.com##+js(set-cookie, bitso_cc, 1)
 blukit.com.br##+js(set-cookie, blukit_novo, true)
 jusbrasil.com.br##+js(set-cookie, br-lgpd-cookie-notice-agreement-v1, 1)
+bitcoinsuisse.com##+js(set-cookie, btcs-cookie-category-essentials, 1)
+bitcoinsuisse.com##+js(set-cookie, btcs-disclaimer, 1)
+bitcoinsuisse.com##+js(set-cookie, btcs-initial-redirect-done, 1)
 bvk-beamtenversorgung.de##+js(set-cookie, bvkcookie, true)
 zlavomat.sk##+js(set-cookie, c, 0, , reload, 1)
 lanidor.com,throttleman.com##+js(set-cookie, c_aceitaAnaliticos, false)
@@ -2124,6 +2128,7 @@ owgr.com##+js(set-local-storage-item, hasStrictlyNecessaryCookies, true)
 wifiman.com##+js(set-local-storage-item, hide-legal, 1)
 thehub21.com##+js(set-local-storage-item, hub-cp, true)
 bcgame.vc##+js(set-local-storage-item, ignore_cookie_warn, true)
+injectjs.net##+js(set-local-storage-item, injectjs-consent, denied)
 baseblocks.tenereteam.com##+js(set-local-storage-item, isAcceptCookie, false)
 ishoppurium.com##+js(set-local-storage-item, isAcceptCookie, true)
 edostavka.by,emall.by##+js(set-local-storage-item, isAcceptCookiesNew, true)
@@ -2133,7 +2138,7 @@ swisstours.com##+js(set-local-storage-item, isCookie, Yes)
 fiyat.mercedes-benz.com.tr##+js(set-local-storage-item, isCookieAccepted, true)
 anhanguera.com##+js(set-local-storage-item, isCookiePoliceAccepted, 1)
 nloto.ru##+js(set-local-storage-item, isCookies, 1)
-5sim.net,aerolineas.com.ar##+js(set-local-storage-item, isCookiesAccepted, true)
+5sim.net,aerolineas.com.ar,cellcom.co.il##+js(set-local-storage-item, isCookiesAccepted, true)
 dvx.pe##+js(set-local-storage-item, isCookiesAcceptedDVX, 1)
 dvx.pe##+js(set-local-storage-item, isCookiesAcceptedNRTN, DENIED)
 yellow.systems##+js(set-local-storage-item, isCookiesNotificationHidden, true)
@@ -2408,6 +2413,9 @@ dasweltauto.se##body,html:style(overflow: auto !important; position: initial !im
 !! .c-cookie-preferences
 unitedutilities.com##.c-cookie-preferences
 unitedutilities.com##body,html:style(overflow: auto !important; position: initial !important;)
+! novosti.dn.ua
+novosti.dn.ua##.tdm-popup-modal-wrap
+novosti.dn.ua##body,html:style(overflow: auto !important; position: initial !important;)
 !! .cookie-inquiry-wrapper
 doppelherz-elearning.de,doppelherz.ru,doppelherz.ua,doppelherzpharma.de,intakt-pc.de,litozin.de,pfotenfroh.vet,protefix.be,protefix.com,protefix.com.tr,protefix.cz,protefix.es,protefix.ro,protefix.sk,protefix.ua,queisser.com,queisser.de,queisser.pl,stozzon.de,wgm-rastatt.de##.cookie-inquiry-wrapper
 doppelherz-elearning.de,doppelherz.ru,doppelherz.ua,doppelherzpharma.de,intakt-pc.de,litozin.de,pfotenfroh.vet,protefix.be,protefix.com,protefix.com.tr,protefix.cz,protefix.es,protefix.ro,protefix.sk,protefix.ua,queisser.com,queisser.de,queisser.pl,stozzon.de,wgm-rastatt.de##body,html:style(overflow: auto !important; position: initial !important;)
@@ -2599,7 +2607,8 @@ cosmote.gr##+js(set-cookie, cookie_consent_set, 1)
 ! bm-lille.fr
 bibliotheques.paris.fr,bm-lille.fr,documentation.insp.gouv.fr,e-mediatheque.sqy.fr,portaildocumentaire.inrs.fr##.cookies-management
 bibliotheques.paris.fr,bm-lille.fr,documentation.insp.gouv.fr,e-mediatheque.sqy.fr,portaildocumentaire.inrs.fr##body,html:style(overflow: auto !important; position: initial !important;)
-! bo3.gg
+! snippet.finance
+snippet.finance##+js(set, realCookieBanner, {})
 !! journal.hr
 journal.hr##+js(set-cookie, jour_analytics, false)
 journal.hr##+js(set-cookie, jour_cookies, 1)
@@ -2633,6 +2642,10 @@ conversion-rate-experts.com##+js(set-cookie, user_experience_cookie_consent, fal
 merkur.si##+js(set-cookie, cookie_analytics_allow, no)
 merkur.si##+js(set-cookie, cookie_notice_dismissed, yes)
 merkur.si##+js(set-cookie, mer_cc_dim_rem_allow, no)
+! autobedrijfnaessens.be
+autobedrijfnaessens.be##+js(set-cookie, cookie_analytics, 0)
+autobedrijfnaessens.be##+js(set-cookie, cookie_functional, 1)
+autobedrijfnaessens.be##+js(set-cookie, cookie_pref_saved, 1)
 ! dodl.co.uk
 dodl.co.uk###cookie-modal
 dodl.co.uk##body,html:style(overflow: auto !important; position: initial !important;)
@@ -2838,8 +2851,8 @@ b-immobree.be,floraluxbree.be##+js(set-cookie, cookie-consent-status, 0)
 a-spect.be,a2o-architecten.be,a2o-omgeving.be,a2o.be,abm-accountants.com,adlon.be,adtemptare.be,allimex.eu,antiek-albarello.com,aratina.com,atirio.be,avlwoningbouw.be,baeyens-l.be,barbecues.be,bartyde.be,bbcbb.be,browsbox.com,decoform.be,delbruyere.be,deregenboog.be,design-home.be,dewiekslag.be,dr-geeraerts-dermatologie.be,durocub.be,enib.be,eremex.be,granhold.com,gripsholm.be,groepmsi.be,hanssens.net,incadans.be,jagsonly.be,jbavicon.com,kwvanbladel.be,liswood-tache.com,marlou.be,medibe.be,microscope-shop.be,morphologicum.org,noorwegenhitravissers.be,nsi-be.com,o-f-s.eu,omerus.be,p-laser.com,royalcrown.be,rsc-slaapcomfort.com,sani-lux.net,sanik.be,scherpesteen.be,tri-active.be,tuincenterlissens.be,vaatkliniek.be,vado.be,visitatiebottelare.be,vivantia.be,vrijdagmarkt.net##.c-cookie-popup
 a-spect.be,a2o-architecten.be,a2o-omgeving.be,a2o.be,abm-accountants.com,adlon.be,adtemptare.be,allimex.eu,antiek-albarello.com,aratina.com,atirio.be,avlwoningbouw.be,baeyens-l.be,barbecues.be,bartyde.be,bbcbb.be,browsbox.com,decoform.be,delbruyere.be,deregenboog.be,design-home.be,dewiekslag.be,dr-geeraerts-dermatologie.be,durocub.be,enib.be,eremex.be,granhold.com,gripsholm.be,groepmsi.be,hanssens.net,incadans.be,jagsonly.be,jbavicon.com,kwvanbladel.be,liswood-tache.com,marlou.be,medibe.be,microscope-shop.be,morphologicum.org,noorwegenhitravissers.be,nsi-be.com,o-f-s.eu,omerus.be,p-laser.com,royalcrown.be,rsc-slaapcomfort.com,sani-lux.net,sanik.be,scherpesteen.be,tri-active.be,tuincenterlissens.be,vaatkliniek.be,vado.be,visitatiebottelare.be,vivantia.be,vrijdagmarkt.net##body,html:style(overflow: auto !important; position: initial !important;)
 !! #didomi-host
-allocine.fr,as.com,corrieredellosport.it,fcbarcelona.com,fyndiq.*,mein-mmo.de,tuttosport.com,vecernji.hr###didomi-host
-allocine.fr,as.com,corrieredellosport.it,fcbarcelona.com,fyndiq.*,mein-mmo.de,tuttosport.com,vecernji.hr##body,html:style(overflow: visible !important; padding-right: 0 !important; overflow-y: visible !important; overflow-x: visible !important; position: initial !important;)
+allocine.fr,as.com,corrieredellosport.it,eltiempo.es,fcbarcelona.com,fyndiq.*,mein-mmo.de,tuttosport.com,vecernji.hr###didomi-host
+allocine.fr,as.com,corrieredellosport.it,eltiempo.es,fcbarcelona.com,fyndiq.*,mein-mmo.de,tuttosport.com,vecernji.hr##body,html:style(overflow: visible !important; padding-right: 0 !important; overflow-y: visible !important; overflow-x: visible !important; position: initial !important;)
 !! Didomi noop
 elconfidencial.com,euromaster.de,gamepro.de,jofogas.hu,lavanguardia.com,melty.fr,strefabiznesu.pl##+js(set, Didomi, noopFunc)
 !! .rgpd
