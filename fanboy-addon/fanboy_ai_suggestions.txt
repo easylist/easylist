@@ -20,7 +20,6 @@ develop.sentry.dev###ai-list-entry
 forums.redflagdeals.com###ai_summary
 www.yahoo.co.jp###aichat
 reddit.com###answers-nav-button
-reddit.com###answers-suggested-queries
 docs.github.com###ask-ai-result-container
 learn.microsoft.com###ask-learn-flyout
 drive.google.com###askGemini
@@ -73,6 +72,8 @@ coinmarketcap.com##.ChatItemWithChevronRight_chatItemWithChevronRight__5fxY_
 coinmarketcap.com##.FloatingAiChat_floatingAiChatContainer__YJK16
 search.yahoo.co.jp##.Unit__naturalText
 sciencedirect.com##._pendo-guide-walkthrough_
+mail.yahoo.com##.ab_CI.en_0.eo_x.D_F:has([aria-label="Summarize with Yahoo Scout"])
+britannica.com##.ai-ask-button
 dictionary.cambridge.org##.ai-bar-button
 baidu.com##.ai-create-wrapper_2oI56
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hotcars.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.ai-features
@@ -131,6 +132,7 @@ hwbusters.com##.hwb-ai-root
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hotcars.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.i-sensa
 develop.sentry.dev,docs.sentry.io##.kapa-ai-class
 cybernews.com##.key-takeaway
+cybernews.com##.key-takeaway-editorial
 mojeek.com##.llm-btn
 amazon.com##.nav-rufus-disco
 www.notion.so##.notion-assistant-corner-origin-container
@@ -181,6 +183,7 @@ mail.google.com##[data-tooltip*="Help me write"]
 www.notion.so##[href="/ai"] > div
 priceline.com##[id=":r1b:"]
 priceline.com##[id=":r1i:"]
+www.reddit.com##[id^="answers-suggested-queries"]
 www.google.com##[role="listitem"]:has(a[href*="aep=1&ntc=1"])
 yandex.com##a.HeaderNav-Tab[href$="&promo=force_neuro"]
 www.yahoo.co.jp##a.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt:has(svg[aria-label="AIアシスタント"])
@@ -226,6 +229,7 @@ www.google.com##li[data-attrid$="Prediction"]:has([aria-description="AI Mode"])
 yandex.com##li[data-fast-name="neuro_answer"]
 lowes.com#?#.nav-diy-icons:has-text(Mylow)
 homedepot.ca##magic-apron-bot-wrapper-component
+mail.yahoo.com#?#[data-test-id="tldr-inbox-list-opt-in-card"]:has-text(Powered by Yahoo Scout)
 www.google.com#?##main > [data-ved]:has-text(AI Overview)
 www.reddit.com##main > div:has(conversation-snapshot-text-clamp)
 op.gg#?#section:has-text("AI Chatbot")
@@ -259,14 +263,18 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||askmiso.com^$third-party
 ||asus-brand-assistant.asus.com/brand-assistant.js
 ||azurefd.net/cdns/copilot_v3.min.js$script,domain=nus.edu.sg
+||booosted.com^$third-party
 ||cdn.gist.ai^$third-party
 ||cdn.whoop.com/v0/chat/chat.js$domain=support.whoop.com
 ||chat.cdn-plain.com^
 ||chat.g4media.org^
 ||embed.chatnode.ai^
+||engagelab.com^$third-party
 ||gotolstoy.com^$third-party
+||klipy.atlassian.net/csm/widget/$domain=klipy.com
 ||mfgpt.milanofinanza.it/widget/widget.js
 ||mydrivers.com//V2/pc/AISummaryHandler.ashx?
+||octaneai.com^$third-party
 ||sdk.whtvr.ai^$third-party
 ||srv.divee.ai^$third-party
 ||urbandictionary.ai^
