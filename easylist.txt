@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202609281841
+! Version: 202609281849
 ! Title: EasyList
-! Last modified: 28 Sep 2026 18:41 UTC
+! Last modified: 28 Sep 2026 18:49 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 11d65b91b4d45cb180650aa25b7cf26a64c59ab0
+! Commit: c0ab24554ff48dbf5cbdfd9ef0abbb838e7838e3
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -74301,6 +74301,7 @@ birminghammail.co.uk,bristolpost.co.uk,dailyrecord.co.uk,irishstar.com,liverpool
 staples.com##div[class^="sku-configurator__banner"]:has([aria-label="Sponsored Products"])
 wikiwand.com##div[class^="wrapper_wrapper"]:has(> div[class^="wrapper_cta"])
 wikiwand.com##div[class^="wrapper_wrapper"]:has(> div[id^="ezoic-pub-ad"])
+pinterest.com##div[data-grid-item="true"]:has([data-test-id="x3f8q1"]):not(:has(a[href^="/pin/"]))
 flipkart.com##div[data-id]:has(a > [data-tkid^="ADVIEW"])
 bjs.com##div[data-index]:has(.sponsored-badge)
 etherscan.io##div[data-nosnippet]:has(> ins[id])
