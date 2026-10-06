@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202610061601
+! Version: 202610061609
 ! Title: EasyList
-! Last modified: 06 Oct 2026 16:01 UTC
+! Last modified: 06 Oct 2026 16:09 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 384408a11a9fcd43ff1b1bba04d0e6890f79b145
+! Commit: fb42d4787fa10d0c357ae7956a310f32ca8c16f8
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -76651,6 +76651,7 @@ costco.com##article[id][class]:has(img[alt*="Sponsored"])
 psychcentral.com##aside:has([data-empty])
 kohls.com##astro-island[component-export="KmnMarqueeBannerWrapper"]:has(img[alt="Sponsored Banner"])
 openalternative.co##body > div.group:has(a[target="_blank"])
+openalternative.co##body > div.outline-transparent:has(a[target="_blank"])
 creepypasta.com##center:has(+ #ad-container-1)
 hashrate.no##center:has(.sevioads)
 character.ai#?#.space-y-4 > .w-full:has-text(Advertisement)
@@ -76663,6 +76664,8 @@ openalternative.co##div.group:has(> a[target="_blank"])
 golfgalaxy.com##div.hmf-position-relative:has(.sponsored)
 flightradar24.com##div.items-center.justify-center:has(> div#pb-slot-fr24-airplane:empty)
 tvguide.co.uk##div.mx-auto:has(> .flex.justify-center:empty)
+openalternative.co##div.outline-transparent:has(> a[target="_blank"])
+openalternative.co##div.outline-transparent:has(> span[class*="group/button"])
 costco.ca##div.product:has(.criteo-sponsored)
 thebay.com##div.product:has(div.citrus-sponsored)
 pixiv.net##div.relative > div.flex > div.w-full:has(a[href^="https://pixon.ads-pixiv.net/click"])
