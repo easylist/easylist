@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202610091556
+! Version: 202610091601
 ! Title: EasyList
-! Last modified: 09 Oct 2026 15:56 UTC
+! Last modified: 09 Oct 2026 16:01 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 003a6345441f0d33479b32946a2fc7feb3ed12a5
+! Commit: c16e83e0e7abde9c11c15615db252426b1f83b8a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -76531,6 +76531,7 @@ petmd.com##aside[aria-label="advertisement"]
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-inline-promotion
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-inline-promotion-block
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-promotion-list
+openalternative.co##body > div:has(> img):has(a[target="_blank"])
 nbcsports.com##bsp-reverse-scroll-ad
 dustinabbott.net##center > a > img
 sailingmagazine.net##center > font
@@ -76557,6 +76558,10 @@ forward.com##div.sticky-container:first-child
 newegg.com##div.swiper-slide[data-sponsored-catalyst]
 investing.com##div.text-\[\#5b616e\]
 inverse.com##div.zz
+openalternative.co##div:has(> a[target="_blank"][rel="noopener"]):has(button):not(:has(h1, h2, h3))
+openalternative.co##div:has(> div > h2 > a[href="/advertise"])
+openalternative.co##div:has(> p + a[target="_blank"]:last-child)
+openalternative.co##div:has(> span[class*="group/button"]):has(button)
 presearch.com##div[\:class*="AdClass"]
 boxing-social.com##div[ad-slot]
 liverpoolway.co.uk##div[align="center"] > a[href]
