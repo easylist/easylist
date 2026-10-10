@@ -3,7 +3,7 @@
 ! Title: EasyList
 ! Last modified: 10 Oct 2026 10:24 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 2dac7641e3915279975fa5780b3b36733763337f
+! Commit: 29a373fa8c7a89995cc2b1e80f80ad9a89a7c757
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -68483,8 +68483,6 @@ $third-party,xmlhttprequest,domain=mega4upload.net
 ||oklink.com/api/explorer/v2/index/text-advertisement?
 ||oldgamesdownload.com/wp-content/plugins/placement-manager/
 ||onlineshopping.co.za/expop/
-||openalternative.co/_proxy/revinel/
-||openalternative.co/advertise?
 ||openalternative.co^*/ads/
 ||openapk.net/include/affiliate-units.js
 ||opencart.com/application/view/image/banner/
@@ -76722,7 +76720,6 @@ petmd.com##aside[aria-label="advertisement"]
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-inline-promotion
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-inline-promotion-block
 bluejaysnation.com,canucksarmy.com,dailyfaceoff.com,flamesnation.ca,oilersnation.com,theleafsnation.com##bam-promotion-list
-openalternative.co##body > div:has(> img):has(a[target="_blank"])
 nbcsports.com##bsp-reverse-scroll-ad
 dustinabbott.net##center > a > img
 sailingmagazine.net##center > font
@@ -76738,7 +76735,6 @@ readonepiece.com##div > b
 coffeeordie.com##div.HtmlModule > [href]
 web.telegram.org##div.bubbles > div.scrollable > div.bubbles-inner > div.is-sponsored
 gearspace.com##div.deal__unit
-openalternative.co##div.fixed.z-49.bottom-4
 easypet.com##div.kt-inside-inner-col > div.wp-block-kadence-rowlayout
 baking-forums.com,windows10forums.com##div.message--post.message
 thehackernews.com##div.rocking
@@ -76749,10 +76745,7 @@ forward.com##div.sticky-container:first-child
 newegg.com##div.swiper-slide[data-sponsored-catalyst]
 investing.com##div.text-\[\#5b616e\]
 inverse.com##div.zz
-openalternative.co##div:has(> a[target="_blank"][rel="noopener"]):has(button):not(:has(h1, h2, h3))
 openalternative.co##div:has(> div > h2 > a[href="/advertise"])
-openalternative.co##div:has(> p + a[target="_blank"]:last-child)
-openalternative.co##div:has(> span[class*="group/button"]):has(button)
 presearch.com##div[\:class*="AdClass"]
 boxing-social.com##div[ad-slot]
 liverpoolway.co.uk##div[align="center"] > a[href]
@@ -77032,7 +77025,6 @@ streamed.pk,streamed.st,streami.su##div[role="alert"]
 dhgate.com##div[spm-c="sponsored"]
 medscape.com##div[ssr-ads]
 geo.tv##div[style$="min-height: 280px;"]
-openalternative.co##div[style*="--brand-tint"]
 castanet.net##div[style*="height:900px"]
 worldstar.com##div[style*="max-height:250px"]
 news18.com##div[style*="min-height"][style*="background"]
@@ -77722,8 +77714,7 @@ thetimes.com##article[id="article-main"] > div:has(#ad-header)
 costco.com##article[id][class]:has(img[alt*="Sponsored"])
 psychcentral.com##aside:has([data-empty])
 kohls.com##astro-island[component-export="KmnMarqueeBannerWrapper"]:has(img[alt="Sponsored Banner"])
-openalternative.co##body > div.group:has(a[target="_blank"])
-openalternative.co##body > div.outline-transparent:has(a[target="_blank"])
+openalternative.co##body > div:has(> div > a[href^="/advertise"])
 creepypasta.com##center:has(+ #ad-container-1)
 hashrate.no##center:has(.sevioads)
 character.ai#?#.space-y-4 > .w-full:has-text(Advertisement)
@@ -77733,12 +77724,9 @@ manomano.co.uk,manomano.de,manomano.es,manomano.fr,manomano.it##div > div:has([d
 inverse.com##div > p + div:has(amp-ad)
 producthunt.com##div.cursor-pointer.overflow-hidden:has(> img.object-contain)
 downornot.net##div.grid > div.flex.flex-col:has([href*="aff_c?"])
-openalternative.co##div.group:has(> a[target="_blank"])
 golfgalaxy.com##div.hmf-position-relative:has(.sponsored)
 flightradar24.com##div.items-center.justify-center:has(> div#pb-slot-fr24-airplane:empty)
 tvguide.co.uk##div.mx-auto:has(> .flex.justify-center:empty)
-openalternative.co##div.outline-transparent:has(> a[target="_blank"])
-openalternative.co##div.outline-transparent:has(> span[class*="group/button"])
 costco.ca##div.product:has(.criteo-sponsored)
 thebay.com##div.product:has(div.citrus-sponsored)
 pixiv.net##div.relative > div.flex > div.w-full:has(a[href^="https://pixon.ads-pixiv.net/click"])
@@ -77753,6 +77741,7 @@ newsfirst.lk##div:has(> [class*="hide_ad"])
 fandomwire.com##div:has(> [data-openweb-ad])
 doordash.com##div:has(> a[data-anchor-id="SponsoredStoreCard"])
 regex101.com##div:has(> div > a > div[style*="/static/assets/sponsors/"])
+openalternative.co##div:has(> div > a[href^="/advertise"]):has(> a[target="_blank"])
 tripadvisor.*##div:has(> div > div[class="ui_column ovNFo is-3"])
 openalternative.co##div:has(> div > h2 > a[href="/advertise"])
 staples.com##div:has(> div[class*="configurator-container__"] .topsort-video-configurator__monetizationContainer)
