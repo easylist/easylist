@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202610141259
+! Version: 202610141300
 ! Title: EasyList
-! Last modified: 14 Oct 2026 12:59 UTC
+! Last modified: 14 Oct 2026 13:00 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 568d3401543b9c876fbc1a77010c4e5e12d00913
+! Commit: 479bdd08bac8a8d7084c230a3ef76c8162d836ce
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -80065,6 +80065,9 @@ target.com#?#div[data-test="ListingPageProductListing"]:has(span:has-text(Sponso
 target.com#?#div[data-test="addToCartSuccessModalRecommendationsTile"]:has(p.h-text-xs:has-text(Sponsored))
 techonthenet.com#?#div[class] > p:has-text(Advertisements)
 telugupeople.com#?#table:has(> tbody > tr > td > a:has-text(Advertisements))
+temu.com#?#.autoFitGoodsList > div:has(._2QlTgZaA:has-text(/^AD$/))
+temu.com#?#.mainContent div:has(> .goods-container ._2QlTgZaA:has-text(/^AD$/))
+temu.com#?#li.splide__slide:has(._2QlTgZaA:has-text(/^AD$/))
 theblock.co#?#.py-4.my-6:has-text(Advertisement)
 thedailywtf.com#?#.article-body > div:has-text([Advertisement])
 thingiverse.com#?#.item-card-container:has-text(/^Ad$/)
