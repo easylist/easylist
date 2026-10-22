@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202610222052
+! Version: 202610222053
 ! Title: EasyList
-! Last modified: 22 Oct 2026 20:52 UTC
+! Last modified: 22 Oct 2026 20:53 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 140a6ffee48d719fab66def6c58ac26c07e91085
+! Commit: 3e4c4bf8a4248c47658a8debaf5760d268687f3a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -81858,6 +81858,7 @@ webtools.fineaty.com##div[class*=" hidden-"]:has(.adsbygoogle)
 livejournal.com##div[class*="-close"]:has(a[href*="tired=ads"])
 qz.com##div[class*=":block"]:has(> .ay-ad-slot)
 pixabay.com##div[class*="SectionGroup"] > div:has(a[href*="sponsored_"])
+pixabay.com##div[class*="container--"] > div:not([class*="--"]):has(a[href*="sponsored_"])
 qz.com##div[class*="my-"]:has(> .ay-ad-slot)
 aliexpress.com,aliexpress.us##div[class*="search-item-card-wrapper-"]:has(span[class^="multi--ad-"])
 qwant.com##div[class="_2NDle"]:has(div[data-testid="advertiserAdsDisplayUrl"])
