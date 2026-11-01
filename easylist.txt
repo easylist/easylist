@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611012016
+! Version: 202611012018
 ! Title: EasyList
-! Last modified: 01 Nov 2026 20:16 UTC
+! Last modified: 01 Nov 2026 20:18 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 546fa71202357de7d30705b489ba90b713ed8991
+! Commit: 70bb84ffc482e52b523312aa4ad083b9964c8777
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -526,7 +526,7 @@
 /p?zoneId=
 /page-peel$~xmlhttprequest
 /pagead/1p-user-list/*$image
-/pagead/conversion.js$script
+/pagead/conversion.js|$script
 /pageear.js$script
 /pageear/*$script
 /pagepeel.$~xmlhttprequest
@@ -1096,7 +1096,7 @@ _prebid.js$script
 /120-600-
 /120-600.
 /120_600_
-/120x600-
+/120x600-$image
 /120x600.
 /120x600_
 /125x600-
