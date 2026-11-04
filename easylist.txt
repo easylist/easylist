@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611040506
+! Version: 202611040507
 ! Title: EasyList
-! Last modified: 04 Nov 2026 05:06 UTC
+! Last modified: 04 Nov 2026 05:07 UTC
 ! Expires: 4 days (update frequency)
-! Commit: fea1964bc2a35d49a7b46d17cc56677cde32a618
+! Commit: 2d678df4a34dd5e761b565ee22487c15af38f47b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -74469,6 +74469,7 @@ macys.com##li.productThumbnailItem:has(.sponsored-items-label)
 kohls.com##li.products_grid:has(p.piq-sponsored)
 streeteasy.com##li.searchCardList--listItem:has(.jsSponsoredListingCard)
 temu.com##li.splide__slide:has([role="text"][aria-label="AD"])
+makemytrip.com##li:has(> [class="cardInteractive"] img[src*="sponsoredtag"])
 cars.com##li:has(> fuse-card[data-listing-id] .spr)
 aboutyou.de##li:has([data-testid="spons"])
 classcentral.com##li:has(iframe[src^="/catalog-iframe?"])
