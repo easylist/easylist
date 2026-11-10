@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611101711
+! Version: 202611101713
 ! Title: EasyList
-! Last modified: 10 Nov 2026 17:11 UTC
+! Last modified: 10 Nov 2026 17:13 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d590ce9d1f5fbc783e58eca660349f39b64ca7d7
+! Commit: d0d0546d08f079b4659b5bd8a478e3ba1f174253
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -72265,7 +72265,6 @@ vnkb.com##a[href^="https://vnkb.com/e/"]
 1280wnam.com##a[href^="https://wistatefair.com/fair/tickets/"]
 startpage.com,startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion##a[href^="https://ww44.affinity.net/"]
 ancient-origins.net,anisearch.com,catholicculture.org,lewrockwell.com,ssbcrack.com##a[href^="https://www.amazon."][href*="tag="]
-gamepadla.com##a[href^="https://www.amazon.com/"] + div + picture
 wjbc.com##a[href^="https://www.farmweeknow.com/rfd_radio/"]
 magic1069.com##a[href^="https://www.fetchahouse.com/"]
 coachhuey.com##a[href^="https://www.hudl.com"]
@@ -73160,10 +73159,6 @@ justwatch.com##.offer-container:has(.promotion-row_container)
 pollunit.com##.owl-carousel:has(.carousel-ad)
 nicomanga.com##.owl-stage > .owl-item:has([title="ADS Support"])
 property24.com##.p24_tileContainer:has([src^="/Content/images/Optimized/Icons/icon_tag_tile.svg?"])
-gamepadla.com##.pMain:has(a[href^="/go/"])
-gamepadla.com##.pMain:has(div[class^="asd_"])
-gamepadla.com##.pMain:has(div[title="Partner placement"])
-gamepadla.com##.panel-container:has(.media-header-row-item)
 thefederal.com##.pb-3 > .col-xl-3.col-lg-6.col-md-6:has(> [id^="ad_slot"])
 andronicos.com,haggen.com,randalls.com##.pc-grid-prdItem:has(span[data-qa="prd-itm-spnsrd"])
 sainsburys.co.uk##.pd-merchandising-product:has(.product-header--citrus[data-testid="product-header"])
@@ -73457,6 +73452,7 @@ dribbble.com##drb-infinite-scroll .service-result:has(drb-tooltip[data-featured-
 dribbble.com##drb-infinite-scroll div[data-username]:has(drb-tooltip[data-featured-badge])
 90min.com##figure:has(> div > #mm-player-placeholder-large-screen)
 unsplash.com##figure[itemprop="image"]:has(div[class*="sponsorLabelContainer-"])
+gamepadla.com
 getyarn.io#?#.pt3p > div > div:has-text(Advertisement)
 5dariyanews.com##h2:has(a[href*="sponsored-ads"])
 streeteasy.com##li [class^="ListingCard-module"]:has([class*="sponsoredTag"])
@@ -74311,8 +74307,6 @@ foobar2000.org#?#caption:has-text(advertisement)
 foodlion.com#?#.product-grid-cell:has-text(Sponsored)
 freshdirect.com#?#.swiper-slide:has-text(Sponsored)
 fxempire.com#?#span[display="inline-block"]:has-text(Advertisement)
-gamepadla.com#?#.pMain:has-text(Partner)
-gamepadla.com#?#.sliderBlock:has-text(ADS)
 gamersnexus.net#?#.moduleContent:has-text(Advertisement)
 ganjapreneur.com#?#.has-background:has-text(Featured whitepaper)
 giantfood.com,giantfoodstores.com,martinsfoods.com#?#.pdl-generic-content_full:has-text(Sponsored)
@@ -74463,8 +74457,6 @@ yahoo.com#?#.leading-3:has-text(Advertisement)
 yahoo.com#?#.md\:block.dark\:bg-ramones:has-text(Advertisement)
 yahoo.com#?#div.md\:block.pb-5:has-text(Advertisement)
 yourstory.com#?#[width]:has-text(ADVERTISEMENT)
-! :-abp-properties
-gamepadla.com#?#.pMain:has(div:-abp-properties(Partner))
 ! bing
 bing.com#?#.ta_c:has-text(Sponsored)
 bing.com#?#li.b_algo:has(.rms_img[src*="id=ODLS.A2450BEC-5595-40BA-9F13-D9EC6AB74B9F"]):has(.tptt:has-text(/^([Aa]mazon(\.[acdefinps][aeglnorst]m?\.?[abjmtu]?[kprux]?)?|Best Buy|Booking\.com|eBay|eDreams|Lenovo US|Trip\.com|Tripadvisor|Walmart)$/))
