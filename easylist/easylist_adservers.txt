@@ -43002,6 +43002,8 @@
 ||samsungacr.com^
 ! anime47.com / nettruyen.com
 /(https?:\/\/)\w{30,}\.me\/\w{30,}\./$script,third-party
+! Rotating gTLD media endpoints (random alpha label, /digits/digits/letter)
+/^https?:\/\/[a-z]{10,}\.(cfd|click|cyou|online|pro|qpon|rest|shop|site|space|store|top|website|xyz)\/\d{6,}\/\d{6,}\/[a-z]$/$media,third-party
 ! IP addresses
 /(https?:\/\/)104\.154\..{100,}/
 /(https?:\/\/)104\.197\..{100,}/
