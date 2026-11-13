@@ -37,7 +37,7 @@ To avoid being banned, don't constantly re-open or create new (related) issue re
 
 #### Filter lists you're using:
 
-<!-- Which adblock lists are you're using? -->
+<!-- Which adblock lists are you using? -->
 <!-- e.g. ABP filters, EasyList, EasyPrivacy, Fanboy's Annoyance List, etc. -->
 
 #### Your settings:
