@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611181405
+! Version: 202611181409
 ! Title: EasyList
-! Last modified: 18 Nov 2026 14:05 UTC
+! Last modified: 18 Nov 2026 14:09 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 145643ae80caed21b1b224211661359b82d3f3e5
+! Commit: e413bb631eccc69e3b2bd6c08eecf5f84e76e7be
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -155,7 +155,7 @@
 /adasync.js$script
 /adasync.min.js$script
 /adbanners/*$image
-/adblock/frontend_loader.js
+/adblock/frontend_loader.js$~xmlhttprequest
 /adchoice.png$image
 /adcount.js$script
 /addyn|*;adtech;
@@ -1011,7 +1011,7 @@ _prebid.js$script
 ! Anti-Adblock
 /ad-blocking-advisor/*$script,stylesheet
 /ad-blocking-alert/*$stylesheet
-/ad-blocking-detector/assets/js/adblock-detector.min.js
+/ad-blocking-detector/assets/js/adblock-detector.min.js$~xmlhttprequest
 /adblock-detect.$script
 /adblock-notify-by-bweb/*$script,stylesheet
 /adblock_detector2.$script
@@ -2460,7 +2460,6 @@ _800x80_
 ###adb_bottom
 ###adbackground
 ###adbanner-container
-###adbanner1
 ###adbannerbox
 ###adbannerdiv
 ###adbannerleft
@@ -2473,9 +2472,6 @@ _800x80_
 ###adblock-big
 ###adblock-leaderboard
 ###adblock-small
-###adblock1
-###adblock2
-###adblock4
 ###adblockbottom
 ###adbn
 ###adbnr
