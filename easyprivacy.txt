@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202611182328
+! Version: 202611182329
 ! Title: EasyPrivacy
-! Last modified: 18 Nov 2026 23:28 UTC
+! Last modified: 18 Nov 2026 23:29 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 362344207084bd752ac8597b1e6f63def6a25fe3
+! Commit: 59ff18b1d66dfe34b79f4c7836ea266453624d0b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -1274,6 +1274,7 @@
 /i.php?i=
 /i.png?id=
 /i/api/kn/afterclick/*$~third-party,xmlhttprequest
+/i/v0/e/*
 /i2a.js
 /i2yesCounter.js
 /i?e=pv&url=
@@ -1745,6 +1746,9 @@
 /orichipixel.min.js
 /ot_e404.gif?
 /OtAutoBlock.js
+/otel/v1/logs
+/otel/v1/metrics
+/otel/v1/traces
 /ouibounce.min.js
 /outbrain.js$~xmlhttprequest
 /outbrainAd.
@@ -16897,6 +16901,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ocular.hotukdeals.com^
 ||ocular.pepperdeals.com^
 ||odysee.com/reports/
+||offloop.org/_vid/v1/collect
 ||ohm-dot-hackster-io.appspot.com^
 ||oklink.com/jsstat/
 ||okx.com/jsstat/sb?
@@ -17409,7 +17414,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||strtapewithadblock.xyz/stat/
 ||strtpe.link/stat/
 ||stubhub.com/a/icph
-||stuff.co.nz/otel/
 ||stytch.com/sdk/v1/events
 ||suaurl.com/adblock/js/smarttag.js
 ||substrate.office.com/search/api/v1/events
@@ -17571,7 +17575,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tms.hft.greenchef.com^
 ||tms.hft.hellofresh.com^
 ||tnaflix.com/stats.php
-||together.ai/otel/v1/traces
 ||toms.com/*/FacebookCAPI-Event
 ||toms.com/*/PinterestCAPI-Event
 ||tongji-res.meizu.com^
@@ -55935,7 +55938,6 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 ||nvapi.nicovideo.jp/v1/bandit-machine/
 ||odsyms15.com/impression?
 ||oita-press.co.jp/js2020/analytics.js
-||portal.kotodaman.jp/api/otel/v1/logs
 ||pvtag.yahoo.co.jp^
 ||pw.gigazine.net^
 ||pzd.rakuten.co.jp^
