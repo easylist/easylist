@@ -7832,6 +7832,7 @@ tripadvisor.*##[data-sponsored="sponsored"]:has(.txxUo)
 walmart.*##[data-testid="carousel-ad"]
 skyscanner.*##[data-testid="inline-ad-panel-desktop-layout"]:has([data-testid="adInfoBtn"])
 douglas.*##[data-testid="product-overview-content-slot"]:has(.criteo-teaser-gold__sponsored)
+pinterest.*##[role="listitem"]:has(.fullWidth_1f .subtle_1h)
 wayfair.*##a[data-enzyme-id="WssBannerContainer"]
 walmart.*##a[href*=".criteo.com/"]
 manomano.*##a[href^="/"][href*="?product_id="][title]:has(span > .svg_tamagoshi)
@@ -7859,7 +7860,7 @@ walmart.*##div[data-automation^="HookLogicCarouses"]
 skyscanner.*##div[data-backpack-ds-component]:has(#inline-ad-button)
 tripadvisor.*##div[data-curated-shelf-id]:has(a[rel="sponsored"])
 wayfair.*##div[data-enzyme-id="WssBannerContainer"]
-pinterest.com##div[data-grid-item]:has([data-test-pin-id] [data-test-id^="one-tap-desktop"] > a[href^="http"][rel="nofollow"]):not(body > div)
+pinterest.*##div[data-grid-item]:has([data-test-pin-id] [data-test-id^="one-tap-desktop"] > a[href^="http"][rel="nofollow"]):not(body > div)
 wayfair.*##div[data-hb-id="Grid.Item"]:has(a[href*="&sponsoredid="])
 wayfair.*##div[data-name="DisplayAd"]
 wayfair.*##div[data-node-id^="SponsoredListingCollectionItem"]
