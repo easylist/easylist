@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611211707
+! Version: 202611211716
 ! Title: EasyList
-! Last modified: 21 Nov 2026 17:07 UTC
+! Last modified: 21 Nov 2026 17:16 UTC
 ! Expires: 4 days (update frequency)
-! Commit: f49a0ca1601936ac0396b72de6113c071a992649
+! Commit: 228d7a880f77936bc1d61d3fde3312714bf17fc5
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -75602,8 +75602,7 @@ tripadvisor.*##div:has(> div > div[class="ui_column ovNFo is-3"])
 openalternative.co##div:has(> div > h2 > a[href="/advertise"])
 staples.com##div:has(> div[class*="configurator-container__"] .topsort-video-configurator__monetizationContainer)
 tripadvisor.*##div:has(> div[class="ui_columns is-multiline "])
-indiatimes.com##div:has(> div[id^="div-gpt-ad-"][id$="-atf"])
-indiatimes.com##div:has(> div[id^="div-gpt-ad-atf-"])
+indiatimes.com##div:has(> div[id^="div-gpt-ad-"][id*="-atf"])
 heb.com##div:has(> div[id^="hrm-banner-shotgun"])
 news12.com##div[alignitems="normal"]:has(> div[sizes*="object"])
 myutils.me##div[aria-label="Advertisement"]
