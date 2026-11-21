@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611211704
+! Version: 202611211706
 ! Title: EasyList
-! Last modified: 21 Nov 2026 17:04 UTC
+! Last modified: 21 Nov 2026 17:06 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 90d49851fd4b33b6fc221b780dff64adf7758037
+! Commit: 66dfdc3206d0ed127cb1bf880710777207d7f493
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -75232,8 +75232,7 @@ cars.com###branded-canvas-click-wrapper:has(> #native-ad-html)
 mytempsms.com###container-ad > .col-sm-12[style]:has(> .adsbygoogle)
 news.mydramalist.com###content > .app-body > div:has(.htlad-header_top)
 producthunt.com###content > div:has(> img):not(:has(a))
-igorslab.de###extras > div:has(> [data-igorslab-trackid])
-igorslab.de###extras > div:has(> img[width="980"][height="125"])
+igorslab.de###extras > #single-sticky + div:has(img)
 familytreenow.com###ftn_detail_left_side_organic
 gocomics.com###header-content-start:has([data-testid="advertising-unit"])
 radio.at,radio.de,radio.dk,radio.es,radio.fr,radio.it,radio.net,radio.pl,radio.pt,radio.se###headerTopBar ~ div > div:has(div#RAD_D_station_top)
