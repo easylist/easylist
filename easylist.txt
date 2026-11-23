@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611231722
+! Version: 202611231725
 ! Title: EasyList
-! Last modified: 23 Nov 2026 17:22 UTC
+! Last modified: 23 Nov 2026 17:25 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 99df9d9fe76e2cfbe152d6f66dee26c39ae70dcc
+! Commit: 75ee5af3a291dedf20e64fbf9f89fa5889f6f0ba
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -74477,7 +74477,8 @@ linuxcommandlibrary.com##[href^="/"]:has([src*=".webp"])
 freightwaves.com##[href^="https://academy.freightwaves.com/"]
 pahe.ink##[href^="https://theshorten.net/"]
 alibaba.com##[id^="sse-fluent-wending"]:has(.creative-ad-tag)
-x.com##[id^="urt"]>ul>li:has([class*="data-ad-disclosure"])
+x.com##[id^="urt"] > ul > li:has([class*="data-ad-disclosure"])
+x.com##[id^="urt"] > ul > li:has([target="_blank"][href*="?twclid="])
 kayak.com##[role="button"]:has([class*="ad-marking"])
 staples.com##[role="complementary"] #observer-id-temp:has(> #SKU_FeaturedProductCarousel)
 mail.aol.com##[role="presentation"]:has(> div[data-ad-row-id])
