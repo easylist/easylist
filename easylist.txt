@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 202611271713
+! Version: 202611271717
 ! Title: EasyList
-! Last modified: 27 Nov 2026 17:13 UTC
+! Last modified: 27 Nov 2026 17:17 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 30f4856bd5eaad5c1f571e5328a42612f2674a2b
+! Commit: 143280f23e6c14582d1a0ef2fefbd0cb90d0432a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -75761,6 +75761,7 @@ wsj.com##.e1vnmyci0:has(> .adWrapper)
 protrumpnews.com##.enhanced-text-widget:has(span.pre-announcement)
 upfivedown.com##.entry > hr.wp-block-separator:has(+ .has-text-align-center)
 igorslab.de##.entry-content > a:has(> img):has(+ aside.ilab-ad-privacy-footer)
+igorslab.de##.entry-content > a:has(> img):not([href*="igorslab.de"]):has(~ aside.ilab-ad-privacy-footer)
 morrisons.com##.featured-items:has(.js-productCarouselFops)
 top.gg##.flex-col.items-center.justify-center:has(#desktop-aside-video-ad)
 staples.com##.flexible-banner-configurator__flexibleBannerWrapper:has(a[aria-label*="Sponsored by"])
