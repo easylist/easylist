@@ -117,3 +117,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||ipcheck.blogsys.jp^$redirect=noop.js,script
 ! search.rakuten.co.jp
 search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
+! ekitan.com
+ekitan.com##+js(set, executeImpressionTicketTracking, noopFunc)
+ekitan.com##+js(set, initHomesTracking, noopFunc)
+@@||ekitan.com/transit/js/ticket-analytics.js$badfilter,~third-party
