@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202611271031
+! Version: 202611271032
 ! Title: EasyPrivacy
-! Last modified: 27 Nov 2026 10:31 UTC
+! Last modified: 27 Nov 2026 10:32 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 1ce98538470fd6fe92315554eeb454494dca3b1e
+! Commit: b9f19b7d0f9ec7d2331b3df256ba215bc9c7b6d9
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -18564,6 +18564,10 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||ipcheck.blogsys.jp^$redirect=noop.js,script
 ! search.rakuten.co.jp
 search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
+! ekitan.com
+ekitan.com##+js(set, executeImpressionTicketTracking, noopFunc)
+ekitan.com##+js(set, initHomesTracking, noopFunc)
+@@||ekitan.com/transit/js/ticket-analytics.js$badfilter,~third-party
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
@@ -57453,6 +57457,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 @@||dmp.im-apps.net/pms/*/pmt.js$domain=zakzak.co.jp
 @@||docodoco.jp^*/docodoco?key=$script,domain=jrtours.co.jp
 @@||e-stat.go.jp/modules/custom/retrieve/src/js/stat.js?$script,~third-party
+@@||ekitan.com/transit/js/ticket-analytics.js$~third-party
 @@||ev.tpocdm.com^$xmlhttprequest,domain=wowma.jp
 @@||f-gear.ec-optimizer.com/img/spacer.gif$image,domain=ec.f-gear.co.jp
 @@||f-gear.ec-optimizer.com/search4.do$script,domain=ec.f-gear.co.jp
